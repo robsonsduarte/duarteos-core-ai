@@ -19,8 +19,9 @@ export function showHelp() {
   AIOS multi-agente para Claude Code.
 
   Uso:
-    npx duarteos-core-ai init [nome-do-projeto]    Instala tudo no projeto atual
-    npx duarteos-core-ai init --yes                 Instala sem perguntas (defaults)
+    npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init
+    npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init meu-projeto
+    npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init --yes
 
   O que instala:
     .claude/

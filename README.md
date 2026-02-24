@@ -34,10 +34,21 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 Abra o terminal na pasta do seu projeto e execute:
 
 ```bash
-npx duarteos-core-ai init
+npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init
 ```
 
 Pronto. 48 arquivos foram instalados. Nao precisa de mais nada.
+
+**Outras formas de instalar:**
+
+```bash
+# Dar um nome ao projeto (senao detecta do package.json)
+npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init meu-projeto
+
+# Instalar globalmente (roda "duarteos" de qualquer lugar)
+npm install -g github:robsonsduarte/duarteos-core-ai
+duarteos init
+```
 
 ### Passo 2 (opcional): Configurar Python
 
