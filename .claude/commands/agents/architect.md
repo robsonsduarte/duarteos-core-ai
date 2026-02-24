@@ -105,6 +105,10 @@ O GSD e o motor de execucao do DuarteOS. Como Architect, voce usa subcomandos de
 | `/gsd:add-phase` | Roadmap existente | PM aprovou | Trabalho nao previsto descoberto |
 | `/gsd:insert-phase` | Roadmap existente | PM aprovou | Dependencia critica entre fases |
 
+### Save-Context (obrigatorio)
+
+Apos `plan-phase`, `map-codebase` ou `research-phase`, **DEVE** atualizar `.claude/session-context.md` com estado atual. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:map-codebase` antes de propor refatoracao em area desconhecida

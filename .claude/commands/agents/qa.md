@@ -116,6 +116,10 @@ O GSD e o motor de execucao do DuarteOS. Como QA, voce usa subcomandos de **veri
 | `/gsd:debug "desc"` | Bug persistente (2+ tentativas) | — | Bug sobreviveu a 2 tentativas de fix |
 | `/gsd:health` | Suspeita de inconsistencia | — | Artefatos .planning/ parecem incorretos |
 
+### Save-Context (obrigatorio)
+
+Apos `verify-work` ou `debug`, **DEVE** atualizar `.claude/session-context.md` com estado atual e resultado. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:verify-work` apos uma fase ser executada — obrigatorio

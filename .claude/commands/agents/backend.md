@@ -60,6 +60,10 @@ O GSD e o motor de execucao do DuarteOS. Como Backend, voce usa subcomandos de *
 | `/gsd:quick "desc"` | Task pequena (1-3 steps) | — | Bug fix ou task pontual com commit atomico |
 | `/gsd:quick --full "desc"` | Task que precisa verificacao | — | Fix que requer plan-checker + verificacao |
 
+### Save-Context (obrigatorio)
+
+Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md` com estado atual. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:execute-phase` quando existem PLAN.md — nunca implementar manualmente

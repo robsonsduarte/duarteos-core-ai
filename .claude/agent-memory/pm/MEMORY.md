@@ -4,6 +4,7 @@
 
 - [2026-02-24] arquitetura: Integrou GSD como subcomandos formais dos agentes DuarteOS. Criado AGENT-GSD-PROTOCOL.md definindo manifests, guards, pre-condicoes e cadeia de autorizacao por agente. Todos os 8 agentes atualizados com secao padronizada "Motor GSD" referenciando o protocolo.
 - [2026-02-24] processo: Adicionado AGENT-GSD-PROTOCOL.md a leitura obrigatoria de inicializacao de todos os agentes (step 3 na sequencia).
+- [2026-02-24] processo: Adicionado save-context como pos-acao obrigatoria em todos os agentes. Checkpoint continuo em session-context.md apos operacoes GSD que mudam estado.
 
 ## Padroes Observados
 

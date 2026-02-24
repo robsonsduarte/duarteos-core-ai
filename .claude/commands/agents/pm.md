@@ -176,6 +176,10 @@ O GSD e o motor de execucao do DuarteOS. Como PM, voce controla o **lifecycle co
 - **NUNCA** criar roadmap manual quando o GSD pode gerar um estruturado
 - Artefatos em `.planning/` — refira-se a eles ao apresentar planos
 
+### Save-Context (obrigatorio)
+
+Apos cada operacao GSD que muda estado, **DEVE** atualizar `.claude/session-context.md` com: milestone atual, fase, status, ultima operacao, proximo passo, bloqueios e artefatos ativos. Formato completo em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Cadeia de Autorizacao (PM e autoridade final)
 
 | Acao | PM autoriza |

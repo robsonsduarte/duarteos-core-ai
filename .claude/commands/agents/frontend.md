@@ -60,6 +60,10 @@ O GSD e o motor de execucao do DuarteOS. Como Frontend, voce usa subcomandos de 
 | `/gsd:quick "desc"` | Ajuste UI pequeno (1-3 steps) | — | Componente ou ajuste visual pontual |
 | `/gsd:quick --full "desc"` | Componente que precisa verificacao | — | Mudanca visual que requer validacao |
 
+### Save-Context (obrigatorio)
+
+Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md` com estado atual. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:execute-phase` quando existem PLAN.md de UI

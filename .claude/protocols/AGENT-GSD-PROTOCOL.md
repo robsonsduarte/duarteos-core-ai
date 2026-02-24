@@ -1,6 +1,6 @@
 # Protocolo de Integracao Agente ↔ GSD
 
-**Versao:** 1.0.0
+**Versao:** 1.1.0
 **Status:** Ativo
 **Autor:** ATLAS (PM)
 
@@ -316,6 +316,60 @@ Se o GSD falhar ou nao se aplicar, o agente pode executar manualmente, mas deve:
 
 ---
 
+## Save-Context — Checkpoint Continuo
+
+Apos cada operacao GSD que muda estado do projeto, o agente responsavel **DEVE** atualizar `.claude/session-context.md` com o estado atual.
+
+### Operacoes que disparam save-context
+
+| Operacao GSD | O que salvar no contexto |
+|-------------|-------------------------|
+| `new-project` | Milestone criado, roadmap gerado, total de fases |
+| `discuss-phase N` | Fase N discutida, decisoes capturadas em CONTEXT.md |
+| `plan-phase N` | Fase N planejada, quantidade de PLAN.md criados |
+| `execute-phase N` | Fase N executada, commits realizados, resultado |
+| `verify-work N` | Fase N verificada, resultado UAT (passou/falhou) |
+| `audit-milestone` | Auditoria realizada, verdict |
+| `complete-milestone` | Milestone concluido, proximo milestone |
+| `debug "desc"` | Debug iniciado/concluido, root cause |
+| `quick "desc"` | Task rapida executada, resultado |
+| `add-phase` / `insert-phase` / `remove-phase` | Roadmap alterado, nova estrutura de fases |
+| `pause-work` | Estado salvo para retomada |
+| `resume-work` | Contexto restaurado, proximo passo |
+
+### Formato do checkpoint
+
+Atualizar as seguintes secoes de `.claude/session-context.md`:
+
+```markdown
+## Estado Atual
+- **Milestone:** [nome/numero]
+- **Fase atual:** [N — nome]
+- **Status da fase:** [discussing | planning | executing | verifying | completed]
+- **Ultima operacao:** [operacao GSD + data/hora]
+- **Proximo passo:** [o que deve acontecer agora]
+- **Bloqueios:** [nenhum | descricao]
+
+## Artefatos Ativos
+- **ROADMAP.md:** [existe | —]
+- **PLAN.md ativos:** [lista dos PLAN.md da fase atual]
+- **CONTEXT.md:** [existe | —]
+- **VERIFICATION.md:** [existe | —]
+
+## Decisoes Recentes
+- [data] descricao da decisao
+```
+
+### Regras
+
+- **OBRIGATORIO:** Todo agente que executa operacao da tabela acima DEVE salvar contexto
+- **AUTOMATICO:** Nao depende do usuario pedir — e pos-acao implicita
+- **INCREMENTAL:** Atualizar apenas as secoes relevantes, nao reescrever tudo
+- **CONCISO:** Cada entrada no maximo 1-2 linhas. Estado, nao narrativa
+- O save-context substitui o `pause-work` para checkpoints intermediarios — `pause-work` continua existindo para handoffs completos entre sessoes
+
+---
+
 ## Synapse — Estado dos Agentes
 
 Cada agente atualiza seu estado Synapse (`.claude/synapse/{agent}.yaml`) ao invocar GSD:
@@ -337,3 +391,4 @@ Cada agente atualiza seu estado Synapse (`.claude/synapse/{agent}.yaml`) ao invo
 | Versao | Data | Mudanca |
 |--------|------|---------|
 | 1.0.0 | 2026-02-24 | Protocolo inicial — manifests, cadeia de autorizacao, recipes |
+| 1.1.0 | 2026-02-24 | Adicionado save-context — checkpoint continuo apos operacoes GSD |

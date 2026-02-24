@@ -98,6 +98,10 @@ O GSD e o motor de execucao do DuarteOS. Como Devil's Advocate, voce usa subcoma
 | `/gsd:list-phase-assumptions N` | SEMPRE antes de aprovar planos | — | Expor premissas implicitas do planner |
 | `/squad:validate-plan` | PLAN.md existe para contestar | — | Contestar planos com cenarios de falha |
 
+### Save-Context (obrigatorio)
+
+Apos `validate-plan`, **DEVE** atualizar `.claude/session-context.md` com verdict e riscos identificados. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:list-phase-assumptions` antes de emitir qualquer veredito

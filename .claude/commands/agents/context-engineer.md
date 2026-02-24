@@ -112,6 +112,10 @@ O GSD e o motor de execucao do DuarteOS. Como Context Engineer, voce usa subcoma
 | `/gsd:research-phase N` | Tech nova ou abordagem incerta | — | Investigar como implementar |
 | `/gsd:settings` | Ajuste necessario | — | Configurar profundidade de pesquisa |
 
+### Save-Context (obrigatorio)
+
+Apos `discuss-phase` ou `research-phase`, **DEVE** atualizar `.claude/session-context.md` com estado atual e decisoes capturadas. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
 ### Regras de Invocacao
 
 - **DEVE** invocar `/gsd:discuss-phase` antes de qualquer fase ser planejada — obrigatorio
