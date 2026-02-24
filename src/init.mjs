@@ -72,6 +72,17 @@ export function init(projectName, options = {}) {
     '.claude/squad-templates/fullstack/tasks',
     '.claude/squad-templates/data-science/agents',
     '.claude/squad-templates/automation/agents',
+    // v5.0.0 — Protocols, Config, Synapse, Task Templates, IDE Templates
+    '.claude/protocols',
+    '.claude/config',
+    '.claude/synapse',
+    '.claude/ide-templates',
+    '.claude/task-templates/spec',
+    '.claude/task-templates/dev',
+    '.claude/task-templates/qa',
+    '.claude/task-templates/db',
+    '.claude/task-templates/ops',
+    '.claude/task-templates/sec',
   ]
 
   for (const dir of dirs) {
@@ -198,6 +209,82 @@ export function init(projectName, options = {}) {
     ['squad-templates/automation/agents/orchestrator.md', '.claude/squad-templates/automation/agents/orchestrator.md'],
     ['squad-templates/automation/agents/script-builder.md', '.claude/squad-templates/automation/agents/script-builder.md'],
     ['squad-templates/automation/agents/tester.md', '.claude/squad-templates/automation/agents/tester.md'],
+
+    // v5.0.0 — Protocols
+    ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
+    ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
+    ['protocols/README.md', '.claude/protocols/README.md'],
+    ['protocols/CONFIG-PROTOCOL.md', '.claude/protocols/CONFIG-PROTOCOL.md'],
+    ['protocols/SYNAPSE.md', '.claude/protocols/SYNAPSE.md'],
+    ['protocols/QUALITY-GATES.md', '.claude/protocols/QUALITY-GATES.md'],
+    ['protocols/IDE-SYNC.md', '.claude/protocols/IDE-SYNC.md'],
+
+    // v5.0.0 — 4-Layer Config
+    ['config/system.yaml', '.claude/config/system.yaml'],
+    ['config/project.yaml', '.claude/config/project.yaml'],
+    ['config/user.yaml.example', '.claude/config/user.yaml.example'],
+
+    // v5.0.0 — Synapse State Machine
+    ['synapse/README.md', '.claude/synapse/README.md'],
+    ['synapse/template.yaml', '.claude/synapse/template.yaml'],
+
+    // v5.0.0 — New Commands
+    ['commands/squad/task.md', '.claude/commands/squad/task.md'],
+    ['commands/squad/synapse.md', '.claude/commands/squad/synapse.md'],
+    ['commands/squad/sync-ide.md', '.claude/commands/squad/sync-ide.md'],
+
+    // v5.0.0 — Quality Gates (new hooks)
+    ['hooks/architecture-review.sh', '.claude/hooks/architecture-review.sh'],
+    ['hooks/test-coverage-gate.sh', '.claude/hooks/test-coverage-gate.sh'],
+    ['hooks/dependency-audit.sh', '.claude/hooks/dependency-audit.sh'],
+    ['hooks/docs-gate.sh', '.claude/hooks/docs-gate.sh'],
+    ['hooks/bundle-size-gate.sh', '.claude/hooks/bundle-size-gate.sh'],
+
+    // v5.0.0 — IDE Templates
+    ['ide-templates/cursor.md.tmpl', '.claude/ide-templates/cursor.md.tmpl'],
+    ['ide-templates/windsurf.md.tmpl', '.claude/ide-templates/windsurf.md.tmpl'],
+    ['ide-templates/copilot.md.tmpl', '.claude/ide-templates/copilot.md.tmpl'],
+    ['ide-templates/README.md', '.claude/ide-templates/README.md'],
+
+    // v5.0.0 — Task Templates
+    ['task-templates/README.md', '.claude/task-templates/README.md'],
+    ['task-templates/spec/spec-feature.md', '.claude/task-templates/spec/spec-feature.md'],
+    ['task-templates/spec/spec-api-contract.md', '.claude/task-templates/spec/spec-api-contract.md'],
+    ['task-templates/spec/spec-prd.md', '.claude/task-templates/spec/spec-prd.md'],
+    ['task-templates/spec/spec-user-story.md', '.claude/task-templates/spec/spec-user-story.md'],
+    ['task-templates/spec/spec-migration-plan.md', '.claude/task-templates/spec/spec-migration-plan.md'],
+    ['task-templates/spec/spec-architecture-decision.md', '.claude/task-templates/spec/spec-architecture-decision.md'],
+    ['task-templates/dev/dev-api-endpoint.md', '.claude/task-templates/dev/dev-api-endpoint.md'],
+    ['task-templates/dev/dev-component.md', '.claude/task-templates/dev/dev-component.md'],
+    ['task-templates/dev/dev-refactor.md', '.claude/task-templates/dev/dev-refactor.md'],
+    ['task-templates/dev/dev-integration.md', '.claude/task-templates/dev/dev-integration.md'],
+    ['task-templates/dev/dev-migration.md', '.claude/task-templates/dev/dev-migration.md'],
+    ['task-templates/dev/dev-hotfix.md', '.claude/task-templates/dev/dev-hotfix.md'],
+    ['task-templates/dev/dev-feature.md', '.claude/task-templates/dev/dev-feature.md'],
+    ['task-templates/dev/dev-hook.md', '.claude/task-templates/dev/dev-hook.md'],
+    ['task-templates/qa/qa-test-suite.md', '.claude/task-templates/qa/qa-test-suite.md'],
+    ['task-templates/qa/qa-code-review.md', '.claude/task-templates/qa/qa-code-review.md'],
+    ['task-templates/qa/qa-regression.md', '.claude/task-templates/qa/qa-regression.md'],
+    ['task-templates/qa/qa-performance.md', '.claude/task-templates/qa/qa-performance.md'],
+    ['task-templates/qa/qa-accessibility.md', '.claude/task-templates/qa/qa-accessibility.md'],
+    ['task-templates/qa/qa-e2e.md', '.claude/task-templates/qa/qa-e2e.md'],
+    ['task-templates/db/db-migration.md', '.claude/task-templates/db/db-migration.md'],
+    ['task-templates/db/db-seed.md', '.claude/task-templates/db/db-seed.md'],
+    ['task-templates/db/db-rls-policy.md', '.claude/task-templates/db/db-rls-policy.md'],
+    ['task-templates/db/db-index-optimization.md', '.claude/task-templates/db/db-index-optimization.md'],
+    ['task-templates/db/db-backup-plan.md', '.claude/task-templates/db/db-backup-plan.md'],
+    ['task-templates/db/db-schema-design.md', '.claude/task-templates/db/db-schema-design.md'],
+    ['task-templates/ops/ops-ci-cd.md', '.claude/task-templates/ops/ops-ci-cd.md'],
+    ['task-templates/ops/ops-docker.md', '.claude/task-templates/ops/ops-docker.md'],
+    ['task-templates/ops/ops-deploy.md', '.claude/task-templates/ops/ops-deploy.md'],
+    ['task-templates/ops/ops-monitoring.md', '.claude/task-templates/ops/ops-monitoring.md'],
+    ['task-templates/ops/ops-ssl-cert.md', '.claude/task-templates/ops/ops-ssl-cert.md'],
+    ['task-templates/ops/ops-scaling.md', '.claude/task-templates/ops/ops-scaling.md'],
+    ['task-templates/sec/sec-owasp-audit.md', '.claude/task-templates/sec/sec-owasp-audit.md'],
+    ['task-templates/sec/sec-dependency-scan.md', '.claude/task-templates/sec/sec-dependency-scan.md'],
+    ['task-templates/sec/sec-penetration-plan.md', '.claude/task-templates/sec/sec-penetration-plan.md'],
+    ['task-templates/sec/sec-incident-response.md', '.claude/task-templates/sec/sec-incident-response.md'],
+    ['task-templates/sec/sec-auth-review.md', '.claude/task-templates/sec/sec-auth-review.md'],
   ]
 
   let installed = 0
@@ -254,6 +341,9 @@ export function init(projectName, options = {}) {
      /squad:list-squads          — Listar squads do projeto
      /squad:run-squad [n] [dem]  — Executar squad numa demanda
      /squad:clone-mind [nome]    — DNA Mental: clonar mente de especialista
+     /squad:task [template]      — Executar task template
+     /squad:synapse              — Dashboard de estado dos agentes
+     /squad:sync-ide [ide]       — Gerar configs para Cursor/Windsurf/Copilot
 
   Squad Factory (.claude/squad-templates/) — 4 templates:
      basic               — 1 lead + 1 executor (minimo viavel)
@@ -282,10 +372,45 @@ export function init(projectName, options = {}) {
      Memory                — Grafo de conhecimento persistente
      Sequential Thinking   — Raciocinio estruturado
 
-  Hooks instalados (.claude/hooks/) — 4 quality gates:
+  Protocols (.claude/protocols/) — 7 documentos formais:
+     CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
+     GOVERNANCE.md           — Convencoes de nomenclatura e ciclo de vida
+     CONFIG-PROTOCOL.md      — Sistema de configuracao em 4 camadas
+     SYNAPSE.md              — Maquina de estados dos agentes
+     QUALITY-GATES.md        — Pipeline de validacao (9 gates)
+     IDE-SYNC.md             — Sincronizacao multi-IDE
+
+  Config (.claude/config/) — 3 camadas:
+     system.yaml             — Layer 0: defaults DuarteOS (read-only)
+     project.yaml            — Layer 1: configuracao do projeto
+     user.yaml.example       — Layer 2: template para preferencias pessoais
+
+  Task Templates (.claude/task-templates/) — 37 templates em 6 categorias:
+     spec/                   — 6 templates de especificacao
+     dev/                    — 8 templates de desenvolvimento
+     qa/                     — 6 templates de qualidade
+     db/                     — 6 templates de banco de dados
+     ops/                    — 6 templates de operacoes
+     sec/                    — 5 templates de seguranca
+
+  Synapse (.claude/synapse/) — estado dos agentes:
+     template.yaml           — Template de estado por agente
+     {agent-id}.yaml         — Criado automaticamente ao ativar agente
+
+  IDE Templates (.claude/ide-templates/) — sincronizacao multi-IDE:
+     cursor.md.tmpl          — Template para .cursorrules
+     windsurf.md.tmpl        — Template para .windsurfrules
+     copilot.md.tmpl         — Template para copilot-instructions.md
+
+  Hooks instalados (.claude/hooks/) — 9 quality gates:
      post-edit-lint.sh       — Auto-lint apos editar arquivos
+     architecture-review.sh  — Valida estrutura de novos arquivos
      pre-commit-check.sh     — TypeScript + ESLint + testes antes do commit
+     test-coverage-gate.sh   — Cobertura minima de testes
+     docs-gate.sh            — Alerta se API mudou sem docs
+     dependency-audit.sh     — Auditoria de dependencias
      security-gate.sh        — Bloqueia comandos perigosos
+     bundle-size-gate.sh     — Alerta se bundle excede threshold
      session-memory.sh       — Salva contexto da sessao ao encerrar
 
   Agentes customizados (.claude/agents/) — 6 especialistas:

@@ -11,6 +11,10 @@
           {
             "type": "command",
             "command": "bash .claude/hooks/post-edit-lint.sh $FILE_PATH"
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/architecture-review.sh $FILE_PATH 2>/dev/null || true"
           }
         ]
       }
@@ -22,6 +26,14 @@
           {
             "type": "command",
             "command": "bash .claude/hooks/security-gate.sh \"$INPUT\""
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/test-coverage-gate.sh \"$INPUT\" 2>/dev/null || true"
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/dependency-audit.sh \"$INPUT\" 2>/dev/null || true"
           }
         ]
       }

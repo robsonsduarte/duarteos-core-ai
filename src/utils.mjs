@@ -32,18 +32,38 @@ export function showHelp() {
     .claude/
       settings.json              Configuracao com hooks e agent teams
       session-context.md         Template de contexto de sessao
-      hooks/                     4 quality gates automaticos
+      protocols/                 7 documentos de governanca
+        CONSTITUTION.md          15 principios inviolaveis (4 artigos)
+        GOVERNANCE.md            Convencoes de nomenclatura formal
+        CONFIG-PROTOCOL.md       Documentacao do 4-Layer Config
+        SYNAPSE.md               Protocolo da state machine
+        QUALITY-GATES.md         Protocolo dos 9 quality gates
+        IDE-SYNC.md              Protocolo de sincronizacao IDE
+        README.md                Indice de todos os protocolos
+      config/                    4-Layer Config System
+        system.yaml              Layer 0: defaults DuarteOS (read-only)
+        project.yaml             Layer 1: config do projeto (customizavel)
+        user.yaml.example        Layer 2: template (gitignored)
+      hooks/                     9 quality gates automaticos
         post-edit-lint.sh        Auto-lint apos editar arquivos
         pre-commit-check.sh      TypeScript + ESLint + testes antes do commit
         security-gate.sh         Bloqueia comandos perigosos
         session-memory.sh        Salva contexto da sessao ao encerrar
+        architecture-review.sh   Valida padroes arquiteturais apos editar
+        test-coverage-gate.sh    Verifica cobertura de testes
+        dependency-audit.sh      Audita dependencias vulneraveis
+        docs-gate.sh             Verifica documentacao antes do commit
+        bundle-size-gate.sh      Alerta de tamanho de bundle
+      synapse/                   State Machine por agente
+        README.md                Documentacao do Synapse
+        template.yaml            Template de estado do agente
       agents/                    6 agentes especializados customizados
-        python-executor.md       SPARK: Execucao Python (analise, automacao, scripts)
-        data-scientist.md        LENS: Analise de dados, ML, visualizacoes
-        devops.md                VAULT: Docker, CI/CD, infra, deploy
-        security-auditor.md      SPECTER: Auditoria OWASP, vulnerabilidades
-        fullstack.md             BRIDGE: Full-stack rapido (front + back + banco)
-        system-builder.md        TITAN: Constroi sistemas completos (App Factory)
+        python-executor.md       SPARK: Execucao Python
+        data-scientist.md        LENS: Analise de dados, ML
+        devops.md                VAULT: Docker, CI/CD, infra
+        security-auditor.md      SPECTER: Auditoria OWASP
+        fullstack.md             BRIDGE: Full-stack rapido
+        system-builder.md        TITAN: Constroi sistemas completos
       agent-memory/              Memoria persistente por agente
         README.md                Documentacao do sistema de memoria
         _global/PATTERNS.md      Padroes confirmados por 3+ agentes
@@ -55,6 +75,19 @@ export function showHelp() {
         fullstack/               backend-lead + frontend-lead + qa-lead
         data-science/            analyst + pipeline-builder + validator
         automation/              orchestrator + script-builder + tester
+      ide-templates/             Multi-IDE Sync
+        cursor.md.tmpl           Template para .cursorrules
+        windsurf.md.tmpl         Template para .windsurfrules
+        copilot.md.tmpl          Template para copilot-instructions.md
+        README.md                Documentacao do IDE Sync
+      task-templates/            39 templates de tasks por categoria
+        spec/                    6 templates (feature, api-contract, prd, ...)
+        dev/                     8 templates (endpoint, component, refactor, ...)
+        qa/                      6 templates (test-suite, code-review, ...)
+        db/                      6 templates (migration, seed, rls-policy, ...)
+        ops/                     6 templates (ci-cd, docker, deploy, ...)
+        sec/                     5 templates (owasp-audit, dependency-scan, ...)
+        README.md                Indice de todos os templates
       commands/
         agents/                  7 agentes deliberativos + squad
           squad.md               Orquestrador multi-agente (13 personas)
@@ -65,7 +98,7 @@ export function showHelp() {
           qa.md                  SENTINEL: Analista de Qualidade
           context-engineer.md    COMPASS: Engenheiro de Coerencia
           devils-advocate.md     SHADOW: Advogado do Diabo (Red Team)
-        squad/                   18 comandos GSD-powered
+        squad/                   22 comandos GSD-powered
           new-project.md         Inicializar projeto/milestone
           map-codebase.md        Mapear codebase (4 agentes paralelos)
           plan-phase.md          Planejar fase do roadmap
@@ -85,6 +118,9 @@ export function showHelp() {
           list-squads.md         Listar squads do projeto
           run-squad.md           Executar squad numa demanda
           clone-mind.md          DNA Mental: clonar mente de especialista
+          task.md                Executar task template
+          synapse.md             Ver estado dos agentes
+          sync-ide.md            Sincronizar configs de IDE
       scripts/                   Scripts de setup
         setup-python.sh          Instala Python + deps dos MCP servers
         setup-sandbox.sh         Configura E2B ou Docker sandbox
@@ -96,7 +132,7 @@ export function showHelp() {
         memory-graph/            Grafo de conhecimento persistente entre sessoes
         tool-forge/              Cria novas tools dinamicamente (tool evolution)
         redis-session/           Sessoes persistentes no Redis (save/restore/cleanup)
-        redis-task-manager/      Tasks multi-agente com dependencias (create/assign/complete)
+        redis-task-manager/      Tasks multi-agente com dependencias
     .planning/
       config.json                Configuracao do workflow GSD
     .mcp.json                    23 MCP Servers pre-configurados

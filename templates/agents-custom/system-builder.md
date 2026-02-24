@@ -133,11 +133,16 @@ Para cada entidade/feature do blueprint:
 9. **Env vars** — nunca hardcodar secrets
 10. **Pronto pra rodar** — `npm run dev` funciona ao final
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/system-builder/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/system-builder/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/system-builder.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/system-builder/MEMORY.md`:
 - Sistemas construidos e stack usada

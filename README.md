@@ -1,8 +1,8 @@
 # DuarteOS Core AI
 
-AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente e capacidade de criar squads customizados.
+AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com Squad Factory, Mind Clone e Agent Memory.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -21,6 +21,13 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.0.0](#novidades-v500)
+  - [Constitution](#constitution)
+  - [4-Layer Config](#4-layer-config)
+  - [Task Templates](#task-templates)
+  - [Synapse State Machine](#synapse-state-machine)
+  - [Quality Gates](#quality-gates)
+  - [Multi-IDE Sync](#multi-ide-sync)
 - [Todos os Comandos](#todos-os-comandos)
 - [Todos os Agentes](#todos-os-agentes)
 - [Todos os MCP Servers](#todos-os-mcp-servers)
@@ -39,7 +46,7 @@ Abra o terminal na pasta do seu projeto e execute:
 npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init
 ```
 
-Pronto. ~80 arquivos foram instalados. Nao precisa de mais nada.
+Pronto. ~140 arquivos foram instalados. Nao precisa de mais nada.
 
 **Outras formas de instalar:**
 
@@ -142,6 +149,10 @@ O update atualiza todos os arquivos do sistema (agentes, comandos, hooks, MCPs, 
 - `.claude/settings.json` — suas configuracoes
 - `.claude/session-context.md` — seu contexto de sessao
 - `.claude/memory.json` — seu grafo de conhecimento
+- `.claude/config/project.yaml` — sua config de projeto
+- `.claude/config/user.yaml` — sua config pessoal
+- `.claude/synapse/*.yaml` — estado dos seus agentes
+- `.claude/agent-memory/*/MEMORY.md` — memorias dos agentes
 
 Arquivos identicos sao pulados. So atualiza o que mudou.
 
@@ -708,6 +719,116 @@ checks e cria script de deploy pro servidor.
 
 ---
 
+## Novidades v5.0.0
+
+### Constitution
+
+Documento formal com **15 principios inviolaveis** em 4 artigos que todos os agentes devem seguir:
+
+| Artigo | Tema | Exemplos |
+|--------|------|----------|
+| 1. Seguranca | Protecao contra danos | Nunca deletar sem backup, nunca expor secrets |
+| 2. Qualidade | Padrao de codigo | Ler antes de editar, verificar antes de declarar pronto |
+| 3. Etica | Conduta | Sem melhorias nao solicitadas, honestidade sobre erros |
+| 4. Processo | Fluxo de trabalho | Mudancas atomicas, loop fechado, simplicidade |
+
+Localizado em `.claude/protocols/CONSTITUTION.md`. Lido por todos os agentes no inicio de cada sessao.
+
+### 4-Layer Config
+
+Sistema de configuracao em 4 camadas com merge inteligente:
+
+| Layer | Arquivo | Quem controla | Sobrescrito no update? |
+|-------|---------|--------------|----------------------|
+| 0 — System | `config/system.yaml` | DuarteOS | Sim |
+| 1 — Project | `config/project.yaml` | Time | Nunca |
+| 2 — User | `config/user.yaml` | Desenvolvedor | Nunca (gitignored) |
+| 3 — Session | Instrucoes de sessao | Cada sessao | Efemera |
+
+**Merge:** Session > User > Project > System (camada posterior sobrescreve anterior).
+
+Configuracoes disponiveis: modelo dos agentes, estilo de saudacao, quality gates, features habilitadas, convencoes de naming, sync de IDE.
+
+### Task Templates
+
+**39 templates** de tasks organizados em 6 categorias:
+
+| Categoria | Templates | Exemplos |
+|-----------|-----------|----------|
+| `spec/` | 6 | Feature spec, API contract, PRD, user story |
+| `dev/` | 8 | Endpoint, component, refactor, integration, hotfix |
+| `qa/` | 6 | Test suite, code review, regression, performance |
+| `db/` | 6 | Migration, seed, RLS policy, index optimization |
+| `ops/` | 6 | CI/CD, Docker, deploy, monitoring, scaling |
+| `sec/` | 5 | OWASP audit, dependency scan, penetration plan |
+
+Cada template tem formato padrao: Objetivo, Contexto, Pre-requisitos, Passos, Criterios de Aceite, Entregaveis, Verificacao.
+
+**Uso:**
+```
+/squad:task dev-api-endpoint "CRUD de produtos com validacao"
+/squad:task qa-test-suite "cobertura do modulo de autenticacao"
+/squad:task db-migration "adicionar tabela de notificacoes"
+```
+
+### Synapse State Machine
+
+Estado de cada agente rastreado em tempo real via YAML:
+
+**Estados:** `idle` → `activated` → `analyzing` → `planning` → `executing` → `reviewing` → `completed`
+Transicao especial: qualquer estado → `blocked` → estado anterior.
+
+Cada agente tem um arquivo `.claude/synapse/{agent-id}.yaml` com:
+- Estado atual
+- Task em andamento
+- Timestamp de inicio
+- Historico de transicoes
+- Bloqueios
+
+**Uso:**
+```
+/squad:synapse          # Ver estado de todos os agentes (tabela)
+```
+
+### Quality Gates
+
+Pipeline de validacao expandido de **4 para 9 hooks**:
+
+| Gate | Quando roda | O que faz |
+|------|------------|-----------|
+| `security-gate.sh` | Pre-Bash | Bloqueia comandos destrutivos |
+| `post-edit-lint.sh` | Pos-Edit/Write | Auto-lint |
+| `architecture-review.sh` | Pos-Edit/Write | Valida padroes arquiteturais |
+| `pre-commit-check.sh` | Pre-Commit | TypeScript + ESLint + testes |
+| `test-coverage-gate.sh` | Pre-Bash | Verifica cobertura de testes |
+| `dependency-audit.sh` | Pre-Bash | Audita vulnerabilidades em deps |
+| `docs-gate.sh` | Pre-Bash | Verifica documentacao |
+| `bundle-size-gate.sh` | Pre-Bash | Alerta de tamanho de bundle |
+| `session-memory.sh` | Session End | Salva contexto da sessao |
+
+Documentado em `.claude/protocols/QUALITY-GATES.md`.
+
+### Multi-IDE Sync
+
+Gera configs para outros editores a partir do DuarteOS:
+
+| IDE | Arquivo gerado | Template |
+|-----|---------------|----------|
+| Cursor | `.cursorrules` | `ide-templates/cursor.md.tmpl` |
+| Windsurf | `.windsurfrules` | `ide-templates/windsurf.md.tmpl` |
+| GitHub Copilot | `.github/copilot-instructions.md` | `ide-templates/copilot.md.tmpl` |
+
+Os templates leem Constitution + Governance + Config + CLAUDE.md e geram um arquivo IDE-especifico com as mesmas regras.
+
+**Uso:**
+```
+/squad:sync-ide cursor       # Gera .cursorrules
+/squad:sync-ide windsurf     # Gera .windsurfrules
+/squad:sync-ide copilot      # Gera copilot-instructions.md
+```
+
+---
+
 ## Todos os Comandos
 
 ### Agentes (chamada direta)
@@ -751,6 +872,14 @@ checks e cria script de deploy pro servidor.
 | `/squad:list-squads` | Lista squads do projeto |
 | `/squad:run-squad [nome] [demanda]` | Executa squad numa demanda |
 | `/squad:clone-mind [nome]` | **DNA Mental** — clona mente de especialista em agente |
+
+### Task Templates + Synapse + IDE Sync (v5.0.0)
+
+| Comando | O que faz |
+|---------|-----------|
+| `/squad:task [template] [contexto]` | Executa task template (spec, dev, qa, db, ops, sec) |
+| `/squad:synapse` | Ver estado de todos os agentes (state machine) |
+| `/squad:sync-ide [cursor\|windsurf\|copilot]` | Gera config para IDE a partir do DuarteOS |
 
 ---
 
@@ -922,43 +1051,53 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 
 ## Referencia Tecnica
 
-### O que instala (~80 arquivos)
+### O que instala (~140 arquivos)
 
 ```
 .claude/
   settings.json                    # Config com hooks + agent teams
   session-context.md               # Contexto persistente entre sessoes
-  hooks/                           # 4 quality gates automaticos
+  protocols/                       # 7 documentos de governanca
+    CONSTITUTION.md, GOVERNANCE.md, CONFIG-PROTOCOL.md,
+    SYNAPSE.md, QUALITY-GATES.md, IDE-SYNC.md, README.md
+  config/                          # 4-Layer Config System
+    system.yaml (L0), project.yaml (L1), user.yaml.example (L2)
+  hooks/                           # 9 quality gates automaticos
+    post-edit-lint.sh, pre-commit-check.sh, security-gate.sh,
+    session-memory.sh, architecture-review.sh, test-coverage-gate.sh,
+    dependency-audit.sh, docs-gate.sh, bundle-size-gate.sh
+  synapse/                         # State Machine por agente
+    README.md, template.yaml
   agents/                          # 6 custom agents (com personas)
     system-builder.md (TITAN), python-executor.md (SPARK),
     data-scientist.md (LENS), devops.md (VAULT),
     security-auditor.md (SPECTER), fullstack.md (BRIDGE)
   agent-memory/                    # Memoria persistente por agente
-    README.md                      # Documentacao do sistema
-    _global/PATTERNS.md            # Padroes confirmados por 3+ agentes
-    _meta/promotion-log.md         # Historico de promocoes
+    README.md, _global/PATTERNS.md, _meta/promotion-log.md
   blueprints/
     blueprint-template.md          # Template de blueprint
   squad-templates/                 # 4 templates de squads
-    basic/                         # lead + executor
-    fullstack/                     # backend-lead + frontend-lead + qa-lead
-    data-science/                  # analyst + pipeline-builder + validator
-    automation/                    # orchestrator + script-builder + tester
+    basic/, fullstack/, data-science/, automation/
+  ide-templates/                   # Multi-IDE Sync
+    cursor.md.tmpl, windsurf.md.tmpl, copilot.md.tmpl, README.md
+  task-templates/                  # 39 templates de tasks
+    spec/ (6), dev/ (8), qa/ (6), db/ (6), ops/ (6), sec/ (5)
+    README.md
   commands/
     agents/                        # 7 agentes deliberativos (com personas)
       squad.md, pm.md (ATLAS), architect.md (NEXUS),
       backend.md (FORGE), frontend.md (PRISM), qa.md (SENTINEL),
       context-engineer.md (COMPASS), devils-advocate.md (SHADOW)
-    squad/                         # 19 comandos GSD-powered
+    squad/                         # 22 comandos GSD-powered
       build-system.md, new-project.md, map-codebase.md,
       plan-phase.md, execute-phase.md, verify-work.md,
       discuss-phase.md, research-phase.md, validate-plan.md,
       audit.md, quick.md, debug.md, progress.md, pause.md, resume.md,
-      create-squad.md, list-squads.md, run-squad.md, clone-mind.md
+      create-squad.md, list-squads.md, run-squad.md, clone-mind.md,
+      task.md, synapse.md, sync-ide.md
     setup-mcps.md                  # Guia de configuracao dos MCPs
   scripts/
-    setup-python.sh                # Setup Python + deps
-    setup-sandbox.sh               # Setup E2B / Docker
+    setup-python.sh, setup-sandbox.sh
   mcp-servers/                     # 8 Python MCP Servers
     input-analyzer/, memory-graph/, tool-forge/,
     data-analyzer/, web-scraper/, automation/,
@@ -974,9 +1113,14 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 
 | Hook | Quando roda | O que faz |
 |------|------------|-----------|
-| `post-edit-lint.sh` | Apos editar arquivo | Roda ESLint/Biome/Prettier automaticamente |
-| `pre-commit-check.sh` | Antes de git commit | Verifica TypeScript + lint + testes |
 | `security-gate.sh` | Antes de rodar comando | Bloqueia `rm -rf /`, `DROP DATABASE`, etc |
+| `post-edit-lint.sh` | Apos editar arquivo | Roda ESLint/Biome/Prettier automaticamente |
+| `architecture-review.sh` | Apos editar arquivo | Valida padroes arquiteturais |
+| `pre-commit-check.sh` | Antes de git commit | Verifica TypeScript + lint + testes |
+| `test-coverage-gate.sh` | Antes de rodar comando | Verifica cobertura de testes |
+| `dependency-audit.sh` | Antes de rodar comando | Audita dependencias vulneraveis |
+| `docs-gate.sh` | Antes de rodar comando | Verifica documentacao |
+| `bundle-size-gate.sh` | Antes de rodar comando | Alerta de tamanho de bundle |
 | `session-memory.sh` | Ao encerrar sessao | Salva timestamp no session-context.md |
 
 ### Arquitetura
@@ -987,7 +1131,8 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
                          └─────────┬──────────┘
                                    │
                     ┌──────────────▼──────────────┐
-                    │     DuarteOS Core AI v4     │
+                    │     DuarteOS Core AI v5     │
+                    │  constitution + config +    │
                     │  personas + memory + squads │
                     └──────────────┬──────────────┘
                                    │
@@ -996,28 +1141,35 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 ┌──▼───┐ ┌───▼───┐ ┌─────▼─────┐ ┌▼──┐ ┌──▼────┐ ┌───▼───┐ ┌───▼───┐
 │7 Delib│ │6 Custom│ │Squad     │ │GSD│ │23 MCPs│ │App    │ │Mind   │
 │Agents │ │Agents  │ │Factory   │ │   │ │15 Node│ │Factory│ │Clone  │
-│ATLAS  │ │TITAN   │ │4 tmpls   │ │19 │ │8 Py   │ │build  │ │DNA    │
+│ATLAS  │ │TITAN   │ │4 tmpls   │ │22 │ │8 Py   │ │build  │ │DNA    │
 │NEXUS  │ │SPARK   │ │create    │ │cmd│ │1 Sand │ │system │ │Mental │
 │FORGE  │ │LENS    │ │list/run  │ │   │ │       │ │       │ │5 fases│
 │PRISM  │ │VAULT   │ │          │ └───┘ └───────┘ └───────┘ └───────┘
 │SENT.  │ │SPECTER │ └──────────┘
-│COMP.  │ │BRIDGE  │     ┌──────────────┐
-│SHADOW │ └────────┘     │Agent Memory  │
-└───────┘                │per-agent +   │
-                         │global promote│
-                         └──────────────┘
+│COMP.  │ │BRIDGE  │     ┌─────────────────┐   ┌───────────────┐
+│SHADOW │ └────────┘     │Agent Memory     │   │Constitution   │
+└───────┘                │per-agent +      │   │Governance     │
+  ┌──────────┐           │global promote   │   │4-Layer Config │
+  │Synapse   │           └─────────────────┘   │9 Quality Gates│
+  │State     │   ┌──────────────┐              │39 Task Tmpls  │
+  │Machine   │   │IDE Sync      │              │IDE Sync       │
+  │per-agent │   │cursor/wind/  │              └───────────────┘
+  └──────────┘   │copilot       │
+                 └──────────────┘
 ```
 
 ### Principios
 
-1. **Nenhum agente pode apenas analisar** — Detectar → Provar → Agir
-2. **Critica sem alternativa e invalida** — sempre apresentar alternativa
-3. **QA sempre entrega prova** — sem teste/evidencia, invalido
-4. **Loop fechado** — evidencia + acao + proximo passo
-5. **YOLO mode** — executa tudo, so pergunta quando critico
-6. **Tool evolution** — agentes criam ferramentas quando precisam
-7. **Memory persistence** — conhecimento sobrevive entre sessoes
-8. **Disciplina > ritual** — se regra virar burocracia, simplificar
+1. **Constitution enforced** — 15 principios inviolaveis governam todos os agentes
+2. **Nenhum agente pode apenas analisar** — Detectar → Provar → Agir
+3. **Critica sem alternativa e invalida** — sempre apresentar alternativa
+4. **QA sempre entrega prova** — sem teste/evidencia, invalido
+5. **Loop fechado** — evidencia + acao + proximo passo
+6. **YOLO mode** — executa tudo, so pergunta quando critico
+7. **Tool evolution** — agentes criam ferramentas quando precisam
+8. **Memory persistence** — conhecimento sobrevive entre sessoes
+9. **Config layered** — system → project → user → session
+10. **Disciplina > ritual** — se regra virar burocracia, simplificar
 
 ### Pre-requisitos
 

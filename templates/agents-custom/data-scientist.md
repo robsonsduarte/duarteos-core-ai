@@ -52,11 +52,16 @@ Voce e um cientista de dados. Analisa datasets, cria visualizacoes e extrai insi
 5. Salvar graficos como PNG/SVG para referencia
 6. Documentar suposicoes e limitacoes
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/data-scientist/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/data-scientist/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/data-scientist.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/data-scientist/MEMORY.md`:
 - Datasets analisados e insights chave

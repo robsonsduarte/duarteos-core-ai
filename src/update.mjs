@@ -130,6 +130,81 @@ export function update(options = {}) {
     ['agent-memory/README.md', '.claude/agent-memory/README.md'],
     ['agent-memory/_global/PATTERNS.md', '.claude/agent-memory/_global/PATTERNS.md'],
     ['agent-memory/_meta/promotion-log.md', '.claude/agent-memory/_meta/promotion-log.md'],
+
+    // v5.0.0 — Protocols (system-owned, always updated)
+    ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
+    ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
+    ['protocols/README.md', '.claude/protocols/README.md'],
+    ['protocols/CONFIG-PROTOCOL.md', '.claude/protocols/CONFIG-PROTOCOL.md'],
+    ['protocols/SYNAPSE.md', '.claude/protocols/SYNAPSE.md'],
+    ['protocols/QUALITY-GATES.md', '.claude/protocols/QUALITY-GATES.md'],
+    ['protocols/IDE-SYNC.md', '.claude/protocols/IDE-SYNC.md'],
+
+    // v5.0.0 — Config (system.yaml is system-owned)
+    ['config/system.yaml', '.claude/config/system.yaml'],
+    ['config/user.yaml.example', '.claude/config/user.yaml.example'],
+
+    // v5.0.0 — Synapse (structure files)
+    ['synapse/README.md', '.claude/synapse/README.md'],
+    ['synapse/template.yaml', '.claude/synapse/template.yaml'],
+
+    // v5.0.0 — New Commands
+    ['commands/squad/task.md', '.claude/commands/squad/task.md'],
+    ['commands/squad/synapse.md', '.claude/commands/squad/synapse.md'],
+    ['commands/squad/sync-ide.md', '.claude/commands/squad/sync-ide.md'],
+
+    // v5.0.0 — Quality Gates (new hooks)
+    ['hooks/architecture-review.sh', '.claude/hooks/architecture-review.sh'],
+    ['hooks/test-coverage-gate.sh', '.claude/hooks/test-coverage-gate.sh'],
+    ['hooks/dependency-audit.sh', '.claude/hooks/dependency-audit.sh'],
+    ['hooks/docs-gate.sh', '.claude/hooks/docs-gate.sh'],
+    ['hooks/bundle-size-gate.sh', '.claude/hooks/bundle-size-gate.sh'],
+
+    // v5.0.0 — IDE Templates
+    ['ide-templates/cursor.md.tmpl', '.claude/ide-templates/cursor.md.tmpl'],
+    ['ide-templates/windsurf.md.tmpl', '.claude/ide-templates/windsurf.md.tmpl'],
+    ['ide-templates/copilot.md.tmpl', '.claude/ide-templates/copilot.md.tmpl'],
+    ['ide-templates/README.md', '.claude/ide-templates/README.md'],
+
+    // v5.0.0 — Task Templates (system-owned)
+    ['task-templates/README.md', '.claude/task-templates/README.md'],
+    ['task-templates/spec/spec-feature.md', '.claude/task-templates/spec/spec-feature.md'],
+    ['task-templates/spec/spec-api-contract.md', '.claude/task-templates/spec/spec-api-contract.md'],
+    ['task-templates/spec/spec-prd.md', '.claude/task-templates/spec/spec-prd.md'],
+    ['task-templates/spec/spec-user-story.md', '.claude/task-templates/spec/spec-user-story.md'],
+    ['task-templates/spec/spec-migration-plan.md', '.claude/task-templates/spec/spec-migration-plan.md'],
+    ['task-templates/spec/spec-architecture-decision.md', '.claude/task-templates/spec/spec-architecture-decision.md'],
+    ['task-templates/dev/dev-api-endpoint.md', '.claude/task-templates/dev/dev-api-endpoint.md'],
+    ['task-templates/dev/dev-component.md', '.claude/task-templates/dev/dev-component.md'],
+    ['task-templates/dev/dev-refactor.md', '.claude/task-templates/dev/dev-refactor.md'],
+    ['task-templates/dev/dev-integration.md', '.claude/task-templates/dev/dev-integration.md'],
+    ['task-templates/dev/dev-migration.md', '.claude/task-templates/dev/dev-migration.md'],
+    ['task-templates/dev/dev-hotfix.md', '.claude/task-templates/dev/dev-hotfix.md'],
+    ['task-templates/dev/dev-feature.md', '.claude/task-templates/dev/dev-feature.md'],
+    ['task-templates/dev/dev-hook.md', '.claude/task-templates/dev/dev-hook.md'],
+    ['task-templates/qa/qa-test-suite.md', '.claude/task-templates/qa/qa-test-suite.md'],
+    ['task-templates/qa/qa-code-review.md', '.claude/task-templates/qa/qa-code-review.md'],
+    ['task-templates/qa/qa-regression.md', '.claude/task-templates/qa/qa-regression.md'],
+    ['task-templates/qa/qa-performance.md', '.claude/task-templates/qa/qa-performance.md'],
+    ['task-templates/qa/qa-accessibility.md', '.claude/task-templates/qa/qa-accessibility.md'],
+    ['task-templates/qa/qa-e2e.md', '.claude/task-templates/qa/qa-e2e.md'],
+    ['task-templates/db/db-migration.md', '.claude/task-templates/db/db-migration.md'],
+    ['task-templates/db/db-seed.md', '.claude/task-templates/db/db-seed.md'],
+    ['task-templates/db/db-rls-policy.md', '.claude/task-templates/db/db-rls-policy.md'],
+    ['task-templates/db/db-index-optimization.md', '.claude/task-templates/db/db-index-optimization.md'],
+    ['task-templates/db/db-backup-plan.md', '.claude/task-templates/db/db-backup-plan.md'],
+    ['task-templates/db/db-schema-design.md', '.claude/task-templates/db/db-schema-design.md'],
+    ['task-templates/ops/ops-ci-cd.md', '.claude/task-templates/ops/ops-ci-cd.md'],
+    ['task-templates/ops/ops-docker.md', '.claude/task-templates/ops/ops-docker.md'],
+    ['task-templates/ops/ops-deploy.md', '.claude/task-templates/ops/ops-deploy.md'],
+    ['task-templates/ops/ops-monitoring.md', '.claude/task-templates/ops/ops-monitoring.md'],
+    ['task-templates/ops/ops-ssl-cert.md', '.claude/task-templates/ops/ops-ssl-cert.md'],
+    ['task-templates/ops/ops-scaling.md', '.claude/task-templates/ops/ops-scaling.md'],
+    ['task-templates/sec/sec-owasp-audit.md', '.claude/task-templates/sec/sec-owasp-audit.md'],
+    ['task-templates/sec/sec-dependency-scan.md', '.claude/task-templates/sec/sec-dependency-scan.md'],
+    ['task-templates/sec/sec-penetration-plan.md', '.claude/task-templates/sec/sec-penetration-plan.md'],
+    ['task-templates/sec/sec-incident-response.md', '.claude/task-templates/sec/sec-incident-response.md'],
+    ['task-templates/sec/sec-auth-review.md', '.claude/task-templates/sec/sec-auth-review.md'],
   ]
 
   // Files that are NEVER overwritten (user data)
@@ -156,6 +231,23 @@ export function update(options = {}) {
     '.claude/agent-memory/system-builder/MEMORY.md',
     // User squads — custom squads are NEVER overwritten
     'squads/',
+    // v5.0.0 — User config and agent state (NEVER overwritten)
+    '.claude/config/project.yaml',
+    '.claude/config/user.yaml',
+    // Synapse agent state files are NEVER overwritten
+    '.claude/synapse/pm.yaml',
+    '.claude/synapse/architect.yaml',
+    '.claude/synapse/backend.yaml',
+    '.claude/synapse/frontend.yaml',
+    '.claude/synapse/qa.yaml',
+    '.claude/synapse/context-engineer.yaml',
+    '.claude/synapse/devils-advocate.yaml',
+    '.claude/synapse/python-executor.yaml',
+    '.claude/synapse/data-scientist.yaml',
+    '.claude/synapse/devops.yaml',
+    '.claude/synapse/security-auditor.yaml',
+    '.claude/synapse/fullstack.yaml',
+    '.claude/synapse/system-builder.yaml',
   ]
 
   let updated = 0
@@ -223,7 +315,10 @@ export function update(options = {}) {
     .claude/settings.json   — suas configuracoes
     .claude/session-context.md — seu contexto de sessao
     .claude/memory.json     — seu grafo de conhecimento
+    .claude/config/project.yaml — configuracao do projeto
+    .claude/config/user.yaml — suas preferencias pessoais
     .claude/agent-memory/*/MEMORY.md — memorias individuais dos agentes
+    .claude/synapse/*.yaml  — estado dos agentes
     squads/                 — seus squads customizados
 `)
 }

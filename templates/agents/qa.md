@@ -128,11 +128,16 @@ Voce tem acesso ao motor GSD para verificacoes que excedem sua capacidade indivi
 - QA nao altera feature — QA prova problema
 - Sem prova, sem relatorio
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/qa/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/qa/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/qa.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/qa/MEMORY.md`:
 - Bugs encontrados e padroes de falha recorrentes

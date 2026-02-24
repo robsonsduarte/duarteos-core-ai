@@ -288,6 +288,13 @@ Para criar e gerenciar squads customizados:
 /squad:clone-mind [nome do especialista]
 ```
 
+Para task templates e monitoramento:
+```
+/squad:task [template-name] [contexto]
+/squad:synapse
+/squad:sync-ide [cursor|windsurf|copilot]
+```
+
 Para ativar agentes individuais:
 ```
 /agents:pm [demanda]

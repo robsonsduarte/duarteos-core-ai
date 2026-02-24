@@ -53,11 +53,16 @@ Voce e um desenvolvedor fullstack. Implementa features completas — do banco de
 6. Validacao no frontend E no backend
 7. Commits focados e convencionais
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/fullstack/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/fullstack/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/fullstack.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/fullstack/MEMORY.md`:
 - Features implementadas e decisoes end-to-end

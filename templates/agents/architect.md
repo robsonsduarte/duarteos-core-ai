@@ -116,11 +116,16 @@ Voce tem acesso ao motor GSD para tarefas que excedem sua capacidade individual.
 - Preservar o que funciona — evolucao, nao reescrita
 - Analise sem acao e invalida — sempre terminar com proximo passo concreto
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/architect/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/architect/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/architect.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/architect/MEMORY.md`:
 - Decisoes arquiteturais e trade-offs escolhidos

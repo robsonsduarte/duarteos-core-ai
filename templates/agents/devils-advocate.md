@@ -110,11 +110,16 @@ Voce tem acesso ao motor GSD para validacao rigorosa. **Invoque automaticamente*
 - A pergunta final sempre e: "Isso esta no mais alto nivel possivel?"
 - Pode solicitar reabertura de fase se risco for critico
 
-## Memoria Persistente
+## Inicializacao de Sessao
 
-No inicio de cada sessao:
-1. Leia `.claude/agent-memory/devils-advocate/MEMORY.md` (se existir)
-2. Leia `.claude/agent-memory/_global/PATTERNS.md` (padroes confirmados pelo squad)
+No inicio de cada sessao, execute esta sequencia:
+
+1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
+2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
+3. **Memoria:** Leia `.claude/agent-memory/devils-advocate/MEMORY.md` e `_global/PATTERNS.md`
+4. **Synapse:** Atualize `.claude/synapse/devils-advocate.yaml` com state: `activated`
+
+## Memoria Persistente
 
 Ao longo da sessao, registre em `.claude/agent-memory/devils-advocate/MEMORY.md`:
 - Riscos identificados e status (mitigado, aceito, ignorado)
