@@ -1,0 +1,39 @@
+{
+  "name": "duarteos-core-ai",
+  "version": "1.0.0",
+  "description": "Sistema multi-agente deliberativo-executivo para Claude Code. 7 agentes especializados + GSD integration + Squad orchestration.",
+  "type": "module",
+  "bin": {
+    "duarteos": "./bin/duarteos.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node src/cli.mjs --help"
+  },
+  "keywords": [
+    "claude-code",
+    "ai-agents",
+    "multi-agent",
+    "gsd",
+    "squad",
+    "orchestration",
+    "devtools",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Robson Duarte",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robsonsduarte/duarteos-core-ai.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
