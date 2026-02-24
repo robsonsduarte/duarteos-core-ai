@@ -724,7 +724,7 @@ Estes sao agentes especializados com tools e permissoes especificas.
 
 ## Todos os MCP Servers
 
-MCPs sao "ferramentas extras" que os agentes podem usar. 21 instalados.
+MCPs sao "ferramentas extras" que os agentes podem usar. 22 instalados.
 
 ### Funcionam sem configuracao (5)
 
@@ -755,7 +755,7 @@ MCPs sao "ferramentas extras" que os agentes podem usar. 21 instalados.
 | **Supabase** | Acesso direto ao banco | Project reference ID |
 | **n8n** | Gerencia workflows de automacao | URL + API key do n8n |
 
-### Python MCP Servers (7) — requerem `setup-python.sh`
+### Python MCP Servers (8) — requerem `setup-python.sh`
 
 | MCP | O que faz |
 |-----|-----------|
@@ -766,6 +766,7 @@ MCPs sao "ferramentas extras" que os agentes podem usar. 21 instalados.
 | **Web Scraper** | Faz scraping de sites, extrai tabelas, links, dados estruturados |
 | **Automation** | Encontra arquivos duplicados, analisa disco, renomeia em lote |
 | **Redis Session** | Sessoes persistentes — salva/restaura contexto, auto-cleanup, gestao de 30MB |
+| **Redis Task Manager** | Tasks multi-agente com dependencias, assignment e execucao paralela |
 
 ### Sandbox (1) — opcional
 
@@ -892,7 +893,7 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
   scripts/
     setup-python.sh                # Setup Python + deps
     setup-sandbox.sh               # Setup E2B / Docker
-  mcp-servers/                     # 7 Python MCP Servers
+  mcp-servers/                     # 8 Python MCP Servers
     input-analyzer/server.py
     memory-graph/server.py
     tool-forge/server.py
@@ -900,10 +901,11 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
     web-scraper/server.py
     automation/server.py
     redis-session/server.py
+    redis-task-manager/server.py
     requirements.txt
 .planning/
   config.json                      # Configuracao GSD
-.mcp.json                          # 22 MCP Servers
+.mcp.json                          # 23 MCP Servers
 .env.example                       # Template de variaveis de ambiente
 ```
 
@@ -931,9 +933,9 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
        ┌───────────────┬───────────┼───────────┬────────────────┐
        │               │           │           │                │
 ┌──────▼──────┐ ┌──────▼──────┐ ┌──▼──┐ ┌─────▼─────┐ ┌───────▼───────┐
-│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 22 MCPs   │ │ App Factory   │
+│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 23 MCPs   │ │ App Factory   │
 │ (commands/) │ │ (.claude/   │ │     │ │ 15 Node   │ │ build-system  │
-│             │ │  agents/)   │ │ 15  │ │ 7 Python  │ │ → Blueprint   │
+│             │ │  agents/)   │ │ 15  │ │ 8 Python  │ │ → Blueprint   │
 │ PM, Arch,   │ │ Builder,   │ │ cmds│ │ 1 Sandbox │ │ → Full System │
 │ Back, Front │ │ Python,    │ │     │ │           │ │               │
 │ QA, Context │ │ DataSci,   │ └─────┘ │ Memory    │ └───────────────┘

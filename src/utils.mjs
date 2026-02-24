@@ -75,7 +75,7 @@ export function showHelp() {
       scripts/                   Scripts de setup
         setup-python.sh          Instala Python + deps dos MCP servers
         setup-sandbox.sh         Configura E2B ou Docker sandbox
-      mcp-servers/               7 Python MCP servers (FastMCP)
+      mcp-servers/               8 Python MCP servers (FastMCP)
         data-analyzer/           Analise CSV, estatisticas, graficos
         web-scraper/             Web scraping avancado
         automation/              Automacao de sistema, file processing
@@ -83,6 +83,7 @@ export function showHelp() {
         memory-graph/            Grafo de conhecimento persistente entre sessoes
         tool-forge/              Cria novas tools dinamicamente (tool evolution)
         redis-session/           Sessoes persistentes no Redis (save/restore/cleanup)
+        redis-task-manager/      Tasks multi-agente com dependencias (create/assign/complete)
     .planning/
       config.json                Configuracao do workflow GSD
     .mcp.json                    22 MCP Servers pre-configurados
@@ -93,7 +94,8 @@ export function showHelp() {
               GitHub, REST API, Supabase, CodeRabbit, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking
     Python:   Data Analyzer, Web Scraper, Automation,
-              Input Analyzer, Memory Graph, Tool Forge
+              Input Analyzer, Memory Graph, Tool Forge,
+              Redis Session, Redis Task Manager
     Sandbox:  E2B (execucao segura de codigo)
 
   Pre-requisitos:

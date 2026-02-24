@@ -2,7 +2,7 @@
 
 Configure os MCP Servers do projeto. Cada servidor adiciona ferramentas externas ao Claude Code.
 
-## MCPs Incluidos (15 servidores)
+## MCPs Incluidos (16 servidores)
 
 ### Busca e Pesquisa
 | MCP Server | Pacote | O que faz | API Key |

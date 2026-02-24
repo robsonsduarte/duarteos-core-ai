@@ -149,6 +149,13 @@
         "REDIS_URL": "${REDIS_URL}"
       }
     },
+    "redis-task-manager": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/redis-task-manager/server.py"],
+      "env": {
+        "REDIS_URL": "${REDIS_URL}"
+      }
+    },
 
     "_comment_sandbox": "=== SANDBOX (opcional) ===",
 

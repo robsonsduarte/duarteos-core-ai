@@ -86,6 +86,7 @@ export function update(options = {}) {
     ['mcp-servers/memory-graph/server.py', '.claude/mcp-servers/memory-graph/server.py'],
     ['mcp-servers/tool-forge/server.py', '.claude/mcp-servers/tool-forge/server.py'],
     ['mcp-servers/redis-session/server.py', '.claude/mcp-servers/redis-session/server.py'],
+    ['mcp-servers/redis-task-manager/server.py', '.claude/mcp-servers/redis-task-manager/server.py'],
     ['mcp-servers/requirements.txt', '.claude/mcp-servers/requirements.txt'],
 
     // Setup MCPs guide

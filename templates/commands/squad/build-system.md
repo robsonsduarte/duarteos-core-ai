@@ -39,7 +39,7 @@ Este comando opera em YOLO mode por padrao:
 
 ## Como funciona
 
-### FASE 0 — INPUT ANALYSIS (automatica, ~2 min)
+### FASE 0 — INPUT ANALYSIS + TASK PLANNING (automatica, ~3 min)
 
 ```
 1. Detectar tipo de input:
@@ -63,6 +63,21 @@ Este comando opera em YOLO mode por padrao:
    - API endpoints (CRUD + custom)
    - Design (paleta de cores, tipografia, layout)
    - Features (priorizadas: MVP → Nice-to-have)
+
+4. CRIAR TASKS no Redis Task Manager:
+   PM usa create_tasks_batch() para criar todas as tasks do projeto
+   com dependencias entre elas. Exemplo:
+
+   [
+     {"temp_id": "t1", "title": "Database schema", "agent": "backend", "phase": "foundation", "priority": "P1"},
+     {"temp_id": "t2", "title": "Auth setup", "agent": "backend", "phase": "foundation", "priority": "P1", "blocked_by": ["t1"]},
+     {"temp_id": "t3", "title": "Layout base", "agent": "frontend", "phase": "foundation", "priority": "P1"},
+     {"temp_id": "t4", "title": "Auth pages", "agent": "frontend", "phase": "foundation", "priority": "P2", "blocked_by": ["t2", "t3"]},
+     {"temp_id": "t5", "title": "CRUD produtos", "agent": "backend", "phase": "features", "priority": "P2", "blocked_by": ["t1"]},
+     {"temp_id": "t6", "title": "Pagina produtos", "agent": "frontend", "phase": "features", "priority": "P2", "blocked_by": ["t5", "t3"]}
+   ]
+
+   O task manager resolve temp_ids para IDs reais e configura bloqueios automaticamente.
 ```
 
 ### FASE 1 — ARCHITECTURE DECISION (automatica, ~3 min)
@@ -85,53 +100,79 @@ Este comando opera em YOLO mode por padrao:
 4. PM aprova automaticamente se nao houve bloqueio critico
 ```
 
-### FASE 2 — FOUNDATION (auto-execute, ~10 min)
+### FASES 2-5 — EXECUCAO BASEADA EM TASKS (auto-execute)
+
+O PM usa o **Redis Task Manager** para orquestrar execucao multi-agente:
 
 ```
-Wave 1 — Infraestrutura:
-  - DevOps: scaffold do projeto (next.js, package.json, tsconfig, tailwind)
-  - Backend: database schema + migrations (SQL)
-  - Backend: auth setup (login, register, middleware, protected routes)
+LOOP DE EXECUCAO:
 
-Wave 2 — Base UI:
-  - Frontend: layout base (header, sidebar, main content)
-  - Frontend: design system (cores, tipografia, componentes base)
-  - Frontend: paginas de auth (login, register, forgot-password)
+1. PM chama get_next_tasks() → retorna tasks prontas (pending + sem bloqueios)
+   Resultado agrupado por agente:
+   {
+     "backend": [task_001, task_005],
+     "frontend": [task_003],
+     "devops": [task_002]
+   }
+
+2. PM spawna agentes em PARALELO:
+   - Cada agente recebe sua(s) task(s)
+   - Agente chama assign_task(id, agent) ao iniciar
+   - Agente executa o trabalho
+   - Agente chama complete_task(id, resultado) ao concluir
+
+3. complete_task() DESBLOQUEIA dependentes automaticamente:
+   - Remove o ID completado do blocked_by dos dependentes
+   - Se blocked_by ficou vazio → status muda de "blocked" para "pending"
+   - Na proxima iteracao, essas tasks aparecem em get_next_tasks()
+
+4. PM chama get_next_tasks() novamente → proximo wave
+5. Repete ate get_next_tasks() retornar vazio E nao haver tasks in_progress
+
+MONITORAMENTO:
+- get_project_board()  → visao Kanban com todas tasks por status
+- get_phase_status(fase) → progresso % de uma fase
+- get_blocked_tasks() → tasks travadas e seus bloqueios
+- fail_task(id, erro)  → marca falha, mostra tasks impactadas
 ```
 
-### FASE 3 — FEATURES (auto-execute, waves paralelas)
-
+**Exemplo de execucao multi-agente:**
 ```
-Para cada feature no BLUEPRINT.md, em ordem de prioridade:
+Wave 1 (get_next_tasks retorna t1, t2, t3):
+  Backend  → task_001 "Database schema"     (sem bloqueios)
+  DevOps   → task_002 "Scaffold projeto"    (sem bloqueios)
+  Frontend → task_003 "Layout base"         (sem bloqueios)
 
-Wave N:
-  - Backend: API route + service + validation
-  - Frontend: pagina + componentes + integracao
-  - Fullstack: conecta front ↔ back, loading states, error handling
+  [3 agentes rodam em paralelo]
 
-Cada wave = 1 feature completa com commit atomico
-```
+  complete_task("task_001") → desbloqueia task_004 (Auth setup) e task_007 (CRUD)
+  complete_task("task_003") → desbloqueia task_005 (Design system)
 
-### FASE 4 — POLISH (auto-execute, ~5 min)
+Wave 2 (get_next_tasks retorna t4, t5, t7):
+  Backend  → task_004 "Auth setup"          (t1 completada)
+  Frontend → task_005 "Design system"       (t3 completada)
+  Backend  → task_007 "CRUD produtos"       (t1 completada)
 
-```
-Wave 1 — UX:
-  - Frontend: responsivo (mobile-first)
-  - Frontend: loading states, empty states, error states
-  - Frontend: animacoes sutis (framer-motion)
+  [agentes rodam em paralelo novamente]
 
-Wave 2 — Quality:
-  - QA: smoke tests das rotas principais
-  - Security Auditor: scan rapido (OWASP basics)
-  - Context Engineer: coerencia visual e semantica
+Wave 3, 4, ... ate todas completas
 ```
 
-### FASE 5 — DELIVERY (auto)
+### VALIDACAO (apos cada wave)
 
 ```
-1. QA gera relatorio final de verificacao
-2. DevOps gera instrucoes de deploy
-3. PM gera DELIVERY.md com:
+- QA: smoke tests das tasks completadas no wave
+- Se fail_task() → PM avalia impacto e decide retry ou skip
+- Se todas tasks de uma fase estao completas → get_phase_status() confirma 100%
+```
+
+### DELIVERY (apos ultimo wave)
+
+```
+1. cleanup_completed() — arquiva tasks completadas
+2. QA gera relatorio final de verificacao
+3. DevOps gera instrucoes de deploy
+4. PM gera DELIVERY.md com:
    - O que foi construido
    - Como rodar (dev + prod)
    - Credenciais criadas

@@ -116,6 +116,45 @@ Nenhum agente pode encerrar participacao sem:
 
 Analise isolada e invalida.
 
+## Task Manager (Redis)
+
+O squad usa o **Redis Task Manager** MCP para gerenciar tasks multi-agente com dependencias. Todas as tools estao disponiveis automaticamente quando o Redis esta configurado.
+
+### Tools disponiveis
+
+| Tool | Quem usa | O que faz |
+|------|---------|-----------|
+| `create_tasks_batch` | PM | Cria todas as tasks do projeto com dependencias (temp_ids resolvidos automaticamente) |
+| `create_task` | PM | Cria task individual |
+| `get_next_tasks` | PM | Retorna tasks prontas (pending + sem bloqueios), agrupadas por agente |
+| `assign_task` | Agentes | Atribui task e inicia execucao (status → in_progress) |
+| `complete_task` | Agentes | Marca task como concluida + desbloqueia dependentes (cascata) |
+| `fail_task` | Agentes | Marca falha + mostra tasks impactadas |
+| `get_task` | Todos | Detalhes de uma task |
+| `list_tasks` | Todos | Lista com filtros (status, agente, fase, prioridade) |
+| `update_task` | PM | Atualiza campos, adiciona/remove dependencias |
+| `get_blocked_tasks` | PM | Tasks bloqueadas e seus bloqueios |
+| `get_phase_status` | PM | Progresso % de uma fase |
+| `get_project_board` | PM | Visao Kanban completa |
+| `cleanup_completed` | PM | Arquiva tasks completas antigas |
+
+### Fluxo
+
+1. **PM cria tasks:** `create_tasks_batch` com dependencias entre tasks
+2. **PM detecta fronteira:** `get_next_tasks` retorna tasks prontas por agente
+3. **PM spawna agentes:** cada agente recebe sua(s) task(s) para executar em paralelo
+4. **Agente inicia:** `assign_task(id, agente)` → status = in_progress
+5. **Agente conclui:** `complete_task(id, resultado)` → desbloqueia dependentes automaticamente
+6. **PM repete:** `get_next_tasks` novamente ate todas completas
+
+### Dependencias
+
+Tasks podem bloquear outras tasks:
+- Task "Auth setup" bloqueada por "Database schema" (precisa do banco antes)
+- Task "Pagina de login" bloqueada por "Auth setup" + "Layout base"
+- `complete_task` remove bloqueios automaticamente (cascata)
+- Tasks desbloqueadas aparecem no proximo `get_next_tasks`
+
 ## Motor de Execucao: GSD (Get Shit Done)
 
 O squad usa o GSD como motor de execucao para tarefas que exigem planejamento estruturado, execucao paralela, verificacao de goals e debug sistematico. Cada agente invoca os comandos GSD relevantes automaticamente.
