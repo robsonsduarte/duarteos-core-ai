@@ -97,6 +97,39 @@ export function update(options = {}) {
 
     // Planning config
     ['planning/config.json', '.planning/config.json'],
+
+    // Squad Factory Commands
+    ['commands/squad/create-squad.md', '.claude/commands/squad/create-squad.md'],
+    ['commands/squad/list-squads.md', '.claude/commands/squad/list-squads.md'],
+    ['commands/squad/run-squad.md', '.claude/commands/squad/run-squad.md'],
+    ['commands/squad/clone-mind.md', '.claude/commands/squad/clone-mind.md'],
+
+    // Squad Templates
+    ['squad-templates/basic/squad.yaml', '.claude/squad-templates/basic/squad.yaml'],
+    ['squad-templates/basic/README.md', '.claude/squad-templates/basic/README.md'],
+    ['squad-templates/basic/agents/lead.md', '.claude/squad-templates/basic/agents/lead.md'],
+    ['squad-templates/basic/agents/executor.md', '.claude/squad-templates/basic/agents/executor.md'],
+    ['squad-templates/basic/tasks/default.md', '.claude/squad-templates/basic/tasks/default.md'],
+    ['squad-templates/fullstack/squad.yaml', '.claude/squad-templates/fullstack/squad.yaml'],
+    ['squad-templates/fullstack/agents/backend-lead.md', '.claude/squad-templates/fullstack/agents/backend-lead.md'],
+    ['squad-templates/fullstack/agents/frontend-lead.md', '.claude/squad-templates/fullstack/agents/frontend-lead.md'],
+    ['squad-templates/fullstack/agents/qa-lead.md', '.claude/squad-templates/fullstack/agents/qa-lead.md'],
+    ['squad-templates/fullstack/tasks/setup-db.md', '.claude/squad-templates/fullstack/tasks/setup-db.md'],
+    ['squad-templates/fullstack/tasks/build-api.md', '.claude/squad-templates/fullstack/tasks/build-api.md'],
+    ['squad-templates/fullstack/tasks/build-ui.md', '.claude/squad-templates/fullstack/tasks/build-ui.md'],
+    ['squad-templates/data-science/squad.yaml', '.claude/squad-templates/data-science/squad.yaml'],
+    ['squad-templates/data-science/agents/analyst.md', '.claude/squad-templates/data-science/agents/analyst.md'],
+    ['squad-templates/data-science/agents/pipeline-builder.md', '.claude/squad-templates/data-science/agents/pipeline-builder.md'],
+    ['squad-templates/data-science/agents/validator.md', '.claude/squad-templates/data-science/agents/validator.md'],
+    ['squad-templates/automation/squad.yaml', '.claude/squad-templates/automation/squad.yaml'],
+    ['squad-templates/automation/agents/orchestrator.md', '.claude/squad-templates/automation/agents/orchestrator.md'],
+    ['squad-templates/automation/agents/script-builder.md', '.claude/squad-templates/automation/agents/script-builder.md'],
+    ['squad-templates/automation/agents/tester.md', '.claude/squad-templates/automation/agents/tester.md'],
+
+    // Agent Memory (structure files only — individual memories are never overwritten)
+    ['agent-memory/README.md', '.claude/agent-memory/README.md'],
+    ['agent-memory/_global/PATTERNS.md', '.claude/agent-memory/_global/PATTERNS.md'],
+    ['agent-memory/_meta/promotion-log.md', '.claude/agent-memory/_meta/promotion-log.md'],
   ]
 
   // Files that are NEVER overwritten (user data)
@@ -107,6 +140,22 @@ export function update(options = {}) {
     '.claude/settings.json',  // User may have custom hooks/settings
     '.claude/session-context.md', // User session data
     '.claude/memory.json',    // User knowledge graph
+    // Agent memories — individual per-agent memories are NEVER overwritten
+    '.claude/agent-memory/pm/MEMORY.md',
+    '.claude/agent-memory/architect/MEMORY.md',
+    '.claude/agent-memory/backend/MEMORY.md',
+    '.claude/agent-memory/frontend/MEMORY.md',
+    '.claude/agent-memory/qa/MEMORY.md',
+    '.claude/agent-memory/context-engineer/MEMORY.md',
+    '.claude/agent-memory/devils-advocate/MEMORY.md',
+    '.claude/agent-memory/python-executor/MEMORY.md',
+    '.claude/agent-memory/data-scientist/MEMORY.md',
+    '.claude/agent-memory/devops/MEMORY.md',
+    '.claude/agent-memory/security-auditor/MEMORY.md',
+    '.claude/agent-memory/fullstack/MEMORY.md',
+    '.claude/agent-memory/system-builder/MEMORY.md',
+    // User squads — custom squads are NEVER overwritten
+    'squads/',
   ]
 
   let updated = 0
@@ -174,5 +223,7 @@ export function update(options = {}) {
     .claude/settings.json   — suas configuracoes
     .claude/session-context.md — seu contexto de sessao
     .claude/memory.json     — seu grafo de conhecimento
+    .claude/agent-memory/*/MEMORY.md — memorias individuais dos agentes
+    squads/                 — seus squads customizados
 `)
 }

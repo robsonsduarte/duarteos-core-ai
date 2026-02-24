@@ -38,25 +38,34 @@ export function showHelp() {
         security-gate.sh         Bloqueia comandos perigosos
         session-memory.sh        Salva contexto da sessao ao encerrar
       agents/                    6 agentes especializados customizados
-        python-executor.md       Execucao Python (analise, automacao, scripts)
-        data-scientist.md        Analise de dados, ML, visualizacoes
-        devops.md                Docker, CI/CD, infra, deploy
-        security-auditor.md      Auditoria OWASP, vulnerabilidades
-        fullstack.md             Full-stack rapido (front + back + banco)
-        system-builder.md       Constroi sistemas completos (App Factory)
+        python-executor.md       SPARK: Execucao Python (analise, automacao, scripts)
+        data-scientist.md        LENS: Analise de dados, ML, visualizacoes
+        devops.md                VAULT: Docker, CI/CD, infra, deploy
+        security-auditor.md      SPECTER: Auditoria OWASP, vulnerabilidades
+        fullstack.md             BRIDGE: Full-stack rapido (front + back + banco)
+        system-builder.md        TITAN: Constroi sistemas completos (App Factory)
+      agent-memory/              Memoria persistente por agente
+        README.md                Documentacao do sistema de memoria
+        _global/PATTERNS.md      Padroes confirmados por 3+ agentes
+        _meta/promotion-log.md   Historico de promocoes
       blueprints/
-        blueprint-template.md   Template de blueprint para build-system
+        blueprint-template.md    Template de blueprint para build-system
+      squad-templates/           4 templates de squads customizados
+        basic/                   1 lead + 1 executor
+        fullstack/               backend-lead + frontend-lead + qa-lead
+        data-science/            analyst + pipeline-builder + validator
+        automation/              orchestrator + script-builder + tester
       commands/
         agents/                  7 agentes deliberativos + squad
-          squad.md               Orquestrador multi-agente (7 agentes)
-          pm.md                  Supreme Orchestrator (Gerente de Projetos)
-          architect.md           Arquiteto de Software
-          backend.md             Desenvolvedor Backend
-          frontend.md            Desenvolvedor Frontend
-          qa.md                  Analista de Qualidade
-          context-engineer.md    Engenheiro de Coerencia
-          devils-advocate.md     Advogado do Diabo (Red Team)
-        squad/                   14 comandos GSD-powered
+          squad.md               Orquestrador multi-agente (13 personas)
+          pm.md                  ATLAS: Supreme Orchestrator (PM)
+          architect.md           NEXUS: Arquiteto de Software
+          backend.md             FORGE: Desenvolvedor Backend
+          frontend.md            PRISM: Desenvolvedor Frontend
+          qa.md                  SENTINEL: Analista de Qualidade
+          context-engineer.md    COMPASS: Engenheiro de Coerencia
+          devils-advocate.md     SHADOW: Advogado do Diabo (Red Team)
+        squad/                   18 comandos GSD-powered
           new-project.md         Inicializar projeto/milestone
           map-codebase.md        Mapear codebase (4 agentes paralelos)
           plan-phase.md          Planejar fase do roadmap
@@ -72,6 +81,10 @@ export function showHelp() {
           pause.md               Pausar trabalho
           resume.md              Retomar trabalho
           build-system.md        APP FACTORY (PRD/N8N/URL → sistema)
+          create-squad.md        Criar squad customizado
+          list-squads.md         Listar squads do projeto
+          run-squad.md           Executar squad numa demanda
+          clone-mind.md          DNA Mental: clonar mente de especialista
       scripts/                   Scripts de setup
         setup-python.sh          Instala Python + deps dos MCP servers
         setup-sandbox.sh         Configura E2B ou Docker sandbox
@@ -86,10 +99,10 @@ export function showHelp() {
         redis-task-manager/      Tasks multi-agente com dependencias (create/assign/complete)
     .planning/
       config.json                Configuracao do workflow GSD
-    .mcp.json                    22 MCP Servers pre-configurados
+    .mcp.json                    23 MCP Servers pre-configurados
     .env.example                 Variaveis de ambiente para os MCPs
 
-  MCP Servers incluidos (21):
+  MCP Servers incluidos (23):
     Node.js:  Context7, EXA, Fetch, YouTube Transcript, Redis,
               GitHub, REST API, Supabase, CodeRabbit, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking

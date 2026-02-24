@@ -1,8 +1,8 @@
 # DuarteOS Core AI
 
-AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes especializados que constroem sistemas completos automaticamente.
+AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com Squad Factory, Mind Clone e Agent Memory.
 
 ---
 
@@ -19,6 +19,8 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
   - [Debug de Bugs](#6-debug-de-bugs)
   - [Gerenciar Progresso](#7-gerenciar-progresso)
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
+- [Squad Factory](#8-squad-factory--criar-squads-customizados)
+- [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
 - [Todos os Comandos](#todos-os-comandos)
 - [Todos os Agentes](#todos-os-agentes)
 - [Todos os MCP Servers](#todos-os-mcp-servers)
@@ -37,7 +39,7 @@ Abra o terminal na pasta do seu projeto e execute:
 npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init
 ```
 
-Pronto. 48 arquivos foram instalados. Nao precisa de mais nada.
+Pronto. ~80 arquivos foram instalados. Nao precisa de mais nada.
 
 **Outras formas de instalar:**
 
@@ -561,6 +563,58 @@ O debug segue metodo cientifico: observar → hipotese → testar → corrigir. 
 
 ---
 
+### 8. Squad Factory — Criar Squads Customizados
+
+Crie squads especializados por dominio com agentes, tasks e configuracoes proprias.
+
+```
+/squad:create-squad ecommerce
+```
+
+Escolha um template (basic, fullstack, data-science, automation) ou crie do zero. O squad e criado em `squads/{nome}/` com:
+- `squad.yaml` — manifest com agentes, tasks e config
+- `agents/*.md` — agentes customizados
+- `tasks/*.md` — tasks pre-definidas
+- `README.md` — documentacao
+
+```
+/squad:list-squads                           # Ver squads do projeto
+/squad:run-squad ecommerce "implementar carrinho"  # Executar squad
+```
+
+**4 templates prontos:**
+
+| Template | Agentes | Quando usar |
+|----------|---------|-------------|
+| **basic** | lead + executor | Qualquer projeto simples |
+| **fullstack** | backend-lead + frontend-lead + qa-lead | Projetos web |
+| **data-science** | analyst + pipeline-builder + validator | Dados e ML |
+| **automation** | orchestrator + script-builder + tester | Automacoes |
+
+---
+
+### 9. Mind Clone — Clonar Mente de Especialista
+
+Pipeline de 5 fases que cria um agente baseado em uma pessoa real:
+
+```
+/squad:clone-mind "Elon Musk"
+```
+
+**As 5 fases:**
+
+| Fase | O que faz | Output |
+|------|-----------|--------|
+| 1. RESEARCH | Coleta livros, entrevistas, artigos, podcasts | `_sources.md` |
+| 2. ANALYSIS | Extrai modelos mentais, valores, estilo | `_analysis.md` |
+| 3. SYNTHESIS | Gera DNA estruturado em YAML | `_dna.yaml` |
+| 4. IMPLEMENTATION | Cria arquivo do agente com system prompt | `agents/{nome}.md` |
+| 5. VALIDATION | Testa fidelidade (score >= 90%) | `_validation.md` |
+
+O agente resultante responde como o especialista responderia — com o mesmo estilo de comunicacao, modelos mentais e vocabulario.
+
+---
+
 ## Exemplos Reais — Copie e Cole
 
 ### Criar um SaaS completo
@@ -658,16 +712,16 @@ checks e cria script de deploy pro servidor.
 
 ### Agentes (chamada direta)
 
-| Comando | Quem responde | Pra que |
-|---------|---------------|---------|
-| `/agents:squad [demanda]` | Todos os 7 | Demanda que precisa de multiplas perspectivas |
-| `/agents:pm [demanda]` | Gerente de Projetos | Planejar, priorizar, coordenar |
-| `/agents:architect [area]` | Arquiteto | Estrutura, patterns, decisoes tecnicas |
-| `/agents:backend [feature]` | Backend Dev | API, logica, banco, seguranca |
-| `/agents:frontend [tela]` | Frontend Dev | UI, UX, componentes, design |
-| `/agents:qa [area]` | QA | Testes, bugs, auditoria |
-| `/agents:context-engineer [area]` | Context Engineer | Coerencia, prompts, terminologia |
-| `/agents:devils-advocate [proposta]` | Advogado do Diabo | Contestar, encontrar riscos |
+| Comando | Persona | Pra que |
+|---------|---------|---------|
+| `/agents:squad [demanda]` | Todos os 13 | Demanda que precisa de multiplas perspectivas |
+| `/agents:pm [demanda]` | **ATLAS** | Planejar, priorizar, coordenar |
+| `/agents:architect [area]` | **NEXUS** | Estrutura, patterns, decisoes tecnicas |
+| `/agents:backend [feature]` | **FORGE** | API, logica, banco, seguranca |
+| `/agents:frontend [tela]` | **PRISM** | UI, UX, componentes, design |
+| `/agents:qa [area]` | **SENTINEL** | Testes, bugs, auditoria |
+| `/agents:context-engineer [area]` | **COMPASS** | Coerencia, prompts, terminologia |
+| `/agents:devils-advocate [proposta]` | **SHADOW** | Contestar, encontrar riscos |
 
 ### Squad (fluxo orquestrado)
 
@@ -689,36 +743,45 @@ checks e cria script de deploy pro servidor.
 | `/squad:pause` | Salva estado para retomar depois |
 | `/squad:resume` | Retoma de onde parou |
 
+### Squad Factory + Mind Clone
+
+| Comando | O que faz |
+|---------|-----------|
+| `/squad:create-squad [nome]` | Cria squad customizado (a partir de template ou do zero) |
+| `/squad:list-squads` | Lista squads do projeto |
+| `/squad:run-squad [nome] [demanda]` | Executa squad numa demanda |
+| `/squad:clone-mind [nome]` | **DNA Mental** — clona mente de especialista em agente |
+
 ---
 
 ## Todos os Agentes
 
 ### 7 Agentes Deliberativos (vivem em `/commands/agents/`)
 
-Estes sao agentes com "lentes cognitivas" — cada um pensa de forma diferente.
+Cada agente tem uma **persona** — identidade, arquetipo e estilo de comunicacao unicos.
 
-| Agente | Como pensa | O que pode fazer |
-|--------|-----------|------------------|
-| **PM** | "O que tem mais impacto? Qual o risco?" | Planejar, priorizar, decidir, coordenar todos os outros |
-| **Arquiteto** | "Qual a melhor estrutura? Vai escalar?" | Projetar arquitetura, refatorar, definir patterns |
-| **Backend** | "Ta seguro? Ta validado? Segue o padrao?" | Implementar API, logica de negocio, banco de dados |
-| **Frontend** | "Ta bonito? Ta usavel? Ta responsivo?" | Criar interfaces, componentes, animacoes, design |
-| **QA** | "Tem prova? Tem teste? Funciona mesmo?" | Testar, auditar, encontrar bugs, escrever testes |
-| **Context Engineer** | "Ta coerente? Faz sentido? Tem drift?" | Validar coerencia, corrigir terminologia, prompts |
-| **Advogado do Diabo** | "E se der errado? E se falhar? Alternativa?" | Contestar, encontrar riscos, exigir alternativas |
+| Persona | Agente | Arquetipo | O que pode fazer |
+|---------|--------|-----------|------------------|
+| **ATLAS** | PM | O Navegador | Planejar, priorizar, decidir, coordenar todos os outros |
+| **NEXUS** | Arquiteto | O Tecelao | Projetar arquitetura, refatorar, definir patterns |
+| **FORGE** | Backend | O Ferreiro | Implementar API, logica de negocio, banco de dados |
+| **PRISM** | Frontend | A Lente | Criar interfaces, componentes, animacoes, design |
+| **SENTINEL** | QA | O Guardiao | Testar, auditar, encontrar bugs, escrever testes |
+| **COMPASS** | Context Engineer | O Cartografo | Validar coerencia, corrigir terminologia, prompts |
+| **SHADOW** | Devil's Advocate | O Espelho | Contestar, encontrar riscos, exigir alternativas |
 
 ### 6 Agentes Custom (vivem em `.claude/agents/`)
 
-Estes sao agentes especializados com tools e permissoes especificas.
+Agentes especializados com tools, permissoes e personas proprias.
 
-| Agente | Especialidade | Quando usar |
-|--------|---------------|-------------|
-| **System Builder** | Constroi sistemas completos | Chamado automaticamente pelo build-system |
-| **Python Executor** | Roda scripts Python | Automacoes, integracao com APIs, processamento |
-| **Data Scientist** | Analise de dados com pandas/matplotlib | Graficos, estatisticas, ML, insights |
-| **DevOps** | Docker, CI/CD, deploy | Configurar infraestrutura, automatizar deploy |
-| **Security Auditor** | OWASP, vulnerabilidades | Auditoria de seguranca (so le, nao escreve) |
-| **Fullstack** | Frontend + Backend + DB | Feature completa rapida, ponta a ponta |
+| Persona | Agente | Arquetipo | Quando usar |
+|---------|--------|-----------|-------------|
+| **TITAN** | System Builder | O Criador | Chamado automaticamente pelo build-system |
+| **SPARK** | Python Executor | O Alquimista | Automacoes, integracao com APIs, processamento |
+| **LENS** | Data Scientist | O Revelador | Graficos, estatisticas, ML, insights |
+| **VAULT** | DevOps | Guardiao da Infra | Configurar infraestrutura, automatizar deploy |
+| **SPECTER** | Security Auditor | O Cacador | Auditoria de seguranca (so le, nao escreve) |
+| **BRIDGE** | Fullstack | O Conector | Feature completa rapida, ponta a ponta |
 
 ---
 
@@ -859,49 +922,47 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 
 ## Referencia Tecnica
 
-### O que instala (48 arquivos)
+### O que instala (~80 arquivos)
 
 ```
 .claude/
   settings.json                    # Config com hooks + agent teams
   session-context.md               # Contexto persistente entre sessoes
   hooks/                           # 4 quality gates automaticos
-    post-edit-lint.sh              # Auto-lint (ESLint/Biome/Prettier)
-    pre-commit-check.sh            # tsc + lint + test antes de commit
-    security-gate.sh               # Bloqueia comandos perigosos
-    session-memory.sh              # Salva contexto ao encerrar
-  agents/                          # 6 custom agents
-    system-builder.md              # App Factory builder
-    python-executor.md             # Executor Python
-    data-scientist.md              # Cientista de dados
-    devops.md                      # Engenheiro DevOps
-    security-auditor.md            # Auditor de seguranca
-    fullstack.md                   # Dev fullstack
+  agents/                          # 6 custom agents (com personas)
+    system-builder.md (TITAN), python-executor.md (SPARK),
+    data-scientist.md (LENS), devops.md (VAULT),
+    security-auditor.md (SPECTER), fullstack.md (BRIDGE)
+  agent-memory/                    # Memoria persistente por agente
+    README.md                      # Documentacao do sistema
+    _global/PATTERNS.md            # Padroes confirmados por 3+ agentes
+    _meta/promotion-log.md         # Historico de promocoes
   blueprints/
     blueprint-template.md          # Template de blueprint
+  squad-templates/                 # 4 templates de squads
+    basic/                         # lead + executor
+    fullstack/                     # backend-lead + frontend-lead + qa-lead
+    data-science/                  # analyst + pipeline-builder + validator
+    automation/                    # orchestrator + script-builder + tester
   commands/
-    agents/                        # 7 agentes deliberativos
-      squad.md, pm.md, architect.md, backend.md,
-      frontend.md, qa.md, context-engineer.md, devils-advocate.md
-    squad/                         # 15 comandos GSD
-      build-system.md              # APP FACTORY
-      new-project.md, map-codebase.md, plan-phase.md,
-      execute-phase.md, verify-work.md, discuss-phase.md,
-      research-phase.md, validate-plan.md, audit.md,
-      quick.md, debug.md, progress.md, pause.md, resume.md
+    agents/                        # 7 agentes deliberativos (com personas)
+      squad.md, pm.md (ATLAS), architect.md (NEXUS),
+      backend.md (FORGE), frontend.md (PRISM), qa.md (SENTINEL),
+      context-engineer.md (COMPASS), devils-advocate.md (SHADOW)
+    squad/                         # 19 comandos GSD-powered
+      build-system.md, new-project.md, map-codebase.md,
+      plan-phase.md, execute-phase.md, verify-work.md,
+      discuss-phase.md, research-phase.md, validate-plan.md,
+      audit.md, quick.md, debug.md, progress.md, pause.md, resume.md,
+      create-squad.md, list-squads.md, run-squad.md, clone-mind.md
     setup-mcps.md                  # Guia de configuracao dos MCPs
   scripts/
     setup-python.sh                # Setup Python + deps
     setup-sandbox.sh               # Setup E2B / Docker
   mcp-servers/                     # 8 Python MCP Servers
-    input-analyzer/server.py
-    memory-graph/server.py
-    tool-forge/server.py
-    data-analyzer/server.py
-    web-scraper/server.py
-    automation/server.py
-    redis-session/server.py
-    redis-task-manager/server.py
+    input-analyzer/, memory-graph/, tool-forge/,
+    data-analyzer/, web-scraper/, automation/,
+    redis-session/, redis-task-manager/
     requirements.txt
 .planning/
   config.json                      # Configuracao GSD
@@ -926,23 +987,25 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
                          └─────────┬──────────┘
                                    │
                     ┌──────────────▼──────────────┐
-                    │     DuarteOS Core AI v3     │
-                    │  settings + hooks + memory  │
+                    │     DuarteOS Core AI v4     │
+                    │  personas + memory + squads │
                     └──────────────┬──────────────┘
                                    │
-       ┌───────────────┬───────────┼───────────┬────────────────┐
-       │               │           │           │                │
-┌──────▼──────┐ ┌──────▼──────┐ ┌──▼──┐ ┌─────▼─────┐ ┌───────▼───────┐
-│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 23 MCPs   │ │ App Factory   │
-│ (commands/) │ │ (.claude/   │ │     │ │ 15 Node   │ │ build-system  │
-│             │ │  agents/)   │ │ 15  │ │ 8 Python  │ │ → Blueprint   │
-│ PM, Arch,   │ │ Builder,   │ │ cmds│ │ 1 Sandbox │ │ → Full System │
-│ Back, Front │ │ Python,    │ │     │ │           │ │               │
-│ QA, Context │ │ DataSci,   │ └─────┘ │ Memory    │ └───────────────┘
-│ Devil       │ │ DevOps,    │         │ ToolForge │
-└─────────────┘ │ Security,  │         │ Input     │
-                │ Fullstack  │         │ Analyzer  │
-                └────────────┘         └───────────┘
+   ┌──────────┬───────────┬────────┼────────┬──────────┬──────────┐
+   │          │           │        │        │          │          │
+┌──▼───┐ ┌───▼───┐ ┌─────▼─────┐ ┌▼──┐ ┌──▼────┐ ┌───▼───┐ ┌───▼───┐
+│7 Delib│ │6 Custom│ │Squad     │ │GSD│ │23 MCPs│ │App    │ │Mind   │
+│Agents │ │Agents  │ │Factory   │ │   │ │15 Node│ │Factory│ │Clone  │
+│ATLAS  │ │TITAN   │ │4 tmpls   │ │19 │ │8 Py   │ │build  │ │DNA    │
+│NEXUS  │ │SPARK   │ │create    │ │cmd│ │1 Sand │ │system │ │Mental │
+│FORGE  │ │LENS    │ │list/run  │ │   │ │       │ │       │ │5 fases│
+│PRISM  │ │VAULT   │ │          │ └───┘ └───────┘ └───────┘ └───────┘
+│SENT.  │ │SPECTER │ └──────────┘
+│COMP.  │ │BRIDGE  │     ┌──────────────┐
+│SHADOW │ └────────┘     │Agent Memory  │
+└───────┘                │per-agent +   │
+                         │global promote│
+                         └──────────────┘
 ```
 
 ### Principios

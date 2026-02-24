@@ -64,6 +64,14 @@ export function init(projectName, options = {}) {
     '.claude/mcp-servers/redis-task-manager',
     '.claude/mcp-servers/custom-tools',
     '.claude/blueprints',
+    '.claude/agent-memory/_global',
+    '.claude/agent-memory/_meta',
+    '.claude/squad-templates/basic/agents',
+    '.claude/squad-templates/basic/tasks',
+    '.claude/squad-templates/fullstack/agents',
+    '.claude/squad-templates/fullstack/tasks',
+    '.claude/squad-templates/data-science/agents',
+    '.claude/squad-templates/automation/agents',
   ]
 
   for (const dir of dirs) {
@@ -151,6 +159,45 @@ export function init(projectName, options = {}) {
     ['mcp-servers/redis-session/server.py', '.claude/mcp-servers/redis-session/server.py'],
     ['scripts/redis-session-save.sh', '.claude/scripts/redis-session-save.sh'],
     ['mcp-servers/redis-task-manager/server.py', '.claude/mcp-servers/redis-task-manager/server.py'],
+
+    // Agent Memory
+    ['agent-memory/README.md', '.claude/agent-memory/README.md'],
+    ['agent-memory/_global/PATTERNS.md', '.claude/agent-memory/_global/PATTERNS.md'],
+    ['agent-memory/_meta/promotion-log.md', '.claude/agent-memory/_meta/promotion-log.md'],
+
+    // Squad Factory Commands
+    ['commands/squad/create-squad.md', '.claude/commands/squad/create-squad.md'],
+    ['commands/squad/list-squads.md', '.claude/commands/squad/list-squads.md'],
+    ['commands/squad/run-squad.md', '.claude/commands/squad/run-squad.md'],
+    ['commands/squad/clone-mind.md', '.claude/commands/squad/clone-mind.md'],
+
+    // Squad Templates — Basic
+    ['squad-templates/basic/squad.yaml', '.claude/squad-templates/basic/squad.yaml'],
+    ['squad-templates/basic/README.md', '.claude/squad-templates/basic/README.md'],
+    ['squad-templates/basic/agents/lead.md', '.claude/squad-templates/basic/agents/lead.md'],
+    ['squad-templates/basic/agents/executor.md', '.claude/squad-templates/basic/agents/executor.md'],
+    ['squad-templates/basic/tasks/default.md', '.claude/squad-templates/basic/tasks/default.md'],
+
+    // Squad Templates — Fullstack
+    ['squad-templates/fullstack/squad.yaml', '.claude/squad-templates/fullstack/squad.yaml'],
+    ['squad-templates/fullstack/agents/backend-lead.md', '.claude/squad-templates/fullstack/agents/backend-lead.md'],
+    ['squad-templates/fullstack/agents/frontend-lead.md', '.claude/squad-templates/fullstack/agents/frontend-lead.md'],
+    ['squad-templates/fullstack/agents/qa-lead.md', '.claude/squad-templates/fullstack/agents/qa-lead.md'],
+    ['squad-templates/fullstack/tasks/setup-db.md', '.claude/squad-templates/fullstack/tasks/setup-db.md'],
+    ['squad-templates/fullstack/tasks/build-api.md', '.claude/squad-templates/fullstack/tasks/build-api.md'],
+    ['squad-templates/fullstack/tasks/build-ui.md', '.claude/squad-templates/fullstack/tasks/build-ui.md'],
+
+    // Squad Templates — Data Science
+    ['squad-templates/data-science/squad.yaml', '.claude/squad-templates/data-science/squad.yaml'],
+    ['squad-templates/data-science/agents/analyst.md', '.claude/squad-templates/data-science/agents/analyst.md'],
+    ['squad-templates/data-science/agents/pipeline-builder.md', '.claude/squad-templates/data-science/agents/pipeline-builder.md'],
+    ['squad-templates/data-science/agents/validator.md', '.claude/squad-templates/data-science/agents/validator.md'],
+
+    // Squad Templates — Automation
+    ['squad-templates/automation/squad.yaml', '.claude/squad-templates/automation/squad.yaml'],
+    ['squad-templates/automation/agents/orchestrator.md', '.claude/squad-templates/automation/agents/orchestrator.md'],
+    ['squad-templates/automation/agents/script-builder.md', '.claude/squad-templates/automation/agents/script-builder.md'],
+    ['squad-templates/automation/agents/tester.md', '.claude/squad-templates/automation/agents/tester.md'],
   ]
 
   let installed = 0
@@ -190,19 +237,34 @@ export function init(projectName, options = {}) {
   3. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
   4. Instale o GSD: https://github.com/cleyio/gsd
   4. Use os comandos:
-     /agents:squad [demanda]     — Ativa squad completo
-     /agents:pm [demanda]        — Gerente de Projetos
-     /agents:architect [area]    — Arquiteto
-     /agents:backend [feature]   — Backend Dev
-     /agents:frontend [tela]     — Frontend Dev
-     /agents:qa [area]           — QA
-     /agents:context-engineer    — Context Engineer
-     /agents:devils-advocate     — Red Team
+     /agents:squad [demanda]     — Ativa squad completo (13 agentes com personas)
+     /agents:pm [demanda]        — ATLAS: Gerente de Projetos
+     /agents:architect [area]    — NEXUS: Arquiteto
+     /agents:backend [feature]   — FORGE: Backend Dev
+     /agents:frontend [tela]     — PRISM: Frontend Dev
+     /agents:qa [area]           — SENTINEL: QA
+     /agents:context-engineer    — COMPASS: Context Engineer
+     /agents:devils-advocate     — SHADOW: Red Team
      /squad:new-project          — Iniciar projeto
      /squad:plan-phase N         — Planejar fase
      /squad:execute-phase N      — Executar fase
      /squad:quick "desc"         — Task rapida
      /squad:build-system [input] — APP FACTORY: PRD/N8N/URL → sistema completo
+     /squad:create-squad [nome]  — Criar squad customizado
+     /squad:list-squads          — Listar squads do projeto
+     /squad:run-squad [n] [dem]  — Executar squad numa demanda
+     /squad:clone-mind [nome]    — DNA Mental: clonar mente de especialista
+
+  Squad Factory (.claude/squad-templates/) — 4 templates:
+     basic               — 1 lead + 1 executor (minimo viavel)
+     fullstack           — backend-lead + frontend-lead + qa-lead
+     data-science        — analyst + pipeline-builder + validator
+     automation          — orchestrator + script-builder + tester
+
+  Agent Memory (.claude/agent-memory/) — memoria persistente:
+     {agent-id}/MEMORY.md    — memoria individual por agente
+     _global/PATTERNS.md     — padroes confirmados por 3+ agentes
+     _meta/promotion-log.md  — historico de promocoes
 
   MCPs instalados (.mcp.json) — 23 servidores:
      Context7              — Docs atualizadas de bibliotecas

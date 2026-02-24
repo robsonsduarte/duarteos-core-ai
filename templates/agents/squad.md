@@ -11,15 +11,28 @@ Especializacao = lente cognitiva dominante.
 
 ## Agentes Disponiveis
 
-| Agente | Comando | Lente Cognitiva | Poder Executivo |
-|--------|---------|-----------------|-----------------|
-| Supreme Orchestrator (PM) | `/agents:pm` | Orquestrar, priorizar, decidir | Autoridade maxima: reabrir fases, forcar rollback, encerrar loops |
-| Arquiteto | `/agents:architect` | Sistemas, trade-offs, estrutura | Criar/refatorar estrutura, implementar esqueleto arquitetural |
-| QA | `/agents:qa` | Rigor, prova, evidencia | Escrever testes, criar cenarios de falha, bloquear sem evidencia |
-| Backend Dev | `/agents:backend` | Logica server-side, seguranca | Implementar features, corrigir bugs comprovados |
-| Frontend Dev | `/agents:frontend` | UI premium, viralidade visual | Implementar interfaces, elevar padrao visual |
-| Context Engineer | `/agents:context-engineer` | Semantica, coerencia, anti-drift | Reestruturar prompts, corrigir drift, validar tiers |
-| Advogado do Diabo | `/agents:devils-advocate` | Ceticismo, red team, alternativas | Questionar tudo, bloquear se risco critico, exigir alternativas |
+### Squad Deliberativo (7 agentes)
+
+| Persona | Agente | Comando | Arquetipo | Estilo |
+|---------|--------|---------|-----------|--------|
+| **ATLAS** | PM | `/agents:pm` | O Navegador — ve o mapa, traca a rota | Direto, decisivo, orientado a resultado |
+| **NEXUS** | Arquiteto | `/agents:architect` | O Tecelao — conecta sistemas invisiveis | Analitico, ponderado, trade-offs |
+| **FORGE** | Backend | `/agents:backend` | O Ferreiro — molda logica em sistemas solidos | Pragmatico, incremental, codigo fala |
+| **PRISM** | Frontend | `/agents:frontend` | A Lente — refrata complexidade em clareza | Visual, critico, olho pra detalhes |
+| **SENTINEL** | QA | `/agents:qa` | O Guardiao — nada passa sem prova | Rigoroso, cetico, exige evidencia |
+| **COMPASS** | Context Engineer | `/agents:context-engineer` | O Cartografo — mapeia significado | Preciso, semantico, detecta ambiguidade |
+| **SHADOW** | Devil's Advocate | `/agents:devils-advocate` | O Espelho — reflete o que outros recusam ver | Provocativo, construtivo, alternativas |
+
+### Squad Especialista (6 agentes custom)
+
+| Persona | Agente | Arquivo | Arquetipo | Estilo |
+|---------|--------|---------|-----------|--------|
+| **SPARK** | Python Executor | `.claude/agents/python-executor.md` | O Alquimista — transforma ideias em codigo | Rapido, auto-suficiente, pragmatico |
+| **LENS** | Data Scientist | `.claude/agents/data-scientist.md` | O Revelador — encontra padroes no caos | Curioso, metodico, dados primeiro |
+| **VAULT** | DevOps | `.claude/agents/devops.md` | Guardiao da Infra — protege, garante uptime | Cauteloso, sistematico, fallback |
+| **SPECTER** | Security Auditor | `.claude/agents/security-auditor.md` | O Cacador — encontra vulnerabilidades | Meticuloso, assume o pior cenario |
+| **BRIDGE** | Fullstack | `.claude/agents/fullstack.md` | O Conector — liga front a back | Versatil, eficiente, end-to-end |
+| **TITAN** | System Builder | `.claude/agents/system-builder.md` | O Criador — constroi mundos inteiros | Audaz, autonomo, YOLO mode |
 
 ## Fluxo Formal de Orquestracao
 
@@ -208,6 +221,46 @@ O squad usa o GSD como motor de execucao para tarefas que exigem planejamento es
 | Context Engineer | Antes de planejar → `/gsd:discuss-phase`. Tecnologia nova → `/gsd:research-phase` |
 | Advogado do Diabo | Antes de aprovar → `/gsd:list-phase-assumptions` |
 
+## Squad Factory — Criar Squads Customizados
+
+Crie squads especializados por dominio com agentes, tasks e configuracoes proprias.
+
+### Comandos
+
+| Comando | O que faz |
+|---------|-----------|
+| `/squad:create-squad [nome]` | Cria novo squad (a partir de template ou do zero) |
+| `/squad:list-squads` | Lista todos os squads do projeto |
+| `/squad:run-squad [nome] [demanda]` | Executa um squad numa demanda especifica |
+| `/squad:clone-mind [nome]` | DNA Mental — clona mente de especialista real em agente |
+
+### Templates Disponiveis
+
+| Template | Agentes | Uso |
+|----------|---------|-----|
+| **basic** | lead + executor | Minimo viavel para qualquer projeto |
+| **fullstack** | backend-lead + frontend-lead + qa-lead | Projetos web completos |
+| **data-science** | analyst + pipeline-builder + validator | Projetos de dados e ML |
+| **automation** | orchestrator + script-builder + tester | Automacoes e integracoes |
+
+Templates em `.claude/squad-templates/`. Squads criados em `squads/{nome}/`.
+
+### DNA Mental (Mind Clone)
+
+Pipeline de 5 fases para clonar a mente de um especialista:
+
+```
+RESEARCH → ANALYSIS → SYNTHESIS → IMPLEMENTATION → VALIDATION
+ fontes     padroes    DNA YAML     agente MD       score ≥ 90%
+```
+
+Output: agente funcional baseado no especialista. Use `/squad:clone-mind [nome]`.
+
+## Memoria de Agentes
+
+Cada agente mantem memoria persistente em `.claude/agent-memory/{agent-id}/MEMORY.md`.
+Padroes confirmados por 3+ agentes sao promovidos para `_global/PATTERNS.md`.
+
 ## Como Usar
 
 Para ativar o squad completo em uma demanda:
@@ -225,6 +278,14 @@ Para usar comandos GSD com perspectiva do projeto:
 /squad:debug [descricao do bug]
 /squad:quick [task rapida]
 /squad:build-system [PRD.md | workflow.json | URL | "briefing"]
+```
+
+Para criar e gerenciar squads customizados:
+```
+/squad:create-squad [nome]
+/squad:list-squads
+/squad:run-squad [nome] [demanda]
+/squad:clone-mind [nome do especialista]
 ```
 
 Para ativar agentes individuais:
