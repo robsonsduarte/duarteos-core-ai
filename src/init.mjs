@@ -109,6 +109,7 @@ export function init(projectName, options = {}) {
 
     // MCP Servers
     ['mcp.json', '.mcp.json'],
+    ['env.example', '.env.example'],
 
     // Setup commands
     ['commands/setup-mcps.md', '.claude/commands/setup-mcps.md'],
@@ -178,10 +179,11 @@ export function init(projectName, options = {}) {
   Pulados: ${skipped} (ja existiam)
 
   Proximos passos:
-  1. Configure os MCPs: edite .mcp.json com suas API keys
+  1. Configure as API keys: cp .env.example .env && edite o .env
      (veja /setup-mcps para guia completo)
-  2. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
-  3. Instale o GSD: https://github.com/cleyio/gsd
+  2. Carregue as vars: source .env && claude (ou use direnv)
+  3. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
+  4. Instale o GSD: https://github.com/cleyio/gsd
   4. Use os comandos:
      /agents:squad [demanda]     — Ativa squad completo
      /agents:pm [demanda]        — Gerente de Projetos

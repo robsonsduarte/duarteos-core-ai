@@ -1,4 +1,5 @@
 import { init } from './init.mjs'
+import { update } from './update.mjs'
 import { showHelp, showVersion } from './utils.mjs'
 
 export function run(args) {
@@ -19,6 +20,13 @@ export function run(args) {
     const flags = args.filter(a => a.startsWith('--'))
     const skipPrompts = flags.includes('--yes') || flags.includes('-y')
     init(projectName, { skipPrompts })
+    return
+  }
+
+  if (command === 'update') {
+    const flags = args.filter(a => a.startsWith('--'))
+    const force = flags.includes('--force') || flags.includes('-f')
+    update({ force })
     return
   }
 

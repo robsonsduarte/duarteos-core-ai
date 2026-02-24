@@ -22,6 +22,11 @@ export function showHelp() {
     npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init
     npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init meu-projeto
     npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init --yes
+    npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos update
+
+  Comandos:
+    init [nome] [--yes]    Instala DuarteOS no projeto atual
+    update [--force]       Atualiza arquivos do sistema (preserva seus dados)
 
   O que instala:
     .claude/
@@ -32,12 +37,15 @@ export function showHelp() {
         pre-commit-check.sh      TypeScript + ESLint + testes antes do commit
         security-gate.sh         Bloqueia comandos perigosos
         session-memory.sh        Salva contexto da sessao ao encerrar
-      agents/                    5 agentes especializados customizados
+      agents/                    6 agentes especializados customizados
         python-executor.md       Execucao Python (analise, automacao, scripts)
         data-scientist.md        Analise de dados, ML, visualizacoes
         devops.md                Docker, CI/CD, infra, deploy
         security-auditor.md      Auditoria OWASP, vulnerabilidades
         fullstack.md             Full-stack rapido (front + back + banco)
+        system-builder.md       Constroi sistemas completos (App Factory)
+      blueprints/
+        blueprint-template.md   Template de blueprint para build-system
       commands/
         agents/                  7 agentes deliberativos + squad
           squad.md               Orquestrador multi-agente (7 agentes)
@@ -63,22 +71,28 @@ export function showHelp() {
           progress.md            Status do projeto
           pause.md               Pausar trabalho
           resume.md              Retomar trabalho
+          build-system.md        APP FACTORY (PRD/N8N/URL → sistema)
       scripts/                   Scripts de setup
         setup-python.sh          Instala Python + deps dos MCP servers
         setup-sandbox.sh         Configura E2B ou Docker sandbox
-      mcp-servers/               3 Python MCP servers (FastMCP)
+      mcp-servers/               6 Python MCP servers (FastMCP)
         data-analyzer/           Analise CSV, estatisticas, graficos
         web-scraper/             Web scraping avancado
         automation/              Automacao de sistema, file processing
+        input-analyzer/          Analisa PRDs, N8N workflows, URLs → Blueprint
+        memory-graph/            Grafo de conhecimento persistente entre sessoes
+        tool-forge/              Cria novas tools dinamicamente (tool evolution)
     .planning/
       config.json                Configuracao do workflow GSD
-    .mcp.json                    19 MCP Servers pre-configurados
+    .mcp.json                    22 MCP Servers pre-configurados
+    .env.example                 Variaveis de ambiente para os MCPs
 
-  MCP Servers incluidos (19):
+  MCP Servers incluidos (22):
     Node.js:  Context7, EXA, Brave Search, Fetch, YouTube Transcript,
               Reddit, GitHub, REST API, Supabase, CodeRabbit, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking
-    Python:   Data Analyzer, Web Scraper, Automation
+    Python:   Data Analyzer, Web Scraper, Automation,
+              Input Analyzer, Memory Graph, Tool Forge
     Sandbox:  E2B (execucao segura de codigo)
 
   Pre-requisitos:

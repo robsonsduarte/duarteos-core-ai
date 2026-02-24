@@ -48,6 +48,9 @@ npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos init meu-proj
 # Instalar globalmente (roda "duarteos" de qualquer lugar)
 npm install -g github:robsonsduarte/duarteos-core-ai
 duarteos init
+
+# Atualizar para ultima versao (preserva seus dados)
+npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos update
 ```
 
 ### Passo 2 (opcional): Configurar Python
@@ -60,27 +63,55 @@ bash .claude/scripts/setup-python.sh
 
 ### Passo 3 (opcional): Configurar API keys dos MCPs
 
-Os MCPs sao ferramentas externas que dao superpoderes aos agentes. Abra o `.mcp.json` na raiz do projeto e substitua as variaveis `${...}` pelos valores reais.
+Os MCPs sao ferramentas externas que dao superpoderes aos agentes.
 
 **5 MCPs ja funcionam sem configurar NADA:**
 - Context7, YouTube Transcript, Fetch, Memory, Sequential Thinking
 
 **Para ativar os outros, pegue as keys gratuitas:**
 
-| O que configurar | Onde pegar (gratis) | Variavel no `.mcp.json` |
-|------------------|-------------------|------------------------|
-| **EXA** (busca web) | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) — $15 de credito gratis | `${EXA_API_KEY}` |
-| **Brave Search** (busca) | [brave.com/search/api](https://brave.com/search/api/) — 2.000 req/mes gratis | `${BRAVE_API_KEY}` |
-| **GitHub** (repos, PRs) | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis, ilimitado | `${GITHUB_PAT}` |
-| **Reddit** (posts, trending) | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) — crie app tipo "script" | `${REDDIT_CLIENT_ID}` e `${REDDIT_CLIENT_SECRET}` |
-| **CodeRabbit** (code review) | Usa o mesmo `GITHUB_PAT` acima | `${GITHUB_PAT}` |
-| **Google Workspace** (Gmail, Drive, Docs) | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — crie OAuth Desktop | `${GOOGLE_OAUTH_CLIENT_ID}` e `${GOOGLE_OAUTH_CLIENT_SECRET}` |
-| **Supabase** (banco) | Dashboard Supabase → Settings → General → Reference ID | `${SUPABASE_PROJECT_REF}` |
-| **n8n** (automacao) | Sua instancia n8n → Settings → API | `${N8N_API_URL}` e `${N8N_API_KEY}` |
-| **Obsidian** (notas) | Caminho da pasta do seu vault no computador | `${OBSIDIAN_VAULT_PATH}` |
-| **E2B** (sandbox) | [e2b.dev/dashboard](https://e2b.dev) — tem free tier | `${E2B_API_KEY}` |
+| O que configurar | Onde pegar (gratis) | Variavel |
+|------------------|-------------------|----------|
+| **EXA** (busca web) | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) — $15 de credito gratis | `EXA_API_KEY` |
+| **Brave Search** (busca) | [brave.com/search/api](https://brave.com/search/api/) — 2.000 req/mes gratis | `BRAVE_API_KEY` |
+| **GitHub** (repos, PRs) | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis, ilimitado | `GITHUB_PAT` |
+| **Reddit** (posts, trending) | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) — crie app tipo "script" | `REDDIT_CLIENT_ID` e `REDDIT_CLIENT_SECRET` |
+| **CodeRabbit** (code review) | Usa o mesmo `GITHUB_PAT` acima | `GITHUB_PAT` |
+| **Google Workspace** (Gmail, Drive, Docs) | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — crie OAuth Desktop | `GOOGLE_OAUTH_CLIENT_ID` e `GOOGLE_OAUTH_CLIENT_SECRET` |
+| **Supabase** (banco) | Dashboard Supabase → Settings → General → Reference ID | `SUPABASE_PROJECT_REF` |
+| **n8n** (automacao) | Sua instancia n8n → Settings → API | `N8N_API_URL` e `N8N_API_KEY` |
+| **Obsidian** (notas) | Caminho da pasta do seu vault no computador | `OBSIDIAN_VAULT_PATH` |
+| **E2B** (sandbox) | [e2b.dev/dashboard](https://e2b.dev) — tem free tier | `E2B_API_KEY` |
 
-**Como editar:** abra o `.mcp.json` e substitua. Exemplo:
+#### Como configurar (2 opcoes)
+
+**Opcao A — Usar `.env` (recomendado):**
+
+O `.mcp.json` ja usa variaveis `${VAR}` que o Claude Code resolve automaticamente do ambiente. Basta preencher o `.env.example`:
+
+```bash
+# 1. Copie o template
+cp .env.example .env
+
+# 2. Edite o .env e preencha suas keys
+# EXA_API_KEY=exa-abc123suachaveaqui
+# BRAVE_API_KEY=BSA-abc123
+
+# 3. Carregue as variaveis e abra o Claude Code
+source .env && claude
+```
+
+**Dica:** use [direnv](https://direnv.net/) para carregar automaticamente:
+```bash
+brew install direnv                              # macOS
+echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc     # adiciona ao shell
+direnv allow                                     # autoriza o .env
+# Agora toda vez que entrar na pasta, as vars carregam sozinhas
+```
+
+**Opcao B — Editar `.mcp.json` diretamente:**
+
+Abra o `.mcp.json` e substitua os `${VAR}` pelos valores:
 
 ```json
 // ANTES:
@@ -95,6 +126,23 @@ Os MCPs sao ferramentas externas que dao superpoderes aos agentes. Abra o `.mcp.
 ```
 
 **Dica:** dentro do Claude Code, rode `/setup-mcps` para ver o guia interativo completo com instrucoes passo a passo para cada MCP.
+
+### Passo 4 (opcional): Atualizar para versao mais recente
+
+Quando sair uma versao nova do DuarteOS:
+
+```bash
+npx --yes --package=github:robsonsduarte/duarteos-core-ai duarteos update
+```
+
+O update atualiza todos os arquivos do sistema (agentes, comandos, hooks, MCPs, scripts) mas **nunca sobrescreve seus dados**:
+- `.mcp.json` — suas API keys
+- `.env` — suas variaveis de ambiente
+- `.claude/settings.json` — suas configuracoes
+- `.claude/session-context.md` — seu contexto de sessao
+- `.claude/memory.json` — seu grafo de conhecimento
+
+Arquivos identicos sao pulados. So atualiza o que mudou.
 
 ---
 
@@ -856,6 +904,7 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 .planning/
   config.json                      # Configuracao GSD
 .mcp.json                          # 22 MCP Servers
+.env.example                       # Template de variaveis de ambiente
 ```
 
 ### Hooks (rodam automaticamente)
