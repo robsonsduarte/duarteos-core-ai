@@ -138,6 +138,19 @@
       "args": [".claude/mcp-servers/automation/server.py"]
     },
 
+    "input-analyzer": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/input-analyzer/server.py"]
+    },
+    "memory-graph": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/memory-graph/server.py"]
+    },
+    "tool-forge": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/tool-forge/server.py"]
+    },
+
     "_comment_sandbox": "=== SANDBOX (opcional) ===",
 
     "e2b-sandbox": {

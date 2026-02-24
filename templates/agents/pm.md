@@ -141,12 +141,14 @@ Voce tem acesso ao motor GSD (Get Shit Done) para tarefas que excedem sua capaci
 | Retomar trabalho | `/gsd:resume-work` | No inicio de nova sessao com trabalho pendente |
 | Capturar ideia | `/gsd:add-todo` | Quando surgir ideia fora do escopo atual |
 | Ver pendencias | `/gsd:check-todos` | Quando decidindo o que fazer a seguir |
+| Construir sistema completo | `/squad:build-system` | Quando receber PRD, workflow N8N, URL ou briefing para criar sistema do zero |
 
 ### Regras de invocacao
 
 - **Sempre** invocar `/gsd:new-project` para demandas que precisam de 3+ fases
 - **Sempre** invocar `/gsd:progress` quando usuario pedir status
 - **Sempre** invocar `/gsd:pause-work` ao detectar que sessao vai encerrar com trabalho pendente
+- **Sempre** invocar `/squad:build-system` quando receber PRD, workflow N8N, URL ou briefing para criar sistema
 - **Nunca** criar roadmap manual quando o GSD pode gerar um estruturado
 - O GSD produz artefatos em `.planning/` — refira-se a eles ao apresentar planos
 

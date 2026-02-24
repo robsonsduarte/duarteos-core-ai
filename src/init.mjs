@@ -57,6 +57,11 @@ export function init(projectName, options = {}) {
     '.claude/mcp-servers/data-analyzer',
     '.claude/mcp-servers/web-scraper',
     '.claude/mcp-servers/automation',
+    '.claude/mcp-servers/input-analyzer',
+    '.claude/mcp-servers/memory-graph',
+    '.claude/mcp-servers/tool-forge',
+    '.claude/mcp-servers/custom-tools',
+    '.claude/blueprints',
   ]
 
   for (const dir of dirs) {
@@ -130,6 +135,16 @@ export function init(projectName, options = {}) {
     ['mcp-servers/web-scraper/server.py', '.claude/mcp-servers/web-scraper/server.py'],
     ['mcp-servers/automation/server.py', '.claude/mcp-servers/automation/server.py'],
     ['mcp-servers/requirements.txt', '.claude/mcp-servers/requirements.txt'],
+
+    // Build System (App Factory)
+    ['commands/squad/build-system.md', '.claude/commands/squad/build-system.md'],
+    ['agents-custom/system-builder.md', '.claude/agents/system-builder.md'],
+    ['blueprints/blueprint-template.md', '.claude/blueprints/blueprint-template.md'],
+
+    // Advanced Python MCP Servers
+    ['mcp-servers/input-analyzer/server.py', '.claude/mcp-servers/input-analyzer/server.py'],
+    ['mcp-servers/memory-graph/server.py', '.claude/mcp-servers/memory-graph/server.py'],
+    ['mcp-servers/tool-forge/server.py', '.claude/mcp-servers/tool-forge/server.py'],
   ]
 
   let installed = 0
@@ -180,8 +195,9 @@ export function init(projectName, options = {}) {
      /squad:plan-phase N         — Planejar fase
      /squad:execute-phase N      — Executar fase
      /squad:quick "desc"         — Task rapida
+     /squad:build-system [input] — APP FACTORY: PRD/N8N/URL → sistema completo
 
-  MCPs instalados (.mcp.json) — 15 servidores:
+  MCPs instalados (.mcp.json) — 22 servidores:
      Context7              — Docs atualizadas de bibliotecas
      EXA                   — Busca web + codigo + empresas
      Brave Search          — Busca web, noticias, imagens
@@ -204,20 +220,28 @@ export function init(projectName, options = {}) {
      security-gate.sh        — Bloqueia comandos perigosos
      session-memory.sh       — Salva contexto da sessao ao encerrar
 
-  Agentes customizados (.claude/agents/) — 5 especialistas:
+  Agentes customizados (.claude/agents/) — 6 especialistas:
      python-executor         — Execucao Python (analise, automacao, scripts)
      data-scientist          — Analise de dados, ML, visualizacoes
      devops                  — Docker, CI/CD, infra, deploy
      security-auditor        — Auditoria OWASP, vulnerabilidades
      fullstack               — Full-stack rapido (front + back + banco)
+     system-builder          — Constroi sistemas completos (App Factory)
 
-  MCP Servers Python (.claude/mcp-servers/) — 3 servidores:
+  MCP Servers Python (.claude/mcp-servers/) — 6 servidores:
      data-analyzer           — Analise CSV, estatisticas, graficos
      web-scraper             — Web scraping avancado
      automation              — Automacao de sistema, file processing
+     input-analyzer          — Analisa PRDs, N8N workflows, URLs → Blueprint
+     memory-graph            — Grafo de conhecimento persistente entre sessoes
+     tool-forge              — Cria novas tools dinamicamente (tool evolution)
 
   Scripts (.claude/scripts/):
      setup-python.sh         — Instala Python + deps dos MCP servers
      setup-sandbox.sh        — Configura E2B ou Docker sandbox
+
+  App Factory (.claude/blueprints/):
+     blueprint-template.md   — Template de blueprint para build-system
+     Use: /squad:build-system [PRD.md | workflow.json | URL]
 `)
 }

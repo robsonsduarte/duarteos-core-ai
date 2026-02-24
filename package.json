@@ -1,7 +1,7 @@
 {
   "name": "duarteos-core-ai",
-  "version": "2.0.0",
-  "description": "AIOS multi-agente para Claude Code. 12 agentes + 14 squad commands + 19 MCPs + hooks + Python MCP servers + sandbox.",
+  "version": "3.0.0",
+  "description": "AIOS multi-agente para Claude Code. 13 agentes + 15 squad commands + 22 MCPs + App Factory + Memory Graph + Tool Evolution.",
   "type": "module",
   "bin": {
     "duarteos": "./bin/duarteos.mjs"

@@ -138,6 +138,7 @@ O squad usa o GSD como motor de execucao para tarefas que exigem planejamento es
 | `/squad:progress` | PM | Status do projeto + proximo passo |
 | `/squad:pause` | — | Salva estado para retomar depois |
 | `/squad:resume` | — | Restaura contexto da sessao anterior |
+| `/squad:build-system` | PM + Todos | **APP FACTORY:** PRD/N8N/URL → sistema completo (YOLO mode) |
 
 ### Fluxo completo Squad + GSD
 
@@ -184,6 +185,7 @@ Para usar comandos GSD com perspectiva do projeto:
 /squad:verify-work [N]
 /squad:debug [descricao do bug]
 /squad:quick [task rapida]
+/squad:build-system [PRD.md | workflow.json | URL | "briefing"]
 ```
 
 Para ativar agentes individuais:
