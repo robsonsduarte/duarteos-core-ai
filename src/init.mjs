@@ -204,7 +204,7 @@ export function init(projectName, options = {}) {
      EXA                   — Busca web + codigo + empresas
      Fetch                 — Busca URLs → Markdown
      YouTube Transcript    — Transcricoes de videos
-     Reddit                — Posts, trending, subreddits
+     Redis                 — Persistencia de contexto, cache, sessoes
      GitHub                — Issues, PRs, repos
      REST API              — Chama qualquer REST API
      Supabase              — Acesso direto ao Supabase

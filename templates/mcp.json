@@ -26,18 +26,17 @@
       "args": ["-y", "@modelcontextprotocol/server-fetch"]
     },
 
-    "_comment_content": "=== CONTEUDO E MIDIA ===",
+    "_comment_content": "=== CONTEUDO ===",
 
     "youtube-transcript": {
       "command": "npx",
       "args": ["-y", "@kimtaeyoon83/mcp-server-youtube-transcript"]
     },
-    "reddit": {
+    "redis": {
       "command": "npx",
-      "args": ["-y", "mcp-server-reddit"],
+      "args": ["-y", "@modelcontextprotocol/server-redis"],
       "env": {
-        "REDDIT_CLIENT_ID": "${REDDIT_CLIENT_ID}",
-        "REDDIT_CLIENT_SECRET": "${REDDIT_CLIENT_SECRET}"
+        "REDIS_URL": "${REDIS_URL}"
       }
     },
 

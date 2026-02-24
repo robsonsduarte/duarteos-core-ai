@@ -88,7 +88,7 @@ export function showHelp() {
     .env.example                 Variaveis de ambiente para os MCPs
 
   MCP Servers incluidos (21):
-    Node.js:  Context7, EXA, Fetch, YouTube Transcript, Reddit,
+    Node.js:  Context7, EXA, Fetch, YouTube Transcript, Redis,
               GitHub, REST API, Supabase, CodeRabbit, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking
     Python:   Data Analyzer, Web Scraper, Automation,

@@ -74,7 +74,7 @@ Os MCPs sao ferramentas externas que dao superpoderes aos agentes.
 |------------------|-------------------|----------|
 | **EXA** (busca web) | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) — $15 de credito gratis | `EXA_API_KEY` |
 | **GitHub** (repos, PRs) | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis, ilimitado | `GITHUB_PAT` |
-| **Reddit** (posts, trending) | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) — crie app tipo "script" | `REDDIT_CLIENT_ID` e `REDDIT_CLIENT_SECRET` |
+| **Redis** (persistencia) | Local: `redis://localhost:6379` / Cloud: [Upstash](https://upstash.com) ou [Redis Cloud](https://redis.io/cloud/) | `REDIS_URL` |
 | **CodeRabbit** (code review) | Usa o mesmo `GITHUB_PAT` acima | `GITHUB_PAT` |
 | **Google Workspace** (Gmail, Drive, Docs) | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — crie OAuth Desktop | `GOOGLE_OAUTH_CLIENT_ID` e `GOOGLE_OAUTH_CLIENT_SECRET` |
 | **Supabase** (banco) | Dashboard Supabase → Settings → General → Reference ID | `SUPABASE_PROJECT_REF` |
@@ -742,7 +742,7 @@ MCPs sao "ferramentas extras" que os agentes podem usar. 21 instalados.
 |-----|-----------|---------------|
 | **EXA** | Busca web avancada, codigo, empresas | [dashboard.exa.ai](https://dashboard.exa.ai) — $15 gratis |
 | **GitHub** | Issues, PRs, code search | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis |
-| **Reddit** | Posts, trending, subreddits | [reddit.com/prefs/apps](https://reddit.com/prefs/apps) — gratis |
+| **Redis** | Persistencia de contexto, cache, sessoes, key-value store | Local ou [Upstash](https://upstash.com) / [Redis Cloud](https://redis.io/cloud/) |
 | **Google Workspace** | Gmail, Drive, Calendar, Docs, Sheets | Google Cloud Console — gratis |
 | **CodeRabbit** | Code review com IA (40+ analyzers) | Usa o mesmo token do GitHub |
 | **Obsidian** | Notas do Obsidian vault | Caminho local do vault |

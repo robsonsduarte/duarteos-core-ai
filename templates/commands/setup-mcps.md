@@ -11,11 +11,15 @@ Configure os MCP Servers do projeto. Cada servidor adiciona ferramentas externas
 | **EXA** | `exa-mcp-server` | Busca web avancada, codigo, pesquisa de empresas, crawling | Sim (gratis $15) |
 | **Fetch** | `@modelcontextprotocol/server-fetch` | Busca URLs e converte HTML para Markdown | Nao |
 
-### Conteudo e Midia
+### Conteudo
 | MCP Server | Pacote | O que faz | API Key |
 |------------|--------|-----------|---------|
 | **YouTube Transcript** | `@kimtaeyoon83/mcp-server-youtube-transcript` | Extrai transcricoes de videos do YouTube | Nao |
-| **Reddit** | `mcp-server-reddit` | Busca posts, trending, subreddits, comentarios | Sim (gratis) |
+
+### Banco de Dados
+| MCP Server | Pacote | O que faz | API Key |
+|------------|--------|-----------|---------|
+| **Redis** | `@modelcontextprotocol/server-redis` | Persistencia de contexto, cache, sessoes, key-value store | URL de conexao |
 
 ### Desenvolvimento
 | MCP Server | Pacote | O que faz | API Key |
@@ -55,8 +59,7 @@ Edite o `.mcp.json` na raiz do projeto e substitua as variaveis `${...}` pelos v
 | `N8N_API_URL` | URL da instancia n8n (ex: `http://localhost:5678`) | Self-hosted |
 | `N8N_API_KEY` | n8n → Settings → API | Self-hosted |
 | `OBSIDIAN_VAULT_PATH` | Caminho local do vault (ex: `/Users/voce/Documents/Obsidian Vault`) | Local |
-| `REDDIT_CLIENT_ID` | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) | Gratis |
-| `REDDIT_CLIENT_SECRET` | Mesmo local acima (tipo "script") | Gratis |
+| `REDIS_URL` | Local: `redis://localhost:6379` / Cloud: [Upstash](https://upstash.com) ou [Redis Cloud](https://redis.io/cloud/) | Free tier |
 
 ### 2. Configurar Google Workspace (se usar)
 
@@ -92,11 +95,25 @@ Crie um Personal Access Token (PAT) com escopos:
 2. Va em Settings → API → gere uma API Key
 3. Configure `N8N_API_URL` e `N8N_API_KEY` no `.mcp.json`
 
-### 6. Configurar Reddit
+### 6. Configurar Redis
 
-1. Acesse [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps)
-2. Crie um app tipo "script"
-3. Copie Client ID e Client Secret para o `.mcp.json`
+**Local (Docker):**
+```bash
+docker run -d --name redis -p 6379:6379 redis:alpine
+# REDIS_URL=redis://localhost:6379
+```
+
+**Cloud (Upstash — free tier):**
+1. Crie conta em [upstash.com](https://upstash.com)
+2. Crie um database Redis
+3. Copie a URL de conexao (formato: `redis://default:senha@host:porta`)
+4. Configure `REDIS_URL` no `.env`
+
+**Cloud (Redis Cloud — free tier):**
+1. Crie conta em [redis.io/cloud](https://redis.io/cloud/)
+2. Crie um database gratuito (30MB)
+3. Copie host, porta e senha
+4. Configure `REDIS_URL=redis://default:senha@host:porta`
 
 ### 7. Configurar CodeRabbit
 
@@ -141,7 +158,7 @@ Os agentes do squad podem usar MCPs automaticamente:
 | **Backend** | Context7 (docs), REST API (testar endpoints), GitHub, Supabase |
 | **Frontend** | Context7 (docs), Fetch (referencias visuais), YouTube (tutoriais) |
 | **QA** | GitHub (issues), REST API (testar APIs), CodeRabbit (code review), Supabase (dados) |
-| **Context Engineer** | YouTube Transcript (conteudo), EXA (pesquisa), Obsidian (notas), Reddit (trending) |
+| **Context Engineer** | YouTube Transcript (conteudo), EXA (pesquisa), Obsidian (notas), Redis (contexto) |
 | **Devil's Advocate** | EXA (alternativas + benchmarks), Sequential Thinking, CodeRabbit |
 
 ## Desativar um MCP
