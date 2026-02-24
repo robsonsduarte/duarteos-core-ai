@@ -73,7 +73,6 @@ Os MCPs sao ferramentas externas que dao superpoderes aos agentes.
 | O que configurar | Onde pegar (gratis) | Variavel |
 |------------------|-------------------|----------|
 | **EXA** (busca web) | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) — $15 de credito gratis | `EXA_API_KEY` |
-| **Brave Search** (busca) | [brave.com/search/api](https://brave.com/search/api/) — 2.000 req/mes gratis | `BRAVE_API_KEY` |
 | **GitHub** (repos, PRs) | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis, ilimitado | `GITHUB_PAT` |
 | **Reddit** (posts, trending) | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) — crie app tipo "script" | `REDDIT_CLIENT_ID` e `REDDIT_CLIENT_SECRET` |
 | **CodeRabbit** (code review) | Usa o mesmo `GITHUB_PAT` acima | `GITHUB_PAT` |
@@ -95,7 +94,7 @@ cp .env.example .env
 
 # 2. Edite o .env e preencha suas keys
 # EXA_API_KEY=exa-abc123suachaveaqui
-# BRAVE_API_KEY=BSA-abc123
+# EXA_API_KEY=exa-abc123suachaveaqui
 
 # 3. Carregue as variaveis e abra o Claude Code
 source .env && claude
@@ -725,7 +724,7 @@ Estes sao agentes especializados com tools e permissoes especificas.
 
 ## Todos os MCP Servers
 
-MCPs sao "ferramentas extras" que os agentes podem usar. 22 instalados.
+MCPs sao "ferramentas extras" que os agentes podem usar. 21 instalados.
 
 ### Funcionam sem configuracao (5)
 
@@ -737,12 +736,11 @@ MCPs sao "ferramentas extras" que os agentes podem usar. 22 instalados.
 | **Memory** | Grafo de conhecimento que persiste entre sessoes |
 | **Sequential Thinking** | Raciocinio passo-a-passo para problemas complexos |
 
-### Precisam de API key gratuita (7)
+### Precisam de API key gratuita (6)
 
 | MCP | O que faz | Onde pegar key |
 |-----|-----------|---------------|
 | **EXA** | Busca web avancada, codigo, empresas | [dashboard.exa.ai](https://dashboard.exa.ai) — $15 gratis |
-| **Brave Search** | Busca web, noticias, imagens | [brave.com/search/api](https://brave.com/search/api) — 2k/mes gratis |
 | **GitHub** | Issues, PRs, code search | [github.com/settings/tokens](https://github.com/settings/tokens) — gratis |
 | **Reddit** | Posts, trending, subreddits | [reddit.com/prefs/apps](https://reddit.com/prefs/apps) — gratis |
 | **Google Workspace** | Gmail, Drive, Calendar, Docs, Sheets | Google Cloud Console — gratis |
@@ -903,7 +901,7 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
     requirements.txt
 .planning/
   config.json                      # Configuracao GSD
-.mcp.json                          # 22 MCP Servers
+.mcp.json                          # 21 MCP Servers
 .env.example                       # Template de variaveis de ambiente
 ```
 
@@ -931,7 +929,7 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
        ┌───────────────┬───────────┼───────────┬────────────────┐
        │               │           │           │                │
 ┌──────▼──────┐ ┌──────▼──────┐ ┌──▼──┐ ┌─────▼─────┐ ┌───────▼───────┐
-│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 22 MCPs   │ │ App Factory   │
+│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 21 MCPs   │ │ App Factory   │
 │ (commands/) │ │ (.claude/   │ │     │ │ 15 Node   │ │ build-system  │
 │             │ │  agents/)   │ │ 15  │ │ 6 Python  │ │ → Blueprint   │
 │ PM, Arch,   │ │ Builder,   │ │ cmds│ │ 1 Sandbox │ │ → Full System │

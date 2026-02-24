@@ -2,14 +2,13 @@
 
 Configure os MCP Servers do projeto. Cada servidor adiciona ferramentas externas ao Claude Code.
 
-## MCPs Incluidos (15 servidores)
+## MCPs Incluidos (14 servidores)
 
 ### Busca e Pesquisa
 | MCP Server | Pacote | O que faz | API Key |
 |------------|--------|-----------|---------|
 | **Context7** | `@upstash/context7-mcp` | Documentacao atualizada de bibliotecas (Next.js, React, etc) | Nao (free tier) |
 | **EXA** | `exa-mcp-server` | Busca web avancada, codigo, pesquisa de empresas, crawling | Sim (gratis $15) |
-| **Brave Search** | `@brave/brave-search-mcp-server` | Busca web, noticias, imagens, videos, locais | Sim (gratis 2k/mes) |
 | **Fetch** | `@modelcontextprotocol/server-fetch` | Busca URLs e converte HTML para Markdown | Nao |
 
 ### Conteudo e Midia
@@ -48,7 +47,6 @@ Edite o `.mcp.json` na raiz do projeto e substitua as variaveis `${...}` pelos v
 | Variavel | Onde obter | Tier gratuito |
 |----------|-----------|---------------|
 | `EXA_API_KEY` | [dashboard.exa.ai/api-keys](https://dashboard.exa.ai/api-keys) | $15 USD credito |
-| `BRAVE_API_KEY` | [brave.com/search/api](https://brave.com/search/api/) | 2.000 req/mes |
 | `GITHUB_PAT` | [github.com/settings/tokens](https://github.com/settings/tokens) | Ilimitado |
 | `GOOGLE_OAUTH_CLIENT_ID` | [Google Cloud Console](https://console.cloud.google.com/apis/credentials) | Ilimitado |
 | `GOOGLE_OAUTH_CLIENT_SECRET` | Mesmo local acima | Ilimitado |
@@ -138,13 +136,13 @@ Os agentes do squad podem usar MCPs automaticamente:
 
 | Agente | MCPs uteis |
 |--------|-----------|
-| **PM** | Context7 (docs), Memory (decisoes), Brave Search (pesquisa), n8n (automacoes) |
+| **PM** | Context7 (docs), Memory (decisoes), EXA (pesquisa), n8n (automacoes) |
 | **Arquiteto** | Context7 (docs), GitHub (codigo), EXA (exemplos), Supabase (schema) |
 | **Backend** | Context7 (docs), REST API (testar endpoints), GitHub, Supabase |
 | **Frontend** | Context7 (docs), Fetch (referencias visuais), YouTube (tutoriais) |
 | **QA** | GitHub (issues), REST API (testar APIs), CodeRabbit (code review), Supabase (dados) |
 | **Context Engineer** | YouTube Transcript (conteudo), EXA (pesquisa), Obsidian (notas), Reddit (trending) |
-| **Devil's Advocate** | Brave Search (alternativas), EXA (benchmarks), Sequential Thinking, CodeRabbit |
+| **Devil's Advocate** | EXA (alternativas + benchmarks), Sequential Thinking, CodeRabbit |
 
 ## Desativar um MCP
 

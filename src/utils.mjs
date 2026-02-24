@@ -84,12 +84,12 @@ export function showHelp() {
         tool-forge/              Cria novas tools dinamicamente (tool evolution)
     .planning/
       config.json                Configuracao do workflow GSD
-    .mcp.json                    22 MCP Servers pre-configurados
+    .mcp.json                    21 MCP Servers pre-configurados
     .env.example                 Variaveis de ambiente para os MCPs
 
-  MCP Servers incluidos (22):
-    Node.js:  Context7, EXA, Brave Search, Fetch, YouTube Transcript,
-              Reddit, GitHub, REST API, Supabase, CodeRabbit, n8n,
+  MCP Servers incluidos (21):
+    Node.js:  Context7, EXA, Fetch, YouTube Transcript, Reddit,
+              GitHub, REST API, Supabase, CodeRabbit, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking
     Python:   Data Analyzer, Web Scraper, Automation,
               Input Analyzer, Memory Graph, Tool Forge

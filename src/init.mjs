@@ -199,10 +199,9 @@ export function init(projectName, options = {}) {
      /squad:quick "desc"         — Task rapida
      /squad:build-system [input] — APP FACTORY: PRD/N8N/URL → sistema completo
 
-  MCPs instalados (.mcp.json) — 22 servidores:
+  MCPs instalados (.mcp.json) — 21 servidores:
      Context7              — Docs atualizadas de bibliotecas
      EXA                   — Busca web + codigo + empresas
-     Brave Search          — Busca web, noticias, imagens
      Fetch                 — Busca URLs → Markdown
      YouTube Transcript    — Transcricoes de videos
      Reddit                — Posts, trending, subreddits
