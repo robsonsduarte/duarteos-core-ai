@@ -1,17 +1,55 @@
 # DuarteOS Core AI
 
-AIOS multi-agente para [Claude Code](https://claude.ai/code). Instala 12 agentes especializados, 14 comandos squad, 19 MCP servers, hooks de quality gate e MCP servers Python customizados em qualquer projeto.
+AIOS multi-agente para [Claude Code](https://claude.ai/code). Instala 13 agentes, 15 comandos squad, 22 MCP servers, App Factory e sistema de memoria persistente em qualquer projeto.
 
 ## O que e
 
 Um pacote que injeta inteligencia de orquestracao no seu projeto Claude Code:
 
-- **12 Agentes Especializados** — 7 deliberativos + 5 custom agents
-- **14 Comandos Squad** integrados com o motor GSD
-- **19 MCP Servers** — 15 Node.js + 3 Python (FastMCP) + 1 Sandbox
-- **4 Hooks** de quality gate automaticos (lint, security, pre-commit, memory)
-- **Fluxo deliberativo-executivo** com loop fechado
+- **13 Agentes Especializados** — 7 deliberativos + 6 custom agents
+- **15 Comandos Squad** integrados com o motor GSD
+- **22 MCP Servers** — 15 Node.js + 6 Python (FastMCP) + 1 Sandbox
+- **App Factory** — `/squad:build-system` cria sistemas completos a partir de PRD/N8N/URL
+- **Memory Graph** — conhecimento persistente entre sessoes
+- **Tool Evolution** — agentes criam suas proprias ferramentas
+- **4 Hooks** de quality gate automaticos
 - **Zero dependencias npm** — apenas arquivos `.claude/`, `.planning/` e `.mcp.json`
+
+## App Factory — O Recurso Principal
+
+```bash
+# A partir de um PRD
+/squad:build-system docs/PRD.md
+
+# A partir de um workflow N8N
+/squad:build-system automation/lead-capture.json
+
+# A partir de um site de referencia
+/squad:build-system https://linear.app
+
+# A partir de um briefing
+/squad:build-system "Sistema de agendamento para clinicas com painel admin e area do paciente"
+```
+
+O comando analisa o input automaticamente, gera um BLUEPRINT.md e constroi o sistema completo:
+
+```
+Input (PRD/N8N/URL/Texto)
+    ↓
+FASE 0: Input Analysis → BLUEPRINT.md
+    ↓
+FASE 1: Architecture Decision → SCHEMA.sql + API contract
+    ↓
+FASE 2: Foundation → Scaffold + DB + Auth + Layout
+    ↓
+FASE 3: Features → API routes + Pages + Components (waves paralelas)
+    ↓
+FASE 4: Polish → Responsivo + Loading states + Animacoes
+    ↓
+FASE 5: Delivery → DELIVERY.md + instrucoes de deploy
+```
+
+**Modo YOLO:** executa tudo automaticamente, so pergunta quando CRITICO (ambiguidade, exclusao de feature, custo, seguranca).
 
 ## Agentes Deliberativos (7)
 
@@ -25,47 +63,42 @@ Um pacote que injeta inteligencia de orquestracao no seu projeto Claude Code:
 | **Context Engineer** | Semantica, coerencia, anti-drift | Reestruturar prompts, corrigir drift |
 | **Advogado do Diabo** | Ceticismo, red team | Questionar tudo, bloquear riscos criticos |
 
-## Agentes Custom (5)
+## Agentes Custom (6)
 
-| Agente | Dominio | Tools |
-|--------|---------|-------|
-| **Python Executor** | Scripts Python, automacao, integracao | Bash, Read, Write, Edit, Glob, Grep |
-| **Data Scientist** | Analise de dados, ML, visualizacoes | Bash, Read, Write, Edit, Glob, Grep |
-| **DevOps** | Docker, CI/CD, infra, deploy, monitoring | Bash, Read, Write, Edit, Glob, Grep |
-| **Security Auditor** | OWASP, vulnerabilidades, auditoria | Bash, Read, Glob, Grep (read-only) |
-| **Fullstack** | Frontend + Backend + DB, feature completa | Bash, Read, Write, Edit, Glob, Grep |
+| Agente | Dominio |
+|--------|---------|
+| **System Builder** | Constroi sistemas completos a partir de blueprints (App Factory) |
+| **Python Executor** | Scripts Python, automacao, integracao |
+| **Data Scientist** | Analise de dados, ML, visualizacoes |
+| **DevOps** | Docker, CI/CD, infra, deploy, monitoring |
+| **Security Auditor** | OWASP, vulnerabilidades, auditoria (read-only) |
+| **Fullstack** | Frontend + Backend + DB, feature completa |
 
-## Hooks (4 Quality Gates)
-
-| Hook | Evento | Descricao |
-|------|--------|-----------|
-| `post-edit-lint.sh` | PostToolUse (Write/Edit) | Auto-lint apos editar arquivos (ESLint/Biome/Prettier) |
-| `pre-commit-check.sh` | PreToolUse (git commit) | TypeScript + ESLint + testes antes do commit |
-| `security-gate.sh` | PreToolUse (Bash) | Bloqueia comandos perigosos (rm -rf, DROP, etc) |
-| `session-memory.sh` | Stop | Salva contexto da sessao automaticamente |
-
-## MCP Servers (19)
+## MCP Servers (22)
 
 ### Node.js (15)
 | Categoria | MCPs |
 |-----------|------|
-| **Busca** | Context7 (docs de libs), EXA (web + codigo), Brave Search (web), Fetch (URL→MD) |
-| **Conteudo** | YouTube Transcript (transcricoes), Reddit (posts, trending) |
-| **Desenvolvimento** | GitHub (repos, PRs, issues), REST API (qualquer API), Supabase (DB), CodeRabbit (code review IA) |
-| **Automacao** | n8n (workflows), Google Workspace (Gmail, Drive, Calendar, Docs, Sheets), Obsidian (notas) |
-| **Raciocinio** | Memory (grafo de conhecimento), Sequential Thinking (raciocinio estruturado) |
+| **Busca** | Context7, EXA, Brave Search, Fetch |
+| **Conteudo** | YouTube Transcript, Reddit |
+| **Dev** | GitHub, REST API, Supabase, CodeRabbit |
+| **Automacao** | n8n, Google Workspace, Obsidian |
+| **Raciocinio** | Memory, Sequential Thinking |
 
-### Python (3 — FastMCP)
-| MCP Server | Tools | O que faz |
-|------------|-------|-----------|
-| **Data Analyzer** | `analyze_csv`, `query_dataframe`, `create_chart`, `correlate` | Analise de dados com pandas, graficos com matplotlib/seaborn |
-| **Web Scraper** | `scrape_page`, `extract_links`, `extract_tables`, `scrape_structured` | Web scraping avancado com BeautifulSoup |
-| **Automation** | `find_duplicates`, `disk_usage`, `batch_rename`, `run_and_capture`, `file_stats` | Automacao de sistema e file processing |
-
-### Sandbox (1)
+### Python — FastMCP (6)
 | MCP Server | O que faz |
 |------------|-----------|
-| **E2B** | Execucao segura de codigo em Firecracker microVMs (Python, Node, Go, Rust) |
+| **Input Analyzer** | Analisa PRDs, N8N workflows e URLs → gera Blueprint estruturado |
+| **Memory Graph** | Grafo de conhecimento persistente: `remember`, `recall`, `connect`, `forget` |
+| **Tool Forge** | Cria novas tools/MCP servers dinamicamente (tool evolution) |
+| **Data Analyzer** | Analise CSV com pandas, graficos com matplotlib/seaborn |
+| **Web Scraper** | Web scraping avancado com BeautifulSoup |
+| **Automation** | Automacao de sistema, file processing, disk analysis |
+
+### Sandbox (1)
+| MCP | O que faz |
+|-----|-----------|
+| **E2B** | Execucao segura em Firecracker microVMs |
 
 ## Instalacao
 
@@ -77,7 +110,7 @@ npx duarteos-core-ai init
 npm install -g duarteos-core-ai
 duarteos init
 
-# Sem perguntas (aceita defaults)
+# Sem perguntas
 npx duarteos-core-ai init --yes
 ```
 
@@ -91,213 +124,145 @@ bash .claude/scripts/setup-python.sh
 bash .claude/scripts/setup-sandbox.sh
 ```
 
-## O que instala
+## O que instala (48 arquivos)
 
 ```
 .claude/
   settings.json                    # Config com hooks + agent teams
-  session-context.md               # Template de contexto persistente
-  hooks/                           # Quality gates automaticos
+  session-context.md               # Contexto persistente
+  hooks/                           # 4 quality gates
     post-edit-lint.sh              # Auto-lint (ESLint/Biome/Prettier)
     pre-commit-check.sh            # tsc + lint + test antes de commit
     security-gate.sh               # Bloqueia comandos perigosos
     session-memory.sh              # Salva contexto ao encerrar
-  agents/                          # Custom agents (.claude/agents/)
+  agents/                          # 6 custom agents
+    system-builder.md              # App Factory builder
     python-executor.md             # Executor Python
     data-scientist.md              # Cientista de dados
     devops.md                      # Engenheiro DevOps
     security-auditor.md            # Auditor de seguranca
     fullstack.md                   # Dev fullstack
+  blueprints/
+    blueprint-template.md          # Template de blueprint
   commands/
     agents/                        # 7 agentes deliberativos
-      squad.md                     # Orquestrador multi-agente
-      pm.md                        # Gerente de Projetos
-      architect.md                 # Arquiteto de Software
-      backend.md                   # Desenvolvedor Backend
-      frontend.md                  # Desenvolvedor Frontend
-      qa.md                        # Analista de Qualidade
-      context-engineer.md          # Engenheiro de Coerencia
-      devils-advocate.md           # Advogado do Diabo (Red Team)
-    squad/                         # 14 comandos GSD
-      new-project.md               # Inicializar projeto
-      map-codebase.md              # Mapear codebase (4 agentes)
-      plan-phase.md                # Planejar fase
-      execute-phase.md             # Executar fase (wave-based)
-      verify-work.md               # Verificar trabalho (UAT)
-      discuss-phase.md             # Discutir fase
-      research-phase.md            # Pesquisar fase
-      validate-plan.md             # Validar plano (red team)
-      audit.md                     # Auditar milestone
-      quick.md                     # Task rapida
-      debug.md                     # Debug sistematico
-      progress.md                  # Status do projeto
-      pause.md                     # Pausar trabalho
-      resume.md                    # Retomar trabalho
-  scripts/                         # Scripts de setup
+      squad.md, pm.md, architect.md, backend.md,
+      frontend.md, qa.md, context-engineer.md, devils-advocate.md
+    squad/                         # 15 comandos GSD
+      build-system.md              # APP FACTORY
+      new-project.md, map-codebase.md, plan-phase.md,
+      execute-phase.md, verify-work.md, discuss-phase.md,
+      research-phase.md, validate-plan.md, audit.md,
+      quick.md, debug.md, progress.md, pause.md, resume.md
+  scripts/
     setup-python.sh                # Python + deps
-    setup-sandbox.sh               # E2B / Docker sandbox
-  mcp-servers/                     # Python MCP Servers
+    setup-sandbox.sh               # E2B / Docker
+  mcp-servers/                     # 6 Python MCP Servers
+    input-analyzer/server.py       # Analisa PRDs/N8N/URLs
+    memory-graph/server.py         # Grafo de conhecimento
+    tool-forge/server.py           # Criacao de tools
     data-analyzer/server.py        # Analise de dados
     web-scraper/server.py          # Web scraping
-    automation/server.py           # Automacao de sistema
+    automation/server.py           # Automacao
     requirements.txt               # Deps compartilhadas
 .planning/
   config.json                      # Configuracao GSD
-.mcp.json                          # 19 MCP Servers pre-configurados
+.mcp.json                          # 22 MCP Servers
 ```
 
-## Pre-requisitos
+## Comandos
 
-1. **Claude Code** instalado ([claude.ai/code](https://claude.ai/code))
-2. **GSD** instalado ([github.com/cleyio/gsd](https://github.com/cleyio/gsd))
-3. **Python 3.10+** (para MCP servers Python)
-4. **Node.js 18+**
-
-## Uso
-
-### Agentes Individuais
-
+### Agentes
 ```
-/agents:pm [demanda]                    # Gerente de Projetos
-/agents:architect [area]                # Arquiteto
-/agents:backend [feature]               # Backend Dev
-/agents:frontend [tela]                 # Frontend Dev
-/agents:qa [area]                       # QA
-/agents:context-engineer [area]         # Context Engineer
-/agents:devils-advocate [proposta]      # Red Team
+/agents:squad [demanda]             # Squad completo (7 agentes)
+/agents:pm [demanda]                # Gerente de Projetos
+/agents:architect [area]            # Arquiteto
+/agents:backend [feature]           # Backend Dev
+/agents:frontend [tela]             # Frontend Dev
+/agents:qa [area]                   # QA
+/agents:context-engineer [area]     # Context Engineer
+/agents:devils-advocate [proposta]  # Red Team
 ```
 
-### Squad Completo
-
+### Squad (GSD-powered)
 ```
-/agents:squad [demanda]                 # Ativa todos os 7 agentes
-```
-
-### Comandos Squad (GSD-powered)
-
-```
-/squad:new-project [demanda]            # Pesquisa → Requirements → Roadmap
-/squad:map-codebase                     # 4 agentes → 7 docs de codebase
-/squad:discuss-phase N                  # Captura decisoes → CONTEXT.md
-/squad:research-phase N                 # Pesquisa tecnica → RESEARCH.md
-/squad:plan-phase N                     # Research → Plan → Verify → PLAN.md
-/squad:validate-plan                    # Red team contesta planos
-/squad:execute-phase N                  # Wave-based execution + commits
-/squad:verify-work N                    # UAT + diagnostico + fix plans
-/squad:audit                            # Auditoria completa de milestone
-/squad:quick "descricao"                # Task rapida (1-3 passos)
-/squad:debug "descricao do bug"         # Debug cientifico persistente
-/squad:progress                         # Status + proximo passo
-/squad:pause                            # Salvar estado
-/squad:resume                           # Retomar trabalho
+/squad:build-system [input]         # APP FACTORY: PRD/N8N/URL → sistema completo
+/squad:new-project [demanda]        # Pesquisa → Requirements → Roadmap
+/squad:map-codebase                 # 4 agentes → 7 docs de codebase
+/squad:plan-phase N                 # Research → Plan → Verify → PLAN.md
+/squad:execute-phase N              # Wave-based execution + commits
+/squad:verify-work N                # UAT + diagnostico
+/squad:audit                        # Auditoria final
+/squad:quick "descricao"            # Task rapida
+/squad:debug "bug"                  # Debug cientifico
+/squad:progress                     # Status
+/squad:pause / /squad:resume        # Pausar/retomar
 ```
 
 ## Fluxo Completo
 
 ```
-/squad:new-project          → PM: pesquisa → requirements → roadmap
+/squad:build-system [input]     → BLUEPRINT.md → sistema completo (YOLO)
+    ou
+/squad:new-project              → PM: pesquisa → roadmap
     ↓
-/squad:map-codebase         → Arquiteto: 4 agentes → 7 docs
+/squad:map-codebase             → Arquiteto: 4 agentes → 7 docs
     ↓
-/squad:discuss-phase 1      → Context Engineer: decisoes → CONTEXT.md
+/squad:discuss-phase 1          → Context Engineer: decisoes → CONTEXT.md
     ↓
-/squad:plan-phase 1         → Arquiteto + Context + Devil: → PLAN.md
+/squad:plan-phase 1             → Arquiteto + Context + Devil → PLAN.md
     ↓
-/squad:execute-phase 1      → Backend/Frontend: waves paralelas + commits
+/squad:execute-phase 1          → Backend/Frontend: waves + commits
     ↓
-/squad:verify-work 1        → QA: UAT + diagnose + fix plans
+/squad:verify-work 1            → QA: UAT + fix plans
     ↓
-/squad:audit                → QA + Context + Devil: auditoria final
+/squad:audit                    → Auditoria final
 ```
 
 ## Arquitetura
 
 ```
-                    ┌─────────────────────┐
-                    │   Claude Code CLI    │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │  DuarteOS Core AI   │
-                    │  (settings + hooks) │
-                    └──────────┬──────────┘
-                               │
-          ┌────────────────────┼────────────────────┐
-          │                    │                     │
-┌─────────▼─────────┐ ┌───────▼───────┐ ┌──────────▼──────────┐
-│  7 Deliberative   │ │  5 Custom     │ │  19 MCP Servers     │
-│  Agents           │ │  Agents       │ │                     │
-│  (commands/)      │ │  (.claude/    │ │  15 Node.js         │
-│                   │ │   agents/)    │ │  3 Python (FastMCP) │
-│  PM, Architect,   │ │              │ │  1 Sandbox (E2B)    │
-│  Backend, Frontend│ │  Python,     │ │                     │
-│  QA, Context,     │ │  DataSci,    │ └─────────────────────┘
-│  Devil's Advocate │ │  DevOps,     │
-└─────────┬─────────┘ │  Security,   │
-          │            │  Fullstack   │
-          │            └──────────────┘
-          │
-┌─────────▼─────────┐
-│  GSD Engine       │
-│  (14 squad cmds)  │
-│  .planning/       │
-└───────────────────┘
+                         ┌────────────────────┐
+                         │  Claude Code CLI   │
+                         └─────────┬──────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │     DuarteOS Core AI v3     │
+                    │  settings + hooks + memory  │
+                    └──────────────┬──────────────┘
+                                   │
+       ┌───────────────┬───────────┼───────────┬────────────────┐
+       │               │           │           │                │
+┌──────▼──────┐ ┌──────▼──────┐ ┌──▼──┐ ┌─────▼─────┐ ┌───────▼───────┐
+│ 7 Agents    │ │ 6 Custom    │ │ GSD │ │ 22 MCPs   │ │ App Factory   │
+│ (commands/) │ │ (.claude/   │ │     │ │ 15 Node   │ │ build-system  │
+│             │ │  agents/)   │ │ 15  │ │ 6 Python  │ │ → Blueprint   │
+│ PM, Arch,   │ │ Builder,   │ │ cmds│ │ 1 Sandbox │ │ → Full System │
+│ Back, Front │ │ Python,    │ │     │ │           │ │               │
+│ QA, Context │ │ DataSci,   │ └─────┘ │ Memory    │ └───────────────┘
+│ Devil       │ │ DevOps,    │         │ ToolForge │
+└─────────────┘ │ Security,  │         │ Input     │
+                │ Fullstack  │         │ Analyzer  │
+                └────────────┘         └───────────┘
 ```
 
 ## Principios
 
-1. **Nenhum agente pode apenas analisar** — todo agente deve: Detectar → Provar → Agir
-2. **Critica sem alternativa e invalida** — Advogado do Diabo sempre apresenta alternativa
-3. **QA sempre entrega prova** — sem teste/evidencia, relatorio e invalido
-4. **Loop fechado** — nenhum agente encerra sem evidencia + acao + proximo passo
-5. **Execucao incremental** — mudancas atomicas, commits focados
-6. **Disciplina > ritual** — se regra virar burocracia, simplificar
+1. **Nenhum agente pode apenas analisar** — Detectar → Provar → Agir
+2. **Critica sem alternativa e invalida** — sempre apresentar alternativa
+3. **QA sempre entrega prova** — sem teste/evidencia, invalido
+4. **Loop fechado** — evidencia + acao + proximo passo
+5. **YOLO mode** — executa tudo, so pergunta quando critico
+6. **Tool evolution** — agentes criam ferramentas quando precisam
+7. **Memory persistence** — conhecimento sobrevive entre sessoes
+8. **Disciplina > ritual** — se regra virar burocracia, simplificar
 
-## Personalizacao
+## Pre-requisitos
 
-Apos instalar, adicione um `CLAUDE.md` na raiz do `.claude/` com instrucoes especificas do seu projeto:
-
-```markdown
-# CLAUDE.md
-
-## Project Overview
-[Descricao do seu projeto]
-
-## Architecture
-[Stack, padroes, convencoes]
-
-## Commands
-[Scripts de build, test, lint]
-```
-
-Os agentes usam o `CLAUDE.md` como fonte de verdade para contexto do projeto.
-
-## Criar MCP Server Python Customizado
-
-```python
-from fastmcp import FastMCP
-
-mcp = FastMCP("meu-server", description="Meu MCP customizado")
-
-@mcp.tool()
-def minha_ferramenta(param: str) -> str:
-    """Descricao da ferramenta."""
-    return f"Resultado: {param}"
-
-if __name__ == "__main__":
-    mcp.run()
-```
-
-Salve em `.claude/mcp-servers/meu-server/server.py` e adicione ao `.mcp.json`:
-
-```json
-{
-  "meu-server": {
-    "command": "python3",
-    "args": [".claude/mcp-servers/meu-server/server.py"]
-  }
-}
-```
+1. **Claude Code** ([claude.ai/code](https://claude.ai/code))
+2. **GSD** ([github.com/cleyio/gsd](https://github.com/cleyio/gsd))
+3. **Python 3.10+** (para MCP servers Python)
+4. **Node.js 18+**
 
 ## Licenca
 
