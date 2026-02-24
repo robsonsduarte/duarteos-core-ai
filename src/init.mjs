@@ -51,6 +51,12 @@ export function init(projectName, options = {}) {
     '.claude/commands/agents',
     '.claude/commands/squad',
     '.planning',
+    '.claude/hooks',
+    '.claude/agents',
+    '.claude/scripts',
+    '.claude/mcp-servers/data-analyzer',
+    '.claude/mcp-servers/web-scraper',
+    '.claude/mcp-servers/automation',
   ]
 
   for (const dir of dirs) {
@@ -101,6 +107,29 @@ export function init(projectName, options = {}) {
 
     // Setup commands
     ['commands/setup-mcps.md', '.claude/commands/setup-mcps.md'],
+
+    // Hooks
+    ['hooks/post-edit-lint.sh', '.claude/hooks/post-edit-lint.sh'],
+    ['hooks/pre-commit-check.sh', '.claude/hooks/pre-commit-check.sh'],
+    ['hooks/security-gate.sh', '.claude/hooks/security-gate.sh'],
+    ['hooks/session-memory.sh', '.claude/hooks/session-memory.sh'],
+
+    // Custom Agents
+    ['agents-custom/python-executor.md', '.claude/agents/python-executor.md'],
+    ['agents-custom/data-scientist.md', '.claude/agents/data-scientist.md'],
+    ['agents-custom/devops.md', '.claude/agents/devops.md'],
+    ['agents-custom/security-auditor.md', '.claude/agents/security-auditor.md'],
+    ['agents-custom/fullstack.md', '.claude/agents/fullstack.md'],
+
+    // Scripts
+    ['scripts/setup-python.sh', '.claude/scripts/setup-python.sh'],
+    ['scripts/setup-sandbox.sh', '.claude/scripts/setup-sandbox.sh'],
+
+    // Python MCP Servers
+    ['mcp-servers/data-analyzer/server.py', '.claude/mcp-servers/data-analyzer/server.py'],
+    ['mcp-servers/web-scraper/server.py', '.claude/mcp-servers/web-scraper/server.py'],
+    ['mcp-servers/automation/server.py', '.claude/mcp-servers/automation/server.py'],
+    ['mcp-servers/requirements.txt', '.claude/mcp-servers/requirements.txt'],
   ]
 
   let installed = 0
@@ -168,5 +197,27 @@ export function init(projectName, options = {}) {
      Obsidian              — Notas do Obsidian vault
      Memory                — Grafo de conhecimento persistente
      Sequential Thinking   — Raciocinio estruturado
+
+  Hooks instalados (.claude/hooks/) — 4 quality gates:
+     post-edit-lint.sh       — Auto-lint apos editar arquivos
+     pre-commit-check.sh     — TypeScript + ESLint + testes antes do commit
+     security-gate.sh        — Bloqueia comandos perigosos
+     session-memory.sh       — Salva contexto da sessao ao encerrar
+
+  Agentes customizados (.claude/agents/) — 5 especialistas:
+     python-executor         — Execucao Python (analise, automacao, scripts)
+     data-scientist          — Analise de dados, ML, visualizacoes
+     devops                  — Docker, CI/CD, infra, deploy
+     security-auditor        — Auditoria OWASP, vulnerabilidades
+     fullstack               — Full-stack rapido (front + back + banco)
+
+  MCP Servers Python (.claude/mcp-servers/) — 3 servidores:
+     data-analyzer           — Analise CSV, estatisticas, graficos
+     web-scraper             — Web scraping avancado
+     automation              — Automacao de sistema, file processing
+
+  Scripts (.claude/scripts/):
+     setup-python.sh         — Instala Python + deps dos MCP servers
+     setup-sandbox.sh        — Configura E2B ou Docker sandbox
 `)
 }

@@ -1,7 +1,7 @@
 {
   "name": "duarteos-core-ai",
-  "version": "1.1.0",
-  "description": "Sistema multi-agente deliberativo-executivo para Claude Code. 7 agentes especializados + GSD integration + Squad orchestration.",
+  "version": "2.0.0",
+  "description": "AIOS multi-agente para Claude Code. 12 agentes + 14 squad commands + 19 MCPs + hooks + Python MCP servers + sandbox.",
   "type": "module",
   "bin": {
     "duarteos": "./bin/duarteos.mjs"

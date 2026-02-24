@@ -121,6 +121,31 @@
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+
+    "_comment_python": "=== PYTHON MCP SERVERS (DuarteOS) ===",
+
+    "data-analyzer": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/data-analyzer/server.py"]
+    },
+    "web-scraper": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/web-scraper/server.py"]
+    },
+    "automation": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/automation/server.py"]
+    },
+
+    "_comment_sandbox": "=== SANDBOX (opcional) ===",
+
+    "e2b-sandbox": {
+      "command": "npx",
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": {
+        "E2B_API_KEY": "${E2B_API_KEY}"
+      }
     }
   }
 }

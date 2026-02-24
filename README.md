@@ -1,21 +1,22 @@
 # DuarteOS Core AI
 
-Sistema multi-agente deliberativo-executivo para [Claude Code](https://claude.ai/code). Instala 7 agentes especializados com orquestracao Squad e integracao GSD (Get Shit Done) em qualquer projeto.
+AIOS multi-agente para [Claude Code](https://claude.ai/code). Instala 12 agentes especializados, 14 comandos squad, 19 MCP servers, hooks de quality gate e MCP servers Python customizados em qualquer projeto.
 
 ## O que e
 
 Um pacote que injeta inteligencia de orquestracao no seu projeto Claude Code:
 
-- **7 Agentes Especializados** com lentes cognitivas distintas
+- **12 Agentes Especializados** — 7 deliberativos + 5 custom agents
 - **14 Comandos Squad** integrados com o motor GSD
+- **19 MCP Servers** — 15 Node.js + 3 Python (FastMCP) + 1 Sandbox
+- **4 Hooks** de quality gate automaticos (lint, security, pre-commit, memory)
 - **Fluxo deliberativo-executivo** com loop fechado
-- **15 MCP Servers** pre-configurados (EXA, Context7, YouTube, Reddit, CodeRabbit, etc)
-- **Zero dependencias** — apenas arquivos `.claude/` e `.mcp.json` no seu projeto
+- **Zero dependencias npm** — apenas arquivos `.claude/`, `.planning/` e `.mcp.json`
 
-## Agentes
+## Agentes Deliberativos (7)
 
 | Agente | Lente Cognitiva | Poder Executivo |
-|--------|-----------------|-----------------|
+|--------|-----------------|-----------------||
 | **PM** (Supreme Orchestrator) | Orquestracao, priorizacao, decisao | Reabrir fases, forcar rollback, encerrar loops |
 | **Arquiteto** | Sistemas, trade-offs, estrutura | Criar/refatorar estrutura, implementar esqueleto |
 | **Backend Dev** | Logica server-side, seguranca | Implementar features, corrigir bugs |
@@ -23,6 +24,48 @@ Um pacote que injeta inteligencia de orquestracao no seu projeto Claude Code:
 | **QA** | Rigor, prova, evidencia | Escrever testes, bloquear sem prova |
 | **Context Engineer** | Semantica, coerencia, anti-drift | Reestruturar prompts, corrigir drift |
 | **Advogado do Diabo** | Ceticismo, red team | Questionar tudo, bloquear riscos criticos |
+
+## Agentes Custom (5)
+
+| Agente | Dominio | Tools |
+|--------|---------|-------|
+| **Python Executor** | Scripts Python, automacao, integracao | Bash, Read, Write, Edit, Glob, Grep |
+| **Data Scientist** | Analise de dados, ML, visualizacoes | Bash, Read, Write, Edit, Glob, Grep |
+| **DevOps** | Docker, CI/CD, infra, deploy, monitoring | Bash, Read, Write, Edit, Glob, Grep |
+| **Security Auditor** | OWASP, vulnerabilidades, auditoria | Bash, Read, Glob, Grep (read-only) |
+| **Fullstack** | Frontend + Backend + DB, feature completa | Bash, Read, Write, Edit, Glob, Grep |
+
+## Hooks (4 Quality Gates)
+
+| Hook | Evento | Descricao |
+|------|--------|-----------|
+| `post-edit-lint.sh` | PostToolUse (Write/Edit) | Auto-lint apos editar arquivos (ESLint/Biome/Prettier) |
+| `pre-commit-check.sh` | PreToolUse (git commit) | TypeScript + ESLint + testes antes do commit |
+| `security-gate.sh` | PreToolUse (Bash) | Bloqueia comandos perigosos (rm -rf, DROP, etc) |
+| `session-memory.sh` | Stop | Salva contexto da sessao automaticamente |
+
+## MCP Servers (19)
+
+### Node.js (15)
+| Categoria | MCPs |
+|-----------|------|
+| **Busca** | Context7 (docs de libs), EXA (web + codigo), Brave Search (web), Fetch (URL→MD) |
+| **Conteudo** | YouTube Transcript (transcricoes), Reddit (posts, trending) |
+| **Desenvolvimento** | GitHub (repos, PRs, issues), REST API (qualquer API), Supabase (DB), CodeRabbit (code review IA) |
+| **Automacao** | n8n (workflows), Google Workspace (Gmail, Drive, Calendar, Docs, Sheets), Obsidian (notas) |
+| **Raciocinio** | Memory (grafo de conhecimento), Sequential Thinking (raciocinio estruturado) |
+
+### Python (3 — FastMCP)
+| MCP Server | Tools | O que faz |
+|------------|-------|-----------|
+| **Data Analyzer** | `analyze_csv`, `query_dataframe`, `create_chart`, `correlate` | Analise de dados com pandas, graficos com matplotlib/seaborn |
+| **Web Scraper** | `scrape_page`, `extract_links`, `extract_tables`, `scrape_structured` | Web scraping avancado com BeautifulSoup |
+| **Automation** | `find_duplicates`, `disk_usage`, `batch_rename`, `run_and_capture`, `file_stats` | Automacao de sistema e file processing |
+
+### Sandbox (1)
+| MCP Server | O que faz |
+|------------|-----------|
+| **E2B** | Execucao segura de codigo em Firecracker microVMs (Python, Node, Go, Rust) |
 
 ## Instalacao
 
@@ -38,14 +81,35 @@ duarteos init
 npx duarteos-core-ai init --yes
 ```
 
+### Pos-instalacao
+
+```bash
+# Configurar ambiente Python (para MCP servers Python)
+bash .claude/scripts/setup-python.sh
+
+# Configurar sandbox (E2B ou Docker)
+bash .claude/scripts/setup-sandbox.sh
+```
+
 ## O que instala
 
 ```
 .claude/
-  settings.json                    # Habilita agent teams
+  settings.json                    # Config com hooks + agent teams
   session-context.md               # Template de contexto persistente
+  hooks/                           # Quality gates automaticos
+    post-edit-lint.sh              # Auto-lint (ESLint/Biome/Prettier)
+    pre-commit-check.sh            # tsc + lint + test antes de commit
+    security-gate.sh               # Bloqueia comandos perigosos
+    session-memory.sh              # Salva contexto ao encerrar
+  agents/                          # Custom agents (.claude/agents/)
+    python-executor.md             # Executor Python
+    data-scientist.md              # Cientista de dados
+    devops.md                      # Engenheiro DevOps
+    security-auditor.md            # Auditor de seguranca
+    fullstack.md                   # Dev fullstack
   commands/
-    agents/
+    agents/                        # 7 agentes deliberativos
       squad.md                     # Orquestrador multi-agente
       pm.md                        # Gerente de Projetos
       architect.md                 # Arquiteto de Software
@@ -54,7 +118,7 @@ npx duarteos-core-ai init --yes
       qa.md                        # Analista de Qualidade
       context-engineer.md          # Engenheiro de Coerencia
       devils-advocate.md           # Advogado do Diabo (Red Team)
-    squad/
+    squad/                         # 14 comandos GSD
       new-project.md               # Inicializar projeto
       map-codebase.md              # Mapear codebase (4 agentes)
       plan-phase.md                # Planejar fase
@@ -69,29 +133,25 @@ npx duarteos-core-ai init --yes
       progress.md                  # Status do projeto
       pause.md                     # Pausar trabalho
       resume.md                    # Retomar trabalho
+  scripts/                         # Scripts de setup
+    setup-python.sh                # Python + deps
+    setup-sandbox.sh               # E2B / Docker sandbox
+  mcp-servers/                     # Python MCP Servers
+    data-analyzer/server.py        # Analise de dados
+    web-scraper/server.py          # Web scraping
+    automation/server.py           # Automacao de sistema
+    requirements.txt               # Deps compartilhadas
 .planning/
   config.json                      # Configuracao GSD
-.mcp.json                          # 15 MCP Servers pre-configurados
+.mcp.json                          # 19 MCP Servers pre-configurados
 ```
-
-## MCP Servers (15 incluidos)
-
-| Categoria | MCPs |
-|-----------|------|
-| **Busca** | Context7 (docs de libs), EXA (web + codigo), Brave Search (web), Fetch (URL→MD) |
-| **Conteudo** | YouTube Transcript (transcricoes), Reddit (posts, trending) |
-| **Desenvolvimento** | GitHub (repos, PRs, issues), REST API (qualquer API), Supabase (DB), CodeRabbit (code review IA) |
-| **Automacao** | n8n (workflows), Google Workspace (Gmail, Drive, Calendar, Docs, Sheets), Obsidian (notas) |
-| **Raciocinio** | Memory (grafo de conhecimento), Sequential Thinking (raciocinio estruturado) |
-
-Apos instalar, configure as API keys no `.mcp.json`. Use `/setup-mcps` para o guia completo.
-
-**5 MCPs funcionam sem API key:** Context7, YouTube Transcript, Fetch, Memory, Sequential Thinking.
 
 ## Pre-requisitos
 
 1. **Claude Code** instalado ([claude.ai/code](https://claude.ai/code))
 2. **GSD** instalado ([github.com/cleyio/gsd](https://github.com/cleyio/gsd))
+3. **Python 3.10+** (para MCP servers Python)
+4. **Node.js 18+**
 
 ## Uso
 
@@ -150,6 +210,40 @@ Apos instalar, configure as API keys no `.mcp.json`. Use `/setup-mcps` para o gu
 /squad:audit                → QA + Context + Devil: auditoria final
 ```
 
+## Arquitetura
+
+```
+                    ┌─────────────────────┐
+                    │   Claude Code CLI    │
+                    └──────────┬──────────┘
+                               │
+                    ┌──────────▼──────────┐
+                    │  DuarteOS Core AI   │
+                    │  (settings + hooks) │
+                    └──────────┬──────────┘
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                     │
+┌─────────▼─────────┐ ┌───────▼───────┐ ┌──────────▼──────────┐
+│  7 Deliberative   │ │  5 Custom     │ │  19 MCP Servers     │
+│  Agents           │ │  Agents       │ │                     │
+│  (commands/)      │ │  (.claude/    │ │  15 Node.js         │
+│                   │ │   agents/)    │ │  3 Python (FastMCP) │
+│  PM, Architect,   │ │              │ │  1 Sandbox (E2B)    │
+│  Backend, Frontend│ │  Python,     │ │                     │
+│  QA, Context,     │ │  DataSci,    │ └─────────────────────┘
+│  Devil's Advocate │ │  DevOps,     │
+└─────────┬─────────┘ │  Security,   │
+          │            │  Fullstack   │
+          │            └──────────────┘
+          │
+┌─────────▼─────────┐
+│  GSD Engine       │
+│  (14 squad cmds)  │
+│  .planning/       │
+└───────────────────┘
+```
+
 ## Principios
 
 1. **Nenhum agente pode apenas analisar** — todo agente deve: Detectar → Provar → Agir
@@ -177,6 +271,33 @@ Apos instalar, adicione um `CLAUDE.md` na raiz do `.claude/` com instrucoes espe
 ```
 
 Os agentes usam o `CLAUDE.md` como fonte de verdade para contexto do projeto.
+
+## Criar MCP Server Python Customizado
+
+```python
+from fastmcp import FastMCP
+
+mcp = FastMCP("meu-server", description="Meu MCP customizado")
+
+@mcp.tool()
+def minha_ferramenta(param: str) -> str:
+    """Descricao da ferramenta."""
+    return f"Resultado: {param}"
+
+if __name__ == "__main__":
+    mcp.run()
+```
+
+Salve em `.claude/mcp-servers/meu-server/server.py` e adicione ao `.mcp.json`:
+
+```json
+{
+  "meu-server": {
+    "command": "python3",
+    "args": [".claude/mcp-servers/meu-server/server.py"]
+  }
+}
+```
 
 ## Licenca
 
