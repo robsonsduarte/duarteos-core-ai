@@ -60,6 +60,7 @@ export function init(projectName, options = {}) {
     '.claude/mcp-servers/input-analyzer',
     '.claude/mcp-servers/memory-graph',
     '.claude/mcp-servers/tool-forge',
+    '.claude/mcp-servers/redis-session',
     '.claude/mcp-servers/custom-tools',
     '.claude/blueprints',
   ]
@@ -146,6 +147,8 @@ export function init(projectName, options = {}) {
     ['mcp-servers/input-analyzer/server.py', '.claude/mcp-servers/input-analyzer/server.py'],
     ['mcp-servers/memory-graph/server.py', '.claude/mcp-servers/memory-graph/server.py'],
     ['mcp-servers/tool-forge/server.py', '.claude/mcp-servers/tool-forge/server.py'],
+    ['mcp-servers/redis-session/server.py', '.claude/mcp-servers/redis-session/server.py'],
+    ['scripts/redis-session-save.sh', '.claude/scripts/redis-session-save.sh'],
   ]
 
   let installed = 0
@@ -199,7 +202,7 @@ export function init(projectName, options = {}) {
      /squad:quick "desc"         — Task rapida
      /squad:build-system [input] — APP FACTORY: PRD/N8N/URL → sistema completo
 
-  MCPs instalados (.mcp.json) — 21 servidores:
+  MCPs instalados (.mcp.json) — 22 servidores:
      Context7              — Docs atualizadas de bibliotecas
      EXA                   — Busca web + codigo + empresas
      Fetch                 — Busca URLs → Markdown
@@ -229,13 +232,14 @@ export function init(projectName, options = {}) {
      fullstack               — Full-stack rapido (front + back + banco)
      system-builder          — Constroi sistemas completos (App Factory)
 
-  MCP Servers Python (.claude/mcp-servers/) — 6 servidores:
+  MCP Servers Python (.claude/mcp-servers/) — 7 servidores:
      data-analyzer           — Analise CSV, estatisticas, graficos
      web-scraper             — Web scraping avancado
      automation              — Automacao de sistema, file processing
      input-analyzer          — Analisa PRDs, N8N workflows, URLs → Blueprint
      memory-graph            — Grafo de conhecimento persistente entre sessoes
      tool-forge              — Cria novas tools dinamicamente (tool evolution)
+     redis-session           — Sessoes persistentes no Redis (save/restore/cleanup)
 
   Scripts (.claude/scripts/):
      setup-python.sh         — Instala Python + deps dos MCP servers

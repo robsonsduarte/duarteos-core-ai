@@ -142,6 +142,13 @@
       "command": "python3",
       "args": [".claude/mcp-servers/tool-forge/server.py"]
     },
+    "redis-session": {
+      "command": "python3",
+      "args": [".claude/mcp-servers/redis-session/server.py"],
+      "env": {
+        "REDIS_URL": "${REDIS_URL}"
+      }
+    },
 
     "_comment_sandbox": "=== SANDBOX (opcional) ===",
 

@@ -75,16 +75,17 @@ export function showHelp() {
       scripts/                   Scripts de setup
         setup-python.sh          Instala Python + deps dos MCP servers
         setup-sandbox.sh         Configura E2B ou Docker sandbox
-      mcp-servers/               6 Python MCP servers (FastMCP)
+      mcp-servers/               7 Python MCP servers (FastMCP)
         data-analyzer/           Analise CSV, estatisticas, graficos
         web-scraper/             Web scraping avancado
         automation/              Automacao de sistema, file processing
         input-analyzer/          Analisa PRDs, N8N workflows, URLs → Blueprint
         memory-graph/            Grafo de conhecimento persistente entre sessoes
         tool-forge/              Cria novas tools dinamicamente (tool evolution)
+        redis-session/           Sessoes persistentes no Redis (save/restore/cleanup)
     .planning/
       config.json                Configuracao do workflow GSD
-    .mcp.json                    21 MCP Servers pre-configurados
+    .mcp.json                    22 MCP Servers pre-configurados
     .env.example                 Variaveis de ambiente para os MCPs
 
   MCP Servers incluidos (21):

@@ -76,6 +76,7 @@ export function update(options = {}) {
     // Scripts
     ['scripts/setup-python.sh', '.claude/scripts/setup-python.sh'],
     ['scripts/setup-sandbox.sh', '.claude/scripts/setup-sandbox.sh'],
+    ['scripts/redis-session-save.sh', '.claude/scripts/redis-session-save.sh'],
 
     // Python MCP servers
     ['mcp-servers/data-analyzer/server.py', '.claude/mcp-servers/data-analyzer/server.py'],
@@ -84,6 +85,7 @@ export function update(options = {}) {
     ['mcp-servers/input-analyzer/server.py', '.claude/mcp-servers/input-analyzer/server.py'],
     ['mcp-servers/memory-graph/server.py', '.claude/mcp-servers/memory-graph/server.py'],
     ['mcp-servers/tool-forge/server.py', '.claude/mcp-servers/tool-forge/server.py'],
+    ['mcp-servers/redis-session/server.py', '.claude/mcp-servers/redis-session/server.py'],
     ['mcp-servers/requirements.txt', '.claude/mcp-servers/requirements.txt'],
 
     // Setup MCPs guide
