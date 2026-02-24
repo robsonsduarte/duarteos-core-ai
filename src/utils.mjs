@@ -53,6 +53,12 @@ export function showHelp() {
           resume.md              Retomar trabalho
     .planning/
       config.json                Configuracao do workflow GSD
+    .mcp.json                    15 MCP Servers pre-configurados
+
+  MCP Servers incluidos:
+    Context7, EXA, Brave Search, Fetch, YouTube Transcript,
+    Reddit, GitHub, REST API, Supabase, CodeRabbit, n8n,
+    Google Workspace, Obsidian, Memory, Sequential Thinking
 
   Pre-requisitos:
     - Claude Code (claude.ai/code) instalado

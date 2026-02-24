@@ -1,6 +1,6 @@
 {
   "name": "duarteos-core-ai",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Sistema multi-agente deliberativo-executivo para Claude Code. 7 agentes especializados + GSD integration + Squad orchestration.",
   "type": "module",
   "bin": {

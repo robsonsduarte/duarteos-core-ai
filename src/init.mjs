@@ -95,6 +95,12 @@ export function init(projectName, options = {}) {
 
     // Planning
     ['planning/config.json', '.planning/config.json'],
+
+    // MCP Servers
+    ['mcp.json', '.mcp.json'],
+
+    // Setup commands
+    ['commands/setup-mcps.md', '.claude/commands/setup-mcps.md'],
   ]
 
   let installed = 0
@@ -128,9 +134,11 @@ export function init(projectName, options = {}) {
   Pulados: ${skipped} (ja existiam)
 
   Proximos passos:
-  1. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
-  2. Instale o GSD: https://github.com/cleyio/gsd
-  3. Use os comandos:
+  1. Configure os MCPs: edite .mcp.json com suas API keys
+     (veja /setup-mcps para guia completo)
+  2. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
+  3. Instale o GSD: https://github.com/cleyio/gsd
+  4. Use os comandos:
      /agents:squad [demanda]     — Ativa squad completo
      /agents:pm [demanda]        — Gerente de Projetos
      /agents:architect [area]    — Arquiteto
@@ -143,5 +151,22 @@ export function init(projectName, options = {}) {
      /squad:plan-phase N         — Planejar fase
      /squad:execute-phase N      — Executar fase
      /squad:quick "desc"         — Task rapida
+
+  MCPs instalados (.mcp.json) — 15 servidores:
+     Context7              — Docs atualizadas de bibliotecas
+     EXA                   — Busca web + codigo + empresas
+     Brave Search          — Busca web, noticias, imagens
+     Fetch                 — Busca URLs → Markdown
+     YouTube Transcript    — Transcricoes de videos
+     Reddit                — Posts, trending, subreddits
+     GitHub                — Issues, PRs, repos
+     REST API              — Chama qualquer REST API
+     Supabase              — Acesso direto ao Supabase
+     CodeRabbit            — Code review IA (40+ analyzers)
+     n8n                   — Automacoes n8n
+     Google Workspace      — Gmail, Drive, Calendar, Docs, Sheets
+     Obsidian              — Notas do Obsidian vault
+     Memory                — Grafo de conhecimento persistente
+     Sequential Thinking   — Raciocinio estruturado
 `)
 }

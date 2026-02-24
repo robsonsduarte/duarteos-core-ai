@@ -9,7 +9,8 @@ Um pacote que injeta inteligencia de orquestracao no seu projeto Claude Code:
 - **7 Agentes Especializados** com lentes cognitivas distintas
 - **14 Comandos Squad** integrados com o motor GSD
 - **Fluxo deliberativo-executivo** com loop fechado
-- **Zero dependencias** — apenas arquivos `.claude/` no seu projeto
+- **15 MCP Servers** pre-configurados (EXA, Context7, YouTube, Reddit, CodeRabbit, etc)
+- **Zero dependencias** — apenas arquivos `.claude/` e `.mcp.json` no seu projeto
 
 ## Agentes
 
@@ -70,7 +71,22 @@ npx duarteos-core-ai init --yes
       resume.md                    # Retomar trabalho
 .planning/
   config.json                      # Configuracao GSD
+.mcp.json                          # 15 MCP Servers pre-configurados
 ```
+
+## MCP Servers (15 incluidos)
+
+| Categoria | MCPs |
+|-----------|------|
+| **Busca** | Context7 (docs de libs), EXA (web + codigo), Brave Search (web), Fetch (URL→MD) |
+| **Conteudo** | YouTube Transcript (transcricoes), Reddit (posts, trending) |
+| **Desenvolvimento** | GitHub (repos, PRs, issues), REST API (qualquer API), Supabase (DB), CodeRabbit (code review IA) |
+| **Automacao** | n8n (workflows), Google Workspace (Gmail, Drive, Calendar, Docs, Sheets), Obsidian (notas) |
+| **Raciocinio** | Memory (grafo de conhecimento), Sequential Thinking (raciocinio estruturado) |
+
+Apos instalar, configure as API keys no `.mcp.json`. Use `/setup-mcps` para o guia completo.
+
+**5 MCPs funcionam sem API key:** Context7, YouTube Transcript, Fetch, Memory, Sequential Thinking.
 
 ## Pre-requisitos
 
