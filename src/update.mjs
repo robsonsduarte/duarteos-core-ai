@@ -2,6 +2,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPackageVersion } from './utils.mjs'
+import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
@@ -360,4 +361,8 @@ export function update(options = {}) {
     .claude/synapse/*.yaml  — estado dos agentes
     squads/                 — seus squads customizados
 `)
+
+  // MCP Health Check — detect disconnected MCPs and guide user
+  const mcpStatus = checkMcpStatus(cwd)
+  printMcpReport(mcpStatus)
 }

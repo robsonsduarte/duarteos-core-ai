@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync, cpSync } from 'fs'
 import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
+import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
@@ -480,4 +481,8 @@ export function init(projectName, options = {}) {
      blueprint-template.md   — Template de blueprint para build-system
      Use: /squad:build-system [PRD.md | workflow.json | URL]
 `)
+
+  // MCP Health Check — detect disconnected MCPs and guide user
+  const mcpStatus = checkMcpStatus(cwd)
+  printMcpReport(mcpStatus)
 }
