@@ -1,3 +1,7 @@
 node_modules/
 .DS_Store
 *.log
+
+# DuarteOS — configs pessoais (nao versionar)
+.claude/config/user.yaml
+.claude/settings.local.json

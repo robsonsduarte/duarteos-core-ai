@@ -1,6 +1,6 @@
 agent: pm
-state: completed
-task: "Integracao GSD como subcomandos dos agentes DuarteOS"
+state: activated
+task: "Aguardando demanda"
 started: "2026-02-24"
 last_transition: "2026-02-24"
 transitions:
@@ -20,5 +20,9 @@ transitions:
     to: completed
     at: "2026-02-24"
     reason: "Protocolo criado, 8 agentes atualizados, README atualizado"
+  - from: completed
+    to: activated
+    at: "2026-02-24"
+    reason: "Nova sessao iniciada"
 blocked_by: null
-notes: "AGENT-GSD-PROTOCOL.md criado. 8 agentes wired. Inicializacao padronizada."
+notes: "Sessao anterior: AGENT-GSD-PROTOCOL.md criado, 8 agentes wired. Aguardando nova demanda."

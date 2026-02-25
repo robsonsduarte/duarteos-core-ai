@@ -15,6 +15,7 @@
 
 - [2026-02-24] estilo: Usuario aprova decisoes rapidas e quer execucao imediata ("concordo, bora executar")
 - [2026-02-24] arquitetura: Usuario quer GSD como subcomandos integrados ao duarteos-core, nao como sistema paralelo
+- [2026-02-24] modo: YOLO mode ativado — execucao autonoma sem confirmacao exceto: deletar fora de /tmp/, alterar nao-versionados irreversivelmente, git push, git reset --hard, criar/fechar PRs/Issues, enviar mensagens externas, modificar .env/secrets, instalar pacotes globais, operacoes destrutivas no SO
 
 ## Erros e Resolucoes
 

@@ -21,6 +21,7 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 ## Decisoes Recentes
 
 - [2026-02-24] GSD integrado como subcomandos formais dos agentes DuarteOS (AGENT-GSD-PROTOCOL.md criado)
+- [2026-02-24] YOLO mode configurado — CLAUDE.md + settings.local.json + user.yaml com politica de auto-approve e guardrails
 
 ## Pendencias
 
@@ -39,4 +40,22 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-02-24 20:15 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 20:21 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 21:26 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 21:27 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 21:50 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 21:52 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-02-24 21:56 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook
