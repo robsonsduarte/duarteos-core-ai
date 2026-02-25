@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -21,7 +21,8 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
-- [Novidades v5.0.0](#novidades-v500)
+- [Novidades v5.2.0](#novidades-v520)
+  - [YOLO Mode](#yolo-mode)
   - [Constitution](#constitution)
   - [4-Layer Config](#4-layer-config)
   - [Task Templates](#task-templates)
@@ -719,7 +720,38 @@ checks e cria script de deploy pro servidor.
 
 ---
 
-## Novidades v5.0.0
+## Novidades v5.2.0
+
+### YOLO Mode
+
+A partir da v5.2.0, todo projeto DuarteOS vem com **YOLO Mode** — execucao autonoma com guardrails minimos. Os agentes executam sem pedir permissao para operacoes seguras, e so confirmam quando realmente importa.
+
+**Criado automaticamente no `init` e `update`:**
+
+| Arquivo | O que faz |
+|---------|-----------|
+| `CLAUDE.md` | Politica comportamental — define o que e auto-approve, o que confirma, o que e bloqueado |
+| `.claude/settings.local.json` | ~100 padroes Bash auto-aprovados + deny list para operacoes catastroficas |
+| `.gitignore` | Entradas DuarteOS garantidas (user.yaml e settings.local.json excluidos do versionamento) |
+
+**Auto-approve (sem perguntar):**
+- Ler, editar, criar arquivos no projeto
+- git add, commit, branch, checkout, stash
+- npm/bun/yarn install, tsc, eslint, jest, vitest
+- Deletar arquivos em /tmp/ ou /temp/
+- Qualquer operacao reversivel via git
+
+**Confirmar antes:**
+- git push (qualquer variante)
+- Deletar arquivos/dirs fora de /tmp/
+- Criar/fechar PRs e Issues
+- Modificar .env, credentials, tokens
+- Instalar pacotes globais do sistema
+
+**Bloqueado permanentemente:**
+- `rm -rf /`, `rm -rf ~`, `sudo rm` em diretorios do sistema
+
+**Customizacao:** edite `CLAUDE.md` para ajustar a politica do seu projeto. O arquivo nunca e sobrescrito no update.
 
 ### Constitution
 
