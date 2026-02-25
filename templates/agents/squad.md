@@ -170,12 +170,18 @@ Tasks podem bloquear outras tasks:
 
 ## Motor de Execucao: GSD (Get Shit Done)
 
-O squad usa o GSD como motor de execucao para tarefas que exigem planejamento estruturado, execucao paralela, verificacao de goals e debug sistematico. Cada agente invoca os comandos GSD relevantes automaticamente.
+> Protocolo completo: `.claude/protocols/AGENT-GSD-PROTOCOL.md`
 
-### Comandos do Squad (GSD-powered)
+O GSD e o motor de execucao do DuarteOS — as **maos** do squad. Agentes sao o **cerebro** (analise, decisao, contexto). O GSD executa com garantias (commits atomicos, rastreabilidade, verificacao). Cada agente invoca seus subcomandos GSD **automaticamente** conforme seu manifest.
 
-| Comando | Agente Lider | O que faz |
-|---------|-------------|-----------|
+```
+Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
+```
+
+### Subcomandos do Squad (GSD-powered)
+
+| Subcomando | Agente Lider | O que faz |
+|------------|-------------|-----------|
 | `/squad:new-project` | PM | Inicializa projeto: pesquisa → requirements → roadmap |
 | `/squad:map-codebase` | Arquiteto | 4 agentes mapeiam codebase → 7 docs estruturados |
 | `/squad:discuss-phase N` | Context Engineer + PM | Captura decisoes, elimina ambiguidade → CONTEXT.md |
@@ -210,16 +216,36 @@ O squad usa o GSD como motor de execucao para tarefas que exigem planejamento es
 /squad:audit                → QA + Context + Devil: auditoria final
 ```
 
-### Quando cada agente invoca GSD automaticamente
+### Manifest de Invocacao GSD por Agente
 
-| Agente | Invoca GSD quando... |
-|--------|---------------------|
-| PM | Demanda precisa de roadmap → `/gsd:new-project`. Status pedido → `/gsd:progress` |
-| Arquiteto | Refatoracao grande → `/gsd:map-codebase`. Fase com 3+ tasks → `/gsd:plan-phase` |
-| QA | Fase executada → `/gsd:verify-work`. Bug persistente → `/gsd:debug` |
-| Backend/Frontend | PLAN.md existem → `/gsd:execute-phase`. Fix pontual → `/gsd:quick` |
-| Context Engineer | Antes de planejar → `/gsd:discuss-phase`. Tecnologia nova → `/gsd:research-phase` |
-| Advogado do Diabo | Antes de aprovar → `/gsd:list-phase-assumptions` |
+| Agente | Subcomandos GSD | Trigger |
+|--------|----------------|---------|
+| **PM (ATLAS)** | `new-project`, `progress`, `audit-milestone`, `complete-milestone`, `new-milestone`, `pause-work`, `resume-work`, `add-todo`, `check-todos`, `add-phase`, `insert-phase`, `remove-phase` | Lifecycle do projeto |
+| **Architect (NEXUS)** | `map-codebase`, `plan-phase`, `research-phase`, `list-phase-assumptions`, `add-phase`, `insert-phase` | Estrutura e planejamento |
+| **QA (SENTINEL)** | `verify-work`, `debug`, `health` | Verificacao e debug |
+| **Backend (FORGE)** | `execute-phase`, `quick` | Execucao server-side |
+| **Frontend (PRISM)** | `execute-phase`, `quick` | Execucao UI |
+| **Context (COMPASS)** | `discuss-phase`, `research-phase`, `settings` | Coerencia e pesquisa |
+| **Devil (SHADOW)** | `list-phase-assumptions`, `validate-plan` | Contestacao e red team |
+
+### Cadeia de Autorizacao
+
+```
+DECISAO DE EXECUCAO:
+  Usuario pede algo
+  → PM avalia escopo
+  → Se escopo < 3 tasks: agente executa via /gsd:quick
+  → Se escopo >= 3 tasks: PM inicia workflow formal
+
+WORKFLOW FORMAL:
+  PM autoriza → Context discuss → Architect plan → Devil validate
+  → PM aprova → Backend/Frontend execute → QA verify → PM valida
+
+ESCALACAO:
+  Agente bloqueado → reporta ao PM
+  PM bloqueado → reporta ao usuario
+  Conflito entre agentes → PM decide (final)
+```
 
 ## Squad Factory — Criar Squads Customizados
 

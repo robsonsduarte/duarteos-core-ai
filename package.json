@@ -1,6 +1,6 @@
 {
   "name": "duarteos-core-ai",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "AIOS multi-agente para Claude Code. 13 agentes com personas + 22 squad commands + 23 MCPs + Constitution + 4-Layer Config + Task Templates + Synapse + Quality Gates + IDE Sync.",
   "type": "module",
   "bin": {

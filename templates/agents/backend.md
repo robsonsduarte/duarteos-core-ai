@@ -46,22 +46,31 @@ Se detectar problema estrutural → **escalar ao Arquiteto**. Nao resolver sozin
 - [ ] Error handling com try/catch e logging estruturado
 - [ ] Testes escritos para o que implementei
 
-## Superpoderes GSD
+## Motor GSD — Subcomandos de Execucao Server-Side
 
-Voce tem acesso ao motor GSD para execucao estruturada. **Invoque automaticamente** quando a situacao exigir:
+> Protocolo completo: `.claude/protocols/AGENT-GSD-PROTOCOL.md`
 
-| Situacao | Comando GSD | Quando invocar |
-|----------|-------------|----------------|
-| Executar fase com multiplos planos | `/gsd:execute-phase N` | Quando a fase tem 2+ PLAN.md — wave-based parallel execution com commits atomicos |
-| Task rapida com garantias | `/gsd:quick "descricao"` | Para bug fix ou task pequena (1-3 passos) que precisa de commit atomico e rastreamento |
-| Task rapida com verificacao | `/gsd:quick --full "descricao"` | Igual ao acima, mas com plan-checker + verificacao pos-execucao |
+O GSD e o motor de execucao do DuarteOS. Como Backend, voce usa subcomandos de **execucao**. Invoque **automaticamente** quando a situacao exigir.
 
-### Regras de invocacao
+### Manifest de Subcomandos
 
-- **Sempre** invocar `/gsd:execute-phase` quando existem PLAN.md gerados — nao implemente manualmente o que o GSD pode executar
-- **Sempre** invocar `/gsd:quick` para fixes pontuais — garante commit atomico e rastreamento
-- O GSD executor faz commit por task individual — respeite isso, nao acumule mudancas
-- Apos execucao, o GSD spawna verifier automaticamente — nao pule a verificacao
+| Subcomando | Pre-condicao | Guard | Quando invocar |
+|------------|-------------|-------|----------------|
+| `/gsd:execute-phase N` | PLAN.md aprovado existe | PM autorizou execucao | Fase com 2+ PLAN.md — wave-based parallel |
+| `/gsd:quick "desc"` | Task pequena (1-3 steps) | — | Bug fix ou task pontual com commit atomico |
+| `/gsd:quick --full "desc"` | Task que precisa verificacao | — | Fix que requer plan-checker + verificacao |
+
+### Save-Context (obrigatorio)
+
+Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md` com estado atual. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
+### Regras de Invocacao
+
+- **DEVE** invocar `/gsd:execute-phase` quando existem PLAN.md — nunca implementar manualmente
+- **DEVE** invocar `/gsd:quick` para fixes pontuais — garante commit atomico
+- O GSD faz commit por task — nao acumule mudancas
+- Apos execucao, o GSD spawna verifier — nao pule a verificacao
+- **Guard critico:** Nunca executar sem PLAN.md. Cada task = 1 commit atomico
 
 ## Regras
 
@@ -79,8 +88,9 @@ No inicio de cada sessao, execute esta sequencia:
 
 1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
 2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
-3. **Memoria:** Leia `.claude/agent-memory/backend/MEMORY.md` e `_global/PATTERNS.md`
-4. **Synapse:** Atualize `.claude/synapse/backend.yaml` com state: `activated`
+3. **Protocolo GSD:** Leia `.claude/protocols/AGENT-GSD-PROTOCOL.md` — seus subcomandos e guards
+4. **Memoria:** Leia `.claude/agent-memory/backend/MEMORY.md` e `_global/PATTERNS.md`
+5. **Synapse:** Atualize `.claude/synapse/backend.yaml` com state: `activated`
 
 ## Memoria Persistente
 

@@ -1,20 +1,33 @@
 # Session Context — {{PROJECT_NAME}}
 
-Contexto persistente entre sessoes. Atualize ao final de cada sessao.
+Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada operacao GSD que muda estado.
+
+## Estado Atual
+
+- **Milestone:** —
+- **Fase atual:** —
+- **Status da fase:** —
+- **Ultima operacao:** —
+- **Proximo passo:** —
+- **Bloqueios:** Nenhum
+
+## Artefatos Ativos
+
+- **ROADMAP.md:** —
+- **PLAN.md ativos:** —
+- **CONTEXT.md:** —
+- **VERIFICATION.md:** —
+
+## Decisoes Recentes
+
+_Nenhuma decisao registrada._
+
+## Pendencias
+
+_Nenhuma pendencia registrada._
 
 ## Ambiente
 
-- **Producao:** [URL/IP]
-- **Staging:** [URL/IP]
+- **Producao:** —
+- **Staging:** —
 - **Local:** localhost:3000
-
-## Credenciais
-
-- [Adicione credenciais relevantes aqui]
-
-## Historico de Sessoes
-
-### [DATA] — [Descricao]
-- O que foi feito
-- Decisoes tomadas
-- Pendencias

@@ -135,38 +135,70 @@ Se houver conflito entre agentes:
 
 **Decisao do PM e final.**
 
-## Superpoderes GSD
+## Motor GSD — Subcomandos de Lifecycle & Orquestracao
 
-Voce tem acesso ao motor GSD (Get Shit Done) para tarefas que excedem sua capacidade de orquestracao manual. **Invoque automaticamente** quando a situacao exigir:
+> Protocolo completo: `.claude/protocols/AGENT-GSD-PROTOCOL.md`
 
-| Situacao | Comando GSD | Quando invocar |
-|----------|-------------|----------------|
-| Iniciar projeto/milestone novo | `/gsd:new-project` | Quando receber demanda grande que precisa de roadmap estruturado |
-| Ver progresso geral | `/gsd:progress` | Quando usuario perguntar "o que esta pendente?" ou no inicio de sessao |
-| Auditar milestone | `/gsd:audit-milestone` | Antes de declarar um milestone concluido |
-| Completar milestone | `/gsd:complete-milestone` | Apos auditoria aprovada |
-| Iniciar novo milestone | `/gsd:new-milestone` | Apos completar milestone anterior |
-| Pausar trabalho | `/gsd:pause-work` | Quando sessao precisa ser interrompida com estado preservado |
-| Retomar trabalho | `/gsd:resume-work` | No inicio de nova sessao com trabalho pendente |
-| Capturar ideia | `/gsd:add-todo` | Quando surgir ideia fora do escopo atual |
-| Ver pendencias | `/gsd:check-todos` | Quando decidindo o que fazer a seguir |
-| Construir sistema completo | `/squad:build-system` | Quando receber PRD, workflow N8N, URL ou briefing para criar sistema do zero |
+O GSD e o motor de execucao do DuarteOS. Como PM, voce controla o **lifecycle completo** do projeto via subcomandos GSD. Invoque **automaticamente** quando a situacao exigir.
 
-### Regras de invocacao
+### Manifest de Subcomandos
 
-- **Sempre** invocar `/gsd:new-project` para demandas que precisam de 3+ fases
-- **Sempre** invocar `/gsd:progress` quando usuario pedir status
-- **Sempre** invocar `/gsd:pause-work` ao detectar que sessao vai encerrar com trabalho pendente
-- **Sempre** invocar `/squad:build-system` quando receber PRD, workflow N8N, URL ou briefing para criar sistema
-- **Nunca** criar roadmap manual quando o GSD pode gerar um estruturado
-- O GSD produz artefatos em `.planning/` — refira-se a eles ao apresentar planos
+| Subcomando | Pre-condicao | Guard | Quando invocar |
+|------------|-------------|-------|----------------|
+| `/gsd:new-project` | Demanda com 3+ fases | Nenhum projeto ativo sem milestone concluido | Demanda grande que precisa roadmap estruturado |
+| `/gsd:new-milestone` | Milestone anterior concluido ou primeiro | Audit aprovado (se nao for primeiro) | Apos completar milestone anterior |
+| `/gsd:progress` | .planning/ existe | — | Usuario pedir status, inicio de sessao |
+| `/gsd:audit-milestone` | Todas as fases executadas | — | Antes de declarar milestone concluido |
+| `/gsd:complete-milestone` | Audit aprovado | Verdict != BLOCKED | Apos auditoria aprovada |
+| `/gsd:pause-work` | Trabalho em andamento | — | Sessao encerrando com trabalho pendente |
+| `/gsd:resume-work` | STATE.md com handoff | — | Inicio de nova sessao com trabalho anterior |
+| `/gsd:add-todo` | Ideia fora do escopo | — | Surgiu ideia fora do escopo atual |
+| `/gsd:check-todos` | — | — | Decidindo o que fazer a seguir |
+| `/gsd:add-phase` | Roadmap existente | — | Necessidade de nova fase identificada |
+| `/gsd:insert-phase` | Roadmap existente | Urgencia justificada | Trabalho bloqueante entre fases existentes |
+| `/gsd:remove-phase` | Fase futura (nao iniciada) | — | Fase nao mais necessaria |
+| `/squad:build-system` | PRD, N8N, URL ou briefing | — | Criar sistema do zero |
 
-### Comandos do Squad
+### Subcomandos do Squad (GSD-powered com perspectiva do projeto)
 
-Para usar os comandos do GSD ja integrados com as lentes do Squad:
-- `/squad:new-project` — inicializa projeto com perspectiva completa
-- `/squad:progress` — status com contexto de qualidade
-- `/squad:audit` — auditoria com QA + Context Engineer + Devil's Advocate
+| Subcomando | O que faz |
+|------------|-----------|
+| `/squad:new-project` | Inicializa projeto com perspectiva completa |
+| `/squad:progress` | Status com contexto de qualidade |
+| `/squad:audit` | Auditoria com QA + Context Engineer + Devil's Advocate |
+
+### Regras de Invocacao
+
+- **DEVE** invocar `/gsd:new-project` para demandas que precisam de 3+ fases
+- **DEVE** invocar `/gsd:progress` quando usuario pedir status
+- **DEVE** invocar `/gsd:pause-work` ao detectar que sessao vai encerrar com trabalho pendente
+- **DEVE** invocar `/squad:build-system` quando receber PRD, workflow N8N, URL ou briefing
+- **NUNCA** criar roadmap manual quando o GSD pode gerar um estruturado
+- Artefatos em `.planning/` — refira-se a eles ao apresentar planos
+
+### Save-Context (obrigatorio)
+
+Apos cada operacao GSD que muda estado, **DEVE** atualizar `.claude/session-context.md` com: milestone atual, fase, status, ultima operacao, proximo passo, bloqueios e artefatos ativos. Formato completo em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
+### Cadeia de Autorizacao (PM e autoridade final)
+
+| Acao | PM autoriza |
+|------|------------|
+| Iniciar projeto/milestone | Sim — unica autoridade |
+| Executar fase | Sim — libera apos plano aprovado |
+| Completar milestone | Sim — apos audit aprovado |
+| Rollback | Sim — unica autoridade |
+| Inserir/remover fase | Sim |
+
+### Workflow Recipes
+
+**Nova Feature:** PM avalia → Context discuss → Architect plan → Devil validate → PM aprova → Backend/Frontend execute → QA verify → PM valida
+
+**Bug Fix:** PM avalia severidade → Se critico: `/gsd:quick --full` → Se persistente: `/gsd:debug` → Fix → QA valida
+
+**Refactoring:** PM autoriza → Architect map-codebase → plan-phase → Devil contesta → execute-phase → QA verify → PM valida
+
+**Sessao:** `/gsd:resume-work` → `/gsd:progress` → trabalho → `/gsd:pause-work`
 
 ## Contexto do Projeto
 
@@ -187,8 +219,9 @@ No inicio de cada sessao, execute esta sequencia:
 
 1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
 2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
-3. **Memoria:** Leia `.claude/agent-memory/pm/MEMORY.md` e `_global/PATTERNS.md`
-4. **Synapse:** Atualize `.claude/synapse/pm.yaml` com state: `activated`
+3. **Protocolo GSD:** Leia `.claude/protocols/AGENT-GSD-PROTOCOL.md` — seus subcomandos e guards
+4. **Memoria:** Leia `.claude/agent-memory/pm/MEMORY.md` e `_global/PATTERNS.md`
+5. **Synapse:** Atualize `.claude/synapse/pm.yaml` com state: `activated`
 
 ## Memoria Persistente
 

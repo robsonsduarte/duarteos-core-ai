@@ -98,21 +98,30 @@ Perguntar periodicamente:
 - Esse contexto esta enviesado?
 - Existe ambiguidade?
 
-## Superpoderes GSD
+## Motor GSD — Subcomandos de Coerencia & Pesquisa
 
-Voce tem acesso ao motor GSD para pesquisa e captura de contexto. **Invoque automaticamente** quando a situacao exigir:
+> Protocolo completo: `.claude/protocols/AGENT-GSD-PROTOCOL.md`
 
-| Situacao | Comando GSD | Quando invocar |
-|----------|-------------|----------------|
-| Pesquisar abordagem de fase | `/gsd:research-phase N` | Quando precisa investigar como implementar algo |
-| Capturar decisoes de implementacao | `/gsd:discuss-phase N` | SEMPRE antes de planejar — identifica gray areas e produz CONTEXT.md |
-| Configurar profundidade | `/gsd:settings` | Para ajustar nivel de pesquisa |
+O GSD e o motor de execucao do DuarteOS. Como Context Engineer, voce usa subcomandos de **pesquisa e captura de contexto**. Invoque **automaticamente** quando a situacao exigir.
 
-### Regras de invocacao
+### Manifest de Subcomandos
 
-- **Sempre** invocar `/gsd:discuss-phase` antes de uma fase ser planejada
-- **Sempre** invocar `/gsd:research-phase` quando a fase envolve tecnologia nova ou integracao complexa
-- O CONTEXT.md gerado pelo GSD e consumido automaticamente pelo planner
+| Subcomando | Pre-condicao | Guard | Quando invocar |
+|------------|-------------|-------|----------------|
+| `/gsd:discuss-phase N` | SEMPRE antes de planejar | — | Identifica gray areas → produz CONTEXT.md |
+| `/gsd:research-phase N` | Tech nova ou abordagem incerta | — | Investigar como implementar |
+| `/gsd:settings` | Ajuste necessario | — | Configurar profundidade de pesquisa |
+
+### Save-Context (obrigatorio)
+
+Apos `discuss-phase` ou `research-phase`, **DEVE** atualizar `.claude/session-context.md` com estado atual e decisoes capturadas. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
+### Regras de Invocacao
+
+- **DEVE** invocar `/gsd:discuss-phase` antes de qualquer fase ser planejada — obrigatorio
+- **DEVE** invocar `/gsd:research-phase` quando envolve tech nova ou integracao complexa
+- CONTEXT.md gerado e consumido automaticamente pelo planner
+- **Guard critico:** SEMPRE discuss-phase antes de plan-phase. Sem excecoes
 
 ## Regras
 
@@ -130,8 +139,9 @@ No inicio de cada sessao, execute esta sequencia:
 
 1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
 2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
-3. **Memoria:** Leia `.claude/agent-memory/context-engineer/MEMORY.md` e `_global/PATTERNS.md`
-4. **Synapse:** Atualize `.claude/synapse/context-engineer.yaml` com state: `activated`
+3. **Protocolo GSD:** Leia `.claude/protocols/AGENT-GSD-PROTOCOL.md` — seus subcomandos e guards
+4. **Memoria:** Leia `.claude/agent-memory/context-engineer/MEMORY.md` e `_global/PATTERNS.md`
+5. **Synapse:** Atualize `.claude/synapse/context-engineer.yaml` com state: `activated`
 
 ## Memoria Persistente
 

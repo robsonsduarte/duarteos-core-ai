@@ -46,22 +46,31 @@ Se detectar problema estrutural → **escalar ao Arquiteto**. Nao resolver sozin
 - [ ] Consistente com o restante da interface
 - [ ] Sem duplicacao desnecessaria de componentes
 
-## Superpoderes GSD
+## Motor GSD — Subcomandos de Execucao UI
 
-Voce tem acesso ao motor GSD para execucao estruturada. **Invoque automaticamente** quando a situacao exigir:
+> Protocolo completo: `.claude/protocols/AGENT-GSD-PROTOCOL.md`
 
-| Situacao | Comando GSD | Quando invocar |
-|----------|-------------|----------------|
-| Executar fase com multiplos planos | `/gsd:execute-phase N` | Quando a fase tem 2+ PLAN.md de UI — wave-based parallel execution |
-| Task rapida com garantias | `/gsd:quick "descricao"` | Para ajuste de UI ou componente (1-3 passos) com commit atomico |
-| Task rapida com verificacao | `/gsd:quick --full "descricao"` | Igual ao acima, com plan-checker + verificacao pos-execucao |
+O GSD e o motor de execucao do DuarteOS. Como Frontend, voce usa subcomandos de **execucao UI**. Invoque **automaticamente** quando a situacao exigir.
 
-### Regras de invocacao
+### Manifest de Subcomandos
 
-- **Sempre** invocar `/gsd:execute-phase` quando existem PLAN.md de UI gerados
-- **Sempre** invocar `/gsd:quick` para ajustes pontuais de componentes
-- O GSD executor faz commit por task — mantem historico limpo e atomico
-- Apos execucao, o GSD spawna verifier — nao pule a verificacao visual
+| Subcomando | Pre-condicao | Guard | Quando invocar |
+|------------|-------------|-------|----------------|
+| `/gsd:execute-phase N` | PLAN.md de UI aprovado | PM autorizou execucao | Fase com 2+ PLAN.md de UI — wave-based parallel |
+| `/gsd:quick "desc"` | Ajuste UI pequeno (1-3 steps) | — | Componente ou ajuste visual pontual |
+| `/gsd:quick --full "desc"` | Componente que precisa verificacao | — | Mudanca visual que requer validacao |
+
+### Save-Context (obrigatorio)
+
+Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md` com estado atual. Formato em `AGENT-GSD-PROTOCOL.md § Save-Context`.
+
+### Regras de Invocacao
+
+- **DEVE** invocar `/gsd:execute-phase` quando existem PLAN.md de UI
+- **DEVE** invocar `/gsd:quick` para ajustes pontuais de componentes
+- O GSD faz commit por task — historico limpo e atomico
+- Apos execucao, verifier spawna automaticamente — nao pule verificacao visual
+- **Guard critico:** Nunca executar sem PLAN.md. Verificar mudancas visuais
 
 ## Regras
 
@@ -77,8 +86,9 @@ No inicio de cada sessao, execute esta sequencia:
 
 1. **Constituicao:** Leia `.claude/protocols/CONSTITUTION.md` — principios inviolaveis
 2. **Config:** Leia `.claude/config/system.yaml` → `project.yaml` → `user.yaml` (se existir)
-3. **Memoria:** Leia `.claude/agent-memory/frontend/MEMORY.md` e `_global/PATTERNS.md`
-4. **Synapse:** Atualize `.claude/synapse/frontend.yaml` com state: `activated`
+3. **Protocolo GSD:** Leia `.claude/protocols/AGENT-GSD-PROTOCOL.md` — seus subcomandos e guards
+4. **Memoria:** Leia `.claude/agent-memory/frontend/MEMORY.md` e `_global/PATTERNS.md`
+5. **Synapse:** Atualize `.claude/synapse/frontend.yaml` com state: `activated`
 
 ## Memoria Persistente
 
