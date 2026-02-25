@@ -15,6 +15,31 @@ function copyTemplate(src, dest) {
   writeFileSync(dest, content, 'utf-8')
 }
 
+// Garante que entradas DuarteOS existam no .gitignore (append-only, nunca remove)
+function ensureGitignoreEntries(cwd) {
+  const gitignorePath = resolve(cwd, '.gitignore')
+  const requiredEntries = [
+    '.claude/config/user.yaml',
+    '.claude/settings.local.json',
+  ]
+
+  let content = ''
+  if (existsSync(gitignorePath)) {
+    content = readFileSync(gitignorePath, 'utf-8')
+  }
+
+  const missingEntries = requiredEntries.filter(entry => !content.includes(entry))
+
+  if (missingEntries.length > 0) {
+    const separator = content.endsWith('\n') ? '' : '\n'
+    const block = separator + '\n# DuarteOS — configs pessoais (nao versionar)\n' + missingEntries.join('\n') + '\n'
+    writeFileSync(gitignorePath, content + block, 'utf-8')
+    console.log(`  + .gitignore atualizado (${missingEntries.length} entradas DuarteOS adicionadas)`)
+    return true
+  }
+  return false
+}
+
 export function update(options = {}) {
   const cwd = process.cwd()
   const force = options.force || false
@@ -214,7 +239,9 @@ export function update(options = {}) {
     '.env',                   // User secrets
     '.env.example',           // May have been customized
     '.claude/settings.json',  // User may have custom hooks/settings
+    '.claude/settings.local.json', // YOLO mode permissions (user customized)
     '.claude/session-context.md', // User session data
+    'CLAUDE.md',              // User customized project policy
     '.claude/memory.json',    // User knowledge graph
     // Agent memories — individual per-agent memories are NEVER overwritten
     '.claude/agent-memory/pm/MEMORY.md',
@@ -290,6 +317,9 @@ export function update(options = {}) {
   // Add new files that don't exist yet (safe — won't overwrite)
   const newOnlyFiles = [
     ['env.example', '.env.example'],
+    // v5.2.0 — YOLO Mode (policy + permissions, only added if missing)
+    ['CLAUDE.md', 'CLAUDE.md'],
+    ['settings.local.json', '.claude/settings.local.json'],
   ]
 
   for (const [src, dest] of newOnlyFiles) {
@@ -303,12 +333,20 @@ export function update(options = {}) {
     }
   }
 
+  // Ensure .gitignore has DuarteOS entries
+  ensureGitignoreEntries(cwd)
+
   console.log(`
   Update completo!
   ---
   Atualizados: ${updated} arquivos
   Adicionados: ${added} arquivos novos
   Inalterados: ${skipped} (ja estavam na versao atual)
+
+  YOLO Mode (garantido a cada update):
+    CLAUDE.md                    — Politica de execucao (criado se ausente)
+    .claude/settings.local.json  — Permissoes auto-approve (criado se ausente)
+    .gitignore                   — Entradas DuarteOS garantidas
 
   Arquivos preservados (nunca sobrescritos):
     .mcp.json               — suas API keys

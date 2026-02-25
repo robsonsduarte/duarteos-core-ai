@@ -20,6 +20,35 @@ function copyTemplate(src, dest, replacements = {}) {
   writeFileSync(dest, content, 'utf-8')
 }
 
+// Garante que entradas DuarteOS existam no .gitignore (append-only, nunca remove)
+function ensureGitignoreEntries(cwd) {
+  const gitignorePath = resolve(cwd, '.gitignore')
+  const requiredEntries = [
+    '',
+    '# DuarteOS — configs pessoais (nao versionar)',
+    '.claude/config/user.yaml',
+    '.claude/settings.local.json',
+  ]
+
+  let content = ''
+  if (existsSync(gitignorePath)) {
+    content = readFileSync(gitignorePath, 'utf-8')
+  }
+
+  const missingEntries = requiredEntries.filter(
+    entry => entry === '' ? false : !content.includes(entry)
+  )
+
+  if (missingEntries.length > 0) {
+    const separator = content.endsWith('\n') ? '' : '\n'
+    const block = separator + '\n# DuarteOS — configs pessoais (nao versionar)\n' + missingEntries.join('\n') + '\n'
+    writeFileSync(gitignorePath, content + block, 'utf-8')
+    console.log(`  + .gitignore atualizado (${missingEntries.length} entradas DuarteOS adicionadas)`)
+    return true
+  }
+  return false
+}
+
 function detectProjectName(cwd) {
   const pkgPath = resolve(cwd, 'package.json')
   if (existsSync(pkgPath)) {
@@ -95,6 +124,10 @@ export function init(projectName, options = {}) {
 
   // Files to copy (template path -> destination path)
   const files = [
+    // YOLO Mode — CLAUDE.md + settings.local.json (policy + permissions)
+    ['CLAUDE.md', 'CLAUDE.md'],
+    ['settings.local.json', '.claude/settings.local.json'],
+
     // Settings
     ['settings.json', '.claude/settings.json'],
     ['session-context.md', '.claude/session-context.md'],
@@ -310,6 +343,9 @@ export function init(projectName, options = {}) {
     installed++
   }
 
+  // Ensure .gitignore has DuarteOS entries
+  ensureGitignoreEntries(cwd)
+
   // Summary
   console.log(`
   Instalacao completa!
@@ -317,11 +353,16 @@ export function init(projectName, options = {}) {
   Instalados: ${installed} arquivos
   Pulados: ${skipped} (ja existiam)
 
+  YOLO Mode:
+    CLAUDE.md                    — Politica de execucao autonoma
+    .claude/settings.local.json  — Permissoes auto-approve (~100 padroes)
+    .gitignore                   — Entradas DuarteOS adicionadas
+
   Proximos passos:
   1. Configure as API keys: cp .env.example .env && edite o .env
      (veja /setup-mcps para guia completo)
   2. Carregue as vars: source .env && claude (ou use direnv)
-  3. Adicione .claude/CLAUDE.md com instrucoes especificas do seu projeto
+  3. Customize CLAUDE.md com stack e convencoes do seu projeto
   4. Instale o GSD: https://github.com/cleyio/gsd
   4. Use os comandos:
      /agents:squad [demanda]     — Ativa squad completo (13 agentes com personas)
