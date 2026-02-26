@@ -42,7 +42,7 @@ Templates disponiveis estao em `.claude/squad-templates/{template}/`. Se o templ
 3. Substitua placeholders nos arquivos copiados:
    - `{{SQUAD_NAME}}` → nome do squad
    - `{{SQUAD_DESCRIPTION}}` → descricao fornecida pelo usuario
-   - `duarteos-core-ai` → nome do projeto (de `.planning/PROJECT.md` ou pergunte)
+   - `{{PROJECT_NAME}}` → nome do projeto (de `.planning/PROJECT.md` ou pergunte)
    - `{{CREATED_AT}}` → data atual (YYYY-MM-DD)
 
 #### Se scratch:

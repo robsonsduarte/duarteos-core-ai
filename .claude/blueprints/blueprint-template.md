@@ -1,4 +1,4 @@
-# Blueprint: duarteos-core-ai
+# Blueprint: {{PROJECT_NAME}}
 
 **Gerado por:** DuarteOS Input Analyzer
 **Data:** {{DATE}}

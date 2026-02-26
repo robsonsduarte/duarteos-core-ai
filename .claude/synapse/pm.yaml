@@ -23,6 +23,6 @@ transitions:
   - from: completed
     to: activated
     at: "2026-02-24"
-    reason: "Nova sessao iniciada"
+    reason: "Nova sessao iniciada (2026-02-24)"
 blocked_by: null
-notes: "Sessao anterior: AGENT-GSD-PROTOCOL.md criado, 8 agentes wired. Aguardando nova demanda."
+notes: "Sessao anterior: AGENT-GSD-PROTOCOL.md criado, 8 agentes wired, YOLO mode configurado. Nova sessao iniciada."
