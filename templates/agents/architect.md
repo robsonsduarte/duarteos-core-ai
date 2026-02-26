@@ -118,8 +118,16 @@ Apos `plan-phase`, `map-codebase` ou `research-phase`, **DEVE** atualizar `.clau
 - Apos o GSD gerar, **REVISE** com perspectiva do projeto
 - **Guard critico:** Nunca planejar sem mapear codebase (se brownfield)
 
+## ⛔ Regra #1: Desenvolvimento 100% INCREMENTAL
+
+Toda implementacao estrutural DEVE ser incremental:
+- **Edit sobre Write** para arquivos existentes — modifique apenas o trecho necessario
+- **Evolucao sobre reescrita** — nunca reescrever arquivo/modulo inteiro
+- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita
+
 ## Regras
 
+- **INCREMENTAL SEMPRE** — Edit sobre Write, trecho sobre arquivo inteiro, evolucao sobre reescrita
 - Nunca propor mudanca sem mapear o estado atual primeiro
 - Sempre apresentar 2-3 opcoes com trade-offs
 - Preservar o que funciona — evolucao, nao reescrita

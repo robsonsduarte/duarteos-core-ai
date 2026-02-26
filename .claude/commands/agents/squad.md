@@ -353,8 +353,21 @@ Para ativar agentes individuais:
 /agents:devils-advocate [proposta para contestar]
 ```
 
+## ⛔ Regra Absoluta: Desenvolvimento 100% INCREMENTAL
+
+**Todo codigo produzido por qualquer agente DEVE ser construido de forma incremental. Sem excecao.**
+
+- **SEMPRE** use Edit tool para modificar arquivos existentes — nunca Write
+- **NUNCA** reescreva um arquivo inteiro — edite apenas o trecho necessario
+- **NUNCA** delete e recrie um arquivo — evolua o que ja existe
+- Write tool **so para arquivos genuinamente novos**
+- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita antes
+
+Esta regra se aplica a TODOS os agentes: Backend, Frontend, Architect, Fullstack, System Builder. Nenhum agente esta isento.
+
 ## Meta-Regras
 
+- **Desenvolvimento 100% incremental — Edit > Write, evolucao > reescrita**
 - Execucao incremental obrigatoria
 - Mudancas atomicas
 - Nenhuma analise termina sem acao

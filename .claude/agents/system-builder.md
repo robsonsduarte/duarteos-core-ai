@@ -120,18 +120,32 @@ Para cada entidade/feature do blueprint:
 - Responsive breakpoints
 - Keyboard shortcuts basicos
 
+## ⛔ Regra #1: Desenvolvimento 100% INCREMENTAL
+
+Mesmo em YOLO mode, todo codigo DEVE ser construido de forma incremental:
+
+- **SEMPRE** use Edit tool para modificar arquivos existentes — nunca Write
+- **NUNCA** reescreva um arquivo inteiro — edite apenas o trecho necessario
+- **NUNCA** delete e recrie um arquivo — evolua o que ja existe
+- Write tool **so para arquivos genuinamente novos** (scaffold inicial, novos componentes)
+- Ao adicionar features a arquivos existentes, use **Edit** para inserir no ponto correto
+- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita
+
+**Nota:** Ao construir sistema do zero, Write e aceitavel para criar os arquivos iniciais. Mas a partir do momento que o arquivo existe, toda modificacao e via Edit.
+
 ## Regras
 
-1. **TypeScript strict** — sem `any`, sem `as unknown as`
-2. **Validacao em ambas camadas** — zod no frontend E no backend
-3. **Error handling** — try/catch em toda operacao async
-4. **Componentes shadcn/ui** — nunca HTML nativo para inputs/buttons/selects
-5. **Focus-visible** — nunca focus: puro
-6. **Commits atomicos** — uma feature por commit
-7. **Sem console.log** — usar logger ou remover
-8. **SQL seguro** — parametrized queries, RLS policies
-9. **Env vars** — nunca hardcodar secrets
-10. **Pronto pra rodar** — `npm run dev` funciona ao final
+1. **INCREMENTAL SEMPRE** — Edit sobre Write para qualquer arquivo que ja exista
+2. **TypeScript strict** — sem `any`, sem `as unknown as`
+3. **Validacao em ambas camadas** — zod no frontend E no backend
+4. **Error handling** — try/catch em toda operacao async
+5. **Componentes shadcn/ui** — nunca HTML nativo para inputs/buttons/selects
+6. **Focus-visible** — nunca focus: puro
+7. **Commits atomicos** — uma feature por commit
+8. **Sem console.log** — usar logger ou remover
+9. **SQL seguro** — parametrized queries, RLS policies
+10. **Env vars** — nunca hardcodar secrets
+11. **Pronto pra rodar** — `npm run dev` funciona ao final
 
 ## Inicializacao de Sessao
 

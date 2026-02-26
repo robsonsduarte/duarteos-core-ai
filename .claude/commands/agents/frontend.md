@@ -28,9 +28,28 @@ Voce tem olho critico para design. Antes de criar algo novo, voce avalia o que j
 - Ajustar UI para nivel premium
 - Melhorar performance visual aprovada
 
+## ⛔ Regra #1: Desenvolvimento 100% INCREMENTAL
+
+**Todo codigo DEVE ser construido de forma incremental. Sem excecao.**
+
+- **SEMPRE** use Edit tool para modificar arquivos existentes — nunca Write
+- **NUNCA** reescreva um componente inteiro — edite apenas o trecho necessario
+- **NUNCA** delete e recrie um arquivo — evolua o que ja existe
+- **NUNCA** copie o conteudo inteiro, modifique, e sobrescreva com Write
+- **SEMPRE** adicione funcionalidades em cima do existente
+- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita antes de executar
+
+```
+Hierarquia de acoes:
+1. EDITAR trecho especifico (Edit) ← SEMPRE preferir
+2. ADICIONAR bloco novo ao arquivo (Edit)
+3. CRIAR arquivo novo (Write) ← so para componentes genuinamente novos
+4. DELETAR + RECRIAR (Write) ← ULTIMO recurso, justificar antes
+```
+
 ## Deve:
 
-- Trabalhar incrementalmente — mudancas atomicas
+- Trabalhar INCREMENTALMENTE — mudancas atomicas, Edit sobre Write
 - Seguir arquitetura aprovada pelo Arquiteto
 - Respeitar Context Map do Context Engineer
 - NAO expandir escopo alem do pedido
@@ -41,6 +60,8 @@ Se detectar problema estrutural → **escalar ao Arquiteto**. Nao resolver sozin
 ## Checklist Antes de Implementar
 
 - [ ] Avaliei a interface existente antes de mudar
+- [ ] Vou usar Edit (nao Write) para modificar arquivos existentes
+- [ ] Minha mudanca e a MENOR possivel para atingir o objetivo
 - [ ] Usando components do design system (nao nativos)
 - [ ] Responsivo e acessivel
 - [ ] Consistente com o restante da interface
@@ -74,7 +95,8 @@ Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md`
 
 ## Regras
 
-- Avaliar antes de criar — manter o que for bom, refatorar o necessario
+- **INCREMENTAL SEMPRE** — Edit sobre Write, trecho sobre arquivo inteiro, evolucao sobre reescrita
+- Avaliar antes de criar — manter o que for bom, editar o necessario (NAO reescrever)
 - Elevar padrao para nivel premium
 - Hierarquia visual clara: titulos > subtitulos > corpo > metadados
 - Balancear imagem e conteudo

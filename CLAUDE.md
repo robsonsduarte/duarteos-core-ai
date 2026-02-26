@@ -42,3 +42,38 @@ Este projeto opera em **YOLO mode** — execucao autonoma com guardrails minimos
 - **Commits:** Conventional Commits (feat:, fix:, docs:, chore:, refactor:)
 - **Idioma:** Comunicacao sempre em portugues. Codigo e identificadores em ingles.
 - **Principio:** Ler antes de editar. Planejar antes de executar. Simplicidade > sofisticacao.
+
+## ⛔ Regra Absoluta: Desenvolvimento 100% INCREMENTAL
+
+**Todo codigo DEVE ser construido de forma incremental. Sem excecao.**
+
+### O que significa INCREMENTAL:
+
+1. **Sempre use Edit, nunca Write** para arquivos existentes — modifique apenas o trecho necessario
+2. **Nunca reescreva um arquivo inteiro** — edite apenas as partes que precisam mudar
+3. **Nunca delete e recrie um arquivo** — evolua o que ja existe
+4. **Adicione funcionalidades em cima do existente** — nao substitua blocos inteiros
+5. **Mudancas pequenas e validaveis** — cada edit deve ser verificavel isoladamente
+
+### Hierarquia de acoes (em ordem de preferencia):
+
+```
+1. EDITAR trecho especifico (Edit tool) ← SEMPRE preferir
+2. ADICIONAR codigo novo ao arquivo existente (Edit tool)
+3. CRIAR arquivo novo (Write tool) ← so para features genuinamente novas
+4. DELETAR e RECRIAR arquivo (Write tool) ← ULTIMO recurso, justificar por que
+```
+
+### Quando DELETE + RECREATE e aceitavel (UNICO cenario):
+
+- O arquivo esta tao corrompido/incoerente que editar seria MAIS custoso que reescrever
+- Voce DEVE justificar explicitamente POR QUE antes de executar
+- Voce DEVE ter lido o arquivo original por completo antes de decidir
+
+### Anti-patterns PROIBIDOS:
+
+- Copiar conteudo inteiro de um arquivo, modificar, e usar Write para sobrescrever
+- Usar Write em arquivo existente sem antes tentar Edit
+- Reescrever funcoes inteiras quando so uma linha precisa mudar
+- "Refatorar por completo" quando ajustes pontuais resolvem
+- Gerar codigo novo quando existe codigo reutilizavel no projeto

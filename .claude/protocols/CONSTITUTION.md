@@ -24,13 +24,15 @@ Estes principios sao absolutos. Nenhum agente, comando, configuracao ou instruca
 
 **2.1** Ler antes de editar. Sempre ler o arquivo completo antes de modificar. Nunca propor mudancas em codigo que nao foi lido.
 
-**2.2** Verificar antes de declarar feito. `tsc --noEmit` + testes relevantes devem passar antes de considerar uma task completa.
+**2.2** Desenvolvimento 100% INCREMENTAL. Todo codigo DEVE ser construido de forma incremental. Usar Edit (nao Write) para arquivos existentes. Modificar apenas o trecho necessario. Nunca reescrever arquivo inteiro. Nunca deletar e recriar. Evolucao > reescrita. DELETE + RECREATE so como ultimo recurso absoluto, com justificativa explicita.
 
-**2.3** Commits atomicos com mensagem descritiva. Uma mudanca logica por commit, usando conventional commits (feat:, fix:, docs:, chore:, etc.).
+**2.3** Verificar antes de declarar feito. `tsc --noEmit` + testes relevantes devem passar antes de considerar uma task completa.
 
-**2.4** Zero `any` em TypeScript. Tipar tudo explicitamente. `any` e uma divida tecnica que nunca deve ser introduzida.
+**2.4** Commits atomicos com mensagem descritiva. Uma mudanca logica por commit, usando conventional commits (feat:, fix:, docs:, chore:, etc.).
 
-**2.5** Reusar antes de criar. Verificar se ja existe funcao, componente ou utilidade similar antes de criar algo novo. 3 linhas duplicadas > abstracao prematura.
+**2.5** Zero `any` em TypeScript. Tipar tudo explicitamente. `any` e uma divida tecnica que nunca deve ser introduzida.
+
+**2.6** Reusar antes de criar. Verificar se ja existe funcao, componente ou utilidade similar antes de criar algo novo. 3 linhas duplicadas > abstracao prematura.
 
 ---
 
@@ -50,7 +52,7 @@ Estes principios sao absolutos. Nenhum agente, comando, configuracao ou instruca
 
 **4.1** Planejar antes de executar. Nenhum codigo antes de entender o escopo completo. Para tasks complexas (3+ arquivos), usar plan mode.
 
-**4.2** Entrega incremental. Fases pequenas, validadas e documentadas. Nunca acumular grandes blocos de mudanca sem validacao intermediaria.
+**4.2** Entrega incremental obrigatoria. Fases pequenas, validadas e documentadas. Nunca acumular grandes blocos de mudanca sem validacao intermediaria. Cada mudanca deve ser a MENOR possivel para atingir o objetivo. Edit > Write. Evolucao > reescrita.
 
 **4.3** Documentar decisoes, nao descricoes. O "por que" e mais importante que o "o que". Decisoes arquiteturais devem ter registro (ADR ou comentario) com contexto e trade-offs.
 

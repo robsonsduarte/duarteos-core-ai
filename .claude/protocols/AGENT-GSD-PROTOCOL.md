@@ -44,6 +44,14 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 > Se existe um comando GSD que faz o que o agente precisa → **usar o GSD**.
 > Nunca recriar manualmente o que o motor ja oferece com rastreabilidade.
 
+### Regra de Execucao: 100% INCREMENTAL
+
+> Todo codigo produzido por qualquer agente DEVE ser construido de forma incremental.
+> **Edit sobre Write. Trecho sobre arquivo inteiro. Evolucao sobre reescrita.**
+> Nunca reescrever arquivo existente — editar apenas o trecho necessario.
+> Delete + Recreate so como ULTIMO recurso, com justificativa explicita.
+> Write tool apenas para arquivos genuinamente novos.
+
 ---
 
 ## Manifests por Agente
