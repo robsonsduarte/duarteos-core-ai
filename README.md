@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -21,6 +21,11 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.3.0](#novidades-v530)
+  - [PM Pure Orchestrator](#pm-pure-orchestrator)
+  - [Desenvolvimento 100% Incremental](#desenvolvimento-100-incremental)
+  - [Blueprint Template](#blueprint-template)
+  - [GSD-Integrated Agents](#gsd-integrated-agents)
 - [Novidades v5.2.0](#novidades-v520)
   - [YOLO Mode](#yolo-mode)
   - [Constitution](#constitution)
@@ -264,18 +269,18 @@ Pagamento via Stripe. Painel admin para gerenciar tudo."
 
 Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
-#### PM (Gerente de Projetos) — O Chefe
+#### PM (Gerente de Projetos) — O Orquestrador Supremo
 
 ```
 /agents:pm Preciso refatorar o sistema de pagamentos do meu SaaS
 ```
 
-**O que ele faz:** Analisa tudo, cria um plano de acao com fases, define prioridades, e coordena os outros agentes. Nenhum codigo e escrito antes dele aprovar o plano.
+**O que ele faz:** Orquestrador puro — analisa a demanda, cria plano de acao, e **delega tudo** para agentes especializados via Task tool. ATLAS nunca escreve codigo, nunca audita, nunca projeta arquitetura. Ele coordena, decide e monitora.
 
 **Quando usar:**
-- Demandas grandes que precisam de planejamento
+- Demandas grandes que precisam de planejamento e coordenacao
 - Quando nao sabe por onde comecar
-- Para coordenar trabalho entre multiplos agentes
+- Para orquestrar multiplos agentes trabalhando em paralelo
 
 **Mais exemplos:**
 ```
@@ -720,6 +725,83 @@ checks e cria script de deploy pro servidor.
 
 ---
 
+## Novidades v5.3.0
+
+### PM Pure Orchestrator
+
+O agente PM (**ATLAS**) foi completamente reescrito para funcionar como **orquestrador puro**. Ele nunca executa trabalho de outros agentes — apenas delega.
+
+**O que mudou:**
+- ATLAS **nunca escreve codigo** (TypeScript, SQL, CSS, HTML, config)
+- ATLAS **nunca audita qualidade** — delega para SENTINEL (QA)
+- ATLAS **nunca projeta arquitetura** — delega para NEXUS (Architect)
+- ATLAS **nunca implementa UI** — delega para PRISM (Frontend)
+- ATLAS **nunca implementa backend** — delega para FORGE (Backend)
+
+**Como funciona a delegacao:**
+- ATLAS usa a **Task tool** para spawnar agentes especializados
+- Cada agente recebe contexto, tarefa e criterios de aceite
+- ATLAS monitora progresso e decide proximos passos
+
+**Anti-patterns eliminados:**
+| Antes (errado) | Agora (correto) |
+|-----------------|-----------------|
+| PM escrevia codigo SQL | PM delega para FORGE |
+| PM fazia code review | PM delega para SENTINEL |
+| PM propunha arquitetura | PM delega para NEXUS |
+| PM criava componentes UI | PM delega para PRISM |
+
+### Desenvolvimento 100% Incremental
+
+Regra aplicada em **15+ arquivos** do sistema — CLAUDE.md, Constitution, GSD Protocol e todos os agentes que escrevem codigo.
+
+**Hierarquia de acoes (em ordem de preferencia):**
+
+```
+1. EDITAR trecho especifico (Edit tool) ← SEMPRE preferir
+2. ADICIONAR codigo novo ao arquivo existente (Edit tool)
+3. CRIAR arquivo novo (Write tool) ← so para features genuinamente novas
+4. DELETAR e RECRIAR arquivo (Write tool) ← ULTIMO recurso, justificar por que
+```
+
+**Onde a regra esta aplicada:**
+- `CLAUDE.md` — nivel de projeto (todos os agentes leem)
+- `CONSTITUTION.md` — Artigo 2.2 (principio constitucional)
+- `AGENT-GSD-PROTOCOL.md` — Regra de Execucao
+- Agentes FORGE, PRISM, NEXUS, BRIDGE, TITAN — Regra #1 individual
+- `squad.md` — Meta-regra de orquestracao
+
+**Anti-patterns proibidos:**
+- Copiar conteudo inteiro de um arquivo, modificar, e usar Write para sobrescrever
+- Usar Write em arquivo existente sem antes tentar Edit
+- Reescrever funcoes inteiras quando so uma linha precisa mudar
+- "Refatorar por completo" quando ajustes pontuais resolvem
+
+### Blueprint Template
+
+Template padronizado para blueprints de sistema em `.claude/blueprints/blueprint-template.md`. Usado pelo `/squad:build-system` para gerar BLUEPRINT.md com:
+- Nome, stack, design decisions
+- Data models com campos e relacionamentos
+- Auth requirements e RBAC
+- Pages/Routes com descricao
+- API endpoints (CRUD + custom)
+- Design (paleta, tipografia, layout)
+- Features priorizadas (MVP → Nice-to-have)
+
+### GSD-Integrated Agents
+
+Todos os agentes agora tem secoes **Motor GSD** com manifest de subcomandos, regras de invocacao e save-context obrigatorio. Cada agente sabe exatamente quais subcomandos GSD pode/deve usar:
+
+| Agente | Subcomandos GSD |
+|--------|----------------|
+| ATLAS (PM) | `new-project`, `plan-phase`, `execute-phase`, `verify-work`, `map-codebase` |
+| NEXUS (Architect) | `map-codebase`, `plan-phase`, `research-phase`, `list-phase-assumptions` |
+| FORGE (Backend) | `execute-phase`, `quick`, `quick --full` |
+| PRISM (Frontend) | `execute-phase`, `quick`, `quick --full` |
+| SENTINEL (QA) | `verify-work`, `quick --full` |
+
+---
+
 ## Novidades v5.2.0
 
 ### YOLO Mode
@@ -923,7 +1005,7 @@ Cada agente tem uma **persona** — identidade, arquetipo e estilo de comunicaca
 
 | Persona | Agente | Arquetipo | O que pode fazer |
 |---------|--------|-----------|------------------|
-| **ATLAS** | PM | O Navegador | Planejar, priorizar, decidir, coordenar todos os outros |
+| **ATLAS** | PM | O Navegador | Orquestrar, delegar, decidir — nunca executa, so coordena |
 | **NEXUS** | Arquiteto | O Tecelao | Projetar arquitetura, refatorar, definir patterns |
 | **FORGE** | Backend | O Ferreiro | Implementar API, logica de negocio, banco de dados |
 | **PRISM** | Frontend | A Lente | Criar interfaces, componentes, animacoes, design |
@@ -1163,7 +1245,7 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
                          └─────────┬──────────┘
                                    │
                     ┌──────────────▼──────────────┐
-                    │     DuarteOS Core AI v5     │
+                    │   DuarteOS Core AI v5.3     │
                     │  constitution + config +    │
                     │  personas + memory + squads │
                     └──────────────┬──────────────┘
@@ -1193,15 +1275,17 @@ Ou use o **Tool Forge** — os agentes criam tools novas sozinhos quando precisa
 ### Principios
 
 1. **Constitution enforced** — 15 principios inviolaveis governam todos os agentes
-2. **Nenhum agente pode apenas analisar** — Detectar → Provar → Agir
-3. **Critica sem alternativa e invalida** — sempre apresentar alternativa
-4. **QA sempre entrega prova** — sem teste/evidencia, invalido
-5. **Loop fechado** — evidencia + acao + proximo passo
-6. **YOLO mode** — executa tudo, so pergunta quando critico
-7. **Tool evolution** — agentes criam ferramentas quando precisam
-8. **Memory persistence** — conhecimento sobrevive entre sessoes
-9. **Config layered** — system → project → user → session
-10. **Disciplina > ritual** — se regra virar burocracia, simplificar
+2. **Desenvolvimento 100% incremental** — Edit > Write, trecho > arquivo, evolucao > reescrita
+3. **PM e orquestrador puro** — ATLAS nunca executa, so delega para agentes especializados
+4. **Nenhum agente pode apenas analisar** — Detectar → Provar → Agir
+5. **Critica sem alternativa e invalida** — sempre apresentar alternativa
+6. **QA sempre entrega prova** — sem teste/evidencia, invalido
+7. **Loop fechado** — evidencia + acao + proximo passo
+8. **YOLO mode** — executa tudo, so pergunta quando critico
+9. **Tool evolution** — agentes criam ferramentas quando precisam
+10. **Memory persistence** — conhecimento sobrevive entre sessoes
+11. **Config layered** — system → project → user → session
+12. **Disciplina > ritual** — se regra virar burocracia, simplificar
 
 ### Pre-requisitos
 
