@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync, rmSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPackageVersion } from './utils.mjs'
@@ -49,11 +49,54 @@ export function update(options = {}) {
   console.log(`  Versao do pacote: v${getPackageVersion()}`)
   console.log(`  Diretorio: ${cwd}\n`)
 
-  // Check if DuarteOS is installed
-  if (!existsSync(resolve(cwd, '.claude/commands/DUARTEOS/agents/squad.md'))) {
+  // Check if DuarteOS is installed (accept old or new path structure)
+  const hasNewStructure = existsSync(resolve(cwd, '.claude/commands/DUARTEOS/agents/squad.md'))
+  const hasOldStructure = existsSync(resolve(cwd, '.claude/commands/agents/squad.md'))
+  if (!hasNewStructure && !hasOldStructure) {
     console.error('  ✗ DuarteOS nao esta instalado neste projeto.')
     console.error('  Use "duarteos init" primeiro.')
     process.exit(1)
+  }
+
+  // Migrate old namespace structure → new /DUARTEOS: namespace
+  if (hasOldStructure && !hasNewStructure) {
+    console.log('  ↑ Migrando comandos para namespace /DUARTEOS:...')
+
+    // Ensure DUARTEOS directories exist
+    const duarteosAgentsDir = resolve(cwd, '.claude/commands/DUARTEOS/agents')
+    const duarteosSquadDir = resolve(cwd, '.claude/commands/DUARTEOS/squad')
+    if (!existsSync(duarteosAgentsDir)) mkdirSync(duarteosAgentsDir, { recursive: true })
+    if (!existsSync(duarteosSquadDir)) mkdirSync(duarteosSquadDir, { recursive: true })
+
+    // Move agents/* → DUARTEOS/agents/*
+    const oldAgentsDir = resolve(cwd, '.claude/commands/agents')
+    if (existsSync(oldAgentsDir)) {
+      for (const file of readdirSync(oldAgentsDir)) {
+        const src = resolve(oldAgentsDir, file)
+        const dest = resolve(duarteosAgentsDir, file)
+        if (!existsSync(dest)) cpSync(src, dest)
+      }
+    }
+
+    // Move squad/* → DUARTEOS/squad/*
+    const oldSquadDir = resolve(cwd, '.claude/commands/squad')
+    if (existsSync(oldSquadDir)) {
+      for (const file of readdirSync(oldSquadDir)) {
+        const src = resolve(oldSquadDir, file)
+        const dest = resolve(duarteosSquadDir, file)
+        if (!existsSync(dest)) cpSync(src, dest)
+      }
+    }
+
+    // Move setup-mcps.md → DUARTEOS/setup-mcps.md
+    const oldSetupMcps = resolve(cwd, '.claude/commands/setup-mcps.md')
+    const newSetupMcps = resolve(cwd, '.claude/commands/DUARTEOS/setup-mcps.md')
+    if (existsSync(oldSetupMcps) && !existsSync(newSetupMcps)) {
+      cpSync(oldSetupMcps, newSetupMcps)
+    }
+
+    console.log('  ✓ Namespace migrado com sucesso!')
+    console.log('')
   }
 
   // Files that are SAFE to overwrite (system files, not user-customized)
@@ -362,6 +405,23 @@ export function update(options = {}) {
       }
     }
     walkSync(duarteosSrc, duarteosDest)
+  }
+
+  // Clean up old namespace directories (after migration + update copied new files)
+  const oldAgentsDir = resolve(cwd, '.claude/commands/agents')
+  const oldSquadDir = resolve(cwd, '.claude/commands/squad')
+  const oldSetupMcps = resolve(cwd, '.claude/commands/setup-mcps.md')
+  if (existsSync(oldAgentsDir)) {
+    rmSync(oldAgentsDir, { recursive: true })
+    console.log('  - removido .claude/commands/agents/ (migrado para DUARTEOS/)')
+  }
+  if (existsSync(oldSquadDir)) {
+    rmSync(oldSquadDir, { recursive: true })
+    console.log('  - removido .claude/commands/squad/ (migrado para DUARTEOS/)')
+  }
+  if (existsSync(oldSetupMcps)) {
+    rmSync(oldSetupMcps)
+    console.log('  - removido .claude/commands/setup-mcps.md (migrado para DUARTEOS/)')
   }
 
   // Ensure .gitignore has DuarteOS entries
