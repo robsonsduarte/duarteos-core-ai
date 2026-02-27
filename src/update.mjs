@@ -50,7 +50,7 @@ export function update(options = {}) {
   console.log(`  Diretorio: ${cwd}\n`)
 
   // Check if DuarteOS is installed
-  if (!existsSync(resolve(cwd, '.claude/commands/agents/squad.md'))) {
+  if (!existsSync(resolve(cwd, '.claude/commands/DUARTEOS/agents/squad.md'))) {
     console.error('  ✗ DuarteOS nao esta instalado neste projeto.')
     console.error('  Use "duarteos init" primeiro.')
     process.exit(1)
@@ -59,31 +59,31 @@ export function update(options = {}) {
   // Files that are SAFE to overwrite (system files, not user-customized)
   const safeToUpdate = [
     // Squad commands (system — user doesn't customize these)
-    ['commands/squad/new-project.md', '.claude/commands/squad/new-project.md'],
-    ['commands/squad/map-codebase.md', '.claude/commands/squad/map-codebase.md'],
-    ['commands/squad/plan-phase.md', '.claude/commands/squad/plan-phase.md'],
-    ['commands/squad/execute-phase.md', '.claude/commands/squad/execute-phase.md'],
-    ['commands/squad/verify-work.md', '.claude/commands/squad/verify-work.md'],
-    ['commands/squad/discuss-phase.md', '.claude/commands/squad/discuss-phase.md'],
-    ['commands/squad/research-phase.md', '.claude/commands/squad/research-phase.md'],
-    ['commands/squad/validate-plan.md', '.claude/commands/squad/validate-plan.md'],
-    ['commands/squad/audit.md', '.claude/commands/squad/audit.md'],
-    ['commands/squad/quick.md', '.claude/commands/squad/quick.md'],
-    ['commands/squad/debug.md', '.claude/commands/squad/debug.md'],
-    ['commands/squad/progress.md', '.claude/commands/squad/progress.md'],
-    ['commands/squad/pause.md', '.claude/commands/squad/pause.md'],
-    ['commands/squad/resume.md', '.claude/commands/squad/resume.md'],
-    ['commands/squad/build-system.md', '.claude/commands/squad/build-system.md'],
+    ['commands/DUARTEOS/squad/new-project.md', '.claude/commands/DUARTEOS/squad/new-project.md'],
+    ['commands/DUARTEOS/squad/map-codebase.md', '.claude/commands/DUARTEOS/squad/map-codebase.md'],
+    ['commands/DUARTEOS/squad/plan-phase.md', '.claude/commands/DUARTEOS/squad/plan-phase.md'],
+    ['commands/DUARTEOS/squad/execute-phase.md', '.claude/commands/DUARTEOS/squad/execute-phase.md'],
+    ['commands/DUARTEOS/squad/verify-work.md', '.claude/commands/DUARTEOS/squad/verify-work.md'],
+    ['commands/DUARTEOS/squad/discuss-phase.md', '.claude/commands/DUARTEOS/squad/discuss-phase.md'],
+    ['commands/DUARTEOS/squad/research-phase.md', '.claude/commands/DUARTEOS/squad/research-phase.md'],
+    ['commands/DUARTEOS/squad/validate-plan.md', '.claude/commands/DUARTEOS/squad/validate-plan.md'],
+    ['commands/DUARTEOS/squad/audit.md', '.claude/commands/DUARTEOS/squad/audit.md'],
+    ['commands/DUARTEOS/squad/quick.md', '.claude/commands/DUARTEOS/squad/quick.md'],
+    ['commands/DUARTEOS/squad/debug.md', '.claude/commands/DUARTEOS/squad/debug.md'],
+    ['commands/DUARTEOS/squad/progress.md', '.claude/commands/DUARTEOS/squad/progress.md'],
+    ['commands/DUARTEOS/squad/pause.md', '.claude/commands/DUARTEOS/squad/pause.md'],
+    ['commands/DUARTEOS/squad/resume.md', '.claude/commands/DUARTEOS/squad/resume.md'],
+    ['commands/DUARTEOS/squad/build-system.md', '.claude/commands/DUARTEOS/squad/build-system.md'],
 
     // Agent definitions (system intelligence)
-    ['agents/squad.md', '.claude/commands/agents/squad.md'],
-    ['agents/pm.md', '.claude/commands/agents/pm.md'],
-    ['agents/architect.md', '.claude/commands/agents/architect.md'],
-    ['agents/backend.md', '.claude/commands/agents/backend.md'],
-    ['agents/frontend.md', '.claude/commands/agents/frontend.md'],
-    ['agents/qa.md', '.claude/commands/agents/qa.md'],
-    ['agents/context-engineer.md', '.claude/commands/agents/context-engineer.md'],
-    ['agents/devils-advocate.md', '.claude/commands/agents/devils-advocate.md'],
+    ['commands/DUARTEOS/agents/squad.md', '.claude/commands/DUARTEOS/agents/squad.md'],
+    ['commands/DUARTEOS/agents/pm.md', '.claude/commands/DUARTEOS/agents/pm.md'],
+    ['commands/DUARTEOS/agents/architect.md', '.claude/commands/DUARTEOS/agents/architect.md'],
+    ['commands/DUARTEOS/agents/backend.md', '.claude/commands/DUARTEOS/agents/backend.md'],
+    ['commands/DUARTEOS/agents/frontend.md', '.claude/commands/DUARTEOS/agents/frontend.md'],
+    ['commands/DUARTEOS/agents/qa.md', '.claude/commands/DUARTEOS/agents/qa.md'],
+    ['commands/DUARTEOS/agents/context-engineer.md', '.claude/commands/DUARTEOS/agents/context-engineer.md'],
+    ['commands/DUARTEOS/agents/devils-advocate.md', '.claude/commands/DUARTEOS/agents/devils-advocate.md'],
 
     // Custom agents
     ['agents-custom/python-executor.md', '.claude/agents/python-executor.md'],
@@ -116,7 +116,7 @@ export function update(options = {}) {
     ['mcp-servers/requirements.txt', '.claude/mcp-servers/requirements.txt'],
 
     // Setup MCPs guide
-    ['commands/setup-mcps.md', '.claude/commands/setup-mcps.md'],
+    ['commands/DUARTEOS/setup-mcps.md', '.claude/commands/DUARTEOS/setup-mcps.md'],
 
     // Blueprint template
     ['blueprints/blueprint-template.md', '.claude/blueprints/blueprint-template.md'],
@@ -125,10 +125,10 @@ export function update(options = {}) {
     ['planning/config.json', '.planning/config.json'],
 
     // Squad Factory Commands
-    ['commands/squad/create-squad.md', '.claude/commands/squad/create-squad.md'],
-    ['commands/squad/list-squads.md', '.claude/commands/squad/list-squads.md'],
-    ['commands/squad/run-squad.md', '.claude/commands/squad/run-squad.md'],
-    ['commands/squad/clone-mind.md', '.claude/commands/squad/clone-mind.md'],
+    ['commands/DUARTEOS/squad/create-squad.md', '.claude/commands/DUARTEOS/squad/create-squad.md'],
+    ['commands/DUARTEOS/squad/list-squads.md', '.claude/commands/DUARTEOS/squad/list-squads.md'],
+    ['commands/DUARTEOS/squad/run-squad.md', '.claude/commands/DUARTEOS/squad/run-squad.md'],
+    ['commands/DUARTEOS/squad/clone-mind.md', '.claude/commands/DUARTEOS/squad/clone-mind.md'],
 
     // Squad Templates
     ['squad-templates/basic/squad.yaml', '.claude/squad-templates/basic/squad.yaml'],
@@ -176,9 +176,9 @@ export function update(options = {}) {
     ['synapse/template.yaml', '.claude/synapse/template.yaml'],
 
     // v5.0.0 — New Commands
-    ['commands/squad/task.md', '.claude/commands/squad/task.md'],
-    ['commands/squad/synapse.md', '.claude/commands/squad/synapse.md'],
-    ['commands/squad/sync-ide.md', '.claude/commands/squad/sync-ide.md'],
+    ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
+    ['commands/DUARTEOS/squad/synapse.md', '.claude/commands/DUARTEOS/squad/synapse.md'],
+    ['commands/DUARTEOS/squad/sync-ide.md', '.claude/commands/DUARTEOS/squad/sync-ide.md'],
 
     // v5.0.0 — Quality Gates (new hooks)
     ['hooks/architecture-review.sh', '.claude/hooks/architecture-review.sh'],
@@ -334,49 +334,34 @@ export function update(options = {}) {
     }
   }
 
-  // DUARTEOS Mind Clones — sync entire directory tree
-  const mindClonesSrc = resolve(TEMPLATES_DIR, 'commands', 'DUARTEOS')
-  const mindClonesDest = resolve(cwd, '.claude', 'commands', 'DUARTEOS')
-  if (existsSync(mindClonesSrc)) {
-    const categories = readdirSync(mindClonesSrc, { withFileTypes: true })
-      .filter(d => d.isDirectory())
-      .map(d => d.name)
-
-    let mindClonesAdded = 0
-    let mindClonesUpdated = 0
-    for (const category of categories) {
-      const catSrc = resolve(mindClonesSrc, category)
-      const catDest = resolve(mindClonesDest, category)
-      if (!existsSync(catDest)) {
-        mkdirSync(catDest, { recursive: true })
-      }
-
-      const agents = readdirSync(catSrc).filter(f => f.endsWith('.md'))
-      for (const agent of agents) {
-        const agentSrc = resolve(catSrc, agent)
-        const agentDest = resolve(catDest, agent)
-        if (!existsSync(agentDest)) {
-          cpSync(agentSrc, agentDest)
-          mindClonesAdded++
-        } else {
-          const currentContent = readFileSync(agentDest, 'utf-8')
-          const newContent = readFileSync(agentSrc, 'utf-8')
-          if (currentContent !== newContent) {
-            cpSync(agentSrc, agentDest)
-            mindClonesUpdated++
+  // DUARTEOS commands — sync entire directory tree
+  const duarteosSrc = resolve(TEMPLATES_DIR, 'commands', 'DUARTEOS')
+  const duarteosDest = resolve(cwd, '.claude', 'commands', 'DUARTEOS')
+  if (existsSync(duarteosSrc)) {
+    const walkSync = (src, dest) => {
+      if (!existsSync(dest)) mkdirSync(dest, { recursive: true })
+      const entries = readdirSync(src, { withFileTypes: true })
+      for (const entry of entries) {
+        const srcPath = resolve(src, entry.name)
+        const destPath = resolve(dest, entry.name)
+        if (entry.isDirectory()) {
+          walkSync(srcPath, destPath)
+        } else if (entry.name.endsWith('.md')) {
+          if (!existsSync(destPath)) {
+            cpSync(srcPath, destPath)
+            added++
+          } else {
+            const current = readFileSync(destPath, 'utf-8')
+            const next = readFileSync(srcPath, 'utf-8')
+            if (current !== next) {
+              cpSync(srcPath, destPath)
+              updated++
+            }
           }
         }
       }
     }
-
-    if (mindClonesAdded > 0) {
-      console.log(`  + ${mindClonesAdded} mind clones adicionados (DUARTEOS/)`)
-      added += mindClonesAdded
-    }
-    if (mindClonesUpdated > 0) {
-      console.log(`  ~ ${mindClonesUpdated} mind clones atualizados (DUARTEOS/)`)
-      updated += mindClonesUpdated
-    }
+    walkSync(duarteosSrc, duarteosDest)
   }
 
   // Ensure .gitignore has DuarteOS entries

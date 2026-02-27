@@ -64,7 +64,7 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 | `/gsd:add-phase` | Roadmap existente | Nenhum | Fase adicionada ao final |
 | `/gsd:insert-phase` | Roadmap existente, urgencia justificada | Nenhum | Fase inserida como decimal |
 | `/gsd:remove-phase` | Fase futura (nao iniciada) | Nenhum | Fase removida, renumerada |
-| `/squad:build-system` | PRD, workflow N8N, URL ou briefing recebido | Nenhum | Sistema completo |
+| `/DUARTEOS:squad:build-system` | PRD, workflow N8N, URL ou briefing recebido | Nenhum | Sistema completo |
 
 **Autoridade especial:** PM pode invocar qualquer comando GSD se justificado. PM autoriza transicoes entre fases.
 
@@ -138,7 +138,7 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 | Comando GSD | Pre-condicao | Guard | Output |
 |-------------|-------------|-------|--------|
 | `/gsd:list-phase-assumptions N` | SEMPRE antes de aprovar planos | Nenhum | Lista de premissas |
-| `/squad:validate-plan` | PLAN.md existe para contestar | Nenhum | Verdict: APPROVED/CAVEATS/BLOCKED |
+| `/DUARTEOS:squad:validate-plan` | PLAN.md existe para contestar | Nenhum | Verdict: APPROVED/CAVEATS/BLOCKED |
 
 **Guard critico:** Nunca aprovar sem expor assumptions primeiro. Critica sem alternativa e INVALIDA.
 
@@ -148,21 +148,21 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 
 | Comando GSD | Pre-condicao | Guard | Output |
 |-------------|-------------|-------|--------|
-| `/squad:new-project` | Demanda grande recebida | Nenhum | Roadmap completo |
-| `/squad:plan-phase N` | Fase do roadmap a planejar | Nenhum | PLAN.md via Architect+Context+Devil |
-| `/squad:execute-phase N` | PLAN.md aprovados existem | Nenhum | Execucao via Backend+Frontend+QA |
-| `/squad:verify-work N` | Fase executada | Nenhum | UAT via QA |
-| `/squad:discuss-phase N` | Antes de planejar | Nenhum | CONTEXT.md via Context Engineer |
-| `/squad:validate-plan` | PLAN.md existe | Nenhum | Verdict via Devil's Advocate |
-| `/squad:audit` | Milestone completo | Nenhum | Audit via QA+Context+Devil |
-| `/squad:quick "desc"` | Task ad-hoc | Nenhum | Execucao rapida |
-| `/squad:debug "desc"` | Bug persistente | Nenhum | Debug cientifico |
-| `/squad:progress` | Qualquer momento | Nenhum | Status consolidado |
-| `/squad:pause` | Sessao encerrando | Nenhum | Handoff salvo |
-| `/squad:resume` | Nova sessao | Nenhum | Contexto restaurado |
-| `/squad:build-system` | PRD/N8N/URL recebido | Nenhum | Sistema completo |
-| `/squad:map-codebase` | Codebase a analisar | Nenhum | 7 docs via Architect |
-| `/squad:synapse` | Verificar estado dos agentes | Nenhum | Dashboard |
+| `/DUARTEOS:squad:new-project` | Demanda grande recebida | Nenhum | Roadmap completo |
+| `/DUARTEOS:squad:plan-phase N` | Fase do roadmap a planejar | Nenhum | PLAN.md via Architect+Context+Devil |
+| `/DUARTEOS:squad:execute-phase N` | PLAN.md aprovados existem | Nenhum | Execucao via Backend+Frontend+QA |
+| `/DUARTEOS:squad:verify-work N` | Fase executada | Nenhum | UAT via QA |
+| `/DUARTEOS:squad:discuss-phase N` | Antes de planejar | Nenhum | CONTEXT.md via Context Engineer |
+| `/DUARTEOS:squad:validate-plan` | PLAN.md existe | Nenhum | Verdict via Devil's Advocate |
+| `/DUARTEOS:squad:audit` | Milestone completo | Nenhum | Audit via QA+Context+Devil |
+| `/DUARTEOS:squad:quick "desc"` | Task ad-hoc | Nenhum | Execucao rapida |
+| `/DUARTEOS:squad:debug "desc"` | Bug persistente | Nenhum | Debug cientifico |
+| `/DUARTEOS:squad:progress` | Qualquer momento | Nenhum | Status consolidado |
+| `/DUARTEOS:squad:pause` | Sessao encerrando | Nenhum | Handoff salvo |
+| `/DUARTEOS:squad:resume` | Nova sessao | Nenhum | Contexto restaurado |
+| `/DUARTEOS:squad:build-system` | PRD/N8N/URL recebido | Nenhum | Sistema completo |
+| `/DUARTEOS:squad:map-codebase` | Codebase a analisar | Nenhum | 7 docs via Architect |
+| `/DUARTEOS:squad:synapse` | Verificar estado dos agentes | Nenhum | Dashboard |
 
 ---
 
@@ -209,12 +209,12 @@ ESCALACAO:
 TRIGGER: Usuario descreve feature
 FLUXO:
   1. PM avalia escopo
-     → Se grande: /squad:new-project ou /gsd:add-phase
-     → Se medio: /squad:discuss-phase N
+     → Se grande: /DUARTEOS:squad:new-project ou /gsd:add-phase
+     → Se medio: /DUARTEOS:squad:discuss-phase N
   2. Context Engineer: /gsd:discuss-phase N → CONTEXT.md
   3. Architect: /gsd:research-phase N → RESEARCH.md (se tech nova)
   4. Architect: /gsd:plan-phase N → PLAN.md files
-  5. Devil's Advocate: /squad:validate-plan → Verdict
+  5. Devil's Advocate: /DUARTEOS:squad:validate-plan → Verdict
      → Se BLOCKED: volta para step 4
      → Se CAVEATS: PM decide
   6. Backend/Frontend: /gsd:execute-phase N → commits atomicos
@@ -255,15 +255,15 @@ FLUXO:
 ```
 TRIGGER: PRD, briefing ou URL recebido
 FLUXO:
-  1. PM: /squad:new-project → roadmap completo
+  1. PM: /DUARTEOS:squad:new-project → roadmap completo
      OU
-     PM: /squad:build-system → sistema completo (modo YOLO)
+     PM: /DUARTEOS:squad:build-system → sistema completo (modo YOLO)
   2. Para cada fase do roadmap:
-     a. /squad:discuss-phase N
-     b. /squad:plan-phase N
-     c. /squad:execute-phase N
-     d. /squad:verify-work N
-  3. /squad:audit → auditoria final
+     a. /DUARTEOS:squad:discuss-phase N
+     b. /DUARTEOS:squad:plan-phase N
+     c. /DUARTEOS:squad:execute-phase N
+     d. /DUARTEOS:squad:verify-work N
+  3. /DUARTEOS:squad:audit → auditoria final
   4. /gsd:complete-milestone → milestone arquivado
 ```
 

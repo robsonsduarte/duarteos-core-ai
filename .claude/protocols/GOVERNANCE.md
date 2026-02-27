@@ -21,10 +21,10 @@ Este documento define as regras formais para nomear, criar, deprecar e versionar
 
 | Regra | Exemplo |
 |-------|---------|
-| Formato: `/{scope}:{action}` — minusculo, kebab-case | /squad:quick, /agents:pm |
+| Formato: `/{scope}:{action}` — minusculo, kebab-case | /DUARTEOS:squad:quick, /DUARTEOS:agents:pm |
 | Scopes validos: `agents`, `squad`, `gsd` | — |
 | Actions em kebab-case, verbo imperativo | plan-phase, sync-ide, clone-mind |
-| Nomes curtos (max 20 chars incluindo scope) | /squad:new-project |
+| Nomes curtos (max 20 chars incluindo scope) | /DUARTEOS:squad:new-project |
 
 ### Task Templates
 

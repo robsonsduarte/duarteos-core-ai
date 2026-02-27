@@ -139,7 +139,7 @@ Abra o `.mcp.json` e substitua os `${VAR}` pelos valores:
 }
 ```
 
-**Dica:** dentro do Claude Code, rode `/setup-mcps` para ver o guia interativo completo com instrucoes passo a passo para cada MCP.
+**Dica:** dentro do Claude Code, rode `/DUARTEOS:setup-mcps` para ver o guia interativo completo com instrucoes passo a passo para cada MCP.
 
 ### Passo 4 (opcional): Atualizar para versao mais recente
 
@@ -169,17 +169,17 @@ Arquivos identicos sao pulados. So atualiza o que mudou.
 Apos instalar, abra o Claude Code no seu projeto e digite qualquer um destes:
 
 ```
-Eu: /squad:build-system "Cria um sistema de agendamento de consultas para uma clinica"
+Eu: /DUARTEOS:squad:build-system "Cria um sistema de agendamento de consultas para uma clinica"
 ```
 Os agentes vao analisar, projetar e construir o sistema inteiro automaticamente.
 
 ```
-Eu: /agents:pm Preciso de um dashboard admin para gerenciar usuarios
+Eu: /DUARTEOS:agents:pm Preciso de um dashboard admin para gerenciar usuarios
 ```
 O Gerente de Projetos vai planejar tudo, dividir em fases e coordenar a execucao.
 
 ```
-Eu: /squad:quick "Adiciona um botao de exportar CSV na tabela de clientes"
+Eu: /DUARTEOS:squad:quick "Adiciona um botao de exportar CSV na tabela de clientes"
 ```
 Task rapida — implementa, testa e faz commit em minutos.
 
@@ -196,32 +196,32 @@ O comando mais poderoso. Recebe uma descricao e entrega um sistema completo func
 #### Como usar
 
 ```
-/squad:build-system [o que voce quer]
+/DUARTEOS:squad:build-system [o que voce quer]
 ```
 
 #### 4 formas de dar input
 
 **Forma 1 — Texto livre (a mais facil):**
 ```
-/squad:build-system "Quero um SaaS de gestao financeira pessoal com dashboard,
+/DUARTEOS:squad:build-system "Quero um SaaS de gestao financeira pessoal com dashboard,
 categorias de gastos, graficos mensais, metas de economia e notificacoes"
 ```
 
 **Forma 2 — Arquivo PRD (mais detalhado):**
 Crie um arquivo `docs/PRD.md` descrevendo tudo que quer, depois:
 ```
-/squad:build-system docs/PRD.md
+/DUARTEOS:squad:build-system docs/PRD.md
 ```
 
 **Forma 3 — Workflow N8N (automacao):**
 Exporte um workflow do N8N como JSON, depois:
 ```
-/squad:build-system meu-workflow.json
+/DUARTEOS:squad:build-system meu-workflow.json
 ```
 
 **Forma 4 — URL de referencia (clonar ideia):**
 ```
-/squad:build-system https://cal.com
+/DUARTEOS:squad:build-system https://cal.com
 ```
 Os agentes analisam o site, extraem features e design, e constroem algo similar.
 
@@ -239,7 +239,7 @@ Os agentes analisam o site, extraem features e design, e constroem algo similar.
 #### Exemplo completo
 
 ```
-Eu: /squad:build-system "Marketplace de servicos de saude. Profissionais criam perfil
+Eu: /DUARTEOS:squad:build-system "Marketplace de servicos de saude. Profissionais criam perfil
 com especialidades e horarios. Pacientes buscam por especialidade e agendam consultas.
 Pagamento via Stripe. Painel admin para gerenciar tudo."
 
@@ -257,10 +257,10 @@ Pagamento via Stripe. Painel admin para gerenciar tudo."
 #### Flags opcionais
 
 ```
-/squad:build-system --dry-run docs/PRD.md      # So gera o blueprint, nao constroi
-/squad:build-system --stack=nuxt docs/PRD.md    # Usa Nuxt ao inves de Next.js
-/squad:build-system --no-auth "landing page"    # Sem sistema de login
-/squad:build-system --verbose "meu sistema"     # Mostra logs detalhados
+/DUARTEOS:squad:build-system --dry-run docs/PRD.md      # So gera o blueprint, nao constroi
+/DUARTEOS:squad:build-system --stack=nuxt docs/PRD.md    # Usa Nuxt ao inves de Next.js
+/DUARTEOS:squad:build-system --no-auth "landing page"    # Sem sistema de login
+/DUARTEOS:squad:build-system --verbose "meu sistema"     # Mostra logs detalhados
 ```
 
 ---
@@ -272,7 +272,7 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 #### PM (Gerente de Projetos) — O Orquestrador Supremo
 
 ```
-/agents:pm Preciso refatorar o sistema de pagamentos do meu SaaS
+/DUARTEOS:agents:pm Preciso refatorar o sistema de pagamentos do meu SaaS
 ```
 
 **O que ele faz:** Orquestrador puro — analisa a demanda, cria plano de acao, e **delega tudo** para agentes especializados via Task tool. ATLAS nunca escreve codigo, nunca audita, nunca projeta arquitetura. Ele coordena, decide e monitora.
@@ -284,16 +284,16 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:pm Quero adicionar multi-tenancy no meu app
-/agents:pm O sistema de notificacoes esta lento, preciso otimizar
-/agents:pm Quero migrar de Firebase para Supabase
-/agents:pm Planeja a versao 2.0 do produto
+/DUARTEOS:agents:pm Quero adicionar multi-tenancy no meu app
+/DUARTEOS:agents:pm O sistema de notificacoes esta lento, preciso otimizar
+/DUARTEOS:agents:pm Quero migrar de Firebase para Supabase
+/DUARTEOS:agents:pm Planeja a versao 2.0 do produto
 ```
 
 #### Arquiteto — O Estrategista
 
 ```
-/agents:architect Analisa a arquitetura do modulo de autenticacao
+/DUARTEOS:agents:architect Analisa a arquitetura do modulo de autenticacao
 ```
 
 **O que ele faz:** Mapeia a estrutura do codigo, propoe 3 abordagens com trade-offs, e implementa a estrutura base. Pensa em escalabilidade e manutenibilidade.
@@ -305,16 +305,16 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:architect Proponha uma arquitetura para real-time notifications
-/agents:architect O banco esta com queries lentas, analise e otimize
-/agents:architect Como devo organizar os microservicos?
-/agents:architect Avalie se devo usar GraphQL ou REST
+/DUARTEOS:agents:architect Proponha uma arquitetura para real-time notifications
+/DUARTEOS:agents:architect O banco esta com queries lentas, analise e otimize
+/DUARTEOS:agents:architect Como devo organizar os microservicos?
+/DUARTEOS:agents:architect Avalie se devo usar GraphQL ou REST
 ```
 
 #### Backend Dev — O Implementador Server-Side
 
 ```
-/agents:backend Implementa CRUD completo de produtos com validacao
+/DUARTEOS:agents:backend Implementa CRUD completo de produtos com validacao
 ```
 
 **O que ele faz:** Escreve codigo server-side — API routes, services, validacoes, integracao com banco. Segue os padroes existentes do projeto.
@@ -327,17 +327,17 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:backend Cria endpoint de upload de imagens com validacao de tipo e tamanho
-/agents:backend Implementa sistema de webhook que notifica quando pedido muda de status
-/agents:backend Adiciona paginacao e filtros no endpoint GET /api/users
-/agents:backend Corrige o bug: usuarios estao conseguindo acessar dados de outros usuarios
-/agents:backend Implementa rate limiting no endpoint de login
+/DUARTEOS:agents:backend Cria endpoint de upload de imagens com validacao de tipo e tamanho
+/DUARTEOS:agents:backend Implementa sistema de webhook que notifica quando pedido muda de status
+/DUARTEOS:agents:backend Adiciona paginacao e filtros no endpoint GET /api/users
+/DUARTEOS:agents:backend Corrige o bug: usuarios estao conseguindo acessar dados de outros usuarios
+/DUARTEOS:agents:backend Implementa rate limiting no endpoint de login
 ```
 
 #### Frontend Dev — O Construtor de Interfaces
 
 ```
-/agents:frontend Cria a pagina de dashboard com graficos e metricas
+/DUARTEOS:agents:frontend Cria a pagina de dashboard com graficos e metricas
 ```
 
 **O que ele faz:** Constroi interfaces bonitas e funcionais. Usa componentes shadcn/ui, foca em UX clara, design responsivo e animacoes sutis.
@@ -350,17 +350,17 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:frontend Refatora a tabela de pedidos pra ser filtravel e paginada
-/agents:frontend Cria um formulario de cadastro multi-step com validacao em cada etapa
-/agents:frontend A pagina de configuracoes esta feia, eleva pro padrao premium
-/agents:frontend Cria um componente de notificacao toast com animacao de entrada
-/agents:frontend Faz a sidebar ser responsiva — drawer no mobile, fixa no desktop
+/DUARTEOS:agents:frontend Refatora a tabela de pedidos pra ser filtravel e paginada
+/DUARTEOS:agents:frontend Cria um formulario de cadastro multi-step com validacao em cada etapa
+/DUARTEOS:agents:frontend A pagina de configuracoes esta feia, eleva pro padrao premium
+/DUARTEOS:agents:frontend Cria um componente de notificacao toast com animacao de entrada
+/DUARTEOS:agents:frontend Faz a sidebar ser responsiva — drawer no mobile, fixa no desktop
 ```
 
 #### QA — O Testador Implacavel
 
 ```
-/agents:qa Testa o fluxo completo de checkout
+/DUARTEOS:agents:qa Testa o fluxo completo de checkout
 ```
 
 **O que ele faz:** Escreve testes, encontra bugs com PROVA, e so considera algo pronto quando tem evidencia. Se nao tem teste, nao esta testado.
@@ -373,17 +373,17 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:qa Escreve testes para o modulo de autenticacao
-/agents:qa Verifica se o RBAC esta bloqueando corretamente usuarios sem permissao
-/agents:qa Faz um teste de carga simulando 100 usuarios simultaneos
-/agents:qa Audita se tem alguma rota sem autenticacao que deveria ter
-/agents:qa Testa todos os edge cases do formulario de pagamento
+/DUARTEOS:agents:qa Escreve testes para o modulo de autenticacao
+/DUARTEOS:agents:qa Verifica se o RBAC esta bloqueando corretamente usuarios sem permissao
+/DUARTEOS:agents:qa Faz um teste de carga simulando 100 usuarios simultaneos
+/DUARTEOS:agents:qa Audita se tem alguma rota sem autenticacao que deveria ter
+/DUARTEOS:agents:qa Testa todos os edge cases do formulario de pagamento
 ```
 
 #### Context Engineer — O Guardiao da Coerencia
 
 ```
-/agents:context-engineer Verifica se os prompts de IA estao coerentes com o branding
+/DUARTEOS:agents:context-engineer Verifica se os prompts de IA estao coerentes com o branding
 ```
 
 **O que ele faz:** Garante que tudo no sistema e coerente — nomes, prompts, fluxos, terminologia. Detecta e corrige "drift" (quando partes do sistema divergem).
@@ -396,16 +396,16 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:context-engineer Os emails transacionais estao com tom diferente do app
-/agents:context-engineer Mapeia todos os pontos onde usamos "cliente" vs "usuario" vs "paciente"
-/agents:context-engineer Os fluxos de onboarding e de configuracao estao pedindo infos duplicadas
-/agents:context-engineer Revisa a coerencia do design system — cores, espacamentos, tipografia
+/DUARTEOS:agents:context-engineer Os emails transacionais estao com tom diferente do app
+/DUARTEOS:agents:context-engineer Mapeia todos os pontos onde usamos "cliente" vs "usuario" vs "paciente"
+/DUARTEOS:agents:context-engineer Os fluxos de onboarding e de configuracao estao pedindo infos duplicadas
+/DUARTEOS:agents:context-engineer Revisa a coerencia do design system — cores, espacamentos, tipografia
 ```
 
 #### Advogado do Diabo — O Destruidor Construtivo
 
 ```
-/agents:devils-advocate Tenta quebrar minha proposta de arquitetura de microservicos
+/DUARTEOS:agents:devils-advocate Tenta quebrar minha proposta de arquitetura de microservicos
 ```
 
 **O que ele faz:** Questiona TUDO. Encontra falhas, riscos e problemas que ninguem pensou. Mas sempre apresenta uma alternativa — critica sem solucao e invalida.
@@ -418,10 +418,10 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 
 **Mais exemplos:**
 ```
-/agents:devils-advocate Meu plano e usar MongoDB para um sistema financeiro. Convence-me do contrario.
-/agents:devils-advocate Estou pensando em nao usar TypeScript pra ir mais rapido. O que pode dar errado?
-/agents:devils-advocate Quero fazer deploy sem testes automatizados. Me da motivos pra nao fazer isso.
-/agents:devils-advocate Estou armazenando tokens JWT no localStorage. Isso e seguro?
+/DUARTEOS:agents:devils-advocate Meu plano e usar MongoDB para um sistema financeiro. Convence-me do contrario.
+/DUARTEOS:agents:devils-advocate Estou pensando em nao usar TypeScript pra ir mais rapido. O que pode dar errado?
+/DUARTEOS:agents:devils-advocate Quero fazer deploy sem testes automatizados. Me da motivos pra nao fazer isso.
+/DUARTEOS:agents:devils-advocate Estou armazenando tokens JWT no localStorage. Isso e seguro?
 ```
 
 ---
@@ -431,7 +431,7 @@ Cada agente e um especialista. Chame o que faz sentido pra sua necessidade.
 Quando quer todos os 7 agentes trabalhando juntos numa demanda:
 
 ```
-/agents:squad Preciso de um sistema completo de e-commerce com carrinho, checkout,
+/DUARTEOS:agents:squad Preciso de um sistema completo de e-commerce com carrinho, checkout,
 estoque e painel admin
 ```
 
@@ -447,10 +447,10 @@ estoque e painel admin
 
 **Mais exemplos:**
 ```
-/agents:squad Migrar a autenticacao de JWT para Supabase Auth
-/agents:squad Implementar sistema de permissoes granulares (RBAC)
-/agents:squad Criar modulo de relatorios com graficos e exportacao PDF
-/agents:squad Otimizar performance — o app esta levando 8 segundos pra carregar
+/DUARTEOS:agents:squad Migrar a autenticacao de JWT para Supabase Auth
+/DUARTEOS:agents:squad Implementar sistema de permissoes granulares (RBAC)
+/DUARTEOS:agents:squad Criar modulo de relatorios com graficos e exportacao PDF
+/DUARTEOS:agents:squad Otimizar performance — o app esta levando 8 segundos pra carregar
 ```
 
 ---
@@ -461,64 +461,64 @@ Para projetos grandes, siga este fluxo passo a passo:
 
 #### Passo 1 — Iniciar projeto
 ```
-/squad:new-project Plataforma de cursos online com area do aluno,
+/DUARTEOS:squad:new-project Plataforma de cursos online com area do aluno,
 area do instrutor e painel admin
 ```
 Gera: pesquisa do dominio, requirements, roadmap com fases.
 
 #### Passo 2 — Mapear codebase (se projeto ja existente)
 ```
-/squad:map-codebase
+/DUARTEOS:squad:map-codebase
 ```
 4 agentes analisam o codigo em paralelo e geram 7 documentos de mapeamento.
 
 #### Passo 3 — Discutir a fase (capturar decisoes)
 ```
-/squad:discuss-phase 1
+/DUARTEOS:squad:discuss-phase 1
 ```
 O Context Engineer faz perguntas para capturar decisoes e gera CONTEXT.md.
 
 #### Passo 4 — Pesquisar abordagem tecnica
 ```
-/squad:research-phase 1
+/DUARTEOS:squad:research-phase 1
 ```
 Pesquisa como implementar a fase (tecnologias, patterns, exemplos).
 
 #### Passo 5 — Planejar a fase
 ```
-/squad:plan-phase 1
+/DUARTEOS:squad:plan-phase 1
 ```
 Gera PLAN.md com tasks detalhadas, dependencias e criterios de sucesso.
 
 #### Passo 6 — Validar o plano (red team)
 ```
-/squad:validate-plan
+/DUARTEOS:squad:validate-plan
 ```
 Advogado do Diabo contesta o plano antes de executar.
 
 #### Passo 7 — Executar a fase
 ```
-/squad:execute-phase 1
+/DUARTEOS:squad:execute-phase 1
 ```
 Backend e Frontend executam em waves paralelas com commits atomicos.
 
 #### Passo 8 — Verificar o trabalho
 ```
-/squad:verify-work 1
+/DUARTEOS:squad:verify-work 1
 ```
 QA faz UAT (User Acceptance Testing), diagnostica problemas e gera fix plans.
 
 #### Passo 9 — Auditar
 ```
-/squad:audit
+/DUARTEOS:squad:audit
 ```
 Auditoria final com QA + Context Engineer + Advogado do Diabo.
 
 #### Passo 10 — Repetir para proxima fase
 ```
-/squad:plan-phase 2
-/squad:execute-phase 2
-/squad:verify-work 2
+/DUARTEOS:squad:plan-phase 2
+/DUARTEOS:squad:execute-phase 2
+/DUARTEOS:squad:verify-work 2
 ```
 
 ---
@@ -528,23 +528,23 @@ Auditoria final com QA + Context Engineer + Advogado do Diabo.
 Para coisas pequenas que nao justificam um projeto inteiro:
 
 ```
-/squad:quick "Adiciona campo telefone na tabela de clientes e no formulario"
+/DUARTEOS:squad:quick "Adiciona campo telefone na tabela de clientes e no formulario"
 ```
 
 ```
-/squad:quick "Troca a cor do botao de salvar pra verde"
+/DUARTEOS:squad:quick "Troca a cor do botao de salvar pra verde"
 ```
 
 ```
-/squad:quick "Adiciona loading spinner quando a pagina carrega dados"
+/DUARTEOS:squad:quick "Adiciona loading spinner quando a pagina carrega dados"
 ```
 
 ```
-/squad:quick "Corrige o bug: data aparecendo em formato americano"
+/DUARTEOS:squad:quick "Corrige o bug: data aparecendo em formato americano"
 ```
 
 ```
-/squad:quick --full "Implementa paginacao na listagem de produtos"
+/DUARTEOS:squad:quick --full "Implementa paginacao na listagem de produtos"
 ```
 (`--full` adiciona verificacao pos-execucao)
 
@@ -555,15 +555,15 @@ Para coisas pequenas que nao justificam um projeto inteiro:
 Para bugs persistentes que precisam de investigacao:
 
 ```
-/squad:debug "Usuarios reportam que o login falha intermitentemente nas manhas"
+/DUARTEOS:squad:debug "Usuarios reportam que o login falha intermitentemente nas manhas"
 ```
 
 ```
-/squad:debug "A pagina de relatorios da erro 500 quando filtra por data"
+/DUARTEOS:squad:debug "A pagina de relatorios da erro 500 quando filtra por data"
 ```
 
 ```
-/squad:debug "Imagens de perfil nao carregam em producao mas funcionam local"
+/DUARTEOS:squad:debug "Imagens de perfil nao carregam em producao mas funcionam local"
 ```
 
 O debug segue metodo cientifico: observar → hipotese → testar → corrigir. Estado e salvo entre sessoes.
@@ -573,9 +573,9 @@ O debug segue metodo cientifico: observar → hipotese → testar → corrigir. 
 ### 7. Gerenciar Progresso
 
 ```
-/squad:progress              # Ver status do projeto + proximo passo
-/squad:pause                 # Pausar trabalho (salva estado)
-/squad:resume                # Retomar de onde parou
+/DUARTEOS:squad:progress              # Ver status do projeto + proximo passo
+/DUARTEOS:squad:pause                 # Pausar trabalho (salva estado)
+/DUARTEOS:squad:resume                # Retomar de onde parou
 ```
 
 ---
@@ -585,7 +585,7 @@ O debug segue metodo cientifico: observar → hipotese → testar → corrigir. 
 Crie squads especializados por dominio com agentes, tasks e configuracoes proprias.
 
 ```
-/squad:create-squad ecommerce
+/DUARTEOS:squad:create-squad ecommerce
 ```
 
 Escolha um template (basic, fullstack, data-science, automation) ou crie do zero. O squad e criado em `squads/{nome}/` com:
@@ -595,8 +595,8 @@ Escolha um template (basic, fullstack, data-science, automation) ou crie do zero
 - `README.md` — documentacao
 
 ```
-/squad:list-squads                           # Ver squads do projeto
-/squad:run-squad ecommerce "implementar carrinho"  # Executar squad
+/DUARTEOS:squad:list-squads                           # Ver squads do projeto
+/DUARTEOS:squad:run-squad ecommerce "implementar carrinho"  # Executar squad
 ```
 
 **4 templates prontos:**
@@ -615,7 +615,7 @@ Escolha um template (basic, fullstack, data-science, automation) ou crie do zero
 Pipeline de 5 fases que cria um agente baseado em uma pessoa real:
 
 ```
-/squad:clone-mind "Elon Musk"
+/DUARTEOS:squad:clone-mind "Elon Musk"
 ```
 
 **As 5 fases:**
@@ -636,7 +636,7 @@ O agente resultante responde como o especialista responderia — com o mesmo est
 
 ### Criar um SaaS completo
 ```
-/squad:build-system "SaaS de gestao de projetos estilo Trello.
+/DUARTEOS:squad:build-system "SaaS de gestao de projetos estilo Trello.
 Boards com colunas drag-and-drop. Cards com titulo, descricao,
 labels, membros e deadline. Time real — quando alguem move um card,
 todos veem. Plano free (3 boards) e plano pro (ilimitado) com Stripe."
@@ -644,7 +644,7 @@ todos veem. Plano free (3 boards) e plano pro (ilimitado) com Stripe."
 
 ### Criar um app de delivery
 ```
-/squad:build-system "App de delivery de comida. 3 roles: restaurante
+/DUARTEOS:squad:build-system "App de delivery de comida. 3 roles: restaurante
 (cadastra cardapio e gerencia pedidos), entregador (ve pedidos disponiveis
 e aceita corridas), cliente (busca restaurantes, faz pedido, acompanha
 em tempo real). Pagamento no app. Painel admin com metricas."
@@ -652,7 +652,7 @@ em tempo real). Pagamento no app. Painel admin com metricas."
 
 ### Criar uma landing page com inteligencia
 ```
-/squad:build-system "Landing page para produto SaaS de automacao de marketing.
+/DUARTEOS:squad:build-system "Landing page para produto SaaS de automacao de marketing.
 Hero section com CTA. Secao de features com icones. Pricing com 3 planos.
 Testimonials. FAQ. Footer. Formulario de waitlist que salva no banco.
 Design moderno, dark mode, animacoes sutis."
@@ -660,65 +660,65 @@ Design moderno, dark mode, animacoes sutis."
 
 ### Clonar a ideia de um site
 ```
-/squad:build-system https://notion.so
+/DUARTEOS:squad:build-system https://notion.so
 ```
 
 ### Construir a partir de um PRD
 ```
-/squad:build-system docs/meu-prd.md
+/DUARTEOS:squad:build-system docs/meu-prd.md
 ```
 
 ### Refatorar sistema existente
 ```
-/agents:pm O sistema esta com 200 arquivos sem organizacao.
+/DUARTEOS:agents:pm O sistema esta com 200 arquivos sem organizacao.
 Preciso refatorar para uma arquitetura limpa com modulos separados.
 ```
 
 ### Adicionar feature complexa em sistema existente
 ```
-/agents:squad Preciso adicionar um sistema de notificacoes:
+/DUARTEOS:agents:squad Preciso adicionar um sistema de notificacoes:
 push no browser, email, e in-app. O usuario configura quais
 quer receber. Tem um centro de notificacoes com historico.
 ```
 
 ### Corrigir bug especifico
 ```
-/agents:backend Quando o usuario faz upload de imagem acima de 5MB,
+/DUARTEOS:agents:backend Quando o usuario faz upload de imagem acima de 5MB,
 o servidor retorna 500 ao inves de uma mensagem de erro amigavel.
 Investiga e corrige.
 ```
 
 ### Melhorar UI/UX
 ```
-/agents:frontend A pagina de listagem de produtos esta parecendo
+/DUARTEOS:agents:frontend A pagina de listagem de produtos esta parecendo
 uma planilha. Quero cards com imagem, preco, rating e botao de
 comprar. Grid responsivo — 3 colunas no desktop, 1 no mobile.
 ```
 
 ### Revisar seguranca
 ```
-/agents:qa Faz uma auditoria de seguranca completa:
+/DUARTEOS:agents:qa Faz uma auditoria de seguranca completa:
 verifica autenticacao, autorizacao, SQL injection, XSS,
 CORS, headers de seguranca e dependencias vulneraveis.
 ```
 
 ### Contestar uma decisao
 ```
-/agents:devils-advocate Estou pensando em usar um monorepo Turborepo
+/DUARTEOS:agents:devils-advocate Estou pensando em usar um monorepo Turborepo
 com Next.js no front e NestJS no back. O time tem 2 devs.
 Isso e uma boa ideia ou estou over-engineering?
 ```
 
 ### Analisar dados
 ```
-/agents:pm Preciso analisar os dados de uso do ultimo mes.
+/DUARTEOS:agents:pm Preciso analisar os dados de uso do ultimo mes.
 Usa o Data Scientist pra gerar graficos de usuarios ativos,
 features mais usadas e taxa de churn.
 ```
 
 ### Fazer deploy
 ```
-/agents:pm Configura o deploy do meu app. Dockeriza, cria
+/DUARTEOS:agents:pm Configura o deploy do meu app. Dockeriza, cria
 docker-compose com app + postgres + redis, configura health
 checks e cria script de deploy pro servidor.
 ```
@@ -779,7 +779,7 @@ Regra aplicada em **15+ arquivos** do sistema — CLAUDE.md, Constitution, GSD P
 
 ### Blueprint Template
 
-Template padronizado para blueprints de sistema em `.claude/blueprints/blueprint-template.md`. Usado pelo `/squad:build-system` para gerar BLUEPRINT.md com:
+Template padronizado para blueprints de sistema em `.claude/blueprints/blueprint-template.md`. Usado pelo `/DUARTEOS:squad:build-system` para gerar BLUEPRINT.md com:
 - Nome, stack, design decisions
 - Data models com campos e relacionamentos
 - Auth requirements e RBAC
@@ -880,9 +880,9 @@ Cada template tem formato padrao: Objetivo, Contexto, Pre-requisitos, Passos, Cr
 
 **Uso:**
 ```
-/squad:task dev-api-endpoint "CRUD de produtos com validacao"
-/squad:task qa-test-suite "cobertura do modulo de autenticacao"
-/squad:task db-migration "adicionar tabela de notificacoes"
+/DUARTEOS:squad:task dev-api-endpoint "CRUD de produtos com validacao"
+/DUARTEOS:squad:task qa-test-suite "cobertura do modulo de autenticacao"
+/DUARTEOS:squad:task db-migration "adicionar tabela de notificacoes"
 ```
 
 ### Synapse State Machine
@@ -901,7 +901,7 @@ Cada agente tem um arquivo `.claude/synapse/{agent-id}.yaml` com:
 
 **Uso:**
 ```
-/squad:synapse          # Ver estado de todos os agentes (tabela)
+/DUARTEOS:squad:synapse          # Ver estado de todos os agentes (tabela)
 ```
 
 ### Quality Gates
@@ -936,9 +936,9 @@ Os templates leem Constitution + Governance + Config + CLAUDE.md e geram um arqu
 
 **Uso:**
 ```
-/squad:sync-ide cursor       # Gera .cursorrules
-/squad:sync-ide windsurf     # Gera .windsurfrules
-/squad:sync-ide copilot      # Gera copilot-instructions.md
+/DUARTEOS:squad:sync-ide cursor       # Gera .cursorrules
+/DUARTEOS:squad:sync-ide windsurf     # Gera .windsurfrules
+/DUARTEOS:squad:sync-ide copilot      # Gera copilot-instructions.md
 ```
 
 ---
@@ -949,51 +949,51 @@ Os templates leem Constitution + Governance + Config + CLAUDE.md e geram um arqu
 
 | Comando | Persona | Pra que |
 |---------|---------|---------|
-| `/agents:squad [demanda]` | Todos os 13 | Demanda que precisa de multiplas perspectivas |
-| `/agents:pm [demanda]` | **ATLAS** | Planejar, priorizar, coordenar |
-| `/agents:architect [area]` | **NEXUS** | Estrutura, patterns, decisoes tecnicas |
-| `/agents:backend [feature]` | **FORGE** | API, logica, banco, seguranca |
-| `/agents:frontend [tela]` | **PRISM** | UI, UX, componentes, design |
-| `/agents:qa [area]` | **SENTINEL** | Testes, bugs, auditoria |
-| `/agents:context-engineer [area]` | **COMPASS** | Coerencia, prompts, terminologia |
-| `/agents:devils-advocate [proposta]` | **SHADOW** | Contestar, encontrar riscos |
+| `/DUARTEOS:agents:squad [demanda]` | Todos os 13 | Demanda que precisa de multiplas perspectivas |
+| `/DUARTEOS:agents:pm [demanda]` | **ATLAS** | Planejar, priorizar, coordenar |
+| `/DUARTEOS:agents:architect [area]` | **NEXUS** | Estrutura, patterns, decisoes tecnicas |
+| `/DUARTEOS:agents:backend [feature]` | **FORGE** | API, logica, banco, seguranca |
+| `/DUARTEOS:agents:frontend [tela]` | **PRISM** | UI, UX, componentes, design |
+| `/DUARTEOS:agents:qa [area]` | **SENTINEL** | Testes, bugs, auditoria |
+| `/DUARTEOS:agents:context-engineer [area]` | **COMPASS** | Coerencia, prompts, terminologia |
+| `/DUARTEOS:agents:devils-advocate [proposta]` | **SHADOW** | Contestar, encontrar riscos |
 
 ### Squad (fluxo orquestrado)
 
 | Comando | O que faz |
 |---------|-----------|
-| `/squad:build-system [input]` | **APP FACTORY** — cria sistema completo a partir de PRD/N8N/URL/texto |
-| `/squad:new-project [demanda]` | Inicia projeto: pesquisa → requirements → roadmap |
-| `/squad:map-codebase` | 4 agentes mapeiam o codigo → 7 documentos |
-| `/squad:discuss-phase N` | Captura decisoes para fase N → CONTEXT.md |
-| `/squad:research-phase N` | Pesquisa tecnica para fase N → RESEARCH.md |
-| `/squad:plan-phase N` | Planeja fase N → PLAN.md com tasks |
-| `/squad:validate-plan` | Red team contesta planos |
-| `/squad:execute-phase N` | Executa fase N em waves paralelas + commits |
-| `/squad:verify-work N` | QA testa fase N (UAT) |
-| `/squad:audit` | Auditoria final do milestone |
-| `/squad:quick "desc"` | Task rapida (1-3 passos) |
-| `/squad:debug "bug"` | Debug cientifico persistente |
-| `/squad:progress` | Status do projeto + proximo passo |
-| `/squad:pause` | Salva estado para retomar depois |
-| `/squad:resume` | Retoma de onde parou |
+| `/DUARTEOS:squad:build-system [input]` | **APP FACTORY** — cria sistema completo a partir de PRD/N8N/URL/texto |
+| `/DUARTEOS:squad:new-project [demanda]` | Inicia projeto: pesquisa → requirements → roadmap |
+| `/DUARTEOS:squad:map-codebase` | 4 agentes mapeiam o codigo → 7 documentos |
+| `/DUARTEOS:squad:discuss-phase N` | Captura decisoes para fase N → CONTEXT.md |
+| `/DUARTEOS:squad:research-phase N` | Pesquisa tecnica para fase N → RESEARCH.md |
+| `/DUARTEOS:squad:plan-phase N` | Planeja fase N → PLAN.md com tasks |
+| `/DUARTEOS:squad:validate-plan` | Red team contesta planos |
+| `/DUARTEOS:squad:execute-phase N` | Executa fase N em waves paralelas + commits |
+| `/DUARTEOS:squad:verify-work N` | QA testa fase N (UAT) |
+| `/DUARTEOS:squad:audit` | Auditoria final do milestone |
+| `/DUARTEOS:squad:quick "desc"` | Task rapida (1-3 passos) |
+| `/DUARTEOS:squad:debug "bug"` | Debug cientifico persistente |
+| `/DUARTEOS:squad:progress` | Status do projeto + proximo passo |
+| `/DUARTEOS:squad:pause` | Salva estado para retomar depois |
+| `/DUARTEOS:squad:resume` | Retoma de onde parou |
 
 ### Squad Factory + Mind Clone
 
 | Comando | O que faz |
 |---------|-----------|
-| `/squad:create-squad [nome]` | Cria squad customizado (a partir de template ou do zero) |
-| `/squad:list-squads` | Lista squads do projeto |
-| `/squad:run-squad [nome] [demanda]` | Executa squad numa demanda |
-| `/squad:clone-mind [nome]` | **DNA Mental** — clona mente de especialista em agente |
+| `/DUARTEOS:squad:create-squad [nome]` | Cria squad customizado (a partir de template ou do zero) |
+| `/DUARTEOS:squad:list-squads` | Lista squads do projeto |
+| `/DUARTEOS:squad:run-squad [nome] [demanda]` | Executa squad numa demanda |
+| `/DUARTEOS:squad:clone-mind [nome]` | **DNA Mental** — clona mente de especialista em agente |
 
 ### Task Templates + Synapse + IDE Sync (v5.0.0)
 
 | Comando | O que faz |
 |---------|-----------|
-| `/squad:task [template] [contexto]` | Executa task template (spec, dev, qa, db, ops, sec) |
-| `/squad:synapse` | Ver estado de todos os agentes (state machine) |
-| `/squad:sync-ide [cursor\|windsurf\|copilot]` | Gera config para IDE a partir do DuarteOS |
+| `/DUARTEOS:squad:task [template] [contexto]` | Executa task template (spec, dev, qa, db, ops, sec) |
+| `/DUARTEOS:squad:synapse` | Ver estado de todos os agentes (state machine) |
+| `/DUARTEOS:squad:sync-ide [cursor\|windsurf\|copilot]` | Gera config para IDE a partir do DuarteOS |
 
 ---
 
@@ -1084,16 +1084,16 @@ MCPs sao "ferramentas extras" que os agentes podem usar. 22 instalados.
 
 ## Perguntas Frequentes
 
-### "Qual a diferenca entre `/agents:pm` e `/squad:build-system`?"
+### "Qual a diferenca entre `/DUARTEOS:agents:pm` e `/DUARTEOS:squad:build-system`?"
 
-- `/agents:pm` chama o Gerente de Projetos para **planejar**. Ele analisa, cria fases e coordena.
-- `/squad:build-system` e o **modo automatico total**. Ele analisa E constroi tudo, sem parar pra pedir aprovacao (YOLO mode).
+- `/DUARTEOS:agents:pm` chama o Gerente de Projetos para **planejar**. Ele analisa, cria fases e coordena.
+- `/DUARTEOS:squad:build-system` e o **modo automatico total**. Ele analisa E constroi tudo, sem parar pra pedir aprovacao (YOLO mode).
 
-Use `/agents:pm` quando quer controlar cada passo. Use `/squad:build-system` quando quer resultado rapido.
+Use `/DUARTEOS:agents:pm` quando quer controlar cada passo. Use `/DUARTEOS:squad:build-system` quando quer resultado rapido.
 
 ### "Posso usar sem o GSD?"
 
-Sim. Os agentes individuais (`/agents:pm`, `/agents:backend`, etc) funcionam sem GSD. Os comandos `/squad:*` usam o GSD como motor de execucao.
+Sim. Os agentes individuais (`/DUARTEOS:agents:pm`, `/DUARTEOS:agents:backend`, etc) funcionam sem GSD. Os comandos `/DUARTEOS:squad:*` usam o GSD como motor de execucao.
 
 ### "Posso usar sem Python?"
 

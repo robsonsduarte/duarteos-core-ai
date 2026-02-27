@@ -60,5 +60,5 @@ notes: null
 
 ## Integracao com Squad
 
-O PM (ATLAS) pode consultar `/squad:synapse` para ver o dashboard
+O PM (ATLAS) pode consultar `/DUARTEOS:squad:synapse` para ver o dashboard
 de estados de todos os agentes e identificar gargalos.

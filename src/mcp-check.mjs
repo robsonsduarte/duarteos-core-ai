@@ -310,7 +310,7 @@ export function printMcpReport(status) {
       console.log(`    1. Edite o .env:   nano .env  (preencha as variaveis faltantes)`)
       console.log(`    2. Carregue:       source .env && claude`)
     }
-    console.log(`    Ou use \x1b[1m/setup-mcps\x1b[0m dentro do Claude Code para guia completo.`)
+    console.log(`    Ou use \x1b[1m/DUARTEOS:setup-mcps\x1b[0m dentro do Claude Code para guia completo.`)
   } else if (configured > 0) {
     console.log(`
   \x1b[32mTodos os MCPs estao prontos!\x1b[0m`)
