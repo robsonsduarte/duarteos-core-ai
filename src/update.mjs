@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPackageVersion } from './utils.mjs'
@@ -331,6 +331,51 @@ export function update(options = {}) {
       copyTemplate(srcPath, destPath)
       console.log(`  + adicionado ${dest}`)
       added++
+    }
+  }
+
+  // DUARTEOS Mind Clones — sync entire directory tree
+  const mindClonesSrc = resolve(TEMPLATES_DIR, 'commands', 'DUARTEOS')
+  const mindClonesDest = resolve(cwd, '.claude', 'commands', 'DUARTEOS')
+  if (existsSync(mindClonesSrc)) {
+    const categories = readdirSync(mindClonesSrc, { withFileTypes: true })
+      .filter(d => d.isDirectory())
+      .map(d => d.name)
+
+    let mindClonesAdded = 0
+    let mindClonesUpdated = 0
+    for (const category of categories) {
+      const catSrc = resolve(mindClonesSrc, category)
+      const catDest = resolve(mindClonesDest, category)
+      if (!existsSync(catDest)) {
+        mkdirSync(catDest, { recursive: true })
+      }
+
+      const agents = readdirSync(catSrc).filter(f => f.endsWith('.md'))
+      for (const agent of agents) {
+        const agentSrc = resolve(catSrc, agent)
+        const agentDest = resolve(catDest, agent)
+        if (!existsSync(agentDest)) {
+          cpSync(agentSrc, agentDest)
+          mindClonesAdded++
+        } else {
+          const currentContent = readFileSync(agentDest, 'utf-8')
+          const newContent = readFileSync(agentSrc, 'utf-8')
+          if (currentContent !== newContent) {
+            cpSync(agentSrc, agentDest)
+            mindClonesUpdated++
+          }
+        }
+      }
+    }
+
+    if (mindClonesAdded > 0) {
+      console.log(`  + ${mindClonesAdded} mind clones adicionados (DUARTEOS/)`)
+      added += mindClonesAdded
+    }
+    if (mindClonesUpdated > 0) {
+      console.log(`  ~ ${mindClonesUpdated} mind clones atualizados (DUARTEOS/)`)
+      updated += mindClonesUpdated
     }
   }
 
