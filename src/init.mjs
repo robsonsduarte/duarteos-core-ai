@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync, cpSync } from 'fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync, cpSync, readdirSync } from 'fs'
 import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
@@ -344,6 +344,38 @@ export function init(projectName, options = {}) {
     installed++
   }
 
+  // DUARTEOS Mind Clones — copy entire directory tree
+  const mindClonesSrc = resolve(TEMPLATES_DIR, 'commands', 'DUARTEOS')
+  const mindClonesDest = resolve(cwd, '.claude', 'commands', 'DUARTEOS')
+  if (existsSync(mindClonesSrc)) {
+    const categories = readdirSync(mindClonesSrc, { withFileTypes: true })
+      .filter(d => d.isDirectory())
+      .map(d => d.name)
+
+    let mindClonesInstalled = 0
+    for (const category of categories) {
+      const catSrc = resolve(mindClonesSrc, category)
+      const catDest = resolve(mindClonesDest, category)
+      if (!existsSync(catDest)) {
+        mkdirSync(catDest, { recursive: true })
+      }
+
+      const agents = readdirSync(catSrc).filter(f => f.endsWith('.md'))
+      for (const agent of agents) {
+        const agentDest = resolve(catDest, agent)
+        if (!existsSync(agentDest)) {
+          cpSync(resolve(catSrc, agent), agentDest)
+          mindClonesInstalled++
+        }
+      }
+    }
+
+    if (mindClonesInstalled > 0) {
+      console.log(`  + ${mindClonesInstalled} mind clones instalados em ${categories.length} categorias (DUARTEOS/)`)
+      installed += mindClonesInstalled
+    }
+  }
+
   // Ensure .gitignore has DuarteOS entries
   ensureGitignoreEntries(cwd)
 
@@ -480,6 +512,16 @@ export function init(projectName, options = {}) {
   App Factory (.claude/blueprints/):
      blueprint-template.md   — Template de blueprint para build-system
      Use: /squad:build-system [PRD.md | workflow.json | URL]
+
+  Mind Clones (.claude/commands/DUARTEOS/) — 45 consultores cognitivos:
+     /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Ogilvy...)
+     /DUARTEOS:Marketing:*      — 9 estrategistas (Dan Kennedy, Pedro Sobral...)
+     /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen...)
+     /DUARTEOS:AI:*             — 5 pioneiros (Andrew Ng, Hinton, LeCun...)
+     /DUARTEOS:Tech:*           — 5 lideres (Zuckerberg, Larry Page...)
+     /DUARTEOS:Business:*       — 6 empreendedores (Bill Gates, Thiago Finch...)
+     /DUARTEOS:Content:*        — 4 criadores (MrBeast, Virginia Fonseca...)
+     /DUARTEOS:Product:*        — 3 lideres (Julie Zhuo, Ezra Firestone...)
 `)
 
   // MCP Health Check — detect disconnected MCPs and guide user
