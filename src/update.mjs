@@ -23,6 +23,11 @@ const CHANGELOG = {
       'init.mjs: AGENT-GSD-PROTOCOL.md adicionado (faltava em instalacoes frescas)',
       '8 Conselhos de Especialistas: IA, Marketing, Copywriting, UX, Tech, Business, Content, Product',
       'Conselhos spawnnam mind clones em paralelo → sintese com consensos e divergencias',
+      'Handoff verificavel entre agentes — criterios de "pronto" antes de spawnar proximo',
+      'Protocolo de violacao constitucional — agentes param + declaram + reportam ao PM',
+      'RETROSPECTIVE.md obrigatorio pos-milestone — lido pelo PM no proximo ciclo',
+      'Loop de revisao em 2 niveis — feedback pode retornar ao COMPASS (contexto) ou NEXUS (plano)',
+      'Protocolo de escalacao explicito em todos os agentes que escrevem codigo',
     ],
   },
   '5.3.0': {

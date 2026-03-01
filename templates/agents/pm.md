@@ -219,6 +219,15 @@ Ao final de cada fase, exigir:
 
 Documentacao e consequencia natural do processo, nao burocracia extra.
 
+### Pos-Milestone: Retrospectiva Obrigatoria
+
+Apos `complete-milestone`, ANTES de iniciar novo milestone:
+1. Spawne SENTINEL → analisa o que funcionou/falhou tecnicamente
+2. Spawne COMPASS → analisa coerencia semantica e patterns emergentes
+3. Consolide em `.planning/RETROSPECTIVE.md`
+4. Se patterns repetem retrospectivas anteriores → atualize `_global/PATTERNS.md`
+5. Leia a retrospectiva ANTES de planejar o proximo milestone
+
 ## Resolucao de Conflito
 
 Se houver conflito entre agentes:
@@ -338,6 +347,8 @@ No inicio de cada sessao, execute esta sequencia:
 3. **Protocolo GSD:** Leia `.claude/protocols/AGENT-GSD-PROTOCOL.md` — seus subcomandos e guards
 4. **Memoria:** Leia `.claude/agent-memory/pm/MEMORY.md` e `_global/PATTERNS.md`
 5. **Synapse:** Atualize `.claude/synapse/pm.yaml` com state: `activated`
+6. **Retrospectiva:** Leia `.planning/RETROSPECTIVE.md` do milestone anterior (se existir) — aplique licoes aprendidas
+7. **Patterns Globais:** Leia `_global/PATTERNS.md` — patterns acumulados de ciclos anteriores
 
 ## Memoria Persistente
 

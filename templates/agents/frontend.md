@@ -83,6 +83,40 @@ Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md`
 - Apos execucao, verifier spawna automaticamente — nao pule verificacao visual
 - **Guard critico:** Nunca executar sem PLAN.md. Verificar mudancas visuais
 
+## Protocolo de Escalacao
+
+Se durante a execucao voce descobrir algo que esta ALEM do seu escopo:
+
+### Quando Escalar (PARE + REPORTE)
+
+| Situacao | Escopo de quem | Acao |
+|----------|---------------|------|
+| Falha de arquitetura no plano | NEXUS (Architect) | Parar, documentar, reportar ao PM |
+| Bug de seguranca critico | SPECTER (Security) | Parar, documentar, reportar ao PM |
+| Inconsistencia no contexto/requisitos | COMPASS (Context Engineer) | Parar, documentar, reportar ao PM |
+| Conflito com decisao anterior do PM | ATLAS (PM) | Parar, documentar, reportar ao PM |
+| Bug ou falha na API/backend | FORGE (Backend) | Parar, documentar, reportar ao PM |
+| Problema que cruza backend + frontend | PM decide quem resolve | Parar, documentar, reportar ao PM |
+
+### Procedimento
+
+1. **PARE** a execucao no ponto atual (nao tente resolver sozinho)
+2. **DOCUMENTE** o que encontrou:
+   - O que estava fazendo quando descobriu
+   - Qual o problema exato
+   - Por que esta alem do seu escopo
+   - Sugestao de qual agente deveria resolver (se souber)
+3. **REPORTE** ao PM com o diagnostico
+4. **AGUARDE** direcao do PM antes de prosseguir
+5. **CONTINUE** apenas o trabalho que esta dentro do seu escopo
+
+### Anti-pattern: NUNCA faca isso
+
+- Resolver problema de arquitetura quando voce e implementador
+- Mudar decisoes de design que foram aprovadas pelo PM
+- Implementar workarounds para problemas estruturais
+- Ignorar o problema e continuar como se nao existisse
+
 ## Regras
 
 - Avaliar antes de criar — manter o que for bom, refatorar o necessario

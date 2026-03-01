@@ -8,7 +8,7 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.4.0 — Single-responsibility enforcement in squad commands + PM delegation fix (2026-03-01)
+- **Ultima operacao:** v5.4.0 — AI Council recommendations: handoff verificavel, protocolo de violacao, RETROSPECTIVE.md, loop 2 niveis, escalacao (2026-03-01)
 - **Proximo passo:** —
 - **Bloqueios:** Nenhum
 
@@ -21,6 +21,9 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Decisoes Recentes
 
+- [2026-03-01] v5.4.0: 5 recomendacoes do Conselho de IA aplicadas (handoff, violacao, retrospectiva, loop 2 niveis, escalacao)
+- [2026-03-01] v5.4.0: 8 Conselhos de Especialistas criados (IA, Marketing, Copywriting, UX, Tech, Business, Content, Product)
+- [2026-03-01] v5.4.0: Single-responsibility enforcement em squad commands + PM delegation fix
 - [2026-02-26] v5.3.0: PM (ATLAS) reescrito como orquestrador puro — nunca executa, so delega
 - [2026-02-26] v5.3.0: Regra 100% INCREMENTAL aplicada em 15+ arquivos (CLAUDE.md, Constitution, GSD, todos agentes)
 - [2026-02-26] v5.3.0: README atualizado com novidades, principios e descricoes atualizadas
@@ -85,4 +88,43 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-01 11:47 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 11:54 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 12:26 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 12:36 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 12:37 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:09 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:15 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:18 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:20 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:22 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:23 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:23 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:27 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:39 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

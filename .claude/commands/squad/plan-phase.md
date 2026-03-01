@@ -6,6 +6,28 @@ Planejamento completo de uma fase do roadmap com pesquisa, planos executaveis e 
 **Pipeline:** COMPASS (Context Engineer) → NEXUS (Architect) → SHADOW (Devil's Advocate)
 **Motor:** GSD `plan-phase` (researcher → planner → plan-checker loop)
 
+## Criterios de Handoff Verificavel
+
+Cada etapa do pipeline SO avanca quando seus criterios de saida sao atendidos. ATLAS verifica ANTES de spawnar o proximo agente.
+
+### COMPASS → NEXUS
+- [ ] CONTEXT.md foi criado (arquivo existe)
+- [ ] Secao "Decisoes Resolvidas" presente com pelo menos 1 decisao
+- [ ] Secao "Gray Areas Abertas" presente (pode estar vazia se tudo foi resolvido)
+- [ ] Se gray areas abertas restam: ATLAS decide se avanca ou retorna ao COMPASS
+
+### NEXUS → SHADOW
+- [ ] PLAN.md foi criado (arquivo existe)
+- [ ] Cada task tem: descricao, criterio de aceite, estimativa de complexidade
+- [ ] PLAN.md referencia o CONTEXT.md (decisoes respeitadas)
+
+### SHADOW → ATLAS (resultado final)
+- [ ] Verdict emitido: APPROVED / CAVEATS / BLOCKED
+- [ ] Se CAVEATS: cada caveat tem severidade (low/medium/high)
+- [ ] Se BLOCKED: cada blocker tem justificativa especifica
+
+Se qualquer criterio falhar → ATLAS NAO avanca. Retorna ao agente anterior com feedback especifico.
+
 ## Descricao
 
 Cria PLAN.md executaveis para uma fase do roadmap. Segue o loop de qualidade: Research → Plan → Verify → Revision (max 3x). Cada plano tem tasks atomicas com criterios de verificacao automatizados.
@@ -32,10 +54,19 @@ Cria PLAN.md executaveis para uma fase do roadmap. Segue o loop de qualidade: Re
    - Ha riscos nao mapeados ou dependencias ocultas?
    - Tasks sao realmente atomicas e verificaveis?
 
-4. **Loop de revisao** — Se SHADOW identifica bloqueios:
-   - Feedback retorna ao passo 2 (NEXUS revisa o plano)
-   - Maximo 3 iteracoes do loop NEXUS → SHADOW
-   - Se apos 3 iteracoes ainda houver bloqueios, ATLAS apresenta divergencias ao usuario
+4. **Loop de Revisao em 2 Niveis** — Quando SHADOW identifica problemas, ATLAS classifica o tipo antes de rotear o feedback:
+
+   **Tipo A — Plano inadequado** (problema no PLAN.md):
+   - Feedback retorna ao NEXUS (Step 2)
+   - NEXUS revisa o plano mantendo o CONTEXT.md intacto
+   - Exemplos: tasks mal definidas, riscos nao cobertos, dependencias faltando
+
+   **Tipo B — Contexto insuficiente** (problema no CONTEXT.md):
+   - Feedback retorna ao COMPASS (Step 1)
+   - COMPASS re-captura decisoes especificas com o usuario
+   - Exemplos: gray area nao resolvida que afeta o plano, premissa incorreta no contexto, decisao de escopo ambigua
+
+   **Limite total:** 3 iteracoes do loop (contando ambos os tipos). Apos 3 iteracoes sem convergencia, ATLAS apresenta divergencias ao usuario com diagnostico estruturado.
 
 5. **ATLAS apresenta** plano aprovado ao usuario com trade-offs e riscos identificados
 
