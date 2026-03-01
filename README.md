@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 52 mind clones, 9 conselhos de especialistas, PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
