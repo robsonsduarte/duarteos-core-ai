@@ -252,6 +252,7 @@ export function init(projectName, options = {}) {
     ['protocols/SYNAPSE.md', '.claude/protocols/SYNAPSE.md'],
     ['protocols/QUALITY-GATES.md', '.claude/protocols/QUALITY-GATES.md'],
     ['protocols/IDE-SYNC.md', '.claude/protocols/IDE-SYNC.md'],
+    ['protocols/AGENT-GSD-PROTOCOL.md', '.claude/protocols/AGENT-GSD-PROTOCOL.md'],
 
     // v5.0.0 — 4-Layer Config
     ['config/system.yaml', '.claude/config/system.yaml'],

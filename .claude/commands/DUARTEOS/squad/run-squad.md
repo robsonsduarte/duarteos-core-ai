@@ -158,3 +158,23 @@ Status: CONCLUIDO | PARCIAL | FALHOU
 5. O relatorio final e obrigatorio — sempre gerar
 6. Respeitar as regras e limitacoes de cada agente conforme definido em seu .md
 7. Agentes herdados tem as mesmas permissoes que agentes proprios
+
+## Hierarquia: Orchestrator do Squad vs ATLAS (PM)
+
+O agente com `role: orchestrator` dentro do squad **NAO e um PM paralelo**. Ele opera DENTRO da autoridade do ATLAS (PM global).
+
+### Escopo do orchestrator do squad
+- Coordenar execucao de tasks DENTRO do escopo do squad
+- Distribuir tasks entre agentes do squad conforme suas responsabilidades
+- Monitorar progresso e reportar resultado
+
+### Escalacao obrigatoria ao ATLAS
+O orchestrator do squad DEVE escalar ao ATLAS (PM) quando:
+- Encontrar **bloqueio** que impede o progresso do squad
+- Houver **conflito entre agentes** que nao se resolve no escopo do squad
+- A decisao envolver **estrategia do projeto** (prioridades, escopo, arquitetura global)
+- A demanda **ultrapassar o escopo** do squad e afetar outros modulos do projeto
+
+### Regra de ouro
+> Decisoes que afetam o projeto como um todo pertencem ao ATLAS.
+> O orchestrator do squad coordena execucao local. O ATLAS coordena o projeto.

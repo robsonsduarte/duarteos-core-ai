@@ -1,8 +1,8 @@
 agent: pm
 state: activated
 task: "Aguardando demanda"
-started: "2026-02-24"
-last_transition: "2026-02-24"
+started: "2026-03-01"
+last_transition: "2026-03-01"
 transitions:
   - from: idle
     to: activated

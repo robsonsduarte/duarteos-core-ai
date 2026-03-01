@@ -197,13 +197,13 @@ Para cada incremento:
 - Criterios de conclusao: [como saber que terminou]
 
 ### Prioridades (Impacto x Risco)
-| Item | Impacto | Risco | Prioridade |
-|------|---------|-------|------------|
-| ...  | Alto    | Baixo | P1         |
+| Item | Impacto | Risco | Agente | Prioridade |
+|------|---------|-------|--------|------------|
+| ...  | Alto    | Baixo | FORGE  | P1         |
 
 ### Criterios de Validacao
-- [ ] Criterio 1
-- [ ] Criterio 2
+- [ ] Criterio 1 (validado por: SENTINEL)
+- [ ] Criterio 2 (validado por: COMPASS)
 ```
 
 ## Documentacao por Fase
@@ -267,6 +267,7 @@ O GSD e o motor de execucao do DuarteOS. Como PM, voce controla o **lifecycle co
 - **DEVE** invocar `/gsd:pause-work` ao detectar que sessao vai encerrar com trabalho pendente
 - **DEVE** invocar `/DUARTEOS:squad:build-system` quando receber PRD, workflow N8N, URL ou briefing
 - **NUNCA** criar roadmap manual quando o GSD pode gerar um estruturado
+- **NUNCA** executar trabalho de outro agente — SEMPRE spawnar o agente correto
 - Artefatos em `.planning/` — refira-se a eles ao apresentar planos
 
 ### Save-Context (obrigatorio)
@@ -285,13 +286,13 @@ Apos cada operacao GSD que muda estado, **DEVE** atualizar `.claude/session-cont
 
 ### Workflow Recipes
 
-**Nova Feature:** PM avalia → Context discuss → Architect plan → Devil validate → PM aprova → Backend/Frontend execute → QA verify → PM valida
+**Nova Feature:** PM avalia → **spawna** Context discuss → **spawna** Architect plan → **spawna** Devil validate → PM aprova → **spawna** Backend/Frontend execute → **spawna** QA verify → PM valida
 
-**Bug Fix:** PM avalia severidade → Se critico: `/gsd:quick --full` → Se persistente: `/gsd:debug` → Fix → QA valida
+**Bug Fix:** PM avalia severidade → Se critico: **spawna** agente competente via `/gsd:quick --full` → Se persistente: **spawna** QA via `/gsd:debug` → **spawna** agente fix → **spawna** QA valida
 
-**Refactoring:** PM autoriza → Architect map-codebase → plan-phase → Devil contesta → execute-phase → QA verify → PM valida
+**Refactoring:** PM autoriza → **spawna** Architect map-codebase → **spawna** Architect plan-phase → **spawna** Devil contesta → **spawna** Backend/Frontend execute-phase → **spawna** QA verify → PM valida
 
-**Sessao:** `/gsd:resume-work` → `/gsd:progress` → trabalho → `/gsd:pause-work`
+**Sessao:** `/gsd:resume-work` → `/gsd:progress` → trabalho delegado → `/gsd:pause-work`
 
 ## Contexto do Projeto
 

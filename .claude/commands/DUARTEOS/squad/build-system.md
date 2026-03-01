@@ -3,13 +3,13 @@
 Recebe um PRD, workflow N8N, ou URL de referencia e constroi um sistema completo automaticamente.
 
 **Agente lider:** PM (Supreme Orchestrator)
-**Agentes envolvidos:** Todos os 12 agentes (7 deliberativos + 5 custom)
+**Agentes envolvidos:** Todos os 13 agentes (7 deliberativos + 6 custom)
 **Motor:** GSD completo (new-project → plan → execute → verify)
 **Modo:** YOLO — executa tudo automaticamente, so pergunta quando CRITICO
 
 ## Descricao
 
-O comando mais poderoso do DuarteOS. Recebe um input (PRD, workflow, ou URL), analisa automaticamente, gera blueprint completo, e executa a construcao do sistema inteiro com:
+O comando mais poderoso do DuarteOS. Recebe um input (PRD, workflow, ou URL), delega analise ao Architect (NEXUS) que gera blueprint completo, e o PM orquestra a construcao do sistema inteiro com:
 - Banco de dados configurado
 - Autenticacao (login, registro, middleware)
 - API routes completas
@@ -39,32 +39,51 @@ Este comando opera em YOLO mode por padrao:
 
 ## Como funciona
 
-### FASE 0 — INPUT ANALYSIS + TASK PLANNING (automatica, ~3 min)
+### FASE 0 — INPUT ANALYSIS + BLUEPRINT (PM coordena, NEXUS executa, ~5 min)
+
+PM e PURO orquestrador nesta fase — detecta o tipo de input e DELEGA toda analise tecnica.
 
 ```
-1. Detectar tipo de input:
+1. PM detecta tipo de input:
    - Se termina em .md/.txt/.pdf → PRD
    - Se termina em .json e tem "nodes" → N8N workflow
    - Se comeca com http → URL para scraping
    - Senao → texto livre (briefing)
 
-2. Executar analise especializada:
-   - PRD: extrair features, data models, regras de negocio, personas
-   - N8N: extrair nodes → mapear para features, trigger → eventos, connections → fluxos
-   - URL: scrape → extrair paginas, navegacao, design, cores, features visiveis
-   - Texto: inferir dominio, features minimas viaveis, publico
+2. PM faz perguntas de esclarecimento SE input for ambiguo (senao, pula)
 
-3. Gerar BLUEPRINT.md em .planning/:
-   - Nome do projeto
-   - Stack (inferido ou default)
-   - Data models (entidades, campos, relacionamentos)
-   - Auth requirements (roles, permissoes)
-   - Pages/Routes (cada tela com descricao)
-   - API endpoints (CRUD + custom)
-   - Design (paleta de cores, tipografia, layout)
-   - Features (priorizadas: MVP → Nice-to-have)
+3. PM SPAWNA NEXUS (Architect) via Task tool para:
+   - Analisar o input completo (PRD/N8N/URL/texto)
+   - Executar analise especializada:
+     - PRD: extrair features, data models, regras de negocio, personas
+     - N8N: extrair nodes → mapear para features, trigger → eventos, connections → fluxos
+     - URL: scrape → extrair paginas, navegacao, design, cores, features visiveis
+     - Texto: inferir dominio, features minimas viaveis, publico
+   - Gerar BLUEPRINT.md em .planning/ contendo:
+     - Nome do projeto
+     - Stack (inferido ou default)
+     - Data models (entidades, campos, relacionamentos)
+     - Auth requirements (roles, permissoes)
+     - Pages/Routes (cada tela com descricao)
+     - API endpoints (CRUD + custom)
+     - Design (paleta de cores, tipografia, layout)
+     - Features (priorizadas: MVP → Nice-to-have)
 
-4. CRIAR TASKS no Redis Task Manager:
+4. PM SPAWNA SPECTER (Security Auditor) via Task tool para:
+   - Review de seguranca do BLUEPRINT.md
+   - Identificar dados sensiveis, falhas de auth, riscos de exposicao
+   - Retornar report: PASS / WARN (com sugestoes) / BLOCK (com justificativa)
+
+5. PM SPAWNA SHADOW (Devil's Advocate) via Task tool para:
+   - Contestar premissas do blueprint
+   - Identificar riscos de scope creep, dependencias frageis, complexidade oculta
+   - Retornar report: PASS / WARN (com alertas) / BLOCK (com justificativa)
+
+6. PM RECEBE os 3 reports (NEXUS + SPECTER + SHADOW) e DECIDE GO/NO-GO:
+   - Se todos PASS/WARN → GO (incorpora sugestoes no blueprint)
+   - Se qualquer BLOCK → PM avalia, pode pedir ajuste ao NEXUS ou escalar ao usuario
+
+7. CRIAR TASKS no Redis Task Manager:
    PM usa create_tasks_batch() para criar todas as tasks do projeto
    com dependencias entre elas. Exemplo:
 
@@ -80,24 +99,39 @@ Este comando opera em YOLO mode por padrao:
    O task manager resolve temp_ids para IDs reais e configura bloqueios automaticamente.
 ```
 
-### FASE 1 — ARCHITECTURE DECISION (automatica, ~3 min)
+### FASE 1 — ARCHITECTURE DECISION (PM decide, NEXUS propoe, ~5 min)
+
+PM NAO define stack, data models, ou auth. O Architect PROPOE, o PM DECIDE.
 
 ```
-1. Architect analisa BLUEPRINT.md e define:
-   - Stack final (Next.js 15 + Supabase default, ou detectado do input)
-   - Database schema completo (SQL ready)
-   - API contract (OpenAPI-like)
-   - Component tree (paginas → componentes)
-   - Auth strategy (Supabase Auth default)
+1. PM SPAWNA NEXUS (Architect) via Task tool para:
+   - Analisar BLUEPRINT.md e propor 3 opcoes de arquitetura com trade-offs:
+     - Opcao A: Conservadora (stack mais simples, menos risco)
+     - Opcao B: Equilibrada (melhor custo-beneficio)
+     - Opcao C: Ambiciosa (mais features, mais complexidade)
+   - Cada opcao deve incluir:
+     - Stack final (framework, UI, auth, database, ORM, deploy)
+     - Database schema completo (SQL ready)
+     - API contract (OpenAPI-like)
+     - Component tree (paginas → componentes)
+     - Auth strategy
+   - NEXUS escreve ARCHITECTURE.md em .planning/ com as 3 opcoes
 
-2. Security Auditor valida:
-   - Schema seguro? (sem dados sensiveis expostos)
-   - Auth adequado? (RBAC se multi-role)
-   - Input validation planejado?
+2. PM SPAWNA SPECTER (Security Auditor) via Task tool para:
+   - Validar cada opcao proposta pelo Architect:
+     - Schema seguro? (sem dados sensiveis expostos)
+     - Auth adequado? (RBAC se multi-role)
+     - Input validation planejado?
+   - Retornar report de seguranca por opcao
 
-3. Devil's Advocate contesta (silent mode — so bloqueia se CRITICO)
+3. PM SPAWNA SHADOW (Devil's Advocate) via Task tool para:
+   - Contestar cada opcao (silent mode — so bloqueia se CRITICO)
+   - Identificar over-engineering, pontos de falha, dependencias arriscadas
 
-4. PM aprova automaticamente se nao houve bloqueio critico
+4. PM RECEBE os 3 reports e DECIDE qual opcao:
+   - Aprova automaticamente se Opcao B (equilibrada) nao tem bloqueios
+   - Se bloqueio critico em todas opcoes → escala ao usuario
+   - PM NUNCA define a arquitetura — apenas ESCOLHE entre as opcoes do NEXUS
 ```
 
 ### FASES 2-5 — EXECUCAO BASEADA EM TASKS (auto-execute)

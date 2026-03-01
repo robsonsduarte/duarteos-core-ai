@@ -4,6 +4,16 @@ Executa uma tarefa ad-hoc pequena com garantias de qualidade GSD.
 
 **Motor:** GSD `quick` (planner → executor → optional verifier)
 
+## Roteamento de Agente
+
+Este comando e roteado pelo PM (ATLAS) para o agente mais adequado:
+- **Task de backend** (API, DB, logica de negocio) → FORGE (Backend)
+- **Task de frontend** (UI, componentes, estilos) → PRISM (Frontend)
+- **Task de infraestrutura** (Docker, CI/CD, deploy) → VAULT (DevOps)
+- **Task full-stack** (DB a UI) → BRIDGE (Fullstack)
+
+O PM NAO executa a task — spawna o agente correto com o contexto da demanda.
+
 ## Descricao
 
 Para tarefas pequenas que nao justificam uma fase completa. Cria um plano simples (1-3 tasks), executa com commits atomicos e opcionalmente verifica o resultado. Rastreado em STATE.md para historico.

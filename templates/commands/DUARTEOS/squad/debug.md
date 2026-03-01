@@ -4,6 +4,10 @@ Investigacao de bugs com metodo cientifico e estado persistente.
 
 **Motor:** GSD `debug` (gsd-debugger com sessoes persistentes)
 
+## Agente Lider: SENTINEL (QA)
+
+Este comando e executado pelo SENTINEL (QA). O PM (ATLAS) invoca este comando SPAWNANDO o SENTINEL. O SENTINEL lidera a investigacao cientifica do bug usando o motor GSD. O PM NUNCA executa debug diretamente — ele delega ao SENTINEL e aguarda o relatorio.
+
 ## Descricao
 
 Debug sistematico que mantem estado de investigacao entre sessoes. Usa metodo cientifico: hipotese → teste → conclusao. Inclui protecoes contra bias cognitivo (confirmation bias, anchoring, sunk cost). O estado persiste em `.planning/debug/` para retomar investigacao.

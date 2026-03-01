@@ -2,8 +2,13 @@
 
 Crie um novo squad customizado para o projeto.
 
-**Agente lider:** PM (Supreme Orchestrator)
+**Agente lider:** PM (ATLAS) — coleta requisitos e valida resultado
+**Agente executor:** NEXUS (Architect) ou TITAN (System Builder) — cria a estrutura de arquivos
 **Modo:** Interativo — guia o usuario passo a passo
+
+> **Regra de ouro:** O PM (ATLAS) e orquestrador PURO. Ele coleta requisitos do usuario (PASSOs 1 e 2),
+> DELEGA a criacao de arquivos spawnando NEXUS ou TITAN (PASSOs 3 e 4), e valida o resultado (PASSO 5).
+> O PM NUNCA escreve arquivos diretamente.
 
 ## Argumentos
 
@@ -33,7 +38,21 @@ Pergunte ao usuario qual template usar como base:
 
 Templates disponiveis estao em `.claude/squad-templates/{template}/`. Se o template escolhido nao existir la, crie a estrutura do zero.
 
-### PASSO 3: Criar Estrutura
+### PASSO 3: Delegar Criacao da Estrutura
+
+> **O PM NAO cria arquivos.** O PM prepara o briefing e SPAWNA um agente executor.
+
+1. **Escolher agente executor:**
+   - Se o squad e de desenvolvimento (fullstack, basic, scratch com dev) → spawnar **NEXUS (Architect)**
+   - Se o squad e de infraestrutura/automacao (automation, data-science, ops) → spawnar **TITAN (System Builder)**
+
+2. **Preparar briefing para o agente spawnado** com:
+   - Nome do squad normalizado
+   - Template escolhido (ou scratch)
+   - Descricao fornecida pelo usuario
+   - Qualquer requisito coletado nos passos anteriores
+
+3. **O agente spawnado (NEXUS ou TITAN) executa a criacao:**
 
 #### Se template escolhido (nao scratch):
 
@@ -100,33 +119,35 @@ hooks:
 
 ### PASSO 4: Customizacao Guiada
 
-Apos criar a estrutura, guie o usuario:
+O PM (ATLAS) coleta as respostas do usuario e repassa ao agente spawnado (NEXUS/TITAN) para implementar:
 
-1. **Agentes:** "Quais agentes esse squad precisa? (ex: backend, frontend, qa, devops)"
-   - Para cada agente informado, crie `squads/{nome}/agents/{agente}.md` com:
+1. **Agentes:** PM pergunta: "Quais agentes esse squad precisa? (ex: backend, frontend, qa, devops)"
+   - O agente spawnado cria `squads/{nome}/agents/{agente}.md` para cada agente com:
      - YAML frontmatter (name, description, tools, model)
      - Responsabilidades
      - Estilo de comunicacao
      - Regras
-   - Atualize `squad.yaml` com o novo agente
+   - O agente spawnado atualiza `squad.yaml` com o novo agente
 
-2. **Tasks:** "Que tipo de tarefas esse squad vai executar?"
-   - Para cada tipo, crie template em `squads/{nome}/tasks/{tipo}.md`
-   - Atualize `squad.yaml` com as novas tasks
+2. **Tasks:** PM pergunta: "Que tipo de tarefas esse squad vai executar?"
+   - O agente spawnado cria template em `squads/{nome}/tasks/{tipo}.md` para cada tipo
+   - O agente spawnado atualiza `squad.yaml` com as novas tasks
 
-3. **Config:** "Precisa herdar algum agente global? (architect, qa, pm, etc)"
-   - Se sim, adicione ao `inherit_agents` no `squad.yaml`
+3. **Config:** PM pergunta: "Precisa herdar algum agente global? (architect, qa, pm, etc)"
+   - Se sim, o agente spawnado adiciona ao `inherit_agents` no `squad.yaml`
    - Agentes globais vivem em `.claude/commands/agents/`
 
-4. **Coding Standards:** "Tem padroes especificos para esse squad?"
-   - Se sim, preencha `config/coding-standards.md`
-   - Se nao, crie com padroes minimos (lint, commits, testes)
+4. **Coding Standards:** PM pergunta: "Tem padroes especificos para esse squad?"
+   - O agente spawnado preenche `config/coding-standards.md` (se sim) ou cria com padroes minimos (se nao)
 
-### PASSO 5: Validacao
+### PASSO 5: Validacao (PM retoma o controle)
+
+O PM (ATLAS) valida o resultado produzido pelo agente spawnado:
 
 1. Verifique que todos os arquivos referenciados em `squad.yaml` existem
 2. Verifique que cada agente tem pelo menos: name, description, responsabilidades
-3. Mostre resumo final:
+3. Se houver problemas, o PM instrui o agente spawnado a corrigir
+4. Mostre resumo final ao usuario:
 
 ```
 Squad "{nome}" criado com sucesso!

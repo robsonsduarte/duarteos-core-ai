@@ -2,7 +2,8 @@
 
 Captura decisoes de implementacao antes de planejar — elimina ambiguidade.
 
-**Agentes envolvidos:** Context Engineer (coerencia) + PM (decisoes)
+**Agente Lider:** COMPASS (Context Engineer)
+**Invocacao:** PM (ATLAS) spawna COMPASS via Task tool para executar este comando
 **Motor:** GSD `discuss-phase` (questionamento interativo de gray areas)
 
 ## Descricao
@@ -18,7 +19,7 @@ Identifica "gray areas" de uma fase (decisoes que impactam a implementacao) e co
 
 ## Como funciona
 
-1. Voce opera como parceiro de pensamento: usuario = visionario, voce = construtor.
+1. COMPASS conduz a discussao como Context Engineer: identifica ambiguidades, mapeia gray areas e captura decisoes que definem o contexto da fase.
 
 2. Execute `/gsd:discuss-phase $ARGUMENTS` que ira:
    - Analisar a fase para identificar gray areas

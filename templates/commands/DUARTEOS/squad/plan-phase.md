@@ -2,7 +2,8 @@
 
 Planejamento completo de uma fase do roadmap com pesquisa, planos executaveis e validacao.
 
-**Agentes envolvidos:** Arquiteto (estrutura) + Context Engineer (coerencia) + Advogado do Diabo (contestacao)
+**Agente Lider:** ATLAS (PM) — orquestra o pipeline via Task tool
+**Pipeline:** COMPASS (Context Engineer) → NEXUS (Architect) → SHADOW (Devil's Advocate)
 **Motor:** GSD `plan-phase` (researcher → planner → plan-checker loop)
 
 ## Descricao
@@ -17,22 +18,28 @@ Cria PLAN.md executaveis para uma fase do roadmap. Segue o loop de qualidade: Re
 
 ## Como funciona
 
-1. Voce opera com 3 lentes cognitivas simultaneas:
-   - **Arquiteto:** estrutura dos planos, dependencias, wave ordering
-   - **Context Engineer:** coerencia com Context Map
-   - **Advogado do Diabo:** valida planos antes da execucao (via plan-checker)
+**Pipeline sequencial (ATLAS orquestra via Task tool):**
 
-2. Primeiro, se nao existir CONTEXT.md da fase, execute `/gsd:discuss-phase $ARGUMENTS` para capturar decisoes
+1. **COMPASS (Context Engineer)** — Se CONTEXT.md da fase NAO existe, ATLAS spawna COMPASS para executar `/gsd:discuss-phase $ARGUMENTS` e produzir CONTEXT.md com decisoes capturadas.
 
-3. Depois, execute `/gsd:plan-phase $ARGUMENTS` que ira:
+2. **NEXUS (Architect)** — ATLAS spawna NEXUS para criar PLAN.md usando CONTEXT.md + ROADMAP.md. NEXUS executa `/gsd:plan-phase $ARGUMENTS` que ira:
    - Pesquisar implementacao da fase (gsd-phase-researcher)
    - Criar PLAN.md files com tasks atomicas (gsd-planner)
-   - Validar planos contra o goal (gsd-plan-checker)
-   - Loop de revisao se necessario (max 3 iteracoes)
+   - Estruturar dependencias e wave ordering
 
-4. APOS o GSD gerar os planos, REVISE com perspectiva do projeto
+3. **SHADOW (Devil's Advocate)** — ATLAS spawna SHADOW para validar/contestar o plano. SHADOW executa o plan-checker do GSD e avalia:
+   - Planos cobrem o goal da fase?
+   - Ha riscos nao mapeados ou dependencias ocultas?
+   - Tasks sao realmente atomicas e verificaveis?
 
-5. Apresente os planos ao usuario com trade-offs e riscos
+4. **Loop de revisao** — Se SHADOW identifica bloqueios:
+   - Feedback retorna ao passo 2 (NEXUS revisa o plano)
+   - Maximo 3 iteracoes do loop NEXUS → SHADOW
+   - Se apos 3 iteracoes ainda houver bloqueios, ATLAS apresenta divergencias ao usuario
+
+5. **ATLAS apresenta** plano aprovado ao usuario com trade-offs e riscos identificados
+
+> **IMPORTANTE:** ATLAS (PM) NUNCA executa os passos diretamente — apenas orquestra spawns. Cada agente opera com sua especializacao exclusiva.
 
 ## Flags disponiveis
 
