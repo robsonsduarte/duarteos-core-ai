@@ -106,6 +106,7 @@ export function init(projectName, options = {}) {
     '.claude/protocols',
     '.claude/config',
     '.claude/synapse',
+    '.claude/synapse/minds',
     '.claude/ide-templates',
     '.claude/task-templates/spec',
     '.claude/task-templates/dev',
@@ -259,9 +260,11 @@ export function init(projectName, options = {}) {
     ['config/project.yaml', '.claude/config/project.yaml'],
     ['config/user.yaml.example', '.claude/config/user.yaml.example'],
 
-    // v5.0.0 — Synapse State Machine
+    // v5.0.0 — Synapse State Machine + v5.4 Synapse v2
     ['synapse/README.md', '.claude/synapse/README.md'],
     ['synapse/template.yaml', '.claude/synapse/template.yaml'],
+    ['synapse/mind-template.yaml', '.claude/synapse/mind-template.yaml'],
+    ['synapse/dossier-template.yaml', '.claude/synapse/dossier-template.yaml'],
 
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
@@ -372,6 +375,25 @@ export function init(projectName, options = {}) {
     }
     walkDir(duarteosSrc, duarteosDest)
     console.log(`  + DUARTEOS/ commands sincronizados`)
+  }
+
+  // Synapse minds — copy pre-populated DNA YAML files
+  const synapseMindsSrc = resolve(TEMPLATES_DIR, 'synapse', 'minds')
+  const synapseMindsDest = resolve(cwd, '.claude', 'synapse', 'minds')
+  if (existsSync(synapseMindsSrc)) {
+    if (!existsSync(synapseMindsDest)) mkdirSync(synapseMindsDest, { recursive: true })
+    const entries = readdirSync(synapseMindsSrc)
+    for (const entry of entries) {
+      if (entry.endsWith('.yaml')) {
+        const srcPath = resolve(synapseMindsSrc, entry)
+        const destPath = resolve(synapseMindsDest, entry)
+        if (!existsSync(destPath)) {
+          cpSync(srcPath, destPath)
+          installed++
+        }
+      }
+    }
+    console.log(`  + synapse/minds/ DNA files sincronizados`)
   }
 
   // Ensure .gitignore has DuarteOS entries
@@ -537,6 +559,7 @@ export function init(projectName, options = {}) {
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 5 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas
+     14 DNA pre-populados             — Saude (7) + Juridico Digital (7)
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes

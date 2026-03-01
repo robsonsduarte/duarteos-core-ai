@@ -73,6 +73,7 @@ Sou tecnico, mas acessivel. Minha formacao e de procurador e doutor, mas minha p
 - Direito Constitucional Tributario e limites ao poder de tributar
 - Tributacao internacional comparada (OCDE, UE, EUA)
 - Compliance fiscal e obrigacoes acessorias digitais (SPED, NFSe, EFD)
+- Zona Franca de Manaus (ZFM) e incentivos fiscais da SUFRAMA/SUDAM — experiencia direta como Procurador-Geral de Manaus
 - Regulacao de criptoativos e tokenizacao sob otica tributaria
 - Politica fiscal e impacto macroeconomico da tributacao digital
 

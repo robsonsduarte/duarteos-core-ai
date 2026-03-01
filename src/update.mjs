@@ -35,6 +35,9 @@ const CHANGELOG = {
       'Synapse v2: memoria incremental viva — DNA 5 camadas (Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas)',
       'clone-mind v2: DNA 5 camadas + Synapse Sync + modo incremental (--update) + modo dossie (--dossier)',
       'Novo comando /squad:dossie — compila dossies tematicos cross-source com todos os mind clones relevantes',
+      '14 mind clones enriquecidos com pesquisa web verificada (Saude + Juridico)',
+      '14 Synapse DNA YAML pre-populados — 5 camadas cognitivas extraidas de cada mind clone',
+      'init/update sincronizam synapse/minds/*.yaml e templates (mind-template, dossier-template)',
     ],
   },
   '5.3.0': {
@@ -293,9 +296,11 @@ export function update(options = {}) {
     ['config/system.yaml', '.claude/config/system.yaml'],
     ['config/user.yaml.example', '.claude/config/user.yaml.example'],
 
-    // v5.0.0 — Synapse (structure files)
+    // v5.0.0 — Synapse (structure files) + v5.4 Synapse v2
     ['synapse/README.md', '.claude/synapse/README.md'],
     ['synapse/template.yaml', '.claude/synapse/template.yaml'],
+    ['synapse/mind-template.yaml', '.claude/synapse/mind-template.yaml'],
+    ['synapse/dossier-template.yaml', '.claude/synapse/dossier-template.yaml'],
 
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
@@ -484,6 +489,31 @@ export function update(options = {}) {
       }
     }
     walkSync(duarteosSrc, duarteosDest)
+  }
+
+  // Synapse minds — sync pre-populated DNA YAML files
+  const synapseMindsSrc = resolve(TEMPLATES_DIR, 'synapse', 'minds')
+  const synapseMindsDest = resolve(cwd, '.claude', 'synapse', 'minds')
+  if (existsSync(synapseMindsSrc)) {
+    if (!existsSync(synapseMindsDest)) mkdirSync(synapseMindsDest, { recursive: true })
+    const entries = readdirSync(synapseMindsSrc)
+    for (const entry of entries) {
+      if (entry.endsWith('.yaml')) {
+        const srcPath = resolve(synapseMindsSrc, entry)
+        const destPath = resolve(synapseMindsDest, entry)
+        if (!existsSync(destPath)) {
+          cpSync(srcPath, destPath)
+          added++
+        } else {
+          const current = readFileSync(destPath, 'utf-8')
+          const next = readFileSync(srcPath, 'utf-8')
+          if (current !== next) {
+            cpSync(srcPath, destPath)
+            updated++
+          }
+        }
+      }
+    }
   }
 
   // Clean up old namespace directories (after migration + update copied new files)

@@ -830,9 +830,15 @@ O Synapse evoluiu de "monitor de estado" para "memoria incremental viva". Alem d
 | Camada | O que armazena | Onde |
 |--------|---------------|------|
 | Estado dos Agentes | state machine (idle→activated→...→completed) | `.claude/synapse/{agent}.yaml` |
-| DNA de Mind Clones | 5 camadas cognitivas por expert | `.claude/synapse/minds/{nome}.yaml` |
+| DNA de Mind Clones | 5 camadas cognitivas por expert (14 pre-populados) | `.claude/synapse/minds/{nome}.yaml` |
 | Dossies Tematicos | conhecimento consolidado por tema | `.claude/synapse/dossiers/{tema}.yaml` |
 | Log de Ingestao | rastreabilidade de conteudo processado | `.claude/synapse/ingestion/` |
+
+**14 DNA pre-populados** (Saude + Juridico Digital):
+- Saude: Drauzio Varella, Claudio Miyake, Juliana Trentini, Vera Iaconelli, Marcio Atalla, Patricia Leite, Raquel Castanharo
+- Juridico: Patricia Peck, Ronaldo Lemos, Guilherme Martins, Erik Nybo, Ivson Coelho, Ricardo Calcini, Jose Faleiros Junior
+
+Cada DNA tem 5 camadas: Filosofia (crencas core), Frameworks (processos mentais), Heuristicas (regras de bolso), Metodologias (sistemas repetiveis), Dilemas (trade-offs). Gerados a partir dos mind clones `.md` e atualizaveis via `/DUARTEOS:squad:clone-mind --update`.
 
 ---
 
