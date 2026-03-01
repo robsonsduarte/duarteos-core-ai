@@ -7,6 +7,66 @@ import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
+// Changelog por versao — exibido no update
+const CHANGELOG = {
+  '5.4.0': {
+    title: 'Single-Responsibility Enforcement',
+    highlights: [
+      'Squad commands refatorados — cada comando respeita fronteiras de responsabilidade',
+      'PM (ATLAS) nunca mais executa trabalho tecnico — delegacao forcada em todos os comandos',
+      'build-system: PM spawna NEXUS para blueprint (antes criava direto)',
+      'plan-phase: pipeline COMPASS → NEXUS → SHADOW (antes 1 agente com 3 personas)',
+      'discuss-phase: COMPASS como lider explicito (antes PM fazia papel de Context Engineer)',
+      'create-squad: PM delega criacao de arquivos ao NEXUS/TITAN',
+      'run-squad: escalacao obrigatoria ao ATLAS quando bloqueado',
+      'debug/quick: agente lider declarado (SENTINEL para debug, roteamento por tipo para quick)',
+      'init.mjs: AGENT-GSD-PROTOCOL.md adicionado (faltava em instalacoes frescas)',
+    ],
+  },
+  '5.3.0': {
+    title: 'PM Pure Orchestrator + Incremental Dev',
+    highlights: [
+      'PM (ATLAS) reescrito como orquestrador puro — nunca executa, so delega',
+      'Regra 100% INCREMENTAL aplicada em 15+ arquivos',
+      'Blueprint template para App Factory',
+      'GSD integrado como subcomandos formais dos agentes',
+    ],
+  },
+  '5.2.0': {
+    title: 'YOLO Mode + Constitution + Config System',
+    highlights: [
+      'YOLO Mode — execucao autonoma com guardrails minimos',
+      'Constitution — 5 artigos de principios inviolaveis',
+      '4-Layer Config (system → project → user → session)',
+      'Task Templates, Synapse State Machine, Quality Gates',
+    ],
+  },
+}
+
+function printChangelog(version) {
+  const entry = CHANGELOG[version]
+  if (!entry) return
+
+  const width = 64
+  const border = '━'.repeat(width)
+  const thin = '─'.repeat(width)
+
+  console.log(``)
+  console.log(`  ┏${border}┓`)
+  const label = `  ✦  DuarteOS v${version} — ${entry.title}  `
+  const pad = Math.max(0, width - label.length)
+  console.log(`  ┃${label}${' '.repeat(pad)}┃`)
+  console.log(`  ┗${border}┛`)
+  console.log(``)
+  console.log(`  O que ha de novo:`)
+  console.log(`  ${thin}`)
+  for (const item of entry.highlights) {
+    console.log(`  → ${item}`)
+  }
+  console.log(`  ${thin}`)
+  console.log(``)
+}
+
 function copyTemplate(src, dest) {
   const content = readFileSync(src, 'utf-8')
   const destDir = dirname(dest)
@@ -45,9 +105,14 @@ export function update(options = {}) {
   const cwd = process.cwd()
   const force = options.force || false
 
+  const version = getPackageVersion()
+
   console.log(`\n  DuarteOS Core AI — Update`)
-  console.log(`  Versao do pacote: v${getPackageVersion()}`)
+  console.log(`  Versao do pacote: v${version}`)
   console.log(`  Diretorio: ${cwd}\n`)
+
+  // Mostrar changelog da versao sendo instalada
+  printChangelog(version)
 
   // Check if DuarteOS is installed (accept old or new path structure)
   const hasNewStructure = existsSync(resolve(cwd, '.claude/commands/DUARTEOS/agents/squad.md'))
