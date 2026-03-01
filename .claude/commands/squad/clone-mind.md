@@ -11,11 +11,52 @@ $ARGUMENTS — nome do especialista a clonar (obrigatorio)
 
 Se $ARGUMENTS estiver vazio, pergunte: "Qual especialista voce quer clonar? (nome completo)"
 
+## Modos de Operacao
+
+### Modo Criacao (padrao)
+```
+/DUARTEOS:squad:clone-mind Naval Ravikant
+```
+Pipeline completo: Research → Analysis → Synthesis → Synapse Sync → Implementation → Validation
+
+### Modo Incremental (expert existente + nova fonte)
+```
+/DUARTEOS:squad:clone-mind --update "Naval Ravikant" https://youtube.com/watch?v=xxx
+/DUARTEOS:squad:clone-mind --update "Naval Ravikant" /path/to/transcript.pdf
+/DUARTEOS:squad:clone-mind --update "Naval Ravikant" "texto bruto aqui..."
+```
+Pipeline parcial: Ingestao → Analysis (delta) → Synapse Merge → Update clone file
+- Le o DNA existente de `.claude/synapse/minds/{nome}.yaml`
+- Processa APENAS a nova fonte
+- Faz MERGE incremental das 5 camadas (adiciona, nunca remove)
+- Atualiza o clone `.md` com novos insights
+- Incrementa versao do DNA
+
+### Modo Dossie (alimentar dossie tematico)
+```
+/DUARTEOS:squad:clone-mind --dossier "trafego pago" https://youtube.com/watch?v=xxx
+```
+Extrai insights da fonte e adiciona ao dossie tematico em `.claude/synapse/dossiers/`
+
 ## Descricao
 
 Este e o comando mais poderoso de criacao de agentes do DuarteOS. Em vez de criar um agente generico, ele pesquisa profundamente um especialista real — livros, entrevistas, palestras, artigos, podcasts — e extrai seus modelos mentais, estilo de comunicacao, valores e padroes de decisao para criar um agente que pensa e responde como essa pessoa.
 
 Qualidade do clone depende DIRETAMENTE da qualidade das fontes coletadas na Fase 1.
+
+## As 5 Camadas do DNA Mental
+
+Todo mind clone gerado por este comando possui DNA estruturado em 5 camadas cognitivas:
+
+| Camada | O que captura | Pergunta-chave |
+|--------|-------------|----------------|
+| **Filosofia** | Crencas fundamentais, visao de mundo, principios inegociaveis | "O que esta pessoa acredita ser verdade?" |
+| **Frameworks** | Passos-a-passo, modelos de pensamento estruturados | "Como esta pessoa organiza e estrutura problemas?" |
+| **Heuristicas** | Atalhos mentais, regras de bolso, padroes de decisao rapida | "Que atalhos mentais usa para decidir rapido?" |
+| **Metodologias** | Processos repetiveis, sistemas formais, ferramentas | "Que sistemas formais segue consistentemente?" |
+| **Dilemas** | Trade-offs, tensoes reconhecidas, zonas cinza, evolucao de posicoes | "Como lida com contradicoes e decisoes impossiveis?" |
+
+Essas 5 camadas sao extraidas na Fase 2, estruturadas na Fase 3 (como YAML no Synapse), e transformadas em prompt na Fase 4.
 
 ## Pipeline de 5 Fases
 
@@ -161,6 +202,26 @@ Qualidade estimada: {alta/media/baixa}
    - Como ele reconcilia contradicoes
    - Evolucao visivel de ideias
 
+   **Filosofia (Camada 1)**
+   - Quais sao suas crencas fundamentais sobre o mundo/mercado/vida?
+   - Que principios ele NUNCA viola, mesmo sob pressao?
+   - Qual sua visao de mundo? (otimista/pragmatico/cetico/idealista)
+
+   **Heuristicas (Camada 3)**
+   - Que regras de bolso usa para decisoes rapidas?
+   - Quais "red flags" fazem ele parar imediatamente?
+   - Que vieses ele reconhece ter conscientemente?
+
+   **Metodologias (Camada 4)**
+   - Que processos repetiveis e documentados ele segue?
+   - Quais ferramentas/tecnicas sempre recomenda?
+   - Que sistemas formais estruturam seu trabalho?
+
+   **Dilemas (Camada 5)**
+   - Que trade-offs tipicos ele enfrenta e como resolve?
+   - Em que areas admite nao ter resposta definitiva?
+   - Que posicoes mudou ao longo do tempo e por que?
+
 3. Compilar analise:
 
 ```markdown
@@ -245,39 +306,62 @@ Fontes analisadas: {N}
 
 ```yaml
 # DNA Mental: {Nome do Especialista}
+# Synapse Mind Clone — Memoria Incremental
 # Gerado em: {data}
-# Fontes: {N} | Confianca: {alta/media/baixa}
+# Fontes processadas: {N}
+# Confianca: {alta/media/baixa}
 
 identity:
   name: "{Nome Completo}"
-  title: "{Titulo/Papel principal}"
-  domain: "{Dominio de expertise principal}"
-  archetype: "{Arquetipo em uma frase — ex: 'O filosofo pratico dos negocios'}"
-  era: "{Periodo de atividade — ex: '2010-presente'}"
+  slug: "{nome-normalizado}"
+  domain: "{Dominio}"
+  archetype: "{Arquetipo}"
 
-mental_models:
-  primary:
-    - name: "{modelo 1}"
-      description: "{como aplica}"
-    - name: "{modelo 2}"
-      description: "{como aplica}"
-    - name: "{modelo 3}"
-      description: "{como aplica}"
-  decision_framework: "{Descricao de como toma decisoes}"
-  problem_solving: "{Descricao de como resolve problemas}"
-  thinking_style: "{linear/sistemico/lateral/primeiro-principios/etc}"
+filosofia:
+  crencas_core:
+    - belief: "{crenca}"
+      evidencia: "{fonte}"
+  visao_de_mundo: "{descricao}"
+  principios_inegociaveis:
+    - "{principio}"
+
+frameworks:
+  primarios:
+    - name: "{framework}"
+      steps: ["{passo 1}", "{passo 2}"]
+      quando_usar: "{situacao}"
+  modelo_decisao: "{descricao}"
+
+heuristicas:
+  regras_rapidas:
+    - trigger: "{quando}"
+      acao: "{faz}"
+  red_flags:
+    - "{sinal de alerta}"
+
+metodologias:
+  processos:
+    - name: "{processo}"
+      etapas: ["{etapa 1}", "{etapa 2}"]
+  ferramentas_preferidas:
+    - "{ferramenta}"
+
+dilemas:
+  tradeoffs_tipicos:
+    - tensao: "{X vs Y}"
+      posicao: "{como resolve}"
+  evolucao:
+    - de: "{antes}"
+      para: "{depois}"
+      motivo: "{por que}"
 
 communication:
-  style: "{Estilo geral de comunicacao}"
-  tone: "{Tom predominante}"
+  style: "{estilo}"
+  tone: "{tom}"
   vocabulary:
-    signature_phrases:
-      - "{frase 1}"
-      - "{frase 2}"
-      - "{frase 3}"
+    signature_phrases: ["{frase}"]
     technical_terms:
-      - "{termo 1}"
-      - "{termo 2}"
+      - "{termo}"
     avoided_words:
       - "{palavra/expressao que nunca usa}"
   patterns:
@@ -287,18 +371,6 @@ communication:
     persuading: "{Como convence}"
   response_length: "{conciso/moderado/elaborado}"
   humor: "{tipo de humor ou 'raramente usa humor'}"
-
-values:
-  core:
-    - "{valor 1}"
-    - "{valor 2}"
-    - "{valor 3}"
-  priorities: "{O que prioriza consistentemente}"
-  avoids: "{O que evita ou rejeita}"
-  tradeoffs: "{Trade-offs que faz sem hesitar}"
-  red_lines:
-    - "{linha vermelha 1}"
-    - "{linha vermelha 2}"
 
 expertise:
   deep:
@@ -319,6 +391,16 @@ behavior:
   under_pressure: "{Como age sob pressao}"
   when_wrong: "{Como reage ao estar errado}"
   when_teaching: "{Como ensina/mentora}"
+
+ingestion_log:
+  - date: "{data}"
+    source: "{tipo}"
+    title: "{titulo}"
+
+stats:
+  total_fontes: "{N}"
+  versao_dna: 1
+  confianca_geral: "{nivel}"
 ```
 
 3. Revisar o YAML:
@@ -328,15 +410,57 @@ behavior:
 
 4. Salvar em `data/minds/{nome-normalizado}_dna.yaml`
 
-**NAO avance para Fase 4 sem o artefato salvo.**
+**NAO avance para Fase 3.5 sem o artefato salvo.**
+
+---
+
+### FASE 3.5: SYNAPSE SYNC (Salvar DNA Incremental)
+
+**Objetivo:** Persistir o DNA no Synapse para memoria incremental.
+**Artefato:** `.claude/synapse/minds/{nome-normalizado}.yaml`
+**Dependencia:** Fase 3 concluida
+
+#### Procedimento
+
+1. Verifique se `.claude/synapse/minds/` existe (crie com mkdir -p se nao existir)
+
+2. Verifique se ja existe um DNA para este expert:
+   - Se `.claude/synapse/minds/{nome-normalizado}.yaml` ja existe:
+     - LEIA o DNA existente
+     - MERGE incremental: adicione novas crencas, frameworks, heuristicas SEM remover as existentes
+     - Incremente `stats.versao_dna`
+     - Adicione entrada no `ingestion_log`
+     - Atualize `stats.ultima_atualizacao`
+   - Se NAO existe:
+     - Copie o YAML da Fase 3 diretamente
+     - Defina `stats.versao_dna: 1`
+
+3. Atualize o indice `.claude/synapse/minds/_index.yaml`:
+   ```yaml
+   # Indice de Mind Clones — Synapse
+   # Auto-gerado pelo clone-mind
+
+   minds:
+     - slug: "{nome}"
+       name: "{Nome Completo}"
+       domain: "{dominio}"
+       versao_dna: "{N}"
+       ultima_atualizacao: "{data}"
+       confianca: "{nivel}"
+       clone_file: ".claude/commands/DUARTEOS/{Categoria}/{nome}.md"
+   ```
+
+4. Salve e confirme: "DNA sincronizado com Synapse (versao {N})"
+
+**NAO avance para Fase 4 sem o DNA salvo no Synapse.**
 
 ---
 
 ### FASE 4: IMPLEMENTATION (Gerar Agente)
 
 **Objetivo:** Transformar o DNA em um agente funcional do DuarteOS.
-**Artefato:** `agents/{nome-normalizado}.md` (ou `squads/{squad}/agents/{nome-normalizado}.md` se especificado)
-**Dependencia:** Fase 3 concluida
+**Artefato:** `.claude/commands/DUARTEOS/{Categoria}/{nome-normalizado}.md`
+**Dependencia:** Fase 3.5 concluida
 
 #### Procedimento
 
@@ -557,9 +681,10 @@ Iteracao: {1/2/3}
 | Fase | Artefato | Caminho |
 |------|----------|---------|
 | 1 - Research | Fontes coletadas | `data/minds/{nome}_sources.md` |
-| 2 - Analysis | Padroes extraidos | `data/minds/{nome}_analysis.md` |
-| 3 - Synthesis | DNA estruturado | `data/minds/{nome}_dna.yaml` |
-| 4 - Implementation | Agente funcional | `agents/{nome}.md` |
+| 2 - Analysis | Padroes extraidos (5 camadas) | `data/minds/{nome}_analysis.md` |
+| 3 - Synthesis | DNA estruturado (YAML 5 camadas) | `data/minds/{nome}_dna.yaml` |
+| 3.5 - Synapse Sync | DNA persistido no Synapse | `.claude/synapse/minds/{nome}.yaml` |
+| 4 - Implementation | Agente funcional | `.claude/commands/DUARTEOS/{Cat}/{nome}.md` |
 | 5 - Validation | Relatorio de fidelidade | `data/minds/{nome}_validation.md` |
 
 ## Regras Criticas
@@ -575,10 +700,24 @@ Iteracao: {1/2/3}
 
 ## Exemplos
 
+### Criacao (pipeline completo)
 ```
-/squad:clone-mind Naval Ravikant
-/squad:clone-mind Paul Graham
-/squad:clone-mind Nassim Taleb
-/squad:clone-mind Steve Jobs
-/squad:clone-mind "Flavio Augusto da Silva"
+/DUARTEOS:squad:clone-mind Naval Ravikant
+/DUARTEOS:squad:clone-mind Paul Graham
+/DUARTEOS:squad:clone-mind Nassim Taleb
+/DUARTEOS:squad:clone-mind Steve Jobs
+/DUARTEOS:squad:clone-mind "Flavio Augusto da Silva"
+```
+
+### Incremental (adicionar nova fonte a expert existente)
+```
+/DUARTEOS:squad:clone-mind --update "Naval Ravikant" https://youtube.com/watch?v=abc123
+/DUARTEOS:squad:clone-mind --update "Paul Graham" /docs/pg-essay-transcript.pdf
+/DUARTEOS:squad:clone-mind --update "Nassim Taleb" "Trecho de entrevista recente..."
+```
+
+### Dossie (alimentar dossie tematico)
+```
+/DUARTEOS:squad:clone-mind --dossier "trafego pago" https://youtube.com/watch?v=xyz
+/DUARTEOS:squad:clone-mind --dossier "copywriting" /docs/swipe-file.pdf
 ```

@@ -534,6 +534,13 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:product    — 3 lideres de produto
      /DUARTEOS:conselho:saude      — 7 profissionais de saude multidisciplinar
      /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
+
+  Synapse v2 — Memoria Incremental (.claude/synapse/):
+     DNA 5 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas
+     Dossies Tematicos                — conhecimento consolidado cross-source por tema
+     Log de Ingestao                  — rastreabilidade de conteudo processado
+     /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes
+     /DUARTEOS:squad:clone-mind --update {nome} {fonte} — ingestao incremental
 `)
 
   // MCP Health Check — detect disconnected MCPs and guide user

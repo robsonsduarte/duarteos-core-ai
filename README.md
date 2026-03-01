@@ -628,12 +628,28 @@ Pipeline de 5 fases que cria um agente baseado em uma pessoa real:
 | Fase | O que faz | Output |
 |------|-----------|--------|
 | 1. RESEARCH | Coleta livros, entrevistas, artigos, podcasts | `_sources.md` |
-| 2. ANALYSIS | Extrai modelos mentais, valores, estilo | `_analysis.md` |
-| 3. SYNTHESIS | Gera DNA estruturado em YAML | `_dna.yaml` |
-| 4. IMPLEMENTATION | Cria arquivo do agente com system prompt | `agents/{nome}.md` |
+| 2. ANALYSIS | Extrai padroes em 5 camadas cognitivas | `_analysis.md` |
+| 3. SYNTHESIS | Gera DNA estruturado em YAML (5 camadas) | `_dna.yaml` |
+| 3.5. SYNAPSE SYNC | Persiste DNA no Synapse (memoria incremental) | `synapse/minds/{nome}.yaml` |
+| 4. IMPLEMENTATION | Cria arquivo do agente com system prompt | `.claude/commands/DUARTEOS/{Cat}/{nome}.md` |
 | 5. VALIDATION | Testa fidelidade (score >= 90%) | `_validation.md` |
 
-O agente resultante responde como o especialista responderia — com o mesmo estilo de comunicacao, modelos mentais e vocabulario.
+**As 5 camadas do DNA Mental:**
+
+| Camada | O que captura |
+|--------|-------------|
+| Filosofia | Crencas fundamentais, visao de mundo, principios inegociaveis |
+| Frameworks | Passos-a-passo, modelos de pensamento estruturados |
+| Heuristicas | Atalhos mentais, regras de bolso, decisao rapida |
+| Metodologias | Processos repetiveis, sistemas formais, ferramentas |
+| Dilemas | Trade-offs, tensoes, zonas cinza, evolucao de posicoes |
+
+**3 modos de operacao:**
+- **Criacao:** `clone-mind "Naval Ravikant"` — pipeline completo
+- **Incremental:** `clone-mind --update "Naval Ravikant" <URL/PDF>` — adiciona nova fonte ao DNA existente
+- **Dossie:** `clone-mind --dossier "trafego pago" <URL>` — alimenta dossie tematico
+
+O agente resultante responde como o especialista responderia — com o mesmo estilo de comunicacao, modelos mentais e vocabulario. O DNA fica persistido no Synapse para incrementacao continua.
 
 ---
 
@@ -794,6 +810,29 @@ de clinicas no mercado brasileiro. Budget de R$10k/mes para trafego.
 ```
 
 O conselho spawna os especialistas mais relevantes, cada um analisa sob seu framework mental, e voce recebe uma sintese com consensos e divergencias.
+
+### Dossies Tematicos
+
+Diferente dos conselhos (que deliberam ao vivo), os dossies sao **documentos de referencia permanentes** que compilam TUDO que todos os experts relevantes sabem sobre um tema:
+
+```
+/DUARTEOS:squad:dossie trafego pago
+/DUARTEOS:squad:dossie precificacao de SaaS
+/DUARTEOS:squad:dossie --update trafego pago
+```
+
+O dossie identifica experts relevantes entre os 59 mind clones, consulta cada um em paralelo, e consolida em YAML estruturado com consensos, divergencias e frameworks combinados. Fica salvo em `.claude/synapse/dossiers/` e pode ser incrementado com `--update`.
+
+### Synapse v2 — Memoria Incremental
+
+O Synapse evoluiu de "monitor de estado" para "memoria incremental viva". Alem de rastrear o estado dos agentes, agora armazena:
+
+| Camada | O que armazena | Onde |
+|--------|---------------|------|
+| Estado dos Agentes | state machine (idle→activated→...→completed) | `.claude/synapse/{agent}.yaml` |
+| DNA de Mind Clones | 5 camadas cognitivas por expert | `.claude/synapse/minds/{nome}.yaml` |
+| Dossies Tematicos | conhecimento consolidado por tema | `.claude/synapse/dossiers/{tema}.yaml` |
+| Log de Ingestao | rastreabilidade de conteudo processado | `.claude/synapse/ingestion/` |
 
 ---
 

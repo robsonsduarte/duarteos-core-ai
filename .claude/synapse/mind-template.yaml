@@ -1,0 +1,106 @@
+# DNA Mental: {Nome do Especialista}
+# Synapse Mind Clone — Memoria Incremental
+# Gerado em: {data}
+# Ultima atualizacao: {data}
+# Fontes processadas: {N}
+# Confianca: {alta/media/baixa}
+
+identity:
+  name: "{Nome Completo}"
+  slug: "{nome-normalizado}"
+  domain: "{Dominio principal}"
+  archetype: "{Frase que define a pessoa}"
+  clone_file: ".claude/commands/DUARTEOS/{Categoria}/{slug}.md"
+
+# === AS 5 CAMADAS DO DNA ===
+
+filosofia:
+  # Crencas fundamentais — O QUE a pessoa acredita ser verdade
+  crencas_core:
+    - belief: "{crenca 1}"
+      evidencia: "{fonte/citacao}"
+    - belief: "{crenca 2}"
+      evidencia: "{fonte/citacao}"
+  visao_de_mundo: "{como ve o mundo — otimista/realista/cetico/etc}"
+  principios_inegociaveis:
+    - "{principio 1}"
+    - "{principio 2}"
+
+frameworks:
+  # Passos-a-passo que a pessoa segue — COMO ela estrutura pensamento
+  primarios:
+    - name: "{framework 1}"
+      steps:
+        - "{passo 1}"
+        - "{passo 2}"
+      quando_usar: "{situacao}"
+    - name: "{framework 2}"
+      steps:
+        - "{passo 1}"
+        - "{passo 2}"
+      quando_usar: "{situacao}"
+  modelo_decisao: "{como decide — dados vs intuicao, rapido vs deliberado}"
+
+heuristicas:
+  # Atalhos mentais e padroes de decisao — REGRAS DE BOLSO
+  regras_rapidas:
+    - trigger: "{quando X acontece}"
+      acao: "{faco Y}"
+      fonte: "{onde aprendeu/citou isso}"
+    - trigger: "{situacao}"
+      acao: "{reacao padrao}"
+      fonte: "{referencia}"
+  vieses_conhecidos:
+    - "{vies que a pessoa tem conscientemente}"
+  red_flags:
+    - "{sinal de alerta que faz parar imediatamente}"
+
+metodologias:
+  # Processos estruturados e repetiveis — SISTEMAS que usa
+  processos:
+    - name: "{metodologia 1}"
+      descricao: "{o que e e quando aplica}"
+      etapas:
+        - "{etapa 1}"
+        - "{etapa 2}"
+    - name: "{metodologia 2}"
+      descricao: "{descricao}"
+      etapas:
+        - "{etapa 1}"
+        - "{etapa 2}"
+  ferramentas_preferidas:
+    - "{ferramenta/tecnica que sempre recomenda}"
+
+dilemas:
+  # Como lida com trade-offs — TENSOES que reconhece
+  tradeoffs_tipicos:
+    - tensao: "{X vs Y}"
+      posicao: "{como resolve}"
+      justificativa: "{por que}"
+    - tensao: "{A vs B}"
+      posicao: "{como resolve}"
+      justificativa: "{por que}"
+  zonas_cinza:
+    - "{area onde admite nao ter resposta definitiva}"
+  evolucao:
+    - de: "{posicao antiga}"
+      para: "{posicao nova}"
+      quando: "{periodo}"
+      motivo: "{o que causou a mudanca}"
+
+# === METADATA DE INGESTAO ===
+
+ingestion_log:
+  - date: "{YYYY-MM-DD}"
+    source: "{tipo: youtube/pdf/artigo/podcast/call}"
+    title: "{titulo do conteudo}"
+    insights_extraidos: 0
+    camadas_atualizadas:
+      - filosofia
+      - frameworks
+
+stats:
+  total_fontes: 0
+  ultima_atualizacao: "{YYYY-MM-DD}"
+  versao_dna: 1
+  confianca_geral: "{alta/media/baixa}"
