@@ -769,7 +769,7 @@ PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazam
 
 ### Conselhos de Especialistas
 
-8 advisory boards que reunem mind clones por categoria. Cada conselho spawna especialistas em paralelo, coleta analises individuais e produz uma sintese consolidada com consensos, divergencias e recomendacao final.
+9 advisory boards que reunem mind clones por categoria. Cada conselho spawna especialistas em paralelo, coleta analises individuais e produz uma sintese consolidada com consensos, divergencias e recomendacao final.
 
 **Conselhos disponiveis:**
 
@@ -783,6 +783,7 @@ PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazam
 | Business | Gates, Finch, Greco + 3 (6) | `/DUARTEOS:conselho:business` | Modelo de negocio, pricing, growth, vendas |
 | Content | MrBeast, Virginia + 2 (4) | `/DUARTEOS:conselho:content` | Conteudo, redes sociais, engajamento, viralidade |
 | Product | Julie Zhuo, Brennan, Ezra (3) | `/DUARTEOS:conselho:product` | Product management, roadmap, priorizacao |
+| Saude | Drauzio, Miyake, Trentini, Iaconelli, Atalla, Leite, Castanharo (7) | `/DUARTEOS:conselho:saude` | Saude multidisciplinar: medicina, odonto, fono, psico, ed.fisica, nutricao, fisio |
 
 **Como usar:**
 

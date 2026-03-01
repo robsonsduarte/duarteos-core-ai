@@ -28,6 +28,8 @@ const CHANGELOG = {
       'RETROSPECTIVE.md obrigatorio pos-milestone — lido pelo PM no proximo ciclo',
       'Loop de revisao em 2 niveis — feedback pode retornar ao COMPASS (contexto) ou NEXUS (plano)',
       'Protocolo de escalacao explicito em todos os agentes que escrevem codigo',
+      '7 Mind Clones de Saude: Drauzio Varella, Claudio Miyake, Juliana Trentini, Vera Iaconelli, Marcio Atalla, Patricia Leite, Raquel Castanharo',
+      'Conselho de Saude: 7 especialistas multidisciplinares (medicina, odonto, fono, psico, ed.fisica, nutricao, fisio)',
     ],
   },
   '5.3.0': {
