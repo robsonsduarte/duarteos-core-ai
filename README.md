@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 52 mind clones, 9 conselhos de especialistas, PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 59 mind clones, 10 conselhos de especialistas, PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -769,7 +769,7 @@ PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazam
 
 ### Conselhos de Especialistas
 
-9 advisory boards que reunem mind clones por categoria. Cada conselho spawna especialistas em paralelo, coleta analises individuais e produz uma sintese consolidada com consensos, divergencias e recomendacao final.
+10 advisory boards que reunem mind clones por categoria. Cada conselho spawna especialistas em paralelo, coleta analises individuais e produz uma sintese consolidada com consensos, divergencias e recomendacao final.
 
 **Conselhos disponiveis:**
 
@@ -784,6 +784,7 @@ PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazam
 | Content | MrBeast, Virginia + 2 (4) | `/DUARTEOS:conselho:content` | Conteudo, redes sociais, engajamento, viralidade |
 | Product | Julie Zhuo, Brennan, Ezra (3) | `/DUARTEOS:conselho:product` | Product management, roadmap, priorizacao |
 | Saude | Drauzio, Miyake, Trentini, Iaconelli, Atalla, Leite, Castanharo (7) | `/DUARTEOS:conselho:saude` | Saude multidisciplinar: medicina, odonto, fono, psico, ed.fisica, nutricao, fisio |
+| Juridico Digital | Peck, Lemos, Martins, Nybo, Coelho, Calcini, Faleiros Jr. (7) | `/DUARTEOS:conselho:juridico` | Direito digital: LGPD, PI, consumidor, startups, tributario, trabalhista, contratos |
 
 **Como usar:**
 

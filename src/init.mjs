@@ -511,7 +511,7 @@ export function init(projectName, options = {}) {
      blueprint-template.md   — Template de blueprint para build-system
      Use: /DUARTEOS:squad:build-system [PRD.md | workflow.json | URL]
 
-  Mind Clones (.claude/commands/DUARTEOS/) — 52 consultores cognitivos:
+  Mind Clones (.claude/commands/DUARTEOS/) — 59 consultores cognitivos:
      /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Ogilvy...)
      /DUARTEOS:Marketing:*      — 9 estrategistas (Dan Kennedy, Pedro Sobral...)
      /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen...)
@@ -521,8 +521,9 @@ export function init(projectName, options = {}) {
      /DUARTEOS:Content:*        — 4 criadores (MrBeast, Virginia Fonseca...)
      /DUARTEOS:Product:*        — 3 lideres (Julie Zhuo, Ezra Firestone...)
      /DUARTEOS:Saude:*          — 7 profissionais (Drauzio Varella, Vera Iaconelli, Marcio Atalla...)
+     /DUARTEOS:Juridico:*       — 7 juristas (Patricia Peck, Ronaldo Lemos, Erik Nybo...)
 
-  Conselhos de Especialistas — 9 advisory boards:
+  Conselhos de Especialistas — 10 advisory boards:
      /DUARTEOS:conselho:ia         — 5 pioneiros de IA
      /DUARTEOS:conselho:marketing  — 9 estrategistas de marketing
      /DUARTEOS:conselho:copywriting — 7 mestres de copy
@@ -532,6 +533,7 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:content    — 4 criadores de conteudo
      /DUARTEOS:conselho:product    — 3 lideres de produto
      /DUARTEOS:conselho:saude      — 7 profissionais de saude multidisciplinar
+     /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
 `)
 
   // MCP Health Check — detect disconnected MCPs and guide user

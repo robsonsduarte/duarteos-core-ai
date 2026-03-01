@@ -30,6 +30,8 @@ const CHANGELOG = {
       'Protocolo de escalacao explicito em todos os agentes que escrevem codigo',
       '7 Mind Clones de Saude: Drauzio Varella, Claudio Miyake, Juliana Trentini, Vera Iaconelli, Marcio Atalla, Patricia Leite, Raquel Castanharo',
       'Conselho de Saude: 7 especialistas multidisciplinares (medicina, odonto, fono, psico, ed.fisica, nutricao, fisio)',
+      '7 Mind Clones Juridico Digital: Patricia Peck, Ronaldo Lemos, Guilherme Martins, Erik Nybo, Ivson Coelho, Ricardo Calcini, Jose Faleiros Junior',
+      'Conselho Juridico Digital: 7 juristas (LGPD, PI, consumidor, startups, tributario, trabalhista, contratos)',
     ],
   },
   '5.3.0': {
