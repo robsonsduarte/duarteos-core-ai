@@ -21,6 +21,8 @@ const CHANGELOG = {
       'run-squad: escalacao obrigatoria ao ATLAS quando bloqueado',
       'debug/quick: agente lider declarado (SENTINEL para debug, roteamento por tipo para quick)',
       'init.mjs: AGENT-GSD-PROTOCOL.md adicionado (faltava em instalacoes frescas)',
+      '8 Conselhos de Especialistas: IA, Marketing, Copywriting, UX, Tech, Business, Content, Product',
+      'Conselhos spawnnam mind clones em paralelo → sintese com consensos e divergencias',
     ],
   },
   '5.3.0': {

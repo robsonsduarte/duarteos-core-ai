@@ -25,6 +25,7 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
   - [Single-Responsibility Squad Commands](#single-responsibility-squad-commands)
   - [Explicit Agent Leadership](#explicit-agent-leadership)
   - [PM Delegation Enforcement](#pm-delegation-enforcement)
+  - [Conselhos de Especialistas](#conselhos-de-especialistas)
 - [Novidades v5.3.0](#novidades-v530)
   - [PM Pure Orchestrator](#pm-pure-orchestrator)
   - [Desenvolvimento 100% Incremental](#desenvolvimento-100-incremental)
@@ -765,6 +766,32 @@ PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazam
 - **build-system**: FASE 0 e FASE 1 agora spawnnam NEXUS + SPECTER + SHADOW — PM recebe reports e decide GO/NO-GO
 - **PM sync**: versao ativa sincronizada com template (regra NUNCA restaurada, enfase em delegacao)
 - **init.mjs fix**: `AGENT-GSD-PROTOCOL.md` adicionado ao init (estava ausente em instalacoes frescas)
+
+### Conselhos de Especialistas
+
+8 advisory boards que reunem mind clones por categoria. Cada conselho spawna especialistas em paralelo, coleta analises individuais e produz uma sintese consolidada com consensos, divergencias e recomendacao final.
+
+**Conselhos disponiveis:**
+
+| Conselho | Membros | Comando | Para que serve |
+|----------|---------|---------|----------------|
+| IA | LeCun, Ng, Hinton, Bengio, Hassabis (5) | `/DUARTEOS:conselho:ia` | Arquitetura de IA, modelos, estrategia ML |
+| Marketing | Kennedy, Ogilvy, Sobral + 6 (9) | `/DUARTEOS:conselho:marketing` | Campanhas, trafego, posicionamento, branding |
+| Copywriting | Halbert, Schwartz, Sugarman + 4 (7) | `/DUARTEOS:conselho:copywriting` | Headlines, VSLs, paginas de vendas, persuasao |
+| UX | Norman, Nielsen, Frost + 3 (6) | `/DUARTEOS:conselho:ux` | Design system, usabilidade, interface, pesquisa |
+| Tech | Page, Zuckerberg, Koum + 2 (5) | `/DUARTEOS:conselho:tech` | Produto tech, escala de plataformas, inovacao |
+| Business | Gates, Finch, Greco + 3 (6) | `/DUARTEOS:conselho:business` | Modelo de negocio, pricing, growth, vendas |
+| Content | MrBeast, Virginia + 2 (4) | `/DUARTEOS:conselho:content` | Conteudo, redes sociais, engajamento, viralidade |
+| Product | Julie Zhuo, Brennan, Ezra (3) | `/DUARTEOS:conselho:product` | Product management, roadmap, priorizacao |
+
+**Como usar:**
+
+```
+/DUARTEOS:conselho:marketing Preciso posicionar meu SaaS de gestao
+de clinicas no mercado brasileiro. Budget de R$10k/mes para trafego.
+```
+
+O conselho spawna os especialistas mais relevantes, cada um analisa sob seu framework mental, e voce recebe uma sintese com consensos e divergencias.
 
 ---
 
