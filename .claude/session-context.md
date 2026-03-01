@@ -4,11 +4,11 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Estado Atual
 
-- **Versao:** 5.3.0
+- **Versao:** 5.4.0
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.3.0 — PM pure orchestrator + incremental dev rule + README update (2026-02-26)
+- **Ultima operacao:** v5.4.0 — Single-responsibility enforcement in squad commands + PM delegation fix (2026-03-01)
 - **Proximo passo:** —
 - **Bloqueios:** Nenhum
 
@@ -79,4 +79,10 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-01 10:17 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 10:33 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 11:47 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

@@ -21,6 +21,10 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.4.0](#novidades-v540)
+  - [Single-Responsibility Squad Commands](#single-responsibility-squad-commands)
+  - [Explicit Agent Leadership](#explicit-agent-leadership)
+  - [PM Delegation Enforcement](#pm-delegation-enforcement)
 - [Novidades v5.3.0](#novidades-v530)
   - [PM Pure Orchestrator](#pm-pure-orchestrator)
   - [Desenvolvimento 100% Incremental](#desenvolvimento-100-incremental)
@@ -722,6 +726,45 @@ features mais usadas e taxa de churn.
 docker-compose com app + postgres + redis, configura health
 checks e cria script de deploy pro servidor.
 ```
+
+---
+
+## Novidades v5.4.0
+
+### Single-Responsibility Squad Commands
+
+Todos os squad commands refatorados para respeitar a separacao de responsabilidades dos agentes. Antes, varios comandos colapsavam multiplas personas num unico agente ou faziam o PM executar trabalho tecnico.
+
+**O que mudou:**
+
+| Comando | Antes (errado) | Agora (correto) |
+|---------|----------------|-----------------|
+| `build-system` | PM criava BLUEPRINT.md diretamente | PM spawna NEXUS (Architect) para criar blueprint |
+| `plan-phase` | 1 agente com "3 lentes cognitivas" | Pipeline sequencial: COMPASS → NEXUS → SHADOW |
+| `discuss-phase` | PM virava Context Engineer | COMPASS lidera, PM apenas spawna |
+| `create-squad` | PM criava arquivos diretamente | PM coleta requisitos, spawna NEXUS/TITAN |
+| `run-squad` | Orchestrator paralelo ao PM | Escalacao obrigatoria ao ATLAS |
+
+### Explicit Agent Leadership
+
+Cada squad command agora declara explicitamente qual agente lidera a execucao:
+
+| Comando | Agente Lider |
+|---------|-------------|
+| `debug` | SENTINEL (QA) |
+| `quick` | Roteado por tipo: Backend→FORGE, Frontend→PRISM, Infra→VAULT, Fullstack→BRIDGE |
+| `discuss-phase` | COMPASS (Context Engineer) |
+| `plan-phase` | ATLAS orquestra pipeline de 3 agentes |
+| `verify-work` | SENTINEL (QA) |
+| `validate-plan` | SHADOW (Devil's Advocate) |
+
+### PM Delegation Enforcement
+
+PM (ATLAS) reforçado como orquestrador puro em todos os pontos onde havia vazamento:
+
+- **build-system**: FASE 0 e FASE 1 agora spawnnam NEXUS + SPECTER + SHADOW — PM recebe reports e decide GO/NO-GO
+- **PM sync**: versao ativa sincronizada com template (regra NUNCA restaurada, enfase em delegacao)
+- **init.mjs fix**: `AGENT-GSD-PROTOCOL.md` adicionado ao init (estava ausente em instalacoes frescas)
 
 ---
 
