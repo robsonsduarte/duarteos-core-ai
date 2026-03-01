@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 59 mind clones, 10 conselhos de especialistas, PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 59 mind clones, 10 conselhos de especialistas, Inbox/Caixa (ingestao local), PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -21,6 +21,10 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.5.0](#novidades-v550)
+  - [Inbox/Caixa — Ingestao Local de Conteudo](#inboxcaixa--ingestao-local-de-conteudo)
+  - [Rastreabilidade de Fonte](#rastreabilidade-de-fonte)
+  - [Canonicalizacao de Entidades](#canonicalizacao-de-entidades)
 - [Novidades v5.4.0](#novidades-v540)
   - [Single-Responsibility Squad Commands](#single-responsibility-squad-commands)
   - [Explicit Agent Leadership](#explicit-agent-leadership)
@@ -746,6 +750,63 @@ checks e cria script de deploy pro servidor.
 
 ---
 
+## Novidades v5.5.0
+
+### Inbox/Caixa — Ingestao Local de Conteudo
+
+Sistema de ingestao inspirado no Mega Brain Pipeline (Thiago Finch), adaptado para DuarteOS sem overhead de Python ou hooks.
+
+**Conceito:** material bruto (podcasts, artigos, transcripts, cursos) vai para uma "caixa" (`inbox/`). A IA processa **somente conteudo local** — nunca pesquisa na internet durante ingestao.
+
+```bash
+# Ver o que tem pendente
+/DUARTEOS:squad:ingest
+
+# Ingerir arquivo local
+/DUARTEOS:squad:ingest /downloads/hormozi-podcast-ep42.txt
+
+# Processar proximo pendente (extrai DNA, atualiza mind clone)
+/DUARTEOS:squad:ingest --process
+
+# Processar todos pendentes
+/DUARTEOS:squad:ingest --process-all
+
+# Organizar arquivos soltos (dry-run)
+/DUARTEOS:squad:ingest --organize
+```
+
+**Estrutura do inbox:**
+
+```
+inbox/
+  {autor-slug}/          # Pasta por autor (lowercase, hifens)
+    PODCASTS/            # Tipo de conteudo
+      episodio-42.txt
+    COURSES/
+      modulo-1.txt
+  processed/             # Arquivos ja processados
+```
+
+### Rastreabilidade de Fonte
+
+Todo insight no Synapse agora inclui `source_path` — o caminho ate o arquivo original no inbox.
+
+```
+Mind Clone (DNA YAML) → source_path → inbox/{autor}/{tipo}/{arquivo}.txt
+```
+
+Isso permite navegacao reversa: dado qualquer crenca, framework ou heuristica no DNA, voce pode rastrear ate o texto bruto que a originou.
+
+### Canonicalizacao de Entidades
+
+O clone-mind agora canonicaliza nomes antes de criar ou atualizar mind clones:
+
+- "Hormozi", "Alex Hormozi", "Alex H." → `alex-hormozi`
+- Verifica se mind clone ja existe antes de criar (evita duplicatas)
+- Nome canonico = slug do arquivo YAML, comando `.md` e pasta no inbox
+
+---
+
 ## Novidades v5.4.0
 
 ### Single-Responsibility Squad Commands
@@ -1103,6 +1164,8 @@ Os templates leem Constitution + Governance + Config + CLAUDE.md e geram um arqu
 | `/DUARTEOS:squad:list-squads` | Lista squads do projeto |
 | `/DUARTEOS:squad:run-squad [nome] [demanda]` | Executa squad numa demanda |
 | `/DUARTEOS:squad:clone-mind [nome]` | **DNA Mental** — clona mente de especialista em agente |
+| `/DUARTEOS:squad:ingest [arquivo\|--process\|--organize]` | **Inbox/Caixa** — ingere e processa conteudo local |
+| `/DUARTEOS:squad:dossie [tema]` | Compila dossie tematico cross-source com todos experts relevantes |
 
 ### Task Templates + Synapse + IDE Sync (v5.0.0)
 

@@ -4,11 +4,11 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Estado Atual
 
-- **Versao:** 5.4.0
+- **Versao:** 5.5.0
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.4.0 — AI Council recommendations: handoff verificavel, protocolo de violacao, RETROSPECTIVE.md, loop 2 niveis, escalacao (2026-03-01)
+- **Ultima operacao:** v5.5.0 — Inbox/Caixa system, source traceability, entity canonicalization (2026-03-01)
 - **Proximo passo:** —
 - **Bloqueios:** Nenhum
 
@@ -21,6 +21,7 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Decisoes Recentes
 
+- [2026-03-01] v5.5.0: Inbox/Caixa (/DUARTEOS:squad:ingest), rastreabilidade source_path no Synapse, canonicalizacao de entidades no clone-mind
 - [2026-03-01] v5.4.0: 5 recomendacoes do Conselho de IA aplicadas (handoff, violacao, retrospectiva, loop 2 niveis, escalacao)
 - [2026-03-01] v5.4.0: 8 Conselhos de Especialistas criados (IA, Marketing, Copywriting, UX, Tech, Business, Content, Product)
 - [2026-03-01] v5.4.0: Single-responsibility enforcement em squad commands + PM delegation fix
@@ -127,4 +128,79 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-01 13:39 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:43 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 13:55 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 14:13 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 14:30 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 14:30 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 14:40 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 14:46 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 15:12 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 15:14 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 15:33 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 15:35 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 15:36 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:26 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:32 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:37 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:48 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:50 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 16:51 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:06 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:12 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:15 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:36 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:38 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:47 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-01 17:48 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

@@ -1,7 +1,7 @@
 {
   "name": "duarteos-core-ai",
-  "version": "5.4.0",
-  "description": "AIOS multi-agente para Claude Code. 13 agentes com personas + 59 mind clones + 10 conselhos + 23 squad commands + 23 MCPs + Synapse v2 (memoria incremental) + DNA 5 Camadas + Dossies Tematicos + YOLO Mode + Constitution + 4-Layer Config + Task Templates + Quality Gates + IDE Sync + Incremental Dev Rule + PM Pure Orchestrator.",
+  "version": "5.5.0",
+  "description": "AIOS multi-agente para Claude Code. 13 agentes com personas + 59 mind clones + 10 conselhos + 24 squad commands + 23 MCPs + Synapse v2 (memoria incremental) + DNA 5 Camadas + Inbox/Caixa + Dossies Tematicos + YOLO Mode + Constitution + 4-Layer Config + Task Templates + Quality Gates + IDE Sync + Incremental Dev Rule + PM Pure Orchestrator.",
   "type": "module",
   "bin": {
     "duarteos": "./bin/duarteos.mjs"

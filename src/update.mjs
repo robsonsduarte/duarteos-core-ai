@@ -9,6 +9,17 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.5.0': {
+    title: 'Inbox/Caixa System — Local Content Ingestion',
+    highlights: [
+      'Novo comando /DUARTEOS:squad:ingest — 4 modos: SCAN, INGEST, PROCESS, ORGANIZE',
+      'Inbox/Caixa: material bruto em inbox/{autor}/{tipo}/ processado localmente (sem internet)',
+      'Rastreabilidade: campo source_path em cada insight do DNA vincula ao arquivo fonte',
+      'Canonicalizacao de entidades: regras no clone-mind para slug unico por especialista',
+      'Navegacao reversa: DNA YAML → source_path → inbox/{autor}/{tipo}/{arquivo}.txt',
+      'Inspirado em Mega Brain Pipeline (Thiago Finch) — adaptado sem overhead Python/hooks',
+    ],
+  },
   '5.4.0': {
     title: 'Single-Responsibility Enforcement',
     highlights: [
@@ -254,6 +265,7 @@ export function update(options = {}) {
     ['commands/DUARTEOS/squad/list-squads.md', '.claude/commands/DUARTEOS/squad/list-squads.md'],
     ['commands/DUARTEOS/squad/run-squad.md', '.claude/commands/DUARTEOS/squad/run-squad.md'],
     ['commands/DUARTEOS/squad/clone-mind.md', '.claude/commands/DUARTEOS/squad/clone-mind.md'],
+    ['commands/DUARTEOS/squad/ingest.md', '.claude/commands/DUARTEOS/squad/ingest.md'],
 
     // Squad Templates
     ['squad-templates/basic/squad.yaml', '.claude/squad-templates/basic/squad.yaml'],
@@ -301,6 +313,9 @@ export function update(options = {}) {
     ['synapse/template.yaml', '.claude/synapse/template.yaml'],
     ['synapse/mind-template.yaml', '.claude/synapse/mind-template.yaml'],
     ['synapse/dossier-template.yaml', '.claude/synapse/dossier-template.yaml'],
+
+    // v5.5.0 — Inbox/Caixa
+    ['inbox/README.md', 'inbox/README.md'],
 
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
