@@ -114,6 +114,9 @@ export function init(projectName, options = {}) {
     '.claude/task-templates/db',
     '.claude/task-templates/ops',
     '.claude/task-templates/sec',
+    // v5.5.0 — Inbox/Caixa (ingestao local de conteudo)
+    'inbox',
+    'inbox/processed',
   ]
 
   for (const dir of dirs) {
@@ -265,6 +268,9 @@ export function init(projectName, options = {}) {
     ['synapse/template.yaml', '.claude/synapse/template.yaml'],
     ['synapse/mind-template.yaml', '.claude/synapse/mind-template.yaml'],
     ['synapse/dossier-template.yaml', '.claude/synapse/dossier-template.yaml'],
+
+    // v5.5.0 — Inbox/Caixa
+    ['inbox/README.md', 'inbox/README.md'],
 
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
@@ -564,6 +570,13 @@ export function init(projectName, options = {}) {
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes
      /DUARTEOS:squad:clone-mind --update {nome} {fonte} — ingestao incremental
+
+  Inbox/Caixa (inbox/) — ingestao local de conteudo:
+     /DUARTEOS:squad:ingest                — Scan: listar pendentes no inbox
+     /DUARTEOS:squad:ingest /path/file.txt — Ingerir arquivo local
+     /DUARTEOS:squad:ingest --process      — Processar proximo pendente
+     /DUARTEOS:squad:ingest --process-all  — Processar todos pendentes
+     /DUARTEOS:squad:ingest --organize     — Auto-organizar inbox
 `)
 
   // MCP Health Check — detect disconnected MCPs and guide user

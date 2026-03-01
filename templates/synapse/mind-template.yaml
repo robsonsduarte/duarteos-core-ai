@@ -19,8 +19,10 @@ filosofia:
   crencas_core:
     - belief: "{crenca 1}"
       evidencia: "{fonte/citacao}"
+      source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
     - belief: "{crenca 2}"
       evidencia: "{fonte/citacao}"
+      source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
   visao_de_mundo: "{como ve o mundo — otimista/realista/cetico/etc}"
   principios_inegociaveis:
     - "{principio 1}"
@@ -47,9 +49,11 @@ heuristicas:
     - trigger: "{quando X acontece}"
       acao: "{faco Y}"
       fonte: "{onde aprendeu/citou isso}"
+      source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
     - trigger: "{situacao}"
       acao: "{reacao padrao}"
       fonte: "{referencia}"
+      source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
   vieses_conhecidos:
     - "{vies que a pessoa tem conscientemente}"
   red_flags:
@@ -94,6 +98,7 @@ ingestion_log:
   - date: "{YYYY-MM-DD}"
     source: "{tipo: youtube/pdf/artigo/podcast/call}"
     title: "{titulo do conteudo}"
+    source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
     insights_extraidos: 0
     camadas_atualizadas:
       - filosofia

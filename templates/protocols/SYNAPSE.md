@@ -208,12 +208,33 @@ Campos do registro:
 - `versao_dna_antes` — versao do DNA antes da ingestao
 - `versao_dna_depois` — versao do DNA depois da ingestao
 
+## Rastreabilidade de Fonte (Inbox → DNA)
+
+Todo insight armazenado no Synapse deve ter rastreabilidade ate o material original.
+O campo `source_path` em cada entrada do DNA aponta para o arquivo no inbox que originou o insight.
+
+Cadeia de rastreabilidade:
+```
+Mind Clone (DNA YAML) → source_path → inbox/{autor}/{tipo}/{arquivo}.txt
+                      → ingestion_log → date + title + source_path
+```
+
+Regras:
+- **source_path obrigatorio** — todo insight novo DEVE incluir o caminho do arquivo fonte
+- **Formato padrao:** `inbox/{autor-slug}/{TIPO}/{arquivo}.txt`
+- **Apos processamento:** arquivo movido para `inbox/processed/{autor-slug}/`
+- **Navegacao reversa:** dado qualquer insight, deve ser possivel chegar ao texto bruto original
+
+Quando o conteudo vem de WebSearch/WebFetch (modo criacao), usar URL como referencia.
+Quando vem do inbox (modo --update com arquivo local), usar `source_path` para o arquivo.
+
 ## Comandos Relacionados
 
 | Comando | Descricao |
 |---------|-----------|
 | `/DUARTEOS:squad:synapse` | Dashboard de estado de todos os agentes |
 | `/DUARTEOS:squad:clone-mind` | Ingestao de conteudo e geracao/atualizacao de DNA |
+| `/DUARTEOS:squad:ingest` | Inbox/Caixa — ingestao local de conteudo |
 | `/DUARTEOS:squad:dossie` | Compilacao de dossie tematico (futuro) |
 
 ## Integracao com clone-mind

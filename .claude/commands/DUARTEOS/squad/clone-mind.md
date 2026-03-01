@@ -58,6 +58,36 @@ Todo mind clone gerado por este comando possui DNA estruturado em 5 camadas cogn
 
 Essas 5 camadas sao extraidas na Fase 2, estruturadas na Fase 3 (como YAML no Synapse), e transformadas em prompt na Fase 4.
 
+## Canonicalizacao de Entidades
+
+Antes de criar ou atualizar um mind clone, o nome do especialista DEVE ser canonicalizado.
+
+### Regras de Canonicalizacao
+
+1. **Normalizar nome:** remover acentos, lowercase, hifens entre palavras
+   - "Alex Hormozi" → `alex-hormozi`
+   - "Naval Ravikant" → `naval-ravikant`
+   - "Thiago Finch" → `thiago-finch`
+
+2. **Resolver variacoes:** diferentes formas do mesmo nome resolvem para o mesmo slug
+   - "Hormozi", "Alex Hormozi", "Alex H." → `alex-hormozi`
+   - "Naval", "Naval Ravikant", "NavalR" → `naval-ravikant`
+   - "Dr. Drauzio", "Drauzio Varella" → `drauzio-varella`
+
+3. **Deteccao por contexto:** se o nome nao e reconhecido diretamente
+   - Verificar se existe mind clone com nome similar em `.claude/synapse/minds/*.yaml`
+   - Verificar aliases conhecidos (ex: "MrBeast" = "Jimmy Donaldson")
+   - Se ambiguo: perguntar ao usuario
+
+4. **Nome canonico = slug do arquivo:**
+   - Mind clone: `.claude/synapse/minds/{slug}.yaml`
+   - Comando: `.claude/commands/DUARTEOS/{Categoria}/{slug}.md`
+   - Inbox: `inbox/{slug}/`
+
+5. **Regra critica:** NUNCA criar dois mind clones para a mesma pessoa
+   - Antes de criar, SEMPRE verificar se ja existe com `Glob` em `synapse/minds/*.yaml`
+   - Se existir, usar modo `--update` em vez de criacao
+
 ## Pipeline de 5 Fases
 
 ---
