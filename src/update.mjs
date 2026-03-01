@@ -18,6 +18,8 @@ const CHANGELOG = {
       'Canonicalizacao de entidades: regras no clone-mind para slug unico por especialista',
       'Navegacao reversa: DNA YAML → source_path → inbox/{autor}/{tipo}/{arquivo}.txt',
       'Inspirado em Mega Brain Pipeline (Thiago Finch) — adaptado sem overhead Python/hooks',
+      '59 Synapse DNA YAMLs pre-populados — todas as 10 categorias de mind clones',
+      '13 agent state files — estado Synapse para todos os agentes core',
     ],
   },
   '5.4.0': {
@@ -527,6 +529,25 @@ export function update(options = {}) {
             updated++
           }
         }
+      }
+    }
+  }
+
+  // Synapse agent state — create missing state files (never overwrite existing)
+  const synapseStateSrc = resolve(TEMPLATES_DIR, 'synapse')
+  const synapseStateDest = resolve(cwd, '.claude', 'synapse')
+  if (existsSync(synapseStateSrc)) {
+    if (!existsSync(synapseStateDest)) mkdirSync(synapseStateDest, { recursive: true })
+    const stateFiles = readdirSync(synapseStateSrc).filter(
+      f => f.endsWith('.yaml') && !f.includes('template') && !f.includes('dossier')
+    )
+    for (const entry of stateFiles) {
+      const srcPath = resolve(synapseStateSrc, entry)
+      const destPath = resolve(synapseStateDest, entry)
+      if (!existsSync(destPath)) {
+        cpSync(srcPath, destPath)
+        console.log(`  + adicionado .claude/synapse/${entry}`)
+        added++
       }
     }
   }

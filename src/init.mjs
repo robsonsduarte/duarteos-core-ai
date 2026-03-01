@@ -402,6 +402,24 @@ export function init(projectName, options = {}) {
     console.log(`  + synapse/minds/ DNA files sincronizados`)
   }
 
+  // Synapse agent state — copy initial state files for all 13 core agents
+  const synapseStateSrc = resolve(TEMPLATES_DIR, 'synapse')
+  const synapseStateDest = resolve(cwd, '.claude', 'synapse')
+  if (existsSync(synapseStateSrc)) {
+    const stateFiles = readdirSync(synapseStateSrc).filter(
+      f => f.endsWith('.yaml') && !f.includes('template') && !f.includes('dossier')
+    )
+    for (const entry of stateFiles) {
+      const srcPath = resolve(synapseStateSrc, entry)
+      const destPath = resolve(synapseStateDest, entry)
+      if (!existsSync(destPath)) {
+        cpSync(srcPath, destPath)
+        installed++
+      }
+    }
+    console.log(`  + synapse/ agent state files sincronizados (${stateFiles.length} agentes)`)
+  }
+
   // Ensure .gitignore has DuarteOS entries
   ensureGitignoreEntries(cwd)
 
@@ -495,7 +513,8 @@ export function init(projectName, options = {}) {
 
   Synapse (.claude/synapse/) — estado dos agentes:
      template.yaml           — Template de estado por agente
-     {agent-id}.yaml         — Criado automaticamente ao ativar agente
+     13 agent state files    — Estado pre-criado para todos os agentes core
+     {agent-id}.yaml         — Atualizado automaticamente ao ativar agente
 
   IDE Templates (.claude/ide-templates/) — sincronizacao multi-IDE:
      cursor.md.tmpl          — Template para .cursorrules
@@ -565,7 +584,7 @@ export function init(projectName, options = {}) {
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 5 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas
-     14 DNA pre-populados             — Saude (7) + Juridico Digital (7)
+     59 DNA pre-populados             — Todas as 10 categorias de mind clones
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes
