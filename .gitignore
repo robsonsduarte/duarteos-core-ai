@@ -2,6 +2,13 @@ node_modules/
 .DS_Store
 *.log
 
+# Secrets — nunca versionar
+.env
+.env.local
+.env.production
+.env*.local
+.envrc
+
 # DuarteOS — configs pessoais (nao versionar)
 .claude/config/user.yaml
 .claude/settings.local.json
