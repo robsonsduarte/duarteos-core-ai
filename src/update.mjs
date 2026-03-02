@@ -9,6 +9,26 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.6.0': {
+    title: 'MMOS Pipeline — DNA 6 Camadas + APEX/ICP + Paradoxos Produtivos',
+    highlights: [
+      'Novo comando /DUARTEOS:mmos:mind-clone — pipeline MMOS de 7 fases para clonagem cognitiva',
+      'Novo comando /DUARTEOS:mmos:mind-update — atualizacao incremental com rollback automatico',
+      'DNA evoluido de 5 para 6 camadas — nova camada: Paradoxos Produtivos (inspirada em MMOS Layer 8)',
+      'Gate de viabilidade APEX/ICP — avalia candidato antes de gastar tokens (rejeita ~35%)',
+      'APEX: 6 dimensoes (Authority, Productivity, Exemplarity, X-Factor, Accessibility, Singularity) com scoring /60',
+      'ICP: 10 criterios binarios — GO (>=36 + >=7), CAUTION, NO-GO',
+      'Validacao expandida: 15 prompts em 4 niveis (superficie, media, profunda, paradoxos)',
+      'Formula de fidelidade: superficie(15%) + media(20%) + profunda(30%) + paradoxos(35%)',
+      'Fidelidade-alvo: >= 94% (inspirada no MMOS DNA Mental 8-Layer)',
+      'Rollback automatico no mind-update se fidelidade cair > 5%',
+      'Prompts finais ~10k palavras com secao dedicada a Paradoxos Produtivos',
+      'Triangulacao de fontes: camadas 1-4 >= 3 fontes, camadas 5-6 >= 5 fontes',
+      'Novo MCP: Apify (@apify/actors-mcp-server) — scraping, transcricoes YouTube, extracao de dados',
+      'mind-template.yaml atualizado: campos apex_score, icp_score, fidelidade, paradoxos_produtivos',
+      'SYNAPSE.md documentado com Camada 6 (peso, campos, requisitos, exemplos)',
+    ],
+  },
   '5.5.0': {
     title: 'Inbox/Caixa System — Local Content Ingestion',
     highlights: [

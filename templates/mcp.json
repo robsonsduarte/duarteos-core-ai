@@ -25,6 +25,13 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-fetch"]
     },
+    "apify": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}"
+      }
+    },
 
     "_comment_content": "=== CONTEUDO ===",
 

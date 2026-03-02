@@ -89,7 +89,7 @@ Estrutura expandida:
   {agent-id}.yaml            <- estado dos agentes core
 
   minds/                     <- DNA incremental dos mind clones
-    {nome}.yaml              <- DNA em 5 camadas + metadata
+    {nome}.yaml              <- DNA em 6 camadas + metadata
     _index.yaml              <- indice de todos os clones
 
   dossiers/                  <- dossies tematicos compilados
@@ -103,9 +103,9 @@ Estrutura expandida:
   dossier-template.yaml      <- template para dossies tematicos
 ```
 
-## DNA de Mind Clones — 5 Camadas
+## DNA de Mind Clones — 6 Camadas
 
-Cada mind clone tem seu DNA estruturado em 5 camadas cognitivas
+Cada mind clone tem seu DNA estruturado em 6 camadas cognitivas
 armazenadas em `.claude/synapse/minds/{nome}.yaml`.
 
 ### Camada 1: Filosofia
@@ -169,6 +169,40 @@ Campos:
 - `tradeoffs_tipicos` — lista de tensao/posicao/justificativa
 - `zonas_cinza` — areas sem resposta definitiva
 - `evolucao` — mudancas de posicao com periodo e motivo
+
+### Camada 6: Paradoxos Produtivos
+
+**CONTRADICOES internas que criam comportamento humano.**
+
+Pessoas reais sao contraditorias — e isso e o que as torna autentificavelmente
+humanas. Esta camada captura paradoxos produtivos: posicoes aparentemente
+opostas que a pessoa sustenta simultaneamente em diferentes contextos.
+
+Esta e a "camada ouro" da clonagem mental. Inspirada no conceito de
+"Productive Paradoxes" do sistema MMOS (DNA Mental 8-Layer), adaptada
+para o framework de 6 camadas do DuarteOS.
+
+**Peso na fidelidade:** 35% do score total de validacao.
+
+Campos:
+- `paradoxos` — lista de paradoxos com:
+  - `lado_a` / `lado_b` — as duas posicoes opostas
+  - `trigger_a` / `trigger_b` — contextos que ativam cada lado
+  - `resolucao` — como a pessoa reconcilia internamente
+  - `exemplos` — evidencias com fonte e citacao
+  - `valor_autenticidade` — quanto este paradoxo contribui para autenticidade
+- `nota_camada` — observacao geral sobre os paradoxos deste expert
+
+Requisitos de triangulacao:
+- Minimo 2 paradoxos por clone
+- Cada paradoxo precisa >= 3 fontes independentes
+- Paradoxos com apenas 1 fonte sao marcados como "nao-confirmado"
+
+Exemplos de paradoxos comuns:
+- "Prega simplicidade, cria sistemas complexos" (contexto: teoria vs implementacao)
+- "Defende humildade, demonstra confianca absoluta" (contexto: ensino vs debate)
+- "Valoriza dados, decide por intuicao" (contexto: analise vs acao rapida)
+- "Promove autonomia, centraliza decisoes criticas" (contexto: rotina vs crise)
 
 ## Dossies Tematicos
 
@@ -236,6 +270,8 @@ Quando vem do inbox (modo --update com arquivo local), usar `source_path` para o
 | `/DUARTEOS:squad:clone-mind` | Ingestao de conteudo e geracao/atualizacao de DNA |
 | `/DUARTEOS:squad:ingest` | Inbox/Caixa — ingestao local de conteudo |
 | `/DUARTEOS:squad:dossie` | Compilacao de dossie tematico (futuro) |
+| `/DUARTEOS:mmos:mind-clone` | Pipeline MMOS completo de clonagem (7 fases, 6 camadas, APEX/ICP) |
+| `/DUARTEOS:mmos:mind-update` | Atualizacao incremental com rollback automatico |
 
 ## Integracao com clone-mind
 

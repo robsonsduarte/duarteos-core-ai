@@ -117,6 +117,8 @@ export function init(projectName, options = {}) {
     // v5.5.0 — Inbox/Caixa (ingestao local de conteudo)
     'inbox',
     'inbox/processed',
+    // v5.6.0 — MMOS Pipeline
+    '.claude/commands/DUARTEOS/mmos',
   ]
 
   for (const dir of dirs) {
@@ -582,8 +584,12 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:saude      — 7 profissionais de saude multidisciplinar
      /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
 
+  MMOS Pipeline — Clonagem Cognitiva Avancada:
+     /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 7 fases: APEX/ICP + DNA 6 Camadas + Validacao 94%
+     /DUARTEOS:mmos:mind-update [nome] [fonte] — Update incremental com rollback automatico
+
   Synapse v2 — Memoria Incremental (.claude/synapse/):
-     DNA 5 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas
+     DNA 6 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos
      59 DNA pre-populados             — Todas as 10 categorias de mind clones
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado

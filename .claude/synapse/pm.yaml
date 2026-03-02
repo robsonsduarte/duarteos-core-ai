@@ -2,8 +2,8 @@ agent: pm
 codename: ATLAS
 state: activated
 task: "Aguardando demanda"
-started: "2026-03-01"
-last_transition: "2026-03-01"
+started: "2026-03-02"
+last_transition: "2026-03-02"
 transitions:
   - from: idle
     to: activated

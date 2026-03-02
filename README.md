@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com 59 mind clones, 10 conselhos de especialistas, Inbox/Caixa (ingestao local), PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com MMOS Pipeline (DNA 6 Camadas + APEX/ICP + Paradoxos Produtivos), 59 mind clones, 10 conselhos de especialistas, Inbox/Caixa (ingestao local), PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -621,24 +621,28 @@ Escolha um template (basic, fullstack, data-science, automation) ou crie do zero
 
 ### 9. Mind Clone — Clonar Mente de Especialista
 
-Pipeline de 5 fases que cria um agente baseado em uma pessoa real:
+Dois pipelines disponiveis:
+
+#### MMOS Pipeline (recomendado — DNA 6 Camadas)
 
 ```
-/DUARTEOS:squad:clone-mind "Elon Musk"
+/DUARTEOS:mmos:mind-clone "Naval Ravikant"
+/DUARTEOS:mmos:mind-update "Naval Ravikant" https://youtube.com/watch?v=xxx
 ```
 
-**As 5 fases:**
+Pipeline MMOS de 7 fases com gate de viabilidade APEX/ICP, DNA de 6 camadas (inclui Paradoxos Produtivos), validacao com 15 prompts e fidelidade-alvo de 94%.
 
 | Fase | O que faz | Output |
 |------|-----------|--------|
-| 1. RESEARCH | Coleta livros, entrevistas, artigos, podcasts | `_sources.md` |
-| 2. ANALYSIS | Extrai padroes em 5 camadas cognitivas | `_analysis.md` |
-| 3. SYNTHESIS | Gera DNA estruturado em YAML (5 camadas) | `_dna.yaml` |
+| 0. VIABILIDADE | Gate APEX (6 dim, /60) + ICP (10 criterios) — GO/NO-GO | `_viability.md` |
+| 1. RESEARCH | Coleta 20-30 fontes com triangulacao por camada | `_sources.md` |
+| 2. ANALYSIS | Extrai padroes em 6 camadas + comunicacao + comportamento | `_analysis.md` |
+| 3. SYNTHESIS | Gera DNA YAML com 6 camadas cognitivas | `_dna.yaml` |
 | 3.5. SYNAPSE SYNC | Persiste DNA no Synapse (memoria incremental) | `synapse/minds/{nome}.yaml` |
-| 4. IMPLEMENTATION | Cria arquivo do agente com system prompt | `.claude/commands/DUARTEOS/{Cat}/{nome}.md` |
-| 5. VALIDATION | Testa fidelidade (score >= 90%) | `_validation.md` |
+| 4. IMPLEMENTATION | Cria agente com prompt ~10k palavras | `.claude/commands/DUARTEOS/{Cat}/{nome}.md` |
+| 5. VALIDATION | 15 prompts em 4 niveis (paradoxos = 35%) — target >= 94% | `_validation.md` |
 
-**As 5 camadas do DNA Mental:**
+**As 6 camadas do DNA Mental:**
 
 | Camada | O que captura |
 |--------|-------------|
@@ -647,13 +651,24 @@ Pipeline de 5 fases que cria um agente baseado em uma pessoa real:
 | Heuristicas | Atalhos mentais, regras de bolso, decisao rapida |
 | Metodologias | Processos repetiveis, sistemas formais, ferramentas |
 | Dilemas | Trade-offs, tensoes, zonas cinza, evolucao de posicoes |
+| **Paradoxos Produtivos** | **Contradicoes internas contextuais — a "camada ouro" da autenticidade** |
 
-**3 modos de operacao:**
-- **Criacao:** `clone-mind "Naval Ravikant"` — pipeline completo
-- **Incremental:** `clone-mind --update "Naval Ravikant" <URL/PDF>` — adiciona nova fonte ao DNA existente
+#### Pipeline Classico (5 Camadas)
+
+```
+/DUARTEOS:squad:clone-mind "Elon Musk"
+```
+
+Pipeline original de 5 fases com DNA de 5 camadas. Continua disponivel para compatibilidade.
+
+**Modos de operacao:**
+- **MMOS (novo):** `mmos:mind-clone "Naval Ravikant"` — pipeline MMOS completo (7 fases, 6 camadas, 94%)
+- **MMOS Update:** `mmos:mind-update "Naval Ravikant" <URL>` — update incremental com rollback
+- **Classico:** `clone-mind "Naval Ravikant"` — pipeline original (5 fases, 5 camadas, 90%)
+- **Incremental:** `clone-mind --update "Naval Ravikant" <URL>` — adiciona nova fonte ao DNA existente
 - **Dossie:** `clone-mind --dossier "trafego pago" <URL>` — alimenta dossie tematico
 
-O agente resultante responde como o especialista responderia — com o mesmo estilo de comunicacao, modelos mentais e vocabulario. O DNA fica persistido no Synapse para incrementacao continua.
+O agente resultante responde como o especialista responderia — com o mesmo estilo de comunicacao, modelos mentais, vocabulario e paradoxos cognitivos. O DNA fica persistido no Synapse para incrementacao continua.
 
 ---
 
@@ -747,6 +762,26 @@ features mais usadas e taxa de churn.
 docker-compose com app + postgres + redis, configura health
 checks e cria script de deploy pro servidor.
 ```
+
+---
+
+## Novidades v5.6.0
+
+### MMOS Pipeline — Clonagem Cognitiva Avancada
+
+Merge do melhor do sistema MMOS (Synkra AIOS) com o DuarteOS. Dois novos comandos:
+
+- `/DUARTEOS:mmos:mind-clone` — Pipeline completo de 7 fases com APEX/ICP, DNA 6 Camadas, validacao 94%
+- `/DUARTEOS:mmos:mind-update` — Update incremental com backup automatico e rollback se fidelidade cair
+
+**Principais evolucoes:**
+- DNA evoluido de 5 para **6 camadas** — nova camada: **Paradoxos Produtivos** (contradicoes internas contextuais que tornam o clone mais humano)
+- Gate de viabilidade **APEX/ICP** antes de gastar tokens — rejeita ~35% dos candidatos sem material suficiente
+- Validacao expandida: **15 prompts** em 4 niveis (superficie 15%, media 20%, profunda 30%, **paradoxos 35%**)
+- Fidelidade-alvo: **>= 94%** (vs 90% do pipeline classico)
+- Prompts finais **~10k palavras** com secao dedicada a paradoxos
+- **Rollback automatico** no mind-update se fidelidade cair > 5%
+- Novo MCP: **Apify** (`@apify/actors-mcp-server`) — scraping, transcricoes YouTube, extracao de dados
 
 ---
 

@@ -1,5 +1,6 @@
 # DNA Mental: {Nome do Especialista}
 # Synapse Mind Clone — Memoria Incremental
+# DNA: 6 Camadas Cognitivas (Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos)
 # Gerado em: {data}
 # Ultima atualizacao: {data}
 # Fontes processadas: {N}
@@ -11,8 +12,10 @@ identity:
   domain: "{Dominio principal}"
   archetype: "{Frase que define a pessoa}"
   clone_file: ".claude/commands/DUARTEOS/{Categoria}/{slug}.md"
+  apex_score: null     # Preenchido na Fase 0 (/60)
+  icp_score: null      # Preenchido na Fase 0 (/10)
 
-# === AS 5 CAMADAS DO DNA ===
+# === AS 6 CAMADAS DO DNA ===
 
 filosofia:
   # Crencas fundamentais — O QUE a pessoa acredita ser verdade
@@ -92,6 +95,25 @@ dilemas:
       quando: "{periodo}"
       motivo: "{o que causou a mudanca}"
 
+paradoxos_produtivos:
+  # Contradicoes internas que criam comportamento humano — CAMADA OURO
+  # Pessoas reais sao contraditorias. Capturar paradoxos e o que separa
+  # clones genericos de clones com 94%+ de fidelidade.
+  # Minimo: 2 paradoxos. Ideal: 4-6.
+  # Cada paradoxo precisa >= 3 fontes independentes.
+  paradoxos:
+    - lado_a: "{posicao A — ex: Prega simplicidade}"
+      lado_b: "{posicao B — ex: Cria sistemas complexos}"
+      trigger_a: "{quando lado A emerge — ex: Ao discutir teoria}"
+      trigger_b: "{quando lado B emerge — ex: Ao implementar solucoes}"
+      resolucao: "{como reconcilia — ex: Simples na superficie, complexo por baixo}"
+      exemplos:
+        - fonte: "{referencia}"
+          citacao: "{evidencia}"
+          source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
+      valor_autenticidade: "{alto|medio|baixo}"
+  nota_camada: "{observacao geral sobre os paradoxos deste expert}"
+
 # === METADATA DE INGESTAO ===
 
 ingestion_log:
@@ -109,3 +131,6 @@ stats:
   ultima_atualizacao: "{YYYY-MM-DD}"
   versao_dna: 1
   confianca_geral: "{alta/media/baixa}"
+  fidelidade: null     # Score de fidelidade da validacao (0-100%)
+  apex_score: null
+  icp_score: null
