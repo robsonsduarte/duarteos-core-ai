@@ -149,6 +149,7 @@ function ensureGitignoreEntries(cwd) {
   const requiredEntries = [
     '.claude/config/user.yaml',
     '.claude/settings.local.json',
+    '.env.local',
   ]
 
   let content = ''
@@ -517,6 +518,8 @@ export function update(options = {}) {
     // v5.2.0 — YOLO Mode (policy + permissions, only added if missing)
     ['CLAUDE.md', 'CLAUDE.md'],
     ['settings.local.json', '.claude/settings.local.json'],
+    // v5.8.1 — direnv auto-load (only added if missing — never overwrite user config)
+    ['.envrc', '.envrc'],
   ]
 
   for (const [src, dest] of newOnlyFiles) {
@@ -677,6 +680,7 @@ export function update(options = {}) {
     .claude/config/user.yaml — suas preferencias pessoais
     .claude/agent-memory/*/MEMORY.md — memorias individuais dos agentes
     .claude/synapse/*.yaml  — estado dos agentes
+    .envrc                  — sua configuracao direnv
     squads/                 — seus squads customizados
 `)
 

@@ -29,6 +29,7 @@ function ensureGitignoreEntries(cwd) {
     '# DuarteOS — configs pessoais (nao versionar)',
     '.claude/config/user.yaml',
     '.claude/settings.local.json',
+    '.env.local',
   ]
 
   let content = ''
@@ -138,6 +139,7 @@ export function init(projectName, options = {}) {
     // YOLO Mode — CLAUDE.md + settings.local.json (policy + permissions)
     ['CLAUDE.md', 'CLAUDE.md'],
     ['settings.local.json', '.claude/settings.local.json'],
+    ['.envrc', '.envrc'],
 
     // Settings
     ['settings.json', '.claude/settings.json'],
@@ -471,7 +473,7 @@ export function init(projectName, options = {}) {
   Proximos passos:
   1. Configure as API keys: cp .env.example .env && edite o .env
      (veja /DUARTEOS:setup-mcps para guia completo)
-  2. Carregue as vars: source .env && claude (ou use direnv)
+  2. Ative o direnv: direnv allow (carrega .env.local e .env automaticamente)
   3. Customize CLAUDE.md com stack e convencoes do seu projeto
   4. Instale o GSD: https://github.com/cleyio/gsd
   4. Use os comandos:
