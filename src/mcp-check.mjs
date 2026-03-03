@@ -6,90 +6,131 @@ import { resolve } from 'path'
  * Each entry maps to a key in .mcp.json's mcpServers.
  */
 const MCP_REGISTRY = {
-  // === No auth needed (always ready) ===
+  // === Essential: No auth needed (always ready) ===
   'context7': {
     name: 'Context7',
     description: 'Documentacao atualizada de bibliotecas',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'fetch': {
     name: 'Fetch',
     description: 'Busca URLs e converte para Markdown',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'youtube-transcript': {
     name: 'YouTube Transcript',
     description: 'Transcricoes de videos',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'memory': {
     name: 'Memory',
     description: 'Grafo de conhecimento persistente',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'sequential-thinking': {
     name: 'Sequential Thinking',
     description: 'Raciocinio estruturado',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
 
-  // === Python MCP Servers (local, no auth) ===
+  // === Essential: Python MCP Servers (local, no auth, via uv run) ===
   'data-analyzer': {
     name: 'Data Analyzer',
     description: 'Analise CSV, estatisticas, graficos',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'web-scraper': {
     name: 'Web Scraper',
     description: 'Web scraping avancado',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'automation': {
     name: 'Automation',
     description: 'Automacao de sistema e file processing',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'input-analyzer': {
     name: 'Input Analyzer',
     description: 'Analisa PRDs, N8N workflows, URLs',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'memory-graph': {
     name: 'Memory Graph',
     description: 'Grafo de conhecimento entre sessoes',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
   'tool-forge': {
     name: 'Tool Forge',
     description: 'Cria tools dinamicamente',
     envVars: [],
     authType: 'none',
+    tier: 'essential',
   },
 
-  // === API Key required ===
+  // === Essential: API Key already configured ===
   'exa': {
     name: 'EXA',
     description: 'Busca web, codigo, empresas',
     envVars: ['EXA_API_KEY'],
     authType: 'api_key',
+    tier: 'essential',
     setupUrl: 'https://dashboard.exa.ai/api-keys',
     setupHint: 'Crie conta gratuita ($15 credito)',
   },
+  'apify': {
+    name: 'Apify',
+    description: 'Actors, web scraper, RAG browser',
+    envVars: ['APIFY_TOKEN'],
+    authType: 'api_key',
+    tier: 'essential',
+    setupUrl: 'https://console.apify.com/account/integrations',
+    setupHint: 'Crie conta gratuita e copie o API Token em Settings → Integrations',
+  },
+  'e2b-sandbox': {
+    name: 'E2B Sandbox',
+    description: 'Execucao segura de codigo em microVMs',
+    envVars: ['E2B_API_KEY'],
+    authType: 'api_key',
+    tier: 'essential',
+    setupUrl: 'https://e2b.dev/dashboard',
+    setupHint: 'Crie conta gratuita (free tier)',
+  },
+  'obsidian': {
+    name: 'Obsidian',
+    description: 'Notas do vault local',
+    envVars: ['OBSIDIAN_VAULT_PATH'],
+    authType: 'local_path',
+    tier: 'essential',
+    setupHint: 'Defina o caminho do vault (ex: /Users/voce/Documents/Obsidian Vault)',
+  },
+
+  // === Optional: Requires external service or unfilled keys ===
   'github': {
     name: 'GitHub',
     description: 'Issues, PRs, repos, code search',
     envVars: ['GITHUB_PAT'],
     authType: 'api_key',
+    tier: 'optional',
     setupUrl: 'https://github.com/settings/tokens',
     setupHint: 'Crie um Personal Access Token (escopos: repo, read:org)',
   },
@@ -98,6 +139,7 @@ const MCP_REGISTRY = {
     description: 'Code review IA (40+ analyzers)',
     envVars: ['GITHUB_PAT'],
     authType: 'api_key',
+    tier: 'optional',
     setupUrl: 'https://github.com/settings/tokens',
     setupHint: 'Usa o mesmo GITHUB_PAT do GitHub MCP',
   },
@@ -106,31 +148,15 @@ const MCP_REGISTRY = {
     description: 'Automacoes e workflows',
     envVars: ['N8N_API_URL', 'N8N_API_KEY'],
     authType: 'api_key',
+    tier: 'optional',
     setupHint: 'n8n → Settings → API → gere uma API Key',
   },
-  'e2b-sandbox': {
-    name: 'E2B Sandbox',
-    description: 'Execucao segura de codigo em microVMs',
-    envVars: ['E2B_API_KEY'],
-    authType: 'api_key',
-    setupUrl: 'https://e2b.dev/dashboard',
-    setupHint: 'Crie conta gratuita (free tier)',
-  },
-  'apify': {
-    name: 'Apify',
-    description: 'Actors, web scraper, RAG browser',
-    envVars: ['APIFY_TOKEN'],
-    authType: 'api_key',
-    setupUrl: 'https://console.apify.com/account/integrations',
-    setupHint: 'Crie conta gratuita e copie o API Token em Settings → Integrations',
-  },
-
-  // === OAuth required ===
   'google-workspace': {
     name: 'Google Workspace',
     description: 'Gmail, Drive, Calendar, Docs, Sheets, Tasks',
     envVars: ['GOOGLE_OAUTH_CLIENT_ID', 'GOOGLE_OAUTH_CLIENT_SECRET'],
     authType: 'oauth',
+    tier: 'optional',
     setupUrl: 'https://console.cloud.google.com/apis/credentials',
     setupHint: 'Crie credencial OAuth 2.0 tipo "Desktop Application"',
     oauthNote: 'Apos configurar, o browser abre automaticamente para autorizar na primeira execucao',
@@ -140,17 +166,17 @@ const MCP_REGISTRY = {
     description: 'Acesso direto ao banco (DB, auth, storage)',
     envVars: ['SUPABASE_PROJECT_REF'],
     authType: 'oauth',
+    tier: 'optional',
     setupUrl: 'https://supabase.com/dashboard',
     setupHint: 'Dashboard → Settings → General → Reference ID',
     oauthNote: 'Apos configurar, autentique via browser na primeira execucao',
   },
-
-  // === URL/Path required ===
   'redis': {
     name: 'Redis',
     description: 'Persistencia, cache, sessoes',
     envVars: ['REDIS_URL'],
     authType: 'url',
+    tier: 'optional',
     setupHint: 'Local: redis://localhost:6379 | Cloud: Upstash ou Redis Cloud (free tier)',
   },
   'redis-session': {
@@ -158,6 +184,7 @@ const MCP_REGISTRY = {
     description: 'Sessoes persistentes no Redis',
     envVars: ['REDIS_URL'],
     authType: 'url',
+    tier: 'optional',
     setupHint: 'Usa a mesma REDIS_URL do Redis MCP',
   },
   'redis-task-manager': {
@@ -165,6 +192,7 @@ const MCP_REGISTRY = {
     description: 'Tasks multi-agente com dependencias',
     envVars: ['REDIS_URL'],
     authType: 'url',
+    tier: 'optional',
     setupHint: 'Usa a mesma REDIS_URL do Redis MCP',
   },
   'rest-api': {
@@ -172,14 +200,8 @@ const MCP_REGISTRY = {
     description: 'Chama qualquer REST API',
     envVars: ['REST_API_BASE_URL'],
     authType: 'url',
+    tier: 'optional',
     setupHint: 'Defina a URL base da sua API (ex: https://api.meuapp.com)',
-  },
-  'obsidian': {
-    name: 'Obsidian',
-    description: 'Notas do vault local',
-    envVars: ['OBSIDIAN_VAULT_PATH'],
-    authType: 'local_path',
-    setupHint: 'Defina o caminho do vault (ex: /Users/voce/Documents/Obsidian Vault)',
   },
 }
 
@@ -283,23 +305,48 @@ export function checkMcpStatus(cwd) {
 export function printMcpReport(status) {
   const { hasEnvFile, configured, connected, disconnected } = status
 
+  const essentialConnected = connected.filter(m => m.tier === 'essential')
+  const optionalConnected = connected.filter(m => m.tier === 'optional')
+  const essentialDisconnected = disconnected.filter(m => m.tier === 'essential')
+  const optionalDisconnected = disconnected.filter(m => m.tier === 'optional')
+
   console.log(`
   MCP Health Check (${configured} servidores configurados)
   ${'='.repeat(50)}`)
 
-  if (connected.length > 0) {
+  if (essentialConnected.length > 0) {
     console.log(`
-  Prontos para uso (${connected.length}):`)
-    for (const mcp of connected) {
+  Essenciais — prontos (${essentialConnected.length}):`)
+    for (const mcp of essentialConnected) {
       console.log(`    \x1b[32m✓\x1b[0m ${mcp.name.padEnd(22)} ${mcp.description}`)
     }
   }
 
-  if (disconnected.length > 0) {
+  if (optionalConnected.length > 0) {
     console.log(`
-  \x1b[33mDesconectados — precisam de configuracao (${disconnected.length}):\x1b[0m`)
-    for (const mcp of disconnected) {
+  Opcionais — prontos (${optionalConnected.length}):`)
+    for (const mcp of optionalConnected) {
+      console.log(`    \x1b[32m✓\x1b[0m ${mcp.name.padEnd(22)} ${mcp.description}`)
+    }
+  }
+
+  if (essentialDisconnected.length > 0) {
+    console.log(`
+  \x1b[31mEssenciais — FALHARAM (${essentialDisconnected.length}):\x1b[0m`)
+    for (const mcp of essentialDisconnected) {
       console.log(`    \x1b[31m✗\x1b[0m ${mcp.name.padEnd(22)} falta: ${mcp.missingVars.join(', ')}`)
+      if (mcp.setupUrl) {
+        console.log(`      \x1b[36m→\x1b[0m ${mcp.setupUrl}`)
+      }
+      console.log(`      ${mcp.setupHint}`)
+    }
+  }
+
+  if (optionalDisconnected.length > 0) {
+    console.log(`
+  \x1b[33mOpcionais — precisam de configuracao (${optionalDisconnected.length}):\x1b[0m`)
+    for (const mcp of optionalDisconnected) {
+      console.log(`    \x1b[33m○\x1b[0m ${mcp.name.padEnd(22)} falta: ${mcp.missingVars.join(', ')}`)
       if (mcp.setupUrl) {
         console.log(`      \x1b[36m→\x1b[0m ${mcp.setupUrl}`)
       }
@@ -308,22 +355,19 @@ export function printMcpReport(status) {
         console.log(`      \x1b[33m⚡\x1b[0m ${mcp.oauthNote}`)
       }
     }
+  }
 
+  if (essentialDisconnected.length > 0 || optionalDisconnected.length > 0) {
     console.log(`
-  Para conectar os MCPs desconectados:`)
-
-    if (!hasEnvFile) {
-      console.log(`    1. Crie o .env:    cp .env.example .env`)
-      console.log(`    2. Edite o .env:   nano .env  (preencha as variaveis)`)
-      console.log(`    3. Carregue:       source .env && claude`)
-    } else {
-      console.log(`    1. Edite o .env:   nano .env  (preencha as variaveis faltantes)`)
-      console.log(`    2. Carregue:       source .env && claude`)
-    }
+  Para conectar MCPs desconectados:`)
+    console.log(`    1. Edite .env.local com as variaveis faltantes`)
+    console.log(`    2. Execute:  npx duarteos update`)
     console.log(`    Ou use \x1b[1m/DUARTEOS:setup-mcps\x1b[0m dentro do Claude Code para guia completo.`)
-  } else if (configured > 0) {
+  }
+
+  if (essentialDisconnected.length === 0 && essentialConnected.length > 0) {
     console.log(`
-  \x1b[32mTodos os MCPs estao prontos!\x1b[0m`)
+  \x1b[32mTodos os MCPs essenciais estao prontos!\x1b[0m`)
   }
 
   console.log('')

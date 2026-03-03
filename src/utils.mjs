@@ -14,11 +14,14 @@ export function showVersion() {
 }
 
 // Env var name → MCP server ID mapping
+// Env var mapping: string = same name in .env.local and MCP env
+// { from, to } = different name (.env.local key → MCP server env key)
 const MCP_ENV_MAP = {
   exa: ['EXA_API_KEY'],
   apify: ['APIFY_TOKEN'],
   redis: ['REDIS_URL'],
-  github: ['GITHUB_PERSONAL_ACCESS_TOKEN'],
+  github: [{ from: 'GITHUB_PAT', to: 'GITHUB_PERSONAL_ACCESS_TOKEN' }],
+  coderabbit: ['GITHUB_PAT'],
   obsidian: ['OBSIDIAN_VAULT_PATH'],
   'e2b-sandbox': ['E2B_API_KEY'],
   n8n: ['N8N_API_URL', 'N8N_API_KEY'],
@@ -66,13 +69,16 @@ export function injectMcpEnvVars(cwd) {
   for (const [serverId, envKeys] of Object.entries(MCP_ENV_MAP)) {
     if (!servers[serverId]) continue
 
-    for (const envKey of envKeys) {
-      const value = envVars[envKey]
+    for (const envKeyOrMap of envKeys) {
+      const sourceKey = typeof envKeyOrMap === 'string' ? envKeyOrMap : envKeyOrMap.from
+      const targetKey = typeof envKeyOrMap === 'string' ? envKeyOrMap : envKeyOrMap.to
+
+      const value = envVars[sourceKey]
       if (!value) continue
 
       if (!servers[serverId].env) servers[serverId].env = {}
-      if (servers[serverId].env[envKey] !== value) {
-        servers[serverId].env[envKey] = value
+      if (servers[serverId].env[targetKey] !== value) {
+        servers[serverId].env[targetKey] = value
         changed = true
       }
     }

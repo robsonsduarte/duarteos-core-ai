@@ -8,9 +8,9 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.8.0 — Init/Update hardening + OMEGA validation certified (2026-03-02)
-- **Proximo passo:** —
-- **Bloqueios:** Nenhum
+- **Ultima operacao:** MCP Auto-Load Reliability — fix fetch, Python MCPs via uv, MCP_ENV_MAP, tier system (2026-03-03)
+- **Proximo passo:** Reiniciar `claude` para validar MCPs carregando; rodar mind-update Amanda Khayat quando MCPs online
+- **Bloqueios:** Nenhum (MCPs essenciais devem carregar agora)
 
 ## Artefatos Ativos
 
@@ -44,7 +44,28 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Pendencias
 
-_Nenhuma pendencia registrada._
+### Mind Update Amanda Khayat — PAUSADO (MCPs offline)
+**Comando:** `/DUARTEOS:mmos:mind-update "Amanda Khayat"` — pesquisar novas fontes
+**Clone:** amanda-khayat | DNA v2 | Fidelidade 84.50% | 3 fontes processadas
+
+**Fontes ja processadas:**
+1. mind-clone-md initial (2026-03-01)
+2. Segredos da Escala #123 — https://www.youtube.com/watch?v=Rz1Y7fhXGFI
+3. Pandacast Ep. 186 — https://www.youtube.com/watch?v=Kp3E_y-A_3k
+
+**Fontes novas descobertas (NAO processadas):**
+1. **Mentoria Anuncios Milionarios 2026** — PRIORIDADE ALTA
+   - Frameworks novos: Super Spy, 7 Fundamentos do Copy, 3 elementos +62% vendas
+   - Video: https://www.youtube.com/watch?v=vmoTAIBEEnE
+2. **Instagram Reels** — PRIORIDADE MEDIA
+   - https://www.instagram.com/reel/DSdZdPxgEc5/ (anuncios 8 digitos + estrutura)
+   - https://www.instagram.com/reel/DP4mna_AMFG/ (bater controle)
+   - Conta clipes: https://www.instagram.com/clipesamandakhayat/
+3. **TikTok** — PRIORIDADE MEDIA
+   - https://www.tiktok.com/discover/amanda-khayat-mentoria
+
+**MCPs necessarios:** Exa (pesquisa semantica), Apify (scrape IG/TikTok), YouTube Transcript
+**Ao retomar:** Verificar MCPs → Exa search → YT transcript → Apify scrape → Pipeline Steps 1-5
 
 ## Ambiente
 
@@ -554,4 +575,19 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-03 15:18 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-03 15:22 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-03 15:23 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-03 15:28 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-03 15:30 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-03 15:56 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

@@ -20,8 +20,8 @@
       ]
     },
     "fetch": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
     },
     "apify": {
       "command": "npx",
@@ -107,37 +107,37 @@
     "_comment_python": "=== PYTHON MCP SERVERS (DuarteOS) ===",
 
     "data-analyzer": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/data-analyzer/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "pandas,numpy,matplotlib,seaborn", "python", ".claude/mcp-servers/data-analyzer/server.py"]
     },
     "web-scraper": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/web-scraper/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "requests,beautifulsoup4,lxml", "python", ".claude/mcp-servers/web-scraper/server.py"]
     },
     "automation": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/automation/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "watchdog", "python", ".claude/mcp-servers/automation/server.py"]
     },
 
     "input-analyzer": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/input-analyzer/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "requests,beautifulsoup4,lxml,pyyaml", "python", ".claude/mcp-servers/input-analyzer/server.py"]
     },
     "memory-graph": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/memory-graph/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "python", ".claude/mcp-servers/memory-graph/server.py"]
     },
     "tool-forge": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/tool-forge/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "python", ".claude/mcp-servers/tool-forge/server.py"]
     },
     "redis-session": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/redis-session/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "redis", "python", ".claude/mcp-servers/redis-session/server.py"]
     },
     "redis-task-manager": {
-      "command": "python3",
-      "args": [".claude/mcp-servers/redis-task-manager/server.py"]
+      "command": "uv",
+      "args": ["run", "--with", "fastmcp<3", "--with", "redis", "python", ".claude/mcp-servers/redis-task-manager/server.py"]
     },
 
     "_comment_sandbox": "=== SANDBOX (opcional) ===",

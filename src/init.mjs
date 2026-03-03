@@ -201,6 +201,7 @@ export function init(projectName, options = {}) {
     // Scripts
     ['scripts/setup-python.sh', '.claude/scripts/setup-python.sh'],
     ['scripts/setup-sandbox.sh', '.claude/scripts/setup-sandbox.sh'],
+    ['scripts/warmup-mcps.sh', '.claude/scripts/warmup-mcps.sh'],
 
     // Python MCP Servers
     ['mcp-servers/data-analyzer/server.py', '.claude/mcp-servers/data-analyzer/server.py'],
