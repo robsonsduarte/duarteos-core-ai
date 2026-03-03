@@ -1,0 +1,43 @@
+date: "2026-03-03"
+source_type: "url"
+source_urls:
+  - "https://www.youtube.com/watch?v=Rz1Y7fhXGFI"
+  - "https://www.youtube.com/watch?v=Kp3E_y-A_3k"
+title: "Amanda Khayat Mind Update — Segredos da Escala #123 + Pandacast Ep. 186"
+mind_clone: "amanda-khayat"
+camadas_impactadas:
+  - filosofia
+  - frameworks
+  - heuristicas
+  - metodologias
+  - dilemas
+  - paradoxos_produtivos
+  - communication
+  - expertise
+insights:
+  - camada: "filosofia"
+    tipo: "NOVO"
+    conteudo: "Pesquisa no TikTok eh armadilha — linguagem de entretenimento ≠ linguagem de venda"
+  - camada: "frameworks"
+    tipo: "NOVO"
+    conteudo: "Frase de Aterrissagem, Disparo de Dopamina, Ganchos Visuais, Fechamento do Anuncio, Biblia dos Hooks"
+  - camada: "heuristicas"
+    tipo: "NOVO"
+    conteudo: "Objecoes secundarias (teste com IA), Documento de Blacklist, Validacao pos-Andromeda, Sofisticacao de mercado"
+  - camada: "metodologias"
+    tipo: "NOVO"
+    conteudo: "Pipeline de Comissionamento e Mentoria Comissao 6D (5 modulos)"
+  - camada: "dilemas"
+    tipo: "EVOLUCAO"
+    conteudo: "IA: de posicao puramente anti-IA para anti-IA escrita + pro-IA testes. Faturamento: 100M -> 220M. Papel: copywriter solo -> Copy Chief."
+  - camada: "paradoxos_produtivos"
+    tipo: "NOVO"
+    conteudo: "Anti-IA criar + Pro-IA testar. Volume industrial (M25) + Artesanato manual."
+  - camada: "communication"
+    tipo: "NOVO"
+    conteudo: "Vocabulario proprietario: Frase de aterrissagem, Disparo de dopamina, Biblia dos Hooks, Controle, Copy Chief"
+  - camada: "expertise"
+    tipo: "NOVO"
+    conteudo: "Copy Chief — lideranca e formacao de equipe de copywriters"
+versao_dna_antes: 1
+versao_dna_depois: 2

@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -11,6 +11,79 @@ export function getPackageVersion() {
 
 export function showVersion() {
   console.log(`duarteos-core-ai v${getPackageVersion()}`)
+}
+
+// Env var name → MCP server ID mapping
+const MCP_ENV_MAP = {
+  exa: ['EXA_API_KEY'],
+  apify: ['APIFY_TOKEN'],
+  redis: ['REDIS_URL'],
+  github: ['GITHUB_PERSONAL_ACCESS_TOKEN'],
+  obsidian: ['OBSIDIAN_VAULT_PATH'],
+  'e2b-sandbox': ['E2B_API_KEY'],
+  n8n: ['N8N_API_URL', 'N8N_API_KEY'],
+}
+
+// Parse .env file into key-value object
+function parseEnvFile(filePath) {
+  if (!existsSync(filePath)) return {}
+  const content = readFileSync(filePath, 'utf-8')
+  const vars = {}
+  for (const line of content.split('\n')) {
+    const trimmed = line.trim()
+    if (!trimmed || trimmed.startsWith('#')) continue
+    const eqIdx = trimmed.indexOf('=')
+    if (eqIdx === -1) continue
+    const key = trimmed.slice(0, eqIdx).trim()
+    let val = trimmed.slice(eqIdx + 1).trim()
+    if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+      val = val.slice(1, -1)
+    }
+    if (val) vars[key] = val
+  }
+  return vars
+}
+
+// Inject env vars from .env.local into .mcp.json env blocks
+export function injectMcpEnvVars(cwd) {
+  const mcpPath = resolve(cwd, '.mcp.json')
+  if (!existsSync(mcpPath)) return false
+
+  let config
+  try {
+    config = JSON.parse(readFileSync(mcpPath, 'utf-8'))
+  } catch {
+    return false
+  }
+
+  const servers = config.mcpServers
+  if (!servers) return false
+
+  const envVars = parseEnvFile(resolve(cwd, '.env.local'))
+  if (Object.keys(envVars).length === 0) return false
+
+  let changed = false
+  for (const [serverId, envKeys] of Object.entries(MCP_ENV_MAP)) {
+    if (!servers[serverId]) continue
+
+    for (const envKey of envKeys) {
+      const value = envVars[envKey]
+      if (!value) continue
+
+      if (!servers[serverId].env) servers[serverId].env = {}
+      if (servers[serverId].env[envKey] !== value) {
+        servers[serverId].env[envKey] = value
+        changed = true
+      }
+    }
+  }
+
+  if (changed) {
+    writeFileSync(mcpPath, JSON.stringify(config, null, 2) + '\n', 'utf-8')
+    console.log('  + .mcp.json: env vars injetadas do .env.local')
+    return true
+  }
+  return false
 }
 
 export function showHelp() {

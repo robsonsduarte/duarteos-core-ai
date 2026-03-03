@@ -2,7 +2,7 @@
   "mcpServers": {
 
     "_comment_search": "=== BUSCA E PESQUISA ===",
-    "_comment_env": "=== ENV VARS: NÃO use ${VAR} no bloco env. Servers herdam do shell (direnv/.env.local). ===",
+    "_comment_env": "=== TEMPLATE sem keys. O .mcp.json real (git-ignored) recebe keys via init ou manualmente. ===",
 
     "context7": {
       "command": "npx",

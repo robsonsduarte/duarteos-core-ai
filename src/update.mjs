@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync, rmSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPackageVersion } from './utils.mjs'
+import { getPackageVersion, injectMcpEnvVars } from './utils.mjs'
 import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -9,6 +9,17 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.10.0': {
+    title: 'MCP Reliability — env vars diretas + .mcp.json git-ignored',
+    highlights: [
+      'FIX: MCP servers nao carregavam porque env vars (EXA_API_KEY, APIFY_TOKEN, etc.) nao chegavam ao processo',
+      'Env vars do .env.local agora injetadas diretamente no bloco env de cada server no .mcp.json',
+      '.mcp.json agora e git-ignored (contem API keys) — template sem keys em templates/mcp.json',
+      'injectMcpEnvVars() em utils.mjs — chamada no init e update para manter .mcp.json sincronizado',
+      'Removida duplicacao entre .mcp.json (projeto) e ~/.claude/.mcp.json (global)',
+      'Servers afetados: exa, apify, redis, github, obsidian, e2b-sandbox, n8n',
+    ],
+  },
   '5.9.0': {
     title: 'OMEGA v1.1 — Task Lifecycle + Mind Clone Bootstrap + Squad Artifacts + MCP Fix',
     highlights: [
@@ -241,6 +252,7 @@ function ensureGitignoreEntries(cwd) {
     '.claude/config/user.yaml',
     '.claude/settings.local.json',
     '.env.local',
+    '.mcp.json',
   ]
 
   let content = ''
@@ -753,7 +765,10 @@ export function update(options = {}) {
   // v5.9.0 — Migrate .mcp.json: remove ${VAR} interpolation (Claude Code bug)
   migrateMcpJson(cwd)
 
-  // Ensure .gitignore has DuarteOS entries
+  // v5.10.0 — Inject env vars from .env.local into .mcp.json (MCP servers need explicit env)
+  injectMcpEnvVars(cwd)
+
+  // Ensure .gitignore has DuarteOS entries (.mcp.json now git-ignored since it contains keys)
   ensureGitignoreEntries(cwd)
 
   console.log(`
@@ -769,7 +784,7 @@ export function update(options = {}) {
     .gitignore                   — Entradas DuarteOS garantidas
 
   Arquivos preservados (nunca sobrescritos):
-    .mcp.json               — suas API keys
+    .mcp.json               — suas API keys (git-ignored)
     .env                    — suas variaveis de ambiente
     .claude/settings.json   — suas configuracoes
     .claude/session-context.md — seu contexto de sessao

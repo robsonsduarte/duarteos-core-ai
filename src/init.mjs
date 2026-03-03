@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, cpSync, readdirSync
 import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
+import { injectMcpEnvVars } from './utils.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
@@ -30,6 +31,7 @@ function ensureGitignoreEntries(cwd) {
     '.claude/config/user.yaml',
     '.claude/settings.local.json',
     '.env.local',
+    '.mcp.json',
   ]
 
   let content = ''
@@ -459,6 +461,9 @@ export function init(projectName, options = {}) {
 
   // Ensure .gitignore has DuarteOS entries
   ensureGitignoreEntries(cwd)
+
+  // Inject env vars from .env.local into .mcp.json (so MCP servers start with correct keys)
+  injectMcpEnvVars(cwd)
 
   // Summary
   console.log(`

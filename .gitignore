@@ -12,3 +12,4 @@ node_modules/
 # DuarteOS — configs pessoais (nao versionar)
 .claude/config/user.yaml
 .claude/settings.local.json
+.mcp.json
