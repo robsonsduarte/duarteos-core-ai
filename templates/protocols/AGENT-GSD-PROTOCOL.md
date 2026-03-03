@@ -214,7 +214,7 @@ WORKFLOW FORMAL:
   → PM aprova plano → Backend/Frontend execute → QA verify
   → PM valida conclusao
 
-ESCALACAO:
+ESCALACAO (via Escalation Router — OMEGA secao 4: Retry → Vertical → Horizontal → Human):
   Agente bloqueado → reporta ao PM
   PM bloqueado → reporta ao usuario
   Conflito entre agentes → PM decide (decisao final)

@@ -71,6 +71,8 @@ OMEGA_LOOP(task, agent):
     escalate(task, iteration, score)
 ```
 
+> **Excecao:** O subcomando `/gsd:quick` usa `max_iterations = 2` para manter velocidade. Ver `AGENT-GSD-PROTOCOL.md` para detalhes.
+
 ### Como OMEGA Envolve Toda Execucao
 
 OMEGA nao e invocado separadamente. Ele e o wrapper implicito de toda task delegada por ATLAS (PM) ou executada por qualquer agente. O fluxo real e:
@@ -111,7 +113,7 @@ Formato obrigatorio:
 agent: {CODENAME}
 task: {descricao curta da task}
 iteration: {N de max_iterations}
-task_type: {research | planning | implementation | validation | mind_clone}
+task_type: {research | planning | implementation | validation | mind_clone | mind_update}
 score: {0-100}
 evidence:
   - {evidencia 1: o que foi verificado e resultado}
@@ -133,6 +135,8 @@ delta:
 notes: {observacoes relevantes}
 -->
 ```
+
+> **Valores default:** Quando `git_sha_before`/`git_sha_after` nao estao disponiveis (codigo nao commitado), use `"uncommitted"`. Quando `tests_added`/`tests_passing` nao se aplicam (task sem testes), use `"N/A"`.
 
 Regras do OMEGA_STATUS:
 - **Obrigatorio** em toda resposta de execucao. Omitir o bloco e violacao do protocolo.
@@ -199,6 +203,8 @@ Se ambos falham: proxima iteracao com feedback especifico.
 ### Calculo de Score por Evidencia
 
 O score NAO e auto-declarado pelo agente. E calculado com base em evidencias verificaveis. Cada tipo de task tem um checklist de evidencias com peso.
+
+> **Nota:** Os criterios e pesos abaixo sao referencia. A **fonte de verdade** para cada task_type e o arquivo de checklist correspondente em `.claude/omega/checklists/{task_type}.md`. Em caso de divergencia, o checklist prevalece.
 
 #### Research (threshold: 80)
 
@@ -1016,7 +1022,7 @@ OMEGA_MIND_CLONE_VALIDATION:
 agent: {CODENAME}
 task: {descricao}
 iteration: {N}/{max}
-task_type: {research | planning | implementation | validation | mind_clone}
+task_type: {research | planning | implementation | validation | mind_clone | mind_update}
 score: {0-100}
 evidence:
   - {evidencia 1}
@@ -1037,6 +1043,8 @@ delta:
 notes: {observacoes}
 -->
 ```
+
+> **Valores default:** Quando `git_sha_before`/`git_sha_after` nao estao disponiveis (codigo nao commitado), use `"uncommitted"`. Quando `tests_added`/`tests_passing` nao se aplicam (task sem testes), use `"N/A"`.
 
 ### Diagrama de Decisao Rapida
 

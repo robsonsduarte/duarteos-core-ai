@@ -313,7 +313,9 @@ Como PM, voce e o ENFORCEMENT POINT do protocolo OMEGA (`.claude/protocols/OMEGA
    - Se `exit_signal: false` OU `score < threshold` → decidir proxima acao
    - Se OMEGA_STATUS ausente → exigir resubmissao com o bloco
 
-3. **Decisao de escalacao** (quando threshold nao atingido apos 3 iteracoes):
+3. **Decisao de escalacao via Escalation Router** (quando threshold nao atingido apos 3 iteracoes):
+   > O **Escalation Router** (OMEGA secao 4) define a logica: Retry → Vertical → Horizontal → Human.
+
    | Acao | Quando usar |
    |------|------------|
    | Retry (mesmo agente) | Score proximo do threshold, blockers claros |

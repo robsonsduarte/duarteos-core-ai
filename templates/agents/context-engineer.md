@@ -149,6 +149,10 @@ blockers:
 delta:
   files_modified: {N}
   files_created: {N}
+  git_sha_before: abc1234
+  git_sha_after: def5678
+  tests_added: {N}
+  tests_passing: {N/N}
 notes: {observacoes relevantes}
 -->
 
