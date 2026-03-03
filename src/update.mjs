@@ -9,6 +9,23 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.7.0': {
+    title: 'OMEGA — Quality Enforcement Loop Engine',
+    highlights: [
+      'OMEGA engine: quality enforcement loop para todos os agentes com circuit breaker 3-state',
+      'MMOS Pipeline v2: pipeline de clonagem cognitiva de 7 fases com estrutura squad',
+      'Circuit breaker (CLOSED → OPEN → HALF-OPEN) com auto-cooldown configuravel',
+      'Quality gates com thresholds: Research >=80, Planning >=85, Implementation >=90, Validation >=95',
+      'Escalation router: same agent → vertical → horizontal → human',
+      'Model routing por complexidade (Haiku/Sonnet/Opus)',
+      'Agent signature traceability em todos os outputs',
+      'OMEGA config.yaml: configuracao de gates, thresholds, circuit breaker, escalation',
+      'OMEGA state.json: estado runtime com metricas e historico de qualidade',
+      'OMEGA checklists: 6 quality gate checklists por fase',
+      'Novo protocolo: .claude/protocols/OMEGA.md',
+      'Novo protocolo: .claude/protocols/MMOS-PIPELINE.md',
+    ],
+  },
   '5.6.0': {
     title: 'MMOS Pipeline — DNA 6 Camadas + APEX/ICP + Paradoxos Produtivos',
     highlights: [
@@ -316,6 +333,14 @@ export function update(options = {}) {
     ['agent-memory/_global/PATTERNS.md', '.claude/agent-memory/_global/PATTERNS.md'],
     ['agent-memory/_meta/promotion-log.md', '.claude/agent-memory/_meta/promotion-log.md'],
 
+    // v5.7.0 — OMEGA Quality Enforcement Loop
+    ['omega/config.yaml', '.claude/omega/config.yaml'],
+    ['omega/state.json', '.claude/omega/state.json'],
+
+    // v5.7.0 — Protocols (OMEGA + MMOS-PIPELINE)
+    ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
+    ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
+
     // v5.0.0 — Protocols (system-owned, always updated)
     ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
     ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
@@ -568,6 +593,33 @@ export function update(options = {}) {
         cpSync(srcPath, destPath)
         console.log(`  + adicionado .claude/synapse/${entry}`)
         added++
+      }
+    }
+  }
+
+  // OMEGA checklists — sync quality gate checklist files
+  const omegaChecklistsSrc = resolve(TEMPLATES_DIR, 'omega', 'checklists')
+  const omegaChecklistsDest = resolve(cwd, '.claude', 'omega', 'checklists')
+  if (existsSync(omegaChecklistsSrc)) {
+    if (!existsSync(omegaChecklistsDest)) mkdirSync(omegaChecklistsDest, { recursive: true })
+    const entries = readdirSync(omegaChecklistsSrc)
+    for (const entry of entries) {
+      if (entry.endsWith('.md')) {
+        const srcPath = resolve(omegaChecklistsSrc, entry)
+        const destPath = resolve(omegaChecklistsDest, entry)
+        if (!existsSync(destPath)) {
+          cpSync(srcPath, destPath)
+          console.log(`  + adicionado .claude/omega/checklists/${entry}`)
+          added++
+        } else {
+          const current = readFileSync(destPath, 'utf-8')
+          const next = readFileSync(srcPath, 'utf-8')
+          if (current !== next) {
+            cpSync(srcPath, destPath)
+            console.log(`  ~ atualizado .claude/omega/checklists/${entry}`)
+            updated++
+          }
+        }
       }
     }
   }

@@ -6,6 +6,7 @@ Atualize um mind clone existente com novo material usando merge incremental e ro
 **Nivel:** Intermediario
 **Prerequisito:** Clone deve existir (criado via /DUARTEOS:mmos:mind-clone)
 **DNA:** 6 Camadas Cognitivas (merge aditivo, nunca destrutivo)
+**OMEGA:** Cada step roda sob o protocolo OMEGA — loop de refinamento ate threshold ou escalacao (ver `.claude/protocols/OMEGA.md`)
 
 ## Argumentos
 
@@ -43,7 +44,7 @@ Exemplos rapidos:
 | **Fonte** | WebSearch + WebFetch (pesquisa automatica) | Material fornecido (URL, arquivo, texto, inbox) |
 | **DNA** | Criado do zero | Merge incremental (adiciona, nunca remove) |
 | **Agente .md** | Gerado do zero | Editado cirurgicamente (so secoes impactadas) |
-| **Protecao** | Validacao de fidelidade (score >= 90%) | Rollback automatico se fidelidade cair > 5% |
+| **Protecao** | Validacao de fidelidade (score >= 95%) | Rollback automatico se fidelidade cair > 5% |
 | **Prerequisito** | Nenhum | Clone deve existir |
 | **Quando usar** | Expert novo, sem clone no sistema | Novo podcast, artigo, livro, entrevista do expert |
 
@@ -491,6 +492,26 @@ Mesmas regras do DuarteOS (referencia completa em `/DUARTEOS:squad:clone-mind`):
    | `fidelidade_depois < fidelidade_antes - 5` | ROLLBACK AUTOMATICO | "Update causou queda de fidelidade de {antes}% para {depois}%. Rollback automatico executado." |
 
    **Nota:** Se `fidelidade_antes` nao estiver disponivel (primeiro update), considerar como 75% baseline.
+
+   **Notificacao ao usuario quando fidelidade abaixo de 95%:**
+
+   Se `fidelidade_depois < 95`, DEVE notificar:
+
+   ```
+   FIDELIDADE ABAIXO DO THRESHOLD
+
+   Clone: {Nome do Especialista}
+   Fidelidade antes: {fidelidade_antes}%
+   Fidelidade depois: {fidelidade_depois}%
+   Threshold minimo: 95%
+
+   Opcoes:
+   1. Aceitar update (fidelidade abaixo do threshold)
+   2. Rollback (reverter ao estado anterior)
+   3. Fornecer mais fontes para enriquecer
+
+   Qual opcao voce prefere? (1/2/3)
+   ```
 
 6. **Em caso de ROLLBACK:**
    - Restaurar backup: copiar `data/minds/{slug}_backup_{timestamp}.yaml` de volta para `.claude/synapse/minds/{slug}.yaml`

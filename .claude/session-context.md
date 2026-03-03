@@ -4,12 +4,12 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Estado Atual
 
-- **Versao:** 5.5.0
+- **Versao:** 5.7.0
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.5.0 — Inbox/Caixa system, source traceability, entity canonicalization (2026-03-01)
-- **Proximo passo:** —
+- **Ultima operacao:** v5.7.0 — OMEGA Engine + MMOS Pipeline + threshold 95% + squad scaffold (2026-03-02)
+- **Proximo passo:** Git commit v5.7.0 + push pendente (3 commits: v5.6.0, gitignore, v5.7.0)
 - **Bloqueios:** Nenhum
 
 ## Artefatos Ativos
@@ -21,6 +21,13 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Decisoes Recentes
 
+- [2026-03-02] v5.7.0: OMEGA Engine — protocolo de qualidade continua (loop 3x, circuit breaker, dual-gate exit, escalation router)
+- [2026-03-02] v5.7.0: MMOS Pipeline — documento de referencia completo para criacao de clones mentais (7 fases, squads)
+- [2026-03-02] v5.7.0: Threshold mind clone elevado de 94% para 95% com notificacao interativa ao usuario
+- [2026-03-02] v5.7.0: Squad directory scaffold — 21+ dirs criados por mind-clone na Fase 1
+- [2026-03-02] v5.7.0: 6 checklists OMEGA (research, planning, implementation, validation, mind-clone, mind-update)
+- [2026-03-02] v5.7.0: direnv configurado para auto-load de .env.local
+- [2026-03-02] v5.6.0: MMOS Pipeline DNA 6 camadas, APEX/ICP scoring, Apify MCP
 - [2026-03-01] v5.5.0: Inbox/Caixa (/DUARTEOS:squad:ingest), rastreabilidade source_path no Synapse, canonicalizacao de entidades no clone-mind
 - [2026-03-01] v5.4.0: 5 recomendacoes do Conselho de IA aplicadas (handoff, violacao, retrospectiva, loop 2 niveis, escalacao)
 - [2026-03-01] v5.4.0: 8 Conselhos de Especialistas criados (IA, Marketing, Copywriting, UX, Tech, Business, Content, Product)
@@ -254,4 +261,46 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-02 16:28 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 16:39 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 16:59 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 17:18 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 17:31 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 17:47 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 18:18 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 18:32 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 20:08 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 20:20 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 20:48 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 21:16 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 21:17 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 21:18 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 21:24 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

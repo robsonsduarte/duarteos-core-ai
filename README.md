@@ -2,7 +2,7 @@
 
 AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claude Code num time de 13 agentes com **identidade propria (personas)**, memoria persistente, governanca formal e capacidade de criar squads customizados.
 
-**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com MMOS Pipeline (DNA 6 Camadas + APEX/ICP + Paradoxos Produtivos), 59 mind clones, 10 conselhos de especialistas, Inbox/Caixa (ingestao local), PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
+**Em uma frase:** voce descreve o que quer, os agentes constroem tudo — banco de dados, login, API, telas, design. Agora com OMEGA Engine (qualidade continua + Circuit Breaker + Dual-Gate Exit), MMOS Pipeline (DNA 6 Camadas + APEX/ICP + Paradoxos Produtivos), 59 mind clones, 10 conselhos de especialistas, Inbox/Caixa (ingestao local), PM Pure Orchestrator, Desenvolvimento 100% Incremental, YOLO Mode, Constitution, 4-Layer Config, Task Templates, Synapse State Machine, 9 Quality Gates e Multi-IDE Sync.
 
 ---
 
@@ -21,6 +21,13 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.7.0](#novidades-v570)
+  - [OMEGA Engine](#omega-engine--qualidade-continua)
+  - [MMOS Pipeline Reference](#mmos-pipeline--documento-de-referencia)
+  - [Mind Clone Threshold 95%](#mind-clone-threshold-95)
+  - [Checklists OMEGA](#checklists-omega)
+- [Novidades v5.6.0](#novidades-v560)
+  - [MMOS Pipeline — Clonagem Cognitiva Avancada](#mmos-pipeline--clonagem-cognitiva-avancada)
 - [Novidades v5.5.0](#novidades-v550)
   - [Inbox/Caixa — Ingestao Local de Conteudo](#inboxcaixa--ingestao-local-de-conteudo)
   - [Rastreabilidade de Fonte](#rastreabilidade-de-fonte)
@@ -762,6 +769,47 @@ features mais usadas e taxa de churn.
 docker-compose com app + postgres + redis, configura health
 checks e cria script de deploy pro servidor.
 ```
+
+---
+
+## Novidades v5.7.0
+
+### OMEGA Engine — Qualidade Continua
+
+Motor de qualidade continua que roda em **TODA task** de **QUALQUER agente**. Nao e um agente separado — e um protocolo que envolve toda execucao.
+
+- **Loop de refinamento** ate threshold (3 iteracoes max)
+- **Circuit Breaker** com 3 estados: CLOSED → HALF_OPEN (2 no-progress) → OPEN (3 no-progress)
+- **Dual-Gate Exit**: score >= threshold + 2 completion signals + exit_signal=true
+- **Escalation Router**: mesmo agente → vertical → horizontal → humano
+- **Quality Gates por tipo**: Research >= 80, Planning >= 85, Implementation >= 90, Validation >= 95, Mind Clone >= 95
+- **Agent Signature**: bloco OMEGA_STATUS obrigatorio em toda resposta de execucao
+- **Model Routing por complexidade**: Haiku (1-4), Sonnet (5-6), Opus (7-10)
+
+### MMOS Pipeline — Documento de Referencia
+
+Documento de referencia completo (~350 linhas) para criacao de clones mentais com pipeline de 7 fases. Baseado no pipeline de Alan Nicolas (engenharia reversa).
+
+- **Squad directory scaffold**: 21+ diretorios criados automaticamente por mind-clone na Fase 1
+- **config.yaml manifesto**: status, componentes, metricas por clone
+- Referencia completa em `.claude/commands/DUARTEOS/mmos/MMOS-PIPELINE.md`
+
+### Mind Clone Threshold 95%
+
+Fidelidade-alvo elevada de 90% para **>= 95%** com notificacao interativa ao usuario quando abaixo do threshold.
+
+### Checklists OMEGA
+
+6 checklists especializados em `.claude/omega/checklists/`:
+
+| Checklist | Threshold | Uso |
+|-----------|-----------|-----|
+| `research.md` | >= 80 | Pesquisa e analise |
+| `planning.md` | >= 85 | Planejamento e arquitetura |
+| `implementation.md` | >= 90 | Codigo e implementacao |
+| `validation.md` | >= 95 | Testes e QA |
+| `mind-clone.md` | >= 95 | Criacao de mind clones |
+| `mind-update.md` | >= 95 | Update incremental de clones |
 
 ---
 

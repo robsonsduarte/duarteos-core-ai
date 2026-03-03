@@ -119,6 +119,9 @@ export function init(projectName, options = {}) {
     'inbox/processed',
     // v5.6.0 — MMOS Pipeline
     '.claude/commands/DUARTEOS/mmos',
+    // v5.7.0 — OMEGA Quality Enforcement Loop
+    '.claude/omega',
+    '.claude/omega/checklists',
   ]
 
   for (const dir of dirs) {
@@ -274,6 +277,14 @@ export function init(projectName, options = {}) {
     // v5.5.0 — Inbox/Caixa
     ['inbox/README.md', 'inbox/README.md'],
 
+    // v5.7.0 — OMEGA Quality Enforcement Loop
+    ['omega/config.yaml', '.claude/omega/config.yaml'],
+    ['omega/state.json', '.claude/omega/state.json'],
+
+    // v5.7.0 — Protocols (OMEGA + MMOS-PIPELINE)
+    ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
+    ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
+
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
     ['commands/DUARTEOS/squad/synapse.md', '.claude/commands/DUARTEOS/squad/synapse.md'],
@@ -422,6 +433,25 @@ export function init(projectName, options = {}) {
     console.log(`  + synapse/ agent state files sincronizados (${stateFiles.length} agentes)`)
   }
 
+  // OMEGA checklists — copy all checklist markdown files
+  const omegaChecklistsSrc = resolve(TEMPLATES_DIR, 'omega', 'checklists')
+  const omegaChecklistsDest = resolve(cwd, '.claude', 'omega', 'checklists')
+  if (existsSync(omegaChecklistsSrc)) {
+    if (!existsSync(omegaChecklistsDest)) mkdirSync(omegaChecklistsDest, { recursive: true })
+    const entries = readdirSync(omegaChecklistsSrc)
+    for (const entry of entries) {
+      if (entry.endsWith('.md')) {
+        const srcPath = resolve(omegaChecklistsSrc, entry)
+        const destPath = resolve(omegaChecklistsDest, entry)
+        if (!existsSync(destPath)) {
+          cpSync(srcPath, destPath)
+          installed++
+        }
+      }
+    }
+    console.log(`  + omega/checklists/ sincronizados`)
+  }
+
   // Ensure .gitignore has DuarteOS entries
   ensureGitignoreEntries(cwd)
 
@@ -492,13 +522,15 @@ export function init(projectName, options = {}) {
      Memory                — Grafo de conhecimento persistente
      Sequential Thinking   — Raciocinio estruturado
 
-  Protocols (.claude/protocols/) — 7 documentos formais:
+  Protocols (.claude/protocols/) — 9 documentos formais:
      CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
      GOVERNANCE.md           — Convencoes de nomenclatura e ciclo de vida
      CONFIG-PROTOCOL.md      — Sistema de configuracao em 4 camadas
      SYNAPSE.md              — Maquina de estados dos agentes
      QUALITY-GATES.md        — Pipeline de validacao (9 gates)
      IDE-SYNC.md             — Sincronizacao multi-IDE
+     OMEGA.md                — Quality enforcement loop engine
+     MMOS-PIPELINE.md        — Pipeline MMOS de clonagem cognitiva (7 fases)
 
   Config (.claude/config/) — 3 camadas:
      system.yaml             — Layer 0: defaults DuarteOS (read-only)
@@ -587,6 +619,16 @@ export function init(projectName, options = {}) {
   MMOS Pipeline — Clonagem Cognitiva Avancada:
      /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 7 fases: APEX/ICP + DNA 6 Camadas + Validacao 94%
      /DUARTEOS:mmos:mind-update [nome] [fonte] — Update incremental com rollback automatico
+
+  OMEGA — Quality Enforcement Loop (.claude/omega/):
+     config.yaml              — Configuracao: gates, thresholds, circuit breaker, escalation
+     state.json               — Estado runtime: circuit breaker, metricas, historico
+     checklists/              — Quality gate checklists por fase (6 arquivos)
+     Protocolo: .claude/protocols/OMEGA.md
+     Quality gates: Research >=80, Planning >=85, Implementation >=90, Validation >=95
+     Circuit breaker: CLOSED → OPEN → HALF-OPEN (3-state com auto-cooldown)
+     Escalation: same agent → vertical → horizontal → human
+     Agent signature traceability em todos os outputs
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 6 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos

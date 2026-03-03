@@ -6,7 +6,8 @@ Merge do melhor dos sistemas MMOS (Synkra AIOS) e DuarteOS.
 **Modo:** Pipeline sequencial — cada fase gera artefato antes de avancar
 **Nivel:** Avancado — requer WebSearch, WebFetch
 **DNA:** 6 Camadas Cognitivas (Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos)
-**Fidelidade-alvo:** >= 94% (15 prompts, paradoxos = 35% do score)
+**Fidelidade-alvo:** >= 95% (15 prompts, paradoxos = 35% do score)
+**OMEGA:** Cada fase roda sob o protocolo OMEGA — loop de refinamento ate threshold ou escalacao (ver `.claude/protocols/OMEGA.md`)
 
 ## Argumentos
 
@@ -246,11 +247,65 @@ Pipeline: MMOS Mind Clone
 
 1. Crie o diretorio `data/minds/` se nao existir
 
-2. Verifique se existe material no inbox (`inbox/{slug}/`):
+2. Crie a estrutura de squad MMOS para o clone (conforme `protocols/MMOS-PIPELINE.md`):
+
+   ```bash
+   mkdir -p squads/{slug}/{archive/agents,archive/prompts}
+   mkdir -p squads/{slug}/{artifacts/cognitive,artifacts/behavioral,artifacts/linguistic,artifacts/narrative}
+   mkdir -p squads/{slug}/{checklists,data/raw,data/processed/transcriptions,data/processed/normalized,data/processed/fragments,data/contents}
+   mkdir -p squads/{slug}/{drivers,frameworks,lib/hooks}
+   mkdir -p squads/{slug}/{logs,prompts/main,prompts/sub-agents,prompts/tasks}
+   mkdir -p squads/{slug}/{system-components,tasks,templates/communication}
+   mkdir -p squads/{slug}/{tests/results,voices,workflows}
+   mkdir -p squads/{slug}/{prd,todo}
+   ```
+
+   Crie o `squads/{slug}/config.yaml` inicial:
+
+   ```yaml
+   clone:
+     name: "{Nome do Especialista}"
+     version: "1.0.0"
+     pipeline_version: "1"
+     created_at: "{timestamp}"
+     score_apex: 0.0
+     status: "draft"
+     archetype: ""
+     complexity_level: ""
+     purpose:
+       primary: ""
+       icp_fit: ""
+       use_cases: []
+     sources:
+       primary_only: true
+       types: []
+       language: ""
+     agents:
+       main: "{slug}"
+       sub_agents: []
+     components:
+       cognitive_architecture: false
+       core_beliefs: false
+       behavioral_patterns: false
+       drivers: false
+       frameworks: false
+       communication_templates: false
+       voice: false
+       contradictions: false
+     qa:
+       minimum_score: 95
+       hooks_enabled: true
+       auto_test: true
+       logging: true
+   ```
+
+   Este scaffold sera populado incrementalmente pelas fases subsequentes.
+
+3. Verifique se existe material no inbox (`inbox/{slug}/`):
    - Se existir: incorporar todos os arquivos como fontes primarias (prioridade maxima)
    - Registrar cada arquivo do inbox com `source_path` para rastreabilidade
 
-3. Execute buscas sistematicas usando WebSearch e WebFetch em 4 categorias:
+4. Execute buscas sistematicas usando WebSearch e WebFetch em 4 categorias:
 
    **Categoria A: Obras e Publicacoes**
    - Buscar: "{nome} livro publicado", "{nome} book author"
@@ -276,17 +331,17 @@ Pipeline: MMOS Mind Clone
    - Buscar: "{nome} estilo comunicacao", "{nome} writing style"
    - Se encontrar perfis publicos: analisar tom, vocabulario, padroes
 
-4. **Target de fontes:**
+5. **Target de fontes:**
    - Ideal: 20-30 fontes de qualidade (URLs verificaveis)
    - Minimo absoluto: 10 fontes
    - Se encontrar MENOS de 10 fontes: avisar usuario, pedir material adicional
 
-5. **Requisitos de triangulacao por camada:**
+6. **Requisitos de triangulacao por camada:**
    - Camadas 1-4 (Filosofia, Frameworks, Heuristicas, Metodologias): >= 3 fontes independentes cada
    - Camadas 5-6 (Dilemas, Paradoxos): >= 5 fontes independentes cada
    - Registrar no artefato quantas fontes cobrem cada camada
 
-6. Compilar fontes em formato estruturado:
+7. Compilar fontes em formato estruturado:
 
 ```markdown
 # Fontes: {Nome do Especialista}
@@ -348,7 +403,7 @@ Qualidade estimada: {alta/media/baixa}
 - Fontes: {URLs}
 ```
 
-7. **Validacao da Fase 1:**
+8. **Validacao da Fase 1:**
    - MINIMO 10 fontes de qualidade (URLs verificaveis ou source_path do inbox)
    - Todas as 6 camadas com cobertura minima atendida
    - Se alguma camada esta INSUFICIENTE:
@@ -357,7 +412,7 @@ Qualidade estimada: {alta/media/baixa}
      - Se usuario fornecer: incorporar e revalidar
      - Se nao fornecer: documentar limitacao e prosseguir com ressalva
 
-8. Salvar em `data/minds/{slug}_sources.md`
+9. Salvar em `data/minds/{slug}_sources.md`
 
 **NAO avance para Fase 2 sem o artefato salvo e validado.**
 
@@ -1182,10 +1237,37 @@ Os pesos refletem a importancia relativa:
 
 | Score | Status | Acao |
 |-------|--------|------|
-| >= 94% | **APROVADO** | Producao ready — agente pronto para uso |
-| 85-93% | **PARCIAL** | Iterar Fase 4 — ajustar prompt (max 3 iteracoes) |
+| >= 95% | **APROVADO** | Producao ready — agente pronto para uso |
+| 85-94% | **PARCIAL** | Iterar Fase 4 — ajustar prompt (max 3 iteracoes) |
 | 70-84% | **FRACO** | Voltar Fase 2 — coletar mais fontes, reextrair |
 | < 70% | **REPROVADO** | Abortar — fontes insuficientes para clone fiel |
+
+#### Notificacao ao Usuario
+
+Se a fidelidade ficar **abaixo de 95%**, o sistema DEVE notificar o usuario com:
+
+```
+FIDELIDADE ABAIXO DO THRESHOLD
+
+Clone: {Nome do Especialista}
+Score obtido: {score}%
+Threshold minimo: 95%
+Gap: {95 - score}%
+
+Camadas mais fracas:
+1. {camada} — {score_camada}% (peso: {peso}%)
+2. {camada} — {score_camada}% (peso: {peso}%)
+
+Opcoes:
+1. Iterar (ajustar prompt e re-validar) — recomendado se gap < 10%
+2. Fornecer mais fontes (voltar a Fase 1) — recomendado se gap >= 10%
+3. Aceitar com ressalvas (usar clone abaixo do threshold)
+4. Abortar pipeline
+
+Qual opcao voce prefere? (1/2/3/4)
+```
+
+O usuario DEVE ser consultado antes de qualquer iteracao ou abandono.
 
 #### Procedimento
 
@@ -1292,7 +1374,7 @@ Iteracao: {1/2/3}
 
 ## Gaps Identificados
 
-{Se score < 94%:}
+{Se score < 95%:}
 1. **{gap}:** {o que esta faltando, como corrigir, qual secao do prompt ajustar}
 2. ...
 
@@ -1307,7 +1389,7 @@ Iteracao: {1/2/3}
 7. Salvar em `data/minds/{slug}_validation.md`
 
 8. **Iteracao se necessario:**
-   - Se PARCIAL (85-93%) e iteracao < 3: ajustar Fase 4, rodar Fase 5 novamente
+   - Se PARCIAL (85-94%) e iteracao < 3: ajustar Fase 4, rodar Fase 5 novamente
    - Se FRACO (70-84%): voltar a Fase 2, coletar mais fontes focando nas camadas deficientes
    - Se REPROVADO (< 70%): abortar pipeline com explicacao
 
@@ -1320,6 +1402,7 @@ Iteracao: {1/2/3}
 | Fase | Artefato | Caminho |
 |------|----------|---------|
 | 0 - Viabilidade | Avaliacao APEX/ICP | `data/minds/{slug}_viability.md` |
+| 1 - Research | Squad scaffold | `squads/{slug}/` (21+ dirs + config.yaml) |
 | 1 - Research | Fontes coletadas (20-30) | `data/minds/{slug}_sources.md` |
 | 2 - Analysis | Extracao 6 camadas + extras | `data/minds/{slug}_analysis.md` |
 | 3 - Synthesis | DNA YAML 6 camadas | `data/minds/{slug}_dna.yaml` |
@@ -1335,7 +1418,7 @@ Iteracao: {1/2/3}
 4. **Cada fase gera artefato ANTES de avancar** — sem excecao, sem pular fases.
 5. **Paradoxos sao obrigatorios** — minimo 2, ideal 4-6. Cada um com >= 3 exemplos de fontes independentes.
 6. **Triangulacao e lei** — Camadas 1-4: >= 3 fontes cada. Camadas 5-6: >= 5 fontes cada.
-7. **Score < 94% -> iterar** — Fase 4 (max 3 iteracoes) ou Fase 2 (mais fontes).
+7. **Score < 95% -> iterar** — Fase 4 (max 3 iteracoes) ou Fase 2 (mais fontes).
 8. **Paradoxos pesam 35%** — sao o diferencial do MMOS. Investir tempo neles.
 9. **Prompt ~10k palavras** — extenso o suficiente para capturar nuance, nao tao longo que perca foco.
 10. **Preservar contradicoes REAIS** — paradoxos nao sao bugs, sao features. Nao suavizar.
@@ -1372,4 +1455,4 @@ Iteracao: {1/2/3}
 | Prompt final | ~3k palavras | ~10k palavras |
 | Tempo estimado | 15-30 min | 45-90 min |
 | Ideal para | Clones rapidos, experts bem conhecidos | Clones de alta fidelidade, experts complexos |
-| Fidelidade-alvo | >= 90% | >= 94% |
+| Fidelidade-alvo | >= 90% | >= 95% |
