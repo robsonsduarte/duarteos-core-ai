@@ -230,6 +230,15 @@ stats:
     C_contradiction: null         # Contradiction Handling (0-100)
     K_knowledge: null             # Knowledge/Framework Application (0-100)
     V_voice: null                 # Voice Authenticity (0-100)
+  fidelity_estimated: null       # PCFE score (0-100), preenchido na Fase 3 do pipeline v3
+  pcfe_breakdown:
+    volume_score: null
+    diversity_score: null
+    coverage_score: null
+    depth_score: null
+    quality_score: null
+  pcfe_classification: null      # EXCELENTE|BOM|MODERADO|FRACO|INSUFICIENTE
+  pcfe_timestamp: null
   apex_score: null
   icp_score: null
   blind_test_passed: null         # true/false — Fase 5 Kahneman

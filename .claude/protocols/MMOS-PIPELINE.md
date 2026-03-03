@@ -1,87 +1,120 @@
-# MMOS ENGINE v2.1 — Pipeline de Clonagem Mental de Alta Fidelidade
+# MMOS ENGINE v3.0.0 — Pipeline de Clonagem Mental de Alta Fidelidade
 
-**Versao:** 2.1.0
+**Versao:** 3.0.0
 **Status:** Ativo
 **Autor:** NEXUS (Architect)
 **Data:** 2026-03-03
-**Substitui:** MMOS Pipeline v1 (7 fases, sem autoridades, sem formula de fidelidade)
+**Substitui:** MMOS Engine v2.1 (7 fases 0-6, sem estimativa pre-clone, sem gate humano)
 **Dependencias:** OMEGA.md (Secao 20-21), SYNAPSE.md (Secao 4)
 
 ---
 
 ## Definicao
 
-MMOS Engine v2 e o **motor de extracao e clonagem de mentes** do DuarteOS, com fidelidade-alvo >= 95%.
+MMOS Engine v3 e o **motor de extracao e clonagem de mentes** do DuarteOS, com fidelidade-alvo >= 95%.
 
-- **Pipeline unico** para mind-create (do zero) e mind-update (incremental)
-- **6 fases** reais (Coleta, Extracao, Inferencia, Mapeamento, Perfil, Recomendacao)
+- **Pipeline de 11 fases** (0-10): Intake, Pesquisa, Analise Rapida, Estimativa PCFE, Gate Humano, Scaffold, Extracao, Inferencia, Mapeamento, Perfil, Recomendacao
+- **Estimativa de fidelidade PRE-CLONE** (PCFE) — evita gastar tokens em clones inviaveis
+- **Gate humano** — usuario decide GO/ENRIQUECER/ABORTAR antes do pipeline pesado
+- **Scaffold pos-aprovacao** — cria infraestrutura antes do pipeline pesado
 - **15 entidades de dados** distribuidas pelas fases
 - **5 autoridades** integradas em cada fase (Allen, Forte, Deming, Kahneman, Gawande)
 - Roda **DENTRO do OMEGA v2** (cada fase = task OMEGA com loop de refinamento)
 - Alimenta **Synapse v3** (DNA + indices)
 
 ```
-MMOS v2 = 6 Fases x 15 Entidades x 5 Autoridades x OMEGA Loop x Synapse DNA
+MMOS v3 = 11 Fases (0-10) x 15 Entidades x 5 Autoridades x PCFE x Gate Humano x OMEGA Loop x Synapse DNA
 ```
 
 ---
 
 ## 1. Visao Geral do Pipeline
 
-### 1.1 As 6 Fases
+### 1.1 As 11 Fases (0-10)
 
 ```
-+========================================================================+
-|                    MMOS ENGINE v2 — 6 FASES                            |
-+========================================================================+
++==========================================================================+
+|                    MMOS ENGINE v3 — 11 FASES (0-10)                      |
++==========================================================================+
 
 FASE 0 (Pre-Pipeline)
-  APEX/ICP Gate ── viabilidade antes de gastar tokens
+  INTAKE: Canonicalizacao + Dedup + Verificar clone existente
        |
        v
-FASE 1: COLETA ─────────────────────────────────────────── [contents]
-  ETL Pipeline: Podcasts, Artigos, Tweets, Entrevistas,
-  Livros, Blog posts, Twitter threads, News sites
+FASE 1: PESQUISA ──────────────────────────── [catalogo_fontes]
+  WebSearch + WebFetch + Material fornecido
+  Catalogo de fontes com metadados
        |
    Gate Gawande 1->2 (DO-CONFIRM)
        |
        v
-FASE 2: EXTRACAO ────────────────────────────── [mius, fragments]
+FASE 2: ANALISE RAPIDA ────────────────────── [mius_sample]
+  Extracao de MIUs sample (20-50 MIUs)
+  Classificacao por camada DNA
+  Metricas de cobertura
+       |
+       v
+FASE 3: ESTIMATIVA PCFE ──────────────────── [fe_report]
+  Pre-Clone Fidelity Estimation
+  FE = VS*0.20 + DS*0.15 + CS*0.30 + PS*0.20 + QS*0.15
+  Gap report por camada DNA
+       |
+       v
+FASE 4: GATE DE APROVACAO HUMANA ─────────── [decisao]
+  Apresenta FE + breakdown + gaps + recomendacao
+  Opcoes: [1] APROVAR  [2] ENRIQUECER  [3] ABORTAR
+  Se [2]: loop volta para Fase 1 (max 3 loops)
+       |
+    [1] APROVADO
+       |
+       v
+FASE 5: SCAFFOLD ─────────────────────────── [infraestrutura]
+  Criar diretorios squad (21+ dirs)
+  config.yaml skeleton, DNA skeleton
+  TASKS + Checklists personalizados
+       |
+       v
+FASE 6: EXTRACAO ────────────────────────────── [mius, fragments]
   MIUs (Micro-Unidades Interpretativas Neurais)
   Progressive Summarization (Forte layers 1-3)
   Validacao: MIUs OK vs Rejeitados
+  Estilometria computacional
        |
-   Gate Gawande 2->3 (DO-CONFIRM)
+   Gate Gawande 6->7 (DO-CONFIRM)
        |
        v
-FASE 3: INFERENCIA ──────── [mind_drivers, miu_driver_evidence,
+FASE 7: INFERENCIA ──────── [mind_drivers, miu_driver_evidence,
   Motor de Inferencia              driver_relationships, drivers]
   MIUs -> Drivers/Motivadores
   Evidencias MIU<->Driver
   Correlacoes, Tiers (gold/silver/bronze)
   3 agentes independentes (concordancia >= 0.85)
+  DNA 6 camadas + hierarquia valores + modelo social + associacoes
        |
-   Gate Gawande 3->4 (DO-CONFIRM)
+   Gate Gawande 7->8 (DO-CONFIRM)
        |
        v
-FASE 4: MAPEAMENTO ──────── [mapping_systems, system_components,
+FASE 8: MAPEAMENTO ──────── [mapping_systems, system_components,
   Big Five, MBTI, Eneagrama      component_driver_map,
   Catalogo 1000+ artefatos       mind_component_scores,
   Scores por componente           mind_system_mappings]
        |
-   Gate Gawande 4->5 (DO-CONFIRM)
+   Gate Gawande 8->9 (DO-CONFIRM)
        |
        v
-FASE 5: PERFIL ───────────────────────────── [minds, mind_tools]
+FASE 9: PERFIL ───────────────────────────── [minds, mind_tools]
   Perfil Agregado — a mente NASCE
   Formula de fidelidade calculada
   Blind test + Noise audit + Pre-mortem
+  Comparar FE (Fase 3) vs F real (calibracao)
        |
-   Gate Gawande 5->6 (DO-CONFIRM)
+   Gate Gawande 9->10 (DO-CONFIRM)
        |
        v
-FASE 6: RECOMENDACAO ──────── [tools, tool_driver_affinities,
-  Match Engine                       tool_relations]
+FASE 10: RECOMENDACAO ──────── [tools, tool_driver_affinities,
+  Match Engine                        tool_relations]
+  Agente .md operacional
+  Squad artifacts (9 tipos)
   Ferramentas recomendadas
   Development Gaps identificados
        |
@@ -93,32 +126,32 @@ FASE 6: RECOMENDACAO ──────── [tools, tool_driver_affinities,
 
 | # | Entidade | Fase | Tipo | Descricao |
 |---|----------|------|------|-----------|
-| 1 | `contents` | 1-Coleta | storage | Conteudos brutos coletados |
-| 2 | `mius` | 2-Extracao | hot_compute | Micro-Unidades Interpretativas Neurais |
-| 3 | `fragments` | 2-Extracao | storage | Fragmentos processados e indexados |
-| 4 | `drivers` | 3-Inferencia | entity | Catalogo mestre de drivers/motivadores |
-| 5 | `mind_drivers` | 3-Inferencia | hot_compute | Drivers atribuidos a uma mente |
-| 6 | `miu_driver_evidence` | 3-Inferencia | evidence | Evidencias MIU<->Driver |
-| 7 | `driver_relationships` | 3-Inferencia | relational | Correlacoes entre drivers |
-| 8 | `mapping_systems` | 4-Mapeamento | catalog | Sistemas disponiveis (Big Five, MBTI, etc.) |
-| 9 | `system_components` | 4-Mapeamento | storage | Componentes de cada sistema |
-| 10 | `component_driver_map` | 4-Mapeamento | relational | Mapa componente<->driver |
-| 11 | `mind_component_scores` | 4-Mapeamento | hot_compute | Scores da mente por componente |
-| 12 | `mind_system_mappings` | 4-Mapeamento | storage | Perfis completos por sistema |
-| 13 | `minds` | 5-Perfil | entity | A mente finalizada |
-| 14 | `mind_tools` | 5-Perfil | relational | Ferramentas cognitivas da mente |
-| 15 | `tools` | 6-Recomendacao | catalog | Catalogo de 1000+ artefatos cognitivos |
-| — | `tool_driver_affinities` | 6-Recomendacao | hot_compute | Afinidade ferramenta<->driver |
-| — | `tool_relations` | 6-Recomendacao | relational | Relacoes entre ferramentas |
+| 1 | `contents` | 6-Extracao | storage | Conteudos brutos coletados |
+| 2 | `mius` | 6-Extracao | hot_compute | Micro-Unidades Interpretativas Neurais |
+| 3 | `fragments` | 6-Extracao | storage | Fragmentos processados e indexados |
+| 4 | `drivers` | 7-Inferencia | entity | Catalogo mestre de drivers/motivadores |
+| 5 | `mind_drivers` | 7-Inferencia | hot_compute | Drivers atribuidos a uma mente |
+| 6 | `miu_driver_evidence` | 7-Inferencia | evidence | Evidencias MIU<->Driver |
+| 7 | `driver_relationships` | 7-Inferencia | relational | Correlacoes entre drivers |
+| 8 | `mapping_systems` | 8-Mapeamento | catalog | Sistemas disponiveis (Big Five, MBTI, etc.) |
+| 9 | `system_components` | 8-Mapeamento | storage | Componentes de cada sistema |
+| 10 | `component_driver_map` | 8-Mapeamento | relational | Mapa componente<->driver |
+| 11 | `mind_component_scores` | 8-Mapeamento | hot_compute | Scores da mente por componente |
+| 12 | `mind_system_mappings` | 8-Mapeamento | storage | Perfis completos por sistema |
+| 13 | `minds` | 9-Perfil | entity | A mente finalizada |
+| 14 | `mind_tools` | 9-Perfil | relational | Ferramentas cognitivas da mente |
+| 15 | `tools` | 10-Recomendacao | catalog | Catalogo de 1000+ artefatos cognitivos |
+| — | `tool_driver_affinities` | 10-Recomendacao | hot_compute | Afinidade ferramenta<->driver |
+| — | `tool_relations` | 10-Recomendacao | relational | Relacoes entre ferramentas |
 
-> **Nota:** O spec original lista 15 entidades numeradas mais 2 auxiliares da Fase 6 (tool_driver_affinities e tool_relations), totalizando 17 tabelas no schema completo.
+> **Nota:** O spec original lista 15 entidades numeradas mais 2 auxiliares da Fase 10 (tool_driver_affinities e tool_relations), totalizando 17 tabelas no schema completo.
 
 ### 1.3 Mind-Create vs Mind-Update
 
 | Aspecto | Mind-Create | Mind-Update |
 |---------|------------|-------------|
-| **Ponto de entrada** | Fase 0 (APEX/ICP gate) | Fase adequada ao novo material |
-| **Pipeline** | Completo: Fase 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 | Parcial: entra na fase certa |
+| **Ponto de entrada** | Fase 0 (Intake + canonicalizacao) | Fase adequada ao novo material |
+| **Pipeline** | Completo: Fase 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 | Parcial: entra na fase certa |
 | **Fonte de dados** | WebSearch + WebFetch (pesquisa automatica) | Material fornecido (URL, arquivo, texto, inbox) |
 | **DNA** | Criado do zero | Merge incremental (adiciona, nunca remove) |
 | **Agente .md** | Gerado do zero | Editado cirurgicamente |
@@ -132,7 +165,7 @@ FASE 6: RECOMENDACAO ──────── [tools, tool_driver_affinities,
 
 ## 2. As 5 Autoridades
 
-O MMOS v2 integra 5 autoridades intelectuais cujos principios operam em CADA fase do pipeline. Cada autoridade resolve um problema diferente.
+O MMOS v3 integra 5 autoridades intelectuais cujos principios operam em CADA fase do pipeline. Cada autoridade resolve um problema diferente.
 
 ### 2.1 Allen (GTD) — Workflow
 
@@ -148,12 +181,13 @@ O MMOS v2 integra 5 autoridades intelectuais cujos principios operam em CADA fas
 
 | Fase | Aplicacao Allen |
 |------|----------------|
-| 1-Coleta | Captura exaustiva agnostica. Cada fonte = inbox. |
-| 2-Extracao | Clarificacao: MIU tem significado autonomo? SIM -> valida, NAO -> rejeitada |
-| 3-Inferencia | Classificacao: driver confirmado (>= 2 MIUs) ou incubado (1 MIU) |
-| 4-Mapeamento | — (nao aplica diretamente) |
-| 5-Perfil | — (nao aplica diretamente) |
-| 6-Recomendacao | — (nao aplica diretamente) |
+| 1-Pesquisa | Captura exaustiva agnostica. Cada fonte = inbox. |
+| 2-Analise Rapida | Clarificacao: MIU sample tem significado autonomo? |
+| 6-Extracao | Clarificacao: MIU tem significado autonomo? SIM -> valida, NAO -> rejeitada |
+| 7-Inferencia | Classificacao: driver confirmado (>= 2 MIUs) ou incubado (1 MIU) |
+| 8-Mapeamento | — (nao aplica diretamente) |
+| 9-Perfil | — (nao aplica diretamente) |
+| 10-Recomendacao | — (nao aplica diretamente) |
 
 ### 2.2 Forte (CODE) — Memoria
 
@@ -162,18 +196,19 @@ O MMOS v2 integra 5 autoridades intelectuais cujos principios operam em CADA fas
 | **Capture** | Layer 1: texto bruto integral em `data/raw/` |
 | **Organize** | Layer 2: MIUs extraidas — trechos relevantes |
 | **Distill** | Layer 3: essencia destilada de cada MIU |
-| **Express** | Layer 4: insight acionavel — a mente NASCE na Fase 5 |
+| **Express** | Layer 4: insight acionavel — a mente NASCE na Fase 9 |
 
 **Papel por fase:**
 
 | Fase | Layer Forte | Descricao |
 |------|-------------|-----------|
-| 1-Coleta | Layer 1 (Capture) | Material bruto preservado intacto |
-| 2-Extracao | Layer 2-3 (Organize + Distill) | MIUs + essencias destiladas |
-| 3-Inferencia | Layer 4 (Distill -> Actionable) | Drivers geram regras operacionais |
-| 4-Mapeamento | Destilacao | Milhares de MIUs -> dezenas de scores |
-| 5-Perfil | Express | Conhecimento destilado vira entidade acionavel |
-| 6-Recomendacao | PARA mapping | Areas, Recursos, Projetos, Arquivos |
+| 1-Pesquisa | Layer 1 (Capture) | Material bruto coletado intacto |
+| 2-Analise Rapida | Layer 1-2 (Sample) | Amostra para estimativa |
+| 6-Extracao | Layer 2-3 (Organize + Distill) | MIUs + essencias destiladas |
+| 7-Inferencia | Layer 4 (Distill -> Actionable) | Drivers geram regras operacionais |
+| 8-Mapeamento | Destilacao | Milhares de MIUs -> dezenas de scores |
+| 9-Perfil | Express | Conhecimento destilado vira entidade acionavel |
+| 10-Recomendacao | PARA mapping | Areas, Recursos, Projetos, Arquivos |
 
 **Intermediate Packets:** Cada MIU validada e um Intermediate Packet reutilizavel. MIUs alimentam multiplos drivers, frameworks e componentes.
 
@@ -205,12 +240,14 @@ Feedback/Escalate        ACT
 
 | Fase | Hipotese Deming | Metrica |
 |------|----------------|---------|
-| 1-Coleta | Fontes cobrem >= 90% do corpus | coverage_score >= 90% |
-| 2-Extracao | Fragmentos representam micro-unidades semanticas reais | fragmentation_quality >= 95% |
-| 3-Inferencia | Drivers predizem >= 90% dos comportamentos | predictive_accuracy >= 90% |
-| 4-Mapeamento | Scores internamente consistentes | internal_consistency >= 95% |
-| 5-Perfil | Perfil representa a mente com fidelidade | fidelity_score >= 95% |
-| 6-Recomendacao | Recomendacoes sao relevantes e gaps sao reais | recommendation_relevance validada |
+| 1-Pesquisa | Fontes cobrem corpus da pessoa | catalogo completo |
+| 2-Analise Rapida | Amostra representativa do material | cobertura por camada DNA |
+| 3-Estimativa PCFE | Estimativa prediz fidelidade real | FE correlaciona com F |
+| 6-Extracao | Fragmentos representam micro-unidades semanticas reais | fragmentation_quality >= 95% |
+| 7-Inferencia | Drivers predizem >= 90% dos comportamentos | predictive_accuracy >= 90% |
+| 8-Mapeamento | Scores internamente consistentes | internal_consistency >= 95% |
+| 9-Perfil | Perfil representa a mente com fidelidade | fidelity_score >= 95% |
+| 10-Recomendacao | Recomendacoes sao relevantes e gaps sao reais | recommendation_relevance validada |
 
 ### 2.4 Kahneman — Anti-Vies
 
@@ -218,22 +255,24 @@ Protocolos anti-vies por fase:
 
 | Fase | Vies Combatido | Protocolo |
 |------|---------------|-----------|
-| 1-Coleta | Disponibilidade | NAO priorizar fontes mais acessiveis (ex: YouTube) sobre menos acessiveis (ex: livros) |
-| 1-Coleta | Ancoragem | NAO comecar pela fonte mais famosa da pessoa |
-| 1-Coleta | Confirmacao | Documentar pre-concepcoes do operador e isola-las |
-| 2-Extracao | Fragmentacao de julgamento | Agente de extracao NAO julga importancia — apenas corta |
-| 2-Extracao | Avaliacao independente | Agente de validacao e DIFERENTE do agente de extracao |
-| 2-Extracao | Saliencia | MIUs "boring" sao tao importantes quanto MIUs "dramatic" |
-| 3-Inferencia | Base rate | Antes de atribuir driver, verificar frequencia na populacao geral |
-| 3-Inferencia | Avaliacao independente | 3 agentes independentes executam inferencia. Concordancia >= 0.85 |
-| 3-Inferencia | Pre-mortem | "Se este driver estiver errado, o que acontece com o clone?" |
-| 4-Mapeamento | Halo effect | Score alto em um componente NAO influencia outros |
-| 4-Mapeamento | Fragmentacao | Cada componente calculado INDEPENDENTEMENTE |
-| 4-Mapeamento | Ancoragem | NAO comecar pelo sistema mais familiar do operador |
-| 5-Perfil | Blind test | Material NUNCA visto — o clone generaliza? |
-| 5-Perfil | Noise audit | Re-executar com mesmos inputs — reprodutibilidade >= 0.90 |
-| 5-Perfil | Pre-mortem final | "E 2027. Descobrimos que o clone e caricatura. O que deu errado?" |
-| 6-Recomendacao | Gap validation | Gap identificado e real ou artefato do mapeamento? |
+| 1-Pesquisa | Disponibilidade | NAO priorizar fontes mais acessiveis (ex: YouTube) sobre menos acessiveis (ex: livros) |
+| 1-Pesquisa | Ancoragem | NAO comecar pela fonte mais famosa da pessoa |
+| 1-Pesquisa | Confirmacao | Documentar pre-concepcoes do operador e isola-las |
+| 2-Analise Rapida | Representatividade | Amostra deve cobrir TODOS os tipos de fonte, nao so os mais acessiveis |
+| 3-Estimativa PCFE | Overconfidence | PCFE e estimativa, nao certeza — comunicar ranges, nao pontos |
+| 6-Extracao | Fragmentacao de julgamento | Agente de extracao NAO julga importancia — apenas corta |
+| 6-Extracao | Avaliacao independente | Agente de validacao e DIFERENTE do agente de extracao |
+| 6-Extracao | Saliencia | MIUs "boring" sao tao importantes quanto MIUs "dramatic" |
+| 7-Inferencia | Base rate | Antes de atribuir driver, verificar frequencia na populacao geral |
+| 7-Inferencia | Avaliacao independente | 3 agentes independentes executam inferencia. Concordancia >= 0.85 |
+| 7-Inferencia | Pre-mortem | "Se este driver estiver errado, o que acontece com o clone?" |
+| 8-Mapeamento | Halo effect | Score alto em um componente NAO influencia outros |
+| 8-Mapeamento | Fragmentacao | Cada componente calculado INDEPENDENTEMENTE |
+| 8-Mapeamento | Ancoragem | NAO comecar pelo sistema mais familiar do operador |
+| 9-Perfil | Blind test | Material NUNCA visto — o clone generaliza? |
+| 9-Perfil | Noise audit | Re-executar com mesmos inputs — reprodutibilidade >= 0.90 |
+| 9-Perfil | Pre-mortem final | "E 2027. Descobrimos que o clone e caricatura. O que deu errado?" |
+| 10-Recomendacao | Gap validation | Gap identificado e real ou artefato do mapeamento? |
 
 ### 2.5 Gawande — Gates (Checklists DO-CONFIRM)
 
@@ -243,11 +282,11 @@ Os gates Gawande operam ENTRE fases. Cada gate tem items criticos (kill_items, b
 
 | Gate | Posicao | Kill Items (bloqueantes) | Non-Critical (warnings) |
 |------|---------|--------------------------|------------------------|
-| 1->2 | Apos Coleta | Coverage >= 90%, Zero fontes secundarias | Min 4 tipos fonte, Material preservado, Span temporal |
-| 2->3 | Apos Extracao | Fragmentation quality >= 95%, Progressive Summarization completa (layers 1-3) | YAML valido, Rejeicao documentada, Assinatura agente |
-| 3->4 | Apos Inferencia | Predictive accuracy >= 90%, >= 2 evidencias/driver, 3 agentes concordam (>= 0.85) | False positive < 5%, Correlacoes documentadas, Tiers classificados |
-| 4->5 | Apos Mapeamento | Todos componentes tem score, Consistencia interna >= 95% | Crossref com catalogo, Mappings gerados |
-| 5->6 | Apos Perfil | Fidelity >= 95%, Blind test passou, Pre-mortem executado | mind_tools populado, config.yaml atualizado |
+| 1->2 | Apos Pesquisa | Zero fontes secundarias aceitas | Min 3 fontes encontradas, Material bruto preservado |
+| 6->7 | Apos Extracao | Fragmentation quality >= 95%, Progressive Summarization completa (layers 1-3) | YAML valido, Rejeicao documentada, Assinatura agente |
+| 7->8 | Apos Inferencia | Predictive accuracy >= 90%, >= 2 evidencias/driver, 3 agentes concordam (>= 0.85) | False positive < 5%, Correlacoes documentadas, Tiers classificados |
+| 8->9 | Apos Mapeamento | Todos componentes tem score, Consistencia interna >= 95% | Crossref com catalogo, Mappings gerados |
+| 9->10 | Apos Perfil | Fidelity >= 95%, Blind test passou, Pre-mortem executado | mind_tools populado, config.yaml atualizado, FE vs F comparado |
 
 **Regras de interacao Gates Gawande <-> OMEGA:**
 
@@ -261,59 +300,90 @@ Para detalhes de mapeamento Gates <-> OMEGA, ver `OMEGA.md` Secao 21.
 
 ---
 
-## 3. Fase 1: COLETA
+## 3. Fase 0: INTAKE (Pre-Pipeline)
 
 ### Objetivo
 
-Captar todo material bruto da mente-alvo via ETL Pipeline. Somente fontes primarias (produzidas pela propria pessoa).
+Receber input, canonicalizar nome, verificar duplicidade de clone existente.
 
 ### Inputs
 
-Fontes aceitas: Podcasts, Artigos, Tweets, Entrevistas, Livros, Blog posts, Twitter threads, News sites.
+- Nome do especialista + dados opcionais (URLs, arquivos, texto)
 
-**Regra critica:** ZERO fontes secundarias/interpretativas. Usar APENAS material produzido pela propria pessoa ou, no caso historico, o documento fonte original.
+### Processo
 
-### Processo: ETL Pipeline
+1. Canonicalizar nome -> slug (lowercase, sem acentos, hifens)
+2. Verificar `synapse/minds/{slug}.yaml` — se existe, redirecionar para mind-update
+3. Determinar categoria (copy, marketing, ux-design, ai, tech, business, content, product, saude, juridico)
+4. Se categoria ambigua: perguntar ao usuario
+5. Registrar dados opcionais fornecidos pelo usuario (URLs, paths, textos)
 
-Cada tipo de fonte tem um analista especializado no Squad ETL:
+### Outputs
 
-| Analista ETL | Fonte | Output |
-|-------------|-------|--------|
-| Analista de YouTube | Videos, transcricoes | `data/raw/interviews/` |
-| Analista de Medium | Artigos | `data/raw/articles/` |
-| Analista de Livros | Livros autorais | `data/raw/books/` |
-| Analista de Blog | Posts em blogs | `data/raw/blog-posts/` |
-| Analista de Noticias | Sites de noticias | `data/raw/news-sites/` |
-| Analista de Twitter | Threads | `data/raw/twitter-threads/` |
-| Analista de Podcasts | Entrevistas audio | `data/raw/podcasts/` |
+- slug canonico, categoria, flag de clone existente
 
-### Output
+### Criterios de Saida
 
-- **Entidade DB:** `contents`
-- **Filesystem:** `data/raw/` populado com todos os materiais brutos categorizados
+- Slug definido, categoria definida, clone nao existe
 
-### Entidade: contents
+### OMEGA Integration
 
-```yaml
-contents:
-  description: "Conteudos brutos coletados de todas as fontes"
-  type: "storage"
-  fields:
-    - id
-    - mind_id
-    - source_type         # podcast, artigo, tweet, entrevista, livro, blog, thread
-    - source_url
-    - raw_content
-    - language
-    - collected_at
-    - collector_agent     # qual agente ETL coletou
-```
+| Campo | Valor |
+|-------|-------|
+| task_type | N/A |
+| threshold | N/A |
+| Nota | NAO e task OMEGA — pre-condicao de entrada |
+
+**Mudanca vs v2.1:** Identico a Fase 0 anterior, EXCETO que o APEX/ICP Gate foi removido daqui e incorporado nas Fases 1-3. A avaliacao de viabilidade agora e mais sofisticada (nao binaria).
+
+---
+
+## 4. Fase 1: PESQUISA
+
+### Objetivo
+
+Pesquisar e catalogar todo material disponivel sobre a pessoa. Somente fontes primarias (produzidas pela propria pessoa).
+
+### Inputs
+
+- slug, categoria, dados opcionais do usuario
+
+### Processo
+
+1. Se usuario forneceu dados/URLs: processar como fontes prioritarias
+2. WebSearch para fontes primarias:
+   - Livros autorais
+   - Videos/Podcasts longos (>30min)
+   - Entrevistas em profundidade
+   - Artigos/Blog posts autorais
+   - Tweets/Threads substanciais
+   - Palestras e apresentacoes
+3. WebFetch para extrair conteudo textual de cada fonte encontrada
+4. Catalogar cada fonte com metadados:
+   ```yaml
+   fonte:
+     tipo: "{livro|video|podcast|entrevista|artigo|tweet|palestra}"
+     titulo: "{titulo}"
+     url: "{URL}"
+     duracao_estimada: "{curta<15min|media15-60min|longa>60min}"
+     profundidade: "{superficial|media|profunda}"
+     primaria: true  # so fontes primarias entram
+     idioma: "{pt|en|es|...}"
+     data_publicacao: "{YYYY-MM-DD}"
+   ```
+5. Preservar material bruto intacto (Forte Layer 1)
+6. Classificar e rejeitar fontes secundarias com log
+
+### Outputs
+
+- Catalogo de fontes com metadados
+- Material bruto coletado
 
 ### Aplicacao das 5 Autoridades
 
-- **Allen:** Captura exaustiva agnostica. Cada fonte e uma inbox. Clarificacao: fonte primaria? Completo? Idioma correto?
+- **Allen:** Captura exaustiva agnostica. Cada fonte e uma inbox.
 - **Forte:** Layer 1 (Captured Notes) — tudo entra sem edicao. NUNCA editar material bruto.
-- **Deming:** Hipotese: fontes cobrem >= 90%. Metricas: coverage, diversity >= 4 tipos, temporal_span >= 50%.
+- **Deming:** Hipotese: fontes cobrem corpus da pessoa. Metrica: catalogo completo.
 - **Kahneman:** Anti-disponibilidade, anti-ancoragem, anti-confirmacao.
 - **Gawande:** Gate 1->2 (ver abaixo).
 
@@ -322,33 +392,20 @@ contents:
 ```yaml
 gate_1_2:
   type: "DO-CONFIRM"
-  kill_items: [1, 3]
+  kill_items: [1]
   items:
     - id: 1
       critical: true
-      check: "Coverage score >= 90%?"
+      check: "ZERO fontes secundarias aceitas?"
     - id: 2
       critical: false
-      check: "Minimo 4 tipos diferentes de fonte?"
+      check: "Minimo 3 fontes encontradas?"
     - id: 3
-      critical: true
-      check: "ZERO fontes secundarias/interpretativas na base?"
-    - id: 4
       critical: false
       check: "Material bruto preservado intacto?"
-    - id: 5
-      critical: false
-      check: "Span temporal documentado?"
 ```
 
-### Metricas
-
-| Metrica | Threshold | Tipo |
-|---------|-----------|------|
-| coverage_score | >= 90% | Kill item |
-| source_diversity | >= 4 tipos | Warning |
-| temporal_span | >= 50% atividade publica | Warning |
-| zero_secondary_sources | true | Kill item |
+**Nota:** Coverage score >= 90% NAO e kill item aqui (como era no v2.1). A cobertura sera avaliada pela estimativa de fidelidade na Fase 3.
 
 ### OMEGA Integration
 
@@ -357,11 +414,421 @@ gate_1_2:
 | task_type | research |
 | threshold | 80 |
 | max_iterations | 3 |
-| OMEGA signals | `coverage_met`, `sources_validated` |
+| OMEGA signals | `sources_validated`, `catalog_complete` |
 
 ---
 
-## 4. Fase 2: EXTRACAO
+## 5. Fase 2: ANALISE RAPIDA
+
+### Objetivo
+
+Extrair amostra representativa de MIUs para alimentar a estimativa de fidelidade pre-clone (PCFE).
+
+### Inputs
+
+- Material bruto coletado, catalogo de fontes
+
+### Processo
+
+1. Selecionar amostra representativa do material (nao exaustiva):
+   - 1-2 fontes de CADA tipo disponivel
+   - Priorizar fontes mais longas/profundas
+   - Maximo 30% do material total (economia de tokens)
+2. Extrair MIUs sample (20-50 MIUs) com classificacao semantica
+3. Mapear cada MIU para a camada DNA que alimentaria:
+   ```yaml
+   miu_sample:
+     texto: "{MIU}"
+     tipo_semantico: "{comportamental|linguistico|narrativo|decisorio|framework|interacao_social|argumentativo|associativo}"
+     camada_dna: "{filosofia|frameworks|heuristicas|metodologias|dilemas|paradoxos|associacoes|comunicacao}"
+     profundidade: "{superficial|media|profunda}"
+     fonte: "{source_path}"
+   ```
+4. Calcular metricas de cobertura:
+   - Quantas camadas DNA tem pelo menos 1 MIU?
+   - Qual a distribuicao por camada?
+   - Quantas fontes unicas alimentam cada camada?
+
+### Outputs
+
+- MIUs sample (20-50 MIUs)
+- Classificacao por camada DNA
+- Metricas de cobertura
+
+### Gate
+
+Nao ha gate formal aqui — os dados fluem diretamente para a Fase 3.
+
+### OMEGA Integration
+
+| Campo | Valor |
+|-------|-------|
+| task_type | research |
+| threshold | 80 |
+| max_iterations | 3 |
+| OMEGA signals | `mius_extracted`, `coverage_mapped` |
+
+---
+
+## 6. Fase 3: ESTIMATIVA DE FIDELIDADE (PCFE)
+
+**ESTE E O SUB-WORKFLOW CENTRAL DO v3 — Pre-Clone Fidelity Estimation.**
+
+### Objetivo
+
+Calcular fidelidade estimada ANTES de rodar o pipeline completo.
+
+### Inputs
+
+- Catalogo de fontes, MIUs sample, metricas de cobertura
+
+### 6.1 Formula de Estimativa de Fidelidade (PCFE)
+
+```
+FE = (VS * 0.20) + (DS * 0.15) + (CS * 0.30) + (PS * 0.20) + (QS * 0.15)
+
+VS = Volume Score       (0-100) — quantidade de material
+DS = Diversity Score     (0-100) — diversidade de tipos de fonte
+CS = Coverage Score      (0-100) — cobertura das camadas DNA
+PS = Profundidade Score  (0-100) — profundidade vs superficialidade
+QS = Quality Score       (0-100) — qualidade das fontes
+```
+
+### 6.2 Calculo de Cada Componente
+
+**VS (Volume Score) — Peso: 20%**
+
+Avalia a quantidade bruta de material disponivel.
+
+| Material disponivel | Score |
+|---------------------|-------|
+| >= 15 fontes primarias | 100 |
+| 10-14 fontes | 85 |
+| 7-9 fontes | 70 |
+| 4-6 fontes | 55 |
+| 2-3 fontes | 35 |
+| 1 fonte | 15 |
+| 0 fontes | 0 |
+
+Bonus: +5 por cada livro autoral (max +15). +3 por cada entrevista >60min (max +9).
+
+**DS (Diversity Score) — Peso: 15%**
+
+Avalia a variedade de tipos de fonte. Fontes diversas capturam facetas diferentes da mente.
+
+| Criterio | Pontos |
+|----------|--------|
+| Livros autorais presentes | 15 |
+| Videos/Podcasts longos (>30min) presentes | 15 |
+| Entrevistas em profundidade presentes | 15 |
+| Artigos/Blog posts autorais presentes | 15 |
+| Tweets/Threads substanciais presentes | 10 |
+| Palestras/Apresentacoes presentes | 10 |
+| Material em multiplos idiomas | 10 |
+| Span temporal >= 5 anos | 10 |
+
+DS = SUM(pontos) (cap em 100)
+
+**CS (Coverage Score) — Peso: 30% — MAIOR PESO**
+
+Avalia a cobertura das 8 camadas do DNA + 4 subcamadas baseado nas MIUs sample.
+
+| Camada DNA | Peso relativo | Como estimar cobertura |
+|------------|--------------|------------------------|
+| Filosofia (core) | 15% | MIUs com crencas, principios, visao de mundo |
+| Filosofia (hierarquia_valores, motivacao_profunda) | 10% | MIUs com escolhas entre valores, medos, impulsores |
+| Frameworks | 15% | MIUs com passos-a-passo, modelos de decisao |
+| Heuristicas (core) | 10% | MIUs com regras de bolso, atalhos |
+| Heuristicas (modelo_social) | 5% | MIUs com interacoes sociais, reacao a critica |
+| Metodologias | 10% | MIUs com processos, ferramentas |
+| Dilemas | 10% | MIUs com trade-offs, evolucao de posicao |
+| Paradoxos Produtivos | 15% | MIUs com contradicoes internas (CAMADA OURO) |
+| Associacoes Conceituais | 5% | MIUs com pontes entre dominios |
+| Comunicacao Avancada | 5% | MIUs com padroes retoricos, estilometria |
+
+Para cada camada:
+- 0 MIUs na amostra: 0%
+- 1-2 MIUs: 40%
+- 3-5 MIUs: 70%
+- 6+ MIUs: 100%
+
+CS = SUM(cobertura_camada * peso_camada)
+
+**PS (Profundidade Score) — Peso: 20%**
+
+Avalia se o material vai alem da superficie.
+
+| Criterio | Pontos |
+|----------|--------|
+| >= 3 fontes com profundidade "profunda" | 30 |
+| >= 1 fonte com profundidade "profunda" | 15 |
+| >= 5 fontes com profundidade "media" | 25 |
+| >= 3 fontes com profundidade "media" | 15 |
+| Fontes cobrem decisoes reais (nao so teoria) | 15 |
+| Fontes cobrem momentos de fracasso/vulnerabilidade | 15 |
+| Material inclui contradicoes/evolucao de posicao | 15 |
+
+PS = SUM(pontos) (cap em 100)
+
+Bonus: Se existe material de entrevistas longas (>60min): +10
+Penalidade: Se >70% das fontes sao tweets/posts curtos: -20
+
+**QS (Quality Score) — Peso: 15%**
+
+Avalia a confiabilidade e riqueza das fontes.
+
+| Criterio | Pontos |
+|----------|--------|
+| 100% fontes primarias (nenhuma secundaria) | 25 |
+| >= 90% fontes primarias | 15 |
+| Fontes verificaveis (URL/ISBN rastreavel) | 20 |
+| Transcricoes completas (nao resumos) | 20 |
+| Material recente (ultimos 3 anos) incluso | 15 |
+| Material historico (>5 anos atras) incluso | 10 |
+| Nenhuma fonte com paywall inacessivel | 10 |
+
+QS = SUM(pontos) (cap em 100)
+
+### 6.3 Interpretacao da Fidelidade Estimada
+
+| FE Range | Classificacao | Recomendacao |
+|----------|--------------|--------------|
+| >= 85 | EXCELENTE | GO — alta probabilidade de clone >= 95% |
+| 70-84 | BOM | GO COM RESSALVAS — clone viavel, pode nao atingir 95% |
+| 55-69 | MODERADO | ENRIQUECER — pedir mais fontes antes de continuar |
+| 40-54 | FRACO | ENRIQUECER OBRIGATORIO — material insuficiente |
+| < 40 | INSUFICIENTE | ABORTAR — material muito escasso para clone |
+
+### 6.4 Mapeamento FE -> F (Correlacao Estimada)
+
+A FE (Fidelidade Estimada) NAO e o mesmo que F (Fidelidade Real). A relacao e:
+
+```
+F_estimado_min = FE * 0.85   (pior caso — material nao rende tanto)
+F_estimado_max = FE * 1.10   (melhor caso — material rende mais que esperado)
+F_provavel     = FE * 0.95   (caso tipico)
+```
+
+Exemplo: FE = 80 -> F provavel entre 68-88, media 76.
+
+### 6.5 Identificacao de Gaps
+
+Para cada camada DNA com CS < 40%, gerar um gap report:
+
+```yaml
+gaps:
+  - camada: "paradoxos_produtivos"
+    cobertura: 0%
+    impacto: "CRITICO — 15% do CS, 35% do score de fidelidade final"
+    recomendacao: "Buscar entrevistas longas onde discute contradicoes"
+  - camada: "modelo_social"
+    cobertura: 40%
+    impacto: "MODERADO — afeta blind test de interacao"
+    recomendacao: "Buscar debates ou interacoes publicas"
+```
+
+### 6.6 Correlacao PCFE com Formula de Fidelidade Real
+
+A PCFE e propositalmente construida para CORRELACIONAR com a formula de fidelidade real (F = L*0.20 + B*0.30 + C*0.15 + K*0.20 + V*0.15):
+
+| Componente PCFE | Correlacao com Fidelidade Real |
+|-----------------|-------------------------------|
+| VS (Volume) | Mais material -> mais MIUs -> mais evidencias para todos componentes |
+| DS (Diversidade) | Fontes diversas -> captura facetas diferentes -> L e V mais altos |
+| CS (Cobertura) | Cobertura DNA -> B e K mais altos (drivers + frameworks cobertos) |
+| PS (Profundidade) | Material profundo -> C mais alto (paradoxos so emergem em profundidade) |
+| QS (Qualidade) | Fontes primarias/conteudo completo -> todos componentes mais confiaveis |
+
+O MAIOR PESO no CS (30%) reflete que a cobertura das camadas DNA e o melhor preditor de fidelidade final, assim como B (Behavioral Fidelity) tem o maior peso na formula real (30%).
+
+### Outputs
+
+- FE (Fidelidade Estimada, 0-100)
+- Breakdown por componente (VS, DS, CS, PS, QS)
+- Gaps identificados por camada DNA
+- Recomendacao (GO / GO COM RESSALVAS / ENRIQUECER / ABORTAR)
+
+### OMEGA Integration
+
+| Campo | Valor |
+|-------|-------|
+| task_type | planning |
+| threshold | 85 |
+| max_iterations | 3 |
+| OMEGA signals | `fe_calculated`, `gaps_identified` |
+
+---
+
+## 7. Fase 4: GATE DE APROVACAO HUMANA
+
+### Objetivo
+
+Apresentar estimativa de fidelidade e aguardar decisao humana antes de iniciar pipeline pesado.
+
+### Inputs
+
+- FE, breakdown por componente, gaps, recomendacao
+
+### Formato de Apresentacao
+
+```
+============================================================
+   ESTIMATIVA DE FIDELIDADE PRE-CLONE
+============================================================
+
+   Especialista: {Nome Completo}
+   Categoria: {categoria}
+   Slug: {slug}
+
+   FIDELIDADE ESTIMADA: {FE}% ({classificacao})
+
+   Breakdown:
+   +-------------------------------+--------+---------+
+   | Componente                    | Score  |  Peso   |
+   +-------------------------------+--------+---------+
+   | Volume (VS)                   | {VS}   |  20%    |
+   | Diversidade (DS)              | {DS}   |  15%    |
+   | Cobertura DNA (CS)            | {CS}   |  30%    |
+   | Profundidade (PS)             | {PS}   |  20%    |
+   | Qualidade (QS)                | {QS}   |  15%    |
+   +-------------------------------+--------+---------+
+   | FIDELIDADE ESTIMADA (FE)      | {FE}   | 100%    |
+   +-------------------------------+--------+---------+
+
+   Fidelidade Real Estimada:
+   - Pior caso:  {F_min}%
+   - Caso tipico: {F_provavel}%
+   - Melhor caso: {F_max}%
+
+   Fontes Encontradas: {N} ({N tipos diferentes})
+
+   Gaps Identificados:
+   {gap_list}
+
+   Recomendacao: {GO | GO COM RESSALVAS | ENRIQUECER | ABORTAR}
+
+============================================================
+   OPCOES:
+   [1] APROVAR — Iniciar pipeline completo
+   [2] ENRIQUECER — Fornecer mais fontes e re-estimar
+   [3] ABORTAR — Cancelar clonagem
+============================================================
+
+   Qual opcao? (1/2/3)
+```
+
+### Fluxo por Opcao
+
+- **[1] APROVAR:** Registrar decisao, avancar para Fase 5 (Scaffold)
+- **[2] ENRIQUECER:** Pedir fontes adicionais, voltar para Fase 1 (loop). Maximo 3 loops de enriquecimento.
+- **[3] ABORTAR:** Registrar motivo, encerrar pipeline
+
+### Loop de Enriquecimento
+
+Se o usuario escolhe [2], pode fornecer novas URLs/arquivos/textos. O pipeline volta para a Fase 1 adicionando o novo material ao catalogo existente, re-roda Fases 2-3 e apresenta nova estimativa. Maximo 3 loops de enriquecimento. Apos 3 tentativas, forcar decisao GO ou ABORTAR.
+
+### Outputs
+
+- Decisao: APROVAR / ENRIQUECER / ABORTAR
+
+### OMEGA Integration
+
+| Campo | Valor |
+|-------|-------|
+| task_type | N/A |
+| threshold | N/A |
+| Nota | NAO e task OMEGA — gate humano |
+
+---
+
+## 8. Fase 5: SCAFFOLD (Pos-Aprovacao)
+
+### Objetivo
+
+Criar toda infraestrutura do squad antes do pipeline pesado.
+
+### Inputs
+
+- slug, categoria, FE, catalogo de fontes
+
+### Processo
+
+1. Criar diretorio squad completo:
+   ```
+   DUARTEOS/{Categoria}/squad/{slug}/
+   |-- agents/
+   |-- artifacts/behavioral/
+   |-- artifacts/cognitive/
+   |-- artifacts/linguistic/
+   |-- artifacts/narrative/
+   |-- checklists/
+   |-- data/raw/{articles,interviews,podcasts,books,tweets,videos,speeches}/
+   |-- data/processed/
+   |-- drivers/
+   |-- frameworks/{slug}/
+   |-- phrases/
+   |-- system-components/
+   |-- tasks/
+   |-- voice/
+   |-- config.yaml
+   ```
+
+2. Criar config.yaml skeleton:
+   ```yaml
+   clone:
+     name: "{Nome}"
+     slug: "{slug}"
+     version: "0.1.0"
+     pipeline_version: "3"
+     created_at: "{timestamp}"
+     fidelity_estimated: {FE}
+     fidelity_score: null  # preenchido na Fase 9
+     status: "scaffolding"
+     category: "{categoria}"
+   ```
+
+3. Criar DNA skeleton em `synapse/minds/{slug}.yaml` (usando mind-template.yaml)
+
+4. Criar TASKS do pipeline:
+   ```
+   tasks/
+   |-- 01-extracao-completa-{slug}.md
+   |-- 02-inferencia-drivers-{slug}.md
+   |-- 03-mapeamento-sistemas-{slug}.md
+   |-- 04-perfil-fidelidade-{slug}.md
+   |-- 05-agente-operacional-{slug}.md
+   |-- 06-squad-artifacts-{slug}.md
+   ```
+
+5. Criar checklist personalizado:
+   ```
+   checklists/{slug}-pipeline-checklist.yaml
+   ```
+   Com gates para cada fase restante.
+
+### Outputs
+
+- Diretorios squad (21+ dirs)
+- config.yaml skeleton
+- DNA skeleton em synapse/minds/
+- TASKS + Checklists personalizados
+
+### Gate
+
+Validar que todos os 21+ dirs existem e config.yaml e parseavel.
+
+### OMEGA Integration
+
+| Campo | Valor |
+|-------|-------|
+| task_type | implementation |
+| threshold | 90 |
+| max_iterations | 3 |
+| OMEGA signals | `files_created`, `schema_valid` |
+
+---
+
+## 9. Fase 6: EXTRACAO
 
 ### Objetivo
 
@@ -371,12 +838,13 @@ Extrair Micro-Unidades Interpretativas Neurais (MIUs) e fragmentos semanticos do
 
 ### Inputs
 
-- Entidade DB: `contents` (da Fase 1)
+- Entidade DB: `contents` (material bruto JA coletado na Fase 1 e validado na Fase 2)
+- Diretorios JA criados na Fase 5 (Scaffold)
 
 ### Processo: Extracao Linguistica + Validacao
 
 1. **Extracao:** Separar material bruto em MIUs — fragmentos semanticos minimos com significado autonomo
-2. **Classificacao:** Cada MIU recebe tipo semantico: comportamental, linguistico, narrativo, decisorio, framework
+2. **Classificacao:** Cada MIU recebe tipo semantico: comportamental, linguistico, narrativo, decisorio, framework, interacao_social, argumentativo, associativo
 3. **Validacao (agente independente):** MIU tem significado autonomo? SIM -> validated | NAO -> rejected
 
 ### Outputs
@@ -424,14 +892,14 @@ fragments:
 | Layer 1 | Texto bruto integral | `data/raw/` |
 | Layer 2 | MIUs extraidas — trechos relevantes | DB `mius` (validation_status=validated) |
 | Layer 3 | Essencia destilada de cada MIU | Campo `essence` em `mius` |
-| Layer 4 | Insight acionavel | Gerado na Fase 3 apos inferencia |
+| Layer 4 | Insight acionavel | Gerado na Fase 7 apos inferencia |
 
 **Intermediate Packets:** Cada MIU validada e um Intermediate Packet reutilizavel que alimenta multiplos drivers, frameworks e componentes.
 
-### Gate Gawande 2->3
+### Gate Gawande 6->7
 
 ```yaml
-gate_2_3:
+gate_6_7:
   type: "DO-CONFIRM"
   kill_items: [1, 2]
   items:
@@ -472,7 +940,7 @@ gate_2_3:
 
 ---
 
-## 5. Fase 3: INFERENCIA
+## 10. Fase 7: INFERENCIA
 
 ### Objetivo
 
@@ -480,7 +948,7 @@ Inferir drivers/motivadores a partir das MIUs validadas. Criar evidencias MIU<->
 
 ### Inputs
 
-- Entidade DB: `mius` (validated, da Fase 2)
+- Entidade DB: `mius` (validated, da Fase 6)
 
 ### Processo: Motor de Inferencia
 
@@ -574,10 +1042,10 @@ driver_relationships:
     - mind_id                # pode ser global ou per-mind
 ```
 
-### Gate Gawande 3->4
+### Gate Gawande 7->8
 
 ```yaml
-gate_3_4:
+gate_7_8:
   type: "DO-CONFIRM"
   kill_items: [1, 2, 4]
   items:
@@ -622,7 +1090,7 @@ gate_3_4:
 
 ---
 
-## 6. Fase 4: MAPEAMENTO
+## 11. Fase 8: MAPEAMENTO
 
 ### Objetivo
 
@@ -724,10 +1192,10 @@ mind_system_mappings:
     - calculated_at
 ```
 
-### Gate Gawande 4->5
+### Gate Gawande 8->9
 
 ```yaml
-gate_4_5:
+gate_8_9:
   type: "DO-CONFIRM"
   kill_items: [1, 2]
   items:
@@ -764,7 +1232,7 @@ gate_4_5:
 
 ---
 
-## 7. Fase 5: PERFIL
+## 12. Fase 9: PERFIL
 
 ### Objetivo
 
@@ -834,12 +1302,26 @@ mind_tools:
 
 ### Formula de Fidelidade
 
-Ver Secao 13 para formula completa. Threshold: composite >= 95%, nenhum componente abaixo de 85%.
+Ver Secao 18 para formula completa. Threshold: composite >= 95%, nenhum componente abaixo de 85%.
 
-### Gate Gawande 5->6
+### Calibracao FE vs F (Novo no v3)
+
+Apos calcular F (fidelidade real), comparar com FE (estimativa da Fase 3):
+
+```
+delta_estimativa = F - FE
+accuracy_estimativa = 100 - abs(delta_estimativa)
+```
+
+- Se `accuracy_estimativa >= 70%`: estimativa foi adequada. Registrar para calibracao.
+- Se `accuracy_estimativa < 70%`: registrar anomalia em `.claude/omega/pcfe-calibration.yaml` para ajuste futuro dos pesos da PCFE.
+
+Armazenar `{slug, FE, F_real, delta, accuracy}` em `.claude/omega/pcfe-calibration.yaml` para cada clone.
+
+### Gate Gawande 9->10
 
 ```yaml
-gate_5_6:
+gate_9_10:
   type: "DO-CONFIRM"
   kill_items: [1, 2, 3]
   items:
@@ -858,6 +1340,9 @@ gate_5_6:
     - id: 5
       critical: false
       check: "config.yaml atualizado com status 'active'?"
+    - id: 6
+      critical: false
+      check: "FE vs F comparado e registrado em pcfe-calibration.yaml?"
 ```
 
 ### Metricas
@@ -881,7 +1366,7 @@ gate_5_6:
 
 ---
 
-## 8. Fase 6: RECOMENDACAO
+## 13. Fase 10: RECOMENDACAO
 
 ### Objetivo
 
@@ -975,7 +1460,7 @@ tool_relations:
 
 ---
 
-## 9. Estrutura de Pastas por Squad
+## 14. Estrutura de Pastas por Squad
 
 Baseado no padrao real do squad `copy/` do MMOS, a estrutura generica para QUALQUER squad:
 
@@ -1047,24 +1532,30 @@ DUARTEOS/squad/{categoria}/
 
 ---
 
-## 10. Mind-Create vs Mind-Update
+## 15. Mind-Create vs Mind-Update
 
-### Mind-Create: Pipeline Completo (Fase 0 -> 6)
+### Mind-Create: Pipeline Completo (Fase 0 -> 10)
 
 ```
 /DUARTEOS:mmos:mind-clone {nome-do-especialista}
   |
-  +-- Fase 0: APEX/ICP Gate (viabilidade)
-  |   +-- Material suficiente? Score APEX >= 40/60?
-  |   +-- ICP fit? Score >= 6/10?
-  |   +-- Se NAO: ABORTAR com recomendacao
+  +-- Fase 0: INTAKE (canonicalizacao + dedup)
   |
-  +-- Fase 1: Coleta (ETL Pipeline)
-  +-- Fase 2: Extracao (MIUs + fragments)
-  +-- Fase 3: Inferencia (drivers + evidencias)
-  +-- Fase 4: Mapeamento (scores + systems)
-  +-- Fase 5: Perfil (mente nasce, fidelidade calculada)
-  +-- Fase 6: Recomendacao (tools + gaps)
+  +-- Fase 1: PESQUISA (WebSearch + WebFetch + material fornecido)
+  +-- Fase 2: ANALISE RAPIDA (MIUs sample + cobertura)
+  +-- Fase 3: ESTIMATIVA PCFE (fidelidade estimada pre-clone)
+  |
+  +-- Fase 4: GATE HUMANO (GO / ENRIQUECER / ABORTAR)
+  |   +-- Se ENRIQUECER: volta para Fase 1 (max 3 loops)
+  |   +-- Se ABORTAR: FIM
+  |
+  +-- Fase 5: SCAFFOLD (dirs, tasks, checklists, config.yaml)
+  |
+  +-- Fase 6: EXTRACAO (MIUs completas + fragments + estilometria)
+  +-- Fase 7: INFERENCIA (drivers + evidencias + DNA 6 camadas)
+  +-- Fase 8: MAPEAMENTO (scores + systems)
+  +-- Fase 9: PERFIL (mente nasce, fidelidade calculada, FE vs F)
+  +-- Fase 10: RECOMENDACAO (agente .md + squad artifacts + tools + gaps)
   |
   +-- DNA persiste em .claude/synapse/minds/{slug}.yaml
   +-- Agente gerado em DUARTEOS/squad/{categoria}/agents/{slug}.md
@@ -1076,13 +1567,15 @@ O mind-update usa o MESMO pipeline mas entra na fase adequada ao tipo de novo ma
 
 | Tipo de Novo Material | Fase de Entrada | Exemplo |
 |----------------------|-----------------|---------|
-| Novas fontes brutas | Fase 1 (Coleta) | Novo podcast, novo livro |
-| Novas MIUs ja extraidas | Fase 2 (Extracao) | Fragmentos pre-processados |
-| Novo driver identificado | Fase 3 (Inferencia) | Driver manual ou cross-reference |
-| Novo sistema de classificacao | Fase 4 (Mapeamento) | Novo framework de personalidade |
-| Recalibracao de perfil | Fase 5 (Perfil) | Nova validacao com dados existentes |
+| Novas fontes brutas | Fase 6 (Extracao) | Novo podcast, novo livro |
+| Novas MIUs ja extraidas | Fase 6 (Extracao) | Fragmentos pre-processados |
+| Novo driver identificado | Fase 7 (Inferencia) | Driver manual ou cross-reference |
+| Novo sistema de classificacao | Fase 8 (Mapeamento) | Novo framework de personalidade |
+| Recalibracao de perfil | Fase 9 (Perfil) | Nova validacao com dados existentes |
 
-**Na pratica do DuarteOS**, a maioria dos updates entra pela Fase 1 (novas fontes) e roda o pipeline parcial 1->2->3->DNA Merge->Regression.
+**Na pratica do DuarteOS**, a maioria dos updates entra pela Fase 6 (novas fontes) e roda o pipeline parcial 6->7->DNA Merge->Regression.
+
+**Nota:** Mind-update NAO passa pela PCFE (Fases 1-5). O clone ja existe e ja foi validado. Apenas o pipeline pesado (Fases 6-10) e relevante para updates.
 
 ### Regras de Merge Incremental
 
@@ -1116,55 +1609,79 @@ Se a fidelidade pos-update cai mais de 5% em relacao ao valor pre-update:
 
 ---
 
-## 11. Integracao OMEGA v2
+## 16. Integracao OMEGA v2
 
 Cada fase MMOS roda como task OMEGA independente. O contrato completo esta em `OMEGA.md` Secao 20.
 
 ### Mapeamento Fase -> Task OMEGA
 
-| Fase MMOS | Nome | task_type OMEGA | Threshold | max_iterations |
-|-----------|------|----------------|-----------|----------------|
-| 1 | Coleta | research | 80 | 3 |
-| 2 | Extracao | research | 80 | 3 |
-| 3 | Inferencia | mind_clone | 95 | 3 |
-| 4 | Mapeamento | mind_clone | 95 | 3 |
-| 5 | Perfil | mind_clone | 95 | 3 |
-| 6 | Recomendacao | mind_clone | 95 | 3 |
+| Fase MMOS | Nome | task_type OMEGA | Threshold | max_iterations | Completion Signals |
+|-----------|------|----------------|-----------|----------------|-------------------|
+| 0 | Intake | N/A | N/A | N/A | N/A (pre-condicao) |
+| 1 | Pesquisa | research | 80 | 3 | `sources_validated`, `catalog_complete` |
+| 2 | Analise Rapida | research | 80 | 3 | `mius_extracted`, `coverage_mapped` |
+| 3 | Estimativa PCFE | planning | 85 | 3 | `fe_calculated`, `gaps_identified` |
+| 4 | Aprovacao Humana | N/A | N/A | N/A | N/A (gate humano) |
+| 5 | Scaffold | implementation | 90 | 3 | `files_created`, `schema_valid` |
+| 6 | Extracao | research | 80 | 3 | `schema_valid`, `data_integrity` |
+| 7 | Inferencia | mind_clone | 95 | 3 | `fidelity_check`, `evidence_linked` |
+| 8 | Mapeamento | mind_clone | 95 | 3 | `mapping_complete`, `scores_calculated` |
+| 9 | Perfil | mind_clone | 95 | 3 | `fidelity_check`, `tests_pass` |
+| 10 | Recomendacao | mind_clone | 95 | 3 | `files_created`, `schema_valid` |
 
 ### Fluxo OMEGA Completo
 
 ```
 /DUARTEOS:mmos:mind-clone {nome}
   |
-  +-- OMEGA inicializa pipeline MMOS
+  +-- OMEGA inicializa pipeline MMOS v3
   |   +-- Carrega Synapse L0-L7 com contexto de mind clone
   |
-  +-- FASE 1: Coleta (task_type: research, threshold: 80)
+  +-- FASE 0: Intake (pre-condicao, NAO e task OMEGA)
+  |
+  +-- FASE 1: Pesquisa (task_type: research, threshold: 80)
   |   +-- OMEGA loop: executa, score, feedback, repeat
   |   +-- Gate Gawande 1->2: kill items bloqueantes
   |   +-- Dual-gate met -> avanca
   |
-  +-- FASE 2: Extracao (task_type: research, threshold: 80)
+  +-- FASE 2: Analise Rapida (task_type: research, threshold: 80)
   |   +-- OMEGA loop
-  |   +-- Gate Gawande 2->3
+  |   +-- Sem gate formal -> flui para Fase 3
+  |
+  +-- FASE 3: Estimativa PCFE (task_type: planning, threshold: 85)
+  |   +-- OMEGA loop
   |   +-- Dual-gate met -> avanca
   |
-  +-- FASE 3: Inferencia (task_type: mind_clone, threshold: 95)
+  +-- FASE 4: Gate Humano (NAO e task OMEGA)
+  |   +-- Apresenta FE + gaps + recomendacao
+  |   +-- Aguarda decisao: APROVAR / ENRIQUECER / ABORTAR
+  |   +-- Se ENRIQUECER: volta Fase 1 (max 3 loops)
+  |
+  +-- FASE 5: Scaffold (task_type: implementation, threshold: 90)
+  |   +-- OMEGA loop
+  |   +-- Dual-gate met -> avanca
+  |
+  +-- FASE 6: Extracao (task_type: research, threshold: 80)
+  |   +-- OMEGA loop
+  |   +-- Gate Gawande 6->7
+  |   +-- Dual-gate met -> avanca
+  |
+  +-- FASE 7: Inferencia (task_type: mind_clone, threshold: 95)
   |   +-- OMEGA loop (modelo: Opus obrigatorio)
-  |   +-- Gate Gawande 3->4
+  |   +-- Gate Gawande 7->8
   |   +-- Dual-gate met -> avanca
   |
-  +-- FASE 4: Mapeamento (task_type: mind_clone, threshold: 95)
+  +-- FASE 8: Mapeamento (task_type: mind_clone, threshold: 95)
   |   +-- OMEGA loop
-  |   +-- Gate Gawande 4->5
+  |   +-- Gate Gawande 8->9
   |   +-- Dual-gate met -> avanca
   |
-  +-- FASE 5: Perfil (task_type: mind_clone, threshold: 95)
+  +-- FASE 9: Perfil (task_type: mind_clone, threshold: 95)
   |   +-- OMEGA loop
-  |   +-- Gate Gawande 5->6 (inclui blind test + pre-mortem)
+  |   +-- Gate Gawande 9->10 (inclui blind test + pre-mortem + FE vs F)
   |   +-- Dual-gate met -> avanca
   |
-  +-- FASE 6: Recomendacao (task_type: mind_clone, threshold: 95)
+  +-- FASE 10: Recomendacao (task_type: mind_clone, threshold: 95)
   |   +-- OMEGA loop
   |   +-- Dual-gate met -> clone completo
   |
@@ -1209,7 +1726,7 @@ O circuit breaker do OMEGA protege contra loops no pipeline:
 
 ---
 
-## 12. Integracao Synapse v3
+## 17. Integracao Synapse v3
 
 O Synapse v3 e o motor de contexto que armazena e injeta dados dos mind clones. O contrato completo esta em `SYNAPSE.md` Secao 4.
 
@@ -1269,7 +1786,7 @@ INGEST(source, mind_clone):
 
 ---
 
-## 13. Formula de Fidelidade (Completa)
+## 18. Formula de Fidelidade (Completa)
 
 ### Formula
 
@@ -1304,22 +1821,41 @@ F = (L x 0.20) + (B x 0.30) + (C x 0.15) + (K x 0.20) + (V x 0.15)
 
 ---
 
-## 14. Metricas Consolidadas
+## 19. Metricas Consolidadas
 
 ### Dashboard Completo
 
 ```yaml
 metrics_dashboard:
 
-  fase_1_coleta:
-    coverage_score: ">= 90%"
-    source_diversity: ">= 4 tipos"
-    temporal_span: ">= 50% atividade publica"
+  fase_1_pesquisa:
     zero_secondary_sources: "true"
+    min_sources: ">= 3"
+    material_preserved: "true"
     omega_task_type: "research"
     omega_threshold: 80
 
-  fase_2_extracao:
+  fase_2_analise_rapida:
+    mius_sample_count: "20-50 MIUs"
+    coverage_mapped: "todas camadas verificadas"
+    omega_task_type: "research"
+    omega_threshold: 80
+
+  fase_3_estimativa_pcfe:
+    fe_calculated: "true"
+    gaps_identified: "true"
+    all_5_components: "VS, DS, CS, PS, QS calculados"
+    omega_task_type: "planning"
+    omega_threshold: 85
+
+  fase_5_scaffold:
+    dirs_created: ">= 21"
+    config_yaml_valid: "true"
+    dna_skeleton_created: "true"
+    omega_task_type: "implementation"
+    omega_threshold: 90
+
+  fase_6_extracao:
     fragmentation_quality: ">= 95%"
     semantic_ratio: ">= 0.90"
     progressive_summarization: "layers 1-3 completas"
@@ -1327,7 +1863,7 @@ metrics_dashboard:
     omega_task_type: "research"
     omega_threshold: 80
 
-  fase_3_inferencia:
+  fase_7_inferencia:
     predictive_accuracy: ">= 90%"
     false_positive_rate: "< 5%"
     evidence_density: ">= 2.0 MIUs por driver"
@@ -1335,23 +1871,24 @@ metrics_dashboard:
     omega_task_type: "mind_clone"
     omega_threshold: 95
 
-  fase_4_mapeamento:
+  fase_8_mapeamento:
     component_coverage: "100%"
     internal_consistency: ">= 95%"
     catalog_crossref: "completo"
     omega_task_type: "mind_clone"
     omega_threshold: 95
 
-  fase_5_perfil:
+  fase_9_perfil:
     fidelity_score_composite: ">= 95%"
     no_component_below: "85%"
     blind_test: "passed"
     noise_audit_reproducibility: ">= 0.90"
     premortem: "executed and documented"
+    fe_vs_f_compared: "true"
     omega_task_type: "mind_clone"
     omega_threshold: 95
 
-  fase_6_recomendacao:
+  fase_10_recomendacao:
     recommendation_relevance: "validated"
     gap_accuracy: "confirmed via blind test"
     tool_sequencing: "prerequisites verified"
@@ -1363,24 +1900,29 @@ metrics_dashboard:
 
 | Fase | Metrica Principal | Threshold | Kill Item? |
 |------|------------------|-----------|------------|
-| 1 | Coverage | >= 90% | SIM |
-| 1 | Zero secondary | true | SIM |
-| 2 | Fragmentation quality | >= 95% | SIM |
-| 2 | Progressive sum. | Layers 1-3 | SIM |
-| 3 | Predictive accuracy | >= 90% | SIM |
-| 3 | Evidence density | >= 2.0 | SIM |
-| 3 | Inter-agent agreement | >= 0.85 | SIM |
-| 4 | Component coverage | 100% | SIM |
-| 4 | Internal consistency | >= 95% | SIM |
-| 5 | Fidelity composite | >= 95% | SIM |
-| 5 | Min component | >= 85% | SIM |
-| 5 | Blind test | Passed | SIM |
-| 5 | Pre-mortem | Documented | SIM |
-| 6 | Recommendation relevance | Validated | NAO |
+| 1 | Zero secondary sources | true | SIM |
+| 1 | Min sources | >= 3 | NAO |
+| 3 | FE calculated | true | SIM |
+| 3 | All 5 components | true | SIM |
+| 5 | Dirs created | >= 21 | SIM |
+| 5 | Config YAML valid | true | SIM |
+| 6 | Fragmentation quality | >= 95% | SIM |
+| 6 | Progressive sum. | Layers 1-3 | SIM |
+| 7 | Predictive accuracy | >= 90% | SIM |
+| 7 | Evidence density | >= 2.0 | SIM |
+| 7 | Inter-agent agreement | >= 0.85 | SIM |
+| 8 | Component coverage | 100% | SIM |
+| 8 | Internal consistency | >= 95% | SIM |
+| 9 | Fidelity composite | >= 95% | SIM |
+| 9 | Min component | >= 85% | SIM |
+| 9 | Blind test | Passed | SIM |
+| 9 | Pre-mortem | Documented | SIM |
+| 9 | FE vs F compared | true | NAO |
+| 10 | Recommendation relevance | Validated | NAO |
 
 ---
 
-## 15. Checklist de Criacao de Agente
+## 20. Checklist de Criacao de Agente
 
 Os 8 passos para transformar uma mente clonada em agente operacional:
 
@@ -1425,40 +1967,40 @@ context_management:
 
 ---
 
-## 16. Camadas de Profundidade Cognitiva v3 — 6 Novos Componentes
+## 21. Camadas de Profundidade Cognitiva — 6 Componentes v2.1
 
 **Adicionado em:** v2.1.0
 **Motivacao:** Gap analysis vs PRD de Clonagem Neural e Semantica v2.0 (Manus AI)
 **Impacto estimado:** +6-12% de fidelidade composite (de ~89% para ~95%+)
 
-### 16.1 Componentes Adicionados
+### 21.1 Componentes Adicionados
 
 | # | Componente | Camada DNA | Impacto F | Fase de Extracao |
 |---|-----------|-----------|-----------|------------------|
-| 1 | Estilometria Computacional | `comunicacao_avancada.estilometria` | L +3-5%, V +2-3% | Fase 2 (MIUs → analise estatistica) |
-| 2 | Associacoes Conceituais | `associacoes_conceituais` (nova) | B +3-5%, K +2-3% | Fase 3 (co-ocorrencia em MIUs) |
-| 3 | Estrutura Retorica | `comunicacao_avancada.estrutura_retorica` | V +2-3%, B +1-2% | Fase 2 (MIUs narrativos) |
-| 4 | Modelo de Recompensa e Medo | `filosofia.motivacao_profunda` | B +3-4% | Fase 3 (drivers positivos/negativos) |
-| 5 | Hierarquia de Valores Rankeada | `filosofia.hierarquia_valores` | C +2-3%, B +1-2% | Fase 3 (analise de decisoes dificeis) |
-| 6 | Teoria da Mente Simulada | `heuristicas.modelo_social` | B +3-5%, V +1-2% | Fase 2-3 (MIUs de interacao social) |
+| 1 | Estilometria Computacional | `comunicacao_avancada.estilometria` | L +3-5%, V +2-3% | Fase 6 (MIUs -> analise estatistica) |
+| 2 | Associacoes Conceituais | `associacoes_conceituais` (nova) | B +3-5%, K +2-3% | Fase 7 (co-ocorrencia em MIUs) |
+| 3 | Estrutura Retorica | `comunicacao_avancada.estrutura_retorica` | V +2-3%, B +1-2% | Fase 6 (MIUs narrativos) |
+| 4 | Modelo de Recompensa e Medo | `filosofia.motivacao_profunda` | B +3-4% | Fase 7 (drivers positivos/negativos) |
+| 5 | Hierarquia de Valores Rankeada | `filosofia.hierarquia_valores` | C +2-3%, B +1-2% | Fase 7 (analise de decisoes dificeis) |
+| 6 | Teoria da Mente Simulada | `heuristicas.modelo_social` | B +3-5%, V +1-2% | Fase 6-7 (MIUs de interacao social) |
 
-### 16.2 Integracao com Fases Existentes
+### 21.2 Integracao com Fases Existentes
 
-**Fase 2 — Extracao (novos targets):**
+**Fase 6 — Extracao (novos targets):**
 - Ao extrair MIUs, classificar adicionalmente por: interacao_social (para modelo_social), argumentativo (para estrutura_retorica)
 - Calcular metricas estilometricas sobre o corpus de MIUs linguisticos
 - Identificar padroes de conexao conceitual recorrentes
 
-**Fase 3 — Inferencia (novos targets):**
+**Fase 7 — Inferencia (novos targets):**
 - Alem de drivers genericos, inferir: drivers motivacionais (impulsores vs medos), associacoes conceituais (pontes recorrentes), hierarquia de valores (baseada em decisoes relatadas)
 - Separar drivers em positivos (impulsores) e negativos (medos/aversoes)
 - Rankear valores fundamentais por evidencia de sacrificio
 
-**Fase 5 — Perfil (validacao ampliada):**
+**Fase 9 — Perfil (validacao ampliada):**
 - Blind test DEVE incluir cenarios de: provocacao (testa modelo_social), argumento complexo (testa estrutura_retorica), associacao inesperada (testa pontes conceituais)
 - Estilometria usada como baseline quantitativa para validar V (Voice)
 
-### 16.3 Impacto na Formula de Fidelidade
+### 21.3 Impacto na Formula de Fidelidade
 
 A formula F permanece: `F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)`
 
@@ -1469,7 +2011,7 @@ Os novos componentes enriquecem os INPUTS de cada dimensao:
 - **K** recebe associacoes_conceituais (conexoes de conhecimento) + estrutura_retorica
 - **V** recebe estilometria + estrutura_retorica (voz mais precisa)
 
-### 16.4 Regras de Extracao
+### 21.4 Regras de Extracao
 
 1. **Estilometria:** Extrair AUTOMATICAMENTE do corpus de MIUs. Nao depende de inferencia humana.
 2. **Associacoes:** Minimo 3 pontes conceituais por clone. Se < 3: marcar como "material insuficiente".
@@ -1480,44 +2022,44 @@ Os novos componentes enriquecem os INPUTS de cada dimensao:
 
 ---
 
-## Integracao Final: 5 Autoridades x 6 Fases x 15 Entidades
+## Integracao Final: 5 Autoridades x 11 Fases x 15 Entidades
 
 ```
-                    COLETA    EXTRACAO   INFERENCIA   MAPEAMENTO   PERFIL    RECOMENDACAO
-                    Fase 1    Fase 2     Fase 3       Fase 4       Fase 5    Fase 6
-                  +---------+----------+------------+------------+---------+-------------+
-ALLEN (GTD)       |Captura  |Clarifica |Classifica  |    --      |   --    |    --       |
-Workflow          |exaustiva|MIU<->tipo|driver->conf|            |         |             |
-                  |agnostica|sem filtro|/incubar    |            |         |             |
-                  +---------+----------+------------+------------+---------+-------------+
-FORTE (CODE)      |Layer 1  |Layer 2-3 |Layer 4     |Destilacao  |EXPRESS  |   PARA      |
-Memoria           |Capture  |Organize  |Distill     |Scores      |A mente  |   mapping   |
-                  |         |+Distill  |Actionable  |            |nasce    |             |
-                  +---------+----------+------------+------------+---------+-------------+
-DEMING (PDSA)     |Coverage |Fragment  |Predictive  |Consistency |Fidelity |Relevance    |
-Loops             |>=90%    |quality   |accuracy    |>=95%       |score    |Match        |
-                  |         |>=95%     |>=90%       |            |>=95%    |accuracy     |
-                  +---------+----------+------------+------------+---------+-------------+
-GAWANDE           |Gate 1->2|Gate 2->3 |Gate 3->4   |Gate 4->5   |Gate 5->6|Gate Final   |
-Checklists        |DO-CONF  |DO-CONF   |DO-CONF     |DO-CONF     |DO-CONF  |DO-CONF      |
-                  |kill:1,3 |kill:1,2  |kill:1,2,4  |kill:1,2    |kill:1-3 |kill:1       |
-                  +---------+----------+------------+------------+---------+-------------+
-KAHNEMAN          |Anti     |Fragment. |Base rate   |Halo effect |Blind    |Gap          |
-Anti-Vies         |confirm. |de julg.  |Independent |Independ.   |test     |validation   |
-                  |Anti     |Saliencia |Pre-mortem  |            |Noise    |             |
-                  |anchor   |Independ. |            |            |audit    |             |
-                  +---------+----------+------------+------------+---------+-------------+
+                  PESQUISA  ANALISE   PCFE      GATE      SCAFFOLD  EXTRACAO  INFERENCIA  MAPEAMENTO  PERFIL    RECOMENDACAO
+                  Fase 1    Fase 2    Fase 3    Fase 4    Fase 5    Fase 6    Fase 7      Fase 8      Fase 9    Fase 10
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
+ALLEN (GTD)     |Captura  |Sample   |   --    |   --    |Organize |Clarifica|Classifica |    --      |   --    |    --       |
+Workflow        |exaustiva|represent|         |         |infraest |MIU<->tip|driver->con|            |         |             |
+                |agnostica|         |         |         |         |sem filtr|/incubar   |            |         |             |
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
+FORTE (CODE)    |Layer 1  |Layer1-2 |   --    |   --    |   --    |Layer 2-3|Layer 4    |Destilacao |EXPRESS  |   PARA      |
+Memoria         |Capture  |Sample   |         |         |         |Organize |Distill    |Scores     |A mente  |   mapping   |
+                |         |         |         |         |         |+Distill |Actionable |           |nasce    |             |
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
+DEMING (PDSA)   |Catalogo |Cobertur |FE calc  |   --    |Schema   |Fragment |Predictive |Consistency|Fidelity |Relevance    |
+Loops           |completo |por DNA  |5 comps  |         |valid    |quality  |accuracy   |>=95%      |score    |Match        |
+                |         |         |         |         |         |>=95%    |>=90%      |           |>=95%    |accuracy     |
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
+GAWANDE         |Gate 1->2|   --    |   --    |   --    |   --    |Gate 6->7|Gate 7->8  |Gate 8->9  |Gate9->10|Gate Final   |
+Checklists      |DO-CONF  |         |         |         |         |DO-CONF  |DO-CONF    |DO-CONF    |DO-CONF  |DO-CONF      |
+                |kill:1   |         |         |         |         |kill:1,2 |kill:1,2,4 |kill:1,2   |kill:1-3 |kill:1       |
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
+KAHNEMAN        |Anti     |Repres.  |Overconf |   --    |   --    |Fragment.|Base rate  |Halo effect|Blind    |Gap          |
+Anti-Vies       |confirm. |amostra  |ranges   |         |         |de julg. |Independent|Independ.  |test     |validation   |
+                |Anti     |         |nao pts  |         |         |Salienci |Pre-mortem |           |Noise    |             |
+                |anchor   |         |         |         |         |Independ.|           |           |audit    |             |
+                +---------+---------+---------+---------+---------+---------+-----------+-----------+---------+-------------+
 
-ENTIDADES DB:      contents  mius       mind_drivers  mapping_sys  minds     tools
-                             fragments  miu_drv_evid  sys_compnts  mind_tools tool_drv_aff
-                                        drv_relat     comp_drv_map           tool_relations
-                                        drivers       mind_comp_sc
-                                                      mind_sys_map
+ENTIDADES DB:    catalogo  mius_     fe_report  decisao  infraest  contents  mind_driv   mapping_sys  minds     tools
+                 fontes    sample                                  mius      miu_drv_ev  sys_compnts  mind_tool tool_drv_aff
+                                                                   fragments drv_relat   comp_drv_map           tool_relat
+                                                                             drivers     mind_comp_sc
+                                                                                         mind_sys_map
 ```
 
 ---
 
-*MMOS Engine v2.1 — Pipeline de Clonagem Mental de Alta Fidelidade*
-*6 fases reais x 15+ entidades DB x 5 autoridades x OMEGA v2 loop x Synapse v3 DNA*
-*6 camadas + 4 subcamadas cognitivas (v2.1: +estilometria, +associacoes, +retorica, +motivacao, +hierarquia, +modelo_social)*
-*Documento autocontido. Fonte de verdade: docs/mmos-extraction-engine-v2.md*
+*MMOS Engine v3.0.0 — Pipeline de Clonagem Mental de Alta Fidelidade*
+*11 fases (0-10) x 15+ entidades DB x 5 autoridades x PCFE x Gate Humano x OMEGA v2 loop x Synapse v3 DNA*
+*6 camadas + 4 subcamadas cognitivas + estilometria + associacoes + retorica + motivacao + hierarquia + modelo_social*
+*Documento autocontido. Fonte de verdade: .claude/protocols/MMOS-PIPELINE.md*

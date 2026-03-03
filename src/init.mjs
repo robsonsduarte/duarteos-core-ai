@@ -304,6 +304,10 @@ export function init(projectName, options = {}) {
     ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
     ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
 
+    // v5.13.0 — MMOS v3 PCFE (Pre-Clone Fidelity Estimation)
+    ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],
+    ['omega/pcfe-calibration.yaml', '.claude/omega/pcfe-calibration.yaml'],
+
     // v5.0.0 — New Commands
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
     ['commands/DUARTEOS/squad/synapse.md', '.claude/commands/DUARTEOS/squad/synapse.md'],
@@ -551,7 +555,7 @@ export function init(projectName, options = {}) {
      QUALITY-GATES.md        — Pipeline de validacao (9 gates)
      IDE-SYNC.md             — Sincronizacao multi-IDE
      OMEGA.md                — Quality enforcement loop engine
-     MMOS-PIPELINE.md        — Pipeline MMOS v2 de clonagem mental (6 fases + Fase 0)
+     MMOS-PIPELINE.md        — Pipeline MMOS v3 de clonagem mental (11 fases 0-10 + PCFE)
 
   Config (.claude/config/) — 3 camadas:
      system.yaml             — Layer 0: defaults DuarteOS (read-only)
@@ -638,7 +642,7 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
 
   MMOS Pipeline — Clonagem Cognitiva Avancada:
-     /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 6 fases: APEX/ICP + DNA 6 Camadas + Fidelidade >= 95%
+     /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 11 fases: PCFE + Gate Humano + DNA 6 Camadas + Fidelidade >= 95%
      /DUARTEOS:mmos:mind-update [nome] [fonte] — Update incremental com rollback automatico
 
   OMEGA — Quality Enforcement Loop (.claude/omega/):

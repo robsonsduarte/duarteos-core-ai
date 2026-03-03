@@ -9,6 +9,30 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.13.0': {
+    title: 'MMOS v3 — PCFE Pre-Clone Fidelity Estimation + Human Gate',
+    highlights: [
+      'MMOS Pipeline evoluido de v2.1 (7 fases) para v3.0.0 (11 fases 0-10)',
+      'Novo sub-workflow PCFE: estima fidelidade ANTES do pipeline pesado (formula 5 componentes)',
+      'PCFE Formula: FE = VS*0.20 + DS*0.15 + CS*0.30 + PS*0.20 + QS*0.15',
+      'VS (Volume Score): quantidade de material + bonus livros/entrevistas longas',
+      'DS (Diversity Score): variedade de tipos de fonte + span temporal',
+      'CS (Coverage Score, MAIOR PESO 30%): cobertura das 8 camadas DNA + 4 subcamadas',
+      'PS (Profundidade Score): profundidade vs superficialidade do material',
+      'QS (Quality Score): confiabilidade e completude das fontes',
+      'Gate de Aprovacao Humana: painel com FE + breakdown + gaps + 3 opcoes (APROVAR/ENRIQUECER/ABORTAR)',
+      'Loop de enriquecimento: max 3 iteracoes (Fase 4 → Fase 1 → Fase 4)',
+      'Scaffold automatico pos-aprovacao: 21+ dirs + tasks + checklists + config.yaml + DNA skeleton',
+      'Calibracao automatica: Fase 9 compara FE vs F real, armazena em pcfe-calibration.yaml',
+      'Classificacao FE: EXCELENTE (>=85), BOM (70-84), MODERADO (55-69), FRACO (40-54), INSUFICIENTE (<40)',
+      'Novo checklist OMEGA para PCFE (planning >=85, 8 criterios)',
+      'mind-template.yaml: novos campos fidelity_estimated, pcfe_breakdown, pcfe_classification',
+      'Checklist mind-clone atualizado: 10 → 15 criterios, pesos recalibrados para 11 fases',
+      'MMOS-PIPELINE.md atualizado para v3 com diagrama, PCFE, Gate Humano, Scaffold, Calibracao',
+      'Fases 6-10 (pesadas) identicas as antigas 1-5 — backward compatible',
+      'mind-update NAO afetado — pipeline independente',
+    ],
+  },
   '5.12.0': {
     title: 'MMOS v2.1 — 6 Novos Componentes de Profundidade Cognitiva',
     highlights: [
@@ -480,6 +504,9 @@ export function update(options = {}) {
     ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
     ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
 
+    // v5.13.0 — MMOS v3 PCFE template (system-owned, safe to update)
+    ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],
+
     // v5.0.0 — Protocols (system-owned, always updated)
     ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
     ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
@@ -607,6 +634,8 @@ export function update(options = {}) {
     '.claude/synapse/system-builder.yaml',
     // v5.7.0 — OMEGA state (runtime data, never overwrite)
     '.claude/omega/state.json',
+    // v5.13.0 — PCFE calibration data (accumulates over time, never overwrite)
+    '.claude/omega/pcfe-calibration.yaml',
   ]
 
   let updated = 0
@@ -659,6 +688,8 @@ export function update(options = {}) {
     ['settings.local.json', '.claude/settings.local.json'],
     // v5.8.1 — direnv auto-load (only added if missing — never overwrite user config)
     ['.envrc', '.envrc'],
+    // v5.13.0 — PCFE calibration (only created if missing — accumulates data over time)
+    ['omega/pcfe-calibration.yaml', '.claude/omega/pcfe-calibration.yaml'],
   ]
 
   for (const [src, dest] of newOnlyFiles) {
