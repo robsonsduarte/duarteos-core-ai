@@ -19,10 +19,7 @@ export function showVersion() {
 const MCP_ENV_MAP = {
   exa: ['EXA_API_KEY'],
   apify: ['APIFY_TOKEN'],
-  redis: ['REDIS_URL'],
   github: [{ from: 'GITHUB_PAT', to: 'GITHUB_PERSONAL_ACCESS_TOKEN' }],
-  coderabbit: ['GITHUB_PAT'],
-  obsidian: ['OBSIDIAN_VAULT_PATH'],
   'e2b-sandbox': ['E2B_API_KEY'],
   n8n: ['N8N_API_URL', 'N8N_API_KEY'],
 }
@@ -214,12 +211,12 @@ export function showHelp() {
         redis-task-manager/      Tasks multi-agente com dependencias
     .planning/
       config.json                Configuracao do workflow GSD
-    .mcp.json                    23 MCP Servers pre-configurados
+    .mcp.json                    21 MCP Servers pre-configurados
     .env.example                 Variaveis de ambiente para os MCPs
 
-  MCP Servers incluidos (23):
-    Node.js:  Context7, EXA, Fetch, YouTube Transcript, Redis,
-              GitHub, REST API, Supabase, CodeRabbit, n8n,
+  MCP Servers incluidos (21):
+    Node.js:  Context7, EXA, Fetch, YouTube Transcript,
+              GitHub, Supabase, n8n,
               Google Workspace, Obsidian, Memory, Sequential Thinking
     Python:   Data Analyzer, Web Scraper, Automation,
               Input Analyzer, Memory Graph, Tool Forge,

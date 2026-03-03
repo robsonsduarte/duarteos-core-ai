@@ -118,10 +118,10 @@ const MCP_REGISTRY = {
   'obsidian': {
     name: 'Obsidian',
     description: 'Notas do vault local',
-    envVars: ['OBSIDIAN_VAULT_PATH'],
-    authType: 'local_path',
+    envVars: [],
+    authType: 'none',
     tier: 'essential',
-    setupHint: 'Defina o caminho do vault (ex: /Users/voce/Documents/Obsidian Vault)',
+    setupHint: 'Vault path configurado diretamente nos args do .mcp.json',
   },
 
   // === Optional: Requires external service or unfilled keys ===
@@ -133,15 +133,6 @@ const MCP_REGISTRY = {
     tier: 'optional',
     setupUrl: 'https://github.com/settings/tokens',
     setupHint: 'Crie um Personal Access Token (escopos: repo, read:org)',
-  },
-  'coderabbit': {
-    name: 'CodeRabbit',
-    description: 'Code review IA (40+ analyzers)',
-    envVars: ['GITHUB_PAT'],
-    authType: 'api_key',
-    tier: 'optional',
-    setupUrl: 'https://github.com/settings/tokens',
-    setupHint: 'Usa o mesmo GITHUB_PAT do GitHub MCP',
   },
   'n8n': {
     name: 'n8n',
@@ -171,14 +162,6 @@ const MCP_REGISTRY = {
     setupHint: 'Dashboard → Settings → General → Reference ID',
     oauthNote: 'Apos configurar, autentique via browser na primeira execucao',
   },
-  'redis': {
-    name: 'Redis',
-    description: 'Persistencia, cache, sessoes',
-    envVars: ['REDIS_URL'],
-    authType: 'url',
-    tier: 'optional',
-    setupHint: 'Local: redis://localhost:6379 | Cloud: Upstash ou Redis Cloud (free tier)',
-  },
   'redis-session': {
     name: 'Redis Session',
     description: 'Sessoes persistentes no Redis',
@@ -194,14 +177,6 @@ const MCP_REGISTRY = {
     authType: 'url',
     tier: 'optional',
     setupHint: 'Usa a mesma REDIS_URL do Redis MCP',
-  },
-  'rest-api': {
-    name: 'REST API',
-    description: 'Chama qualquer REST API',
-    envVars: ['REST_API_BASE_URL'],
-    authType: 'url',
-    tier: 'optional',
-    setupHint: 'Defina a URL base da sua API (ex: https://api.meuapp.com)',
   },
 }
 

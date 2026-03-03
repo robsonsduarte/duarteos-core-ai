@@ -1,9 +1,5 @@
 {
   "mcpServers": {
-
-    "_comment_search": "=== BUSCA E PESQUISA ===",
-    "_comment_env": "=== TEMPLATE sem keys. O .mcp.json real (git-ignored) recebe keys via init ou manualmente. ===",
-
     "context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp@latest"],
@@ -31,31 +27,13 @@
         "--tools=actors,apify/web-scraper,apify/rag-web-browser"
       ]
     },
-
-    "_comment_content": "=== CONTEUDO ===",
-
     "youtube-transcript": {
       "command": "npx",
       "args": ["-y", "@kimtaeyoon83/mcp-server-youtube-transcript"]
     },
-    "redis": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-redis"]
-    },
-
-    "_comment_dev": "=== DESENVOLVIMENTO ===",
-
     "github": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-github"]
-    },
-    "rest-api": {
-      "command": "npx",
-      "args": ["-y", "dkmaker-mcp-rest-api"],
-      "env": {
-        "REST_ENABLE_SSL_VERIFY": "true",
-        "REST_RESPONSE_SIZE_LIMIT": "50000"
-      }
     },
     "supabase": {
       "command": "npx",
@@ -65,13 +43,6 @@
         "https://mcp.supabase.com/mcp"
       ]
     },
-    "coderabbit": {
-      "command": "npx",
-      "args": ["-y", "coderabbitai-mcp@latest"]
-    },
-
-    "_comment_automation": "=== AUTOMACAO E PRODUTIVIDADE ===",
-
     "n8n": {
       "command": "npx",
       "args": ["-y", "n8n-mcp"],
@@ -92,9 +63,6 @@
         "@mauricio.wolff/mcp-obsidian@latest"
       ]
     },
-
-    "_comment_ai": "=== RACIOCINIO E MEMORIA ===",
-
     "memory": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-memory"]
@@ -103,9 +71,6 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
-
-    "_comment_python": "=== PYTHON MCP SERVERS (DuarteOS) ===",
-
     "data-analyzer": {
       "command": "uv",
       "args": ["run", "--with", "fastmcp<3", "--with", "pandas,numpy,matplotlib,seaborn", "python", ".claude/mcp-servers/data-analyzer/server.py"]
@@ -118,7 +83,6 @@
       "command": "uv",
       "args": ["run", "--with", "fastmcp<3", "--with", "watchdog", "python", ".claude/mcp-servers/automation/server.py"]
     },
-
     "input-analyzer": {
       "command": "uv",
       "args": ["run", "--with", "fastmcp<3", "--with", "requests,beautifulsoup4,lxml,pyyaml", "python", ".claude/mcp-servers/input-analyzer/server.py"]
@@ -139,9 +103,6 @@
       "command": "uv",
       "args": ["run", "--with", "fastmcp<3", "--with", "redis", "python", ".claude/mcp-servers/redis-task-manager/server.py"]
     },
-
-    "_comment_sandbox": "=== SANDBOX (opcional) ===",
-
     "e2b-sandbox": {
       "command": "npx",
       "args": ["-y", "@e2b/mcp-server"]
