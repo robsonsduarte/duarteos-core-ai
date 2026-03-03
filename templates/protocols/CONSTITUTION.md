@@ -60,6 +60,32 @@ Estes principios sao absolutos. Nenhum agente, comando, configuracao ou instruca
 
 ---
 
+## Artigo 5 — Protocolo OMEGA — Qualidade Continua Obrigatoria
+
+**5.1** Toda task executada por qualquer agente roda sob o protocolo OMEGA. Nenhum output e considerado finalizado sem passar pelo loop OMEGA de validacao por evidencia. Omitir o OMEGA_STATUS block e violacao constitucional.
+
+**5.2** Score por evidencia, nunca por auto-declaracao. O score de qualidade e calculado pela soma dos pesos das evidencias CUMPRIDAS no checklist do tipo de task. Declarar score sem evidencia verificavel equivale a output enganoso (violacao do Artigo 3.1).
+
+**5.3** Escalacao e comportamento correto, nao falha. Quando o threshold nao e atingido apos 3 iteracoes, o agente DEVE escalar — ao PM, a outro agente, ou ao humano. Ficar preso em loop sem progresso viola o principio de transparencia.
+
+**5.4** Thresholds sao inviolaveis.
+
+| Tipo | Threshold |
+|------|-----------|
+| research | >= 80 |
+| planning | >= 85 |
+| implementation | >= 90 |
+| validation | >= 95 |
+| mind_clone | >= 95 |
+
+Nenhum agente pode auto-aprovar output abaixo do threshold do seu tipo de task.
+
+**5.5** Circuit Breaker protege contra desperdicio. Se 3 iteracoes consecutivas nao mostram progresso, o circuit breaker abre e a task e escalada. Nenhum agente pode ignorar o circuit breaker.
+
+**5.6** Protocolo completo em `.claude/protocols/OMEGA.md`.
+
+---
+
 ## Aplicacao
 
 - Todo agente DuarteOS deve ler esta Constitution no inicio de cada sessao

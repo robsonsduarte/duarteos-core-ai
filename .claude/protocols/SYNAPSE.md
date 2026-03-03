@@ -61,6 +61,31 @@ notes: null
 5. Ao concluir: `state: completed`, registrar resultado em `notes`
 6. Ao encerrar sessao: manter ultimo estado (nao resetar para idle)
 
+### Registro OMEGA no Synapse
+
+O Synapse registra o historico de scores OMEGA por agente como parte da memoria incremental. Cada agent state file (`.claude/synapse/{agente}.yaml`) pode incluir:
+
+```yaml
+omega_history:
+  last_score: {0-100}
+  last_task_type: "{type}"
+  last_iteration: {1-3}
+  last_result: "{completed|escalated|circuit_open}"
+  session_scores:
+    - date: "{YYYY-MM-DD}"
+      task: "{descricao}"
+      score: {N}
+      result: "{completed|escalated}"
+```
+
+**Regras de registro:**
+1. Atualizar `omega_history` apos cada task finalizada (completed ou escalated)
+2. Manter apenas as ultimas 10 entradas em `session_scores` (FIFO)
+3. Se um agente consistentemente fica abaixo do threshold (3+ vezes consecutivas), registrar flag `needs_attention: true`
+4. Scores OMEGA sao READ-ONLY para o agente — apenas o protocolo OMEGA pode atualizar
+
+**Uso:** O PM (ATLAS) pode consultar `omega_history` dos agentes para decidir delegacao. Um agente com historico de scores baixos em `implementation` pode ser substituido por outro para tasks criticas.
+
 ## Integracao com Squad
 
 O PM (ATLAS) pode consultar `/DUARTEOS:squad:synapse` para ver o dashboard

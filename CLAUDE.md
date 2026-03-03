@@ -42,6 +42,7 @@ Este projeto opera em **YOLO mode** — execucao autonoma com guardrails minimos
 - **Commits:** Conventional Commits (feat:, fix:, docs:, chore:, refactor:)
 - **Idioma:** Comunicacao sempre em portugues. Codigo e identificadores em ingles.
 - **Principio:** Ler antes de editar. Planejar antes de executar. Simplicidade > sofisticacao.
+- **Qualidade:** Protocolo OMEGA ativo em todos os agentes. Toda task emite OMEGA_STATUS com score por evidencia. Thresholds: Research >=80, Planning >=85, Implementation >=90, Validation/Mind Clone >=95. Detalhes em `.claude/protocols/OMEGA.md`.
 
 ## ⛔ Regra Absoluta: Desenvolvimento 100% INCREMENTAL
 

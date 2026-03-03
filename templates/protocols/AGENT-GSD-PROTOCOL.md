@@ -1,6 +1,6 @@
 # Protocolo de Integracao Agente ↔ GSD
 
-**Versao:** 1.1.0
+**Versao:** 1.2.0
 **Status:** Ativo
 **Autor:** ATLAS (PM)
 
@@ -43,6 +43,27 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 
 > Se existe um comando GSD que faz o que o agente precisa → **usar o GSD**.
 > Nunca recriar manualmente o que o motor ja oferece com rastreabilidade.
+
+### Integracao OMEGA
+
+Todo subcomando GSD que produz output executavel roda sob o protocolo OMEGA (`.claude/protocols/OMEGA.md`).
+
+**Subcomandos com OMEGA ativo:**
+| Subcomando | task_type OMEGA | Threshold |
+|------------|----------------|-----------|
+| `execute-phase` | implementation | >= 90 |
+| `quick` | implementation | >= 90 |
+| `verify-work` | validation | >= 95 |
+| `plan-phase` | planning | >= 85 |
+| `research-phase` | research | >= 80 |
+| `map-codebase` | research | >= 80 |
+| `audit-milestone` | validation | >= 95 |
+| `debug` | implementation | >= 90 |
+
+**Subcomandos SEM OMEGA (informativos):**
+- `progress`, `pause-work`, `resume-work`, `check-todos`, `add-todo`
+
+**Regra:** Agentes spawnados por subcomandos GSD DEVEM emitir OMEGA_STATUS block e seguir o loop de refinamento. O subcomando so e considerado concluido quando o dual-gate exit e satisfeito.
 
 ---
 
@@ -95,6 +116,11 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 
 **Guard critico:** Sempre verificar apos execute-phase. Nunca declarar fase concluida sem verify-work.
 
+**OMEGA Gate (verify-work):** Verificacao roda com threshold de validation (>= 95). O agente verificador deve:
+1. Emitir OMEGA_STATUS com evidencias de teste
+2. Atingir score >= 95 com completion signals de testes/cobertura
+3. Se nao atingir: documentar gaps e escalar
+
 ---
 
 ### Backend (FORGE) — Execucao Server-Side
@@ -106,6 +132,14 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 | `/gsd:quick --full "desc"` | Task pequena que precisa verificacao | Nenhum | quick/{NNN}/ + verificado |
 
 **Guard critico:** Nunca executar sem PLAN.md. Cada task = 1 commit atomico.
+
+**OMEGA Gate (execute-phase):** Cada wave de execucao dentro de uma fase roda sob OMEGA. O agente executor deve:
+1. Emitir OMEGA_STATUS ao final de cada wave
+2. Atingir score >= 90 (implementation) com >= 2 completion signals
+3. Se nao atingir: loop de refinamento (max 3x) antes de avancar
+4. Se circuit breaker abrir: escalar ao PM
+
+**OMEGA Gate (quick):** Mesmo tasks rapidas rodam sob OMEGA com threshold de implementation (>= 90). A unica diferenca e que o loop e limitado a 2 iteracoes (em vez de 3) para manter a velocidade.
 
 ---
 
@@ -392,3 +426,4 @@ Cada agente atualiza seu estado Synapse (`.claude/synapse/{agent}.yaml`) ao invo
 |--------|------|---------|
 | 1.0.0 | 2026-02-24 | Protocolo inicial — manifests, cadeia de autorizacao, recipes |
 | 1.1.0 | 2026-02-24 | Adicionado save-context — checkpoint continuo apos operacoes GSD |
+| 1.2.0 | 2026-03-02 | Integracao OMEGA — quality gates com dual-gate exit em subcomandos GSD |
