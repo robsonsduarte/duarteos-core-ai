@@ -1,9 +1,9 @@
 # Indice de Mind Clones — Synapse v3
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
-# Total: 59 clones em 10 categorias
-version: 1
+# Total: 60 clones em 10 categorias
+version: 2
 last_updated: "2026-03-03"
-total_clones: 59
+total_clones: 60
 
 categories:
   AI:
@@ -606,6 +606,17 @@ categories:
       has_paradoxos: false
       fidelidade: null
       last_updated: "2026-03-01"
+    - slug: "pavel-durov"
+      name: "Pavel Valeryevich Durov"
+      domain: "Data Engineering, Messaging Infrastructure, Privacy Tech"
+      clone_file: ".claude/commands/DUARTEOS/Tech/pavel-durov.md"
+      dna_file: ".claude/synapse/minds/pavel-durov.yaml"
+      versao_dna: 2
+      total_fontes: 3
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 93.15
+      last_updated: "2026-03-03"
 
   UX-Design:
     - slug: "brad-frost"

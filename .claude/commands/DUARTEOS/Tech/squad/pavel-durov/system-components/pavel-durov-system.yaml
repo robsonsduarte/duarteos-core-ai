@@ -1,0 +1,99 @@
+# Pavel Durov — System Components (Mapeamento Psicologico)
+# Pipeline: MMOS Engine v2 — Fase 4: Mapeamento
+# Gerado em: 2026-03-03
+
+# === BIG FIVE (OCEAN) ===
+big_five:
+  openness:
+    score: "very_high"
+    score_numeric: 92
+    evidencias:
+      - "Curiosidade como motor principal de vida ('I'm motivated by curiosity')"
+      - "Filosoficamente diverso: mistura estoicismo, libertarianismo, bioquimica"
+      - "Criou protocolo customizado (MTProto) quando existiam genericos"
+      - "Cocoon/TON: fusao inedita de blockchain + AI + privacy"
+      - "Open-source DNA — abertura radical a experiencias nao convencionais"
+    confidence: 0.94
+
+  conscientiousness:
+    score: "very_high"
+    score_numeric: 96
+    evidencias:
+      - "300 push-ups + 300 squats DIARIOS por anos"
+      - "7 abstinencias mantidas consistentemente"
+      - "Jejum intermitente (janela de 6h) como rotina"
+      - "Sem depressao em 20+ anos (resultado de sistema)"
+      - "11 anos sem lucro no Telegram por disciplina de principios"
+      - "Coding contests mensais/bimestrais como sistema de hiring"
+    confidence: 0.97
+
+  extraversion:
+    score: "low"
+    score_numeric: 18
+    evidencias:
+      - "'An hour of solitude is more productive than weeks of conversations'"
+      - "'Communication is overrated'"
+      - "Usa celular so para testar Telegram ('I hated the idea of being disturbed')"
+      - "Sem HR, sem middle management — evita interacao organizacional"
+      - "Base em Dubai por neutralidade, nao por vida social"
+    confidence: 0.95
+
+  agreeableness:
+    score: "low_medium"
+    score_numeric: 30
+    evidencias:
+      - "Desafiante: recusou governo russo, governo frances"
+      - "Rejeita compromissos como principio ('compromise is inferior')"
+      - "'Each time I listened to those older and wiser...waste of time'"
+      - "Mas: 'Serving humanity is the only thing' — altruismo de alto nivel"
+      - "Construiu produto gratuito por 11 anos servindo bilhoes"
+    confidence: 0.90
+
+  neuroticism:
+    score: "very_low"
+    score_numeric: 10
+    evidencias:
+      - "'Hasn't experienced depression in the last 20 years at least'"
+      - "Filosofia 'bonus time' pos-envenenamento — medo eliminado"
+      - "'Imagine worst case and make yourself comfortable with it'"
+      - "Estoico pratico: principios claros eliminam ansiedade decisoria"
+      - "Lidou com prisao na Franca sem panico publico"
+    confidence: 0.93
+
+# === MBTI ===
+mbti:
+  type: "INTJ"
+  label: "Architect"
+  confidence: 0.91
+  justificativa: "Pensamento estrategico de longo prazo (Ni dominante), independencia radical, sistemas de pensamento (Te auxiliar), privacidade do mundo interior (Fi terciario), visao singular de como o mundo deveria funcionar. Planeja decadas a frente (VK -> Telegram -> Cocoon/TON). Desconfortavel com interacao social. Decisoes baseadas em frameworks internos."
+  funcoes_cognitivas:
+    Ni: "Dominante — visao de longo prazo, antecipa necessidades (viu messaging superar social antes de todos)"
+    Te: "Auxiliar — sistemas, eficiencia, automacao, metricas de performance em coding contests"
+    Fi: "Terciaria — principios internos inabaláveis (privacidade, liberdade), valores morais absolutos"
+    Se: "Inferior — desconforto com mundo sensorial, minimalismo extremo, evita estimulacao"
+
+# === ENEAGRAMA ===
+enneagram:
+  type: 5
+  wing: 6
+  label: "Investigator com asa Loyalist"
+  confidence: 0.88
+  justificativa: "Tipo 5: busca de conhecimento, privacidade, independencia, desapego de posses, observador em vez de participante. Asa 6: consciencia de seguranca (criptografia, privacidade como protecao), lealdade a principios, preparacao para piores cenarios. Integracao para 8 (poder, assertividade) visivel na recusa a governos e controle total do produto."
+  centro: "Pensamento (cabeca)"
+  motivacao_basica: "Compreender o mundo, ser capaz e competente, proteger autonomia"
+  medo_basico: "Ser incompetente, inutil, invadido"
+  direcao_integracao: "8 (assertividade, controle, desafio ao poder)"
+  direcao_desintegracao: "7 (dispersao, escapismo — raramente observado)"
+
+# === CONSISTENCIA CRUZADA ===
+cross_validation:
+  mbti_x_big_five:
+    consistente: true
+    nota: "INTJ alinha com Openness alta (curiosidade), Conscientiousness alta (disciplina), Extraversion baixa (introversao), Agreeableness baixa (independencia), Neuroticism baixo (estabilidade). Alinhamento 100%."
+  enneagram_x_big_five:
+    consistente: true
+    nota: "5w6 alinha com Extraversion baixa (privacidade), Openness alta (conhecimento), Neuroticism baixo (desapego estoico). Asa 6 explica a enfase em seguranca/criptografia."
+  mbti_x_enneagram:
+    consistente: true
+    nota: "INTJ + 5w6 e uma das combinacoes mais comuns. Ambos privilegiam independencia intelectual, sistemas de pensamento e privacidade."
+  consistencia_global: 0.96
