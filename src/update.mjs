@@ -10,7 +10,7 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 // Changelog por versao — exibido no update
 const CHANGELOG = {
   '5.9.0': {
-    title: 'OMEGA v1.1 — Task Lifecycle + Mind Clone Bootstrap + Squad Artifacts',
+    title: 'OMEGA v1.1 — Task Lifecycle + Mind Clone Bootstrap + Squad Artifacts + MCP Fix',
     highlights: [
       'OMEGA v1.1.0: Task Lifecycle Protocol — PRE-EXEC + POST-EXEC + Memory obrigatorios (Secao 11)',
       'Pre-Execution: TASK.md + CHECKLIST.md criados em .planning/tasks/ antes de QUALQUER task',
@@ -23,6 +23,8 @@ const CHANGELOG = {
       'artifacts_completeness: novo bloco no config.yaml do squad com score e gate',
       'mind-update Step 4 expandido: mapeamento delta → artifacts com merge incremental',
       'Pavel Durov: legacy backfill completo — 31 squad artifacts gerados (14 frameworks, 6 tasks, 8 artifacts)',
+      'FIX: MCP servers (exa, apify, github, etc.) agora iniciam corretamente — removido ${VAR} do env block',
+      'FIX: env vars herdadas do shell (direnv/.env.local) — Claude Code nao suporta interpolacao ${VAR}',
     ],
   },
   '5.7.0': {
@@ -124,6 +126,79 @@ const CHANGELOG = {
       'Task Templates, Synapse State Machine, Quality Gates',
     ],
   },
+}
+
+/**
+ * Migrate .mcp.json: remove ${VAR} interpolation from env blocks.
+ * Claude Code does NOT support ${VAR} — servers must inherit env from the shell.
+ * This function surgically patches the file, preserving user customizations.
+ */
+function migrateMcpJson(cwd) {
+  const mcpPath = resolve(cwd, '.mcp.json')
+  if (!existsSync(mcpPath)) return false
+
+  let raw
+  try {
+    raw = readFileSync(mcpPath, 'utf-8')
+  } catch {
+    return false
+  }
+
+  let config
+  try {
+    config = JSON.parse(raw)
+  } catch {
+    return false
+  }
+
+  const servers = config.mcpServers
+  if (!servers) return false
+
+  let changed = false
+  for (const [id, server] of Object.entries(servers)) {
+    if (id.startsWith('_comment')) continue
+    if (!server.env) continue
+
+    // Remove env entries that use ${VAR} pattern (literal, not interpolated)
+    const keysToRemove = []
+    for (const [key, value] of Object.entries(server.env)) {
+      if (typeof value === 'string' && value.includes('${')) {
+        keysToRemove.push(key)
+      }
+    }
+
+    for (const key of keysToRemove) {
+      delete server.env[key]
+      changed = true
+    }
+
+    // If env block is now empty, remove it
+    if (Object.keys(server.env).length === 0) {
+      delete server.env
+    }
+  }
+
+  // Also fix args that contain ${VAR} (e.g., supabase URL)
+  for (const [id, server] of Object.entries(servers)) {
+    if (id.startsWith('_comment')) continue
+    if (!server.args) continue
+
+    server.args = server.args.map(arg => {
+      if (typeof arg === 'string' && arg.includes('${')) {
+        // Remove the ${VAR} portion from the arg
+        changed = true
+        return arg.replace(/\$\{[^}]+\}/g, '').replace(/[?&]project_ref=$/, '')
+      }
+      return arg
+    })
+  }
+
+  if (changed) {
+    writeFileSync(mcpPath, JSON.stringify(config, null, 2) + '\n', 'utf-8')
+    console.log('  ✓ .mcp.json migrado: removido ${VAR} do env (servers herdam do shell)')
+    return true
+  }
+  return false
 }
 
 function printChangelog(version) {
@@ -674,6 +749,9 @@ export function update(options = {}) {
     rmSync(oldSetupMcps)
     console.log('  - removido .claude/commands/setup-mcps.md (migrado para DUARTEOS/)')
   }
+
+  // v5.9.0 — Migrate .mcp.json: remove ${VAR} interpolation (Claude Code bug)
+  migrateMcpJson(cwd)
 
   // Ensure .gitignore has DuarteOS entries
   ensureGitignoreEntries(cwd)
