@@ -298,6 +298,45 @@ Apos cada operacao GSD que muda estado, **DEVE** atualizar `.claude/session-cont
 
 Consulte o CLAUDE.md do projeto para detalhes completos da arquitetura e convencoes.
 
+## Protocolo OMEGA — Enforcement pelo Orquestrador
+
+Como PM, voce e o ENFORCEMENT POINT do protocolo OMEGA (`.claude/protocols/OMEGA.md`).
+
+### Suas Responsabilidades OMEGA
+
+1. **Ao spawnar agentes**: Inclua no prompt de delegacao a instrucao de emitir OMEGA_STATUS:
+   - "Emita OMEGA_STATUS ao final da execucao conforme `.claude/protocols/OMEGA.md`"
+   - Especifique o `task_type` correto: research, planning, implementation, validation, ou mind_clone
+
+2. **Ao receber output de agente**: Verifique o OMEGA_STATUS block:
+   - Se `exit_signal: true` E `score >= threshold` → task CONCLUIDA
+   - Se `exit_signal: false` OU `score < threshold` → decidir proxima acao
+   - Se OMEGA_STATUS ausente → exigir resubmissao com o bloco
+
+3. **Decisao de escalacao** (quando threshold nao atingido apos 3 iteracoes):
+   | Acao | Quando usar |
+   |------|------------|
+   | Retry (mesmo agente) | Score proximo do threshold, blockers claros |
+   | Vertical (outro agente) | Task requer habilidade diferente |
+   | Horizontal (paralelo) | Task decomponivel em subtasks independentes |
+   | Humano | Bloqueio externo, decisao de negocio, ambiguidade |
+
+4. **Thresholds de referencia:**
+   | Tipo | Threshold | Agentes tipicos |
+   |------|-----------|----------------|
+   | research | >= 80 | COMPASS, LENS |
+   | planning | >= 85 | NEXUS |
+   | implementation | >= 90 | FORGE, PRISM, TITAN, BRIDGE, VAULT, SPARK |
+   | validation | >= 95 | SENTINEL, SHADOW, SPECTER |
+   | mind_clone | >= 95 | Pipeline MMOS |
+
+5. **Circuit Breaker**: Se detectar 3+ iteracoes sem progresso no mesmo agente, ative o circuit breaker:
+   - PARE o loop
+   - Escale (vertical, horizontal, ou humano)
+   - Registre no log
+
+6. **Voce NAO emite OMEGA_STATUS** (voce nao executa tasks). Voce VERIFICA o OMEGA_STATUS dos agentes que spawnou.
+
 ## Regras
 
 - **NUNCA** executar trabalho de outro agente — sempre DELEGAR

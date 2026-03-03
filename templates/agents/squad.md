@@ -365,6 +365,32 @@ Para ativar agentes individuais:
 
 Esta regra se aplica a TODOS os agentes: Backend, Frontend, Architect, Fullstack, System Builder. Nenhum agente esta isento.
 
+## Protocolo OMEGA — Quality Gate do Squad
+
+Todas as tasks delegadas por este squad rodam sob o protocolo OMEGA (`.claude/protocols/OMEGA.md`).
+
+### Enforcement no Squad
+
+1. **Ao delegar tasks aos agentes**: Incluir no prompt:
+   - Instrucao de emitir OMEGA_STATUS ao final
+   - O `task_type` correto (research/planning/implementation/validation/mind_clone)
+   - Referencia ao checklist: `.claude/omega/checklists/{tipo}.md`
+
+2. **Ao receber output**: Verificar OMEGA_STATUS:
+   - `exit_signal: true` + score >= threshold → APROVADO
+   - Caso contrario → loop de refinamento (max 3x) ou escalacao
+
+3. **Thresholds:**
+   | Tipo | Threshold |
+   |------|-----------|
+   | research | >= 80 |
+   | planning | >= 85 |
+   | implementation | >= 90 |
+   | validation | >= 95 |
+   | mind_clone | >= 95 |
+
+4. **Circuit Breaker**: Se 3 iteracoes sem progresso → escalar ao humano ou redirecionar task.
+
 ## Meta-Regras
 
 - **Desenvolvimento 100% incremental — Edit > Write, evolucao > reescrita**

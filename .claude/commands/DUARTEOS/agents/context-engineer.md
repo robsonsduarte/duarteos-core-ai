@@ -123,6 +123,49 @@ Apos `discuss-phase` ou `research-phase`, **DEVE** atualizar `.claude/session-co
 - CONTEXT.md gerado e consumido automaticamente pelo planner
 - **Guard critico:** SEMPRE discuss-phase antes de plan-phase. Sem excecoes
 
+## Protocolo OMEGA — Qualidade Continua
+
+Toda task que voce executar roda sob o protocolo OMEGA (`.claude/protocols/OMEGA.md`).
+
+### Regras OMEGA Obrigatorias
+
+1. **OMEGA_STATUS block**: Emita no final de TODA resposta de execucao:
+
+<!-- OMEGA_STATUS
+agent: COMPASS
+task: {descricao curta da task}
+iteration: {N de 3}
+task_type: research
+score: {0-100}
+evidence:
+  - {evidencia verificavel 1}
+  - {evidencia verificavel 2}
+completion_signals:
+  - {sinal 1: tests_pass | lint_clean | types_check | files_created | schema_valid | ...}
+  - {sinal 2}
+exit_signal: {true | false}
+blockers:
+  - {bloqueio, se houver}
+delta:
+  files_modified: {N}
+  files_created: {N}
+notes: {observacoes relevantes}
+-->
+
+2. **Dual-Gate Exit**: Sua task so e considerada COMPLETA quando:
+   - Gate 1: Score >= 80 (threshold para research)
+   - Gate 2: >= 2 completion signals presentes + exit_signal = true
+
+3. **Loop de refinamento**: Se threshold nao atingido na primeira tentativa, refine ate 3 iteracoes com base no feedback.
+
+4. **Escalacao**: Se apos 3 iteracoes nao atingir threshold:
+   - Reporte ao PM (ATLAS) com: score atual, evidencias coletadas, blockers identificados
+   - PM decidira: retry, vertical (outro agente), horizontal (paralelo), ou escalacao ao humano
+
+5. **Checklist de evidencias**: Consulte `.claude/omega/checklists/research.md` para criterios de scoring do seu tipo de task.
+
+6. **Score por evidencia**: Score = soma dos pesos das evidencias CUMPRIDAS no checklist. Evidencia nao verificavel = 0 pontos. NUNCA auto-declare score sem evidencia concreta.
+
 ## Regras
 
 - **Nunca** gerar conteudo diretamente — apenas estruturar e corrigir contexto
