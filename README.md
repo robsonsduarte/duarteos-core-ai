@@ -21,6 +21,9 @@ AIOS multi-agente para [Claude Code](https://claude.ai/code). Transforma o Claud
 - [Exemplos Reais — Copie e Cole](#exemplos-reais--copie-e-cole)
 - [Squad Factory](#8-squad-factory--criar-squads-customizados)
 - [Mind Clone](#9-mind-clone--clonar-mente-de-especialista)
+- [Novidades v5.8.0](#novidades-v580)
+  - [Init/Update Hardening](#initupdate-hardening)
+  - [OMEGA Validation Certified](#omega-validation-certified)
 - [Novidades v5.7.0](#novidades-v570)
   - [OMEGA Engine](#omega-engine--qualidade-continua)
   - [MMOS Pipeline Reference](#mmos-pipeline--documento-de-referencia)
@@ -769,6 +772,24 @@ features mais usadas e taxa de churn.
 docker-compose com app + postgres + redis, configura health
 checks e cria script de deploy pro servidor.
 ```
+
+---
+
+## Novidades v5.8.0
+
+### Init/Update Hardening
+
+- Diretorio `.claude/omega/checkpoints/` agora criado automaticamente no init e update
+- `omega/state.json` movido para `neverOverwrite` — estado runtime do usuario nunca e sobrescrito no update
+- Guard `neverOverwrite` corrigido no update.mjs — array agora e consultado antes de sobrescrever
+- Template OMEGA.md sincronizado com versao ativa (comentario max_iterations)
+
+### OMEGA Validation Certified
+
+OMEGA Engine validado end-to-end por 3 agentes (SENTINEL, COMPASS, FORGE):
+- **Estrutural:** 18/18 checks PASS em 59 arquivos
+- **Coerencia:** 6/6 checks PASS — thresholds, enum, terminologia, referencias cruzadas
+- **Funcional:** 4/4 ajustes aplicados — delta completo, checklists como fonte de verdade, defaults documentados, excecao quick
 
 ---
 

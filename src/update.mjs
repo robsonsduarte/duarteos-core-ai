@@ -335,7 +335,6 @@ export function update(options = {}) {
 
     // v5.7.0 — OMEGA Quality Enforcement Loop
     ['omega/config.yaml', '.claude/omega/config.yaml'],
-    ['omega/state.json', '.claude/omega/state.json'],
 
     // v5.7.0 — Protocols (OMEGA + MMOS-PIPELINE)
     ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
@@ -466,6 +465,8 @@ export function update(options = {}) {
     '.claude/synapse/security-auditor.yaml',
     '.claude/synapse/fullstack.yaml',
     '.claude/synapse/system-builder.yaml',
+    // v5.7.0 — OMEGA state (runtime data, never overwrite)
+    '.claude/omega/state.json',
   ]
 
   let updated = 0
@@ -477,6 +478,12 @@ export function update(options = {}) {
     const srcPath = resolve(TEMPLATES_DIR, src)
 
     if (!existsSync(srcPath)) {
+      continue
+    }
+
+    // Guard: skip files in neverOverwrite list
+    if (neverOverwrite.includes(dest)) {
+      skipped++
       continue
     }
 
@@ -623,6 +630,10 @@ export function update(options = {}) {
       }
     }
   }
+
+  // OMEGA checkpoints directory — ensure it exists for runtime snapshots
+  const omegaCheckpointsDest = resolve(cwd, '.claude', 'omega', 'checkpoints')
+  if (!existsSync(omegaCheckpointsDest)) mkdirSync(omegaCheckpointsDest, { recursive: true })
 
   // Clean up old namespace directories (after migration + update copied new files)
   const oldAgentsDir = resolve(cwd, '.claude/commands/agents')

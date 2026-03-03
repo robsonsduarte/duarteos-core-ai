@@ -4,12 +4,12 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Estado Atual
 
-- **Versao:** 5.7.0
+- **Versao:** 5.8.0
 - **Milestone:** —
 - **Fase atual:** —
 - **Status da fase:** —
-- **Ultima operacao:** v5.7.0 — OMEGA Engine + MMOS Pipeline + threshold 95% + squad scaffold (2026-03-02)
-- **Proximo passo:** Git commit v5.7.0 + push pendente (3 commits: v5.6.0, gitignore, v5.7.0)
+- **Ultima operacao:** v5.8.0 — Init/Update hardening + OMEGA validation certified (2026-03-02)
+- **Proximo passo:** —
 - **Bloqueios:** Nenhum
 
 ## Artefatos Ativos
@@ -21,6 +21,8 @@ Checkpoint continuo do estado do projeto. Atualizado automaticamente apos cada o
 
 ## Decisoes Recentes
 
+- [2026-03-02] v5.8.0: Init/Update hardening — checkpoints dir, neverOverwrite guard, state.json protegido, template sync
+- [2026-03-02] v5.8.0: OMEGA validation certified — 18/18 estrutural, 6/6 coerencia, 8 fixes aplicados e validados
 - [2026-03-02] v5.7.0: OMEGA Engine — protocolo de qualidade continua (loop 3x, circuit breaker, dual-gate exit, escalation router)
 - [2026-03-02] v5.7.0: MMOS Pipeline — documento de referencia completo para criacao de clones mentais (7 fases, squads)
 - [2026-03-02] v5.7.0: Threshold mind clone elevado de 94% para 95% com notificacao interativa ao usuario
@@ -348,4 +350,16 @@ _Nenhuma pendencia registrada._
 - Contexto salvo via DuarteOS hook
 
 ### 2026-03-02 21:55 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 22:08 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 22:16 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 22:25 — Sessao encerrada automaticamente
+- Contexto salvo via DuarteOS hook
+
+### 2026-03-02 22:26 — Sessao encerrada automaticamente
 - Contexto salvo via DuarteOS hook

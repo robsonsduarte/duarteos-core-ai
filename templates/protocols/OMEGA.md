@@ -35,6 +35,8 @@ OMEGA_LOOP(task, agent):
   max_iterations = 3
   status = RUNNING
 
+  // Nota: max_iterations = 3 e o padrao. Ver excecao abaixo para /gsd:quick.
+
   WHILE iteration < max_iterations AND status == RUNNING:
     iteration += 1
 

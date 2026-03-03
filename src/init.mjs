@@ -122,6 +122,7 @@ export function init(projectName, options = {}) {
     // v5.7.0 — OMEGA Quality Enforcement Loop
     '.claude/omega',
     '.claude/omega/checklists',
+    '.claude/omega/checkpoints',
   ]
 
   for (const dir of dirs) {
