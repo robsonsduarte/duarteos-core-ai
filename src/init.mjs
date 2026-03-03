@@ -533,7 +533,7 @@ export function init(projectName, options = {}) {
      QUALITY-GATES.md        — Pipeline de validacao (9 gates)
      IDE-SYNC.md             — Sincronizacao multi-IDE
      OMEGA.md                — Quality enforcement loop engine
-     MMOS-PIPELINE.md        — Pipeline MMOS de clonagem cognitiva (7 fases)
+     MMOS-PIPELINE.md        — Pipeline MMOS v2 de clonagem mental (6 fases + Fase 0)
 
   Config (.claude/config/) — 3 camadas:
      system.yaml             — Layer 0: defaults DuarteOS (read-only)
@@ -620,7 +620,7 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
 
   MMOS Pipeline — Clonagem Cognitiva Avancada:
-     /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 7 fases: APEX/ICP + DNA 6 Camadas + Validacao 94%
+     /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 6 fases: APEX/ICP + DNA 6 Camadas + Fidelidade >= 95%
      /DUARTEOS:mmos:mind-update [nome] [fonte] — Update incremental com rollback automatico
 
   OMEGA — Quality Enforcement Loop (.claude/omega/):

@@ -1458,4 +1458,4 @@ ENTIDADES DB:      contents  mius       mind_drivers  mapping_sys  minds     too
 
 *MMOS Engine v2.0 — Pipeline de Clonagem Mental de Alta Fidelidade*
 *6 fases reais x 15+ entidades DB x 5 autoridades x OMEGA v2 loop x Synapse v3 DNA*
-*Documento autocontido. Fonte de verdade: mmos-extraction-engine-v2.md*
+*Documento autocontido. Fonte de verdade: docs/mmos-extraction-engine-v2.md*
