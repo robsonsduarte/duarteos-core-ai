@@ -1,6 +1,8 @@
 # DNA Mental: {Nome do Especialista}
 # Synapse Mind Clone — Memoria Incremental
+# Pipeline: MMOS Engine v2 (6 Fases, 15 Entidades, 5 Autoridades)
 # DNA: 6 Camadas Cognitivas (Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos)
+# Formula: F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)
 # Gerado em: {data}
 # Ultima atualizacao: {data}
 # Fontes processadas: {N}
@@ -11,9 +13,13 @@ identity:
   slug: "{nome-normalizado}"
   domain: "{Dominio principal}"
   archetype: "{Frase que define a pessoa}"
-  clone_file: ".claude/commands/DUARTEOS/{Categoria}/{slug}.md"
-  apex_score: null     # Preenchido na Fase 0 (/60)
-  icp_score: null      # Preenchido na Fase 0 (/10)
+  category: "{categoria-kebab-case}"    # copy, marketing, ux-design, ai, tech, business, content, product, saude, juridico
+  clone_file: "DUARTEOS/squad/{categoria}/agents/{slug}.md"
+  squad_path: "DUARTEOS/squad/{categoria}/"
+  pipeline_version: "2"                 # MMOS Engine v2
+  status: "draft"                       # draft, active, premium, archived
+  apex_score: null                      # Preenchido na Fase 0 (/60)
+  icp_score: null                       # Preenchido na Fase 0 (/10)
 
 # === AS 6 CAMADAS DO DNA ===
 
@@ -131,6 +137,18 @@ stats:
   ultima_atualizacao: "{YYYY-MM-DD}"
   versao_dna: 1
   confianca_geral: "{alta/media/baixa}"
-  fidelidade: null     # Score de fidelidade da validacao (0-100%)
+  # Formula de Fidelidade MMOS v2:
+  # F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)
+  # Minimum per component: 85. Minimum composite: 95.
+  fidelidade: null                # Score composto F (0-100%)
+  fidelidade_components:
+    L_linguistic: null            # Linguistic Accuracy (0-100)
+    B_behavioral: null            # Behavioral Fidelity (0-100) — MAIOR PESO
+    C_contradiction: null         # Contradiction Handling (0-100)
+    K_knowledge: null             # Knowledge/Framework Application (0-100)
+    V_voice: null                 # Voice Authenticity (0-100)
   apex_score: null
   icp_score: null
+  blind_test_passed: null         # true/false — Fase 5 Kahneman
+  noise_audit_score: null         # Reprodutibilidade (0-1.0, meta >= 0.90)
+  premortem_documented: false     # Pre-mortem executado na Fase 5
