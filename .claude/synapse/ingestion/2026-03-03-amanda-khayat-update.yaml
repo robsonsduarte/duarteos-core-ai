@@ -1,0 +1,49 @@
+date: "2026-03-03"
+source_type: "pesquisa-web-exa"
+source_urls:
+  - "https://www.youtube.com/watch?v=Rz1Y7fhXGFI"
+  - "https://cursosdigital10.com.br/cursos/mentoria-anuncios-milionarios/"
+  - "https://xcursosweboficial.com/produto/mentoria-comissao-6d-2025-amanda-khayat/"
+  - "https://www.youtube.com/shorts/_Sh41mKpgP8"
+title: "Amanda Khayat Mind Update v2 — Pesquisa Exa (Podcast VTurb #123, Mentoria Anuncios Milionarios, Comissao 6D)"
+mind_clone: "amanda-khayat"
+camadas_impactadas:
+  - filosofia
+  - frameworks
+  - heuristicas
+  - metodologias
+  - dilemas
+  - paradoxos_produtivos
+  - communication
+  - expertise
+  - behavior
+insights:
+  - camada: "filosofia"
+    tipo: "EVOLUCAO"
+    conteudo: "Posicao sobre IA evoluiu de rejeicao total para uso pragmatico como acelerador 4x"
+  - camada: "frameworks"
+    tipo: "NOVO"
+    conteudo: "Super Spy, Frase de Aterrissagem, New Idea, Brief 4 Etapas, 12 Palavras dos Hooks, 7 Fundamentos do Copy, TOP ADs Analysis, Andromeda"
+  - camada: "heuristicas"
+    tipo: "NOVO"
+    conteudo: "Pesquisa no TikTok erro fatal, Deixar o cliente nu, Peculiaridades de Nicho, Congruencia do Avatar expandida"
+  - camada: "metodologias"
+    tipo: "NOVO"
+    conteudo: "Pipeline Anuncios Milionarios (11 etapas), Comissao 6D (5 etapas), Rotina Matinal"
+  - camada: "dilemas"
+    tipo: "EVOLUCAO"
+    conteudo: "IA: de anti-IA total para acelerador pragmatico. Volume: Metodo 25 + Andromeda coexistem"
+  - camada: "paradoxos_produtivos"
+    tipo: "NOVO"
+    conteudo: "0% Criatividade = Ideias Milionarias. Menos Variacoes = Mais Acertos (Andromeda)"
+  - camada: "communication"
+    tipo: "NOVO"
+    conteudo: "Frases-assinatura: Deixar o cliente nu, Biblia dos Hooks, Frase de aterrissagem"
+  - camada: "expertise"
+    tipo: "NOVO"
+    conteudo: "TikTok Shop, Algoritmo Andromeda, Marketing de afiliados (Comissao 6D)"
+  - camada: "behavior"
+    tipo: "NOVO"
+    conteudo: "Demonstracao ao vivo (escrita transparente), Revisao detalhada de alunos"
+versao_dna_antes: 1
+versao_dna_depois: 2

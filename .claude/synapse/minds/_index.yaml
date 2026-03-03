@@ -184,10 +184,10 @@ categories:
       clone_file: ".claude/commands/DUARTEOS/Copywriting/amanda-khayat.md"
       dna_file: ".claude/synapse/minds/amanda-khayat.yaml"
       versao_dna: 2
-      total_fontes: 3
+      total_fontes: 5
       confianca: "alta"
       has_paradoxos: true
-      fidelidade: null
+      fidelidade: 88.95
       last_updated: "2026-03-03"
     - slug: "claude-hopkins"
       name: "Claude Hopkins"

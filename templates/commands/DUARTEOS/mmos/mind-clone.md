@@ -51,6 +51,12 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
 | **Metodologias** | Processos repetiveis, sistemas formais, ferramentas | "Que sistemas formais segue consistentemente?" |
 | **Dilemas** | Trade-offs, tensoes reconhecidas, zonas cinza, evolucao de posicoes | "Como lida com contradicoes e decisoes impossiveis?" |
 | **Paradoxos Produtivos** | Contradicoes que coexistem e geram valor (CAMADA OURO — 35% do score) | "Que verdades aparentemente contraditorias ela sustenta simultaneamente?" |
+| **Associações Conceituais** | Pontes entre conceitos aparentemente não relacionados | "Como conecta ideias de domínios diferentes?" |
+| **Comunicação Avançada** | Estrutura retórica + estilometria quantitativa | "Como argumenta e qual seu estilo mensurável?" |
+
+**Subcamadas v2.1 (dentro das camadas existentes):**
+- **Filosofia:** hierarquia_valores (valores rankeados), conflitos_de_valor, motivacao_profunda (impulsores/medos)
+- **Heurísticas:** modelo_social (teoria da mente simulada — confiança default, interpretação de crítica/elogio)
 
 ---
 
@@ -172,18 +178,34 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
 
 2. **Classificar cada MIU** por tipo semantico:
    - Comportamental / Linguistico / Narrativo / Decisorio / Framework
+   - **Novos tipos v2.1:**
+     - `interacao_social` — MIUs que revelam como interpreta intencoes dos outros, reage a critica/elogio, nivel de confianca default
+     - `argumentativo` — MIUs que revelam estrutura retorica, sequencia argumentativa, preferencia de persuasao
+     - `associativo` — MIUs que conectam conceitos de dominios aparentemente nao relacionados (pontes conceituais)
 
-3. **Validacao independente** (agente diferente do de extracao):
+3. **Calculo de Estilometria (v2.1):**
+   - Sobre o corpus completo de MIUs, calcular metricas quantitativas:
+     - Comprimento medio de frase (palavras)
+     - Ratio de vocabulario tecnico vs coloquial
+     - Frequencia de perguntas retoricas e imperativos
+     - Frequencia de palavroes e expressoes coloquiais
+     - Code-switching (alternancia de idiomas — portugues/ingles/etc.)
+     - Marcadores discursivos recorrentes (ex: "olha", "tipo", "basicamente")
+     - Cadencia geral (curta-rapida, longa-reflexiva, mista)
+     - Pontuacao expressiva (uso de "!", "...", "—")
+   - Registrar em `estilometria` no DNA YAML
+
+4. **Validacao independente** (agente diferente do de extracao):
    - MIU tem significado autonomo? SIM -> validated | NAO -> rejected
    - Registrar razao de rejeicao
    - MIUs "boring" sao tao importantes quanto "dramatic" (Kahneman anti-saliencia)
 
-4. **Progressive Summarization (Forte):**
+5. **Progressive Summarization (Forte):**
    - Layer 1: texto bruto em `data/raw/`
    - Layer 2: MIUs extraidas (validated)
    - Layer 3: essencia destilada de cada MIU
 
-5. **Calcular metricas:**
+6. **Calcular metricas:**
    - `fragmentation_quality`: % MIUs com significado autonomo (>= 95%)
    - `semantic_ratio`: % cortes semanticos vs arbitrarios (>= 90%)
    - `rejection_rate`: taxa documentada
@@ -236,23 +258,49 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
    - Comparar ANTES de mediacao
    - Concordancia >= 0.85
 
-7. **Extrair DNA (6 camadas):**
+7. **Separar drivers em positivos e negativos (v2.1):**
+   - **Impulsores:** drivers que movem para frente (legado, reconhecimento, provar algo, curiosidade)
+   - **Medos:** drivers negativos que paralisam ou motivam por evitacao (fracasso, irrelevancia, mediocridade, perda de controle)
+   - Registrar em `filosofia.motivacao_profunda` com intensidade e evidencia
+   - Definir `recompensa_ideal`: como a pessoa define "sucesso" pessoal
+
+8. **Rankear valores por evidencia de sacrificio/escolha (v2.1):**
+   - Para cada valor/principio identificado, buscar evidencias de "quando colidiu com outro valor, qual venceu?"
+   - Gerar `filosofia.hierarquia_valores` com rank numerico (1 = mais importante)
+   - Registrar `conflitos_de_valor` com contexto e evidencia de cada resolucao
+
+9. **Inferir associacoes conceituais por co-ocorrencia em MIUs (v2.1):**
+   - Identificar pares de conceitos de dominios diferentes que co-ocorrem nas MIUs
+   - Gerar `associacoes_conceituais.pontes` com frequencia e exemplos
+   - Inferir `padrao_associativo` geral (analogico, metaforico, sistemico, interdisciplinar)
+
+10. **Inferir modelo social (v2.1):**
+    - A partir de MIUs tipo `interacao_social`, inferir:
+      - `confianca_default`: nivel geral de confianca em outros (alta/media/baixa)
+      - `como_interpreta_critica`: padrao de reacao a criticas (duvida legitima vs ataque vs feedback util)
+      - `como_interpreta_elogio`: aceita vs desconfia vs redireciona
+      - `padrao_atribuicao`: internaliza causas (merito/culpa propria) vs externaliza (ambiente/sorte)
+    - Registrar interacoes observadas com situacao, interpretacao, reacao e evidencia
+
+11. **Extrair DNA (6 camadas + subcamadas v2.1):**
 
    Nesta fase, popular o DNA em `.claude/synapse/minds/{slug}.yaml`:
 
-   **Camada 1 — Filosofia:** Crencas core, visao de mundo, principios inegociaveis
+   **Camada 1 — Filosofia:** Crencas core, visao de mundo, principios inegociaveis + hierarquia_valores, conflitos_de_valor, motivacao_profunda
    **Camada 2 — Frameworks:** Frameworks primarios, modelo de decisao
-   **Camada 3 — Heuristicas:** Regras rapidas, vieses conhecidos, red flags
+   **Camada 3 — Heuristicas:** Regras rapidas, vieses conhecidos, red flags + modelo_social
    **Camada 4 — Metodologias:** Processos, ferramentas preferidas
    **Camada 5 — Dilemas:** Trade-offs, zonas cinza, evolucoes de posicao
    **Camada 6 — Paradoxos Produtivos:** Contradicoes internas que coexistem
+   **Associacoes Conceituais:** Pontes entre conceitos, padrao associativo
+   **Comunicacao Avancada:** Estrutura retorica (formula argumentativa, sequencias) + estilometria (metricas quantitativas)
 
    Para cada entrada, incluir `source_path` e `evidencia`.
    **Paradoxos:** minimo 2, cada um com >= 3 fontes independentes.
 
-8. **Pre-mortem (Kahneman):**
-   - "Se este driver estiver errado, o que acontece com o clone?"
-   - Mapear impacto de cada falso positivo e falso negativo
+12. **Pre-mortem (Kahneman):**
+    - "Se este driver estiver errado, o que acontece com o clone?"
+    - Mapear impacto de cada falso positivo e falso negativo
 
 #### Gate Gawande 3->4
 
@@ -353,6 +401,16 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
 5. **Blind test (Kahneman):**
    - Apresentar material que o clone NUNCA viu
    - O clone generaliza corretamente? Se nao -> overfitting
+
+   **Cenarios adicionais de blind test (v2.1):**
+
+   | # | Tipo | O que testa | Como avaliar |
+   |---|------|-------------|--------------|
+   | A | **Provocacao/Critica** | Modelo social — como reage a critica direta | Resposta consistente com `modelo_social.como_interpreta_critica`? Tom preservado? |
+   | B | **Argumento Complexo** | Estrutura retorica — como constroi argumentos | Sequencia retorica compativel com `estrutura_retorica.formula_padrao`? |
+   | C | **Associacao Inesperada** | Pontes conceituais — conecta dominios diferentes | Tipo de ponte conceitual consistente com `associacoes_conceituais.padrao_associativo`? |
+
+   **Estilometria no blind test:** Avaliar se a resposta gerada mantem metricas compativeis com o perfil estilometrico (comprimento de frase, cadencia, code-switching, marcadores discursivos).
 
 6. **Noise audit (Kahneman):**
    - Re-executar perfil com mesmos inputs
@@ -893,6 +951,17 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
 | 6 | Narrative (2) | `squad/{slug}/artifacts/narrative/` | NAO (warning) |
 | 6 | Config completo | `squad/{slug}/config.yaml` | SIM |
 | 6 | Indice Synapse | `.claude/synapse/minds/_index.yaml` | SIM |
+
+**Campos v2.1 no DNA YAML (gerados nas Fases 2-3):**
+
+| Componente | Campo no DNA | Gerado na Fase |
+|------------|-------------|----------------|
+| Estilometria Computacional | `comunicacao_avancada.estilometria` | Fase 2 (Extracao) |
+| Estrutura Retorica | `comunicacao_avancada.estrutura_retorica` | Fase 3 (Inferencia) |
+| Associacoes Conceituais | `associacoes_conceituais` | Fase 3 (Inferencia) |
+| Hierarquia de Valores | `filosofia.hierarquia_valores` + `filosofia.conflitos_de_valor` | Fase 3 (Inferencia) |
+| Motivacao Profunda | `filosofia.motivacao_profunda` | Fase 3 (Inferencia) |
+| Modelo Social | `heuristicas.modelo_social` | Fase 3 (Inferencia) |
 
 ## Regras Criticas
 

@@ -1,7 +1,9 @@
 # DNA Mental: {Nome do Especialista}
 # Synapse Mind Clone — Memoria Incremental
-# Pipeline: MMOS Engine v2 (6 Fases, 15 Entidades, 5 Autoridades)
-# DNA: 6 Camadas Cognitivas (Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos)
+# Pipeline: MMOS Engine v2.1 (6 Fases, 15 Entidades, 5 Autoridades)
+# DNA: 6 Camadas + 4 Subcamadas Cognitivas
+#   Camadas: Filosofia, Frameworks, Heuristicas, Associacoes Conceituais, Metodologias, Dilemas, Paradoxos Produtivos, Comunicacao Avancada
+#   Subcamadas: hierarquia_valores, motivacao_profunda (filosofia), modelo_social (heuristicas), estilometria + estrutura_retorica (comunicacao_avancada)
 # Formula: F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)
 # Gerado em: {data}
 # Ultima atualizacao: {data}
@@ -36,6 +38,35 @@ filosofia:
   principios_inegociaveis:
     - "{principio 1}"
     - "{principio 2}"
+  # Hierarquia de valores rankeada — QUAL valor vence quando dois colidem
+  hierarquia_valores:
+    - valor: "{valor mais importante}"
+      rank: 1
+      sacrifica_por: "{o que abre mao em favor deste valor}"
+      evidencia: "{fonte/citacao}"
+    - valor: "{segundo valor}"
+      rank: 2
+      sacrifica_por: "{o que abre mao}"
+      evidencia: "{fonte/citacao}"
+  conflitos_de_valor:
+    - valor_a: "{valor X}"
+      valor_b: "{valor Y}"
+      escolhe: "{qual vence}"
+      contexto: "{em que situacao}"
+      evidencia: "{fonte}"
+  # Modelo de recompensa e medo — motores profundos de comportamento
+  motivacao_profunda:
+    impulsores:
+      - motor: "{o que move pra frente — ex: provar que pode, deixar legado}"
+        intensidade: "{alta|media|baixa}"
+        evidencia: "{citacao/fonte}"
+        source_path: "{URL ou path}"
+    medos:
+      - medo: "{o que evita a todo custo — ex: mediocridade, irrelevancia}"
+        intensidade: "{alta|media|baixa}"
+        evidencia: "{citacao/fonte}"
+        source_path: "{URL ou path}"
+    recompensa_ideal: "{o que define 'sucesso' para essa pessoa}"
 
 frameworks:
   # Passos-a-passo que a pessoa segue — COMO ela estrutura pensamento
@@ -67,6 +98,31 @@ heuristicas:
     - "{vies que a pessoa tem conscientemente}"
   red_flags:
     - "{sinal de alerta que faz parar imediatamente}"
+  # Modelo social / Teoria da Mente — como modela intencoes dos OUTROS
+  modelo_social:
+    confianca_default: "{alta|media|baixa}"
+    como_interpreta_critica: "{texto — ex: interpreta como preguica, nao como duvida}"
+    como_interpreta_elogio: "{texto — ex: aceita com naturalidade vs desconfia}"
+    padrao_atribuicao: "{internaliza|externaliza|contextual}"
+    interacoes:
+      - situacao: "{quando alguem faz X}"
+        interpretacao: "{interpreta como Y}"
+        reacao: "{reage com Z}"
+        evidencia: "{fonte}"
+        source_path: "{URL ou path}"
+
+# Associacoes conceituais — COMO a pessoa conecta ideias aparentemente nao relacionadas
+# Diferente de frameworks (que sao passos) e heuristicas (que sao regras)
+# Aqui capturamos PONTES entre conceitos — padroes associativos da mente
+associacoes_conceituais:
+  pontes:
+    - conceito_a: "{tema/conceito 1}"
+      conceito_b: "{tema/conceito 2 — aparentemente nao relacionado}"
+      ponte: "{como conecta — a logica por tras}"
+      frequencia: "{alta|media|baixa}"
+      exemplo: "{citacao ou contexto onde faz essa conexao}"
+      source_path: "{URL ou path}"
+  padrao_associativo: "{texto descritivo — ex: conecta esporte com disciplina profissional, historia com estrategia moderna}"
 
 metodologias:
   # Processos estruturados e repetiveis — SISTEMAS que usa
@@ -119,6 +175,33 @@ paradoxos_produtivos:
           source_path: "{inbox/{autor}/{tipo}/{arquivo}.txt}"
       valor_autenticidade: "{alto|medio|baixo}"
   nota_camada: "{observacao geral sobre os paradoxos deste expert}"
+
+# Comunicacao avancada — estrutura retorica e estilometria
+comunicacao_avancada:
+  # Estrutura retorica — a "formula" para construir argumentos
+  estrutura_retorica:
+    formula_padrao: "{como tipicamente constroi argumentos — ex: Provocacao -> Framework -> Resultado -> Desafio}"
+    sequencias:
+      - nome: "{nome do padrao — ex: Provocacao-Prova}"
+        passos:
+          - "{passo 1 — ex: Abre com afirmacao forte/provocativa}"
+          - "{passo 2 — ex: Apresenta framework/metodo como prova}"
+          - "{passo 3 — ex: Mostra resultado numerico}"
+          - "{passo 4 — ex: Fecha com desafio direto ao ouvinte}"
+        quando_usa: "{em que contexto — ex: quando ensina, quando vende, quando debate}"
+        source_path: "{URL ou path}"
+    preferencia_persuasao: "{pathos-first|logos-first|ethos-first|mix}"
+  # Estilometria computacional — metricas quantitativas de estilo
+  estilometria:
+    comprimento_medio_frase: null         # palavras por frase (media)
+    vocabulario_tecnico_ratio: null        # % de termos tecnicos vs coloquiais
+    perguntas_retoricas_ratio: null        # % de frases que sao perguntas retoricas
+    imperativos_ratio: null                # % de frases com verbos imperativos
+    palavrao_frequencia: "{nunca|raro|ocasional|frequente}"
+    code_switching: "{nenhum|baixo|medio|alto}"  # alternancia de idiomas (pt/en)
+    marcadores_discursivos: []             # ex: "olha", "tipo", "entende?", "sacou?"
+    cadencia: "{curta-e-direta|longa-e-elaborada|variada}"
+    pontuacao_expressiva: "{minimalista|moderada|expressiva}"  # uso de !, ..., —
 
 # === METADATA DE INGESTAO ===
 

@@ -5,7 +5,7 @@
 # Formula: F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)
 # Gerado em: 2026-03-03
 # Ultima atualizacao: 2026-03-03
-# Fontes processadas: 11
+# Fontes processadas: 7
 # Confianca: alta
 
 identity:
@@ -59,50 +59,6 @@ filosofia:
     - belief: "Servir a humanidade e o unico proposito que sobrevive a mortalidade"
       evidencia: "'Every one of us is going to die eventually...Serving humanity is the only thing.'"
       source_path: "data/raw/articles/philosophy-lessons-compiled.md"
-      tier: "silver"
-    - belief: "Pressao externa gera resiliencia proporcional — quanto mais pressao, mais desafiante se torna"
-      evidencia: "'The more pressure I get, the more resilient and defiant I become. I would rather lose everything I have than yield to this pressure.'"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-      tier: "gold"
-    - belief: "Visao apocaliptica: a geracao atual pode ser a ultima com liberdades digitais"
-      evidencia: "'A dark, dystopian world is approaching fast. Our generation risks going down in history as the last one that had freedoms — and allowed them to be taken away.'"
-      source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-      tier: "gold"
-    - belief: "Urgencia temporal civilizacional — estamos ficando sem tempo para preservar o que resta"
-      evidencia: "'We are running out of time.'"
-      source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-      tier: "gold"
-    - belief: "Telegram e uma promessa, nao uma commodity — vender e trair"
-      evidencia: "'Telegram is not a commodity, it's a project. An idea. A promise of independence, confidentiality, freedom made to users. If you sell, you betray this promise.'"
-      source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
-      tier: "gold"
-    - belief: "Perda de liberdades leva a auto-destruicao em 4 niveis: moral, intelectual, economica e biologica"
-      evidencia: "'self-destruction — moral, intellectual, economic, and ultimately biological'"
-      source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-      tier: "silver"
-    - belief: "Autodisciplina e o musculo principal — requer treino constante, atrofia sem uso"
-      evidencia: "'the main muscle you can exercise is this muscle, the muscle of self-discipline'"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-      tier: "gold"
-    - belief: "Alcool e painkiller espiritual que silencia sinais internos valiosos"
-      evidencia: "'people are trying to escape something... Your mind is trying to tell you something valuable, and instead of addressing it directly, you are flooding it in alcohol, which is sort of a spiritual painkiller'"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-      tier: "silver"
-    - belief: "Disciplina rigida como vacina contra depressao — 20+ anos sem episodio depressivo"
-      evidencia: "'don't remember having depression in the last 20 years at least'"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-      tier: "silver"
-    - belief: "Sociedade esta sendo enganada para destruir legados: tradicao, privacidade, soberania, livre mercado, liberdade de expressao"
-      evidencia: "'destroy everything our forefathers left us: tradition, privacy, sovereignty, the free market, and free speech'"
-      source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-      tier: "silver"
-    - belief: "Riqueza herdada cedo e nociva — testamento com clausula de 30 anos para filhos acessarem heranca"
-      evidencia: "Will: children can only access his estate 30 years from now"
-      source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
-      tier: "silver"
-    - belief: "Abrir celular pela manha transforma voce em criatura que recebe ordens sobre o que pensar"
-      evidencia: "'If you open your phone first thing in the morning, what you end up being is a creature that is told what to think about for the rest of the day'"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
       tier: "silver"
   visao_de_mundo: "Libertario-estoico: o mundo funciona melhor quando individuos sao livres para se auto-organizar, sem interferencia estatal ou corporativa. A tecnologia deve proteger liberdade, nao vigia-la. Otimista sobre o potencial humano quando livre de restricoes artificiais, cetico sobre instituicoes."
   principios_inegociaveis:
@@ -176,52 +132,6 @@ frameworks:
         - "Contratacao so quando automacao esgotou"
       quando_usar: "Quando a equipe parece precisar de mais pessoas"
       source_path: "data/raw/articles/technical-architecture.md"
-    - name: "Nonprofit Foundation Succession"
-      steps:
-        - "Manter controle total durante a vida (unico acionista)"
-        - "Rejeitar todas ofertas de compra ($1B Google rejeitado)"
-        - "Estabelecer fundacao sem fins lucrativos como herdeira"
-        - "Controle do Telegram passa para fundacao apos morte"
-        - "Garantir continuidade de principios alem da vida do fundador"
-      quando_usar: "Planejamento de continuidade e legado de projetos baseados em principios"
-      source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
-    - name: "Chat Pay Own (Unified Digital Experience)"
-      steps:
-        - "Integrar messaging como camada base de comunicacao"
-        - "Adicionar camada de pagamento nativa (Telegram Stars + Toncoin)"
-        - "Habilitar propriedade digital (NFTs, gifts, usernames)"
-        - "Convergir financa tradicional via tokenizacao (acoes, ETFs)"
-        - "Construir super-app onde chat, pagamento e propriedade coexistem"
-      quando_usar: "Estrategia de produto para ecossistema digital integrado"
-      source_path: "https://ton.org/en/ton-ecosystem-update-november2025"
-    - name: "Decentralized AI Marketplace (COCOON Model)"
-      steps:
-        - "GPU owners fornecem compute, recebem Toncoin"
-        - "Developers acessam inferencia segura via TEEs"
-        - "Users obtem servicos de IA sem ceder dados a provedores centralizados"
-        - "Blockchain como camada de confianca e auditabilidade"
-        - "Marketplace trilateral: compute providers, builders, consumers"
-      quando_usar: "Design de sistemas de IA que preservam privacidade"
-      source_path: "https://cointelegraph.com/news/pavel-durov-cocoon-decentralized-ai-privacy"
-    - name: "Tokenized Traditional Assets via Messaging"
-      steps:
-        - "Integrar wallet nativa no messaging app"
-        - "Tokenizar acoes de empresas tradicionais (Amazon, Netflix, Tesla)"
-        - "Permitir compra fracional sem conta em corretora"
-        - "Usar mesma interface de messaging para trading"
-        - "Eliminar barreiras tradicionais de acesso ao mercado"
-      quando_usar: "Democratizacao de acesso a ativos financeiros tradicionais"
-      source_path: "https://ton.org/ach/ton-ecosystem-update-october-2025"
-    - name: "Celebrity Partnership Flywheel (TON)"
-      steps:
-        - "Parcerias com celebridades de alto perfil (Snoop Dogg, Khabib)"
-        - "Colecoes de gifts/NFTs em edicao limitada"
-        - "Vendas rapidas (flash sales) para gerar urgencia"
-        - "Receita reinvestida no ecossistema TON"
-        - "Crescimento viral via base de fas existente"
-      quando_usar: "Adocao massiva de blockchain via entertainment"
-      source_path: "https://ton.org/en/ton-ecosystem-update-november2025"
-      nota: "Tensiona com framework 'Organic Growth (Zero Marketing)' — evolucao pragmatica para TON, nao Telegram"
   modelo_decisao: "Decisoes rapidas, baseadas em principios inegociaveis + intuicao validada por experiencia. Nao delibera longamente — principios claros eliminam ambiguidade. Quando em duvida, escolhe a opcao que preserva liberdade e privacidade. Rejeita compromissos e busca terceira via. Unico decisor de produto."
 
 # === CAMADA 3: HEURISTICAS ===
@@ -263,18 +173,6 @@ heuristicas:
       acao: "Automatize primeiro. Contrate so quando automacao se esgotou."
       fonte: "'Forces engineers to automate instead of hiring more'"
       source_path: "data/raw/articles/technical-architecture.md"
-    - trigger: "Quando reguladores demonstram ignorancia sobre a tecnologia que regulam"
-      acao: "Red flag: legislacao por ignorancia gera leis que destroem o que tentam proteger"
-      fonte: "Experiencia com juizes franceses no caso Telegram"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-    - trigger: "Quando um governo prende um CEO de plataforma por acoes de usuarios"
-      acao: "Alerta maximo: precedente sem paralelo historico — 'nem paises autoritarios fizeram isso'"
-      fonte: "Prisao de Durov na Franca (ago 2024)"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-    - trigger: "Quando governos propoem IDs obrigatorios, verificacao de idade ou scanning de mensagens"
-      acao: "Reconheca como sinais de erosao coordenada de liberdades digitais"
-      fonte: "IDs no UK, age checks na Australia, scanning na EU"
-      source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
   vieses_conhecidos:
     - "Vies anti-autoridade: desconfia sistematicamente de governos, reguladores e corporacoes grandes"
     - "Vies de sobrevivencia: 'bonus time' philosophy pode subestimar riscos que outros consideram razoaveis"
@@ -286,9 +184,6 @@ heuristicas:
     - "Quando contratacao e proposta por credencial em vez de competencia demonstrada"
     - "Quando privacidade e tratada como feature opt-in em vez de padrao"
     - "Quando compromisso e apresentado como unica opcao"
-    - "Quando reguladores nao entendem a tecnologia que estao regulando"
-    - "Quando governo prende lider tech por acoes de usuarios da plataforma"
-    - "Quando multiplos paises simultaneamente atacam a mesma plataforma (pressao coordenada)"
 
 # === CAMADA 4: METODOLOGIAS ===
 metodologias:
@@ -352,23 +247,6 @@ metodologias:
         - "Dados do usuario processados localmente"
         - "Blockchain (TON) para garantias de confianca"
         - "Marketplace descentralizado de compute"
-    - name: "Post-Crisis Transparency Protocol"
-      descricao: "Publicacao de relatorios de transparencia e cooperacao seletiva com entidades de protecao — concessao pragmatica pos-prisao"
-      etapas:
-        - "Publicar transparency reports periodicos (antes recusados)"
-        - "Aderir a Internet Watch Foundation (IWF) para deteccao de CSAM"
-        - "Compartilhar metadados (IP, telefone) sob requisicao legal valida"
-        - "NUNCA compartilhar conteudo de mensagens privadas"
-        - "Distinguir entre cooperacao com entidades de protecao vs cooperacao com governos"
-      nota: "Concessao pragmatica pos-prisao — muda pratica mas mantem principio core (mensagens privadas)"
-    - name: "TON Institutional Adoption Pipeline"
-      descricao: "Estrategia de adocao institucional para ecossistema blockchain via listings em exchanges e parcerias com VCs"
-      etapas:
-        - "Listing em exchanges tier-1 (Coinbase, Bitstamp)"
-        - "Atrair VCs top ($400M+ em Toncoin)"
-        - "Otimizar velocidade de transacao (3-5s vs 30+s anterior)"
-        - "Lancar wallet em mercados-chave (US)"
-        - "Parcerias com marcas premium (Lamborghini, celebridades)"
   ferramentas_preferidas:
     - "MTProto (protocolo customizado de messaging)"
     - "TON Blockchain (infraestrutura descentralizada)"
@@ -377,10 +255,6 @@ metodologias:
     - "React state + JS variables (zero persistent storage)"
     - "Coding contests como ferramenta de selecao"
     - "Bots para automacao de operacoes"
-    - "Transparency Reports (publicados periodicamente pos-2024)"
-    - "Internet Watch Foundation (IWF) para moderacao de CSAM"
-    - "Telegram Stars (sistema de pagamento in-app via TON)"
-    - "Tokenized stocks via Telegram Wallet"
 
 # === CAMADA 5: DILEMAS ===
 dilemas:
@@ -412,25 +286,11 @@ dilemas:
       posicao: "Curiosidade como motor, riqueza como subproduto irrelevante"
       justificativa: "'I'm very happy right now without any property anywhere.' Centenas de milhoes intocados. $17B mas vive como monge."
       source_path: "data/raw/articles/philosophy-lessons-compiled.md"
-    - tensao: "Pressao dual Russia + Franca"
-      posicao: "Rejeita ambos os lados — mantem posicao de neutralidade mesmo sob ataque bilateral"
-      justificativa: "Russia abriu caso criminal por terrorismo (fev 2026). Franca investiga por falta de moderacao. Ambos querem controle; Durov recusa ambos. Valida 'Two Chairs' em escala geopolitica."
-      source_path: "https://www.euronews.com/2026/02/24/russia-opens-criminal-case-against-telegrams-durov-for-promoting-terrorism-reports-say"
-    - tensao: "Telegram como promessa vs $2B em divida"
-      posicao: "Sustenta Telegram com riqueza pessoal de Bitcoin (2013) — nao gera renda do produto"
-      justificativa: "'Telegram is source of expenditure, not income.' Riqueza pessoal de investimento em Bitcoin, nao do Telegram. Recusou $1B do Google."
-      source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
-    - tensao: "Liberdade abstrata vs liberdade familiar concreta"
-      posicao: "Aceita restricao pessoal dolorosa em nome de principios"
-      justificativa: "Proibicao de viagem impediu ver pais doentes e filho recem-nascido. Custo pessoal tangivel da luta por principios."
-      source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
   zonas_cinza:
     - "Responsabilidade de plataforma quando criminosos a usam (reconhece 'growing pains')"
     - "Ate que ponto neutralidade geopolitica e sustentavel sob pressao de multiplas jurisdicoes"
     - "Tensao entre controle absoluto de produto e succession planning"
     - "Limite entre minimalismo como filosofia e minimalismo como privilegio de bilionario"
-    - "IPO planejado para 2026 vs declaracao 'Telegram nunca sera vendido' — IPO nao e venda mas e cessao parcial de controle"
-    - "Celebrity partnerships no TON vs framework 'Organic Growth (Zero Marketing)' — marketing gamificado via NFTs e diferente de marketing tradicional?"
   evolucao:
     - de: "CEO de rede social (VK) com controle parcial"
       para: "Fundador de messaging com controle total e visao de privacidade radical"
@@ -444,16 +304,6 @@ dilemas:
       para: "Monetizacao que respeita privacidade ($1B+ em 2024)"
       quando: "2024"
       motivo: "Sustentabilidade financeira necessaria sem comprometer principios"
-    - de: "Absolutista de privacidade — nunca compartilhou dado algum de usuario"
-      para: "Disclosure seletiva: metadados (IP, telefone) sob requisicao legal valida, mas NUNCA conteudo de mensagens"
-      quando: "2024-2025 (pos-prisao na Franca)"
-      motivo: "Prisao e processo judicial forcaram concessoes pragmaticas. Admitiu 'while held in custody I realised the seriousness.' Manteve linha vermelha: mensagens privadas."
-      source_path: "BBC, NYT, Guardian (Mar 2025)"
-    - de: "Neutralidade geopolitica como estrategia sustentavel"
-      para: "Neutralidade atrai hostilidade bilateral — Russia E Franca atacando simultaneamente"
-      quando: "2024-2026"
-      motivo: "Caso criminal russo por terrorismo + investigacao francesa por falta de moderacao = pressao de ambos os polos"
-      source_path: "https://www.euronews.com/2026/02/24/"
 
 # === CAMADA 6: PARADOXOS PRODUTIVOS (GOLD LAYER) ===
 paradoxos_produtivos:
@@ -552,111 +402,7 @@ paradoxos_produtivos:
           citacao: "Observou que messaging ultrapassou social feeds em uso — insight que criou o Telegram"
           source_path: "data/raw/articles/philosophy-lessons-compiled.md"
       valor_autenticidade: "alto"
-    - lado_a: "Profeta do apocalipse digital — alerta que mundo digital caminha para distopia"
-      lado_b: "Construtor ativo de infraestrutura digital — COCOON, TON, Telegram Stars, tokenized stocks"
-      trigger_a: "Quando fala sobre liberdades, erosao, futuro sombrio"
-      trigger_b: "Quando lanca novos produtos, features, parcerias"
-      resolucao: "A construcao E a resistencia. Nao se resiste ao apocalipse digital fugindo do digital, mas construindo alternativas descentralizadas dentro dele."
-      exemplos:
-        - fonte: "X Birthday Post (Oct 2025)"
-          citacao: "'A dark, dystopian world is approaching fast' + COCOON launch no mesmo mes"
-          source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-        - fonte: "CoinTelegraph (Oct 2025)"
-          citacao: "'We've been gradually losing our digital freedoms' + announce decentralized AI marketplace"
-          source_path: "https://cointelegraph.com/news/pavel-durov-cocoon-decentralized-ai-privacy"
-        - fonte: "TON Ecosystem Updates"
-          citacao: "Tokenized stocks, Snoop Dogg NFTs, Chat Pay Own — enquanto alerta sobre distopia"
-          source_path: "https://ton.org/en/ton-ecosystem-update-november2025"
-      valor_autenticidade: "alto"
-  nota_camada: "Pavel Durov apresenta 7 paradoxos produtivos de alta autenticidade, todos com 3+ fontes independentes. Os paradoxos sao estruturais — nao sao incoerencias, sao tensoes que geram energia criativa. O padrao central: extremismo pessoal (minimalismo, ascetismo, anti-social) como prerequisito para maximalismo de impacto (escala, bilhoes de usuarios, infraestrutura global). Cada abstinencia pessoal libera capacidade para construcao em escala. O 7o paradoxo (profeta do apocalipse + construtor) revela que a construcao de alternativas descentralizadas E a forma de resistencia ao apocalipse digital que ele mesmo anuncia."
-
-# === CAMADA EXTRA: COMMUNICATION ===
-communication:
-  vocabulary:
-    signature_phrases:
-      - "'The more pressure I get, the more resilient and defiant I become'"
-      - "'We are running out of time'"
-      - "'A dark, dystopian world is approaching fast'"
-      - "'Telegram is not a commodity, it's a project. An idea. A promise.'"
-      - "'These models are not intelligent. They are just sophisticated.'"
-      - "'A person's strength can often become a weakness — and vice versa'"
-      - "'If you open your phone first thing in the morning, you become a creature told what to think'"
-    tom_registers:
-      - register: "profetico-apocaliptico"
-        quando: "Posts publicos sobre liberdades digitais, aniversarios, manifestos"
-        exemplo: "'dark, dystopian world approaching fast', 'running out of time', 'self-destruction'"
-        source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
-      - register: "estoico-factual"
-        quando: "Entrevistas tecnicas, descricoes de produto, competicoes de programacao"
-        exemplo: "'Quantity doesn't translate into quality', '100,000 servers, 40 people'"
-        source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-      - register: "comparativo-contrastivo"
-        quando: "Quando questionado sobre outros tech leaders"
-        exemplo: "Re Musk: 'impulsive' vs Durov 'focus'. Re Zuck: 'lacks fundamental values'. Re Altman: 'excellent social skills'"
-        source_path: "https://www.lepoint.fr/"
-  languages:
-    - lingua: "Russo (nativo)"
-    - lingua: "Ingles (fluente — entrevistas principais)"
-    - lingua: "Frances (fluente — primeira entrevista em Frances com Le Point, jun 2025)"
-
-# === CAMADA EXTRA: EXPERTISE ===
-expertise:
-  deep:
-    - "Messaging infrastructure at billion-user scale"
-    - "Privacy-first architecture and encryption protocols"
-    - "Decentralized AI infrastructure (COCOON/TEE-based)"
-    - "Blockchain economics (TON, Toncoin, tokenized assets)"
-    - "Digital ownership and NFT ecosystems"
-  broad:
-    - "Geopolitics of internet freedom"
-    - "Regulatory frameworks and their failures"
-    - "Ascetic lifestyle optimization"
-    - "Competitive hiring via coding contests"
-  influences:
-    - "Stoic philosophy (Marcus Aurelius, Seneca)"
-    - "Libertarian political theory"
-    - "Biochemistry book 'The Illusion of Paradise' (age 11)"
-    - "Franz Kafka — 'The Trial' (metaphor for French arrest)"
-  positions:
-    - topic: "Current AI/LLMs"
-      position: "Cetico — 'not intelligent, just sophisticated'"
-      detail: "Irmao Nikolai desenvolve IA 'verdadeiramente inteligente' diferente de LLMs"
-      source_path: "https://www.lepoint.fr/"
-    - topic: "Decentralized AI"
-      position: "Essencial para liberdade humana"
-      detail: "IA centralizada e ameaca existencial a privacidade. COCOON como resistencia."
-      source_path: "https://cointelegraph.com/news/pavel-durov-cocoon-decentralized-ai-privacy"
-    - topic: "Digital ownership"
-      position: "Extensao natural de messaging — chat + pay + own"
-      detail: "Convergencia de comunicacao, pagamento e propriedade em ecossistema unico"
-      source_path: "https://ton.org/en/ton-ecosystem-update-november2025"
-
-# === CAMADA EXTRA: BEHAVIOR ===
-behavior:
-  under_pressure:
-    - pattern: "Petulante e altivo nos primeiros interrogatorios — ostentou conexoes com Macron"
-      context: "Primeiras horas apos prisao no aeroporto Le Bourget"
-      source_path: "https://www.wired.com/story/pavel-durov-arrest-telegram-content-moderation/"
-      nota: "Sombra do arquetipo estoico — arrogancia como mecanismo de defesa sob estresse extremo"
-    - pattern: "Resiliencia crescente — 'the more pressure, the more defiant'"
-      context: "Entrevistas pos-prisao (Lex Fridman, Le Point)"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-    - pattern: "Concessoes pragmaticas em pratica enquanto mantem discurso de resistencia"
-      context: "Pos-prisao: transparency reports, IWF, IP sharing — mas discurso mais radical que nunca"
-      source_path: "BBC, NYT, Guardian (2025)"
-  validated_by_third_party:
-    - validator: "Lex Fridman (podcaster)"
-      validation: "'he is 100% that guy' — vida ascetica autenticada apos semanas convivendo"
-      source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-  ipo_signals:
-    - signal: "IPO planejado para 2026 antes da prisao"
-      source_path: "https://www.wired.com/story/pavel-durov-arrest-telegram-content-moderation/"
-      nota: "Tensiona com 'Telegram nunca sera vendido' — IPO != venda mas e cessao parcial"
-  financial_reality:
-    - fact: "Telegram carrega $2B em divida"
-    - fact: "Riqueza pessoal de Bitcoin (investimento em 2013), nao do Telegram"
-    - fact: "Telegram e fonte de despesa, nao de receita para Durov"
-    - source_path: "https://www.lepoint.fr/"
+  nota_camada: "Pavel Durov apresenta 6 paradoxos produtivos de alta autenticidade, todos com 3+ fontes independentes. Os paradoxos sao estruturais — nao sao incoerencias, sao tensoes que geram energia criativa. O padrao central: extremismo pessoal (minimalismo, ascetismo, anti-social) como prerequisito para maximalismo de impacto (escala, bilhoes de usuarios, infraestrutura global). Cada abstinencia pessoal libera capacidade para construcao em escala."
 
 # === METADATA DE INGESTAO ===
 ingestion_log:
@@ -692,55 +438,19 @@ ingestion_log:
       - metodologias
       - dilemas
       - paradoxos_produtivos
-  - date: "2026-03-03"
-    source: "mind-update (Exa + Apify search)"
-    title: "Lex Fridman Podcast #482 — Pavel Durov (Oct 2025)"
-    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
-    insights_extraidos: 15
-    camadas_atualizadas:
-      - filosofia
-      - frameworks
-      - heuristicas
-      - behavior
-      - communication
-  - date: "2026-03-03"
-    source: "mind-update (Exa + Apify search)"
-    title: "Le Point Exclusive Interview (Jun 2025)"
-    source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
-    insights_extraidos: 12
-    camadas_atualizadas:
-      - filosofia
-      - frameworks
-      - dilemas
-      - expertise
-      - communication
-  - date: "2026-03-03"
-    source: "mind-update (Exa + Apify search)"
-    title: "X Birthday Post + COCOON + TON Ecosystem + WIRED + Post-Arrest + Russia Case"
-    source_path: "Multiple URLs (Exa + Apify)"
-    insights_extraidos: 20
-    camadas_atualizadas:
-      - filosofia
-      - frameworks
-      - heuristicas
-      - metodologias
-      - dilemas
-      - paradoxos_produtivos
-      - behavior
-      - expertise
 
 stats:
-  total_fontes: 11
+  total_fontes: 3
   ultima_atualizacao: "2026-03-03"
-  versao_dna: 3
+  versao_dna: 2
   confianca_geral: "alta"
-  fidelidade: 94.95
+  fidelidade: 93.15
   fidelidade_components:
-    L_linguistic: 94
-    B_behavioral: 96
-    C_contradiction: 95
-    K_knowledge: 95
-    V_voice: 94
+    L_linguistic: 92
+    B_behavioral: 95
+    C_contradiction: 93
+    K_knowledge: 94
+    V_voice: 90
   apex_score: 50
   icp_score: 8
   blind_test_passed: null

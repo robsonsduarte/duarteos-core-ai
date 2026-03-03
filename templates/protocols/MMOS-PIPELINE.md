@@ -1,6 +1,6 @@
-# MMOS ENGINE v2 — Pipeline de Clonagem Mental de Alta Fidelidade
+# MMOS ENGINE v2.1 — Pipeline de Clonagem Mental de Alta Fidelidade
 
-**Versao:** 2.0.0
+**Versao:** 2.1.0
 **Status:** Ativo
 **Autor:** NEXUS (Architect)
 **Data:** 2026-03-03
@@ -1217,20 +1217,26 @@ O Synapse v3 e o motor de contexto que armazena e injeta dados dos mind clones. 
 
 - **Localizacao:** `.claude/synapse/minds/{slug}.yaml`
 - **Template:** `.claude/synapse/mind-template.yaml`
-- **Schema:** 6 camadas DNA + identity + ingestion_log + stats
+- **Schema:** 6 camadas DNA + 4 subcamadas + identity + ingestion_log + stats
 
-### As 6 Camadas do DNA
+### As 6 Camadas + 4 Subcamadas do DNA
 
 | Camada | O Que Captura | Pergunta-Chave |
 |--------|-------------|----------------|
 | 1. Filosofia | Crencas fundamentais, visao de mundo | "O que esta pessoa acredita ser verdade?" |
+|    1a. Hierarquia de Valores | Ranking de valores com resolucao de conflitos | "Qual valor vence quando dois colidem?" |
+|    1b. Motivacao Profunda | Impulsores e medos — motores de comportamento | "O que move e o que paralisa?" |
 | 2. Frameworks | Modelos de pensamento estruturados | "Como organiza e estrutura problemas?" |
 | 3. Heuristicas | Atalhos mentais, regras de bolso | "Que atalhos mentais usa para decidir?" |
-| 4. Metodologias | Processos repetiveis, sistemas formais | "Que sistemas formais segue?" |
-| 5. Dilemas | Trade-offs, tensoes, evolucao de posicoes | "Como lida com contradicoes?" |
-| 6. Paradoxos Produtivos | Contradicoes internas que geram valor | "Que verdades contraditorias sustenta simultaneamente?" |
+|    3a. Modelo Social | Teoria da mente — como modela intencoes dos outros | "Como interpreta criticas, elogios, provocacoes?" |
+| 4. Associacoes Conceituais | Pontes entre conceitos nao relacionados | "Quando fala de X, conecta com Y — por que?" |
+| 5. Metodologias | Processos repetiveis, sistemas formais | "Que sistemas formais segue?" |
+| 6. Dilemas | Trade-offs, tensoes, evolucao de posicoes | "Como lida com contradicoes?" |
+| 7. Paradoxos Produtivos | Contradicoes internas que geram valor | "Que verdades contraditorias sustenta simultaneamente?" |
+| 8. Comunicacao Avancada | Estrutura retorica + estilometria computacional | "Qual a formula argumentativa e assinatura estilistica?" |
 
-**Camada 6 (Paradoxos) e a "camada ouro"** — 35% do score de fidelidade. Minimo 2 paradoxos por clone, cada um com >= 3 fontes independentes.
+**Camada 7 (Paradoxos) e a "camada ouro"** — 35% do score de fidelidade. Minimo 2 paradoxos por clone, cada um com >= 3 fontes independentes.
+**Camada 8 (Comunicacao Avancada)** — estilometria computacional fornece baseline quantitativo para V (Voice).
 
 ### Indices Atualizados Automaticamente
 
@@ -1419,6 +1425,61 @@ context_management:
 
 ---
 
+## 16. Camadas de Profundidade Cognitiva v3 — 6 Novos Componentes
+
+**Adicionado em:** v2.1.0
+**Motivacao:** Gap analysis vs PRD de Clonagem Neural e Semantica v2.0 (Manus AI)
+**Impacto estimado:** +6-12% de fidelidade composite (de ~89% para ~95%+)
+
+### 16.1 Componentes Adicionados
+
+| # | Componente | Camada DNA | Impacto F | Fase de Extracao |
+|---|-----------|-----------|-----------|------------------|
+| 1 | Estilometria Computacional | `comunicacao_avancada.estilometria` | L +3-5%, V +2-3% | Fase 2 (MIUs → analise estatistica) |
+| 2 | Associacoes Conceituais | `associacoes_conceituais` (nova) | B +3-5%, K +2-3% | Fase 3 (co-ocorrencia em MIUs) |
+| 3 | Estrutura Retorica | `comunicacao_avancada.estrutura_retorica` | V +2-3%, B +1-2% | Fase 2 (MIUs narrativos) |
+| 4 | Modelo de Recompensa e Medo | `filosofia.motivacao_profunda` | B +3-4% | Fase 3 (drivers positivos/negativos) |
+| 5 | Hierarquia de Valores Rankeada | `filosofia.hierarquia_valores` | C +2-3%, B +1-2% | Fase 3 (analise de decisoes dificeis) |
+| 6 | Teoria da Mente Simulada | `heuristicas.modelo_social` | B +3-5%, V +1-2% | Fase 2-3 (MIUs de interacao social) |
+
+### 16.2 Integracao com Fases Existentes
+
+**Fase 2 — Extracao (novos targets):**
+- Ao extrair MIUs, classificar adicionalmente por: interacao_social (para modelo_social), argumentativo (para estrutura_retorica)
+- Calcular metricas estilometricas sobre o corpus de MIUs linguisticos
+- Identificar padroes de conexao conceitual recorrentes
+
+**Fase 3 — Inferencia (novos targets):**
+- Alem de drivers genericos, inferir: drivers motivacionais (impulsores vs medos), associacoes conceituais (pontes recorrentes), hierarquia de valores (baseada em decisoes relatadas)
+- Separar drivers em positivos (impulsores) e negativos (medos/aversoes)
+- Rankear valores fundamentais por evidencia de sacrificio
+
+**Fase 5 — Perfil (validacao ampliada):**
+- Blind test DEVE incluir cenarios de: provocacao (testa modelo_social), argumento complexo (testa estrutura_retorica), associacao inesperada (testa pontes conceituais)
+- Estilometria usada como baseline quantitativa para validar V (Voice)
+
+### 16.3 Impacto na Formula de Fidelidade
+
+A formula F permanece: `F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)`
+
+Os novos componentes enriquecem os INPUTS de cada dimensao:
+- **L** recebe estilometria (metricas quantitativas complementam avaliacao qualitativa)
+- **B** recebe modelo_social + motivacao_profunda + associacoes (comportamento mais profundo)
+- **C** recebe hierarquia_valores (como resolve conflitos de principios)
+- **K** recebe associacoes_conceituais (conexoes de conhecimento) + estrutura_retorica
+- **V** recebe estilometria + estrutura_retorica (voz mais precisa)
+
+### 16.4 Regras de Extracao
+
+1. **Estilometria:** Extrair AUTOMATICAMENTE do corpus de MIUs. Nao depende de inferencia humana.
+2. **Associacoes:** Minimo 3 pontes conceituais por clone. Se < 3: marcar como "material insuficiente".
+3. **Estrutura Retorica:** Identificar pelo menos 1 formula argumentativa padrao por clone.
+4. **Motivacao Profunda:** Minimo 1 impulsor + 1 medo. Se expert so mostra face positiva: documentar como "medo NAO identificado — necessita mais fontes".
+5. **Hierarquia de Valores:** Rankear SOMENTE quando ha evidencia de escolha entre valores conflitantes. Se sem evidencia: manter como lista plana (compatibilidade com v2).
+6. **Modelo Social:** Extrair de MIUs com tipo `interacao_social`. Se < 2 interacoes observadas: marcar campo como "dados insuficientes".
+
+---
+
 ## Integracao Final: 5 Autoridades x 6 Fases x 15 Entidades
 
 ```
@@ -1456,6 +1517,7 @@ ENTIDADES DB:      contents  mius       mind_drivers  mapping_sys  minds     too
 
 ---
 
-*MMOS Engine v2.0 — Pipeline de Clonagem Mental de Alta Fidelidade*
+*MMOS Engine v2.1 — Pipeline de Clonagem Mental de Alta Fidelidade*
 *6 fases reais x 15+ entidades DB x 5 autoridades x OMEGA v2 loop x Synapse v3 DNA*
+*6 camadas + 4 subcamadas cognitivas (v2.1: +estilometria, +associacoes, +retorica, +motivacao, +hierarquia, +modelo_social)*
 *Documento autocontido. Fonte de verdade: docs/mmos-extraction-engine-v2.md*

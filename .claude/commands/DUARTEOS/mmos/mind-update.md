@@ -77,11 +77,17 @@ O mind-update usa o MESMO pipeline do mind-clone mas entra na fase adequada ao n
 | **Metodologias** | Processos repetiveis, sistemas formais, ferramentas | "Que sistemas formais segue consistentemente?" |
 | **Dilemas** | Trade-offs, tensoes reconhecidas, zonas cinza, evolucao de posicoes | "Como lida com contradicoes e decisoes impossiveis?" |
 | **Paradoxos Produtivos** | Contradicoes que coexistem e geram valor (CAMADA OURO) | "Que verdades aparentemente contraditorias ela sustenta simultaneamente?" |
+| **Associações Conceituais** | Pontes entre conceitos aparentemente não relacionados | "Como conecta ideias de domínios diferentes?" |
+| **Comunicação Avançada** | Estrutura retórica + estilometria quantitativa | "Como argumenta e qual seu estilo mensurável?" |
 
 Campos extras que tambem podem receber updates:
 - **Communication:** novas frases-assinatura, mudancas de tom, novos padroes
 - **Expertise:** novos dominios, novas influencias, novos pontos cegos
 - **Behavior:** novos padroes situacionais
+- **Filosofia (novos):** hierarquia_valores, conflitos_de_valor, motivacao_profunda (impulsores/medos)
+- **Heurísticas (novo):** modelo_social (teoria da mente simulada)
+- **Associações Conceituais:** pontes conceituais, padrão associativo
+- **Comunicação Avançada:** estrutura_retorica, estilometria computacional
 
 ## Canonicalizacao de Entidades
 
@@ -216,6 +222,37 @@ Campos extras que tambem podem receber updates:
    - Reforco de paradoxos existentes (novos exemplos)
    - Resolucao de paradoxos anteriores (se o expert reconciliou a tensao)
 
+   **Hierarquia de Valores (em Filosofia)**
+   - Valores rankeados por importância (rank 1 = mais importante)
+   - Evidências de "quando dois valores colidem, qual vence"
+   - Conflitos de valor resolvidos com contexto e evidência
+
+   **Motivação Profunda (em Filosofia)**
+   - Impulsores: o que move para frente (legado, reconhecimento, provar algo)
+   - Medos: o que paralisa ou evita a todo custo (fracasso, irrelevância, mediocridade)
+   - Recompensa ideal: definição pessoal de "sucesso"
+
+   **Modelo Social (em Heurísticas)**
+   - Nível de confiança default em outros (alta/média/baixa)
+   - Como interpreta críticas (dúvida legítima vs preguiça vs ataque)
+   - Como interpreta elogios (aceita vs desconfia)
+   - Padrão de atribuição (internaliza causas vs externaliza)
+
+   **Associações Conceituais (nova camada)**
+   - Pontes entre conceitos aparentemente não relacionados
+   - Frequência da conexão (recorrente vs pontual)
+   - Padrão associativo geral (como tipicamente conecta ideias)
+
+   **Estrutura Retórica (em Comunicação Avançada)**
+   - Fórmula argumentativa padrão (como constrói argumentos)
+   - Sequências retóricas identificáveis (Provocação→Framework→Resultado)
+   - Preferência de persuasão (pathos-first, logos-first, ethos-first, mix)
+
+   **Estilometria (em Comunicação Avançada)**
+   - Métricas quantitativas extraídas do material: comprimento médio de frase, ratio de termos técnicos
+   - Frequência de perguntas retóricas, imperativos, palavrões
+   - Code-switching (alternância de idiomas), marcadores discursivos, cadência
+
    **Campos extras:**
    - Communication: novas frases-assinatura, mudancas de tom
    - Expertise: novos dominios mencionados, novas influencias citadas
@@ -224,7 +261,7 @@ Campos extras que tambem podem receber updates:
 4. **Classificar cada insight (Delta Analysis):**
 
    ```yaml
-   - camada: "{filosofia|frameworks|heuristicas|metodologias|dilemas|paradoxos|communication|expertise|behavior}"
+   - camada: "{filosofia|filosofia.hierarquia_valores|filosofia.motivacao_profunda|frameworks|heuristicas|heuristicas.modelo_social|associacoes_conceituais|metodologias|dilemas|paradoxos|comunicacao_avancada.estrutura_retorica|comunicacao_avancada.estilometria|communication|expertise|behavior}"
      tipo: "{NOVO|REFORCO|EVOLUCAO}"
      conteudo: "{descricao do insight}"
      evidencia: "{citacao direta ou parafraseada do material}"
@@ -310,6 +347,12 @@ Campos extras que tambem podem receber updates:
 | **PARADOXOS** | Cresce monotonicamente | Deming (acumulativo) | Novo exemplo adicionado |
 | **EVOLUCAO** | Registrar em dilemas.evolucao | Kahneman (ambos lados) | de/para/quando/motivo |
 | **DEDUP** | NAO duplicar identico | Allen (clarify) | Verificar antes de add |
+| **HIERARQUIA** | Rank atualizado somente com evidência de conflito resolvido | Kahneman (evidência) | Novo conflito registrado |
+| **MOTIVAÇÃO** | Impulsores/medos adicionados, nunca removidos | Forte (preserve) | Medo identificado → append |
+| **MODELO SOCIAL** | Confiança default atualizada somente com >= 3 evidências | Kahneman (base rate) | Interação observada → append |
+| **ASSOCIAÇÃO** | Pontes adicionadas; duplicatas por conceito_a+conceito_b | Allen (dedup) | Nova ponte → append |
+| **ESTILOMETRIA** | Métricas recalculadas (não merge, substitui com nova medição) | Deming (medição) | Nova medição → overwrite |
+| **RETÓRICA** | Sequências adicionadas; fórmula_padrão atualizada se evidência forte | Forte (organize) | Nova sequência → append |
 
 #### Procedimento
 
@@ -434,6 +477,12 @@ Campos extras que tambem podem receber updates:
    | Communication | "Como Voce Comunica", "Vocabulario Obrigatorio" |
    | Expertise | "Sua Expertise", "Dominio Profundo" |
    | Behavior | "Comportamento Situacional" |
+   | Filosofia.hierarquia_valores | "O Que Voce Valoriza", "Regras Finais" (prioridades) |
+   | Filosofia.motivacao_profunda | "Quem Voce E" (motor interno), "Comportamento Situacional" |
+   | Heuristicas.modelo_social | "Comportamento Situacional" (reações a crítica/elogio) |
+   | Associacoes Conceituais | "Como Voce Pensa" (conexões entre domínios) |
+   | Comunicacao_avancada.estrutura_retorica | "Como Voce Comunica" (fórmula argumentativa) |
+   | Comunicacao_avancada.estilometria | "Como Voce Comunica" (métricas de estilo — guia para voice) |
 
 4. **Aplicar edits cirurgicos:**
    - Para cada secao impactada, usar Edit tool
@@ -582,6 +631,11 @@ Campos extras que tambem podem receber updates:
    | 5 | Paradoxo 2 | Pergunta que testa resolucao de dilema | 17.5% |
 
    As perguntas devem ser RELEVANTES ao novo material ingerido.
+
+   **Nota v2.1:** As perguntas devem, quando possível, incluir cenários que testem:
+   - **Pergunta 3 (Profunda):** Deve exigir associação conceitual (conectar domínios diferentes)
+   - **Pergunta 4 ou 5 (Paradoxo):** Deve incluir provocação/crítica para testar modelo social
+   - **Estilometria:** Avaliar se a resposta gerada mantém métricas compatíveis com o perfil estilométrico (comprimento de frase, cadência, code-switching)
 
 2. **Para cada pergunta, avaliar em 4 dimensoes (0-100):**
 

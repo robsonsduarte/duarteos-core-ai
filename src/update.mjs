@@ -9,6 +9,24 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.12.0': {
+    title: 'MMOS v2.1 — 6 Novos Componentes de Profundidade Cognitiva',
+    highlights: [
+      'MMOS Pipeline evoluido de v2.0 para v2.1 — 6 novos componentes cognitivos para fidelidade 95%+',
+      'Estilometria Computacional: metricas quantitativas de estilo (comprimento frase, cadencia, code-switching)',
+      'Associacoes Conceituais: nova camada — pontes entre conceitos aparentemente nao relacionados',
+      'Estrutura Retorica: formula argumentativa padrao (como a pessoa constroi argumentos)',
+      'Modelo de Recompensa e Medo: drivers positivos (impulsores) vs negativos (medos) separados',
+      'Hierarquia de Valores Rankeada: evolucao de lista plana para ranking com conflitos resolvidos',
+      'Teoria da Mente Simulada: como a pessoa modela intencoes dos outros (critica, elogio, provocacao)',
+      'mind-template.yaml expandido: 155 → 238 linhas (+6 novas secoes/subcamadas)',
+      'mind-clone.md: Fases 2, 3 e 5 expandidas com novos targets de extracao e validacao',
+      'mind-update.md: Steps 2-5 expandidos com novos layers de delta/merge/regression',
+      'MMOS-PIPELINE.md: nova secao 16 documentando os 6 componentes + regras de extracao',
+      'Backward compatible: clones existentes continuam validos (novos campos opcionais)',
+      'Amanda Khayat mind-update v2: fidelidade 75% → 88.95% (+8 frameworks, +2 paradoxos)',
+    ],
+  },
   '5.11.0': {
     title: 'MCP Fix — 19/21 Servers Validados',
     highlights: [
