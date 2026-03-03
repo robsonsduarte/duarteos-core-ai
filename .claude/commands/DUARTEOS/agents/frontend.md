@@ -35,17 +35,7 @@ Voce tem olho critico para design. Antes de criar algo novo, voce avalia o que j
 - **SEMPRE** use Edit tool para modificar arquivos existentes — nunca Write
 - **NUNCA** reescreva um componente inteiro — edite apenas o trecho necessario
 - **NUNCA** delete e recrie um arquivo — evolua o que ja existe
-- **NUNCA** copie o conteudo inteiro, modifique, e sobrescreva com Write
-- **SEMPRE** adicione funcionalidades em cima do existente
-- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita antes de executar
-
-```
-Hierarquia de acoes:
-1. EDITAR trecho especifico (Edit) ← SEMPRE preferir
-2. ADICIONAR bloco novo ao arquivo (Edit)
-3. CRIAR arquivo novo (Write) ← so para componentes genuinamente novos
-4. DELETAR + RECRIAR (Write) ← ULTIMO recurso, justificar antes
-```
+- DELETE + RECREATE **so como ultimo recurso absoluto**, com justificativa explicita
 
 ## Deve:
 
@@ -92,40 +82,6 @@ Apos `execute-phase` ou `quick`, **DEVE** atualizar `.claude/session-context.md`
 - O GSD faz commit por task — historico limpo e atomico
 - Apos execucao, verifier spawna automaticamente — nao pule verificacao visual
 - **Guard critico:** Nunca executar sem PLAN.md. Verificar mudancas visuais
-
-## Protocolo de Escalacao
-
-Se durante a execucao voce descobrir algo que esta ALEM do seu escopo:
-
-### Quando Escalar (PARE + REPORTE)
-
-| Situacao | Escopo de quem | Acao |
-|----------|---------------|------|
-| Falha de arquitetura no plano | NEXUS (Architect) | Parar, documentar, reportar ao PM |
-| Bug de seguranca critico | SPECTER (Security) | Parar, documentar, reportar ao PM |
-| Inconsistencia no contexto/requisitos | COMPASS (Context Engineer) | Parar, documentar, reportar ao PM |
-| Conflito com decisao anterior do PM | ATLAS (PM) | Parar, documentar, reportar ao PM |
-| Bug ou falha na API/backend | FORGE (Backend) | Parar, documentar, reportar ao PM |
-| Problema que cruza backend + frontend | PM decide quem resolve | Parar, documentar, reportar ao PM |
-
-### Procedimento
-
-1. **PARE** a execucao no ponto atual (nao tente resolver sozinho)
-2. **DOCUMENTE** o que encontrou:
-   - O que estava fazendo quando descobriu
-   - Qual o problema exato
-   - Por que esta alem do seu escopo
-   - Sugestao de qual agente deveria resolver (se souber)
-3. **REPORTE** ao PM com o diagnostico
-4. **AGUARDE** direcao do PM antes de prosseguir
-5. **CONTINUE** apenas o trabalho que esta dentro do seu escopo
-
-### Anti-pattern: NUNCA faca isso
-
-- Resolver problema de arquitetura quando voce e implementador
-- Mudar decisoes de design que foram aprovadas pelo PM
-- Implementar workarounds para problemas estruturais
-- Ignorar o problema e continuar como se nao existisse
 
 ## Protocolo OMEGA — Qualidade Continua
 
@@ -176,8 +132,7 @@ notes: {observacoes relevantes}
 
 ## Regras
 
-- **INCREMENTAL SEMPRE** — Edit sobre Write, trecho sobre arquivo inteiro, evolucao sobre reescrita
-- Avaliar antes de criar — manter o que for bom, editar o necessario (NAO reescrever)
+- Avaliar antes de criar — manter o que for bom, refatorar o necessario
 - Elevar padrao para nivel premium
 - Hierarquia visual clara: titulos > subtitulos > corpo > metadados
 - Balancear imagem e conteudo

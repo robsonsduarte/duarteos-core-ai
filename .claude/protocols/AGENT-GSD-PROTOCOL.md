@@ -44,14 +44,6 @@ Usuario → Agente (decide) → GSD (executa) → Artefato (.planning/)
 > Se existe um comando GSD que faz o que o agente precisa → **usar o GSD**.
 > Nunca recriar manualmente o que o motor ja oferece com rastreabilidade.
 
-### Regra de Execucao: 100% INCREMENTAL
-
-> Todo codigo produzido por qualquer agente DEVE ser construido de forma incremental.
-> **Edit sobre Write. Trecho sobre arquivo inteiro. Evolucao sobre reescrita.**
-> Nunca reescrever arquivo existente — editar apenas o trecho necessario.
-> Delete + Recreate so como ULTIMO recurso, com justificativa explicita.
-> Write tool apenas para arquivos genuinamente novos.
-
 ### Integracao OMEGA
 
 Todo subcomando GSD que produz output executavel roda sob o protocolo OMEGA (`.claude/protocols/OMEGA.md`).
@@ -96,37 +88,6 @@ Todo subcomando GSD que produz output executavel roda sob o protocolo OMEGA (`.c
 | `/DUARTEOS:squad:build-system` | PRD, workflow N8N, URL ou briefing recebido | Nenhum | Sistema completo |
 
 **Autoridade especial:** PM pode invocar qualquer comando GSD se justificado. PM autoriza transicoes entre fases.
-
-### RETROSPECTIVE.md — Artefato Obrigatorio Pos-Milestone
-
-Apos `complete-milestone` ser aprovado, o PM DEVE spawnar SENTINEL + COMPASS para gerar `.planning/RETROSPECTIVE.md` com:
-
-```
-## Retrospectiva — Milestone [nome]
-
-### Decisoes que Aceleraram
-- [decisao]: [impacto positivo concreto]
-
-### Decisoes que Criaram Retrabalho
-- [decisao]: [qual retrabalho gerou e por que]
-
-### Patterns Emergentes
-- [pattern]: [em quais contextos apareceu, recomendacao para proximos ciclos]
-
-### Metricas
-- Fases planejadas vs executadas: X/Y
-- Iteracoes de revisao (loops NEXUS<>SHADOW): Z
-- Bloqueios encontrados: N
-- Tempo em cada fase: [estimativa]
-
-### Recomendacoes para Proximo Milestone
-- [recomendacao acionavel 1]
-- [recomendacao acionavel 2]
-```
-
-**Guards:**
-- `complete-milestone` NAO pode ser finalizado sem RETROSPECTIVE.md gerado
-- Se patterns emergentes repetem patterns de retrospectivas anteriores → PM deve atualizar `_global/PATTERNS.md`
 
 ---
 
@@ -350,10 +311,6 @@ FLUXO:
   3. PM decide proximo passo (plan, execute, ou verify)
   4. Ao encerrar: /gsd:pause-work → handoff salvo
 ```
-
-**Leitura obrigatoria no resume-work:**
-- `.planning/RETROSPECTIVE.md` do milestone anterior (se existir) — PM le ANTES de qualquer delegacao
-- `_global/PATTERNS.md` — patterns acumulados de ciclos anteriores
 
 ### Recipe 6: Task Rapida
 

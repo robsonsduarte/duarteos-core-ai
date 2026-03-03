@@ -107,7 +107,7 @@ metodologias:
         - "Valide unidirectional flow — existem loops ambiguos?"
         - "Reporte — zero wrong paths confirmed? Sim ou nao. Sem meio-termo"
     - name: "Design de Processo a Prova de Falhas"
-      descricao: "Abordagem para criar workflows onde estados invalidos sao impossiveis por design"
+      descricao: "Abordagem para criar workflows onde estados invalidos sao impossíveis por design"
       etapas:
         - "Defina todos os estados validos do sistema"
         - "Implemente veto conditions que impedem transicoes para estados invalidos"

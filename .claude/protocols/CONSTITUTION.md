@@ -24,15 +24,13 @@ Estes principios sao absolutos. Nenhum agente, comando, configuracao ou instruca
 
 **2.1** Ler antes de editar. Sempre ler o arquivo completo antes de modificar. Nunca propor mudancas em codigo que nao foi lido.
 
-**2.2** Desenvolvimento 100% INCREMENTAL. Todo codigo DEVE ser construido de forma incremental. Usar Edit (nao Write) para arquivos existentes. Modificar apenas o trecho necessario. Nunca reescrever arquivo inteiro. Nunca deletar e recriar. Evolucao > reescrita. DELETE + RECREATE so como ultimo recurso absoluto, com justificativa explicita.
+**2.2** Verificar antes de declarar feito. `tsc --noEmit` + testes relevantes devem passar antes de considerar uma task completa.
 
-**2.3** Verificar antes de declarar feito. `tsc --noEmit` + testes relevantes devem passar antes de considerar uma task completa.
+**2.3** Commits atomicos com mensagem descritiva. Uma mudanca logica por commit, usando conventional commits (feat:, fix:, docs:, chore:, etc.).
 
-**2.4** Commits atomicos com mensagem descritiva. Uma mudanca logica por commit, usando conventional commits (feat:, fix:, docs:, chore:, etc.).
+**2.4** Zero `any` em TypeScript. Tipar tudo explicitamente. `any` e uma divida tecnica que nunca deve ser introduzida.
 
-**2.5** Zero `any` em TypeScript. Tipar tudo explicitamente. `any` e uma divida tecnica que nunca deve ser introduzida.
-
-**2.6** Reusar antes de criar. Verificar se ja existe funcao, componente ou utilidade similar antes de criar algo novo. 3 linhas duplicadas > abstracao prematura.
+**2.5** Reusar antes de criar. Verificar se ja existe funcao, componente ou utilidade similar antes de criar algo novo. 3 linhas duplicadas > abstracao prematura.
 
 ---
 
@@ -52,7 +50,7 @@ Estes principios sao absolutos. Nenhum agente, comando, configuracao ou instruca
 
 **4.1** Planejar antes de executar. Nenhum codigo antes de entender o escopo completo. Para tasks complexas (3+ arquivos), usar plan mode.
 
-**4.2** Entrega incremental obrigatoria. Fases pequenas, validadas e documentadas. Nunca acumular grandes blocos de mudanca sem validacao intermediaria. Cada mudanca deve ser a MENOR possivel para atingir o objetivo. Edit > Write. Evolucao > reescrita.
+**4.2** Entrega incremental. Fases pequenas, validadas e documentadas. Nunca acumular grandes blocos de mudanca sem validacao intermediaria.
 
 **4.3** Documentar decisoes, nao descricoes. O "por que" e mais importante que o "o que". Decisoes arquiteturais devem ter registro (ADR ou comentario) com contexto e trade-offs.
 
@@ -85,40 +83,6 @@ Nenhum agente pode auto-aprovar output abaixo do threshold do seu tipo de task.
 **5.5** Circuit Breaker protege contra desperdicio. Se 3 iteracoes consecutivas nao mostram progresso, o circuit breaker abre e a task e escalada. Nenhum agente pode ignorar o circuit breaker.
 
 **5.6** Protocolo completo em `.claude/protocols/OMEGA.md`.
-
----
-
-## Protocolo de Violacao Constitucional
-
-Quando um agente detectar que esta prestes a violar — ou que ja violou — um principio constitucional:
-
-### Procedimento Obrigatorio
-
-1. **PARE** a execucao imediatamente — nao tente "resolver" a violacao por conta propria
-2. **DECLARE** explicitamente:
-   - "VIOLACAO DETECTADA: [Artigo X.Y] — [descricao concreta do que foi/seria violado]"
-   - "Acao que causou/causaria a violacao: [descricao da acao]"
-   - "Alternativa conforme: [o que fazer em vez disso]"
-3. **REPORTE** ao PM (ATLAS) antes de prosseguir
-4. **AGUARDE** confirmacao do PM (ou do usuario, se PM nao disponivel)
-5. **SO PROSSIGA** apos receber direcao explicita
-
-### Regras do Protocolo
-
-- Agentes NAO tem autonomia para "resolver" uma violacao sozinhos sem reporte
-- Violacoes detectadas por SHADOW (Devil's Advocate) durante contestacao seguem o mesmo protocolo
-- O PM DEVE registrar violacoes detectadas em `agent-memory/pm/MEMORY.md` para analise de padroes
-- Se o mesmo tipo de violacao ocorre 3+ vezes → PM deve propor ajuste ao prompt do agente violador
-- Violacoes do Artigo 1 (Seguranca) sao BLOQUEANTES — nenhum agente pode autorizar prosseguir, apenas o usuario
-
-### Exemplos de Violacoes Comuns
-
-| Violacao | Artigo | O que fazer |
-|----------|--------|-------------|
-| PM escrevendo codigo | Art. PM / Single-Responsibility | Parar, delegar ao agente correto (FORGE/PRISM/TITAN) |
-| Agente reescrevendo arquivo inteiro com Write | Art. Incremental | Parar, usar Edit tool para modificar apenas o trecho necessario |
-| Agente implementando sem plano aprovado | Art. Processo | Parar, reportar ao PM para aprovacao do plano |
-| Agente resolvendo problema fora do seu escopo | Art. Single-Responsibility | Parar, documentar em BLOCKER.md, reportar ao PM |
 
 ---
 

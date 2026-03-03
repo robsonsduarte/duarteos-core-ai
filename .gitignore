@@ -7,7 +7,7 @@ node_modules/
 .env.local
 .env.production
 .env*.local
-/.envrc
+.envrc
 
 # DuarteOS — configs pessoais (nao versionar)
 .claude/config/user.yaml
