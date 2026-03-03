@@ -24,7 +24,7 @@ const CHANGELOG = {
       'mind-update.md: Steps 2-5 expandidos com novos layers de delta/merge/regression',
       'MMOS-PIPELINE.md: nova secao 16 documentando os 6 componentes + regras de extracao',
       'Backward compatible: clones existentes continuam validos (novos campos opcionais)',
-      'Amanda Khayat mind-update v2: fidelidade 75% → 88.95% (+8 frameworks, +2 paradoxos)',
+      'Amanda Khayat mind-update v2: fidelidade 75% → 94.0% (F=L:93 B:95 C:94 K:95 V:92), 211 insights de 3 fontes, 17 frameworks (de 5), 8 paradoxos (de 0), 13 heuristicas (de 4)',
     ],
   },
   '5.11.0': {
