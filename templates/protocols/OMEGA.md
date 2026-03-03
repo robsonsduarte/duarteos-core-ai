@@ -199,6 +199,7 @@ Se ambos falham: proxima iteracao com feedback especifico.
 | `implementation` | 90 | Codigo, configs, infraestrutura | execute-phase, quick, bug fix |
 | `validation` | 95 | Testes, QA, auditoria, verificacao | verify-work, audit, code review |
 | `mind_clone` | 95 | Clonagem mental, DNA, dossies | clone-mind, mind-update, dossie |
+| `mind_update` | 95 | Atualizacao incremental de DNA Synapse | mind-update, clone-mind --update |
 
 ### Calculo de Score por Evidencia
 
@@ -372,6 +373,8 @@ Alem do circuit breaker, OMEGA encerra o loop se qualquer destas condicoes for v
 | 11 | Conflito entre agentes | Deadlock | PM (ATLAS) arbitra |
 | 12 | Task cancelada pelo usuario | Manual | Abort limpo com log |
 | 13 | Custo acumulado excede budget | Recurso | Parar, reportar ao usuario |
+
+> **Nota sobre `/gsd:quick`:** Com `max_iterations = 2`, o circuit breaker nao atinge estado OPEN durante execucao de tasks quick. A protecao contra loops travados neste subcomando e o proprio limite de iteracoes, nao o circuit breaker.
 
 ---
 
@@ -1021,7 +1024,7 @@ OMEGA_MIND_CLONE_VALIDATION:
 <!-- OMEGA_STATUS
 agent: {CODENAME}
 task: {descricao}
-iteration: {N}/{max}
+iteration: {N de max_iterations}
 task_type: {research | planning | implementation | validation | mind_clone | mind_update}
 score: {0-100}
 evidence:
