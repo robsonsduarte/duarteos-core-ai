@@ -1,0 +1,49 @@
+# Template de estado de Squad — Synapse v3
+# Copie este arquivo como squads/{squad-id}.yaml ao criar um squad
+# Preencha squad_id, category, objective e members
+
+# Identidade do squad
+squad_id: null                     # ex: "omega-synapse-integration"
+category: null                     # ex: "implementation", "mind-clone", "research"
+objective: null                    # ex: "Implementar OMEGA v2 + Synapse v3"
+created: null                      # ISO date: "YYYY-MM-DD"
+status: active                     # active | paused | completed | disbanded
+
+# Membros do squad
+members:
+  - agent_id: null                 # ex: "architect"
+    codename: null                 # ex: "NEXUS"
+    role: null                     # ex: "Projeta protocolos e schemas"
+    joined: null                   # ISO date
+
+# Tasks do squad
+tasks:
+  - id: null                       # ex: "synapse-v3-protocol"
+    description: null
+    assignee: null                 # agent_id
+    status: pending                # pending | in_progress | completed | blocked
+    started: null                  # ISO datetime
+    completed: null                # ISO datetime ou null
+
+# Artefatos compartilhados
+shared_artifacts:
+  - path: null                     # ex: ".claude/protocols/SYNAPSE.md"
+    type: null                     # document | code | config | protocol
+    owner: null                    # agent_id
+    created: null                  # ISO date
+
+# Log de comunicacao (manter ultimas 20)
+communication_log:
+  - from: null                     # agent_id
+    to: null                       # agent_id ou "broadcast"
+    summary: null                  # resumo curto
+    at: null                       # ISO datetime
+
+# Metricas
+metrics:
+  tasks_total: 0
+  tasks_completed: 0
+  tasks_blocked: 0
+  avg_omega_score: null
+  started: null                    # ISO date
+  last_activity: null              # ISO datetime

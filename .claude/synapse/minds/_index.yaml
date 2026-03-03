@@ -1,0 +1,676 @@
+# Indice de Mind Clones — Synapse v3
+# Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
+# Total: 59 clones em 10 categorias
+version: 1
+last_updated: "2026-03-03"
+total_clones: 59
+
+categories:
+  AI:
+    - slug: "andrew-ng"
+      name: "Andrew Ng"
+      domain: "Inteligencia Artificial Aplicada, Educacao em ML e Estrategia de IA Empresarial"
+      clone_file: ".claude/commands/DUARTEOS/AI/andrew-ng.md"
+      dna_file: ".claude/synapse/minds/andrew-ng.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "demis-hassabis"
+      name: "Demis Hassabis"
+      domain: "Inteligencia Artificial Geral, Neurociencia Computacional e Ciencia Fundamental"
+      clone_file: ".claude/commands/DUARTEOS/AI/demis-hassabis.md"
+      dna_file: ".claude/synapse/minds/demis-hassabis.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "geoffrey-hinton"
+      name: "Geoffrey Hinton"
+      domain: "Deep Learning, Redes Neurais e Seguranca Existencial de IA"
+      clone_file: ".claude/commands/DUARTEOS/AI/geoffrey-hinton.md"
+      dna_file: ".claude/synapse/minds/geoffrey-hinton.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "yann-lecun"
+      name: "Yann LeCun"
+      domain: "Deep Learning, Computer Vision, Self-Supervised Learning e Arquitetura de IA"
+      clone_file: ".claude/commands/DUARTEOS/AI/yann-lecun.md"
+      dna_file: ".claude/synapse/minds/yann-lecun.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "yoshua-bengio"
+      name: "Yoshua Bengio"
+      domain: "Deep Learning, Aprendizado de Representacoes, Seguranca de IA e Ciencia para o Bem Comum"
+      clone_file: ".claude/commands/DUARTEOS/AI/yoshua-bengio.md"
+      dna_file: ".claude/synapse/minds/yoshua-bengio.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Business:
+    - slug: "bill-gates"
+      name: "Bill Gates"
+      domain: "Tecnologia, Filantropia, Inovacao e Energia Limpa"
+      clone_file: ".claude/commands/DUARTEOS/Business/bill-gates.md"
+      dna_file: ".claude/synapse/minds/bill-gates.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "daiane-cavalcante"
+      name: "Daiane Cavalcante"
+      domain: "PLR (Private Label Rights), Mercado Digital Internacional e Empreendedorismo de Impacto"
+      clone_file: ".claude/commands/DUARTEOS/Business/daiane-cavalcante.md"
+      dna_file: ".claude/synapse/minds/daiane-cavalcante.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "guilherme-bifi"
+      name: "Guilherme Bifi"
+      domain: "Resposta Direta, Afiliacao, Marketing Digital e Mentalidade Empreendedora"
+      clone_file: ".claude/commands/DUARTEOS/Business/guilherme-bifi.md"
+      dna_file: ".claude/synapse/minds/guilherme-bifi.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "pedro-valerio-lopez"
+      name: "Pedro Valerio Lopez"
+      domain: "Arquitetura de Processos, Pensamento Sistemico e Validacao de Workflows"
+      clone_file: ".claude/commands/DUARTEOS/Business/pedro-valerio-lopez.md"
+      dna_file: ".claude/synapse/minds/pedro-valerio-lopez.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "thiago-finch"
+      name: "Thiago Finch"
+      domain: "Marketing Digital, Infoprodutos, Personal Branding e Nomadismo Digital"
+      clone_file: ".claude/commands/DUARTEOS/Business/thiago-finch.md"
+      dna_file: ".claude/synapse/minds/thiago-finch.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "vinicius-greco"
+      name: "Vinicius Greco"
+      domain: "Growth Marketing Data-Driven, Ecommerce e Media Mix Modeling"
+      clone_file: ".claude/commands/DUARTEOS/Business/vinicius-greco.md"
+      dna_file: ".claude/synapse/minds/vinicius-greco.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Content:
+    - slug: "camila-porto"
+      name: "Camila Porto"
+      domain: "Marketing em Redes Sociais e Facebook Marketing"
+      clone_file: ".claude/commands/DUARTEOS/Content/camila-porto.md"
+      dna_file: ".claude/synapse/minds/camila-porto.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "luciana-papini"
+      name: "Luciana Papini"
+      domain: "Automacao de Vendas e Gestao de Automacao"
+      clone_file: ".claude/commands/DUARTEOS/Content/luciana-papini.md"
+      dna_file: ".claude/synapse/minds/luciana-papini.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "mrbeast"
+      name: "MrBeast (Jimmy Donaldson)"
+      domain: "YouTube, Producao de Conteudo e Escala de Negocios de Entretenimento"
+      clone_file: ".claude/commands/DUARTEOS/Content/mrbeast.md"
+      dna_file: ".claude/synapse/minds/mrbeast.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "virginia-fonseca"
+      name: "Virginia Fonseca"
+      domain: "Marketing de Influencia, Redes Sociais e Empreendedorismo Digital"
+      clone_file: ".claude/commands/DUARTEOS/Content/virginia-fonseca.md"
+      dna_file: ".claude/synapse/minds/virginia-fonseca.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Copywriting:
+    - slug: "amanda-khayat"
+      name: "Amanda Khayat"
+      domain: "Copywriting de Resposta Direta e Anuncios"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/amanda-khayat.md"
+      dna_file: ".claude/synapse/minds/amanda-khayat.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "claude-hopkins"
+      name: "Claude Hopkins"
+      domain: "Scientific Advertising e Copywriting de Resposta Direta"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/claude-hopkins.md"
+      dna_file: ".claude/synapse/minds/claude-hopkins.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "eugene-schwartz"
+      name: "Eugene M. Schwartz"
+      domain: "Copywriting de Resposta Direta e Psicologia do Consumidor"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/eugene-schwartz.md"
+      dna_file: ".claude/synapse/minds/eugene-schwartz.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "gary-bencivenga"
+      name: "Gary Bencivenga"
+      domain: "Copywriting de Resposta Direta e Split-Run Testing"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/gary-bencivenga.md"
+      dna_file: ".claude/synapse/minds/gary-bencivenga.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "gary-halbert"
+      name: "Gary Halbert"
+      domain: "Direct Mail Marketing e Copywriting de Resposta Direta"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/gary-halbert.md"
+      dna_file: ".claude/synapse/minds/gary-halbert.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "joseph-sugarman"
+      name: "Joseph Sugarman"
+      domain: "Copywriting Psicologico e Storytelling de Vendas"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/joseph-sugarman.md"
+      dna_file: ".claude/synapse/minds/joseph-sugarman.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "robert-collier"
+      name: "Robert Collier"
+      domain: "Direct Mail Copywriting e Filosofia de Persuasao"
+      clone_file: ".claude/commands/DUARTEOS/Copywriting/robert-collier.md"
+      dna_file: ".claude/synapse/minds/robert-collier.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Juridico:
+    - slug: "erik-nybo"
+      name: "Erik Fontenele Nybo"
+      domain: "Direito das Startups, Venture Capital, Legal Design, Contratos SaaS, Societario de Startups, M&A Tech"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/erik-nybo.md"
+      dna_file: ".claude/synapse/minds/erik-nybo.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "guilherme-martins"
+      name: "Guilherme Magalhaes Martins"
+      domain: "Direito do Consumidor Digital, Contratos Eletronicos, Responsabilidade Civil na Internet, Protecao de Dados, Plataformas Digitais"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/guilherme-martins.md"
+      dna_file: ".claude/synapse/minds/guilherme-martins.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "ivson-coelho"
+      name: "Ivson Coelho"
+      domain: "Direito Tributario Digital, Tributacao de SaaS e Infoprodutos, Reforma Tributaria, Imposto Minimo Global"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/ivson-coelho.md"
+      dna_file: ".claude/synapse/minds/ivson-coelho.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "jose-faleiros-junior"
+      name: "Jose Luiz de Moura Faleiros Junior"
+      domain: "Contratos Algoritmicos, Direito Digital, Direito Civil-Tecnologico, Smart Contracts, Responsabilidade Civil Digital"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/jose-faleiros-junior.md"
+      dna_file: ".claude/synapse/minds/jose-faleiros-junior.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "patricia-peck"
+      name: "Patricia Peck Pinheiro"
+      domain: "LGPD, Privacidade, Ciberseguranca, Crimes Digitais, IA, Compliance Digital e Governanca de Dados"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/patricia-peck.md"
+      dna_file: ".claude/synapse/minds/patricia-peck.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "ricardo-calcini"
+      name: "Ricardo Calcini"
+      domain: "Direito do Trabalho Digital, Teletrabalho, Plataformas Digitais, LGPD Trabalhista, Compliance Trabalhista"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/ricardo-calcini.md"
+      dna_file: ".claude/synapse/minds/ricardo-calcini.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "ronaldo-lemos"
+      name: "Ronaldo Lemos"
+      domain: "Propriedade Intelectual Digital, Direitos Autorais, Regulacao de Internet, IA e Copyright, Cultura Livre e Governanca Digital"
+      clone_file: ".claude/commands/DUARTEOS/Juridico/ronaldo-lemos.md"
+      dna_file: ".claude/synapse/minds/ronaldo-lemos.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Marketing:
+    - slug: "dan-kennedy"
+      name: "Dan Kennedy"
+      domain: "Direct Response Marketing, Premium Positioning, Info-Marketing"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/dan-kennedy.md"
+      dna_file: ".claude/synapse/minds/dan-kennedy.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "david-ogilvy"
+      name: "David Ogilvy"
+      domain: "Publicidade, Brand Building, Direct Response, Consumer Psychology"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/david-ogilvy.md"
+      dna_file: ".claude/synapse/minds/david-ogilvy.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "diego-carmona"
+      name: "Diego Carmona"
+      domain: "Automacao de Marketing, SaaS, Startups, Visao Empresarial"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/diego-carmona.md"
+      dna_file: ".claude/synapse/minds/diego-carmona.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "diogo-kobata"
+      name: "Diogo Kobata"
+      domain: "Copywriting, Trafego Direto, TikTok Shop, Criativos de Alta Conversao"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/diogo-kobata.md"
+      dna_file: ".claude/synapse/minds/diogo-kobata.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "marcello-safe"
+      name: "Marcello Safe"
+      domain: "Marketing Digital para Advogados, Marketing Juridico Etico, Infoproducao Juridica"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/marcello-safe.md"
+      dna_file: ".claude/synapse/minds/marcello-safe.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "pedro-sobral"
+      name: "Pedro Sobral"
+      domain: "Trafego Pago, Marketing Digital, Empreendedorismo Digital"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/pedro-sobral.md"
+      dna_file: ".claude/synapse/minds/pedro-sobral.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "sexta-feira"
+      name: "Sexta Feira"
+      domain: "Analise de Dados, Estrategia de Crescimento para Ecommerce, Media Mix Modeling"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/sexta-feira.md"
+      dna_file: ".claude/synapse/minds/sexta-feira.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "stefan-georgi"
+      name: "Stefan Georgi"
+      domain: "Copywriting Sistematico, VSL (Video Sales Letters), Direct Response Moderno"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/stefan-georgi.md"
+      dna_file: ".claude/synapse/minds/stefan-georgi.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "tiago-tessmann"
+      name: "Tiago Tessmann"
+      domain: "Google Ads, Trafego Pago, Conversao Digital, Educacao em Marketing"
+      clone_file: ".claude/commands/DUARTEOS/Marketing/tiago-tessmann.md"
+      dna_file: ".claude/synapse/minds/tiago-tessmann.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Product:
+    - slug: "brennan-dunn"
+      name: "Brennan Dunn"
+      domain: "Email Personalization, Progressive Data Collection, SaaS Retention, Info-Products"
+      clone_file: ".claude/commands/DUARTEOS/Product/brennan-dunn.md"
+      dna_file: ".claude/synapse/minds/brennan-dunn.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "ezra-firestone"
+      name: "Ezra Firestone"
+      domain: "E-commerce Scaling, Performance Marketing, Email Automation, Brand Building"
+      clone_file: ".claude/commands/DUARTEOS/Product/ezra-firestone.md"
+      dna_file: ".claude/synapse/minds/ezra-firestone.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "julie-zhuo"
+      name: "Julie Zhuo"
+      domain: "Product Design Leadership, Engineering Management, Team Building, Design Craft"
+      clone_file: ".claude/commands/DUARTEOS/Product/julie-zhuo.md"
+      dna_file: ".claude/synapse/minds/julie-zhuo.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Saude:
+    - slug: "claudio-miyake"
+      name: "Claudio Yukio Miyake"
+      domain: "Ortodontia, Saude Bucal Coletiva, Politica de Saude e Regulamentacao Profissional"
+      clone_file: ".claude/commands/DUARTEOS/Saude/claudio-miyake.md"
+      dna_file: ".claude/synapse/minds/claudio-miyake.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "drauzio-varella"
+      name: "Antonio Drauzio Varella"
+      domain: "Oncologia, Saude Publica, Medicina Preventiva e Comunicacao Cientifica"
+      clone_file: ".claude/commands/DUARTEOS/Saude/drauzio-varella.md"
+      dna_file: ".claude/synapse/minds/drauzio-varella.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "juliana-trentini"
+      name: "Juliana Trentini"
+      domain: "Fonoaudiologia Pediatrica, Aquisicao de Linguagem e Estimulacao da Fala Infantil"
+      clone_file: ".claude/commands/DUARTEOS/Saude/juliana-trentini.md"
+      dna_file: ".claude/synapse/minds/juliana-trentini.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "marcio-atalla"
+      name: "Marcio Henrique Atalla"
+      domain: "Educacao Fisica, Saude Preventiva, Longevidade Ativa e Combate ao Sedentarismo"
+      clone_file: ".claude/commands/DUARTEOS/Saude/marcio-atalla.md"
+      dna_file: ".claude/synapse/minds/marcio-atalla.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "patricia-leite"
+      name: "Patricia Leite"
+      domain: "Nutricao Clinica, Nutricao Esportiva, Emagrecimento Saudavel e Doencas Cronicas"
+      clone_file: ".claude/commands/DUARTEOS/Saude/patricia-leite.md"
+      dna_file: ".claude/synapse/minds/patricia-leite.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "raquel-castanharo"
+      name: "Raquel Castanharo"
+      domain: "Fisioterapia Esportiva, Biomecanica da Corrida, Prevencao de Lesoes e Reabilitacao"
+      clone_file: ".claude/commands/DUARTEOS/Saude/raquel-castanharo.md"
+      dna_file: ".claude/synapse/minds/raquel-castanharo.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "vera-iaconelli"
+      name: "Vera Iaconelli"
+      domain: "Psicanalise, Parentalidade Contemporanea, Psicologia Perinatal e Saude Mental Coletiva"
+      clone_file: ".claude/commands/DUARTEOS/Saude/vera-iaconelli.md"
+      dna_file: ".claude/synapse/minds/vera-iaconelli.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  Tech:
+    - slug: "dustin-moskovitz"
+      name: "Dustin Moskovitz"
+      domain: "Produtividade Organizacional, Work Management e Filantropia Eficaz"
+      clone_file: ".claude/commands/DUARTEOS/Tech/dustin-moskovitz.md"
+      dna_file: ".claude/synapse/minds/dustin-moskovitz.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "evan-spiegel"
+      name: "Evan Spiegel"
+      domain: "Product Design, Comunicacao Visual e Computacao Espacial (AR)"
+      clone_file: ".claude/commands/DUARTEOS/Tech/evan-spiegel.md"
+      dna_file: ".claude/synapse/minds/evan-spiegel.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "jan-koum"
+      name: "Jan Koum"
+      domain: "Privacidade Digital, Produtos Utilitarios e Simplicidade Radical"
+      clone_file: ".claude/commands/DUARTEOS/Tech/jan-koum.md"
+      dna_file: ".claude/synapse/minds/jan-koum.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "larry-page"
+      name: "Larry Page"
+      domain: "Moonshot Thinking, Busca & Organizacao de Informacao, e Computacao em Escala Planetaria"
+      clone_file: ".claude/commands/DUARTEOS/Tech/larry-page.md"
+      dna_file: ".claude/synapse/minds/larry-page.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "mark-zuckerberg"
+      name: "Mark Zuckerberg"
+      domain: "Plataformas em Escala, Estrategia Competitiva e Execucao em Velocidade"
+      clone_file: ".claude/commands/DUARTEOS/Tech/mark-zuckerberg.md"
+      dna_file: ".claude/synapse/minds/mark-zuckerberg.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+
+  UX-Design:
+    - slug: "brad-frost"
+      name: "Brad Frost"
+      domain: "Design Systems & Atomic Design"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/brad-frost.md"
+      dna_file: ".claude/synapse/minds/brad-frost.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "don-norman"
+      name: "Don Norman"
+      domain: "Human-Centered Design & Psicologia Cognitiva"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/don-norman.md"
+      dna_file: ".claude/synapse/minds/don-norman.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "jakob-nielsen"
+      name: "Jakob Nielsen"
+      domain: "Usabilidade Web & Heuristicas de Interface"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/jakob-nielsen.md"
+      dna_file: ".claude/synapse/minds/jakob-nielsen.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "luke-wroblewski"
+      name: "Luke Wroblewski"
+      domain: "Mobile-First Design & Form Optimization"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/luke-wroblewski.md"
+      dna_file: ".claude/synapse/minds/luke-wroblewski.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "nathan-curtis"
+      name: "Nathan Curtis"
+      domain: "Design Systems Operations & Component Documentation"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/nathan-curtis.md"
+      dna_file: ".claude/synapse/minds/nathan-curtis.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"
+    - slug: "steve-krug"
+      name: "Steve Krug"
+      domain: "Usabilidade Pratica & Testes Low-Budget"
+      clone_file: ".claude/commands/DUARTEOS/UX-Design/steve-krug.md"
+      dna_file: ".claude/synapse/minds/steve-krug.yaml"
+      versao_dna: 1
+      total_fontes: 1
+      confianca: "media"
+      has_paradoxos: false
+      fidelidade: null
+      last_updated: "2026-03-01"

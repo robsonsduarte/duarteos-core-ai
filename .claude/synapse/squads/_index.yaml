@@ -1,0 +1,7 @@
+# Indice de Squads — Synapse v3
+# Atualizar apos cada criacao/finalizacao de squad
+version: 1
+last_updated: "2026-03-03"
+total_squads: 0
+
+squads: []
