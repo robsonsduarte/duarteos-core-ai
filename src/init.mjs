@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, cpSync, readdirSync
 import { resolve, dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { checkMcpStatus, printMcpReport } from './mcp-check.mjs'
-import { injectMcpEnvVars } from './utils.mjs'
+import { getPackageVersion, injectMcpEnvVars } from './utils.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
@@ -69,9 +69,20 @@ function detectProjectName(cwd) {
 export function init(projectName, options = {}) {
   const cwd = process.cwd()
 
+  const version = getPackageVersion()
+
+  // Banner de versao
+  const bannerWidth = 56
+  const border = '━'.repeat(bannerWidth)
+  console.log(``)
+  console.log(`  ┏${border}┓`)
+  console.log(`  ┃  DuarteOS Core AI v${version}${' '.repeat(Math.max(0, bannerWidth - 22 - version.length))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  59 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┗${border}┛`)
+
   // Detect project name
   const detectedName = projectName || detectProjectName(cwd) || 'meu-projeto'
-  console.log(`\n  Instalando DuarteOS Core AI no projeto: ${detectedName}`)
+  console.log(`\n  Instalando no projeto: ${detectedName}`)
   console.log(`  Diretorio: ${cwd}\n`)
 
   const replacements = {
@@ -517,21 +528,20 @@ export function init(projectName, options = {}) {
      _global/PATTERNS.md     — padroes confirmados por 3+ agentes
      _meta/promotion-log.md  — historico de promocoes
 
-  MCPs instalados (.mcp.json) — 23 servidores:
+  MCPs instalados (.mcp.json) — 21 servidores:
      Context7              — Docs atualizadas de bibliotecas
      EXA                   — Busca web + codigo + empresas
      Fetch                 — Busca URLs → Markdown
+     Apify                 — Web scraper, RAG browser, actors
      YouTube Transcript    — Transcricoes de videos
-     Redis                 — Persistencia de contexto, cache, sessoes
      GitHub                — Issues, PRs, repos
-     REST API              — Chama qualquer REST API
      Supabase              — Acesso direto ao Supabase
-     CodeRabbit            — Code review IA (40+ analyzers)
      n8n                   — Automacoes n8n
      Google Workspace      — Gmail, Drive, Calendar, Docs, Sheets
      Obsidian              — Notas do Obsidian vault
      Memory                — Grafo de conhecimento persistente
      Sequential Thinking   — Raciocinio estruturado
+     E2B Sandbox           — Execucao segura de codigo
 
   Protocols (.claude/protocols/) — 9 documentos formais:
      CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)

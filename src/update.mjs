@@ -9,6 +9,18 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.11.0': {
+    title: 'MCP Fix — 19/21 Servers Validados',
+    highlights: [
+      'FIX: 8 Python MCPs crashavam — FastMCP(description=) nao existe no fastmcp 2.x, trocado para instructions=',
+      'FIX: _comment_* entries no .mcp.json quebravam o loader do Claude Code (removidos)',
+      'FIX: obsidian MCP — vault path movido de env para args (formato correto do pacote)',
+      'REMOVIDOS MCPs que crashavam sem config: redis (deprecated), rest-api (sem BASE_URL), coderabbit (sem PAT)',
+      'VALIDADO: 19/21 MCPs passam handshake JSON-RPC initialize (2 restantes precisam OAuth interativo)',
+      'MCP_ENV_MAP e mcp-check.mjs atualizados para refletir 21 servers ativos',
+      'Templates (templates/mcp.json + mcp-servers/) sincronizados com as correcoes',
+    ],
+  },
   '5.10.0': {
     title: 'MCP Reliability — env vars diretas + .mcp.json git-ignored',
     highlights: [
@@ -278,8 +290,14 @@ export function update(options = {}) {
 
   const version = getPackageVersion()
 
-  console.log(`\n  DuarteOS Core AI — Update`)
-  console.log(`  Versao do pacote: v${version}`)
+  // Banner de versao
+  const bannerWidth = 56
+  const border = '━'.repeat(bannerWidth)
+  console.log(``)
+  console.log(`  ┏${border}┓`)
+  console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  59 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 
   // Mostrar changelog da versao sendo instalada
