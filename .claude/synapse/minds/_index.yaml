@@ -180,14 +180,14 @@ categories:
   Copywriting:
     - slug: "amanda-khayat"
       name: "Amanda Khayat"
-      domain: "Copywriting de Resposta Direta e Anuncios"
+      domain: "Copywriting de Resposta Direta, Anuncios e Criativos de Alta Conversao"
       clone_file: ".claude/commands/DUARTEOS/Copywriting/amanda-khayat.md"
       dna_file: ".claude/synapse/minds/amanda-khayat.yaml"
       versao_dna: 2
-      total_fontes: 5
+      total_fontes: 4
       confianca: "alta"
       has_paradoxos: true
-      fidelidade: 88.95
+      fidelidade: 94.0
       last_updated: "2026-03-03"
     - slug: "claude-hopkins"
       name: "Claude Hopkins"

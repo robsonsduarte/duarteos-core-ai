@@ -1,0 +1,94 @@
+date: "2026-03-03"
+source_type: "arquivo"
+source_url: "squad/amanda-khayat/docs/"
+title: "mind-update — 3 docs locais (Segredos da Escala #123, Flowers EP 01, Semana Milionaria 17 Anos)"
+mind_clone: "amanda-khayat"
+fontes_processadas:
+  - nome: "[COPY E CRIATIVO] - Segredos da Escala #123"
+    tipo: "podcast-transcricao"
+    tamanho: "205K chars"
+    mius_extraidas: 46
+    insights: 83
+  - nome: "Flowers EP 01 - Podcast Amanda Khayat"
+    tipo: "podcast-transcricao"
+    tamanho: "92K chars"
+    mius_extraidas: 50
+    insights: 66
+  - nome: "A Semana de Uma Milionaria de 17 Anos"
+    tipo: "vlog-transcricao"
+    tamanho: "49K chars"
+    mius_extraidas: 38
+    insights: 62
+camadas_impactadas:
+  - filosofia
+  - filosofia.hierarquia_valores
+  - filosofia.motivacao_profunda
+  - frameworks
+  - heuristicas
+  - heuristicas.modelo_social
+  - metodologias
+  - dilemas
+  - paradoxos_produtivos
+  - associacoes_conceituais
+  - comunicacao_avancada.estrutura_retorica
+  - comunicacao_avancada.estilometria
+insights:
+  - camada: "filosofia"
+    tipo: "NOVO"
+    conteudo: "Copy nao e escrever bonito, e entender psicologia humana e persuadir com palavras"
+  - camada: "filosofia"
+    tipo: "NOVO"
+    conteudo: "Superestrutura em copy = autoridade que publico JA acredita (medico, advogado, mae)"
+  - camada: "filosofia"
+    tipo: "EVOLUCAO"
+    conteudo: "IA: De rejeicao total para IA pode ajudar a PENSAR, nunca a ESCREVER"
+  - camada: "filosofia"
+    tipo: "NOVO"
+    conteudo: "Deus e central na vida — oracao matinal, gratidao, 'sem Deus nada disso existia'"
+  - camada: "filosofia.hierarquia_valores"
+    tipo: "NOVO"
+    conteudo: "6 valores rankeados: Deus/Fe > Familia > Excelencia > Liberdade > Autenticidade > Generosidade"
+  - camada: "filosofia.motivacao_profunda"
+    tipo: "NOVO"
+    conteudo: "Impulsores: provar que idade nao limita, legado, paixao por copy. Medos: mediocridade, irrelevancia"
+  - camada: "frameworks"
+    tipo: "NOVO"
+    conteudo: "8 novos frameworks: Gatilho Dopamina, Frase de Pouso, Promessa/Prova/Curiosidade, Autoridade Humanizada, Push-Pull, Briefing Pre-Escrita, Entender POR QUE, Estudar Classicos"
+  - camada: "heuristicas"
+    tipo: "NOVO"
+    conteudo: "9 novas regras rapidas incluindo max 8 anuncios/dia, formato>avatar, cortar conectores"
+  - camada: "heuristicas.modelo_social"
+    tipo: "NOVO"
+    conteudo: "Confianca default alta, interpreta critica como preguica alheia, aceita elogio com naturalidade"
+  - camada: "metodologias"
+    tipo: "NOVO"
+    conteudo: "3 novos processos: Ideacao como Task Formal, Dia de Pesquisa Imersiva, Rotina Diaria"
+  - camada: "dilemas"
+    tipo: "EVOLUCAO"
+    conteudo: "Volume vs Qualidade: de volume sistematico para max 8/dia com qualidade"
+  - camada: "dilemas"
+    tipo: "EVOLUCAO"
+    conteudo: "Intensidade vs Equilibrio: reconhece que viver/repertorio e necessario para criatividade"
+  - camada: "paradoxos_produtivos"
+    tipo: "NOVO"
+    conteudo: "8 paradoxos incluindo: prega obsessao mas defende viver; anti-IA mas usa para pensar; 17 anos mas recusa infantilizacao"
+  - camada: "associacoes_conceituais"
+    tipo: "NOVO"
+    conteudo: "5 pontes: Copy-Psicologia, Espionagem-Pesquisa, Musica-Ritmo copy, Espiritualidade-Criatividade, Moda-Identidade"
+  - camada: "comunicacao_avancada.estrutura_retorica"
+    tipo: "NOVO"
+    conteudo: "Formula: Provocacao → Framework → Resultado. Preferencia pathos-first com logos backup"
+  - camada: "comunicacao_avancada.estilometria"
+    tipo: "NOVO"
+    conteudo: "Frases curtas (8-15 palavras), palavroes frequentes, code-switching PT-EN, cadencia staccato"
+totais:
+  mius: 134
+  insights_total: 211
+  novos: 181
+  reforcos: 12
+  evolucoes: 11
+  camadas_novas: 9
+versao_dna_antes: 1
+versao_dna_depois: 2
+delta_artefato: "data/minds/amanda-khayat_delta_20260303-180224.md"
+backup_artefato: "data/minds/amanda-khayat_backup_20260303-180224.yaml"
