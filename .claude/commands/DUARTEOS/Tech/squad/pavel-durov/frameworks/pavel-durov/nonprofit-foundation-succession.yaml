@@ -1,0 +1,54 @@
+# Nonprofit Foundation Succession — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Nonprofit Foundation Succession"
+  slug: "nonprofit-foundation-succession"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
+
+descricao: "Framework de continuidade e legado para projetos baseados em principios. Manter controle total durante a vida (unico acionista), rejeitar todas ofertas de compra, estabelecer fundacao sem fins lucrativos como herdeira. Garante que principios sobrevivem ao fundador. Rejeicao do dilema 'vender OU morrer com a empresa'."
+
+steps:
+  - step: 1
+    acao: "Manter controle total durante a vida (unico acionista)"
+    detalhe: "Zero diluicao de controle. Nenhum board externo. Nenhum acionista minoritario com poder de veto. O fundador e o unico decisor enquanto vivo."
+  - step: 2
+    acao: "Rejeitar todas ofertas de compra ($1B Google rejeitado)"
+    detalhe: "Telegram nao e commodity, e promessa. Vender e trair a promessa de independencia, confidencialidade e liberdade feita aos usuarios."
+  - step: 3
+    acao: "Estabelecer fundacao sem fins lucrativos como herdeira"
+    detalhe: "Fundacao garante que Telegram continua operando pelos mesmos principios apos a morte do fundador. Nao e heranca familiar — e heranca de principios."
+  - step: 4
+    acao: "Controle do Telegram passa para fundacao apos morte"
+    detalhe: "Testamento estabelece fundacao como sucessora. Filhos so acessam estate 30 anos depois — riqueza herdada cedo e nociva."
+  - step: 5
+    acao: "Garantir continuidade de principios alem da vida do fundador"
+    detalhe: "O objetivo nao e perpetuar a empresa, e perpetuar os principios (privacidade, liberdade, independencia). A fundacao existe para proteger principios, nao lucro."
+
+quando_usar: "Planejamento de continuidade e legado de projetos baseados em principios. Quando fundador precisa planejar succession sem comprometer missao."
+
+exemplos_aplicacao:
+  - cenario: "Google oferece $1B para comprar Telegram"
+    resultado: "Oferta rejeitada. 'Telegram is not a commodity, it's a project. An idea. A promise.'"
+    fonte: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
+  - cenario: "Durov precisa planejar o que acontece com Telegram apos sua morte"
+    resultado: "Fundacao sem fins lucrativos como herdeira. Filhos recebem heranca financeira so apos 30 anos. Principios acima de familia."
+    fonte: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
+
+anti_patterns:
+  - "Vender para Big Tech e 'confiar' que principios serao mantidos"
+  - "Diluir controle gradualmente ate perder poder de decisao sobre principios"
+  - "Deixar heranca para filhos sem clausula temporal (riqueza herdada cedo e nociva)"
+  - "IPO sem mecanismos de protecao de principios"
+
+frameworks_relacionados:
+  - name: "Two Chairs"
+    relacao: "complementar — rejeicao do dilema 'vender OU morrer com a empresa'"
+  - name: "Organic Growth"
+    relacao: "complementar — crescimento organico elimina pressao de investidores por saida/venda"
+  - name: "Chat Pay Own"
+    relacao: "complementar — monetizacao sustentavel que reduz pressao financeira sobre decisao de vender"

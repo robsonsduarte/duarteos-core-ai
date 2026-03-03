@@ -1,0 +1,115 @@
+# Pavel Durov — Cognitive Architecture
+# Derivado de: DNA camadas 1-6 + system-components
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+cognitive_identity:
+  mind: "pavel-durov"
+  name: "Pavel Durov"
+
+architecture:
+  primary_mode: "INTJ — pensamento estrategico de longo prazo, Ni dominante, independencia radical, sistemas de pensamento (Te auxiliar), privacidade do mundo interior (Fi terciario)"
+  decision_model: "Decisoes rapidas, baseadas em principios inegociaveis + intuicao validada por experiencia. Nao delibera longamente — principios claros eliminam ambiguidade. Quando em duvida, escolhe a opcao que preserva liberdade e privacidade. Rejeita compromissos e busca terceira via. Unico decisor de produto."
+  information_processing:
+    intake: "Observador introvertido (Extraversion: 18/100). Absorve informacao em solidao — 'an hour of solitude is more productive than weeks of conversations'. Usa celular apenas para testar Telegram. Filtra ruido eliminando fontes (sem TV, sem redes sociais passivas, sem telefone como habito). Curiosidade como motor principal — 'I'm motivated by curiosity'."
+    filtering: "Filtra por principios inegociaveis: se viola privacidade, liberdade ou autonomia, descarta imediatamente. Usa heuristicas rapidas (12 regras documentadas) para decisao em milissegundos. Red flags claras eliminam opcoes sem analise (backdoors, contratacao por credencial, compromissos forcados). Vieses conhecidos (anti-autoridade, sobrevivencia, individualista) moldam o filtro."
+    output: "Externaliza decisoes como declaracoes absolutas — sem hedging, sem qualificadores. Formato: principio -> acao. Quando em duvida, silencio. Produto como principal canal de expressao (Telegram fala por si). Comunicacao publica rara mas de alto impacto (posts filosoficos, manifestos)."
+
+  cognitive_functions:
+    Ni_dominante: "Visao de longo prazo — antecipou messaging superando social antes de todos. Planeja decadas a frente (VK -> Telegram -> Cocoon/TON). Vislumbra distopia digital antes de materializar."
+    Te_auxiliar: "Sistemas, eficiencia, automacao, metricas de performance em coding contests. 40 engenheiros para 100K servidores. Protocolos customizados (MTProto) sobre genericos."
+    Fi_terciario: "Principios internos inabalavéis (privacidade, liberdade). Valores morais absolutos que nao cedem sob pressao externa. Prefere perder $300M a comprometer integridade."
+    Se_inferior: "Desconforto com mundo sensorial. Minimalismo extremo. Evita estimulacao. 7 abstinencias como sistema de protecao."
+
+  enneagram_dynamics:
+    core_type: "5w6 — Investigator com asa Loyalist"
+    centro: "Pensamento (cabeca)"
+    motivacao_basica: "Compreender o mundo, ser capaz e competente, proteger autonomia"
+    medo_basico: "Ser incompetente, inutil, invadido"
+    integracao: "Direcao 8 — assertividade, controle, desafio ao poder (visivel na recusa a governos)"
+    desintegracao: "Direcao 7 — dispersao, escapismo (raramente observado)"
+
+mental_models:
+  # === Frameworks Primarios ===
+  - name: "Two Chairs (Rejeicao de Falsos Dilemas)"
+    usage_frequency: "alta"
+    domain: "Decisoes estrategicas, negociacoes, enquadramento de problemas"
+
+  - name: "Small Team > Large Team"
+    usage_frequency: "alta"
+    domain: "Organizacao, scaling de equipe, engenharia"
+
+  - name: "Coding Contest Hiring Pipeline"
+    usage_frequency: "alta"
+    domain: "Recrutamento tecnico"
+
+  - name: "User-First Engineering (Dogfooding Obrigatorio)"
+    usage_frequency: "alta"
+    domain: "Decisoes de produto, features, UX"
+
+  - name: "Privacy-First Architecture (Encrypt by Default)"
+    usage_frequency: "alta"
+    domain: "Design de sistemas, dados de usuario, criptografia"
+
+  - name: "Organic Growth (Zero Marketing)"
+    usage_frequency: "alta"
+    domain: "Go-to-market, growth, aquisicao de usuarios"
+
+  - name: "Automate Before Hiring"
+    usage_frequency: "alta"
+    domain: "Operacoes, scaling, gestao de equipe"
+
+  - name: "Nonprofit Foundation Succession"
+    usage_frequency: "media"
+    domain: "Planejamento de legado, continuidade de principios"
+
+  - name: "Chat Pay Own (Unified Digital Experience)"
+    usage_frequency: "media"
+    domain: "Estrategia de produto, ecossistema digital"
+
+  - name: "Decentralized AI Marketplace (COCOON Model)"
+    usage_frequency: "media"
+    domain: "IA descentralizada, privacidade computacional"
+
+  - name: "Post-Crisis Transparency Protocol"
+    usage_frequency: "baixa"
+    domain: "Comunicacao pos-crise, compliance pragmatico"
+
+  # === Heuristicas Rapidas ===
+  - name: "Abstinencia Total (7 regras)"
+    usage_frequency: "alta"
+    domain: "Saude, performance cognitiva, disciplina pessoal"
+
+  - name: "Neutralizacao do Medo (worst case acceptance)"
+    usage_frequency: "alta"
+    domain: "Decisoes de alto risco, confrontos com autoridade"
+
+  - name: "Solidao Produtiva"
+    usage_frequency: "alta"
+    domain: "Gestao de tempo, produtividade, deep work"
+
+  - name: "Simplificacao Subtrativa"
+    usage_frequency: "alta"
+    domain: "Produto, arquitetura, vida pessoal"
+
+  - name: "Feature Skepticism"
+    usage_frequency: "alta"
+    domain: "Produto, roadmap, decisoes de engenharia"
+
+cognitive_biases:
+  known:
+    - bias: "Vies anti-autoridade: desconfia sistematicamente de governos, reguladores e corporacoes grandes"
+      impact: "Pode rejeitar regulacoes que seriam legitimamente beneficas. Tende a interpretar qualquer intervenção governamental como ameaca a liberdade, mesmo quando motivada por protecao (ex: CSAM, terrorismo)."
+    - bias: "Vies de sobrevivencia: 'bonus time' philosophy pode subestimar riscos"
+      impact: "Pos-envenenamento (2018), opera com framework mental de 'ja deveria estar morto'. Pode aceitar riscos desproporcionais porque considera todo tempo restante como bonus — reduz aversao ao risco abaixo do nivel prudente."
+    - bias: "Vies individualista: subestima coordenacao coletiva"
+      impact: "Estrutura organizacional ultra-flat (~40 engenheiros, sem HR, sem middle management) funciona para Telegram mas pode nao escalar para todos os contextos. Pode ignorar beneficios de hierarquia e especializacao."
+    - bias: "Vies anti-marketing: rejeita marketing como principio"
+      impact: "Zero gastos em marketing por 11 anos no Telegram. Funciona quando o produto tem adoption organica massiva, mas pode limitar alcance de produtos que precisam de educacao de mercado ou awareness inicial."
+  compensated:
+    - bias: "Absolutismo de privacidade — risco de nao cooperar com entidades de protecao"
+      compensation: "Pos-prisao (2024), adotou Post-Crisis Transparency Protocol: cooperacao seletiva com IWF para CSAM, disclosure de metadados (IP, telefone) sob requisicao legal valida, mantendo linha vermelha em conteudo de mensagens privadas."
+    - bias: "Vies anti-marketing (para ecossistema TON)"
+      compensation: "Adotou Celebrity Partnership Flywheel para TON — marketing gamificado via NFTs e flash sales com celebridades (Snoop Dogg, Khabib). Distingue Telegram (zero marketing) de TON (marketing via entertainment)."
+    - bias: "Controle absoluto de produto — risco de single point of failure"
+      compensation: "Criou Nonprofit Foundation Succession — fundacao sem fins lucrativos herda controle do Telegram apos morte. Testamento com clausulas para continuidade de principios."

@@ -116,6 +116,14 @@ const MCP_REGISTRY = {
     setupUrl: 'https://e2b.dev/dashboard',
     setupHint: 'Crie conta gratuita (free tier)',
   },
+  'apify': {
+    name: 'Apify',
+    description: 'Actors, web scraper, RAG browser',
+    envVars: ['APIFY_TOKEN'],
+    authType: 'api_key',
+    setupUrl: 'https://console.apify.com/account/integrations',
+    setupHint: 'Crie conta gratuita e copie o API Token em Settings → Integrations',
+  },
 
   // === OAuth required ===
   'google-workspace': {
@@ -213,6 +221,7 @@ function parseEnvFile(filePath) {
 export function checkMcpStatus(cwd) {
   const mcpJsonPath = resolve(cwd, '.mcp.json')
   const envPath = resolve(cwd, '.env')
+  const envLocalPath = resolve(cwd, '.env.local')
 
   // Read configured MCPs
   let configuredMcps = {}
@@ -225,11 +234,12 @@ export function checkMcpStatus(cwd) {
     }
   }
 
-  // Parse .env
+  // Parse .env and .env.local (local overrides base)
   const envVars = parseEnvFile(envPath)
+  const envLocalVars = parseEnvFile(envLocalPath)
 
-  // Merge with process.env (process.env has lower priority than .env)
-  const allVars = { ...process.env, ...envVars }
+  // Merge: process.env < .env < .env.local
+  const allVars = { ...process.env, ...envVars, ...envLocalVars }
 
   const connected = []
   const disconnected = []

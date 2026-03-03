@@ -1,8 +1,8 @@
 omega:
-  version: "2.0.0"
+  version: "1.1.0"
   enabled: true
 
-  # Thresholds por task type
+  # Thresholds by task type
   thresholds:
     research: 80
     planning: 85
@@ -21,57 +21,26 @@ omega:
   # Loop settings
   loop:
     max_iterations: 3
-    max_iterations_quick: 2
     escalation_order: ["same_agent", "vertical", "horizontal", "human"]
 
   # Model routing by complexity
   model_routing:
-    low: "haiku"           # complexity 1-4
-    medium: "sonnet"       # complexity 5-6
-    high: "opus"           # complexity 7-10
-    low_max_complexity: 4
-    medium_max_complexity: 6
+    low: "haiku"      # complexity 1-4
+    medium: "sonnet"   # complexity 5-6
+    high: "opus"       # complexity 7-10
 
-  # Lifecycle (absorvido do GSD)
-  lifecycle:
-    artifacts_dir: ".planning"
-    phases_dir: ".planning/phases"
-    milestones_dir: ".planning/milestones"
-    quick_dir: ".planning/quick"
-    debug_dir: ".planning/debug"
-    codebase_dir: ".planning/codebase"
-    todos_dir: ".planning/todos"
-    state_file: ".planning/STATE.md"
-
-  # Session management (absorvido do GSD)
-  session:
-    context_file: ".claude/session-context.md"
-    auto_save_context: true
-    auto_checkpoint_context_percent: 75
-
-  # Synapse v3 integration
-  synapse:
-    context_stack_enabled: true
-    agent_state_dir: ".claude/synapse"
-    minds_dir: ".claude/synapse/minds"
-    auto_update_agent_state: true
-
-  # MMOS v2 integration
-  mmos:
-    pipeline_enabled: true
-    model_override: "opus"              # mind clones sempre Opus
-    gate_gawande_blocking: true         # kill items sao bloqueantes
-    fidelity_threshold: 95
-    fidelity_formula: "F = (L*0.20) + (B*0.30) + (C*0.15) + (K*0.20) + (V*0.15)"
+  # Task Lifecycle Protocol (Secao 11 do OMEGA.md)
+  task_lifecycle:
+    enabled: true
+    task_dir: ".planning/tasks"
+    history_file: ".planning/tasks/HISTORY.md"
+    memory_target: ".claude/session-context.md"
+    auto_cleanup_completed: true
+    keep_failed_tasks: true
+    simplified_threshold_seconds: 30
 
   # Logging
   logging:
     enabled: true
     progress_log: ".claude/omega/progress.log"
     state_file: ".claude/omega/state.json"
-    max_log_lines: 10000
-    rotation: true
-
-  # Rate limiter
-  rate_limiter:
-    max_calls_per_hour: 100

@@ -611,11 +611,11 @@ categories:
       domain: "Data Engineering, Messaging Infrastructure, Privacy Tech"
       clone_file: ".claude/commands/DUARTEOS/Tech/pavel-durov.md"
       dna_file: ".claude/synapse/minds/pavel-durov.yaml"
-      versao_dna: 2
-      total_fontes: 3
+      versao_dna: 3
+      total_fontes: 11
       confianca: "alta"
       has_paradoxos: true
-      fidelidade: 93.15
+      fidelidade: 94.95
       last_updated: "2026-03-03"
 
   UX-Design:

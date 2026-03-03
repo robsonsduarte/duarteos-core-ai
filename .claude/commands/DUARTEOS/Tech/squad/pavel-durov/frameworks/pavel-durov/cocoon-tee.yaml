@@ -1,0 +1,56 @@
+# Cocoon / TEE-based Privacy Computing — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Cocoon / TEE-based Privacy Computing"
+  slug: "cocoon-tee"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "https://cointelegraph.com/news/pavel-durov-cocoon-decentralized-ai-privacy"
+
+descricao: "Computacao confidencial descentralizada onde dados nunca saem do dispositivo. GPU providers fornecem compute e recebem TON tokens. Developers acessam inferencia segura via Trusted Execution Environments. Users obtem servicos de IA sem ceder dados a provedores centralizados. A resposta de Durov ao dilema 'IA poderosa OU privacidade' — rejeita o binario e constroi terceira via."
+
+steps:
+  - step: 1
+    acao: "Trusted Execution Environments (TEEs) para E2E encryption"
+    detalhe: "TEEs garantem que dados sao processados em enclaves seguras. Nem o provedor de GPU tem acesso aos dados do usuario durante computacao."
+  - step: 2
+    acao: "GPU providers fornecem compute, recebem TON tokens"
+    detalhe: "Marketplace descentralizado: donos de GPUs alugam poder computacional. Pagamento via Toncoin. Zero intermediario centralizado."
+  - step: 3
+    acao: "Dados do usuario processados localmente"
+    detalhe: "Dados nunca saem do dispositivo em forma legivel. Computacao acontece dentro de TEEs com dados encriptados."
+  - step: 4
+    acao: "Blockchain (TON) para garantias de confianca"
+    detalhe: "TON blockchain como camada de auditabilidade e confianca. Transacoes verificaveis. Zero trust em entidades centralizadas."
+  - step: 5
+    acao: "Marketplace descentralizado de compute"
+    detalhe: "Marketplace trilateral: compute providers (GPUs), builders (developers), consumers (users). Eliminacao de intermediarios centralizados como AWS/Google Cloud para IA."
+
+quando_usar: "Design de sistemas de IA que preservam privacidade. Alternativa a servicos de IA centralizados (OpenAI, Google, Anthropic). Qualquer cenario onde dados sensíveis precisam ser processados por IA."
+
+exemplos_aplicacao:
+  - cenario: "Usuarios querem IA poderosa mas nao querem ceder dados pessoais a OpenAI/Google"
+    resultado: "COCOON permite inferencia de IA com dados encriptados em TEEs. Privacidade preservada sem sacrificar capacidade de IA."
+    fonte: "https://cointelegraph.com/news/pavel-durov-cocoon-decentralized-ai-privacy"
+  - cenario: "Durov alerta sobre 'dark, dystopian world' da IA centralizada"
+    resultado: "COCOON lancado como alternativa descentralizada — a construcao E a resistencia ao apocalipse digital"
+    fonte: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
+
+anti_patterns:
+  - "Confiar dados sensíveis a provedores centralizados de IA"
+  - "Processar dados de usuario em servidores sem TEE/enclave segura"
+  - "Usar IA sem garantias criptograficas de privacidade"
+  - "Centralizar marketplace de compute em um unico provedor"
+
+frameworks_relacionados:
+  - name: "Privacy-First Architecture"
+    relacao: "complementar — COCOON estende privacy-first para dominio de IA"
+  - name: "MTProto"
+    relacao: "complementar — ambos sao protocolos customizados para privacidade em dominios diferentes"
+  - name: "Decentralized AI Marketplace"
+    relacao: "complementar — COCOON e a tecnologia, Marketplace e o modelo de negocio"
+  - name: "Chat Pay Own"
+    relacao: "complementar — COCOON pode ser acessado via ecossistema Telegram + TON"

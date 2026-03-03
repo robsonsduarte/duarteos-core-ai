@@ -1,0 +1,54 @@
+# Tokenized Traditional Assets via Messaging — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Tokenized Traditional Assets via Messaging"
+  slug: "tokenized-traditional-assets"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "https://ton.org/ach/ton-ecosystem-update-october-2025"
+
+descricao: "Framework de democratizacao financeira via tokenizacao de ativos tradicionais dentro de messaging app. Integrar wallet nativa, tokenizar acoes de empresas tradicionais (Amazon, Netflix, Tesla), permitir compra fracional sem conta em corretora, usar mesma interface de messaging para trading. Elimina barreiras tradicionais de acesso ao mercado financeiro."
+
+steps:
+  - step: 1
+    acao: "Integrar wallet nativa no messaging app"
+    detalhe: "Telegram Wallet integrada nativamente — zero necessidade de app externo, zero necessidade de conta bancaria ou corretora."
+  - step: 2
+    acao: "Tokenizar acoes de empresas tradicionais (Amazon, Netflix, Tesla)"
+    detalhe: "Acoes tokenizadas representam propriedade fracional de ativos reais. Custodia e compliance via parceiros regulados."
+  - step: 3
+    acao: "Permitir compra fracional sem conta em corretora"
+    detalhe: "Qualquer usuario do Telegram pode comprar uma fracao de acao de Amazon por R$10. Zero KYC pesado. Zero burocracia de corretora."
+  - step: 4
+    acao: "Usar mesma interface de messaging para trading"
+    detalhe: "Nao e um app de trading separado — e a mesma interface onde voce conversa. Trading como extensao natural da experiencia de messaging."
+  - step: 5
+    acao: "Eliminar barreiras tradicionais de acesso ao mercado"
+    detalhe: "Sem corretora, sem conta bancaria dedicada, sem minimum deposit, sem processo de onboarding de dias. Acesso instantaneo via Telegram."
+
+quando_usar: "Democratizacao de acesso a ativos financeiros tradicionais. Integracao de financa em experiencias de messaging. Expansao de ecossistema de super-app."
+
+exemplos_aplicacao:
+  - cenario: "Usuario em pais emergente quer investir em acoes americanas mas nao tem acesso a corretora"
+    resultado: "Telegram Wallet com tokenized stocks — compra fracional de Tesla, Amazon, Netflix diretamente no chat"
+    fonte: "https://ton.org/ach/ton-ecosystem-update-october-2025"
+  - cenario: "Telegram precisa expandir utilidade do ecossistema TON alem de crypto nativo"
+    resultado: "Ponte entre financa tradicional e crypto via tokenizacao. Atrai usuarios que nao sao crypto-nativos."
+    fonte: "https://ton.org/ach/ton-ecosystem-update-october-2025"
+
+anti_patterns:
+  - "Exigir conta em corretora tradicional para acesso a acoes"
+  - "Separar experiencia de trading da experiencia de comunicacao"
+  - "Minimum deposit alto que exclui usuarios de baixa renda"
+  - "KYC pesado que desestimula usuarios em paises emergentes"
+
+frameworks_relacionados:
+  - name: "Chat Pay Own"
+    relacao: "complementar — tokenized assets sao o pilar 'Own' do framework Chat Pay Own"
+  - name: "Decentralized AI Marketplace"
+    relacao: "complementar — ambos usam TON como infraestrutura de valor"
+  - name: "Celebrity Partnership Flywheel"
+    relacao: "complementar — celebrity partnerships podem impulsionar adocao de tokenized assets"

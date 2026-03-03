@@ -1,0 +1,51 @@
+date: "2026-03-03"
+source_type: "mind-update"
+source_url: "Multiple (Exa + Apify API search)"
+title: "Pavel Durov Mind Update — 8 fontes via Exa + Apify"
+mind_clone: "pavel-durov"
+camadas_impactadas:
+  - filosofia
+  - frameworks
+  - heuristicas
+  - metodologias
+  - dilemas
+  - paradoxos_produtivos
+  - communication
+  - expertise
+  - behavior
+insights:
+  - camada: "filosofia"
+    tipo: "NOVO + EVOLUCAO"
+    conteudo: "11 novos insights: visao apocaliptica, autodisciplina como musculo, alcool como painkiller espiritual, urgencia temporal"
+  - camada: "frameworks"
+    tipo: "NOVO"
+    conteudo: "5 novos frameworks: Nonprofit Foundation Succession, Chat Pay Own, COCOON Marketplace, Tokenized Assets, Celebrity Flywheel"
+  - camada: "heuristicas"
+    tipo: "NOVO"
+    conteudo: "3 novas regras + 3 novos red_flags: regulacao por ignorancia, precedente de prisao de CEO, sinais de erosao"
+  - camada: "dilemas"
+    tipo: "NOVO + EVOLUCAO"
+    conteudo: "3 novos dilemas + 2 evolucoes + 2 novas zonas cinza: pressao dual, $2B divida, privacidade evoluida"
+  - camada: "paradoxos"
+    tipo: "NOVO"
+    conteudo: "1 novo paradoxo: profeta do apocalipse + construtor de infraestrutura digital"
+  - camada: "communication"
+    tipo: "NOVO (camada criada)"
+    conteudo: "7 frases-assinatura, 3 registros de tom, 3 linguas"
+  - camada: "expertise"
+    tipo: "NOVO (camada criada)"
+    conteudo: "5 deep, 4 broad, 4 influences, 3 positions (anti-LLM, decentralized AI, digital ownership)"
+  - camada: "behavior"
+    tipo: "NOVO (camada criada)"
+    conteudo: "Comportamento sob pressao, validacao Fridman, sinais de IPO, realidade financeira"
+versao_dna_antes: 2
+versao_dna_depois: 3
+fontes_processadas:
+  - "Lex Fridman Podcast #482 (Oct 2025)"
+  - "Le Point Exclusive Interview (Jun 2025)"
+  - "Durov X Birthday Post (Oct 2025)"
+  - "COCOON Announcement (Oct 2025)"
+  - "TON Ecosystem Updates (Mar-Nov 2025)"
+  - "WIRED Investigation (Feb 2025)"
+  - "Post-Arrest Developments (Mar 2025)"
+  - "Russia Criminal Case (Feb 2026)"

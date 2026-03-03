@@ -1,37 +1,12 @@
-# Template de estado Synapse v3 para agentes DuarteOS
+# Template de estado Synapse para agentes DuarteOS
 # Copie este arquivo como {agent-id}.yaml ao ativar um agente pela primeira vez
-# Preencha role, definition_file, capabilities, restrictions e star_commands
-# a partir do agent definition file (.md)
 
-# Identidade
-agent: null                        # ex: "architect"
-codename: null                     # ex: "NEXUS"
-role: null                         # ex: "Arquiteto de Software"
-definition_file: null              # ex: ".claude/commands/DUARTEOS/agents/architect.md"
-
-# Estado atual
+agent: null
+codename: null
 state: idle
 task: null
 started: null
 last_transition: null
+transitions: []
 blocked_by: null
 notes: null
-
-# Capacidades e restricoes (extrair do definition file)
-capabilities: []
-restrictions: []
-
-# Star commands do agente
-star_commands: []
-
-# Historico de transicoes
-transitions: []
-
-# Historico OMEGA (READ-ONLY — so OMEGA atualiza)
-omega_history:
-  last_score: null
-  last_task_type: null
-  last_iteration: null
-  last_result: null
-  needs_attention: false
-  session_scores: []

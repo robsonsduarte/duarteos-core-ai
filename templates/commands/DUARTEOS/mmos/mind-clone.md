@@ -416,17 +416,395 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
    - Priorizar por impacto no perfil
 
 4. **Gerar Agente Operacional (.md):**
-   - Criar `DUARTEOS/squad/{categoria}/agents/{slug}.md`
+   - Criar `DUARTEOS/{Categoria}/{slug}.md` (comando slash acessivel)
    - System prompt completo com: CORBS, behavioral patterns, voice, frameworks, paradoxos
    - Seguir checklist de criacao de agente (ver MMOS-PIPELINE.md Secao 15)
+   - **INCLUIR secao "Bootstrap — Carregamento de Mente Completa"** antes de "Regras Finais":
 
-5. **Popular estrutura de squad:**
-   - `frameworks/{slug}/` — YAML por framework
-   - `phrases/{slug}-phrases.yaml` — frases-assinatura
-   - `voice/{slug}-voice.yaml` — tom de voz
-   - `checklists/{slug}-checklist.md` — gates especificos
-   - `tasks/` — tarefas onde a mente excela
-   - `data/` — DNAs e extracoes
+     ```markdown
+     ## Bootstrap — Carregamento de Mente Completa
+
+     **PROTOCOLO OBRIGATORIO:** Antes de responder a QUALQUER pergunta como {Nome}, carregue a mente completa:
+
+     1. Use `Glob` para `.claude/commands/DUARTEOS/{Categoria}/squad/{slug}/**/*.yaml`
+     2. Use `Read` em paralelo para **TODOS** os arquivos YAML encontrados
+     3. Use `Glob` para `.claude/commands/DUARTEOS/{Categoria}/squad/{slug}/tasks/*.md` e leia todos
+     4. Integre os dados carregados com a identidade core acima
+
+     Isto carrega as 6 camadas profundas do squad:
+     - **Behavioral** — padroes comportamentais + comportamento situacional
+     - **Cognitive** — arquitetura cognitiva + crencas core
+     - **Linguistic** — micro-units de linguagem + templates comunicativos
+     - **Narrative** — padroes de storytelling + self-narrative
+     - **Drivers** — motivadores hierarquizados (gold/silver/bronze)
+     - **Frameworks** — frameworks detalhados com steps, exemplos e anti-patterns
+
+     **NAO responda sem completar o bootstrap.** Este .md e um resumo comprimido. A mente completa esta nos artifacts do squad.
+     ```
+
+   - Copiar para `DUARTEOS/{Categoria}/squad/{slug}/agents/{slug}.md` (copia no squad dir)
+
+5. **Popular TODOS os squad artifacts (9 tipos obrigatorios):**
+
+   **Base path:** `DUARTEOS/{Categoria}/squad/{slug}/`
+   **Fonte de verdade:** `.claude/synapse/minds/{slug}.yaml` (DNA)
+   **OMEGA:** Cada sub-item roda sob task_type=mind_clone, threshold=95
+
+   #### 5.1 — Frameworks (`frameworks/{slug}/`)
+   Para CADA framework em `DNA.frameworks.primarios[]`, gerar 1 YAML:
+
+   **Arquivo:** `frameworks/{slug}/{framework-slug}.yaml`
+   **Schema:**
+   ```yaml
+   # {Nome do Framework} — {slug}
+   # Derivado de: .claude/synapse/minds/{slug}.yaml
+   # Pipeline: MMOS Engine v2 — Fase 6
+   # Gerado em: {timestamp}
+
+   framework_identity:
+     name: "{nome do framework}"
+     slug: "{framework-slug}"
+     mind: "{slug}"
+     category: "{categoria}"
+     source_path: "{DNA.frameworks.primarios[N].source_path}"
+
+   descricao: "{resumo do que o framework resolve}"
+
+   steps:
+     - step: 1
+       acao: "{passo 1}"
+       detalhe: "{expansao com contexto do DNA}"
+     - step: 2
+       acao: "{passo 2}"
+       detalhe: "{expansao}"
+
+   quando_usar: "{contexto de uso}"
+
+   exemplos_aplicacao:
+     - cenario: "{situacao concreta derivada das MIUs}"
+       resultado: "{o que acontece quando aplicado}"
+       fonte: "{source_path da MIU}"
+
+   anti_patterns:
+     - "{situacao onde NAO usar este framework}"
+
+   frameworks_relacionados:
+     - name: "{outro framework do mesmo DNA}"
+       relacao: "{complementar | prerequisito | alternativo}"
+   ```
+
+   **Regra:** len(frameworks YAML gerados) == len(DNA.frameworks.primarios).
+
+   #### 5.2 — Drivers (`drivers/{slug}-drivers.yaml`)
+   Consolidar todos os mind_drivers da Fase 3 com tiers e evidencias.
+
+   **Arquivo:** `drivers/{slug}-drivers.yaml`
+   **Schema:**
+   ```yaml
+   # {Nome} — Mind Drivers
+   # Derivado de: .claude/synapse/minds/{slug}.yaml
+   # Pipeline: MMOS Engine v2 — Fase 6
+   # Gerado em: {timestamp}
+
+   driver_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+     category: "{categoria}"
+     total_drivers: {N}
+     tier_distribution:
+       gold: {N}
+       silver: {N}
+       bronze: {N}
+
+   drivers:
+     - name: "{nome do driver}"
+       tier: "{gold | silver | bronze}"
+       strength: {0.0-1.0}
+       confidence: {0.0-1.0}
+       frequency: "{quantas MIUs suportam}"
+       descricao: "{o que motiva/impulsiona}"
+       evidencias:
+         - miu: "{resumo da MIU}"
+           source_path: "{caminho da fonte}"
+           strength: {0.0-1.0}
+       relationships:
+         - target: "{outro driver}"
+           type: "{causal | correlacional | antagonico}"
+           correlation: {-1.0 a 1.0}
+   ```
+
+   **Fonte dos dados:** Entidades `mind_drivers`, `miu_driver_evidence`, `driver_relationships` da Fase 3.
+
+   #### 5.3 — Checklist (`checklists/{slug}-checklist.yaml`)
+   Gates DO-CONFIRM especificos para validar output gerado por este clone.
+
+   **Arquivo:** `checklists/{slug}-checklist.yaml`
+   **Schema:**
+   ```yaml
+   # {Nome} — Quality Checklist
+   # Pipeline: MMOS Engine v2 — Fase 6
+   # Gerado em: {timestamp}
+
+   checklist_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+     category: "{categoria}"
+     type: "DO-CONFIRM"
+
+   gates:
+     voice_fidelity:
+       descricao: "Output soa como {Nome} falaria?"
+       kill_item: true
+       checks:
+         - "Tom descrito em voice.yaml presente?"
+         - "Anti-patterns ausentes?"
+         - "Frases-assinatura usadas quando contexto permite?"
+
+     framework_usage:
+       descricao: "Frameworks aplicados corretamente?"
+       kill_item: false
+       checks:
+         - "Framework usado no contexto correto (quando_usar)?"
+         - "Steps seguidos na ordem?"
+         - "Nenhum framework inventado?"
+
+     paradox_handling:
+       descricao: "Paradoxos tratados com nuance?"
+       kill_item: true
+       checks:
+         - "Lado A e lado B reconhecidos quando trigger ativado?"
+         - "Resolucao emergente articulada?"
+         - "Nenhum lado artificialmente eliminado?"
+
+     behavioral_consistency:
+       descricao: "Comportamento consistente com DNA?"
+       kill_item: false
+       checks:
+         - "Heuristicas aplicadas nos triggers corretos?"
+         - "Metodologias citadas com precisao?"
+
+     knowledge_accuracy:
+       descricao: "Conhecimento factual correto?"
+       kill_item: true
+       checks:
+         - "Fatos sobre dominio de expertise corretos?"
+         - "Nenhuma confabulacao?"
+
+   scoring:
+     threshold: 95
+     weights:
+       voice_fidelity: 25
+       framework_usage: 20
+       paradox_handling: 20
+       behavioral_consistency: 20
+       knowledge_accuracy: 15
+   ```
+
+   #### 5.4 — Tasks (`tasks/`)
+   Criar 5+ tarefas onde esta mente excela, baseado em drivers gold + frameworks primarios.
+
+   **Arquivo por task:** `tasks/{acao}-{slug}.md`
+   **Schema por task:**
+   ```markdown
+   # {Acao} — {Nome}
+
+   **Mind Clone:** {slug}
+   **Dominio:** {DNA.identity.domain}
+   **Dificuldade:** {basica | intermediaria | avancada}
+   **Frameworks envolvidos:** {lista de frameworks relevantes}
+
+   ## Descricao
+   {O que esta task faz e por que {Nome} e a melhor mente para executa-la}
+
+   ## Instrucoes para o Clone
+   1. {Step 1 — baseado em frameworks e heuristicas do DNA}
+   2. {Step 2}
+
+   ## Exemplo de Input
+   {Input hipotetico}
+
+   ## Exemplo de Output Esperado
+   {Output que {Nome} produziria, no tom e estilo corretos}
+
+   ## Checklist de Qualidade
+   - [ ] Voice fiel ao perfil?
+   - [ ] Frameworks corretos aplicados?
+   - [ ] Paradoxos tratados com nuance?
+   ```
+
+   **Regra:** Para cada driver tier=gold, 1 task. Para cada framework primario, 1 task. Minimo 5, maximo 15. Nomenclatura: `{verbo}-{objeto}-{slug}.md`
+
+   #### 5.5 — Behavioral Artifacts (`artifacts/behavioral/`)
+
+   **Arquivo 1:** `artifacts/behavioral/{slug}-behavioral-patterns.yaml`
+   ```yaml
+   behavioral_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+
+   patterns:
+     - name: "{nome do padrao}"
+       trigger: "{DNA.heuristicas.regras_rapidas[N].trigger}"
+       response: "{DNA.heuristicas.regras_rapidas[N].acao}"
+       intensity: "{alta | media | baixa}"
+       frequency: "{sempre | frequente | situacional}"
+       source_path: "{source_path}"
+
+   under_pressure:
+     descricao: "{como se comporta sob pressao}"
+     patterns:
+       - "{padrao 1}"
+       - "{padrao 2}"
+
+   blind_spots:
+     - "{DNA.heuristicas.vieses_conhecidos[]}"
+   ```
+
+   **Arquivo 2:** `artifacts/behavioral/{slug}-situational-behavior.yaml`
+   ```yaml
+   situational_identity:
+     mind: "{slug}"
+
+   situations:
+     - contexto: "{situacao especifica}"
+       comportamento: "{como reage}"
+       frameworks_ativados: ["{lista}"]
+       heuristicas_ativadas: ["{lista}"]
+       fonte: "{source_path}"
+   ```
+
+   #### 5.6 — Cognitive Artifacts (`artifacts/cognitive/`)
+
+   **Arquivo 1:** `artifacts/cognitive/{slug}-cognitive-architecture.yaml`
+   ```yaml
+   cognitive_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+
+   architecture:
+     primary_mode: "{como pensa — derivado de MBTI + Big Five}"
+     decision_model: "{DNA.frameworks.modelo_decisao}"
+     information_processing:
+       intake: "{como absorve informacao}"
+       filtering: "{como filtra/prioriza}"
+       output: "{como externaliza decisoes}"
+
+   mental_models:
+     - name: "{framework ou heuristica}"
+       usage_frequency: "{alta | media | baixa}"
+       domain: "{onde aplica}"
+
+   cognitive_biases:
+     known:
+       - bias: "{DNA.heuristicas.vieses_conhecidos[N]}"
+         impact: "{como afeta output}"
+     compensated:
+       - bias: "{vieses compensados}"
+         compensation: "{mecanismo}"
+   ```
+
+   **Arquivo 2:** `artifacts/cognitive/{slug}-core-beliefs.yaml`
+   ```yaml
+   core_beliefs_identity:
+     mind: "{slug}"
+
+   beliefs:
+     - belief: "{DNA.filosofia.crencas_core[N].belief}"
+       tier: "{tier}"
+       evidencia: "{evidencia}"
+       source_path: "{source_path}"
+       implications:
+         - "{como esta crenca afeta decisoes praticas}"
+
+   worldview: "{DNA.filosofia.visao_de_mundo}"
+
+   non_negotiables:
+     - "{DNA.filosofia.principios_inegociaveis[]}"
+   ```
+
+   #### 5.7 — Linguistic Artifacts (`artifacts/linguistic/`)
+
+   **Arquivo 1:** `artifacts/linguistic/{slug}-micro-units.yaml`
+   ```yaml
+   linguistic_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+
+   micro_units:
+     - tipo: "{declaracao_absoluta | pergunta_retorica | analogia | reframe | metrica}"
+       exemplo: "{frase ou construcao}"
+       quando_usar: "{contexto de uso}"
+       fonte: "{source_path}"
+
+   vocabulary:
+     preferred_terms:
+       - term: "{palavra/expressao}"
+         context: "{quando usa}"
+     forbidden_terms:
+       - term: "{palavra/expressao}"
+         reason: "{por que evita}"
+   ```
+
+   **Arquivo 2:** `artifacts/linguistic/{slug}-communication-templates.yaml`
+   ```yaml
+   communication_templates_identity:
+     mind: "{slug}"
+
+   templates:
+     - name: "{nome do template}"
+       trigger: "{quando usar}"
+       structure:
+         - "{abertura}"
+         - "{desenvolvimento}"
+         - "{conclusao}"
+       example: "{exemplo completo baseado em MIU real}"
+       source_path: "{fonte}"
+   ```
+
+   #### 5.8 — Narrative Artifacts (`artifacts/narrative/`)
+
+   **Arquivo 1:** `artifacts/narrative/{slug}-storytelling-patterns.yaml`
+   ```yaml
+   narrative_identity:
+     mind: "{slug}"
+     name: "{Nome}"
+
+   patterns:
+     - name: "{nome do padrao narrativo}"
+       structure: "{como a historia e construida}"
+       recurring_elements:
+         - "{elemento recorrente}"
+       example: "{exemplo extraido de MIU real}"
+       quando_usar: "{contexto}"
+       source_path: "{fonte}"
+
+   recurring_narratives:
+     - tema: "{tema recorrente}"
+       versoes: {quantas vezes conta em fontes diferentes}
+       variacao: "{como a narrativa varia}"
+   ```
+
+   **Arquivo 2:** `artifacts/narrative/{slug}-self-narrative.yaml`
+   ```yaml
+   self_narrative_identity:
+     mind: "{slug}"
+
+   origin_story: "{como a pessoa conta sua propria historia}"
+   turning_points:
+     - event: "{evento}"
+       before: "{como era antes}"
+       after: "{como ficou depois}"
+       significance: "{por que importa}"
+       source_path: "{fonte}"
+
+   identity_anchors:
+     - "{como se define}"
+
+   legacy_narrative: "{como projeta seu legado}"
+   ```
+
+   #### 5.9 — Agent Copy (`agents/{slug}.md`)
+   Copiar o agente `.md` gerado no item 4 para `agents/{slug}.md` dentro do squad dir.
 
 6. **Persistir DNA no Synapse:**
    - Salvar `.claude/synapse/minds/{slug}.yaml` (versao final)
@@ -447,24 +825,74 @@ Este e o pipeline MMOS v2 de clonagem mental do DuarteOS. Ele combina:
      category: "{categoria}"
    ```
 
+8. **Gate Gawande — Squad Completeness (DO-CONFIRM):**
+
+   Verificar que TODOS os squad artifacts foram gerados antes de considerar o clone completo.
+
+   | # | Critico? | Check | Verificacao |
+   |---|----------|-------|-------------|
+   | 1 | **SIM** | Agent .md existe em `agents/{slug}.md`? | Confirmar arquivo |
+   | 2 | **SIM** | Frameworks: count == DNA.frameworks.primarios.length? | Contar YAMLs em `frameworks/{slug}/` |
+   | 3 | **SIM** | Drivers YAML existe com todos os tiers? | Confirmar `drivers/{slug}-drivers.yaml` |
+   | 4 | **SIM** | Checklist existe com gates voice + paradox? | Confirmar `checklists/{slug}-checklist.yaml` |
+   | 5 | nao | Tasks >= 5 geradas? | Contar arquivos em `tasks/` |
+   | 6 | **SIM** | Behavioral artifacts (2 arquivos)? | Confirmar `artifacts/behavioral/` |
+   | 7 | **SIM** | Cognitive artifacts (2 arquivos)? | Confirmar `artifacts/cognitive/` |
+   | 8 | nao | Linguistic artifacts (2 arquivos)? | Confirmar `artifacts/linguistic/` |
+   | 9 | nao | Narrative artifacts (2 arquivos)? | Confirmar `artifacts/narrative/` |
+   | 10 | **SIM** | config.yaml tem `artifacts_completeness`? | Ver abaixo |
+
+   **Se kill items (1-4, 6-7, 10) falharem:** Task OMEGA fica blocked. Gerar artifacts faltantes.
+   **NAO declare clone completo sem gate aprovado.**
+
+9. **Atualizar config.yaml com `artifacts_completeness`:**
+
+   Adicionar ao `config.yaml` do squad:
+
+   ```yaml
+   artifacts_completeness:
+     agent_md: true
+     frameworks: "{N}/{N}"
+     drivers: true
+     checklist: true
+     tasks: {N}
+     behavioral: true
+     cognitive: true
+     linguistic: true
+     narrative: true
+     voice: true
+     phrases: true
+     system_components: true
+     completeness_score: "{N}%"
+     completeness_gate: "{PASSED | FAILED}"
+   ```
+
+   **Regra:** `completeness_gate` = PASSED somente se `completeness_score >= 85%` E todos kill items do Gate Gawande passaram.
+
 ---
 
 ## Artefatos Gerados
 
-| Fase | Artefato | Caminho |
-|------|----------|---------|
-| 0 | DNA skeleton com scores | `.claude/synapse/minds/{slug}.yaml` |
-| 1 | Material bruto coletado | `DUARTEOS/squad/{cat}/data/raw/` |
-| 2 | MIUs e fragmentos | `DUARTEOS/squad/{cat}/data/processed/` |
-| 3 | Drivers e evidencias | `DUARTEOS/squad/{cat}/drivers/` |
-| 3 | DNA completo (6 camadas) | `.claude/synapse/minds/{slug}.yaml` |
-| 4 | System components | `DUARTEOS/squad/{cat}/system-components/` |
-| 4 | Artefatos cognitivos/comportamentais | `DUARTEOS/squad/{cat}/artifacts/` |
-| 5 | Perfil agregado | `DUARTEOS/squad/{cat}/config.yaml` |
-| 6 | Agente operacional | `DUARTEOS/squad/{cat}/agents/{slug}.md` |
-| 6 | Frameworks extraidos | `DUARTEOS/squad/{cat}/frameworks/{slug}/` |
-| 6 | Voice e phrases | `DUARTEOS/squad/{cat}/voice/`, `phrases/` |
-| 6 | Indice Synapse atualizado | `.claude/synapse/minds/_index.yaml` |
+| Fase | Artefato | Caminho | Obrigatorio |
+|------|----------|---------|-------------|
+| 0 | DNA skeleton com scores | `.claude/synapse/minds/{slug}.yaml` | SIM |
+| 1 | Material bruto coletado | `squad/{slug}/data/raw/` | SIM |
+| 2 | MIUs e fragmentos | `squad/{slug}/data/processed/` | SIM |
+| 3 | Drivers e evidencias | `squad/{slug}/drivers/{slug}-drivers.yaml` | SIM |
+| 3 | DNA completo (6 camadas) | `.claude/synapse/minds/{slug}.yaml` | SIM |
+| 4 | System components | `squad/{slug}/system-components/{slug}-system.yaml` | SIM |
+| 6 | Agente operacional | `squad/{slug}/agents/{slug}.md` | SIM |
+| 6 | Frameworks (1 por fw) | `squad/{slug}/frameworks/{slug}/{fw}.yaml` | SIM |
+| 6 | Voice | `squad/{slug}/voice/{slug}-voice.yaml` | SIM |
+| 6 | Phrases | `squad/{slug}/phrases/{slug}-phrases.yaml` | SIM |
+| 6 | Checklist | `squad/{slug}/checklists/{slug}-checklist.yaml` | SIM |
+| 6 | Tasks (5+) | `squad/{slug}/tasks/{acao}-{slug}.md` | NAO (warning) |
+| 6 | Behavioral (2) | `squad/{slug}/artifacts/behavioral/` | SIM |
+| 6 | Cognitive (2) | `squad/{slug}/artifacts/cognitive/` | SIM |
+| 6 | Linguistic (2) | `squad/{slug}/artifacts/linguistic/` | NAO (warning) |
+| 6 | Narrative (2) | `squad/{slug}/artifacts/narrative/` | NAO (warning) |
+| 6 | Config completo | `squad/{slug}/config.yaml` | SIM |
+| 6 | Indice Synapse | `.claude/synapse/minds/_index.yaml` | SIM |
 
 ## Regras Criticas
 

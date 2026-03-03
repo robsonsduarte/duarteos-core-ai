@@ -1,0 +1,54 @@
+# Two Chairs (Rejeicao de Falsos Dilemas) — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Two Chairs (Rejeicao de Falsos Dilemas)"
+  slug: "two-chairs"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+
+descricao: "Framework de rejeicao sistematica de falsos dilemas. Quando duas opcoes sao apresentadas como unicas, rejeita ambas e projeta uma terceira via que transforma desvantagem em vantagem. Aplicado em escala geopolitica (Russia vs Franca) e em decisoes de produto."
+
+steps:
+  - step: 1
+    acao: "Identifique as duas opcoes apresentadas como unicas"
+    detalhe: "Reconheca o enquadramento binario — alguem esta forcando um 'ou/ou' que pode nao ser real."
+  - step: 2
+    acao: "Questione: estas sao REALMENTE as unicas opcoes?"
+    detalhe: "Teste se o dilema e genuino ou artificial. A maioria dos dilemas apresentados como absolutos tem terceiras vias nao exploradas."
+  - step: 3
+    acao: "Reenquadre o problema de forma mais ampla"
+    detalhe: "Saia do frame original. Olhe para o problema de um nivel acima — muitas vezes as duas opcoes sao sub-otimas porque o problema foi definido de forma estreita."
+  - step: 4
+    acao: "Projete uma terceira solucao que transforma desvantagem em vantagem"
+    detalhe: "A terceira via nao e compromisso entre A e B — e uma opcao C que redefine o jogo. Exemplo: Russia ou obedecer? Terceira via: sair e criar Telegram."
+
+quando_usar: "Toda vez que alguem apresentar um dilema binario ou compromisso forcado. Aplicavel em decisoes de produto, negociacoes, pressoes regulatorias e conflitos geopoliticos."
+
+exemplos_aplicacao:
+  - cenario: "Russia exige dados de usuarios ucranianos OU perde o VK"
+    resultado: "Terceira via: saiu da Russia, perdeu $300M, criou Telegram com controle total"
+    fonte: "data/raw/articles/technical-architecture.md"
+  - cenario: "Pressao dual Russia + Franca — ceder a um OU ao outro"
+    resultado: "Rejeita ambos os lados — mantem posicao de neutralidade mesmo sob ataque bilateral"
+    fonte: "https://www.euronews.com/2026/02/24/russia-opens-criminal-case-against-telegrams-durov-for-promoting-terrorism-reports-say"
+  - cenario: "Crescimento requer marketing OU produto fica pequeno"
+    resultado: "Terceira via: produto tao bom que cresce organicamente sem marketing"
+    fonte: "data/raw/articles/philosophy-lessons-compiled.md"
+
+anti_patterns:
+  - "Aceitar o compromisso como inevitavel sem questionar as premissas"
+  - "Escolher o 'menor mal' sem explorar alternativas"
+  - "Tratar dilemas artificiais como se fossem genuinos"
+  - "Negociar dentro do frame imposto em vez de redefinir o frame"
+
+frameworks_relacionados:
+  - name: "Privacy-First Architecture"
+    relacao: "complementar — Two Chairs aplicado a decisoes de arquitetura (privacidade OU performance? Ambos via MTProto)"
+  - name: "Organic Growth"
+    relacao: "complementar — rejeicao do dilema 'marketing OU crescimento lento'"
+  - name: "Nonprofit Foundation Succession"
+    relacao: "complementar — rejeicao do dilema 'vender OU morrer com a empresa'"

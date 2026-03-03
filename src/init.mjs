@@ -124,6 +124,8 @@ export function init(projectName, options = {}) {
     '.claude/omega',
     '.claude/omega/checklists',
     '.claude/omega/checkpoints',
+    // v5.9.0 — OMEGA Task Lifecycle Protocol
+    '.planning/tasks',
   ]
 
   for (const dir of dirs) {

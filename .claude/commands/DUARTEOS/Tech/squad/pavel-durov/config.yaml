@@ -9,7 +9,7 @@ clone:
   pipeline_version: "2"
   created_at: "2026-03-03T00:00:00Z"
   score_apex: 50
-  fidelity_score: 93.15
+  fidelity_score: 94.95
   fidelity_components:
     L_linguistic: 92
     B_behavioral: 95
@@ -23,7 +23,7 @@ clone:
   role: "Data Engineer"
 
 sources:
-  total: 7
+  total: 11
   types:
     - "artigos compilados"
     - "regras de vida"
@@ -73,5 +73,21 @@ personality:
     agreeableness: "low_medium"
     neuroticism: "very_low"
 
-paradoxos_count: 6
+paradoxos_count: 7
 confianca: "alta"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "14/14"
+  drivers: true
+  checklist: true
+  tasks: 6
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

@@ -1,5 +1,5 @@
 omega:
-  version: "1.0.0"
+  version: "1.1.0"
   enabled: true
 
   # Thresholds by task type
@@ -28,6 +28,16 @@ omega:
     low: "haiku"      # complexity 1-4
     medium: "sonnet"   # complexity 5-6
     high: "opus"       # complexity 7-10
+
+  # Task Lifecycle Protocol (Secao 11 do OMEGA.md)
+  task_lifecycle:
+    enabled: true
+    task_dir: ".planning/tasks"
+    history_file: ".planning/tasks/HISTORY.md"
+    memory_target: ".claude/session-context.md"
+    auto_cleanup_completed: true
+    keep_failed_tasks: true
+    simplified_threshold_seconds: 30
 
   # Logging
   logging:

@@ -9,6 +9,22 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.9.0': {
+    title: 'OMEGA v1.1 — Task Lifecycle + Mind Clone Bootstrap + Squad Artifacts',
+    highlights: [
+      'OMEGA v1.1.0: Task Lifecycle Protocol — PRE-EXEC + POST-EXEC + Memory obrigatorios (Secao 11)',
+      'Pre-Execution: TASK.md + CHECKLIST.md criados em .planning/tasks/ antes de QUALQUER task',
+      'Post-Execution: checklist marcado, resumo salvo em HISTORY.md + session-context.md, cleanup automatico',
+      'HISTORY.md: log permanente de todas as tasks executadas (nunca deletado)',
+      'OMEGA_LIFECYCLE wrapper: envolve OMEGA_LOOP com PRE-EXEC e POST-EXEC',
+      'Mind Clone Bootstrap: clones carregam mente completa (squad artifacts) automaticamente ao instanciar',
+      'Fase 6 mind-clone expandida: 9 tipos de squad artifacts gerados automaticamente com YAML schemas',
+      'Gate Gawande Squad Completeness: 10 checks (7 kill items) para validar artifacts do squad',
+      'artifacts_completeness: novo bloco no config.yaml do squad com score e gate',
+      'mind-update Step 4 expandido: mapeamento delta → artifacts com merge incremental',
+      'Pavel Durov: legacy backfill completo — 31 squad artifacts gerados (14 frameworks, 6 tasks, 8 artifacts)',
+    ],
+  },
   '5.7.0': {
     title: 'OMEGA — Quality Enforcement Loop Engine',
     highlights: [
@@ -637,6 +653,10 @@ export function update(options = {}) {
   // OMEGA checkpoints directory — ensure it exists for runtime snapshots
   const omegaCheckpointsDest = resolve(cwd, '.claude', 'omega', 'checkpoints')
   if (!existsSync(omegaCheckpointsDest)) mkdirSync(omegaCheckpointsDest, { recursive: true })
+
+  // v5.9.0 — OMEGA Task Lifecycle: ensure .planning/tasks/ exists
+  const planningTasksDest = resolve(cwd, '.planning', 'tasks')
+  if (!existsSync(planningTasksDest)) mkdirSync(planningTasksDest, { recursive: true })
 
   // Clean up old namespace directories (after migration + update copied new files)
   const oldAgentsDir = resolve(cwd, '.claude/commands/agents')

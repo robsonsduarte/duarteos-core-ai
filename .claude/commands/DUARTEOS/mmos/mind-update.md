@@ -442,17 +442,121 @@ Campos extras que tambem podem receber updates:
    - Novos paradoxos: adicionar (ou criar) secao "Paradoxos Produtivos"
    - Evolucoes: atualizar secao correspondente E manter referencia a posicao anterior
 
-5. **Atualizar squad artifacts (se impactados):**
-   - `frameworks/{slug}/` — novos YAMLs por framework descoberto
-   - `phrases/{slug}-phrases.yaml` — novas frases-assinatura
-   - `voice/{slug}-voice.yaml` — refinamentos de tom
-   - `checklists/` — novos gates se necessario
+5. **Atualizar squad artifacts impactados (merge incremental):**
 
-6. **Validacao do Step 4:**
+   **Regra geral:** Para CADA tipo de artifact, verificar se existe. Se existe, usar Edit tool para merge incremental. Se NAO existe (legacy clone sem artifacts), CRIAR usando Write tool.
+
+   **Mapeamento Delta -> Artifacts Impactados:**
+
+   | Camada DNA Atualizada | Squad Artifacts Impactados | Acao |
+   |----------------------|---------------------------|------|
+   | Filosofia | `artifacts/cognitive/{slug}-core-beliefs.yaml` | Append novas beliefs |
+   | Frameworks (NOVO) | `frameworks/{slug}/{novo-fw}.yaml` | Criar novo YAML |
+   | Frameworks (REFORCO/EVOLUCAO) | `frameworks/{slug}/{fw-existente}.yaml` | Edit: adicionar novos steps ou exemplos |
+   | Heuristicas | `artifacts/behavioral/{slug}-behavioral-patterns.yaml` | Append novos patterns |
+   | Heuristicas | `checklists/{slug}-checklist.yaml` | Edit: novos checks se necessario |
+   | Metodologias | `artifacts/cognitive/{slug}-cognitive-architecture.yaml` | Edit: atualizar mental_models |
+   | Dilemas (EVOLUCAO) | `artifacts/behavioral/{slug}-situational-behavior.yaml` | Edit: atualizar situacoes |
+   | Paradoxos | `checklists/{slug}-checklist.yaml` | Edit: atualizar gate paradox_handling |
+   | Communication | `phrases/{slug}-phrases.yaml` | Append novas frases |
+   | Communication | `voice/{slug}-voice.yaml` | Edit: refinar tom se necessario |
+   | Communication | `artifacts/linguistic/{slug}-micro-units.yaml` | Append novas micro-units |
+   | Communication | `artifacts/linguistic/{slug}-communication-templates.yaml` | Append novos templates |
+   | Expertise | `artifacts/cognitive/{slug}-cognitive-architecture.yaml` | Edit: novos mental_models |
+   | Behavior | `artifacts/behavioral/{slug}-behavioral-patterns.yaml` | Append novos patterns |
+   | Behavior | `artifacts/narrative/{slug}-storytelling-patterns.yaml` | Append se novo padrao narrativo |
+
+   **Regras de Merge por Tipo de Artifact:**
+
+   **5.1 — Frameworks:**
+   - Insight tipo NOVO com novo framework: Criar `frameworks/{slug}/{novo-fw-slug}.yaml` (Write tool)
+   - Insight tipo REFORCO com framework existente: Edit tool — append novo exemplo em `exemplos_aplicacao`
+   - Insight tipo EVOLUCAO com framework existente: Edit tool — adicionar nota de evolucao, preservar steps originais
+
+   **5.2 — Drivers:**
+   - Se `drivers/{slug}-drivers.yaml` existe:
+     - Insight tipo NOVO: Edit tool — append novo driver na lista `drivers[]`
+     - Insight tipo REFORCO: Edit tool — append nova evidencia em `drivers[N].evidencias[]`
+     - Recalcular `tier_distribution` ao final
+   - Se NAO existe (legacy): Criar com Write tool usando DNA.mind_drivers
+
+   **5.3 — Checklist:**
+   - Se `checklists/{slug}-checklist.yaml` existe:
+     - Novos paradoxos descobertos: Edit tool — adicionar checks em `gates.paradox_handling`
+     - Novos anti-patterns de voz: Edit tool — adicionar checks em `gates.voice_fidelity`
+   - Se NAO existe: Criar com Write tool (schema definido no mind-clone.md Fase 6)
+
+   **5.4 — Tasks:**
+   - Novo driver tier=gold descoberto: Criar task que exercita este driver (Write tool)
+   - Novo framework descoberto: Criar task que demonstra este framework (Write tool)
+   - NAO editar tasks existentes (sao prompts estaticos)
+
+   **5.5 — Behavioral Artifacts:**
+   - Novas heuristicas: Edit tool — append em `patterns[]` de behavioral-patterns.yaml
+   - Novos dilemas/evolucoes: Edit tool — append em `situations[]` de situational-behavior.yaml
+   - Se NAO existem (legacy): Criar com Write tool
+
+   **5.6 — Cognitive Artifacts:**
+   - Novas crencas: Edit tool — append em `beliefs[]` de core-beliefs.yaml
+   - Novos mental models: Edit tool — append em `mental_models[]` de cognitive-architecture.yaml
+   - Se NAO existem (legacy): Criar com Write tool
+
+   **5.7 — Linguistic Artifacts:**
+   - Novas frases/expressoes: Edit tool — append em `micro_units[]` de micro-units.yaml
+   - Novos templates comunicativos: Edit tool — append em `templates[]` de communication-templates.yaml
+   - Se NAO existem (legacy): Criar com Write tool
+
+   **5.8 — Narrative Artifacts:**
+   - Novos padroes narrativos: Edit tool — append em `patterns[]` de storytelling-patterns.yaml
+   - Novos turning points: Edit tool — append em `turning_points[]` de self-narrative.yaml
+   - Se NAO existem (legacy): Criar com Write tool
+
+   **5.9 — Voice e Phrases:**
+   - `phrases/{slug}-phrases.yaml`: Edit tool — append novas frases em `frases_assinatura[]` e/ou novos padroes em `padroes_de_fala[]`
+   - `voice/{slug}-voice.yaml`: Edit tool — SOMENTE se tom mudou significativamente. Append em `regras[]` ou `anti_patterns[]`. NUNCA reescrever `tom_geral`.
+
+   **Decisao: Criar novo vs Editar existente:**
+
+   | Condicao | Acao |
+   |----------|------|
+   | Arquivo existe E insight REFORCO/EVOLUCAO | Edit tool — append/atualizar |
+   | Arquivo existe E insight NOVO (novo item na lista) | Edit tool — append |
+   | Arquivo NAO existe (legacy clone) | Write tool — criar completo |
+   | Novo framework descoberto | Write tool — criar novo YAML em frameworks/ |
+   | Nova task identificada | Write tool — criar novo .md em tasks/ |
+
+6. **Atualizar artifacts_completeness em config.yaml:**
+   - Recalcular `artifacts_completeness` baseado nos artifacts presentes
+   - Usar Edit tool para atualizar o bloco no config.yaml
+   - Se legacy clone sem `artifacts_completeness`: adicionar o bloco inteiro
+   - Schema:
+     ```yaml
+     artifacts_completeness:
+       agent_md: true
+       frameworks: "{N}/{N}"
+       drivers: true
+       checklist: true
+       tasks: {N}
+       behavioral: true
+       cognitive: true
+       linguistic: true
+       narrative: true
+       voice: true
+       phrases: true
+       system_components: true
+       completeness_score: "{N}%"
+       completeness_gate: "{PASSED | FAILED}"
+     ```
+
+7. **Validacao do Step 4:**
    - Agente `.md` editado com sucesso (nao corrompido)
    - Secoes nao impactadas permanecem identicas
    - Novos conteudos consistentes com DNA atualizado
    - Formatacao markdown preservada
+   - Squad artifacts impactados atualizados (mapeamento delta -> artifacts seguido)
+   - Nenhum artifact existente deletado ou sobrescrito (merge aditivo)
+   - config.yaml.artifacts_completeness recalculado
+   - Se legacy clone: artifacts basicos criados (drivers, checklist, behavioral, cognitive)
 
 **NAO avance para Step 5 sem o agente atualizado e validado.**
 

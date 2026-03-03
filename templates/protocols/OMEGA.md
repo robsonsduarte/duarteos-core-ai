@@ -1,6 +1,6 @@
 # Protocolo OMEGA — Motor de Qualidade Continua
 
-**Versao:** 1.0.0
+**Versao:** 1.1.0
 **Status:** Ativo
 **Autor:** NEXUS (Architect)
 **Dependencias:** CONSTITUTION.md, AGENT-GSD-PROTOCOL.md, QUALITY-GATES.md, SYNAPSE.md
@@ -28,6 +28,27 @@ OMEGA nao e um agente. OMEGA e um protocolo que envolve a execucao de todos os a
 ## 1. OMEGA Core Loop
 
 ### Algoritmo Principal
+
+```
+// OMEGA_LIFECYCLE: wrapper que adiciona PRE-EXEC e POST-EXEC ao loop.
+// Ver Secao 11 para detalhes completos do Task Lifecycle Protocol.
+OMEGA_LIFECYCLE(task, agent):
+  // PRE-EXEC (Secao 11.1)
+  task_dir = create_task_artifacts(task, agent)  // TASK.md + CHECKLIST.md em .planning/tasks/
+  update_task_status(task_dir, "in_progress")
+
+  // OMEGA LOOP (abaixo)
+  result = OMEGA_LOOP(task, agent)
+
+  // POST-EXEC (Secao 11.3)
+  mark_checklist(task_dir, result)              // [x] para itens cumpridos
+  update_task_result(task_dir, result)           // ## Resultado no TASK.md
+  save_to_memory(task_dir, result)               // session-context.md + HISTORY.md
+  IF result.status == COMPLETED:
+    cleanup_task_dir(task_dir)                   // Deletar dir (HISTORY permanece)
+
+// OMEGA_LOOP: core loop de qualidade (3 iteracoes max).
+```
 
 ```
 OMEGA_LOOP(task, agent):
@@ -986,6 +1007,231 @@ OMEGA_MIND_CLONE_VALIDATION:
 
 ---
 
+## 11. Task Lifecycle Protocol (Pre-Execution → Execution → Memory)
+
+### Principio
+
+Nenhuma task existe sem registro. Nenhuma task termina sem memoria. O lifecycle completo e:
+
+```
+PRE-EXEC → OMEGA LOOP → POST-EXEC → MEMORY → CLEANUP
+```
+
+Este protocolo e **OBRIGATORIO e DEFAULT**. Todo agente, todo orquestrador, toda task — sem excecao. O lifecycle envolve o OMEGA loop (Secao 1) como fase de execucao, mas adiciona planejamento antes e memoria depois.
+
+### 11.1 PRE-EXEC — Planejamento Obrigatorio
+
+**ANTES** de iniciar qualquer execucao, o agente (ou orquestrador que delega) DEVE criar artefatos de planejamento.
+
+#### Estrutura em .planning/tasks/
+
+```
+.planning/tasks/{NNN}-{agent}-{slug}/
+├── TASK.md        # Definicao da task + output esperado
+└── CHECKLIST.md   # Criterios de validacao
+```
+
+Onde:
+- `{NNN}` = numero sequencial auto-incrementado, 3 digitos zero-padded (001, 002, ..., 999)
+- `{agent}` = codename do agente executor (FORGE, PRISM, ATLAS, COMPASS, etc.)
+- `{slug}` = descricao-curta-em-kebab-case (max 40 chars)
+
+#### Numeracao Sequencial
+
+1. Ler `.planning/tasks/` para encontrar o maior NNN existente (via Glob `*-*-*/TASK.md`)
+2. Proximo = maior + 1
+3. Se vazio: comecar em 001
+4. Formato: 3 digitos zero-padded (001, 002, ..., 999)
+
+#### TASK.md — Template
+
+```markdown
+# Task {NNN}: {Titulo}
+
+## Metadata
+- **Agent:** {CODENAME}
+- **Task Type:** {research|planning|implementation|validation|mind_clone|mind_update}
+- **Threshold:** {score minimo do OMEGA para este task_type}
+- **Created:** {YYYY-MM-DD HH:mm}
+- **Status:** pending
+
+## Objetivo
+{O que precisa ser feito — 1-3 frases claras e especificas}
+
+## Output Esperado
+{O que sera produzido — lista concreta de artefatos, arquivos, resultados}
+
+## Contexto
+{Background relevante — links para arquivos, decisoes anteriores, dependencias}
+
+## Dependencias
+{Tasks que devem estar completas antes desta — "Nenhuma" se independente}
+```
+
+**Output Esperado por tipo de agente:**
+
+| Agente | Output tipico |
+|--------|--------------|
+| FORGE | API endpoint, testes, types, migrations |
+| PRISM | Componente, testes, estilos, acessibilidade |
+| NEXUS | Plano arquitetural, diagramas, decisoes |
+| COMPASS | Pesquisa com 5+ fontes, trade-offs documentados |
+| SENTINEL | Relatorio de validacao, cenarios testados |
+| MMOS | DNA YAML, agente .md, squad artifacts |
+| ATLAS | Decomposicao em sub-tasks, delegacao |
+
+#### CHECKLIST.md — Template
+
+```markdown
+# Checklist: Task {NNN}
+
+## Gate Items (kill — task falha se qualquer um falhar)
+- [ ] {criterio obrigatorio 1}
+- [ ] {criterio obrigatorio 2}
+- [ ] {criterio obrigatorio N}
+
+## Quality Items (warning — task passa mas com alerta)
+- [ ] {criterio de qualidade 1}
+- [ ] {criterio de qualidade 2}
+
+## Output Verification
+- [ ] {artefato 1 existe e e valido}
+- [ ] {artefato 2 existe e e valido}
+```
+
+**Gate items devem ser derivados do OMEGA quality gate correspondente ao task_type.** Exemplo: para `implementation`, gates incluem "TypeScript strict", "testes passam", "sem secrets hardcoded". Para `mind_clone`, gates incluem "6 camadas DNA", "fidelidade >= 95%".
+
+#### Regras de Criacao
+
+| Cenario | Quem cria | Quantas tasks |
+|---------|-----------|---------------|
+| ATLAS delega a 1 agente | ATLAS cria 1 TASK.md + CHECKLIST.md | 1 |
+| ATLAS delega a N agentes em paralelo | ATLAS cria N tasks individuais | N |
+| Agente trabalha solo (sem orquestrador) | Agente cria sua propria task | 1 |
+| Task complexa decomponivel | Orquestrador cria N sub-tasks com dependencias | N |
+| Pipeline mind-clone/mind-update | Pipeline cria 1 task por step/fase | 5-6 |
+
+### 11.2 OMEGA LOOP (Execucao)
+
+Apos PRE-EXEC concluido, o **OMEGA loop roda normalmente** conforme Secao 1 deste protocolo. Nenhuma mudanca no loop de execucao.
+
+O agente DEVE atualizar o campo `Status` no TASK.md durante a execucao:
+
+| Transicao | Quando |
+|-----------|--------|
+| `pending` → `in_progress` | Ao iniciar execucao |
+| `in_progress` → `completed` | Ao passar dual-gate (score >= threshold + signals + exit_signal) |
+| `in_progress` → `failed` | Ao circuit breaker OPEN ou max_iterations sem threshold |
+| `in_progress` → `escalated` | Ao escalar para outro agente ou humano |
+
+### 11.3 POST-EXEC — Validacao e Memoria
+
+Apos o OMEGA loop finalizar (qualquer status terminal: COMPLETED, FAILED, ou ESCALATED):
+
+#### Passo 1 — Marcar Checklist
+
+Atualizar `CHECKLIST.md` marcando `[x]` para itens cumpridos, mantendo `[ ]` para nao-cumpridos. Isso cria um registro auditavel do que passou e do que falhou.
+
+#### Passo 2 — Registrar Resultado
+
+Adicionar secao `## Resultado` ao final do `TASK.md`:
+
+```markdown
+## Resultado
+- **Status:** {completed|failed|escalated}
+- **Score Final:** {score}/100 (threshold: {threshold})
+- **Iteracoes:** {N}/3
+- **Arquivos Modificados:** {lista ou "nenhum"}
+- **Arquivos Criados:** {lista ou "nenhum"}
+- **Resumo:** {1-3 frases do que foi feito e resultado}
+- **Completed:** {YYYY-MM-DD HH:mm}
+```
+
+#### Passo 3 — Salvar na Memoria
+
+**3a. Session Context** — Append na secao "Decisoes Recentes" do `.claude/session-context.md`:
+
+```
+- [{YYYY-MM-DD}] Task {NNN} ({AGENT}): {titulo} — {status} ({score}/{threshold}). {resumo 1 frase}.
+```
+
+**3b. Task History** — Append em `.planning/tasks/HISTORY.md`:
+
+```
+| {NNN} | {YYYY-MM-DD HH:mm} | {AGENT} | {titulo} | {status} | {score}/{threshold} | {resumo 1 frase} |
+```
+
+`HISTORY.md` e o **registro permanente**. Nunca deletado. Legivel por qualquer sessao futura ou agente. Serve como fonte de verdade para "o que foi feito neste projeto".
+
+#### Passo 4 — Cleanup
+
+| Status da task | Acao |
+|----------------|------|
+| `completed` | Deletar diretorio `.planning/tasks/{NNN}-{agent}-{slug}/` |
+| `failed` | Manter diretorio (para diagnostico e retry) |
+| `escalated` | Manter diretorio (para o proximo agente ter contexto) |
+
+**HISTORY.md nunca e deletado**, independente do status.
+
+### 11.4 Excecoes
+
+| Cenario | Comportamento PRE-EXEC |
+|---------|----------------------|
+| Task trivial (estimada < 30 segundos) | PRE-EXEC simplificado: 1 linha no TASK.md, CHECKLIST.md opcional |
+| Exploracao/pesquisa rapida (Read, Glob, Grep) | NAO cria task — ferramentas de leitura nao sao execucao |
+| OMEGA desabilitado (`omega.enabled: false`) | PRE-EXEC ainda roda — task lifecycle e independente do quality loop |
+| Agente em modo conversacional (sem tool calls) | NAO cria task — conversacao nao e execucao |
+| Sub-task de pipeline (ex: step interno de mind-clone) | Task criada pelo pipeline, nao por cada sub-operacao |
+
+**Regra geral:** Se o agente vai usar Edit, Write, ou Bash para MODIFICAR algo, cria task. Se so vai ler/pesquisar, nao cria.
+
+### 11.5 Diagrama Completo
+
+```
+Usuario pede algo
+    │
+    ▼
+ATLAS avalia escopo
+    │
+    ├─ Simples → Agente solo
+    │               │
+    │               ▼
+    │         ┌─ PRE-EXEC ─────────────────────────────────┐
+    │         │  Criar TASK.md + CHECKLIST.md               │
+    │         │  Status: pending → in_progress              │
+    │         └────────────────────────────────────────────┘
+    │               │
+    │               ▼
+    │         ┌─ OMEGA LOOP (Secao 1) ─────────────────────┐
+    │         │  Iter 1 → Score → Threshold? → Feedback    │
+    │         │  Iter 2 → Score → Threshold? → Feedback    │
+    │         │  Iter 3 → Score → Threshold? → Escalar     │
+    │         └────────────────────────────────────────────┘
+    │               │
+    │               ▼
+    │         ┌─ POST-EXEC ────────────────────────────────┐
+    │         │  1. Marcar CHECKLIST.md                     │
+    │         │  2. Registrar resultado em TASK.md          │
+    │         │  3. Salvar em session-context + HISTORY.md  │
+    │         │  4. Cleanup (se completed)                  │
+    │         └────────────────────────────────────────────┘
+    │
+    ├─ Complexo → ATLAS decompoe em N sub-tasks
+    │               │
+    │               ▼
+    │         PRE-EXEC × N (cada sub-task com TASK.md + CHECKLIST.md)
+    │               │
+    │               ▼
+    │         OMEGA LOOP × N (sequencial ou paralelo)
+    │               │
+    │               ▼
+    │         POST-EXEC × N (checklist + memoria + cleanup por task)
+    │
+    └─ Conversacional → Sem task (resposta direta, sem lifecycle)
+```
+
+---
+
 ## Apendice A — Glossario
 
 | Termo | Definicao |
@@ -1011,6 +1257,7 @@ OMEGA_MIND_CLONE_VALIDATION:
 
 ### Checklist: O Que Todo Agente Deve Fazer
 
+0. **ANTES** de executar: criar TASK.md + CHECKLIST.md em `.planning/tasks/` (Secao 11)
 1. Ler este protocolo no inicio de cada sessao que envolva execucao de tasks
 2. Emitir OMEGA_STATUS block ao final de toda resposta de execucao
 3. Incluir OMEGA_SIGNATURE em todo artefato que modifique estado
@@ -1019,6 +1266,7 @@ OMEGA_MIND_CLONE_VALIDATION:
 6. Registrar progresso — SHA, files, tests no delta do OMEGA_STATUS
 7. Reportar blockers — nao tentar resolver sozinho alem de 3 iteracoes
 8. Usar Edit > Write — desenvolvimento incremental e evidencia verificada pelo OMEGA
+9. **DEPOIS** de executar: marcar checklist, salvar resumo na memoria, cleanup `.planning/` (Secao 11)
 
 ### Template OMEGA_STATUS (copiar e preencher)
 
@@ -1056,14 +1304,20 @@ notes: {observacoes}
 ```
 Recebi uma task?
   │
-  ├─ SIM → Emitir OMEGA_STATUS ao final? → SIM (obrigatorio)
+  ├─ SIM → PRE-EXEC: Criar TASK.md + CHECKLIST.md em .planning/tasks/ (Secao 11)
+  │         │
+  │         ├─ Executar task → Emitir OMEGA_STATUS ao final (obrigatorio)
+  │         │
+  │         ├─ Score >= threshold? → SIM + 2 signals + exit_signal → DONE
+  │         │                      → NAO → proxima iteracao
+  │         │
+  │         ├─ 3 iteracoes sem sucesso? → ESCALAR (nao insistir)
+  │         │
+  │         ├─ Circuit breaker OPEN? → PARAR (aguardar cooldown ou escalacao)
+  │         │
+  │         └─ POST-EXEC: Marcar checklist → Salvar memoria → Cleanup (Secao 11)
   │
-  ├─ Score >= threshold? → SIM + 2 signals + exit_signal → DONE
-  │                      → NAO → proxima iteracao
-  │
-  ├─ 3 iteracoes sem sucesso? → ESCALAR (nao insistir)
-  │
-  └─ Circuit breaker OPEN? → PARAR (aguardar cooldown ou escalacao)
+  └─ NAO (conversacao/leitura) → Responder diretamente (sem task lifecycle)
 ```
 
 ---
@@ -1098,6 +1352,10 @@ Recebi uma task?
 ├─────────────────────────────────────────────────────────────────┤
 │  GSD ENGINE (maos — artefatos rastreados)                      │
 │  .planning/, commits, ROADMAP, PLAN, VERIFICATION              │
+├─────────────────────────────────────────────────────────────────┤
+│  TASK LIFECYCLE (planejamento + memoria — Secao 11)            │
+│  .planning/tasks/{NNN}/ (TASK.md, CHECKLIST.md)                │
+│  .planning/tasks/HISTORY.md (log permanente, nunca deletado)   │
 ├─────────────────────────────────────────────────────────────────┤
 │  OMEGA STATE (persistencia)                                     │
 │  .claude/omega/state.json, progress.log, checkpoints/          │
@@ -1275,3 +1533,4 @@ Para desabilitar OMEGA (nao recomendado), setar `omega.enabled: false` no `proje
 | Versao | Data | Mudanca |
 |--------|------|---------|
 | 1.0.0 | 2026-03-02 | Protocolo inicial — core loop, quality gates, circuit breaker, escalation router, progress tracking, backpressure, model routing, state persistence, integracao com agentes |
+| 1.1.0 | 2026-03-03 | Task Lifecycle Protocol — PRE-EXEC obrigatorio (TASK.md + CHECKLIST.md em .planning/tasks/), POST-EXEC com memoria (session-context + HISTORY.md), cleanup automatico (Secao 11) |
