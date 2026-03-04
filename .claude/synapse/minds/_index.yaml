@@ -1,9 +1,9 @@
 # Indice de Mind Clones — Synapse v3
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
-# Total: 61 clones em 10 categorias
+# Total: 62 clones em 10 categorias
 version: 2
 last_updated: "2026-03-04"
-total_clones: 61
+total_clones: 62
 
 categories:
   AI:
@@ -130,6 +130,18 @@ categories:
       has_paradoxos: false
       fidelidade: null
       last_updated: "2026-03-01"
+    - slug: "david-allen"
+      name: "David Allen"
+      domain: "Produtividade Pessoal, Gestao de Atencao, Organizacao Mental e Execucao Criativa"
+      clone_file: ".claude/commands/DUARTEOS/Business/david-allen.md"
+      dna_file: ".claude/synapse/minds/david-allen.yaml"
+      versao_dna: 1
+      total_fontes: 26
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 95.20
+      last_updated: "2026-03-04"
+      pipeline: "MMOS v3"
 
   Content:
     - slug: "camila-porto"

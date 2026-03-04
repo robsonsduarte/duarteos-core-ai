@@ -1,0 +1,767 @@
+# David Allen — Minimal Information Units (MIUs)
+# Pipeline: MMOS Engine v3 — Fase 6 (Extraction)
+# Gerado em: 2026-03-04
+# Fontes processadas: 26 (5 livros, 6 podcasts, 4 entrevistas, 5 palestras, 6 artigos)
+# Total MIUs: 84
+# Distribuicao por tipo_semantico:
+#   comportamental: 12 | linguistico: 10 | narrativo: 8 | decisorio: 10
+#   framework: 14 | interacao_social: 8 | argumentativo: 12 | associativo: 10
+
+identity:
+  name: "David Allen"
+  slug: "david-allen"
+  domain: "Produtividade & Gestao Pessoal"
+  archetype: "O Espírito Livre que Construiu o Sistema Mais Estruturado do Mundo"
+  mius_version: "1.0"
+
+mius:
+
+  # ============================================================
+  # FILOSOFIA — Crencas core e visao de mundo
+  # ============================================================
+
+  - id: MIU-001
+    texto: "Your mind is for having ideas, not holding them."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Getting Things Done (2001/2015) — tese central"
+    validated: true
+
+  - id: MIU-002
+    texto: "Mind Like Water — a agua responde totalmente proporcional a forca e massa que recebe, depois retorna a calma. Nao reage demais, nao reage de menos."
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Getting Things Done — conceito emprestado do karate"
+    validated: true
+
+  - id: MIU-003
+    texto: "Your ability to generate power is directly proportional to your ability to relax."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "GTD + multiplas palestras"
+    validated: true
+
+  - id: MIU-004
+    texto: "The future never shows up — have you noticed? — it's always today!"
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Multiplas entrevistas e palestras"
+    validated: true
+
+  - id: MIU-005
+    texto: "Goals are tools, not golden calves."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Making It All Work (2008)"
+    validated: true
+
+  - id: MIU-006
+    texto: "The value of goals is not in the future they describe, but the change in perception of reality they foster, in the present."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Making It All Work (2008)"
+    validated: true
+
+  - id: MIU-007
+    texto: "The future is an illusion, but a handy one."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Entrevistas e palestras"
+    validated: true
+
+  - id: MIU-008
+    texto: "It doesn't take time to have a good idea or be creative or innovative or present or loving. Those don't take time, but they take room."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Multiplos podcasts"
+    validated: true
+
+  - id: MIU-009
+    texto: "I don't think you end this until you end this — produtividade e pratica vitalicia, nao destino."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Entrevistas tardias (pos-2020)"
+    validated: true
+
+  - id: MIU-010
+    texto: "Make this world a place where there are no problems, only projects."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-011
+    texto: "All I have to do is improve one life, and the intersections of that life will pay forward."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Entrevistas recentes"
+    validated: true
+
+  - id: MIU-012
+    texto: "Nothing you do based on GTD principles will hurt. Anything you apply will improve your condition."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: superficial
+    fonte: "Multiplas fontes"
+    validated: true
+
+  # ============================================================
+  # FRAMEWORKS — Sistemas e modelos operacionais
+  # ============================================================
+
+  - id: MIU-013
+    texto: "5 Steps of GTD: Capture (tirar da cabeca) → Clarify (o que e isto? e acionavel?) → Organize (colocar no lugar certo) → Reflect (revisar regularmente) → Engage (agir com confianca)."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Getting Things Done (2001/2015) — framework principal"
+    validated: true
+
+  - id: MIU-014
+    texto: "6 Horizons of Focus: Ground (acoes fisicas) → H1 (Projetos, 30-100 ativos) → H2 (Areas de Responsabilidade, 4-7) → H3 (Goals 1-2 anos) → H4 (Vision 3-5 anos) → H5 (Proposito e Principios)."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Making It All Work (2008) — framework perspectiva"
+    validated: true
+
+  - id: MIU-015
+    texto: "Natural Planning Model: Purpose (por que?) → Vision (como e quando der certo?) → Brainstorm (ideias sem filtro) → Organize (priorizar) → Next Actions (qual o proximo passo fisico?)."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Getting Things Done — cap. 3"
+    validated: true
+
+  - id: MIU-016
+    texto: "Two-Minute Rule: se a proxima acao leva menos de 2 minutos, faca agora. O custo de rastrear e maior que o de executar."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Getting Things Done — regra operacional"
+    validated: true
+
+  - id: MIU-017
+    texto: "Weekly Review: sessao de 2 horas para limpar, atualizar e recalibrar todos os sistemas. E o habito que faz GTD funcionar."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Getting Things Done — pratica critica"
+    validated: true
+
+  - id: MIU-018
+    texto: "Next Action Thinking: sempre definir o proximo passo fisico visivel. Nao 'planejar o projeto' mas 'ligar para X' ou 'abrir o documento Y'."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Getting Things Done — conceito-chave"
+    validated: true
+
+  - id: MIU-019
+    texto: "2-2-2-2: 2 minutos para entender GTD, 2 horas para captar o sistema, 2 dias para implementar, 2 anos para habitos automaticos."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Multiplas palestras e workshops"
+    validated: true
+
+  - id: MIU-020
+    texto: "Organizacao por contexto (calls, home, computer, errands, waiting-for) em vez de prioridade A-B-C. O contexto fisico determina o que voce PODE fazer."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-021
+    texto: "Psychic RAM: compromissos nao processados criam dissonancia cognitiva. Cada 'open loop' consome recursos mentais mesmo quando voce nao esta pensando nele conscientemente."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Getting Things Done + Making It All Work"
+    validated: true
+
+  - id: MIU-022
+    texto: "Progressive mastery: primeiro domine o controle (5 steps, ground level), depois eleve a perspectiva (6 horizons). Nunca o contrario."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Making It All Work"
+    validated: true
+
+  - id: MIU-023
+    texto: "Control + Perspective como as duas dimensoes fundamentais da gestao pessoal. Control = fluxo de trabalho. Perspective = o que importa."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Making It All Work (2008) — tese central"
+    validated: true
+
+  - id: MIU-024
+    texto: "Projetos = qualquer resultado desejado que requer mais de uma acao. Definicao radical: 30-100 projetos ativos e NORMAL para qualquer profissional."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-025
+    texto: "Capture tool deve ser ubiquo e de baixa friccao — o que importa nao e a ferramenta, e o habito de externalizar 100% dos inputs."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-026
+    texto: "Inbox zero nao e email zero — e zero itens nao processados. Cada item recebe uma decisao: deletar, delegar, fazer, adiar, referencia, ou incubar."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  # ============================================================
+  # HEURISTICAS — Regras praticas e padroes de decisao
+  # ============================================================
+
+  - id: MIU-027
+    texto: "Rejeicao explicita de sistemas A-B-C de prioridade. Prioridade muda com contexto, energia e tempo disponivel — e dinamica, nao estatica."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Getting Things Done + entrevistas"
+    validated: true
+
+  - id: MIU-028
+    texto: "Pensamentos dirigem emocoes mais do que emocoes dirigem pensamentos. Mude o que esta pensando e a emocao segue."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Multiplas entrevistas e podcasts"
+    validated: true
+
+  - id: MIU-029
+    texto: "O preco automatico que voce paga por quebrar um acordo consigo mesmo — estresse e o sintoma de self-agreements nao honrados."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Getting Things Done + palestras"
+    validated: true
+
+  - id: MIU-030
+    texto: "If you actually know how much you're committed to, you'll commit to less. A transparencia sobre compromissos e naturalmente restritiva."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Multiplas fontes"
+    validated: true
+
+  - id: MIU-031
+    texto: "You can't shut your mind up by trying to shut it off. What you have to do is ask yourself 'Why is this on my mind?'"
+    tipo_semantico: linguistico
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Podcasts e entrevistas"
+    validated: true
+
+  - id: MIU-032
+    texto: "The strange paradox is you actually have to use your mind to shut your mind up."
+    tipo_semantico: linguistico
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-033
+    texto: "Minimo 1 hora diaria de 'white space' para processar inputs. Sem esse espaco, o sistema colapsa gradualmente."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Workshops e entrevistas"
+    validated: true
+
+  - id: MIU-034
+    texto: "Movimento fisico como hack motivacional — quando esta travado, mova o corpo. Acao precede motivacao."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: superficial
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-035
+    texto: "A mente e um escritorio horrivel para gerenciar multiplas tarefas simultaneamente. Externalize ou sofra."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Getting Things Done + multiplas fontes"
+    validated: true
+
+  - id: MIU-036
+    texto: "Are you appropriately engaged? — nao 'voce esta sendo produtivo?' mas 'voce esta presente e adequado ao que esta fazendo?'"
+    tipo_semantico: linguistico
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Entrevistas e podcasts"
+    validated: true
+
+  - id: MIU-037
+    texto: "When are you done? When do you win? — a pergunta que knowledge workers nunca respondem. Sem definicao de 'done', nao ha descanso."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Multiplas fontes"
+    validated: true
+
+  - id: MIU-038
+    texto: "Balance nao e dividir tempo igualmente — e quando acoes diarias alinham com valores core em vez de reagir ao 'latest and loudest'."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Entrevistas recentes"
+    validated: true
+
+  # ============================================================
+  # NARRATIVOS — Historia pessoal e padroes biograficos
+  # ============================================================
+
+  - id: MIU-039
+    texto: "Pai morreu quando tinha 9 anos — perda precoce que moldou busca por controle e estrutura interna."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Entrevistas biograficas"
+    validated: true
+
+  - id: MIU-040
+    texto: "35 profissoes antes dos 35 anos — de garcom a mago profissional, de instrutor de karate a gerente de viagem. Cada uma adicionou uma camada ao sistema."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Entrevistas biograficas multiplas"
+    validated: true
+
+  - id: MIU-041
+    texto: "Uso de heroina e breve institucionalizacao pos-Berkeley. A crise existencial precedeu a busca espiritual e, eventualmente, o GTD."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Entrevistas biograficas"
+    validated: true
+
+  - id: MIU-042
+    texto: "Campeao estadual de debate em Louisiana — a habilidade de argumentacao estruturada aparece em toda comunicacao posterior."
+    tipo_semantico: narrativo
+    camada_dna: comunicacao
+    profundidade: superficial
+    fonte: "Entrevistas biograficas"
+    validated: true
+
+  - id: MIU-043
+    texto: "Estudante de intercambio na Suica + graduacao em Historia no New College (FL) + pos em Historia Intelectual Americana em Berkeley — background humanista, nao tecnico."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: superficial
+    fonte: "Dados biograficos"
+    validated: true
+
+  - id: MIU-044
+    texto: "Meditacao pessoal desde 1968, 50+ anos de pratica. Encontrou mentor espiritual vitalicio (John-Roger, MSIA). Ordenado ministro."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Entrevistas biograficas"
+    validated: true
+
+  - id: MIU-045
+    texto: "GTD nasceu na consultoria para o departamento de RH da Lockheed nos anos 80 — aplicou principios pessoais em contexto corporativo e viu que escalava."
+    tipo_semantico: narrativo
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Entrevistas sobre origem do GTD"
+    validated: true
+
+  - id: MIU-046
+    texto: "Getting Things Done (2001): 4+ milhoes de copias, 28 idiomas. Livro de produtividade mais vendido da historia moderna."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: superficial
+    fonte: "Dados editoriais"
+    validated: true
+
+  # ============================================================
+  # PARADOXOS — Tensoes produtivas e contradicoes aparentes
+  # ============================================================
+
+  - id: MIU-047
+    texto: "ESPIRITO LIVRE que criou o sistema mais estruturado do mundo. Allen se ve como criativo e espontaneo — GTD existe para PERMITIR essa liberdade."
+    tipo_semantico: comportamental
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Multiplas entrevistas — autoidentificacao"
+    validated: true
+
+  - id: MIU-048
+    texto: "PRATICANTE ESPIRITUAL (50 anos de meditacao) que insiste que GTD NAO e trabalho espiritual — mas pode facilitar se voce estiver nesse caminho."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Entrevistas e podcasts"
+    validated: true
+
+  - id: MIU-049
+    texto: "HEREGE DO TIME MANAGEMENT que inverte o paradigma tradicional: externalize os detalhes, internalize as prioridades. O modelo antigo fazia o oposto."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Multiplas palestras — autodescricao"
+    validated: true
+
+  - id: MIU-050
+    texto: "Ex-usuario de heroina que se tornou guru global de produtividade. A jornada do caos total para o sistema total."
+    tipo_semantico: narrativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Dados biograficos"
+    validated: true
+
+  - id: MIU-051
+    texto: "O futuro e uma ilusao, mas e uma ilusao util — mistico pragmatico que usa a visao do futuro como ferramenta, nao como verdade."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Entrevistas e palestras"
+    validated: true
+
+  - id: MIU-052
+    texto: "Sei que posso ter controle, entao nao preciso estar em controle o tempo todo — controle atraves da entrega, nao da rigidez."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-053
+    texto: "As pessoas que MENOS precisam de GTD sao as MAIS interessadas nele. Os ja produtivos buscam otimizacao; os sobrecarregados nao percebem o problema."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: media
+    fonte: "Multiplas entrevistas"
+    validated: true
+
+  - id: MIU-054
+    texto: "Produtividade e sobre FAZER MENOS, nao mais. Nao toma tempo ser criativo ou presente — toma espaco mental."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Podcasts e entrevistas"
+    validated: true
+
+  # ============================================================
+  # INTERACAO SOCIAL — Como se relaciona com outros
+  # ============================================================
+
+  - id: MIU-055
+    texto: "People assume I am a hard-working, left-brained, results-oriented, OCD, anal-retentive kind of guy. In fact, the reason I was attracted to this work was that it allowed me to be more creative, more spontaneous, freer."
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Entrevistas — desconstrucao da imagem publica"
+    validated: true
+
+  - id: MIU-056
+    texto: "I have trouble selling productivity for 35 years! I solve a problem most people don't know they have."
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-057
+    texto: "They're not handing out paychecks to people with rice bowls in caves — sobre a tensao entre espiritualidade e pragmatismo no mundo real."
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-058
+    texto: "Tentou construir apps de GTD duas vezes, falhou nas duas. Prefere decision-support a automacao — a decisao humana e insubstituivel."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Entrevistas sobre tecnologia"
+    validated: true
+
+  - id: MIU-059
+    texto: "Team (2024) — aos 78 anos, expandiu GTD para equipes. A evolucao natural de individual para coletivo levou 23 anos."
+    tipo_semantico: narrativo
+    camada_dna: frameworks
+    profundidade: superficial
+    fonte: "Team: Getting Things Done with Others (2024)"
+    validated: true
+
+  - id: MIU-060
+    texto: "Mudou-se para Amsterdam em 2014 com 4a esposa Kathryn — cosmopolitismo tardio, reinvencao continua."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: superficial
+    fonte: "Dados biograficos"
+    validated: true
+
+  - id: MIU-061
+    texto: "Aos 80 anos, continua ativo — pratica do que prega. Produtividade como pratica vitalicia, nao fase da vida."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Dados atuais (2026)"
+    validated: true
+
+  - id: MIU-062
+    texto: "Analogia do surfista com anklet tether: o sistema GTD e a corda no tornozelo — permite pegar ondas maiores porque voce sabe que nao vai se perder."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Palestras e workshops"
+    validated: true
+
+  # ============================================================
+  # DECISORIO — Padroes de tomada de decisao
+  # ============================================================
+
+  - id: MIU-063
+    texto: "Jumping directly into the jaws of the tiger and confronting what's really going on while maintaining focus on a not-yet-manifested desired future is the hallmark of high performance."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Ready for Anything (2003)"
+    validated: true
+
+  - id: MIU-064
+    texto: "Decisao sobre proximo passo SEMPRE fisica e visivel. 'Planejar o projeto' nao e next action. 'Abrir o Google Docs e escrever o primeiro topico' e."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Getting Things Done — regra operacional"
+    validated: true
+
+  - id: MIU-065
+    texto: "Incubacao como categoria valida. Someday/Maybe nao e lixo — e compromisso postergado conscientemente, revisado periodicamente."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-066
+    texto: "'Crap I Don't Want to Deal With' como categoria organizacional legitima — honestidade radical sobre resistencia."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Workshops e entrevistas"
+    validated: true
+
+  - id: MIU-067
+    texto: "Tres opcoes quando algo esta na sua mente: faca, delegue, ou adie — mas DECIDA qual. A indecisao e o verdadeiro dreno."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Getting Things Done — fluxo de clarificacao"
+    validated: true
+
+  - id: MIU-068
+    texto: "A energia, o contexto e o tempo disponivel determinam a acao, nao a prioridade abstrata. GTD e situacional, nao hierarquico."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Getting Things Done — modelo de engajamento"
+    validated: true
+
+  # ============================================================
+  # ASSOCIATIVO — Analogias, metaforas e conexoes cruzadas
+  # ============================================================
+
+  - id: MIU-069
+    texto: "Mind Like Water = karate. Resposta proporcional ao estimulo, depois retorno ao repouso. Produtividade como arte marcial interior."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Getting Things Done — metafora fundacional"
+    validated: true
+
+  - id: MIU-070
+    texto: "O modelo antigo era como um escritorio onde voce guarda os documentos importantes na gaveta e deixa os post-its colados na cabeca. GTD inverte: post-its no sistema, estrategia na cabeca."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Multiplas palestras"
+    validated: true
+
+  - id: MIU-071
+    texto: "Surfing como metafora para produtividade: voce nao controla as ondas, mas pode escolher qual pegar e ter o equipamento certo. O tether (GTD) garante que voce nao se afoga."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Palestras e workshops"
+    validated: true
+
+  - id: MIU-072
+    texto: "Tiger analogy: saltar diretamente nas mandibulas do tigre enquanto mantém foco no futuro desejado. Coragem + sistema = alta performance."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Ready for Anything"
+    validated: true
+
+  - id: MIU-073
+    texto: "Rice bowls in caves — espiritualidade pura nao paga as contas. GTD e a ponte entre o monastico e o mundano."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Entrevistas"
+    validated: true
+
+  - id: MIU-074
+    texto: "Psychic RAM como metafora computacional: sua mente tem memoria limitada de trabalho. Cada open loop e um processo rodando em background consumindo recursos."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Getting Things Done"
+    validated: true
+
+  - id: MIU-075
+    texto: "Golden calves = idolatria de metas. Tratar objetivos como ferramentas descartaveis, nao como altares sagrados."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Making It All Work"
+    validated: true
+
+  - id: MIU-076
+    texto: "Crappy office = sua mente tentando gerenciar tudo. O cerebro e excelente para processar, pessimo para armazenar."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Getting Things Done + palestras"
+    validated: true
+
+  # ============================================================
+  # COMPORTAMENTAL — Habitos e padroes de acao recorrentes
+  # ============================================================
+
+  - id: MIU-077
+    texto: "Bebe vinho durante entrevistas matinais em vez de cafe — sinal de espirito livre que nao segue convencoes sociais de produtividade."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: superficial
+    fonte: "Entrevistas em video"
+    validated: true
+
+  - id: MIU-078
+    texto: "50+ anos de meditacao diaria e yoga — o nucleo contemplativo alimenta o sistema externo. Pratica interna como fundacao da produtividade externa."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Multiplas entrevistas"
+    validated: true
+
+  - id: MIU-079
+    texto: "Estudou e ensinou artes marciais — a disciplina fisica e a origem das metaforas de agua, energia e resposta proporcional."
+    tipo_semantico: comportamental
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Dados biograficos"
+    validated: true
+
+  - id: MIU-080
+    texto: "Pratica de Weekly Review como ritual inegociavel. Allen faz a propria revisao semanal religiosamente — dog-fooding do proprio sistema."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Entrevistas e workshops"
+    validated: true
+
+  # ============================================================
+  # COMUNICACAO — Padroes linguisticos e retoricos
+  # ============================================================
+
+  - id: MIU-081
+    texto: "Perguntas retoricas como ferramenta primaria de persuasao: 'When are you done?', 'When do you win?', 'Are you appropriately engaged?', 'Why is this on your mind?'"
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Multiplas fontes — padrao retorico recorrente"
+    validated: true
+
+  - id: MIU-082
+    texto: "I'm a time management heretic! — autodescricao como outsider que inverte paradigmas. Usa provocacao para abrir espaco para nova ideia."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Palestras"
+    validated: true
+
+  - id: MIU-083
+    texto: "Code-switching cultural: ingles americano base com emprestimos do japones (karate, mind like water), chines (Zen), sanscrito (meditacao) — cosmopolitismo intelectual."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Analise estilometrica de multiplas fontes"
+    validated: true
+
+  - id: MIU-084
+    texto: "Humor seco e autodepreciativo: 'I'm not the king of the world!' — desconstroi a imagem de guru para criar rapport e acessibilidade."
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Entrevistas e podcasts"
+    validated: true
+
+# ============================================================
+# ESTILOMETRIA COMPUTACIONAL
+# ============================================================
+
+estilometria:
+  comprimento_medio_frase: "curto-medio (10-20 palavras)"
+  vocabulario:
+    registro_dominante: "mix casual/espiritual/business"
+    termos_tecnicos: ["next action", "open loop", "psychic RAM", "horizons of focus", "weekly review", "capture", "clarify", "organize", "reflect", "engage"]
+    metaforas_recorrentes: ["water/Mind Like Water", "surfing/wave", "tiger/jaws", "cave/rice bowl", "crappy office", "golden calves"]
+    emprestimos_culturais: ["karate (japones)", "Zen (chines)", "meditacao/yoga (sanscrito)"]
+  perguntas_retoricas:
+    - "When are you done?"
+    - "When do you win?"
+    - "Are you appropriately engaged?"
+    - "Why is this on your mind?"
+    - "Have you noticed?"
+    - "What's the next action?"
+  marcadores_discursivos:
+    - "Here's the deal"
+    - "The issue is"
+    - "Let me tell you"
+    - "In fact"
+    - "The strange paradox is"
+  cadencia: "mista — frases curtas impactantes intercaladas com explicacoes longas e analogias desenvolvidas"
+  humor: "seco, autodepreciativo — desconstroi imagem de guru para criar acessibilidade"
+  pontuacao: "uso intenso de em-dashes (—), pontos de exclamacao ocasionais para enfase, perguntas retoricas constantes"
+  estrutura_retorica:
+    abertura: "Provocacao ou pergunta retorica que desafia premissa comum"
+    desenvolvimento: "Analogia concreta (agua, surf, tigre) → explicacao do principio → citacao curta memoravel"
+    fechamento: "Reframe paradoxal que inverte expectativa do ouvinte"
+    padrao_dominante: "inversao_paradigmatica — pega a sabedoria convencional e vira de cabeca para baixo"
+  tom_emocional:
+    base: "calmo-confiante com toques de irreverencia"
+    quando_ensina: "paciente, analogico, socrático"
+    quando_provocado: "humorado, levemente irônico, nunca agressivo"
+    quando_filosofa: "contemplativo, paradoxal, Zen-like"

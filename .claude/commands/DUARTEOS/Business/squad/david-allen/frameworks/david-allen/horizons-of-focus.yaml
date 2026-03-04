@@ -1,0 +1,174 @@
+# David Allen — Framework: 6 Horizons of Focus
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "6 Horizons of Focus"
+  version: "1.0"
+  fonte_primaria: "Making It All Work (2008), Getting Things Done revised (2015)"
+
+framework:
+  nome: "Horizons of Focus"
+  nome_alternativo: "Altitude Model / 6 Levels of Perspective"
+  principio_central: >
+    A vida opera em multiplos niveis de altitude simultaneamente. Cada
+    nivel informa e e informado pelos outros. Problemas em um nivel
+    frequentemente se resolvem mudando de altitude. Produtividade real
+    requer alinhamento entre todos os niveis.
+
+  citacao_ancora: >
+    "You can't prioritize without altitude. Priority without horizon
+    is arbitrary."
+
+  metafora: >
+    Aviao em voo: de runway (pista) a 50,000 feet (altitude de cruzeiro).
+    Quanto mais alto, mais ampla a perspectiva. Quanto mais baixo, mais
+    concreta a acao. Voce precisa de ambos.
+
+  horizons:
+    - horizon: 0
+      nome: "Ground / Runway"
+      altitude: "0 ft"
+      descricao: >
+        Acoes concretas e imediatas — as next actions. O que estou
+        fazendo agora, o que preciso fazer hoje. O nivel mais granular
+        e tangivel. E aqui que a execucao acontece.
+      pergunta_chave: "What's the next physical action?"
+      conteudo_tipico:
+        - "Lista de next actions por contexto"
+        - "Acoes em andamento"
+        - "Calendar items do dia/semana"
+      frequencia_review: "Diaria (ou mais)"
+      exemplo: >
+        "Ligar para o dentista. Enviar email ao Joao sobre proposta.
+        Comprar leite. Revisar rascunho do relatorio."
+      relacao_com_outros: >
+        Cada acao de runway deve estar conectada a pelo menos um
+        projeto (Horizon 1). Acoes orfas sao red flag.
+
+    - horizon: 1
+      nome: "Projects"
+      altitude: "10,000 ft"
+      descricao: >
+        Outcomes desejados que requerem mais de uma acao para completar.
+        Todo projeto precisa de pelo menos uma next action definida.
+        Projetos sem next action estao PARADOS, nao 'em progresso'.
+      pergunta_chave: "What outcomes am I committed to finishing?"
+      conteudo_tipico:
+        - "Lista completa de projetos ativos (pessoais e profissionais)"
+        - "Cada projeto com outcome claro e pelo menos uma next action"
+      frequencia_review: "Semanal (Weekly Review)"
+      exemplo: >
+        "Contratar novo dev. Reformar banheiro. Preparar apresentacao
+        Q4. Organizar viagem de ferias."
+      relacao_com_outros: >
+        Projetos devem alimentar Areas of Focus (Horizon 2). Projetos
+        desconectados de areas sugerem desalinhamento.
+
+    - horizon: 2
+      nome: "Areas of Focus and Accountability"
+      altitude: "20,000 ft"
+      descricao: >
+        Areas de vida e trabalho que devem ser mantidas em equilibrio.
+        Nao tem 'end date' — sao continuas. Sao os 'pratos girando'
+        que precisam de atencao constante.
+      pergunta_chave: "What areas of my life and work need consistent attention?"
+      conteudo_tipico:
+        - "Profissional: financas, equipe, clientes, saude do produto"
+        - "Pessoal: saude, familia, financas pessoais, casa, hobbies"
+      frequencia_review: "Mensal ou quando algo parece 'off'"
+      exemplo: >
+        "Saude fisica. Relacionamento com esposa. Gestao financeira.
+        Desenvolvimento profissional. Manutencao da casa."
+      relacao_com_outros: >
+        Areas geram projetos. Se uma area nao tem projetos associados,
+        esta sendo negligenciada. Se tem projetos demais, esta
+        sobrecarregada.
+
+    - horizon: 3
+      nome: "Goals and Objectives"
+      altitude: "30,000 ft"
+      descricao: >
+        O que voce quer alcançar nos proximos 1-2 anos. Metas concretas
+        com prazos e metricas. Nivel onde estrategia encontra execucao.
+      pergunta_chave: "What do I want to achieve in the next year or two?"
+      conteudo_tipico:
+        - "Metas profissionais com timeline"
+        - "Metas pessoais com indicadores"
+        - "Marcos de progresso"
+      frequencia_review: "Trimestral"
+      exemplo: >
+        "Dobrar receita em 12 meses. Correr meia maratona. Aprender
+        espanhol nivel B2. Lancar novo produto."
+      relacao_com_outros: >
+        Goals geram e priorizam Areas e Projects. Sem goals claros,
+        areas ficam em piloto automatico.
+
+    - horizon: 4
+      nome: "Vision"
+      altitude: "40,000 ft"
+      descricao: >
+        Como voce quer que sua vida/trabalho se pareça em 3-5 anos.
+        Imagem vívida do futuro desejado. Nivel mais imaginativo e
+        aspiracional antes do proposito puro.
+      pergunta_chave: "What does my ideal life/career look like in 3-5 years?"
+      conteudo_tipico:
+        - "Visao de carreira e lifestyle"
+        - "Cenario ideal descrito vividamente"
+        - "Mudancas maiores desejadas"
+      frequencia_review: "Semestral ou anual"
+      exemplo: >
+        "Em 5 anos: negocio rodando com equipe autonoma, morando na
+        Europa, escrevendo segundo livro, saude excelente, casamento
+        solido."
+      relacao_com_outros: >
+        Vision direciona Goals. Sem visao, goals sao arbitrarios.
+        Vision sem goals e fantasia.
+
+    - horizon: 5
+      nome: "Purpose and Principles"
+      altitude: "50,000 ft"
+      descricao: >
+        Por que voce existe? Quais principios guiam suas decisoes?
+        O nivel mais abstrato e fundamental. Nao muda frequentemente,
+        mas informa tudo abaixo. E a bussola, nao o mapa.
+      pergunta_chave: "Why do I exist? What do I stand for?"
+      conteudo_tipico:
+        - "Declaracao de proposito pessoal"
+        - "Principios inegociaveis"
+        - "Valores fundamentais"
+      frequencia_review: "Anual ou em momentos de crise/transicao"
+      exemplo: >
+        "Proposito: ajudar pessoas a serem livres para contribuir.
+        Principios: integridade, simplicidade, servico, humor."
+      relacao_com_outros: >
+        Purpose valida ou invalida tudo abaixo. Se Vision nao
+        serve ao Purpose, esta desalinhada. Se Actions nao servem
+        ao Purpose (mesmo indiretamente), sao desperdicio.
+
+  como_usar:
+    navegacao_top_down: >
+      Comece em 50k ft e desça. Purpose → Vision → Goals → Areas →
+      Projects → Actions. Garante alinhamento.
+    navegacao_bottom_up: >
+      Comece em runway e suba. Capture tudo, organize projetos, mapeie
+      areas, defina goals. Util quando nao tem clareza de proposito.
+    quando_mudar_altitude: >
+      Se esta travado em um nivel, suba um ou dois niveis. Se esta
+      perdido em abstracoes, desca para acoes concretas. A capacidade
+      de mudar de altitude fluidamente e o skill fundamental.
+
+  anti_patterns:
+    - "Viver so em runway (reativo, sem direcao)"
+    - "Viver so em 50k ft (filosofando sem executar)"
+    - "Confundir horizon 2 (areas) com horizon 1 (projetos)"
+    - "Ignorar horizons 3-5 por parecerem 'soft'"
+    - "Revisar todos os niveis na mesma frequencia"
+
+  citacao_complementar: >
+    "You can't feel good about what you're doing if you don't know
+    what you're not doing. That's what the horizons give you — a
+    complete inventory at every level."

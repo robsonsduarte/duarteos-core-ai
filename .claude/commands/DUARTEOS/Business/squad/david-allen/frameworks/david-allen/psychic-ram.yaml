@@ -1,0 +1,140 @@
+# David Allen — Framework: Psychic RAM
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "Psychic RAM"
+  version: "1.0"
+  fonte_primaria: "Getting Things Done (2001), Ready for Anything (2003)"
+
+framework:
+  nome: "Psychic RAM"
+  nome_alternativo: "Mental RAM / Cognitive Overhead / Open Loop Theory"
+  principio_central: >
+    A mente humana tem capacidade limitada de 'memoria de trabalho'
+    (working memory / RAM). Cada compromisso nao-capturado, cada
+    open loop, cada 'coisa pendente' ocupa espaco nessa RAM finita.
+    Quando a RAM esta cheia, a capacidade de pensar, criar e decidir
+    colapsa. Liberar Psychic RAM e o objetivo primario do GTD.
+
+  citacao_ancora: >
+    "Your brain keeps track of everything you haven't handled —
+    whether you want it to or not. That's psychic RAM being consumed
+    by open loops you haven't processed."
+
+  base_cientifica:
+    working_memory: >
+      Pesquisa de George Miller (1956): capacidade de 7±2 chunks de
+      informacao simultaneos na working memory. Allen nao cita Miller
+      explicitamente, mas o conceito e consistente.
+    zeigarnik_effect: >
+      Bluma Zeigarnik (1927): tarefas incompletas sao lembradas melhor
+      que completas — o cerebro mantem 'threads abertas' para loops
+      nao-resolvidos. Allen usa isso como fundamento sem nomear.
+    cognitive_load_theory: >
+      John Sweller (1988): carga cognitiva excessiva degrada performance.
+      Externalizar reduz carga intrinseca e libera capacidade.
+    nota: >
+      Allen nao e academico — chega as mesmas conclusoes por observacao
+      pratica e 50 anos de meditacao, nao por literatura cientifica.
+
+  como_funciona:
+    modelo_mental: >
+      Imagine seu cerebro como computador com RAM limitada. Cada
+      compromisso nao-capturado e um programa rodando em background.
+      Cada open loop e uma tab aberta. Quando voce tem 47 tabs abertas
+      (tipico adulto moderno), o sistema fica lento — ansiedade,
+      esquecimento, reatividade, insonia.
+    mecanismo: >
+      O cerebro evolui para detectar e rastrear ameacas e compromissos.
+      Nao distingue entre 'lembrar de comprar leite' e 'projeto de
+      1 milhao travado'. Ambos consomem RAM. O cerebro trata TUDO
+      como importante se nao foi processado — porque nao sabe o que
+      e importante ate que voce decida.
+    consequencias_de_ram_cheia:
+      cognitivas:
+        - "Dificuldade de concentracao (switching constante)"
+        - "Esquecimento de coisas importantes"
+        - "Decisoes ruins por cognitive overload"
+        - "Criatividade suprimida (sem espaco para novas ideias)"
+      emocionais:
+        - "Ansiedade difusa ('algo esta errado mas nao sei o que')"
+        - "Sensacao de overwhelm desproporcional ao volume real"
+        - "Irritabilidade e reatividade"
+        - "Insonia (cerebro processando open loops a noite)"
+      comportamentais:
+        - "Procrastinacao (paralisia por excesso de opcoes)"
+        - "Reatividade (responder ao urgente, ignorar o importante)"
+        - "Avoidance (evitar pensar no que precisa ser feito)"
+        - "Multitasking improdutivo (nao e paralelismo, e switching)"
+
+  resolucao:
+    principio: >
+      Libere RAM externalizando TUDO para um sistema confiavel. Cada
+      item capturado e processado libera um 'thread' do cerebro.
+      Quando todos os open loops estao no sistema, a RAM fica livre
+      para o que a mente faz de melhor: pensar, criar, decidir, estar presente.
+
+    mecanismo_gtd:
+      - passo: "Capture — externalizar tudo que tem atencao"
+        efeito_ram: "Cada item capturado fecha um background process"
+      - passo: "Clarify — decidir o que cada coisa e"
+        efeito_ram: "Definir elimina ambiguidade, que e alto consumidor de RAM"
+      - passo: "Organize — colocar no lugar certo"
+        efeito_ram: "Saber ONDE algo esta elimina o custo de lembrar"
+      - passo: "Reflect — revisar regularmente"
+        efeito_ram: "Confianca no sistema = cerebro para de rastrear por conta"
+      - passo: "Engage — agir com mente limpa"
+        efeito_ram: "RAM livre = foco total na acao presente"
+
+    resultado: "Mind Like Water"
+    descricao_resultado: >
+      Estado de RAM livre: o cerebro responde proporcionalmente ao
+      estimulo atual, sem sobre-reacao (open loops puxando atencao)
+      nem sub-reacao (avoidance por overload). Prontidao calma.
+
+  analogias_allen:
+    - analogia: "Computer with too many tabs open"
+      contexto: audiencia tech
+      eficacia: muito_alta
+
+    - analogia: "Tiger in the room"
+      contexto: "Ilustrar por que o cerebro nao pode ignorar open loops"
+      citacao: "If there's a tiger in the room, your brain will track it — period."
+      eficacia: alta
+
+    - analogia: "Crappy office"
+      contexto: humor, desmistificar
+      citacao: "Your head is a crappy office. Would you run a business from a place that unreliable?"
+      eficacia: alta
+
+    - analogia: "Cave person's brain"
+      contexto: evolutionary psychology
+      descricao: "Nosso cerebro evoluiu para rastrear tigres na savana, nao 147 emails."
+      eficacia: media_alta
+
+  conexao_com_meditacao: >
+    Allen, meditador de 50 anos, ve convergencia: meditacao libera
+    RAM pela presenca; GTD libera RAM pelo processamento. Ambos levam
+    ao mesmo lugar — mente livre. "Meditation and file folders serve
+    the same purpose: getting stuff out of your head."
+
+  metricas_informais:
+    ram_tipica_adulto: "30-100+ open loops simultaneos (Allen estima)"
+    ram_pos_brain_dump: "Reducao imediata de 50-70% em ansiedade percebida"
+    ram_pos_weekly_review: "Estado 'mind like water' por 2-5 dias"
+    ram_pos_sistema_completo: "Estado sustentavel de clareza com manutencao semanal"
+
+  anti_patterns:
+    - "Acreditar que boa memoria substitui sistema (nao substitui)"
+    - "Capturar sem processar (inbox gigante = RAM nao-liberada)"
+    - "Confiar em 'vou lembrar' para coisas importantes"
+    - "Usar RAM para armazenar em vez de usar para pensar"
+    - "Nao revisar o sistema (confianca cai, RAM volta a rastrear)"
+
+  citacao_complementar: >
+    "Your brain is a wonderful servant but a terrible master. Use it
+    to think, not to remember. That's what your system is for."

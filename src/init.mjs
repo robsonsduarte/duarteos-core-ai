@@ -77,7 +77,7 @@ export function init(projectName, options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version}${' '.repeat(Math.max(0, bannerWidth - 22 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  60 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  62 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
 
   // Detect project name
@@ -617,16 +617,16 @@ export function init(projectName, options = {}) {
      blueprint-template.md   — Template de blueprint para build-system
      Use: /DUARTEOS:squad:build-system [PRD.md | workflow.json | URL]
 
-  Mind Clones (.claude/commands/DUARTEOS/) — 59 consultores cognitivos:
+  Mind Clones (.claude/commands/DUARTEOS/) — 62 consultores cognitivos:
      /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Ogilvy...)
      /DUARTEOS:Marketing:*      — 9 estrategistas (Dan Kennedy, Pedro Sobral...)
      /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen...)
      /DUARTEOS:AI:*             — 5 pioneiros (Andrew Ng, Hinton, LeCun...)
-     /DUARTEOS:Tech:*           — 5 lideres (Zuckerberg, Larry Page...)
-     /DUARTEOS:Business:*       — 6 empreendedores (Bill Gates, Thiago Finch...)
+     /DUARTEOS:Tech:*           — 6 lideres (Zuckerberg, Larry Page, Pavel Durov...)
+     /DUARTEOS:Business:*       — 7 empreendedores (Bill Gates, Thiago Finch, David Allen...)
      /DUARTEOS:Content:*        — 4 criadores (MrBeast, Virginia Fonseca...)
      /DUARTEOS:Product:*        — 3 lideres (Julie Zhuo, Ezra Firestone...)
-     /DUARTEOS:Saude:*          — 7 profissionais (Drauzio Varella, Vera Iaconelli, Marcio Atalla...)
+     /DUARTEOS:Saude:*          — 8 profissionais (Drauzio Varella, Vera Iaconelli, Atul Gawande...)
      /DUARTEOS:Juridico:*       — 7 juristas (Patricia Peck, Ronaldo Lemos, Erik Nybo...)
 
   Conselhos de Especialistas — 10 advisory boards:
@@ -657,7 +657,7 @@ export function init(projectName, options = {}) {
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 6 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos
-     59 DNA pre-populados             — Todas as 10 categorias de mind clones
+     62 DNA pre-populados             — Todas as 10 categorias de mind clones
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes

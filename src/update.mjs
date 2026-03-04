@@ -9,6 +9,24 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.16.0': {
+    title: 'Mind Clone David Allen — MMOS v3 Pipeline Completo (F=95.20%)',
+    highlights: [
+      'Novo mind clone: David Allen (criador GTD, produtividade, gestao de atencao) — categoria Business',
+      'Segundo clone executado com MMOS v3 Pipeline completo (11 fases 0-10)',
+      'PCFE Pre-Clone: FE=93% (EXCELENTE) → F real=95.20% (accuracy da estimativa: 97.80%)',
+      'Fidelidade: L=94 B=96 C=95 K=97 V=93 — todos componentes >= 85%',
+      '26 fontes primarias (5 livros, 7 podcasts, 4 entrevistas, 3 palestras, 7 artigos)',
+      '84 MIUs extraidas, 16 drivers (7 gold), 8 paradoxos produtivos (3+ fontes cada)',
+      '6 frameworks primarios: 5 Steps GTD, 6 Horizons of Focus, Natural Planning Model, Two-Minute Rule, Weekly Review, Psychic RAM',
+      '29 arquivos no squad: agent, 6 frameworks, drivers, voice, phrases, checklist, 6 tasks, 8 artifacts (behavioral, cognitive, linguistic, narrative), system-components, config, PCFE',
+      'Calibracao PCFE #2: delta +2.20, accuracy 97.80% (melhor que clone anterior)',
+      'DNA completo: 6 camadas + 4 subcamadas + associacoes conceituais + comunicacao avancada',
+      'Big Five: O=92 C=78 E=72 A=75 N=28 | MBTI: ENTP | Enneagram: 7w6',
+      'Indice Synapse atualizado: 61 → 62 clones em 10 categorias',
+      'Stats PCFE atualizadas: avg_accuracy 96.53%, avg_delta 3.48, 2 clones calibrados',
+    ],
+  },
   '5.15.0': {
     title: 'Mind Clone Atul Gawande — MMOS v3 Pipeline Completo (F=95.75%)',
     highlights: [

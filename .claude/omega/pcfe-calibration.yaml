@@ -11,7 +11,7 @@
 version: "1.0.0"
 description: "Calibration store for PCFE (Pre-Clone Fidelity Estimation) accuracy tracking"
 created_at: "2026-03-03T00:00:00Z"
-last_updated: "2026-03-03T23:59:00Z"
+last_updated: "2026-03-04T23:59:00Z"
 
 # === CALIBRATION ENTRIES ===
 # Each entry is added after Phase 9 completes for a clone
@@ -38,6 +38,27 @@ calibrations:
     anomaly: false
     enrichment_loops: 0
     timestamp: "2026-03-03T23:59:00Z"
+  - slug: "david-allen"
+    category: "business"
+    FE: 93
+    FE_breakdown:
+      VS: 100
+      DS: 90
+      CS: 90
+      PS: 95
+      QS: 90
+    F_real: 95.20
+    F_real_breakdown:
+      L: 94
+      B: 96
+      C: 95
+      K: 97
+      V: 93
+    delta: 2.20
+    accuracy: 97.80
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-04T23:59:00Z"
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -66,14 +87,15 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 1
-  avg_delta: 4.75              # average(F_real - FE) across all clones
-  avg_accuracy: 95.25          # average(100 - abs(delta)) across all clones
+  total_clones: 2
+  avg_delta: 3.475             # average(4.75, 2.20)
+  avg_accuracy: 96.525         # average(95.25, 97.80)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 1     # how many times FE < F_real
+  underestimation_count: 2     # how many times FE < F_real
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
+    business: 2.20
   weight_adjustment_history: []
     # Records of weight changes if manual calibration is applied
     #

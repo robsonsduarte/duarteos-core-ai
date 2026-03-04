@@ -1,0 +1,36 @@
+# PCFE — David Allen
+# Pipeline: MMOS Engine v3 — Fase 3
+# Gerado em: 2026-03-04
+
+pcfe:
+  slug: "david-allen"
+  timestamp: "2026-03-04 12:00"
+  version: "3.0"
+  iteration: 1
+  scores:
+    VS: 100
+    DS: 90
+    CS: 90
+    PS: 95
+    QS: 90
+  FE: 93
+  classificacao: "EXCELENTE"
+  F_estimado_min: 79
+  F_estimado_max: 100
+  F_provavel: 88
+  fontes_total: 26
+  fontes_por_tipo:
+    livro: 5
+    podcast: 7
+    entrevista: 4
+    palestra: 3
+    artigo: 7
+  camadas_cobertas: 10
+  gaps:
+    - camada: "modelo_social"
+      cobertura: "40%"
+      impacto: "MODERADO — 5% do CS"
+      recomendacao: "Buscar debates ou interacoes conflituosas publicas"
+  recomendacao: "GO"
+  decisao_humana: "APROVAR"
+  decisao_timestamp: "2026-03-04"

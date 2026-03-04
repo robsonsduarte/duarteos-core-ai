@@ -1,0 +1,176 @@
+# David Allen — Framework: Natural Planning Model
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "Natural Planning Model"
+  version: "1.0"
+  fonte_primaria: "Getting Things Done (2001), cap. 3"
+
+framework:
+  nome: "Natural Planning Model"
+  nome_alternativo: "The 5 Phases of Natural Planning"
+  principio_central: >
+    O cerebro planeja naturalmente em 5 fases — voce ja faz isso
+    toda vez que decide ir jantar fora. O NPM apenas torna esse
+    processo consciente e aplicavel a qualquer projeto, de um jantar
+    a uma fusao corporativa.
+
+  citacao_ancora: >
+    "The most brilliant and creative people I know also have the
+    most structure. They're not fighting the natural planning process
+    — they're honoring it."
+
+  contraste_com_planejamento_tradicional: >
+    Planejamento corporativo tradicional comeca pela organizacao
+    (cronograma, Gantt, recursos). O NPM comeca por PROPOSITO e
+    VISAO — como o cerebro naturalmente faz. Organizar antes de
+    saber o 'why' e o 'what' gera planos sem alma.
+
+  stages:
+    - stage: 1
+      nome: "Defining Purpose and Principles"
+      pergunta_chave: "WHY are we doing this?"
+      descricao: >
+        Defina o proposito do projeto (por que existe) e os principios
+        que guiam as decisoes (limites e valores). Proposito gera
+        motivacao; principios geram criterios de decisao.
+      importancia: >
+        Sem proposito claro, tudo e potencialmente relevante e nada
+        e priorizavel. Proposito e o filtro supremo.
+      acoes_praticas:
+        - "Escreva em uma frase: POR QUE estamos fazendo isso?"
+        - "Liste 3-5 principios que guiam as decisoes neste projeto"
+        - "Teste: se alguem perguntar 'por que?', a resposta e clara?"
+      anti_patterns:
+        - "Pular direto para brainstorm sem proposito"
+        - "Proposito vago ('melhorar as coisas')"
+        - "Principios nao-definidos gerando decisoes arbitrarias"
+      exemplo: >
+        "Proposito do jantar: celebrar aniversario da Maria em ambiente
+        que ela ame. Principios: dentro do orcamento, perto de casa,
+        sem gluten (alergia dela)."
+
+    - stage: 2
+      nome: "Outcome Visioning"
+      pergunta_chave: "WHAT does 'done' look like?"
+      descricao: >
+        Crie uma imagem vivida do resultado desejado. Como sera quando
+        estiver feito? O que as pessoas dirao? Como voce se sentira?
+        O cerebro nao pode atingir um alvo que nao consegue ver.
+      importancia: >
+        Visao ativa o 'reticular activating system' — o cerebro comeca
+        a filtrar informacao relevante automaticamente. E como dizer
+        ao GPS o destino antes de pedir a rota.
+      acoes_praticas:
+        - "Descreva o resultado como se ja tivesse acontecido"
+        - "Use linguagem sensorial: o que voce VE, OUVE, SENTE?"
+        - "Teste: um estranho conseguiria reconhecer 'done'?"
+      anti_patterns:
+        - "Visao negativa ('nao quero que seja ruim')"
+        - "Visao vaga ('vai ser legal')"
+        - "Pular para como fazer antes de saber o que parece feito"
+      exemplo: >
+        "Resultado: Maria sentada em restaurante italiano aconchegante,
+        surpresa, rindo com amigos, bolo sem gluten na mesa, ela diz
+        'esse foi o melhor aniversario'."
+
+    - stage: 3
+      nome: "Brainstorming"
+      pergunta_chave: "HOW might we get there?"
+      descricao: >
+        Gere ideias sem filtrar. Quantidade sobre qualidade. Cerebro
+        em modo expansivo. Nenhuma ideia e ruim nesta fase. Captura
+        TUDO que pode ser relevante para fechar o gap entre agora e
+        a visao.
+      importancia: >
+        O brainstorm libera o pensamento criativo que o cerebro
+        naturalmente gera quando tem proposito + visao claros.
+        Censurar ideias nesta fase mata a criatividade.
+      regras:
+        - "Nao julgue, nao organize, nao priorize (AINDA)"
+        - "Quantidade > qualidade"
+        - "Deixe ideias gerarem outras ideias"
+        - "Capture tudo — nao edite"
+      acoes_praticas:
+        - "Mind map, lista rapida, post-its, ou brain dump livre"
+        - "Timer de 5-10 minutos de fluxo livre"
+        - "Se travar, volte para Stage 1 ou 2 para reenergizar"
+      anti_patterns:
+        - "Filtrar ideias durante brainstorm ('isso nao vai funcionar')"
+        - "Organizar enquanto gera (misturar stages 3 e 4)"
+        - "Brainstorm sozinho quando o projeto e coletivo"
+      exemplo: >
+        "Restaurantes possiveis, lista de convidados, opcoes de bolo,
+        reserva online vs telefone, transporte, presente surpresa,
+        decoracao, playlist, photographer, Uber vs taxi..."
+
+    - stage: 4
+      nome: "Organizing"
+      pergunta_chave: "In what order? What are the components?"
+      descricao: >
+        Agora sim: organize o brainstorm. Identifique componentes
+        naturais, sequencias, prioridades. Crie estrutura a partir
+        do caos criativo. Aqui a desordem se torna plano.
+      importancia: >
+        Organizacao APOS brainstorm preserva a criatividade. Organizar
+        cedo demais mata possibilidades. Organizar tarde demais gera
+        paralisia.
+      acoes_praticas:
+        - "Agrupe ideias em categorias naturais"
+        - "Identifique sequencias (o que vem antes do que?)"
+        - "Marque componentes criticos vs nice-to-have"
+        - "Crie timeline se aplicavel"
+      anti_patterns:
+        - "Criar Gantt chart detalhado nesta fase (cedo demais)"
+        - "Ficar reorganizando infinitamente (perfeccionismo)"
+        - "Nao identificar dependencias criticas"
+      exemplo: >
+        "Componentes: (1) Reserva restaurante [critico, fazer primeiro],
+        (2) Convidados [enviar convites], (3) Bolo sem gluten [encomendar
+        3 dias antes], (4) Presente [comprar amanha], (5) Transporte
+        [resolver no dia]."
+
+    - stage: 5
+      nome: "Identifying Next Actions"
+      pergunta_chave: "What's the VERY next thing to do?"
+      descricao: >
+        Para cada componente do plano, defina a proxima acao fisica
+        concreta. Nao 'pesquisar restaurantes' — 'abrir Google Maps
+        e buscar italiano sem gluten no bairro X'. Especificidade
+        mata procrastinacao.
+      importancia: >
+        Este e o stage que CONECTA planejamento com execucao. Sem
+        next actions definidas, o melhor plano do mundo e papel de
+        parede. Allen: "The gap between planning and doing is one
+        question: what's the next action?"
+      acoes_praticas:
+        - "Para cada componente: qual a proxima acao FISICA?"
+        - "Atribua responsavel se for projeto coletivo"
+        - "Coloque next actions no sistema GTD (por contexto)"
+      anti_patterns:
+        - "Next actions vagas ('trabalhar no projeto')"
+        - "Definir acoes demais para a frente (overplanning)"
+        - "Nao colocar no sistema (fica no papel do planejamento)"
+      exemplo: >
+        "@phone: Ligar para Osteria Bella e reservar mesa para 8 em
+        15/03 as 20h. @computer: Enviar WhatsApp grupo com convite.
+        @errands: Ir a confeitaria encomendar bolo sem gluten."
+
+  quando_usar:
+    - "Qualquer projeto novo ou travado"
+    - "Quando nao sabe por onde comecar"
+    - "Quando sente resistencia a um projeto"
+    - "Reunioes de planejamento de equipe"
+    - "Quando o plano atual nao esta funcionando (voltar a stage anterior)"
+
+  como_destravar:
+    principio: "Se travou em um stage, volte ao anterior."
+    exemplos:
+      - "Travou no brainstorm → Volte para visao (stage 2)"
+      - "Travou na organizacao → Faca mais brainstorm (stage 3)"
+      - "Travou nas next actions → Reorganize componentes (stage 4)"
+      - "Tudo travado → Revisita o proposito (stage 1)"
