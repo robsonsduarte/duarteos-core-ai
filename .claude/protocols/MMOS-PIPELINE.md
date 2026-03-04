@@ -273,23 +273,6 @@ Fontes aceitas: Podcasts, Artigos, Tweets, Entrevistas, Livros, Blog posts, Twit
 
 **Regra critica:** ZERO fontes secundarias/interpretativas. Usar APENAS material produzido pela propria pessoa ou, no caso historico, o documento fonte original.
 
-### Hierarquia de Ferramentas de Pesquisa (3 Tiers)
-
-A coleta de fontes segue uma hierarquia de 3 tiers de ferramentas, em ordem de prioridade:
-
-| Tier | Ferramenta | Tool ID | Quando usar |
-|------|-----------|---------|-------------|
-| **1** | EXA MCP Server | `mcp__exa__web_search_exa` | SEMPRE comecar aqui — pesquisa semantica profunda, resultados de alta qualidade |
-| **2** | Apify MCP | `mcp__apify__search-actors`, `mcp__apify__call-actor` | Complementar EXA — scraping estruturado (YouTube, Twitter, podcasts) |
-| **3** | WebSearch | WebSearch (built-in) | FALLBACK — somente se Tier 1+2 retornaram menos de 3 fontes primarias |
-
-**Regras:**
-- TIER 1 (EXA) e obrigatorio em toda coleta. Executar multiplas queries semanticas variando tipo de conteudo.
-- TIER 2 (Apify) e recomendado para enriquecer com scraping estruturado (transcricoes, threads, etc.).
-- TIER 3 (WebSearch) e acionado APENAS como fallback quando Tier 1+2 nao atingiram minimo de 3 fontes primarias.
-- WebFetch continua sendo usado para extracao de conteudo de URLs encontradas (independente do tier).
-- Documentar no catalogo de fontes qual tier originou cada fonte.
-
 ### Processo: ETL Pipeline
 
 Cada tipo de fonte tem um analista especializado no Squad ETL:

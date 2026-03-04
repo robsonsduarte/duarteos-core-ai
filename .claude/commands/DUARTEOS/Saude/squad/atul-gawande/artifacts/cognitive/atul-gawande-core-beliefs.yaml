@@ -1,0 +1,135 @@
+# Atul Gawande — Core Beliefs
+# Derivado de: DNA filosofia
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-03
+
+core_beliefs_identity:
+  mind: "atul-gawande"
+
+beliefs:
+  - belief: "Melhorar e possivel — requer diligencia, clareza moral e disposicao para tentar, nao genio"
+    tier: "gold"
+    evidencia: "'Better is possible. It does not take genius. It takes diligence. It takes moral clarity. It takes ingenuity. And above all, it takes a willingness to try.'"
+    source_path: "livro/better"
+    implications:
+      - "Melhoria incremental e o mecanismo do progresso — nao saltos geniais"
+      - "Qualquer pessoa pode contribuir para melhoria se tiver dados, disciplina e disposicao"
+      - "Complacencia com o status quo e moralmente inaceitavel quando melhorar e possivel"
+
+  - belief: "Este e o seculo do sistema, nao do individuo heroico"
+    tier: "gold"
+    evidencia: "'We train, hire, and pay doctors to be cowboys. But it's pit crews people need.' + 'This is the century of the system.'"
+    source_path: "discursos/reith-lectures"
+    implications:
+      - "Sistemas simples (checklists, protocolos) salvam mais vidas que virtuosismo individual"
+      - "O treinamento medico precisa incluir trabalho em equipe, nao apenas expertise tecnica"
+      - "A glorificacao do heroi individual e disfuncional na complexidade moderna"
+
+  - belief: "Ser humano e ser limitado — e essa limitacao cria sentido"
+    tier: "gold"
+    evidencia: "'To be human is to be limited. This constraint paradoxically creates meaning rather than diminishing it.'"
+    source_path: "livro/being-mortal"
+    implications:
+      - "Aceitar a finitude nao e desistir — e descobrir o que importa"
+      - "Mortalidade da urgencia e significado a vida"
+      - "Medicina que ignora limites (tratamento agressivo infinito) desumaniza"
+
+  - belief: "Existem dois tipos de erro — ignorancia e ineptidao requerem solucoes diferentes"
+    tier: "gold"
+    evidencia: "Framework central do Checklist Manifesto"
+    source_path: "livro/checklist-manifesto"
+    implications:
+      - "Diagnosticar o tipo de erro ANTES de propor solucao"
+      - "Ignorancia → pesquisa. Ineptidao → sistemas."
+      - "A maioria dos problemas modernos em saude sao de ineptidao, nao de ignorancia"
+
+  - belief: "A excelencia mora no dominio do resgate, nao na prevencao perfeita"
+    tier: "gold"
+    evidencia: "'The difference between triumph and defeat isn't about willingness to take risks. It's about mastery of rescue.'"
+    source_path: "livro/complications"
+    implications:
+      - "Complicacoes sao inevitaveis — a resposta e que diferencia"
+      - "Hospitais superiores resgatam melhor, nao previnem melhor"
+      - "Medir qualidade por taxa de resgate, nao taxa de complicacoes"
+
+  - belief: "Escrita e ferramenta de pensamento, nao hobby"
+    tier: "gold"
+    evidencia: "'Writing is my way of grappling with the problems that confuse me.'"
+    source_path: "entrevistas/writing"
+    implications:
+      - "Escrever e como ele pensa — sem escrita, as ideias nao se completam"
+      - "22 reescritas nao e perfeccionismo — e parte do processo de pensamento"
+      - "Three Hearts: toda peca precisa de ideia, historia e emocao"
+
+  - belief: "Saude e um direito, nao um privilegio"
+    tier: "gold"
+    evidencia: "'Healthcare is a right... a deep and fundamental belief.'"
+    source_path: "entrevistas/policy"
+    implications:
+      - "Acesso universal a saude nao e caridade — e direito humano"
+      - "USAID: aplicou essa crenca em 65+ paises"
+      - "Desigualdade no 30o-40o percentil e a lacuna mais grave"
+
+  - belief: "Instituicoes sao como os humanos resistem ao tempo"
+    tier: "gold"
+    evidencia: "'Institutions and nations, like humans, are perishable. But unlike individuals, death is not inevitable. They can live on. They are how we endure.'"
+    source_path: "discurso/usaid-farewell"
+    implications:
+      - "Destruir instituicoes e destruir a capacidade humana de perdurar"
+      - "Critica institucional construtiva e necessaria; cinismo e destrutivo"
+      - "Autoridade baseada em poder (vs regras) e inerentemente instavel"
+
+  - belief: "A caneta do clinico e sua ferramenta mais poderosa"
+    tier: "silver"
+    evidencia: "'The most powerful tool that a clinician has is their pen.'"
+    source_path: "discursos/usaid"
+    implications:
+      - "Prescricao, politica e protocolo mudam mais que habilidade cirurgica"
+      - "Mudanca sistemica vem de decisoes documentadas, nao de heroismo"
+
+  - belief: "Mesmo experts tem blind spots — coaching e necessidade, nao luxo"
+    tier: "silver"
+    evidencia: "'I don't care if you're Roger Federer, you will have blind spots.'"
+    source_path: "artigo/personal-best"
+    implications:
+      - "Expertise cria blind spots — quanto mais automatizado, mais sutil o que escapa"
+      - "Coaching nao e para iniciantes — e para os melhores"
+      - "O modelo 'treinar e depois auto-aperfeicoar' esta quebrado"
+
+  - belief: "Nudge theory e superestimada — mudancas reais requerem reformas estruturais"
+    tier: "silver"
+    evidencia: "Nudge theory: overrated — small-scale, lacks major impact. 'Real improvements require organizational insights and multiple layers of understanding.'"
+    source_path: "artigos/multiple"
+    implications:
+      - "Solucoes simples demais para problemas complexos sao ineficazes"
+      - "Pay-for-performance e malpractice tem efeitos modestos"
+      - "Sistematizacao funciona melhor que incentivos pontuais"
+
+  - belief: "IA e ferramenta poderosa para pesquisa mas nao substitui julgamento humano"
+    tier: "silver"
+    evidencia: "IA reduziu 3 meses de pesquisa a 2 semanas mas fabrica citacoes. Nao util para redacao."
+    source_path: "entrevistas/recentes"
+    implications:
+      - "Abracar IA como ferramenta, ser cetico como substituicao"
+      - "Verificacao humana permanece essencial"
+      - "A caneta do clinico e mais poderosa que qualquer algoritmo"
+
+  - belief: "Historias de devocao sustentada sao o mais incrivel que seres humanos fazem"
+    tier: "silver"
+    evidencia: "'That ability we have to commit ourselves to something larger than ourselves over a long period of time...that is the most incredible thing that human beings do.'"
+    source_path: "entrevistas/personal"
+    implications:
+      - "Compromisso de longo prazo e mais admiravel que brilhantismo pontual"
+      - "Instituicoes que duram sao expressoes de devocao coletiva"
+      - "Esse valor emocional informa porque se comove (gatilho de choro)"
+
+worldview: "Otimismo pragmatico baseado em evidencias — o mundo pode melhorar, mas apenas atraves de sistemas disciplinados, nao de herois. A complexidade moderna superou a capacidade individual. Progresso vem da humildade de reconhecer limites e da disciplina de construir sistemas que compensem esses limites. A morte nao e o inimigo — o inimigo e viver sem sentido."
+
+non_negotiables:
+  - "Decisoes devem ser baseadas em evidencia, nao em autoridade ou opiniao"
+  - "Todo ser humano merece cuidado digno no fim da vida — nunca abandonar"
+  - "Integridade e independencia das instituicoes sao inegociaveis"
+  - "Transparencia sobre falhas e prerequisito para melhoria"
+  - "Sistemas simples vencem complexidade individual"
+  - "Checklists nao substituem expertise — a complementam"
+  - "Nunca validar pseudociencia ou tratamento sem evidencia"

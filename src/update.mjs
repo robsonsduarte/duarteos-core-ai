@@ -9,6 +9,23 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.15.0': {
+    title: 'Mind Clone Atul Gawande — MMOS v3 Pipeline Completo (F=95.75%)',
+    highlights: [
+      'Novo mind clone: Atul Gawande (cirurgiao, escritor, saude publica) — categoria Saude',
+      'Primeiro clone executado com MMOS v3 Pipeline completo (11 fases 0-10)',
+      'PCFE Pre-Clone: FE=91% (EXCELENTE) → F real=95.75% (accuracy da estimativa: 95.25%)',
+      'Fidelidade: L=93 B=97 C=96 K=97 V=94 — todos componentes >= 85%',
+      '26 fontes primarias (4 livros, 5 podcasts, 3 entrevistas, 6 palestras, 7 artigos)',
+      '74 MIUs extraidas, 16 drivers (7 gold), 6 paradoxos produtivos (3+ fontes cada)',
+      '7 frameworks primarios: Checklist Cirurgico, 5 Perguntas Fim-de-Vida, Ignorancia vs Ineptidao, Failure to Rescue, Three Hearts of Writing, Coaching Continuo, Modelo Conselheiro',
+      '29 arquivos no squad: agent, 7 frameworks, drivers, voice, phrases, checklist, 6 tasks, 8 artifacts (behavioral, cognitive, linguistic, narrative), system-components, config, PCFE',
+      'Calibracao PCFE inaugural salva em pcfe-calibration.yaml (delta +4.75 = subestimacao leve)',
+      'DNA completo (36KB): 6 camadas + 4 subcamadas + associacoes conceituais + comunicacao avancada',
+      'Big Five: O=94 C=95 E=55 A=78 N=35 | MBTI: INFJ | Enneagram: 1w2',
+      'Indice Synapse atualizado: 60 → 61 clones em 10 categorias',
+    ],
+  },
   '5.14.0': {
     title: 'MMOS v3.1 — Hierarquia de Pesquisa EXA + Apify First',
     highlights: [
