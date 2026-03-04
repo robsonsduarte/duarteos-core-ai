@@ -9,6 +9,19 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.14.0': {
+    title: 'MMOS v3.1 — Hierarquia de Pesquisa EXA + Apify First',
+    highlights: [
+      'Hierarquia de pesquisa redesenhada: EXA MCP (tier 1) → Apify MCP (tier 2) → WebSearch (tier 3 fallback)',
+      'TIER 1 — EXA MCP Server (web_search_exa): pesquisa semantica profunda, SEMPRE primeiro',
+      'TIER 2 — Apify MCP (search-actors + call-actor): scraping estruturado (YouTube, Twitter, podcasts)',
+      'TIER 3 — WebSearch: fallback SOMENTE se EXA + Apify retornaram < 3 fontes primarias',
+      'WebFetch continua sendo usado para extracao de conteudo (independente do tier)',
+      'Catalogo de fontes agora registra tier de origem para rastreabilidade',
+      'MMOS-PIPELINE.md atualizado com nova subsecao de hierarquia de ferramentas',
+      'mind-update NAO afetado — pipeline independente (usa material fornecido)',
+    ],
+  },
   '5.13.0': {
     title: 'MMOS v3 — PCFE Pre-Clone Fidelity Estimation + Human Gate',
     highlights: [

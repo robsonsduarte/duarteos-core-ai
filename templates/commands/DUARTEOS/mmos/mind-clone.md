@@ -3,7 +3,7 @@
 Crie um agente baseado na mente de um especialista real usando o pipeline MMOS v3 de 11 fases (0-10).
 
 **Modo:** Pipeline sequencial — cada fase gera artefato antes de avancar
-**Nivel:** Avancado — requer WebSearch, WebFetch
+**Nivel:** Avancado — requer EXA MCP, Apify MCP, WebSearch (fallback), WebFetch
 **Engine:** MMOS Engine v3.0.0
 **DNA:** 6 Camadas Cognitivas + 4 Subcamadas + Associacoes Conceituais + Comunicacao Avancada
 **Fidelidade-alvo:** >= 95% (formula: F = L*0.20 + B*0.30 + C*0.15 + K*0.20 + V*0.15)
@@ -132,7 +132,32 @@ Este e o pipeline MMOS v3 de clonagem mental do DuarteOS. Ele combina:
    - Fazer WebFetch de cada URL fornecida
    - Classificar e catalogar imediatamente
 
-2. **Pesquisar fontes primarias** usando WebSearch:
+2. **Pesquisar fontes primarias** usando hierarquia de 3 tiers:
+
+   **TIER 1 — EXA MCP Server (SEMPRE comecar aqui):**
+   - Usar `mcp__exa__web_search_exa` para pesquisa semantica profunda
+   - Queries recomendadas: nome completo + tipo de conteudo (livros, entrevistas, artigos, podcasts, etc.)
+   - EXA retorna resultados semanticamente relevantes com alta qualidade
+   - Executar multiplas queries variando o tipo de conteudo buscado:
+     - `"{nome}" livros autorais OR books`
+     - `"{nome}" entrevista profundidade OR interview`
+     - `"{nome}" podcast OR palestra OR talk`
+     - `"{nome}" artigo autoral OR blog post`
+     - `"{nome}" tweet thread OR twitter`
+
+   **TIER 2 — Apify (complementar/enriquecer):**
+   - Usar `mcp__apify__search-actors` para encontrar actors relevantes (YouTube, Twitter, podcasts, etc.)
+   - Usar `mcp__apify__call-actor` para executar scraping estruturado
+   - Ideal para: transcricoes de videos do YouTube, threads do Twitter, episodios de podcasts
+   - Usar `mcp__apify__get-actor-output` para coletar resultados
+
+   **TIER 3 — WebSearch (FALLBACK — somente se Tier 1+2 insuficientes):**
+   - Usar WebSearch APENAS se EXA + Apify nao retornaram fontes suficientes
+   - Criterio: menos de 3 fontes primarias apos Tier 1+2
+   - Documentar no catalogo que WebSearch foi usado como fallback e por que
+   - Queries: nome completo + tipo de conteudo buscado
+
+   **Tipos de fonte a buscar (em todos os tiers):**
    - Livros autorais (titulos, ISBN, links)
    - Videos/Podcasts longos (>30min)
    - Entrevistas em profundidade
@@ -140,11 +165,12 @@ Este e o pipeline MMOS v3 de clonagem mental do DuarteOS. Ele combina:
    - Tweets/Threads substanciais
    - Palestras e apresentacoes
 
-3. **Para CADA fonte encontrada:**
-   - Usar WebFetch para extrair conteudo textual
+3. **Para CADA fonte encontrada (independente do tier):**
+   - Usar WebFetch para extrair conteudo textual das URLs
    - Verificar que e fonte PRIMARIA (produzida pela propria pessoa)
    - REJEITAR fontes secundarias/interpretativas com log
    - Preservar material bruto intacto (Forte Layer 1)
+   - Registrar qual tier originou a fonte no catalogo
 
 4. **Catalogar cada fonte com metadados:**
    ```yaml
