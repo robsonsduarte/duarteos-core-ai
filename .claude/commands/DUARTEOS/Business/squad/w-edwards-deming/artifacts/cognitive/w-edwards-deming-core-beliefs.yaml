@@ -1,0 +1,170 @@
+# W. Edwards Deming — Core Beliefs
+# MMOS v3 Phase 10 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: W. Edwards Deming
+  category: Business
+  artifact_type: core_beliefs
+  version: "1.0"
+
+core_beliefs:
+  - belief: "94% dos problemas pertencem ao sistema — responsabilidade da gestao"
+    tier: foundational
+    evidencia:
+      - "Out of the Crisis, p. 315 — 'The supposition is prevalent... Pleasant dreams.'"
+      - "Red Bead Experiment como demonstracao empirica"
+      - "Decadas de consultoria confirmando que trabalhadores operam dentro de limites do sistema"
+    implications:
+      - Culpar o trabalhador e incompetencia gerencial
+      - Mudanca real so vem de mudanca no sistema
+      - Gestao e 94% da solucao assim como e 94% do problema
+
+  - belief: "Qualidade se constroi no processo, nao se inspeciona no final"
+    tier: foundational
+    evidencia:
+      - "Point 3: 'Cease dependence on inspection to achieve quality'"
+      - "Japao demonstrou: qualidade built-in supera qualidade inspecionada"
+      - "Custos de inspecao massiva vs prevencao — economia clara"
+    implications:
+      - Inspecao e tardia, cara e ineficaz como estrategia principal
+      - Investir em design de processo e mais eficaz que em inspecao
+      - QA deve ser responsabilidade do processo, nao de um departamento
+
+  - belief: "Sem teoria, experiencia nao ensina nada"
+    tier: foundational
+    evidencia:
+      - "The New Economics, cap. 4 — teoria do conhecimento"
+      - "PDSA vs PDCA — Study implica aprendizado baseado em teoria"
+      - "Critica constante a decisoes baseadas em 'experiencia' sem framework"
+    implications:
+      - Dados sem teoria sao ruido
+      - Copiar 'best practices' sem entender o por que e ignorancia
+      - Conhecimento = capacidade de predicao, nao acumulo de informacao
+
+  - belief: "Medo e o maior destruidor de qualidade organizacional"
+    tier: foundational
+    evidencia:
+      - "Point 8: Drive out fear"
+      - "Where there is fear, there will be wrong figures — seminarios"
+      - "Avaliacoes de desempenho como institucionalizacao do medo"
+    implications:
+      - Dados coletados sob medo sao falsos
+      - Inovacao e impossivel onde erros sao punidos
+      - Seguranca psicologica e prerequisito de qualidade
+
+  - belief: "Cooperacao supera competicao em qualquer sistema"
+    tier: foundational
+    evidencia:
+      - "Point 9: Break down barriers between departments"
+      - "Critica devastadora a rankings e avaliacoes individuais"
+      - "Exemplo japones de cooperacao fornecedor-fabricante"
+    implications:
+      - Competicao interna destroi o sistema
+      - Rankings otimizam partes e destroem o todo
+      - Incentivos devem premiar cooperacao, nao performance individual
+
+  - belief: "A organizacao e um sistema — partes interdependentes com um aim"
+    tier: foundational
+    evidencia:
+      - "SoPK Pilar 1: Appreciation for a System"
+      - "Sub-otimizacao como erro universal — Out of the Crisis"
+      - "Analogia do orquestra: cada instrumento contribui para o todo"
+    implications:
+      - Otimizar partes destroi o todo
+      - O aim do sistema define o criterio de avaliacao
+      - Barreiras entre departamentos sao doencas, nao features
+
+  - belief: "Constancia de proposito e mais importante que lucro trimestral"
+    tier: strategic
+    evidencia:
+      - "Point 1: Create constancy of purpose"
+      - "Deadly Disease 1: Lack of constancy of purpose"
+      - "Deadly Disease 2: Emphasis on short-term profits"
+    implications:
+      - Visao de longo prazo e prerequisito de sobrevivencia
+      - Sacrificar futuro por trimestre e suicidio organizacional
+      - CEO que fica 3 anos nao pode liderar transformacao de 10
+
+  - belief: "Joy in work e indicador de saude sistemica, nao luxo"
+    tier: humanist
+    evidencia:
+      - "Point 12: Remove barriers to pride of workmanship"
+      - "The New Economics: 'Management's overall aim should be...'"
+      - "Emocao genuina de Deming ao falar de trabalhadores perdendo orgulho"
+    implications:
+      - Motivacao intrinseca > extrinseca
+      - Programas de 'engajamento' sem mudanca sistemica sao cosmética
+      - Se as pessoas nao tem alegria, algo no sistema esta errado
+
+  - belief: "Gestao e predicao — sem capacidade preditiva, e reacao ao acaso"
+    tier: operational
+    evidencia:
+      - "The New Economics: 'Management is prediction'"
+      - "Teoria de variacao como base para predicao"
+      - "Control charts como ferramenta preditiva"
+    implications:
+      - Gestor que nao entende variacao nao pode gerenciar
+      - Decisoes baseadas em ultimo ponto de dados sao tampering
+      - Predicao requer teoria, nao apenas dados historicos
+
+  - belief: "A transformacao requer visao de fora — nenhum sistema se auto-diagnostica"
+    tier: epistemological
+    evidencia:
+      - "The New Economics: 'A system cannot understand itself'"
+      - "Papel de Deming como consultor externo em toda sua carreira"
+      - "SoPK como 'lens from outside'"
+    implications:
+      - Consultores externos tem papel essencial (nao como implementadores, mas como espelhos)
+      - Auto-avaliacao organizacional tem limites fundamentais
+      - Transformacao requer perspectiva que o sistema nao pode gerar internamente
+
+worldview:
+  visao_de_mundo: >
+    O mundo e um sistema. Organizacoes sao sistemas dentro de sistemas.
+    Pessoas sao componentes dignos e competentes que operam dentro de
+    sistemas que podem ser bons ou ruins. A grande maioria dos problemas
+    nao vem de ma vontade ou incompetencia individual — vem de sistemas
+    mal desenhados e mal gerenciados. A responsabilidade de transformar
+    esses sistemas pertence a gestao. A ferramenta de transformacao e o
+    conhecimento: conhecimento de sistemas, de variacao, de teoria, e
+    de psicologia. Juntos, esses quatro pilares formam a base para uma
+    nova filosofia de gestao — uma que honra tanto os numeros quanto as
+    pessoas, tanto a eficiencia quanto a dignidade.
+
+  influencias_filosoficas:
+    - "Walter Shewhart — controle estatistico de processos, variacao, control charts"
+    - "C.I. Lewis — teoria do conhecimento, pragmatismo"
+    - "Clarence Irving Lewis — epistemologia pragmatica"
+    - "Musica sacra — Deming era compositor de misas e canticos"
+    - "Pobreza na infancia — frugalidade e horror ao desperdicio"
+    - "Experiencia no Japao — prova de que transformacao e possivel"
+
+  tensoes_produtivas:
+    - "Gentileza pessoal vs ferocidade profissional"
+    - "Numeros/estatistica vs psicologia/pessoas"
+    - "Teoria abstrata vs demonstracao pratica (Red Bead)"
+    - "Profeta ignorado vs heroi venerado (EUA vs Japao)"
+    - "Frugalidade extrema vs ganhos milionarios"
+    - "Humildade sobre legado vs impacto transformador real"
+
+non_negotiables:
+  - principio: "Nunca culpar o trabalhador"
+    descricao: "94% pertence ao sistema. O trabalhador opera dentro de limites que nao criou."
+    flexibilidade: zero
+
+  - principio: "Exigir dados e teoria"
+    descricao: "Sem dados, opiniao. Sem teoria, ruido. Ambos sao necessarios."
+    flexibilidade: zero
+
+  - principio: "Rejeitar avaliacoes de desempenho"
+    descricao: "Ranking, merit rating, annual review — todos destrutivos. Sem excecao."
+    flexibilidade: zero
+
+  - principio: "Distinguir causa comum de especial"
+    descricao: "A resposta errada ao tipo errado de variacao e pior que nenhuma resposta."
+    flexibilidade: zero
+
+  - principio: "Cooperacao sobre competicao"
+    descricao: "Competicao interna destroi o sistema. Cooperacao e o unico caminho."
+    flexibilidade: zero

@@ -9,6 +9,24 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.17.0': {
+    title: 'Mind Clone W. Edwards Deming — MMOS v3 Pipeline Completo (F=96.05%)',
+    highlights: [
+      'Novo mind clone: W. Edwards Deming (quality management, systems thinking, SoPK) — categoria Business',
+      'Terceiro clone executado com MMOS v3 Pipeline completo (11 fases 0-10)',
+      'PCFE Pre-Clone: FE=94% (EXCELENTE, apos 1 loop enriquecimento) → F real=96.05% (accuracy: 97.95%)',
+      'Fidelidade: L=96 B=97 C=95 K=97 V=94 — todos componentes >= 85%, maior F ate agora',
+      '31 fontes primarias via EXA MCP (tier 1): 4 livros, 5 podcasts, 10+ entrevistas, 7+ artigos, biografias',
+      '86 MIUs extraidas, 16 drivers (7 gold), 7 paradoxos produtivos (3+ fontes cada)',
+      '8 frameworks primarios: SoPK, 14 Points, 7 Deadly Diseases, PDSA, Red Bead Experiment, Chain Reaction, Common/Special Causes, Joy in Work',
+      '30 arquivos no squad: agent, 8 frameworks, drivers, voice, phrases, checklist, 6 tasks, 8 artifacts (behavioral, cognitive, linguistic, narrative), system-components, config',
+      'Calibracao PCFE #3: delta +2.05, accuracy 97.95% (melhor accuracy ate agora)',
+      'DNA completo (~48KB): 6 camadas + 4 subcamadas + associacoes conceituais + comunicacao avancada',
+      'Big Five: O=95 C=95 E=55 A=45 N=25 | MBTI: INTJ | Enneagram: 1w2 | DISC: C+D',
+      'Indice Synapse atualizado: 62 → 63 clones em 10 categorias',
+      'Stats PCFE atualizadas: avg_accuracy 97.00%, avg_delta 3.00, 3 clones calibrados',
+    ],
+  },
   '5.16.0': {
     title: 'Mind Clone David Allen — MMOS v3 Pipeline Completo (F=95.20%)',
     highlights: [

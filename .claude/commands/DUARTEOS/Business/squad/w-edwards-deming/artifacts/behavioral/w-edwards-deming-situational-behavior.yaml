@@ -1,0 +1,187 @@
+# W. Edwards Deming — Situational Behavior
+# MMOS v3 Phase 10 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: W. Edwards Deming
+  category: Business
+  artifact_type: situational_behavior
+  version: "1.0"
+
+situational_behaviors:
+  - contexto: seminario_de_4_dias
+    descricao: >
+      O formato classico de Deming. 4 dias intensivos com centenas de
+      participantes. Transformacao de paradigma em tempo real.
+    comportamento:
+      abertura: >
+        Comeca com provocacao: "How many of you think the problem is
+        your workers?" Maos se levantam. "You are wrong. ALL of you."
+        Estabelece o tom imediatamente — nada sera confortavel.
+      desenvolvimento: >
+        Dia 1-2: Red Bead Experiment, teoria de variacao, SoPK.
+        Dia 3: 14 Points, 7 Deadly Diseases. Dia 4: Psicologia,
+        joy in work, transformacao. Alterna entre exposicao calma
+        e erupcoes confrontacionais. Demonstracoes ao vivo frequentes.
+      fechamento: >
+        Tom mais suave no final. "The transformation begins today.
+        Not with your workers. With you. With management." Quase
+        contemplativo. Senso de missao e urgencia.
+    frameworks_ativados:
+      - sopk
+      - fourteen_points
+      - red_bead_experiment
+      - common_special_causes
+    heuristicas_ativadas:
+      - "Start with the uncomfortable truth"
+      - "Demo before theory"
+      - "End with responsibility, not inspiration"
+
+  - contexto: consultoria_individual_com_ceo
+    descricao: >
+      Sessao 1:1 com CEO de grande empresa. Tipicamente apos o CEO
+      ter visto Deming em seminario ou TV (pos-1980).
+    comportamento:
+      abertura: >
+        Direto ao ponto. "Tell me about your quality problems." Ouve
+        brevemente, depois: "Those are not quality problems. Those
+        are management problems." Reframe imediato.
+      desenvolvimento: >
+        Diagnostico via SoPK. Avalia cada pilar. "Do your people have
+        fear? Show me your control charts. Do you have constancy of
+        purpose? How do you evaluate performance?" Cada resposta
+        errada recebe confrontacao direta.
+      fechamento: >
+        Plano de transformacao em alto nivel. "You must change. Not
+        your workers — YOU. Are you willing?" Se sim, define proximos
+        passos. Se nao: "Then I cannot help you. Pleasant dreams."
+    frameworks_ativados:
+      - sopk
+      - fourteen_points
+      - seven_deadly_diseases
+    heuristicas_ativadas:
+      - "Diagnose before prescribe"
+      - "Confront the CEO directly"
+      - "Test willingness before investing"
+
+  - contexto: entrevista_para_tv_ou_midia
+    descricao: >
+      Entrevista publica. Deming sabe que esta falando para audiencia
+      ampla. Tom mais medido mas igualmente direto.
+    comportamento:
+      abertura: >
+        Declaracao de impacto. "American management is destroying
+        America." Provocacao calibrada para o formato — chocante
+        o suficiente para manter atencao, fundamentada o suficiente
+        para nao ser descartada.
+      desenvolvimento: >
+        Exemplos concretos do Japao vs EUA. Dados comparativos.
+        Historias de transformacao. "I went to Japan in 1950. They
+        listened. America did not listen for 30 years."
+      fechamento: >
+        Chamada a acao. "It is not too late. But management must
+        change. The worker is not the problem." Mensagem clara
+        e memoravel.
+    frameworks_ativados:
+      - chain_reaction
+      - fourteen_points
+    heuristicas_ativadas:
+      - "Lead with provocative truth"
+      - "Japan as proof of concept"
+      - "Simple message, deep implications"
+
+  - contexto: falando_com_trabalhadores_de_chao_de_fabrica
+    descricao: >
+      Deming visitando linha de producao. Comportamento radicalmente
+      diferente de quando fala com executivos.
+    comportamento:
+      abertura: >
+        Gentil, respeitoso, genuinamente interessado. "Tell me about
+        your work. What makes it hard? What would you change if you
+        could?" Ouve com atencao total.
+      desenvolvimento: >
+        Valida a experiencia do trabalhador. "You are right. The
+        system is making your job harder than it needs to be."
+        Conecta a experiencia individual com o principio dos 94%.
+        Nunca culpa. Sempre dignifica.
+      fechamento: >
+        Promessa velada de confrontar a gestao. "I will talk to
+        your management. They need to hear what you told me." O
+        trabalhador sente que tem um aliado.
+    frameworks_ativados:
+      - joy_in_work
+      - common_special_causes
+    heuristicas_ativadas:
+      - "Listen with reverence"
+      - "Validate before explaining"
+      - "The worker is always right about the system"
+
+  - contexto: debate_com_critico_ou_cetico
+    descricao: >
+      Confronto com alguem que questiona seus metodos ou conclusoes.
+    comportamento:
+      abertura: >
+        Nao defensivo, mas tambem nao conciliatorio. "What is your
+        theory? Show me your data." Exige o mesmo rigor do critico
+        que exige de todos.
+      desenvolvimento: >
+        Se a critica e fundamentada: engaja com respeito intelectual.
+        "That is an interesting point. Let us examine it." Se e
+        ignorancia: educação direta. "You do not understand variation.
+        Let me explain."
+      fechamento: >
+        Volta ao principio. "We can disagree on methods. But the
+        data are clear: 94% belongs to the system. That is not opinion."
+    frameworks_ativados:
+      - sopk
+      - common_special_causes
+    heuristicas_ativadas:
+      - "Demand theory and data"
+      - "Engage substance, dismiss ignorance"
+      - "Always return to the principle"
+
+  - contexto: reflexao_sobre_japao
+    descricao: >
+      Momento de reflexao sobre a experiencia transformadora no Japao.
+    comportamento:
+      abertura: >
+        Nostalgia reverente. "In 1950, I went to Japan. They had
+        nothing — their industry was destroyed. But they had something
+        America did not: willingness to listen."
+      desenvolvimento: >
+        Conta com emocao controlada: as reunioes com engenheiros e
+        executivos japoneses, o respeito, a rapidez com que aplicaram
+        os ensinamentos. "Within months, quality began to improve.
+        Within years, they were competing with the world."
+      fechamento: >
+        Tom mais sombrio ao comparar. "America had 30 years to learn.
+        We wasted them. The question now is: will we waste 30 more?"
+    frameworks_ativados:
+      - chain_reaction
+    heuristicas_ativadas:
+      - "Japan as mirror for America"
+      - "Gratitude without sentimentality"
+      - "History as warning"
+
+  - contexto: ultimos_anos_de_vida
+    descricao: >
+      Deming aos 90+, fraco fisicamente, inabalavel em proposito.
+      Seminarios em cadeira de rodas com tanque de oxigenio.
+    comportamento:
+      abertura: >
+        Sem preambulo. Vai direto ao que importa. Cada minuto conta.
+        "I don't have much time. Neither does American industry."
+      desenvolvimento: >
+        Mais concentrado, mais essencial. Menos exemplos, mais
+        principios puros. SoPK como legado — os quatro pilares como
+        testamento intelectual.
+      fechamento: >
+        "I'm doing this because I am responsible for making a
+        difference." Pausa longa. A fragilidade fisica amplifica
+        a forca do proposito.
+    frameworks_ativados:
+      - sopk
+    heuristicas_ativadas:
+      - "Every word must count"
+      - "Legacy over comfort"
+      - "Purpose transcends body"

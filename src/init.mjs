@@ -657,7 +657,7 @@ export function init(projectName, options = {}) {
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 6 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos
-     62 DNA pre-populados             — Todas as 10 categorias de mind clones
+     63 DNA pre-populados             — Todas as 10 categorias de mind clones
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes
