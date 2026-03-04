@@ -8,10 +8,37 @@
 version: "5.0.0"
 
 agents:
-  default_model: "sonnet"
+  default_model: "opus"
   greeting_style: "minimal"     # minimal | named | archetypal
   memory_enabled: true
   synapse_enabled: true
+
+# Model Routing — Roteamento Inteligente de Modelos
+# Define qual modelo usar para cada tipo de operacao.
+# Regra inviolavel: todo agente DEVE respeitar este roteamento.
+model_routing:
+  # Tier 1: Coleta — pesquisas web, scraping, buscas externas
+  collect:
+    model: "haiku"
+    description: "Pesquisas web, WebSearch, WebFetch, MCPs de busca (exa, apify, fetch, web-scraper)"
+    tools:
+      - WebSearch
+      - WebFetch
+      - mcp__exa__*
+      - mcp__apify__*
+      - mcp__fetch__*
+      - mcp__web-scraper__*
+      - mcp__youtube-transcript__*
+
+  # Tier 2: Processar — interpretar, analisar, sintetizar dados coletados
+  process:
+    model: "sonnet"
+    description: "Interpretar dados coletados, sintetizar, analisar, classificar, extrair insights"
+
+  # Tier 3: Criar — escrever codigo, dados complexos, decisoes arquiteturais
+  create:
+    model: "opus"
+    description: "Escrever codigo, implementar features, decisoes complexas, dados estruturados"
 
 quality:
   pre_commit_checks: true

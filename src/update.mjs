@@ -9,6 +9,21 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.18.0': {
+    title: 'Model Routing — Roteamento Inteligente de Modelos (Haiku/Sonnet/Opus)',
+    highlights: [
+      'Novo protocolo: Model Routing — roteamento automatico por tipo de operacao',
+      'Tier 1 COLETA (haiku): WebSearch, WebFetch, Exa, Apify, web-scraper, youtube-transcript',
+      'Tier 2 PROCESSAR (sonnet): interpretar, sintetizar, analisar, classificar dados coletados',
+      'Tier 3 CRIAR (opus): codigo, arquitetura, decisoes complexas, dados estruturados',
+      'Protocolo completo em .claude/protocols/MODEL-ROUTING.md',
+      'Constitution atualizada: Artigo 6 — Roteamento de Modelos (vinculante para todos agentes)',
+      'system.yaml: nova chave model_routing com 3 tiers + default_model atualizado para opus',
+      'CLAUDE.md (ativo + template): secao pratica com tabela de aplicacao ao spawnar agentes',
+      'Regra de ouro: na duvida, subir tier (nunca descer). PM sempre em opus',
+      'Impacto: reducao de custo em pesquisa intensiva (haiku ~10x mais barato que opus)',
+    ],
+  },
   '5.17.0': {
     title: 'Mind Clone W. Edwards Deming — MMOS v3 Pipeline Completo (F=96.05%)',
     highlights: [

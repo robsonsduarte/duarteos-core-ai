@@ -44,6 +44,26 @@ Este projeto opera em **YOLO mode** — execucao autonoma com guardrails minimos
 - **Principio:** Ler antes de editar. Planejar antes de executar. Simplicidade > sofisticacao.
 - **Qualidade:** Protocolo OMEGA ativo em todos os agentes. Toda task emite OMEGA_STATUS com score por evidencia. Thresholds: Research >=80, Planning >=85, Implementation >=90, Validation/Mind Clone >=95. Detalhes em `.claude/protocols/OMEGA.md`.
 
+## Roteamento de Modelos (Model Routing) — Regra Obrigatoria
+
+Todo agente DEVE rotear para o modelo correto conforme o tipo de operacao. Protocolo completo em `.claude/protocols/MODEL-ROUTING.md`.
+
+```
+COLETA   → haiku   | WebSearch, WebFetch, Exa, Apify, fetch, web-scraper, youtube-transcript
+PROCESSAR → sonnet  | Interpretar, sintetizar, analisar, classificar dados coletados
+CRIAR    → opus    | Escrever codigo, decisoes complexas, arquitetura, dados estruturados
+```
+
+### Aplicacao Pratica (ao spawnar agentes via Agent tool)
+
+| Tipo de Tarefa | model= | Exemplos |
+|----------------|--------|----------|
+| Pesquisa web, scraping, coleta | `"haiku"` | EXA search, Apify scrape, WebSearch, WebFetch |
+| Analise de dados, sintese, classificacao | `"sonnet"` | Processar MIUs, sintetizar fontes, extrair insights |
+| Codigo, implementacao, orquestracao | `"opus"` | Backend, Frontend, Architect, PM, QA final |
+
+**Regra de ouro:** Na duvida, suba um tier (nunca desça). PM (ATLAS) sempre em opus.
+
 ## ⛔ Regra Absoluta: Desenvolvimento 100% INCREMENTAL
 
 **Todo codigo DEVE ser construido de forma incremental. Sem excecao.**
