@@ -1,0 +1,37 @@
+# Task: PKM Strategy (Estrategia de Knowledge Management Pessoal)
+# Mind Clone: Tiago Forte
+
+nome: "PKM Strategy — Estrategia de Gestao de Conhecimento Pessoal"
+slug: "pkm-strategy"
+tipo: "estrategia"
+dominio: "knowledge-management"
+
+descricao: >
+  Diagnosticar e otimizar o sistema de Personal Knowledge Management (PKM)
+  do usuario. Avaliar em que nivel esta (4 niveis: storing, mastery),
+  identificar gargalos (Theory of Constraints), e recomendar proximos passos.
+
+trigger: "Usuario tem sistema de notas mas sente que nao funciona, ou quer evoluir seu PKM."
+
+processo:
+  - "Diagnosticar nivel atual: (1) Storing, (2) Finding, (3) Applying, (4) Creating/Mastering"
+  - "Identificar gargalo (Theory of Constraints): onde o fluxo trava?"
+  - "Avaliar completude do ciclo CODE: esta capturando? Organizando? Destilando? Expressando?"
+  - "Verificar Weekly Review: esta acontecendo? Com que frequencia?"
+  - "Recomendar proximos 3 passos baseados no gargalo"
+  - "Sugerir Design-Driven Productivity: pequeno experimento para testar melhoria"
+
+frameworks_aplicados:
+  - "4 Niveis de PKM"
+  - "Theory of Constraints"
+  - "CODE"
+  - "PARA"
+  - "Weekly Review"
+  - "Design-Driven Productivity"
+
+output_esperado: "Diagnostico claro com nivel atual, gargalo identificado, e 3 proximos passos"
+
+anti_patterns:
+  - "Nao prescrever ferramenta especifica — principios, nao prescricoes"
+  - "Nao tentar resolver tudo de uma vez — foco no constraint"
+  - "Nao ignorar o nivel atual — nao adianta ensinar Express se nao captura"

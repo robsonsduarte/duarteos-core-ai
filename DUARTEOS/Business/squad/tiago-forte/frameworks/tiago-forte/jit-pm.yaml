@@ -1,0 +1,61 @@
+# Framework: Just-In-Time Project Management / 12 Favorite Problems
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "12 Favorite Problems (Just-In-Time Project Management)"
+slug: "jit-pm"
+categoria: "creativity-filter"
+
+descricao: >
+  Lista curada de 12 perguntas abertas que servem como filtro de captura e
+  bussola de curiosidade. Inspirado em Richard Feynman: "You have to keep a
+  dozen of your favorite problems constantly present in your mind." Cada
+  problema e uma lente que filtra o que vale capturar, processar e criar.
+  Funciona como Just-In-Time PM porque os projetos emergem naturalmente
+  quando material suficiente se acumula ao redor de um problema favorito.
+
+steps:
+  - step: 1
+    nome: "Identificar 12 Problemas"
+    descricao: "Liste 12 perguntas abertas que genuinamente te fascinam. Nao precisam ser praticas — precisam ser autenticas. Devem cobrir diferentes areas da vida."
+
+  - step: 2
+    nome: "Usar como Filtro de Captura"
+    descricao: "Ao encontrar informacao nova, pergunte: 'Isso se relaciona com algum dos meus 12 problemas?' Se sim, capture. Se nao, ignore sem culpa."
+
+  - step: 3
+    nome: "Deixar Material Acumular (Slow Burns)"
+    descricao: "Material se acumula organicamente ao redor de cada problema. Sem forcas — o interesse genuino direciona naturalmente."
+
+  - step: 4
+    nome: "Reconhecer Quando um Projeto Emerge"
+    descricao: "Quando material suficiente se acumula ao redor de um problema, um projeto emerge naturalmente. Just-In-Time: o projeto nasce quando esta pronto."
+
+  - step: 5
+    nome: "Revisar e Atualizar Periodicamente"
+    descricao: "Nos Annual Reviews ou quando curiosidade muda, atualizar a lista. Problemas evoluem com voce."
+
+quando_usar:
+  - "Ao definir o que capturar vs. ignorar — os 12 problemas sao o filtro"
+  - "Ao sentir dispersao — pergunte quais problemas estao sendo alimentados"
+  - "Ao fazer Annual Review — revisar e atualizar a lista de problemas"
+  - "Ao decidir proximo projeto — qual problema tem mais material acumulado?"
+
+exemplos_aplicacao:
+  - contexto: "Tiago encontra artigo sobre IA e criatividade"
+    aplicacao: "Filtra contra 12 problemas: 'Como tecnologia amplifica criatividade humana?' e um dos 12. Captura. 'Como funciona blockchain?' nao e. Ignora."
+  - contexto: "Profissional nao sabe o que estudar"
+    aplicacao: "Cria lista de 12 perguntas que genuinamente o fascinam. Tudo que lê, ouve ou encontra e filtrado contra essa lista."
+
+anti_patterns:
+  - "Escolher problemas por obrigacao em vez de curiosidade genuina"
+  - "Ter mais de 12 — o limite e importante para foco"
+  - "Nunca atualizar a lista — seus interesses mudam"
+  - "Usar como to-do list — sao perguntas abertas, nao tarefas"
+  - "Forcar projetos antes que material suficiente se acumule"
+
+frameworks_relacionados:
+  - "Slow Burns over Heavy Lifts"
+  - "CODE"
+  - "Progressive Summarization"
+  - "Design-Driven Productivity"

@@ -1,0 +1,38 @@
+# Task: Criar Second Brain do Zero
+# Mind Clone: Tiago Forte
+
+nome: "Criar Second Brain do Zero"
+slug: "criar-second-brain"
+tipo: "implementacao"
+dominio: "knowledge-management"
+
+descricao: >
+  Guiar usuario passo a passo na criacao do seu Second Brain pessoal.
+  Desde a escolha da ferramenta ate a implementacao completa de
+  CODE + PARA + Progressive Summarization.
+
+trigger: "Usuario quer comecar a construir um Second Brain ou sistema de notas pessoal."
+
+processo:
+  - "Diagnosticar situacao atual: que ferramentas usa? Quantas notas tem? Qual o maior problema?"
+  - "Escolher ferramenta (Notion, Obsidian, Evernote, Apple Notes — qualquer uma funciona)"
+  - "Implementar estrutura PARA: criar 4 pastas/secoes de topo"
+  - "Ensinar captura intuitiva: salvar o que ressoa, sem analisar"
+  - "Introduzir Progressive Summarization: comecar com L1 e L2"
+  - "Configurar Weekly Review: agendar 1h semanal para manutencao"
+  - "Definir 12 Favorite Problems como filtro de captura"
+  - "Primeiro projeto: Express algo a partir do material capturado"
+
+frameworks_aplicados:
+  - "CODE"
+  - "PARA"
+  - "Progressive Summarization"
+  - "12 Favorite Problems"
+  - "Weekly Review"
+
+output_esperado: "Second Brain funcional com PARA, captura ativa, e primeira Review agendada"
+
+anti_patterns:
+  - "Nao gastar semanas escolhendo a ferramenta perfeita"
+  - "Nao comecar organizando tudo — comecar capturando"
+  - "Nao pular o Weekly Review — e o backbone"

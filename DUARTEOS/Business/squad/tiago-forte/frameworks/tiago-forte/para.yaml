@@ -1,0 +1,63 @@
+# Framework: PARA (Projects-Areas-Resources-Archives)
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "PARA (Projects-Areas-Resources-Archives)"
+slug: "para"
+categoria: "knowledge-organization"
+
+descricao: >
+  Taxonomia universal de 4 categorias organizadas por actionability, nao por
+  assunto. PARA resolve o problema fundamental da organizacao: onde colocar
+  as coisas para encontra-las quando precisar. A chave e que cada categoria
+  tem um nivel diferente de urgencia e compromisso, criando um espectro de
+  acao que vai de "agora" a "talvez nunca mais".
+
+steps:
+  - step: 1
+    nome: "Projects"
+    descricao: "Esforcos com deadline e resultado definido. Tem comeco, meio e fim. Quando o resultado e alcancado, o projeto e encerrado e arquivado."
+    criterio: "Tem deadline? Tem resultado definido? Entao e Project."
+    exemplos: ["Lancamento de curso", "Mudanca de apartamento", "Redesign do site"]
+
+  - step: 2
+    nome: "Areas"
+    descricao: "Responsabilidades continuas sem deadline. Padroes a manter ao longo do tempo. Nao terminam — sao sustentadas."
+    criterio: "E responsabilidade continua sem resultado final? Entao e Area."
+    exemplos: ["Saude", "Financas pessoais", "Gestao de equipe", "Relacionamento"]
+
+  - step: 3
+    nome: "Resources"
+    descricao: "Topicos de interesse para referencia futura. Nao sao responsabilidades nem projetos — sao curiosidades e conhecimentos potencialmente uteis."
+    criterio: "E interesse sem compromisso ativo? Entao e Resource."
+    exemplos: ["Psicologia cognitiva", "Receitas veganas", "Fotografia", "Filosofia estoica"]
+
+  - step: 4
+    nome: "Archives"
+    descricao: "Itens inativos de qualquer categoria anterior. Projects concluidos, Areas que nao mantem mais, Resources sem interesse atual. Nada e deletado — tudo e arquivado."
+    criterio: "Nao e mais ativo? Entao e Archive."
+    exemplos: ["Projeto de livro concluido", "Area de trabalho anterior", "Hobby abandonado"]
+
+quando_usar:
+  - "Ao organizar qualquer sistema de notas ou arquivos — PARA como estrutura base"
+  - "Ao sentir overwhelm com quantidade de informacao — classificar por actionability clarifica"
+  - "Ao iniciar novo projeto — criar pasta de Project com recursos ja existentes em Resources"
+  - "Ao fazer Weekly Review — mover itens entre categorias conforme status"
+
+exemplos_aplicacao:
+  - contexto: "Profissional recebe material de workshop"
+    aplicacao: "Se ha acao imediata com deadline: Project/. Se e area de responsabilidade continua: Area/. Se e interesse para referencia: Resource/. Se nao vai usar agora: Archive/."
+  - contexto: "Empreendedor organiza negocio"
+    aplicacao: "Projects: Lancamento novo produto (Q2). Areas: Marketing, Financas, Equipe. Resources: Tendencias de mercado, Frameworks de pricing. Archives: Campanhas anteriores."
+
+anti_patterns:
+  - "Organizar por assunto/tema — cria silos tematicos inacessiveis"
+  - "Criar categorias demais — PARA sao 4 e so 4, sem subcategorias complexas"
+  - "Nunca mover itens entre categorias — PARA e dinamico, nao estatico"
+  - "Tratar Archives como lixo — Archives preserva, nao descarta"
+  - "Confundir Areas com Projects — Areas nao tem deadline nem resultado final"
+
+frameworks_relacionados:
+  - "CODE"
+  - "Progressive Summarization"
+  - "Weekly Review"

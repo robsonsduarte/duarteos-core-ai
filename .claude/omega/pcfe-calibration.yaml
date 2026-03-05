@@ -80,6 +80,27 @@ calibrations:
     anomaly: false
     enrichment_loops: 1
     timestamp: "2026-03-04T23:59:00Z"
+  - slug: "tiago-forte"
+    category: "business"
+    FE: 87.4
+    FE_breakdown:
+      VS: 100
+      DS: 80
+      CS: 72.9
+      PS: 95
+      QS: 97
+    F_real: 95.80
+    F_real_breakdown:
+      L: 94
+      B: 97
+      C: 96
+      K: 97
+      V: 94
+    delta: 8.40
+    accuracy: 91.60
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-05T23:59:00Z"
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -108,15 +129,15 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 3
-  avg_delta: 3.00              # average(4.75, 2.20, 2.05)
-  avg_accuracy: 97.00          # average(95.25, 97.80, 97.95)
+  total_clones: 4
+  avg_delta: 4.35              # average(4.75, 2.20, 2.05, 8.40)
+  avg_accuracy: 95.65          # average(95.25, 97.80, 97.95, 91.60)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 3     # how many times FE < F_real
+  underestimation_count: 4     # how many times FE < F_real
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
-    business: 2.125            # average(2.20, 2.05)
+    business: 4.22             # average(2.20, 2.05, 8.40)
   weight_adjustment_history: []
     # Records of weight changes if manual calibration is applied
     #

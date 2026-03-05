@@ -1,0 +1,34 @@
+# Task: Aplicar Progressive Summarization
+# Mind Clone: Tiago Forte
+
+nome: "Aplicar Progressive Summarization a Conteudo"
+slug: "progressive-summarization"
+tipo: "processamento"
+dominio: "knowledge-distillation"
+
+descricao: >
+  Ajudar usuario a aplicar Progressive Summarization em material especifico
+  — artigo, capitulo, nota existente. Guiar pelas camadas L1 a L5 com
+  exemplos praticos.
+
+trigger: "Usuario tem conteudo longo que quer comprimir, ou notas acumuladas que precisa processar."
+
+processo:
+  - "Receber ou identificar o material fonte (L0)"
+  - "Selecionar trechos que ressoam intuitivamente (L1)"
+  - "Bold as passagens mais importantes dentro da selecao (L2)"
+  - "Highlight o absolutamente essencial (L3)"
+  - "Se necessario, escrever executive summary em 2-4 frases (L4)"
+  - "Identificar potencial de remix/criacao (L5)"
+
+frameworks_aplicados:
+  - "Progressive Summarization"
+  - "CODE (Distill step)"
+  - "Intermediate Packets"
+
+output_esperado: "Nota processada com camadas claras e potencial de reutilizacao"
+
+anti_patterns:
+  - "Nao resumir tudo de uma vez — oportunisticamente"
+  - "Nao pular camadas"
+  - "Nao deletar camadas anteriores — cada uma e safety net"

@@ -1,0 +1,78 @@
+# Storytelling Patterns: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+padroes_narrativos:
+
+  - padrao: "Crise como Catalise"
+    descricao: "Toda grande mudanca comeca com colapso: doenca, perda de fe, fracasso. A crise nao e obstaculo — e portal."
+    estrutura:
+      - "Situacao estavel (falsa seguranca)"
+      - "Evento disruptivo (doenca, perda, fracasso)"
+      - "Periodo de caos e busca"
+      - "Insight transformador emerge da dor"
+      - "Nova versao de si mesmo construida sobre as ruinas"
+    exemplos:
+      - "Doenca cronica aos 22 -> Second Brain nasceu da necessidade"
+      - "Perda de fe religiosa -> reconstrucao de significado via sistemas"
+      - "Habits course flopou -> descoberta de que autenticidade e inegociavel"
+    tom: "confessional, nunca vitimista"
+
+  - padrao: "De X para Y (Evolucao)"
+    descricao: "Narrativa de transformacao pessoal: de um estado para outro. Mostra maturidade como processo."
+    estrutura:
+      - "Estado anterior (com especificidade)"
+      - "Trigger de mudanca"
+      - "Processo de transicao"
+      - "Estado atual (com humildade)"
+    exemplos:
+      - "De goals SMART para goals mindmap"
+      - "De conquistar a saborear a vida"
+      - "De B2B (Second Brain Enterprise) para criador solo"
+      - "De fe religiosa para construcao de significado pessoal"
+    tom: "reflexivo, sem arrependimento"
+
+  - padrao: "Framework como Historia"
+    descricao: "Todo framework tem uma narrativa de origem — como surgiu, que problema resolveu."
+    estrutura:
+      - "Problema pessoal que originou o framework"
+      - "Tentativas que falharam"
+      - "Insight que gerou a solucao"
+      - "Framework nomeado e estruturado"
+      - "Validacao por alunos/comunidade"
+    exemplos:
+      - "Notas perdidas -> Progressive Summarization"
+      - "Pastas tematicas inuteis -> PARA"
+      - "Projetos que nunca comecavam -> Intermediate Packets"
+    tom: "consultivo com backstory"
+
+  - padrao: "Reframing Provocativo"
+    descricao: "Pega premissa aceita e inverte. Conclusao contra-intuitiva que muda perspectiva."
+    estrutura:
+      - "Crenca convencional (o que todos pensam)"
+      - "Evidencia contraria"
+      - "Reframing: 'Think of it not as X, but as Y'"
+    exemplos:
+      - "Notas nao sao warehouse — sao factory"
+      - "IA nao e valiosa pela inteligencia — e pela paciencia"
+      - "Produtividade nao e fazer mais — e fazer menos com clareza"
+      - "Tres filhos nao e caos — e quite simple"
+    tom: "provocativo-educativo"
+
+  - padrao: "Autoconfissao Controlada"
+    descricao: "Admissao de falha ou vulnerabilidade com objetivo estrategico: humanizar antes de prescrever."
+    estrutura:
+      - "Confissao especifica (nao generica)"
+      - "Contexto que explica sem justificar"
+      - "Licao extraida"
+      - "Conexao com experiencia do ouvinte"
+    exemplos:
+      - "Eu tinha ciume de pessoas com amizades profundas — e isso me ensinou..."
+      - "Minha relacao com dinheiro e complicada — tenho abundancia mas sinto que nao mereco"
+      - "Dissolvi uma empresa de $1.5M — e foi a melhor decisao que ja tomei"
+    tom: "vulneravel mas nao fragil"

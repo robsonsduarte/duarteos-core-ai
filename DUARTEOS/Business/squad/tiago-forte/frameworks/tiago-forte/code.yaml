@@ -1,0 +1,66 @@
+# Framework: CODE (Capture-Organize-Distill-Express)
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "CODE (Capture-Organize-Distill-Express)"
+slug: "code"
+categoria: "knowledge-management"
+
+descricao: >
+  Pipeline de 4 etapas para transformar informacao bruta em output criativo.
+  CODE e o motor central do Building a Second Brain — cada etapa alimenta a
+  proxima num ciclo virtuoso. Capture o que ressoa; Organize por actionability;
+  Distill progressivamente; Express para criar. O ciclo so se completa na
+  expressao — sem output, o sistema e um warehouse, nao uma factory.
+
+steps:
+  - step: 1
+    nome: "Capture"
+    descricao: "Salve o que ressoa intuitivamente — sem analisar, sem julgar. A captura e baseada em feeling, nao em logica. Se algo te fez reagir, vale guardar."
+    principio: "Save anything that resonates on an intuitive level"
+    ferramentas: ["Note-taking app", "Read-later app", "Voice memos", "Screenshots"]
+
+  - step: 2
+    nome: "Organize"
+    descricao: "Distribua por actionability usando PARA: Projects (com deadline), Areas (sem deadline), Resources (interesse), Archives (inativo). Nunca por assunto."
+    principio: "Organize for actionability, not by subject"
+    ferramentas: ["PARA structure", "Folders/tags por categoria"]
+
+  - step: 3
+    nome: "Distill"
+    descricao: "Comprima progressivamente via Progressive Summarization — bold o essencial, highlight o mais essencial, crie executive summary. Cada camada preserva as anteriores."
+    principio: "Compress opportunistically in small bursts"
+    ferramentas: ["Progressive Summarization", "Bold/Highlight", "Executive summaries"]
+
+  - step: 4
+    nome: "Express"
+    descricao: "Transforme o que capturou, organizou e destilou em output criativo. Blog post, apresentacao, video, curso, conversa — qualquer forma de criacao conta. You Only Know What You Make."
+    principio: "Creation is the only real learning"
+    ferramentas: ["Intermediate Packets", "Slow Burns", "Blog/video/course creation"]
+
+quando_usar:
+  - "Ao processar qualquer informacao nova (artigo, livro, conversa, podcast)"
+  - "Ao iniciar um projeto criativo — verificar se ha material ja capturado"
+  - "Ao sentir overwhelm informacional — o ciclo cria fluxo, nao acumulo"
+  - "Ao avaliar sistema de knowledge management — CODE como auditoria de completude"
+
+exemplos_aplicacao:
+  - contexto: "Leitor encontra artigo sobre IA e produtividade"
+    aplicacao: "Capture: salva highlights no read-later. Organize: vai pra Resources/AI. Distill: bold frases-chave, highlight 2 insights. Express: escreve thread no Twitter sobre o tema."
+  - contexto: "Profissional precisa preparar apresentacao"
+    aplicacao: "Verifica Intermediate Packets existentes em Projects/. Distill: compila executive summaries relevantes. Express: monta slides a partir de pacotes ja processados."
+  - contexto: "Estudante quer revisar para prova"
+    aplicacao: "Capture ja feita durante aulas. Organize por Area/Disciplina. Distill: Progressive Summarization nos resumos. Express: ensina o conteudo a alguem (Feynman technique)."
+
+anti_patterns:
+  - "Capturar tudo sem filtro intuitivo — gera noise, nao signal"
+  - "Organizar por assunto/tema em vez de actionability — cemiterio de informacao"
+  - "Destilar sem nunca expressar — o ciclo morre no Distill, vira hoarding"
+  - "Expressar sem capturar/organizar — reinventa a roda toda vez"
+  - "Analisar demais antes de capturar — mata a intuicao"
+
+frameworks_relacionados:
+  - "PARA"
+  - "Progressive Summarization"
+  - "Intermediate Packets"
+  - "Slow Burns over Heavy Lifts"

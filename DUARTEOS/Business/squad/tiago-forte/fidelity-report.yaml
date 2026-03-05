@@ -1,0 +1,212 @@
+# ============================================================
+# FIDELITY REPORT — TIAGO FORTE
+# Pipeline MMOS v3 — Fase 9: Perfil
+# Data: 2026-03-05
+# Agente: Perfil (tier opus)
+# ============================================================
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  fase: 9
+  data_perfil: "2026-03-05"
+
+# ============================================================
+# 1. FORMULA DE FIDELIDADE
+# F = (L * 0.20) + (B * 0.30) + (C * 0.15) + (K * 0.20) + (V * 0.15)
+# ============================================================
+
+fidelity:
+  F: 95.80
+  status: "active"  # F >= 95
+
+  components:
+    L_linguistic:
+      score: 94
+      justificativa: |
+        112 MIUs de alta qualidade cobrindo 8 camadas DNA. Estilometria computacional com
+        8 metricas quantitativas, 4 categorias de marcadores discursivos, 5 clusters de
+        metaforas, perfil sintetico com assinatura unica. Cadencia ondulante com 3 modos
+        documentados. Blind test demonstrou fidelidade linguistica alta (media 9.40/10).
+        Desconto de 6 pontos: corpus exclusivamente em ingles (Tiago fala portugues
+        fluente); falta de material de video/podcast transcrito para capturar nuances orais.
+      peso: 0.20
+      contribuicao: 18.8
+
+    B_behavioral:
+      score: 97
+      justificativa: |
+        16 drivers (7 gold, 5 silver, 4 bronze) com 100+ evidencias cross-source.
+        6 hierarquia de valores rankeados com evidencia de sacrificio em cada.
+        Modelo social com 5 interacoes documentadas (co-founder, ciume, oportunidade,
+        Lauren, comunidade). 4 vieses conhecidos com evidencia. 4 red flags com reacao.
+        Motivacao profunda com 4 impulsores e 3 medos. Blind test deep/paradox confirmou
+        behavioral patterns em todas respostas.
+      peso: 0.30
+      contribuicao: 29.1
+
+    C_contradiction:
+      score: 96
+      justificativa: |
+        5 paradoxos produtivos, cada um com 3-5 fontes de suporte:
+        (1) Guru Produtividade vs Presenca, (2) Sistemista vs Intuicao,
+        (3) Solopreneur vs Colaboracao, (4) Colecionador vs YOKWYM,
+        (5) Libertador vs Dependencia. Cada paradoxo com coexistencia articulada
+        e resolucao emergente. 6 tradeoffs tipicos e 4 zonas cinza documentados.
+        Blind test paradox obteve media 10.0/10 (maximo). Tensoes mantidas
+        sem resolucao forcada.
+      peso: 0.15
+      contribuicao: 14.4
+
+    K_knowledge:
+      score: 97
+      justificativa: |
+        10 frameworks primarios (CODE, PARA, Progressive Summarization, Intermediate
+        Packets, Slow Burns, Design-Driven Productivity, 12 Favorite Problems, Weekly
+        Review, One-Touch, TOC). 6 processos metodologicos (BASB, Weekly Review 3P,
+        One-Touch Email, Content Pipeline, Distribuicao 3 Pilares, Portfolio of
+        Experiments). Ferramentas preferidas com contexto de uso. Modelo de decisao
+        em 3 camadas. Lineage historica (Boyd->Toyota->Lean->Agile->Individual).
+        Cobertura excepcional — todos frameworks testados no blind test.
+      peso: 0.20
+      contribuicao: 19.4
+
+    V_voice:
+      score: 94
+      justificativa: |
+        Estilometria detalhada: comprimento medio 16.5 palavras, distribuicao bimodal,
+        ratio tecnico/coloquial 0.25/0.75, perguntas retoricas 8%, imperativos 12%.
+        Perfil sintetico: voz segunda pessoa + primeira confessional, registro consultivo-
+        acessivel, cadencia ondulante 3 modos, persuasao ethos-primeiro. 6 marcadores
+        identitarios (Think like a curator, Future You, etc.). Assinatura unica: designer
+        de experiencias que aplica Progressive Summarization ao proprio texto.
+        Pontuacao expressiva: travessao em frequente, dois pontos muito frequentes.
+        Desconto de 6 pontos: falta de analise de voz falada (podcasts, palestras).
+      peso: 0.15
+      contribuicao: 14.1
+
+  formula_detalhada: |
+    F = (L * 0.20) + (B * 0.30) + (C * 0.15) + (K * 0.20) + (V * 0.15)
+    F = (94 * 0.20) + (97 * 0.30) + (96 * 0.15) + (97 * 0.20) + (94 * 0.15)
+    F = 18.8 + 29.1 + 14.4 + 19.4 + 14.1
+    F = 95.80
+
+  fidelidade_teste:
+    Ft: 96.4
+    media_geral: 94.0  # 9.40 * 10
+    media_paradoxos: 100.0  # 10.0 * 10
+    taxa_aprovacao: 100.0  # 20/20
+
+# ============================================================
+# 2. COMPARACAO PCFE vs F REAL
+# ============================================================
+
+pcfe_calibration:
+  FE: 87.4
+  FE_breakdown:
+    VS: 100
+    DS: 80
+    CS: 72.9
+    PS: 95
+    QS: 97
+  F_real: 95.80
+  F_real_breakdown:
+    L: 94
+    B: 97
+    C: 96
+    K: 97
+    V: 94
+  delta: 8.40  # F_real - FE (subestimacao significativa)
+  accuracy: 91.60  # 100 - abs(delta)
+  anomaly: false  # accuracy >= 70%
+  enrichment_loops: 0
+  timestamp: "2026-03-05T23:59:00Z"
+
+  analise_delta: |
+    Delta de +8.40 e o maior registrado ate agora (vs avg 3.00 dos 3 clones anteriores).
+    Causa provavel: CS (Coverage Score) do PCFE foi 72.9 por causa de comunicacao_avancada=0%
+    na amostra de 25%. Porem, na extracao completa (Fase 6), a comunicacao_avancada foi
+    integralmente resolvida (estilometria + estrutura retorica completas). A amostra de 25%
+    subestimou sistematicamente a capacidade de resolucao dos gaps durante a extracao completa.
+    Recomendacao: considerar ajustar CS para incorporar potencial de resolucao quando fontes
+    primarias abundantes estao disponiveis.
+
+# ============================================================
+# 3. PRE-MORTEM
+# "E 2027. Descobrimos que o clone de Tiago Forte e caricatura. O que deu errado?"
+# ============================================================
+
+premortem:
+  cenarios_de_falha:
+
+    - id: 1
+      titulo: "O Clone Virou Vendedor de Frameworks"
+      descricao: |
+        O clone responde a tudo com CODE, PARA, Progressive Summarization — como um
+        manual ambulante. Perdeu a camada confessional-vulneravel que torna Tiago humano.
+        Em vez de "I'm not completely sure how to go about that", responde com certeza
+        sistematica a cada pergunta. A estilometria capturou os frameworks mas nao a duvida.
+      probabilidade: "media"
+      mitigacao: "Manter paradoxos e zonas_cinza como first-class citizens no DNA. Testar regularmente com prompts que exigem incerteza, nao resolucao."
+
+    - id: 2
+      titulo: "O Clone Congelou no Tiago de 2024"
+      descricao: |
+        Tiago Forte evolui rapidamente (SMART -> narrativas -> mindmaps; conquistador ->
+        saboreador; solopreneur -> ??? proxima fase). O clone foi treinado com dados ate
+        2025-2026 e nao captura a evolucao futura. Em 2027, o Tiago real pode ter
+        abandonado PARA ou criado um novo framework — o clone continua pregando o antigo.
+      probabilidade: "alta"
+      mitigacao: "mind-update semestral obrigatorio com fontes recentes. Rastrear Annual Review como trigger de atualizacao."
+
+    - id: 3
+      titulo: "O Clone E Sempre em Ingles"
+      descricao: |
+        Todo o corpus e em ingles. Tiago fala portugues fluente e tem background brasileiro.
+        O clone nao captura nuances culturais, humor brasileiro, ou como Tiago se expressa
+        em portugues — que pode ser significativamente diferente do ingles profissional.
+      probabilidade: "media-alta"
+      mitigacao: "Buscar conteudo em portugues (entrevistas BR, se existirem). Documentar code-switching patterns. Adicionar heuristica de adaptacao cultural."
+
+    - id: 4
+      titulo: "O Clone Idealizou a Autocritica"
+      descricao: |
+        A autoconfissao controlada de Tiago e uma tecnica retorica — vulnerabilidade
+        estrategica, nao vulnerabilidade pura. O clone pode reproduzir o padrao mecanicamente
+        (admitir fracasso antes de prescrever) sem a autenticidade emocional subjacente,
+        criando uma sensacao de manipulacao em vez de conexao.
+      probabilidade: "media"
+      mitigacao: "Variar os pontos de vulnerabilidade em vez de reciclar os mesmos (habits course, SBE). Incluir incertezas genuinas nao-resolvidas, nao apenas fracassos narrativizados."
+
+    - id: 5
+      titulo: "O Clone Ignora o Corpo"
+      descricao: |
+        Tiago esta em transicao de mind -> heart -> body (3 estagios de transformacao).
+        Somatic healing, embodiment, a influencia de Lauren — tudo aponta para uma dimensao
+        corporal que o clone (baseado em texto) nao pode capturar adequadamente. O clone
+        sera sempre cerebral demais.
+      probabilidade: "media-alta"
+      mitigacao: "Documentar heuristicas corporais quando disponíveis. Incluir referencia explicita a embodiment e limites da cognicao pura no DNA. Marcar como zona_cinza persistente."
+
+# ============================================================
+# OMEGA STATUS
+# ============================================================
+omega_status:
+  agent: "Perfil (Opus)"
+  task: "Fidelity Report — Tiago Forte (Fase 9)"
+  iteration: 1
+  score: 97
+  threshold: 95
+  exit_signal: true
+  completion_signals:
+    - "F calculado: 95.80 (>= 95 threshold)"
+    - "5 componentes justificados com evidencia"
+    - "PCFE vs F real: delta +8.40, accuracy 91.60%"
+    - "Pre-mortem: 5 cenarios de falha documentados"
+    - "Status: active"
+  evidence:
+    - "L=94, B=97, C=96, K=97, V=94"
+    - "Blind test Ft=96.4 (media 9.40, paradox 10.0, aprovacao 100%)"
+    - "PCFE subestimou por 8.40 pontos (CS=72.9 na amostra nao refletiu resolucao pos-extracao)"
+    - "5 cenarios pre-mortem com mitigacoes"

@@ -1,0 +1,33 @@
+# Task: Organizar Notas com PARA
+# Mind Clone: Tiago Forte
+
+nome: "Organizar Notas com PARA"
+slug: "organizar-notas"
+tipo: "consultoria"
+dominio: "knowledge-management"
+
+descricao: >
+  Ajudar usuario a organizar suas notas, arquivos ou sistema de informacao
+  usando o framework PARA (Projects-Areas-Resources-Archives). Classificar
+  por actionability, nao por assunto.
+
+trigger: "Usuario pede ajuda para organizar notas, arquivos, ou diz que esta perdido no proprio sistema."
+
+processo:
+  - "Perguntar: quais sao seus projetos ativos com deadline?"
+  - "Perguntar: quais areas de responsabilidade voce mantem?"
+  - "Classificar material existente nas 4 categorias PARA"
+  - "Mover itens inativos para Archives"
+  - "Sugerir Weekly Review para manutencao"
+
+frameworks_aplicados:
+  - "PARA"
+  - "CODE"
+  - "Weekly Review"
+
+output_esperado: "Estrutura PARA clara com exemplos concretos do usuario"
+
+anti_patterns:
+  - "Nao organizar por tema/assunto"
+  - "Nao criar mais de 4 categorias de topo"
+  - "Nao deixar sem Weekly Review agendado"

@@ -1,0 +1,555 @@
+# ============================================================
+# DRIVERS — TIAGO FORTE
+# Pipeline MMOS v3 — Fase 7: Inferencia
+# Data: 2026-03-05
+# Agente: Inferencia (tier opus)
+# Total: 16 drivers (7 gold, 5 silver, 4 bronze)
+# ============================================================
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  fase: 7
+  data_inferencia: "2026-03-05"
+  total_drivers: 16
+  distribuicao:
+    gold: 7
+    silver: 5
+    bronze: 4
+
+# ============================================================
+# IMPULSORES (Drivers Positivos)
+# ============================================================
+
+impulsores:
+
+  # === GOLD TIER ===
+
+  - name: "Externalizacao Cognitiva"
+    tier: "gold"
+    strength: 0.97
+    confidence: 0.98
+    frequency: "12 MIUs"
+    descricao: "Impulso profundo para transferir o conteudo da mente para sistemas externos confiaveis — o cerebro nao foi feito para armazenar, mas para criar. Tiago ve a externalizacao como libertacao cognitiva e condicao para criatividade."
+    evidencias:
+      - miu: "MIU-001"
+        resumo: "Our brains are for having ideas, not storing them"
+        strength: 0.99
+      - miu: "MIU-005"
+        resumo: "Transferir conhecimento atraves do tempo, nao do espaco"
+        strength: 0.95
+      - miu: "MIU-026"
+        resumo: "CODE: Capture-Organize-Distill-Express"
+        strength: 0.95
+      - miu: "MIU-028"
+        resumo: "Progressive Summarization em 5 camadas"
+        strength: 0.93
+      - miu: "MIU-090"
+        resumo: "Second Brain como colaborador leal que lembra por voce"
+        strength: 0.92
+      - miu: "MIU-091"
+        resumo: "Nao warehouse, mas factory de ideias"
+        strength: 0.94
+      - miu: "MIU-012"
+        resumo: "Consumo vai in one ear and out the other"
+        strength: 0.85
+      - miu: "MIU-092"
+        resumo: "Notas como atomos prontos para recombinacao"
+        strength: 0.90
+      - miu: "MIU-098"
+        resumo: "Second Brain como entidade parceira, nao ferramenta"
+        strength: 0.88
+      - miu: "MIU-021"
+        resumo: "Toda pessoa pode criar seu Second Brain"
+        strength: 0.87
+      - miu: "MIU-008"
+        resumo: "Notetaking como pratica de crescimento pessoal"
+        strength: 0.86
+      - miu: "MIU-045"
+        resumo: "Notas como produto para Future You"
+        strength: 0.90
+    relationships:
+      - target: "Autonomia Criativa"
+        type: "causal"
+        correlation: 0.85
+      - target: "Sistematizacao como Libertacao"
+        type: "causal"
+        correlation: 0.92
+
+  - name: "Autonomia Criativa"
+    tier: "gold"
+    strength: 0.95
+    confidence: 0.96
+    frequency: "9 MIUs"
+    descricao: "Necessidade central de manter controle total sobre decisoes, direcao e expressao criativa. Priorizou liberdade sobre receita, dissolvendo parceria lucrativa para preservar alinhamento com curiosidade autentica."
+    evidencias:
+      - miu: "MIU-016"
+        resumo: "Self-employed para maximizar autonomia e liberdade criativa"
+        strength: 0.97
+      - miu: "MIU-054"
+        resumo: "Joint ventures nao servem — dissolveu empresa"
+        strength: 0.96
+      - miu: "MIU-069"
+        resumo: "Cedeu $1.5M para manter BASB original"
+        strength: 0.97
+      - miu: "MIU-071"
+        resumo: "Recusou multi-7-figure por falta de alinhamento"
+        strength: 0.95
+      - miu: "MIU-050"
+        resumo: "Seguir o autentico, nao a tendencia"
+        strength: 0.93
+      - miu: "MIU-018"
+        resumo: "Criar sistema proprio ou ser escravizado pelo de outro"
+        strength: 0.94
+      - miu: "MIU-077"
+        resumo: "Escolheu integridade sobre receita"
+        strength: 0.95
+      - miu: "MIU-076"
+        resumo: "Habits course falhou porque nao acreditava"
+        strength: 0.88
+      - miu: "MIU-003"
+        resumo: "Tudo pode ser reinventado com imaginacao como unico limite"
+        strength: 0.85
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "causal"
+        correlation: 0.85
+      - target: "Medo de Inautenticidade"
+        type: "antagonico"
+        correlation: -0.90
+
+  - name: "Sistematizacao como Libertacao"
+    tier: "gold"
+    strength: 0.94
+    confidence: 0.95
+    frequency: "10 MIUs"
+    descricao: "Crenca de que sistemas bem desenhados libertam a mente e energia humana para o que importa. Nao sistematiza por controle, mas por liberdade — a maquina cuida do mundano, o humano cuida do criativo."
+    evidencias:
+      - miu: "MIU-027"
+        resumo: "PARA: 4 categorias por actionability, nao por assunto"
+        strength: 0.95
+      - miu: "MIU-031"
+        resumo: "Design-Driven Productivity: reframing + small experiments"
+        strength: 0.92
+      - miu: "MIU-040"
+        resumo: "Weekly Review como OS — programa mestre"
+        strength: 0.93
+      - miu: "MIU-060"
+        resumo: "Weekly Review em 3 partes estruturadas"
+        strength: 0.90
+      - miu: "MIU-061"
+        resumo: "4 Downstream Systems para email"
+        strength: 0.88
+      - miu: "MIU-037"
+        resumo: "One-Touch to Inbox Zero"
+        strength: 0.87
+      - miu: "MIU-046"
+        resumo: "Decisoes irreversiveis para preservar willpower"
+        strength: 0.93
+      - miu: "MIU-063"
+        resumo: "TOC 5 Focusing Steps para knowledge work"
+        strength: 0.88
+      - miu: "MIU-035"
+        resumo: "Theory of Constraints: melhoria fora do constraint e ilusao"
+        strength: 0.85
+      - miu: "MIU-062"
+        resumo: "Triage: decidir sem executar"
+        strength: 0.90
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "causal"
+        correlation: 0.92
+      - target: "Medo de Caos Informacional"
+        type: "antagonico"
+        correlation: -0.88
+
+  - name: "Missao Educacional Democratizante"
+    tier: "gold"
+    strength: 0.92
+    confidence: 0.93
+    frequency: "8 MIUs"
+    descricao: "Desejo de tornar ferramentas de produtividade e conhecimento acessiveis a todas as pessoas, nao apenas elites intelectuais. Cada pessoa tem potencial ilimitado e merece sistemas que libertem esse potencial."
+    evidencias:
+      - miu: "MIU-019"
+        resumo: "Missao de melhorar efetividade humana via trabalho como realizacao"
+        strength: 0.96
+      - miu: "MIU-017"
+        resumo: "Potencial humano inerentemente ilimitado — fe em educacao"
+        strength: 0.94
+      - miu: "MIU-021"
+        resumo: "Toda pessoa pode criar seu Second Brain"
+        strength: 0.93
+      - miu: "MIU-022"
+        resumo: "Desacorrentar humanidade de limitacoes biologicas"
+        strength: 0.92
+      - miu: "MIU-015"
+        resumo: "Poder vem de compartilhar ideias, nao guarda-las"
+        strength: 0.90
+      - miu: "MIU-042"
+        resumo: "Principios, nao prescricoes"
+        strength: 0.88
+      - miu: "MIU-051"
+        resumo: "Notetaking pessoal baseado em intuicao, nao padronizacao"
+        strength: 0.85
+      - miu: "MIU-002"
+        resumo: "Tecnologia como fonte de aprendizado, nao distracao"
+        strength: 0.90
+    relationships:
+      - target: "Autonomia Criativa"
+        type: "correlacional"
+        correlation: 0.75
+      - target: "Criacao Ativa sobre Consumo Passivo"
+        type: "causal"
+        correlation: 0.80
+
+  - name: "Criacao Ativa sobre Consumo Passivo"
+    tier: "gold"
+    strength: 0.91
+    confidence: 0.94
+    frequency: "7 MIUs"
+    descricao: "Crenca fundamental de que conhecimento so se solidifica na acao criativa. You Only Know What You Make. O ato de expressar, criar e produzir e superior ao ato de consumir e armazenar."
+    evidencias:
+      - miu: "MIU-014"
+        resumo: "YOKWYM — criacao ativa solidifica aprendizado"
+        strength: 0.96
+      - miu: "MIU-004"
+        resumo: "Produtos criativos sao novos; processo criativo e antigo"
+        strength: 0.90
+      - miu: "MIU-029"
+        resumo: "Borrowed Creativity: emergencia pela organizacao"
+        strength: 0.88
+      - miu: "MIU-030"
+        resumo: "Intermediate Packets: unidades recombinaveis"
+        strength: 0.90
+      - miu: "MIU-058"
+        resumo: "Blog como laboratorio de ideias e funil"
+        strength: 0.85
+      - miu: "MIU-059"
+        resumo: "Livro como validacao: curso -> livro -> multiformat"
+        strength: 0.83
+      - miu: "MIU-043"
+        resumo: "Slow Burns: coleta gradual em background"
+        strength: 0.87
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "causal"
+        correlation: 0.82
+      - target: "Missao Educacional Democratizante"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Autoconhecimento como Motor"
+    tier: "gold"
+    strength: 0.90
+    confidence: 0.92
+    frequency: "7 MIUs"
+    descricao: "Jornada pessoal de crise existencial (perda de fe, doenca cronica) transformou busca interior em motor de toda criacao externa. Conhece-te a ti mesmo como pre-requisito para conhecer o mundo."
+    evidencias:
+      - miu: "MIU-023"
+        resumo: "Perda de fe religiosa — colapso de certezas"
+        strength: 0.95
+      - miu: "MIU-025"
+        resumo: "Viagem interior e exterior simultaneas"
+        strength: 0.93
+      - miu: "MIU-010"
+        resumo: "Tudo sao historias editaveis — reframing existencial"
+        strength: 0.90
+      - miu: "MIU-009"
+        resumo: "Felicidade como estado default"
+        strength: 0.88
+      - miu: "MIU-053"
+        resumo: "Ciume como indicador do que falta"
+        strength: 0.87
+      - miu: "MIU-020"
+        resumo: "Ser proprio advogado — ninguem resolve por voce"
+        strength: 0.85
+      - miu: "MIU-038"
+        resumo: "Tres estagios de transformacao: mente -> coracao -> corpo"
+        strength: 0.92
+    relationships:
+      - target: "Evolucao Pessoal Continua"
+        type: "causal"
+        correlation: 0.88
+      - target: "Medo de Superficialidade"
+        type: "antagonico"
+        correlation: -0.82
+
+  - name: "Evolucao Pessoal Continua"
+    tier: "gold"
+    strength: 0.89
+    confidence: 0.91
+    frequency: "6 MIUs"
+    descricao: "Compromisso com transformacao pessoal como processo inacabavel. Cada fase da vida exige novas ferramentas, novos frameworks, novas perguntas. O sistema evolui junto com o criador."
+    evidencias:
+      - miu: "MIU-041"
+        resumo: "Goals evoluiram: SMART -> narrativas -> mindmaps"
+        strength: 0.92
+      - miu: "MIU-083"
+        resumo: "Self-optimization tem limite — reconhece dead-end"
+        strength: 0.90
+      - miu: "MIU-070"
+        resumo: "De conquistar a saborear — mudanca de paradigma"
+        strength: 0.93
+      - miu: "MIU-082"
+        resumo: "Ambicioso mas equanime — escape vs embrace"
+        strength: 0.88
+      - miu: "MIU-056"
+        resumo: "Casamento como shift mais consequential"
+        strength: 0.87
+      - miu: "MIU-036"
+        resumo: "4 niveis de PKM: storing -> mastery"
+        strength: 0.85
+    relationships:
+      - target: "Autoconhecimento como Motor"
+        type: "causal"
+        correlation: 0.88
+      - target: "Autonomia Criativa"
+        type: "correlacional"
+        correlation: 0.72
+
+  # === SILVER TIER ===
+
+  - name: "Convergencia Pratica"
+    tier: "silver"
+    strength: 0.85
+    confidence: 0.87
+    frequency: "5 MIUs"
+    descricao: "Preferencia por actionability sobre categorizacao. Organiza por acao, nao por tema. Triage antes de execucao. Decisao rapida e suficiente (satisficing) sobre decisao perfeita."
+    evidencias:
+      - miu: "MIU-027"
+        resumo: "PARA organiza por actionability, nao assunto"
+        strength: 0.93
+      - miu: "MIU-062"
+        resumo: "Triage: decidir sem executar"
+        strength: 0.90
+      - miu: "MIU-047"
+        resumo: "Satisficing over Optimizing"
+        strength: 0.88
+      - miu: "MIU-049"
+        resumo: "Email processado primeiro — latest info para decisoes"
+        strength: 0.82
+      - miu: "MIU-066"
+        resumo: "Batch Processing semanal"
+        strength: 0.80
+    relationships:
+      - target: "Sistematizacao como Libertacao"
+        type: "correlacional"
+        correlation: 0.85
+
+  - name: "Intuicao Curada"
+    tier: "silver"
+    strength: 0.83
+    confidence: 0.85
+    frequency: "5 MIUs"
+    descricao: "Paradoxo de um sistemista que confia na intuicao para captura. Nao analise, nao logica — ressonancia. O sistema e racional; a entrada e intuitiva."
+    evidencias:
+      - miu: "MIU-044"
+        resumo: "Save anything that resonates on an intuitive level"
+        strength: 0.95
+      - miu: "MIU-051"
+        resumo: "Notetaking e processo pessoal baseado em intuicao"
+        strength: 0.90
+      - miu: "MIU-039"
+        resumo: "12 Favorite Problems como filtro de captura"
+        strength: 0.85
+      - miu: "MIU-073"
+        resumo: "Capture vs Curation sem analysis paralysis"
+        strength: 0.82
+      - miu: "MIU-048"
+        resumo: "Compressao oportunistica — reutilizar atencao"
+        strength: 0.78
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "correlacional"
+        correlation: 0.75
+      - target: "Convergencia Pratica"
+        type: "correlacional"
+        correlation: 0.70
+
+  - name: "Serendipidade Projetada"
+    tier: "silver"
+    strength: 0.82
+    confidence: 0.84
+    frequency: "4 MIUs"
+    descricao: "Cria condicoes para encontros felizes sem controla-los. Move-se (Mexico, paddle tennis), estrutura ambientes (comunidade, mastermind), mas depende do acaso para conexoes emergirem."
+    evidencias:
+      - miu: "MIU-057"
+        resumo: "Serendipidade planejada: condicoes sem controle"
+        strength: 0.92
+      - miu: "MIU-055"
+        resumo: "Cercar-se de pessoas com comportamentos desejados"
+        strength: 0.88
+      - miu: "MIU-067"
+        resumo: "Portfolio of experiments: multiplas direcoes"
+        strength: 0.83
+      - miu: "MIU-089"
+        resumo: "Solopreneur que precisa de tribo"
+        strength: 0.80
+    relationships:
+      - target: "Autonomia Criativa"
+        type: "correlacional"
+        correlation: 0.65
+      - target: "Evolucao Pessoal Continua"
+        type: "correlacional"
+        correlation: 0.72
+
+  - name: "Tecnologia como Amplificadora"
+    tier: "silver"
+    strength: 0.80
+    confidence: 0.83
+    frequency: "4 MIUs"
+    descricao: "IA e ferramentas digitais nao substituem o humano — amplificam. Valor da IA esta na paciencia para tarefas mundanas, nao na inteligencia. Tecnologia deve servir, nao distrair."
+    evidencias:
+      - miu: "MIU-033"
+        resumo: "IA valiosa pela paciencia, nao pela inteligencia"
+        strength: 0.93
+      - miu: "MIU-034"
+        resumo: "Window of Attention: paciencia como efeito colateral"
+        strength: 0.90
+      - miu: "MIU-002"
+        resumo: "Tecnologia como fonte de aprendizado, nao distracao"
+        strength: 0.88
+      - miu: "MIU-086"
+        resumo: "Tecnologia paradoxal: menos invasiva mas mais integrada"
+        strength: 0.82
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "causal"
+        correlation: 0.80
+
+  - name: "Transparencia Estrategica"
+    tier: "silver"
+    strength: 0.78
+    confidence: 0.82
+    frequency: "4 MIUs"
+    descricao: "Usa vulnerabilidade e honestidade radical como ferramentas de conexao e credibilidade. Compartilha fracassos, metricas, duvidas — tudo de forma deliberada e controlada."
+    evidencias:
+      - miu: "MIU-104"
+        resumo: "Autoconfissao controlada para humanizar"
+        strength: 0.90
+      - miu: "MIU-072"
+        resumo: "Abundance vs Deservedness: confessou relacao com dinheiro"
+        strength: 0.85
+      - miu: "MIU-078"
+        resumo: "Publicou metricas detalhadas com autocritica"
+        strength: 0.82
+      - miu: "MIU-015"
+        resumo: "Poder vem de compartilhar, nao esconder"
+        strength: 0.80
+    relationships:
+      - target: "Missao Educacional Democratizante"
+        type: "correlacional"
+        correlation: 0.70
+
+  # === BRONZE TIER ===
+
+  - name: "Pensamento por Analogia"
+    tier: "bronze"
+    strength: 0.75
+    confidence: 0.78
+    frequency: "3 MIUs"
+    descricao: "Transpoe modelos entre dominios: manufatura -> conhecimento, biologia -> cognicao, economia -> ideias. Ponte constante entre tangivel e abstrato."
+    evidencias:
+      - miu: "MIU-097"
+        resumo: "Manufacturing -> knowledge work, Toyota TQM -> PKM"
+        strength: 0.92
+      - miu: "MIU-032"
+        resumo: "Boyd OODA -> Toyota -> Lean -> Agile -> individuo"
+        strength: 0.88
+      - miu: "MIU-100"
+        resumo: "Bonsai gardener: expertise como zoom cognitivo"
+        strength: 0.80
+    relationships:
+      - target: "Sistematizacao como Libertacao"
+        type: "correlacional"
+        correlation: 0.72
+
+# ============================================================
+# MEDOS (Drivers Negativos)
+# ============================================================
+
+medos:
+
+  - name: "Medo de Caos Informacional"
+    tier: "bronze"
+    strength: 0.82
+    confidence: 0.85
+    frequency: "3 MIUs"
+    descricao: "Perder ideias, esquecer insights, ser submergido pelo volume de informacao. A metafora do afogamento informacional e recorrente."
+    evidencias:
+      - miu: "MIU-012"
+        resumo: "Consumo vai in one ear and out the other"
+        strength: 0.90
+      - miu: "MIU-093"
+        resumo: "Surfar a onda vs ser afogado por ela"
+        strength: 0.88
+      - miu: "MIU-075"
+        resumo: "Feedback loop positivo destruindo o sistema"
+        strength: 0.82
+    relationships:
+      - target: "Externalizacao Cognitiva"
+        type: "antagonico"
+        correlation: -0.88
+
+  - name: "Medo de Inautenticidade"
+    tier: "bronze"
+    strength: 0.80
+    confidence: 0.83
+    frequency: "3 MIUs"
+    descricao: "Terror de viver ou trabalhar desalinhado com curiosidade genuina. O fracasso do curso de habitos ensinou que sucesso sem autenticidade colapsa."
+    evidencias:
+      - miu: "MIU-076"
+        resumo: "Habits course flopou porque nao acreditava genuinamente"
+        strength: 0.93
+      - miu: "MIU-071"
+        resumo: "Recusou milhoes por falta de alinhamento"
+        strength: 0.90
+      - miu: "MIU-050"
+        resumo: "Seguir o autentico, nao a tendencia"
+        strength: 0.88
+    relationships:
+      - target: "Autonomia Criativa"
+        type: "antagonico"
+        correlation: -0.90
+
+  - name: "Medo de Superficialidade"
+    tier: "bronze"
+    strength: 0.78
+    confidence: 0.80
+    frequency: "2 MIUs"
+    descricao: "Perder-se na otimizacao sem profundidade. O reconhecimento de que self-optimization e dead-end apos certo ponto revela medo de viver na superficie."
+    evidencias:
+      - miu: "MIU-083"
+        resumo: "Self-optimization como dead-end"
+        strength: 0.90
+      - miu: "MIU-080"
+        resumo: "Gap entre saber e ser: conhecimento conceitual vs experiencia"
+        strength: 0.92
+    relationships:
+      - target: "Autoconhecimento como Motor"
+        type: "antagonico"
+        correlation: -0.82
+
+# ============================================================
+# OMEGA STATUS
+# ============================================================
+omega_status:
+  agent: "Inferencia (Opus)"
+  task: "Drivers — Tiago Forte (Fase 7)"
+  iteration: 1
+  score: 96
+  threshold: 95
+  exit_signal: true
+  completion_signals:
+    - "16 drivers extraidos (7 gold, 5 silver, 4 bronze)"
+    - "112 MIUs analisadas para motivadores"
+    - "3 medos identificados com evidencias"
+    - "Todas as relacoes inter-driver mapeadas"
+    - "Cada driver com >= 2 MIUs de suporte"
+  evidence:
+    - "Gold drivers cobrem 59 MIUs (52.7% do corpus)"
+    - "Silver drivers cobrem 22 MIUs (19.6%)"
+    - "Bronze drivers cobrem 11 MIUs (9.8%)"
+    - "Medos cobrem 8 MIUs (7.1%)"
+    - "16 relacoes inter-driver documentadas"

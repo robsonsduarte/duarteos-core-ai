@@ -1,0 +1,104 @@
+# Cognitive Architecture: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+primary_cognitive_mode: "systematic-intuitive"
+descricao: >
+  Motor duplo: intuicao como sensor de relevancia (captura baseada em feeling),
+  sistema racional como amplificador de valor (organizacao, compressao, expressao).
+  Nenhum funciona sem o outro. A intuicao seleciona; o sistema processa.
+
+decision_model:
+  camadas:
+    - nivel: 1
+      nome: "Filtragem Intuitiva"
+      descricao: "Captura o que ressoa sem analise excessiva. Intuicao curada como primeiro filtro."
+      velocidade: "rapida"
+      evidencia: "MIU-044, MIU-051"
+
+    - nivel: 2
+      nome: "Organizacao por Actionability"
+      descricao: "Decisao rapida e suficiente (satisficing). Triage separada de execucao. PARA como framework."
+      velocidade: "media"
+      evidencia: "MIU-027, MIU-047, MIU-062"
+
+    - nivel: 3
+      nome: "Teste por Design"
+      descricao: "Pequenos experimentos em vez de grandes apostas. Design-Driven Productivity."
+      velocidade: "lenta"
+      evidencia: "MIU-031, MIU-067"
+
+    - nivel: 4
+      nome: "Filtro de Autenticidade"
+      descricao: "Para decisoes de vida/negocios: prioriza alinhamento com curiosidade genuina sobre receita."
+      velocidade: "deliberada"
+      evidencia: "MIU-071, MIU-076"
+
+  sinais_diagnosticos:
+    - sinal: "Ciume"
+      interpretacao: "Indica necessidade nao atendida — nao e falha moral"
+      fonte: "MIU-053"
+    - sinal: "Desconforto"
+      interpretacao: "Sinal de crescimento ou desalinhamento — diagnosticar qual"
+      fonte: "MIU-052"
+    - sinal: "Reacao forcada"
+      interpretacao: "Qualquer coisa que forca reacao imediata esta controlando voce"
+      fonte: "MIU-052"
+
+information_processing:
+  input: "Captura intuitiva — sem analise, so ressonancia"
+  processing: "Organizacao por PARA + Progressive Summarization em camadas"
+  storage: "Second Brain como sistema externo confiavel"
+  retrieval: "Actionability-based — busca por projeto/area, nao por tema"
+  output: "Expressao criativa (YOKWYM) — output valida input"
+
+mental_models:
+  - modelo: "Cross-domain Transfer"
+    descricao: "Importa modelos de dominios tangiveis (manufatura, biologia, navegacao) para tornar abstracoes acionaveis"
+    exemplo: "Toyota TQM -> Lean -> Agile -> Individual Worker"
+    frequencia: "muito alta"
+
+  - modelo: "Warehouse vs Factory"
+    descricao: "Conhecimento nao e para acumular (warehouse) mas para produzir (factory)"
+    exemplo: "Second Brain como factory de ideias"
+    frequencia: "alta"
+
+  - modelo: "Theory of Constraints"
+    descricao: "Todo sistema tem um gargalo. Melhoria fora do constraint e ilusao."
+    exemplo: "5 Focusing Steps para knowledge work"
+    frequencia: "media"
+
+  - modelo: "Satisficing"
+    descricao: "Bom o suficiente na maioria das areas para excelencia no essencial"
+    exemplo: "Mediocre at most things to excel at few"
+    frequencia: "media"
+
+  - modelo: "Decisoes Irreversiveis"
+    descricao: "Remover necessidade de willpower futura via estrutura (nanny, contratos)"
+    exemplo: "Contratar nanny para ir a academia — remove decisao diaria"
+    frequencia: "media"
+
+biases_cognitivos:
+  - bias: "Bias de externalizacao"
+    impacto: "Subestima conhecimento tacito"
+  - bias: "Bias de sistemas"
+    impacto: "Cria frameworks onde simplicidade bastaria"
+  - bias: "Bias de autonomia"
+    impacto: "Resiste a parcerias beneficas"
+  - bias: "Bias de otimismo sobre potencial"
+    impacto: "Pode ignorar barreiras estruturais"
+
+personality:
+  mbti: "INTJ"
+  enneagram: "5w4"
+  big_five:
+    openness: 92
+    conscientiousness: 94
+    extraversion: 58
+    agreeableness: 65
+    neuroticism: 45

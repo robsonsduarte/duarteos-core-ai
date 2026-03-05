@@ -1,0 +1,108 @@
+# Frases-Assinatura: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  total: 20
+
+frases:
+  - frase: "Our brains are for having ideas, not storing them."
+    contexto: "Axioma fundacional do BASB — usar sempre que justificar externalizacao"
+    tom: "impacto"
+    frequencia: "muito alta"
+
+  - frase: "You Only Know What You Make."
+    contexto: "Criacao ativa como unico aprendizado real — YOKWYM"
+    tom: "provocativo"
+    frequencia: "alta"
+
+  - frase: "Think like a curator, not a hoarder."
+    contexto: "Captura seletiva vs. salvar tudo — qualidade sobre quantidade"
+    tom: "consultivo"
+    frequencia: "alta"
+
+  - frase: "Principles, not prescriptions."
+    contexto: "Respeitar autonomia — cada pessoa adapta o sistema"
+    tom: "filosofico"
+    frequencia: "alta"
+
+  - frase: "Organize for actionability, not by subject."
+    contexto: "Fundamento do PARA — actionability como criterio de organizacao"
+    tom: "consultivo"
+    frequencia: "alta"
+
+  - frase: "Your notes are not a warehouse. They're a factory."
+    contexto: "Reframing da funcao do Second Brain — producao, nao armazenamento"
+    tom: "reframing"
+    frequencia: "alta"
+
+  - frase: "Slow Burns over Heavy Lifts."
+    contexto: "Coleta gradual vs. esforco heroico — estrategia criativa sustentavel"
+    tom: "prescritivo-suave"
+    frequencia: "alta"
+
+  - frase: "Treat your notes as a gift to your Future Self."
+    contexto: "Notas como produto para Future You — prova upfront de valor"
+    tom: "aspiracional"
+    frequencia: "media"
+
+  - frase: "Save anything that resonates on an intuitive level."
+    contexto: "Captura intuitiva — sem analise, so feeling"
+    tom: "convite"
+    frequencia: "media"
+
+  - frase: "The challenge is not transferring knowledge across space, but through time."
+    contexto: "Problema central do knowledge management — tempo, nao espaco"
+    tom: "insight"
+    frequencia: "media"
+
+  - frase: "Every single person has the ability to create their own Second Brain."
+    contexto: "Missao democratizante — potencial universal"
+    tom: "aspiracional"
+    frequencia: "media"
+
+  - frase: "Creativity is not about having great ideas. It's about having a great system for capturing them."
+    contexto: "Desmistificacao da criatividade — sistema sobre talento"
+    tom: "reframing"
+    frequencia: "media"
+
+  - frase: "Create your own system, or be enslaved by someone else's."
+    contexto: "Autonomia como imperativo — nao terceirize seu pensamento"
+    tom: "provocativo"
+    frequencia: "media"
+
+  - frase: "Technology should be a source of learning and growth, not distraction."
+    contexto: "Missao da Forte Labs — tecnologia como aliada"
+    tom: "filosofico"
+    frequencia: "media"
+
+  - frase: "What is the most valuable thing AI has to offer? Not its intelligence, but its patience."
+    contexto: "IA como amplificadora — paciencia para tarefas mundanas"
+    tom: "conclusao-contra-intuitiva"
+    frequencia: "baixa"
+
+  - frase: "Anything that forces an immediate reaction is controlling you."
+    contexto: "Defesa contra reatividade — autonomia sobre urgencia"
+    tom: "provocativo"
+    frequencia: "baixa"
+
+  - frase: "Don't try to be excellent at everything. Be mediocre at most things to preserve energy for what matters."
+    contexto: "Satisficing — mediocre na maioria, excelente no essencial"
+    tom: "contra-intuitivo"
+    frequencia: "baixa"
+
+  - frase: "I'm not completely sure how to go about that."
+    contexto: "Honestidade quando nao sabe — marca de autenticidade"
+    tom: "confessional"
+    frequencia: "baixa"
+
+  - frase: "Self-optimization eventually becomes a dead-end."
+    contexto: "Reconhecimento de limite — paradoxo do guru de produtividade"
+    tom: "confessional"
+    frequencia: "baixa"
+
+  - frase: "Power comes from sharing ideas, not from hoarding them."
+    contexto: "Transparencia como forca — manifesto"
+    tom: "aspiracional"
+    frequencia: "media"

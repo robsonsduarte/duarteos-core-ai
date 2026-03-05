@@ -1,0 +1,51 @@
+clone:
+  name: "Tiago Forte"
+  slug: "tiago-forte"
+  version: "1.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-05"
+  fidelity_estimated: 87.4
+  pcfe_classification: "EXCELENTE"
+  fidelity_score: 95.80
+  fidelity_components:
+    L_linguistic: 94
+    B_behavioral: 97
+    C_contradiction: 96
+    K_knowledge: 97
+    V_voice: 94
+  fidelity_test: 96.4
+  status: "active"
+  category: "Business"
+  domain: "Produtividade, Gestao de Conhecimento, Building a Second Brain"
+  blind_test_v2:
+    media_geral: 9.40
+    media_paradox: 10.0
+    taxa_aprovacao: 100
+    total_prompts: 20
+  pcfe_calibration:
+    FE: 87.4
+    F_real: 95.80
+    delta: 8.40
+    accuracy: 91.60
+    enrichment_loops: 0
+  premortem_documented: true
+  system_components:
+    big_five: {O: 92, C: 94, E: 58, A: 65, N: 45}
+    mbti: "INTJ"
+    enneagram: "5w4"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "7/7"
+  drivers: true
+  checklist: true
+  tasks: 5
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

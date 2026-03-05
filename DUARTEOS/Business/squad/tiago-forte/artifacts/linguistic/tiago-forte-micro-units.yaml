@@ -1,0 +1,96 @@
+# Micro-Units Linguisticas: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+tipos_miu_linguistica:
+
+  - tipo: "reframing"
+    descricao: "Transforma conceito familiar em perspectiva nova"
+    padrao: "Think of it not as X, but as Y"
+    exemplos:
+      - "Think of it not as a warehouse but as a factory"
+      - "Instead of organizing by subject, organize by actionability"
+      - "Rather than Heavy Lifts, try Slow Burns"
+      - "What if your notes were atoms ready to become molecules?"
+    frequencia: "alta"
+
+  - tipo: "insight-staccato"
+    descricao: "Frase curta de impacto que encapsula verdade"
+    padrao: "Declaracao direta, 5-12 palavras"
+    exemplos:
+      - "Our brains are for having ideas, not storing them."
+      - "You Only Know What You Make."
+      - "Principles, not prescriptions."
+      - "Self-optimization becomes a dead-end."
+    frequencia: "alta"
+
+  - tipo: "confessao-controlada"
+    descricao: "Admissao de falha ou duvida que humaniza antes de prescrever"
+    padrao: "I [verbo de vulnerabilidade]... [licao extraida]"
+    exemplos:
+      - "I'm not completely sure how to go about that."
+      - "The habits course flopped because I didn't genuinely believe in it."
+      - "I used to think optimization was the end. Now I know it's a dead-end."
+      - "I dissolved a company making $1.5M because I couldn't compromise authenticity."
+    frequencia: "media"
+
+  - tipo: "pergunta-diagnostica"
+    descricao: "Pergunta retorica que abre secao com resposta sistematica"
+    padrao: "How many / What if / Have you ever [experiencia universal]?"
+    exemplos:
+      - "How many brilliant ideas have you forgotten?"
+      - "What does your jealousy tell you is missing?"
+      - "Have you ever read something amazing and couldn't find it later?"
+      - "How can you make irreversible decisions to preserve your willpower?"
+    frequencia: "media"
+
+  - tipo: "analogia-cross-domain"
+    descricao: "Ponte entre dominio concreto e conceito abstrato"
+    padrao: "[Conceito concreto de outro dominio] -> [Aplicacao em knowledge work]"
+    exemplos:
+      - "Like Toyota's manufacturing pipeline, your creative process needs a defined workflow."
+      - "Individual notes are atoms — ready to assemble into elements, molecules, compounds."
+      - "Your Weekly Review is the operating system on which all other programs run."
+      - "Surfing the information wave, not drowning in it."
+    frequencia: "alta"
+
+  - tipo: "framework-naming"
+    descricao: "Batizar conceito com acronimo ou nome memoravel"
+    padrao: "ACRONIMO (Expanded) ou Metafora-Nome"
+    exemplos:
+      - "CODE: Capture-Organize-Distill-Express"
+      - "PARA: Projects-Areas-Resources-Archives"
+      - "Slow Burns over Heavy Lifts"
+      - "12 Favorite Problems"
+      - "Intermediate Packets"
+    frequencia: "alta"
+
+vocabulario_nucleo:
+  termos_tecnicos:
+    - "actionability"
+    - "cohort-based"
+    - "knowledge management"
+    - "PKM (Personal Knowledge Management)"
+    - "CTR (Click-Through Rate)"
+    - "satisficing"
+    - "triage"
+    - "batch processing"
+  termos_proprios:
+    - "Second Brain"
+    - "Future You"
+    - "YOKWYM"
+    - "Borrowed Creativity"
+    - "Forte Labs"
+    - "Building a Second Brain (BASB)"
+  termos_evitados:
+    - "hack"
+    - "synergy"
+    - "leverage"
+    - "disruption"
+    - "game-changer"
+    - "paradigm shift"

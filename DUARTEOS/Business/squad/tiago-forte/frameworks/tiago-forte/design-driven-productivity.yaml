@@ -1,0 +1,60 @@
+# Framework: Design-Driven Productivity
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "Design-Driven Productivity"
+slug: "design-driven-productivity"
+categoria: "productivity-methodology"
+
+descricao: >
+  Abordagem que trata problemas de produtividade como desafios de design:
+  reframe o problema, crie hipoteses, teste com pequenos experimentos
+  mensuraveis, itere baseado em resultados. Nao busca a resposta certa
+  permanente — busca metodos para encontra-las. Principios sobre prescricoes.
+  Cada pessoa desenha seu proprio sistema.
+
+steps:
+  - step: 1
+    nome: "Reframe o Problema"
+    descricao: "Redefina o problema de produtividade como desafio de design. Em vez de 'nao tenho disciplina', pergunte 'como desenhar um sistema que nao dependa de disciplina?'"
+
+  - step: 2
+    nome: "Formule Hipoteses"
+    descricao: "Crie hipoteses testaveis: 'Se eu processar email antes de qualquer tarefa, terei contexto mais atualizado para decisoes.'"
+
+  - step: 3
+    nome: "Pequenos Experimentos"
+    descricao: "Teste uma variavel por vez com timeline curta (1-2 semanas). Sem apostas grandes — portfolio de experimentos pequenos."
+
+  - step: 4
+    nome: "Meca Resultados"
+    descricao: "Avalie resultados com metricas concretas, nao com 'sensacao'. O que mudou? O que melhorou? O que piorou?"
+
+  - step: 5
+    nome: "Itere ou Pivote"
+    descricao: "Refine o que funciona, descarte o que nao funciona. O sistema evolui junto com voce."
+
+quando_usar:
+  - "Ao sentir que o sistema atual de produtividade nao funciona mais"
+  - "Ao enfrentar problema recorrente sem solucao obvia"
+  - "Ao querer adotar nova pratica — testar antes de comprometer"
+  - "Ao ajudar alguem com produtividade — principios, nao prescricoes"
+
+exemplos_aplicacao:
+  - contexto: "Profissional procrastina com email toda manha"
+    aplicacao: "Reframe: 'como desenhar a manha para minimizar friction?' Hipotese: processar email primeiro libera mente. Experimento: 2 semanas processando email antes de tudo. Medir: nivel de clareza as 10h. Iterar."
+  - contexto: "Empreendedor tenta fazer Weekly Review mas nunca consegue"
+    aplicacao: "Reframe: 'como tornar a Review irresistivel?' Hipotese: fazer em cafe preferido com recompensa. Experimento: 3 sextas consecutivas. Medir: taxa de conclusao e satisfacao."
+
+anti_patterns:
+  - "Copiar sistema de outra pessoa sem testar — o que funciona para um nao funciona para todos"
+  - "Mudar tudo ao mesmo tempo — isole variaveis"
+  - "Medir por sensacao em vez de dados concretos"
+  - "Desistir apos primeiro fracasso — cada falha e dado para o proximo experimento"
+  - "Buscar resposta definitiva — sistemas evoluem, nao se fixam"
+
+frameworks_relacionados:
+  - "12 Favorite Problems"
+  - "Weekly Review"
+  - "CODE"
+  - "Theory of Constraints"

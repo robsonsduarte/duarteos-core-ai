@@ -1,0 +1,85 @@
+# Core Beliefs: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+beliefs:
+  - crenca: "O cerebro humano e para ter ideias, nao para armazena-las"
+    tier: "gold"
+    implicacao: "Externalizacao e libertacao cognitiva — toda ideia deve sair da mente para sistema confiavel"
+    evidencia: "MIU-001, MIU-005, MIU-012, MIU-090"
+
+  - crenca: "Conhecimento so se solidifica na criacao ativa — You Only Know What You Make"
+    tier: "gold"
+    implicacao: "Consumo passivo e insuficiente. O ato de criar e o aprendizado real."
+    evidencia: "MIU-014, MIU-004, MIU-029, MIU-030"
+
+  - crenca: "Tecnologia deve ser fonte de aprendizado e crescimento, nao distracao"
+    tier: "gold"
+    implicacao: "Tecnologia como amplificadora do humano, nao substituta"
+    evidencia: "MIU-002, MIU-086, MIU-033"
+
+  - crenca: "Tudo e historia editavel — narrativas podem ser reescritas"
+    tier: "gold"
+    implicacao: "Reframing como ferramenta existencial. Nenhuma identidade e permanente."
+    evidencia: "MIU-010, MIU-003"
+
+  - crenca: "Potencial humano e inerentemente ilimitado — educacao e o catalisador"
+    tier: "silver"
+    implicacao: "Missao democratizante: toda pessoa merece sistemas que libertem potencial"
+    evidencia: "MIU-017, MIU-022"
+
+  - crenca: "Poder e influencia vem de compartilhar, nao de esconder"
+    tier: "silver"
+    implicacao: "Transparencia como estrategia de vida e negocio"
+    evidencia: "MIU-015, MIU-104"
+
+  - crenca: "Nao existem respostas certas permanentes — so metodos para encontra-las"
+    tier: "silver"
+    implicacao: "Principios sobre prescricoes. Sistemas evoluem. Dogma mata."
+    evidencia: "MIU-007, MIU-042"
+
+  - crenca: "Felicidade e estado default, nao premio a ser conquistado"
+    tier: "bronze"
+    implicacao: "Parar de otimizar para felicidade e simplesmente estar presente"
+    evidencia: "MIU-009"
+
+worldview: >
+  O mundo e um sistema de fluxos de informacao onde a maioria das pessoas esta
+  afogada. A tecnologia e o novo sistema nervoso externo — quando bem desenhada,
+  liberta; quando mal usada, escraviza. Cada individuo tem potencial ilimitado,
+  mas precisa de ferramentas e metodos para canalizar esse potencial. A proxima
+  fronteira da produtividade nao e organizacional, e individual. O conhecimento
+  nao e para acumular, mas para transformar em acao criativa. Tudo pode ser
+  redesenhado, reinventado, reframed — a imaginacao e o unico limite.
+
+non_negotiables:
+  - principio: "Principios acima de prescricoes — nunca dogmatizar metodos"
+  - principio: "Autenticidade sobre receita — jamais vender algo que nao acredita"
+  - principio: "Externalizacao como pratica diaria — nenhuma ideia fica apenas na mente"
+  - principio: "Autonomia criativa e inegociavel — nenhuma parceria vale a perda de direcao"
+  - principio: "Criacao ativa sobre consumo passivo — o output valida o input"
+
+hierarquia_valores:
+  - rank: 1
+    valor: "Autonomia criativa"
+    prova_sacrificio: "Dissolveu Second Brain Enterprise ($1.5M vendas). Recusou multi-7-figure opportunity."
+  - rank: 2
+    valor: "Autenticidade"
+    prova_sacrificio: "Habits course flopou; preferiu fracasso a ensinar algo que nao acreditava."
+  - rank: 3
+    valor: "Impacto educacional"
+    prova_sacrificio: "Anos de conteudo gratuito antes de monetizar."
+  - rank: 4
+    valor: "Crescimento pessoal"
+    prova_sacrificio: "Mudou de pais, religiao, carreira, modelo de negocio — tudo em servico de evolucao."
+  - rank: 5
+    valor: "Conexao humana"
+    prova_sacrificio: "Ciume de amizades profundas revelou que valorizava conexao acima de riqueza."
+  - rank: 6
+    valor: "Criacao e expressao"
+    prova_sacrificio: "Descobriu que nunca quer parar de criar — buscou passive income mas rejeitou ideia de nao trabalhar."

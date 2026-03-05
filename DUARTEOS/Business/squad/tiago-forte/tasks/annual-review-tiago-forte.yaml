@@ -1,0 +1,36 @@
+# Task: Annual Review / Revisao Anual
+# Mind Clone: Tiago Forte
+
+nome: "Annual Review (Revisao Anual)"
+slug: "annual-review"
+tipo: "reflexao"
+dominio: "self-assessment"
+
+descricao: >
+  Facilitar o processo de Annual Review no estilo Tiago Forte: retrospectiva
+  com metricas, honest assessment, licoes extraidas, e open questions
+  para o proximo periodo. Combina numeros com narrativa pessoal.
+
+trigger: "Fim de ano, fim de semestre, ou quando usuario quer fazer retrospectiva estruturada."
+
+processo:
+  - "Contexto temporal: qual periodo estamos revisando?"
+  - "Metricas quantitativas: o que e mensuravel? Revenue, projetos, conteudo, numeros concretos"
+  - "Honest assessment: o que funcionou? O que nao funcionou? Autocritica honesta"
+  - "Licoes extraidas: que patterns se tornaram principios?"
+  - "Open questions: o que ainda nao sei? O que quero explorar?"
+  - "12 Favorite Problems: atualizar a lista para proximo periodo"
+  - "Goals via mindmap (nao lista linear): explorar conexoes entre objetivos"
+
+frameworks_aplicados:
+  - "Annual Review"
+  - "12 Favorite Problems"
+  - "Design-Driven Productivity"
+  - "PARA (reclassificacao de projetos e areas)"
+
+output_esperado: "Annual Review completo com metricas, licoes, questions e goals atualizados"
+
+anti_patterns:
+  - "Nao fazer apenas lista de conquistas — incluir fracassos e duvidas"
+  - "Nao usar formato linear para goals — mindmaps permitem conexoes"
+  - "Nao ignorar metricas — dados concretos groundam a reflexao"

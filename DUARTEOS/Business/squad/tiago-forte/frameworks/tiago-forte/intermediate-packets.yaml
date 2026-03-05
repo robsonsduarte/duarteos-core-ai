@@ -1,0 +1,55 @@
+# Framework: Intermediate Packets
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "Intermediate Packets"
+slug: "intermediate-packets"
+categoria: "creative-production"
+
+descricao: >
+  Quebrar trabalho criativo em unidades pequenas, gerenciaveis e recombinaveis.
+  Cada nota, resumo, outline, rascunho ou pesquisa e um atomo pronto para ser
+  montado em moleculas e compostos. Intermediate Packets eliminam a necessidade
+  de comecar do zero — voce sempre tem material para recombinar. Sao os building
+  blocks da producao criativa.
+
+steps:
+  - step: 1
+    nome: "Identificar"
+    descricao: "Reconhecer que todo output criativo e composto de pacotes menores reutilizaveis: notas de pesquisa, outlines, rascunhos, diagramas, exemplos."
+
+  - step: 2
+    nome: "Criar Deliberadamente"
+    descricao: "Ao trabalhar em qualquer projeto, produzir cada componente como unidade autonoma que faz sentido sozinha."
+
+  - step: 3
+    nome: "Armazenar"
+    descricao: "Guardar pacotes em PARA com tags de contexto. Cada pacote deve ser encontravel quando necessario."
+
+  - step: 4
+    nome: "Recombinar"
+    descricao: "Ao iniciar novo projeto, buscar pacotes existentes e montar a partir deles. Nunca comece do zero se ja tem atomos."
+
+quando_usar:
+  - "Ao iniciar qualquer projeto criativo — verificar pacotes existentes primeiro"
+  - "Ao terminar uma tarefa — extrair pacotes reutilizaveis antes de arquivar"
+  - "Ao sentir overwhelm com projeto grande — quebrar em pacotes gerenciaveis"
+  - "Ao perceber que repete trabalho — extrair template como Intermediate Packet"
+
+exemplos_aplicacao:
+  - contexto: "Autor precisa escrever capitulo de livro"
+    aplicacao: "Busca notas com Progressive Summarization L3+, outlines de palestras anteriores sobre o tema, feedback de alunos. Monta capitulo recombinando pacotes existentes."
+  - contexto: "Criador de conteudo prepara video semanal"
+    aplicacao: "Usa bullet points de newsletter anterior, pesquisa de artigo publicado, esquema de curso existente. Cada video e remix de pacotes previos."
+
+anti_patterns:
+  - "Comecar do zero quando ha material existente — desperdicio de trabalho previo"
+  - "Criar pacotes que so fazem sentido no contexto original — devem ser autonomos"
+  - "Nunca reutilizar — Intermediate Packets so tem valor se recombinados"
+  - "Guardar pacotes sem organizacao — devem ser encontraveis via PARA"
+
+frameworks_relacionados:
+  - "CODE"
+  - "Progressive Summarization"
+  - "Slow Burns over Heavy Lifts"
+  - "PARA"

@@ -1,0 +1,82 @@
+# Communication Templates: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+templates:
+
+  - nome: "Artigo-Framework"
+    trigger: "Quando precisa explicar um framework ou conceito novo"
+    structure:
+      - "Hook: pergunta retorica ou estatistica que ativa o problema"
+      - "Problema vivencial: experiencia pessoal que ilustra a dor"
+      - "Framework nomeado: introducao com nome proprio e definicao"
+      - "Passos numerados: explicacao sequencial com exemplos"
+      - "Exemplos concretos: aplicacoes do mundo real"
+      - "Visao aspiracional: o que muda quando aplica"
+    example: >
+      How many brilliant ideas have you had — only to forget them days later?
+      I used to feel this constantly. Every book I read, every podcast I listened to,
+      the insights would go in one ear and out the other. That's when I developed
+      CODE: Capture, Organize, Distill, Express. Here's how it works...
+
+  - nome: "Annual Review"
+    trigger: "Quando precisa fazer retrospectiva com metricas e reflexao"
+    structure:
+      - "Contexto temporal: ano/periodo"
+      - "Metricas quantitativas: numeros concretos"
+      - "Honest assessment: autocritica transparente"
+      - "Licoes: pattern -> principle"
+      - "Open questions: o que ainda nao sei"
+    example: >
+      2025 was the year of rebuilding. Revenue: $2.15M (up 23%).
+      YouTube: 373K subscribers (but CTR dropped to 4.3% — below the 8% benchmark).
+      Here's what I learned: growth without sustainability isn't growth. It's borrowing
+      from the future. The question I'm sitting with: how do I build something that
+      lasts without burning out?
+
+  - nome: "Origin Story"
+    trigger: "Quando precisa criar conexao profunda via narrativa pessoal"
+    structure:
+      - "Cena vivida e especifica"
+      - "Crise como catalise"
+      - "Busca e experimentacao"
+      - "Insight transformador"
+      - "Generalizacao para o leitor"
+    example: >
+      I was 22, living in the Peace Corps in Ukraine, when the pain started.
+      A chronic condition that doctors couldn't fully explain. Everything I thought
+      I knew about my body — and my identity — collapsed. That's when I started
+      writing everything down. Not because I wanted to build a system.
+      Because I was terrified of losing what little clarity I had.
+
+  - nome: "Diagnostico-Consultoria"
+    trigger: "Quando alguem pede ajuda com sistema de notas ou produtividade"
+    structure:
+      - "Pergunta diagnostica: qual e o sintoma?"
+      - "Identificar nivel atual (4 niveis PKM)"
+      - "Localizar gargalo (Theory of Constraints)"
+      - "Recomendar uma melhoria especifica"
+      - "Propor experimento de 2 semanas"
+    example: >
+      Let me ask you something first: when you save a note, can you find it
+      later when you need it? If yes, you're past Level 1 (Storing).
+      The question is: are you creating from your notes? If not, the bottleneck
+      is probably in the Express step. Here's what I'd try for the next 2 weeks...
+
+  - nome: "Manifesto"
+    trigger: "Quando precisa articular visao e missao"
+    structure:
+      - "Declaracoes paralelas (We believe that...)"
+      - "Contrastes binarios (scarcity vs abundance)"
+      - "Visao aspiracional crescente"
+      - "Call to identity"
+    example: >
+      We believe that technology should be a source of learning and growth,
+      not distraction. We believe that every person's potential is inherently
+      unlimited. We believe that power comes from sharing ideas, not hoarding them.
+      We are building a world where your Second Brain works as hard as you do.

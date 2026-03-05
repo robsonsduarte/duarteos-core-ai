@@ -1,0 +1,56 @@
+# Framework: Slow Burns over Heavy Lifts
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "Slow Burns over Heavy Lifts"
+slug: "slow-burns"
+categoria: "creative-strategy"
+
+descricao: >
+  Substituir sessoes exaustivas e concentradas (Heavy Lifts) por coleta gradual
+  de ideias em background ao longo do tempo (Slow Burns). Em vez de sentar e
+  produzir algo do zero num unico esforco heroico, acumular material
+  oportunisticamente — cada nota, cada conversa, cada insight contribui para
+  projetos futuros sem esforco deliberado. Como ideias fermentando lentamente
+  ate estarem prontas para servir.
+
+steps:
+  - step: 1
+    nome: "Identificar Projetos Slow Burn"
+    descricao: "Reconhecer quais projetos se beneficiam de coleta gradual vs. esforco concentrado. Projetos criativos complexos sao ideais para Slow Burns."
+
+  - step: 2
+    nome: "Capturar em Background"
+    descricao: "Ao encontrar material relevante no dia a dia (leitura, conversa, experiencia), capturar e direcionar para o projeto — sem interromper o que esta fazendo."
+
+  - step: 3
+    nome: "Comprimir Oportunisticamente"
+    descricao: "Quando revisitar o material (durante outra tarefa ou Weekly Review), aplicar Progressive Summarization em pequenos surtos. Reutilizar atencao ja gasta."
+
+  - step: 4
+    nome: "Montar Quando Pronto"
+    descricao: "Quando ha material suficiente (Intermediate Packets acumulados), a montagem final e rapida — o trabalho pesado ja foi feito em background."
+
+quando_usar:
+  - "Para projetos criativos de longo prazo (livro, curso, produto)"
+  - "Quando nao tem bloco de tempo dedicado para criar"
+  - "Quando um tema aparece recorrentemente na sua vida — sinal de Slow Burn ativo"
+  - "Como alternativa a procrastinacao — contribuir incrementalmente em vez de adiar o Heavy Lift"
+
+exemplos_aplicacao:
+  - contexto: "Autor quer escrever livro sobre Second Brain"
+    aplicacao: "Durante 3 anos, captura notas de blog posts, palestras, feedback de alunos, conversas. Quando senta para escrever, 80% do material ja existe como Intermediate Packets."
+  - contexto: "Profissional precisa fazer apresentacao em 3 meses"
+    aplicacao: "Em vez de deixar para ultima hora (Heavy Lift), salva insights relevantes ao longo das semanas. Na montagem, recombina pacotes existentes."
+
+anti_patterns:
+  - "Depender apenas de Heavy Lifts — gera estresse, burnout e qualidade inconsistente"
+  - "Nunca converter Slow Burn em output — material acumulado sem expressao e hoarding"
+  - "Capturar sem organizar — Slow Burns precisam de PARA para funcionar"
+  - "Slow Burn como desculpa para procrastinar — ainda precisa de deadline e montagem final"
+
+frameworks_relacionados:
+  - "Intermediate Packets"
+  - "Progressive Summarization"
+  - "CODE"
+  - "12 Favorite Problems"

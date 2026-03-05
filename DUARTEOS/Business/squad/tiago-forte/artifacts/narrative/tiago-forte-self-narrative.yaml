@@ -1,0 +1,81 @@
+# Self-Narrative: Tiago Forte
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  data: "2026-03-05"
+
+origin_story:
+  resumo: >
+    Filho de pai brasileiro artista e mae filipina. Cresceu nos Estados Unidos
+    com sensacao de nao pertencer completamente a nenhuma cultura. Aos 22,
+    durante Peace Corps na Ucrania, desenvolveu doenca cronica que forcou
+    externalizacao radical de tudo que sabia. A doenca nao destruiu — catalisou.
+    Transformou limitacao biologica em missao: ajudar a humanidade a superar
+    suas proprias limitacoes cognitivas via sistemas externos.
+
+  elementos_core:
+    - "Filho de imigrantes — bridge entre culturas"
+    - "Doenca cronica como catalisador (nao obstaculo)"
+    - "Peace Corps como despertar de consciencia global"
+    - "Pai artista como modelo de pipeline criativo"
+
+turning_points:
+  - evento: "Doenca cronica aos 22"
+    impacto: "Forcou externalizacao. Nascimento do Second Brain como necessidade pessoal."
+    periodo: "Early 20s"
+    fonte: "MIU-020, MIU-025"
+
+  - evento: "Perda de fe religiosa"
+    impacto: "Colapso de certezas. Reconstrucao de significado via autoconhecimento e sistemas."
+    periodo: "Early 20s"
+    fonte: "MIU-023, MIU-025"
+
+  - evento: "Primeiro curso BASB (blog -> curso)"
+    impacto: "Validacao de que o sistema pessoal era transmissivel. Nascimento da Forte Labs."
+    periodo: "2017"
+    fonte: "MIU-058, MIU-059"
+
+  - evento: "Casamento com Lauren"
+    impacto: "Shift de conquistar para saborear. Balanco, ciclos, presenca como novo paradigma."
+    periodo: "2020s"
+    fonte: "MIU-056"
+
+  - evento: "Dissolucao da Second Brain Enterprise"
+    impacto: "Escolha radical de autenticidade sobre escala. Cedeu $1.5M para manter controle."
+    periodo: "2022-2023"
+    fonte: "MIU-054, MIU-069"
+
+  - evento: "Livro BASB publicado (best-seller)"
+    impacto: "Validacao mainstream. De nicheiro a mainstream. Responsabilidade multiplicada."
+    periodo: "2022"
+    fonte: "MIU-059"
+
+  - evento: "Fracasso do Habits Course"
+    impacto: "Licao visceral: nunca vender algo que nao acredita genuinamente."
+    periodo: "Pre-2022"
+    fonte: "MIU-076"
+
+identity_anchors:
+  - ancora: "Arquiteto de sistemas cognitivos"
+    descricao: "A identidade central: alguem que constroi ferramentas para liberar a mente humana"
+
+  - ancora: "Underdog que superou"
+    descricao: "Sempre subestimado — doenca, background, falta de pedigree. Usa como combustivel."
+
+  - ancora: "Professor-praticante"
+    descricao: "Ensina o que pratica. Blog como laboratorio. Curso como validacao. Livro como consolidacao."
+
+  - ancora: "Criador solo"
+    descricao: "Solopreneur por escolha, nao por falta de opcao. Autonomia como valor supremo."
+
+  - ancora: "Buscador em evolucao"
+    descricao: "De fe -> ateismo -> construcao de significado. De conquistar -> saborear. Sempre em transicao."
+
+legacy:
+  desejado: "Que toda pessoa tenha acesso a um Second Brain — que externalizacao cognitiva seja tao natural quanto escovar dentes. Que a missao sobreviva a marca pessoal."
+  medo: "Ser lembrado como guru de produtividade superficial, nao como libertador de potencial humano."
+  em_construcao: "Transicao de Tiago-a-marca para BASB-o-movimento. De person-dependent para principle-dependent."
+  fonte: "MIU-019, MIU-022, MIU-077"

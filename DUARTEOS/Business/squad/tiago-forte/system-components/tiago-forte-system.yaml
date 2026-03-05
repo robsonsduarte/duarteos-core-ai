@@ -1,0 +1,158 @@
+# ============================================================
+# SYSTEM COMPONENTS — TIAGO FORTE
+# Pipeline MMOS v3 — Fase 8: Mapeamento
+# Data: 2026-03-05
+# Agente: Mapeamento (tier opus)
+# ============================================================
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  pipeline: "MMOS v3"
+  fase: 8
+  data_mapeamento: "2026-03-05"
+
+# ============================================================
+# 1. BIG FIVE (OCEAN)
+# ============================================================
+systems:
+  big_five:
+    openness:
+      score: 92
+      confidence: 0.95
+      evidence:
+        - "Cross-domain transfer constante: manufatura -> conhecimento, biologia -> cognicao, economia -> ideias (6 pontes conceituais documentadas)"
+        - "Mudou de pais, religiao, carreira, modelo de negocio — tudo em servico de evolucao (MIU-023, MIU-025, MIU-038, MIU-041)"
+        - "Goals evoluiram de SMART para narrativas para mindmaps — abertura a novas formas de pensar (MIU-041)"
+        - "12 Favorite Problems como bussola de curiosidade — busca ativa de novidade (MIU-039)"
+        - "Portfolio of Experiments: testa multiplas direcoes simultaneamente (MIU-067)"
+        - "Reframing como ferramenta existencial: everything is a story that can be edited (MIU-010)"
+
+    conscientiousness:
+      score: 94
+      confidence: 0.96
+      evidence:
+        - "Criou PARA, CODE, Progressive Summarization, Weekly Review — sistemas altamente estruturados para cada aspecto da vida (MIU-026, MIU-027, MIU-028, MIU-040)"
+        - "One-Touch to Inbox Zero: cada email recebe acao unica e decisiva (MIU-037)"
+        - "20 anos de goal-setting documentado com evolucao metodica (MIU-041)"
+        - "Annual Reviews detalhados com metricas financeiras, KPIs de YouTube, autocritica estruturada (MIU-104, MIU-078)"
+        - "Theory of Constraints aplicada a knowledge work — otimizacao sistematica (MIU-035, MIU-063)"
+        - "Decisoes irreversiveis para preservar willpower — nanny para academia, contratos como estrutura (MIU-046)"
+        - "Batch Processing semanal e Weekly Review como backbone operacional (MIU-060, MIU-066)"
+
+    extraversion:
+      score: 58
+      confidence: 0.88
+      evidence:
+        - "Solopreneur declarado: joint ventures nao servem, prefere decisao unilateral (MIU-054)"
+        - "Construiu comunidade de 13k membros no Circle, 373k no YouTube — forte presenca publica (MIU-065)"
+        - "Confessa ciume de pessoas com amizades profundas — sente falta de conexao (MIU-053)"
+        - "Mudou para Mexico para buscar serendipidade social, paddle tennis, mastermind (MIU-057)"
+        - "Preferencia por criar condicoes para encontros sem comprometer autonomia (MIU-089)"
+        - "Tom confessional-aspiracional na escrita — comunica mas de forma introvertida (estilometria)"
+        - "Prefere interacao assimetrica (1-para-muitos via conteudo) sobre interacao simetrica (1-para-1)"
+
+    agreeableness:
+      score: 65
+      confidence: 0.85
+      evidence:
+        - "Missao educacional democratizante: potencial humano ilimitado, educacao como catalisador (MIU-017, MIU-022)"
+        - "Transparencia estrategica: compartilha fracassos, metricas, duvidas publicamente (MIU-104, MIU-072)"
+        - "Principios nao prescricoes — respeita autonomia alheia (MIU-042)"
+        - "Dissolveu empresa de $1.5M sem hesitar quando desalinhada — independencia acima de harmonia (MIU-054, MIU-069)"
+        - "Recusou multi-7-figure opportunity por falta de alinhamento pessoal (MIU-071)"
+        - "Tem relacao complexa com dinheiro — abundance vs deservedness indica empatia em desenvolvimento (MIU-072, MIU-079)"
+        - "Resistencia a parcerias profundas mesmo quando beneficas (bias de autonomia)"
+
+    neuroticism:
+      score: 45
+      confidence: 0.87
+      evidence:
+        - "Colapso existencial na perda de fe religiosa — vulnerabilidade documentada (MIU-023)"
+        - "Doenca cronica aos 22 como catalise — lidou construtivamente com adversidade (MIU-020)"
+        - "Reconhece dead-end da self-optimization — autoconsciencia sobre limites (MIU-083)"
+        - "Medo de caos informacional e inautenticidade — ansiedades especificas, nao generalizadas (drivers)"
+        - "Relacao com dinheiro: tem abundancia mas sente que nao merece — em trabalho terapeutico (MIU-072)"
+        - "Lauren trouxe balanco e presenca — capacidade de integrar perspectivas calmantes (MIU-056)"
+        - "Happiness is my default state — insight pos-meditacao indica estabilidade emocional baseline (MIU-009)"
+        - "Canaliza ansiedade em sistemas — neuroticism produtivo, nao paralisante"
+
+  # ============================================================
+  # 2. MBTI
+  # ============================================================
+  mbti:
+    type: "INTJ"
+    confidence: 0.88
+    evidence:
+      - "I (Introversion): Solopreneur, prefere decisao unilateral, energia vem de trabalho solo. Ciume de amizades revela introversao com necessidade social nao-atendida, nao extroversao."
+      - "N (Intuition): Cross-domain transfer constante, metaforas abstratas, 12 Favorite Problems, visao de 10 anos para BASB. Padrao associativo entre dominios tangíveis e cognitivos."
+      - "T (Thinking): Sistemas, frameworks com acronimos, metricas quantitativas em reviews, Theory of Constraints. Decisoes baseadas em principios, nao em harmonia social (dissolveu empresa)."
+      - "J (Judging): PARA como taxonomia universal, Weekly Review como OS, decisoes irreversiveis, batch processing. Forte preferencia por estrutura e closure."
+    alternativa:
+      tipo: "INFJ"
+      razao_descartada: "Embora Tiago tenha forte empatia educacional e vulnerabilidade confessional, suas decisoes sao consistentemente baseadas em logica e principios (T), nao em valores pessoais de harmonia (F). Dissolucao de empresa lucrativa, recusa de milhoes, e priorizacao de autonomia sobre conexao apontam para T dominante."
+
+  # ============================================================
+  # 3. ENEAGRAMA
+  # ============================================================
+  enneagram:
+    type: 5
+    wing: 4
+    confidence: 0.86
+    evidence:
+      - "Tipo 5 (Investigador): Coleciona conhecimento obsessivamente, cria sistemas de organizacao, externalizacao como libertacao cognitiva. Medo central de ser incapaz/incompetente — everyone has underestimated me."
+      - "Asa 4: Vulnerabilidade confessional, origin story como narrativa de identidade, quest for self-knowledge, perda de fe como transformacao existencial. Busca de autenticidade acima de tendencias."
+      - "Integracao para 8: Missao de desacorrentar humanidade, autonomia inegociavel, dissolucao de empresa por controle. Quando saudavel, assume poder e lideranca."
+      - "Desintegracao para 7: Portfolio of experiments, multiplas direcoes simultaneamente, dispersao potencial reconhecida (YouTube CTR 4.3% vs 8% benchmark)."
+      - "Motivacao central 5w4: Dominar um dominio de conhecimento (Second Brain/PKM) e expressa-lo de forma unica e autentica (livro, curso, manifesto)."
+    alternativa:
+      tipo: "1w2"
+      razao_descartada: "Embora Tiago tenha forte impulso de melhoria (produtividade, otimizacao) e missao educacional (2 wing), ele nao e motivado por correcao moral ou perfeccionismo. Seus sistemas servem a liberdade, nao a correção. Ele abraca imperfeicao (satisficing, mediocre is OK) e questiona dogmas — anti-padrao de Tipo 1."
+
+# ============================================================
+# CONSISTENCIA CRUZADA
+# ============================================================
+cross_consistency:
+  big_five_vs_mbti:
+    - "O alta (92) + N forte = consistente com iNtuition dominante"
+    - "C alta (94) + J forte = consistente com Judging dominante"
+    - "E medio-baixo (58) + I = consistente com Introversion"
+    - "A medio (65) + T = consistente com Thinking (nao e disagreeable, mas decide por logica)"
+    - "N baixo (45) + estabilidade = consistente com INTJ maduro (funcao inferior Se desenvolvida via Lauren/embodiment)"
+
+  big_five_vs_enneagram:
+    - "O alta (92) = consistente com 5w4 (curiosidade + expressao unica)"
+    - "C alta (94) = consistente com integracao saudavel do 5 (sistematizacao como competencia)"
+    - "E medio (58) = consistente com 5 (reserva social) com asa 4 (necessidade de conexao autentica)"
+    - "A medio (65) = consistente com 5w4 (empatia presente mas filtrada por logica)"
+    - "N baixo (45) = consistente com 5 integrado para 8 (assertivo, nao ansioso)"
+
+  mbti_vs_enneagram:
+    - "INTJ + 5w4 = combinacao classica e altamente consistente"
+    - "Ni dominante (INTJ) = visao de longo prazo do 5 (10-year vision, frameworks duradouros)"
+    - "Te auxiliar (INTJ) = sistematizacao do 5 (PARA, CODE, TOC)"
+    - "Fi terciaria (INTJ) = asa 4 (autenticidade, vulnerabilidade confessional)"
+    - "Se inferior (INTJ) = desintegracao 5->7 (dispersao, busca de novidade) + trabalho em embodiment"
+
+  veredicto: "Os 3 sistemas convergem fortemente. INTJ + 5w4 e uma combinacao classica, e os scores Big Five validam ambos. A consistencia cruzada e alta (>90%). Nao ha contradicoes significativas."
+
+# ============================================================
+# OMEGA STATUS
+# ============================================================
+omega_status:
+  agent: "Mapeamento (Opus)"
+  task: "System Components — Tiago Forte (Fase 8)"
+  iteration: 1
+  score: 96
+  threshold: 95
+  exit_signal: true
+  completion_signals:
+    - "Big Five: 5 traits com scores, confidence e evidencias"
+    - "MBTI: INTJ com justificativa e alternativa descartada"
+    - "Eneagrama: 5w4 com justificativa e alternativa descartada"
+    - "Consistencia cruzada: 3 comparacoes com veredicto"
+  evidence:
+    - "Big Five scores baseados em 112 MIUs + 16 drivers + estilometria"
+    - "MBTI derivado de 4 funcoes com evidencias cross-source"
+    - "Eneagrama derivado de motivacoes centrais + integracao/desintegracao"
+    - "Nenhuma contradicao significativa entre os 3 sistemas"

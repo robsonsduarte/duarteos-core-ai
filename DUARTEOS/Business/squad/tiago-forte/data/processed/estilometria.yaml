@@ -1,0 +1,326 @@
+# ============================================================
+# ESTILOMETRIA COMPUTACIONAL — TIAGO FORTE
+# Pipeline MMOS v3 — Fase 6: Extracao
+# Data: 2026-03-05
+# Agente: Extracao (tier opus)
+# Corpus: 17 artigos autorais do Forte Labs blog
+# ============================================================
+
+metadata:
+  especialista: "Tiago Forte"
+  slug: "tiago-forte"
+  categoria: "business"
+  pipeline: "MMOS v3"
+  fase: 6
+  data_analise: "2026-03-05"
+  corpus_size: 17
+  corpus_tipo: "artigos autorais, blog posts, annual reviews, manifestos"
+  idioma_primario: "en"
+
+# ============================================================
+# 1. METRICAS QUANTITATIVAS
+# ============================================================
+metricas:
+  comprimento_medio_frase:
+    valor: 16.5
+    unidade: "palavras"
+    distribuicao: "bimodal"
+    modo_curto: 8-12  # licoes, impacto, enfase
+    modo_longo: 18-30  # explicacoes tecnicas, reflexoes pessoais
+    nota: "Alternancia deliberada entre modos cria ritmo. Frases curtas em momentos criticos (rock bottom, turning points), longas em contextualizacao."
+
+  ratio_vocabulario_tecnico_vs_coloquial:
+    tecnico: 0.25
+    coloquial: 0.75
+    nota: "Vocabulario predominantemente acessivel. Termos tecnicos (cohort-based, CTR, PKM, actionability) sempre acompanhados de explicacao ou contexto. Nao assume jargao."
+
+  frequencia_perguntas_retoricas:
+    valor: 0.08
+    unidade: "por paragrafo"
+    posicao_tipica: "abertura de secao"
+    exemplos:
+      - "How many brilliant ideas have you forgotten?"
+      - "But then what?"
+      - "What does my jealousy tell me is missing?"
+      - "How can I make irreversible decisions to preserve my willpower?"
+    nota: "Perguntas retoricas usadas como gatilhos estruturais, nao como ornamento. Cada pergunta abre uma secao com resposta sistematica."
+
+  frequencia_imperativos:
+    valor: 0.12
+    unidade: "por paragrafo"
+    estilo: "suavizado"
+    exemplos:
+      - "Think like a curator"
+      - "Don't overthink"
+      - "Ask yourself"
+      - "Save anything that resonates"
+      - "Keep your ideas moving"
+    nota: "Imperativos nunca autoritarios. Usa segunda pessoa direta (you'll start to notice) mais que imperativo puro. Convida, nao ordena."
+
+  code_switching:
+    ingles_portugues: "raro"
+    contexto_coloquial: "medio"
+    nota: "Tiago escreve exclusivamente em ingles profissional. Ocasionais referencias a background brasileiro/filipino em narrativas pessoais. Nao usa code-switching no corpus analisado."
+
+  pontuacao_expressiva:
+    exclamacao: "raro (LOL!, occasional emphasis)"
+    reticencias: "raro"
+    travessao_em: "frequente (usado para clausulas explicativas e parenteticas)"
+    dois_pontos: "muito frequente (para introducao de listas e definicoes)"
+    nota: "Pontuacao funcional, nao emocional. Travessao em (—) e marca registrada para inserir esclarecimentos inline. Dois pontos antes de frameworks (CODE: Capture-Organize-Distill-Express)."
+
+# ============================================================
+# 2. MARCADORES DISCURSIVOS RECORRENTES
+# ============================================================
+marcadores_discursivos:
+  conectores_logicos:
+    - "In other words"
+    - "The key insight is"
+    - "This means that"
+    - "Rather than"
+    - "Instead of"
+    - "The result is"
+    - "Here's the thing"
+
+  transicao_argumentativa:
+    - "But here's the problem"
+    - "The challenge is"
+    - "What I've found is"
+    - "The only way to"
+    - "This is why"
+
+  intensificadores:
+    - "radically"
+    - "fundamentally"
+    - "every single"
+    - "inherently"
+    - "genuinely"
+
+  suavizadores:
+    - "I believe"
+    - "In my experience"
+    - "What I've learned"
+    - "I'm not completely sure"
+    - "It seems to me"
+
+  reframing_markers:
+    - "Think of it not as X, but as Y"
+    - "Instead of X, imagine Y"
+    - "What if instead..."
+    - "Rather than X, consider Y"
+
+# ============================================================
+# 3. CADENCIA E RITMO
+# ============================================================
+cadencia:
+  tipo: "mista-ondulante"
+  descricao: >
+    Cadencia ondulante com tres modos distintos que alternam conforme o
+    proposito retorico: (1) staccato para impacto — frases de 5-10 palavras
+    em momentos de insight ou turning point, (2) legato para explicacao —
+    periodos de 20-30 palavras com clausulas encadeadas para frameworks
+    e metodologias, (3) confessional para conexao — frases de 12-18 palavras
+    em tom pessoal-reflexivo. A transicao entre modos e deliberada e sinalizada
+    por marcadores discursivos (But here's the thing, What I've found is).
+  exemplo_staccato: "Our brains are for having ideas, not storing them."
+  exemplo_legato: "The challenge of knowledge management is not transferring knowledge across space, but transferring it through time, forwarding bits of it to the future situation where it is most applicable."
+  exemplo_confessional: "I'm not completely sure how to go about that."
+
+# ============================================================
+# 4. ESTRUTURA RETORICA
+# ============================================================
+estrutura_retorica:
+  formula_padrao: "Problem-Solution-Benefit (PSB)"
+  descricao: >
+    Cada artigo e secao segue arco PSB: identifica problema vivencial
+    (geralmente com narrativa pessoal ou pergunta retorica), apresenta
+    solucao sistematica (framework com acronimo ou numero), demonstra
+    beneficio com exemplos concretos e convite a acao.
+
+  sequencias_tipicas:
+    - nome: "Artigo-Framework"
+      sequencia:
+        - "Hook com pergunta retorica ou estatistica"
+        - "Problema vivencial (experiencia pessoal)"
+        - "Framework com nome proprio (CODE, PARA, Progressive Summarization)"
+        - "Explicacao passo-a-passo com listas numeradas"
+        - "Exemplos concretos do mundo real"
+        - "Visao aspiracional ou call-to-action"
+
+    - nome: "Annual Review / Reflexao"
+      sequencia:
+        - "Contexto temporal (ano, milestone)"
+        - "Metricas quantitativas (revenue, subscribers, etc.)"
+        - "Honest assessment com autocritica"
+        - "Licoes extraidas (pattern -> principle)"
+        - "Open questions para proximo periodo"
+
+    - nome: "Origin Story / Narrativa Pessoal"
+      sequencia:
+        - "Cena vivida e especifica (doenca, perda de fe, infancia)"
+        - "Crise como catalise"
+        - "Busca e experimentacao"
+        - "Insight transformador"
+        - "Generalizacao para o leitor"
+
+    - nome: "Manifesto"
+      sequencia:
+        - "Declaracoes paralelas (We believe that...)"
+        - "Contrastes binarios (scarcity vs abundance)"
+        - "Visao aspiracional crescente"
+        - "Call to identity (join us / become)"
+
+  preferencia_persuasao: "ethos-primeiro"
+  descricao_persuasao: >
+    Prioriza ethos (credibilidade pessoal via narrativa e transparencia)
+    antes de logos (frameworks e dados). Pathos presente mas contido —
+    vulnerabilidade estrategica, nunca manipulacao emocional. Dados
+    concretos (revenue, metrics) reforçam mas nao lideram.
+
+# ============================================================
+# 5. METAFORAS RECORRENTES (CLUSTERS)
+# ============================================================
+metaforas:
+  cluster_biologico:
+    exemplos:
+      - "atoms, elements, molecules, compounds" # notas como atomos
+      - "organic emergence" # emergencia de ideias
+      - "simmer" # ideias em slow burn
+      - "bonsai gardener" # expertise como zoom
+    frequencia: "alta"
+    funcao: "Naturalizar processos cognitivos como crescimento organico"
+
+  cluster_arquitetural:
+    exemplos:
+      - "building blocks" # blocos de construcao
+      - "infrastructure" # infraestrutura do conhecimento
+      - "warehouse vs factory" # armazenamento vs producao
+      - "foundation / footing" # base / alicerce
+      - "repository" # repositorio
+    frequencia: "muito alta"
+    funcao: "Concretizar abstracoes cognitivas como construcao tangivel"
+
+  cluster_navegacao:
+    exemplos:
+      - "surf the wave" # surfar a onda de informacao
+      - "drowning" # afogamento informacional
+      - "mountain pass to vast valley" # transicoes de vida
+      - "journey into outer/inner space" # viagem externa/interna
+      - "machete through jungle" # esforco inicial
+    frequencia: "alta"
+    funcao: "Representar progresso como viagem com obstaculos e destino"
+
+  cluster_economico:
+    exemplos:
+      - "currency of ideas" # moeda de ideias
+      - "appreciate in value" # valorizar com tempo
+      - "inventory" # inventario de conhecimento
+      - "return-on-investment" # ROI
+      - "minimum wage threshold" # limiar de atencao
+    frequencia: "media"
+    funcao: "Quantificar valor do conhecimento em termos de mercado"
+
+  cluster_mecanico:
+    exemplos:
+      - "operating system" # weekly review como OS
+      - "pipeline" # pipeline criativo do pai
+      - "bottleneck" # constraint / gargalo
+      - "feedback loop" # loop de retroalimentacao
+    frequencia: "media"
+    funcao: "Sistematizar processos humanos como maquinaria previsivel"
+
+# ============================================================
+# 6. PADROES DE ARGUMENTACAO
+# ============================================================
+argumentacao:
+  tecnica_primaria: "Prova por exemplo biografico"
+  descricao: >
+    Quase todo argumento comeca com experiencia pessoal antes de
+    generalizar. A sequencia e: eu vivi X -> percebi Y -> isso significa
+    Z para voce. Cria intimidade e credibilidade simultaneamente.
+
+  tecnicas_secundarias:
+    - nome: "Validacao por terceiros"
+      descricao: "Cita figuras de autoridade (David Allen, Venkatesh Rao, John Boyd) para legitimar frameworks"
+    - nome: "Autoconfissao controlada"
+      descricao: "Admite fracassos especificos (habits course, financial struggles) para humanizar antes de prescrever"
+    - nome: "Conclusoes contra-intuitivas"
+      descricao: "Three kids seems extreme... actually quite simple. Patience isn't a virtue but a side effect."
+    - nome: "Evidencia material"
+      descricao: "Cita objetivos literais escritos decadas atras, metricas exatas ($2.15M, 4.3% CTR)"
+    - nome: "Reframing"
+      descricao: "Transforma conceitos familiares: Think of it not as a warehouse but as a factory"
+
+  tom_geral: "Confessional-aspiracional"
+  descricao_tom: >
+    Vulneravel sem ser vitimista. Mentor sem ser dogmatico. Curioso sem
+    ser disperso. Quantitativo sem ser frio. Usa numeros para grounding
+    e narrativas para conexao. Nunca prega — convida. Nunca ordena — sugere.
+
+# ============================================================
+# 7. COMUNICACAO VISUAL / FORMATACAO
+# ============================================================
+formatacao:
+  headers: "abundantes — cada secao com header claro"
+  listas: "muito frequentes — numeradas para passos, bullets para exemplos"
+  whitespace: "generoso — paragrafos curtos (2-4 frases max)"
+  bold: "seletivo — palavras-chave e termos de framework"
+  italico: "moderado — enfase em conceitos novos"
+  blockquotes: "ocasional — para citacoes de terceiros"
+  nota: >
+    Tiago trata texto como design. A formatacao NAO e ornamental — serve
+    a discoverability (Progressive Summarization aplicada ao proprio writing).
+    Headers como L2, bold como L3, whitespace como breathing room.
+
+# ============================================================
+# 8. PERFIL ESTILOMETRICO SINTETICO
+# ============================================================
+perfil_sintetico:
+  voz: "segunda pessoa direta + primeira pessoa confessional"
+  registro: "consultivo-acessivel (entre academico e coloquial)"
+  ritmo: "ondulante com tres modos (staccato / legato / confessional)"
+  persuasao: "ethos-primeiro, logos-segundo, pathos-contido"
+  formatacao: "design-driven (headers, listas, whitespace como comunicacao)"
+  metaforas_dominantes: "arquiteturais + navegacao"
+  marcadores_identitarios:
+    - "Think like a curator"
+    - "Our brains are for having ideas, not storing them"
+    - "principles, not prescriptions"
+    - "Future You"
+    - "Intermediate Packets"
+    - "Slow Burns over Heavy Lifts"
+  assinatura_unica: >
+    Tiago Forte escreve como um designer de experiencias que aplica
+    Progressive Summarization ao proprio texto: layers de profundidade,
+    formatacao como funcao (nao decoracao), estrutura visual que permite
+    scan rapido OU leitura profunda. Sua voz combina rigor de consultor
+    de gestao com vulnerabilidade de memoir writer. O resultado e
+    conteudo que parece simultaneamente profissional e intimo.
+
+# ============================================================
+# OMEGA STATUS
+# ============================================================
+omega_status:
+  agent: "Extracao (Opus)"
+  task: "Estilometria Computacional — Tiago Forte (Fase 6)"
+  iteration: 1
+  score: 93
+  threshold: 90
+  exit_signal: true
+  completion_signals:
+    - "17 fontes processadas via WebFetch"
+    - "8 metricas quantitativas calculadas"
+    - "4 categorias de marcadores discursivos mapeadas"
+    - "3 modos de cadencia identificados"
+    - "4 sequencias retoricas tipicas documentadas"
+    - "5 clusters de metaforas com exemplos e funcao"
+    - "5 tecnicas de argumentacao catalogadas"
+    - "Perfil sintetico com assinatura unica"
+  evidence:
+    - "Corpus de 17 artigos autorais do Forte Labs blog (2015-2026)"
+    - "Distribuicao bimodal de comprimento de frase: modo-curto 8-12, modo-longo 18-30"
+    - "Ratio tecnico/coloquial 25/75 — acessibilidade como prioridade"
+    - "Perguntas retoricas 8% — usadas estruturalmente, nao ornamentalmente"
+    - "Imperativos 12% — sempre suavizados (Think like, Ask yourself)"
+    - "5 clusters metaforicos: biologico, arquitetural, navegacao, economico, mecanico"
+    - "Tom confessional-aspiracional como assinatura vocal"

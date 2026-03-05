@@ -1,0 +1,69 @@
+# Framework: Progressive Summarization
+# Mind Clone: Tiago Forte
+# Pipeline: MMOS v3
+
+nome: "Progressive Summarization"
+slug: "progressive-summarization"
+categoria: "knowledge-distillation"
+
+descricao: >
+  Tecnica de 5 camadas para comprimir informacao progressivamente ao longo do
+  tempo. Cada camada adiciona um nivel de curadoria sobre a anterior, preservando
+  o contexto original como safety net. A chave e que voce NAO resume tudo de uma
+  vez — resume oportunisticamente, em pequenos surtos, quando a informacao e
+  relevante para algo que esta fazendo agora.
+
+steps:
+  - step: 0
+    nome: "Layer 0 — Fonte Original"
+    descricao: "O material bruto completo: artigo, capitulo, podcast transcript. Preservado integralmente."
+    esforco: "zero"
+
+  - step: 1
+    nome: "Layer 1 — Captura Seletiva"
+    descricao: "Salvar apenas as partes que ressoam intuitivamente. Nao e resumo — e selecao baseada em feeling."
+    esforco: "baixo"
+
+  - step: 2
+    nome: "Layer 2 — Bold"
+    descricao: "Negritar as passagens mais importantes dentro do que foi capturado. Reduz volume em 50-80%."
+    esforco: "baixo"
+
+  - step: 3
+    nome: "Layer 3 — Highlight"
+    descricao: "Destacar com cor as frases absolutamente essenciais dentro do bold. O cream of the cream."
+    esforco: "medio"
+
+  - step: 4
+    nome: "Layer 4 — Executive Summary"
+    descricao: "Escrever um resumo executivo em suas proprias palavras no topo da nota. 2-4 frases capturando a essencia."
+    esforco: "medio-alto"
+
+  - step: 5
+    nome: "Layer 5 — Remix"
+    descricao: "Recombinar o material processado em algo novo: artigo, apresentacao, framework. A nota vira materia-prima para criacao."
+    esforco: "alto"
+
+quando_usar:
+  - "Ao revisitar uma nota para um projeto ativo — comprima um nivel cada vez que toca"
+  - "Ao preparar conteudo a partir de notas existentes — percorra camadas ate Express"
+  - "Ao sentir que tem muitas notas mas nao encontra nada — Progressive Summarization cria discoverability"
+  - "Durante Weekly Review — comprima notas que tocou durante a semana"
+
+exemplos_aplicacao:
+  - contexto: "Leitor salva artigo de 3000 palavras sobre habits"
+    aplicacao: "L1: Captura 500 palavras que ressoam. Semanas depois, ao preparar post: L2 bold 150 palavras. L3 highlight 40 palavras. L4 escreve 3 frases de resumo no topo. L5 usa como Intermediate Packet num artigo proprio."
+  - contexto: "Pesquisador acumulou 50 notas sobre um topico"
+    aplicacao: "Passa por cada nota aplicando L2 (bold). As 10 mais relevantes recebem L3. As 3 melhores recebem L4. O material L4 vira esqueleto do paper."
+
+anti_patterns:
+  - "Resumir tudo de uma vez — gasta energia em notas que talvez nunca use"
+  - "Pular camadas — cada camada e safety net para a anterior"
+  - "Comprimir sem contexto — Progressive Summarization preserva layers anteriores"
+  - "Nunca chegar a Layer 5 — sem remix, o sistema e warehouse"
+  - "Usar Layer 4 em tudo — executive summaries so para notas que realmente revisita"
+
+frameworks_relacionados:
+  - "CODE"
+  - "Intermediate Packets"
+  - "Slow Burns over Heavy Lifts"
