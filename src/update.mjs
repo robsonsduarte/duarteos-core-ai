@@ -9,6 +9,18 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.20.0': {
+    title: 'Mind Clone Tiago Forte — MMOS v3 Pipeline Completo (F=95.80%)',
+    highlights: [
+      'Novo mind clone: Tiago Forte (produtividade, gestao de conhecimento, BASB) — categoria Business',
+      'PCFE: FE=87.4% (EXCELENTE) → F real=95.80% (accuracy 91.60%, delta +8.40)',
+      '48 fontes primarias, 112 MIUs, 16 drivers (7 gold), 5 paradoxos, 7 frameworks',
+      'DNA 681 linhas + 33 arquivos no squad + Big Five/MBTI(INTJ)/Enneagram(5w4)',
+      'Fix: squads movidos para DUARTEOS/ (fora de commands/) — elimina phantom slash commands',
+      'Calibracao PCFE #4: 4 clones calibrados, avg_accuracy 95.65%',
+      'Synapse: 63 → 64 mind clones',
+    ],
+  },
   '5.19.0': {
     title: 'Distribution Fix — Sincronizacao Completa de Templates e Protocolos',
     highlights: [
