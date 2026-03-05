@@ -86,16 +86,6 @@ Nenhum agente pode auto-aprovar output abaixo do threshold do seu tipo de task.
 
 ---
 
-## Artigo 6 — Roteamento de Modelos
-
-**6.1** Todo agente DEVE respeitar o roteamento de modelos ao spawnar sub-agentes. Coleta (WebSearch, WebFetch, MCPs de busca) usa `haiku`. Processamento de dados coletados usa `sonnet`. Criacao (codigo, decisoes, artefatos) usa `opus`.
-
-**6.2** Na duvida entre dois tiers, usar o tier mais alto (nunca descer). Operacoes criticas de seguranca e orquestracao sempre em `opus`.
-
-**6.3** Protocolo completo em `.claude/protocols/MODEL-ROUTING.md`.
-
----
-
 ## Aplicacao
 
 - Todo agente DuarteOS deve ler esta Constitution no inicio de cada sessao

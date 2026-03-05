@@ -1,6 +1,6 @@
 {
   "name": "duarteos-core-ai",
-  "version": "5.18.0",
+  "version": "5.19.0",
   "description": "AIOS multi-agente para Claude Code. 13 agentes com personas + 63 mind clones + 10 conselhos + 26 squad commands + 24 MCPs + OMEGA (quality enforcement loop + circuit breaker) + MMOS v3 Pipeline (11 Fases + PCFE Pre-Clone Fidelity Estimation + Gate Humano + Scaffold Automatico) + Synapse v2 (memoria incremental) + Inbox/Caixa + Dossies Tematicos + YOLO Mode + Constitution + 4-Layer Config + Task Templates + Quality Gates + IDE Sync + Incremental Dev Rule + PM Pure Orchestrator.",
   "type": "module",
   "bin": {

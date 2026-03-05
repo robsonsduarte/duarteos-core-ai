@@ -43,11 +43,11 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash .claude/hooks/session-memory.sh"
+            "command": "bash \"$(git rev-parse --show-toplevel 2>/dev/null || echo .)/.claude/hooks/session-memory.sh\""
           },
           {
             "type": "command",
-            "command": "bash .claude/scripts/redis-session-save.sh 2>/dev/null || true"
+            "command": "bash \"$(git rev-parse --show-toplevel 2>/dev/null || echo .)/.claude/scripts/redis-session-save.sh\" 2>/dev/null || true"
           }
         ]
       }

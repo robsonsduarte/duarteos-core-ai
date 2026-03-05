@@ -9,6 +9,16 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.19.0': {
+    title: 'Distribution Fix — Sincronizacao Completa de Templates e Protocolos',
+    highlights: [
+      'Fix: MODEL-ROUTING.md adicionado aos templates (outros projetos agora recebem o protocolo)',
+      'Fix: warmup-mcps.sh adicionado a lista safeToUpdate (propagado no update)',
+      'Fix: Banners de init e update corrigidos (63 mind clones, 10 protocols)',
+      'Fix: Contagem de Business mind clones corrigida (8 empreendedores)',
+      'Garantia: todos os protocolos, scripts e comandos agora sincronizam corretamente via init/update',
+    ],
+  },
   '5.18.0': {
     title: 'Model Routing — Roteamento Inteligente de Modelos (Haiku/Sonnet/Opus)',
     highlights: [
@@ -419,7 +429,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  59 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  63 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 
@@ -523,6 +533,7 @@ export function update(options = {}) {
     ['scripts/setup-python.sh', '.claude/scripts/setup-python.sh'],
     ['scripts/setup-sandbox.sh', '.claude/scripts/setup-sandbox.sh'],
     ['scripts/redis-session-save.sh', '.claude/scripts/redis-session-save.sh'],
+    ['scripts/warmup-mcps.sh', '.claude/scripts/warmup-mcps.sh'],
 
     // Python MCP servers
     ['mcp-servers/data-analyzer/server.py', '.claude/mcp-servers/data-analyzer/server.py'],
@@ -584,6 +595,9 @@ export function update(options = {}) {
     // v5.7.0 — Protocols (OMEGA + MMOS-PIPELINE)
     ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
     ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
+
+    // v5.18.0 — Model Routing Protocol
+    ['protocols/MODEL-ROUTING.md', '.claude/protocols/MODEL-ROUTING.md'],
 
     // v5.13.0 — MMOS v3 PCFE template (system-owned, safe to update)
     ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],

@@ -77,7 +77,7 @@ export function init(projectName, options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version}${' '.repeat(Math.max(0, bannerWidth - 22 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  62 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  63 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
 
   // Detect project name
@@ -303,6 +303,9 @@ export function init(projectName, options = {}) {
     // v5.7.0 — Protocols (OMEGA + MMOS-PIPELINE)
     ['protocols/OMEGA.md', '.claude/protocols/OMEGA.md'],
     ['protocols/MMOS-PIPELINE.md', '.claude/protocols/MMOS-PIPELINE.md'],
+
+    // v5.18.0 — Model Routing Protocol
+    ['protocols/MODEL-ROUTING.md', '.claude/protocols/MODEL-ROUTING.md'],
 
     // v5.13.0 — MMOS v3 PCFE (Pre-Clone Fidelity Estimation)
     ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],
@@ -547,7 +550,7 @@ export function init(projectName, options = {}) {
      Sequential Thinking   — Raciocinio estruturado
      E2B Sandbox           — Execucao segura de codigo
 
-  Protocols (.claude/protocols/) — 9 documentos formais:
+  Protocols (.claude/protocols/) — 10 documentos formais:
      CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
      GOVERNANCE.md           — Convencoes de nomenclatura e ciclo de vida
      CONFIG-PROTOCOL.md      — Sistema de configuracao em 4 camadas
@@ -556,6 +559,7 @@ export function init(projectName, options = {}) {
      IDE-SYNC.md             — Sincronizacao multi-IDE
      OMEGA.md                — Quality enforcement loop engine
      MMOS-PIPELINE.md        — Pipeline MMOS v3 de clonagem mental (11 fases 0-10 + PCFE)
+     MODEL-ROUTING.md        — Roteamento inteligente de modelos (Haiku/Sonnet/Opus)
 
   Config (.claude/config/) — 3 camadas:
      system.yaml             — Layer 0: defaults DuarteOS (read-only)
@@ -617,13 +621,13 @@ export function init(projectName, options = {}) {
      blueprint-template.md   — Template de blueprint para build-system
      Use: /DUARTEOS:squad:build-system [PRD.md | workflow.json | URL]
 
-  Mind Clones (.claude/commands/DUARTEOS/) — 62 consultores cognitivos:
+  Mind Clones (.claude/commands/DUARTEOS/) — 63 consultores cognitivos:
      /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Ogilvy...)
      /DUARTEOS:Marketing:*      — 9 estrategistas (Dan Kennedy, Pedro Sobral...)
      /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen...)
      /DUARTEOS:AI:*             — 5 pioneiros (Andrew Ng, Hinton, LeCun...)
      /DUARTEOS:Tech:*           — 6 lideres (Zuckerberg, Larry Page, Pavel Durov...)
-     /DUARTEOS:Business:*       — 7 empreendedores (Bill Gates, Thiago Finch, David Allen...)
+     /DUARTEOS:Business:*       — 8 empreendedores (Bill Gates, Thiago Finch, David Allen, W. Edwards Deming...)
      /DUARTEOS:Content:*        — 4 criadores (MrBeast, Virginia Fonseca...)
      /DUARTEOS:Product:*        — 3 lideres (Julie Zhuo, Ezra Firestone...)
      /DUARTEOS:Saude:*          — 8 profissionais (Drauzio Varella, Vera Iaconelli, Atul Gawande...)
@@ -657,7 +661,7 @@ export function init(projectName, options = {}) {
 
   Synapse v2 — Memoria Incremental (.claude/synapse/):
      DNA 6 Camadas por mind clone     — Filosofia, Frameworks, Heuristicas, Metodologias, Dilemas, Paradoxos Produtivos
-     63 DNA pre-populados             — Todas as 10 categorias de mind clones
+     63+ DNA pre-populados            — Todas as 10 categorias de mind clones
      Dossies Tematicos                — conhecimento consolidado cross-source por tema
      Log de Ingestao                  — rastreabilidade de conteudo processado
      /DUARTEOS:squad:dossie {tema}    — compila dossie tematico com todos experts relevantes
