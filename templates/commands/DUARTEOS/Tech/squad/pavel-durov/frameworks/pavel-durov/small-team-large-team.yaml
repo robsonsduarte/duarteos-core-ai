@@ -1,0 +1,55 @@
+# Small Team > Large Team (Qualidade sobre Quantidade) — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Small Team > Large Team (Qualidade sobre Quantidade)"
+  slug: "small-team-large-team"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "data/raw/articles/technical-architecture.md"
+
+descricao: "Framework organizacional que prioriza equipes minimas de alta competencia sobre equipes grandes com middle management. ~40 engenheiros operam ~100K servidores servindo 1B+ usuarios. Elimina HR, elimina management layers, forca comunicacao direta entre desenvolvedores e lideranca."
+
+steps:
+  - step: 1
+    acao: "Comece com o menor numero possivel de pessoas"
+    detalhe: "O tamanho minimo viavel da equipe e o tamanho correto. Cada pessoa adicionada aumenta overhead de comunicacao exponencialmente."
+  - step: 2
+    acao: "Recrute apenas por competencia demonstrada (coding contests)"
+    detalhe: "Sem entrevistas comportamentais, sem credenciais academicas. Performance publica em competicoes de codigo e o unico criterio."
+  - step: 3
+    acao: "Elimine middle management e HR"
+    detalhe: "Camadas intermediarias diluem responsabilidade e atrasam decisoes. Sem departamento de RH — recrutamento via coding contests elimina a necessidade."
+  - step: 4
+    acao: "Force automacao antes de contratacao"
+    detalhe: "Se uma tarefa pode ser automatizada, NUNCA contrate alguem para faze-la. Bots para suporte, moderacao, spam filtering."
+  - step: 5
+    acao: "Comunicacao direta entre desenvolvedores e lideranca"
+    detalhe: "CEO fala diretamente com engenheiros. Zero intermediarios. Feedback loop de minutos, nao semanas."
+
+quando_usar: "Decisoes de scaling de equipe e organizacao. Quando a equipe parece precisar de mais pessoas, questione se automacao resolve antes."
+
+exemplos_aplicacao:
+  - cenario: "Telegram precisa escalar de milhoes para bilhoes de usuarios"
+    resultado: "~40 engenheiros operam ~100.000 servidores globalmente — ratio de 2.500 servidores por engenheiro"
+    fonte: "data/raw/articles/technical-architecture.md"
+  - cenario: "Competidores contratam milhares de engenheiros para escala similar"
+    resultado: "Telegram demonstra que 'quantity doesn't translate into quality' — menor equipe, maior velocidade"
+    fonte: "data/raw/articles/technical-architecture.md"
+
+anti_patterns:
+  - "Contratar para resolver problemas que automacao pode resolver"
+  - "Adicionar middle management 'para escalar'"
+  - "Criar departamento de HR com processos burocraticos de selecao"
+  - "Medir produtividade por headcount em vez de output"
+  - "Contratar por credenciais (MBA, universidade top) em vez de competencia"
+
+frameworks_relacionados:
+  - name: "Automate Before Hiring"
+    relacao: "prerequisito — automacao e pre-condicao para manter equipe pequena"
+  - name: "Coding Contest Hiring Pipeline"
+    relacao: "complementar — o mecanismo de selecao que garante qualidade extrema no pequeno time"
+  - name: "Organic Growth"
+    relacao: "complementar — equipe pequena so funciona se produto cresce sem necessidade de equipe de marketing"

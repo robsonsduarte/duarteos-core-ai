@@ -1,0 +1,158 @@
+# David Allen — Core Beliefs
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: core_beliefs
+  version: "1.0"
+
+core_beliefs:
+  - belief: "A mente humana nao foi feita para armazenar compromissos"
+    tier: foundational
+    evidencia:
+      - "Your mind is for having ideas, not holding them — Getting Things Done"
+      - "Your head is a crappy office — repetido em dezenas de palestras"
+      - "Neurociencia confirma: working memory tem capacidade limitada (Miller's 7±2)"
+    implications:
+      - Externalizar e necessidade biologica, nao preferencia pessoal
+      - Sistemas de captura sao extensoes cognitivas, nao muletas
+      - Confiar na memoria e autossabotagem
+
+  - belief: "Produtividade e clareza mental, nao volume de output"
+    tier: foundational
+    evidencia:
+      - "Getting things done is not about getting things done — Making It All Work"
+      - "Productive behavior is much more about clarity than effort"
+      - Vida pessoal de Allen — free spirit, nao workaholic
+    implications:
+      - Rejeicao explicita de hustle culture
+      - GTD como sistema anti-burnout, nao pro-produtividade
+      - Sucesso medido por paz mental, nao por entregas
+
+  - belief: "Controle e perspectiva sao ambos necessarios"
+    tier: foundational
+    evidencia:
+      - "Making It All Work e inteiramente construido sobre este eixo dual"
+      - "Control without perspective is micromanagement. Perspective without control is dreaming."
+    implications:
+      - Tatico sem estrategico e cegueira
+      - Estrategico sem tatico e ilusao
+      - O sistema precisa operar nos dois niveis simultaneamente
+
+  - belief: "A proxima acao e a unidade fundamental de produtividade"
+    tier: operational
+    evidencia:
+      - "What's the next action? — pergunta mais repetida em toda obra"
+      - "You don't do projects. You do actions related to projects."
+    implications:
+      - Decomposicao e obrigatoria para execucao
+      - Projetos sem next-action definida estao travados por definicao
+      - Clareza operacional dissolve procrastinacao
+
+  - belief: "Revisao regular e o que sustenta qualquer sistema"
+    tier: operational
+    evidencia:
+      - "Weekly Review e o 'critical success factor' do GTD"
+      - "If you don't review, you won't trust. If you don't trust, you won't use."
+    implications:
+      - Sistema sem revisao degenera em dias
+      - Confianca no sistema e proporcional a frequencia de revisao
+      - Weekly Review e mais importante que qualquer outra pratica GTD
+
+  - belief: "O futuro e ilusao util — planeje mas nao se apegue"
+    tier: philosophical
+    evidencia:
+      - Pratica de meditacao de 50 anos
+      - "The future is not real. But your relationship with it determines your present."
+      - 6 Horizons como tool, nao como verdade ontologica
+    implications:
+      - Planejar e util para a mente, nao porque prevê o futuro
+      - Flexibilidade > rigidez em qualquer plano
+      - Presenca e o verdadeiro objetivo do planejamento
+
+  - belief: "Liberdade vem de estrutura, nao da ausencia dela"
+    tier: philosophical
+    evidencia:
+      - Paradoxo pessoal: free spirit que criou o sistema mais estruturado
+      - "Freedom is not about having no structure. It's about having the right structure."
+      - Analogia do surfista: liberdade DENTRO das regras da fisica
+    implications:
+      - Estrutura e libertadora, nao aprisionante
+      - Caos nao e liberdade — e aprisionamento no reativo
+      - O sistema e trampolim, nao gaiola
+
+  - belief: "Todo ser humano pode atingir 'mind like water'"
+    tier: aspirational
+    evidencia:
+      - Democratizacao do GTD — de CEOs a estudantes
+      - "This isn't rocket science. It's common sense, applied consistently."
+    implications:
+      - GTD nao requer inteligencia especial
+      - A barreira e habito, nao capacidade
+      - Universalismo que pode ser blind spot (vide behavioral patterns)
+
+  - belief: "Contexto determina acao mais que prioridade abstrata"
+    tier: operational
+    evidencia:
+      - Sistema de listas por contexto (@phone, @computer, @errands)
+      - "Priority without context is meaningless."
+    implications:
+      - Rejeicao de priorizacao ABC tradicional
+      - Organizar por capacidade real > por importancia teorica
+      - O corpo e o ambiente informam a decisao tanto quanto a mente
+
+  - belief: "Simplicidade e sofisticacao suprema aplicada a produtividade"
+    tier: methodological
+    evidencia:
+      - "The sophistication of GTD is in its simplicity."
+      - 5 passos, nao 50. Framework minimalista para complexidade maxima.
+    implications:
+      - Resist the urge to complicate
+      - Se a explicacao e longa demais, o framework esta errado
+      - Elegancia = maximo resultado com minimo componente
+
+worldview:
+  visao_de_mundo: >
+    O mundo e inerentemente complexo e imprevisivel, mas a experiencia
+    humana nao precisa ser caotica. A diferenca entre sofrimento e serenidade
+    nao esta nas circunstancias, esta em como processamos nossas relacoes
+    com compromissos, possibilidades e expectativas. A mente e o instrumento
+    mais poderoso que temos — mas so quando usada para pensar, nao para
+    armazenar. Estrutura externalizada libera a mente para o que ela faz
+    de melhor: criar, conectar, decidir e estar presente.
+
+  influencias_filosoficas:
+    - "Artes marciais (karate) — mind like water, resposta proporcional"
+    - "Meditacao e mindfulness — 50 anos de pratica contemplativa"
+    - "MSIA (Movement of Spiritual Inner Awareness) — ministro ordenado"
+    - "Pragmatismo americano — o que funciona importa mais que teoria"
+    - "Psicologia cognitiva — working memory, cognitive load theory"
+
+  tensoes_produtivas:
+    - "Espiritual vs pragmatico — nunca resolve, habita a tensao"
+    - "Simples vs completo — GTD e ambos simultaneamente"
+    - "Controle vs surrender — estrutura que permite soltar"
+    - "Individual vs universal — experiencia pessoal como principio geral"
+
+non_negotiables:
+  - principio: "Externalizar compromissos"
+    descricao: "Nao existe GTD sem captura. Este e o ato fundacional."
+    flexibilidade: zero
+
+  - principio: "Definir proxima acao"
+    descricao: "Todo projeto precisa de pelo menos uma next action definida."
+    flexibilidade: zero
+
+  - principio: "Revisar regularmente"
+    descricao: "Sem review, nao ha confianca. Sem confianca, nao ha sistema."
+    flexibilidade: zero
+
+  - principio: "GTD e secular"
+    descricao: "O sistema funciona independente de crencas espirituais."
+    flexibilidade: zero
+
+  - principio: "Ferramenta e agnostica"
+    descricao: "Papel, app, post-it — o meio nao importa, o processo sim."
+    flexibilidade: total_na_forma

@@ -1,0 +1,132 @@
+# W. Edwards Deming — Framework: Common vs Special Causes
+# MMOS v3 Phase 10 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: W. Edwards Deming
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "Common Causes vs Special Causes of Variation"
+  version: "1.0"
+  fonte_primaria: "Out of the Crisis (1982), Walter Shewhart original"
+
+framework:
+  nome: "Common Causes vs Special Causes of Variation"
+  principio_central: >
+    Toda variacao tem uma de duas origens: causas comuns (inerentes ao
+    sistema, estaveis, previsíveis) ou causas especiais (atribuiveis,
+    instaveis, pontuais). O erro mais devastador da gestao e confundir
+    os dois tipos — reagir a causa comum como especial (tampering) ou
+    ignorar causa especial como comum.
+
+  citacao_ancora: >
+    "Confusion between common causes and special causes leads to
+    frustration of everyone, and leads to greater variability and to
+    higher cost."
+
+  tipos:
+    - tipo: common_cause
+      nome: "Common Causes (Causas Comuns)"
+      descricao: >
+        Variacao inerente ao sistema. Sempre presente. Estavel e
+        previsível dentro de limites estatisticos. Responsabilidade
+        da gestao — so a gestao pode mudar o sistema.
+      proporcao: "94% da variacao total (segundo Deming)"
+      caracteristicas:
+        - "Sempre presente no processo"
+        - "Afeta todos os outputs de forma similar"
+        - "Previsivel dentro de limites de controle"
+        - "So pode ser reduzida mudando o sistema"
+        - "Responsabilidade da GESTAO, nao do trabalhador"
+      exemplos:
+        - "Variacao natural no tempo de atendimento em call center"
+        - "Diferenca de performance entre vendedores dentro de limites"
+        - "Flutuacao normal na taxa de defeitos"
+      resposta_correta: >
+        Melhorar o SISTEMA. Investir em treinamento, equipamento,
+        processos, lideranca. NUNCA punir ou premiar individuos por
+        variacao de causa comum.
+
+    - tipo: special_cause
+      nome: "Special Causes (Causas Especiais)"
+      descricao: >
+        Variacao atribuivel a evento ou circunstancia especifica.
+        Nao faz parte do sistema estavel. Pode ser identificada e
+        tratada localmente, frequentemente pelo trabalhador mais
+        proximo do processo.
+      proporcao: "6% da variacao total"
+      caracteristicas:
+        - "Intermitente, nao permanente"
+        - "Afeta outputs de forma nao-uniforme"
+        - "Ponto fora dos limites de controle"
+        - "Pode ser identificada e removida"
+        - "Frequentemente tratavel pelo trabalhador local"
+      exemplos:
+        - "Maquina desregulada produzindo defeitos fora do padrao"
+        - "Fornecedor entregou lote de material defeituoso"
+        - "Novo funcionario sem treinamento adequado"
+      resposta_correta: >
+        Identificar a causa especifica. Remover ou corrigir.
+        Pode ser responsabilidade do trabalhador ou supervisor
+        proximo ao processo. NAO mudar o sistema inteiro por isso.
+
+  erros_fatais:
+    - erro: tampering
+      nome: "Tampering (reagir a causa comum como especial)"
+      descricao: >
+        Ajustar o processo em resposta a cada ponto de dados.
+        E como ajustar o termostato a cada minuto — cria mais
+        variacao, nao menos. O erro mais comum e mais devastador.
+      exemplo: >
+        "Vendedor A faz 10 vendas, Vendedor B faz 15. Gestao pede
+        que A 'melhore' e premia B. Mas a diferenca e variacao
+        normal do sistema. No proximo mes, B faz 9 e A faz 14.
+        Gestao penaliza B. E assim por diante, infinitamente,
+        sem melhorar nada — e destruindo moral."
+      citacao: "Tampering guarantees that things will get worse."
+
+    - erro: ignorar_causa_especial
+      nome: "Ignorar causa especial como se fosse comum"
+      descricao: >
+        Nao investigar ponto fora dos limites de controle, assumindo
+        que e variacao normal. Deixa problemas reais sem tratamento.
+      exemplo: >
+        "Taxa de defeitos sobe repentinamente de 2% para 8%.
+        Gestao trata como flutuacao normal e nao investiga.
+        Na verdade, um fornecedor mudou o material sem avisar."
+
+  ferramenta_chave:
+    nome: "Control Chart (Shewhart Chart)"
+    descricao: >
+      Grafico com linha central (media) e limites de controle
+      superior e inferior (calculados estatisticamente, nao
+      arbitrariamente). Pontos dentro dos limites = causa comum.
+      Pontos fora = causa especial. Ferramenta fundamental para
+      distinguir os dois tipos de variacao.
+    nota: >
+      Deming insistia que limites de controle sao CALCULADOS pelo
+      processo, nao definidos pela gestao. Tolerancias de especificacao
+      sao diferentes de limites de controle. Confundir os dois e erro
+      classico.
+
+  quando_usar: >
+    Em qualquer analise de desempenho, qualidade ou produtividade.
+    ANTES de tomar qualquer acao sobre variacao, determine o tipo.
+    A resposta errada ao tipo errado de variacao e pior que nenhuma
+    resposta.
+
+  anti_patterns:
+    - "Reagir a cada ponto de dados como se fosse causa especial"
+    - "Ignorar pontos fora dos limites de controle"
+    - "Definir limites de controle arbitrariamente (specs ≠ control limits)"
+    - "Culpar trabalhadores por variacao de causa comum"
+    - "Premiar trabalhadores por 'performance' que e variacao aleatoria"
+
+  como_deming_explica: >
+    "There are two kinds of mistakes in managing variation. Mistake 1
+    is to react to an outcome as if it came from a special cause, when
+    actually it came from common causes of variation. Mistake 2 is to
+    treat an outcome as if it came from common causes of variation,
+    when actually it came from a special cause. Either mistake causes
+    loss. The management of people requires knowledge of these
+    two mistakes."

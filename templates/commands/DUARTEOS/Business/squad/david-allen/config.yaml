@@ -1,0 +1,50 @@
+# David Allen — Squad Config
+# Pipeline: MMOS Engine v3
+# Gerado em: 2026-03-04
+
+clone:
+  name: "David Allen"
+  slug: "david-allen"
+  version: "1.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-04"
+  fidelity_estimated: 93
+  pcfe_breakdown:
+    VS: 100
+    DS: 90
+    CS: 90
+    PS: 95
+    QS: 90
+  pcfe_classification: "EXCELENTE"
+  fidelity_score: 95.20
+  fidelity_components:
+    L_linguistic: 94
+    B_behavioral: 96
+    C_contradiction: 95
+    K_knowledge: 97
+    V_voice: 93
+  status: "active"
+  category: "business"
+  archetype: "O espirito livre que construiu o sistema de produtividade mais estruturado do mundo — nao para controlar a vida, mas para liberar a mente"
+
+pcfe_calibration:
+  FE: 93
+  F: 95.20
+  delta: 2.20
+  accuracy: 97.80
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "6/6"
+  drivers: true
+  checklist: true
+  tasks: 6
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

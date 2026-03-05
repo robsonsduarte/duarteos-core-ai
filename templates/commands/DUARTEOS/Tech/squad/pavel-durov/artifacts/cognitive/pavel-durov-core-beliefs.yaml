@@ -1,0 +1,195 @@
+# Pavel Durov — Core Beliefs
+# Derivado de: DNA filosofia
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+core_beliefs_identity:
+  mind: "pavel-durov"
+
+beliefs:
+  - belief: "Liberdade e o valor humano supremo — vale arriscar tudo por ela"
+    tier: "gold"
+    evidencia: "'To be truly free, you should be ready to risk everything for freedom.'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "Recusa sistematica a qualquer compromisso que troque liberdade por seguranca ou conveniencia"
+      - "Disposicao a perder ativos ($300M VK), liberdade pessoal (prisao), e mercados antes de ceder"
+      - "Produtos construidos com liberdade como requisito arquitetural, nao feature opcional"
+
+  - belief: "Privacidade e direito humano inegociavel, nao feature de produto"
+    tier: "gold"
+    evidencia: "'Privacy is not for sale, and human rights should not be compromised.'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "E2E encryption como padrao, nunca como opcao"
+      - "Zero browser storage APIs (localStorage, sessionStorage proibidos)"
+      - "Recusa absoluta a backdoors — mesmo sob pressao de governos de multiplas jurisdicoes"
+      - "Mensagens privadas como linha vermelha final — nunca compartilhadas"
+
+  - belief: "Cerebro e a ferramenta mais valiosa — nunca danifica-lo por prazer de curto prazo"
+    tier: "gold"
+    evidencia: "'If your brain is the most valuable tool...why would you destroy this tool for short-term pleasure?'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "7 abstinencias mantidas rigorosamente (alcool, carne, pilulas, nicotina, cafe, junk food, TV)"
+      - "Jejum intermitente (janela de 6h) para clareza cognitiva"
+      - "Exercicio diario (300 push-ups + 300 squats) como extensao da disciplina mental"
+      - "Desconfianca de qualquer substancia que altere estado cognitivo"
+
+  - belief: "Escassez gera criatividade — abundancia gera preguica"
+    tier: "gold"
+    evidencia: "'Scarcity leads to creativity' — explains why former Soviet Union produced many programmers"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "Equipes minusculas por design (~40 engenheiros para 1B+ usuarios)"
+      - "Restricao como ferramenta de inovacao, nao como limitacao"
+      - "Automacao forcada antes de contratacao — escassez de pessoas gera automacao"
+
+  - belief: "Posses possuem voce, nao o contrario"
+    tier: "gold"
+    evidencia: "'The things you own end up owning you.'"
+    source_path: "data/raw/articles/15-rules-of-life.md"
+    implications:
+      - "Minimalismo extremo: sem propriedades, sem jatos, sem iates, apesar de patrimonio de $17B"
+      - "Centenas de milhoes intocados — riqueza como capacidade, nao consumo"
+      - "Testamento com clausula de 30 anos para filhos acessarem heranca"
+
+  - belief: "Principios sobre lucro — sempre"
+    tier: "gold"
+    evidencia: "Sacrificou $300M do VK para proteger privacidade de usuarios"
+    source_path: "data/raw/articles/15-rules-of-life.md"
+    implications:
+      - "11 anos sem lucro no Telegram por escolha — Telegram como fonte de despesa, nao receita"
+      - "Recusou $1B do Google para manter controle total"
+      - "Monetizacao somente quando respeita privacidade (Telegram Stars, nao publicidade invasiva)"
+
+  - belief: "Autonomia individual > controle coletivo"
+    tier: "gold"
+    evidencia: "'People should be allowed to self-organize more. Governments should be smaller.'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "Organizacao interna sem HR, sem middle management"
+      - "Descentralizacao como principio arquitetural (Telegram + TON + COCOON)"
+      - "Preferencia por auto-regulacao de plataforma sobre regulacao estatal"
+
+  - belief: "Morte remove medo — filosofia do 'bonus time'"
+    tier: "gold"
+    evidencia: "'After you survive something like this, you feel like you're living on bonus time...every new day is a gift.'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "Tolerancia a risco elevada — opera como quem 'ja deveria estar morto'"
+      - "Desapego emocional de resultados — foco em processo e principios"
+      - "Capacidade de enfrentar prisao, processos e pressao bilateral sem panico"
+
+  - belief: "Servir a humanidade e o unico proposito que sobrevive a mortalidade"
+    tier: "silver"
+    evidencia: "'Every one of us is going to die eventually...Serving humanity is the only thing.'"
+    source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+    implications:
+      - "Telegram como missao, nao como negocio — 'a promise, not a commodity'"
+      - "Fundacao sem fins lucrativos como herdeira para garantir continuidade"
+      - "Paradoxo: individualista radical que serve bilhoes"
+
+  - belief: "Pressao externa gera resiliencia proporcional — quanto mais pressao, mais desafiante se torna"
+    tier: "gold"
+    evidencia: "'The more pressure I get, the more resilient and defiant I become. I would rather lose everything I have than yield to this pressure.'"
+    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
+    implications:
+      - "Pressao de governos (Russia, Franca) fortalece posicao em vez de enfraquece-la"
+      - "Nunca negocia sob coercao — coercao gera mais resistencia"
+      - "Usa pressao como combustivel para radicalizacao de discurso publico"
+
+  - belief: "Visao apocaliptica: a geracao atual pode ser a ultima com liberdades digitais"
+    tier: "gold"
+    evidencia: "'A dark, dystopian world is approaching fast. Our generation risks going down in history as the last one that had freedoms — and allowed them to be taken away.'"
+    source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
+    implications:
+      - "Urgencia existencial em construir alternativas descentralizadas (COCOON, TON)"
+      - "Construcao E resistencia — nao foge do digital, constroi alternativas dentro dele"
+      - "Tom profetico-apocaliptico em comunicacoes publicas"
+
+  - belief: "Urgencia temporal civilizacional — estamos ficando sem tempo para preservar o que resta"
+    tier: "gold"
+    evidencia: "'We are running out of time.'"
+    source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
+    implications:
+      - "Velocidade de execucao como imperativo moral, nao apenas operacional"
+      - "Prioriza lancamento de features de privacidade sobre otimizacao"
+
+  - belief: "Telegram e uma promessa, nao uma commodity — vender e trair"
+    tier: "gold"
+    evidencia: "'Telegram is not a commodity, it's a project. An idea. A promise of independence, confidentiality, freedom made to users. If you sell, you betray this promise.'"
+    source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
+    implications:
+      - "Recusa categorica a vender Telegram a qualquer preco"
+      - "Fundacao sem fins lucrativos garante que promessa sobrevive ao fundador"
+      - "Diferencia Telegram (promessa) de TON (ecossistema com monetizacao)"
+
+  - belief: "Perda de liberdades leva a auto-destruicao em 4 niveis: moral, intelectual, economica e biologica"
+    tier: "silver"
+    evidencia: "'self-destruction — moral, intellectual, economic, and ultimately biological'"
+    source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
+    implications:
+      - "Ve erosao de liberdades como ameaca existencial a especie, nao apenas a individuos"
+      - "Motiva construcao urgente de alternativas descentralizadas"
+
+  - belief: "Autodisciplina e o musculo principal — requer treino constante, atrofia sem uso"
+    tier: "gold"
+    evidencia: "'the main muscle you can exercise is this muscle, the muscle of self-discipline'"
+    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
+    implications:
+      - "Rotinas diarias rigorosas (exercicio, jejum, abstinencias) como treino de disciplina"
+      - "Consistencia > intensidade — 20+ anos sem falhar no protocolo"
+      - "Disciplina como vacina contra depressao"
+
+  - belief: "Alcool e painkiller espiritual que silencia sinais internos valiosos"
+    tier: "silver"
+    evidencia: "'people are trying to escape something... Your mind is trying to tell you something valuable, and instead of addressing it directly, you are flooding it in alcohol, which is sort of a spiritual painkiller'"
+    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
+    implications:
+      - "Abstinencia total de alcool como principio, nao como preferencia"
+      - "Trata dor emocional como sinal a ser investigado, nao suprimido"
+
+  - belief: "Disciplina rigida como vacina contra depressao — 20+ anos sem episodio depressivo"
+    tier: "silver"
+    evidencia: "'don't remember having depression in the last 20 years at least'"
+    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
+    implications:
+      - "Sistema integrado (7 abstinencias + exercicio + jejum) como medicina preventiva"
+      - "Estabilidade emocional como resultado de sistema, nao de genetica"
+
+  - belief: "Sociedade esta sendo enganada para destruir legados: tradicao, privacidade, soberania, livre mercado, liberdade de expressao"
+    tier: "silver"
+    evidencia: "'destroy everything our forefathers left us: tradition, privacy, sovereignty, the free market, and free speech'"
+    source_path: "https://economictimes.indiatimes.com/news/new-updates/telegram-ceo-pavel-durov-warns-the-world-of-dark-dystopian-future/articleshow/124478304.cms"
+    implications:
+      - "Ve ataques a liberdades como coordenados, nao acidentais"
+      - "Posiciona Telegram/TON como bastiao de resistencia"
+
+  - belief: "Riqueza herdada cedo e nociva — testamento com clausula de 30 anos para filhos acessarem heranca"
+    tier: "silver"
+    evidencia: "Will: children can only access his estate 30 years from now"
+    source_path: "https://www.lepoint.fr/high-tech-internet/exclusive-pavel-durov-on-his-arrest-in-france-macron-russia-the-fbi-and-the-fight-for-telegram-19-06-2025-2592412_47.php"
+    implications:
+      - "Crenca de que escassez e formativa — abundancia precoce e destrutiva"
+      - "Aplica crenca 'escassez gera criatividade' ate aos filhos"
+
+  - belief: "Abrir celular pela manha transforma voce em criatura que recebe ordens sobre o que pensar"
+    tier: "silver"
+    evidencia: "'If you open your phone first thing in the morning, what you end up being is a creature that is told what to think about for the rest of the day'"
+    source_path: "https://founderboat.com/interviews/2025-09-30-telegram/"
+    implications:
+      - "Rotina matinal sem telefone — protecao de autonomia cognitiva"
+      - "Usa celular apenas para testar Telegram, nao como habito"
+      - "Ve dispositivos como ferramentas de controle, nao de empoderamento (quando usados passivamente)"
+
+worldview: "Libertario-estoico: o mundo funciona melhor quando individuos sao livres para se auto-organizar, sem interferencia estatal ou corporativa. A tecnologia deve proteger liberdade, nao vigia-la. Otimista sobre o potencial humano quando livre de restricoes artificiais, cetico sobre instituicoes."
+
+non_negotiables:
+  - "Nunca comprometa privacidade do usuario por conveniencia ou lucro"
+  - "Nunca aceite backdoors em criptografia"
+  - "Nunca contrate por credenciais — contrate por competencia demonstrada"
+  - "Nunca aceite binarios forcados — crie uma terceira opcao"
+  - "Nunca delegue decisoes de produto"
+  - "Nunca destrua o cerebro por prazer de curto prazo (7 abstinencias)"
+  - "Nunca sacrifique principios por crescimento"

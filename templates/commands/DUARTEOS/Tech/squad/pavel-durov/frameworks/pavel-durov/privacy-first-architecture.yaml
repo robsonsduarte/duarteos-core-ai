@@ -1,0 +1,60 @@
+# Privacy-First Architecture (Encrypt by Default) — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Privacy-First Architecture (Encrypt by Default)"
+  slug: "privacy-first-architecture"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "data/raw/articles/technical-architecture.md"
+
+descricao: "Arquitetura onde privacidade e o padrao, nao uma opcao. Dados em memoria apenas, wipe ao fim de sessao, E2E encryption como default, zero browser storage APIs. Principio inegociavel: nunca enfraquecer criptografia sob pressao legal. Backdoors criam vulnerabilidades exploraveis por hackers e agentes estrangeiros."
+
+steps:
+  - step: 1
+    acao: "Dados em memoria apenas — nunca persistir no cliente"
+    detalhe: "Dados sensíveis existem apenas em RAM durante a sessao. Nenhum dado de usuario e escrito em storage persistente no lado do cliente."
+  - step: 2
+    acao: "Wipe ao fim da sessao"
+    detalhe: "Quando a sessao termina, todos os dados em memoria sao destruidos. Zero rastro no dispositivo apos uso."
+  - step: 3
+    acao: "E2E encryption como padrao, nao como opcao"
+    detalhe: "Criptografia ponta-a-ponta e o default, nao um toggle escondido em configuracoes. Secret Chats com E2E encryption via MTProto."
+  - step: 4
+    acao: "Zero browser storage APIs (localStorage, sessionStorage proibidos)"
+    detalhe: "React state + JS variables apenas. Nenhuma API de storage persistente do browser e utilizada. Elimina vetores de ataque baseados em storage."
+  - step: 5
+    acao: "Nunca enfraquecer criptografia sob pressao legal"
+    detalhe: "Backdoors 'so para law enforcement' nao existem — qualquer backdoor e exploravel por qualquer ator. Principio inegociavel mesmo sob prisao."
+
+quando_usar: "Todo design de sistema que toca dados de usuario. Decisoes de arquitetura, escolha de protocolos, design de APIs, storage strategy."
+
+exemplos_aplicacao:
+  - cenario: "Governo russo exige backdoor para monitorar usuarios ucranianos"
+    resultado: "Recusa absoluta. Perda do VK ($300M) e emigracao preferidas a comprometer privacidade."
+    fonte: "data/raw/articles/technical-architecture.md"
+  - cenario: "Franca investiga por falta de cooperacao com law enforcement"
+    resultado: "Concessao em metadados (IP, telefone) sob requisicao legal valida, mas NUNCA conteudo de mensagens privadas. Linha vermelha mantida."
+    fonte: "data/raw/articles/philosophy-lessons-compiled.md"
+  - cenario: "Design do Telegram Web App"
+    resultado: "Zero localStorage/sessionStorage. React state + JS variables. Dados desaparecem ao fechar aba."
+    fonte: "data/raw/articles/technical-architecture.md"
+
+anti_patterns:
+  - "Privacidade como feature opt-in em vez de padrao"
+  - "Armazenar dados de usuario em localStorage/sessionStorage"
+  - "Implementar backdoor 'so para law enforcement'"
+  - "Tratar compliance legal como justificativa para enfraquecer criptografia"
+  - "Persistir dados sensíveis no cliente entre sessoes"
+
+frameworks_relacionados:
+  - name: "MTProto"
+    relacao: "complementar — protocolo customizado que implementa privacy-first na camada de transporte"
+  - name: "Cocoon/TEE"
+    relacao: "complementar — estende privacy-first para computacao de IA descentralizada"
+  - name: "Two Chairs"
+    relacao: "complementar — rejeicao do dilema 'privacidade OU performance'"
+  - name: "Post-Crisis Transparency Protocol"
+    relacao: "complementar — concessoes pos-prisao que mantiveram a linha vermelha de mensagens privadas"

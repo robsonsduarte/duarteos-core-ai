@@ -1,0 +1,54 @@
+# Celebrity Partnership Flywheel (TON) — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Celebrity Partnership Flywheel (TON)"
+  slug: "celebrity-partnership-flywheel"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "https://ton.org/en/ton-ecosystem-update-november2025"
+
+descricao: "Framework de adocao massiva de blockchain via entertainment. Parcerias com celebridades de alto perfil (Snoop Dogg, Khabib) para colecoes de gifts/NFTs em edicao limitada. Flash sales para gerar urgencia. Receita reinvestida no ecossistema TON. NOTA: Tensiona explicitamente com framework 'Organic Growth (Zero Marketing)' — evolucao pragmatica para TON, nao aplicada ao Telegram core."
+
+steps:
+  - step: 1
+    acao: "Parcerias com celebridades de alto perfil (Snoop Dogg, Khabib)"
+    detalhe: "Selecionar celebridades com base de fas grande e engajada. Parcerias autenticas onde a celebridade tem interesse genuino no ecossistema."
+  - step: 2
+    acao: "Colecoes de gifts/NFTs em edicao limitada"
+    detalhe: "Edicao limitada cria escassez artificial. Gifts digitais colecionaveis com marca da celebridade. Propriedade verificavel on-chain."
+  - step: 3
+    acao: "Vendas rapidas (flash sales) para gerar urgencia"
+    detalhe: "Flash sales com tempo limitado. Urgencia como mecanismo de conversao. Estoque limitado esgota rapidamente."
+  - step: 4
+    acao: "Receita reinvestida no ecossistema TON"
+    detalhe: "Receita nao e lucro do Telegram — e reinvestida no desenvolvimento do ecossistema TON. Flywheel sustentavel."
+  - step: 5
+    acao: "Crescimento viral via base de fas existente"
+    detalhe: "Fas trazem outros fas. Celebridade promove organicamente para sua base. Aquisicao de usuarios via entertainment, nao via ads."
+
+quando_usar: "Adocao massiva de blockchain via entertainment. Quando crypto precisa atingir audiencia mainstream que nao e crypto-nativa."
+
+exemplos_aplicacao:
+  - cenario: "TON precisa atrair usuarios mainstream que nao entendem blockchain"
+    resultado: "Colecoes de NFTs de Snoop Dogg e Khabib atraem fas que nunca usaram crypto. Onboarding via entertainment."
+    fonte: "https://ton.org/en/ton-ecosystem-update-november2025"
+  - cenario: "Parcerias com marcas premium (Lamborghini)"
+    resultado: "Colecoes digitais de marcas de luxo criam ponte entre lifestyle e blockchain"
+    fonte: "https://ton.org/en/ton-ecosystem-update-november2025"
+
+anti_patterns:
+  - "Aplicar celebrity marketing ao Telegram core (viola Organic Growth)"
+  - "Parcerias sem autenticidade — celebridade que nao usa o produto"
+  - "Edicoes ilimitadas que destroem escassez"
+  - "Receita canalizada para lucro em vez de reinvestimento no ecossistema"
+
+frameworks_relacionados:
+  - name: "Organic Growth"
+    relacao: "alternativo — tensao explicita: Celebrity Flywheel e marketing gamificado via NFTs, diferente de marketing tradicional mas ainda e promocao. Aplicado ao TON, nao ao Telegram."
+  - name: "Chat Pay Own"
+    relacao: "complementar — celebrity NFTs/gifts alimentam a camada de propriedade digital"
+  - name: "Tokenized Traditional Assets"
+    relacao: "complementar — celebrity partnerships impulsionam adocao do ecossistema de tokenizacao"

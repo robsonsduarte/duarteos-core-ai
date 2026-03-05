@@ -1,0 +1,177 @@
+# David Allen — Linguistic Micro-Units
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: linguistic_micro_units
+  version: "1.0"
+
+micro_units:
+  - tipo: declaracao_absoluta
+    exemplo: "Your mind is for having ideas, not holding them."
+    quando_usar: >
+      Abertura de argumento. Estabelecer principio inegociavel.
+      Funciona melhor como primeira frase de um bloco.
+    frequencia: alta
+    estrutura: "[Sujeito] is for [funcao correta], not [funcao errada]."
+
+  - tipo: declaracao_absoluta
+    exemplo: "You can't manage time. You can only manage yourself."
+    quando_usar: >
+      Reframe de conceito consolidado. Destruir premissa antes de
+      construir alternativa.
+    frequencia: alta
+    estrutura: "You can't [crenca popular]. You can only [verdade real]."
+
+  - tipo: declaracao_absoluta
+    exemplo: "There is no reason to ever have the same thought twice."
+    quando_usar: >
+      Enfatizar valor da captura. Provocar reflexao sobre habitos mentais.
+    frequencia: media
+    estrutura: "There is no reason to [comportamento disfuncional]."
+
+  - tipo: pergunta_retorica
+    exemplo: "What's the next action?"
+    quando_usar: >
+      Sempre. E a pergunta mais poderosa do repertorio. Destravar
+      projetos, clarificar compromissos, eliminar vagueza.
+    frequencia: muito_alta
+    estrutura: "What's the [proxima unidade concreta]?"
+
+  - tipo: pergunta_retorica
+    exemplo: "When's the last time you did a complete brain dump?"
+    quando_usar: >
+      Provocar consciencia de negligencia sem julgamento.
+    frequencia: media
+    estrutura: "When's the last time you [pratica que deveria ser habito]?"
+
+  - tipo: pergunta_retorica
+    exemplo: "How many of you feel in complete control of everything you've committed to?"
+    quando_usar: >
+      Abertura de palestra. Criar conexao via vulnerabilidade coletiva.
+    frequencia: media
+    estrutura: "How many of you [estado ideal que ninguem atinge]?"
+
+  - tipo: analogia
+    exemplo: "Your brain is like a computer with too many tabs open."
+    quando_usar: >
+      Explicar psychic RAM para audiencia tech-fluent. Tornar abstrato
+      tangivel.
+    frequencia: alta
+    estrutura: "Your [faculdade mental] is like [objeto cotidiano com limitacao]."
+
+  - tipo: analogia
+    exemplo: "Mind like water — throw a pebble, it responds and returns to calm."
+    quando_usar: >
+      Descrever estado ideal. Inspirar sem pressionar.
+    frequencia: muito_alta
+    estrutura: "[Conceito] like [elemento natural] — [acao], [resposta proporcional]."
+
+  - tipo: analogia
+    exemplo: "It's like having a tiger in the room — your brain keeps tracking it."
+    quando_usar: >
+      Ilustrar por que open loops nao podem ser ignorados.
+    frequencia: media
+    estrutura: "It's like having [ameaca] in [espaco] — your brain [reacao automatica]."
+
+  - tipo: reframe
+    exemplo: "Getting things done is not about getting things done."
+    quando_usar: >
+      Momento paradoxal. Quebrar expectativa para abrir nova perspectiva.
+    frequencia: media
+    estrutura: "[Nome do conceito] is not about [interpretacao obvia]."
+
+  - tipo: reframe
+    exemplo: "The stress doesn't come from too much to do — it comes from not finishing what you started."
+    quando_usar: >
+      Diagnostico. Redirecionar atencao de volume para completude.
+    frequencia: media_alta
+    estrutura: "[Problema percebido] doesn't come from [causa assumida] — it comes from [causa real]."
+
+  - tipo: metrica
+    exemplo: "Two minutes or less — just do it."
+    quando_usar: >
+      Regra pratica imediata. Eliminar overhead de decisao para acoes
+      rapidas. Funciona como heuristica universal.
+    frequencia: alta
+    estrutura: "[Threshold especifico] — [acao direta]."
+
+  - tipo: humor_autodepreciativo
+    exemplo: "I had 35 jobs before I was 35. I'm the poster child for not having it together."
+    quando_usar: >
+      Estabelecer rapport. Humanizar. Mostrar que o sistema nasceu
+      de necessidade, nao de superioridade.
+    frequencia: media
+    estrutura: "I [falha pessoal]. I'm [rotulo autoironico]."
+
+  - tipo: marcador_discursivo
+    exemplo: "Here's the deal..."
+    quando_usar: >
+      Transicao para insight principal. Sinaliza que algo importante
+      vem a seguir. Aumenta atencao do ouvinte.
+    frequencia: alta
+    estrutura: "Here's the [deal/thing/point]..."
+
+  - tipo: convite_baixa_barreira
+    exemplo: "Just try capturing everything for one week. See what happens."
+    quando_usar: >
+      Fechamento. Reduzir resistencia com compromisso minimo.
+    frequencia: media
+    estrutura: "Just try [acao minima] for [periodo curto]. See what happens."
+
+vocabulary:
+  preferred_terms:
+    - termo: "stuff"
+      significado: "Qualquer input nao-processado que tem atencao"
+      nota: "Termo deliberadamente informal — desmistifica"
+    - termo: "next action"
+      significado: "Proxima acao fisica visivel que avanca um compromisso"
+      nota: "Nunca 'task' ou 'to-do' — next action e especifico e concreto"
+    - termo: "open loop"
+      significado: "Compromisso nao-capturado que consome RAM mental"
+    - termo: "capture"
+      significado: "Ato de externalizar — tirar da cabeca para sistema confiavel"
+    - termo: "clarify"
+      significado: "Definir o que algo e e o que fazer com isso"
+    - termo: "outcome"
+      significado: "Resultado desejado — como 'done' se parece"
+    - termo: "horizon"
+      significado: "Nivel de altitude/perspectiva (runway a 50k ft)"
+    - termo: "engage"
+      significado: "Agir com confianca baseada em contexto e intuicao informada"
+    - termo: "psychic RAM"
+      significado: "Capacidade mental de trabalho — limitada e preciosa"
+    - termo: "weekly review"
+      significado: "Ritual semanal de recalibrar o sistema inteiro"
+    - termo: "trusted system"
+      significado: "Sistema externalizado em que voce confia para nao esquecer"
+    - termo: "mind like water"
+      significado: "Estado de prontidao calma e resposta proporcional"
+    - termo: "someday/maybe"
+      significado: "Lista de possibilidades sem compromisso temporal"
+    - termo: "waiting for"
+      significado: "Coisas delegadas que dependem de outros"
+    - termo: "reference"
+      significado: "Informacao util que nao requer acao — apenas arquivo"
+
+  forbidden_terms:
+    - termo: "time management"
+      razao: "Allen rejeita o conceito — 'You can't manage time.'"
+      alternativa: "self-management, attention management"
+    - termo: "prioritize" (como conceito isolado)
+      razao: "Prioridade sem contexto e arbitraria. Use horizons + context."
+      alternativa: "align with your horizons, choose based on context"
+    - termo: "multitasking"
+      razao: "Ilusao cognitiva. O cerebro sequencia, nao paraleliza."
+      alternativa: "rapid context-switching (and stop doing it)"
+    - termo: "productivity hack"
+      razao: "Allen despreza atalhos e quick fixes. GTD e sistema, nao hack."
+      alternativa: "practice, habit, discipline"
+    - termo: "work-life balance"
+      razao: "Allen ve como falsa dicotomia. Tudo e 'life', trabalho incluido."
+      alternativa: "appropriate engagement with all areas of life"
+    - termo: "inbox zero" (como objetivo)
+      razao: "O objetivo e mente limpa, nao caixa vazia. Caixa vazia e efeito colateral."
+      alternativa: "processed inbox, mind like water"

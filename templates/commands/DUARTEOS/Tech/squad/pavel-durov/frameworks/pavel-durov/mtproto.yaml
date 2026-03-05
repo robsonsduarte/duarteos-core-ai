@@ -1,0 +1,54 @@
+# MTProto Protocol Design Pattern — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "MTProto Protocol Design Pattern"
+  slug: "mtproto"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "data/raw/articles/technical-architecture.md"
+
+descricao: "Framework de design de protocolo customizado otimizado para caso de uso especifico em vez de usar protocolo generico. MTProto foi projetado para velocidade + seguranca simultaneamente, otimizado para ambientes de internet instavel. Protocolo leve com E2E encryption em Secret Chats. Demonstra a filosofia de construir do zero quando solucoes genericas nao atendem."
+
+steps:
+  - step: 1
+    acao: "Identificar limitacoes de protocolos existentes"
+    detalhe: "Protocolos genericos (HTTP, XMPP, etc.) nao foram projetados para messaging em escala com privacidade. Identifique onde eles falham antes de criar o seu."
+  - step: 2
+    acao: "Projetar para velocidade + seguranca simultaneamente"
+    detalhe: "Rejeicao do falso dilema 'velocidade OU seguranca'. MTProto e mais rapido que HTTPS para messaging e mais seguro que protocolos genericos. Two Chairs aplicado a nivel de protocolo."
+  - step: 3
+    acao: "Otimizar para ambiente de internet instavel"
+    detalhe: "MTProto foi projetado para funcionar em conexoes 2G/3G, redes censuradas e ambientes de alta latencia. Resiliencia como requisito de design, nao afterthought."
+  - step: 4
+    acao: "E2E encryption em Secret Chats"
+    detalhe: "Criptografia ponta-a-ponta como default em chats secretos. Chaves nunca saem do dispositivo. Protocolo garante forward secrecy."
+  - step: 5
+    acao: "Protocolo leve (lightweight)"
+    detalhe: "Overhead minimo. Cada byte conta quando serve 1B+ usuarios. Protocolo e mais eficiente que alternativas genericas em ordens de magnitude."
+
+quando_usar: "Design de sistemas de comunicacao, protocolos de transporte, qualquer cenario onde protocolos genericos nao atendem requisitos especificos de performance + seguranca."
+
+exemplos_aplicacao:
+  - cenario: "Telegram precisa de protocolo de messaging que funcione em redes censuradas e instáveis"
+    resultado: "MTProto: mais rapido que HTTPS para messaging, funciona em 2G/3G, E2E encryption nativo, leve o suficiente para ~100K servidores com ~40 engenheiros"
+    fonte: "data/raw/articles/technical-architecture.md"
+  - cenario: "Secret Chats precisam de seguranca maxima sem sacrificar UX"
+    resultado: "E2E encryption integrado no protocolo, nao como camada adicional. Zero overhead perceptível ao usuario."
+    fonte: "data/raw/articles/technical-architecture.md"
+
+anti_patterns:
+  - "Usar protocolo generico quando caso de uso demanda otimizacao especifica"
+  - "Sacrificar seguranca por velocidade (ou vice-versa)"
+  - "Projetar para cenario de rede ideal em vez de cenario de rede hostil"
+  - "Adicionar criptografia como camada posterior em vez de integra-la no protocolo"
+
+frameworks_relacionados:
+  - name: "Privacy-First Architecture"
+    relacao: "complementar — MTProto implementa privacy-first na camada de transporte"
+  - name: "Two Chairs"
+    relacao: "complementar — MTProto e a terceira via entre 'velocidade OU seguranca'"
+  - name: "Cocoon/TEE"
+    relacao: "complementar — estende o principio de protocolo customizado para computacao de IA"

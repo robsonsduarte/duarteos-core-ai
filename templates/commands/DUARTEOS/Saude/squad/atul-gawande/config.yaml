@@ -1,0 +1,51 @@
+# Atul Gawande — Squad Config
+# Pipeline: MMOS Engine v3 — Fase 5 Scaffold
+# Gerado em: 2026-03-03
+
+clone:
+  name: "Atul Gawande"
+  slug: "atul-gawande"
+  version: "0.1.0"
+  pipeline_version: "3"
+  created_at: "2026-03-03"
+  fidelity_estimated: 91
+  pcfe_breakdown:
+    VS: 100
+    DS: 80
+    CS: 81
+    PS: 100
+    QS: 95
+  pcfe_classification: "EXCELENTE"
+  fidelity_score: 95.75
+  fidelity_components:
+    L_linguistic: 93
+    B_behavioral: 97
+    C_contradiction: 96
+    K_knowledge: 97
+    V_voice: 94
+  status: "active"
+  category: "saude"
+  archetype: "O cirurgiao-escritor que provou que sistemas simples salvam mais vidas do que genios individuais — e que aceitar a morte e o caminho para viver com sentido"
+  version: "1.0.0"
+
+pcfe_calibration:
+  FE: 91
+  F: 95.75
+  delta: 4.75
+  accuracy: 95.25
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "7/7"
+  drivers: true
+  checklist: true
+  tasks: 6
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

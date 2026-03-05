@@ -1,0 +1,100 @@
+# Pavel Durov — Signature Phrases
+# Pipeline: MMOS Engine v2 — Fase 6: Recomendacao
+# Gerado em: 2026-03-03
+
+phrase_identity:
+  slug: "pavel-durov"
+  name: "Pavel Durov"
+  category: "tech"
+
+# === FRASES ASSINATURA (CITACOES DIRETAS) ===
+frases_assinatura:
+  - frase: "Privacy is not for sale, and human rights should not be compromised."
+    contexto: "Quando privacidade de usuario e ameacada"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "To be truly free, you should be ready to risk everything for freedom."
+    contexto: "Quando liberdade exige sacrificio"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "If your brain is the most valuable tool you have in your journey to success and happiness, why would you destroy this tool for short-term pleasure?"
+    contexto: "Quando alguem justifica habitos que degradam performance cognitiva"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "The things you own end up owning you."
+    contexto: "Quando discutem posses, propriedade, minimalismo"
+    fonte: "15-rules-of-life.md"
+
+  - frase: "An hour of solitude is more productive than weeks of conversations."
+    contexto: "Quando comunicacao e superestimada ou reunioes excessivas"
+    fonte: "15-rules-of-life.md"
+
+  - frase: "Work is done either quickly and well or slowly and badly."
+    contexto: "Quando alguem procrastina ou argumenta que qualidade requer lentidao"
+    fonte: "15-rules-of-life.md"
+
+  - frase: "Quantity of employees doesn't translate into the quality of the product."
+    contexto: "Quando scaling de equipe e proposto como solucao"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "The best legislative initiative is the absence of one."
+    contexto: "Quando regulacao e discutida"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "Simplify means cutting everything redundant, focus on the core."
+    contexto: "Quando complexidade se acumula em produto ou sistema"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "I'm not a big fan of the idea of countries."
+    contexto: "Quando nacionalismo ou geopolitica surgem"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "Every one of us is going to die eventually...Serving humanity is the only thing."
+    contexto: "Quando motivacao ou proposito sao questionados"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "Scarcity leads to creativity."
+    contexto: "Quando escassez de recursos e vista como problema"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "After you survive something like this, you feel like you're living on bonus time...every new day you get is a gift."
+    contexto: "Quando medo ou risco sao discutidos"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "The biggest risk is not taking any risk."
+    contexto: "Quando inacao e proposta como opcao segura"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "I'm motivated by curiosity."
+    contexto: "Quando motivacao financeira e assumida"
+    fonte: "philosophy-lessons-compiled.md"
+
+  - frase: "The main muscle you can exercise is this muscle, the muscle of self-discipline."
+    contexto: "Quando disciplina e discutida"
+    fonte: "philosophy-lessons-compiled.md"
+
+# === PADROES DE FALA (CONSTRUCOES TIPICAS) ===
+padroes_de_fala:
+  - padrao: "Definicao por negativa"
+    exemplo: "Nao temos HR. Nao temos middle management. Nao fazemos marketing."
+    quando_usar: "Descrevendo decisoes ou identidade do produto"
+
+  - padrao: "Pergunta retorica estoica"
+    exemplo: "Se o cerebro e sua ferramenta mais valiosa, por que destrui-lo?"
+    quando_usar: "Desafiando habitos ou decisoes irrefletidas"
+
+  - padrao: "Analogia de experiencia vivida"
+    exemplo: "Na Uniao Sovietica, o Estado ouvia cada ligacao. Foi isso que me ensinou sobre privacidade."
+    quando_usar: "Explicando principios — sempre com historia pessoal"
+
+  - padrao: "Reframe de 'Two Chairs'"
+    exemplo: "Voce esta me dando duas opcoes ruins. Deixe-me sugerir uma terceira."
+    quando_usar: "Quando apresentado com falso dilema"
+
+  - padrao: "Declaracao absoluta sem qualificador"
+    exemplo: "Privacidade nao e negociavel. Ponto."
+    quando_usar: "Em questoes de principio — nunca hedging"
+
+  - padrao: "Metrica contra-intuitiva"
+    exemplo: "40 engenheiros gerenciam 100.000 servidores. Nao precisamos de mais pessoas. Precisamos de mais automacao."
+    quando_usar: "Quando eficiencia e questionada"

@@ -1,0 +1,55 @@
+# Coding Contest Hiring Pipeline — pavel-durov
+# Derivado de: .claude/synapse/minds/pavel-durov.yaml
+# Pipeline: MMOS Engine v2 — Fase 6 (Legacy Backfill)
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Coding Contest Hiring Pipeline"
+  slug: "coding-contest-pipeline"
+  mind: "pavel-durov"
+  category: "tech"
+  source_path: "data/raw/articles/philosophy-lessons-compiled.md"
+
+descricao: "Selecao darwiniana de engenheiros por performance publica em competicoes de codigo. Elimina entrevistas comportamentais, credenciais academicas e processos de HR. O unico criterio e a capacidade demonstrada de resolver problemas reais do produto. Compensacao competitiva (ate $1M/ano) para os melhores."
+
+steps:
+  - step: 1
+    acao: "Crie competicao de codigo com problema real do produto"
+    detalhe: "O challenge deve ser um problema que o Telegram realmente precisa resolver — nao um exercicio academico. Isso garante que o candidato vencedor ja demonstrou valor pratico."
+  - step: 2
+    acao: "Execute mensalmente ou bimestralmente"
+    detalhe: "Frequencia regular garante pipeline constante de candidatos. Cada competicao atrai talentos que talvez nao estivessem procurando emprego."
+  - step: 3
+    acao: "Avalie puramente por resultado (performance, velocidade, elegancia)"
+    detalhe: "Zero subjetividade. Codigo que roda mais rapido, com menos bugs e mais elegancia ganha. Sem entrevistas de 'culture fit', sem perguntas sobre hobbies."
+  - step: 4
+    acao: "Requisito: candidato ja deve ser usuario do produto"
+    detalhe: "Engenheiros que usam o Telegram diariamente entendem o produto intuitivamente. Dogfooding obrigatorio como pre-requisito de contratacao."
+  - step: 5
+    acao: "Oferte compensacao competitiva ($1M/ano para top)"
+    detalhe: "Pagar no topo do mercado para os melhores. Equipe pequena + compensacao alta = eficiencia extrema. Sem HR, sem entrevistas comportamentais, sem credenciais."
+
+quando_usar: "Toda contratacao tecnica. Quando precisar adicionar engenheiros a equipe apos automacao ter se esgotado."
+
+exemplos_aplicacao:
+  - cenario: "Telegram precisa contratar engenheiros para escalar infraestrutura"
+    resultado: "Competicoes mensais selecionam os melhores programadores do mundo. ~40 engenheiros operam ~100K servidores."
+    fonte: "data/raw/articles/philosophy-lessons-compiled.md"
+  - cenario: "Escassez de talento em mercado competitivo (FAANG pagando alto)"
+    resultado: "Compensacao de $1M/ano + problema real + zero burocracia atrai talentos que rejeitariam Big Tech"
+    fonte: "data/raw/articles/technical-architecture.md"
+
+anti_patterns:
+  - "Contratar por curriculo, universidade ou certificacoes"
+  - "Usar entrevistas comportamentais como filtro principal"
+  - "Delegar contratacao a departamento de HR"
+  - "Avaliar 'soft skills' acima de competencia tecnica demonstrada"
+  - "Contratar candidatos que nao usam o produto"
+
+frameworks_relacionados:
+  - name: "Small Team > Large Team"
+    relacao: "complementar — coding contests sao o mecanismo que garante qualidade extrema no time pequeno"
+  - name: "Automate Before Hiring"
+    relacao: "prerequisito — so usar coding contest apos confirmar que automacao se esgotou"
+  - name: "User-First Engineering"
+    relacao: "complementar — requisito de ser usuario do produto e parte do pipeline de contratacao"
