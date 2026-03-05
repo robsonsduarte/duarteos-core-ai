@@ -90,34 +90,75 @@ Este e o pipeline MMOS v3 de clonagem mental do DuarteOS. Ele combina:
 
 ### FASE 0: INTAKE (Pre-Pipeline)
 
-**Objetivo:** Receber input, canonicalizar nome, verificar duplicidade, registrar dados opcionais.
+**Objetivo:** Receber input, canonicalizar nome, auto-detectar modo (greenfield/brownfield/skip/redirect), registrar dados opcionais.
 **OMEGA:** NAO e task OMEGA — pre-condicao de entrada.
 
 #### Procedimento
 
 1. **Canonicalizar nome -> slug**
    - Aplicar regras de canonicalizacao (lowercase, sem acentos, hifens entre palavras)
-   - Verificar se clone ja existe em `.claude/synapse/minds/{slug}.yaml`
-   - Se JA EXISTE: avisar e sugerir `/DUARTEOS:mmos:mind-update` em vez de mind-clone
 
-2. **Determinar categoria do squad**
+2. **Auto-Deteccao Greenfield/Brownfield (v2.2)**
+
+   Verificar AUTOMATICAMENTE o modo correto — elimina erro humano na escolha de comando.
+
+   ```
+   Passo 1: Verificar se .claude/synapse/minds/{slug}.yaml existe
+
+   → NAO EXISTE: modo GREENFIELD
+     Pipeline completo (Fases 0-10). Prosseguir normalmente.
+
+   → EXISTE: verificar completeness
+     |
+     +-- Ler fidelidade do YAML (campo fidelity ou fidelity_score)
+     |
+     +-- Fidelidade >= 95% E sem fontes novas:
+     |   → SKIP: Informar usuario:
+     |     "Clone {slug} ja ativo com F={F}%. Nenhuma fonte nova detectada.
+     |      Use /DUARTEOS:mmos:mind-update para enriquecer com novas fontes."
+     |   → ENCERRAR pipeline
+     |
+     +-- Fidelidade >= 95% E fontes novas detectadas:
+     |   (fontes novas = inbox/{slug}/ contem arquivos OU usuario forneceu URLs/dados)
+     |   → REDIRECT: Informar usuario e redirecionar para mind-update:
+     |     "Clone {slug} ja ativo com F={F}%. Fontes novas detectadas.
+     |      Redirecionando para mind-update automaticamente."
+     |   → Executar mind-update em vez de mind-clone
+     |
+     +-- Fidelidade < 95%:
+         → BROWNFIELD: Retomar da ultima fase incompleta
+           Detectar via: config.yaml do squad (campo last_completed_phase)
+           Se campo ausente, inferir pela existencia de artefatos:
+             - catalogo existe → fase 1 completa
+             - MIUs existem → fase 6 completa
+             - drivers existem → fase 7 completa
+             - DNA existe → fase 8 completa
+           Retomar da fase last_completed_phase + 1
+           Informar: "Clone {slug} incompleto (F={F}%). Retomando da Fase {N}."
+   ```
+
+3. **Determinar categoria do squad** (apenas se GREENFIELD ou BROWNFIELD)
    - Categorias validas (kebab-case): copy, marketing, ux-design, ai, tech, business, content, product, saude, juridico
    - Se a categoria nao for clara ou ambigua: perguntar ao usuario
 
-3. **Registrar dados opcionais fornecidos pelo usuario**
+4. **Registrar dados opcionais fornecidos pelo usuario**
    - URLs de fontes fornecidas
    - Paths de arquivos locais
    - Textos colados diretamente
    - Qualquer material que o usuario tenha disponivel
 
-4. **Decisao**
-   - Slug definido + categoria definida + clone nao existe: PROSSEGUIR para Fase 1
-   - Clone ja existe: redirecionar para mind-update
+5. **Decisao**
+   - GREENFIELD: slug + categoria definidos → PROSSEGUIR para Fase 1
+   - BROWNFIELD: slug + categoria definidos → PROSSEGUIR para fase de retomada
+   - SKIP: clone ativo sem fontes novas → ENCERRAR
+   - REDIRECT: clone ativo com fontes novas → EXECUTAR mind-update
    - Categoria indefinida: perguntar ao usuario
 
 **Mudanca vs v2.1:** O APEX/ICP Gate foi removido desta fase. A avaliacao de viabilidade agora e feita de forma mais sofisticada nas Fases 1-3 (Pesquisa + Analise Rapida + Estimativa PCFE), culminando no Gate Humano da Fase 4.
 
-**NAO avance para Fase 1 sem slug e categoria definidos.**
+**Mudanca v2.2:** Auto-deteccao greenfield/brownfield adicionada. O pipeline agora detecta automaticamente se deve criar, retomar, redirecionar ou pular — sem intervencao humana.
+
+**NAO avance para Fase 1 sem slug e categoria definidos (exceto SKIP/REDIRECT).**
 
 ---
 
@@ -192,6 +233,48 @@ Este e o pipeline MMOS v3 de clonagem mental do DuarteOS. Ele combina:
    - **Forte:** Layer 1 — NUNCA editar material bruto
    - **Kahneman:** Anti-disponibilidade (nao priorizar YouTube), anti-ancoragem (nao comecar pela fonte mais famosa)
 
+#### Targets de Distribuicao por Categoria (v2.2)
+
+Apos coleta, verificar distribuicao das fontes contra os targets:
+
+| Categoria    | Target % | Min absoluto | Justificativa |
+|-------------|----------|-------------|---------------|
+| Livros      | ~20%     | 4           | Profundidade maxima, pensamento estruturado |
+| Entrevistas | ~30%     | 6           | Comportamento espontaneo, reacoes reais |
+| Artigos     | ~25%     | 5           | Posicionamento autoral, argumentacao escrita |
+| Podcasts    | ~15%     | 3           | Linguagem oral, estilo conversacional |
+| Palestras   | ~10%     | 2           | Comunicacao publica, estrutura retorica |
+
+**Regras:**
+- Targets sao ORIENTACOES — adaptar ao perfil da pessoa (nem todos tem livros)
+- **ALERTAR** se alguma categoria com material disponivel < 10% do total
+- Se adaptacao necessaria, documentar redistribuicao no catalogo
+- Registrar distribuicao real vs targets nos metadados da fase
+
+#### Trigger Automatico de Enriquecimento (v2.2)
+
+Apos coleta inicial, executar checks automaticos ANTES de avancar:
+
+```yaml
+ENRIQUECIMENTO_TRIGGER:
+  checks:
+    - condition: "total_fontes < 21"             # 70% de 30 (target minimo)
+      action: "buscar mais fontes via Tier 1+2 (queries complementares)"
+    - condition: "alguma_camada_dna < 3 fontes"  # cobertura minima por camada
+      action: "buscar fontes especificas para camada deficiente"
+    - condition: "ratio_primarias < 60%"          # pelo menos 60% devem ser primarias
+      action: "buscar mais fontes primarias, descartar secundarias"
+  max_loops: 2
+  escalation: "Se apos 2 loops ainda insuficiente → prosseguir com nota de risco no catalogo"
+```
+
+**Procedimento de enriquecimento:**
+1. Completar coleta inicial (passos 1-6 acima)
+2. Contar fontes, verificar distribuicao, calcular ratio primarias
+3. Se QUALQUER trigger ativo → executar busca complementar focada no gap
+4. Re-verificar triggers
+5. Se ainda ativo apos loop 2 → documentar risco e prosseguir
+
 #### Gate Gawande 1->2
 
 | # | Critico? | Check |
@@ -199,6 +282,8 @@ Este e o pipeline MMOS v3 de clonagem mental do DuarteOS. Ele combina:
 | 1 | **SIM** | ZERO fontes secundarias aceitas? |
 | 2 | nao | Minimo 3 fontes encontradas? |
 | 3 | nao | Material bruto preservado intacto? |
+| 4 | nao | Distribuicao por categoria verificada? (v2.2) |
+| 5 | nao | Triggers de enriquecimento executados? (v2.2) |
 
 **Nota:** Coverage score >= 90% NAO e kill item aqui (como era no v2.1). A cobertura sera avaliada pela estimativa de fidelidade na Fase 3.
 
@@ -835,11 +920,93 @@ Verificar que todos os 21+ dirs existem e config.yaml e parseavel YAML.
    Minimum composite: 95
    ```
 
-5. **Blind test (Kahneman):**
-   - Apresentar material que o clone NUNCA viu
-   - O clone generaliza corretamente? Se nao -> overfitting
+5. **Suite de 20 Testes Cegos Estruturados (v2.2):**
 
-   **Cenarios adicionais de blind test (v2.1):**
+   Substitui o blind test vago por validacao reproduzivel com 20 prompts categorizados.
+
+   **5a. Preparar 20 prompts personalizados** usando os templates abaixo, preenchidos com dados do DNA:
+
+   ```yaml
+   surface_prompts:  # 8 prompts — conhecimento e estilo basico
+     - "Qual sua posicao sobre {tema_central_1}?"
+     - "Explique {framework_principal} para um iniciante."
+     - "Quais sao os maiores erros que as pessoas cometem em {area}?"
+     - "O que voce aprendeu com {experiencia_marcante}?"
+     - "Como voce descreveria seu metodo em uma frase?"
+     - "Qual conselho daria para alguem comecando em {area}?"
+     - "O que diferencia {area} hoje do que era ha 10 anos?"
+     - "Qual e a habilidade mais subestimada em {area}?"
+
+   deep_prompts:  # 6 prompts — profundidade e nuances
+     - "Como voce reconcilia {crenca_A} com {crenca_B_aparentemente_oposta}?"
+     - "Em que situacao {principio_central} NAO se aplica?"
+     - "Qual foi a maior mudanca de opiniao que voce ja teve?"
+     - "Se pudesse refazer {decisao_importante}, o que faria diferente?"
+     - "O que a maioria das pessoas entende errado sobre {conceito}?"
+     - "Qual e o maior risco nao-obvio em {area}?"
+
+   paradox_prompts:  # 4 prompts — contradicoes produtivas
+     - "Voce defende {posicao_A} mas tambem {posicao_B}. Como isso coexiste?"
+     - "Seus criticos dizem que {critica_recorrente}. Eles tem razao?"
+     - "{Paradoxo_1_do_DNA}: como voce vive com essa tensao?"
+     - "Em que voce e hipocrita — e por que isso e necessario?"
+
+   integration_prompts:  # 2 prompts — cenarios ineditos
+     - "{Cenario_novo_nunca_visto}: como voce abordaria isso?"
+     - "Um profissional de {area_diferente} pede seu conselho sobre {problema_cross_dominio}. O que voce diz?"
+   ```
+
+   **5b. Executar cada prompt** como se o agente clone ja estivesse ativo. Avaliar cada resposta:
+
+   | Score | Criterio |
+   |-------|----------|
+   | 9-10 | Indistinguivel da pessoa real — tom, conteudo, nuances |
+   | 7-8 | Consistente com DNA — pequenos desvios de estilo |
+   | 5-6 | Conteudo correto mas tom/estilo generico |
+   | 3-4 | Conteudo parcialmente correto, gaps visiveis |
+   | 0-2 | Resposta generica/incorreta — clone falhou |
+
+   **5c. Calcular Fidelidade de Teste:**
+
+   ```
+   Fidelidade_teste = (Media_geral * 0.60) + (Media_paradoxos * 0.30) + (Taxa_aprovacao * 0.10)
+
+   Media_geral     = media aritmetica dos 20 scores (normalizada 0-100)
+   Media_paradoxos = media dos 4 paradox scores (normalizada 0-100)
+   Taxa_aprovacao  = % de respostas com score >= 7 (normalizada 0-100)
+   ```
+
+   **5d. Avaliar resultado:**
+   - `Fidelidade_teste >= 94%` → PASS
+   - `Fidelidade_teste 85-93%` → PASS COM ALERTA (documentar camadas fracas)
+   - `Fidelidade_teste < 85%` → FAIL (retornar a fase correspondente)
+
+   **Mapeamento de falha → fase de retorno:**
+
+   | Categoria fraca | Camada DNA impactada | Retornar a |
+   |-----------------|---------------------|------------|
+   | Surface | Frameworks, Metodologias | Fase 6 (Extracao) |
+   | Deep | Filosofia, Dilemas | Fase 7 (Inferencia) |
+   | Paradox | Paradoxos Produtivos | Fase 7 (Inferencia) |
+   | Integration | Associacoes Conceituais | Fase 8 (Mapeamento) |
+
+   **5e. Registrar resultados** no config.yaml do squad:
+   ```yaml
+   blind_test_v2:
+     total_prompts: 20
+     scores_by_category:
+       surface: [s1, s2, s3, s4, s5, s6, s7, s8]
+       deep: [s1, s2, s3, s4, s5, s6]
+       paradox: [s1, s2, s3, s4]
+       integration: [s1, s2]
+     media_geral: {valor}
+     media_paradoxos: {valor}
+     taxa_aprovacao: {valor}
+     fidelidade_teste: {valor}
+     resultado: "{PASS|PASS_COM_ALERTA|FAIL}"
+   ```
+
+   **Cenarios adicionais de blind test (v2.1 — mantidos como complemento):**
 
    | # | Tipo | O que testa | Como avaliar |
    |---|------|-------------|--------------|
@@ -916,11 +1083,12 @@ Verificar que todos os 21+ dirs existem e config.yaml e parseavel YAML.
 | # | Critico? | Check |
 |---|----------|-------|
 | 1 | **SIM** | Fidelity score composto >= 95%? |
-| 2 | **SIM** | Blind test passou? |
+| 2 | **SIM** | Suite de 20 testes cegos executada com Fidelidade_teste >= 94%? (v2.2) |
 | 3 | **SIM** | Pre-mortem executado e documentado? |
 | 4 | nao | mind_tools populado com proficiency scores? |
 | 5 | nao | config.yaml atualizado com status? |
 | 6 | nao | Comparacao FE vs F registrada em pcfe-calibration.yaml? |
+| 7 | nao | Resultados da suite de testes registrados em config.yaml? (v2.2) |
 
 **NAO avance para Fase 10 sem gate aprovado.**
 

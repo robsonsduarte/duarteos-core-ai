@@ -1,9 +1,9 @@
-# MMOS ENGINE v2.1 — Pipeline de Clonagem Mental de Alta Fidelidade
+# MMOS ENGINE v2.2 — Pipeline de Clonagem Mental de Alta Fidelidade
 
-**Versao:** 2.1.0
+**Versao:** 2.2.0
 **Status:** Ativo
 **Autor:** NEXUS (Architect)
-**Data:** 2026-03-03
+**Data:** 2026-03-05
 **Substitui:** MMOS Pipeline v1 (7 fases, sem autoridades, sem formula de fidelidade)
 **Dependencias:** OMEGA.md (Secao 20-21), SYNAPSE.md (Secao 4)
 
@@ -341,6 +341,51 @@ gate_1_2:
       check: "Span temporal documentado?"
 ```
 
+### Targets de Distribuicao por Categoria de Fonte (v2.2)
+
+Para garantir diversidade e profundidade, o material coletado deve aproximar-se dos seguintes targets:
+
+| Categoria    | Target % | Min absoluto | Justificativa |
+|-------------|----------|-------------|---------------|
+| Livros      | ~20%     | 4           | Profundidade maxima, pensamento estruturado |
+| Entrevistas | ~30%     | 6           | Comportamento espontaneo, reacoes reais |
+| Artigos     | ~25%     | 5           | Posicionamento autoral, argumentacao escrita |
+| Podcasts    | ~15%     | 3           | Linguagem oral, estilo conversacional |
+| Palestras   | ~10%     | 2           | Comunicacao publica, estrutura retorica |
+
+**Regras de distribuicao:**
+- Os targets sao ORIENTACOES, nao mandatorios — nem toda pessoa tem livros ou podcasts
+- **Alerta obrigatorio:** Se alguma categoria com material disponivel representa < 10% do total coletado
+- **Adaptacao:** Se a pessoa nao tem livros (ex: influenciador digital), redistribuir target para entrevistas e artigos
+- Documentar distribuicao real vs targets no catalogo de fontes
+
+### Trigger Automatico de Enriquecimento (v2.2)
+
+Apos a coleta inicial, verificar automaticamente se o material e suficiente:
+
+```yaml
+ENRIQUECIMENTO_TRIGGER:
+  checks:
+    - condition: "total_fontes < 21"           # 70% de 30 (target minimo)
+      action: "buscar mais fontes via Tier 1+2"
+      justificativa: "Volume insuficiente para pipeline completo"
+    - condition: "alguma_camada_dna < 3 fontes" # cobertura minima por camada
+      action: "buscar fontes especificas para camada deficiente"
+      justificativa: "Camada com cobertura insuficiente gera gaps no DNA"
+    - condition: "ratio_primarias < 60%"         # pelo menos 60% primarias
+      action: "buscar mais fontes primarias"
+      justificativa: "Fontes secundarias nao captam voz autentica"
+  max_loops: 2                                   # maximo 2 rodadas de enriquecimento
+  escalation: "Se apos 2 loops ainda insuficiente, prosseguir com nota de risco"
+```
+
+**Fluxo de enriquecimento:**
+1. Coleta inicial completa
+2. Verificar 3 triggers
+3. Se algum trigger ativo → nova rodada de busca (focada no gap)
+4. Re-verificar triggers
+5. Se ainda ativo apos 2 loops → prosseguir com alerta documentado
+
 ### Metricas
 
 | Metrica | Threshold | Tipo |
@@ -349,6 +394,8 @@ gate_1_2:
 | source_diversity | >= 4 tipos | Warning |
 | temporal_span | >= 50% atividade publica | Warning |
 | zero_secondary_sources | true | Kill item |
+| distribuicao_categoria | nenhuma < 10% (se disponivel) | Warning |
+| enriquecimento_loops | <= 2 | Hard limit |
 
 ### OMEGA Integration
 
@@ -832,6 +879,85 @@ mind_tools:
 2. **Noise audit:** Re-executar com mesmos inputs. Varia significativamente? Reprodutibilidade >= 0.90.
 3. **Pre-mortem final:** "E 2027. Descobrimos que o clone e caricatura. O que deu errado?" Documentar cenarios de falha.
 
+### Suite de 20 Testes Cegos Estruturados (v2.2)
+
+Substitui o "blind test vago" por validacao reproduzivel com 20 prompts categorizados.
+
+**Categorias e distribuicao:**
+
+| Categoria | Qtd | Peso na formula | O que valida |
+|-----------|-----|-----------------|--------------|
+| **Surface** | 8 | 0.6 (via media) | Conhecimento factual, frameworks, linguagem basica |
+| **Deep** | 6 | 0.6 (via media) | Raciocinio profundo, nuances, posicionamento |
+| **Paradox** | 4 | 0.3 | Contradicoes internas, tensoes produtivas |
+| **Integration** | 2 | 0.1 (via taxa) | Cenarios cross-dominio, aplicacao em contexto novo |
+
+**Templates de prompt por categoria:**
+
+```yaml
+surface_prompts:  # 8 prompts — conhecimento e estilo basico
+  - "Qual sua posicao sobre {tema_central_1}?"
+  - "Explique {framework_principal} para um iniciante."
+  - "Quais sao os maiores erros que as pessoas cometem em {area}?"
+  - "O que voce aprendeu com {experiencia_marcante}?"
+  - "Como voce descreveria seu metodo em uma frase?"
+  - "Qual conselho daria para alguem comecando em {area}?"
+  - "O que diferencia {area} hoje do que era ha 10 anos?"
+  - "Qual e a habilidade mais subestimada em {area}?"
+
+deep_prompts:  # 6 prompts — profundidade e nuances
+  - "Como voce reconcilia {crenca_A} com {crenca_B_aparentemente_oposta}?"
+  - "Em que situacao {principio_central} NAO se aplica?"
+  - "Qual foi a maior mudanca de opiniao que voce ja teve?"
+  - "Se pudesse refazer {decisao_importante}, o que faria diferente?"
+  - "O que a maioria das pessoas entende errado sobre {conceito}?"
+  - "Qual e o maior risco nao-obvio em {area}?"
+
+paradox_prompts:  # 4 prompts — contradicoes produtivas
+  - "Voce defende {posicao_A} mas tambem {posicao_B}. Como isso coexiste?"
+  - "Seus criticos dizem que {critica_recorrente}. Eles tem razao?"
+  - "{Paradoxo_1_do_DNA}: como voce vive com essa tensao?"
+  - "Em que voce e hipocrita — e por que isso e necessario?"
+
+integration_prompts:  # 2 prompts — cenarios ineditos
+  - "{Cenario_novo_nunca_visto}: como voce abordaria isso?"
+  - "Um profissional de {area_diferente} pede seu conselho sobre {problema_cross_dominio}. O que voce diz?"
+```
+
+**Scoring (0-10 por resposta):**
+
+| Score | Criterio |
+|-------|----------|
+| 9-10 | Resposta indistinguivel da pessoa real — tom, conteudo, nuances |
+| 7-8 | Resposta consistente com DNA — pequenos desvios de estilo |
+| 5-6 | Conteudo correto mas tom/estilo generico |
+| 3-4 | Conteudo parcialmente correto, gaps visiveis |
+| 0-2 | Resposta generica/incorreta — clone falhou |
+
+**Formula de fidelidade de teste:**
+
+```
+Fidelidade_teste = (Media_geral * 0.60) + (Media_paradoxos * 0.30) + (Taxa_aprovacao * 0.10)
+
+Media_geral     = media aritmetica dos 20 scores (normalizada 0-100)
+Media_paradoxos = media dos 4 paradox scores (normalizada 0-100)
+Taxa_aprovacao  = % de respostas com score >= 7 (normalizada 0-100)
+```
+
+**Thresholds:**
+- `Fidelidade_teste >= 94%` → PASS
+- `Fidelidade_teste 85-93%` → PASS COM ALERTA (identificar camadas fracas)
+- `Fidelidade_teste < 85%` → FAIL (retornar a fase correspondente as camadas fracas)
+
+**Mapeamento de falha -> fase de retorno:**
+
+| Categoria fraca | Camada DNA impactada | Retornar a |
+|-----------------|---------------------|------------|
+| Surface | Frameworks, Metodologias | Fase 6 (Extracao) — faltam MIUs |
+| Deep | Filosofia, Dilemas | Fase 7 (Inferencia) — faltam drivers |
+| Paradox | Paradoxos Produtivos | Fase 7 (Inferencia) — explorar contradicoes |
+| Integration | Associacoes Conceituais | Fase 8 (Mapeamento) — faltam conexoes |
+
 ### Formula de Fidelidade
 
 Ver Secao 13 para formula completa. Threshold: composite >= 95%, nenhum componente abaixo de 85%.
@@ -848,7 +974,7 @@ gate_5_6:
       check: "Fidelity score composto >= 95%?"
     - id: 2
       critical: true
-      check: "Blind test passou?"
+      check: "Suite de 20 testes cegos com Fidelidade_teste >= 94%? (v2.2)"
     - id: 3
       critical: true
       check: "Pre-mortem executado e documentado?"
@@ -866,7 +992,7 @@ gate_5_6:
 |---------|-----------|------|
 | fidelity_score_composite | >= 95% | Kill item |
 | no_component_below | 85% | Kill item |
-| blind_test | Passed | Kill item |
+| fidelidade_teste (suite 20) | >= 94% | Kill item |
 | noise_audit_reproducibility | >= 0.90 | Warning |
 | premortem | Executado e documentado | Kill item |
 
@@ -1049,15 +1175,48 @@ DUARTEOS/squad/{categoria}/
 
 ## 10. Mind-Create vs Mind-Update
 
+### Auto-Deteccao Greenfield/Brownfield (v2.2)
+
+O pipeline detecta AUTOMATICAMENTE o modo correto na Fase 0 (Intake), eliminando erro humano na escolha de comando.
+
+**Arvore de decisao deterministica:**
+
+```
+1. Canonicalizar slug (lowercase, sem acentos, hifens)
+2. Verificar se .claude/synapse/minds/{slug}.yaml existe
+   |
+   +-- NAO existe → GREENFIELD
+   |   Pipeline completo (Fases 0-10)
+   |
+   +-- Existe → verificar completeness
+       |
+       +-- Fidelidade >= 95% E sem fontes novas no inbox/
+       |   → SKIP: "Clone {slug} ja ativo com F={F}%. Use mind-update para enriquecer."
+       |
+       +-- Fidelidade >= 95% E fontes novas detectadas (inbox/{slug}/ nao vazio)
+       |   → REDIRECT: redirecionar automaticamente para mind-update
+       |
+       +-- Fidelidade < 95%
+           → BROWNFIELD: retomar da ultima fase incompleta
+             Detectar ultima fase via: config.yaml do squad (campo last_completed_phase)
+             Retomar da fase last_completed_phase + 1
+```
+
+**Deteccao de fontes novas:**
+- Verificar `inbox/{slug}/` — se contem arquivos nao processados
+- Verificar se usuario forneceu URLs/dados no input
+
+**Deteccao de ultima fase (brownfield):**
+- Ler `DUARTEOS/squad/{categoria}/{slug}/config.yaml`
+- Campo `last_completed_phase` indica onde parou
+- Se campo ausente, verificar existencia de artefatos (catalogo, MIUs, drivers, DNA) para inferir
+
 ### Mind-Create: Pipeline Completo (Fase 0 -> 6)
 
 ```
 /DUARTEOS:mmos:mind-clone {nome-do-especialista}
   |
-  +-- Fase 0: APEX/ICP Gate (viabilidade)
-  |   +-- Material suficiente? Score APEX >= 40/60?
-  |   +-- ICP fit? Score >= 6/10?
-  |   +-- Se NAO: ABORTAR com recomendacao
+  +-- Fase 0: Auto-Deteccao (greenfield/brownfield/skip/redirect)
   |
   +-- Fase 1: Coleta (ETL Pipeline)
   +-- Fase 2: Extracao (MIUs + fragments)
