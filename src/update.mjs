@@ -9,6 +9,19 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.23.0': {
+    title: 'Process Chief (Deming) + Conselho de Process — Toda task passa pelo crivo do processo',
+    highlights: [
+      'Novo agente: Process Chief (DEMING) — arquiteto de processos obrigatorio em toda task',
+      'Novo conselho: Conselho de Process — 5 membros (Deming, Allen, Forte, Gawande, Kahneman)',
+      'Novo protocolo: PROCESS-CHIEF.md — fluxo obrigatorio ATLAS → Process Chief → Agente → OMEGA',
+      'Process Chief integra 5 lentes: Sistema (Deming), Fluxo (Allen), Info (Forte), Seguranca (Gawande), Cognicao (Kahneman)',
+      'OMEGA como quality gate dentro de todo processo desenhado pelo Process Chief',
+      'PM (ATLAS) atualizado: spawna Process Chief ANTES de delegar qualquer tarefa',
+      'CLAUDE.md atualizado: regra de Process Chief obrigatorio',
+      'Contadores: 14 agentes, 11 conselhos, 11 protocolos',
+    ],
+  },
   '5.22.0': {
     title: '3 Mind Clones MMOS v3 — Daniel Kahneman (F=95.55%) + Amanda Khayat (F=93.20%) + Brad Frost Squad',
     highlights: [

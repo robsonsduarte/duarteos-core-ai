@@ -77,7 +77,7 @@ export function init(projectName, options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version}${' '.repeat(Math.max(0, bannerWidth - 22 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  64 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  14 Agentes  |  65 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
 
   // Detect project name
@@ -307,6 +307,9 @@ export function init(projectName, options = {}) {
     // v5.18.0 — Model Routing Protocol
     ['protocols/MODEL-ROUTING.md', '.claude/protocols/MODEL-ROUTING.md'],
 
+    // v5.23.0 — Process Chief Protocol
+    ['protocols/PROCESS-CHIEF.md', '.claude/protocols/PROCESS-CHIEF.md'],
+
     // v5.13.0 — MMOS v3 PCFE (Pre-Clone Fidelity Estimation)
     ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],
     ['omega/pcfe-calibration.yaml', '.claude/omega/pcfe-calibration.yaml'],
@@ -503,8 +506,9 @@ export function init(projectName, options = {}) {
   3. Customize CLAUDE.md com stack e convencoes do seu projeto
   4. Instale o GSD: https://github.com/cleyio/gsd
   4. Use os comandos:
-     /DUARTEOS:agents:squad [demanda]     — Ativa squad completo (13 agentes com personas)
+     /DUARTEOS:agents:squad [demanda]     — Ativa squad completo (14 agentes com personas)
      /DUARTEOS:agents:pm [demanda]        — ATLAS: Gerente de Projetos
+     /DUARTEOS:agents:process-chief      — DEMING: Process Chief (obrigatorio em toda task)
      /DUARTEOS:agents:architect [area]    — NEXUS: Arquiteto
      /DUARTEOS:agents:backend [feature]   — FORGE: Backend Dev
      /DUARTEOS:agents:frontend [tela]     — PRISM: Frontend Dev
@@ -550,7 +554,7 @@ export function init(projectName, options = {}) {
      Sequential Thinking   — Raciocinio estruturado
      E2B Sandbox           — Execucao segura de codigo
 
-  Protocols (.claude/protocols/) — 10 documentos formais:
+  Protocols (.claude/protocols/) — 11 documentos formais:
      CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
      GOVERNANCE.md           — Convencoes de nomenclatura e ciclo de vida
      CONFIG-PROTOCOL.md      — Sistema de configuracao em 4 camadas
@@ -560,6 +564,7 @@ export function init(projectName, options = {}) {
      OMEGA.md                — Quality enforcement loop engine
      MMOS-PIPELINE.md        — Pipeline MMOS v3 de clonagem mental (11 fases 0-10 + PCFE)
      MODEL-ROUTING.md        — Roteamento inteligente de modelos (Haiku/Sonnet/Opus)
+     PROCESS-CHIEF.md        — Protocolo do Process Chief (toda task passa pelo Deming)
 
   Config (.claude/config/) — 3 camadas:
      system.yaml             — Layer 0: defaults DuarteOS (read-only)
@@ -633,7 +638,7 @@ export function init(projectName, options = {}) {
      /DUARTEOS:Saude:*          — 8 profissionais (Drauzio Varella, Vera Iaconelli, Atul Gawande...)
      /DUARTEOS:Juridico:*       — 7 juristas (Patricia Peck, Ronaldo Lemos, Erik Nybo...)
 
-  Conselhos de Especialistas — 10 advisory boards:
+  Conselhos de Especialistas — 11 advisory boards:
      /DUARTEOS:conselho:ia         — 5 pioneiros de IA
      /DUARTEOS:conselho:marketing  — 9 estrategistas de marketing
      /DUARTEOS:conselho:copywriting — 7 mestres de copy
@@ -644,6 +649,7 @@ export function init(projectName, options = {}) {
      /DUARTEOS:conselho:product    — 3 lideres de produto
      /DUARTEOS:conselho:saude      — 7 profissionais de saude multidisciplinar
      /DUARTEOS:conselho:juridico   — 7 juristas de direito digital
+     /DUARTEOS:conselho:process    — 5 arquitetos de processos (Deming, Allen, Forte, Gawande, Kahneman)
 
   MMOS Pipeline — Clonagem Cognitiva Avancada:
      /DUARTEOS:mmos:mind-clone [nome]  — Pipeline 11 fases: PCFE + Gate Humano + DNA 6 Camadas + Fidelidade >= 95%

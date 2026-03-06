@@ -43,6 +43,7 @@ Este projeto opera em **YOLO mode** — execucao autonoma com guardrails minimos
 - **Idioma:** Comunicacao sempre em portugues. Codigo e identificadores em ingles.
 - **Principio:** Ler antes de editar. Planejar antes de executar. Simplicidade > sofisticacao.
 - **Qualidade:** Protocolo OMEGA ativo em todos os agentes. Toda task emite OMEGA_STATUS com score por evidencia. Thresholds: Research >=80, Planning >=85, Implementation >=90, Validation/Mind Clone >=95. Detalhes em `.claude/protocols/OMEGA.md`.
+- **Process Chief:** TODA tarefa — sem excecao — passa pelo crivo do Process Chief (Deming) antes de ser executada. O Process Chief define o processo, o OMEGA valida a qualidade. Protocolo em `.claude/protocols/PROCESS-CHIEF.md`. Agente em `/agents:process-chief`.
 
 ## Roteamento de Modelos (Model Routing) — Regra Obrigatoria
 
