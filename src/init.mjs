@@ -283,6 +283,7 @@ export function init(projectName, options = {}) {
     // v5.0.0 — Protocols
     ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
     ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
+    ['protocols/AGENT-JURISDICTION.md', '.claude/protocols/AGENT-JURISDICTION.md'],
     ['protocols/README.md', '.claude/protocols/README.md'],
     ['protocols/CONFIG-PROTOCOL.md', '.claude/protocols/CONFIG-PROTOCOL.md'],
     ['protocols/SYNAPSE.md', '.claude/protocols/SYNAPSE.md'],
@@ -594,9 +595,10 @@ export function init(projectName, options = {}) {
      squad/          — 3 processos (create-squad, run-squad, list-squads)
      meta/           — 3 processos (process-creation, process-review-pdsa, process-mapping)
 
-  Protocols (.claude/protocols/) — 11 documentos formais:
-     CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
-     GOVERNANCE.md           — Convencoes de nomenclatura e ciclo de vida
+  Protocols (.claude/protocols/) — 12 documentos formais:
+     CONSTITUTION.md         — Principios inviolaveis (Artigo 0: jurisdicao, seguranca, qualidade, etica, processo)
+     GOVERNANCE.md           — Convencoes de nomenclatura, ciclo de vida, mapa de jurisdicao
+     AGENT-JURISDICTION.md   — Separacao de responsabilidades entre agentes (anti-patterns, exemplos)
      CONFIG-PROTOCOL.md      — Sistema de configuracao em 4 camadas
      SYNAPSE.md              — Maquina de estados dos agentes
      QUALITY-GATES.md        — Pipeline de validacao (9 gates)

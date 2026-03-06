@@ -9,6 +9,20 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.26.0': {
+    title: 'Governanca de Jurisdicao — Separacao Absoluta de Responsabilidades entre Agentes',
+    highlights: [
+      'CONSTITUTION.md: Artigo 0 — jurisdicao exclusiva por agente (INVIOLAVEL)',
+      'GOVERNANCE.md: Secao 3 — Mapa de Jurisdicao com tabela de 10 agentes (Faz/Proibido)',
+      'Novo: AGENT-JURISDICTION.md — anti-patterns, exemplos de delegacao, fronteiras cinzentas, enforcement',
+      'PAVEL DUROV: Data Engineer exclusivo (BD, migrations, schemas, queries)',
+      'FORGE: Backend puro (APIs, logica de negocio) — zero SQL, zero frontend',
+      'PRISM: Frontend de implementacao — nao define UX/Design System',
+      'BRAD FROST: Autoridade exclusiva de UX e Design System',
+      'ATLAS: Orquestrador puro — verifica jurisdicao antes de spawnar',
+      'Templates e init/update sincronizados — 12 protocolos formais',
+    ],
+  },
   '5.25.0': {
     title: 'Distribution Fix — update.mjs sincroniza TODAS as melhorias para outros projetos',
     highlights: [
@@ -679,6 +693,7 @@ export function update(options = {}) {
     // v5.0.0 — Protocols (system-owned, always updated)
     ['protocols/CONSTITUTION.md', '.claude/protocols/CONSTITUTION.md'],
     ['protocols/GOVERNANCE.md', '.claude/protocols/GOVERNANCE.md'],
+    ['protocols/AGENT-JURISDICTION.md', '.claude/protocols/AGENT-JURISDICTION.md'],
     ['protocols/README.md', '.claude/protocols/README.md'],
     ['protocols/CONFIG-PROTOCOL.md', '.claude/protocols/CONFIG-PROTOCOL.md'],
     ['protocols/SYNAPSE.md', '.claude/protocols/SYNAPSE.md'],
