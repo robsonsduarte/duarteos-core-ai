@@ -9,6 +9,16 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.25.0': {
+    title: 'Distribution Fix — update.mjs sincroniza TODAS as melhorias para outros projetos',
+    highlights: [
+      'FIX: Process Cards (28 YAMLs) nao propagavam no update — adicionado walkProcesses() recursivo',
+      'FIX: PROCESS-CHIEF.md nao estava na lista safeToUpdate do update.mjs',
+      'FIX: process-chief.md estava no path antigo (commands/agents/) — migrado para DUARTEOS/agents/',
+      'FIX: Banner do update desatualizado — corrigido para 14 Agentes | 65 Mind Clones',
+      'Garantia: TODOS os arquivos do init agora tambem propagam no update',
+    ],
+  },
   '5.24.0': {
     title: '28 Process Cards Formais — Catalogo Completo de Processos Reutilizaveis',
     highlights: [
@@ -490,7 +500,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  64 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  14 Agentes  |  65 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 
@@ -659,6 +669,9 @@ export function update(options = {}) {
 
     // v5.18.0 — Model Routing Protocol
     ['protocols/MODEL-ROUTING.md', '.claude/protocols/MODEL-ROUTING.md'],
+
+    // v5.23.0 — Process Chief Protocol
+    ['protocols/PROCESS-CHIEF.md', '.claude/protocols/PROCESS-CHIEF.md'],
 
     // v5.13.0 — MMOS v3 PCFE template (system-owned, safe to update)
     ['commands/DUARTEOS/mmos/pcfe-template.yaml', '.claude/commands/DUARTEOS/mmos/pcfe-template.yaml'],
@@ -958,6 +971,37 @@ export function update(options = {}) {
         }
       }
     }
+  }
+
+  // v5.24.0 — Process Cards — sync all process YAML files recursively
+  const processesSrc = resolve(TEMPLATES_DIR, 'protocols', 'processes')
+  const processesDest = resolve(cwd, '.claude', 'protocols', 'processes')
+  if (existsSync(processesSrc)) {
+    const walkProcesses = (src, dest) => {
+      if (!existsSync(dest)) mkdirSync(dest, { recursive: true })
+      const entries = readdirSync(src, { withFileTypes: true })
+      for (const entry of entries) {
+        const srcPath = resolve(src, entry.name)
+        const destPath = resolve(dest, entry.name)
+        if (entry.isDirectory()) {
+          walkProcesses(srcPath, destPath)
+        } else if (entry.name.endsWith('.yaml') || entry.name === 'README.md') {
+          if (!existsSync(destPath)) {
+            cpSync(srcPath, destPath)
+            console.log(`  + adicionado .claude/protocols/processes/.../${entry.name}`)
+            added++
+          } else {
+            const current = readFileSync(destPath, 'utf-8')
+            const next = readFileSync(srcPath, 'utf-8')
+            if (current !== next) {
+              cpSync(srcPath, destPath)
+              updated++
+            }
+          }
+        }
+      }
+    }
+    walkProcesses(processesSrc, processesDest)
   }
 
   // OMEGA checkpoints directory — ensure it exists for runtime snapshots
