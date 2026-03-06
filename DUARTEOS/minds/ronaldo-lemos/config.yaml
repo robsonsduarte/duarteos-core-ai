@@ -1,0 +1,10 @@
+clone:
+  name: "Ronaldo Lemos"
+  slug: "ronaldo-lemos"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Juridico"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Propriedade Intelectual Digital, Direitos Autorais, Regulacao de Internet, IA e Copyright, Cultura Livre e Governanca Digital"

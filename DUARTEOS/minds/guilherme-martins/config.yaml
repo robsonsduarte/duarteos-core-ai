@@ -1,0 +1,10 @@
+clone:
+  name: "Guilherme Magalhaes Martins"
+  slug: "guilherme-martins"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Juridico"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Direito do Consumidor Digital, Contratos Eletronicos, Responsabilidade Civil na Internet, Protecao de Dados, Plataformas Digitais"

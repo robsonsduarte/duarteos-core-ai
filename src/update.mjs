@@ -9,6 +9,18 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.21.0': {
+    title: 'Migracao Estrutural — 64 Mind Clones Padronizados em DUARTEOS/minds/',
+    highlights: [
+      'Nova estrutura unica: DUARTEOS/minds/{slug}/ — 64 dirs, 64 config.yaml, 64 agent.md',
+      '4 clones MMOS v3 (tiago-forte, atul-gawande, david-allen, w-edwards-deming) com fases numeradas 00-05',
+      '60 clones legacy com config.yaml minimo (nome, slug, categoria, dominio, status)',
+      'Dados espalhados consolidados: data/minds/ e inbox/ migrados para respectivos clone dirs',
+      '3 squads recuperados do git (atul-gawande, david-allen, w-edwards-deming) — 89 arquivos',
+      '27 arquivos atualizados: agent.md, slash commands, templates, synapse YAML, MMOS pipeline, mind-clone, mind-update',
+      'Cleanup: dirs vazios removidos (Copywriting/squad/, Business/squad/)',
+    ],
+  },
   '5.20.0': {
     title: 'Mind Clone Tiago Forte — MMOS v3 Pipeline Completo (F=95.80%)',
     highlights: [
@@ -441,7 +453,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  63 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  64 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 

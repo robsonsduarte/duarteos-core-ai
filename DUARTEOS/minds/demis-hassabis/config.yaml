@@ -1,0 +1,10 @@
+clone:
+  name: "Demis Hassabis"
+  slug: "demis-hassabis"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "AI"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Inteligencia Artificial Geral, Neurociencia Computacional e Ciencia Fundamental"

@@ -1,0 +1,10 @@
+clone:
+  name: "Yann LeCun"
+  slug: "yann-lecun"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "AI"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Deep Learning, Computer Vision, Self-Supervised Learning e Arquitetura de IA"

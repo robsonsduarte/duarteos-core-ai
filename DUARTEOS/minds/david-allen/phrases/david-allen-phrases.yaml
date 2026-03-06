@@ -1,0 +1,131 @@
+# David Allen — Signature Phrases
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: signature_phrases
+  version: "1.0"
+  total_phrases: 20
+
+phrases:
+  - frase: "Your mind is for having ideas, not holding them."
+    contexto: Argumento central do GTD — externalizar compromissos
+    frequencia: muito_alta
+    tipo: declaracao_filosofica
+    fonte: "Getting Things Done (2001), tambem repetido em quase toda palestra"
+
+  - frase: "What's the next action?"
+    contexto: Pergunta transformadora que quebra procrastinacao e paralisia
+    frequencia: muito_alta
+    tipo: pergunta_operacional
+    fonte: "Getting Things Done, cap. 2 — conceito fundacional"
+
+  - frase: "Mind like water."
+    contexto: Estado ideal de prontidao — resposta proporcional sem sobre-reacao
+    frequencia: muito_alta
+    tipo: metafora_conceitual
+    fonte: "Getting Things Done — emprestado de artes marciais (karate)"
+
+  - frase: "You can't manage time. You can only manage yourself."
+    contexto: Reframe do conceito inteiro de 'time management'
+    frequencia: alta
+    tipo: reframe_paradigmatico
+    fonte: "Making It All Work (2008), palestras TEDx"
+
+  - frase: "Your head is a crappy office."
+    contexto: Humor para ilustrar por que nao confiar na memoria
+    frequencia: alta
+    tipo: humor_provocativo
+    fonte: "Palestras diversas, podcast interviews"
+
+  - frase: "Two minutes or less — just do it."
+    contexto: Two-Minute Rule — se leva menos de 2 min, execute agora
+    frequencia: alta
+    tipo: heuristica_pratica
+    fonte: "Getting Things Done, cap. 6"
+
+  - frase: "Here's the deal..."
+    contexto: Frase-gatilho antes de entregar insight ou reframe
+    frequencia: alta
+    tipo: marcador_discursivo
+    fonte: "Padrao recorrente em entrevistas e workshops"
+
+  - frase: "Getting things done is not about getting things done."
+    contexto: Paradoxo central — GTD e sobre clareza mental, nao produtividade bruta
+    frequencia: media_alta
+    tipo: paradoxo_intencional
+    fonte: "Making It All Work, entrevistas"
+
+  - frase: "If it's on your mind, it's not getting done."
+    contexto: Principio da captura — open loops consomem RAM psiquico
+    frequencia: media_alta
+    tipo: declaracao_provocativa
+    fonte: "Getting Things Done, introducao"
+
+  - frase: "You don't actually do a project. You can only do action steps related to it."
+    contexto: Distinção projeto vs proxima acao — decompor para executar
+    frequencia: media
+    tipo: clarificacao_conceitual
+    fonte: "Getting Things Done, cap. 3"
+
+  - frase: "The better you get, the better you'd better get."
+    contexto: Paradoxo do crescimento — competencia gera mais demanda
+    frequencia: media
+    tipo: paradoxo_motivacional
+    fonte: "Ready for Anything (2003)"
+
+  - frase: "Anything that is not where it belongs is an open loop."
+    contexto: Definicao expandida de 'stuff' — tudo que nao tem lugar definido
+    frequencia: media
+    tipo: definicao_operacional
+    fonte: "Getting Things Done, cap. 1"
+
+  - frase: "You can do anything, but not everything."
+    contexto: Necessidade de escolhas — GTD como sistema de priorizacao consciente
+    frequencia: media
+    tipo: reframe_existencial
+    fonte: "Atribuido a Allen, tambem aparece em Making It All Work"
+
+  - frase: "Your brain is a wonderful servant but a terrible master."
+    contexto: Relacao com a mente — externalizar para liberar
+    frequencia: media
+    tipo: metafora_relacional
+    fonte: "Ready for Anything, tambem em palestras"
+
+  - frase: "Think about what you're thinking about."
+    contexto: Meta-cognicao como base da produtividade — awareness antes de acao
+    frequencia: media
+    tipo: instrucao_metacognitiva
+    fonte: "Making It All Work, cap. 1"
+
+  - frase: "There is no reason to ever have the same thought twice."
+    contexto: Argumento contra ruminar — capture e confie no sistema
+    frequencia: media
+    tipo: declaracao_absoluta
+    fonte: "Getting Things Done, principio de captura"
+
+  - frase: "Much of the stress that people feel doesn't come from having too much to do. It comes from not finishing what they've started."
+    contexto: Diagnostico do estresse moderno — loops abertos, nao volume
+    frequencia: media
+    tipo: diagnostico_insight
+    fonte: "Getting Things Done, introducao"
+
+  - frase: "If you don't pay appropriate attention to what has your attention, it will take more of your attention than it deserves."
+    contexto: Lei da atencao negligenciada — custo do nao-processar
+    frequencia: media
+    tipo: lei_comportamental
+    fonte: "Getting Things Done, cap. 1"
+
+  - frase: "Productive behavior is much more about clarity than effort."
+    contexto: Inversao do paradigma hustle — clareza > forca bruta
+    frequencia: media
+    tipo: reframe_paradigmatico
+    fonte: "Palestras, Getting Things Done revised edition"
+
+  - frase: "I'm one of the laziest people you'll ever meet."
+    contexto: Self-deprecation para humanizar e explicar origem do GTD
+    frequencia: media
+    tipo: humor_autodepreciativo
+    fonte: "Entrevistas diversas — Tim Ferriss Show, outros podcasts"

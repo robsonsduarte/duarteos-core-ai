@@ -1,0 +1,10 @@
+clone:
+  name: "Jakob Nielsen"
+  slug: "jakob-nielsen"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "UX-Design"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Usabilidade Web & Heuristicas de Interface"

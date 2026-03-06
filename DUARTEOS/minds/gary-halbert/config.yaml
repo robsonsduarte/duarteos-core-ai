@@ -1,0 +1,10 @@
+clone:
+  name: "Gary Halbert"
+  slug: "gary-halbert"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Copywriting"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Direct Mail Marketing e Copywriting de Resposta Direta"

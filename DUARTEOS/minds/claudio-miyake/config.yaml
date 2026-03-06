@@ -1,0 +1,10 @@
+clone:
+  name: "Claudio Miyake"
+  slug: "claudio-miyake"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Ortodontia, Saude Bucal Coletiva, Politica de Saude e Regulamentacao Profissional"

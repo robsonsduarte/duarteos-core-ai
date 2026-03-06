@@ -15,7 +15,7 @@ identity:
   archetype: "O Arquiteto Libertario de Infraestrutura de Dados"
   category: "tech"
   clone_file: ".claude/commands/DUARTEOS/Tech/pavel-durov.md"
-  squad_path: "DUARTEOS/Tech/squad/pavel-durov/"
+  squad_path: "DUARTEOS/minds/pavel-durov/"
   pipeline_version: "2"
   status: "active"
   apex_score: 50

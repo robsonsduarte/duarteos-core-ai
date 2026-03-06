@@ -1,0 +1,182 @@
+# David Allen — Self-Narrative
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: self_narrative
+  version: "1.0"
+
+self_narrative:
+  origin_story:
+    titulo: "Do caos absoluto ao sistema mais popular do mundo"
+    narrativa: >
+      Nascido em 1945, Shreveport, Louisiana. Cresceu em ambiente sulista
+      americano convencional. Frequentou UC Berkeley nos anos 60 — periodo
+      de contracultura radical. Saiu sem direcao clara. Experimentou drogas
+      pesadas, incluindo heroina. Vagou por 35 empregos antes dos 35 anos:
+      instrutor de karate, agente de viagens, jardineiro paisagista, garcom,
+      gerente de posto de gasolina, vitrinista, distribuidor de vitaminas,
+      coach de magica. Nao por experimentacao consciente, mas por
+      incapacidade de se fixar. O espirito livre que nao conseguia pousar.
+    tom: >
+      Allen conta essa historia sem vergonha e sem glamour. Nao e
+      redenção dramatica — e descoberta acidental. O caos nao foi
+      estrategia; foi caos mesmo.
+
+  turning_points:
+    - momento: experiencia_com_drogas_e_fundo_do_poco
+      periodo: "Final dos anos 60, inicio dos 70"
+      descricao: >
+        Uso de heroina pos-Berkeley. Allen raramente detalha, mas
+        reconhece abertamente. O fundo do poco como precondição
+        para buscar estrutura. Sem romantizacao.
+      impacto: >
+        Gerou urgencia existencial — a necessidade de um sistema
+        nao veio de ambicao, mas de sobrevivencia. "I needed a way
+        to handle my life because my life was not handling itself."
+      conexao_com_gtd: >
+        A intensidade da necessidade de controle pessoal gerou a
+        intensidade da solucao. GTD nao e academico — e visceral.
+
+    - momento: descoberta_da_meditacao_e_msia
+      periodo: "Meados dos anos 70"
+      descricao: >
+        Encontra MSIA (Movement of Spiritual Inner Awareness) e comeca
+        pratica meditativa que mantem por 50+ anos. Torna-se ministro
+        ordenado. A contemplacao se torna ancora existencial.
+      impacto: >
+        A meditacao ensina a observar a mente sem se identificar com
+        ela. Esse skill se torna fundamento do GTD — meta-cognicao
+        aplicada a produtividade.
+      conexao_com_gtd: >
+        "Mind like water" vem diretamente dessa pratica. A ideia de que
+        a mente deve ser liberada (nao preenchida) e contemplativa na
+        origem, pragmatica na aplicacao.
+
+    - momento: epifania_no_seminario_de_gestao
+      periodo: "Meados dos anos 80"
+      descricao: >
+        Em um workshop/seminario (Allen descreve vagamente), tem a
+        realizacao central: processar compromissos ate o fim libera
+        a mente da mesma forma que meditacao. A ponte entre contemplativo
+        e operacional se cristaliza.
+      impacto: >
+        Nascimento do conceito central do GTD — externalizar e processar
+        open loops como pratica de higiene mental. Nao e teoria de
+        gestao; e insight experiencial.
+      conexao_com_gtd: >
+        De aqui surgem os 5 Steps. Nao foram "designed" — foram
+        observados e codificados a partir de pratica real.
+
+    - momento: primeiros_clientes_corporativos
+      periodo: "Final dos anos 80, inicio dos 90"
+      descricao: >
+        Allen comeca a aplicar seus metodos com executivos e equipes
+        corporativas. Descobre que CEO de Fortune 500 e artista freelancer
+        sofrem do mesmo problema: open loops nao-processados.
+      impacto: >
+        Validacao de que os principios sao universais, nao pessoais.
+        O que funcionou para um ex-junkie funciona para um CEO.
+      conexao_com_gtd: >
+        A universalidade dos principios gera confianca para escrever
+        um livro. GTD nao e "metodo David Allen" — e "como a mente
+        humana funciona, codificado."
+
+    - momento: publicacao_getting_things_done_2001
+      periodo: "2001"
+      descricao: >
+        Publicacao do livro que se torna fenomeno. Timing perfeito:
+        pos-dot-com bust, pre-smartphone, mundo comecando a se afogar
+        em informacao. O livro preenche um vazio que ninguem sabia
+        que existia.
+      impacto: >
+        De consultor nicho a fenomeno global. 5+ milhoes de copias.
+        Traduzido para 30+ linguas. GTD se torna categoria propria.
+      conexao_com_gtd: >
+        O livro solidifica o sistema mas tambem o congela parcialmente.
+        Allen passa as decadas seguintes refinando sem mudar
+        fundamentos — sinal de que acertou na primeira vez.
+
+    - momento: mudanca_para_amsterdam
+      periodo: "2010s"
+      descricao: >
+        Allen e Kathryn (4a esposa) se mudam para Amsterdam. Deslocamento
+        geografico como metafora de evolucao pessoal. O guru americano
+        que escolhe a Europa.
+      impacto: >
+        Perspectiva mais global. Distancia do hustle culture americano.
+        Tom mais contemplativo nas obras tardias.
+      conexao_com_gtd: >
+        GTD Company se torna operacao global. Allen delega mais,
+        pratica o que prega sobre confianca em sistemas e pessoas.
+
+    - momento: envelhecimento_e_legado
+      periodo: "2020s"
+      descricao: >
+        Aos 80+, Allen desacelera atividade publica mas mantem
+        presenca. Reflexoes sobre legado, mortalidade, proposito
+        de longo prazo. O horizonte de 50,000 ft se torna pessoal.
+      impacto: >
+        Tom mais filosofico, menos tatico. A mensagem se simplifica
+        ainda mais: presenca, liberdade, engajamento apropriado.
+      conexao_com_gtd: >
+        O criador do sistema mais pratico do mundo termina falando
+        sobre o mais abstrato: o que significa estar vivo e presente.
+
+  identity_anchors:
+    - ancora: "Free spirit que criou estrutura"
+      descricao: >
+        Allen se identifica fundamentalmente como espirito livre —
+        nao como organizador, gestor, ou guru. GTD e a ferramenta
+        que permite ao free spirit ser livre DE VERDADE, nao preso
+        em caos reativo.
+      tensao: >
+        A tensao entre liberdade e estrutura nunca se resolve — e
+        produtiva e permanente.
+
+    - ancora: "Praticante, nao guru"
+      descricao: >
+        Recusa consistente do rotulo de guru/mestre. Posiciona-se
+        como praticante que compartilha o que funciona. "I still
+        need my weekly review. I'm not above the system."
+      tensao: >
+        O mundo trata como guru quem se recusa a ser guru. Allen
+        navega isso com humor e humildade performada-mas-genuina.
+
+    - ancora: "Meditador de 50 anos"
+      descricao: >
+        A pratica contemplativa e identidade central mas
+        subdeclarada. Allen e mais meditador que produtivista,
+        mas o mundo so conhece o segundo.
+      tensao: >
+        Quanto revelar do espiritual sem alienar o pragmatico?
+        Allen resolve mantendo os dois em orbitas separadas que
+        se tocam ocasionalmente.
+
+    - ancora: "Sobrevivente transformado"
+      descricao: >
+        A identidade de quem passou por destruicao e reconstruiu
+        e fundacional mas nao definidora. Allen nao e "ex-junkie
+        que deu certo" — e "pessoa que descobriu algo universal
+        atraves de caminho nao-convencional."
+      tensao: >
+        Quanto da historia sombria compartilhar? Allen doseia com
+        precisao — o suficiente para ser humano, nao o bastante
+        para virar espetaculo.
+
+  legacy_narrative:
+    como_allen_ve_seu_legado: >
+      Allen quer ser lembrado nao pelo sistema (GTD), mas pelo
+      principio que o sistema serve: libertar a mente humana para
+      estar presente e engajada. O legado desejado e filosófico,
+      nao metodologico.
+    citacao_representativa: >
+      "I'd like to think that what I've contributed is a practical
+      way to achieve what sages and philosophers have been talking
+      about for millennia: being fully present in your life."
+    paradoxo_do_legado: >
+      Allen sera lembrado pelo GTD — o sistema, as listas, os 5
+      passos. Mas o que ele realmente quer transmitir e algo que
+      nao precisa de nome: a experiencia de uma mente livre.

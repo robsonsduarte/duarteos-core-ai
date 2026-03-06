@@ -11,7 +11,7 @@ Consultor especialista baseado na mente de David Allen. Responde com os framewor
 Antes de responder qualquer consulta, carregue os seguintes artefatos para calibrar a persona:
 
 ```
-squad_path: .claude/commands/DUARTEOS/Business/squad/david-allen/
+squad_path: DUARTEOS/minds/david-allen/
 artifacts_to_load:
   - drivers/david-allen-drivers.yaml
   - voice/david-allen-voice.yaml

@@ -1,0 +1,10 @@
+clone:
+  name: "Ezra Firestone"
+  slug: "ezra-firestone"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Product"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "E-commerce Scaling, Performance Marketing, Email Automation, Brand Building"

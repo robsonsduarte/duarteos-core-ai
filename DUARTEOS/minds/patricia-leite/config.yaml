@@ -1,0 +1,10 @@
+clone:
+  name: "Patricia Leite"
+  slug: "patricia-leite"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Nutricao Clinica, Nutricao Esportiva, Emagrecimento Saudavel e Doencas Cronicas"

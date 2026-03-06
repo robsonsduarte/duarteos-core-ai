@@ -15,7 +15,7 @@ identity:
   archetype: "O cirurgiao-escritor que provou que sistemas simples salvam mais vidas do que genios individuais — e que aceitar a morte e o caminho para viver com sentido"
   category: "saude"
   clone_file: "DUARTEOS/Saude/atul-gawande.md"
-  squad_path: "DUARTEOS/Saude/squad/atul-gawande/"
+  squad_path: "DUARTEOS/minds/atul-gawande/"
   pipeline_version: "3"
   status: "active"
   apex_score: null

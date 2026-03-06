@@ -77,7 +77,7 @@ export function init(projectName, options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version}${' '.repeat(Math.max(0, bannerWidth - 22 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  13 Agentes  |  63 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  13 Agentes  |  64 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
 
   // Detect project name

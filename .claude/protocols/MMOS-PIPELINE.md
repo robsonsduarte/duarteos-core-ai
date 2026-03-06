@@ -1106,7 +1106,7 @@ tool_relations:
 Baseado no padrao real do squad `copy/` do MMOS, a estrutura generica para QUALQUER squad:
 
 ```
-DUARTEOS/squad/{categoria}/
+DUARTEOS/minds/{slug}/
 |-- agents/                          <- 1 arquivo .md por mente ativa
 |   |-- {mind-name-1}.md
 |   |-- {mind-name-2}.md
@@ -1169,7 +1169,7 @@ DUARTEOS/squad/{categoria}/
 
 **Categorias validas (lowercase kebab-case):** copy, marketing, ux-design, ai, tech, business, content, product, saude, juridico
 
-**Convencao de nomes:** `DUARTEOS/squad/{categoria}/{diretorio}` — categoria em kebab-case, slug de mente em kebab-case.
+**Convencao de nomes:** `DUARTEOS/minds/{slug}/{diretorio}` — slug de mente em kebab-case.
 
 ---
 
@@ -1207,7 +1207,7 @@ O pipeline detecta AUTOMATICAMENTE o modo correto na Fase 0 (Intake), eliminando
 - Verificar se usuario forneceu URLs/dados no input
 
 **Deteccao de ultima fase (brownfield):**
-- Ler `DUARTEOS/squad/{categoria}/{slug}/config.yaml`
+- Ler `DUARTEOS/minds/{slug}/config.yaml`
 - Campo `last_completed_phase` indica onde parou
 - Se campo ausente, verificar existencia de artefatos (catalogo, MIUs, drivers, DNA) para inferir
 
@@ -1226,7 +1226,7 @@ O pipeline detecta AUTOMATICAMENTE o modo correto na Fase 0 (Intake), eliminando
   +-- Fase 6: Recomendacao (tools + gaps)
   |
   +-- DNA persiste em .claude/synapse/minds/{slug}.yaml
-  +-- Agente gerado em DUARTEOS/squad/{categoria}/agents/{slug}.md
+  +-- Agente gerado em DUARTEOS/minds/{slug}/agents/{slug}.md
 ```
 
 ### Mind-Update: Ponto de Entrada Diferente
@@ -1405,7 +1405,7 @@ O Synapse v3 e o motor de contexto que armazena e injeta dados dos mind clones. 
 
 ### Squad State
 
-- Artefatos de mind clones em `DUARTEOS/squad/{categoria}/`
+- Artefatos de mind clones em `DUARTEOS/minds/{slug}/`
 - Estado rastreado pelo Synapse via agent state tracking
 
 ### Ingestion Protocol
@@ -1553,7 +1553,7 @@ Os 8 passos para transformar uma mente clonada em agente operacional:
 
 | # | Acao | Detalhes | Output |
 |---|------|---------|--------|
-| 1 | Gerar arquivo do agente | System prompt completo: CORBS, behavioral patterns, communication templates, voice signature, framework references, contradiction handling | `DUARTEOS/squad/{cat}/agents/{mind-name}.md` |
+| 1 | Gerar arquivo do agente | System prompt completo: CORBS, behavioral patterns, communication templates, voice signature, framework references, contradiction handling | `DUARTEOS/minds/{mind-name}/agents/{mind-name}.md` |
 | 2 | Criar checklists especificos | Gates de qualidade para tecnicas/metodos da mente | `checklists/{mind-name}-checklist.md` |
 | 3 | Popular frameworks | Todos os frameworks extraidos em YAML, um arquivo por framework | `frameworks/{mind-name}/{framework}.yaml` |
 | 4 | Extrair frases-assinatura | Assinaturas linguisticas, padroes, expressoes recorrentes | `phrases/{mind-name}-phrases.yaml` |

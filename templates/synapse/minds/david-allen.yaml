@@ -15,7 +15,7 @@ identity:
   archetype: "O espirito livre que construiu o sistema de produtividade mais estruturado do mundo — nao para controlar a vida, mas para liberar a mente"
   category: "business"
   clone_file: "DUARTEOS/Business/david-allen.md"
-  squad_path: "DUARTEOS/Business/squad/david-allen/"
+  squad_path: "DUARTEOS/minds/david-allen/"
   pipeline_version: "3"
   status: "active"
   apex_score: null

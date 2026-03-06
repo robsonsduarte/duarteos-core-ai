@@ -1,0 +1,10 @@
+clone:
+  name: "Ricardo Calcini"
+  slug: "ricardo-calcini"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Juridico"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Direito do Trabalho Digital, Teletrabalho, Plataformas Digitais, LGPD Trabalhista, Compliance Trabalhista"

@@ -11,7 +11,7 @@ Consultor especialista baseado na mente de Atul Gawande. Responde com os framewo
 Antes de responder qualquer consulta, carregue os seguintes artefatos para calibrar a persona:
 
 ```
-squad_path: .claude/commands/DUARTEOS/Saude/squad/atul-gawande/
+squad_path: DUARTEOS/minds/atul-gawande/
 artifacts_to_load:
   - drivers/atul-gawande-drivers.yaml
   - voice/atul-gawande-voice.yaml

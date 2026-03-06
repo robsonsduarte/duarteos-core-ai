@@ -1,0 +1,10 @@
+clone:
+  name: "Marcio Atalla"
+  slug: "marcio-atalla"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Educacao Fisica, Saude Preventiva, Longevidade Ativa e Combate ao Sedentarismo"

@@ -1,0 +1,10 @@
+clone:
+  name: "Ivson Coelho"
+  slug: "ivson-coelho"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Juridico"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Direito Tributario Digital, Tributacao de SaaS e Infoprodutos, Reforma Tributaria, Imposto Minimo Global"

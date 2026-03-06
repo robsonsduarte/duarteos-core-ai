@@ -1,0 +1,50 @@
+# W. Edwards Deming — Squad Config
+# Pipeline: MMOS Engine v3
+# Gerado em: 2026-03-04
+
+clone:
+  name: "W. Edwards Deming"
+  slug: "w-edwards-deming"
+  version: "1.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-04"
+  fidelity_estimated: 94
+  pcfe_breakdown:
+    VS: 100
+    DS: 90
+    CS: 94
+    PS: 100
+    QS: 80
+  pcfe_classification: "EXCELENTE"
+  fidelity_score: 96.05
+  fidelity_components:
+    L_linguistic: 96
+    B_behavioral: 97
+    C_contradiction: 95
+    K_knowledge: 97
+    V_voice: 94
+  status: "active"
+  category: "business"
+  archetype: "O estatistico humilde que revolucionou a industria mundial — nao com solucoes rapidas, mas com conhecimento profundo e respeito pelas pessoas"
+
+pcfe_calibration:
+  FE: 94
+  F: 96.05
+  delta: 2.05
+  accuracy: 97.95
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "8/8"
+  drivers: true
+  checklist: true
+  tasks: 6
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

@@ -1,0 +1,10 @@
+clone:
+  name: "Pavel Durov"
+  slug: "pavel-durov"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Tech"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Tech"

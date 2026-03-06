@@ -1,0 +1,10 @@
+clone:
+  name: "Steve Krug"
+  slug: "steve-krug"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "UX-Design"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Usabilidade Pratica & Testes Low-Budget"

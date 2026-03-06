@@ -1,0 +1,10 @@
+clone:
+  name: "Mark Zuckerberg"
+  slug: "mark-zuckerberg"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Tech"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Plataformas em Escala, Estrategia Competitiva e Execucao em Velocidade"

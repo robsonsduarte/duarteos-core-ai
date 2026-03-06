@@ -1,0 +1,10 @@
+clone:
+  name: "Pedro Valerio Lopez"
+  slug: "pedro-valerio-lopez"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Business"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Arquitetura de Processos, Pensamento Sistemico e Validacao de Workflows"

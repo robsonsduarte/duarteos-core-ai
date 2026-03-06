@@ -582,7 +582,7 @@ pcfe:
 
 1. **Criar diretorio squad completo (21+ dirs):**
    ```
-   DUARTEOS/{Categoria}/squad/{slug}/
+   DUARTEOS/minds/{slug}/
    |-- agents/
    |-- artifacts/behavioral/
    |-- artifacts/cognitive/
@@ -634,7 +634,7 @@ pcfe:
    Com gates para cada fase restante (6-10).
 
 6. **Mover artefato PCFE para squad:**
-   - Copiar `data/processed/pcfe-{slug}.yaml` para `squad/{slug}/data/processed/`
+   - Copiar `data/processed/pcfe-{slug}.yaml` para `minds/{slug}/data/processed/`
 
 #### Gate de Validacao
 
@@ -1126,9 +1126,9 @@ Verificar que todos os 21+ dirs existem e config.yaml e parseavel YAML.
 
      **PROTOCOLO OBRIGATORIO:** Antes de responder a QUALQUER pergunta como {Nome}, carregue a mente completa:
 
-     1. Use `Glob` para `.claude/commands/DUARTEOS/{Categoria}/squad/{slug}/**/*.yaml`
+     1. Use `Glob` para `DUARTEOS/minds/{slug}/**/*.yaml`
      2. Use `Read` em paralelo para **TODOS** os arquivos YAML encontrados
-     3. Use `Glob` para `.claude/commands/DUARTEOS/{Categoria}/squad/{slug}/tasks/*.md` e leia todos
+     3. Use `Glob` para `DUARTEOS/minds/{slug}/tasks/*.md` e leia todos
      4. Integre os dados carregados com a identidade core acima
 
      Isto carrega as 6 camadas profundas do squad:
@@ -1142,11 +1142,11 @@ Verificar que todos os 21+ dirs existem e config.yaml e parseavel YAML.
      **NAO responda sem completar o bootstrap.** Este .md e um resumo comprimido. A mente completa esta nos artifacts do squad.
      ```
 
-   - Copiar para `DUARTEOS/{Categoria}/squad/{slug}/agents/{slug}.md` (copia no squad dir)
+   - Copiar para `DUARTEOS/minds/{slug}/agents/{slug}.md` (copia no minds dir)
 
 5. **Popular TODOS os squad artifacts (9 tipos obrigatorios):**
 
-   **Base path:** `DUARTEOS/{Categoria}/squad/{slug}/`
+   **Base path:** `DUARTEOS/minds/{slug}/`
    **Fonte de verdade:** `.claude/synapse/minds/{slug}.yaml` (DNA)
    **OMEGA:** Cada sub-item roda sob task_type=mind_clone, threshold=95
 
@@ -1580,31 +1580,31 @@ Verificar que todos os 21+ dirs existem e config.yaml e parseavel YAML.
 
 | Fase | Artefato | Caminho | Obrigatorio |
 |------|----------|---------|-------------|
-| 1 | Catalogo de fontes | `squad/{slug}/data/processed/catalogo-fontes.yaml` | SIM |
-| 1 | Material bruto coletado | `squad/{slug}/data/raw/` | SIM |
-| 2 | MIUs sample (20-50) | `squad/{slug}/data/processed/mius-sample.yaml` | SIM |
-| 3 | Estimativa PCFE | `squad/{slug}/data/processed/pcfe-{slug}.yaml` | SIM |
+| 1 | Catalogo de fontes | `minds/{slug}/data/processed/catalogo-fontes.yaml` | SIM |
+| 1 | Material bruto coletado | `minds/{slug}/data/raw/` | SIM |
+| 2 | MIUs sample (20-50) | `minds/{slug}/data/processed/mius-sample.yaml` | SIM |
+| 3 | Estimativa PCFE | `minds/{slug}/data/processed/pcfe-{slug}.yaml` | SIM |
 | 5 | DNA skeleton | `.claude/synapse/minds/{slug}.yaml` | SIM |
-| 5 | Config skeleton | `squad/{slug}/config.yaml` | SIM |
-| 5 | Squad dirs (21+) | `squad/{slug}/` | SIM |
-| 5 | Tasks do pipeline (6) | `squad/{slug}/tasks/` | SIM |
-| 5 | Checklist do pipeline | `squad/{slug}/checklists/{slug}-pipeline-checklist.yaml` | SIM |
-| 6 | MIUs completas + fragmentos | `squad/{slug}/data/processed/` | SIM |
-| 7 | Drivers e evidencias | `squad/{slug}/drivers/{slug}-drivers.yaml` | SIM |
+| 5 | Config skeleton | `minds/{slug}/config.yaml` | SIM |
+| 5 | Squad dirs (21+) | `minds/{slug}/` | SIM |
+| 5 | Tasks do pipeline (6) | `minds/{slug}/tasks/` | SIM |
+| 5 | Checklist do pipeline | `minds/{slug}/checklists/{slug}-pipeline-checklist.yaml` | SIM |
+| 6 | MIUs completas + fragmentos | `minds/{slug}/data/processed/` | SIM |
+| 7 | Drivers e evidencias | `minds/{slug}/drivers/{slug}-drivers.yaml` | SIM |
 | 7 | DNA completo (6 camadas) | `.claude/synapse/minds/{slug}.yaml` | SIM |
-| 8 | System components | `squad/{slug}/system-components/{slug}-system.yaml` | SIM |
+| 8 | System components | `minds/{slug}/system-components/{slug}-system.yaml` | SIM |
 | 9 | Calibracao PCFE | `.claude/omega/pcfe-calibration.yaml` | SIM |
-| 10 | Agente operacional | `squad/{slug}/agents/{slug}.md` | SIM |
-| 10 | Frameworks (1 por fw) | `squad/{slug}/frameworks/{slug}/{fw}.yaml` | SIM |
-| 10 | Voice | `squad/{slug}/voice/{slug}-voice.yaml` | SIM |
-| 10 | Phrases | `squad/{slug}/phrases/{slug}-phrases.yaml` | SIM |
-| 10 | Checklist qualidade | `squad/{slug}/checklists/{slug}-checklist.yaml` | SIM |
-| 10 | Tasks (5+) | `squad/{slug}/tasks/{acao}-{slug}.md` | NAO (warning) |
-| 10 | Behavioral (2) | `squad/{slug}/artifacts/behavioral/` | SIM |
-| 10 | Cognitive (2) | `squad/{slug}/artifacts/cognitive/` | SIM |
-| 10 | Linguistic (2) | `squad/{slug}/artifacts/linguistic/` | NAO (warning) |
-| 10 | Narrative (2) | `squad/{slug}/artifacts/narrative/` | NAO (warning) |
-| 10 | Config completo | `squad/{slug}/config.yaml` | SIM |
+| 10 | Agente operacional | `minds/{slug}/agents/{slug}.md` | SIM |
+| 10 | Frameworks (1 por fw) | `minds/{slug}/frameworks/{slug}/{fw}.yaml` | SIM |
+| 10 | Voice | `minds/{slug}/voice/{slug}-voice.yaml` | SIM |
+| 10 | Phrases | `minds/{slug}/phrases/{slug}-phrases.yaml` | SIM |
+| 10 | Checklist qualidade | `minds/{slug}/checklists/{slug}-checklist.yaml` | SIM |
+| 10 | Tasks (5+) | `minds/{slug}/tasks/{acao}-{slug}.md` | NAO (warning) |
+| 10 | Behavioral (2) | `minds/{slug}/artifacts/behavioral/` | SIM |
+| 10 | Cognitive (2) | `minds/{slug}/artifacts/cognitive/` | SIM |
+| 10 | Linguistic (2) | `minds/{slug}/artifacts/linguistic/` | NAO (warning) |
+| 10 | Narrative (2) | `minds/{slug}/artifacts/narrative/` | NAO (warning) |
+| 10 | Config completo | `minds/{slug}/config.yaml` | SIM |
 | 10 | Indice Synapse | `.claude/synapse/minds/_index.yaml` | SIM |
 
 **Campos cognitivos no DNA YAML (gerados nas Fases 6-7):**

@@ -1,0 +1,36 @@
+# PCFE — Pre-Clone Fidelity Estimation
+# Pipeline: MMOS Engine v3 — Fase 3
+# Gerado em: 2026-03-03
+
+pcfe:
+  slug: "atul-gawande"
+  timestamp: "2026-03-03 14:00"
+  version: "3.0"
+  iteration: 1
+  scores:
+    VS: 100
+    DS: 80
+    CS: 81
+    PS: 100
+    QS: 95
+  FE: 91
+  classificacao: "EXCELENTE"
+  F_estimado_min: 77
+  F_estimado_max: 100
+  F_provavel: 86
+  fontes_total: 26
+  fontes_por_tipo:
+    livro: 4
+    entrevista: 3
+    podcast: 5
+    palestra: 6
+    artigo: 7
+    bio: 1
+  camadas_cobertas: 10
+  gaps:
+    - camada: "modelo_social"
+      cobertura: "40%"
+      impacto: "MODERADO — afeta blind test de interacao"
+      recomendacao: "Buscar debates ou interacoes publicas"
+  recomendacao: "GO"
+  decisao_humana: "APROVADO"

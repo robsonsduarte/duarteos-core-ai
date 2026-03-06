@@ -1,0 +1,10 @@
+clone:
+  name: "Sexta Feira"
+  slug: "sexta-feira"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Marketing"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Analise de Dados, Estrategia de Crescimento para Ecommerce, Media Mix Modeling"

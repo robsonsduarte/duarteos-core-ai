@@ -1,0 +1,90 @@
+# W. Edwards Deming — Framework: Chain Reaction
+# MMOS v3 Phase 10 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: W. Edwards Deming
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "The Chain Reaction"
+  version: "1.0"
+  fonte_primaria: "Out of the Crisis (1982)"
+
+framework:
+  nome: "The Chain Reaction"
+  principio_central: >
+    Melhoria da qualidade inicia uma reacao em cadeia previsivel:
+    qualidade → produtividade → custos menores → conquista de
+    mercado → permanencia no negocio → criacao de empregos.
+    A sequencia e causal. Comecar por cortar custos inverte a cadeia
+    e destroi tudo.
+
+  citacao_ancora: >
+    "Improve quality. You automatically improve productivity. You
+    capture the market with lower price and better quality. You stay
+    in business. You provide jobs."
+
+  chain:
+    - elo: 1
+      nome: "Improve quality"
+      descricao: >
+        Melhoria da qualidade do processo. Menos defeitos, menos
+        retrabalho, menos desperdicio. Qualidade nao e luxo — e o
+        ponto de partida.
+
+    - elo: 2
+      nome: "Costs decrease"
+      descricao: >
+        Com menos defeitos, custos caem naturalmente: menos retrabalho,
+        menos scrap, menos inspecao, melhor uso de materiais e tempo.
+
+    - elo: 3
+      nome: "Productivity improves"
+      descricao: >
+        Pessoas e maquinas produzem mais valor com menos desperdicio.
+        Produtividade real — nao output bruto, mas valor por recurso.
+
+    - elo: 4
+      nome: "Capture the market"
+      descricao: >
+        Com melhor qualidade e custos menores, a empresa oferece mais
+        valor. O mercado responde. Nao e preciso "vender mais" — e
+        preciso ser melhor.
+
+    - elo: 5
+      nome: "Stay in business"
+      descricao: >
+        Com mercado conquistado e custos saudaveis, a empresa permanece
+        viavel a longo prazo. Constancia de proposito sustentada.
+
+    - elo: 6
+      nome: "Provide jobs"
+      descricao: >
+        Empresa saudavel cria e mantem empregos. O ciclo virtuoso
+        beneficia trabalhadores, comunidade e sociedade.
+
+  quando_usar: >
+    Quando gestores querem comecar por "cortar custos" ou "aumentar
+    produtividade" — a Chain Reaction mostra que o unico ponto de
+    partida valido e melhoria da qualidade. Comecar pelo elo errado
+    inverte a cadeia e cria espiral destrutiva.
+
+  anti_patterns:
+    - "Comecar cortando custos (inverte a cadeia)"
+    - "Priorizar produtividade sobre qualidade"
+    - "Demitir para melhorar numeros (destroi moral e conhecimento)"
+    - "Focar em vendas quando o problema e qualidade do produto"
+
+  como_deming_explica: >
+    "I put this on the blackboard in Tokyo in 1950. Every engineer
+    and executive in Japan understood it. Within months, they were
+    acting on it. In America, I could not get anyone to listen for
+    30 years. The chain reaction is simple. Start with quality.
+    Everything follows."
+
+  contexto_historico: >
+    Deming desenhou esta Chain Reaction no quadro negro em sua
+    primeira conferencia no Japao em 1950, para diretores e
+    engenheiros da JUSE. Os japoneses entenderam imediatamente
+    e aplicaram. O resultado foi a transformacao industrial do
+    Japao nas decadas seguintes.

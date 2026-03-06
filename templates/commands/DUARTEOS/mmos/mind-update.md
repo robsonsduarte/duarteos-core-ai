@@ -460,7 +460,7 @@ Campos extras que tambem podem receber updates:
 
 1. **Ler DNA atualizado** de `.claude/synapse/minds/{slug}.yaml`
 
-2. **Ler agente existente** de `DUARTEOS/squad/{categoria}/agents/{slug}.md`
+2. **Ler agente existente** de `DUARTEOS/minds/{slug}/agents/{slug}.md`
    - Se o agente `.md` nao existir: avisar que precisa ser criado via `mind-clone` primeiro
    - Identificar o caminho correto via `identity.clone_file` no DNA YAML
 
@@ -767,7 +767,7 @@ Campos extras que tambem podem receber updates:
 | 2 - Delta Analysis | Insights extraidos | `data/minds/{slug}_delta_{timestamp}.md` |
 | 3 - DNA Merge | DNA atualizado | `.claude/synapse/minds/{slug}.yaml` |
 | 3 - DNA Merge | Log de ingestao | `.claude/synapse/ingestion/{YYYY-MM-DD}-{slug}.yaml` |
-| 4 - Clone Update | Agente atualizado | `DUARTEOS/squad/{cat}/agents/{slug}.md` |
+| 4 - Clone Update | Agente atualizado | `DUARTEOS/minds/{slug}/agents/{slug}.md` |
 | 5 - Regression | Relatorio de fidelidade | `data/minds/{slug}_regression_{timestamp}.md` |
 
 ## Regras Criticas

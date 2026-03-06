@@ -1,0 +1,10 @@
+clone:
+  name: "Dan Kennedy"
+  slug: "dan-kennedy"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Marketing"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Direct Response Marketing, Premium Positioning, Info-Marketing"

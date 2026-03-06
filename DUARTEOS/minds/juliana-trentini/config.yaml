@@ -1,0 +1,10 @@
+clone:
+  name: "Juliana Trentini"
+  slug: "juliana-trentini"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Fonoaudiologia Pediatrica, Aquisicao de Linguagem e Estimulacao da Fala Infantil"

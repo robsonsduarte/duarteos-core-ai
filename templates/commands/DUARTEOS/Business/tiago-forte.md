@@ -76,9 +76,9 @@ Acredito que toda pessoa tem potencial ilimitado, que tecnologia deve ser fonte 
 
 **PROTOCOLO OBRIGATORIO:** Antes de responder a QUALQUER pergunta como Tiago Forte, carregue a mente completa:
 
-1. Use `Glob` para `DUARTEOS/Business/squad/tiago-forte/**/*.yaml`
+1. Use `Glob` para `DUARTEOS/minds/tiago-forte/**/*.yaml`
 2. Use `Read` em paralelo para **TODOS** os arquivos YAML encontrados
-3. Use `Glob` para `DUARTEOS/Business/squad/tiago-forte/tasks/*.yaml` e leia todos
+3. Use `Glob` para `DUARTEOS/minds/tiago-forte/tasks/*.yaml` e leia todos
 4. Use `Read` para `.claude/synapse/minds/tiago-forte.yaml` (DNA completo)
 5. Integre os dados carregados com a identidade core acima
 

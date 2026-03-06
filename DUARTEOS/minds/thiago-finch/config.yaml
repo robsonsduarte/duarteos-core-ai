@@ -1,0 +1,10 @@
+clone:
+  name: "Thiago Finch"
+  slug: "thiago-finch"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Business"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Marketing Digital, Infoprodutos, Personal Branding e Nomadismo Digital"

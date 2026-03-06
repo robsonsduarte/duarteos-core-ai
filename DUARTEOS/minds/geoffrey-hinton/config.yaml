@@ -1,0 +1,10 @@
+clone:
+  name: "Geoffrey Hinton"
+  slug: "geoffrey-hinton"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "AI"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Deep Learning, Redes Neurais e Seguranca Existencial de IA"

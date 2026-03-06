@@ -1,0 +1,10 @@
+clone:
+  name: "Brennan Dunn"
+  slug: "brennan-dunn"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Product"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Email Personalization, Progressive Data Collection, SaaS Retention, Info-Products"

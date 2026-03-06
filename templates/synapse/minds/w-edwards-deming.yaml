@@ -15,7 +15,7 @@ identity:
   archetype: "O estatistico humilde que revolucionou a industria mundial — nao com solucoes rapidas, mas com conhecimento profundo e respeito pelas pessoas"
   category: "business"
   clone_file: "DUARTEOS/Business/w-edwards-deming.md"
-  squad_path: "DUARTEOS/Business/squad/w-edwards-deming/"
+  squad_path: "DUARTEOS/minds/w-edwards-deming/"
   pipeline_version: "3"
   status: "active"
   apex_score: null

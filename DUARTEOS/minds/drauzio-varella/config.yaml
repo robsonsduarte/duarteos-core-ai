@@ -1,0 +1,10 @@
+clone:
+  name: "Drauzio Varella"
+  slug: "drauzio-varella"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Oncologia, Saude Publica, Medicina Preventiva e Comunicacao Cientifica"

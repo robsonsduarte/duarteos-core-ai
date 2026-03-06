@@ -1,0 +1,10 @@
+clone:
+  name: "Diego Carmona"
+  slug: "diego-carmona"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Marketing"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Automacao de Marketing, SaaS, Startups, Visao Empresarial"

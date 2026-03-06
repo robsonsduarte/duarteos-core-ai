@@ -1,0 +1,148 @@
+# David Allen — Framework: Weekly Review
+# MMOS v3 Phase 8 | Squad Artifact
+# Generated: 2026-03-04
+
+metadata:
+  subject: David Allen
+  category: Business
+  artifact_type: framework_detail
+  framework_name: "Weekly Review"
+  version: "1.0"
+  fonte_primaria: "Getting Things Done (2001), cap. 8; Making It All Work (2008)"
+
+framework:
+  nome: "The Weekly Review"
+  principio_central: >
+    A Weekly Review e o critical success factor de todo o GTD. E o
+    momento semanal onde voce recupera a confianca no sistema, atualiza
+    tudo, e ganha perspectiva. Sem Weekly Review, o sistema deteriora
+    em dias. COM Weekly Review, funciona para sempre.
+
+  citacao_ancora: >
+    "The Weekly Review is the master key to maintaining your system
+    and your sanity. If you're not doing it, you're not doing GTD."
+
+  frequencia: semanal
+  duracao: "60-90 minutos (pode ser menor com pratica)"
+  melhor_momento: >
+    Final de sexta-feira (Allen sugere) ou inicio de domingo. O
+    importante e que seja consistente e em momento de baixa pressao.
+    "Pick a time when you can think, not when you're firefighting."
+
+  tres_fases:
+    - fase: 1
+      nome: "Get Clear"
+      objetivo: "Esvaziar todas as caixas de entrada e processar tudo"
+      duracao_estimada: "20-30 min"
+      passos:
+        - passo: "Collect Loose Papers and Materials"
+          descricao: >
+            Reuna tudo que se acumulou na mesa, bolsa, bolsos, carro.
+            Post-its, anotacoes, recibos, cartoes de visita. Coloque
+            tudo no inbox.
+
+        - passo: "Get 'In' to Empty"
+          descricao: >
+            Processe CADA inbox ate zero. Email, inbox fisico, notas
+            do celular, voice memos. Aplique Clarify (Step 2) com
+            Two-Minute Rule ativo.
+
+        - passo: "Empty Your Head"
+          descricao: >
+            Brain dump: o que mais esta na sua cabeca? Compromissos,
+            preocupacoes, ideias, coisas que esqueceu. Capture TUDO
+            e processe.
+
+    - fase: 2
+      nome: "Get Current"
+      objetivo: "Atualizar todas as listas e garantir que o sistema reflete a realidade"
+      duracao_estimada: "20-30 min"
+      passos:
+        - passo: "Review Next Actions Lists"
+          descricao: >
+            Passe por cada lista de next actions (@phone, @computer,
+            etc.). Risque o que ja fez. Atualize o que mudou.
+            Adicione novas actions que surgiram.
+
+        - passo: "Review Previous Calendar Data"
+          descricao: >
+            Revise a semana passada no calendario. Algum follow-up
+            pendente? Algo que gerou novo projeto ou acao?
+
+        - passo: "Review Upcoming Calendar"
+          descricao: >
+            Olhe 2-3 semanas a frente. O que precisa de preparacao?
+            Que acoes precisam acontecer antes de eventos futuros?
+
+        - passo: "Review Waiting For List"
+          descricao: >
+            Cheque cada item delegado. Precisa de follow-up? Alguem
+            atrasou? Adicione acao de follow-up se necessario.
+
+        - passo: "Review Projects List"
+          descricao: >
+            Passe por CADA projeto. Cada um tem pelo menos uma next
+            action? O status esta correto? Algum precisa ser pausado,
+            cancelado, ou acelerado?
+
+        - passo: "Review Any Relevant Checklists"
+          descricao: >
+            Checklists de viagem, areas de foco, etc. Algo
+            disparado? Algo negligenciado?
+
+    - fase: 3
+      nome: "Get Creative"
+      objetivo: "Pensar com perspectiva — o que mais? O que de novo?"
+      duracao_estimada: "10-20 min"
+      passos:
+        - passo: "Review Someday/Maybe List"
+          descricao: >
+            Algo de Someday/Maybe esta pronto para virar projeto?
+            Algo mudou de prioridade? Adicione novas possibilidades.
+
+        - passo: "Be Creative and Courageous"
+          descricao: >
+            Momento livre para novas ideias, projetos ousados,
+            mudancas de direcao. A mente limpa (Get Clear + Get
+            Current) permite pensamento expansivo.
+
+  resultado_esperado: >
+    Ao final da Weekly Review, voce deve sentir: "Estou em dia com
+    TUDO que importa. Sei exatamente o que estou fazendo e o que
+    nao estou fazendo. Tenho clareza e controle." Se nao sente isso,
+    a review nao foi completa.
+
+  sinais_de_review_incompleta:
+    - "Ainda sente ansiedade difusa ('estou esquecendo algo')"
+    - "Inbox nao esta zerado"
+    - "Projetos sem next action definida"
+    - "Calendario da proxima semana nao revisado"
+    - "Sensacao de 'nao estou no controle'"
+
+  como_allen_faz:
+    descricao: >
+      Allen faz Weekly Review religiosa. Admite que quando pula
+      (raramente), sente a diferenca em dias. "I fall off the wagon
+      too. The review is how I get back on."
+    frequencia_pessoal: sexta-feira a tarde
+    duracao_pessoal: "60-90 min com cafe"
+
+  dicas_de_implementacao:
+    - "Bloqueie no calendario como compromisso inegociavel"
+    - "Faca em ambiente confortavel (cafe, escritorio calmo)"
+    - "Use checklist — nao confie na memoria para a review"
+    - "Comece imperfeitamente — 30 min > 0 min"
+    - "Se nao fez essa semana, faca na proxima. Nao acumule."
+
+  anti_patterns:
+    - "Pular a Weekly Review ('nao tenho tempo') — e a pior economia possivel"
+    - "Fazer review superficial (checkbox sem reflexao)"
+    - "Fazer durante periodo de alta pressao (resulta em processamento reativo)"
+    - "Nao esvaziar inbox antes de revisar (mistura processamento com review)"
+    - "Transformar review em sessao de trabalho (review e meta-trabalho, nao trabalho)"
+    - "Fazer quinzenalmente ('eh quase a mesma coisa') — nao e"
+
+  citacao_complementar: >
+    "If you don't pay appropriate attention to what has your attention,
+    it will take more of your attention than it deserves. The Weekly
+    Review is when you pay that attention — all at once, on your terms."

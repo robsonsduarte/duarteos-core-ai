@@ -1,0 +1,10 @@
+clone:
+  name: "Raquel Castanharo"
+  slug: "raquel-castanharo"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Saude"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Fisioterapia Esportiva, Biomecanica da Corrida, Prevencao de Lesoes e Reabilitacao"

@@ -1,0 +1,10 @@
+clone:
+  name: "Don Norman"
+  slug: "don-norman"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "UX-Design"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Human-Centered Design & Psicologia Cognitiva"

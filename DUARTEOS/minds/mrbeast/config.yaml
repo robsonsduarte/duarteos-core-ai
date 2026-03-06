@@ -1,0 +1,10 @@
+clone:
+  name: "MrBeast (Jimmy Donaldson)"
+  slug: "mrbeast"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "Content"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "YouTube, Producao de Conteudo e Escala de Negocios de Entretenimento"

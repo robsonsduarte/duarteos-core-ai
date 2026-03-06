@@ -1,0 +1,55 @@
+# Cinco Perguntas de Fim de Vida — atul-gawande
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-03
+
+framework_identity:
+  name: "Cinco Perguntas de Fim de Vida"
+  slug: "cinco-perguntas-fim-de-vida"
+  mind: "atul-gawande"
+  category: "saude"
+  source_path: "livro/being-mortal"
+
+descricao: "Framework para conversas com pacientes terminais ou em decisoes dificeis de saude. Redefine o enquadramento de 'lutar vs desistir' para 'pelo que estamos lutando?' Pacientes que receberam cuidados paliativos precoces baseados nessas conversas viveram 25% MAIS enquanto sofreram menos."
+
+steps:
+  - step: 1
+    acao: "Qual e a sua compreensao da sua condicao?"
+    detalhe: "Antes de falar, ouca. Descubra o que o paciente ja sabe e o que interpreta. Muitas vezes ha um gap entre o que o medico comunicou e o que o paciente entendeu."
+  - step: 2
+    acao: "Quais sao seus medos sobre o que esta por vir?"
+    detalhe: "Medos reais, nao os que o medico presume. Muitas vezes o medo nao e morrer — e perder autonomia, virar fardo, ou sofrer sem sentido."
+  - step: 3
+    acao: "Quais sao suas esperancas?"
+    detalhe: "Esperancas realistas e irrealistas — ambas importam. A esperanca nao precisa ser de cura; pode ser de um bom dia, de ver o neto, de morrer em casa."
+  - step: 4
+    acao: "O que voce estaria disposto a sacrificar? O que nao?"
+    detalhe: "Trade-offs explicitos. Se o tratamento ganha 3 meses mas voce fica no hospital, vale? Cada pessoa tem sua resposta."
+  - step: 5
+    acao: "O que e essencial para que sua vida tenha sentido?"
+    detalhe: "A pergunta central: 'What does a good day look like?' Mrs. Kitteridge: 'Friendships, purpose to my days, and privacy.' O melhor testamento vital ja ouvido."
+
+quando_usar: "Conversas de fim de vida, planejamento de cuidados, decisoes sobre tratamentos agressivos, qualquer situacao onde alguem precisa definir o que realmente importa. Tambem aplicavel FORA da medicina: decisoes de carreira, momentos de vida, encruzilhadas existenciais."
+
+exemplos_aplicacao:
+  - cenario: "Paciente com cancer de pulmao estagio 4"
+    resultado: "Recebendo paliativos precoces baseados nessas conversas: +25% sobrevida, menos sofrimento"
+    fonte: "livro/being-mortal"
+  - cenario: "Mrs. Kitteridge, idosa em nursing home"
+    resultado: "'Friendships, purpose to my days, and privacy' = melhor testamento vital"
+    fonte: "livro/being-mortal"
+  - cenario: "Pai de Gawande com tumor na medula"
+    resultado: "Familia parou de lutar contra o impossivel e perguntou 'o que faz um bom dia?' — pai morreu com dignidade"
+    fonte: "livro/being-mortal"
+
+anti_patterns:
+  - "Pular direto para opcoes de tratamento sem entender o que o paciente valoriza"
+  - "Enquadrar como 'lutar vs desistir' — falso binario que ignora o essencial"
+  - "Impor seus valores ao paciente — modelo paternalista"
+  - "Deixar o paciente decidir sozinho sem orientacao — modelo autonomia-puro tambem falha"
+  - "Tratar a conversa como one-off — preferencias mudam, revisitar periodicamente"
+
+frameworks_relacionados:
+  - name: "Modelo Conselheiro"
+    relacao: "complementar — Cinco Perguntas E a implementacao do modelo conselheiro"
+  - name: "Checklist Cirurgico"
+    relacao: "paralelo — ambos sao 'procedimentos' que requerem pratica deliberada"

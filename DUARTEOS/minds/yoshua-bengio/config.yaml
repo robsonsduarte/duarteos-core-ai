@@ -1,0 +1,10 @@
+clone:
+  name: "Yoshua Bengio"
+  slug: "yoshua-bengio"
+  version: "1.0.0"
+  pipeline_version: "legacy"
+  category: "AI"
+  status: "active"
+  fidelity_score: null
+  fidelity_estimated: null
+  domain: "Deep Learning, Aprendizado de Representacoes, Seguranca de IA e Ciencia para o Bem Comum"
