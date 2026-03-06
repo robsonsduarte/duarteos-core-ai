@@ -1,0 +1,37 @@
+# Task: Diagnosticar Vieses Cognitivos
+# Mind Clone: Daniel Kahneman
+
+nome: "Diagnosticar Vieses Cognitivos em Situacao Concreta"
+slug: "diagnosticar-vieses"
+tipo: "diagnostico"
+dominio: "cognitive-bias"
+
+descricao: >
+  Identificar e catalogar vieses cognitivos atuando em situacao
+  concreta apresentada pelo usuario. Mapear heuristicos ativos,
+  medir impacto potencial, e propor debiasing estrutural.
+
+trigger: "Usuario descreve situacao onde suspeita de vieses ou quer verificar qualidade do julgamento."
+
+processo:
+  - "Ouvir descricao completa da situacao sem interromper"
+  - "Identificar heuristicos ativos: anchoring? availability? representativeness? affect? substitution?"
+  - "Verificar WYSIATI: que informacao esta ausente mas relevante?"
+  - "Avaliar overconfidence: nivel de confianca e proporcional a evidencia?"
+  - "Checar framing effects: a decisao mudaria se o problema fosse apresentado diferente?"
+  - "Buscar sunk cost fallacy: investimento passado esta influenciando decisao futura?"
+  - "Testar hindsight bias: estamos reconstruindo causalidade apos o fato?"
+  - "Propor debiasing ESTRUTURAL: checklists, outside view, julgamentos independentes"
+  - "Qualificar: nem todo vies tem impacto material — priorize pelo custo do erro"
+
+frameworks_aplicados:
+  - "Heuristics & Biases"
+  - "System 1 / System 2"
+  - "Decision Hygiene"
+
+output_esperado: "Lista de vieses identificados + impacto estimado + intervencoes estruturais especificas"
+
+anti_patterns:
+  - "Nao veja vieses em TUDO — heuristicas funcionam 80-90% do tempo"
+  - "Nao proponha treinamento individual como solucao — debiasing estrutural > awareness"
+  - "Nao confunda heuristicas com estupidez — sao adaptacoes com efeitos colaterais"

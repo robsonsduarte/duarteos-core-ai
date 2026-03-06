@@ -1,0 +1,63 @@
+# Framework: Adversarial Collaboration
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Adversarial Collaboration"
+slug: "adversarial-collaboration"
+categoria: "intellectual-dispute-resolution"
+
+descricao: >
+  Formato para resolver disputas intelectuais ou cientificas que controversia
+  nao consegue resolver. Duas partes que discordam fundamentalmente concordam
+  em (1) definir a questao empirica central, (2) desenhar um experimento ou
+  teste conjunto que ambos aceitam como justo, (3) executar juntos, e (4)
+  aceitar o resultado, qualquer que seja. Inventado por Kahneman como
+  "alternative to angry science" — porque controversia e terrivel para
+  avancar ciencia. Disputas intelectuais causavam dor visceral a Kahneman,
+  e adversarial collaboration foi sua resposta estrutural.
+
+steps:
+  - step: 1
+    nome: "Definir a Questao Central"
+    descricao: "Ambas as partes articulam EXATAMENTE no que discordam. Nao 'voce esta errado' mas 'nos discordamos sobre X'. A questao deve ser empiricamente testavel."
+    criterio: "Questao formulada como hipotese testavel, aceita por ambos."
+
+  - step: 2
+    nome: "Desenhar o Teste Conjunto"
+    descricao: "Ambas as partes concordam no design do teste. Que dados resolveriam a questao? Que resultado convenceria cada lado? Se nenhum resultado possivel mudaria a opiniao de alguem, nao e questao empirica — e crenca identitaria."
+    criterio: "Design aceito por ambos. Criterios de sucesso/falha pre-definidos."
+
+  - step: 3
+    nome: "Executar com Transparencia"
+    descricao: "Executar o teste juntos. Dados compartilhados. Analise conjunta. Sem surpresas. Se um lado descobre algo desfavoravel, compartilha imediatamente."
+    criterio: "Execucao transparente e conjunta."
+
+  - step: 4
+    nome: "Aceitar o Resultado"
+    descricao: "O resultado vale. Quem estava errado, admite. Quem estava certo, nao ridiculariza. A disputam foi resolvida pela evidencia, nao pela retorica. Publicar resultado conjunto."
+    criterio: "Ambos aceitam e publicam o resultado."
+
+quando_usar:
+  - "Disputas intelectuais ou cientificas que nao se resolvem por debate"
+  - "Quando ha desacordo genuino sobre uma questao empirica"
+  - "Quando controversia esta gerando mais calor que luz"
+  - "Quando ambas as partes sao intelectualmente honestas"
+  - "Em organizacoes: quando dois departamentos tem visoes opostas sobre estrategia"
+
+exemplos_aplicacao:
+  - contexto: "Dois pesquisadores discordam sobre efeito de priming"
+    aplicacao: "Definem juntos: 'O efeito X replica com n=500 e protocolo padrao?' Concordam no design. Executam juntos. Se replica: Lado A vence. Se nao: Lado B vence. Publicam juntos."
+  - contexto: "Marketing e Produto discordam sobre feature principal"
+    aplicacao: "Definem: 'Feature A ou B gera mais conversao?' Concordam no teste (A/B com n=10K). Executam. Resultado e final. Sem revisitar a discussao."
+
+anti_patterns:
+  - "Propor quando ha ma-fe — requer disposicao genuina de ambos os lados"
+  - "Usar como tática dilatatoria para evitar decisao urgente"
+  - "Aceitar resultado apenas quando favoravel — commitment prévio e essencial"
+  - "Definir questao de forma que so um lado pode vencer (loaded question)"
+  - "Confundir com compromisso ou meeting in the middle — e resolucao por evidencia, nao negociacao"
+
+frameworks_relacionados:
+  - "Decision Hygiene"
+  - "Condicoes para Intuicao Legitima"
+  - "Heuristics & Biases"

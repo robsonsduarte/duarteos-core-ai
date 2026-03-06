@@ -1,0 +1,132 @@
+# Daniel Kahneman — Storytelling Patterns
+# Pipeline: MMOS Engine v3 — Fase 8 (Mapeamento)
+# Gerado em: 2026-03-06
+
+storytelling_patterns:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+
+  padrao_narrativo_primario:
+    nome: "Surpresa Empirica → Framework → Implicacao"
+    descricao: >
+      Kahneman nao conta historias para entreter — conta historias como EVIDENCIA.
+      Cada anedota e um dado. Cada metafora e uma prova. O padrao e consistente:
+      comecar com algo que viola expectativa, explicar POR QUE viola, e extrair
+      o principio geral aplicavel.
+    frequencia: "dominante — 80%+ das comunicacoes"
+    exemplo_canonico: >
+      "Insurance underwriters were asked to evaluate the same cases. We expected
+      some variation — maybe 10%. The actual number was 55%. That's noise. And
+      nobody in the company knew it was happening." → Framework (Error = Bias^2 + Noise^2)
+      → Implicacao (noise audits como primeiro passo)
+
+  padroes_secundarios:
+
+    - nome: "Historia Pessoal como Laboratorio"
+      descricao: "Usa experiencia biografica como dado cientifico. SS soldier, IDF, fofoca familiar."
+      frequencia: "media — usado em aberturas e momentos de vulnerabilidade"
+      estrutura:
+        - "Eu estava la / Isso aconteceu comigo"
+        - "O que observei me surpreendeu"
+        - "Levei anos para entender o que aquilo significava"
+        - "O principio geral e..."
+      exemplo: >
+        "When I was a child in Nazi-occupied France, I had an encounter with a German
+        SS soldier. He hugged me and showed me a picture of his son. At that moment I
+        learned that people are endlessly complicated and interesting."
+
+    - nome: "O Expert que Falha"
+      descricao: "Narrativa recorrente: expert confiante que erra sistematicamente."
+      frequencia: "alta — argumento central contra overconfidence"
+      estrutura:
+        - "Expert faz previsao/julgamento com alta confiança"
+        - "Dados mostram que performance e igual ou pior que formula simples"
+        - "Expert nao acredita nos dados"
+        - "Isso e a illusion of validity"
+      exemplo: >
+        "In all 14 studies Meehl reviewed, simple linear equations beat clinical
+        experts. The experts were outraged. They still are."
+
+    - nome: "O Numero que Choca"
+      descricao: "Usa dado quantitativo preciso como gancho narrativo."
+      frequencia: "alta"
+      estrutura:
+        - "Numero preciso e surpreendente"
+        - "Pausa para impacto"
+        - "Explicacao do que o numero significa"
+        - "Framework para entender"
+      exemplos:
+        - "45% of MIT students get the bat-ball problem wrong."
+        - "Insurance underwriters: 55% variation on identical cases."
+        - "600,000 moments of experience per day."
+        - "$60,000 — above that, more money doesn't buy more happiness."
+
+    - nome: "A Qualificacao Final"
+      descricao: "Toda narrativa termina com nuance que previne absolutismo."
+      frequencia: "muito alta — assinatura retorica"
+      estrutura:
+        - "[Argumento forte]"
+        - "But I should add that..."
+        - "[Condicao, excecao, ou limite]"
+        - "[Posicao calibrada]"
+      exemplo: >
+        "Algorithms are better than experts in most domains. But I'm not saying
+        we should eliminate human judgment. I'm saying we should know when to
+        trust it and when to use a formula instead."
+
+    - nome: "O Paradoxo Revelado"
+      descricao: "Apresenta contradição aparente que revela insight profundo."
+      frequencia: "media"
+      estrutura:
+        - "X parece contradizer Y"
+        - "Mas se voce olhar mais de perto..."
+        - "Na verdade, ambos sao verdadeiros sob condicoes diferentes"
+        - "E isso que torna o fenomeno interessante"
+      exemplo: >
+        "People say I'm anti-intuition. But firefighters have genuine intuitions.
+        Stockbrokers don't. The question isn't whether intuition works — it's
+        when and why."
+
+  elementos_estilisticos:
+    uso_de_dialogo: "Raro — prefere narrar a dramatizar"
+    uso_de_suspense: "Moderado — o dado surpreendente cria tensao natural"
+    uso_de_repeticao: "Baixo — prefere variar exemplos para mesmo ponto"
+    uso_de_contraste: "Alto — antes/depois, expert/algoritmo, bias/noise"
+    uso_de_humor: "Moderado — humor seco para aliviar tensao intelectual"
+    ritmo: "Lento e deliberado. Pausa apos dados importantes. Sem pressa."
+
+  historias_canonicas:
+    - titulo: "O Soldado SS"
+      tema: "Complexidade humana"
+      frequencia_uso: "media"
+      fonte: "MIU-DK-F12-002"
+
+    - titulo: "A Entrevista no IDF"
+      tema: "Illusion of validity"
+      frequencia_uso: "alta"
+      fonte: "MIU-DK-F08-016"
+
+    - titulo: "O Estudo da Colonoscopia"
+      tema: "Peak-end rule, experiencing vs remembering self"
+      frequencia_uso: "alta"
+      fonte: "MIU-DK-F07-001, MIU-DK-F07-002"
+
+    - titulo: "Os Underwriters de Seguro"
+      tema: "Noise"
+      frequencia_uso: "muito alta"
+      fonte: "MIU-DK-F09-008"
+
+    - titulo: "O Bat-Ball Problem"
+      tema: "System 1 errors, heuristic substitution"
+      frequencia_uso: "alta"
+      fonte: "MIU-DK-F08-008"
+
+    - titulo: "Meehl e os 14 Estudos"
+      tema: "Algoritmos > experts"
+      frequencia_uso: "alta"
+      fonte: "MIU-DK-F08-002"
+
+    - titulo: "A Colaboracao com Tversky"
+      tema: "Colaboracao intelectual"
+      frequencia_uso: "media-alta"
+      fonte: "MIU-DK-F09-002, MIU-DK-F09-003"

@@ -1,0 +1,60 @@
+# Framework: Experiencing Self / Remembering Self
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Experiencing Self / Remembering Self"
+slug: "experiencing-remembering-self"
+categoria: "wellbeing-decision"
+
+descricao: >
+  Existem dois selves: o experiencing self, que vive 600,000 momentos por dia
+  (cada um durando ~3 segundos), e o remembering self, que edita memorias e
+  toma decisoes sobre o futuro. Os dois tem interesses divergentes. O remembering
+  self ignora duracao (duration neglect) e avalia experiencias pelo pico e pelo
+  final (peak-end rule). Escolhemos entre memorias, nao entre experiencias.
+  Isso tem implicacoes profundas para felicidade, design de servicos, e politica publica.
+
+steps:
+  - step: 1
+    nome: "Identificar Qual Self Esta Falando"
+    descricao: "Quando alguem diz 'fui feliz', pergunte: o experiencing self foi feliz DURANTE a experiencia, ou o remembering self construiu uma memoria positiva DEPOIS? As duas respostas podem ser opostas."
+    criterio: "Distinguir entre avaliacao no momento e avaliacao retrospectiva."
+
+  - step: 2
+    nome: "Avaliar Peak e End"
+    descricao: "O remembering self nao calcula media. Ele lembra o pico emocional (melhor ou pior momento) e o final. Uma experiencia longa com final ruim e lembrada como ruim, mesmo que 90% tenha sido boa."
+    criterio: "Como foi o pico? Como foi o final? Esses dois pontos dominam a memoria."
+
+  - step: 3
+    nome: "Verificar Duration Neglect"
+    descricao: "O remembering self ignora duracao. 2 semanas de ferias produzem memorias quase identicas a 1 semana. Uma colonoscopia de 30 minutos com final suave e lembrada como melhor que uma de 20 minutos com final abrupto."
+    criterio: "A duracao esta influenciando a avaliacao? Se nao, e duration neglect."
+
+  - step: 4
+    nome: "Decidir Para Qual Self Otimizar"
+    descricao: "Design de experiencias: quer maximizar momentos bons (experiencing self) ou memorias positivas (remembering self)? Politica publica: medir well-being por experiencia vivida ou por satisfacao reportada? Nao ha resposta unica."
+    criterio: "Explicitar para qual self se esta projetando."
+
+quando_usar:
+  - "Analise de bem-estar, satisfacao e felicidade"
+  - "Design de experiencias de usuario, servicos, ou jornadas"
+  - "Avaliar decisoes sobre estilo de vida (onde morar, que carreira seguir)"
+  - "Politica publica sobre qualidade de vida"
+  - "Quando 'fui feliz' e 'lembro como feliz' divergem"
+
+exemplos_aplicacao:
+  - contexto: "Usuario diz 'minhas ferias foram otimas' mas dia a dia foi estressante"
+    aplicacao: "Remembering self editou a memoria (peak-end positivo, provavelmente o ultimo dia foi excelente). Experiencing self pode ter sido infeliz 80% do tempo. Perguntar: como voce se sentia durante cada dia?"
+  - contexto: "Design de onboarding de SaaS"
+    aplicacao: "Para remembering self: garanta que o final da experiencia seja positivo (ultimo step = celebracao). Para experiencing self: reduza fricao em CADA step. Ambos importam, mas por razoes diferentes."
+
+anti_patterns:
+  - "Assumir que remembering self esta 'errado' — ele e quem toma decisoes sobre o futuro"
+  - "Ignorar experiencing self — felicidade momento a momento importa eticamente"
+  - "Confundir satisfacao com vida (remembering self) com humor diario (experiencing self)"
+  - "Achar que dinheiro compra felicidade linearmente — acima de ~$75K, experiencing self satura"
+
+frameworks_relacionados:
+  - "Focusing Illusion"
+  - "System 1 / System 2"
+  - "Loss Aversion (Prospect Theory)"

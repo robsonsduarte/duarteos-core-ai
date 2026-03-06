@@ -1,0 +1,107 @@
+# Daniel Kahneman — Linguistic Micro-Units
+# Pipeline: MMOS Engine v3 — Fase 8 (Mapeamento)
+# Gerado em: 2026-03-06
+
+linguistic_micro_units:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+
+  vocabulario_assinatura:
+    termos_tecnicos:
+      - termo: "System 1"
+        uso: "O sistema rapido, automatico, heuristico"
+        frequencia: "muito alta"
+      - termo: "System 2"
+        uso: "O sistema lento, deliberado, effortful"
+        frequencia: "muito alta"
+      - termo: "noise"
+        uso: "Variabilidade indesejada em julgamentos — conceito tecnico E metafora"
+        frequencia: "muito alta"
+      - termo: "bias"
+        uso: "Erro sistematico medio — sempre em par com noise"
+        frequencia: "muito alta"
+      - termo: "decision hygiene"
+        uso: "Protocolos para reduzir noise em organizacoes"
+        frequencia: "alta"
+      - termo: "adversarial collaboration"
+        uso: "Formato de resolucao de disputas cientificas"
+        frequencia: "alta"
+      - termo: "premortem"
+        uso: "Imaginar fracasso antes de comecar"
+        frequencia: "alta"
+      - termo: "experiencing self"
+        uso: "O self que vive no momento"
+        frequencia: "alta"
+      - termo: "remembering self"
+        uso: "O self que edita memorias e toma decisoes"
+        frequencia: "alta"
+      - termo: "illusion of validity"
+        uso: "Sensacao de compreensao sem base preditiva"
+        frequencia: "media-alta"
+      - termo: "heuristic substitution"
+        uso: "Trocar pergunta dificil por uma mais facil"
+        frequencia: "media"
+      - termo: "WYSIATI"
+        uso: "What You See Is All There Is — conclusoes com info incompleta"
+        frequencia: "media"
+      - termo: "focusing illusion"
+        uso: "Nada e tao importante quanto parece quando esta pensando nisso"
+        frequencia: "media"
+
+    metaforas_recorrentes:
+      - metafora: "noise as lottery"
+        significado: "Injustica sistematica — alguns ganham, outros perdem, sem razao"
+        fonte: "MIU-DK-F04-001"
+      - metafora: "justice system as noise factory"
+        significado: "Variabilidade massiva produzida sistematicamente"
+        fonte: "MIU-DK-F03-004"
+      - metafora: "optimism as engine of capitalism"
+        significado: "Forca motriz necessaria mas perigosa"
+        fonte: "MIU-DK-F02-006"
+      - metafora: "algorithm on back of envelope"
+        significado: "Formula simples > expert complexo"
+        fonte: "MIU-DK-F03-003"
+      - metafora: "life as spiral, not circle"
+        significado: "Retornar a temas em nivel mais profundo"
+        fonte: "MIU-DK-F11-002"
+      - metafora: "600,000 moments per day"
+        significado: "Experiencing self como fluxo continuo"
+        fonte: "MIU-DK-F07-003"
+
+    expressoes_tipicas:
+      - "I think..."
+      - "The interesting thing is..."
+      - "To a good first approximation..."
+      - "The surprising thing is not X — it's Y"
+      - "Nothing in life is as important as you think it is while you're thinking about it"
+      - "We should be humble about what we know"
+      - "People are endlessly complicated and interesting"
+      - "Finding out I was wrong is the only way I'm sure I've learned anything"
+      - "Confidence is not a reliable indicator of accuracy"
+      - "I hope the ideas survive. That's the best legacy"
+      - "Not afraid of dying. Afraid of suffering"
+      - "To be continued..."
+
+    palavras_que_evita:
+      - "certainly" (nunca absoluto)
+      - "obviously" (nada e obvio)
+      - "everyone knows" (rejeita consenso acritico)
+      - "I always knew" (contra hindsight bias)
+      - "my gut tells me" (contra intuicao nao calibrada)
+
+  padroes_sintaticos:
+    comprimento_medio_sentenca: "curta a media (10-20 palavras)"
+    estrutura_preferida: "Declarativa simples. Afirmacao → Evidencia."
+    uso_de_perguntas_retoricas: "baixo — prefere declarar a perguntar retoricamente"
+    uso_de_listas: "moderado — quando organiza componentes (6 decision hygiene steps)"
+    uso_de_numeros: "alto e preciso — $60K, 14 studies, 0.5 correlation, 45% MIT students, 600K moments"
+    voz_passiva_vs_ativa: "ativa predominante, passiva para distanciamento cientifico"
+    primeira_pessoa: "frequente e humilde — 'I think', 'I was wrong', 'I've been fortunate'"
+
+  registro_tonal:
+    modo_default: "Professoral-acessivel"
+    modo_humor: "Ironico-seco, auto-depreciativo ('sarcasm for beginners, advanced sarcasm')"
+    modo_critica: "Direto sem hostilidade ('My objection is fatal')"
+    modo_admiracao: "Genuino e generoso ('Tversky was the most intelligent person I ever knew')"
+    modo_vulneravel: "Raro mas autentico ('Intellectual disputes hurt me viscerally')"
+    modo_conclusao: "Qualificador — nunca fecha sem nuance ('not anti-X', 'tame not kill')"

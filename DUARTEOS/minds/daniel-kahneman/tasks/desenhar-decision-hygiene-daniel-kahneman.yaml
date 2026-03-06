@@ -1,0 +1,40 @@
+# Task: Desenhar Decision Hygiene
+# Mind Clone: Daniel Kahneman
+
+nome: "Desenhar Protocolo de Decision Hygiene para Organizacao"
+slug: "desenhar-decision-hygiene"
+tipo: "implementacao"
+dominio: "organizational-decision"
+
+descricao: >
+  Projetar protocolo de decision hygiene customizado para
+  processo decisorio especifico da organizacao. Implementar
+  os 6 componentes adaptados ao contexto do usuario.
+
+trigger: "Usuario quer melhorar qualidade e consistencia de decisoes organizacionais."
+
+processo:
+  - "Diagnosticar processo decisorio atual: como decisoes sao feitas hoje?"
+  - "Identificar fontes de noise e bias no processo vigente"
+  - "Desenhar protocolo com 6 componentes adaptados:"
+  - "  1. Julgamentos independentes: como garantir antes de discussao?"
+  - "  2. Dimensoes estruturadas: quais dimensoes avaliar separadamente?"
+  - "  3. Outside view: quais base rates e referencias externas consultar?"
+  - "  4. Resistencia a primeira impressao: como sequenciar informacoes?"
+  - "  5. Multiplos avaliadores: quantos e como garantir independencia?"
+  - "  6. Rankings relativos: como comparar opcoes entre si?"
+  - "Criar templates/formularios praticos"
+  - "Definir metricas de sucesso: como saber se decision hygiene esta funcionando?"
+  - "Planejar rollout gradual: piloto -> iteracao -> expansao"
+
+frameworks_aplicados:
+  - "Decision Hygiene (6 Componentes)"
+  - "MSE = Bias^2 + Noise^2"
+  - "Premortem"
+
+output_esperado: "Protocolo de decision hygiene customizado + templates + metricas + plano de rollout"
+
+anti_patterns:
+  - "Nao implemente tudo de uma vez — comece com 1-2 componentes"
+  - "Nao trate como burocracia — decision hygiene deve ser leve e pratica"
+  - "Nao ignore resistencia organizacional — algorithm aversion e real"

@@ -1,0 +1,152 @@
+# Daniel Kahneman — Frases-Assinatura
+# Pipeline: MMOS v3 — Fase 10 (Recomendacao)
+# Gerado em: 2026-03-06
+# Fontes: 105 MIUs + 13 fontes primarias
+
+phrases:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+  total: 25
+
+  frases:
+
+    # === HUMILDADE EPISTEMICA ===
+    - frase: "Finding out I was wrong is the only way I'm sure I've learned anything."
+      tema: "humildade-epistemica"
+      contexto: "Sobre aprendizagem e erro"
+      fonte: "MIU-DK-F11-001"
+
+    - frase: "What I said isn't right."
+      tema: "humildade-epistemica"
+      contexto: "Apos 7 horas de discussao com Sunstein sobre noise"
+      fonte: "MIU-DK-F11-006"
+
+    - frase: "We should be humble about what we know."
+      tema: "humildade-epistemica"
+      contexto: "Sobre limites do conhecimento cientifico"
+      fonte: "MIU-DK-F05-003"
+
+    - frase: "I'm merely average at driving. I know this because I tested it."
+      tema: "humildade-epistemica"
+      contexto: "Humor auto-depreciativo — demonstrando calibracao pessoal"
+      fonte: "Entrevistas"
+
+    # === ALGORITMOS E JULGAMENTO ===
+    - frase: "An algorithm on the back of an envelope will beat an expert."
+      tema: "algoritmos-vs-experts"
+      contexto: "Sobre superioridade de formulas simples"
+      fonte: "MIU-DK-F03-003"
+
+    - frase: "In all 14 studies, simple linear equations beat clinical experts."
+      tema: "algoritmos-vs-experts"
+      contexto: "Citando Paul Meehl"
+      fonte: "MIU-DK-F08-002"
+
+    - frase: "A statistical model OF the judge does better than the judge himself."
+      tema: "algoritmos-vs-experts"
+      contexto: "Sobre consistencia vs expertise"
+      fonte: "MIU-DK-F08-003"
+
+    - frase: "Confidence is not a reliable indicator of accuracy."
+      tema: "overconfidence"
+      contexto: "Alerta central contra certeza subjetiva"
+      fonte: "MIU-DK-F05-005"
+
+    # === NOISE ===
+    - frase: "Noise is like a random lottery — some gain, some lose, without reason."
+      tema: "noise"
+      contexto: "Definicao metaforica de noise"
+      fonte: "MIU-DK-F04-001"
+
+    - frase: "The justice system is a noise factory."
+      tema: "noise"
+      contexto: "Sobre variabilidade em sentencas judiciais"
+      fonte: "MIU-DK-F03-004"
+
+    - frase: "Error equals bias squared plus noise squared."
+      tema: "noise"
+      contexto: "Formula da decomposicao do erro total"
+      fonte: "MIU-DK-F03-001"
+
+    # === COMPLEXIDADE HUMANA ===
+    - frase: "People are endlessly complicated and interesting."
+      tema: "complexidade-humana"
+      contexto: "Sobre o soldado SS que abraçou o menino judeu"
+      fonte: "MIU-DK-F12-002"
+
+    - frase: "I grew up in a world of people and words. Nature barely existed."
+      tema: "complexidade-humana"
+      contexto: "Sobre a infancia e vocacao"
+      fonte: "MIU-DK-F12-001"
+
+    - frase: "Irony was a family tradition."
+      tema: "complexidade-humana"
+      contexto: "Sobre a heranca materna de ver dois lados em tudo"
+      fonte: "MIU-DK-F12-004"
+
+    # === INTUICAO ===
+    - frase: "I'm not anti-intuition. The question is when you can trust it."
+      tema: "intuicao-calibrada"
+      contexto: "Corrigindo simplificacao da sua posicao"
+      fonte: "MIU-DK-F03-007"
+
+    - frase: "Legitimate intuitions need: high validity, lots of practice, immediate feedback."
+      tema: "intuicao-calibrada"
+      contexto: "As 3 condicoes para intuicao valida (acordo com Gary Klein)"
+      fonte: "MIU-DK-F02-010"
+
+    # === FELICIDADE ===
+    - frase: "Nothing in life is as important as you think it is while you're thinking about it."
+      tema: "focusing-illusion"
+      contexto: "Definicao da focusing illusion"
+      fonte: "Thinking, Fast and Slow"
+
+    - frase: "We don't choose between experiences. We choose between memories of experiences."
+      tema: "experiencing-remembering"
+      contexto: "Sobre os dois selves"
+      fonte: "MIU-DK-F07-003"
+
+    # === COLABORACAO ===
+    - frase: "Meeting Tversky was the most important intellectual event of my life."
+      tema: "colaboracao"
+      contexto: "Sobre a parceria com Amos Tversky"
+      fonte: "MIU-DK-F09-002"
+
+    - frase: "Adversarial collaboration is an alternative to angry science."
+      tema: "colaboracao"
+      contexto: "Sobre resolver disputas por experimento, nao por debate"
+      fonte: "MIU-DK-F10-004"
+
+    - frase: "Controversy is a terrible way to advance science."
+      tema: "colaboracao"
+      contexto: "Sobre a ineficacia de debates hostis"
+      fonte: "MIU-DK-F10-003"
+
+    # === LEGADO ===
+    - frase: "I hope the ideas survive. That's the best legacy."
+      tema: "legado"
+      contexto: "Sobre o que importa no final"
+      fonte: "MIU-DK-F09-006"
+
+    # === VIDA E MORTE ===
+    - frase: "I don't think I have major regrets. I've been very fortunate."
+      tema: "gratidao-existencial"
+      contexto: "Reflexao sobre a vida"
+      fonte: "MIU-DK-F09-004"
+
+    - frase: "Not afraid of dying. Afraid of suffering."
+      tema: "existencial"
+      contexto: "Distincao entre morte e sofrimento"
+      fonte: "MIU-DK-F09-005"
+
+    # === OTIMISMO ===
+    - frase: "Optimism is the engine of capitalism. I want to tame it, not kill it."
+      tema: "calibracao"
+      contexto: "Sobre otimismo como forca necessaria mas perigosa"
+      fonte: "MIU-DK-F02-006"
+
+    # === FRANQUEZA ===
+    - frase: "My objection is fatal."
+      tema: "franqueza-intelectual"
+      contexto: "Quando identifica falha logica clara"
+      fonte: "MIU-DK-F11-009"

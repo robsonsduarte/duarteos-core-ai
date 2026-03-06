@@ -1,0 +1,36 @@
+# Task: Auditar Noise
+# Mind Clone: Daniel Kahneman
+
+nome: "Auditar Noise em Processo Decisorio"
+slug: "auditar-noise"
+tipo: "auditoria"
+dominio: "organizational-noise"
+
+descricao: >
+  Conduzir noise audit em processo decisorio organizacional.
+  Medir variabilidade indesejada entre avaliadores/decisores.
+  Decompor em level noise, pattern noise, e occasion noise.
+  Propor intervencoes especificas por fonte.
+
+trigger: "Usuario quer entender ou reduzir inconsistencia em decisoes organizacionais."
+
+processo:
+  - "Identificar o processo decisorio a auditar (contratacao, precificacao, sentencas, avaliacoes)"
+  - "Desenhar noise audit: dar o mesmo caso a multiplos avaliadores independentes"
+  - "Medir dispersao: qual a variabilidade entre julgamentos sobre o mesmo caso?"
+  - "Comparar com expectativa: organizacoes tipicamente esperam 10% e encontram 40-55%"
+  - "Decompor noise: level noise (severidade media), pattern noise (respostas a casos especificos), occasion noise (dia-a-dia)"
+  - "Calcular MSE = Bias^2 + Noise^2 — qual componente domina?"
+  - "Propor intervencoes: calibracao de escala (level), decision hygiene (pattern), multiplas avaliacoes (occasion)"
+  - "Quantificar custo do noise: quanto a inconsistencia custa em dinheiro, tempo, injustica?"
+
+frameworks_aplicados:
+  - "MSE = Bias^2 + Noise^2"
+  - "Decision Hygiene"
+
+output_esperado: "Relatorio de noise audit com dispersao medida, decomposicao por fonte, e plano de reducao"
+
+anti_patterns:
+  - "Nao tente eliminar noise completamente — alguma variabilidade e diversidade"
+  - "Nao confunda noise com criatividade — noise e inconsistencia indesejada"
+  - "Nao proponha intervencoes sem medir primeiro"

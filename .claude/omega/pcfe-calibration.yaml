@@ -101,6 +101,50 @@ calibrations:
     anomaly: false
     enrichment_loops: 0
     timestamp: "2026-03-05T23:59:00Z"
+  - slug: "amanda-khayat"
+    category: "copywriting"
+    FE: 83.8
+    FE_breakdown:
+      VS: 79
+      DS: 30
+      CS: 100
+      PS: 100
+      QS: 90
+    F_real: 93.20
+    F_real_breakdown:
+      L: 92
+      B: 94
+      C: 93
+      K: 95
+      V: 91
+    delta: 9.40
+    accuracy: 90.60
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-06T03:00:00Z"
+    notes: "Brownfield upgrade. DS=30 por corpus limitado (17 anos, pouco output publico). Subestimacao significativa — DNA legacy rico compensou baixo DS."
+  - slug: "daniel-kahneman"
+    category: "business"
+    FE: 84.10
+    FE_breakdown:
+      VS: 94
+      DS: 75
+      CS: 81
+      PS: 85
+      QS: 85
+    F_real: 95.55
+    F_real_breakdown:
+      L: 94
+      B: 96
+      C: 97
+      K: 96
+      V: 95
+    delta: 11.45
+    accuracy: 88.55
+    anomaly: false
+    enrichment_loops: 1
+    timestamp: "2026-03-06T12:00:00Z"
+    notes: "Greenfield. FE inicial 73.55 subiu para 84.10 apos enriquecimento (4 fontes: Nobel autobiography, Edge lecture, memorial 30+ colaboradores, PhilArchive). Delta alto (11.45) — maior da serie. Material de entrevistas/transcripts muito mais rico que PCFE previu."
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -129,15 +173,16 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 4
-  avg_delta: 4.35              # average(4.75, 2.20, 2.05, 8.40)
-  avg_accuracy: 95.65          # average(95.25, 97.80, 97.95, 91.60)
+  total_clones: 6
+  avg_delta: 6.38              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45)
+  avg_accuracy: 93.63          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 4     # how many times FE < F_real
+  underestimation_count: 6     # how many times FE < F_real
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
-    business: 4.22             # average(2.20, 2.05, 8.40)
+    business: 6.03             # average(2.20, 2.05, 8.40, 11.45) — Kahneman puxou para cima
+    copywriting: 9.40          # primeiro clone, DS=30 puxou FE para baixo
   weight_adjustment_history: []
     # Records of weight changes if manual calibration is applied
     #

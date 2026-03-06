@@ -1,0 +1,63 @@
+# Framework: Condicoes para Intuicao Legitima
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Condicoes para Intuicao Legitima"
+slug: "condicoes-intuicao-legitima"
+categoria: "intuition-calibration"
+
+descricao: >
+  Intuicao e reconhecimento de padroes — nada mais, nada menos. Quando
+  um bombeiro "sente" que o chao vai ceder, ele esta reconhecendo padroes
+  de centenas de situacoes anteriores. Quando um stockbroker "sente" que
+  uma acao vai subir, ele esta confundindo confianca com competencia.
+  Kahneman e Gary Klein (adversarial collaboration) chegaram a um acordo:
+  intuicao e valida quando E SOMENTE quando 3 condicoes estao presentes.
+  Fora dessas condicoes, confianca subjetiva nao indica acuracia.
+
+steps:
+  - step: 1
+    nome: "Verificar Validade do Ambiente"
+    descricao: "O ambiente tem regularidades suficientes para aprender padroes? Xadrez: sim (regras fixas, padroes previsiveis). Mercado financeiro: nao (regularidades insuficientes, ruido domina). Medicina de emergencia: parcialmente (algumas condicoes tem padroes claros)."
+    criterio: "Ambiente classificado como alta, media, ou baixa validade."
+
+  - step: 2
+    nome: "Verificar Pratica Prolongada"
+    descricao: "A pessoa teve pratica suficiente com feedback? Nao e apenas anos de experiencia — e anos de experiencia COM feedback preciso sobre acertos e erros. 20 anos de experiencia sem feedback = 1 ano repetido 20 vezes."
+    criterio: "Pratica com feedback validada (nao apenas tempo de carreira)."
+
+  - step: 3
+    nome: "Verificar Feedback Imediato e Claro"
+    descricao: "O ambiente fornece feedback rapido e inequivoco? Bombeiros: feedback em minutos. Psiquiatras: feedback em anos (se houver). Quanto mais demorado e ambiguo o feedback, menos confiavel a intuicao."
+    criterio: "Latencia e clareza do feedback classificadas."
+
+  - step: 4
+    nome: "Decidir: Intuicao ou Algoritmo"
+    descricao: "3 condicoes presentes: confie na intuicao (mas verifique ocasionalmente). 1-2 condicoes: use intuicao como input mas combine com analise estruturada. 0 condicoes: use algoritmo. A confianca subjetiva do expert NAO e fator na decisao."
+    criterio: "Decisao sobre confiar ou nao em intuicao baseada nas 3 condicoes."
+
+quando_usar:
+  - "Quando a pergunta e 'devo confiar na minha intuicao?'"
+  - "Quando expert confiante defende posicao sem dados"
+  - "Quando ha debate sobre 'experiencia' vs 'dados' em organizacao"
+  - "Na contratacao: confiar no 'gut feeling' do entrevistador?"
+  - "Em medicina: confiar no diagnostico clinico vs teste padronizado?"
+
+exemplos_aplicacao:
+  - contexto: "Recrutador diz 'tenho bom feeling sobre esse candidato'"
+    aplicacao: "Ambiente de contratacao: baixa validade (sucesso depende de muitos fatores imprevisiveis). Feedback: lento (meses ate saber se contratacao foi boa). Pratica: sim, mas sem feedback preciso. Resultado: 0-1 condicao. Nao confie no gut feeling. Use entrevista estruturada."
+  - contexto: "Bombeiro sente que precisa evacuar"
+    aplicacao: "Ambiente: alta validade (padroes de incendio sao regulares). Pratica: extensiva com feedback direto. Feedback: imediato e claro. Resultado: 3 condicoes. Confie na intuicao."
+
+anti_patterns:
+  - "Dizer 'nunca confie em intuicao' — e valida em ambientes de alta validade"
+  - "Confundir confianca do expert com competencia — confianca e sinal de NADA"
+  - "Ignorar que ambientes intermediarios existem — a zona cinza e a mais dificil"
+  - "Aceitar 'anos de experiencia' como prova de intuicao valida — precisa de feedback"
+  - "Rejeitar intuicao quando as 3 condicoes estao presentes — seria desperdicar competencia real"
+
+frameworks_relacionados:
+  - "System 1 / System 2"
+  - "Heuristics & Biases"
+  - "Decision Hygiene"
+  - "Adversarial Collaboration"

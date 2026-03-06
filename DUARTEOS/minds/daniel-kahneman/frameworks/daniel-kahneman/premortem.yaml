@@ -1,0 +1,67 @@
+# Framework: Premortem
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Premortem"
+slug: "premortem"
+categoria: "risk-anticipation"
+
+descricao: >
+  Tecnica de antecipacao de falhas. Antes de iniciar um projeto ou decisao
+  importante, a equipe imagina que estamos daqui a 1 ano e o projeto
+  FRACASSOU COMPLETAMENTE. Cada membro escreve independentemente a historia
+  de por que fracassou. Isso libera pensamento critico que groupthink
+  normalmente suprime, porque dar "razoes para o fracasso" e socialmente
+  mais aceitavel que "criticar o plano do chefe". O premortem e um
+  antidoto para overconfidence e planning fallacy.
+
+steps:
+  - step: 1
+    nome: "Setup"
+    descricao: "Reuna a equipe. Diga: 'Vamos fazer um exercicio. Imagine que estamos daqui a 1 ano. Este projeto fracassou completamente. Foi um desastre total.'"
+    criterio: "Cenario de fracasso total aceito como premissa."
+
+  - step: 2
+    nome: "Escrita Individual"
+    descricao: "Cada pessoa escreve INDEPENDENTEMENTE (5-10 minutos) a historia de por que o projeto fracassou. Nao discutam antes. Independencia e essencial — previne anchoring e cascata."
+    criterio: "Historias escritas individualmente sem discussao previa."
+
+  - step: 3
+    nome: "Compartilhamento"
+    descricao: "Cada pessoa le sua historia. Sem debate neste momento — apenas coleta. Catalogue todas as razoes de fracasso. Agrupe por tema."
+    criterio: "Todas as historias compartilhadas e catalogadas."
+
+  - step: 4
+    nome: "Priorizacao"
+    descricao: "Quais cenarios de fracasso sao mais provaveis E mais destrutivos? Use votacao independente para priorizar. Foque nos top 3-5."
+    criterio: "Top 3-5 riscos priorizados por probabilidade x impacto."
+
+  - step: 5
+    nome: "Contingencias"
+    descricao: "Para cada cenario priorizado: (1) Como detectar sinais precoces? (2) O que podemos mudar no plano agora para prevenir? (3) Se acontecer, qual e o plano B?"
+    criterio: "Plano de contingencia para cada risco priorizado."
+
+quando_usar:
+  - "Antes de QUALQUER grande projeto, investimento, ou decisao irreversivel"
+  - "Quando o time esta confiante demais (overconfidence como red flag)"
+  - "Quando ninguem no grupo levantou objecoes (groupthink)"
+  - "Antes de lancamentos, contratacoes-chave, mudancas estrategicas"
+  - "Quando planning fallacy e provavel (estimativas otimistas de custo/prazo)"
+
+exemplos_aplicacao:
+  - contexto: "Startup lancando novo produto"
+    aplicacao: "Premortem revela: (1) 'Mercado nao queria o feature que achavamos essencial.' (2) 'Gastamos 6 meses a mais que planejado.' (3) 'Competitor lancou primeiro.' Contingencias criadas para cada cenario."
+  - contexto: "Empresa fazendo aquisicao"
+    aplicacao: "Premortem revela: (1) 'Culturas incompativeis destruiram retencao.' (2) 'Sinergias projetadas nao se materializaram.' (3) 'Due diligence perdeu passivo oculto.' Cada cenario vira checklist de verificacao."
+
+anti_patterns:
+  - "Transformar em exercicio de pessimismo ou queixa — objetivo e preparar, nao paralisar"
+  - "Fazer em grupo sem escrita individual primeiro — perde o beneficio da independencia"
+  - "Catalogar riscos sem criar contingencias — premortem sem acao e catarse inutil"
+  - "Usar como justificativa para nao agir — action bias e diferente de coragem informada"
+  - "Fazer apenas uma vez — repetir em marcos criticos do projeto"
+
+frameworks_relacionados:
+  - "Decision Hygiene"
+  - "Heuristics & Biases"
+  - "MSE = Bias^2 + Noise^2"

@@ -1,0 +1,62 @@
+# Framework: MSE = Bias^2 + Noise^2
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "MSE = Bias^2 + Noise^2 (Decomposicao do Erro)"
+slug: "mse-bias-noise"
+categoria: "error-diagnostics"
+
+descricao: >
+  O erro total em qualquer sistema decisorio (Mean Squared Error) e composto
+  por duas fontes independentes: bias ao quadrado (erro medio sistematico)
+  e noise ao quadrado (variabilidade indesejada entre julgamentos). Organizacoes
+  focam obsessivamente em bias (o erro que todos cometem na mesma direcao) mas
+  ignoram noise (o erro que cada pessoa comete de forma diferente). Noise e tao
+  destrutivo quanto bias, mas e invisivel sem medicao deliberada. Noise is like
+  a random lottery — some gain, some lose, without reason.
+
+steps:
+  - step: 1
+    nome: "Noise Audit"
+    descricao: "Antes de corrigir qualquer coisa, MEÇA. De o mesmo caso a multiplos avaliadores independentes. Calcule a dispersao. Insurance underwriters: esperavam 10% de variacao, encontraram 55%. Se nao medir, nao sabe."
+    criterio: "Variabilidade medida entre avaliadores no mesmo caso."
+
+  - step: 2
+    nome: "Decompor o Erro"
+    descricao: "Separe bias (todos erram na mesma direcao?) de noise (cada um erra de forma diferente?). Bias = media dos erros. Noise = desvio padrao dos erros. MSE = Bias^2 + Noise^2. Ambos contribuem igualmente para o erro total."
+    criterio: "Bias e noise quantificados separadamente."
+
+  - step: 3
+    nome: "Diagnosticar Fontes de Noise"
+    descricao: "Noise tem 3 fontes: (1) Level noise — avaliadores diferem em severidade media. (2) Pattern noise — avaliadores respondem diferentemente a casos especificos. (3) Occasion noise — mesmo avaliador responde diferente em dias diferentes."
+    criterio: "Fonte dominante de noise identificada."
+
+  - step: 4
+    nome: "Intervir por Fonte"
+    descricao: "Level noise: calibracao de escala. Pattern noise: decision hygiene, dimensoes estruturadas. Occasion noise: multiplas avaliacoes do mesmo avaliador, medias temporais. Todas: algoritmos simples como substitute ou complement."
+    criterio: "Intervencao desenhada para fonte especifica de noise."
+
+quando_usar:
+  - "Diagnostico inicial de qualquer sistema decisorio organizacional"
+  - "Quando resultados parecem inconsistentes mas ninguem sabe por que"
+  - "Antes de investir em debiasing — noise pode ser o problema maior"
+  - "Processos judiciais, medicos, de contratacao, de precificacao"
+  - "Quando 'a mesma decisao' gera resultados diferentes dependendo de quem decide"
+
+exemplos_aplicacao:
+  - contexto: "Sistema judicial"
+    aplicacao: "Juizes diferentes: sentencas variam 3-5x para caso identico. Isso e noise, nao bias. Justice system e uma noise factory. Intervencao: sentencing guidelines como decision hygiene."
+  - contexto: "Precificacao de seguros"
+    aplicacao: "Underwriters: 55% de variacao em avaliacao do mesmo risco. Noise audit revela o invisivel. Custo: milhoes em ineficiencia. Intervencao: algoritmo simples como primeiro filtro."
+
+anti_patterns:
+  - "Focar so em bias e ignorar noise — ambos sao igualmente destrutivos"
+  - "Tentar eliminar noise completamente — alguma variabilidade reflete diversidade"
+  - "Assumir que noise se cancela em media — nao se cancela para individuos afetados"
+  - "Reduzir noise sem medir primeiro — medicao e pre-requisito"
+  - "Tratar noise como aleatoriedade benigna — e injustica sistematica invisivel"
+
+frameworks_relacionados:
+  - "Decision Hygiene"
+  - "Heuristics & Biases"
+  - "Premortem"

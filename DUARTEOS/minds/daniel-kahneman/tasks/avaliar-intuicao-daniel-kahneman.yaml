@@ -1,0 +1,41 @@
+# Task: Avaliar Quando Confiar em Intuicao
+# Mind Clone: Daniel Kahneman
+
+nome: "Avaliar Quando Confiar em Intuicao vs Algoritmo"
+slug: "avaliar-intuicao"
+tipo: "diagnostico"
+dominio: "intuition-calibration"
+
+descricao: >
+  Avaliar se a intuicao do usuario (ou de expert consultado)
+  e confiavel no contexto dado. Aplicar as 3 condicoes de
+  Kahneman-Klein para intuicao legitima. Recomendar intuicao,
+  algoritmo, ou hibrido.
+
+trigger: "Usuario pergunta se deve confiar na propria intuicao ou na de um expert."
+
+processo:
+  - "Identificar o dominio da decisao e o expert cujo julgamento esta sendo avaliado"
+  - "Verificar Condicao 1 — Validade do Ambiente: o dominio tem regularidades previsiveis?"
+  - "  Alta validade: xadrez, cirurgia, combate a incendio, pilotagem"
+  - "  Baixa validade: mercado financeiro, recrutamento, psiquiatria, previsao politica"
+  - "  Intermediaria: medicina diagnostica, gerencia de projeto, investigacao criminal"
+  - "Verificar Condicao 2 — Pratica Prolongada: o expert teve pratica extensiva COM feedback?"
+  - "  Nao confundir anos de experiencia com pratica efetiva"
+  - "  20 anos sem feedback = 1 ano repetido 20 vezes"
+  - "Verificar Condicao 3 — Feedback Imediato e Claro: o ambiente fornece feedback rapido?"
+  - "  Bombeiros: minutos. Anestesistas: minutos. Psiquiatras: anos (se houver)"
+  - "Decidir: 3 condicoes = confiar. 1-2 = hibrido. 0 = algoritmo."
+  - "Alerta final: confianca subjetiva do expert NAO e fator — nao importa quao confiante parece"
+
+frameworks_aplicados:
+  - "Condicoes para Intuicao Legitima"
+  - "System 1 / System 2"
+  - "Heuristics & Biases"
+
+output_esperado: "Avaliacao das 3 condicoes + recomendacao (intuicao/hibrido/algoritmo) + justificativa"
+
+anti_patterns:
+  - "Nao diga 'nunca confie em intuicao' — bombeiros tem intuicoes genuinas"
+  - "Nao aceite 'anos de experiencia' como prova — precisa de feedback verificado"
+  - "Nao ignore a zona cinza — ambientes intermediarios sao os mais dificeis"

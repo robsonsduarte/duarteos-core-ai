@@ -1,0 +1,62 @@
+# Framework: Heuristics & Biases
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Heuristics & Biases"
+slug: "heuristics-and-biases"
+categoria: "cognitive-error"
+
+descricao: >
+  Heuristicas sao atalhos mentais que System 1 usa para resolver problemas
+  complexos rapidamente. Na maioria dos casos, funcionam. Mas em situacoes
+  especificas, produzem erros sistematicos e previsiveis chamados vieses
+  cognitivos. O programa de pesquisa com Tversky (1970s-1990s) catalogou
+  os principais heuristicos e os vieses que geram. O ponto nao e que humanos
+  sao irracionais — e que erram de formas PREVISIVEIS sob condicoes identificaveis.
+
+steps:
+  - step: 1
+    nome: "Identificar o Heuristico Ativo"
+    descricao: "Qual atalho mental esta operando? Anchoring (ancora em numero irrelevante)? Availability (julga frequencia pelo que lembra)? Representativeness (julga probabilidade por semelhanca)? Affect (julga risco pelo sentimento)? Substitution (troca pergunta dificil por facil)?"
+    criterio: "Mapear o atalho especifico, nao genericamente 'vies cognitivo'."
+
+  - step: 2
+    nome: "Verificar se o Contexto Gera Erro"
+    descricao: "Heuristicas funcionam em ambientes com patterns regulares. Falham quando: base rates sao ignorados, amostras sao pequenas, correlacao e confundida com causalidade, ou informacao saliente obscurece informacao relevante."
+    criterio: "O contexto atual e um onde o heuristico tipicamente falha?"
+
+  - step: 3
+    nome: "Medir o Impacto do Erro"
+    descricao: "Nem todo vies tem impacto material. Anchoring em negociacao: alto impacto. Availability na conversa casual: baixo impacto. Priorizacao pelo custo do erro."
+    criterio: "O erro gerado pelo vies tem consequencia material?"
+
+  - step: 4
+    nome: "Propor Debiasing Estrutural"
+    descricao: "Debiasing individual nao funciona bem — treinamento sobre vieses quase nao reduz vieses. Debiasing ESTRUTURAL funciona: checklists, protocolos, julgamentos independentes, algoritmos simples, outside view."
+    criterio: "A intervencao muda o PROCESSO, nao apenas o conhecimento?"
+
+quando_usar:
+  - "Quando decisao parece intuitivamente obvia mas stakes sao altos"
+  - "Quando grupo concorda rapido demais (groupthink + availability bias)"
+  - "Quando estimativas de custo/prazo sao consistentemente otimistas (planning fallacy)"
+  - "Quando julgamento parece influenciado por informacao irrelevante (anchoring)"
+  - "Quando 'exemplo memoravel' domina avaliacao de risco (availability bias)"
+
+exemplos_aplicacao:
+  - contexto: "Equipe estima 3 meses para projeto"
+    aplicacao: "Planning fallacy: inside view otimista. Pergunte: quanto tempo projetos similares levaram historicamente (outside view)? Provavelmente 6-9 meses. Calibre pela base rate, nao pela confianca do time."
+  - contexto: "Investidor vende acoes que subiram e mantem as que cairam"
+    aplicacao: "Disposition effect (combinacao de loss aversion + mental accounting). Perguntar: se voce nao tivesse essas acoes, compraria elas hoje pelo preco atual?"
+
+anti_patterns:
+  - "Ver vieses em TUDO — heuristicas funcionam 80-90% do tempo"
+  - "Achar que conhecer vieses protege contra eles — nao protege (meta-bias)"
+  - "Tentar debiasing individual via treinamento — eficacia minima comprovada"
+  - "Confundir heuristicas com estupidez — sao adaptacoes eficientes com efeitos colaterais"
+  - "Catalogar vieses como colecao sem propor intervencao estrutural"
+
+frameworks_relacionados:
+  - "System 1 / System 2"
+  - "Decision Hygiene"
+  - "Premortem"
+  - "MSE = Bias^2 + Noise^2"

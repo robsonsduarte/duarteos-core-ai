@@ -1,0 +1,62 @@
+# Framework: Focusing Illusion
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Focusing Illusion"
+slug: "focusing-illusion"
+categoria: "judgment-calibration"
+
+descricao: >
+  "Nothing in life is as important as you think it is while you're thinking
+  about it." Quando atencao e direcionada a qualquer fator, esse fator parece
+  mais importante do que realmente e. Paraplegicos nao sao tao infelizes
+  quanto pessoas imaginam, porque pessoas imaginando focalizam na deficiencia
+  e ignoram tudo o mais. Moradores da California nao sao mais felizes que
+  moradores do Midwest, porque quem avalia focaliza no clima e ignora
+  commute, custo de vida, e relacoes sociais. A focusing illusion distorce
+  previsoes, avaliacoes, e decisoes de vida.
+
+steps:
+  - step: 1
+    nome: "Identificar o Foco"
+    descricao: "Que fator esta recebendo atencao desproporcional? Em decisoes de carreira, pode ser salario. Em decisoes de moradia, pode ser localizacao. Em avaliacoes de produto, pode ser o feature mais recente."
+    criterio: "O fator dominante na avaliacao esta identificado."
+
+  - step: 2
+    nome: "Listar Fatores Ignorados"
+    descricao: "Que outros fatores sao relevantes mas estao fora do foco? Forcce-se a listar 5+ fatores adicionais. Se o foco e 'salario', os ignorados podem ser: autonomia, aprendizado, commute, relacoes, proposito."
+    criterio: "5+ fatores relevantes listados alem do foco."
+
+  - step: 3
+    nome: "Recalibrar Pesos"
+    descricao: "Atribua pesos aos fatores incluindo o que estava no foco. O fator focal provavelmente recebera peso desproporcional — reduza conscientemente. Pergunte: daqui a 1 ano, quanto tempo do meu dia sera afetado por esse fator?"
+    criterio: "Pesos redistribuidos de forma mais equilibrada."
+
+  - step: 4
+    nome: "Testar com Outside View"
+    descricao: "Pergunte a pessoas que ja fizeram essa escolha. 'Voce se mudou para California. Quanto o clima afeta sua felicidade diaria?' Respostas reais calibram a ilusao."
+    criterio: "Perspectiva de quem ja experimentou consultada."
+
+quando_usar:
+  - "Decisoes de vida (onde morar, que carreira seguir, com quem casar)"
+  - "Avaliacoes de satisfacao que parecem dominadas por um unico fator"
+  - "Previsoes de como mudancas afetarao felicidade futura"
+  - "Quando alguem esta obcecado com um aspecto de um problema"
+  - "Marketing e posicionamento — o que o cliente focaliza vs. o que importa"
+
+exemplos_aplicacao:
+  - contexto: "Profissional considerando mudanca de emprego focado em salario"
+    aplicacao: "Focusing illusion: salario parece decisivo agora porque esta pensando nisso. Daqui a 6 meses, autonomia diaria, relacao com gestor, e commute afetarao mais o dia-a-dia. Listar todos os fatores e pesar."
+  - contexto: "Empresa priorizando feature mais pedida"
+    aplicacao: "Feature mais pedida pode ser focusing illusion do cliente: ele focaliza no que falta AGORA. Outside view: qual feature historicamente mais impactou retencao? Pode ser diferente."
+
+anti_patterns:
+  - "Usar para invalidar preocupacoes reais — alguns fatores SAO importantes"
+  - "Achar que awareness resolve — saber sobre focusing illusion nao elimina o efeito"
+  - "Aplicar simetricamente — nao e que nada importa, e que importa menos do que parece ENQUANTO pensa"
+  - "Ignorar que focusing illusion tambem funciona para subestimar fatores fora do foco"
+
+frameworks_relacionados:
+  - "Experiencing Self / Remembering Self"
+  - "System 1 / System 2"
+  - "Heuristics & Biases"

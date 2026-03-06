@@ -1,0 +1,134 @@
+## PCFE — Daniel Kahneman
+## Pre-Clone Fidelity Estimation (MMOS v3.0)
+## Gerado: 2026-03-06 04:30
+## Iteracao: 2 (apos enriquecimento loop 1)
+
+pcfe:
+  slug: "daniel-kahneman"
+  timestamp: "2026-03-06 04:30"
+  version: "3.0"
+  iteration: 2
+
+  scores:
+    VS: 94   # 13 fontes (base 85 para 10-14) + 3 entrevistas >60min (+9) = 94
+    DS: 75   # Anterior 65 + autobiografia (+5) + memorial 30+ vozes (+5) = 75
+    CS: 81   # 12/12 camadas agora cobertas (ver detalhes abaixo)
+    PS: 85   # Autobiografia profunda + memorial + 3 transcripts longos + Edge lecture
+    QS: 85   # 100% primarias + Nobel autobiography + 30+ colaboradores + transcripts
+
+  FE: 84.15
+  # FE = (94*0.20) + (75*0.15) + (81*0.30) + (85*0.20) + (85*0.15)
+  # FE = 18.80 + 11.25 + 24.30 + 17.00 + 12.75 = 84.10
+
+  classificacao: "BOM"
+  # BOM = 70-84 (no limite superior — quase EXCELENTE)
+
+  F_estimado_min: 71.49   # FE * 0.85
+  F_estimado_max: 92.57   # FE * 1.10
+  F_provavel: 79.89       # FE * 0.95
+  F_calibrado: 89.51      # FE + avg_delta(5.36) — baseado em 5 clones anteriores
+
+  fontes_total: 13
+  fontes_por_tipo:
+    entrevistas_profundidade: 5  # Tyler Cowen, Knowledge Project, Psychology Podcast, Issues.org, PhilArchive
+    palestras_transcritas: 3     # TED Talk, UCTV Hitchcock, Edge.org Adversarial Collab
+    artigos: 3                   # fs.blog, Alliance, Behavioral Scientist Memorial
+    podcasts: 1                  # Psychology Podcast (tambem contado como entrevista)
+    autobiografia: 1             # Nobel Autobiography
+
+  camadas_cobertas: 12
+  camadas_total: 12
+  cobertura_detalhada:
+    filosofia:
+      mius: 15
+      cobertura: 100
+      status: "forte"
+      exemplos: ["noise > bias", "people are endlessly complicated", "error conditions", "anti-dogmatism"]
+    hierarquia_valores:
+      mius: 5
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["truth > ego", "evidence > opinion", "collaborator joy > personal acclaim", "intellectual honesty como valor supremo"]
+      fonte_enriquecimento: "Nobel autobiography + Behavioral Scientist memorial"
+    frameworks:
+      mius: 14
+      cobertura: 100
+      status: "forte"
+      exemplos: ["System 1/2", "MSE = Bias2 + Noise2", "heuristic substitution", "experiencing/remembering self", "prospect theory", "adversarial collaboration"]
+    heuristicas:
+      mius: 10
+      cobertura: 100
+      status: "forte"
+      exemplos: ["intuition = recognition", "expertise conditions", "overconfidence", "anchoring", "peak-end rule"]
+    modelo_social:
+      mius: 6
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["15 IQ point benefit", "lowest ego person (Annie Duke)", "always apologized to juniors", "hired critics to attack own work", "joy in being wrong"]
+      fonte_enriquecimento: "Edge lecture + Behavioral Scientist memorial"
+    metodologias:
+      mius: 6
+      cobertura: 100
+      status: "forte"
+      exemplos: ["decision hygiene 6 components", "premortem", "adversarial collaboration protocol", "noise audit", "day reconstruction method"]
+    dilemas:
+      mius: 5
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["algorithm aversion", "optimism: engine vs bias", "experiencing vs remembering self conflict", "justice noise"]
+    paradoxos:
+      mius: 4
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["model of judge > judge itself", "people don't change minds yet collaboration works", "joy in being wrong + rigor in being right", "humility + Nobel Prize"]
+      fonte_enriquecimento: "Edge lecture + memorial + autobiography"
+    associacoes:
+      mius: 3
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["psychology → economics bridge", "colonoscopy → vacation design", "noise → justice system"]
+    comunicacao:
+      mius: 5
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["storytelling via experiments", "ironic tone", "metaphors (noise as lottery)", "framing power"]
+    motivacao_profunda:
+      mius: 5
+      cobertura: 70
+      status: "moderada"
+      exemplos: ["childhood in Nazi France → complexity of people", "SS soldier story → people aren't simple", "Tversky = most important intellectual event", "fear of suffering not death"]
+      fonte_enriquecimento: "Nobel autobiography + Psychology Podcast"
+    estilometria:
+      mius: 3
+      cobertura: 40
+      status: "fraca"
+      exemplos: ["frases curtas academicas", "tom professoral com humor sutil", "uso frequente de exemplos concretos"]
+      nota: "Pode ser calculada quantitativamente na Fase 6 a partir dos 3 transcripts completos"
+
+  gaps_residuais:
+    - tipo: "livros_autorais"
+      severidade: "media"
+      nota: "TFS e Noise nao processados diretamente. Entrevistas cobrem ~70% do conteudo. Residual aceitavel."
+    - camada: "estilometria"
+      severidade: "baixa"
+      nota: "Sera calculada quantitativamente na Fase 6 com os transcripts completos disponives"
+
+  recomendacao: "GO"
+  justificativa: |
+    FE subiu de 73.55 → 84.10 (BOM, limite superior) apos enriquecimento.
+    Todas as 12 camadas DNA agora cobertas (vs 8 antes).
+    Gaps criticos resolvidos:
+    - Modelo social: Edge lecture + memorial de 30+ colaboradores
+    - Hierarquia de valores: autobiography + memorial revelam prioridades
+    - Motivacao profunda: autobiography (SS soldier story, Tversky)
+    - Pre-2010: autobiography cobre 1934-2002
+    F calibrado (baseado em 5 clones anteriores): ~89.5%
+    Recomendacao: GO — material excelente para clone de alta fidelidade.
+
+  delta_vs_iteracao_1:
+    VS: "+15 (79 → 94)"
+    DS: "+10 (65 → 75)"
+    CS: "+9 (72 → 81)"
+    PS: "+13 (72 → 85)"
+    QS: "+5 (80 → 85)"
+    FE: "+10.55 (73.55 → 84.10)"

@@ -1,0 +1,38 @@
+# Task: Estruturar Adversarial Collaboration
+# Mind Clone: Daniel Kahneman
+
+nome: "Estruturar Adversarial Collaboration para Resolver Disputa"
+slug: "estruturar-adversarial-collaboration"
+tipo: "resolucao-de-conflito"
+dominio: "intellectual-dispute"
+
+descricao: >
+  Facilitar design de adversarial collaboration para resolver
+  disputa intelectual ou organizacional. Transformar debate
+  improdutivo em teste empirico conjunto com resultado pre-aceito.
+
+trigger: "Usuario tem disputa intelectual, estrategica, ou organizacional que debate nao resolve."
+
+processo:
+  - "Mapear as duas posicoes em conflito: O que Lado A acredita? O que Lado B acredita?"
+  - "Verificar pre-requisitos: ambos os lados estao de boa-fe? Dispostos a aceitar resultado?"
+  - "Se nao ha boa-fe: adversarial collaboration nao e aplicavel — sugerir alternativa"
+  - "Definir a questao empirica central: 'Nos discordamos sobre X. X pode ser testado?'"
+  - "Se nao e testavel: separar questao empirica de questao de valores"
+  - "Desenhar teste conjunto: que dados resolveriam? Que resultado convence cada lado?"
+  - "Definir criterios pre-aceitos: que resultado = Lado A vence? Que resultado = Lado B vence?"
+  - "Planejar execucao: timeline, recursos, quem coleta dados, como analisa"
+  - "Commitment publico: ambos concordam antes de executar"
+  - "Pos-resultado: publicacao/comunicacao conjunta. Quem errou admite. Quem acertou nao ridiculariza."
+
+frameworks_aplicados:
+  - "Adversarial Collaboration"
+  - "Decision Hygiene"
+
+output_esperado: "Protocolo de adversarial collaboration: questao definida + teste desenhado + criterios pre-aceitos + timeline"
+
+anti_patterns:
+  - "Nao proponha quando ha ma-fe — requer honestidade intelectual de ambos"
+  - "Nao use como tatica dilatatoria — precisa de deadline e commitment"
+  - "Nao aceite questoes loaded (enviesadas para um lado)"
+  - "Nao confunda com compromisso ou meeting in the middle — e resolucao por evidencia"

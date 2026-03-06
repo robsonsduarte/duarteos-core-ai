@@ -2,8 +2,8 @@
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
 # Total: 64 clones em 10 categorias
 version: 2
-last_updated: "2026-03-05"
-total_clones: 64
+last_updated: "2026-03-06"
+total_clones: 65
 
 categories:
   AI:
@@ -166,6 +166,18 @@ categories:
       fidelidade: 95.80
       last_updated: "2026-03-05"
       pipeline: "MMOS v3"
+    - slug: "daniel-kahneman"
+      name: "Daniel Kahneman"
+      domain: "Psicologia do Julgamento e Tomada de Decisao, Economia Comportamental, Heuristicas e Vieses Cognitivos"
+      clone_file: ".claude/commands/DUARTEOS/Business/daniel-kahneman.md"
+      dna_file: ".claude/synapse/minds/daniel-kahneman.yaml"
+      versao_dna: 3
+      total_fontes: 13
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 95.55
+      last_updated: "2026-03-06"
+      pipeline: "MMOS v3"
 
   Content:
     - slug: "camila-porto"
@@ -219,12 +231,13 @@ categories:
       domain: "Copywriting de Resposta Direta, Anuncios e Criativos de Alta Conversao"
       clone_file: ".claude/commands/DUARTEOS/Copywriting/amanda-khayat.md"
       dna_file: ".claude/synapse/minds/amanda-khayat.yaml"
-      versao_dna: 2
-      total_fontes: 4
+      versao_dna: 3
+      total_fontes: 9
       confianca: "alta"
       has_paradoxos: true
-      fidelidade: 94.0
-      last_updated: "2026-03-03"
+      fidelidade: 93.20
+      last_updated: "2026-03-06"
+      pipeline: "MMOS v3"
     - slug: "claude-hopkins"
       name: "Claude Hopkins"
       domain: "Scientific Advertising e Copywriting de Resposta Direta"
@@ -671,12 +684,12 @@ categories:
       domain: "Design Systems & Atomic Design"
       clone_file: ".claude/commands/DUARTEOS/UX-Design/brad-frost.md"
       dna_file: ".claude/synapse/minds/brad-frost.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
+      versao_dna: 3
+      total_fontes: 6
+      confianca: "muito alta"
+      has_paradoxos: true
+      fidelidade: 96.09
+      last_updated: "2026-03-06"
     - slug: "don-norman"
       name: "Don Norman"
       domain: "Human-Centered Design & Psicologia Cognitiva"

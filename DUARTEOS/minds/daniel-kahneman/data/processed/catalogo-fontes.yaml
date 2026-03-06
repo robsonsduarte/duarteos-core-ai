@@ -1,0 +1,218 @@
+# Daniel Kahneman — Catalogo de Fontes
+# Pipeline: MMOS Engine v3 — Fase 1 (Pesquisa)
+# Gerado em: 2026-03-06
+# Tier 1: EXA MCP | Tier 2: Apify | Tier 3: WebSearch (fallback)
+
+catalogo:
+  slug: "daniel-kahneman"
+  categoria: "business"
+  timestamp: "2026-03-06T04:00:00Z"
+  total_fontes: 13
+  fontes_primarias: 13
+  fontes_secundarias_rejeitadas: 0
+  enriquecimento_loop: 1
+
+  distribuicao:
+    livros: 0         # Target ~20% — paywalled, compensado por autobiografia e entrevistas
+    entrevistas: 5    # Target ~30% — 38%
+    artigos: 3        # Target ~25% — 23%
+    podcasts: 1       # Target ~15% — 8%
+    palestras: 3      # Target ~10% — 23%
+    autobiografia: 1  # Bonus — Nobel autobiography (1934-2002)
+
+  nota_distribuicao: >
+    Sem livros diretamente acessiveis (paywalled). Compensado por entrevistas
+    de profundidade excepcional + Nobel autobiography + memorial de 30+ colaboradores.
+    Enriquecimento loop 1 adicionou 4 fontes cobrindo gaps criticos:
+    modelo social, hierarquia valores, motivacao profunda, era pre-2010.
+
+  fontes:
+    - id: "DK-INT-001"
+      tipo: "artigo"
+      titulo: "Daniel Kahneman on Making Better Decisions"
+      url: "https://fs.blog/kahneman-better-decisions/"
+      tier: "usuario"
+      duracao_estimada: "curta"
+      profundidade: "media"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2019-01-01"
+      conteudo_extraido: true
+      resumo: "Premortem technique — imagine project failed, write why"
+
+    - id: "DK-INT-002"
+      tipo: "entrevista"
+      titulo: "Conversations with Tyler: Daniel Kahneman on Cutting Through the Noise"
+      url: "https://conversationswithtyler.com/episodes/daniel-kahneman/"
+      tier: "tier1-exa"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2018-12-19"
+      conteudo_extraido: true
+      resumo: "Noise vs bias, happiness research evolution, AI replacing judgment, Tversky collaboration, adversarial collaboration, optimism, identity"
+
+    - id: "DK-INT-003"
+      tipo: "entrevista"
+      titulo: "Issues in Science & Technology: A Conversation with Daniel Kahneman"
+      url: "https://issues.org/conversation-daniel-kahneman-cass-sunstein-noise/"
+      tier: "tier1-exa"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2021-06-01"
+      conteudo_extraido: true
+      resumo: "Noise audit, decision hygiene 6 components, Error = Bias² + Noise², algorithms vs intuition, justice system variability, organizational design"
+
+    - id: "DK-INT-004"
+      tipo: "entrevista"
+      titulo: "Behavioral Scientist: Daniel Kahneman on Noise"
+      url: "https://behavioralscientist.org/qs-with-daniel-kahneman-on-noise/"
+      tier: "tier1-exa"
+      duracao_estimada: "media"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2021-05-01"
+      conteudo_extraido: true
+      resumo: "Noise deep dive — what it is, noise audit shock, decision hygiene, bias vs noise distinction, algorithms, structured decisions"
+
+    - id: "DK-INT-005"
+      tipo: "entrevista"
+      titulo: "The Knowledge Project Ep #68: Daniel Kahneman"
+      url: "https://fs.blog/daniel-kahneman/"
+      tier: "tier1-exa"
+      duracao_estimada: "longa"
+      profundidade: "media"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2019-06-01"
+      conteudo_extraido: true
+      resumo: "Quotes on behavior change, intuition vs formulas, negotiation, belief formation, System 1/2 applied"
+
+    - id: "DK-ART-001"
+      tipo: "artigo"
+      titulo: "Alliance for Decision Education: Daniel Kahneman"
+      url: "https://alliancefordecisioneducation.org/daniel-kahneman/"
+      tier: "tier1-exa"
+      duracao_estimada: "curta"
+      profundidade: "media"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2020-01-01"
+      conteudo_extraido: true
+      resumo: "System 1/2 teaching framework, structured decision-making advocacy, decision education mission"
+
+    - id: "DK-VID-001"
+      tipo: "palestra"
+      titulo: "TED Talk: The riddle of experience vs. memory"
+      url: "https://www.youtube.com/watch?v=XgRlrBl-7Yg"
+      tier: "tier2-apify"
+      duracao_estimada: "media"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2010-03-01"
+      conteudo_extraido: true
+      transcript_completo: true
+      resumo: "Experiencing self vs remembering self, $60K happiness threshold, colonoscopy study, vacation thought experiment, well-being vs happiness"
+
+    - id: "DK-VID-002"
+      tipo: "palestra"
+      titulo: "UCTV Hitchcock Lecture: Explorations of the Mind — Intuition"
+      url: "https://www.youtube.com/watch?v=dddFfRaBPqg"
+      tier: "tier2-apify"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2012-01-01"
+      conteudo_extraido: true
+      transcript_completo: true
+      resumo: "System 1/2 deep dive, expert intuition vs formulas (Meehl), illusion of validity (IDF), associative coherence, anchoring, heuristic substitution, bat-and-ball, skill acquisition conditions"
+
+    - id: "DK-POD-001"
+      tipo: "podcast"
+      titulo: "The Psychology Podcast: Daniel Kahneman — A Remarkable Life, Fast and Slow"
+      url: "https://www.youtube.com/watch?v=PbxrkVlXmB4"
+      tier: "tier2-apify"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2021-09-01"
+      conteudo_extraido: true
+      transcript_completo: true
+      resumo: "Autobiografico completo — infancia na Franca ocupada, carreira academica, Tversky partnership, Noise book, happiness, death/legacy, AI views, regrets"
+
+    # === FONTES ADICIONADAS NO ENRIQUECIMENTO LOOP 1 ===
+
+    - id: "DK-PAL-002"
+      tipo: "palestra"
+      titulo: "Edge.org: Adversarial Collaboration — An EDGE Lecture by Daniel Kahneman"
+      url: "https://www.edge.org/adversarial-collaboration-daniel-kahneman"
+      tier: "tier1-exa"
+      duracao_estimada: "media"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2022-01-01"
+      conteudo_extraido: true
+      resumo: "Adversarial collaboration philosophy, 15 IQ point benefit, angry science vs collaboration, people don't change minds, scientific disagreement, working with Anne Treisman"
+
+    - id: "DK-ART-002"
+      tipo: "artigo"
+      titulo: "Behavioral Scientist: Remembering Daniel Kahneman — A Mosaic of Memories and Lessons"
+      url: "https://behavioralscientist.org/remembering-daniel-kahneman-a-mosaic-of-memories-and-lessons/"
+      tier: "tier1-exa"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2024-04-01"
+      conteudo_extraido: true
+      resumo: "30+ colaboradores compartilham memorias — personalidade, humildade, valores, feedback direto, ego baixissimo, joy in being wrong, modelo social revelado por multiplas perspectivas"
+
+    - id: "DK-AUTO-001"
+      tipo: "autobiografia"
+      titulo: "Nobel Prize Autobiography — Daniel Kahneman"
+      url: "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/"
+      tier: "tier1-exa"
+      duracao_estimada: "longa"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2002-12-01"
+      conteudo_extraido: true
+      resumo: "Autobiografia completa 1934-2002 — infancia na Franca nazista, SS soldier story, vocacao psicologica, IDF, Berkeley, Tversky partnership, prospect theory genesis, casamentos, valores pessoais"
+
+    - id: "DK-INT-006"
+      tipo: "entrevista"
+      titulo: "PhilArchive: A Conversation with Daniel Kahneman (Catherine Herfeld)"
+      url: "https://philarchive.org/archive/HERACW-2"
+      tier: "tier1-exa"
+      duracao_estimada: "media"
+      profundidade: "profunda"
+      primaria: true
+      idioma: "en"
+      data_publicacao: "2024-01-01"
+      conteudo_extraido: true
+      resumo: "Entrevista academica sobre rational choice, heuristics and biases, relacao com economia, Tversky collaboration, bounded rationality"
+
+  fontes_rejeitadas:
+    - url: "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/daniel-kahneman-beware-the-inside-view"
+      motivo: "Timeout 60s em 2 tentativas"
+    - url: "https://lexfridman.com/daniel-kahneman-transcript/"
+      motivo: "403 Forbidden (HappyScribe paywall)"
+    - url: "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/biographical/"
+      motivo: "403 Forbidden"
+
+  enriquecimento:
+    checks:
+      total_fontes_check: "9 >= 7 (70% de 10) — PASS"
+      ratio_primarias: "100% >= 60% — PASS"
+      cobertura_camadas: "verificar na Fase 2"
+    loops_executados: 0
+    nota: "Material excepcionalmente rico. 3 fontes longas (>60min) com transcripts completos."

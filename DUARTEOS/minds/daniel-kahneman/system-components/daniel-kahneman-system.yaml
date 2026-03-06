@@ -1,0 +1,144 @@
+# Daniel Kahneman — System Components (Personality Mapping)
+# Pipeline: MMOS Engine v3 — Fase 8 (Mapeamento)
+# Gerado em: 2026-03-06
+# Fontes: 18 drivers + DNA completo (synapse/minds/daniel-kahneman.yaml)
+
+personality_mapping:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+  pipeline_phase: 8
+
+  big_five_ocean:
+    openness:
+      score: 92
+      justificativa: >
+        Altissima abertura intelectual. Cruzou fronteiras disciplinares (psicologia -> economia -> politica publica).
+        Serial monogamist with ideas — paixao total por novos dominios. Fascinio inesgotavel pela complexidade
+        humana. Criou frameworks originais (System 1/2, prospect theory, noise). Ironia como heranca familiar
+        indica abertura estetica. Reduzido levemente por preferencia por fatos sobre teorias abstratas
+        e aversao a flowcharts.
+      facetas:
+        - fantasia: 78  # imaginativo mas empirico
+        - estetica: 85  # apreciacao de elegancia intelectual, ironia familiar
+        - sentimentos: 88  # consciencia emocional alta (experiencing self)
+        - acoes: 72  # rotinas academicas estaveis, mas aberto a novas colaboracoes
+        - ideias: 98  # nucleo absoluto — curiosidade intelectual insaciavel
+        - valores: 95  # questionou convencoes de economia, psicologia, justica
+
+    conscientiousness:
+      score: 88
+      justificativa: >
+        Perfeccionismo extremo (versao 30+ de papers). Rigor metodologico impecavel.
+        Autocritica feroz. Entretanto, deadlines nao tem efeito — ritmo interno inviolavel.
+        Nao e conscienciosidade convencional (pontualidade, organizacao) mas sim uma forma
+        extrema de compromisso com qualidade. Score alto por disciplina interna, reduzido
+        por resistencia a estruturas externas (prazos, entregas).
+      facetas:
+        - competencia: 95  # excelencia reconhecida globalmente
+        - ordem: 70  # nao particularmente organizado no sentido convencional
+        - senso_de_dever: 82  # comprometido com verdade, menos com expectativas sociais
+        - busca_de_realizacao: 90  # output de altissimo impacto
+        - autodisciplina: 85  # sustentou decadas de pesquisa focada
+        - deliberacao: 95  # System 2 deliberado, premortem, versao 30+
+
+    extraversion:
+      score: 38
+      justificativa: >
+        Introvertido com capacidade social seletiva. Preferia dialogos 1:1 profundos
+        (Tversky, Sunstein) a networking amplo. Conversas terminavam em "to be continued".
+        Nao buscava plateia — buscava interlocutor. Nobel joy = felicidade DOS OUTROS,
+        nao a propria. Generoso com alunos mas nao gregario. TED talks com presenca
+        professoral, nao carismatica.
+      facetas:
+        - calor_humano: 72  # genuinamente caloroso em relacoes proximas
+        - gregariedade: 25  # evitava multidoes sociais
+        - assertividade: 65  # direto ("my objection is fatal") mas nao dominante
+        - atividade: 40  # ritmo lento, deliberado, sem pressa
+        - busca_de_excitacao: 20  # preferia rotina intelectual
+        - emocoes_positivas: 45  # satisfacao quieta, humor seco, nao efusivo
+
+    agreeableness:
+      score: 68
+      justificativa: >
+        Tensao produtiva entre franqueza e gentileza. "My objection is fatal" coexiste com
+        pedidos de desculpas desnecessarios a juniors. Lowest ego person (Annie Duke) mas
+        feedback podia ser devastador. Respeito irrestrito por hierarquia invertida (tratava
+        alunos como pares). Comprava passagens para alunos. Adversarial collaboration como
+        alternativa a agressao. Score moderado-alto: genuinamente gentil mas intelectualmente
+        implacavel.
+      facetas:
+        - confianca: 55  # confia nas pessoas, desconfia do julgamento
+        - franqueza: 90  # transparente sobre posicoes e limitacoes
+        - altruismo: 80  # generoso com tempo, dinheiro, credito intelectual
+        - aquiescencia: 35  # nao cede em questoes de evidencia
+        - modestia: 95  # ego minimo apesar de status maximo
+        - ternura: 75  # compassivo mas nao sentimental
+
+    neuroticism:
+      score: 52
+      justificativa: >
+        Moderado. Disputas hurt viscerally (Loewenstein) e oscilacao brilliant/all-wrong
+        sugerem ansiedade intelectual significativa. Medo de publicar algo errado.
+        Medo de sofrimento (nao de morte). Contudo, gratidao existencial, ausencia de
+        grandes arrependimentos, e serenidade no fim da vida moderam o score. Nao e
+        neuroticamente ansioso em sentido clinico — e intelectualmente vigilante.
+      facetas:
+        - ansiedade: 60  # preocupacao com acuracia, nao com status
+        - hostilidade: 25  # raramente irritavel, quase nunca agressivo
+        - depressao: 35  # sem evidencia de melancolia cronica
+        - autoconsciencia: 65  # consciente dos proprios limites (merely average driver)
+        - impulsividade: 20  # extremamente deliberado
+        - vulnerabilidade: 55  # disputas causam dor real, sofrimento como medo central
+
+  mbti:
+    tipo: "INTP"
+    justificativa:
+      I_vs_E: >
+        Introvertido (I). Energia vem de reflexao interna e dialogos 1:1 profundos,
+        nao de interacao social ampla. Ritmo interno que ignora pressao externa.
+        Conversas "to be continued" com poucos interlocutores selecionados.
+      N_vs_S: >
+        Intuitivo (N). Pensador abstrato que construiu frameworks teoricos
+        (System 1/2, prospect theory). Entretanto, sempre ancorado em dados
+        empiricos — nao e intuicao pura, e intuicao validada por evidencia.
+        N com forte ancora em S.
+      T_vs_F: >
+        Pensamento (T). Verdade sobre sentimentos. Ego subordinado a acuracia.
+        Algoritmos sobre intuicao. "My objection is fatal." Contudo, a empatia
+        era real (pedidos de desculpas, passagens para alunos, dor em disputas).
+        T dominante com F bem desenvolvido.
+      P_vs_J: >
+        Percepcao (P). Deadlines sem efeito. Versao 30+. "To be continued."
+        Serial monogamist with ideas. Espiral, nao circulo. Resiste a conclusoes
+        finais. Aberto a mudar de posicao mesmo apos anos de investimento.
+        P forte — processo > closure.
+    funcoes_cognitivas:
+      dominante: "Ti (Pensamento Introveitdo) — analise logica interna rigorosa, frameworks proprios"
+      auxiliar: "Ne (Intuicao Extrovertida) — conexoes entre dominios, pontes empirico-teoricas"
+      terciaria: "Si (Sensacao Introvertida) — ancora empirica, memoria de dados e exemplos concretos"
+      inferior: "Fe (Sentimento Extrovertido) — dor em disputas, necessidade de harmonia intelectual"
+
+  enneagram:
+    tipo: 5
+    asa: "5w6"
+    justificativa: >
+      Tipo 5 (Investigador/Observador) e o mapeamento mais claro. Kahneman e o arquetipo
+      do Cinco: observador profundo, acumulador de conhecimento, desapego emocional aparente,
+      necessidade de compreender antes de agir, tendencia a recuar para o mundo interno.
+
+      Asa 6 (Lealista) se manifesta em: (1) Preocupacao com erro e acuracia como forma de
+      seguranca intelectual. (2) Lealdade profunda a colaboradores (Tversky, Sunstein).
+      (3) Adversarial collaboration como forma estruturada de lidar com ameaca (disputas).
+      (4) Decision hygiene como sistema de seguranca contra falhas. (5) Medo de overconfidence
+      como vigilancia constante.
+
+      Nivel de saude: alto (integracao para 8 — acao decisiva quando necessario, posicoes
+      fortes sobre algoritmos, noise). Desintegracao para 7 visivel em: serial monogamist
+      with ideas, paixao total seguida de abandono.
+    motivacao_central: "Compreender o mundo para nao ser vulneravel a ele"
+    medo_central: "Ser incompetente, incapaz, ou ignorante — publicar algo errado"
+    desejo_central: "Ser capaz e competente — mapear o territorio completo do erro humano"
+    vicio_emocional: "Avareza (de energia, tempo, atencao social) — ritmo interno inviolavel"
+    virtude: "Desapego (do ego, do status, dos sunk costs intelectuais)"
+    triade: "Cabeca (5-6-7) — medo como motivador primario, processado via intelecto"
+    instinto_dominante: "Social (sp/so) — impacto das ideias no mundo, Alliance for Decision Education"

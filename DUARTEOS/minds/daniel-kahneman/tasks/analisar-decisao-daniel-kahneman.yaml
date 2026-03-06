@@ -1,0 +1,39 @@
+# Task: Analisar Decisao
+# Mind Clone: Daniel Kahneman
+
+nome: "Analisar Decisao com Framework Kahneman"
+slug: "analisar-decisao"
+tipo: "diagnostico"
+dominio: "decision-analysis"
+
+descricao: >
+  Analise completa de uma decisao usando os frameworks de Kahneman.
+  Começa pelo diagnostico do processo (nao do resultado) e mapeia
+  fontes de erro potencial: bias, noise, overconfidence, System 1
+  dominante, e ausencia de structure.
+
+trigger: "Usuario apresenta uma decisao para analisar ou quer melhorar qualidade de decisoes."
+
+processo:
+  - "Diagnosticar processo decisorio atual: como a decisao esta sendo feita? Quem participa? Que informacoes sao consideradas?"
+  - "Identificar System 1 vs System 2: a decisao esta sendo processada pelo sistema correto?"
+  - "Verificar heuristic substitution: a pergunta que esta sendo respondida e a pergunta certa?"
+  - "Avaliar confianca vs evidencia: overconfidence presente? Base rates consultados?"
+  - "Decompor erro: bias (erro sistematico) vs noise (variabilidade) — qual e o problema maior?"
+  - "Aplicar outside view: quanto decisoes similares custaram/duraram historicamente?"
+  - "Propor decision hygiene: julgamentos independentes, dimensoes estruturadas, premortem"
+  - "Qualificar recomendacao: reconhecer limites e excecoes"
+
+frameworks_aplicados:
+  - "System 1 / System 2"
+  - "MSE = Bias^2 + Noise^2"
+  - "Decision Hygiene"
+  - "Heuristics & Biases"
+  - "Outside View / Base Rates"
+
+output_esperado: "Diagnostico completo com fontes de erro mapeadas + recomendacoes praticas de decision hygiene"
+
+anti_patterns:
+  - "Nao pule para solucao sem diagnosticar o processo primeiro"
+  - "Nao foque so em bias — meça noise tambem"
+  - "Nao prescreva sem evidencia — use dados e exemplos concretos"

@@ -1,0 +1,60 @@
+# Framework: System 1 / System 2
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "System 1 / System 2"
+slug: "system-1-2"
+categoria: "cognitive-dual-process"
+
+descricao: >
+  Dois modos de pensamento que operam em paralelo. System 1 e rapido, automatico,
+  heuristico, effortless — gera impressoes, intuicoes e sentimentos sem esforco
+  consciente. System 2 e lento, deliberado, effortful — alocado quando a tarefa
+  exige atencao. O problema: System 1 opera o tempo todo e System 2 e preguicoso.
+  A maioria dos erros de julgamento ocorre quando System 1 responde a uma pergunta
+  que deveria ser delegada a System 2.
+
+steps:
+  - step: 1
+    nome: "Identificar o Sistema Ativo"
+    descricao: "A decisao/julgamento atual esta sendo processada por System 1 (rapido, automatico) ou System 2 (lento, deliberado)? Sinais de System 1: resposta imediata, alta confianca, sem esforco percebido."
+    criterio: "Se a resposta veio em segundos e parece obvia, provavelmente e System 1."
+
+  - step: 2
+    nome: "Avaliar Adequacao"
+    descricao: "Este tipo de problema DEVERIA ser processado pelo sistema que esta ativo? Problemas com patterns regulares e feedback rapido: System 1 pode funcionar. Problemas estatisticos, de longo prazo, ou sem precedentes: System 2 deveria estar no controle."
+    criterio: "Match entre complexidade do problema e sistema ativo."
+
+  - step: 3
+    nome: "Detectar Substitution"
+    descricao: "System 1 frequentemente substitui uma pergunta dificil por uma mais facil sem avisar. 'Quanto esse investimento vai render?' vira 'Quanto eu gosto dessa empresa?'. Identifique a pergunta que deveria estar sendo respondida vs. a que esta sendo respondida de fato."
+    criterio: "Se a resposta nao endereca a pergunta original, houve substitution."
+
+  - step: 4
+    nome: "Engajar System 2 se Necessario"
+    descricao: "Forca System 2: faca a pergunta por escrito, use numeros, consulte base rates, faca premortem. O bat-ball problem mostra que ate MIT students erram quando System 2 nao e engajado."
+    criterio: "Resposta muda quando formulada deliberadamente? Se sim, System 1 estava errado."
+
+quando_usar:
+  - "Qualquer analise de julgamento ou decisao — e a lens primaria para TUDO"
+  - "Quando confianca parece desproporcional a evidencia"
+  - "Quando resposta foi instantanea para pergunta complexa"
+  - "Quando ha sensacao de que 'a resposta e obvia'"
+  - "Quando erro sistematico se repete apesar de alertas"
+
+exemplos_aplicacao:
+  - contexto: "CEO confiante sobre novo produto sem dados de mercado"
+    aplicacao: "System 1 gerou impressao positiva (affect heuristic). System 2 nao foi engajado. Perguntar: qual e o base rate de sucesso para lancamentos similares? Provavelmente ~20%."
+  - contexto: "45% de alunos do MIT erram bat-ball problem (morcego + bola = $1.10, morcego custa $1 a mais, quanto custa a bola?)"
+    aplicacao: "System 1 responde 10 centavos (intuitivo, errado). System 2 responde 5 centavos (correto). Demonstra que inteligencia nao protege contra erro heuristico."
+
+anti_patterns:
+  - "Tratar System 1 como 'ruim' — e eficiente e necessario para 95% das decisoes diarias"
+  - "Achar que System 2 e infalivel — ele e preguicoso e frequentemente endossa System 1 sem verificar"
+  - "Reduzir a 'pense devagar' — o ponto e saber QUANDO engajar pensamento deliberado"
+  - "Ignorar que System 2 tem capacidade limitada — fadiga decisoria e real"
+
+frameworks_relacionados:
+  - "Heuristics & Biases"
+  - "Focusing Illusion"
+  - "Condicoes para Intuicao Legitima"

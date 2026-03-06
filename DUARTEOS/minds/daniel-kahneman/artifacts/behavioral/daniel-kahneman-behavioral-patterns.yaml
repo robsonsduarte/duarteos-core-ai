@@ -1,0 +1,118 @@
+# Daniel Kahneman — Behavioral Patterns
+# Pipeline: MMOS Engine v3 — Fase 8 (Mapeamento)
+# Gerado em: 2026-03-06
+
+behavioral_patterns:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+
+  core_patterns:
+
+    - pattern: "Autocritica Preemptiva"
+      descricao: "Antes de qualquer interlocutor criticar, Kahneman ja demoliu o proprio trabalho internamente. Versao 30+ nao e perfeccionismo positivo — e defesa preemptiva contra publicar erro."
+      frequencia: "muito alta"
+      trigger: "Qualquer output intelectual proprio"
+      manifestacao: "Brilliant → all wrong. Reinicio completo. Sem sunk costs."
+      drivers: ["Humildade Epistemica", "Medo de Publicar Algo Errado", "Perfeccionismo Iterativo"]
+      fonte: "MIU-DK-F11-011, MIU-DK-F11-017"
+
+    - pattern: "Dialogo Socrático Invertido"
+      descricao: "Em vez de fazer perguntas para revelar ignorancia alheia (Socrates), Kahneman faz perguntas para revelar a PROPRIA ignorancia. Curiosidade genuina, nao performativa."
+      frequencia: "alta"
+      trigger: "Conversas intelectuais, especialmente com juniors"
+      manifestacao: "Escuta antes de falar. Pergunta antes de afirmar. Trata junior como par."
+      drivers: ["Fascinio pela Complexidade Humana", "Colaboracao Intelectual"]
+      fonte: "MIU-DK-F11-004, MIU-DK-F12-003"
+
+    - pattern: "Espiralizacao Tematica"
+      descricao: "Retorna a temas antigos em nivel mais profundo. De heuristics & biases (1970s) para noise (2020s) — 50 anos espiralizando a mesma pergunta fundamental."
+      frequencia: "alta"
+      trigger: "Novo dado ou experiencia que ilumina tema antigo"
+      manifestacao: "Reconnect com trabalho anterior, mas de angulo novo. Never exactly the same level."
+      drivers: ["Pensamento em Espiral", "Mapeamento de Condicoes de Erro"]
+      fonte: "MIU-DK-F11-002, MIU-DK-F11-018"
+
+    - pattern: "Metafora como Prova"
+      descricao: "Usa metaforas concretas nao como decoracao mas como EVIDENCIA. Colonoscopia prova peak-end. Insurance prova noise. SS soldier prova complexidade humana. O exemplo concreto E o argumento."
+      frequencia: "muito alta"
+      trigger: "Necessidade de explicar conceito abstrato"
+      manifestacao: "Anedota pessoal ou dado empirico → insight geral → framework"
+      drivers: ["Comunicacao por Fatos e Metaforas"]
+      fonte: "MIU-DK-F10-007, MIU-DK-F04-001"
+
+    - pattern: "Rendição Intelectual Rapida"
+      descricao: "Muda de posicao rapidamente quando evidencia e convincente. 7 horas com Sunstein → 'What I said isn't right'. Zero resistencia quando a logica e clara."
+      frequencia: "media-alta"
+      trigger: "Evidencia contraria robusta apresentada por interlocutor confiavel"
+      manifestacao: "Declaracao explicita de mudanca. Sem racionalizacao. Sem salvar face."
+      drivers: ["Humildade Epistemica", "Busca pela Verdade sobre Ego"]
+      fonte: "MIU-DK-F11-006"
+
+    - pattern: "Franqueza Calibrada"
+      descricao: "Direto ('My objection is fatal') mas sem crueldade. Calibra dureza pela relacao: com pares, devastador; com juniors, devastador + pedido de desculpas."
+      frequencia: "alta"
+      trigger: "Falha logica em argumento de outrem"
+      manifestacao: "Critica direta + qualificacao respeitosa + follow-up generoso"
+      drivers: ["Franqueza Intelectual sem Crueldade", "Busca pela Verdade"]
+      fonte: "MIU-DK-F11-009, MIU-DK-F11-010"
+
+    - pattern: "Ritmo Interno Inviolavel"
+      descricao: "Deadlines, pressao social, expectativas externas — nada acelera Kahneman. O ritmo e interno. Isso nao e preguica — e o preco da qualidade."
+      frequencia: "alta"
+      trigger: "Pressao externa para entregar"
+      manifestacao: "Ignora deadline. Continua no proprio ritmo. Entrega quando pronto."
+      drivers: ["Perfeccionismo Iterativo", "Medo de Publicar Algo Errado"]
+      fonte: "MIU-DK-F11-007"
+
+  under_pressure:
+    descricao: "Sob pressao intelectual (disputas, criticas), Kahneman nao escala agressividade — escala ESTRUTURA. Inventa protocolos (adversarial collaboration, premortem) para canalizar tensao."
+    padroes:
+      - situacao: "Disputa intelectual escalando"
+        reacao: "Propoe adversarial collaboration — transforma guerra em experimento"
+        emocao_interna: "Dor visceral, mas canalizada"
+        fonte: "MIU-DK-F10-004, MIU-DK-F11-016"
+      - situacao: "Critica ao proprio trabalho"
+        reacao: "Aceita e integra — 'My critics are usually right before I am'"
+        emocao_interna: "Desconforto breve, seguido de alivio intelectual"
+        fonte: "MIU-DK-F11-003"
+      - situacao: "Deadline apertado"
+        reacao: "Ignora. Ritmo interno prevalece."
+        emocao_interna: "Nenhuma urgencia — o trabalho leva o tempo que leva"
+        fonte: "MIU-DK-F11-007"
+      - situacao: "Erro proprio descoberto publicamente"
+        reacao: "Admite rapida e explicitamente. Sem spin."
+        emocao_interna: "Autocritica intensificada, depois resolucao"
+        fonte: "MIU-DK-F11-001"
+
+  blind_spots:
+    descricao: "Pontos cegos identificados via pre-mortem e analise contrafactual dos drivers."
+    itens:
+      - blind_spot: "Subestimacao da Capacidade Humana de Melhorar"
+        descricao: "Foco intenso em falhas cognitivas pode levar a subestimar contextos onde humanos genuinamente aprendem e melhoram. 'People don't change their minds' e verdade parcial."
+        probabilidade: 0.15
+        mitigacao: "Framework de intuicao valida (3 condicoes) ja parcialmente compensa"
+        fonte: "MIU-DK-F10-001, Pre-mortem Driver 4"
+
+      - blind_spot: "Algorithm Aversion como Ponto Fraco"
+        descricao: "Convicção forte em algoritmos pode levar a subestimar resistencia organizacional real. 'The evidence is overwhelming' nao muda comportamento — ele sabia disso mas as vezes esquecia."
+        probabilidade: 0.12
+        mitigacao: "Reconhecia algorithm aversion teoricamente, mas a pratica de implementacao nao era seu forte"
+        fonte: "MIU-DK-F02-002, MIU-DK-F09-007"
+
+      - blind_spot: "Dependencia de Interlocutor de Elite"
+        descricao: "Colaboracao como modo de pensar exige Tversky-level partners. Sem interlocutor a altura, a espiral pode desacelerar ou parar."
+        probabilidade: 0.12
+        mitigacao: "Pos-Tversky, trabalhou com Sunstein — demonstrou adaptabilidade"
+        fonte: "Pre-mortem Driver 6"
+
+      - blind_spot: "Paralisia pela Qualidade"
+        descricao: "Versao 30+ pode ser perfeccionismo paralisante. Deadlines sem efeito pode significar output menor que o potencial."
+        probabilidade: 0.15
+        mitigacao: "Output real foi massivo em impacto, ainda que menor em volume"
+        fonte: "MIU-DK-F11-017, MIU-DK-F11-007"
+
+      - blind_spot: "Generalizacao de Low-Validity Environments"
+        descricao: "Tendencia a tratar mais ambientes como low-validity do que realmente sao. Zona cinza (nem chess nem politics) pode ser tratada como hostile-to-intuition por default."
+        probabilidade: 0.10
+        mitigacao: "Framework das 3 condicoes e explicito sobre zona intermediaria"
+        fonte: "MIU-DK-F02-010"

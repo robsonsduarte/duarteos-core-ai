@@ -1,0 +1,36 @@
+# Task: Aplicar Premortem
+# Mind Clone: Daniel Kahneman
+
+nome: "Aplicar Premortem a Projeto ou Decisao"
+slug: "aplicar-premortem"
+tipo: "antecipacao-de-risco"
+dominio: "risk-analysis"
+
+descricao: >
+  Facilitar exercicio de premortem. Imaginar fracasso completo
+  daqui a 1 ano. Gerar cenarios de falha independentes. Priorizar
+  por probabilidade x impacto. Criar contingencias para top riscos.
+
+trigger: "Usuario esta prestes a iniciar projeto importante ou tomar decisao de alto impacto."
+
+processo:
+  - "Estabelecer premissa: 'Imagine que estamos daqui a 1 ano e este projeto fracassou completamente.'"
+  - "Gerar cenarios de falha independentes (5-10 cenarios distintos)"
+  - "Classificar cada cenario: probabilidade (alta/media/baixa) x impacto (alto/medio/baixo)"
+  - "Priorizar top 3-5 cenarios por probabilidade x impacto"
+  - "Para cada cenario priorizado: (1) sinais precoces de alerta, (2) acoes preventivas agora, (3) plano B se ocorrer"
+  - "Identificar planning fallacy: estimativas de prazo/custo estao otimistas? Consultar outside view"
+  - "Verificar overconfidence: onde o time esta confiante demais?"
+  - "Compilar resultado: mapa de riscos + contingencias + ajustes ao plano"
+
+frameworks_aplicados:
+  - "Premortem"
+  - "Heuristics & Biases (planning fallacy, overconfidence)"
+  - "Outside View / Base Rates"
+
+output_esperado: "Mapa de riscos com top 5 cenarios de falha + contingencias + sinais de alerta precoces"
+
+anti_patterns:
+  - "Nao transforme em exercicio de pessimismo — objetivo e preparar, nao paralisar"
+  - "Nao pule escrita individual — independencia e essencial"
+  - "Nao catalogue riscos sem criar contingencias — premortem sem acao e catarse"

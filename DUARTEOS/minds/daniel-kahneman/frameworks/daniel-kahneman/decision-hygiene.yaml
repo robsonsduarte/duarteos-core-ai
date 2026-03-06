@@ -1,0 +1,71 @@
+# Framework: Decision Hygiene (6 Componentes)
+# Mind Clone: Daniel Kahneman
+# Pipeline: MMOS v3
+
+nome: "Decision Hygiene (6 Componentes)"
+slug: "decision-hygiene"
+categoria: "organizational-decision"
+
+descricao: >
+  Conjunto de protocolos para reduzir noise em decisoes organizacionais.
+  Assim como higiene medica previne infeccao sem diagnosticar doenca
+  especifica, decision hygiene previne erro decisorio sem identificar
+  vieses individuais. E mais barata, mais escalavel e mais eficaz que
+  debiasing. Os 6 componentes atacam diferentes fontes de noise.
+
+steps:
+  - step: 1
+    nome: "Julgamentos Independentes Primeiro"
+    descricao: "Cada avaliador forma opiniao ANTES de qualquer discussao em grupo. Impede anchoring no primeiro que fala e cascata informacional. Registre opinioes por escrito antes de revelar."
+    criterio: "Opinioes registradas individualmente antes de compartilhar."
+
+  - step: 2
+    nome: "Estruturar em Dimensoes Independentes"
+    descricao: "Decomponha a decisao complexa em sub-julgamentos independentes. Avalie cada dimensao separadamente. Evite impressao global (halo effect). Recombine ao final."
+    criterio: "Decisao decomposta em 3-7 dimensoes avaliadas separadamente."
+
+  - step: 3
+    nome: "Outside View / Escala de Referencia"
+    descricao: "Antes de julgar caso individual, consulte base rates. Quanto projetos similares custaram? Qual a taxa de sucesso historica? Use distribuicao externa como ancora, depois ajuste pelo caso."
+    criterio: "Base rate consultada e documentada."
+
+  - step: 4
+    nome: "Resistir a Primeira Impressao"
+    descricao: "System 1 gera impressao global em milissegundos. Decision hygiene: nao comece pela conclusao. Avalie evidencias antes de formar opiniao. Sequencie informacoes para evitar anchoring prematuro."
+    criterio: "Conclusao formada DEPOIS de avaliar todas as dimensoes."
+
+  - step: 5
+    nome: "Multiplos Avaliadores Independentes"
+    descricao: "Mais avaliadores = menos noise (wisdom of crowds). Condicao: independencia real. Se todos conversaram antes, nao sao independentes. Media de julgamentos independentes > qualquer julgamento individual."
+    criterio: "3+ avaliadores genuinamente independentes."
+
+  - step: 6
+    nome: "Rankings Relativos sobre Avaliacoes Absolutas"
+    descricao: "Comparar candidatos entre si e mais confiavel que avaliar cada um em escala absoluta. Rankings reduzem noise porque forcam discriminacao. Avaliacoes absolutas sofrem de variabilidade de escala entre avaliadores."
+    criterio: "Usar comparacao relativa quando possivel."
+
+quando_usar:
+  - "Design de processos de contratacao, promocao, avaliacao de desempenho"
+  - "Decisoes de investimento e alocacao de recursos"
+  - "Processos judiciais e regulatorios"
+  - "Qualquer decisao organizacional repetitiva de alto impacto"
+  - "Apos noise audit revelar variabilidade inaceitavel"
+
+exemplos_aplicacao:
+  - contexto: "Processo seletivo de empresa"
+    aplicacao: "Definir 5 dimensoes (tecnica, cultura, comunicacao, lideranca, problema-solving). Cada entrevistador avalia dimensoes independentemente ANTES de discussao. Media das notas. Comparar candidatos relativamente."
+  - contexto: "Comite de investimento"
+    aplicacao: "Cada membro escreve recomendacao antes da reuniao. Outside view: taxa historica de sucesso de investimentos similares. Decompor em risco, retorno, timing, execucao. Votar antes de debater."
+
+anti_patterns:
+  - "Tratar decision hygiene como burocracia — e infraestrutura invisivel"
+  - "Pular julgamentos independentes 'porque confiamos uns nos outros'"
+  - "Usar formulario como ritual sem engajar System 2 genuinamente"
+  - "Confundir decision hygiene com eliminacao de julgamento humano"
+  - "Aplicar em decisoes triviais — reserve para alto impacto e alta repeticao"
+
+frameworks_relacionados:
+  - "MSE = Bias^2 + Noise^2"
+  - "Premortem"
+  - "Heuristics & Biases"
+  - "Condicoes para Intuicao Legitima"

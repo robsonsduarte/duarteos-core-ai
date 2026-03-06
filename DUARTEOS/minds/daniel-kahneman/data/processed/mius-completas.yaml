@@ -1,0 +1,955 @@
+# Daniel Kahneman — MIUs Completas (Micro-Unidades Interpretativas)
+# Pipeline: MMOS Engine v3 — Fase 6 (Extracao Completa)
+# Gerado em: 2026-03-06
+# Total MIUs: 105
+# Fontes processadas: 13/13
+# Cobertura DNA: 8/8 camadas
+
+meta:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+  pipeline_version: "3"
+  fase: 6
+  total_mius: 105
+  fontes_cobertas: 13
+  camadas_cobertas: 8
+
+mius:
+
+  # =============================================
+  # FONTE 1 — fs.blog Premortem
+  # =============================================
+
+  - id: "MIU-DK-F01-001"
+    texto: "The premortem is the perfect antidote to optimism bias. At the outset, imagine the project has failed and write down why."
+    tipo_semantico: "framework"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "F01-fs.blog"
+    layer3_essencia: "Antecipar fracasso antes de comecar neutraliza otimismo cego"
+
+  # =============================================
+  # FONTE 2 — Tyler Cowen Conversation
+  # =============================================
+
+  - id: "MIU-DK-F02-001"
+    texto: "Noise is a bigger problem than bias in most organizations."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Variabilidade aleatorea supera erro sistematico como problema organizacional"
+
+  - id: "MIU-DK-F02-002"
+    texto: "The replacement of humans by algorithms is going to proceed."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Algoritmos substituirao humanos em julgamento — inevitavel"
+
+  - id: "MIU-DK-F02-003"
+    texto: "The experiencing self vs remembering self distinction is fundamental."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Dois selves coexistem: quem vive e quem lembra — e diferem"
+
+  - id: "MIU-DK-F02-004"
+    texto: "Tversky was the most intelligent person I ever knew."
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Reconhecimento genuino de superioridade intelectual do parceiro sem inveja"
+
+  - id: "MIU-DK-F02-005"
+    texto: "Adversarial collaboration: when you disagree, design a study to resolve it."
+    tipo_semantico: "framework"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Transformar disputa intelectual em experimento conjunto"
+
+  - id: "MIU-DK-F02-006"
+    texto: "Optimism is the engine of capitalism. I want to tame it, not kill it."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Otimismo e util mas perigoso — domar sem destruir"
+
+  - id: "MIU-DK-F02-007"
+    texto: "People protect beliefs because beliefs are tied to identity."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Crencas sao identidade — ataca-las e atacar a pessoa"
+
+  - id: "MIU-DK-F02-008"
+    texto: "People don't change minds through argument. They change through experience."
+    tipo_semantico: "comportamental"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Experiencia muda mentes; argumentos apenas reforçam posicoes"
+
+  - id: "MIU-DK-F02-009"
+    texto: "Noise is variability in judgments that should be identical."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Ruido e a dispersao onde deveria haver concordancia"
+
+  - id: "MIU-DK-F02-010"
+    texto: "Legitimate intuitions need: high validity environment, lots of practice, immediate feedback."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Intuicao so e confiavel sob 3 condicoes especificas"
+
+  - id: "MIU-DK-F02-011"
+    texto: "People are terrible at prediction but overconfident about predictions."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F02-tyler-cowen"
+    layer3_essencia: "Incompetencia preditiva combinada com certeza subjetiva"
+
+  # =============================================
+  # FONTE 3 — Issues.org Interview
+  # =============================================
+
+  - id: "MIU-DK-F03-001"
+    texto: "Error = Bias squared + Noise squared. Most organizations focus on bias and ignore noise."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Formula do erro total mostra que noise e metade ignorada"
+
+  - id: "MIU-DK-F03-002"
+    texto: "Decision Hygiene 6 components: (1) independent judgments before discussion (2) delay holistic assessment (3) aggregate multiple judgments (4) structured protocols (5) relative vs absolute judgment (6) algorithms when possible."
+    tipo_semantico: "framework"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Protocolo de 6 passos para reduzir ruido em decisoes"
+
+  - id: "MIU-DK-F03-003"
+    texto: "An algorithm on the back of an envelope beats expert judgment."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Formulas simples vencem expertise humana consistentemente"
+
+  - id: "MIU-DK-F03-004"
+    texto: "The justice system is a noise factory."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Metafora industrial para expor arbitrariedade judicial"
+
+  - id: "MIU-DK-F03-005"
+    texto: "Wisdom of crowds works because individual errors cancel out — only when independent."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Agregacao funciona pela independencia dos erros"
+
+  - id: "MIU-DK-F03-006"
+    texto: "Noise audits are deeply disturbing to organizations."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Descobrir o nivel real de ruido e emocionalmente desestabilizador"
+
+  - id: "MIU-DK-F03-007"
+    texto: "I'm not anti-intuition. I'm for knowing WHEN you can trust it."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F03-issues.org"
+    layer3_essencia: "Nuance sobre intuicao — calibracao, nao rejeicao"
+
+  # =============================================
+  # FONTE 4 — Behavioral Scientist (Noise)
+  # =============================================
+
+  - id: "MIU-DK-F04-001"
+    texto: "Noise is like a random lottery — some gain, some lose without reason."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F04-behavioral-scientist"
+    layer3_essencia: "Metafora de loteria para tornar injustiça do ruido visceral"
+
+  - id: "MIU-DK-F04-002"
+    texto: "The surprising thing is not that noise exists — it's how much there is."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F04-behavioral-scientist"
+    layer3_essencia: "A magnitude do ruido e o choque, nao sua existencia"
+
+  - id: "MIU-DK-F04-003"
+    texto: "Decision hygiene is not about finding the right answer. It's about reducing variability of wrong answers."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F04-behavioral-scientist"
+    layer3_essencia: "Reducao de erro por consistencia, nao por acerto"
+
+  # =============================================
+  # FONTE 5 — Knowledge Project Ep #68
+  # =============================================
+
+  - id: "MIU-DK-F05-001"
+    texto: "Changing somebody's mind is very difficult."
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F05-knowledge-project"
+    layer3_essencia: "Mudar mentes e quase impossivel — aceitar como fato"
+
+  - id: "MIU-DK-F05-002"
+    texto: "Best negotiations start with understanding what the other side needs."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F05-knowledge-project"
+    layer3_essencia: "Empatia como ponto de partida para negociacao eficaz"
+
+  - id: "MIU-DK-F05-003"
+    texto: "We should be humble about what we know."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F05-knowledge-project"
+    layer3_essencia: "Humildade epistemica como postura default"
+
+  - id: "MIU-DK-F05-004"
+    texto: "Intuition is nothing more and nothing less than recognition."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F05-knowledge-project"
+    layer3_essencia: "Intuicao e reconhecimento de padroes — nada mistico"
+
+  - id: "MIU-DK-F05-005"
+    texto: "Confidence is not a reliable indicator of accuracy."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F05-knowledge-project"
+    layer3_essencia: "Confianca e sentimento, nao evidencia de estar certo"
+
+  # =============================================
+  # FONTE 6 — Alliance for Decision Education
+  # =============================================
+
+  - id: "MIU-DK-F06-001"
+    texto: "Decisions can be taught and improved."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F06-alliance-decision-ed"
+    layer3_essencia: "Julgamento e habilidade treinavel, nao talento nato"
+
+  - id: "MIU-DK-F06-002"
+    texto: "System 1 automatic/fast, System 2 deliberate/effortful."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "F06-alliance-decision-ed"
+    layer3_essencia: "Dois modos cognitivos fundamentais: rapido-automatico vs lento-deliberado"
+
+  # =============================================
+  # FONTE 7 — TED Talk
+  # =============================================
+
+  - id: "MIU-DK-F07-001"
+    texto: "Peak-end rule: endings dominate memory, not duration."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Memoria ignora duracao; so importa pico e fim"
+
+  - id: "MIU-DK-F07-002"
+    texto: "Colonoscopy study: extending mild pain at end improves memory of the whole experience."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Final suave reescreve memoria de experiencia dolorosa inteira"
+
+  - id: "MIU-DK-F07-003"
+    texto: "We don't choose between experiences, we choose between memories."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Decisoes sao sobre memorias futuras, nao experiencias futuras"
+
+  - id: "MIU-DK-F07-004"
+    texto: "$60K threshold: below it, progressively unhappier. Above it, flat line."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Dinheiro compra reducao de miseria ate um teto — depois nao compra felicidade"
+
+  - id: "MIU-DK-F07-005"
+    texto: "Money doesn't buy experiential happiness, but lack of money buys misery."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Assimetria fundamental: dinheiro previne dor mas nao gera prazer"
+
+  - id: "MIU-DK-F07-006"
+    texto: "The focusing illusion: nothing is as important as you think when thinking about it."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Atencao inflaciona importancia de qualquer coisa focalizada"
+
+  - id: "MIU-DK-F07-007"
+    texto: "Happiness is not a useful word — we apply it to too many things."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Conceito vago demais para ser cientifico — precisa ser decomposto"
+
+  - id: "MIU-DK-F07-008"
+    texto: "A two-week vacation barely better than one week for remembering self."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Duracao e quase irrelevante para qualidade da memoria"
+
+  - id: "MIU-DK-F07-009"
+    texto: "Correlation between life satisfaction and experiential happiness is only 0.5."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F07-ted-talk"
+    layer3_essencia: "Satisfacao de vida e felicidade experiencial sao construtos semi-independentes"
+
+  # =============================================
+  # FONTE 8 — UCTV Hitchcock Lecture
+  # =============================================
+
+  - id: "MIU-DK-F08-001"
+    texto: "Illusion of validity — I coined this phrase. You feel you understand when you don't."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Sensacao de compreensao pode ser totalmente ilusoria"
+
+  - id: "MIU-DK-F08-002"
+    texto: "Paul Meehl: in ALL 14 studies, simple linear equations beat experts hands down."
+    tipo_semantico: "argumentativo"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Evidencia esmagadora: formulas simples > julgamento expert"
+
+  - id: "MIU-DK-F08-003"
+    texto: "A statistical model OF the judge does better than the judge himself."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Paradoxo: modelo do juiz supera o juiz — inconsistencia humana"
+
+  - id: "MIU-DK-F08-004"
+    texto: "People present the same case twice, give different judgments. No formula does that."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Humanos sao incoerentes consigo mesmos; formulas nunca sao"
+
+  - id: "MIU-DK-F08-005"
+    texto: "When holding 7-digit number: less politically correct, more selfish — System 2 monitors System 1."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Carga cognitiva revela o self nao-monitorado"
+
+  - id: "MIU-DK-F08-006"
+    texto: "10,000 hours needed BUT with appropriate immediate feedback."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Pratica sem feedback nao gera expertise — feedback e condicao"
+
+  - id: "MIU-DK-F08-007"
+    texto: "Stock pickers and CIA analysts can't develop skills — no immediate feedback."
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Ambientes sem feedback impedem desenvolvimento de expertise real"
+
+  - id: "MIU-DK-F08-008"
+    texto: "Bat and ball problem: 45% of MIT students get it wrong."
+    tipo_semantico: "comportamental"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Mesmo elite cognitiva cai em armadilhas do Sistema 1"
+
+  - id: "MIU-DK-F08-009"
+    texto: "We are enormously suggestible."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Sugestibilidade humana e vasta e subestimada"
+
+  - id: "MIU-DK-F08-010"
+    texto: "System 1 suppresses ambiguity. Doubt is function of System 2."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Duvida exige esforço; certeza e o default automatico"
+
+  - id: "MIU-DK-F08-011"
+    texto: "Anchoring: phone numbers influence Attila the Hun estimates."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Numeros irrelevantes contaminam estimativas — ancoragem universal"
+
+  - id: "MIU-DK-F08-012"
+    texto: "Organ donation defaults: massive effect from changing default."
+    tipo_semantico: "decisorio"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Defaults determinam comportamento mais que preferencias"
+
+  - id: "MIU-DK-F08-013"
+    texto: "Heuristic substitution: we answer an easier question than the one asked."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Mente troca pergunta dificil por facil sem perceber"
+
+  - id: "MIU-DK-F08-014"
+    texto: "Associative coherence: word VOMIT triggers disgust, pupil dilation, alertness."
+    tipo_semantico: "comportamental"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Uma palavra ativa cascata corporal inteira — associacao e automatica"
+
+  - id: "MIU-DK-F08-015"
+    texto: "Skilled performance migrates from System 2 to System 1."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Maestria e a automatizacao do deliberado"
+
+  - id: "MIU-DK-F08-016"
+    texto: "IDF army experience: seeing truth in obstacle course but predictions were worthless."
+    tipo_semantico: "narrativo"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Experiencia fundacional: certeza subjetiva sem validade objetiva"
+
+  - id: "MIU-DK-F08-017"
+    texto: "Phil Tetlock: CIA analysts can't predict better than NYT readers."
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Expertise em previsao geopolitica e ilusoria"
+
+  - id: "MIU-DK-F08-018"
+    texto: "Natural assessments: we compute average length of lines but NOT total length."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F08-uctv-hitchcock"
+    layer3_essencia: "Mente calcula algumas metricas automaticamente — outras sao inacessiveis"
+
+  # =============================================
+  # FONTE 9 — Psychology Podcast (autobiografico)
+  # =============================================
+
+  - id: "MIU-DK-F09-001"
+    texto: "I was born Jewish in Nazi-occupied France... gives you a certain view of the world."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Trauma fundacional: nascer em perseguicao forma visao de mundo"
+
+  - id: "MIU-DK-F09-002"
+    texto: "Meeting Amos Tversky was the most important intellectual event of my life."
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Parceria intelectual como evento mais significativo da vida"
+
+  - id: "MIU-DK-F09-003"
+    texto: "It was a magical collaboration — we finished each other's sentences."
+    tipo_semantico: "interacao_social"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Simbiose intelectual completa — pensamento fusionado"
+
+  - id: "MIU-DK-F09-004"
+    texto: "I don't think I have major regrets. I've been very fortunate."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Gratidao como postura existencial — ausencia de arrependimento"
+
+  - id: "MIU-DK-F09-005"
+    texto: "I'm not afraid of dying. I'm afraid of suffering."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Medo do experiencial (dor), nao do conceitual (morte)"
+
+  - id: "MIU-DK-F09-006"
+    texto: "I hope the ideas survive. That's the best legacy."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Legado e continuidade das ideias, nao fama pessoal"
+
+  - id: "MIU-DK-F09-007"
+    texto: "AI will do a lot of good. But people will resist because they don't trust algorithms."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Paradoxo da IA: beneficio objetivo vs resistencia psicologica"
+
+  - id: "MIU-DK-F09-008"
+    texto: "Noise book genesis: insurance underwriters vary enormously."
+    tipo_semantico: "narrativo"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Descoberta empirica de variabilidade em seguradoras motivou livro inteiro"
+
+  - id: "MIU-DK-F09-009"
+    texto: "Psychology should be about understanding conditions under which errors occur."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F09-psychology-podcast"
+    layer3_essencia: "Missao da psicologia: mapear condicoes de erro, nao celebrar acerto"
+
+  # =============================================
+  # FONTE 10 — Edge.org Adversarial Collaboration
+  # =============================================
+
+  - id: "MIU-DK-F10-001"
+    texto: "People don't change their minds. To a good first approximation, about anything that matters."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Mudanca de opiniao e excecao — permanencia e o default"
+
+  - id: "MIU-DK-F10-002"
+    texto: "The power of reasons is an illusion. People believe reasons because they believe the conclusion."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Razoes sao racionalizacoes pos-hoc — conclusao vem primeiro"
+
+  - id: "MIU-DK-F10-003"
+    texto: "Controversy is a terrible way to advance science — sarcasm for beginners, advanced sarcasm."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Humor auto-depreciativo para criticar guerras academicas"
+
+  - id: "MIU-DK-F10-004"
+    texto: "Adversarial collaboration is an alternative to angry science."
+    tipo_semantico: "framework"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Colaboracao com adversario e antidoto para ciencia hostil"
+
+  - id: "MIU-DK-F10-005"
+    texto: "15 IQ point benefit: adversaries quickly generate brilliant defenses of their position."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Oposicao intelectual aumenta QI efetivo dos participantes"
+
+  - id: "MIU-DK-F10-006"
+    texto: "In an ideal world, scholars would feel obliged to accept adversarial collaboration."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Norma cientifica ideal: nao recusar teste conjunto das proprias ideias"
+
+  - id: "MIU-DK-F10-007"
+    texto: "I don't like reducing cognitive processes to flow charts. Strong preference for facts."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Fatos sobre teorias — prefere dados a modelos elegantes"
+
+  - id: "MIU-DK-F10-008"
+    texto: "Science advances without adversaries changing their mind — the path becomes obvious to everyone except the theorist."
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Ciencia avanca apesar da teimosia — consenso emerge ao redor"
+
+  - id: "MIU-DK-F10-009"
+    texto: "First adversarial collaboration: with wife Anne Treisman on attention/priming."
+    tipo_semantico: "interacao_social"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F10-edge.org"
+    layer3_essencia: "Modelo de colaboracao adversarial nasceu na intimidade domestica"
+
+  # =============================================
+  # FONTE 11 — Behavioral Scientist Memorial
+  # =============================================
+
+  - id: "MIU-DK-F11-001"
+    texto: "Finding out I was wrong is the only way I'm sure I've learned anything. (via Adam Grant)"
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Erro como unico sinal confiavel de aprendizagem"
+
+  - id: "MIU-DK-F11-002"
+    texto: "I'm more like a spiral than a circle. (via Dan Lovallo)"
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Revisitar nao e repetir — e aprofundar em espiral"
+
+  - id: "MIU-DK-F11-003"
+    texto: "Danny saw everything through a child's eyes + relentless self-criticism + no sunk costs. (via Jason Zweig)"
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Curiosidade infantil + autocritica feroz + zero apego ao passado"
+
+  - id: "MIU-DK-F11-004"
+    texto: "Possible to be world-famous genius and treat everyone with utmost respect. (via Angela Duckworth)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Genialidade e humildade coexistiram — sem arrogancia"
+
+  - id: "MIU-DK-F11-005"
+    texto: "Merely average at driving but recognized his limits. (via Donald Redelmeier)"
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Autoconhecimento pratico: saber onde nao e bom"
+
+  - id: "MIU-DK-F11-006"
+    texto: "After 7 hours discussing noise: 'What I said isn't right' — kept refining. (via Cass Sunstein)"
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Disposicao de abandonar propria posicao apos reflexao prolongada"
+
+  - id: "MIU-DK-F11-007"
+    texto: "Deadlines have no effect on me. I can't hurry even if I want to. (via Olivier Sibony)"
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Ritmo interno impossivel de acelerar externamente"
+
+  - id: "MIU-DK-F11-008"
+    texto: "Harsh feedback meant he cared — ego was irrelevant, only getting it right mattered. (via Linnea Gandhi)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Feedback duro = sinal de investimento; ego subordinado a verdade"
+
+  - id: "MIU-DK-F11-009"
+    texto: "My objection is fatal. (via Shane Frederick)"
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Franqueza intelectual sem rodeios — direto ao ponto fatal"
+
+  - id: "MIU-DK-F11-010"
+    texto: "Often needlessly apologized to junior colleagues. (via Benjamin Manning)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Humildade social ativa — desculpar-se por excesso, nao por obrigacao"
+
+  - id: "MIU-DK-F11-011"
+    texto: "Your chapter is brilliant — one week later: It's all wrong, can't publish this. (via Tom Gilovich)"
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Oscilacao entre euforia e rejeicao total do proprio trabalho"
+
+  - id: "MIU-DK-F11-012"
+    texto: "Possibly the lowest ego person I have ever met. (via Annie Duke)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Nobel sem ego — caso raro de genialidade desacoplada de narcisismo"
+
+  - id: "MIU-DK-F11-013"
+    texto: "Working with him like studying with Moses — flew him home to see girlfriend. (via Carey Morewedge)"
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Estatua intelectual com generosidade pessoal concreta"
+
+  - id: "MIU-DK-F11-014"
+    texto: "1984 collaboration with Thaler: conversations ended 'To be continued'. (via Richard Thaler)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F11-memorial"
+    layer3_essencia: "Ideias como conversas permanentes sem conclusao final"
+
+  - id: "MIU-DK-F11-015"
+    texto: "Nobel joy = how happy it made all the people around him. (via Katy Milkman)"
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Alegria vicaria — felicidade dos outros como medida do proprio sucesso"
+
+  - id: "MIU-DK-F11-016"
+    texto: "Intellectual disputes hurt him viscerally. (via George Loewenstein)"
+    tipo_semantico: "comportamental"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Disputas academicas causavam sofrimento fisico — nao apenas intelectual"
+
+  - id: "MIU-DK-F11-017"
+    texto: "Version thirty-something — would restart papers completely. (via Ilana Ritov)"
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Perfeccionismo iterativo extremo — 30+ versoes como norma"
+
+  - id: "MIU-DK-F11-018"
+    texto: "Serial monogamist with ideas — passionate then willing to abandon. (via David Schkade)"
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "F11-memorial"
+    layer3_essencia: "Paradoxo: paixao total por ideia + disposicao total de abandona-la"
+
+  - id: "MIU-DK-F11-019"
+    texto: "Called students creme de la creme. (via Maya Bar-Hillel)"
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "superficial"
+    fonte: "F11-memorial"
+    layer3_essencia: "Elevacao generosa dos outros como padrao relacional"
+
+  # =============================================
+  # FONTE 12 — Nobel Autobiography
+  # =============================================
+
+  - id: "MIU-DK-F12-001"
+    texto: "I grew up in a world of people and words. Nature barely existed."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Orientacao desde infancia: mundo social e linguistico, nao fisico"
+
+  - id: "MIU-DK-F12-002"
+    texto: "SS soldier story: young Danny wearing hidden star, SS soldier hugs him, shows picture of son — people are endlessly complicated and interesting."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Mesmo o inimigo pode ser humano — complexidade das pessoas e infinita"
+
+  - id: "MIU-DK-F12-003"
+    texto: "My vocation as psychologist — result of early exposure to interesting gossip about people."
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Psicologia nasceu da fofoca — interesse precoce pelo drama humano"
+
+  - id: "MIU-DK-F12-004"
+    texto: "Irony was a family tradition — my mother's stories all had two sides or more."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Ironia como heranca familiar — multiplas perspectivas desde a infancia"
+
+  - id: "MIU-DK-F12-005"
+    texto: "1969: started collaboration with Tversky — that was the beginning."
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Marco fundacional: inicio da parceria que mudou a ciencia"
+
+  - id: "MIU-DK-F12-006"
+    texto: "Father died 1944 before liberation. Family survived in southern France."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Perda do pai antes da libertacao — sobrevivencia com cicatriz"
+
+  - id: "MIU-DK-F12-007"
+    texto: "IDF: interviewing officer candidates, discovered illusion of validity."
+    tipo_semantico: "narrativo"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Experiencia militar gerou conceito fundacional da carreira"
+
+  - id: "MIU-DK-F12-008"
+    texto: "Hebrew University: psychology major, mathematics minor, BA 1954."
+    tipo_semantico: "narrativo"
+    camada_dna: "associacoes"
+    profundidade: "superficial"
+    fonte: "F12-nobel-autobiography"
+    layer3_essencia: "Formacao combinada psicologia + matematica — ponte fundacional"
+
+  # =============================================
+  # FONTE 13 — PhilArchive Academic Conversation
+  # =============================================
+
+  - id: "MIU-DK-F13-001"
+    texto: "I was not an expert in economics — reserved attitude toward economics."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "F13-philarchive"
+    layer3_essencia: "Humildade disciplinar: nao se proclamou economista apesar do Nobel"
+
+  - id: "MIU-DK-F13-002"
+    texto: "Three contributions with Tversky: (1) heuristics and biases (2) prospect theory (3) framing effects."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F13-philarchive"
+    layer3_essencia: "Tres pilares do legado: heuristicas, prospect theory, framing"
+
+  - id: "MIU-DK-F13-003"
+    texto: "Connection to Herbert Simon's bounded rationality."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "F13-philarchive"
+    layer3_essencia: "Ponte intelectual: de Simon a Kahneman — racionalidade limitada"
+
+  - id: "MIU-DK-F13-004"
+    texto: "Distinguished between heuristics (useful shortcuts) and biases (systematic errors)."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "F13-philarchive"
+    layer3_essencia: "Atalhos uteis vs erros sistematicos — distincao fundacional"
+
+# =============================================
+# ESTATISTICAS DE COBERTURA
+# =============================================
+
+estatisticas:
+  total_mius: 105
+  por_fonte:
+    F01-fs.blog: 1
+    F02-tyler-cowen: 11
+    F03-issues.org: 7
+    F04-behavioral-scientist: 3
+    F05-knowledge-project: 5
+    F06-alliance-decision-ed: 2
+    F07-ted-talk: 9
+    F08-uctv-hitchcock: 18
+    F09-psychology-podcast: 9
+    F10-edge.org: 9
+    F11-memorial: 19
+    F12-nobel-autobiography: 8
+    F13-philarchive: 4
+
+  por_camada_dna:
+    filosofia: 24
+    frameworks: 22
+    heuristicas: 18
+    metodologias: 9
+    dilemas: 6
+    paradoxos: 4
+    associacoes: 11
+    comunicacao: 11
+
+  por_tipo_semantico:
+    framework: 26
+    comportamental: 21
+    argumentativo: 10
+    narrativo: 14
+    decisorio: 8
+    interacao_social: 9
+    linguistico: 4
+    associativo: 1
+
+  por_profundidade:
+    profunda: 58
+    media: 42
+    superficial: 5

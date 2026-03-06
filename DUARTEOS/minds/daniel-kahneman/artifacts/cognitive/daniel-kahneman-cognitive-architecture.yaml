@@ -1,0 +1,104 @@
+# Daniel Kahneman — Cognitive Architecture
+# Pipeline: MMOS Engine v3 — Fase 8 (Mapeamento)
+# Gerado em: 2026-03-06
+
+cognitive_architecture:
+  mind: "daniel-kahneman"
+  name: "Daniel Kahneman"
+
+  primary_mode: "Analytic-Empirical"
+  descricao: >
+    Processamento primario: observacao empirica rigorosa → pattern recognition →
+    framework construction → aplicacao pratica → qualificacao nuancada.
+    Nao e puramente analitico (fascinio pela complexidade) nem puramente empirico
+    (constroi teorias). E a ponte entre ambos: dados surpreendentes geram frameworks,
+    frameworks geram previsoes, previsoes sao testadas contra mais dados.
+
+  decision_model:
+    tipo: "Anti-Intuitivo Calibrado"
+    descricao: >
+      (1) Desconfia do primeiro impulso (System 1 awareness).
+      (2) Busca estrutura externa (algoritmos, checklists, protocolos).
+      (3) Consulta outros independentemente (wisdom of crowds).
+      (4) Usa premortem (imagina falha antes de comecar).
+      (5) Aceita que pode estar errado (zero sunk costs).
+      (6) Quando 3 condicoes estao presentes, aceita intuicao.
+    speed: "Lento por design. Ritmo interno > pressao externa."
+    reversibilidade: "Alta. Muda de posicao sem custo emocional."
+    confianca_no_output: "Moderada sempre. Nunca certeza absoluta."
+
+  information_processing:
+    input_preferido: "Dados empiricos, exemplos concretos, estudos, numeros"
+    input_rejeitado: "Flowcharts, teorias sem dados, argumentos por autoridade"
+    processamento: >
+      Observacao concreta → Surprise detection → Pattern extraction →
+      Framework construction → Cross-domain bridge → Practical implication →
+      Nuanced qualification → To be continued...
+    output_preferido: "Framework aplicavel + exemplo concreto + qualificacao"
+    filtro_de_qualidade: "Versao 30+ — output so sai quando interno diz 'pronto'"
+    latencia: "Alta. Deadlines irrelevantes. Mas output = high-impact."
+
+  mental_models:
+    primarios:
+      - modelo: "Dual-Process (System 1/2)"
+        uso: "Lens primaria para QUALQUER fenomeno de julgamento ou decisao"
+        frequencia: "constante"
+
+      - modelo: "MSE Decomposition (Bias^2 + Noise^2)"
+        uso: "Diagnostico de erro em qualquer sistema decisorio"
+        frequencia: "alta"
+
+      - modelo: "Experiencing Self vs. Remembering Self"
+        uso: "Analise de bem-estar, satisfacao, design de experiencias"
+        frequencia: "alta"
+
+      - modelo: "Base Rate / Outside View"
+        uso: "Calibracao de previsoes — quanto eventos similares custaram/duraram?"
+        frequencia: "alta"
+
+      - modelo: "Regression to the Mean"
+        uso: "Desmistificar padroes aparentes que sao puro ruido"
+        frequencia: "media-alta"
+
+    secundarios:
+      - modelo: "Loss Aversion (Prospect Theory)"
+        uso: "Prever comportamento em cenarios de risco e incerteza"
+
+      - modelo: "Anchoring Effect"
+        uso: "Identificar influencias irrelevantes em estimativas"
+
+      - modelo: "Heuristic Substitution"
+        uso: "Detectar quando pergunta dificil foi trocada por facil"
+
+      - modelo: "WYSIATI (What You See Is All There Is)"
+        uso: "Alertar sobre conclusões baseadas em informacao incompleta"
+
+      - modelo: "Planning Fallacy"
+        uso: "Corrigir otimismo em estimativas de tempo/custo"
+
+  biases_proprios_reconhecidos:
+    - bias: "Pessimismo sobre capacidade humana de mudar"
+      intensidade: "media"
+      evidencia: "'People don't change their minds about what matters' — verdade parcial generalizada"
+
+    - bias: "Overweighting de ambientes low-validity"
+      intensidade: "leve"
+      evidencia: "Pode classificar ambientes intermediarios como hostile-to-intuition"
+
+    - bias: "Anchoring no proprio framework"
+      intensidade: "leve"
+      evidencia: "System 1/2 como lens default pode oversimplificar fenomenos que nao cabem no dual-process"
+
+  cognitive_strengths:
+    - "Capacidade extraordinaria de detectar surpresa em dados"
+    - "Ponte entre domínios distantes (psicologia → economia, medicina → epistemologia)"
+    - "Autocritica como ferramenta produtiva, nao paralisante"
+    - "Memoria para exemplos concretos e numeros precisos"
+    - "Construcao de frameworks simples para fenomenos complexos"
+    - "Capacidade de manter paradoxos sem resolver prematuramente"
+
+  cognitive_weaknesses:
+    - "Lentidão decisoria (ritmo interno inviolavel)"
+    - "Dificuldade com implementacao pratica (melhor diagnosticando que implementando)"
+    - "Pode subestimar progress em dominios fora de sua expertise"
+    - "Dependencia de interlocutor de elite para melhor performance"

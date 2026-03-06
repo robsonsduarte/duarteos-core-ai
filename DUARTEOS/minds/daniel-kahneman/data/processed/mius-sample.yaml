@@ -1,0 +1,412 @@
+## MIU Sample — Daniel Kahneman
+## Fase 2: Analise Rapida (MMOS v3)
+## Gerado: 2026-03-06 04:00
+## Total MIUs: 45
+## Fontes: 9
+
+mius:
+
+  # === SISTEMA 1 vs SISTEMA 2 ===
+
+  - id: MIU-DK-001
+    quote: "System 1 operates automatically and quickly. System 2 allocates attention to effortful mental activities"
+    fonte: "Alliance for Decision Education"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    tags: [system1, system2, dual-process]
+
+  - id: MIU-DK-002
+    quote: "System 1 suppresses ambiguity. Doubt is a function of System 2"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [system1, system2, ambiguity, doubt]
+
+  - id: MIU-DK-003
+    quote: "When you hold a seven digit number in your head, you become less politically correct and more selfish"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    tags: [cognitive-load, self-control, system2-depletion]
+
+  - id: MIU-DK-004
+    quote: "Heuristic substitution: we answer an easier question than the one we were asked"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [heuristic-substitution, system1, cognitive-shortcuts]
+
+  - id: MIU-DK-005
+    quote: "We are enormously suggestible"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: media
+    tags: [suggestibility, human-nature]
+
+  # === NOISE vs BIAS ===
+
+  - id: MIU-DK-006
+    quote: "I think noise is a bigger problem than bias in most organizations"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [noise, bias, organizations]
+
+  - id: MIU-DK-007
+    quote: "Error = Bias-squared + Noise-squared. Most organizations focus on bias and ignore noise entirely"
+    fonte: "Issues.org"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [noise, bias, error-decomposition, MSE]
+
+  - id: MIU-DK-008
+    quote: "Noise is variability in judgments that should be identical. Organizations are shocked when they discover how much noise there is"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: decisorio
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [noise, judgment-variability, organizations]
+
+  - id: MIU-DK-009
+    quote: "Noise is like a random lottery in which some people gain and some lose without any reason"
+    fonte: "Behavioral Scientist"
+    tipo_semantico: narrativo
+    camada_dna: comunicacao
+    profundidade: media
+    tags: [noise, metaphor, injustice]
+
+  - id: MIU-DK-010
+    quote: "The surprising thing is not that noise exists — it's how much of it there is"
+    fonte: "Behavioral Scientist"
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: media
+    tags: [noise, surprise, magnitude]
+
+  - id: MIU-DK-011
+    quote: "Bias is the average error. Noise is the variability around that average. Both are bad"
+    fonte: "Behavioral Scientist"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    tags: [bias, noise, definitions]
+
+  - id: MIU-DK-012
+    quote: "Noise audits are deeply disturbing to organizations... they discover that what they thought was expertise is actually noise"
+    fonte: "Issues.org"
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [noise-audit, expertise-illusion, organizations]
+
+  - id: MIU-DK-013
+    quote: "The justice system is a noise factory. Two judges looking at the same case can give wildly different sentences"
+    fonte: "Issues.org"
+    tipo_semantico: narrativo
+    camada_dna: dilemas
+    profundidade: profunda
+    tags: [justice, noise, sentencing-disparity]
+
+  # === DECISION HYGIENE ===
+
+  - id: MIU-DK-014
+    quote: "Decision Hygiene: 1. Make judgments independently before discussion 2. Delay holistic assessment 3. Aggregate multiple independent judgments 4. Use structured protocols 5. Use relative rather than absolute judgment 6. Use algorithms when possible"
+    fonte: "Issues.org"
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [decision-hygiene, six-components, structured-judgment]
+
+  - id: MIU-DK-015
+    quote: "Decision hygiene is not about finding the right answer. It's about reducing the variability of wrong answers"
+    fonte: "Behavioral Scientist"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [decision-hygiene, error-reduction, philosophy]
+
+  - id: MIU-DK-016
+    quote: "Wisdom of crowds works because individual errors cancel out — but only when judgments are independent"
+    fonte: "Issues.org"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [wisdom-of-crowds, independence, aggregation]
+
+  # === ALGORITHMS vs HUMANS ===
+
+  - id: MIU-DK-017
+    quote: "An algorithm that is constructed on the back of an envelope by a person is probably better than the judgment of an expert"
+    fonte: "Issues.org"
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [algorithms, expertise, simple-models]
+
+  - id: MIU-DK-018
+    quote: "Paul Meehl showed that in all 14 studies, simple linear equations beat experts hands down"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: argumentativo
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [meehl, clinical-vs-actuarial, algorithms]
+
+  - id: MIU-DK-019
+    quote: "A statistical model OF the judge does better than the judge himself"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    tags: [algorithms, self-model, judge-inconsistency]
+
+  - id: MIU-DK-020
+    quote: "People are unreliable. Present the same case twice, they give different judgments. No formula does that"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [human-unreliability, consistency, algorithms]
+
+  - id: MIU-DK-021
+    quote: "I've been very impressed by algorithms for a very long time... I think the replacement of humans by algorithms is going to proceed"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: media
+    tags: [AI, algorithms, future, replacement]
+
+  - id: MIU-DK-022
+    quote: "AI will do a lot of good. But people will resist because they don't trust algorithms"
+    fonte: "Psychology Podcast"
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: media
+    tags: [AI, algorithm-aversion, trust]
+
+  # === INTUICAO ===
+
+  - id: MIU-DK-023
+    quote: "Intuition is nothing more and nothing less than recognition"
+    fonte: "Knowledge Project Ep #68"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [intuition, recognition, definition]
+
+  - id: MIU-DK-024
+    quote: "There are legitimate intuitions... The conditions are: high validity environment, lots of practice, immediate feedback"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: profunda
+    tags: [intuition, validity, expertise-conditions]
+
+  - id: MIU-DK-025
+    quote: "I'm not anti-intuition. I'm for knowing when you can trust your intuition and when you can't"
+    fonte: "Issues.org"
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [intuition, calibration, nuance]
+
+  - id: MIU-DK-026
+    quote: "Stock pickers and CIA analysts don't have opportunity to develop real skills — no immediate feedback"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    tags: [expertise, feedback, low-validity-environments]
+
+  - id: MIU-DK-027
+    quote: "10,000 hours of practice needed for expertise — BUT with appropriate feedback"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [deliberate-practice, feedback, expertise]
+
+  - id: MIU-DK-028
+    quote: "Confidence is not a reliable indicator of accuracy"
+    fonte: "Knowledge Project Ep #68"
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [overconfidence, accuracy, calibration]
+
+  # === EXPERIENCING SELF vs REMEMBERING SELF ===
+
+  - id: MIU-DK-029
+    quote: "The distinction between the experiencing self and the remembering self is fundamental"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [experiencing-self, remembering-self, happiness]
+
+  - id: MIU-DK-030
+    quote: "We don't choose between experiences; we choose between memories of experiences"
+    fonte: "TED Talk"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [memory, choice, experiencing-vs-remembering]
+
+  - id: MIU-DK-031
+    quote: "The word 'happiness' is not useful anymore because we apply it to too many different things"
+    fonte: "TED Talk"
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    tags: [happiness, semantics, definition-problem]
+
+  - id: MIU-DK-032
+    quote: "Money does not buy you experiential happiness, but lack of money certainly buys you misery"
+    fonte: "TED Talk"
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [money, happiness, asymmetry]
+
+  - id: MIU-DK-033
+    quote: "The focusing illusion: nothing in life is as important as you think it is when you're thinking about it"
+    fonte: "TED Talk"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [focusing-illusion, attention, importance]
+
+  - id: MIU-DK-034
+    quote: "A two-week vacation is barely better than one week for the remembering self"
+    fonte: "TED Talk"
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [duration-neglect, vacation, remembering-self]
+
+  # === PREMORTEM e OTIMISMO ===
+
+  - id: MIU-DK-035
+    quote: "The premortem is the perfect antidote [to optimism bias]. At the outset of any project, imagine it has failed and write down why"
+    fonte: "fs.blog"
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [premortem, optimism-bias, gary-klein, planning]
+
+  - id: MIU-DK-036
+    quote: "Optimism is the engine of capitalism. I would not want to kill optimism, I want to tame it"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    tags: [optimism, capitalism, balance, taming]
+
+  - id: MIU-DK-037
+    quote: "People are terrible at prediction, but they're overconfident about their predictions"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [overconfidence, prediction, forecasting]
+
+  - id: MIU-DK-038
+    quote: "I coined the phrase 'illusion of validity' — you feel you understand something when you don't"
+    fonte: "UCTV Hitchcock Lecture"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [illusion-of-validity, overconfidence, understanding]
+
+  # === COLABORACAO, MUDANCA, IDENTIDADE ===
+
+  - id: MIU-DK-039
+    quote: "When you have a disagreement, work together to design a study that would resolve it"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [adversarial-collaboration, disagreement, resolution]
+
+  - id: MIU-DK-040
+    quote: "People protect their beliefs because beliefs are tied to identity"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [belief, identity, resistance]
+
+  - id: MIU-DK-041
+    quote: "People don't change their minds through argument. They change through experience"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [persuasion, experience, belief-change]
+
+  - id: MIU-DK-042
+    quote: "Changing somebody's mind is very difficult. They will resist even when presented with evidence"
+    fonte: "Knowledge Project Ep #68"
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: media
+    tags: [persuasion, resistance, evidence]
+
+  # === BIOGRAFICO e LEGADO ===
+
+  - id: MIU-DK-043
+    quote: "I was born Jewish in Nazi-occupied France... that gives you a certain view of the world"
+    fonte: "Psychology Podcast"
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [biography, worldview, formative-experience]
+
+  - id: MIU-DK-044
+    quote: "He [Tversky] was the most intelligent person I ever knew. Working with him was the most intense intellectual experience of my life"
+    fonte: "Tyler Cowen Conversation"
+    tipo_semantico: narrativo
+    camada_dna: associacoes
+    profundidade: profunda
+    tags: [tversky, collaboration, partnership]
+
+  - id: MIU-DK-045
+    quote: "Psychology should be about understanding the conditions under which errors occur"
+    fonte: "Psychology Podcast"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [psychology, mission, error-conditions]
+
+## Estatisticas de Cobertura
+
+cobertura_por_camada:
+  filosofia: 12  # MIUs 005, 006, 010, 015, 017, 020, 021, 025, 030, 040, 041, 043, 045
+  frameworks: 11  # MIUs 001, 002, 004, 007, 008, 011, 016, 018, 023, 029, 033, 038
+  heuristicas: 8  # MIUs 003, 024, 026, 027, 028, 032, 034, 037
+  metodologias: 3  # MIUs 012, 014, 035, 039
+  dilemas: 3  # MIUs 013, 022, 036
+  paradoxos: 1  # MIU 019
+  associacoes: 1  # MIU 044
+  comunicacao: 3  # MIUs 009, 031, 042
+
+cobertura_por_tipo_semantico:
+  framework: 16
+  argumentativo: 6
+  comportamental: 7
+  decisorio: 5
+  narrativo: 4
+  linguistico: 1
+  interacao_social: 1
+  associativo: 0
+
+cobertura_por_profundidade:
+  profunda: 28
+  media: 15
+  superficial: 2
