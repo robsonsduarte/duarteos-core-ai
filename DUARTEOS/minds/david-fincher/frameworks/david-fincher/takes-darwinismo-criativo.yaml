@@ -1,0 +1,49 @@
+# Takes como Darwinismo Criativo — David Fincher
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Takes como Darwinismo Criativo"
+  slug: "takes-darwinismo-criativo"
+  mind: "david-fincher"
+  category: "content"
+  source_path: "F02/rolling-stone-2021"
+
+descricao: "Framework de extracao de performance onde multiplos takes funcionam como selecao natural. Os primeiros takes executam o planejado. Os takes seguintes ultrapassam o planejado e entram no territorio do acidental — onde mora a verdade. O 'right mistake' e o momento em que o ator para de atuar e comeca a existir como o personagem."
+
+steps:
+  - step: 1
+    acao: "Passar da performance planejada"
+    detalhe: "Os primeiros takes sao ensaio disfarado. O ator executa o que preparou, o diretor confirma que o basico funciona. Mas o basico nunca e o objetivo — e apenas a linha de partida."
+  - step: 2
+    acao: "Continuar ate o acidental"
+    detalhe: "Apos esgotar o planejado, continuar filmando. Take 10, 15, 30, 70 — quantos forem necessarios. Em algum momento, o ator para de controlar e algo real acontece. Um gesto involuntario, uma pausa nao-planejada, um olhar que nao estava no roteiro."
+  - step: 3
+    acao: "Avaliar sem ego"
+    detalhe: "Revisar os takes buscando o momento de verdade, nao o momento que confirma a visao do diretor. O melhor take pode contradizer o que voce imaginou — e isso e bom. O filme e maior que a visao de qualquer individuo."
+  - step: 4
+    acao: "Buscar o 'right mistake'"
+    detalhe: "O objetivo nao e perfeicao tecnica — e o erro certo. O momento em que a imperfeicao humana gera algo mais verdadeiro do que qualquer planejamento poderia produzir. A selecao natural favorece o autentico sobre o polido."
+
+quando_usar: "Cenas com performance humana central — dialogos intensos, momentos emocionais, revelacoes de personagem. Nao se aplica a takes puramente tecnicos (VFX plates, establishing shots) onde repeticao nao gera evolucao organica."
+
+exemplos_aplicacao:
+  - cenario: "Cena do bar em The Social Network — 99 takes"
+    resultado: "Rooney Mara e Jesse Eisenberg filmaram a cena de abertura dezenas de vezes ate que a dinamica entre os personagens transcendeu o roteiro de Sorkin e se tornou algo visceralmente real."
+    fonte: "F02/rolling-stone-2021"
+  - cenario: "Jake Gyllenhaal em Zodiac — takes extensivos"
+    resultado: "A exaustao dos multiplos takes alimentou diretamente a obsessao do personagem Robert Graysmith. O processo de filmagem espelhou o arco do personagem."
+    fonte: "F02/rolling-stone-2021"
+
+anti_patterns:
+  - "Parar no take 3 — voce ainda esta no territorio do planejado"
+  - "Usar takes como demonstracao de poder — nao e sobre controle, e sobre descoberta"
+  - "Usar take 2 de 14 — se voce fez 14 takes e usou o segundo, desperdicou 12 oportunidades"
+  - "Exigir takes sem casting correto — atores mediocres nao melhoram com repeticao, apenas cansam"
+
+frameworks_relacionados:
+  - name: "Casting como Framework"
+    relacao: "prerequisito"
+  - name: "Pressao Darwiniana Criativa"
+    relacao: "complementar"

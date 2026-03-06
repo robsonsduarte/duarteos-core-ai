@@ -1,0 +1,248 @@
+# Catalogo de Fontes — David Fincher
+# Pipeline: MMOS Engine v3 — Fase 1 (Pesquisa)
+# Gerado em: 2026-03-06
+# Tiers: EXA (Tier 1) + Apify RAG Browser (Tier 2) + YouTube Transcript MCP
+
+total_fontes: 14
+fontes_primarias: 12
+fontes_mistas: 2
+fontes_secundarias_rejeitadas: 6
+tiers_usados: [EXA, Apify_RAG, YouTube_Transcript_MCP]
+
+fontes:
+  # === ENTREVISTAS EM PROFUNDIDADE (long-form) ===
+  - id: F01
+    tipo: entrevista
+    titulo: "An Interview with David Fincher — Believer Magazine"
+    url: "https://www.thebeliever.net/an-interview-with-david-fincher/"
+    entrevistador: "Mark Romanek"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2010-10-01"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Conversa entre dois diretores amigos. Material excepcional — cobre filosofia criativa, processo de edicao, colaboracao, maturidade artistica, paradoxo controle vs entrega. Uma das fontes mais ricas."
+
+  - id: F02
+    tipo: entrevista
+    titulo: "David Fincher: The Rolling Stone Interview"
+    url: "https://www.rollingstone.com/movies/movie-features/david-fincher-rolling-stone-interview-1096204/"
+    entrevistador: "David Fear"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2021-01-12"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista de 2 sessoes de 2h sobre Mank. Cobre legado do pai, ética de trabalho da mae, processo de desenvolvimento, reputacao de takes, futuro do cinema, Fight Club, Netflix, redes sociais. Material premium."
+
+  - id: F03
+    tipo: entrevista
+    titulo: "David Fincher — Guardian/BFI Southbank Transcript"
+    url: "https://www.theguardian.com/film/2009/feb/03/david-fincher-interview-transcript"
+    entrevistador: "Mark Salisbury"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2009-01-18"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Transcricao completa de evento ao vivo no BFI. Cobre infancia em Marin County, ILM, music videos, Alien 3 (fracasso formador), Se7en (head in box), Fight Club (WWF marketing), som, takes, digital workflow, Spider-Man rejeitado. Uma das fontes mais completas."
+
+  - id: F04
+    tipo: entrevista
+    titulo: "Interview: David Fincher — Film Comment (Benjamin Button)"
+    url: "https://www.filmcomment.com/article/david-fincher-interview/"
+    entrevistador: "Amy Taubin"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2009-01-01"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista tecnica profunda sobre Benjamin Button. Cobre motion capture, workflow digital, decisoes de montagem, see-and-say vs dovetailing, vulnerabilidade, romantismo, processo com Brad Pitt. Material tecnico premium."
+
+  # === ENTREVISTAS MEDIAS ===
+  - id: F05
+    tipo: entrevista
+    titulo: "David Fincher on hitmen, incels and Spider-Man — Guardian (The Killer)"
+    url: "https://www.theguardian.com/film/2023/oct/27/david-fincher-on-hitmen-incels-and-spider-mans-dumb-origin-story"
+    entrevistador: "Steve Rose"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-10-27"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista sobre The Killer. Quotes sobre maturidade, B-movies, Fight Club legado, 12-year-old interno, 100 takes. Material recente com posicoes atualizadas."
+
+  - id: F06
+    tipo: entrevista
+    titulo: "David Fincher on The Killer, AI and World War Z sequel — British GQ"
+    url: "https://www.gq-magazine.co.uk/article/david-fincher-interview"
+    entrevistador: "Jack King"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-10-25"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista sobre The Killer era. Cobre reputacao de exigente, B-movies vs art, AI, projetos cancelados."
+
+  - id: F07
+    tipo: entrevista
+    titulo: "David Fincher: Perfectionism Is a Term Thrown About by People Who Are Lazy — MovieMaker"
+    url: "https://www.moviemaker.com/david-fincher-perfectionism-is-a-term-thats-thrown-about-mostly-by-people-who-are-lazy/"
+    entrevistador: "Tim Molloy"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2021-04-02"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Quote central do clone: 'perfectionism is a term thrown about mostly by people who are lazy'. Anti-perfeccionismo como filosofia. Avoidance of perfection. Camera placement. Master shots vs inserts."
+
+  - id: F08
+    tipo: entrevista
+    titulo: "You Better Be F—ing Serious: David Fincher on Directing — FincherFanatic"
+    url: "http://fincherfanatic.blogspot.com/2011/11/you-better-be-fing-serious-david.html"
+    entrevistador: "FincherFanatic"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2011-11-01"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista face-a-face rara. Fincher sobre nao querer ser celebridade, trabalho solitario, expectativas. Dragon Tattoo era."
+
+  - id: F09
+    tipo: entrevista
+    titulo: "David Fincher — El Pais (The Killer masterclass)"
+    url: "https://thefincheranalyst.com/tag/a-lot-of-takes/page/2/"
+    entrevistador: "Tommaso Koch"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-11-05"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Entrevista espanhola traduzida. Fincher sobre tecnica cinematografica, fascinio com mentes criminosas, Alien 3, reputacao de exigente."
+
+  # === PODCASTS / VIDEO ===
+  - id: F10
+    tipo: podcast
+    titulo: "David Fincher Interview Special — Empire Film Podcast"
+    url: "https://podcasts.apple.com/us/podcast/david-fincher-interview-special/id507987292?i=1000393747862"
+    entrevistador: "Helen O'Hara"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2017-10-19"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "42 minutos sobre Mindhunter e projetos futuros. Transcript disponivel via Tapesearch."
+
+  - id: F11
+    tipo: video
+    titulo: "David Fincher on his Filmmaking Philosophy — BAFTA Guru"
+    url: "https://www.youtube.com/watch?v=L0GfX1rcpQQ"
+    entrevistador: "BAFTA"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2017-01-01"
+    tier: YouTube_Transcript_MCP
+    conteudo_extraido: true
+    notas: "Video sobre House of Cards, Gone Girl, trabalho com atores. Transcript extraido via MCP."
+
+  # === FONTES MISTAS (perfil com quotes diretas) ===
+  - id: F12
+    tipo: artigo
+    titulo: "David Fincher's Impossible Eye — NYT Magazine"
+    url: "https://www.nytimes.com/2020/11/19/magazine/david-fincher-mank-interview.html"
+    entrevistador: "Jonah Weiner"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: false
+    idioma: en
+    data_publicacao: "2020-11-19"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Perfil extenso com observacao direta do processo. Paywalled — parcial extraido via EXA. MISTA: perfil com quotes extensas."
+
+  - id: F13
+    tipo: artigo
+    titulo: "David Fincher Interviews & Quotes — StudioBinder Compilation"
+    url: "https://www.studiobinder.com/blog/david-fincher-interview-directing/"
+    entrevistador: "Chris Heckmann"
+    duracao_estimada: longa
+    profundidade: media
+    primaria: false
+    idioma: en
+    data_publicacao: "2021-08-08"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Compilacao de quotes diretas de Fincher de multiplas fontes. SECUNDARIA (compilacao) mas quotes sao primarias. Util para cross-reference."
+
+  # === PALESTRA ===
+  - id: F14
+    tipo: palestra
+    titulo: "David Fincher — Distaste With Film Industry: 'Informed, Jaded F*ck' — The Playlist"
+    url: "https://theplaylist.net/david-fincher-informed-jaded-filmmaker-20201110/"
+    entrevistador: "various"
+    duracao_estimada: curta
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2020-11-10"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Quotes sobre posicao atual na industria, jaded but emboldened."
+
+# === FONTES REJEITADAS (secundarias/interpretativas) ===
+fontes_rejeitadas:
+  - titulo: "Studiovity — David Fincher Analysis"
+    motivo: "Fonte secundaria — analise interpretativa, nao palavras de Fincher"
+  - titulo: "Fanatic Filmmaker Analysis"
+    motivo: "Fonte secundaria — comentario sobre estilo"
+  - titulo: "peekatthis — Fincher Techniques"
+    motivo: "Fonte secundaria — artigo tecnico sobre estilo, nao entrevista"
+  - titulo: "BuzzFeed — David Fincher Facts"
+    motivo: "Fonte secundaria — listicle sem profundidade"
+  - titulo: "Film Crit Hulk Analysis"
+    motivo: "Fonte secundaria — ensaio critico"
+  - titulo: "Cinephilia & Beyond Retrospectives"
+    motivo: "Fonte secundaria — retrospectiva compilada"
+
+distribuicao:
+  livros: 0  # Fincher nao tem livros autorais — adaptar target
+  entrevistas: 9  # 64% — acima do target (30%)
+  artigos: 2  # 14% (compilacoes/perfis)
+  podcasts: 1  # 7%
+  palestras: 1  # 7%
+  videos: 1  # 7%
+  nota_distribuicao: "Fincher e cineasta — nao escreve livros, artigos ou tweets. Material e predominantemente entrevistas longas, que sao a fonte ideal para captura mental pois revelam pensamento espontaneo."
+
+cobertura:
+  span_temporal: "2009-2023 (14 anos)"
+  idiomas: [en]
+  filmes_cobertos: ["Alien 3", "Se7en", "Fight Club", "The Game", "Panic Room", "Zodiac", "Benjamin Button", "The Social Network", "Dragon Tattoo", "Gone Girl", "Mank", "Mindhunter", "The Killer"]
+  periodos_carreira: ["music videos (1980s-90s)", "early films (1992-1999)", "mature films (2002-2014)", "streaming era (2013-2023)"]
+
+enriquecimento_triggers:
+  total_fontes_check: "14 >= 21? NAO — abaixo de 70% de 30. MAS: Fincher nao tem livros/artigos/tweets. 14 entrevistas profundas = alto valor por fonte."
+  alguma_camada_dna_check: "Associacoes Conceituais com cobertura limitada — aceitavel com material existente."
+  ratio_primarias_check: "12/14 = 85.7% >= 60%. PASS."
+  decisao: "Prosseguir — volume total abaixo de 21, mas qualidade e profundidade compensam. Fincher e um cineasta sem output escrito; entrevistas longas sao a melhor fonte possivel."

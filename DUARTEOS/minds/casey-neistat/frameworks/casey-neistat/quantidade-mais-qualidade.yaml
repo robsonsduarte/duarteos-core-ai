@@ -1,0 +1,71 @@
+# Quantidade + Qualidade — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Quantidade + Qualidade"
+  slug: "quantidade-mais-qualidade"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "SoulBoom-2025, DOAC-2023"
+
+descricao: >
+  Volume gera consistencia que gera qualidade. Nao e um OU outro — sao
+  complementares. O falso dilema "quantidade vs qualidade" e uma desculpa
+  de quem produz pouco. Fazer muito e fazer bem nao sao mutuamente exclusivos;
+  na verdade, fazer muito e o CAMINHO para fazer bem.
+
+steps:
+  - step: 1
+    acao: "Definir cadencia de publicacao (diaria, semanal)"
+    detalhe: >
+      Escolher uma frequencia e tratar como lei. Diario e ideal para
+      maximizar aprendizado, mas semanal tambem funciona. O importante
+      e que seja regular e inegociavel.
+  - step: 2
+    acao: "Honrar o deadline como inegociavel"
+    detalhe: >
+      O deadline nao e sugestao — e contrato. Se e diario, publica todo
+      dia. Se e semanal, publica toda semana. Sem excecoes, sem "essa
+      semana nao ficou bom".
+  - step: 3
+    acao: "Permitir que volume melhore a qualidade organicamente"
+    detalhe: >
+      Nao forcar qualidade — deixar que ela emerja naturalmente do volume.
+      No episodio 1, voce e amador. No episodio 100, voce e competente.
+      No episodio 500, voce e mestre. O processo e inevitavel.
+  - step: 4
+    acao: "Nunca pular 'porque nao esta bom o suficiente'"
+    detalhe: >
+      O perfeccionismo e o inimigo da consistencia. Publicar algo imperfeito
+      e infinitamente melhor que nao publicar nada. O publico perdoa
+      imperfeicao; nao perdoa ausencia.
+
+quando_usar: >
+  Perfeccionismo que impede publicacao. Medo de qualidade baixa.
+  Quando alguem apresenta "quantidade vs qualidade" como dilema.
+  Quando a busca por perfeicao esta matando a producao.
+
+exemplos_aplicacao:
+  - cenario: "800+ vlogs diarios consecutivos"
+    resultado: "Qualidade crescente visivel — os ultimos sao cinematograficos comparados aos primeiros"
+    fonte: "DOAC-2023"
+  - cenario: "YouTube rewards consistencia algoritmicamente"
+    resultado: "Canal cresceu exponencialmente com a cadencia diaria — volume alimentou o algoritmo"
+    fonte: "SoulBoom-2025"
+
+anti_patterns:
+  - "Qualidade sobre quantidade"
+  - "Prefiro fazer menos mas melhor"
+  - "Nao vou publicar isso"
+  - "Essa semana nao ficou bom o suficiente"
+  - "Vou esperar ate ficar perfeito"
+
+frameworks_relacionados:
+  - name: "Acao > Reflexao"
+    relacao: "Fundacional — produzir em volume exige agir mais do que refletir"
+  - name: "Recursos Nunca Sao Desculpa"
+    relacao: "Complementar — volume alto com recursos limitados e totalmente viavel"
+  - name: "Frustacao como Combustivel"
+    relacao: "Alimentador — frustacao com resultados iniciais vira energia para o proximo episodio"

@@ -1,0 +1,217 @@
+# PCFE — Pre-Clone Fidelity Estimation
+# Pipeline: MMOS Engine v3 — Fase 3 (Estimativa)
+# Gerado em: 2026-03-06
+# Mind Clone: Casey Neistat
+# Slug: casey-neistat
+
+meta:
+  nome: "Casey Neistat"
+  slug: casey-neistat
+  categoria: Content
+  dominio: "YouTube / Filmmaking / Vlogging / Storytelling / Empreendedorismo Criativo"
+  pipeline: "MMOS Engine v3"
+  fase: 3
+  data_estimativa: "2026-03-06"
+  estimador: "MMOS v3 — Fase 3 (PCFE)"
+
+# ============================================================
+# COMPONENTES PCFE
+# ============================================================
+
+volume_score:
+  valor: 85
+  peso: 0.20
+  contribuicao: 17.0
+  detalhes:
+    total_fontes: 16
+    fontes_primarias: 14
+    fontes_com_conteudo_extraido: 6
+    entrevistas_longas_60min: 2
+    base_score: 85
+    bonus_entrevistas_longas: 0  # nao aplicado porque conteudo efetivo de apenas 6 fontes
+    ajuste: "Score mantido em 85 (nao 91) porque apenas 6 de 16 fontes tiveram conteudo efetivamente extraido. As 10 restantes sao catalogadas mas sem transcricao acessivel."
+
+diversity_score:
+  valor: 50
+  peso: 0.15
+  contribuicao: 7.5
+  detalhes:
+    livros_autorais: { presente: false, pontos: 0 }
+    videos_podcasts_30min: { presente: true, pontos: 15 }
+    entrevistas_profundidade: { presente: true, pontos: 15 }
+    artigos_autorais: { presente: false, pontos: 0 }
+    tweets_social_media: { presente: false, pontos: 0 }
+    palestras: { presente: true, pontos: 10 }
+    multi_idioma: { presente: false, pontos: 0 }
+    span_temporal_5anos: { presente: true, pontos: 10 }
+    nota: "Casey nao escreve — zero livros, zero artigos autorais, zero tweets capturados. Todo material e oral/visual. Isso limita diversidade mas e coerente com o perfil (ele e filmmaker, nao escritor)."
+
+coverage_score:
+  valor: 77.5
+  peso: 0.30
+  contribuicao: 23.25
+  detalhes:
+    filosofia_core:
+      mius: 7
+      cobertura_pct: 100
+      peso_camada: 0.15
+      contribuicao: 15.0
+    filosofia_subcamadas:
+      mius: 3
+      cobertura_pct: 70
+      peso_camada: 0.10
+      contribuicao: 7.0
+      subcamadas:
+        hierarquia_valores: { coberta: true, mius: 1 }
+        motivacao_profunda: { coberta: true, mius: 1 }
+        modelo_social: { coberta: true, mius: 1 }
+    frameworks:
+      mius: 5
+      cobertura_pct: 70
+      peso_camada: 0.15
+      contribuicao: 10.5
+    heuristicas_core:
+      mius: 5
+      cobertura_pct: 70
+      peso_camada: 0.10
+      contribuicao: 7.0
+    heuristicas_modelo_social:
+      mius: 2
+      cobertura_pct: 40
+      peso_camada: 0.05
+      contribuicao: 2.0
+    metodologias:
+      mius: 3
+      cobertura_pct: 70
+      peso_camada: 0.10
+      contribuicao: 7.0
+    dilemas:
+      mius: 3
+      cobertura_pct: 70
+      peso_camada: 0.10
+      contribuicao: 7.0
+    paradoxos_produtivos:
+      mius: 7
+      cobertura_pct: 100
+      peso_camada: 0.15
+      contribuicao: 15.0
+    associacoes_conceituais:
+      mius: 3
+      cobertura_pct: 70
+      peso_camada: 0.05
+      contribuicao: 3.5
+    comunicacao_avancada:
+      mius: 4
+      cobertura_pct: 70
+      peso_camada: 0.05
+      contribuicao: 3.5
+    total_cs: 77.5
+    nota: "Todas as 10 camadas cobertas. Filosofia e Paradoxos a 100% (Casey e extremamente filosofico e paradoxal). Modelo social a 40% — ponto mais fraco, Casey fala pouco sobre dinamicas interpessoais detalhadas."
+
+profundidade_score:
+  valor: 100
+  peso: 0.20
+  contribuicao: 20.0
+  detalhes:
+    fontes_profundas_3: { presente: true, pontos: 30, exemplos: ["F01 (DOAC)", "F02 (Rich Roll)", "F07 (Design Indaba)"] }
+    fontes_medias_5: { presente: true, pontos: 25, exemplos: ["F03", "F04", "F08", "F09", "F13"] }
+    decisoes_reais: { presente: true, pontos: 15, exemplos: ["Vender Beme para CNN", "Parar daily vlog", "Sair da CNN", "Criar 368"] }
+    fracasso_vulnerabilidade: { presente: true, pontos: 15, exemplos: ["Filme Alien rejeitado", "Pobreza/welfare", "CNN fracasso", "Quase divorcio"] }
+    contradicoes_evolucao: { presente: true, pontos: 15, exemplos: ["Anti-establishment mas vendeu pra CNN", "Anti-metricas mas viciado em analytics", "Caos planejado", "Performance autentica"] }
+    nota: "Score maximo. Casey e excepcionalmente vulneravel e contraditorio em entrevistas longas — raro para criadores no nível dele. Os paradoxos sao genuinos e bem documentados."
+
+quality_score:
+  valor: 70
+  peso: 0.15
+  contribuicao: 10.5
+  detalhes:
+    primarias_90pct: { presente: true, pontos: 15, valor: "87.5% (14/16)" }
+    verificaveis: { presente: true, pontos: 20, nota: "Todas as fontes tem URL publica verificavel" }
+    transcricoes_completas: { presente: true, pontos: 20, exemplos: ["F01 DOAC (90K chars)", "F02 Rich Roll (60K chars)"] }
+    material_recente: { presente: true, pontos: 15, nota: "F05 e F13 de 2024" }
+    material_historico: { presente: true, pontos: 10, nota: "F08 de 2014, span de 10 anos" }
+    penalidades:
+      paywall_parcial: { aplicada: true, pontos: -10, nota: "How I Built This (Wondery+) e Tim Ferriss PDF (paywall)" }
+    nota: "Qualidade boa mas nao excelente. 2 transcricoes completas sao excelentes, porem 10 fontes catalogadas sem conteudo extraido reduzem o score efetivo."
+
+# ============================================================
+# CALCULO FINAL
+# ============================================================
+
+resultado:
+  formula: "FE = (VS * 0.20) + (DS * 0.15) + (CS * 0.30) + (PS * 0.20) + (QS * 0.15)"
+  calculo: "FE = (85 * 0.20) + (50 * 0.15) + (77.5 * 0.30) + (100 * 0.20) + (70 * 0.15)"
+  decomposicao:
+    VS_contribuicao: 17.0
+    DS_contribuicao: 7.5
+    CS_contribuicao: 23.25
+    PS_contribuicao: 20.0
+    QS_contribuicao: 10.5
+  fidelity_estimated: 78.25
+  classificacao: BOM
+  faixa: "70-84"
+  decisao: GO_COM_RESSALVAS
+
+# ============================================================
+# ANALISE DE GAPS E RECOMENDACOES
+# ============================================================
+
+gaps:
+  criticos:
+    - camada: diversity_score
+      gap: "Zero livros, zero artigos autorais, zero tweets"
+      impacto: "DS limitado a 50/100"
+      mitigacao: "Inerente ao perfil — Casey nao escreve. Compensar com mais transcricoes de podcasts."
+
+    - camada: coverage_score
+      gap: "Modelo social (heuristicas) a 40%"
+      impacto: "CS reduzido em ~3 pontos"
+      mitigacao: "Buscar entrevistas onde Casey fala sobre equipe 368, relacao com Sam Sheffer, Dan Mace."
+
+  moderados:
+    - camada: quality_score
+      gap: "10 fontes catalogadas sem conteudo extraido"
+      impacto: "QS penalizado, material disponivel mas inacessivel"
+      mitigacao: "Tentar YouTube Transcript MCP nas palestras (F09, F10). Buscar transcricoes alternativas de F04 (How I Built This)."
+
+    - camada: coverage_score
+      gap: "Frameworks a 70% — Casey opera mais por instinto que por frameworks explicitos"
+      impacto: "CS reduzido em ~4.5 pontos"
+      mitigacao: "Normal para criadores intuitivos. Inferir frameworks implicitos durante Fase 6 (Processamento)."
+
+  leves:
+    - camada: volume_score
+      gap: "Conteudo efetivo de apenas 6 fontes"
+      impacto: "VS conservador em 85"
+      mitigacao: "Transcrever mais 3-4 fontes elevaria VS para 90+."
+
+recomendacao_enriquecimento:
+  necessario: true
+  prioridades:
+    - acao: "Transcrever F04 (How I Built This) via fonte alternativa"
+      impacto_estimado: "+2 CS, +3 QS"
+    - acao: "Extrair transcricoes YouTube de F09 e F10 (palestras)"
+      impacto_estimado: "+2 CS, +2 VS"
+    - acao: "Buscar tweets/threads do Casey no X (pre-2023)"
+      impacto_estimado: "+5 DS"
+    - acao: "Buscar entrevistas sobre equipe/colaboradores (368, Sam Sheffer)"
+      impacto_estimado: "+3 CS (modelo social)"
+  fe_potencial_pos_enriquecimento: 83.0
+  nota: "Com enriquecimento, FE pode subir de 78.25 para ~83, ainda na faixa BOM mas proximo do topo."
+
+# ============================================================
+# GATE HUMANO — PAINEL DE DECISAO
+# ============================================================
+
+gate_humano:
+  status: AGUARDANDO_DECISAO
+  opcoes:
+    - opcao: APROVAR
+      descricao: "Prosseguir com FE 78.25 (BOM). Material suficiente para clone de alta qualidade, especialmente em filosofia e paradoxos."
+    - opcao: ENRIQUECER
+      descricao: "Loop de volta a Fase 1. Priorizar transcricoes de F04, F09, F10 e tweets. FE potencial: ~83."
+    - opcao: ABORTAR
+      descricao: "Cancelar clonagem. NAO recomendado — material e rico apesar dos gaps."
+  recomendacao: "APROVAR. FE 78.25 e solido para um criador oral/visual. Os paradoxos e a profundidade emocional compensam a baixa diversidade de formatos. Casey Neistat e um dos criadores mais autoconscientes e articulados — a qualidade das MIUs e excepcionalmente alta."
+  iteracao_enriquecimento: 0
+  max_iteracoes: 3

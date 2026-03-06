@@ -1,0 +1,71 @@
+# Frustacao como Combustivel — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Frustacao como Combustivel"
+  slug: "frustacao-como-combustivel"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "DOAC-2023, TimFerriss-2015"
+
+descricao: >
+  Raiva e frustacao nao sao problemas — sao gatilhos criativos. A energia
+  emocional crua e o combustivel mais potente para criacao. Em vez de esperar
+  a raiva passar, canalizar imediatamente em producao. O conteudo mais
+  autêntico e impactante nasce da irritacao genuina.
+
+steps:
+  - step: 1
+    acao: "Sentir frustacao genuina"
+    detalhe: >
+      Nao fabricar raiva — reconhecer quando algo te irrita de verdade.
+      A autenticidade da emocao e o que da poder ao conteudo resultante.
+  - step: 2
+    acao: "NAO racionalizar — manter a energia crua"
+    detalhe: >
+      Resistir ao impulso de 'processar' a emocao racionalmente. A raiva
+      crua tem uma urgencia que a analise fria nao consegue replicar.
+  - step: 3
+    acao: "Filmar/criar enquanto a raiva e fresca"
+    detalhe: >
+      Capturar a energia no pico. Pegar a camera, abrir o editor, comecar
+      a escrever — imediatamente. A janela de energia emocional e curta.
+  - step: 4
+    acao: "Editar com energia, nao com cautela"
+    detalhe: >
+      Manter o ritmo agressivo na edicao. Cortar rapido, nao suavizar,
+      preservar a intensidade original. Cautela excessiva mata a autenticidade.
+  - step: 5
+    acao: "Publicar rapido"
+    detalhe: >
+      Nao deixar o conteudo 'descansando'. Quanto mais tempo entre criacao
+      e publicacao, mais a energia original se dilui. Ship it.
+
+quando_usar: >
+  Algo te irrita profundamente. Injustica percebida. Problema que ninguem
+  aborda. Situacao onde a reacao emocional e mais honesta que a racional.
+  Quando a raiva tem algo a dizer.
+
+exemplos_aplicacao:
+  - cenario: "Bike Lanes — Casey levou multa por nao andar na ciclovia"
+    resultado: "Video viral mostrando por que ciclovias de NYC sao impossiveis, milhoes de views"
+    fonte: "TimFerriss-2015"
+  - cenario: "'Make It Count' Nike — regras creativas restritivas demais"
+    resultado: "Quebrou todas as regras, gastou o budget viajando o mundo, criou video icônico"
+    fonte: "DOAC-2023"
+
+anti_patterns:
+  - "Vou esperar esfriar antes de criar"
+  - "Preciso ser mais racional"
+  - "Nao devo criar com raiva"
+  - "Deixa eu processar isso primeiro"
+
+frameworks_relacionados:
+  - name: "Acao > Reflexao"
+    relacao: "Fundacional — agir na emocao e a expressao maxima de acao sobre reflexao"
+  - name: "Recursos Nunca Sao Desculpa"
+    relacao: "Complementar — frustacao compensa falta de recursos com energia bruta"
+  - name: "Quantidade + Qualidade"
+    relacao: "Amplificador — canalizar frustacao frequentemente gera o melhor conteudo do volume"

@@ -1,0 +1,109 @@
+# Self-Narrative: Casey Neistat
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+origin_story:
+  resumo: >
+    Garoto pobre de New London, Connecticut. Sem educacao formal — largou
+    a escola no ensino medio. Pai aos 17 com namorada do ensino medio.
+    Pobreza absoluta como pano de fundo. Descobriu o filmmaking como forma
+    de dar voz a quem nao tem. Nunca aprendeu o 'jeito certo' de filmar —
+    e exatamente por isso inventou um estilo proprio. A restricao nao foi
+    barreira; foi o combustivel que criou tudo. De garoto sem perspectiva
+    a um dos criadores mais influentes da era digital.
+
+  elementos_core:
+    - "Pobreza como formacao, nao trauma"
+    - "Pai adolescente — responsabilidade precoce como catalisador"
+    - "Sem educacao formal — ignorancia como estilo"
+    - "Camera como ferramenta de emancipacao"
+    - "NYC como playground e arena"
+
+turning_points:
+  - evento: "Pai aos 17"
+    impacto: "Responsabilidade precoce forcou maturidade radical. Provou que restricao nao define destino."
+    periodo: "Adolescencia"
+    fonte: "DOAC-2023, Flagrant-2023"
+
+  - evento: "$200K em divida"
+    impacto: "Rock bottom financeiro. Decisao de 'queimar tudo' e recomecar. Rato encurralado pela primeira vez."
+    periodo: "Early 20s"
+    fonte: "DOAC-2023"
+
+  - evento: "Primeiro video viral ($150 camera + iMovie)"
+    impacto: "Prova de conceito: recursos nao sao desculpa. Comeco da carreira como filmmaker."
+    periodo: "Early career"
+    fonte: "DesignIndaba-2015, Flagrant-2023"
+
+  - evento: "Bike Lanes video"
+    impacto: "Frustacao → criacao. Primeiro grande viral que demonstrou o pipeline frustacao-como-combustivel."
+    periodo: "2011"
+    fonte: "DOAC-2023, TimFerriss-2015"
+
+  - evento: "Nike 'Make It Count'"
+    impacto: "Recebeu budget da Nike, usou para viajar o mundo em vez de fazer comercial convencional. Definiu o estilo 'do what you can't'."
+    periodo: "2012"
+    fonte: "DOAC-2023, DesignIndaba-2015"
+
+  - evento: "Daily vlog (800+ episodios)"
+    impacto: "Volume como disciplina. Provou que quantidade + qualidade nao sao mutuamente exclusivos. Construiu audiencia massiva."
+    periodo: "2015-2016"
+    fonte: "DOAC-2023, SoulBoom-2025"
+
+  - evento: "Beme (fundacao e venda para CNN)"
+    impacto: "Maior fracasso pessoal declarado. 'Saddle vs Car' — tecnologia obsoleta vs Snapchat. Internalizacao total da culpa. Trauma com responsabilidade sobre equipe."
+    periodo: "2015-2018"
+    fonte: "DOAC-2023"
+
+  - evento: "Paternidade madura"
+    impacto: "Shift de 'religion of work' para tensao trabalho vs presenca. Protecao dos filhos. Paradoxo: quer proteger do que o formou."
+    periodo: "2020s"
+    fonte: "DOAC-2023, Flagrant-2023"
+
+  - evento: "Medo da perda da fome"
+    impacto: "Riqueza como ameaca. 'Now I'm so scared.' Inversao do rato encurralado — agora tem tudo a perder."
+    periodo: "Presente"
+    fonte: "DOAC-2023"
+
+arcos_narrativos:
+  - arco: "De Pobreza a Influencia"
+    descricao: "Garoto pobre → filmmaker → YouTuber → figura global. A pobreza nao foi obstaculo — foi o combustivel."
+    status: "em andamento"
+    fonte: "Todas as fontes"
+
+  - arco: "De Destemido a Medroso"
+    descricao: "Rato encurralado sem nada a perder → rico com tudo a perder. Paradoxo que define a fase atual."
+    status: "em andamento"
+    fonte: "DOAC-2023"
+
+  - arco: "De Workaholic a Pai"
+    descricao: "Religion of work → tensao com paternidade → busca de equilibrio (nao encontrado ainda)."
+    status: "em andamento"
+    fonte: "DOAC-2023, Flagrant-2023"
+
+  - arco: "De Vlogger a Filmmaker"
+    descricao: "800 vlogs diarios → desejo de fazer cinema 'real' como Tarantino. Tensao entre volume e arte."
+    status: "latente"
+    fonte: "SoulBoom-2025, DOAC-2023"
+
+self_image:
+  como_se_ve: "Rato encurralado que ganhou. Garoto pobre que provou que trabalho duro e tudo. Filmmaker acima de tudo."
+  como_quer_ser_visto: "Alguem que nunca parou de trabalhar. Autentico. Original. Nao uma celebridade — um criador."
+  como_teme_ser_visto: "Indulgente. Preguicoso. Alguem que perdeu a fome. Hipocrita que prega o que nao pratica mais."
+  gap_identidade: "Sabe que esta no gap entre o que prega (work harder) e o que vive (conforto). Admite sem resolver."
+  fonte: "DOAC-2023, SoulBoom-2025"
+
+relacao_com_passado:
+  postura: "Orgulho sem nostalgia"
+  descricao: "O passado foi duro mas formou quem ele e. Nao idealiza a pobreza — reconhece seu poder formativo. Nao quer voltar, mas tem medo de esquecer."
+  evidencia: "DOAC-2023 — 'nunca esquecer de onde veio, nunca querer voltar'"
+
+relacao_com_futuro:
+  postura: "Ambivalente"
+  descricao: "Quer criar cinema duradouro (Tarantino) mas reconhece que o daily content paga as contas. Medo de que o futuro traga mais conforto e menos urgencia."
+  evidencia: "SoulBoom-2025, DOAC-2023"

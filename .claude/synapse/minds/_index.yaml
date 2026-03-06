@@ -3,7 +3,7 @@
 # Total: 64 clones em 10 categorias
 version: 2
 last_updated: "2026-03-06"
-total_clones: 65
+total_clones: 67
 
 categories:
   AI:
@@ -180,6 +180,30 @@ categories:
       pipeline: "MMOS v3"
 
   Content:
+    - slug: "casey-neistat"
+      name: "Casey Neistat"
+      domain: "Filmmaking digital, YouTube, storytelling, empreendedorismo criativo"
+      clone_file: ".claude/commands/DUARTEOS/Content/casey-neistat.md"
+      dna_file: ".claude/synapse/minds/casey-neistat.yaml"
+      versao_dna: 1
+      total_fontes: 6
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 94.10
+      last_updated: "2026-03-06"
+      pipeline: "MMOS v3"
+    - slug: "david-fincher"
+      name: "David Fincher"
+      domain: "Direcao cinematografica, narrativa visual, perfeccionismo criativo, cinema digital"
+      clone_file: ".claude/commands/DUARTEOS/Content/david-fincher.md"
+      dna_file: ".claude/synapse/minds/david-fincher.yaml"
+      versao_dna: 1
+      total_fontes: 14
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 90.50
+      last_updated: "2026-03-06"
+      pipeline: "MMOS v3"
     - slug: "camila-porto"
       name: "Camila Porto"
       domain: "Marketing em Redes Sociais e Facebook Marketing"

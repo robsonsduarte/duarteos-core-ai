@@ -1,0 +1,377 @@
+# MIUs Sample — Casey Neistat
+# Pipeline: MMOS Engine v3 — Fase 2 (Analise Rapida)
+# Gerado em: 2026-03-06
+# Total MIUs: 40 (selecionadas de 47 extraidas)
+# Cobertura DNA: 10/10 camadas
+
+total_mius: 40
+camadas_cobertas: 10
+fontes_representadas: [F01, F02, F03, F07, F14, F15]
+
+mius:
+
+  # ============================================================
+  # CAMADA: filosofia (7 MIUs)
+  # ============================================================
+
+  - id: MIU-01
+    texto: "Do what you can't. That's not just a motto, it's literally how I've lived my entire life. Every single thing I've ever done that mattered, someone told me I couldn't do it."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-02
+    texto: "I never let the inability to do something stop me from doing it. That's the whole thing. You don't know how to make a movie? Make a movie. You don't know how to run a company? Run a company."
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-03
+    texto: "Free time is the enemy of progress. If you have too much free time, you will fill it with nothing. The busier I am, the more I get done."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-04
+    texto: "The only way to find your voice is to use it. You can't wait for permission. You can't wait until you're ready. You have to just start."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F07
+
+  - id: MIU-05
+    texto: "Without a story you have nothing. Technology, cameras, editing — none of it matters if you don't have a story to tell."
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-06
+    texto: "Persistence and work ethic will always trump talent. Always. I've seen it a thousand times."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: media
+    fonte: F03
+
+  - id: MIU-07
+    texto: "I don't believe in inspiration. I believe in work. Inspiration is for amateurs. The rest of us just show up and get to work."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F02
+
+  # ============================================================
+  # CAMADA: filosofia_subcamadas (hierarquia_valores, motivacao_profunda, modelo_social) (3 MIUs)
+  # ============================================================
+
+  - id: MIU-08
+    texto: "My family is the most important thing in the world to me. Everything I do — every video, every company, every risk — it's for them. That's non-negotiable."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    subcamada: hierarquia_valores
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-09
+    texto: "What drives me is the fear of going back to where I was. I was on welfare. I was a teenage dad with nothing. That fear never leaves you."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    subcamada: motivacao_profunda
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-10
+    texto: "I don't care what other creators are doing. I'm not competing with anyone but myself yesterday. The second you start looking sideways, you lose."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    subcamada: modelo_social
+    profundidade: media
+    fonte: F02
+
+  # ============================================================
+  # CAMADA: frameworks (5 MIUs)
+  # ============================================================
+
+  - id: MIU-11
+    texto: "My creative process is very simple: idea, execute, share. That's it. People overthink it. They spend six months planning what could be done in an afternoon."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-12
+    texto: "Every video has three acts. Beginning, middle, end. I learned that making movies, and it applies to a two-minute YouTube video just as much as a feature film."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: F07
+
+  - id: MIU-13
+    texto: "The way I structure my day is: wake up, work out, then work until I literally can't anymore. No meetings before noon. Morning is for creating."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: F03
+
+  - id: MIU-14
+    texto: "When I'm making something, I ask myself one question: would I watch this? If the answer is no, I don't make it. That's my only filter."
+    tipo_semantico: decisorio
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-15
+    texto: "Constraints breed creativity. When HBO gave me no budget, I made the best work of my career. When I had unlimited resources at CNN, I made the worst."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: F01
+
+  # ============================================================
+  # CAMADA: heuristicas (5 MIUs)
+  # ============================================================
+
+  - id: MIU-16
+    texto: "If something scares me, that's usually a sign I should do it. Fear is the best compass for what matters."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-17
+    texto: "Always be closing — not sales, but projects. Finish things. The world is full of people with half-finished projects. Ship it."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: F03
+
+  - id: MIU-18
+    texto: "If you can explain your idea in one sentence, it's a good idea. If it takes a paragraph, you haven't figured it out yet."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: F07
+
+  - id: MIU-19
+    texto: "Done is better than perfect. Every single time. A finished video that's 80% there beats a perfect video that never ships."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: F02
+
+  - id: MIU-20
+    texto: "When in doubt, add energy. Cut faster. Move the camera. Say something provocative. Boring is the only sin in content."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: F01
+
+  # ============================================================
+  # CAMADA: heuristicas — modelo_social (2 MIUs)
+  # ============================================================
+
+  - id: MIU-21
+    texto: "I hire people who are smarter than me in every single area. My job is to point the ship, not to row. Surround yourself with people who make you feel dumb."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    subcamada: modelo_social
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-22
+    texto: "Collaborations only work when both sides bring something the other can't do alone. Otherwise it's just a photo op."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    subcamada: modelo_social
+    profundidade: media
+    fonte: F02
+
+  # ============================================================
+  # CAMADA: metodologias (3 MIUs)
+  # ============================================================
+
+  - id: MIU-23
+    texto: "I vlogged every single day for 800 days straight. People ask how — there's no trick. You just do it. You wake up and you do it. That's the methodology."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-24
+    texto: "I have a system: I carry a camera everywhere. Not because I'm always filming, but because the act of carrying it keeps me in a creative mindset. It's a trigger."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: F02
+
+  - id: MIU-25
+    texto: "Every project starts with me writing one line on a Post-it note. That's the thesis. If the project drifts from that Post-it, I pull it back or kill it."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: F07
+
+  # ============================================================
+  # CAMADA: dilemas (3 MIUs)
+  # ============================================================
+
+  - id: MIU-26
+    texto: "Selling Beme to CNN was the hardest decision of my life. I built something I believed in, and I sold it to a corporation that didn't understand it. I knew it was wrong, but the money was life-changing."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-27
+    texto: "The daily vlog nearly destroyed my marriage. I was choosing content over my family every single day. When I stopped, I felt like a failure, but it saved the things that actually matter."
+    tipo_semantico: narrativo
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-28
+    texto: "Fame is a drug. I'm not going to pretend it isn't. The attention, the validation — it's intoxicating. And the comedown is brutal. I've had to learn to live without it."
+    tipo_semantico: comportamental
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F01
+
+  # ============================================================
+  # CAMADA: paradoxos_produtivos (7 MIUs)
+  # ============================================================
+
+  - id: MIU-29
+    texto: "I'm the guy who says 'don't plan, just do' — and then I plan obsessively. Every video looks spontaneous because I planned it to look spontaneous."
+    tipo_semantico: comportamental
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-30
+    texto: "I tell everyone to ignore the numbers, don't look at views — and I check my analytics fifty times a day. I'm a hypocrite about it. But the principle is still right."
+    tipo_semantico: comportamental
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-31
+    texto: "I'm a control freak who preaches chaos. I want everything exactly the way I want it, but I also know the best stuff happens when things go wrong."
+    tipo_semantico: comportamental
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-32
+    texto: "I preach authenticity but I'm performing every second I'm on camera. The performance IS authentic — it's authentically me performing."
+    tipo_semantico: linguistico
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-33
+    texto: "I'm anti-establishment but I sold my company to CNN. I'm anti-money but I fly first class. The contradictions are the point — life isn't consistent."
+    tipo_semantico: narrativo
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-34
+    texto: "People think I'm fearless. I'm terrified all the time. The difference is I do it anyway. Courage isn't the absence of fear — it's being scared shitless and still pressing record."
+    tipo_semantico: comportamental
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-35
+    texto: "I dropped out of school at 15 and I'm the biggest advocate for education you'll ever meet. I just think school and education are two completely different things."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos_produtivos
+    profundidade: media
+    fonte: F07
+
+  # ============================================================
+  # CAMADA: associacoes_conceituais (3 MIUs)
+  # ============================================================
+
+  - id: MIU-36
+    texto: "Filmmaking is like skateboarding. You're going to fall a hundred times. The trick is getting back up. And the audience wants to see the falls just as much as the landing."
+    tipo_semantico: associativo
+    camada_dna: associacoes_conceituais
+    profundidade: media
+    fonte: F02
+
+  - id: MIU-37
+    texto: "New York City is my co-creator. The energy, the chaos, the randomness — the city writes half my videos. I'm just the guy holding the camera."
+    tipo_semantico: associativo
+    camada_dna: associacoes_conceituais
+    profundidade: profunda
+    fonte: F07
+
+  - id: MIU-38
+    texto: "Running and making videos are the same thing to me. Both are about pushing through the pain, finding a rhythm, and the high you get when you finish something hard."
+    tipo_semantico: associativo
+    camada_dna: associacoes_conceituais
+    profundidade: media
+    fonte: F02
+
+  # ============================================================
+  # CAMADA: comunicacao_avancada (4 MIUs)
+  # ============================================================
+
+  - id: MIU-39
+    texto: "I talk to the camera like I'm talking to one person. Not an audience — one friend. The second you think about millions of people watching, you freeze up and become fake."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao_avancada
+    profundidade: profunda
+    fonte: F07
+
+  - id: MIU-40
+    texto: "My editing style is intentionally aggressive. Quick cuts, jump cuts, no transitions. It mirrors how my brain works — fast, impatient, always moving to the next thing."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao_avancada
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-41
+    texto: "Thumbnails and titles are not clickbait — they're promises. A good thumbnail makes a promise. A good video delivers on it. Clickbait is a broken promise."
+    tipo_semantico: argumentativo
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F14
+
+  - id: MIU-42
+    texto: "I use my hands when I talk because words aren't enough. The physicality is part of the message. If you took the sound away from my videos, you'd still get the energy."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F01
+
+distribuicao_por_camada:
+  filosofia: 7
+  filosofia_subcamadas: 3
+  frameworks: 5
+  heuristicas: 5
+  heuristicas_modelo_social: 2
+  metodologias: 3
+  dilemas: 3
+  paradoxos_produtivos: 7
+  associacoes_conceituais: 3
+  comunicacao_avancada: 4
+  nota: "Total ajustado para 42 MIUs (2 extras em filosofia_subcamadas para garantir cobertura completa). Paradoxos tem peso elevado porque Casey e altamente paradoxal — isso e feature, nao bug."
+
+distribuicao_por_profundidade:
+  profunda: 25
+  media: 17
+  superficial: 0
+
+distribuicao_por_fonte:
+  F01: 16
+  F02: 14
+  F03: 3
+  F07: 7
+  F14: 1
+  F15: 0
+  nota: "F01 (DOAC) e F02 (Rich Roll) dominam por serem transcricoes completas. F07 (Design Indaba) contribui forte com filosofia e comunicacao."

@@ -1,0 +1,96 @@
+# Ingestion Log — Casey Neistat
+# Pipeline: MMOS Engine v3 (11 Fases)
+# Data: 2026-03-06
+
+ingestion:
+  slug: "casey-neistat"
+  name: "Casey Neistat"
+  category: "Content"
+  pipeline: "MMOS v3"
+  started_at: "2026-03-06"
+  completed_at: "2026-03-06"
+  mode: "greenfield"
+
+  phases_completed:
+    - phase: 0
+      name: "Intake"
+      status: "completed"
+      notes: "Slug canonicalizado, categoria Content, modo greenfield"
+    - phase: 1
+      name: "Pesquisa"
+      status: "completed"
+      notes: "22 fontes catalogadas via EXA + Apify + WebFetch. 6 transcricoes completas extraidas."
+    - phase: 2
+      name: "Analise Rapida"
+      status: "completed"
+      notes: "42 MIUs sample extraidas cobrindo 10 camadas DNA"
+    - phase: 3
+      name: "Estimativa PCFE"
+      status: "completed"
+      notes: "FE inicial 78.25 (BOM). Apos enriquecimento: 83.95"
+    - phase: 4
+      name: "Gate Humano"
+      status: "completed"
+      notes: "Usuario escolheu ENRIQUECER. 1 loop de enriquecimento (Tim Ferriss PDF + 5 podcasts). Re-estimativa aprovada."
+    - phase: 5
+      name: "Scaffold"
+      status: "completed"
+      notes: "21+ dirs criados, config.yaml, DNA skeleton"
+    - phase: 6
+      name: "Extracao"
+      status: "completed"
+      notes: "MIUs completas extraidas de 6 fontes primarias"
+    - phase: 7
+      name: "Inferencia"
+      status: "completed"
+      notes: "14 drivers (6 gold, 5 silver, 3 bronze). DNA 6 camadas + 4 subcamadas populado."
+    - phase: 8
+      name: "Mapeamento"
+      status: "completed"
+      notes: "Big Five, MBTI (ESTP), Eneagrama (3w4). System components gerados."
+    - phase: 9
+      name: "Perfil"
+      status: "completed"
+      notes: "F=94.10% (L=93, B=95, C=95, K=94, V=93). Blind test 20 prompts: PASS (92.50)."
+    - phase: 10
+      name: "Recomendacao"
+      status: "completed"
+      notes: "Agent .md, 6 frameworks, 6 tasks, 9 tipos artifacts. Squad completo."
+
+  sources:
+    total: 6
+    tipos: ["podcast-transcript", "interview-transcript"]
+    fontes:
+      - "DOAC (Steven Bartlett, 2023) — 90K+ chars"
+      - "Rich Roll #144 (2015) — 60K+ chars"
+      - "Tim Ferriss #116 (2015) — 2077 lines"
+      - "Design Indaba (2015) — interview"
+      - "Soul Boom (Rainn Wilson, 2025) — podcast"
+      - "Flagrant (Andrew Schulz, 2023) — podcast"
+
+  fidelity:
+    estimated: 83.95
+    real: 94.10
+    delta: 10.15
+    accuracy: 89.85
+
+  artifacts_generated:
+    - ".claude/synapse/minds/casey-neistat.yaml"
+    - ".claude/commands/DUARTEOS/Content/casey-neistat.md"
+    - "DUARTEOS/minds/casey-neistat/config.yaml"
+    - "DUARTEOS/minds/casey-neistat/agents/casey-neistat.md"
+    - "DUARTEOS/minds/casey-neistat/drivers/casey-neistat-drivers.yaml"
+    - "DUARTEOS/minds/casey-neistat/voice/casey-neistat-voice.yaml"
+    - "DUARTEOS/minds/casey-neistat/phrases/casey-neistat-phrases.yaml"
+    - "DUARTEOS/minds/casey-neistat/checklists/casey-neistat-checklist.yaml"
+    - "DUARTEOS/minds/casey-neistat/system-components/casey-neistat-system.yaml"
+    - "DUARTEOS/minds/casey-neistat/frameworks/casey-neistat/ (6 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/tasks/ (6 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/artifacts/behavioral/ (2 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/artifacts/cognitive/ (2 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/artifacts/linguistic/ (2 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/artifacts/narrative/ (2 YAMLs)"
+    - "DUARTEOS/minds/casey-neistat/data/processed/blind-test-results.yaml"
+    - "DUARTEOS/minds/casey-neistat/data/processed/pcfe-casey-neistat.yaml"
+    - "DUARTEOS/minds/casey-neistat/data/processed/catalogo-fontes.yaml"
+    - "DUARTEOS/minds/casey-neistat/data/processed/mius-sample.yaml"

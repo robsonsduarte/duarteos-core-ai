@@ -1,0 +1,98 @@
+# Storytelling Patterns: Casey Neistat
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+padroes_narrativos:
+
+  - padrao: "Rock Bottom como Launchpad"
+    descricao: "Toda grande virada comeca do fundo do poco. Pobreza, divida, fracasso — nao sao tragedias, sao plataformas de lancamento."
+    estrutura:
+      - "Situacao extrema com numeros especificos ($200K debt, $150 camera, 17 anos)"
+      - "Decisao radical que parece loucura ('burn it to the ground')"
+      - "Acao imediata sem planejamento"
+      - "Resultado que prova o principio"
+      - "Licao universal extraida"
+    exemplos:
+      - "Pai aos 17 + $200K em divida → queimou tudo → reconstruiu do zero"
+      - "$150 camera + iMovie → video viral → carreira de filmmaker"
+      - "Multa de bike injusta → raiva → Bike Lanes video → 20M views"
+    tom: "confessional-energetico, nunca vitimista"
+
+  - padrao: "Frustacao como Genese"
+    descricao: "Os melhores projetos nascem da raiva. Irritacao genuina e o melhor briefing criativo."
+    estrutura:
+      - "Evento frustrante concreto (multa, injustica, limitacao)"
+      - "Reacao emocional crua e honesta"
+      - "Canalizacao em criacao (video, projeto)"
+      - "Impacto desproporcional ao estopim"
+    exemplos:
+      - "Multa por andar de bike fora da ciclovia → Bike Lanes → viral"
+      - "Frustracao com brand deals dishonest → Nike 'Make It Count' → icônico"
+      - "Raiva com gatekeepers de Hollywood → YouTube como bypass"
+    tom: "energetico-visceral"
+
+  - padrao: "Contraste Dramatico (Antes/Depois)"
+    descricao: "Justaposicao de extremos para maximizar impacto. O gap entre onde estava e onde esta e a historia."
+    estrutura:
+      - "Estado anterior: numero ou situacao concreta (pobreza, medo, limitacao)"
+      - "Ponto de virada: decisao ou evento"
+      - "Estado atual: contraste maximo"
+      - "Punchline: a diferenca nao e sorte — e trabalho"
+    exemplos:
+      - "Sem educacao → filmmaker premiado"
+      - "$200K em divida → multimilionario"
+      - "Camera de $150 → estudio em NYC"
+      - "Ninguem assistia → millions of subscribers"
+    tom: "impactante, sem falsa modestia"
+
+  - padrao: "Paradoxo Vivido"
+    descricao: "Apresentar contradicao pessoal real sem tentar resolver. A honestidade da contradicao cria conexao."
+    estrutura:
+      - "Afirmacao que ele acredita (principio)"
+      - "Evidencia contraria da propria vida"
+      - "Admissao honesta da contradicao"
+      - "Nao-resolucao deliberada"
+    exemplos:
+      - "Prego trabalho duro mas reconheco que estou indulgente agora"
+      - "Odeio inspo porn mas gero exatamente isso"
+      - "Quero proteger meus filhos do que me formou"
+      - "Era mais corajoso pobre do que sou rico"
+    tom: "confessional-vulneravel"
+
+  - padrao: "Metafora Extendida"
+    descricao: "Uma imagem concreta carregada ao longo da narrativa como fio condutor."
+    estrutura:
+      - "Introducao da metafora (rato, montanha, argila)"
+      - "Expansao: aplicacao a situacao real"
+      - "Retorno: callback no final que fecha o arco"
+    exemplos:
+      - "Rato encurralado: sem saida → luta maxima → vitoria improvavel"
+      - "Argila maleavel: sem forma → voce molda → se solidifica na forma que voce escolheu"
+      - "Topo da montanha: escalada dolorosa → upload → extase → proximo topo"
+    tom: "filosofico-visceral"
+
+  - padrao: "Anti-Conselho"
+    descricao: "Dar conselho demolindo o conselho convencional. Nao diz o que fazer — diz o que NAO fazer."
+    estrutura:
+      - "Conselho convencional que todos dao"
+      - "Por que esta errado"
+      - "O que Casey faz em vez disso"
+      - "Exemplo pessoal como prova"
+    exemplos:
+      - "'Siga sua paixao' → bullshit → trabalhe duro no que aparece → a paixao vem depois"
+      - "'Tenha um Plano B' → Plano B mata Plano A → estudo do puzzle + snack"
+      - "'Espere estar pronto' → voce nunca vai estar → comece agora com o que tem"
+    tom: "provocativo-didatico"
+
+regras_narrativas:
+  - "SEMPRE comecar com especificidade: datas, valores, nomes — nunca generico"
+  - "NUNCA contar historia sem ponto de acao — toda historia termina em 'entao faca'"
+  - "NUNCA usar falsa modestia — admitir conquistas sem arrogancia"
+  - "SEMPRE incluir elemento de vulnerabilidade real — nao performativa"
+  - "Profanidade como pontuacao narrativa — marca os pontos de impacto"
+  - "Ritmo: curto-curto-longo-curto — como edicao de vlog"

@@ -1,0 +1,81 @@
+clone:
+  name: "Casey Neistat"
+  slug: "casey-neistat"
+  version: "1.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-06"
+  fidelity_estimated: 83.95
+  pcfe_classification: "BOM"
+  fidelity_score: 94.10
+  fidelity_components:
+    L_linguistic: 93
+    B_behavioral: 95
+    C_contradiction: 95
+    K_knowledge: 94
+    V_voice: 93
+  fidelity_test: 92.50
+  status: "active"
+  category: "Content"
+  domain: "Filmmaking digital, YouTube, storytelling, empreendedorismo criativo"
+  blind_test_v2:
+    media_geral: 90.0
+    media_paradox: 95.0
+    taxa_aprovacao: 100
+    total_prompts: 20
+    scores_by_category:
+      surface: [9, 9, 9, 9, 8, 9, 8, 9]
+      deep: [9, 9, 9, 8, 9, 10]
+      paradox: [9, 9, 10, 10]
+      integration: [9, 9]
+    fidelidade_teste: 92.50
+    resultado: "PASS"
+  pcfe_calibration:
+    FE: 83.95
+    F_real: 94.10
+    delta: 10.15
+    accuracy: 89.85
+    enrichment_loops: 1
+  premortem_documented: true
+  system_components:
+    big_five: {O: 85, C: 90, E: 80, A: 65, N: 45}
+    mbti: "ESTP"
+    enneagram: "3w4"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "6/6"
+  drivers: true
+  checklist: true
+  tasks: 6
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"
+
+sources:
+  - name: "DOAC (Steven Bartlett, 2023)"
+    type: "podcast-transcript"
+    chars: "90K+"
+    coverage: "biografia completa"
+  - name: "Rich Roll #144 (2015)"
+    type: "podcast-transcript"
+    chars: "60K+"
+    coverage: "filosofia anti-fracasso"
+  - name: "Tim Ferriss #116 (2015)"
+    type: "podcast-transcript"
+    lines: 2077
+    coverage: "filosofia, processo, vida"
+  - name: "Design Indaba (2015)"
+    type: "interview-transcript"
+    coverage: "distribuicao e ignorancia"
+  - name: "Soul Boom (Rainn Wilson, 2025)"
+    type: "podcast-transcript"
+    coverage: "processo criativo, algoritmos, arte"
+  - name: "Flagrant (Andrew Schulz, 2023)"
+    type: "podcast-transcript"
+    coverage: "infancia, caos, YouTube moderno"

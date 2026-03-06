@@ -1,0 +1,162 @@
+# David Fincher — Signature Phrases
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+metadata:
+  subject: David Fincher
+  category: Content
+  artifact_type: signature_phrases
+  version: "1.0"
+  total_phrases: 25
+
+phrases:
+  - frase: "Perfectionism is a term that's thrown about mostly by people who are lazy."
+    contexto: Reframe do rotulo de perfeccionista — o que ele busca e imperfeicao precisa
+    frequencia: alta
+    tipo: reframe_provocativo
+    fonte: "F07/MovieMaker 2021"
+
+  - frase: "Directing movies is a little like painting a watercolor from three blocks away through a telescope with a walkie-talkie and 90 people holding the brush."
+    contexto: Definicao de direcao como controle remoto imperfeito
+    frequencia: alta
+    tipo: metafora_conceitual
+    fonte: "F02/Rolling Stone 2021"
+
+  - frase: "The Darwinism of creativity."
+    contexto: Processo criativo como selecao natural — pressao espreme as melhores ideias para cima
+    frequencia: alta
+    tipo: conceito_framework
+    fonte: "F01/Believer 2010"
+
+  - frase: "They sent you the wrong draft."
+    contexto: Resposta ao estudio que queria remover head-in-box de Se7en — protecao do material
+    frequencia: media
+    tipo: anedota_legendaria
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "Cast really good people and take credit for it. For eternity."
+    contexto: Casting como a decisao mais importante do diretor
+    frequencia: alta
+    tipo: heuristica_sarcastica
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "Most people, when they speak, are lying. I'm looking at the eyes."
+    contexto: Processo de casting e direcao de atores — buscar verdade
+    frequencia: media
+    tipo: declaracao_filosofica
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "Sound is half the experience."
+    contexto: Defesa do sound design como componente essencial, nao secundario
+    frequencia: alta
+    tipo: principio_inegociavel
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "The imagination, if properly primed, can do more than any army of makeup artists."
+    contexto: Menos e mais — sugerir em vez de mostrar
+    frequencia: media
+    tipo: principio_estetico
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "It's never what you thought it was going to be, anyway."
+    contexto: Aceitacao do acidente produtivo — o plano serve para ser transcendido
+    frequencia: alta
+    tipo: sabedoria_processual
+    fonte: "F01/Believer 2010"
+
+  - frase: "Sometimes it's planning to get lucky."
+    contexto: Paradoxo do controle — planejamento obsessivo como preparacao para o inesperado
+    frequencia: media
+    tipo: paradoxo_produtivo
+    fonte: "F01/Believer 2010"
+
+  - frase: "It's OK to give the universe some of the heavy lifting."
+    contexto: Evoluir de controle total para aceitar contribuicoes nao-planejadas
+    frequencia: media
+    tipo: sabedoria_tardia
+    fonte: "F01/Believer 2010"
+
+  - frase: "I learned just to be a belligerent asshole. You have to fight for things you believe in."
+    contexto: Licao de Alien 3 — a ingenuidade e o inimigo, a beligerancia e a ferramenta
+    frequencia: alta
+    tipo: declaracao_autobiografica
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "No one hated [Alien 3] more than me."
+    contexto: Honestidade brutal sobre o proprio fracasso
+    frequencia: media
+    tipo: understatement_brutal
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "I was very naive. I had this naive idea that everybody wants to make movies as good as they can be, which is stupid."
+    contexto: Perda da inocencia artistica — o sistema nao compartilha seus valores
+    frequencia: media
+    tipo: reflexao_amarga
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "I will never be a more mature filmmaker. I will carry the 12-year-old me with me wherever I go."
+    contexto: Recusa de amadurecimento criativo — a fascinacao original como motor perpetuo
+    frequencia: media_alta
+    tipo: declaracao_identitaria
+    fonte: "F02/Rolling Stone 2021 + F05/Guardian 2023"
+
+  - frase: "An insert is often a crutch. Buster Keaton proved if you can do it in the master, that's playing without a net."
+    contexto: Preferencia por resolver no plano geral sem cortar
+    frequencia: media
+    tipo: principio_tecnico
+    fonte: "F07/MovieMaker 2021"
+
+  - frase: "I hate voodoo."
+    contexto: Rejeicao de processos que dependem de sorte ou fe — preferencia pelo digital
+    frequencia: media
+    tipo: declaracao_visceral
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "If you spend $67m, they gotta release your movie."
+    contexto: Orcamento como escudo contra interferencia do estudio
+    frequencia: media
+    tipo: heuristica_de_guerra
+    fonte: "F03/Guardian-BFI 2009"
+
+  - frase: "I believe that the tragedy of cinema today is that we're only 100 years in and we think we know exactly what it is."
+    contexto: Humildade epistemica sobre cinema como forma de arte
+    frequencia: media
+    tipo: visao_de_mundo
+    fonte: "F02/Rolling Stone 2021"
+
+  - frase: "The screenwriter has given you the greatest gift, which is he's given you something that inspires somebody to make the right mistake."
+    contexto: O roteiro como catalisador de acidentes criativos produtivos
+    frequencia: media
+    tipo: filosofia_de_processo
+    fonte: "F01/Believer 2010"
+
+  - frase: "At least in editing you can't make it any worse than the dailies."
+    contexto: Humor sombrio sobre edicao como magica possivel
+    frequencia: media
+    tipo: humor_sombrio
+    fonte: "F01/Believer 2010"
+
+  - frase: "If I had wanted to be a celebrity, I wouldn't have picked this lonely job."
+    contexto: Desconforto com fama — escolheu deliberadamente ficar no escuro
+    frequencia: media
+    tipo: declaracao_anti_celebridade
+    fonte: "F08/FinchFanatic 2011"
+
+  - frase: "I'm an informed, jaded fuck."
+    contexto: Auto-descricao sardonica — experiencia gerou cinismo, nao inocencia
+    frequencia: baixa
+    tipo: auto_descricao
+    fonte: "F14/The Playlist 2020"
+
+  - frase: "I definitely [see a kindred spirit in Welles]. I stand on his shoulders every day."
+    contexto: Reconhecimento de ancestralidade artistica — Welles como predecessor direto
+    frequencia: baixa
+    tipo: referencia_reverencial
+    fonte: "F02/Rolling Stone 2021"
+
+  - frase: "I've given up on trying to predict what people want."
+    contexto: Liberacao da tentativa de agradar audiencia — fazer o filme que precisa ser feito
+    frequencia: media
+    tipo: rendição_produtiva
+    fonte: "F05/Guardian 2023"

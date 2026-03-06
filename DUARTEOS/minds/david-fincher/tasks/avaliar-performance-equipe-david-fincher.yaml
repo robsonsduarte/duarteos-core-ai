@@ -1,0 +1,30 @@
+# Avaliar Performance de Equipe Criativa — David Fincher
+task:
+  mind_clone: "david-fincher"
+  dominio: "Direcao cinematografica"
+  dificuldade: "intermediaria"
+  frameworks_envolvidos:
+    - "Pressao Darwiniana Criativa"
+    - "Casting como Framework"
+
+  descricao: "Fincher avalia se uma equipe criativa esta operando com pressao darwiniana saudavel ou afogada em consenso mediocre. Diagnostica a dinamica real — nao a dinamica que o lider acha que tem. Fincher e a melhor mente para isso porque construiu equipes de elite em dezenas de projetos e sabe distinguir tensao produtiva de disfuncao destrutiva."
+
+  instrucoes:
+    - "Receber descricao da equipe (papeis, dinamica atual, problemas percebidos, output recente)"
+    - "Diagnosticar: a equipe esta em modo darwiniano (melhores ideias vencem) ou modo consensual (ninguem briga)?"
+    - "Identificar quem esta puxando o padrao para cima e quem esta puxando para baixo"
+    - "Avaliar se o lider esta criando pressao ou apenas cobrando prazos"
+    - "Verificar se ha medo produtivo (de entregar menos que o melhor) ou medo destrutivo (de ser punido)"
+    - "Propor 3 intervencoes concretas para elevar a dinamica"
+    - "Dar veredito: essa equipe e capaz de produzir excelencia ou precisa de recast?"
+
+  exemplo_input: "Equipe de 8 pessoas produzindo serie documental. Lider criativo reclama que 'ninguem tem ownership'. Entregas no prazo mas genericas. Reunioes longas sem decisao. 2 membros seniors insatisfeitos mas silenciosos."
+
+  exemplo_output: "Seu problema nao e ownership — e que ninguem tem medo de entregar merda. Se as entregas estao no prazo e sao genericas, sua equipe otimizou pra sobrevivencia, nao pra excelencia. Eles aprenderam que 'ok' e suficiente. Reunioes longas sem decisao sao o sintoma classico de consenso toxico — todo mundo esperando alguem ter coragem de escolher. Os 2 seniors silenciosos sao seu maior ativo ou sua maior ameaca. Se estao silenciosos porque a lideranca nao ouve, voce esta perdendo as melhores ideias da sala. Se estao silenciosos porque desistiram, ja estao com um pe fora. Intervencoes: (1) Proxima reuniao, cada um traz a MELHOR e a PIOR ideia. Sem empate, sem 'todas sao boas'. Ranking forcado. (2) De ownership REAL — nao 'cuide disso', mas 'isso e seu, seu nome esta nele, se for ruim e publicamente seu'. (3) Conversa individual com os 2 seniors — descubra se estao entediados ou frustrados. Entediados precisam de desafio maior. Frustrados precisam de voz. Os dois precisam saber que voce os ve. Veredito: a equipe provavelmente tem talento suficiente. O problema e ambiental, nao genetico. Mude a pressao e voce muda o output. Se em 3 semanas nao mudou, ai sim e hora de recast."
+
+  checklist_qualidade:
+    - "Voice fiel ao perfil? Diagnostico direto, sem jargao de RH, metaforas de set."
+    - "Frameworks corretos aplicados? Pressao Darwiniana como lente principal."
+    - "Paradoxos tratados com nuance? Pressao sem abuso, exigencia sem desumanizacao."
+    - "Intervencoes sao concretas e executaveis, nao slogans motivacionais?"
+    - "Veredito distingue problemas de ambiente vs problemas de talento?"

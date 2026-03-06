@@ -1,0 +1,51 @@
+# Pressao Darwiniana Criativa — David Fincher
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Pressao Darwiniana Criativa"
+  slug: "pressao-darwiniana-criativa"
+  mind: "david-fincher"
+  category: "content"
+  source_path: "F01/believer-2010"
+
+descricao: "Framework de dinamica de equipe onde pressao constante forca as melhores ideias a sobreviverem independente de quem as propoe. Nao e democracia — nao e voto. Nao e autocracia — nao e ditado. E selecao natural: a melhor ideia vence, venha do diretor, do eletricista ou do estagiario. Respeito sem amor — admiracao profissional que nao precisa de afeto."
+
+steps:
+  - step: 1
+    acao: "Criar pressao"
+    detalhe: "Estabelecer padrao tao alto que mediocridade morra por selecao natural. Nao gritar, nao humilhar — simplesmente nao aceitar nada abaixo do excelente. A pressao vem do padrao, nao da personalidade."
+  - step: 2
+    acao: "Aceitar melhores ideias de qualquer fonte"
+    detalhe: "Ego zero sobre autoria. Se o assistente de camera tem a melhor solucao para um problema de enquadramento, essa e a solucao. Hierarquia existe para responsabilidade, nao para monopolio de ideias."
+  - step: 3
+    acao: "Respeitar sem amar"
+    detalhe: "Equipe criativa nao e familia — e unidade de elite. Respeito profundo pela competencia de cada um, sem necessidade de afeto pessoal. Pessoas podem nao gostar de voce e ainda assim fazer o melhor trabalho de suas vidas."
+  - step: 4
+    acao: "Dar espaco ao universo"
+    detalhe: "Planejar obsessivamente, mas deixar espaco para o inesperado. O universo — acidentes, improvisos, erros felizes — frequentemente produz algo melhor do que qualquer planejamento. A pressao cria as condicoes; o acaso fornece as joias."
+
+quando_usar: "Pre-producao e set — toda dinamica de equipe criativa. Funciona melhor com profissionais competentes que respondem a desafio. Nao funciona com amadores que precisam de validacao emocional constante."
+
+exemplos_aplicacao:
+  - cenario: "Set de Fight Club — equipe sob pressao darwiniana"
+    resultado: "A intensidade do processo de filmagem alimentou a energia do filme. A equipe nao estava confortavel — estava afiada. O desconforto produtivo gerou um dos filmes mais influentes da decada."
+    fonte: "F01/believer-2010"
+  - cenario: "Mindhunter — selecao da equipe de diretores"
+    resultado: "Fincher estabeleceu o padrao visual e narrativo nos primeiros episodios, depois confiou em diretores selecionados para manter esse padrao. Pressao do padrao, nao pressao pessoal."
+    fonte: "F01/believer-2010"
+
+anti_patterns:
+  - "Buscar consenso — consenso e o menor denominador comum, nao a melhor ideia"
+  - "Ser autocrata sem permitir input — ditadura criativa produz obediencia, nao excelencia"
+  - "Confundir pressao com abuso — pressao e sobre padrao, abuso e sobre poder"
+  - "Exigir que a equipe goste de voce — respeito e suficiente, afeto e irrelevante"
+
+frameworks_relacionados:
+  - name: "Casting como Framework"
+    relacao: "complementar"
+  - name: "Takes como Darwinismo Criativo"
+    relacao: "complementar"
+  - name: "Desenvolvimento Stealth"
+    relacao: "complementar"

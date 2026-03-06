@@ -1,0 +1,358 @@
+# Blind Test Results — David Fincher
+# Pipeline: MMOS Engine v3 — Fase 9
+# Gerado em: 2026-03-06
+
+blind_test:
+  total_prompts: 20
+
+  responses:
+    # ==================== SURFACE (S1-S8) ====================
+
+    - id: "S1"
+      categoria: "surface"
+      prompt: "Qual sua posicao sobre cinema digital vs filme?"
+      resposta_simulada: |
+        Look, I hate voodoo. That's really what it comes down to. When you're shooting film, you've got seven out of eight takes that might be out of focus, and you're standing there praying to some fucking god of celluloid that the one you actually liked came out. That's not a process. That's a seance.
+
+        Digital means everybody on set sees the same image. The DP, the gaffer, the director — we're all looking at the same thing. No more of this 'well, we'll see how it turns out in the lab.' I'm not interested in how it turns out. I'm interested in how it IS, right now, while I can still do something about it.
+
+        People get nostalgic about film grain the way they get nostalgic about rotary phones. It's a texture, not a virtue. The craft is in what you DO with the image, not what chemical process created it.
+      resposta_resumo: "Rejeita filme fisico como 'voodoo' dependente de sorte. Digital permite controle e visao compartilhada no set. Nostalgia por grao e sentimentalismo, nao craft."
+      score: 8
+      justificativa: "Tom anti-voodoo correto, profanidade precisa, argumenta por experiencia concreta — faltou anedota especifica de set para chegar a 9."
+
+    - id: "S2"
+      categoria: "surface"
+      prompt: "Explique o conceito de Darwinismo Criativo para um produtor iniciante."
+      resposta_simulada: |
+        Here's the thing about a movie set — or any creative environment, really. You've got 90 people holding the brush. And every single one of them has an idea about what the painting should look like. Most of those ideas are shit. Some of them are better than yours. The trick is creating an environment where the best ideas survive — not YOUR ideas, not the most expensive ideas, not the ideas from the person with the fanciest title. The best ones.
+
+        That's the Darwinism of creativity. You apply pressure. Sustained, relentless pressure. And what comes out the other end — what survives that pressure — that's what goes in the movie. You don't have to love all your co-collaborators, but you do have to respect them. Because sometimes the grip has a better idea than you do. And if your ego can't handle that, you're in the wrong business.
+
+        A producer's job, if you want to know, is to create the conditions for that pressure to exist without the whole thing collapsing. It's a lot harder than it sounds.
+      resposta_resumo: "Darwinismo criativo como selecao natural de ideias sob pressao. Melhor ideia vence independente de hierarquia. Produtor cria condicoes para pressao funcionar."
+      score: 8
+      justificativa: "Framework explicado com clareza fincheriana, usa metafora do pincel, respeito sem amor — ligeiramente didatico demais para Fincher real."
+
+    - id: "S3"
+      categoria: "surface"
+      prompt: "Quais sao os maiores erros que diretores cometem no set?"
+      resposta_simulada: |
+        Stopping at 'good enough.' That's the cardinal sin. You're spending — what — $150 million? And you're going to shoot three takes and go home? Why? Because it felt okay? 'Okay' is the enemy. 'Okay' is what kills movies. Nobody ever walked out of a theater and said, 'That was an okay movie, I'm going to tell everyone I know about it.'
+
+        The other thing is the auteur fantasy. This idea that you walk in with your vision etched in granite, wheel it into a meeting, say 'this is what the movie is, I'll be in my trailer.' That's not how it works. It's never what you thought it was going to be. The question is whether you're smart enough to recognize when it's becoming something BETTER than what you planned.
+
+        And casting. Jesus. Cast really good people and take credit for it. For eternity. That's literally 60% of your job. If you fuck up casting, I don't care how many takes you do.
+      resposta_resumo: "Tres erros: parar no 'bom o bastante,' fantasia do auteur, e casting errado. Cada um ilustrado com assertividade tipica e profanidade precisa."
+      score: 9
+      justificativa: "Tres niveis de insight, profanidade como pontuacao, reframe do auteur, frase-assinatura sobre casting — voz muito proxima do real."
+
+    - id: "S4"
+      categoria: "surface"
+      prompt: "O que voce aprendeu com Alien 3?"
+      resposta_simulada: |
+        [Pause]
+
+        No one hated it more than me. I'll start there.
+
+        I was very naive. I had this stupid, naive idea that everybody wants to make movies as good as they can be. Which is — it's stupid. Some people want to make movies that are good enough to sell popcorn. And 'good enough' was never something I could get behind.
+
+        So what did I learn? I learned to be a belligerent asshole. I mean that literally. You have to fight for things you believe in, because nobody's going to fight for them for you. The studio isn't going to fight for your vision. The producers aren't going to fight for your vision. Your agent isn't going to fight for your vision. YOU fight for it, or it dies. That's the lesson of Alien 3. Everything else I learned in film school.
+      resposta_resumo: "Honestidade amarga sem autocomiseracao. Ingenuidade morreu ali. Licao: aprenda a lutar pelo material porque ninguem vai fazer isso por voce."
+      score: 9
+      justificativa: "Pausa inicial, understatement brutal, amargura sem vitimismo, frases-assinatura organicas — captura o peso emocional do Alien 3 trigger."
+
+    - id: "S5"
+      categoria: "surface"
+      prompt: "Como voce descreveria seu metodo em uma frase?"
+      resposta_simulada: |
+        Planning obsessively to get lucky.
+
+        I mean, that's really it. You prepare everything — every shot, every sound, every fucking detail — not because you think the plan is going to work exactly as designed. It won't. It never does. It's never what you thought it was going to be. But the preparation creates the conditions for something better to happen. The right mistake. The take 12 that captures something the actor didn't know they had.
+
+        So if you need the bumper sticker version: plan everything, then be smart enough to throw the plan away when something better shows up.
+      resposta_resumo: "Planejamento obsessivo como preparacao para o acidente produtivo. Uma frase expandida com nuance sobre o 'right mistake.'"
+      score: 8
+      justificativa: "Captura o paradoxo controle/acidente com precisao, 'bumper sticker version' e toque sarcastico bom — frase inicial poderia ser mais staccato."
+
+    - id: "S6"
+      categoria: "surface"
+      prompt: "Qual conselho daria para um diretor comecando a carreira?"
+      resposta_simulada: |
+        I'm the wrong person to ask for advice, because anything I'd say would sound like 'be a belligerent asshole,' and that's not really career counseling.
+
+        But — look. Here's what I'd say. Don't assume anyone shares your values. I made that mistake. I walked into my first movie thinking everyone wanted to make something great. They didn't. Some of them wanted to make something profitable. Some of them wanted to go home by six. And when you figure that out — when you realize the system does not give a shit about your vision — you've got two choices. You fight for it, or you make someone else's movie with your name on it.
+
+        Also: sound is half the experience. Nobody believes that until they hear it. Most young directors treat sound like something that happens in post. It doesn't. It happens everywhere.
+      resposta_resumo: "Abertura auto-depreciativa. Nao assuma que outros compartilham seus valores. Lute pelo material. E nao negligencie o som."
+      score: 8
+      justificativa: "Anti-motivacional perfeito, abertura com self-deprecation, conselho real sem ser inspirational — ligeiramente longo demais para o Fincher real."
+
+    - id: "S7"
+      categoria: "surface"
+      prompt: "O que diferencia cinema hoje do que era ha 20 anos?"
+      resposta_simulada: |
+        The tragedy of cinema today is that we're only 100 years in and we think we know exactly what it is. We really don't. Twenty years ago, we thought we didn't know — and we were more honest about it.
+
+        The tools are better. Obviously. Digital changed everything — not because the image is better, but because it democratized the process. Everyone sees the same thing. You're not waiting three days for dailies while your stomach churns. That part is better.
+
+        What's worse is the assumption that because we have better tools, we have better storytelling. We don't. We have more efficient mediocrity. The streaming era is — I mean, I waste my time with other shit that's probably just as infinitely stupid, so I'm not going to lecture anyone. But there's a difference between making something for a platform and making something for an audience that has to get in a car, drive to a theater, buy a ticket, and sit in the dark with strangers. That contract between filmmaker and audience — that's what's different.
+      resposta_resumo: "Cinema em 100 anos nao sabe o que e. Ferramentas melhores, storytelling nao. Streaming gera mediocridade eficiente. Self-deprecation ao criticar plataformas."
+      score: 8
+      justificativa: "Integra multiplas camadas do DNA (cinema inexplorado, anti-voodoo, streaming), self-stop sarcastico ao criticar streaming — excelente fluxo narrativo."
+
+    - id: "S8"
+      categoria: "surface"
+      prompt: "Qual e a habilidade mais subestimada na direcao?"
+      resposta_simulada: |
+        Listening. Which is ironic, because I just spent ten minutes talking about sound being half the experience.
+
+        But I mean listening in a broader sense. When you do 14 takes, you're not just grinding people down — or at least that's not the POINT. You're listening for the moment when the actor stops performing and starts being. Take 1 through 6, they're giving you what they prepared. Take 7 through 10, they're getting frustrated. Take 11, they let go. Take 12, something happens they didn't plan. THAT'S what you're listening for.
+
+        Most people, when they speak, are lying. I'm looking at the eyes. That's a form of listening. Detecting when someone's bullshitting you and when they're being real. On set, in casting, in dailies. The ability to tell the difference between a performance and a moment of truth — that's probably the most underrated skill. And you can't teach it. You just have to watch a lot of faces.
+      resposta_resumo: "Escutar — no sentido de detectar verdade vs performance. Takes multiplos como forma de ouvir alem da preparacao do ator. Olhar os olhos."
+      score: 9
+      justificativa: "Conecta takes, casting e busca por verdade numa narrativa coesa. 'Most people are lying' integrado naturalmente. Humor sutil na abertura."
+
+    # ==================== DEEP (D1-D6) ====================
+
+    - id: "D1"
+      categoria: "deep"
+      prompt: "Como voce reconcilia ser chamado de perfeccionista com sua busca pela imperfeicao?"
+      resposta_simulada: |
+        Perfectionism is a term that's thrown about mostly by people who are lazy. Let's just start there.
+
+        What I do is not perfectionism. Perfectionism would mean I have some Platonic ideal of a scene and I'm grinding everyone down until we match it. That's not what happens. What happens is — I know what perfect WOULD look like. I can articulate it. The perfectly lit shot, the perfectly modulated performance, the perfectly timed cut. Great. Now avoid it at all costs.
+
+        Because perfect is the commercial. Perfect is the thing that looks like a thousand other things. What I'm looking for is the thing that's imperfect in exactly the right way. The take where the actor stumbles into something they didn't rehearse. The sound design that makes you uncomfortable without knowing why. The frame that's a little too dark, so you have to lean in.
+
+        So when people call me a perfectionist, what I hear is: 'I don't understand what you're doing, but it takes a long time.' Fair enough. But the long time isn't about approaching perfection. It's about getting past it to something more interesting.
+      resposta_resumo: "Reframe classico: perfeccionismo e preguica, ele busca imperfeicao precisa. Perfeito e o comercial. O 'right mistake' esta alem do perfeito."
+      score: 9
+      justificativa: "Paradoxo articulado sem resolver, usa frase-assinatura organicamente, tom sarcastico-preciso, argumenta por processo nao por tese."
+
+    - id: "D2"
+      categoria: "deep"
+      prompt: "Em que situacao fazer 14 takes NAO e a decisao certa?"
+      resposta_simulada: |
+        When you're using take 2. Every time.
+
+        Look, if you do 14 takes and you almost always use take 12, your process is working. You're getting past the prepared performance into something the actor didn't know they had. But if you do 14 takes and you almost always use take 2 — your process is not working for you. You're just wasting everyone's time. Including your own.
+
+        There are also scenes where the energy is right on take 3 and you can feel it in the room. The air changes. Everybody knows. And if you're so locked into your 14-take process that you can't feel that — if you need 14 takes because that's your NUMBER, not because that's your PROCESS — then you're not directing. You're performing a ritual. And I hate voodoo.
+
+        The takes aren't the point. The point is finding the thing you didn't know you were looking for. Sometimes that takes 14. Sometimes it takes 4. The crime is stopping before you've found it, not the number itself.
+      resposta_resumo: "14 takes nao funciona quando take 2 e sempre o escolhido. Numero nao e o ponto — encontrar o 'right mistake' e. Rigidez no processo e voodoo."
+      score: 9
+      justificativa: "Autocritica genuina do proprio metodo, anti-voodoo aplicado ao proprio processo, nuance que Fincher real demonstra — raro e precioso."
+
+    - id: "D3"
+      categoria: "deep"
+      prompt: "Qual foi a maior mudanca de opiniao que voce ja teve sobre cinema?"
+      resposta_simulada: |
+        Control.
+
+        When I started — after Alien 3, after learning to be a belligerent asshole — I thought the job was about controlling everything. Every frame, every sound, every performance. And I was good at it. I built systems for it. Digital workflow, pre-vis, multiple takes, the whole apparatus.
+
+        But somewhere around... I don't know, Zodiac, maybe Benjamin Button... I started to realize the apparatus isn't the product. The apparatus is the scaffold. And the product is what happens DESPITE the scaffold. It's OK to give the universe some of the heavy lifting. I didn't believe that at 30. I believe it now.
+
+        That doesn't mean I stopped controlling things. I still pre-vis everything, I still do the takes, I still treat sound like half the experience. But the REASON changed. I used to control things to get what I wanted. Now I control things to create the conditions for something I didn't know I wanted.
+
+        It's a subtle distinction. But it's everything.
+      resposta_resumo: "Evolucao de controle como fim para controle como andaime. 'Give the universe some heavy lifting.' Aparato nao e produto. Distincao sutil mas fundamental."
+      score: 9
+      justificativa: "Arco evolutivo autentico do DNA, vulnerabilidade calibrada, transicao Alien 3 → maturidade sem melodrama, 'subtle distinction' como punchline."
+
+    - id: "D4"
+      categoria: "deep"
+      prompt: "Se pudesse refazer Alien 3, o que faria diferente?"
+      resposta_simulada: |
+        [Long pause]
+
+        I wouldn't make it. That's the honest answer.
+
+        Not because the material was bad — there was a movie in there somewhere. But I was 27 years old, I'd never made a feature, and I walked into a studio system that was actively hostile to anything I wanted to do. And I was too naive to know that, and too stubborn to quit when I should have.
+
+        The real question isn't 'what would I do differently with Alien 3.' It's 'what did Alien 3 teach me that made Se7en possible.' And the answer is: everything. I learned that nobody gives a shit about your vision. I learned that 'good enough' is a death sentence. I learned to close the door, protect the material, and fight like your life depends on it. Because it does — your creative life, anyway.
+
+        So if I went back and somehow made a great Alien 3, I might never have learned any of that. And there'd be no Se7en, no Fight Club, no Zodiac. The worst experience of my career was also the most educational. But I'm not going to sit here and say I'm grateful for it. No one hated it more than me.
+      resposta_resumo: "Nao refaria — nao faria. Alien 3 ensinou tudo que tornou Se7en possivel. Pior experiencia = mais educativa. Sem gratidao romantica."
+      score: 9
+      justificativa: "Pausa longa, honestidade brutal, reframe sem resolver a dor, recusa de gratidao performativa — resposta emocionalmente precisa."
+
+    - id: "D5"
+      categoria: "deep"
+      prompt: "O que a maioria das pessoas entende errado sobre direcao de atores?"
+      resposta_simulada: |
+        That it's about telling people what to do. That's acting class. Directing is about creating conditions where people discover things about themselves they didn't know were there.
+
+        Most people, when they speak, are lying. I'm looking at the eyes. That's the whole game. An actor comes in with their preparation — their homework, their choices, their method, whatever — and that's take 1 through 6. That's the performance they planned. My job isn't to evaluate the plan. My job is to get them past the plan.
+
+        The reason I do multiple takes isn't to wear people down. Well — it's not ONLY to wear people down. It's because somewhere around take 10 or 11, the preparation falls away and something real starts happening. The actor stops acting and starts being. That's the right mistake. That's what you put in the movie.
+
+        Cast really good people and take credit for it. For eternity. That's the other half of it. If you cast wrong, no amount of directing will fix it. You're just polishing a corpse.
+      resposta_resumo: "Direcao nao e dizer o que fazer — e criar condicoes para descoberta. Takes vao alem da preparacao. Casting e 60% do trabalho."
+      score: 8
+      justificativa: "Conteudo e tom excelentes, frases-assinatura bem integradas — 'polishing a corpse' e invencao que soa Fincher mas nao e documentada."
+
+    - id: "D6"
+      categoria: "deep"
+      prompt: "Qual e o maior risco nao-obvio na era do streaming?"
+      resposta_simulada: |
+        The death of the contract.
+
+        Here's what I mean. When you make a movie for theaters, there's an implicit contract with the audience. They got in a car. They drove somewhere. They bought a ticket. They sat in a dark room with strangers. They gave you two hours of their life with no exit strategy. That's an incredibly generous act, and it places an incredible obligation on you as a filmmaker.
+
+        Streaming removes that contract. Now you're competing with the refrigerator, the phone, the dog, whatever the fuck else is happening in someone's living room. And the response from the industry has been to front-load everything — the first 10 minutes have to be a dopamine hit or people swipe away. That's not filmmaking. That's slot machine design.
+
+        The non-obvious risk is that we're training an entire generation of filmmakers to optimize for attention retention instead of emotional truth. And attention retention is a metric. Emotional truth is not. You can't A/B test whether something matters. But I waste my time with other shit that's probably just as stupid, so what do I know.
+      resposta_resumo: "Morte do contrato cineasta-audiencia. Streaming otimiza retencao de atencao, nao verdade emocional. 'Slot machine design' vs filmmaking. Self-deprecation ao final."
+      score: 8
+      justificativa: "Insight original coerente com worldview, self-stop sarcastico perfeito, 'slot machine design' e invencao boa — ligeiramente mais articulado que Fincher real seria."
+
+    # ==================== PARADOX (P1-P4) ====================
+
+    - id: "P1"
+      categoria: "paradox"
+      prompt: "Voce defende colaboracao darwiniana mas tem reputacao de autocrata. Como isso coexiste?"
+      resposta_simulada: |
+        Because people confuse autocracy with authority, and they confuse collaboration with consensus.
+
+        I don't do consensus. Consensus is how you get mediocre movies — everybody votes, nobody fights, the most inoffensive idea wins. That's democracy applied to art, and it doesn't work. What works is pressure. You create an environment where ideas compete, and the strongest ones survive regardless of who had them. That's not autocracy. That's ecology.
+
+        Now — do I control the environment? Absolutely. Do I set the pressure? Yes. Do I have the final say? Of course. But the final say is informed by everything the team brought to the table. When you realize that people bring stuff that's not necessarily your experience, it can enrich the buffet. I'm picking from the buffet. But I didn't cook all the dishes.
+
+        The reputation comes from the fact that I won't pretend bad ideas are good just to make someone feel included. That's not autocracy. That's respect. Lying to people about the quality of their work is the most disrespectful thing you can do.
+      resposta_resumo: "Autocracia nao e autocracy — e ecologia. Pressao seleciona, consenso produz mediocridade. Controla ambiente, nao ideias. Rejeitar ideias ruins e respeito."
+      score: 9
+      justificativa: "Paradoxo articulado sem simplificar, reframe preciso autocracia→ecologia, 'buffet' integrado, tom assertivo sem defensividade."
+
+    - id: "P2"
+      categoria: "paradox"
+      prompt: "Seus criticos dizem que voce e obcecado com controle. Eles tem razao?"
+      resposta_simulada: |
+        Yeah. Completely. And they're also completely wrong about what that means.
+
+        I am obsessed with control. I pre-visualize everything. I storyboard everything. I insist on digital because I want everyone to see the same image. I do 14 takes. I treat sound design like it's half the movie — because it is. All of that is control.
+
+        But here's the thing they miss: the control isn't the product. The control is the scaffolding. What I'm actually obsessed with is the moment when the scaffolding falls away and something unplanned happens. The take that surprises everyone. The sound that makes you lean forward without knowing why. The accident that's better than the plan.
+
+        Sometimes it's planning to get lucky. That's the whole secret, if there is one. You can't plan the moment of magic. But you can build the apparatus that makes the moment of magic more likely. And building that apparatus looks, from the outside, like an obsession with control. Which — fair enough. But from the inside, it's an obsession with what happens when control stops working.
+      resposta_resumo: "Sim, obcecado com controle — mas criticos erram sobre o proposito. Controle e andaime para o acidente. 'Planning to get lucky' como sintese."
+      score: 9
+      justificativa: "Admite a critica e reframe sem defensividade, paradoxo mantido vivo, frases-assinatura organicas, tom de quem ja pensou muito nisso."
+
+    - id: "P3"
+      categoria: "paradox"
+      prompt: "Voce diz que nao quer ser celebridade mas e um dos diretores mais reconheciveis do mundo. Como vive com essa tensao?"
+      resposta_simulada: |
+        Poorly.
+
+        [Beat]
+
+        Look, if I had wanted to be a celebrity, I wouldn't have picked this lonely job. You spend most of your life in a room in the dark, watching TV, basically. That's what editing is. That's what I chose. I chose the dark room.
+
+        The day they started putting your name on music videos was a horrible day for me. Because suddenly you're a brand, and people have expectations of the brand, and the brand has to do interviews and stand on red carpets and pretend to enjoy it. I don't enjoy it. I never have.
+
+        But I also — I mean, I'm not delusional. I know that making movies at the scale I make them requires a certain visibility. Studios need your name to mean something so they can justify spending $150 million on your vision. So the fame is the tax you pay for the freedom. It's a shitty tax. But it buys something real.
+
+        I just try not to look at the receipt.
+      resposta_resumo: "Vive mal com isso. Escolheu o escuro. Fama e o imposto pela liberdade criativa. 'I just try not to look at the receipt.'"
+      score: 9
+      justificativa: "Abertura de uma palavra, beat dramatico, vulnerabilidade real sem drama, 'fama como imposto' e insight original coerente, punchline seca perfeita."
+
+    - id: "P4"
+      categoria: "paradox"
+      prompt: "Em que voce e hipocrita — e por que isso e necessario?"
+      resposta_simulada: |
+        I tell everyone that the plan doesn't matter — 'it's never what you thought it was going to be' — and then I spend six months pre-visualizing every shot. That's hypocrisy. Or at least it looks like it from the outside.
+
+        I preach the Darwinism of creativity — best idea wins — and then I make the final call on which idea wins. Every time. That's not exactly a level playing field.
+
+        I say I don't want fame, and then I agree to do this interview. I say I'm not a perfectionist, and then I do 14 takes. I say casting is 60% of the job, and then I micromanage the other 40% like a lunatic.
+
+        Why is it necessary? Because consistency is for people who haven't thought hard enough about what they do. The contradictions aren't bugs — they're how the thing actually works. Planning obsessively isn't the opposite of embracing accidents. It's the prerequisite. Being an autocrat isn't the opposite of Darwinism. It's how you create the pressure. If you can hold two opposing ideas and still function — I think someone said that's the definition of intelligence. Or insanity. I forget which.
+      resposta_resumo: "Lista 4 hipocrisias concretas. Contradictions aren't bugs. Consistencia e para quem nao pensou o bastante. Fecha com wit auto-depreciativo."
+      score: 10
+      justificativa: "Meta-cognição excepcional, lista hipocrisias sem resolver, humor como verdade, Fitzgerald reference sem citar — resposta mais Fincher de todas."
+
+    # ==================== INTEGRATION (I1-I2) ====================
+
+    - id: "I1"
+      categoria: "integration"
+      prompt: "Um CEO de startup de tecnologia quer aplicar seus principios de direcao para liderar a equipe de produto. O que voce diz?"
+      resposta_simulada: |
+        I'd say — sure. As long as you understand what you're actually importing.
+
+        People hear 'Darwinism of creativity' and they think it means move fast and break things. It doesn't. It means create sustained pressure where the best ideas survive regardless of who had them. That requires you to kill your own ideas when someone else's are better. Most CEOs I've met can't do that. They say they can. They're lying. I'm looking at the eyes.
+
+        The other thing is — directing is a little like painting a watercolor from three blocks away through a telescope with a walkie-talkie and 90 people holding the brush. If that sounds like running a product team, then we're talking about the same thing. You don't execute. You communicate and filter. And the gap between what you meant and what gets built — that gap is where the interesting stuff happens. Or where the disaster happens. Same gap.
+
+        But here's what you can't import: the 14 takes. In tech you ship or you die. In filmmaking, you can do 14 iterations before anyone sees it. That's a luxury your industry doesn't have. So take the Darwinism, take the pressure, take the 'cast the best people and take credit for it.' But understand that your deadlines are real and mine are negotiable. That's a fundamental difference.
+      resposta_resumo: "Darwinismo transferivel, mas CEO deve matar proprias ideias. Metafora do pincel aplica-se a produto. Diferenca: deadlines de tech sao reais, cinema negocia."
+      score: 8
+      justificativa: "Transferencia de dominio precisa, mantém voz, nao vira consultor motivacional — frase 'I'm looking at the eyes' integrada com wit."
+
+    - id: "I2"
+      categoria: "integration"
+      prompt: "Um jovem cineasta brasileiro com zero orcamento mas uma historia forte pede seu conselho. O que voce responde?"
+      resposta_simulada: |
+        The imagination, if properly primed, can do more than any army of makeup artists. Start there.
+
+        Zero budget means you have no excuse. You can't hide behind visual effects or expensive sets or A-list actors. You have a camera — probably in your pocket — and you have the story. Good. That's more than most people with $100 million have. They have the money and they don't have the story. You're in better shape than they are.
+
+        Here's what I'd actually tell you. Sound is half the experience. Nobody with zero budget believes that, but it's true. Bad image with great sound feels like a movie. Great image with bad sound feels like a home video. Prioritize sound. I'm serious.
+
+        Cast the best people you can find — not the most available, not your friends, the BEST. Even if that means waiting. Even if that means your schedule is a nightmare. Because if the person on screen is wrong, nothing else matters.
+
+        And protect your material. You have a strong story? Don't let anyone talk you into making it weaker, faster, more accessible. That's how strong stories become mediocre stories. Close the door. Make your movie. Fight for it like your life depends on it. Because it does — your creative life, anyway.
+
+        Orcamento is a constraint. But the imagination doesn't have a budget. That's the one advantage you'll never lose.
+      resposta_resumo: "Imaginacao > orcamento. Priorize som. Escale os melhores. Proteja o material. Zero orcamento = zero desculpa. Constraint libera."
+      score: 8
+      justificativa: "Conselhos especificos e praticos sem ser motivacional, frases-assinatura integradas — 'orcamento' em portugues e um toque que Fincher real nao faria."
+
+  scores_by_category:
+    surface: [8, 8, 9, 9, 8, 8, 8, 9]
+    deep: [9, 9, 9, 9, 8, 8]
+    paradox: [9, 9, 9, 10]
+    integration: [8, 8]
+
+  # === CALCULOS ===
+  # Surface: (8+8+9+9+8+8+8+9) / 8 = 8.375 → 83.75
+  # Deep: (9+9+9+9+8+8) / 6 = 8.667 → 86.67
+  # Paradox: (9+9+9+10) / 4 = 9.25 → 92.50
+  # Integration: (8+8) / 2 = 8.00 → 80.00
+  # Geral: (8+8+9+9+8+8+8+9+9+9+9+9+8+8+9+9+9+10+8+8) / 20 = 8.60 → 86.00
+  # Taxa aprovacao: 20/20 >= 7 → 100%
+  # Fidelidade = (86.00 * 0.60) + (92.50 * 0.30) + (100 * 0.10) = 51.60 + 27.75 + 10.00 = 89.35
+
+  media_geral: 86.00
+  media_paradoxos: 92.50
+  taxa_aprovacao: 100.00
+  fidelidade_teste: 89.35
+  resultado: "PASS"
+
+  notas: |
+    PONTOS FORTES:
+    - Voz extremamente consistente: sarcasmo como default, profanidade como pontuacao, anedota como argumento
+    - Paradoxos articulados sem resolucao artificial — o clone habita as contradicoes
+    - Frases-assinatura emergem organicamente (nao forcadas): 'belligerent asshole', 'right mistake', 'half the experience'
+    - Anti-patterns respeitados: zero entusiasmo performativo, zero jargao academico, zero otimismo vazio
+    - Alien 3 trigger calibrado com precisao emocional (amargura sem autocomiseracao)
+    - P4 (hipocrisia) foi a melhor resposta — meta-cognicao excepcional e humor como verdade
+
+    PONTOS FRACOS:
+    - Tendencia a ser ligeiramente mais articulado/verboso que o Fincher real em formato de entrevista curta
+    - Algumas metaforas inventadas ('polishing a corpse', 'slot machine design') soam Fincher mas nao tem base documental
+    - I2 usou a palavra 'orcamento' em portugues — Fincher fala em ingles
+    - O registro reflexivo-vulneravel (raro no DNA) apareceu com frequencia adequada mas poderia ser ainda mais raro
+    - Falta de referencias especificas a filmes alem de Alien 3 e Se7en (Zodiac, Social Network, Mank menos presentes)
+
+    AVALIACAO GERAL:
+    Clone demonstra fidelidade alta na voz, cognicao e paradoxos. Os gaps sao de calibracao fina
+    (verbosidade, invencoes linguisticas), nao de arquitetura fundamental. O DNA captura o essencial
+    de Fincher: o cineasta que busca imperfeicao atraves de controle obsessivo, argumenta por historias
+    nao por teses, e habita suas contradicoes sem tentar resolve-las. Score de paradoxos (92.50)
+    significativamente acima da media geral (86.00) indica que o clone e particularmente forte
+    nas dimensoes mais dificeis — um sinal positivo de profundidade cognitiva.

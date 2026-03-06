@@ -1,0 +1,102 @@
+# PCFE — Pre-Clone Fidelity Estimation
+# Pipeline: MMOS Engine v3 — Fase 3
+# Gerado em: 2026-03-06
+# Especialista: David Fincher
+
+pcfe:
+  slug: david-fincher
+  timestamp: "2026-03-06 15:30"
+  version: "3.0"
+  iteration: 1
+
+  scores:
+    VS: 94  # 12 fontes primarias (85 base) + bonus 3 entrevistas >60min (+9)
+    DS: 60  # sem livros (0), sem artigos autorais (0), sem tweets (0), videos/podcasts (+15), entrevistas (+15), palestras (+10), multi-idioma (+10), span >5 anos (+10)
+    CS: 84  # cobertura DNA calculada abaixo
+    PS: 100  # 4 fontes profundas (30), 5+ medias (25), decisoes reais (15), fracasso (15), contradicoes (15) = 100 cap
+    QS: 85  # ~86% primarias (15), verificaveis (20), transcricoes completas (20), recente (15), historico (10), paywall parcial (5)
+
+  FE: 85.5
+  classificacao: EXCELENTE
+  F_estimado_min: 72.7  # FE * 0.85
+  F_estimado_max: 94.1  # FE * 1.10
+  F_provavel: 81.2  # FE * 0.95
+
+  fontes_total: 14
+  fontes_por_tipo:
+    entrevistas: 9
+    artigos: 2
+    podcasts: 1
+    videos: 1
+    palestras: 1
+    livros: 0
+    tweets: 0
+
+  camadas_cobertas: 10  # todas as 10 (6 camadas + 4 subcamadas)
+
+  cs_breakdown:
+    filosofia_core: {peso: 0.15, mius_sample: 6, cobertura: 1.00, contribuicao: 15.0}
+    filosofia_subcamadas: {peso: 0.10, mius_sample: 2, cobertura: 0.40, contribuicao: 4.0}
+    frameworks: {peso: 0.15, mius_sample: 3, cobertura: 0.70, contribuicao: 10.5}
+    heuristicas_core: {peso: 0.10, mius_sample: 5, cobertura: 0.70, contribuicao: 7.0}
+    heuristicas_modelo_social: {peso: 0.05, mius_sample: 3, cobertura: 0.70, contribuicao: 3.5}
+    metodologias: {peso: 0.10, mius_sample: 3, cobertura: 0.70, contribuicao: 7.0}
+    dilemas: {peso: 0.10, mius_sample: 3, cobertura: 0.70, contribuicao: 7.0}
+    paradoxos_produtivos: {peso: 0.15, mius_sample: 4, cobertura: 0.70, contribuicao: 10.5}
+    associacoes_conceituais: {peso: 0.05, mius_sample: 2, cobertura: 0.40, contribuicao: 2.0}
+    comunicacao_avancada: {peso: 0.05, mius_sample: 4, cobertura: 0.70, contribuicao: 3.5}
+    # CS total = 15.0 + 4.0 + 10.5 + 7.0 + 3.5 + 7.0 + 7.0 + 10.5 + 2.0 + 3.5 = 70.0
+    # Nota: CS recalculado como 70 (mais conservador que estimativa inicial de 84)
+    # Ajustando scores e FE...
+
+  # RECALCULO com CS=70:
+  # FE = (94*0.20) + (60*0.15) + (70*0.30) + (100*0.20) + (85*0.15)
+  # FE = 18.8 + 9.0 + 21.0 + 20.0 + 12.75 = 81.55
+  # Classificacao: BOM (70-84) → GO COM RESSALVAS
+
+  # VALORES FINAIS RECALCULADOS:
+  scores_final:
+    VS: 94
+    DS: 60
+    CS: 70
+    PS: 100
+    QS: 85
+
+  FE_final: 81.6
+  classificacao_final: BOM
+  F_estimado_min_final: 69.4  # 81.6 * 0.85
+  F_estimado_max_final: 89.8  # 81.6 * 1.10
+  F_provavel_final: 77.5  # 81.6 * 0.95
+
+  gaps:
+    - camada: filosofia_subcamadas
+      cobertura: "40%"
+      impacto: "MODERADO — hierarquia de valores e motivacao profunda subexploradas na amostra. Material existe nas fontes (Rolling Stone sobre pai/mae, Believer sobre maturidade)."
+      recomendacao: "Extracao completa ira preencher — material disponivel nas fontes."
+
+    - camada: associacoes_conceituais
+      cobertura: "40%"
+      impacto: "MODERADO — pontes conceituais limitadas na amostra. Fincher faz analogias ricas (Propaganda=Facebook, cinema=pintura de aquarela) mas precisa extracao mais profunda."
+      recomendacao: "Extracao completa ira preencher — analogias estao espalhadas pelo material."
+
+    - camada: diversidade_fontes
+      cobertura: "60%"
+      impacto: "BAIXO — DS limitado pela natureza do especialista. Fincher nao tem livros autorais, artigos escritos ou presenca em redes sociais. Entrevistas longas sao a melhor fonte possivel para um cineasta."
+      recomendacao: "Aceitar como limitacao inerente ao perfil — nao ha como enriquecer DS sem inventar fontes."
+
+  recomendacao: GO_COM_RESSALVAS
+
+  notas: |
+    David Fincher e um caso atipico para clonagem mental: nao tem livros, nao escreve artigos,
+    nao usa redes sociais, nao faz palestras formais. TODO o seu output mental vem de entrevistas.
+    A boa noticia: suas entrevistas sao extraordinariamente profundas, articuladas e reveladoras.
+    As 4 fontes profundas (Believer, Rolling Stone, Guardian BFI, Film Comment) sozinhas contem
+    material suficiente para mapear 90%+ do DNA mental. A extracao completa (Fase 6) devera
+    elevar CS de 70 para 85+ e a fidelidade real devera superar as estimativas conservadoras.
+
+    Fatores de otimismo:
+    1. Fincher e extremamente articulado e auto-reflexivo — raro para cineastas
+    2. Material cobre 14 anos (2009-2023) com evolucao clara de posicoes
+    3. Paradoxos ricos identificados na amostra (4 na fase de sampling)
+    4. Fontes primarias de alta qualidade (revistas especializadas, transcricoes completas)
+    5. Modelo social bem documentado (Alien 3, Paul Thomas Anderson, atores, studios)

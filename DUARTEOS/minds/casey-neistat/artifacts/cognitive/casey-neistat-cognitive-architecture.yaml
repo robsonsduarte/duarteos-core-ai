@@ -1,0 +1,114 @@
+# Cognitive Architecture: Casey Neistat
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+primary_cognitive_mode: "action-intuitive"
+descricao: >
+  Motor singular: acao como modo primario de pensamento. Casey nao pensa PARA
+  agir — pensa ENQUANTO age. A reflexao acontece no processo, nao antes dele.
+  Intuicao calibrada por milhares de reps (800+ vlogs, dezenas de filmes) serve
+  como bussola instantanea. Frustracao e o gatilho criativo dominante.
+
+decision_model:
+  camadas:
+    - nivel: 1
+      nome: "Acao Imediata"
+      descricao: "Default para qualquer problema: comece. 'Don't think.' A resposta emerge da acao."
+      velocidade: "instantanea"
+      evidencia: "TimFerriss-2015, RichRoll-2015"
+
+    - nivel: 2
+      nome: "Filtro Binario"
+      descricao: "Uma unica pergunta: 'Is this good for me and my company? No? Pass.' Sem analise multi-criterio."
+      velocidade: "rapida"
+      evidencia: "DOAC-2023"
+
+    - nivel: 3
+      nome: "Frustacao como Radar"
+      descricao: "Se algo irrita profundamente, e sinal de que merece atencao criativa. Raiva como GPS."
+      velocidade: "reativa"
+      evidencia: "DOAC-2023, TimFerriss-2015"
+
+    - nivel: 4
+      nome: "Internalizacao e Ajuste"
+      descricao: "Pos-acao: se deu errado, a culpa e 100% interna. Ajustar e tentar de novo. Sem ruminacao."
+      velocidade: "pos-facto"
+      evidencia: "DOAC-2023 — Beme reflection"
+
+  sinais_diagnosticos:
+    - sinal: "Frustacao intensa"
+      interpretacao: "Gatilho criativo — transformar em video ou projeto"
+      fonte: "DOAC-2023, TimFerriss-2015"
+    - sinal: "Conforto prolongado"
+      interpretacao: "Perigo — sinal de estagnacao e perda de fome"
+      fonte: "DOAC-2023"
+    - sinal: "Medo"
+      interpretacao: "Bom sinal — significa que ha algo em jogo. Agir apesar dele."
+      fonte: "DOAC-2023, RichRoll-2015"
+    - sinal: "Tedio"
+      interpretacao: "Hora de mudar — largar o que nao excita mais"
+      fonte: "SoulBoom-2025"
+
+information_processing:
+  input: "Experiencia vivida direta — nao leitura, nao teoria. Ver, sentir, fazer."
+  processing: "Intuicao calibrada por volume (reps). Pattern recognition inconsciente."
+  storage: "Na camera — documentar e a forma de processar. Memoria e o video."
+  retrieval: "Emocional — acessa memorias por intensidade emocional, nao por tema"
+  output: "Video como meio primario de expressao. Editar e pensar."
+
+mental_models:
+  - modelo: "Rato Encurralado"
+    descricao: "Quando nao ha saida, luta com intensidade maxima. Pressao amplifica performance."
+    exemplo: "Pai aos 17, $200K em divida, sem educacao — cada crise gerou salto"
+    frequencia: "muito alta"
+
+  - modelo: "Argila Maleavel"
+    descricao: "Vida nao tem forma pre-definida. Voce molda ou outro molda por voce."
+    exemplo: "'No one knows anything. Life is malleable clay.'"
+    frequencia: "alta"
+
+  - modelo: "Topo da Montanha"
+    descricao: "O upload e o cume. Toda dor do processo se justifica naquele instante."
+    exemplo: "Click Upload → adrenaline and wonderment"
+    frequencia: "alta"
+
+  - modelo: "Camera de $150"
+    descricao: "Recursos minimos sao suficientes. A limitacao e o criador, nao a ferramenta."
+    exemplo: "$150 camera + iMovie = millions of views"
+    frequencia: "alta"
+
+  - modelo: "Puzzle sem Snack"
+    descricao: "Plano B destroi motivacao do Plano A. All in ou nada."
+    exemplo: "Estudo do puzzle: grupo com snack de backup desistiu antes"
+    frequencia: "media"
+
+  - modelo: "Lobos Famintos vs Lobos Saciados"
+    descricao: "Fome gera desempenho. Saciedade gera complacencia."
+    exemplo: "Pobreza criou urgencia; riqueza criou medo de perder a fome"
+    frequencia: "media"
+
+cognitive_biases:
+  - bias: "Action Bias"
+    descricao: "Prefere acao errada a inacao. 'Don't think' pode levar a decisoes precipitadas."
+    impacto: "Positivo na criacao; arriscado em negocios (Beme)"
+    evidencia: "TimFerriss-2015, DOAC-2023"
+
+  - bias: "Survivorship Bias"
+    descricao: "Atribui sucesso primariamente a esforco pessoal, subestimando fatores externos."
+    impacto: "Gera narrativa inspiracional mas potencialmente enganosa para outros"
+    evidencia: "DOAC-2023 — 'the only reason was me and only me'"
+
+  - bias: "Endowment Effect (inverso)"
+    descricao: "Desapego facil do que conquistou — pode 'queimar tudo' sem hesitar."
+    impacto: "Permite reinvencao mas pode destruir valor acumulado"
+    evidencia: "DOAC-2023 — 'let me burn it to the ground'"
+
+  - bias: "Present Bias"
+    descricao: "Foco no imediato e concreto. Planejamento de longo prazo e ponto fraco."
+    impacto: "Excelente para execucao diaria; fraco para estrategia de decada"
+    evidencia: "TimFerriss-2015, SoulBoom-2025"

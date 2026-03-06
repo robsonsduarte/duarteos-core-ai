@@ -1,0 +1,72 @@
+# Sem Plano B — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Sem Plano B"
+  slug: "sem-plano-b"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "DOAC-2023, TimFerriss-2015"
+
+descricao: >
+  Ter backup destroi a motivacao do plano principal. All in ou nada.
+  A existencia de uma alternativa sinaliza ao cerebro que o fracasso e
+  aceitavel — e isso sabota o esforco maximo. Queime os navios.
+
+steps:
+  - step: 1
+    acao: "Escolher o caminho"
+    detalhe: >
+      Decidir com clareza o que voce quer. Nao o que e seguro, nao o que
+      e razoavel — o que voce realmente quer fazer. A decisao precisa ser
+      honesta e visceral.
+  - step: 2
+    acao: "Eliminar TODAS as alternativas"
+    detalhe: >
+      Cortar redes de seguranca deliberadamente. Sair do emprego. Cancelar
+      o plano de contingencia. Tornar impossivel voltar atras. A queima de
+      navios e literal, nao metaforica.
+  - step: 3
+    acao: "Comunicar a decisao (sem voltar atras)"
+    detalhe: >
+      Tornar a decisao publica — contar para pessoas, postar, assinar.
+      Quanto mais gente souber, mais dificil recuar. Accountability social
+      como mecanismo de comprometimento.
+  - step: 4
+    acao: "Usar o medo como combustivel, nao como freio"
+    detalhe: >
+      O medo de fracassar sem rede de seguranca gera uma urgencia produtiva
+      que nenhum planejamento consegue replicar. Abraçar o desconforto.
+
+quando_usar: >
+  Decisoes de vida ou carreira. Lancamento de projeto. Qualquer momento
+  onde comprometimento total e necessario. Quando voce percebe que esta
+  mantendo um plano B "por seguranca".
+
+exemplos_aplicacao:
+  - cenario: "Casey largou emprego sem plano B"
+    resultado: "Forcado a fazer o trabalho criativo funcionar — e funcionou"
+    fonte: "DOAC-2023"
+  - cenario: "Vendeu tudo para mudar para NYC"
+    resultado: "Sem opcao de voltar, dedicacao total a carreira de filmmaker"
+    fonte: "TimFerriss-2015"
+  - cenario: "Estudo do puzzle + snack (grupo com snack como backup)"
+    resultado: "Grupo COM snack (plan B) performou pior — a seguranca reduziu o esforco"
+    fonte: "DOAC-2023"
+
+anti_patterns:
+  - "Vou manter meu emprego enquanto..."
+  - "Preciso de uma rede de seguranca"
+  - "E se nao der certo?"
+  - "Vou tentar, mas se nao funcionar..."
+  - "Tenho sempre uma opcao de fallback"
+
+frameworks_relacionados:
+  - name: "Acao > Reflexao"
+    relacao: "Sequencial — primeiro elimina o plano B, depois age sem hesitar"
+  - name: "Frustacao como Combustivel"
+    relacao: "Sinergico — o medo e pressao de nao ter plano B geram energia criativa"
+  - name: "Filtro Unico"
+    relacao: "Pre-requisito — o filtro ajuda a escolher O caminho certo antes de ir all-in"

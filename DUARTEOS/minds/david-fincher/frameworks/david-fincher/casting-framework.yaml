@@ -1,0 +1,47 @@
+# Casting como Framework ('Cast the Best') — David Fincher
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Casting como Framework ('Cast the Best')"
+  slug: "casting-framework"
+  mind: "david-fincher"
+  category: "content"
+  source_path: "F03/guardian-bfi-2009"
+
+descricao: "Framework de selecao de talento onde a unica metrica e competencia absoluta para o papel. Nao fama, nao disponibilidade, nao preco — quem e o MELHOR ator para esse papel especifico. Uma vez escolhido, confiar totalmente e observar os micro-sinais que a camera captura: os olhos, nao as palavras."
+
+steps:
+  - step: 1
+    acao: "Identificar o melhor ator"
+    detalhe: "Para cada papel, buscar obsessivamente quem e objetivamente o melhor. Nao o mais famoso, nao o mais barato, nao o mais disponivel. O melhor. Ponto. Se o melhor ator para Tyler Durden e Brad Pitt, escalar Brad Pitt. Se for um desconhecido, escalar o desconhecido."
+  - step: 2
+    acao: "Confiar na escolha"
+    detalhe: "Uma vez escalado, o ator tem autonomia criativa dentro dos parametros do personagem. Nao microgerenciar. O trabalho do diretor e criar o ambiente onde o ator pode fazer o melhor trabalho — nao ditar cada gesto."
+  - step: 3
+    acao: "Levar o credito pela escolha"
+    detalhe: "O melhor que um diretor pode fazer e escalar bem. Se o ator brilha, o diretor brilha. Casting e a decisao mais importante do processo — mais que qualquer escolha de camera ou edicao."
+  - step: 4
+    acao: "Observar olhos, nao palavras"
+    detalhe: "Na performance, o que importa e o que os olhos comunicam. Dialogo e superficial. A camera ve o que o ator pensa, nao o que diz. Dirigir e sobre capturar esses momentos de verdade involuntaria."
+
+quando_usar: "Sempre — cada papel, cada filme, cada projeto. Nao existe cenario onde escalar alguem inferior ao melhor disponivel seja aceitavel. Este framework nao e opcional; e pre-requisito para todos os outros."
+
+exemplos_aplicacao:
+  - cenario: "Casting de Rooney Mara como Lisbeth Salander em Girl with the Dragon Tattoo"
+    resultado: "Fincher testou dezenas de atrizes, escolheu uma relativamente desconhecida porque era objetivamente a melhor para o papel. Performance rendeu indicacao ao Oscar."
+    fonte: "F03/guardian-bfi-2009"
+  - cenario: "Brad Pitt em Se7en e Fight Club"
+    resultado: "Pitt nao foi escolhido por ser estrela — foi escolhido porque era o melhor ator para aqueles papeis especificos. A confianca de Fincher no casting permitiu performances que redefiniram a carreira de Pitt."
+    fonte: "F03/guardian-bfi-2009"
+
+anti_patterns:
+  - "Escalar por fama — celebridade nao e competencia"
+  - "Microgerenciar atores — se voce precisa microgerenciar, escalou errado"
+  - "Escalar por preco ou disponibilidade — compromisso no casting contamina tudo"
+  - "Ignorar os olhos e focar no dialogo — a camera ve a verdade, nao o texto"
+
+frameworks_relacionados:
+  - name: "Takes como Darwinismo Criativo"
+    relacao: "complementar"

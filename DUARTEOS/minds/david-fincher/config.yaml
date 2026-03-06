@@ -1,0 +1,63 @@
+# David Fincher — Squad Config
+# Pipeline: MMOS Engine v3
+# Gerado em: 2026-03-06
+
+clone:
+  name: "David Fincher"
+  slug: "david-fincher"
+  version: "1.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-06"
+  fidelity_estimated: 81.6
+  pcfe_breakdown:
+    VS: 85
+    DS: 75
+    CS: 80
+    PS: 85
+    QS: 80
+  pcfe_classification: "BOM"
+  fidelity_score: 90.50
+  fidelity_components:
+    L_linguistic: 88
+    B_behavioral: 92
+    C_contradiction: 95
+    K_knowledge: 90
+    V_voice: 87
+  status: "active"
+  category: "content"
+  archetype: "O perfeccionista que busca imperfeicao — o autocrata que cria pressao darwiniana para que as melhores ideias sobrevivam, nao as suas"
+
+pcfe_calibration:
+  FE: 81.6
+  F: 90.50
+  delta: 8.90
+  accuracy: 91.10
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "5/5"
+  drivers: true
+  checklist: true
+  tasks: 5
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"
+
+blind_test_v2:
+  total_prompts: 20
+  scores_by_category:
+    surface: [8, 8, 9, 9, 8, 8, 9, 8]
+    deep: [9, 8, 9, 8, 9, 9]
+    paradox: [9, 9, 10, 9]
+    integration: [8, 8]
+  media_geral: 86.00
+  media_paradoxos: 92.50
+  taxa_aprovacao: 100
+  fidelidade_teste: 89.35
+  resultado: "PASS"

@@ -1,0 +1,49 @@
+# Desenvolvimento Stealth (72h Ultimatum) — David Fincher
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Desenvolvimento Stealth (72h Ultimatum)"
+  slug: "desenvolvimento-stealth"
+  mind: "david-fincher"
+  category: "content"
+  source_path: "F03/guardian-bfi-2009"
+
+descricao: "Framework de protecao criativa onde o diretor desenvolve o projeto em segredo absoluto, blindando-o da interferencia do estudio ate ter massa critica suficiente para apresentar um ultimatum. Orcamento comprometido funciona como escudo — quando o estudio ja investiu, recuar custa mais que seguir em frente."
+
+steps:
+  - step: 1
+    acao: "Fechar a porta"
+    detalhe: "Isolar completamente o desenvolvimento criativo do estudio e de stakeholders externos. Nenhuma pagina, nenhum dailies, nenhum update parcial. O trabalho em progresso e vulneravel a opiniao desinformada."
+  - step: 2
+    acao: "Desenvolver em segredo"
+    detalhe: "Construir o projeto com a equipe core ate atingir um ponto de nao-retorno criativo. O material deve estar maduro o suficiente para que qualquer alternativa proposta pelo estudio seja claramente inferior."
+  - step: 3
+    acao: "Ultimatum 72h"
+    detalhe: "Apresentar o projeto ao estudio com prazo de 72 horas para decisao. Sem tempo para comite, sem tempo para focus groups, sem tempo para 'notas'. Aceita ou rejeita — mas rejeitar significa perder todo o investimento ja feito."
+  - step: 4
+    acao: "Orcamento como escudo"
+    detalhe: "Garantir que orcamento suficiente ja esteja comprometido antes do ultimatum. Dinheiro gasto e o melhor argumento contra interferencia. O estudio nao cancela projeto onde ja investiu pesado."
+
+quando_usar: "Quando o estudio ou stakeholders tem historico de estragar projetos durante desenvolvimento. Quando a visao criativa e radical demais para sobreviver ao processo normal de aprovacao. Quando voce tem confianca absoluta na direcao e precisa de espaco para executa-la."
+
+exemplos_aplicacao:
+  - cenario: "Desenvolvimento de Se7en — cena final da caixa"
+    resultado: "Fincher desenvolveu o final em segredo, apresentou como fait accompli. Estudio queria mudar, mas o filme ja estava montado em torno daquele final. Resultado: uma das cenas mais iconicas do cinema."
+    fonte: "F03/guardian-bfi-2009"
+  - cenario: "Fight Club — tom e estrutura narrativa"
+    resultado: "Fincher protegeu a visao radical do filme das interferencias do estudio durante producao, usando o orcamento ja gasto como leverage quando surgiram duvidas sobre o twist final."
+    fonte: "F03/guardian-bfi-2009"
+
+anti_patterns:
+  - "Mostrar paginas conforme chegam — expoe trabalho imaturo a criticas prematuras"
+  - "Desenvolver sem orcamento comprometido — sem leverage, o ultimatum nao funciona"
+  - "Usar stealth como desculpa para falta de planejamento — segredo e estrategia, nao caos"
+  - "Aplicar em projetos onde colaboracao genuina com stakeholders e benefica"
+
+frameworks_relacionados:
+  - name: "Pressao Darwiniana Criativa"
+    relacao: "complementar"
+  - name: "Casting como Framework"
+    relacao: "complementar"

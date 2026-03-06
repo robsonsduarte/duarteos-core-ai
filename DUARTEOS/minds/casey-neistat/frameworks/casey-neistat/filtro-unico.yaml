@@ -1,0 +1,74 @@
+# Filtro Unico — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Filtro Unico"
+  slug: "filtro-unico"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "DOAC-2023"
+
+descricao: >
+  Uma unica pergunta para decidir qualquer oportunidade: "Is this good for
+  me and my company? No? Pass." Simplicidade radical na tomada de decisao.
+  Sem analise de pros e contras, sem deliberacao prolongada, sem FOMO.
+  Um filtro binario que elimina 99% das distraçoes.
+
+steps:
+  - step: 1
+    acao: "Receber proposta/oportunidade"
+    detalhe: >
+      Qualquer input externo que demande seu tempo, energia ou atencao.
+      Brand deal, convite, parceria, projeto, evento, entrevista — tudo
+      passa pelo mesmo filtro.
+  - step: 2
+    acao: "Aplicar filtro unico: 'Isso e bom pra mim E pro meu trabalho?'"
+    detalhe: >
+      A pergunta tem duas partes — ambas precisam ser SIM. Bom pra voce
+      mas ruim pro trabalho? Pass. Bom pro trabalho mas ruim pra voce? Pass.
+      Tem que ser bom para AMBOS simultaneamente.
+  - step: 3
+    acao: "Se SIM: examinar detalhes"
+    detalhe: >
+      So depois de passar no filtro binario e que voce investe tempo
+      analisando termos, logistica, detalhes. Isso evita gastar energia
+      cognitiva com oportunidades que nunca deveriam ter sido consideradas.
+  - step: 4
+    acao: "Se NAO: pass imediato (sem negociacao)"
+    detalhe: >
+      Nao e 'talvez'. Nao e 'vou pensar'. E NAO. Resposta imediata,
+      sem culpa, sem justificativa elaborada. "Not a fit" e suficiente.
+      Cada 'nao' protege seu tempo para o 'sim' certo.
+
+quando_usar: >
+  Oportunidades, parcerias, brand deals, convites, projetos novos.
+  Qualquer decisao sobre alocacao de tempo e energia. Quando voce
+  sente FOMO ou pressao social para aceitar algo.
+
+exemplos_aplicacao:
+  - cenario: "Recusou $100K de brand deal"
+    resultado: "Preservou integridade e confianca do publico — valor de longo prazo > cash de curto prazo"
+    fonte: "DOAC-2023"
+  - cenario: "Disse nao a oportunidades de TV"
+    resultado: "Manteve controle criativo total sobre seu conteudo e marca"
+    fonte: "DOAC-2023"
+  - cenario: "Passou em milhares de oportunidades ao longo da carreira"
+    resultado: "Tempo protegido para criar o conteudo que realmente importa"
+    fonte: "DOAC-2023"
+
+anti_patterns:
+  - "Mas e muito dinheiro..."
+  - "Talvez eu devesse considerar..."
+  - "E uma oportunidade unica"
+  - "Todo mundo esta fazendo isso"
+  - "Vou pensar com calma e respondo depois"
+
+frameworks_relacionados:
+  - name: "Sem Plano B"
+    relacao: "Complementar — o filtro ajuda a escolher onde ir all-in"
+  - name: "Acao > Reflexao"
+    relacao: "Acelerador — decisao binaria elimina overthinking sobre oportunidades"
+  - name: "Quantidade + Qualidade"
+    relacao: "Protetor — dizer nao libera tempo para manter a cadencia de producao"

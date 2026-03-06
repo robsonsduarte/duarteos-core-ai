@@ -1,0 +1,69 @@
+# Acao > Reflexao — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Acao > Reflexao"
+  slug: "acao-sobre-reflexao"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "TimFerriss-2015, RichRoll-2015"
+
+descricao: >
+  Pensar paralisa; agir liberta. Decisoes sao tomadas fazendo, nao planejando.
+  O excesso de reflexao e o maior inimigo da criacao. A unica forma de saber
+  se algo funciona e tentando — nao pesquisando, nao planejando, nao pedindo
+  permissao. Comece com o que tem, onde esta, agora.
+
+steps:
+  - step: 1
+    acao: "Identificar o que te paralisa"
+    detalhe: >
+      Nomear explicitamente o medo ou hesitacao. O que exatamente esta te
+      impedindo de comecar? Qual e a narrativa interna que justifica a inacao?
+  - step: 2
+    acao: "Ignorar a voz interna que pede 'mais pesquisa'"
+    detalhe: >
+      A voz que diz 'preciso de mais informacao' e quase sempre procrastinacao
+      disfarçada de prudencia. Reconheça o padrao e recuse obedecer.
+  - step: 3
+    acao: "Comecar AGORA com o que tem"
+    detalhe: >
+      Use os recursos disponiveis neste momento. Nao espere condicoes ideais.
+      O ato de comecar cria momentum que nenhum planejamento consegue gerar.
+  - step: 4
+    acao: "Iterar em tempo real — ajustar no caminho"
+    detalhe: >
+      Correcoes de curso sao mais eficientes que planejamento antecipado.
+      Feedback real do mundo e infinitamente mais valioso que simulacoes mentais.
+
+quando_usar: >
+  Qualquer situacao de hesitacao, overthinking ou paralisia por analise.
+  Quando voce percebe que esta planejando ao inves de fazendo. Quando a
+  pesquisa se tornou desculpa para nao agir.
+
+exemplos_aplicacao:
+  - cenario: "Casey comecou a filmar sem saber tecnica"
+    resultado: "Aprendeu editando e publicando — dominou o craft pelo volume"
+    fonte: "TimFerriss-2015"
+  - cenario: "Comecou o vlog diario sem plano editorial"
+    resultado: "800+ episodios consecutivos que redefiniram o formato no YouTube"
+    fonte: "RichRoll-2015"
+  - cenario: "Lancou Beme sem o produto estar pronto"
+    resultado: "Validou a ideia no mercado real e iterou com feedback de usuarios"
+    fonte: "TimFerriss-2015"
+
+anti_patterns:
+  - "Preciso pensar mais sobre isso"
+  - "Deixa eu pesquisar primeiro"
+  - "Nao estou pronto"
+  - "Vou comecar quando tiver mais clareza"
+
+frameworks_relacionados:
+  - name: "Recursos Nunca Sao Desculpa"
+    relacao: "Complementar — agir com o que tem elimina a desculpa de recursos"
+  - name: "Sem Plano B"
+    relacao: "Reforço — comprometimento total elimina a hesitacao"
+  - name: "Quantidade + Qualidade"
+    relacao: "Consequencia — agir muito gera volume que gera qualidade"

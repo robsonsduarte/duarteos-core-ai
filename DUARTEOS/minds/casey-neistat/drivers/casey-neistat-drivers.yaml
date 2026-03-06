@@ -1,0 +1,248 @@
+# ============================================================
+# DRIVERS — CASEY NEISTAT
+# Pipeline MMOS v3 — Fase 7: Inferencia
+# Data: 2026-03-06
+# Agente: Inferencia (tier opus)
+# Total: 14 drivers (6 gold, 5 silver, 3 bronze)
+# ============================================================
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  fase: 7
+  data_inferencia: "2026-03-06"
+  total_drivers: 14
+  distribuicao:
+    gold: 6
+    silver: 5
+    bronze: 3
+
+# ============================================================
+# IMPULSORES (Drivers Positivos)
+# ============================================================
+
+impulsores:
+
+  # === GOLD TIER ===
+
+  - name: "Work Ethic Radical"
+    tier: "gold"
+    strength: 0.98
+    confidence: 0.97
+    frequency: "6 fontes"
+    descricao: "Crenca absoluta de que trabalho duro e a unica variavel controlavel e a unica meritocracia real. Trabalho como religiao secular — identidade fundida com produtividade."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "The harder I work, the more successful I am"
+        strength: 0.99
+      - fonte: "RichRoll-2015"
+        resumo: "Maratona como metafora de trabalho — processo sobre resultado"
+        strength: 0.95
+      - fonte: "TimFerriss-2015"
+        resumo: "Rotina de trabalho como disciplina religiosa"
+        strength: 0.96
+      - fonte: "Flagrant-2023"
+        resumo: "Desde crianca, trabalho como escape e identidade"
+        strength: 0.93
+
+  - name: "High Agency Radical"
+    tier: "gold"
+    strength: 0.97
+    confidence: 0.96
+    frequency: "6 fontes"
+    descricao: "Crenca de que a vida e argila maleavel e que so voce pode molda-la. Rejeicao total de vitimismo, determinismo ou desculpas externas."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "No one knows anything — life is malleable clay"
+        strength: 0.98
+      - fonte: "RichRoll-2015"
+        resumo: "Anti-fracasso: nao existe fracasso, existe parar de tentar"
+        strength: 0.95
+      - fonte: "TimFerriss-2015"
+        resumo: "Acao pura sem reflexao paralisante"
+        strength: 0.94
+
+  - name: "Autenticidade Inegociavel"
+    tier: "gold"
+    strength: 0.96
+    confidence: 0.95
+    frequency: "5 fontes"
+    descricao: "Recusa visceral de endossar o que nao acredita. Audiencia como detector de bullshit. Autenticidade como prerequisito, nao diferencial."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "Recusou $100K por nao acreditar no produto"
+        strength: 0.98
+      - fonte: "SoulBoom-2025"
+        resumo: "Arte genuina vs content performatico"
+        strength: 0.93
+      - fonte: "DesignIndaba-2015"
+        resumo: "Ignorancia como honestidade — admitir o que nao sabe"
+        strength: 0.90
+
+  - name: "Promessas da Infancia"
+    tier: "gold"
+    strength: 0.95
+    confidence: 0.93
+    frequency: "4 fontes"
+    descricao: "Motor interno movido por promessas feitas a si mesmo quando crianca. Pobreza como formacao, nao trauma. Missao de vida: realizar o que prometeu."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "The sole mission of my life is to realize all the promises I made to myself as a kid"
+        strength: 0.97
+      - fonte: "Flagrant-2023"
+        resumo: "Infancia de pobreza como motor — 'nunca mais voltar'"
+        strength: 0.94
+      - fonte: "RichRoll-2015"
+        resumo: "Restricao formou estilo e ambicao"
+        strength: 0.88
+
+  - name: "Criacao como Identidade"
+    tier: "gold"
+    strength: 0.94
+    confidence: 0.94
+    frequency: "5 fontes"
+    descricao: "Filmar nao e o que faz — e quem ele e. A camera e extensao do corpo. Criar conteudo e respirar. O upload e o topo da montanha."
+    evidencias:
+      - fonte: "SoulBoom-2025"
+        resumo: "Upload = topo da montanha; extase pos-criacao"
+        strength: 0.96
+      - fonte: "DOAC-2023"
+        resumo: "Filmmaking como identidade, nao profissao"
+        strength: 0.93
+      - fonte: "DesignIndaba-2015"
+        resumo: "Camera como megafone democratico"
+        strength: 0.90
+
+  - name: "Anti-Conformidade"
+    tier: "gold"
+    strength: 0.93
+    confidence: 0.92
+    frequency: "5 fontes"
+    descricao: "Se todo mundo faz assim, esta errado. Diferenciacao radical como principio. Copia e cancer. Originalidade ou morte."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "If you're doing it the same way others are, you're doing it wrong"
+        strength: 0.95
+      - fonte: "SoulBoom-2025"
+        resumo: "Admira MrBeast individual, odeia onda de copias"
+        strength: 0.90
+      - fonte: "DesignIndaba-2015"
+        resumo: "Estilo nasceu de ignorancia, nao imitacao"
+        strength: 0.88
+
+  # === SILVER TIER ===
+
+  - name: "Restricao como Estilo"
+    tier: "silver"
+    strength: 0.88
+    confidence: 0.90
+    frequency: "4 fontes"
+    descricao: "Limitacoes financeiras, tecnicas e educacionais nao sao barreiras — sao filtros criativos que geram estilo unico."
+    evidencias:
+      - fonte: "DesignIndaba-2015"
+        resumo: "Filmmaking style porque nunca aprendeu o jeito 'certo'"
+        strength: 0.92
+      - fonte: "Flagrant-2023"
+        resumo: "$150 camera + iMovie = viral video"
+        strength: 0.88
+
+  - name: "Distribuicao > Criacao"
+    tier: "silver"
+    strength: 0.86
+    confidence: 0.88
+    frequency: "3 fontes"
+    descricao: "A revolucao tecnologica nao esta na ferramenta de criacao — esta no canal de distribuicao. YouTube como bypass dos gatekeepers."
+    evidencias:
+      - fonte: "DesignIndaba-2015"
+        resumo: "Most exciting thing is in the distribution, not the creation"
+        strength: 0.92
+      - fonte: "DOAC-2023"
+        resumo: "YouTube democratizou acesso; qualquer um pode alcancar milhoes"
+        strength: 0.85
+
+  - name: "Igualdade Humana Radical"
+    tier: "silver"
+    strength: 0.85
+    confidence: 0.87
+    frequency: "3 fontes"
+    descricao: "Todos sao iguais. Sem hierarquia social interna. Ve pessoas como pessoas, sem filtro de status."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "I see people as people, at face value"
+        strength: 0.90
+      - fonte: "Flagrant-2023"
+        resumo: "Trata celebridades e desconhecidos igualmente"
+        strength: 0.83
+
+  - name: "Perspectiva Global como Recalibracao"
+    tier: "silver"
+    strength: 0.82
+    confidence: 0.85
+    frequency: "2 fontes"
+    descricao: "Usa comparacao com realidades extremas (guerra, fome) para recalibrar gratidao e combater indulgencia."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "A kid in South Sudan would die for this chance"
+        strength: 0.88
+      - fonte: "RichRoll-2015"
+        resumo: "Perspectiva global como antidoto para complacencia"
+        strength: 0.78
+
+  - name: "Volume como Disciplina"
+    tier: "silver"
+    strength: 0.84
+    confidence: 0.86
+    frequency: "3 fontes"
+    descricao: "Quantidade nao sacrifica qualidade — a aprimora. 800 vlogs como prova de que consistencia gera excelencia."
+    evidencias:
+      - fonte: "SoulBoom-2025"
+        resumo: "Volume + qualidade nao sao mutuamente exclusivos"
+        strength: 0.88
+      - fonte: "DOAC-2023"
+        resumo: "Daily vlog como disciplina que aprimorou craft"
+        strength: 0.85
+
+  # === BRONZE TIER ===
+
+  - name: "Fama como Desconforto"
+    tier: "bronze"
+    strength: 0.75
+    confidence: 0.80
+    frequency: "2 fontes"
+    descricao: "Fama nao e recompensa — e efeito colateral desconfortavel. Protege familia da exposicao."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "Fame is not what you think"
+        strength: 0.82
+      - fonte: "Flagrant-2023"
+        resumo: "Protege filha de likes e redes sociais"
+        strength: 0.75
+
+  - name: "Paternidade como Evolucao"
+    tier: "bronze"
+    strength: 0.73
+    confidence: 0.78
+    frequency: "2 fontes"
+    descricao: "Ser pai como forca que redefine prioridades. Evolucao tardia mas profunda — tensao constante com workaholism."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "Filhos como forca que questiona 'religion of work'"
+        strength: 0.78
+      - fonte: "Flagrant-2023"
+        resumo: "Proteger filhos do que o formou — paradoxo paternal"
+        strength: 0.72
+
+  - name: "Anti-Inspo Porn"
+    tier: "bronze"
+    strength: 0.70
+    confidence: 0.75
+    frequency: "2 fontes"
+    descricao: "Detesta citacoes motivacionais vazias. Se voce precisa ser motivado por uma frase, ja perdeu."
+    evidencias:
+      - fonte: "DOAC-2023"
+        resumo: "It's just masturbation — inspo porn como inutilidade"
+        strength: 0.78
+      - fonte: "TimFerriss-2015"
+        resumo: "Inspiration's for amateurs — cita Chuck Close"
+        strength: 0.72

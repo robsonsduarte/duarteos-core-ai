@@ -1,0 +1,69 @@
+# Recursos Nunca Sao Desculpa — casey-neistat
+# Derivado de: .claude/synapse/minds/casey-neistat.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Recursos Nunca Sao Desculpa"
+  slug: "recursos-nunca-sao-desculpa"
+  mind: "casey-neistat"
+  category: "content"
+  source_path: "DesignIndaba-2015, Flagrant-2023"
+
+descricao: >
+  Falta de equipamento, dinheiro ou conexoes nao e barreira — e filtro
+  criativo. Limitacoes forcam originalidade. Quem espera ter os recursos
+  certos nunca comeca. O que importa e a ideia e a energia, nao o gear.
+
+steps:
+  - step: 1
+    acao: "Listar o que voce TEM (nao o que falta)"
+    detalhe: >
+      Inverter a perspectiva. Em vez de catalogar deficiencias, fazer
+      inventario do que esta disponivel agora. Celular? Computador? Conexao?
+      Voce tem mais do que imagina.
+  - step: 2
+    acao: "Usar o minimo viavel"
+    detalhe: >
+      Identificar o setup mais simples possivel que permite criar.
+      Uma camera, uma fonte de luz, um software gratuito. Reduzir ao
+      essencial absoluto.
+  - step: 3
+    acao: "Compensar budget com energia e originalidade"
+    detalhe: >
+      O que falta em producao, sobra em criatividade. Restricoes orcamentarias
+      forcam solucoes que budgets altos nunca descobririam. Abraçar a limitacao
+      como vantagem competitiva.
+  - step: 4
+    acao: "Nunca esperar o equipamento 'certo'"
+    detalhe: >
+      O melhor equipamento e o que voce tem agora. Nenhuma camera nova vai
+      compensar falta de ideia ou falta de acao. Comece com o que tem.
+
+quando_usar: >
+  Alguem reclama de falta de recursos. Perfeccionismo de equipamento.
+  "Nao tenho budget." Quando a lista de "preciso de..." cresce mais que
+  a lista de "ja fiz...".
+
+exemplos_aplicacao:
+  - cenario: "Camera de $150 do Walmart + iMovie"
+    resultado: "Video com milhoes de views — equipamento barato, ideia poderosa"
+    fonte: "DesignIndaba-2015"
+  - cenario: "iPhone como camera principal para vlogs"
+    resultado: "Provou que qualidade de producao e secundaria vs autenticidade"
+    fonte: "Flagrant-2023"
+
+anti_patterns:
+  - "Quando eu tiver uma camera melhor..."
+  - "Preciso de mais budget"
+  - "O equipamento nao e bom o suficiente"
+  - "Nao tenho as ferramentas certas"
+  - "Preciso de um estudio primeiro"
+
+frameworks_relacionados:
+  - name: "Acao > Reflexao"
+    relacao: "Fundacional — agir com o que tem e a expressao pratica de acao sobre reflexao"
+  - name: "Frustacao como Combustivel"
+    relacao: "Complementar — frustacao com falta de recursos pode ser canalizada em criatividade"
+  - name: "Sem Plano B"
+    relacao: "Reforço — sem alternativa, voce e forcado a fazer funcionar com o que tem"

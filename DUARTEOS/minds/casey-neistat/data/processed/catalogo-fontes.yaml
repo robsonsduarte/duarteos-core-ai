@@ -1,0 +1,277 @@
+# Catalogo de Fontes — Casey Neistat
+# Pipeline: MMOS Engine v3 — Fase 1 (Pesquisa)
+# Gerado em: 2026-03-06
+# Tiers: EXA (Tier 1) + Apify RAG (Tier 2) + YouTube Transcript MCP
+
+total_fontes: 16
+fontes_primarias: 14
+fontes_mistas: 2
+fontes_secundarias_rejeitadas: 12
+tiers_usados: [EXA, Apify_RAG, YouTube_Transcript_MCP, HappyScribe, PodScripts]
+
+fontes:
+  # === PODCASTS LONG-FORM (transcritos) ===
+  - id: F01
+    tipo: podcast
+    titulo: "The Diary of a CEO — Casey Neistat (The Untold Story)"
+    url: "https://podcasts.happyscribe.com/the-diary-of-a-ceo-with-steven-bartlett/casey-neistat-the-untold-story"
+    entrevistador: "Steven Bartlett"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-12-11"
+    tier: Apify_RAG
+    conteudo_extraido: true
+    notas: "Transcricao COMPLETA (90K+ chars). Cobre infancia, filho aos 15, pobreza, HBO, YouTube, Beme, CNN, fama, paternidade. A fonte mais rica."
+
+  - id: F02
+    tipo: podcast
+    titulo: "Rich Roll Podcast #144 — Absolute Disregard For Failure"
+    url: "https://podscripts.co/podcasts/the-rich-roll-podcast/casey-neistats-absolute-disregard-for-failure"
+    entrevistador: "Rich Roll"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2015-06-01"
+    tier: Apify_RAG
+    conteudo_extraido: true
+    notas: "Transcricao COMPLETA (60K+ chars). Casey no auge — filosofia anti-inspiracao, originalidade, desrespeito pelo fracasso."
+
+  # === PODCASTS (nao transcritos mas catalogados) ===
+  - id: F03
+    tipo: podcast
+    titulo: "Tim Ferriss Show #116 — How Casey Neistat Breaks Rules"
+    url: "https://tim.blog/2015/10/27/casey-neistat/"
+    entrevistador: "Tim Ferriss"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2015-10-27"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Show notes completos extraidos. Transcript PDF existe mas nao acessivel via scraping. 1 quote direta verificada + topicos completos."
+
+  - id: F04
+    tipo: podcast
+    titulo: "How I Built This — Video Artist: Casey Neistat"
+    url: "https://www.npr.org/2020/02/28/810412631/video-artist-casey-neistat"
+    entrevistador: "Guy Raz"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2020-03-02"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Biografia completa (1h34m). Transcript atras de paywall Wondery+. Descricao extraida."
+
+  - id: F05
+    tipo: podcast
+    titulo: "Created with Jon Youshaei — The Casey Neistat Interview"
+    url: "https://open.spotify.com/episode/3QD7cKlf3mLlN60K3P5Mnf"
+    entrevistador: "Jon Youshaei"
+    duracao_estimada: longa
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-11-08"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Entrevista mais recente (2024). Nao transcrita."
+
+  - id: F06
+    tipo: podcast
+    titulo: "Bertcast #469 — Casey Neistat"
+    url: "https://overcast.fm/+OuuHPuVGY"
+    entrevistador: "Bert Kreischer"
+    duracao_estimada: longa
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2021-06-17"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Conversa informal. Nao transcrita."
+
+  # === PALESTRAS ===
+  - id: F07
+    tipo: palestra
+    titulo: "Design Indaba — On the Virtues of Ignorance"
+    url: "https://www.designindaba.com/articles/interviews/casey-neistat-design-indaba"
+    entrevistador: "Cool Hunting"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2015-03-01"
+    tier: Apify_RAG
+    conteudo_extraido: true
+    notas: "Entrevista escrita COMPLETA + palestra de 33min (video YouTube ID: Fpr0h6tUFT0). 6 quotes diretas integrais."
+
+  - id: F08
+    tipo: palestra
+    titulo: "SXSW 2014 — From Teen Welfare Dad to YouTube Icon"
+    url: "https://www.indiewire.com"
+    entrevistador: "SXSW"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2014-03-11"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Historia pessoal completa ao vivo. Nao transcrita."
+
+  - id: F09
+    tipo: palestra
+    titulo: "Craft + Commerce 2018 — How to be Heard in a Noisy World"
+    url: "https://www.youtube.com/watch?v=x9ULRUFJaeQ"
+    entrevistador: "ConvertKit"
+    duracao_estimada: media
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2018-12-28"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Transcript nao disponivel. Notas de participante extraidas."
+
+  - id: F10
+    tipo: palestra
+    titulo: "VidCon 2016 — Creator Keynote"
+    url: "https://www.youtube.com/watch?v=LKZxw6npW6E"
+    entrevistador: "VidCon"
+    duracao_estimada: media
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2016-01-26"
+    tier: YouTube_Transcript_MCP
+    conteudo_extraido: false
+    notas: "Video encontrado mas transcript inacessivel (bug MCP)."
+
+  # === VIDEOS DO CANAL ===
+  - id: F11
+    tipo: video
+    titulo: "Do What You Can't — CaseyNeistat (YouTube)"
+    url: "https://www.youtube.com/watch?v=jG7dSXcfVqE"
+    duracao_estimada: curta
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2017-03-01"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Video-manifesto. Filosofia core concentrada em ~5min."
+
+  - id: F12
+    tipo: video
+    titulo: "Draw My Life — CaseyNeistat (YouTube)"
+    url: "https://www.youtube.com/watch?v=V6Y-ahQFQDA"
+    duracao_estimada: curta
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2015-02-01"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Video autobiografico. Biografia condensada em primeira pessoa."
+
+  # === ENTREVISTAS VIDEO ===
+  - id: F13
+    tipo: entrevista
+    titulo: "Jon Youshaei — Video Interview com Casey Neistat (YouTube)"
+    url: "https://www.youtube.com/watch?v=bWh0ktqZNCU"
+    entrevistador: "Jon Youshaei"
+    duracao_estimada: longa
+    profundidade: alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-11-02"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Entrevista recente (2024). Video no YouTube."
+
+  # === FONTES MISTAS ===
+  - id: F14
+    tipo: artigo
+    titulo: "Tim Ferriss Blog — Show Notes Casey Neistat #116"
+    url: "https://tim.blog/2015/10/27/casey-neistat/"
+    duracao_estimada: media
+    profundidade: media
+    primaria: false
+    idioma: en
+    data_publicacao: "2015-10-27"
+    tier: Apify_RAG
+    conteudo_extraido: true
+    notas: "Show notes com 1 quote direta + topicos completos + livros mencionados. MISTA."
+
+  - id: F15
+    tipo: artigo
+    titulo: "Craft + Commerce 2018 — Notas de participante"
+    url: "https://benjiwalklet.com/my-notes-and-takeaways-from-craft-commerce-2018/"
+    duracao_estimada: curta
+    profundidade: media
+    primaria: false
+    idioma: en
+    data_publicacao: "2018-07-01"
+    tier: Apify_RAG
+    conteudo_extraido: true
+    notas: "Notas secundarias com takeaways sobre consistencia e paixao."
+
+  - id: F16
+    tipo: podcast
+    titulo: "The Vergecast — Casey Neistat Full Interview"
+    url: "https://realmoneystudios.com/bonus-casey-neistat-full-interview"
+    entrevistador: "The Verge"
+    duracao_estimada: longa
+    profundidade: media-alta
+    primaria: true
+    idioma: en
+    data_publicacao: "2018-03-23"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Entrevista sobre tecnologia e plataformas. Nao transcrita."
+
+fontes_rejeitadas:
+  - titulo: "The Casey Neistat Formula: Creativity, Hu..."
+    motivo: "Fonte secundaria — analise de terceiros"
+  - titulo: "Learn To Make Movies Like Casey Neistat"
+    motivo: "Tutorial baseado em Casey, nao Casey falando"
+  - titulo: "7 Storytelling Techniques from Casey Neistat"
+    motivo: "Listicle secundario"
+  - titulo: "A breakdown of Casey Neistat's creative process"
+    motivo: "Analise externa"
+  - titulo: "33 Life Lessons from Casey Neistat"
+    motivo: "Blog post de terceiro"
+  - titulo: "10 Things from Casey Neistat's Daily Vlog"
+    motivo: "Blog post de terceiro"
+  - titulo: "Casey Neistat's Guide to Filmmaking [Infographic]"
+    motivo: "Infografico de terceiro"
+  - titulo: "Editing Storytelling Techniques Casey Neistat"
+    motivo: "Analise tecnica de terceiro"
+  - titulo: "Wikipedia (Casey Neistat)"
+    motivo: "Fonte terciaria"
+  - titulo: "Wikipedia (Beme)"
+    motivo: "Fonte terciaria"
+  - titulo: "GSpeakers / Speaker bureau pages"
+    motivo: "Material promocional"
+  - titulo: "Casey Neistat Can Teach Us About..."
+    motivo: "Artigo secundario"
+
+distribuicao:
+  livros: 0
+  entrevistas: 2
+  artigos: 2
+  podcasts: 7
+  palestras: 4
+  videos: 2
+  nota_distribuicao: "Casey e YouTuber/vlogger — material e predominantemente video e podcasts. Nao tem livros autorais nem artigos escritos. Podcasts longos sao a fonte ideal pois revelam pensamento espontaneo."
+
+cobertura:
+  span_temporal: "2014-2024 (10 anos)"
+  idiomas: [en]
+  periodos_carreira: ["pre-YouTube (2001-2010)", "early YouTube (2010-2015)", "daily vlog era (2015-2016)", "Beme/CNN (2016-2018)", "368/return (2018-2022)", "current era (2022-2024)"]

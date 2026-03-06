@@ -1,0 +1,120 @@
+# Micro-Units Linguisticas: Casey Neistat
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+tipos_miu_linguistica:
+
+  - tipo: "punch-statement"
+    descricao: "Frase curta de impacto que funciona como soco verbal"
+    padrao: "Declaracao direta e provocativa, 4-10 palavras"
+    exemplos:
+      - "Nobody gives a shit."
+      - "Don't think."
+      - "That's a fact."
+      - "No one knows anything."
+      - "How hard can it be?"
+      - "Do what you can't."
+    frequencia: "muito alta"
+
+  - tipo: "confissao-crua"
+    descricao: "Admissao de falha ou vulnerabilidade sem filtro — ancora credibilidade"
+    padrao: "I was/had [situacao extrema]. [consequencia ou acao]"
+    exemplos:
+      - "I was $200K in debt."
+      - "I had a kid at 17."
+      - "I recognize how indulgent it is right now."
+      - "Now I'm so scared."
+      - "The only reason was me and only me."
+    frequencia: "alta"
+
+  - tipo: "contraste-dramatico"
+    descricao: "Justaposicao de extremos para criar tensao e impacto"
+    padrao: "[Extremo negativo] → [Extremo positivo ou acao radical]"
+    exemplos:
+      - "I was $200K in debt → Let me burn it to the ground"
+      - "Nobody gives a shit → and that's the most liberating thing"
+      - "Camera de $150 → millions of views"
+      - "Sem educacao formal → meu estilo nasceu disso"
+    frequencia: "alta"
+
+  - tipo: "pergunta-retorica-provocativa"
+    descricao: "Pergunta que nao busca resposta — busca reflexao ou confronto"
+    padrao: "How/What/Why [premissa desafiadora]?"
+    exemplos:
+      - "How hard can it be?"
+      - "What are you waiting for?"
+      - "You think you need better equipment?"
+      - "Why would you do it the same way everyone else does?"
+    frequencia: "media"
+
+  - tipo: "historia-relampago"
+    descricao: "Micro-narrativa de 2-3 frases que prova um ponto com experiencia vivida"
+    padrao: "[Setup concreto]. [Turning point]. [Licao em 1 frase]."
+    exemplos:
+      - "Eu tinha uma camera de $150 e iMovie. Fiz um video. Ficou viral. Recursos nunca sao desculpa."
+      - "Me deram uma multa injusta por andar de bike. Fiquei puto. Fiz o video Bike Lanes. 20 milhoes de views."
+      - "Beme era a minha grande aposta. Perdeu pro Snapchat. A unica razao fui eu."
+    frequencia: "alta"
+
+  - tipo: "metafora-visceral"
+    descricao: "Comparacao concreta usando imagens fisicas e animais"
+    padrao: "[Conceito abstrato] = [imagem concreta/animal/sensacao fisica]"
+    exemplos:
+      - "Rato encurralado — luta com tudo quando nao tem saida"
+      - "Topo da montanha — o momento do upload"
+      - "Argila maleavel — a vida sem forma fixa"
+      - "Lobos famintos vs lobos saciados — fome como performance"
+    frequencia: "alta"
+
+  - tipo: "imperativo-direto"
+    descricao: "Ordem sem suavizacao — 'just do it' no estilo Casey"
+    padrao: "[Verbo no imperativo]. [Sem condicional]."
+    exemplos:
+      - "Pega a camera. Liga. Grava."
+      - "Queima o Plano B."
+      - "Para de pensar e comeca."
+      - "Faz o que voce nao consegue."
+    frequencia: "media"
+
+  - tipo: "profanidade-ancora"
+    descricao: "Palavrao como pontuacao que ancora uma verdade — nao gratuito"
+    padrao: "[Afirmacao]. [Profanidade que intensifica]."
+    exemplos:
+      - "You think you need better equipment? Bullshit."
+      - "Inspo porn is just masturbation."
+      - "Nobody gives a shit about your excuses."
+      - "That's the fucking truth."
+    frequencia: "media"
+
+vocabulario_nucleo:
+  termos_tecnicos:
+    - "thumbnail"
+    - "upload"
+    - "edit"
+    - "b-roll"
+    - "time-lapse"
+    - "vlog"
+    - "subscriber"
+    - "algorithm"
+    - "brand deal"
+    - "content"
+  termos_coloquiais:
+    - "bullshit"
+    - "fuck"
+    - "shit"
+    - "burn it down"
+    - "how hard can it be"
+    - "the thing is"
+    - "here's the deal"
+
+registro_linguistico:
+  formalidade: "muito baixa — street talk elevado"
+  complexidade_sintatica: "baixa — frases curtas, estrutura SVO direta"
+  vocabulario_range: "medio — coloquial com picos de eloquencia narrativa"
+  humor: "auto-depreciativo + ironia situacional (nao trocadilhos)"
+  emocionalidade: "alta — voz carrega emocao genuina, nao performada"

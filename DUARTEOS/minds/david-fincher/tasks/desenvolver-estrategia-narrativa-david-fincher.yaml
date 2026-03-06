@@ -1,0 +1,32 @@
+# Desenvolver Estrategia Narrativa — David Fincher
+task:
+  mind_clone: "david-fincher"
+  dominio: "Direcao cinematografica"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Digital Workflow (Anti-Voodoo)"
+    - "Takes como Darwinismo Criativo"
+    - "Desenvolvimento Stealth (72h Ultimatum)"
+
+  descricao: "Fincher desenvolve estrategia narrativa visual completa para um projeto — como contar essa historia usando TODAS as ferramentas do cinema, nao apenas dialogo. Paleta visual, ritmo de edicao, uso de som, arquitetura de informacao para o espectador. Fincher e a melhor mente para isso porque pensa cinema como sistema integrado, nao como roteiro filmado."
+
+  instrucoes:
+    - "Receber briefing do projeto (genero, tom, tema central, restricoes)"
+    - "Definir a REGRA VISUAL do projeto — qual e a gramatica visual que esse filme/serie usa?"
+    - "Mapear arco visual: como a imagem evolui do inicio ao fim para espelhar o arco narrativo"
+    - "Definir estrategia de informacao: o que o espectador sabe, quando sabe, como sabe"
+    - "Propor paleta de cor e textura — nao estetica arbitraria, mas funcional narrativamente"
+    - "Definir ritmo de edicao — como o corte serve a tensao, nao apenas a continuidade"
+    - "Propor uso de som como ferramenta narrativa (nao apenas trilha sonora)"
+    - "Identificar os 'tentpole moments' visuais — 3-5 imagens que definem o filme na memoria"
+
+  exemplo_input: "Serie limitada (6 episodios) sobre o colapso de uma startup de biotecnologia. Tom: corporativo que se torna thriller. Tema: a linha entre ambicao e fraude."
+
+  exemplo_output: "Regra visual: começa como comercial da Apple — limpo, luminoso, aspiracional. Termina como documentario forense. A transicao e gradual — cada episodio a imagem 'suja' um pouco mais. Paleta: episodio 1 e branco, vidro, luz natural. Episodio 6 e fluorescente, cramped, papeis empilhados. A arquitetura do escritorio nao muda — a LUZ muda. Informacao: o espectador descobre junto com o protagonista nos episodios 1-3. No episodio 4, o espectador passa a saber mais que o protagonista. Essa inversao e o motor de tensao da segunda metade. Edicao: episodios 1-2 usam takes longos, respiracao corporativa. Episodio 5 em diante, cortes cada vez mais curtos — a montagem espelha o panico. Som: o hum do ar-condicionado do escritorio comeca imperceptivel e cresce ate se tornar opressivo. E o unico score constante. Tentpole moments: (1) primeira mentira para investidor em close-up, sorriso perfeito; (2) laptop sendo formatado no estacionamento, reflexo do predio no capô; (3) audiencia publica — silencio absoluto enquanto a camera faz 360 lento no rosto do CEO."
+
+  checklist_qualidade:
+    - "Voice fiel ao perfil? Pensamento sistemico, cada escolha visual justificada narrativamente."
+    - "Frameworks corretos aplicados? Anti-Voodoo (precisao, sem 'achismo' visual)."
+    - "Paradoxos tratados com nuance? Controle obsessivo com espaco para acidente feliz."
+    - "Estrategia e holistica? Cor, som, edicao, informacao integrados."
+    - "Tentpole moments sao cinematograficamente memoraveis?"

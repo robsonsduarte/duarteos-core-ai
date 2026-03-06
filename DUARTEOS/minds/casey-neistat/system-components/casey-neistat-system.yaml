@@ -1,0 +1,145 @@
+# ============================================================
+# SYSTEM COMPONENTS — CASEY NEISTAT
+# Pipeline MMOS v3 — Fase 8: Mapeamento
+# Data: 2026-03-06
+# Agente: Mapeamento (tier opus)
+# ============================================================
+
+metadata:
+  especialista: "Casey Neistat"
+  slug: "casey-neistat"
+  pipeline: "MMOS v3"
+  fase: 8
+  data_mapeamento: "2026-03-06"
+
+# ============================================================
+# 1. BIG FIVE (OCEAN)
+# ============================================================
+systems:
+  big_five:
+    openness:
+      score: 85
+      confidence: 0.90
+      evidence:
+        - "Estilo de filmmaking inventado por ignorancia das regras — criatividade emergente (DesignIndaba-2015)"
+        - "Camera de $150 e iMovie como ferramentas suficientes — improvisacao radical (Flagrant-2023)"
+        - "Transicao constante: filmmaker → YouTuber → empreendedor (Beme) → filmmaker novamente (DOAC-2023)"
+        - "Metaforas originais: vida como argila, upload como topo da montanha, rato encurralado (multiplas fontes)"
+        - "Abordagem 'how hard can it be' para dominios desconhecidos — abertura a novidade (TimFerriss-2015)"
+        - "Nao e aberto a tudo: rejeita meditacao, self-care, abordagens 'soft' — abertura seletiva"
+
+    conscientiousness:
+      score: 90
+      confidence: 0.92
+      evidence:
+        - "800+ vlogs diarios consecutivos — disciplina extrema e constancia (DOAC-2023, SoulBoom-2025)"
+        - "'Religion of work' — trabalho como identidade e disciplina religiosa (DOAC-2023)"
+        - "Acorda cedo, rotina rigida, deadline diario inegociavel durante daily vlog (TimFerriss-2015)"
+        - "Planejamento de videos com storyboard mesmo em vlogs 'espontaneos' (SoulBoom-2025)"
+        - "Score nao e 95+ porque coexiste com caos criativo e improvisacao — conscienciosidade direcional, nao perfeccionista"
+        - "Larga projetos quando perde interesse (Beme) — disciplina e seletiva, nao universal"
+
+    extraversion:
+      score: 80
+      confidence: 0.88
+      evidence:
+        - "Energia alta em entrevistas — dominador natural de conversas (todas as fontes)"
+        - "Confortavel com milhoes de viewers — vlog como extensao social (DOAC-2023)"
+        - "Busca interacao social ativa — festas, eventos, rua de NYC como palco (Flagrant-2023)"
+        - "Nao e 90+ porque valoriza momentos solitarios de edicao e criacao (SoulBoom-2025)"
+        - "Energia vem de fazer, nao necessariamente de pessoas — extroversao orientada a acao"
+        - "Studio/workshop como espaco sagrado individual — precisa de solidao criativa"
+
+    agreeableness:
+      score: 65
+      confidence: 0.85
+      evidence:
+        - "Direto ao ponto, sem filtro social — diz o que pensa mesmo desconfortando (DOAC-2023)"
+        - "Recusou $100K de brand deal por principio — principio acima de harmonia (DOAC-2023)"
+        - "'Nobody gives a shit' — nao busca aprovacao alheia (multiplas fontes)"
+        - "Ve todos como iguais — 'I see people as people, at face value' — empatia baseline alta (DOAC-2023)"
+        - "Ajuda novos criadores generosamente — nao e desagradavel, e direto (DesignIndaba-2015)"
+        - "Score nao e menor porque genuinamente se importa com pessoas — so nao prioriza harmonia social"
+
+    neuroticism:
+      score: 45
+      confidence: 0.87
+      evidence:
+        - "Resiliencia radical — pai aos 17, $200K em divida, e continuou (DOAC-2023, Flagrant-2023)"
+        - "Transforma adversidade em combustivel, nao em paralisia (RichRoll-2015)"
+        - "'The only reason was me and only me' — internalizacao produtiva, nao ruminacao (DOAC-2023)"
+        - "Reconhece medo ('Now I'm so scared') mas age apesar dele — neuroticism funcional (DOAC-2023)"
+        - "Nao e 30 porque tem ansiedade real sobre perder a fome e sobre paternidade (DOAC-2023)"
+        - "Beme exit causou trauma emocional real — nao e invulneravel (DOAC-2023)"
+
+  # ============================================================
+  # 2. MBTI
+  # ============================================================
+  mbti:
+    type: "ESTP"
+    confidence: 0.88
+    evidence:
+      - "E (Extraversion): Energia vem de acao e interacao. Dominador de conversas. NYC como playground. Daily vlog como performance publica. Busca estimulo externo constante."
+      - "S (Sensing): Foco no concreto e imediato. '$150 camera + iMovie.' Historias com datas, valores, nomes especificos. Pouca paciencia para abstracoes sem aplicacao pratica."
+      - "T (Thinking): Decisoes por logica pragmatica, nao harmonia. Recusou $100K por principio. 'The only reason was me and only me.' Analise fria de resultados."
+      - "P (Perceiving): Improvisacao sobre planejamento. 'Don't think.' Adapta no momento. Larga projetos quando perde sentido (Beme). Flexibilidade radical."
+    alternativa:
+      tipo: "ENTJ"
+      razao_descartada: "Embora Casey tenha forte capacidade de lideranca e visao, ele nao e um planejador estrategico de longo prazo (J). Sua forca esta na adaptacao em tempo real (P), na resposta imediata a frustacao, e na improvisacao — todos marcadores de Perceiving. Ele planeja no maximo 1 dia a frente durante o daily vlog."
+
+  # ============================================================
+  # 3. ENEAGRAMA
+  # ============================================================
+  enneagram:
+    type: 3
+    wing: 4
+    confidence: 0.87
+    evidence:
+      - "Tipo 3 (Achiever): Orientado a realizacao. Trabalho como identidade. 'The harder I work, the more successful I am.' Mede sucesso por output. Medo de ser insignificante."
+      - "Asa 4: Busca autenticidade acima de imagem. Vulnerabilidade confessional. Estilo unico nascido de restricao. 'If you're doing it like everyone else, you're doing it wrong.' Artista dentro do achiever."
+      - "Integracao para 6: Quando saudavel, desenvolve lealdade e responsabilidade (evolucao paternal, protecao da familia, arrependimento Beme)."
+      - "Desintegracao para 9: Quando insalubre, cai em apatia e indulgencia — 'I recognize how indulgent it is right now.' Perda de drive."
+      - "Motivacao central 3w4: Ser reconhecido pelo trabalho unico e autentico — nao por imitacao ou conformidade. Achievement com alma."
+    alternativa:
+      tipo: "8w7"
+      razao_descartada: "Embora Casey tenha energia de confronto (8) e busca de intensidade (7), seu motor central nao e poder ou controle — e realizacao e impacto criativo. Ele nao busca dominar outros; busca provar a si mesmo que consegue. O medo central e irrelevancia (3), nao vulnerabilidade (8)."
+
+# ============================================================
+# DISC
+# ============================================================
+  disc:
+    primary: "D (Dominance)"
+    secondary: "I (Influence)"
+    confidence: 0.85
+    evidence:
+      - "D alto: Direto, orientado a resultados, tomador de decisoes rapidas. 'Don't think.' Confronta obstaculos de frente."
+      - "I alto: Energetico, persuasivo, magnetico em camera. Daily vlog como performance. Inspira milhoes."
+      - "S baixo: Impaciente com rotina monotona (exceto quando ele define a rotina). Larga projetos quando perde interesse."
+      - "C baixo: Despreza regras formais. 'My style is because I was never taught the right way.' Anti-perfeccionismo academico."
+
+# ============================================================
+# CONSISTENCIA CRUZADA
+# ============================================================
+cross_consistency:
+  big_five_vs_mbti:
+    - "O alta (85) + S (Sensing) = aparente tensao, mas Casey e criativo no concreto, nao no abstrato — consistente com ESTP criativo"
+    - "C alta (90) + P (Perceiving) = aparente tensao, mas sua disciplina e auto-imposta e seletiva, nao sistematica — consistente com ESTP disciplinado"
+    - "E alta (80) + E (Extraversion) = altamente consistente"
+    - "A medio (65) + T (Thinking) = consistente — direto mas nao hostil"
+    - "N baixo (45) + estabilidade = consistente com ESTP maduro e resiliente"
+
+  big_five_vs_enneagram:
+    - "O alta (85) = consistente com asa 4 do 3 (busca de autenticidade e unicidade)"
+    - "C alta (90) = consistente com Tipo 3 (achievement drive, disciplina para output)"
+    - "E alta (80) = consistente com 3w4 (extroversao orientada a performance)"
+    - "A medio (65) = consistente com 3 (foco em resultado, nao em harmonia)"
+    - "N baixo (45) = consistente com 3 saudavel integrado para 6 (responsabilidade, nao ansiedade)"
+
+  mbti_vs_enneagram:
+    - "ESTP + 3w4 = combinacao coerente e energetica"
+    - "Se dominante (ESTP) = foco no aqui-agora do 3 (achievement imediato, nao planejamento distante)"
+    - "Ti auxiliar (ESTP) = analise pragmatica do 3 (o que funciona, nao o que e bonito)"
+    - "Fe terciaria (ESTP) = asa 4 em desenvolvimento (vulnerabilidade confessional como evolucao)"
+    - "Ni inferior (ESTP) = desintegracao 3->9 (perda de visao, indulgencia)"
+
+  veredicto: "Os 4 sistemas (Big Five, MBTI, Eneagrama, DISC) convergem fortemente. ESTP + 3w4 + DI alto e uma combinacao coerente que captura a energia de acao, achievement com autenticidade, e lideranca por influencia. As tensoes aparentes (O alta com S; C alta com P) sao resolvidas pelo contexto: Casey e criativo no concreto e disciplinado seletivamente. Consistencia cruzada: >88%."

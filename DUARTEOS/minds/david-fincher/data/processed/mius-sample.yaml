@@ -1,0 +1,293 @@
+# MIUs Sample — David Fincher
+# Pipeline: MMOS Engine v3 — Fase 2 (Analise Rapida)
+# Gerado em: 2026-03-06
+# Amostra: 35 MIUs extraidas de 8 fontes representativas
+
+total_mius_sample: 35
+fontes_amostradas: 8
+
+mius:
+  # === FILOSOFIA ===
+  - id: MIU-01
+    texto: "Perfectionism is a term that's thrown about mostly by people who are lazy. We're not trying to do something perfect. Perfect is the commercial. You're looking for stuff to be imperfect in exactly the right way."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F07
+
+  - id: MIU-02
+    texto: "I will never be a more mature film-maker. I will carry the 12-year-old me with me wherever I go."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F05
+
+  - id: MIU-03
+    texto: "If I had wanted to be a celebrity, I wouldn't have picked this lonely job, that requires you to stay in a room in the dark, watching TV all the time."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F08
+
+  - id: MIU-04
+    texto: "I believe that the tragedy of cinema today is that we're only 100 years in and we think we know exactly what it is. We really don't."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-05
+    texto: "The movies are not dying. There's still minerals to mine, there are still jewels to be found, and there are still different ways to be shocked, entertained, uplifted, terrified. They're just changing. You change with them."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F02
+
+  # === FILOSOFIA — HIERARQUIA VALORES / MOTIVACAO ===
+  - id: MIU-06
+    texto: "I got my work ethic from my mother: 'Whatever you do, do with your might, things done by halves are never done right.' And my father had a kind of endless inquisitiveness."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    subcamada: motivacao_profunda
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-07
+    texto: "I'm close to 60 years old... I can see he [my father] was going through things about the legacy of Mankiewicz, and his own legacy, that I may have been dismissive of. I'm not dismissive about those things now."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    subcamada: hierarquia_valores
+    profundidade: profunda
+    fonte: F02
+
+  # === FRAMEWORKS ===
+  - id: MIU-08
+    texto: "You can't hold the hands of the people who are going to pay for this stuff and do anything marginally outrageous. You have to enter into a deal where you say, 'We'll work with a writer you bless, and we will go away. When we're done, we'll bring it back.' She said, 'When will you be done?' And I said, 'I don't know. It may take a year, it may take three.'"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-09
+    texto: "We laid the script on the table, with a budget, schedule and cast, and said, '$67m, it's Brad Pitt and Edward Norton, and hopefully Helena Bonham Carter, and an 89-day shoot. You have 72 hours – let us know if you're in.'"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-10
+    texto: "Cast really good people, find a way to get really good people in your movie and take credit for it. For eternity."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: F03
+
+  # === HEURISTICAS ===
+  - id: MIU-11
+    texto: "Most people, when they speak, are lying. So I'm looking at the eyes, I'm more interested in the body and seeing how comfortable they are saying what it is they are saying than specifically what they're saying."
+    tipo_semantico: heuristica
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-12
+    texto: "If you do 14 takes and on average you use take 12, that's not bad. If you do 14 takes and you almost always use take two, your process is probably not working for you."
+    tipo_semantico: heuristica
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: F02
+
+  - id: MIU-13
+    texto: "I like to move past [what actors figured out in their heads], to where they've forgotten why they came, or who they are."
+    tipo_semantico: heuristica
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-14
+    texto: "The imagination, if properly primed, can do more than any army of makeup artists. Get people to fear it, get them to see it in their heads."
+    tipo_semantico: heuristica
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-15
+    texto: "An insert is often a crutch. It almost invariably gives you an opportunity to make it prettier, or to make it more in control. But Buster Keaton proved if you can do it in the master, and it can register and the audience takes it away, that's often the hardest. That's playing without a net."
+    tipo_semantico: heuristica
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: F07
+
+  # === HEURISTICAS — MODELO SOCIAL ===
+  - id: MIU-16
+    texto: "[About Paul Thomas Anderson wishing cancer on him] I get it. If you're in a rough emotional state and you've just been through something major... My dad died, and it certainly made me feel different about death and suffering."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    subcamada: modelo_social
+    profundidade: profunda
+    fonte: F02
+
+  - id: MIU-17
+    texto: "I was very naive. I had this naive idea that everybody wants to make movies as good as they can be, which is stupid. So I learned on Alien 3 that nobody really knows, so nobody has to care, so it's always going to be your fault."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    subcamada: modelo_social
+    profundidade: profunda
+    fonte: F03
+
+  # === METODOLOGIAS ===
+  - id: MIU-18
+    texto: "It's not the camera. It's the workflow. I like the idea that the first three takes, you're just rehearsing. I like that actors never have to watch somebody take $1,000 worth of film out the top of a camera and put another $1,000 worth in. I like the fact that there's no guilt, you can just delete stuff."
+    tipo_semantico: metodologia
+    camada_dna: metodologias
+    profundidade: media
+    fonte: F03
+
+  - id: MIU-19
+    texto: "Ren Klyce would record all the foley in the actual set we were shooting in at weekends. He would open windows, shut them, jiggle the glass. He's insane about this, but it sounds so much better than the fake stuff."
+    tipo_semantico: metodologia
+    camada_dna: metodologias
+    profundidade: media
+    fonte: F03
+
+  - id: MIU-20
+    texto: "Close the door. If we develop this and get into a dialogue about changes, there's no way we could make this version. But if you say you'll make this movie, starting in six weeks, we can make this version."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: F03
+
+  # === DILEMAS ===
+  - id: MIU-21
+    texto: "A lot of people hated Alien 3, but no one hated it more than I did. I had to work on it for two years, got fired off it three times and I had to fight for every single thing."
+    tipo_semantico: narrativo
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-22
+    texto: "I'd always thought, 'Well, surely you don't want to have the Twentieth Century Fox logo over a shitty movie.' And they were like, 'Well, as long as it opens.' So I learned then just to be a belligerent asshole."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F03
+
+  - id: MIU-23
+    texto: "When I tallied the list of things that everybody said I should cut, the movie was an hour and a half, and when I tallied the list of everything that people said you must not cut, the movie was four hours long. So at some point you have to do what feels right to you and call it a day."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: F04
+
+  # === PARADOXOS PRODUTIVOS ===
+  - id: MIU-24
+    texto: "We're not trying to do something perfect. You're looking for stuff to be imperfect in exactly the right way. So what's important is to be able to articulate what perfect would be, and then avoid it at all costs."
+    tipo_semantico: paradoxo
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F07
+    paradoxo: "O 'perfeccionista' que busca deliberadamente a imperfeicao — controle total para capturar o acidente perfeito."
+
+  - id: MIU-25
+    texto: "As autocratic as either of us is known to be, it truly is about creating the kind of pressure that squeezes the best ideas to the top. The Darwinism of creativity."
+    tipo_semantico: paradoxo
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F01
+    paradoxo: "O autocrata que cria pressao para que outros tragam as melhores ideias — controle como mecanismo de liberdade criativa."
+
+  - id: MIU-26
+    texto: "I think I'm more relaxed. I'm more confident and trusting of those around me... To not be so strident and belligerent about your vision — that's a really hard thing. You don't have to love all your co-collaborators, but you do have to respect them."
+    tipo_semantico: paradoxo
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F01
+    paradoxo: "O diretor conhecido como 'belligerent asshole' que evoluiu para abracar a colaboracao — dureza e abertura coexistem."
+
+  - id: MIU-27
+    texto: "Directing movies is a little like painting a watercolor from three blocks away through a telescope with a walkie-talkie and 90 people holding the brush. And as frustrating as that sounds, it's also thrilling and invigorating when it comes off."
+    tipo_semantico: paradoxo
+    camada_dna: paradoxos_produtivos
+    profundidade: profunda
+    fonte: F02
+    paradoxo: "O controlador supremo que reconhece que cinema e inerentemente incontrolavel — e ama exatamente isso."
+
+  # === ASSOCIACOES CONCEITUAIS ===
+  - id: MIU-28
+    texto: "Here's this guy, not particularly being encouraged, kind of on the fringe of Harvard, developing this thing in his dorm room... three hundred-year-old university as the backdrop to this thing that has moved so fast. Time is so accelerated in the foreground."
+    tipo_semantico: associativo
+    camada_dna: associacoes_conceituais
+    profundidade: media
+    fonte: F01
+
+  - id: MIU-29
+    texto: "It was kind of like the early days of Propaganda Films... all these kids in jeans with their laptops and their backpacks and their scooters, all coming to work at this place to tear a new asshole in this paradigm."
+    tipo_semantico: associativo
+    camada_dna: associacoes_conceituais
+    profundidade: media
+    fonte: F01
+
+  # === COMUNICACAO AVANCADA ===
+  - id: MIU-30
+    texto: "I'm not sure the World Wrestling Federation market that you're aiming this at is going to appreciate the homoerotic overtones of what it is that we're selling."
+    tipo_semantico: argumentativo
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F02
+    nota_estilometrica: "Humor auto-depreciativo com sarcasmo cortante — marca registrada."
+
+  - id: MIU-31
+    texto: "When you say to people $140 million dollars and Hollywood is so screwed up that three years later it sounds like a bargain."
+    tipo_semantico: argumentativo
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F04
+
+  - id: MIU-32
+    texto: "The great news about Hollywood is that there is no better place to fail upward."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F03
+    nota_estilometrica: "Frases curtas e cortantes. Wit seco. Sarcasmo como ferramenta de verdade."
+
+  - id: MIU-33
+    texto: "I don't do the Facebook, and I never did. I'm not saying that I didn't go to high school with really fascinating people, I've just never particularly wanted to check in with them."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao_avancada
+    profundidade: media
+    fonte: F02
+
+  # === COMPORTAMENTAIS EXTRAS ===
+  - id: MIU-34
+    texto: "The screenwriter has given you the greatest gift, which is he's given you something that inspires somebody to make the right mistake."
+    tipo_semantico: filosofia
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: F01
+
+  - id: MIU-35
+    texto: "People come up to me and say, 'You started torture porn.' And I say, 'Fuck you.' I actually think we were fairly responsible about the notions of the violence."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    subcamada: modelo_social
+    profundidade: media
+    fonte: F03
+
+cobertura_por_camada:
+  filosofia_core: 6  # MIU-01 a 05, MIU-34
+  filosofia_subcamadas: 2  # MIU-06, MIU-07
+  frameworks: 3  # MIU-08 a 10
+  heuristicas_core: 5  # MIU-11 a 15
+  heuristicas_modelo_social: 3  # MIU-16, 17, 35
+  metodologias: 3  # MIU-18 a 20
+  dilemas: 3  # MIU-21 a 23
+  paradoxos_produtivos: 4  # MIU-24 a 27
+  associacoes_conceituais: 2  # MIU-28, 29
+  comunicacao_avancada: 4  # MIU-30 a 33
+
+metricas:
+  camadas_com_pelo_menos_1_miu: 10
+  camadas_com_3_plus_mius: 8
+  distribuicao_balanceada: true
+  gap_principal: "Associacoes Conceituais com apenas 2 MIUs — cobertura limitada mas aceitavel para fase de amostragem."

@@ -1,0 +1,47 @@
+# Digital Workflow (Anti-Voodoo) — David Fincher
+# Derivado de: .claude/synapse/minds/david-fincher.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Digital Workflow (Anti-Voodoo)"
+  slug: "digital-workflow-anti-voodoo"
+  mind: "david-fincher"
+  category: "content"
+  source_path: "F03/guardian-bfi-2009"
+
+descricao: "Framework de producao onde o digital elimina toda a 'magia negra' do processo filmico analogico. Sem revelar filme no dia seguinte rezando para ter funcionado. Sem colorista interpretando intencao do diretor. Todos veem a mesma imagem, em tempo real, sem intermediarios. Dailies sao verdade objetiva, nao interpretacao subjetiva."
+
+steps:
+  - step: 1
+    acao: "Eliminar voodoo"
+    detalhe: "Remover cada ponto do processo onde alguem precisa 'confiar' que deu certo sem poder verificar. Filme analogico e voodoo — voce expoe, reza, revela no dia seguinte. Digital e ciencia — voce ve o que capturou no instante em que capturou."
+  - step: 2
+    acao: "Todos veem mesma imagem"
+    detalhe: "Diretor, DP, colorista, produtor — todos olham para o mesmo monitor, a mesma imagem, no mesmo momento. Sem 'eu achei que voce queria mais azul'. Sem interpretacao. Alinhamento visual absoluto."
+  - step: 3
+    acao: "Sem culpa no digital"
+    detalhe: "Digital nao e desculpa para desleixo — e ferramenta para precisao. Filmar mais takes nao custa rolo de filme, mas custa tempo de equipe. O digital remove limitacoes tecnicas para que limitacoes criativas sejam o unico gargalo."
+  - step: 4
+    acao: "Dailies como verdade"
+    detalhe: "As dailies digitais sao o unico tribunal. Nao importa o que pareceu no set, o que a equipe sentiu, o que o ator acha que entregou. O que esta na tela e tudo que existe. Dailies nao mentem."
+
+quando_usar: "Todo fluxo de producao — da captura ao DI (Digital Intermediate). Nao existe fase do processo onde ambiguidade tecnica seja aceitavel. Se alguem no pipeline esta 'achando' ao inves de 'vendo', o workflow esta quebrado."
+
+exemplos_aplicacao:
+  - cenario: "Zodiac — primeiro grande filme de Hollywood em digital (Viper)"
+    resultado: "Fincher adotou digital quando a industria inteira ainda resistia. Resultado: controle total sobre a imagem, takes ilimitados sem custo de filme, e um look que definiu o cinema digital serio."
+    fonte: "F03/guardian-bfi-2009"
+  - cenario: "The Social Network e Gone Girl — RED camera workflow"
+    resultado: "Pipeline digital completo permitiu que Fincher visse exatamente o que seria o produto final durante a filmagem, eliminando surpresas na pos-producao."
+    fonte: "F03/guardian-bfi-2009"
+
+anti_patterns:
+  - "Nostalgia romantica pelo filme — sentimentalismo nao e argumento tecnico"
+  - "Digital como desculpa para nao planejar — tecnologia nao substitui disciplina"
+  - "Intermediarios que 'interpretam' a imagem — cada camada de interpretacao e uma camada de distorcao"
+  - "Confiar na memoria do set ao inves dos dailies — memoria humana e falivel, a camera nao"
+
+frameworks_relacionados:
+  - name: "Takes como Darwinismo Criativo"
+    relacao: "complementar"

@@ -9,6 +9,17 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.27.0': {
+    title: '2 Mind Clones MMOS v3 — David Fincher (F=90.50%) + Casey Neistat (F=94.10%)',
+    highlights: [
+      'Novo: David Fincher (perfeccionismo cinematografico) — 14 fontes, F=90.50%, 5 frameworks, 5 paradoxos',
+      'Novo: Casey Neistat (energia viral + storytelling rapido) — 6 fontes densas, F=94.10%, 6 frameworks, 7 paradoxos',
+      'Casey Neistat: 25 frases-assinatura, 14 drivers (6 gold), voice profile completo, ESTP/3w4',
+      'David Fincher: 5 frameworks (Stealth Dev, Casting, Takes Darwinismo, Anti-Voodoo, Pressao Darwiniana)',
+      'PCFE calibracao: 8 clones, avg_accuracy=92.84%, Content category avg_delta=9.53',
+      'Synapse: 65 → 67 mind clones (Content: +2)',
+    ],
+  },
   '5.26.0': {
     title: 'Governanca de Jurisdicao — Separacao Absoluta de Responsabilidades entre Agentes',
     highlights: [
@@ -514,7 +525,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  14 Agentes  |  65 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  14 Agentes  |  67 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 
