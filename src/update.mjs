@@ -9,6 +9,17 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.22.0': {
+    title: '3 Mind Clones MMOS v3 — Daniel Kahneman (F=95.55%) + Amanda Khayat (F=93.20%) + Brad Frost Squad',
+    highlights: [
+      'Novo: Daniel Kahneman (psicologia do julgamento, Nobel 2002) — 13 fontes, 105 MIUs, 18 drivers, 9 frameworks, F=95.55%',
+      'Novo: Amanda Khayat (copywriting) — brownfield upgrade completo, 11 frameworks, 16 drivers, F=93.20%',
+      'Update: Brad Frost — squad artifacts completo (drivers, behavioral, cognitive, linguistic, narrative)',
+      'PCFE calibracao: 6 clones, avg_accuracy 93.63%, todos subestimacao (PCFE conservadora)',
+      'Templates sincronizados: 3 novos/atualizados em templates/commands/DUARTEOS/',
+      'Synapse: 64 → 65 mind clones, Business: 9 → 10',
+    ],
+  },
   '5.21.0': {
     title: 'Migracao Estrutural — 64 Mind Clones Padronizados em DUARTEOS/minds/',
     highlights: [

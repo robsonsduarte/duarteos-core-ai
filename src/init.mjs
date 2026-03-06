@@ -621,13 +621,13 @@ export function init(projectName, options = {}) {
      blueprint-template.md   — Template de blueprint para build-system
      Use: /DUARTEOS:squad:build-system [PRD.md | workflow.json | URL]
 
-  Mind Clones (.claude/commands/DUARTEOS/) — 63 consultores cognitivos:
-     /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Ogilvy...)
+  Mind Clones (.claude/commands/DUARTEOS/) — 65 consultores cognitivos:
+     /DUARTEOS:Copywriting:*    — 7 mestres (Schwartz, Halbert, Amanda Khayat...)
      /DUARTEOS:Marketing:*      — 9 estrategistas (Dan Kennedy, Pedro Sobral...)
-     /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen...)
+     /DUARTEOS:UX-Design:*      — 6 especialistas (Don Norman, Nielsen, Brad Frost...)
      /DUARTEOS:AI:*             — 5 pioneiros (Andrew Ng, Hinton, LeCun...)
      /DUARTEOS:Tech:*           — 6 lideres (Zuckerberg, Larry Page, Pavel Durov...)
-     /DUARTEOS:Business:*       — 8 empreendedores (Bill Gates, Thiago Finch, David Allen, W. Edwards Deming...)
+     /DUARTEOS:Business:*       — 10 empreendedores (Kahneman, Bill Gates, David Allen, W. Edwards Deming...)
      /DUARTEOS:Content:*        — 4 criadores (MrBeast, Virginia Fonseca...)
      /DUARTEOS:Product:*        — 3 lideres (Julie Zhuo, Ezra Firestone...)
      /DUARTEOS:Saude:*          — 8 profissionais (Drauzio Varella, Vera Iaconelli, Atul Gawande...)
