@@ -1,0 +1,47 @@
+# Interface Inventory — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Interface Inventory"
+  slug: "interface-inventory"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Exercicio revelador de auditoria de todos os elementos de UI existentes. Colocar 47 variacoes de button lado a lado muda perspectivas. E tanto ferramenta analitica quanto ferramenta retorica — evidencia visual irrefutavel de inconsistencia."
+
+steps:
+  - step: 1
+    acao: "Auditar todos os elementos de UI existentes"
+    detalhe: "Capturar screenshots de todos os elementos de UI do produto. Agrupar por tipo: buttons, forms, headers, cards, modals, typography, spacing, icons."
+  - step: 2
+    acao: "Identificar duplicatas e inconsistencias"
+    detalhe: "Colocar variacoes lado a lado (Visual Proof). A evidencia visual e irrefutavel — 47 variacoes de button expostas mudam a conversa instantaneamente."
+  - step: 3
+    acao: "Consolidar em um sistema unificado"
+    detalhe: "Priorizar consolidacao baseada em frequencia de uso e impacto. Definir componentes canonicos, deprecar variantes desnecessarias, documentar decisoes."
+
+quando_usar: "Como primeiro passo antes de qualquer decisao sobre design system — ver 47 variacoes de button lado a lado muda perspectivas"
+
+exemplos_aplicacao:
+  - cenario: "Lideranca questiona necessidade de investir em design system"
+    resultado: "Interface inventory revela 47 variacoes de button, 12 estilos de card, 8 tipografias diferentes — ROI do DS se torna obvio"
+    fonte: "DNA direto"
+  - cenario: "Time quer construir design system do zero sem referencia"
+    resultado: "Inventory redireciona para o que ja existe — nunca comece do zero, comece do que voce tem"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Pular o inventory e ir direto para criacao de componentes — sempre auditar primeiro"
+  - "Fazer inventory sozinho sem envolver cross-functional team"
+  - "Tratar inventory como exercicio unico e nunca repetir — deve ser periodico"
+
+frameworks_relacionados:
+  - name: "Pattern-Driven Development"
+    relacao: "complementar"
+  - name: "Selling Design Systems Framework"
+    relacao: "complementar"
+  - name: "Design System Thinking"
+    relacao: "complementar"

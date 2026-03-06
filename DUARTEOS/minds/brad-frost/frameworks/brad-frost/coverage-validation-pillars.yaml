@@ -1,0 +1,44 @@
+# Coverage + Validation Pillars (Agent-Friendly DS) — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Coverage + Validation Pillars (Agent-Friendly DS)"
+  slug: "coverage-validation-pillars"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Dois pilares obrigatorios para preparar um design system para consumo por AI agents. Coverage garante que AI tem informacao suficiente para compor corretamente. Validation garante que output de AI respeita constraints do sistema. Sem ambos, Agentic DS nao funciona."
+
+steps:
+  - step: 1
+    acao: "Coverage: exemplos claros, estados documentados, constraints explicitos, composition patterns"
+    detalhe: "AI precisa de informacao rica para compor corretamente. Exemplos de uso real (nao abstratos), todos os estados documentados (default, hover, active, disabled, error, loading), constraints explicitos (min/max width, allowed children), e patterns de composicao (quais componentes combinam com quais)."
+  - step: 2
+    acao: "Validation: testes automatizados, sign-off humano, verificacao de constraints, feedback loop"
+    detalhe: "Output de AI deve ser validado automaticamente (testes de acessibilidade, type checking, visual regression) E por humanos (sign-off de design para casos criticos). Feedback loop: erros de AI informam melhorias na coverage."
+
+quando_usar: "Ao preparar DS para consumo por AI agents — dois pilares obrigatorios"
+
+exemplos_aplicacao:
+  - cenario: "AI gera interface mas usa componentes em combinacoes invalidas (ex: Button dentro de Button)"
+    resultado: "Coverage pillar resolve: composition patterns documentam explicitamente combinacoes validas e invalidas. Validation pillar: teste automatizado rejeita composicao invalida."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "AI gera form acessivel em 80% dos casos mas falha em edge cases de screen reader"
+    resultado: "Validation pillar: testes automatizados de acessibilidade capturam falhas. Feedback loop: edge cases viram novos exemplos na coverage. Proxima geracao acerta."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Coverage sem validation — AI tem info mas ninguem verifica output"
+  - "Validation sem coverage — testes existem mas AI nao tem info para acertar"
+  - "Apenas testes automatizados sem sign-off humano — AI pode gerar algo 'tecnicamente correto' mas UX ruim"
+
+frameworks_relacionados:
+  - name: "Agentic Design Systems"
+    relacao: "prerequisito"
+  - name: "DS+AI vs Vibe Coding"
+    relacao: "complementar"
+  - name: "Code-First Generation"
+    relacao: "complementar"

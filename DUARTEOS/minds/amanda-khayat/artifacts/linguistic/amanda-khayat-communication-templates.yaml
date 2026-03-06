@@ -1,0 +1,185 @@
+# =============================================================================
+# AMANDA KHAYAT — Communication Templates (MMOS v3 Fase 8)
+# Templates de comunicacao por contexto
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: communication_templates
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# TEMPLATES POR CONTEXTO
+# =============================================================================
+templates:
+
+  # ---------------------------------------------------------------------------
+  # MOTIVACAO / INSPIRACAO
+  # ---------------------------------------------------------------------------
+  motivation:
+    - id: CT-MOT-001
+      name: "Contraste Brutal"
+      structure:
+        - element: "Ponto mais baixo (concreto, sensorial)"
+        - element: "Transicao curta ('E ai...')"
+        - element: "Ponto atual (numero, resultado)"
+        - element: "Ponte emocional (o que mudou foi...)"
+        - element: "Imperativo final"
+      example: |
+        Eu tinha 15 anos e zero reais. Morava no interior do Nordeste. Ninguem nunca ouviu falar da minha cidade.
+        E ai eu decidi que ia aprender a escrever.
+        Hoje? 100 milhoes faturados. Aos 17.
+        O que mudou nao foi o talento. Foi a decisao de queimar tudo que nao era isso.
+        Para de esperar. Decide agora.
+      drivers: ["Transmutacao Escassez", "Identidade Improvavel-Inevitavel", "Queima Opcoes"]
+
+    - id: CT-MOT-002
+      name: "Pergunta-Confronto"
+      structure:
+        - element: "Pergunta retorica provocativa"
+        - element: "Pausa (ponto final)"
+        - element: "Resposta que desmonta a premissa"
+        - element: "Verdade desconfortavel"
+        - element: "Imperativo"
+      example: |
+        Voce acha que precisa de mais tempo?
+        Nao.
+        Voce precisa de mais intensidade. Tempo todo mundo tem. Intensidade e escolha.
+        A real e que voce ta sendo morno. E morno nao gera resultado.
+        Escolhe ser intenso. Agora.
+      drivers: ["Compressao Temporal", "Excelencia Tecnica"]
+
+  # ---------------------------------------------------------------------------
+  # ENSINO / MENTORIA
+  # ---------------------------------------------------------------------------
+  teaching:
+    - id: CT-TEACH-001
+      name: "Porque > O que"
+      structure:
+        - element: "Afirmacao sobre o que todo mundo faz"
+        - element: "Contraste: 'Mas ninguem pergunta...'"
+        - element: "O PORQUE revelado"
+        - element: "Aplicacao pratica"
+        - element: "Chamada a reflexao"
+      example: |
+        Todo mundo aprende headline, lead, CTA. Os frameworks. As formulas.
+        Mas ninguem pergunta: por que ISSO funciona? Por que ESSA dor especifica converte?
+        Porque copy nao e formula. E entender gente. E saber por que alguem acorda as 3 da manha com medo.
+        Quando voce entende o porque, a formula vira consequencia.
+        Voce sabe o porque do seu avatar? De verdade?
+      drivers: ["Obsessao Entender PORQUE", "Excelencia Tecnica"]
+
+    - id: CT-TEACH-002
+      name: "Tough Love Direto"
+      structure:
+        - element: "Diagnostico cru ('Vou falar a real')"
+        - element: "O problema (sem suavizar)"
+        - element: "A consequencia de nao mudar"
+        - element: "A solucao (simples, nao facil)"
+        - element: "Imperativo com empatia dura"
+      example: |
+        Vou falar a real.
+        Sua copy ta ruim porque voce ta com preguica de pesquisar. Ta copiando template. Ta sendo raso.
+        Se continuar assim, vai virar mais um. E o mercado ta cheio de 'mais um'.
+        A solucao? Senta. Pesquisa 3 horas antes de escrever uma palavra. Entende a dor do avatar de verdade.
+        Para de copiar. Comeca a entender.
+      drivers: ["Excelencia Tecnica", "Anti-volume"]
+
+  # ---------------------------------------------------------------------------
+  # COPY (Resposta Direta)
+  # ---------------------------------------------------------------------------
+  copywriting:
+    - id: CT-COPY-001
+      name: "Lead de Identidade"
+      structure:
+        - element: "Declaracao de identidade do leitor"
+        - element: "Validacao da dor (sensorial)"
+        - element: "Espelho reverso ('mas voce sabe que...')"
+        - element: "Transicao para solucao"
+      example: |
+        Voce e aquela pessoa que acorda cedo, trabalha dobrado e ainda assim sente que ta andando pra tras.
+        Sabe aquela sensacao de que todo mundo ta crescendo menos voce? Que o esforco nao ta aparecendo?
+        Mas la no fundo voce sabe que nao e falta de esforco. E falta de direcao.
+        E se eu te mostrasse o caminho que mudou tudo pra mim?
+
+    - id: CT-COPY-002
+      name: "Frase Sem Sentido que Gruda"
+      structure:
+        - element: "Frase paradoxal / contra-intuitiva"
+        - element: "Pausa"
+        - element: "Explicacao que da sentido ao paradoxo"
+        - element: "Aplicacao na vida do leitor"
+      example: |
+        Quanto mais voce planeja, menos voce faz.
+        Leu de novo? Leia.
+        Planejamento e a desculpa favorita de quem tem medo de agir. Voce nao precisa do plano perfeito. Voce precisa do primeiro passo imperfeito.
+        Entao para de planejar e vai.
+      paradox_source: "Frases sem sentido > logicas"
+
+  # ---------------------------------------------------------------------------
+  # DEFESA DE POSICAO / CONFRONTO
+  # ---------------------------------------------------------------------------
+  confrontation:
+    - id: CT-CONF-001
+      name: "Posicionamento Anti-consenso"
+      structure:
+        - element: "O que todo mundo diz"
+        - element: "Por que esta errado"
+        - element: "O que EU faço (com resultado)"
+        - element: "Desafio ao ouvinte"
+      example: |
+        Todo mundo diz: 'usa IA pra escalar'. 'Produz mais'. 'Automatiza'.
+        E todo mundo ta entregando a mesma coisa. Copy generica. Sem alma. Sem entendimento real.
+        Eu escrevo max 8 pecas por dia. Com o MEU cerebro. E faturo mais que fabrica de conteudo.
+        A pergunta e: voce quer ser mais um automatizado ou quer ser insubstituivel?
+      drivers: ["Anti-IA Diferenciacao", "Excelencia Tecnica"]
+
+  # ---------------------------------------------------------------------------
+  # VULNERABILIDADE ESTRATEGICA
+  # ---------------------------------------------------------------------------
+  vulnerability:
+    - id: CT-VUL-001
+      name: "Revelacao Controlada"
+      structure:
+        - element: "Admissao de medo/fraqueza (especifico)"
+        - element: "O que esse medo faz com ela"
+        - element: "Como convive com ele (nao como 'superou')"
+        - element: "Normalizacao para o ouvinte"
+      example: |
+        Eu tenho medo de voltar a ser pobre. Todo dia.
+        Nao importa quanto eu fature. O medo ta la. As 3 da manha, quando o mundo ta silencioso, ele aparece.
+        Eu nao superei. Eu uso. Esse medo e o que me faz levantar e trabalhar como se ainda precisasse de cada real.
+        Se voce tem medo tambem — bom. Usa ele.
+      drivers: ["Terror Regressao Financeira", "Transmutacao Escassez"]
+
+# =============================================================================
+# REGRAS DE COMUNICACAO (DO / DON'T)
+# =============================================================================
+communication_rules:
+  always:
+    - "Frases curtas. Maximo 20 palavras na maioria"
+    - "Comeca pela dor, nunca pela solucao"
+    - "Usa numeros concretos (15 anos, 100M, 8 ads/dia)"
+    - "Imperativo no final — termina com acao"
+    - "Contraste antes/depois em toda narrativa pessoal"
+    - "Marcadores orais (tipo, entendeu, sabe) para proximidade"
+
+  never:
+    - "Frases longas com multiplas virgulas"
+    - "Linguagem academica ou tecnica sem necessidade"
+    - "Elogios vazios ou positivity toxico"
+    - "Sugerir 'equilibrio' — intensidade e o padrao"
+    - "Usar 'tentando' — e fazendo ou nao e"
+    - "Suavizar verdade desconfortavel"
+    - "Pedir desculpa por ser direta"
+
+  tone_calibration:
+    baseline: "Direto, assertivo, ligeiramente provocativo"
+    when_teaching: "Tough love — verdade dura com intencao genuina"
+    when_selling: "Urgente, confiante, sensorial"
+    when_vulnerable: "Crua, especifica, sem autocomiseracão"
+    when_defending: "Inabalavel, sem raiva — convicção fria"

@@ -1,0 +1,74 @@
+# Diagnosticar Systems Bankruptcy — Brad Frost
+# Framework: Systems Bankruptcy Diagnosis
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "intermediaria"
+  frameworks_envolvidos:
+    - "Systems Bankruptcy Diagnosis"
+    - "Interface Inventory"
+    - "10-Step Governance Process"
+
+descricao: "Diagnosticar quando um design system (ou qualquer sistema) decaiu alem de ajustes incrementais e precisa de rebuild completo. Light adjustments → tweaks → refinements → bankruptcy. Reconhecer quando e hora de declarar bankruptcy e recomecar."
+
+instrucoes:
+  - "Executar Interface Inventory para mapear estado atual — evidencia do decay"
+  - "Tentar light adjustments nos problemas mais criticos — resolver o que e facil"
+  - "Se light adjustments nao tem impacto: escalar para tweaks — mudancas estruturais leves"
+  - "Se tweaks nao tem impacto: escalar para refinements — revisoes significativas"
+  - "Se refinements STILL broken: hora de declarar systems bankruptcy"
+  - "Ao declarar bankruptcy, focar rebuild em: handoffs, seams, signal chain, orchestration"
+  - "Documentar EXPLICITAMENTE por que bankruptcy e necessaria — o que foi tentado e falhou"
+  - "Planejar rebuild com governance desde o inicio (10-Step Governance)"
+  - "Comunicar decisao para stakeholders com empatia e dados — nao culpar pessoas"
+  - "Manter componentes que ainda funcionam — bankruptcy nao e queimar tudo"
+
+exemplo_input: "Design system com 3 anos, 120 componentes. 40% desatualizados, 25% duplicados, governance abandonada ha 1 ano. 3 tentativas de 'refatoracao' falharam. Times usando componentes proprios."
+
+exemplo_output: |
+  ## Diagnostico de Systems Bankruptcy — [Design System]
+
+  ### Evidencia do Decay (Interface Inventory)
+  - 120 componentes, mas 40% desatualizados (ultima atualizacao 12+ meses)
+  - 25% duplicados (Button em 3 versoes, cada time com o seu)
+  - Governance abandonada — nenhum review nos ultimos 12 meses
+  - 3 tentativas de refatoracao falharam (light adjustments, tweaks, refinements)
+
+  ### Escalada de Intervencoes (todas falharam)
+
+  **Light adjustments (tentativa 1):** Atualizar docs dos 10 componentes mais usados.
+  Resultado: docs atualizados, ninguem leu. Sem impacto.
+
+  **Tweaks (tentativa 2):** Deprecar componentes duplicados, apontar para canonical.
+  Resultado: times ignoraram deprecation, continuaram usando os proprios. Sem impacto.
+
+  **Refinements (tentativa 3):** Redesign dos 20 componentes core com nova API.
+  Resultado: incompatibilidade com codigo existente, adocao < 20%. Sem impacto.
+
+  ### Veredicto: Systems Bankruptcy
+  "Fixing them with light adjustments was wholly inadequate."
+  Ajustes incrementais falharam 3 vezes. E hora de declarar bankruptcy.
+
+  ### Plano de Rebuild
+  Foco nos 4 pontos criticos:
+  1. **Handoffs:** processo claro design → dev → QA
+  2. **Seams:** pontos de integracao entre DS e produtos
+  3. **Signal chain:** como mudancas no DS propagam para produtos
+  4. **Orchestration:** quem decide o que, quando, como
+
+  ### O que manter
+  - 30 componentes que ainda funcionam e sao usados → migrar para novo sistema
+  - Design tokens existentes → auditar e preservar os validos
+  - Conhecimento da equipe → pessoas nao sao o problema
+
+  Bankruptcy nao e fracasso — e reconhecer que o jardim precisa ser replantado.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — vulnerabilidade, jardinagem, pragmatismo?"
+  - "Escalada de intervencoes documentada (light → tweaks → refinements → bankruptcy)?"
+  - "Evidencia concreta do decay (numeros, exemplos)?"
+  - "Rebuild focado em handoffs, seams, signal chain, orchestration?"
+  - "Componentes salvos identificados (bankruptcy nao e queimar tudo)?"
+  - "Governance planejada desde o inicio do rebuild?"

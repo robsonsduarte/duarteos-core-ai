@@ -1,0 +1,52 @@
+# DS+AI vs Vibe Coding — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "DS+AI vs Vibe Coding"
+  slug: "ds-ai-vs-vibe-coding"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Distincao fundamental entre AI gerando UI com fundacao de design system (DS+AI) vs. AI gerando sem constraints (Vibe Coding). DS fornece guardrails contra hallucination e inconsistencia. Output de DS+AI e mais proximo de production-ready. AI tools can hallucinate — DS provides welcome constraints."
+
+steps:
+  - step: 1
+    acao: "DS+AI = AI deliberadamente constrained a componentes production-grade do DS"
+    detalhe: "AI opera dentro do sistema de componentes existente. Usa atoms, molecules, organisms documentados. Output segue guidelines, e acessivel e consistente. Constraints liberam qualidade."
+  - step: 2
+    acao: "Vibe Coding = AI gera sem constraints (resultados inconsistentes)"
+    detalhe: "AI inventa componentes, estilos, padroes sem referencia. Cada geracao e unica e inconsistente com as anteriores. Bonito isoladamente, caos em conjunto. Nao e production-ready."
+  - step: 3
+    acao: "DS fornece guardrails contra hallucination e inconsistencia"
+    detalhe: "Design system como conjunto de constraints que previne AI de alucinar padroes de UI. Componentes canonicos, tokens definidos, regras de composicao — tudo documentado para AI consumir."
+  - step: 4
+    acao: "Output de DS+AI e mais proximo de production-ready"
+    detalhe: "Porque usa componentes reais, testados, versionados e acessiveis. Resultado de DS+AI pode ir para producao com ajustes minimos. Resultado de vibe coding precisa ser refeito."
+
+quando_usar: "Ao avaliar como AI gera UI — sempre exigir fundacao de DS"
+
+exemplos_aplicacao:
+  - cenario: "Time usa ChatGPT para gerar telas sem referencia ao DS existente"
+    resultado: "Output bonito mas inconsistente: cores fora da paleta, componentes que nao existem no DS, espacamento arbitrario. Precisa ser refeito."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "Time usa AI constrained ao DS para gerar prototipos"
+    resultado: "Output consistente, acessivel, usando componentes canonicos. Prototipo pode evoluir para producao com ajustes minimos."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Aceitar output de vibe coding como production-ready — requer retrabalho significativo"
+  - "Usar AI sem fornecer contexto do DS — equivale a vibe coding"
+  - "Assumir que AI gera qualidade automaticamente — qualidade vem dos constraints do DS"
+
+frameworks_relacionados:
+  - name: "Agentic Design Systems"
+    relacao: "complementar"
+  - name: "Coverage + Validation Pillars (Agent-Friendly DS)"
+    relacao: "complementar"
+  - name: "Real-Time UI"
+    relacao: "complementar"
+  - name: "Mouth Coding"
+    relacao: "complementar"

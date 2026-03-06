@@ -1,0 +1,68 @@
+# 10-Step Governance Process — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "10-Step Governance Process"
+  slug: "10-step-governance-process"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Processo de governance em 10 etapas para design systems. Previne entropia e garante qualidade ao longo do tempo. Sem governance, entropia vence — Every. Single. Time. Equilibra rigor com flexibilidade para nao matar adocao."
+
+steps:
+  - step: 1
+    acao: "Identificar necessidade (novo componente ou mudanca)"
+    detalhe: "Qualquer membro da organizacao pode identificar necessidade. Trigger pode vir de product teams, designers, developers ou stakeholders."
+  - step: 2
+    acao: "Submeter proposta com justificativa"
+    detalhe: "Proposta formal com caso de uso, evidencia de necessidade e impacto esperado. Interface inventory pode servir como evidencia."
+  - step: 3
+    acao: "Review por DS team"
+    detalhe: "DS team avalia viabilidade, duplicacao, alinhamento com principios do sistema. Comite cross-functional com representantes de design, dev e product."
+  - step: 4
+    acao: "Prototipo e teste"
+    detalhe: "Construir versao funcional do componente. Testar em contexto real de produto, nao isoladamente."
+  - step: 5
+    acao: "Aprovacao ou feedback"
+    detalhe: "Decisao formal: aprovar, solicitar mudancas ou rejeitar com justificativa. Rejeicao deve incluir alternativas."
+  - step: 6
+    acao: "Implementacao no DS"
+    detalhe: "Componente implementado seguindo standards do DS — code-first, com API clara, props tipadas e estados documentados."
+  - step: 7
+    acao: "Documentacao"
+    detalhe: "Documentacao como cidada de primeira classe — quando usar, quando NAO usar, variantes, exemplos de composicao, edge cases."
+  - step: 8
+    acao: "Release e comunicacao"
+    detalhe: "Versionamento semantico, changelog claro, comunicacao proativa para todos os times consumidores."
+  - step: 9
+    acao: "Adocao e monitoramento"
+    detalhe: "Acompanhar adocao pelos product teams. Coletar feedback real de uso. DS team como customer service para product teams."
+  - step: 10
+    acao: "Iteracao continua"
+    detalhe: "Done is Never Done — componente evolui baseado em uso real. Feedback loop permanente entre DS e produtos."
+
+quando_usar: "Governanca de qualquer design system — previne entropia e garante qualidade"
+
+exemplos_aplicacao:
+  - cenario: "Governance inexistente — times criam componentes duplicados sem coordenacao"
+    resultado: "10-Step Process implementado como fundacao — submissao, review, aprovacao e monitoramento eliminam caos"
+    fonte: "DNA direto"
+  - cenario: "Governance muito rigida — times burlam o DS porque processo e lento demais"
+    resultado: "Flexibilizar steps 2-3 com fast-track para mudancas menores, manter rigor para novos componentes"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Governance sem flexibilidade — gera rebeliao e abandono do DS"
+  - "Pular documentacao (step 7) por pressao de deadline"
+  - "Nao monitorar adocao (step 9) — componente nao adotado e componente morto"
+
+frameworks_relacionados:
+  - name: "Design System Thinking"
+    relacao: "complementar"
+  - name: "Layer-Cake Approach"
+    relacao: "complementar"
+  - name: "Workshop/Storefront Separation"
+    relacao: "complementar"

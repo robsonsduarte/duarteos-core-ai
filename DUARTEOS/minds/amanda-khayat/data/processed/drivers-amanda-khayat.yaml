@@ -1,0 +1,541 @@
+# Drivers — Amanda Khayat
+# Pipeline: MMOS Engine v3.0.0 — Fase Drivers (Agente ALPHA)
+# Gerado em: 2026-03-05
+# Total drivers: 16 (7 gold, 5 silver, 4 bronze)
+# Fontes: DNA Legacy (F=94%, 505 linhas) + 25 MIUs VTurb SE#123 + VideoHighlight Summary
+# Metodo: Inferencia independente (Agente ALPHA) com filtro Kahneman base rate
+
+metadata:
+  slug: "amanda-khayat"
+  agente: "ALPHA"
+  total_drivers: 16
+  distribuicao:
+    gold: 7
+    silver: 5
+    bronze: 4
+  impulsores: 10
+  medos: 6
+  nota_metodologica: >
+    Drivers inferidos cruzando evidencias de 3 fontes independentes.
+    Filtro Kahneman aplicado: "querer sucesso" e "gostar de dinheiro" NAO sao
+    drivers diferenciadores (prevalencia >80% na populacao geral).
+    Foco em motivadores IDIOSSINCRATICOS que explicam POR QUE Amanda Khayat
+    especificamente se comporta como se comporta.
+
+drivers:
+
+  # ============================================================
+  # GOLD TIER — Alta forca + Alta confianca + Alta frequencia
+  # (7 drivers, cada um com >= 3 evidencias)
+  # ============================================================
+
+  - name: "Certeza Espiritual como Motor de Acao"
+    tier: gold
+    strength: 0.95
+    confidence: 0.95
+    tipo: impulsor
+    descricao: >
+      Fe inabalavel (crista) que funciona como combustivel para decisoes
+      sem medo. Nao e fe passiva — e fe operacional que elimina hesitacao.
+      Deus como estrutura interpretativa da realidade: adversidades sao testes,
+      sucesso e destino para quem quer o suficiente. Essa certeza — que ela
+      propria admite poder ser "ilusao" — gera acao sem paralise, que gera
+      resultados, que retroalimentam a certeza (loop auto-reforçante).
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-16"
+        resumo: "Adversidade como teste divino — as coisas dao errado para ver se voce quer o suficiente"
+        strength: 0.95
+      - miu_id: "DNA-filosofia-crenca-15"
+        resumo: "A unica pessoa que tem que acreditar em voce eh voce mesmo — fe inabalavel"
+        strength: 0.95
+      - miu_id: "DNA-paradoxo-1"
+        resumo: "Certeza absoluta que pode ser ilusao — mas funciona como motor de acao"
+        strength: 0.90
+      - miu_id: "DNA-paradoxo-8"
+        resumo: "Improvavel inevitavel — sucesso impossivel para todos, inevitavel para si"
+        strength: 0.90
+      - miu_id: "DNA-hierarquia-3"
+        resumo: "Fe/Espiritualidade como valor rank 3, acima de excelencia tecnica"
+        strength: 0.85
+    pre_mortem: >
+      Se errado: a fe e pos-hoc (construida DEPOIS do sucesso, nao antes).
+      Impacto: o driver real seria "autoconfianca baseada em resultados" (mais
+      generico). Porem, as proprias palavras dela ("desde os 12 anos", "ilusao
+      mas me fez bem") indicam que a fe PRECEDE os resultados. Risco baixo.
+
+  - name: "Fuga da Escassez / Nunca Mais Ser Pobre"
+    tier: gold
+    strength: 0.95
+    confidence: 0.95
+    tipo: medo
+    descricao: >
+      Medo visceral de voltar para a realidade de pobreza extrema do Nordeste
+      durante a pandemia. Nao e medo abstrato — e memoria corporea (sapato furado,
+      garconete, sem dinheiro). Funciona como anti-gravidade: puxa para cima
+      com forca proporcional ao sofrimento passado. Gera frugalidade radical
+      (custo de vida muito abaixo do possivel) e obsessao por investimento.
+    evidencias:
+      - miu_id: "DNA-motivacao-medo-1"
+        resumo: "Voltar para a realidade de escassez do interior do Nordeste"
+        strength: 0.95
+      - miu_id: "DNA-motivacao-impulsor-1"
+        resumo: "Escapar da pobreza e dar vida melhor a familia"
+        strength: 0.95
+      - miu_id: "DNA-hierarquia-5"
+        resumo: "Frugalidade como valor rank 5 — custo de vida muito abaixo do que poderia"
+        strength: 0.85
+      - miu_id: "DNA-paradoxo-7"
+        resumo: "Ficar rica sem ostentar — frugalidade na abundancia"
+        strength: 0.85
+      - miu_id: "VH-dados-pessoais"
+        resumo: "Pobreza extrema no Nordeste durante pandemia"
+        strength: 0.90
+    pre_mortem: >
+      Se errado: a frugalidade e heranca cultural/familiar, nao medo.
+      Impacto: driver muda de "medo" para "valor herdado" — menos intenso
+      mas igualmente persistente. Porem, o contraste dramatico que ela
+      propria faz (sapato furado vs mansao em Alphaville) sugere trauma
+      ativo, nao apenas habito. Risco baixo.
+
+  - name: "Obsessao por Excelencia Tecnica no Copy"
+    tier: gold
+    strength: 0.92
+    confidence: 0.95
+    tipo: impulsor
+    descricao: >
+      Nao se contenta com "bom o suficiente". Cada anuncio deve ter Big Idea,
+      estrutura validada, frase de aterrissagem forte, disparos de dopamina
+      calibrados. Limite de 8 anuncios/dia NAO e preguica — e controle de
+      qualidade. "Nao tem ED meu que nao vende" e prova de orgulho tecnico.
+      Frameworks sistematicos (Metodo 25, 7 Alavancas) sao instrumentos
+      dessa obsessao, nao fins em si mesmos.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-017"
+        resumo: "Nao acho que copy tem que escrever 200 anuncios/dia. Insustentavel. Nao tem ED meu que nao vende."
+        strength: 0.95
+      - miu_id: "MIU-AK-SE123-018"
+        resumo: "Maximo 8 ads/dia. Se escrever 16, crio 8 ruins e os 8 originais tambem ficam ruins."
+        strength: 0.90
+      - miu_id: "DNA-hierarquia-4"
+        resumo: "Excelencia tecnica como valor rank 4 — qualidade sobre quantidade, reprova sem Big Idea"
+        strength: 0.90
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o PORQUE daquele padrao. Tem que entender a psicologia."
+        strength: 0.85
+    pre_mortem: >
+      Se errado: o limite de 8/dia e pratico (capacidade), nao principio.
+      Impacto: reduz de "obsessao" para "restricao operacional" — muda
+      a narrativa mas nao o comportamento. Porem, a enfase repetida em
+      "todo ED meu vende" indica orgulho identitario, nao mera pratica.
+      Risco baixo.
+
+  - name: "Compressao Temporal via Intensidade"
+    tier: gold
+    strength: 0.90
+    confidence: 0.90
+    tipo: impulsor
+    descricao: >
+      Crenca operacional de que intensidade distorce o tempo — o que levaria
+      decadas pode ser comprimido em meses. Nao e hustle culture generica:
+      e uma formula consciente (isolamento + foco total + eliminacao de
+      plano B). CrossFit 5x/semana, acordar as 5h, alugar Airbnb para
+      se trancar. A "caverna" como fase deliberada de construcao.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-2"
+        resumo: "Intensidade distorce o tempo — o que levaria decadas pode ser comprimido em meses"
+        strength: 0.95
+      - miu_id: "DNA-filosofia-crenca-8"
+        resumo: "Queimar pontes (eliminar plano B) acelera resultados — plano B vira desculpa"
+        strength: 0.90
+      - miu_id: "DNA-filosofia-crenca-9"
+        resumo: "Ambiente influencia mais que disciplina — planejar ambiente para sucesso"
+        strength: 0.85
+      - miu_id: "DNA-paradoxo-6"
+        resumo: "Sucesso rapido que exige caminho arduo — velocidade nao significa facilidade"
+        strength: 0.85
+    pre_mortem: >
+      Se errado: a intensidade e resultado de juventude/energia, nao estrategia.
+      Impacto: driver se torna "energia juvenil" — temporal e nao replicavel.
+      Porem, a evolucao para "caverna + repertorio" mostra reflexao estrategica,
+      nao apenas impulsividade. Risco moderado (pode mudar com idade).
+
+  - name: "Autonomia e Liberdade como Necessidade Existencial"
+    tier: gold
+    strength: 0.90
+    confidence: 0.92
+    tipo: impulsor
+    descricao: >
+      Liberdade nao e meta — e precondição de existencia. Abandonou escola,
+      recusa depender de emprego, viaja constantemente, liberdade geografica
+      total. Hierarquia de valores: Liberdade/Autonomia e rank 1, acima
+      de familia e fe. Nao e rebeldia adolescente — e calculo de que
+      dependencia de terceiros e risco inaceitavel.
+    evidencias:
+      - miu_id: "DNA-hierarquia-1"
+        resumo: "Liberdade/Autonomia como valor rank 1 — abandonou escola, recusa depender de emprego"
+        strength: 0.95
+      - miu_id: "DNA-motivacao-recompensa"
+        resumo: "Aposentadoria aos 25, liberdade geografica total como recompensa ideal"
+        strength: 0.90
+      - miu_id: "DNA-filosofia-crenca-8"
+        resumo: "Queimar pontes — largou escola porque plano B vira desculpa"
+        strength: 0.85
+      - miu_id: "DNA-filosofia-crenca-14"
+        resumo: "A vida e so um jogo sem regras — tudo pode ser jogado como voce quiser"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: a autonomia e circunstancial (nao teve opcao, escola ruim).
+      Impacto: driver se torna "adaptacao a circunstancias" — menos heroico.
+      Porem, a formulacao explicita "foi uma decisao" e o rank 1 na hierarquia
+      indicam escolha consciente. Risco baixo.
+
+  - name: "Protecao e Elevacao da Familia"
+    tier: gold
+    strength: 0.90
+    confidence: 0.90
+    tipo: impulsor
+    descricao: >
+      Familia como segundo valor mais alto (rank 2). Primeiro salario para
+      sustentar a familia. Meta: aposentar os pais. Nao e generosidade
+      abstrata — e divida emocional concreta (pais que sacrificaram,
+      irma curada de tumor, mae brasileira que trouxe para o Brasil).
+      O dinheiro serve primeiro para proteger quem ela ama.
+    evidencias:
+      - miu_id: "DNA-hierarquia-2"
+        resumo: "Familia como valor rank 2 — primeiro salario para sustentar familia"
+        strength: 0.95
+      - miu_id: "DNA-motivacao-impulsor-1"
+        resumo: "Escapar da pobreza e dar vida melhor a familia"
+        strength: 0.90
+      - miu_id: "VH-dados-pessoais"
+        resumo: "Irma curada de tumor cerebral, pai empresario (Monaco), mae brasileira"
+        strength: 0.85
+      - miu_id: "DNA-motivacao-impulsor-4"
+        resumo: "Nostalgia transformada em gratidao — lembrar de onde veio"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: familia como driver e universal (base rate alto).
+      POREM, o nivel de concretude (aposentar pais, primeiro salario,
+      tumor da irma) e a posicao rank 2 acima de fe indicam intensidade
+      acima da media. Risco moderado de superestimacao.
+
+  - name: "Identidade do Improvavel que Venceu"
+    tier: gold
+    strength: 0.88
+    confidence: 0.88
+    tipo: impulsor
+    descricao: >
+      Narrativa identitaria central: "o sucesso vem para as pessoas mais
+      improvaveis". Amanda se ve como prova viva disso — francesa criada
+      no Nordeste brasileiro em pobreza, sem escola, sem conexoes, 17 anos.
+      Essa identidade de "improvavel que venceu" funciona como escudo
+      contra sindrome do impostor E como missao de provar para outros
+      que e possivel. Conecta com a Biblia ("Deus usa pessoas improvaveis").
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-13"
+        resumo: "O sucesso vem para as pessoas mais improvaveis — quanto mais conheco bem-sucedidos, mais vejo isso"
+        strength: 0.90
+      - miu_id: "DNA-motivacao-impulsor-2"
+        resumo: "Provar que o improvavel e possivel — para si e para outros"
+        strength: 0.90
+      - miu_id: "DNA-paradoxo-8"
+        resumo: "Improvavel inevitavel — impossivel para todos, inevitavel para si"
+        strength: 0.85
+      - miu_id: "DNA-associacao-4"
+        resumo: "Biblia (pessoas improvaveis) <-> Empreendedorismo (sucesso improvavel)"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: a narrativa e construida post-hoc para marketing pessoal.
+      Impacto: driver se torna "branding pessoal" — instrumental, nao
+      identitario. Porem, a recorrencia em contextos nao-comerciais
+      (podcast intimo, vlog pessoal) indica crenca genuina. Risco moderado.
+
+  # ============================================================
+  # SILVER TIER — Alta forca + Confianca moderada
+  # (5 drivers, cada um com >= 2 evidencias)
+  # ============================================================
+
+  - name: "Anti-IA como Diferenciacao Profissional"
+    tier: silver
+    strength: 0.85
+    confidence: 0.80
+    tipo: impulsor
+    descricao: >
+      Rejeicao da IA para ESCRITA de copy (aceita para pesquisa/pensamento)
+      como posicao identitaria e competitiva. "Toda IA que vi escrever anuncio
+      escreveu pessimo." Nao e ludismo — e calculo de que a escrita humana
+      e superior em copy de resposta direta. Funciona como barreira competitiva:
+      se IA substituir copywriters, ela (que escreve tudo a mao) sera a ultima
+      de pe.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-019"
+        resumo: "IA para pesquisa sim, para escrita nao. Cada vez que usei IA para escrever, perdi tempo."
+        strength: 0.90
+      - miu_id: "DNA-filosofia-crenca-4"
+        resumo: "Criatividade humana pura eh superior a IA para escrever copy"
+        strength: 0.85
+      - miu_id: "DNA-dilema-2"
+        resumo: "Evolucao: de rejeicao total para uso como ferramenta de pensamento, NUNCA escrita"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: posicao pode mudar rapidamente com evolucao da IA.
+      Impacto: driver se torna temporario, nao identitario. Ja houve
+      evolucao (de rejeicao total para aceitacao parcial). Risco alto
+      de que em 2-3 anos este driver nao exista mais.
+
+  - name: "Medo de Gastar Excessivamente"
+    tier: silver
+    strength: 0.82
+    confidence: 0.85
+    tipo: medo
+    descricao: >
+      Mentalidade de escassez herdada da mae — medo de gastar dinheiro
+      de forma irresponsavel. Paradoxo: multimilionaria de 17 anos com
+      custo de vida muito abaixo do que poderia. Esse medo funciona
+      como freio UTIL que impede autodestruicao financeira tipica de
+      jovens ricos. Mas tambem gera tensao: economizar demais mata
+      a fome de ganhar mais.
+    evidencias:
+      - miu_id: "DNA-motivacao-medo-2"
+        resumo: "Gastar dinheiro excessivamente — mentalidade de escassez herdada da mae"
+        strength: 0.85
+      - miu_id: "DNA-dilema-7"
+        resumo: "Gastar vs economizar — equilibrio necessario, economizar demais mata a fome"
+        strength: 0.80
+      - miu_id: "DNA-hierarquia-5"
+        resumo: "Frugalidade como valor rank 5 — poupar e investir como principio herdado"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: a frugalidade e simplesmente maturidade financeira.
+      Impacto: driver perde carga emocional (de "medo" para "habito").
+      A palavra "escassez" e a heranca materna sugerem carga emocional
+      real. Risco moderado.
+
+  - name: "Corpo como Infraestrutura Mental"
+    tier: silver
+    strength: 0.80
+    confidence: 0.82
+    tipo: impulsor
+    descricao: >
+      Integracao corpo-mente como principio operacional: "corpo fraco
+      nao sustenta mente forte". CrossFit 5x/semana, treina mesmo sem
+      vontade. Nao e vaidade — e engenharia de performance. Usa
+      tecnicas de atleta (visualizacao) para copy. O corpo e plataforma
+      de hardware que sustenta o software mental.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-11"
+        resumo: "Corpo fraco nao sustenta mente forte — integracao fisico-mental"
+        strength: 0.85
+      - miu_id: "DNA-hierarquia-6"
+        resumo: "Disciplina fisica como valor rank 6 — CrossFit 5x/semana, treina mesmo sem vontade"
+        strength: 0.80
+      - miu_id: "DNA-associacao-3"
+        resumo: "Treino fisico (visualizacao de atletas) <-> Escrita de copy (visualizar serie pronta)"
+        strength: 0.75
+    pre_mortem: >
+      Se errado: o exercicio e habito social (crossfit como comunidade),
+      nao estrategia cognitiva. Impacto: driver perde dimensao estrategica.
+      Porem, a conexao explicita entre treino e copy sugere intencionalidade.
+      Risco moderado.
+
+  - name: "Medo de Estender Ciclos de Erro"
+    tier: silver
+    strength: 0.78
+    confidence: 0.80
+    tipo: medo
+    descricao: >
+      Medo de perder momentum — ficar preso em ciclos de erro, procrastinacao,
+      ou inercia negativa. Solucao: "fingir que esta animado" para quebrar
+      o ciclo. Nao estender periodo ruim. Cada dia sem resultado e um dia
+      mais longe do objetivo. Esse medo explica a intensidade brutal e
+      a incapacidade de ficar parada.
+    evidencias:
+      - miu_id: "DNA-motivacao-medo-3"
+        resumo: "Estender ciclos de erro e perder momentum"
+        strength: 0.80
+      - miu_id: "DNA-heuristica-12"
+        resumo: "Sem vontade de executar → fingir que esta animado, quebra ciclo de inercia"
+        strength: 0.75
+    pre_mortem: >
+      Se errado: e simplesmente disciplina, nao medo. Impacto: muda de
+      driver negativo para driver positivo (disciplina como impulsor).
+      A formulacao "estender ciclos de erro" sugere ansiedade real,
+      nao apenas habito. Risco moderado.
+
+  - name: "Ousadia como Decisao Deliberada"
+    tier: silver
+    strength: 0.82
+    confidence: 0.85
+    tipo: impulsor
+    descricao: >
+      "Foi uma decisao. A partir de hoje nao vou ter vergonha nenhuma."
+      Ousadia nao e traco de personalidade — e escolha consciente e
+      repetida. Criar casca grossa como estrategia, nao como defesa.
+      Isso explica a capacidade de falar em podcasts, cobrar R$120K
+      por anuncio aos 17 anos, e se posicionar como "maior copywriter
+      da America Latina" sem hesitar.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-6"
+        resumo: "Ousadia eh decisao deliberada, nao traco de personalidade — escolher nao ter vergonha"
+        strength: 0.90
+      - miu_id: "DNA-filosofia-crenca-8"
+        resumo: "Queimar pontes — eliminar plano B como ato de ousadia"
+        strength: 0.80
+    pre_mortem: >
+      Se errado: a ousadia e personalidade inata mascarada de decisao.
+      Impacto: driver se torna "personalidade extrovertida" — menos
+      ensinavel. A formulacao "me forcei" sugere esforco consciente.
+      Risco baixo.
+
+  # ============================================================
+  # BRONZE TIER — Moderada forca + evidencias mais limitadas
+  # (4 drivers, cada um com >= 2 evidencias)
+  # ============================================================
+
+  - name: "Medo de Superficialidade e Mediocridade Tecnica"
+    tier: bronze
+    strength: 0.75
+    confidence: 0.75
+    tipo: medo
+    descricao: >
+      Aversao profunda a copy generico, superficial, sem framework.
+      "Cada resposta tem framework ou metodologia por tras" como principio
+      inegociavel. Copy sem Big Idea e red flag. Anuncio que parece
+      anuncio e fracasso. Esse medo impulsiona a criacao constante
+      de frameworks proprios.
+    evidencias:
+      - miu_id: "DNA-principio-1"
+        resumo: "Nunca ser superficial ou generica — cada resposta tem framework"
+        strength: 0.80
+      - miu_id: "DNA-redflag-1"
+        resumo: "Copy sem Big Idea central — anuncio generico como red flag"
+        strength: 0.75
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o PORQUE — tem que saber a psicologia, nao a frase exata"
+        strength: 0.75
+    pre_mortem: >
+      Se errado: e padrao profissional basico, nao medo. Na populacao geral
+      de copywriters de elite, esse driver pode ter base rate alta.
+      Porem, a INTENSIDADE (8 frameworks proprios, 7 alavancas, limite de 8/dia)
+      sugere obsessao acima da media. Risco moderado.
+
+  - name: "Nostalgia como Combustivel de Gratidao"
+    tier: bronze
+    strength: 0.72
+    confidence: 0.75
+    tipo: impulsor
+    descricao: >
+      Usa memoria da escassez nao como trauma, mas como fonte de gratidao
+      e motivacao. "Lembrar de onde veio" como exercicio deliberado.
+      Contraste dramatico (sapato furado vs mansao) como lembrete constante
+      do caminho percorrido. Transforma potencial amargura em energia.
+    evidencias:
+      - miu_id: "DNA-motivacao-impulsor-4"
+        resumo: "Nostalgia transformada em gratidao — lembrar de onde veio"
+        strength: 0.75
+      - miu_id: "DNA-comunicacao-retorica"
+        resumo: "Contraste dramatico — juxtapor extremos (sapato furado vs mansao em Alphaville)"
+        strength: 0.70
+    pre_mortem: >
+      Se errado: a nostalgia e narrativa de marketing, nao driver real.
+      Impacto: perde autenticidade. Porem, aparece em contextos intimos
+      (vlog pessoal), nao apenas comerciais. Risco moderado.
+
+  - name: "Medo de Dependencia de Terceiros"
+    tier: bronze
+    strength: 0.70
+    confidence: 0.72
+    tipo: medo
+    descricao: >
+      Recusa depender de emprego, de escola, de plano B, de outras pessoas
+      para validacao. "Nao se vitimizar — resolver com o que tem."
+      Conecta com autonomia (gold driver) mas funciona como mecanismo
+      de defesa: se ninguem pode te demitir, ninguem pode te destruir.
+    evidencias:
+      - miu_id: "DNA-principio-4"
+        resumo: "Frugalidade e trabalho duro acima de ostentacao"
+        strength: 0.75
+      - miu_id: "DNA-principio-5"
+        resumo: "Nao se vitimizar — resolver com o que tem, sem pedir condicoes especiais"
+        strength: 0.75
+    pre_mortem: >
+      Se errado: pode ser um sub-driver de "Autonomia" (gold), nao driver
+      independente. Impacto: redundancia na lista. Mantido como bronze
+      porque o angulo "medo" e distinto do angulo "impulsor" da autonomia.
+      Risco moderado de duplicidade.
+
+  - name: "Mentalidade Blindada sobre Habilidade Tecnica"
+    tier: bronze
+    strength: 0.70
+    confidence: 0.70
+    tipo: impulsor
+    descricao: >
+      Crenca de que bloqueios mentais explicam mais fracassos do que
+      falta de habilidade tecnica. "Todo bloqueio e toda pessoa que
+      nao tem resultado, ela tem alguma coisa mental." Prioriza
+      mindset sobre skill. Isso explica por que ela investe tanto
+      em disciplina, rotina e fe — sao solucoes para problemas
+      que ela classifica como mentais, nao tecnicos.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-17"
+        resumo: "Mentalidade blindada tem hierarquia sobre habilidade tecnica"
+        strength: 0.75
+      - miu_id: "DNA-filosofia-crenca-14"
+        resumo: "A vida e so um jogo sem regras — tudo que existe foi concebido na mente de alguem"
+        strength: 0.70
+    pre_mortem: >
+      Se errado: e cliche motivacional, nao driver real (base rate alto
+      em empreendedores digitais brasileiros). Porem, a APLICACAO pratica
+      (fingir estar animado, ambiente > disciplina, queimar plano B)
+      sugere que vai alem do cliche. Risco alto de base rate.
+
+# ============================================================
+# SUMARIO ANALITICO
+# ============================================================
+
+sumario:
+  drivers_gold_count: 7
+  drivers_silver_count: 5
+  drivers_bronze_count: 4
+  impulsores_count: 10
+  medos_count: 6
+  ratio_impulsor_medo: "1.67:1"
+
+  perfil_motivacional: >
+    Amanda Khayat e movida por um cluster de 3 drivers primarios que se
+    retroalimentam: (1) CERTEZA ESPIRITUAL que elimina medo → (2) INTENSIDADE
+    que comprime tempo → (3) EXCELENCIA TECNICA que garante resultado.
+    Os medos (escassez, gasto excessivo, ciclos de erro) funcionam como
+    contra-pesos que impedem que a intensidade se torne autodestruitiva.
+    O driver identitario ("improvavel que venceu") amarra tudo numa narrativa
+    coerente que explica tanto o passado quanto projeta o futuro.
+
+  diferenciadores_vs_populacao_geral: >
+    Filtro Kahneman aplicado. Drivers REMOVIDOS por base rate alto:
+    - "Querer ficar rica" — prevalencia >90% em empreendedores digitais
+    - "Gostar de reconhecimento" — prevalencia >85% em criadores de conteudo
+    - "Querer ajudar pessoas" — prevalencia >80% (auto-relato)
+    Drivers MANTIDOS por serem idiossincraticos:
+    - Certeza espiritual como MOTOR de acao (nao apenas crença passiva)
+    - Fuga da escassez com memoria CORPOREA especifica (sapato furado, Nordeste)
+    - Anti-IA como posicao IDENTITARIA (nao apenas pratica)
+    - Compressao temporal como FORMULA consciente (nao hustle generico)
+    - Improvavel que venceu como NARRATIVA IDENTITARIA central
+
+  cluster_analysis:
+    cluster_1_combustivel:
+      nome: "Motor Espiritual-Identitario"
+      drivers: ["Certeza Espiritual", "Identidade do Improvavel", "Ousadia Deliberada"]
+      interacao: "Fe gera ousadia, ousadia gera resultados, resultados confirmam narrativa de improvavel que venceu"
+    cluster_2_propulsao:
+      nome: "Maquina de Intensidade"
+      drivers: ["Compressao Temporal", "Excelencia Tecnica", "Corpo como Infraestrutura"]
+      interacao: "Disciplina fisica sustenta intensidade mental que alimenta excelencia tecnica"
+    cluster_3_freios:
+      nome: "Contra-Pesos de Seguranca"
+      drivers: ["Fuga da Escassez", "Medo de Gastar", "Medo de Ciclos de Erro", "Medo de Dependencia"]
+      interacao: "Medos funcionam como guardrails que impedem autodestruicao — frugalidade, urgencia, autonomia"
+    cluster_4_ancora:
+      nome: "Ancora Afetiva"
+      drivers: ["Protecao da Familia", "Nostalgia como Combustivel"]
+      interacao: "Familia e o PARA QUEM de tudo. Nostalgia lembra o PORQUE."

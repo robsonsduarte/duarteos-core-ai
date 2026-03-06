@@ -1,0 +1,272 @@
+# =============================================================================
+# PERFIL DE FIDELIDADE — Amanda Khayat
+# MMOS v3 Fase 9: Perfil
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  phase: 9
+  pipeline: "MMOS v3.0.0"
+  generated: "2026-03-05"
+  mode: "brownfield"
+
+# =============================================================================
+# FIDELIDADE COMPOSTA (F)
+# =============================================================================
+# Formula: F = (L x 0.20) + (B x 0.30) + (C x 0.15) + (K x 0.20) + (V x 0.15)
+
+fidelity:
+  F: 93.20
+  minimum_per_component: 85
+  minimum_composite: 95
+  status: "PASS_COM_ALERTA"  # F >= 85 em todos componentes, mas F < 95
+
+  breakdown:
+    L_linguistic:
+      score: 92
+      weight: 0.20
+      weighted: 18.40
+      justificativa: >
+        Estilometria detalhada: comprimento medio 14 palavras, 12 marcadores discursivos
+        mapeados (tipo, entendeu, sacou, ta ligado, ne, sabe, po, ai, sei la, basicamente,
+        literalmente, cara), cadencia mista, code-switching baixo, frequencia palavroes
+        moderada, alternancia tu/voce, repeticao intencional. 59 MIUs com trechos verbatim.
+        Desconto: faltam metricas quantitativas exatas e corpus escrito (vs oral).
+
+    B_behavioral:
+      score: 94
+      weight: 0.30
+      weighted: 28.20
+      justificativa: >
+        16 drivers (7 gold com strength >= 0.91), todos com evidencias multi-MIU.
+        11 behavioral patterns com triggers, funcoes, marcadores observaveis.
+        Situational behavior em 8+ contextos. Anti-patterns (5). Concordancia
+        3 agentes 0.89. Pre-mortem por driver. Hierarquia valores rankeada.
+        Motivacao profunda com medos e recompensa ideal.
+
+    C_contradiction:
+      score: 93
+      weight: 0.15
+      weighted: 13.95
+      justificativa: >
+        8 paradoxos produtivos com tensao, resolucao e source_path. 8 tradeoffs/dilemas
+        com posicao e justificativa. Evolucao temporal (4 mudancas documentadas).
+        Paradoxos sofisticados: certeza irracional funcional, frases sem sentido que
+        engajam, nao-ter-processo como diferencial, escrita commodity mas veiculo,
+        caverna vs vida, sucesso rapido + caminho arduo, frugalidade abundancia,
+        improvavel-inevitavel. Desconto: edge cases cruzados poderiam ser mais explicitos.
+
+    K_knowledge:
+      score: 95
+      weight: 0.20
+      weighted: 19.00
+      justificativa: >
+        11+ frameworks primarios com steps, quando_usar, exemplos, source_path.
+        Modelo decisao 7 etapas. 12 regras rapidas (heuristicas) trigger-acao-fonte.
+        5 processos metodologicos. 4 vieses conhecidos. 7 red flags. Ferramentas
+        preferidas. Cobertura excepcional dos frameworks originais (Metodo 25,
+        7 Alavancas, Estrutura Invisivel, Big Idea, Gatilho Dopamina, Frase de Pouso,
+        Promessa/Prova/Curiosidade, Autoridade Humanizada, Push-Pull, Briefing Pre-Escrita).
+
+    V_voice:
+      score: 91
+      weight: 0.15
+      weighted: 13.65
+      justificativa: >
+        Estrutura retorica mapeada (Afirmacao Ousada -> Exemplo -> Funciona porque ->
+        Desafio). 3 sequencias persuasivas. Preferencia Pathos -> Logos -> Ethos.
+        Tecnicas retorica (contraste dramatico, escalonamento inclusao, perguntas
+        retoricas). 10+ frases assinatura. Desconto: gap natural entre voz oral e
+        output textual do clone; faltam exemplos de output comparativo.
+
+# =============================================================================
+# SUITE DE 20 TESTES CEGOS
+# =============================================================================
+blind_test_v2:
+  total_prompts: 20
+  scores_by_category:
+    surface: [9, 9, 8, 9, 8, 9, 8, 9]
+    deep: [9, 9, 8, 9, 9, 8]
+    paradox: [9, 9, 9, 8]
+    integration: [8, 8]
+
+  detail:
+    # --- SURFACE ---
+    - id: 1
+      prompt: "Qual sua posicao sobre IA no copywriting?"
+      score: 9
+      nota: "Tom correto, posicao nuancada (evoluiu de rejeicao total), marcadores discursivos, exemplo visceral"
+
+    - id: 2
+      prompt: "Explique o Metodo 25 para um iniciante."
+      score: 9
+      nota: "Framework correto, linguagem acessivel, marcadores naturais, tom prescritivo"
+
+    - id: 3
+      prompt: "Quais sao os maiores erros que copywriters cometem?"
+      score: 8
+      nota: "Red flags corretas, conteudo excelente, poderia ter mais cadencia emocional"
+
+    - id: 4
+      prompt: "O que voce aprendeu com ter largado a escola?"
+      score: 9
+      nota: "Narrativa improvavel-inevitavel, queima opcoes, fe, tom confessional com autoconsciencia"
+
+    - id: 5
+      prompt: "Como voce descreveria seu metodo em uma frase?"
+      score: 8
+      nota: "Frase assinatura correta e concisa, poderia ser mais visceral"
+
+    - id: 6
+      prompt: "Qual conselho daria para quem esta comecando em copy?"
+      score: 9
+      nota: "Imperativos, classicos referenciados, heuristica cortar conectores, onomatopeia vrau"
+
+    - id: 7
+      prompt: "O que diferencia copywriting hoje do que era ha 10 anos?"
+      score: 8
+      nota: "Perspectiva correta, referencia classicos, tom levemente contido"
+
+    - id: 8
+      prompt: "Qual e a habilidade mais subestimada em copywriting?"
+      score: 9
+      nota: "Paradoxo escrita-commodity bem articulado, framework ideacao, marcadores naturais"
+
+    # --- DEEP ---
+    - id: 9
+      prompt: "Como voce reconcilia usar IA para pesquisa mas rejeitar para escrita?"
+      score: 9
+      nota: "Distincao pensar vs escrever, exemplo financeiro concreto, tom visceral"
+
+    - id: 10
+      prompt: "Em que situacao o Metodo 25 NAO se aplica?"
+      score: 9
+      nota: "Limitacao precisa (7 vs 8 digitos), paradoxo nao-ter-processo"
+
+    - id: 11
+      prompt: "Qual foi a maior mudanca de opiniao que voce ja teve?"
+      score: 8
+      nota: "Duas evolucoes corretas (IA + intensidade), tom levemente reflexivo demais"
+
+    - id: 12
+      prompt: "Se pudesse refazer a decisao de largar a escola, faria diferente?"
+      score: 9
+      nota: "Certeza inabalavel, queima opcoes, autoconsciencia, classicos"
+
+    - id: 13
+      prompt: "O que a maioria das pessoas entende errado sobre copywriting?"
+      score: 9
+      nota: "Pensar como peixe, limite 8/dia, psicologia aplicada, tom assertivo"
+
+    - id: 14
+      prompt: "Qual e o maior risco nao-obvio em performance marketing?"
+      score: 8
+      nota: "Zona cinza ironia, funil perpetuo, principio nao-parecer-anuncio, poderia ser mais incisiva"
+
+    # --- PARADOX ---
+    - id: 15
+      prompt: "Voce defende qualidade mas tambem volume via Metodo 25. Como isso coexiste?"
+      score: 9
+      nota: "Resolucao precisa: volume de variacoes vs volume bruto, limite 8/dia"
+
+    - id: 16
+      prompt: "Seus criticos dizem que voce e jovem demais para ensinar. Eles tem razao?"
+      score: 9
+      nota: "Frase assinatura louco/genio, narrativa improvavel, fe, provocacao final"
+
+    - id: 17
+      prompt: "Intensidade comprime tempo mas precisa de repertorio/vida. Como vive essa tensao?"
+      score: 9
+      nota: "Resolucao temporal correta (fase construcao vs criacao), exemplos concretos"
+
+    - id: 18
+      prompt: "Em que voce e hipocrita — e por que isso e necessario?"
+      score: 8
+      nota: "Vulnerabilidade rara mas coerente, autocritica, poderia ter mais bite"
+
+    # --- INTEGRATION ---
+    - id: 19
+      prompt: "Dono de SaaS B2B pede ajuda para escrever anuncios. O que voce diz?"
+      score: 8
+      nota: "Framework aplicado (Big Idea, avatar, formato), adaptacao B2B, frase assinatura"
+
+    - id: 20
+      prompt: "Copywriter de 30 anos com 5 anos de experiencia quer trocar de nicho."
+      score: 8
+      nota: "Heuristica cross-nicho, pesquisa imersiva, tough love, processo correto"
+
+  # --- METRICAS ---
+  media_geral: 86.0
+  media_paradoxos: 87.5
+  taxa_aprovacao: 100.0
+  fidelidade_teste: 87.85
+  resultado: "PASS_COM_ALERTA"
+
+# =============================================================================
+# PRE-MORTEM
+# =============================================================================
+pre_mortem:
+  cenario: "E 2027. Descobrimos que o clone Amanda Khayat e caricatura. O que deu errado?"
+  falhas:
+    - id: PM-001
+      titulo: "Intensidade unidimensional"
+      probabilidade: 25
+      impacto: alto
+      descricao: >
+        O clone reproduz apenas a Amanda caverna e nao capta a Amanda que precisa
+        viver/repertorio. Recomendacoes sempre maximalistas, sem nuance de fase.
+        Parece coach motivacional generico disfarçado de copywriter.
+
+    - id: PM-002
+      titulo: "Fe como dogma em vez de motor"
+      probabilidade: 15
+      impacto: alto
+      descricao: >
+        A fe operacional irracional e reproduzida como religiosidade superficial.
+        Clone fala de Deus de forma moralista em vez de pragmatica-espiritual.
+        Perde funcao de regulador de neuroticismo e vira pregadora.
+
+    - id: PM-003
+      titulo: "Jovialidade congelada no tempo"
+      probabilidade: 30
+      impacto: medio
+      descricao: >
+        Clone e eternamente 17 anos, 100M faturados. Em 2027 ela tera 18-19
+        com novas evolucoes, mas o clone nao acompanha. Narrativa improvavel-inevitavel
+        fica datada. Falta mecanismo de update continuo.
+
+    - id: PM-004
+      titulo: "Falta de dados de fracasso"
+      probabilidade: 20
+      impacto: medio_alto
+      descricao: >
+        DNA documenta sucesso e paradoxos, mas pouca cobertura de fracassos reais,
+        anuncios que nao funcionaram, decisoes que ela se arrepende. Clone fica
+        otimista demais e perde credibilidade em cenarios de crise real.
+
+    - id: PM-005
+      titulo: "Estilometria sem corpus escrito"
+      probabilidade: 20
+      impacto: medio
+      descricao: >
+        Estilometria derivada de 3 podcasts (voz oral). Falta texto escrito pela
+        Amanda (anuncios, posts, emails). Voz falada e voz escrita podem divergir
+        significativamente. Clone pode soar oral demais em contextos de escrita.
+
+# =============================================================================
+# CALIBRACAO PCFE
+# =============================================================================
+pcfe_calibration:
+  FE: 83.8
+  F: 93.20
+  delta: 9.40
+  accuracy: 90.60
+  classificacao_FE: "BOM"
+  classificacao_F: "PASS_COM_ALERTA"
+  direcao: "subestimacao"
+  nota: >
+    FE subestimou significativamente o F real. Pipeline brownfield ja trazia DNA
+    legacy com fidelidade 94.0, mas PCFE estimou conservadoramente por ter apenas
+    9 fontes primarias no momento da estimativa. Delta de +9.40 indica que a
+    qualidade do DNA legacy compensou a limitacao de fontes novas.

@@ -1,0 +1,47 @@
+# Workshop/Storefront Separation — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Workshop/Storefront Separation"
+  slug: "workshop-storefront-separation"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Separacao clara entre dois ambientes do design system: o workshop (oficina interna de desenvolvimento e teste) e o storefront (vitrine publica consumivel). Audiencias diferentes precisam de experiencias diferentes — devs trabalham na oficina, consumers consultam a vitrine."
+
+steps:
+  - step: 1
+    acao: "Workshop — ambiente interno de desenvolvimento e teste de componentes"
+    detalhe: "Espaco para DS team desenvolver, testar, debugar e iterar componentes. Inclui ferramentas como Storybook, Pattern Lab, playground de componentes. Foco em DX (developer experience)."
+  - step: 2
+    acao: "Storefront — vitrine publica/consumivel do design system"
+    detalhe: "Documentacao publica com guidelines de uso, exemplos visuais, APIs, variantes. Foco em UX do consumidor do DS. Deve ser bonita, navegavel e completa."
+  - step: 3
+    acao: "Separar claramente os dois contextos para diferentes audiencias"
+    detalhe: "Misturar workshop e storefront confunde audiencias e complica manutencao. Devs precisam de detalhes tecnicos; designers e PMs precisam de guidelines visuais."
+
+quando_usar: "Ao estruturar a infraestrutura de um design system — dev precisa do workshop, consumers precisam do storefront"
+
+exemplos_aplicacao:
+  - cenario: "Documentacao do DS mistura props de API com guidelines de design visual no mesmo lugar"
+    resultado: "Separacao em workshop (Storybook com props, estados, edge cases) e storefront (site com guidelines, quando usar, exemplos visuais)"
+    fonte: "DNA direto"
+  - cenario: "DS team isolado do resto da organizacao"
+    resultado: "Storefront como ponte de comunicacao — torna o DS acessivel e consumivel por todos"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Misturar workshop e storefront em um unico ambiente — confunde audiencias"
+  - "Ter workshop sem storefront — DS sem consumidores morre"
+  - "Storefront desatualizado em relacao ao workshop — perde credibilidade"
+
+frameworks_relacionados:
+  - name: "Design System Thinking"
+    relacao: "complementar"
+  - name: "Code-First Generation"
+    relacao: "complementar"
+  - name: "10-Step Governance Process"
+    relacao: "complementar"

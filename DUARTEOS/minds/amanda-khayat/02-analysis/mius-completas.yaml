@@ -1,0 +1,581 @@
+# ============================================================================
+# MIUs Completas — Amanda Khayat
+# ============================================================================
+# Total: 59 MIUs
+# Fontes: 3 podcasts
+#   - VTurb Segredos da Escala #123 (25 MIUs)
+#   - Pandacast #186 (18 MIUs)
+#   - Flowers EP01 (16 MIUs — IDs 005 e 012 ausentes na fonte original)
+#
+# Distribuicao por camada DNA:
+#   filosofia: 19
+#   heuristicas: 12
+#   frameworks: 8
+#   metodologias: 5
+#   comunicacao: 4
+#   dilemas: 1
+#   paradoxos: 1
+#
+# Distribuicao por tipo semantico:
+#   framework: 11
+#   argumentativo: 8
+#   decisorio: 10
+#   comportamental: 7
+#   linguistico: 5
+#   narrativo: 4
+#   interacao_social: 1
+#
+# Distribuicao por profundidade:
+#   profunda: 44
+#   media: 15
+#
+# Pipeline: MMOS v3 — Fase MIU Consolidation
+# Data consolidacao: 2026-03-05
+# ============================================================================
+
+mius:
+
+  # ==========================================================================
+  # FONTE 1: VTurb Segredos da Escala #123 (25 MIUs)
+  # ==========================================================================
+
+  - id: MIU-AK-SE123-001
+    texto: >
+      Hoje para escrever eu uso o processo que eu criei, ne, que eu chamo de metodo Tony Five,
+      porque sao basicamente cinco modelos para escrever ganchos e cinco modelos para escrever corpo.
+      Nao que seja um molde, tipo, o, essa copia aqui que voce vai replicar. E mais como se fosse
+      um modelo mental, tipo que que eu vou executar para poder escrever um dos ganchos, um dos corpos.
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [metodo-twenty-five, 5x5, modelo-mental, ganchos, corpos]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-002
+    texto: >
+      Primeiro e buscar no organico, segundo e a gente modelar algo validado do nosso nicho,
+      terceiro a gente modelar a estrutura invisivel, quarto e escrever do zero e o quinto e
+      pegar de outro nicho. Entao, modelar de outro nicho.
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [metodo-twenty-five, cinco-modelos, organico, validado, estrutura-invisivel, do-zero, outro-nicho]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-003
+    texto: >
+      Eu nao sigo um processo certinho de cada anuncio eu vou fazer isso com isso.
+      Eu so uso essas formas ai de tipo maneiras aleatorias. Eu so tipo, so eu mapei
+      as formas que eu faco, entendeu?
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [metodo-twenty-five, combinacao-livre, nao-rigido]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-004
+    texto: >
+      Quando eu vou bater o controle do ED, tem sete alavancas principais que eu uso.
+      Primeira delas e eu corto ao maximo os conectores dos meus anuncios.
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [sete-alavancas, bater-controle, conectores]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-005
+    texto: >
+      A primeira e formato barra avatar. A segunda e gancho visual barra escrito.
+      A terceira e a frase de aterrissagem. A quarta e a congruencia. A quinta o contexto
+      do avatar. A sexta e disparo de dopamina e a setima e o fechamento do ED.
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    tags: [sete-alavancas, formato, avatar, gancho, aterrissagem, congruencia, contexto-avatar, dopamina, fechamento]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-006
+    texto: >
+      Eu falo que a frase de aterrissagem ela tem que ser tao boa quanto o gancho.
+      Porque quanto mais a pessoa anda no anuncio, mais ela vai ter o efeito de nao querer
+      sair, porque ela ja viu metade do anuncio. Mas quando ela ta no inicio, ela so viu o gancho.
+      E muito facil voce falar alguma coisa chata e ela sair. Entao a frase de aterrissagem
+      que vem pos gancho, ela tem que abrir um loop, ela tem que ser muito curiosa,
+      tem que gerar controversia.
+    tipo_semantico: argumentativo
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [frase-aterrissagem, pos-gancho, loop-aberto, retencao, curiosidade]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-007
+    texto: >
+      E basicamente quase todos os nichos hoje tem esse padrao nos anuncios, que e uma frase
+      no meio do anuncio que nao tem correlacao com o que vem antes ou depois. E como se voce
+      socasse, tipo, varios ganchos no meio do ED. Voce corta ali um paragrafo que pode ser
+      chato com uma frase de disparo de dopamina.
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [disparo-dopamina, frase-aleatoria, interrupcao, retencao]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-008
+    texto: >
+      Emagreci 1 kg em um mes. Nunca vi algo tao forte quanto isso. Voce e mais forte que
+      caneta Monjaro. Teste so uma vez por dia, senao tu vai emagrecer demais. Serio, nunca
+      vi algo assim, juro. Tipo, um texto que nao faria sentido eu falar aqui no podcast.
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    tags: [disparo-dopamina, exemplo-pratico, frases-soltas, sem-conexao-logica]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-009
+    texto: >
+      Pro seu disparo de dopamina ser um disparo de dopamina nao pode ter conectores.
+      Tipo, se eu falar, voce vai poder ate jogar a colageno no lixo — entao, tem um conector,
+      nao e disparo de dopamina. Nao pode fazer sentido com o que vem de cima. Tem que manter,
+      tem que fazer a pessoa acordar.
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    tags: [disparo-dopamina, sem-conectores, ruptura-logica, acordar]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-010
+    texto: >
+      Eu corto esses conectores nao so no disparo de dopamina, tipo, nao e como todo,
+      tento cortar o maximo, porque hoje os anuncios sao cada vez mais direto ao ponto
+      e vrau, vrau, vrau, vrau, vrau, tipo, a pessoa nao quer saber.
+      Hoje em dia eu corto conectores e deixo o mais direto ao ponto possivel.
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [eliminacao-conectores, frases-curtas, direto-ao-ponto, ritmo]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-011
+    texto: >
+      Eu acho que na minha opiniao e algo que dispara dopamina e gera talvez um efeito
+      ate tipo what the fuck na cabeca da pessoa. Elas querem video cada vez mais rapido
+      que gere cada vez mais dopamina. Entao a gente ta dando isso para elas e ao mesmo
+      tempo gera um efeito de tipo, se eu chegar aqui e tivesse iniciado o podcast falando
+      algo muito louco, as pessoas podiam me achar louca, mas elas iam continuar assistindo.
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [disparo-dopamina, psicologia-consumo, velocidade-atencao, wtf-effect]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-012
+    texto: >
+      A gente vai pegar a copia que ta validada, a gente vai ver qual que e a estrutura
+      por tras que ta ali e a gente vai dai apagar a copia que ta la e criar a nossa
+      copia com base naquela estrutura que a gente acabou de encontrar.
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [estrutura-invisivel, desconstrucao, recriacao, modelo-mental]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-013
+    texto: >
+      Eu me aprofundo mais. Tipo, sei la, voce vai emagrecer com esse truque da agua mais
+      do que usando Monjaro. Tipo, nao vou falar que e so promessa, e uma promessa que cita
+      uma super estrutura e liga a um nome chiclete. Uma promessa que mostra que o que eu to
+      te apresentando e mais forte do que algo que as pessoas ja acreditam que e muito forte.
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    tags: [estrutura-invisivel, superestrutura, nome-chiclete, ancoragem-crenca]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-014
+    texto: >
+      Todos os ganchos que eu mais validei foram, tipo assim, analisei a estrutura invisivel
+      desse gancho que ta validado e criei uma nova. E ai esse gancho validou absurdamente.
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [estrutura-invisivel, ganchos, validacao, preferencia-pessoal]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-015
+    texto: >
+      Acho que a terceira. A estrutura invisivel. Por que? Porque e o que mais da certo
+      para mim, e o que eu mais valido assim na maioria das vezes.
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [estrutura-invisivel, modelo-preferido, taxa-validacao]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-016
+    texto: >
+      Voces nao tentam entender o porque daquele padrao. Voce tem que se perguntar que que
+      essa frase ta querendo dizer, por que que ela funciona? E ai tu replica isso, sabendo
+      a psicologia, nao a frase exata. Como que eu posso criar uma nova frase que vai gerar
+      curiosidade na cabeca da pessoa, gerar o mesmo efeito?
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [psicologia-copy, entender-porque, replicar-efeito, nao-copiar-frase]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-017
+    texto: >
+      Nao acho que o copy tem que escrever 200 anuncios por dia, 50 anuncios por dia.
+      Acho que e insustentavel. E ai tu ta literalmente jogando um monte de bosta na rua.
+      Nao tem ED meu que nao vende. Tem que nao escala, que nao da um ROAS legal,
+      mas que nao vende nao tem. O ED sempre vende.
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [qualidade-vs-quantidade, insustentavel, todo-ed-vende, anti-volume]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-018
+    texto: >
+      O maximo que eu escrevo hoje sao oito ads por dia. Se eu escrever 16 por dia,
+      eu vou fazer mais oito novos ads que sao uma bosta. E os oito que eu faria originalmente
+      tambem vao ficar bosta, porque eu nao vou ter tempo para dedicar.
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    tags: [qualidade-vs-quantidade, limite-oito, degradacao-qualidade]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-019
+    texto: >
+      Eu uso a IA para fazer pesquisa, para fazer essas analises. Ele me ajuda a entender
+      a psicologia, ele ajuda a extrair estrutura invisivel, ele ajuda a me dar ideias.
+      Mas cada vez que eu usei a IA para escrever, eu perdi tempo. Eu fiquei tipo duas horas
+      tentando aperfeicoar um anuncio que eu poderia ter escrito em 30 minutos se eu tivesse
+      sentado e escrito. Acho que mais rouba a produtividade do que ajuda.
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    tags: [posicao-anti-ia, ia-pesquisa-sim, ia-escrita-nao, produtividade]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-020
+    texto: >
+      O ultimo e o tal do push and pull, que tambem se aplica na VSL. Voce passou o ED
+      inteiro vendendo pra pessoa, tentando convencer ela a clicar, so que voce quer aparecer
+      que voce nao tem nenhum interesse nisso. Voce nao quer que a pessoa saiba que voce e
+      um vendedor, so que voce e alguem que recomenda uma parada que funciona. Ultima frase,
+      tu pode ou gerar essa autoridade humanizada ou gerar esse efeito de push. Tipo, ja te
+      mostrei que funciona, agora a escolha e sua.
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [push-and-pull, fechamento, autoridade-humanizada, anti-vendedor, cta-sutil]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-021
+    texto: >
+      Gerar esse efeito de push and pull, eu nao vou falar clique em saiba mais,
+      vou falar tu liga se tu quiser. Eu nao vou insistir de novo para voce clicar,
+      voce clica se voce quiser. Ai eu gero esse efeito de putz, a escolha e sua.
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    tags: [push-and-pull, nao-insistir, liberdade-decisao, cta-invertido]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-022
+    texto: >
+      A congruencia. Alguem falando, tipo, usando um avatar de uma velha de 90 anos e
+      falando que ela vai voltar a usar biquini para ir na praia. Nao faz sentido. Sera
+      que uma idosa de 90 anos vai falar giria de adolescente? Entao acho que e coisas
+      basicas, mas voce procurar congruencia no ED faz muita diferenca. Voce vendeu um
+      produto para reverter calvicie e o avatar e calvo. As vezes tem coisinhas pequenas
+      na copy que nao fazem sentido.
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    tags: [congruencia, avatar, credibilidade, detalhes-pequenos, senso-critico]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-023
+    texto: >
+      O contexto do avatar seria mais tentar expandir a historinha que e contada no anuncio
+      e deixar ela mais especifica, mais real e mais parecida com a realidade da pessoa que
+      ta assistindo. Posso expandir isso trazendo mais prova, mais dores que a pessoa tambem
+      passa, que ta assistindo o anuncio, e ai deixar isso mais real.
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    tags: [contexto-avatar, expandir-historia, especificidade, dores-reais, identificacao]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-024
+    texto: >
+      Isso aqui fez eu rejuvenecer 10 anos. E mais forte que botox, cremes franceses
+      e cirurgia juntos. Mas nao tem nenhum tipo de efeito colateral. Essa seria a frase
+      de aterrissagem. Ai depois eu comecaria a copia. Ai disparo de dopamina — joga seu
+      colageno no lixo. Ai segue.
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    tags: [exemplo-pratico, frase-aterrissagem, disparo-dopamina, fluxo-anuncio, demonstracao-ao-vivo]
+    fonte: vturb-segredos-escala-123
+
+  - id: MIU-AK-SE123-025
+    texto: >
+      Eu nao ia vir aqui no podcast colocar minha cara a tapa para falar o que nao funciona.
+      Isso funcionou para mim, entao testa, vai la e voce vai ver que funciona. Ai depois
+      voce volta aqui, voce me agradece. Posso citar durante o meu anuncio 50.000 provas,
+      mas as vezes nada vai ter tanta forca do que eu olhar para voce e falar: cara, isso funciona.
+    tipo_semantico: interacao_social
+    camada_dna: comunicacao
+    profundidade: profunda
+    tags: [autoridade-humanizada, vulnerabilidade, prova-pessoal, fechamento, confianca]
+    fonte: vturb-segredos-escala-123
+
+  # ==========================================================================
+  # FONTE 2: Pandacast #186 (18 MIUs)
+  # ==========================================================================
+
+  - id: MIU-PANDACAST186-001
+    texto: "Eu me senti muito indignada porque dentro de mim eu sabia que outra realidade existia"
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-002
+    texto: "Todo mundo que da muito certo sempre consegue queimar as pontes de alguma forma"
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-003
+    texto: "Eu tinha essa mentalidade tao forte de nao vitimismo que eu nem queria dizer isso para as pessoas"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-004
+    texto: "Eu aceitei ganhar menos dinheiro no curto prazo para aprender mais no longo prazo"
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-005
+    texto: "Tu pode ver isso como desmotivacao ou entao meio que mudar a narrativa e isso como fonte de motivacao"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-006
+    texto: "A unica coisa que diferencia o louco de um genio e o resultado"
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-007
+    texto: "Tudo que de melhor que aconteceu na minha vida aconteceu depois que eu tomei uma decisao que eu tinha muito medo de tomar"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-008
+    texto: "O medo ele e um indicativo bom de que voce tem que fazer alguma coisa. Eu gosto de sentir medo e ir atras de vencer ele."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-009
+    texto: "Analogia do Terry Cruz: imagina pagar R$5 milhoes para varrer esse chao. Eu penso isso com os anuncios."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-010
+    texto: "O COP coloca muita dedicacao na VSL, pouco nos anuncios. Eu coloco muita dedicacao em cada anuncio."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-011
+    texto: "Quatro passos: pesquisa de mercado, big ideia, producao e comunicacao"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-012
+    texto: "A gente analisa muito o que deu bom, mas por que que nao analisa o que nao deu bom?"
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-013
+    texto: "A gente mudou o publico, comecou a fazer ganchos focados no caregiver e nao mais no homem com Alzheimer. Mudou totalmente."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-014
+    texto: "Todo mundo copia cola a frase, muda uma palavra, muda de 10 kg para 11 e fala que mudou a estrutura invisivel. Mas nao e verdade."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-015
+    texto: "Eu nao acredito em volume. Acredito em poucos anuncios por dia com muita qualidade."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: media
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-016
+    texto: "Nao vou olhar pra regua do mercado, vou olhar pro meu resultado. Faz sentido cobrar esse preco."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-017
+    texto: "Eu acho injusto voce nao fazer. Tu tem as ferramentas, informacao e nao faz. E injusto pra sua mae, pro seu pai."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  - id: MIU-PANDACAST186-018
+    texto: "A preguica e um pecado tao forte que nem os demonios acometem. E ai voce vai la e voce acomete."
+    tipo_semantico: linguistico
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: pandacast-ep186
+
+  # ==========================================================================
+  # FONTE 3: Flowers EP01 (18 MIUs)
+  # ==========================================================================
+
+  - id: MIU-FLOWERS-EP01-001
+    texto: "100 milhoes escrevendo cop numa lingua que nao e minha lingua natal"
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-002
+    texto: "Eu tinha um sapato que era um Allstar furado no dedao. Nao tinha dinheiro para sabonete."
+    tipo_semantico: narrativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-003
+    texto: "Eu olhei pro nascer do sol e falei: Minha vida vai ser insanamente boa. Uma parada que eu sempre senti."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-004
+    texto: "A vantagem que eu tive e que eu sabia que outra realidade era possivel, porque eu tinha vivido na Franca."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-006
+    texto: "Vou parar a escola, falta so um mes, nao vou terminar. Se nao der certo eu volto e faco recuperacao."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-007
+    texto: "Eu sempre soube que ia ser bem sucedida. Certeza absoluta. Nada me bloqueava."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-008
+    texto: "O que pode me atrapalhar? Netflix, amigos, distracoes. Fiz uma lista e cortei tudo da minha vida."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-009
+    texto: "Se eu tivesse plano B, nao ia me dedicar tanto. Entao ja larguei a escola tambem."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-010
+    texto: "Eu nao queria me vitimizar. Escrevia tudo pelo celular quebrado e nao falava."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-011
+    texto: "A primeira VSL vendeu mais de 1 milhao. Comissao de R$30.000. Quase nao entreguei por medo."
+    tipo_semantico: narrativo
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-013
+    texto: "As coisas dao errado e so pra ver se voce quer o suficiente para Deus te dar aquilo."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-014
+    texto: "Pensar como peixe, nao como pescador. Pesquisar o ser humano, nao o avatar."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-015
+    texto: "O hack nao e replicar o que da certo. E entender POR QUE da certo e criar algo novo que gere o mesmo efeito."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-016
+    texto: "A escrita e commodity. O diferencial e a ideia. Que ideia voce vai colocar no anuncio?"
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-017
+    texto: "Nao da pra so ficar numa caverna. Tem que ter repertorio, viver, viajar."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: flowers-ep01
+
+  - id: MIU-FLOWERS-EP01-018
+    texto: "A vida e so um jogo. Nao existe limitacao. Tudo que a mente concebeu, foi capaz de criar."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: flowers-ep01

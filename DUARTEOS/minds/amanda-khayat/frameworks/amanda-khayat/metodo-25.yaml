@@ -1,0 +1,43 @@
+framework_identity:
+  name: "Metodo 25"
+  slug: "metodo-25"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Matriz 5x5 que cruza 5 tipos de ganchos com 5 tipos de corpo para gerar 25 combinacoes unicas de anuncios por produto. NAO eh volume bruto — cada combinacao eh unica e escrita com qualidade. O mercado decide o vencedor, nao o copywriter."
+
+steps:
+  - step: 1
+    acao: "Definir os 5 tipos de ganchos"
+    detalhe: "Organico (buscar no conteudo organico validado), Validado do nicho (modelar do proprio nicho), Estrutura Invisivel (extrair estrutura de controle existente), Do zero (criar original), De outro nicho (adaptar de nicho diferente)"
+  - step: 2
+    acao: "Definir os 5 tipos de corpo de anuncio"
+    detalhe: "5 abordagens diferentes para o corpo do anuncio que variam em formato, tom e estrutura narrativa"
+  - step: 3
+    acao: "Cruzar ganchos x corpos para gerar 25 combinacoes unicas"
+    detalhe: "Cada combinacao gancho+corpo gera um anuncio unico. NAO eh repetir a mesma coisa 25 vezes — cada um eh diferente"
+  - step: 4
+    acao: "Testar todas as combinacoes para encontrar vencedores"
+    detalhe: "O mercado decide qual funciona. Max 8 anuncios escritos por dia para manter qualidade. As 25 combinacoes sao produzidas ao longo de dias, nao em uma sessao"
+
+quando_usar: "Sempre que precisa criar anuncios para um novo produto ou gerar variacoes sistematicas. Framework principal de producao."
+
+exemplos_aplicacao:
+  - cenario: "Novo produto de emagrecimento precisa de anuncios para teste"
+    resultado: "25 combinacoes unicas testadas. 3-4 vencedores identificados pelo mercado. Escalar os vencedores."
+  - cenario: "Produto existente com criativo cansado"
+    resultado: "Novas 25 combinacoes com angulos nao explorados. Renovacao completa do banco de criativos."
+
+anti_patterns:
+  - "Escrever as 25 variacoes num unico dia — acima de 8 por dia a qualidade cai"
+  - "Usar como formula mecanica de copia-cola — cada combinacao exige pensamento original"
+  - "Confundir com volume bruto — o Metodo 25 gera VARIACOES, nao VOLUME"
+  - "Pular a pesquisa do consumidor antes de aplicar o metodo"
+
+frameworks_relacionados:
+  - name: "7 Alavancas para Bater Controle"
+    relacao: "complementar — otimizar os vencedores do Metodo 25"
+  - name: "Big Idea (Schwartz)"
+    relacao: "prerequisito — cada anuncio do Metodo 25 precisa de Big Idea"
+  - name: "Estrutura Invisivel"
+    relacao: "complementar — um dos 5 tipos de gancho do Metodo 25"

@@ -1,0 +1,47 @@
+# Sibling vs Parent-Child Systems — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Sibling vs Parent-Child Systems"
+  slug: "sibling-vs-parent-child-systems"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Framework de decisao arquitetural para design systems multi-marca ou multi-produto. Define quando usar sistemas pares (siblings) que compartilham tokens vs. sistemas hierarquicos (parent-child) onde um sistema base gera variantes especializadas. Analogia: franquia vs. lojas independentes."
+
+steps:
+  - step: 1
+    acao: "Avaliar se os sistemas sao pares (siblings) ou hierarquicos (parent-child)"
+    detalhe: "Analise da relacao entre marcas/produtos. Marcas independentes com identidade propria = siblings. Marca master com sub-marcas derivadas = parent-child."
+  - step: 2
+    acao: "Siblings: sistemas independentes que podem compartilhar tokens"
+    detalhe: "Como lojas independentes que compartilham fornecedores. Cada sistema tem autonomia, mas tokens globais (spacing, breakpoints) podem ser compartilhados para consistencia tecnica."
+  - step: 3
+    acao: "Parent-Child: sistema base que gera variantes especializadas"
+    detalhe: "Como franquias com sistema base obrigatorio. Sistema parent define componentes canonicos; children herdam e customizam via design tokens (theming). Component-Token Separation e essencial aqui."
+
+quando_usar: "Ao decidir arquitetura multi-brand ou multi-product de design systems"
+
+exemplos_aplicacao:
+  - cenario: "Empresa com 5 marcas distintas que compartilham mesma plataforma tecnica"
+    resultado: "Arquitetura parent-child: DS base com componentes compartilhados, cada marca tematiza via tokens (cores, tipografia, espacamento)"
+    fonte: "DNA direto"
+  - cenario: "Holding com empresas independentes que querem consistencia tecnica mas nao visual"
+    resultado: "Arquitetura siblings: cada empresa mantem DS independente, compartilham apenas tokens de fundacao (grid, breakpoints)"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Forcar parent-child quando marcas sao genuinamente independentes — gera restricoes desnecessarias"
+  - "Tratar siblings como parent-child — mata autonomia das marcas"
+  - "Ignorar tokens compartilhados em siblings — perde oportunidade de consistencia tecnica"
+
+frameworks_relacionados:
+  - name: "Component-Token Separation (Door Analogy)"
+    relacao: "complementar"
+  - name: "Multi-All-The-Things Architecture"
+    relacao: "complementar"
+  - name: "Three-Tiered Token System"
+    relacao: "complementar"

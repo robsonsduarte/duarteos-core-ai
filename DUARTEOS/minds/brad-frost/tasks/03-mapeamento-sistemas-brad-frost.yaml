@@ -1,0 +1,26 @@
+# Pipeline Task 03 — Mapeamento de Sistemas
+# Brad Frost — MMOS Engine v3
+# Status: COMPLETA
+
+task:
+  id: "03-mapeamento-sistemas"
+  mind: "brad-frost"
+  fase: 8
+  status: "completed"
+  completed_at: "2026-03-06"
+
+descricao: "Mapear mente contra Big Five, MBTI, Eneagrama e gerar scores por componente"
+
+resultado:
+  sistemas_mapeados: ["Big Five", "MBTI", "Eneagrama"]
+  consistencia_interna: 96
+  artefatos:
+    - "system-components/brad-frost-system.yaml"
+    - "artifacts/behavioral/brad-frost-behavioral-patterns.yaml"
+    - "artifacts/behavioral/brad-frost-situational-behavior.yaml"
+    - "artifacts/cognitive/brad-frost-cognitive-architecture.yaml"
+    - "artifacts/cognitive/brad-frost-core-beliefs.yaml"
+    - "artifacts/linguistic/brad-frost-micro-units.yaml"
+    - "artifacts/linguistic/brad-frost-communication-templates.yaml"
+    - "artifacts/narrative/brad-frost-storytelling-patterns.yaml"
+    - "artifacts/narrative/brad-frost-self-narrative.yaml"

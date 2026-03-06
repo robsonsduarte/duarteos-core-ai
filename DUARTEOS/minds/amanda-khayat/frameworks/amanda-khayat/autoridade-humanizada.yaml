@@ -1,0 +1,40 @@
+framework_identity:
+  name: "Autoridade Humanizada"
+  slug: "autoridade-humanizada"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "No fechamento do anuncio, usar declaracao pessoal sincera em vez de provas formais (estudos, numeros). Mais poderosa que 50.000 provas citadas — gera confianca visceral. A pessoa acredita porque sente que o falante eh genuino e esta colocando a reputacao em jogo."
+
+steps:
+  - step: 1
+    acao: "Posicionar no final do anuncio, como alternativa ao CTA tradicional"
+    detalhe: "Autoridade Humanizada funciona melhor como fechamento. Depois de todo o corpo do anuncio, a declaracao pessoal sela a confianca."
+  - step: 2
+    acao: "Usar declaracao pessoal sincera"
+    detalhe: "Formato: 'Eu nao viria aqui colocar minha reputacao em jogo para dizer algo que nao funciona.' Tom de vulnerabilidade real, nao performada."
+  - step: 3
+    acao: "Deixar a decisao com o consumidor"
+    detalhe: "Depois da declaracao, nao insistir. A forca esta na sinceridade + soltar. 'Testa, vai la e voce vai ver que funciona. Ai depois voce volta aqui e me agradece.'"
+
+quando_usar: "Como fechamento alternativo ao CTA tradicional. Especialmente eficaz quando o produto tem ceticismo alto ou quando provas formais ja foram apresentadas no corpo."
+
+exemplos_aplicacao:
+  - cenario: "Produto com muitas provas formais no corpo mas baixa conversao no CTA"
+    resultado: "Substituir CTA agressivo por Autoridade Humanizada: 'Cara, isso funciona. Posso citar 50.000 provas, mas as vezes nada tem tanta forca do que eu olhar pra voce e falar: isso funciona.'"
+  - cenario: "Anuncio com avatar de especialista"
+    resultado: "Fechamento: 'Eu nao viria aqui colocar minha cara a tapa pra falar o que nao funciona.' Gera confianca visceral."
+
+anti_patterns:
+  - "Usar como substituto de provas no corpo — Autoridade Humanizada eh fechamento, nao corpo"
+  - "Soar ensaiado ou performatico — tem que ser sincero"
+  - "Seguir com CTA agressivo logo depois — mata o efeito de soltar"
+  - "Usar com avatar que nao tem credibilidade construida no anuncio"
+
+frameworks_relacionados:
+  - name: "Push-Pull"
+    relacao: "alternativo — ambos sao opcoes de fechamento. Podem ser combinados"
+  - name: "Promessa/Prova/Curiosidade"
+    relacao: "complementar — Autoridade Humanizada eh uma forma especial de Prova"
+  - name: "7 Alavancas para Bater Controle"
+    relacao: "componente — alternativa de fechamento (alavanca 7)"

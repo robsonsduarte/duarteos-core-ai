@@ -1,0 +1,43 @@
+framework_identity:
+  name: "Briefing Pre-Escrita em 4 Componentes"
+  slug: "briefing-pre-escrita"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Processo OBRIGATORIO antes de escrever qualquer anuncio. 4 componentes que devem ser definidos e APROVADOS antes de abrir o documento pra escrever. Todo copy faz briefing antes. Quem pula o briefing escreve copy generico sem direcao."
+
+steps:
+  - step: 1
+    acao: "Definir a Big Idea do anuncio"
+    detalhe: "Qual eh a UNICA ideia que redefine o produto na mente do consumidor? Buscar em dominios distantes, conectar com o desejo central do consumidor."
+  - step: 2
+    acao: "Definir o avatar (quem fala)"
+    detalhe: "Quem eh a pessoa que conta a historia? Qual idade, genero, contexto? O avatar tem que ser congruente com o produto e com a Big Idea."
+  - step: 3
+    acao: "Justificar por que esta Big Idea e este avatar"
+    detalhe: "Por que ESSA ideia? Por que ESSE avatar? Qual eh a logica por tras da escolha? Se nao consegue justificar, a ideia nao eh boa o suficiente."
+  - step: 4
+    acao: "Aprovar o briefing ANTES de abrir o documento para escrever"
+    detalhe: "O briefing precisa ser aprovado (por voce ou pelo lider) antes de comecar a escrever. Se o briefing nao passa, nao escreve."
+
+quando_usar: "OBRIGATORIO antes de escrever qualquer anuncio. Nao importa o nicho, o produto ou a urgencia. Sem briefing = sem anuncio."
+
+exemplos_aplicacao:
+  - cenario: "Novo produto de saude precisa de anuncios"
+    resultado: "Briefing: Big Idea = truque da agua (liga habito simples a resultado surpreendente). Avatar = mulher de 55 anos, dona de casa. Justificativa = publico comprador eh mulher 50+, avatar gera identificacao. Aprovado. Agora sim, escreve."
+  - cenario: "Copywriter quer comecar a escrever imediatamente"
+    resultado: "PARAR. Fazer o briefing primeiro. Se o briefing nao esta claro, o anuncio vai ser generico."
+
+anti_patterns:
+  - "Pular o briefing e comecar a escrever direto — receita pra copy generico"
+  - "Briefing vago ('vou falar sobre o produto') — precisa de Big Idea + Avatar + Justificativa"
+  - "Nao aprovar o briefing antes de escrever — escrever antes de aprovar eh desperdicio de tempo"
+  - "Big Idea sem justificativa — se nao sabe por que, a ideia nao eh boa"
+
+frameworks_relacionados:
+  - name: "Big Idea (Schwartz)"
+    relacao: "prerequisito — Big Idea eh o componente 1 do briefing"
+  - name: "Metodo 25"
+    relacao: "complementar — briefing antes, Metodo 25 durante a producao"
+  - name: "Entender POR QUE funciona"
+    relacao: "complementar — a justificativa do briefing exige entender POR QUE"

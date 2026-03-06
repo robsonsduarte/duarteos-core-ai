@@ -1,0 +1,47 @@
+# 3-Step Sell — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "3-Step Sell"
+  slug: "3-step-sell"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Framework de advocacy para vender a ideia de design system internamente. Retorica de acao sobre argumentacao — nunca comece pedindo permissao. Construa algo tangivel, mostre valor e so entao formalize. Make-Show-Officialize."
+
+steps:
+  - step: 1
+    acao: "Make — construa algo tangivel primeiro"
+    detalhe: "Encontre uma forma (mesmo secretamente) de fazer DS powerar trabalho real. Construa um prototipo, componentize algo existente, mostre que funciona. Nao peca permissao — demonstre possibilidade."
+  - step: 2
+    acao: "Show — demonstre valor com exemplos reais"
+    detalhe: "Um quick win = valor demonstrado. Mostre metricas (tempo economizado, bugs reduzidos, consistencia visual). Use interface inventory como evidencia visual irrefutavel. Success = Success."
+  - step: 3
+    acao: "Officialize — formalize com buy-in organizacional"
+    detalhe: "Com evidencia tangivel em maos, solicite formalizacao: time dedicado, budget, roadmap. Conecte a objetivos de negocio — velocidade, consistencia de marca, reducao de retrabalho."
+
+quando_usar: "Ao vender a ideia de design system internamente — nunca comece pedindo permissao"
+
+exemplos_aplicacao:
+  - cenario: "Developer quer design system mas lideranca nao ve valor"
+    resultado: "Componentiza 5 elementos repetidos em tempo livre, mostra antes/depois de velocidade de entrega, lideranca aprova time dedicado"
+    fonte: "DNA direto"
+  - cenario: "DS team precisa de mais recursos mas nao tem metricas para justificar"
+    resultado: "Interface inventory + tempo de entrega antes/depois + reducao de bugs = caso de negocio irrefutavel"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Comecar pedindo permissao e budget antes de ter algo tangivel"
+  - "Argumentar teoricamente sem evidencia pratica — mostre, nao fale"
+  - "Pular o Make e ir direto para Officialize — sem evidencia nao ha buy-in"
+
+frameworks_relacionados:
+  - name: "Selling Design Systems Framework"
+    relacao: "complementar"
+  - name: "Interface Inventory"
+    relacao: "complementar"
+  - name: "Design System Thinking"
+    relacao: "complementar"

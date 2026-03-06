@@ -2,9 +2,46 @@ clone:
   name: "Brad Frost"
   slug: "brad-frost"
   version: "1.0.0"
-  pipeline_version: "legacy"
-  category: "UX-Design"
-  status: "active"
-  fidelity_score: null
+  pipeline_version: "3"
+  created_at: "2026-03-01"
   fidelity_estimated: null
+  fidelity_score: 96.09
+  status: "active"
+  archetype: "O arquiteto que transformou quimica molecular em metodologia de design de interfaces"
+  category: "UX-Design"
   domain: "Design Systems & Atomic Design"
+
+pcfe_calibration:
+  FE: null
+  F: 96.09
+  delta: null
+  accuracy: null
+
+blind_test_v2:
+  total_prompts: 20
+  scores_by_category:
+    surface: [9.5, 9.5, 9.0, 9.0, 9.5, 9.0, 9.5, 9.0]
+    deep: [9.5, 9.5, 9.0, 9.5, 9.5, 9.0]
+    paradox: [9.5, 9.5, 9.5, 9.0]
+    integration: [9.5, 9.0]
+  media_geral: 93.5
+  media_paradoxos: 93.75
+  taxa_aprovacao: 100
+  fidelidade_teste: 95.08
+  resultado: "PASS"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "23/23"
+  drivers: true
+  checklist: true
+  tasks: 10
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

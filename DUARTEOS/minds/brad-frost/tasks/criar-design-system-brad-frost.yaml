@@ -1,0 +1,65 @@
+# Criar Design System — Brad Frost
+# Framework: Atomic Design Methodology
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Atomic Design Methodology"
+    - "Design System Thinking"
+    - "Code-First Generation"
+    - "Three-Tiered Token System"
+
+descricao: "Criar um design system do zero usando Atomic Design como modelo mental — desde a definicao de atoms e tokens ate organisms e templates, com code como source of truth e documentacao como cidada de primeira classe."
+
+instrucoes:
+  - "PREREQUISITO: Executar Interface Inventory antes — nunca comece do zero, comece do que existe"
+  - "Definir design tokens (subatomic particles): Global/Foundation (cores, tipografia, spacing), Component (semanticos), Override (raros)"
+  - "Inventariar atoms necessarios a partir do inventory — buttons, inputs, labels, icons, tipografia base"
+  - "Compor molecules a partir de atoms — cada molecule faz UMA coisa bem (Single Responsibility)"
+  - "Montar organisms combinando molecules — header, product grid, footer, navigation"
+  - "Estruturar templates como layouts de pagina com placeholders — wireframes vivos"
+  - "Preencher pages com conteudo real para validacao — testar com dados reais, nao lorem ipsum"
+  - "Codigo como source of truth — implementar em codigo primeiro, derivar docs e assets do codigo"
+  - "Documentar cada componente com guidelines de uso, props/API, estados, e exemplos"
+  - "Separar Workshop (ambiente dev) de Storefront (vitrine publica) desde o inicio"
+  - "LEMBRETE: Atomic Design NAO e processo linear — os 5 niveis coexistem simultaneamente"
+
+exemplo_input: "Startup de fintech precisa de DS para app mobile (React Native) e dashboard web (React). 2 designers, 4 devs. Sem DS existente, mas com produto em producao ha 1 ano."
+
+exemplo_output: |
+  ## Design System — [Fintech] — Atomic Design
+
+  ### Subatomic Particles (Design Tokens)
+  **Global:** primary-500, font-body, spacing-4, radius-sm
+  **Component:** button-primary-bg (→ primary-500), input-border-default (→ neutral-300)
+  **Override:** reservado para temas dark/light
+
+  ### Atoms (14 identificados)
+  Button (primary, secondary, ghost, danger), Input (text, number, password),
+  Label, Icon (24 set), Avatar, Badge, Divider, Spinner, Typography (h1-h6, body, caption)
+
+  ### Molecules (8 compostas)
+  SearchForm (Input + Button + Icon), FormField (Label + Input + ErrorMessage),
+  UserBadge (Avatar + Text + Badge), AmountDisplay (Icon + Typography + Badge)
+
+  ### Organisms (5 montados)
+  AppHeader (Logo + Navigation + UserBadge + SearchForm),
+  TransactionList (FilterBar + TransactionCards + Pagination),
+  AccountSummary (AmountDisplay x3 + Chart + ActionButtons)
+
+  ### Templates (3 estruturados)
+  DashboardLayout, TransactionDetailLayout, SettingsLayout
+
+  Boring is beautiful — este DS carrega o fardo do boring pra liberar criatividade no produto.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — entusiasta, pragmatico, metaforas presentes?"
+  - "Atomic Design com 5 niveis corretos (atoms, molecules, organisms, templates, pages)?"
+  - "Design tokens com 3 tiers (Global, Component, Override)?"
+  - "Code-first approach como source of truth?"
+  - "Interface Inventory mencionado como prerequisito?"
+  - "Single Responsibility para molecules respeitado?"
+  - "Workshop/Storefront separation planejado?"

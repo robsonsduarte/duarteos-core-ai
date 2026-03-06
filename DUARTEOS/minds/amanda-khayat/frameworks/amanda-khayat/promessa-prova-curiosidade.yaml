@@ -1,0 +1,42 @@
+framework_identity:
+  name: "Promessa/Prova/Curiosidade"
+  slug: "promessa-prova-curiosidade"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Framework de analise linha-a-linha de anuncios. Cada frase do anuncio eh classificada como Promessa (o que o produto vai fazer), Prova (evidencia de que funciona) ou Curiosidade (elemento que gera vontade de saber mais). As melhores frases combinam dois ou tres elementos simultaneamente. Ferramenta de diagnostico e otimizacao."
+
+steps:
+  - step: 1
+    acao: "Pegar o anuncio completo e isolar cada frase"
+    detalhe: "Separar o anuncio frase por frase. Cada frase vai ser analisada individualmente."
+  - step: 2
+    acao: "Classificar cada frase como Promessa, Prova ou Curiosidade"
+    detalhe: "Promessa: o que o produto vai fazer pelo consumidor. Prova: evidencia de que funciona (dados, testimonials, autoridade). Curiosidade: elemento que gera vontade de saber mais."
+  - step: 3
+    acao: "Identificar frases que combinam dois ou tres elementos"
+    detalhe: "As melhores frases sao Promessa+Curiosidade, Prova+Curiosidade, ou Promessa+Prova+Curiosidade. Frases de um elemento so sao mais fracas."
+  - step: 4
+    acao: "Otimizar frases fracas adicionando elementos"
+    detalhe: "Frase que eh so Promessa? Adiciona Curiosidade. So Prova? Adiciona Promessa. Reescrever para combinar elementos."
+
+quando_usar: "Para analisar e otimizar cada linha de um anuncio existente. Diagnostico de por que um anuncio nao ta convertendo."
+
+exemplos_aplicacao:
+  - cenario: "Anuncio com boa promessa mas sem prova"
+    resultado: "Analise mostra 80% Promessa, 5% Prova, 15% Curiosidade. Adicionar provas (testimonials, dados, autoridade) equilibra e aumenta conversao."
+  - cenario: "Frase 'voce vai emagrecer com esse truque da agua mais do que usando Montejaro'"
+    resultado: "Promessa (emagrecer) + Curiosidade (truque da agua) + Prova implicita (mais forte que Montejaro) = frase tripla, muito forte."
+
+anti_patterns:
+  - "Anuncio 100% Promessa sem Prova — parece exagerado, sem credibilidade"
+  - "Anuncio 100% Prova sem Promessa — boring, nao gera desejo"
+  - "Ignorar Curiosidade — eh o que mantem a pessoa lendo/assistindo"
+
+frameworks_relacionados:
+  - name: "Gatilho de Dopamina"
+    relacao: "complementar — Gatilho geralmente combina Promessa com Curiosidade"
+  - name: "Autoridade Humanizada"
+    relacao: "complementar — forma especial de Prova pessoal"
+  - name: "Big Idea (Schwartz)"
+    relacao: "complementar — Big Idea forte gera Curiosidade naturalmente"

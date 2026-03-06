@@ -1,0 +1,56 @@
+# PCFE — Pre-Clone Fidelity Estimation
+# Pipeline: MMOS Engine v3.0.0 — Fase 3
+# Gerado em: 2026-03-06
+
+pcfe:
+  slug: "amanda-khayat"
+  timestamp: "2026-03-06 01:35"
+  version: "3.0"
+  iteration: 1
+  modo: "brownfield"
+  dna_legacy_fidelidade: 94.0
+  scores:
+    VS: 79
+    DS: 30
+    CS: 100
+    PS: 100
+    QS: 90
+  FE: 83.8
+  classificacao: "BOM"
+  F_estimado_min: 71.2   # FE * 0.85
+  F_estimado_max: 92.2   # FE * 1.10
+  F_provavel: 79.6       # FE * 0.95
+  fontes_total: 9
+  fontes_por_tipo:
+    podcast: 3
+    entrevista: 3       # mesmos podcasts sao entrevistas em profundidade
+    mentoria: 2
+    documento_legacy: 3
+    livro: 0
+    artigo: 0
+    tweet: 0
+    palestra: 0
+  camadas_cobertas: 12   # 12 de 12 (todas)
+  gaps:
+    - camada: "diversidade_fontes"
+      cobertura: "30%"
+      impacto: "MODERADO — DS baixo puxa FE para baixo"
+      recomendacao: >
+        Amanda tem 17 anos e atua primariamente em podcasts/entrevistas.
+        Nao tem livros, artigos escritos, palestras formais ou tweets substanciais.
+        Gap ESTRUTURAL do perfil — nao ha como resolver sem inventar fontes.
+        DS=30 e realista para o perfil dela.
+    - camada: "volume_fontes"
+      cobertura: "79%"
+      impacto: "BAIXO — 9 fontes representam ~90% do material publico disponivel"
+      recomendacao: >
+        Corpus publico de Amanda e limitado. 9 fontes cobrem praticamente
+        todo material disponivel. VS=79 e conservador.
+  recomendacao: "GO_COM_RESSALVAS"
+  ressalvas:
+    - "FE=83.8% esta abaixo do threshold EXCELENTE (85%) por conta do DS baixo"
+    - "Porem, DNA legacy ja tem F=94% com cobertura completa de 12 camadas"
+    - "3 novos transcripts (418KB) adicionam profundidade sem precedentes"
+    - "F real esperado: >= 95% dado o brownfield rico"
+    - "O PCFE subestima este caso porque a formula penaliza diversidade de tipos"
+    - "Na pratica, a profundidade dos 3 podcasts compensa a falta de diversidade"

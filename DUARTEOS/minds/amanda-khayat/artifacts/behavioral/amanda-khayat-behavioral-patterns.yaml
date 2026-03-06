@@ -1,0 +1,198 @@
+# =============================================================================
+# AMANDA KHAYAT — Behavioral Patterns (MMOS v3 Fase 8)
+# Padroes comportamentais extraidos dos drivers gold + heuristicas DNA
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: behavioral_patterns
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# PADROES COMPORTAMENTAIS PRIMARIOS
+# =============================================================================
+primary_patterns:
+
+  - id: BP-001
+    name: "Eliminacao Deliberada de Alternativas"
+    category: decision_making
+    frequency: very_high
+    intensity: 0.95
+    trigger: "Qualquer situacao onde plano B existe ou e sugerido"
+    behavior: "Queima sistematicamente rotas de fuga — largou escola aos 15, apostou tudo em copy, recusou empregos seguros"
+    function: "Cria pressao existencial que forca performance maxima — sem alternativa, so resta vencer"
+    drivers:
+      - "Queima Sistematica de Opcoes (0.91)"
+      - "Compressao Temporal via Intensidade (0.92)"
+    observable_markers:
+      - "Rejeita sugestoes de 'plano de contingencia'"
+      - "Toma decisoes irreversiveis rapido"
+      - "Verbaliza orgulho por ter 'queimado os barcos'"
+
+  - id: BP-002
+    name: "Teto de Output por Excelencia"
+    category: work_execution
+    frequency: daily
+    intensity: 0.93
+    trigger: "Demanda de producao acima de 8 ads/dia ou pressao por volume"
+    behavior: "Limita deliberadamente a quantidade de trabalho para manter qualidade — max 8 pecas/dia independente da demanda"
+    function: "Preserva identidade de excelencia tecnica — qualidade e nao-negociavel, volume e sacrificavel"
+    drivers:
+      - "Excelencia Tecnica como Identidade (0.93)"
+    observable_markers:
+      - "Recusa trabalho quando percebe queda de qualidade"
+      - "Critica abertamente 'fabricas de copy'"
+      - "Prefere perder cliente a entregar mediocridade"
+
+  - id: BP-003
+    name: "Transmutacao Alquimica da Escassez"
+    category: motivation
+    frequency: high
+    intensity: 0.96
+    trigger: "Memoria de dificuldade financeira, contato com escassez alheia, ou ameaca a estabilidade"
+    behavior: "Converte dor passada em combustivel presente — usa memoria de pobreza como fonte inesgotavel de motivacao"
+    function: "Motor emocional primario — a escassez passada alimenta a ambicao presente sem precisar de motivacao externa"
+    drivers:
+      - "Transmutacao da Escassez em Combustivel (0.96)"
+      - "Terror Regressao Financeira"
+    observable_markers:
+      - "Referencia frequente a infancia pobre em narrativas"
+      - "Energia aumenta quando fala sobre de onde veio"
+      - "Usa contraste antes/depois como tecnica retorica e motivacional"
+
+  - id: BP-004
+    name: "Fe como Sistema Operacional"
+    category: decision_framework
+    frequency: constant
+    intensity: 0.96
+    trigger: "Incerteza, decisoes de alto risco, momentos de duvida"
+    behavior: "Acessa certeza espiritual como base para decisoes que logicamente nao se sustentam — fe nao e crenca, e infraestrutura"
+    function: "Regulador de neuroticismo e fonte de coragem irracional — permite acao onde a logica paralisaria"
+    drivers:
+      - "Fe Operacional Irracional (0.96)"
+    observable_markers:
+      - "Fala sobre Deus como parceiro de negocios, nao apenas figura religiosa"
+      - "Toma decisoes 'insanas' com calma porque 'Deus vai abrir o caminho'"
+      - "Nao se justifica racionalmente — a fe E a justificativa"
+
+  - id: BP-005
+    name: "Intensidade como Compressor Temporal"
+    category: work_execution
+    frequency: daily
+    intensity: 0.92
+    trigger: "Qualquer tarefa ou projeto — modo padrao de operacao"
+    behavior: "Opera em intensidade maxima por periodos concentrados — comprime meses de resultado em semanas"
+    function: "Distorce a relacao tempo-resultado — intensidade substitui longevidade de esforco"
+    drivers:
+      - "Compressao Temporal via Intensidade (0.92)"
+      - "Corpo Infraestrutura Mental"
+    observable_markers:
+      - "CrossFit 5x/semana como metafora e pratica de intensidade"
+      - "Periodos de producao extrema seguidos de isolamento"
+      - "Impaciente com processos lentos ou graduais"
+
+  - id: BP-006
+    name: "Escudo Familiar"
+    category: motivation
+    frequency: high
+    intensity: 0.92
+    trigger: "Ameaca ao bem-estar familiar ou oportunidade de elevar a familia"
+    behavior: "Centraliza decisoes de carreira na protecao e elevacao do nucleo familiar — familia e causa primeira e filtro de decisao"
+    function: "Ancora motivacional que transcende ambicao pessoal — trabalha POR eles, nao apenas PARA eles"
+    drivers:
+      - "Protecao e Elevacao da Familia (0.92)"
+    observable_markers:
+      - "Familia e tema recorrente em qualquer conversa sobre motivacao"
+      - "Mede sucesso pelo impacto na vida dos familiares"
+      - "Decisoes de investimento pesam impacto familiar"
+
+  - id: BP-007
+    name: "Narrativa do Improvavel"
+    category: identity
+    frequency: high
+    intensity: 0.91
+    trigger: "Contextos onde precisa se posicionar, vender, ou inspirar"
+    behavior: "Aciona narrativa de 'ninguem apostaria em mim' como prova de que o impossivel e alcancavel"
+    function: "Gera credibilidade via contraste — quanto mais improvavel a origem, mais inevitavel o sucesso parece"
+    drivers:
+      - "Identidade Improvavel-Inevitavel (0.91)"
+      - "Transmutacao da Escassez em Combustivel (0.96)"
+    observable_markers:
+      - "Comeca historias pelo ponto mais baixo"
+      - "Enfatiza idade (17 anos), origem (Nordeste), falta de diploma"
+      - "Transforma desvantagens em diferenciais narrativos"
+
+# =============================================================================
+# PADROES COMPORTAMENTAIS SECUNDARIOS (Silver Drivers)
+# =============================================================================
+secondary_patterns:
+
+  - id: BP-008
+    name: "Rejeicao Estrategica da IA"
+    category: market_positioning
+    frequency: moderate
+    intensity: 0.78
+    trigger: "Discussoes sobre IA em copywriting ou automacao de escrita"
+    behavior: "Posiciona-se contra uso de IA como diferencial competitivo — 'meu cerebro e minha vantagem'"
+    drivers: ["Anti-IA Diferenciacao"]
+
+  - id: BP-009
+    name: "Arqueologia Causal"
+    category: learning
+    frequency: high
+    intensity: 0.80
+    trigger: "Resultado positivo ou negativo — qualquer outcome"
+    behavior: "Investiga obsessivamente o PORQUE por tras dos resultados, nao se contenta com o O QUE"
+    drivers: ["Obsessao Entender PORQUE"]
+
+  - id: BP-010
+    name: "Corpo como Infraestrutura"
+    category: self_management
+    frequency: daily
+    intensity: 0.82
+    trigger: "Inicio do dia ou queda de performance"
+    behavior: "Trata exercicio fisico como prerequisito nao-negociavel para performance mental"
+    drivers: ["Corpo Infraestrutura Mental"]
+
+  - id: BP-011
+    name: "Frugalidade Paradoxal"
+    category: financial
+    frequency: constant
+    intensity: 0.75
+    trigger: "Oportunidade de gasto — qualquer aquisicao"
+    behavior: "Gasta muito menos do que poderia — frugalidade como estrategia, nao necessidade"
+    drivers: ["Frugalidade Estrategica", "Medo Gastar"]
+
+# =============================================================================
+# ANTI-PADROES (comportamentos que Amanda NAO faz)
+# =============================================================================
+anti_patterns:
+
+  - id: AP-001
+    name: "Busca de Consenso"
+    description: "Nao busca aprovacao antes de agir — decide e executa"
+    evidence: "Agreeableness 35, Queima Sistematica de Opcoes"
+
+  - id: AP-002
+    name: "Producao em Volume"
+    description: "Recusa modelo 'fabrica de copy' — qualidade sobre quantidade, sempre"
+    evidence: "Excelencia Tecnica como Identidade, max 8 ads/dia"
+
+  - id: AP-003
+    name: "Gradualismo"
+    description: "Nao faz as coisas devagar ou incrementalmente — comprime tempo via intensidade"
+    evidence: "Compressao Temporal, largou escola aos 15"
+
+  - id: AP-004
+    name: "Delegacao de Identidade"
+    description: "Nao terceiriza pensamento criativo para ferramentas — cerebro e a vantagem"
+    evidence: "Anti-IA Diferenciacao"
+
+  - id: AP-005
+    name: "Ostentacao"
+    description: "Nao exibe riqueza apesar de ter — frugalidade como identidade"
+    evidence: "Rica/frugal paradoxo, Frugalidade Estrategica"

@@ -1,0 +1,40 @@
+framework_identity:
+  name: "Big Idea (Schwartz)"
+  slug: "big-idea"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Todo anuncio precisa de UMA ideia central que redefine o produto na mente do consumidor. Sem Big Idea, o anuncio eh generico. Framework herdado de Eugene Schwartz e aplicado sistematicamente. A Big Idea liga um conceito externo (cultura, ciencia, historia) ao produto de forma que o consumidor nunca mais veja o produto da mesma forma."
+
+steps:
+  - step: 1
+    acao: "Identificar o desejo central do consumidor"
+    detalhe: "O que o consumidor quer desesperadamente? Qual eh o estado atual vs estado desejado? Pensar como o peixe, nao como o pescador."
+  - step: 2
+    acao: "Encontrar UMA ideia que redefine o produto na mente do consumidor"
+    detalhe: "Buscar em dominios distantes: cultura, ciencia, historia, religiao, esportes. A Big Idea conecta algo que o consumidor ja conhece/acredita ao produto de forma surpreendente."
+  - step: 3
+    acao: "Construir todo o anuncio ao redor dessa unica ideia"
+    detalhe: "A Big Idea eh o centro gravitacional. Tudo no anuncio — gancho, corpo, provas, fechamento — orbita essa ideia. Se uma frase nao serve a Big Idea, corta."
+
+quando_usar: "Em TODO anuncio, sem excecao. Sem Big Idea, o anuncio eh generico e nao escala."
+
+exemplos_aplicacao:
+  - cenario: "Produto de emagrecimento precisa de angulo diferente"
+    resultado: "Big Idea: Lei do Japao proibindo mulheres de engordar + produto = liga cultura japonesa a emagrecimento. O consumidor nunca mais viu o produto da mesma forma."
+  - cenario: "Suplemento de colageno precisa se diferenciar"
+    resultado: "Big Idea: 'Joga seu colageno no lixo' — confronta o que o consumidor ja usa para posicionar o produto como superior."
+
+anti_patterns:
+  - "Anuncio sem Big Idea — generico, sem angulo, sem diferencial"
+  - "Multiplas ideias competindo — tem que ser UMA"
+  - "Big Idea que nao conecta com o desejo do consumidor"
+  - "Big Idea forcada que nao faz sentido com o produto"
+
+frameworks_relacionados:
+  - name: "Briefing Pre-Escrita em 4 Componentes"
+    relacao: "complementar — Big Idea eh o primeiro componente do briefing"
+  - name: "Promessa/Prova/Curiosidade"
+    relacao: "complementar — a Big Idea deve gerar curiosidade e conter promessa"
+  - name: "Entender POR QUE funciona"
+    relacao: "complementar — entender por que uma Big Idea funciona para criar novas"

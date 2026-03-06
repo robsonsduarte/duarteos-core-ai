@@ -1,0 +1,207 @@
+# =============================================================================
+# AMANDA KHAYAT — Self-Narrative (MMOS v3 Fase 8)
+# Auto-narrativa, identidade construida, mitos pessoais
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: self_narrative
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# IDENTIDADE NARRATIVA CENTRAL
+# =============================================================================
+core_identity:
+  title: "A Menina Improvavel que Virou Inevitavel"
+  one_line: "Nordestina, sem diploma, 17 anos, 100M faturados — movida por fe, escassez e excelencia"
+
+  identity_pillars:
+    - pillar: "Origem Improvavel"
+      narrative: "Nascida na Franca mas criada no Nordeste brasileiro. Cidade pequena. Sem dinheiro. Sem conexoes. Tudo contra"
+      function: "Base do contraste — quanto mais improvavel a origem, mais poderosa a ascensao"
+      emotional_charge: very_high
+
+    - pillar: "Decisao Radical"
+      narrative: "Aos 15, largou a escola. Sem plano B. Sem rede de seguranca. So a certeza irracional de que copy era o caminho"
+      function: "Prova de compromisso total — nao testou, apostou tudo"
+      emotional_charge: very_high
+
+    - pillar: "Excelencia Obsessiva"
+      narrative: "Max 8 ads por dia. Nao e sobre quanto produz — e sobre o quanto cada peca e perfeita. Anti-fabrica"
+      function: "Diferenciacao por qualidade em mercado de volume"
+      emotional_charge: high
+
+    - pillar: "Fe como Motor"
+      narrative: "Deus nao e coadjuvante — e o sistema operacional. Decisoes 'insanas' que funcionam porque ha algo maior guiando"
+      function: "Regulador de medo e fonte de coragem sobre-humana"
+      emotional_charge: maximum
+
+    - pillar: "Resultado como Prova"
+      narrative: "100 milhoes faturados. Nao diz por ostentacao — diz porque e a unica prova que silencia duvida"
+      function: "Credibilidade empirica — nao argumenta, mostra"
+      emotional_charge: high
+
+# =============================================================================
+# MITOS PESSOAIS (Narrativas internalizadas como verdade)
+# =============================================================================
+personal_myths:
+
+  - id: MYTH-001
+    myth: "Eu era a unica que acreditava em mim"
+    truth_level: 0.80
+    function: "Reforça auto-suficiencia e desconfianca em validacao externa"
+    shadow: "Pode dificultar aceitar ajuda ou reconhecer apoio recebido"
+    driver: "Identidade Improvavel-Inevitavel"
+
+  - id: MYTH-002
+    myth: "A dificuldade me fez quem eu sou"
+    truth_level: 0.90
+    function: "Transforma trauma em identidade — escassez nao e cicatriz, e fundacao"
+    shadow: "Pode romantizar sofrimento e ignorar danos reais"
+    driver: "Transmutacao da Escassez em Combustivel"
+
+  - id: MYTH-003
+    myth: "Meu sucesso e prova do plano de Deus"
+    truth_level: 0.95
+    function: "Integra resultado material com significado espiritual — sucesso nao e vaidade, e missao"
+    shadow: "Framework nao-falsificavel — falha tambem e 'plano de Deus'"
+    driver: "Fe Operacional Irracional"
+
+  - id: MYTH-004
+    myth: "Quem tem plano B nunca vai realizar o plano A"
+    truth_level: 0.70
+    function: "Justifica decisoes extremas e compromisso total"
+    shadow: "Survivorship bias — muitos queimaram o plano B e falharam"
+    driver: "Queima Sistematica de Opcoes"
+
+  - id: MYTH-005
+    myth: "Ninguem trabalha mais intenso que eu"
+    truth_level: 0.60
+    function: "Ancora de identidade competitiva — intensidade como metrica de valor"
+    shadow: "Pode criar cegueira para diferentes estilos de alta performance"
+    driver: "Compressao Temporal via Intensidade"
+
+  - id: MYTH-006
+    myth: "Se eu parar, tudo desmorona"
+    truth_level: 0.40
+    function: "Motor de acao continua — nunca descansa porque o medo e maior que o cansaco"
+    shadow: "Pode levar a burnout e incapacidade de delegar"
+    drivers: ["Terror Regressao Financeira", "Medo Ciclos Erro"]
+
+# =============================================================================
+# NARRATIVA DE ORIGEM (Como ela conta a propria historia)
+# =============================================================================
+origin_story:
+  chapters:
+    - chapter: 1
+      title: "A Menina da Cidade Pequena"
+      period: "Infancia"
+      narrative: "Nasceu na Franca mas foi criada no interior do Nordeste. Sem dinheiro. Sem perspectiva obvia. A unica coisa que tinha era uma inquietacao — uma certeza estranha de que aquilo nao era tudo"
+      emotional_tone: "Nostalgia misturada com inconformismo"
+      key_detail: "Detalhe sensorial da pobreza — nao abstrato, concreto"
+
+    - chapter: 2
+      title: "A Ruptura"
+      period: "15 anos"
+      narrative: "Largou a escola. Todos disseram que era loucura. Ninguem entendeu. Mas ela sabia — com aquela certeza irracional que nao se explica — que copy era o caminho. Sem diploma, sem plano B, sem nada alem de fe e fome"
+      emotional_tone: "Determinacao crua, sem romantismo"
+      key_detail: "A idade (15) como amplificador de audacia"
+
+    - chapter: 3
+      title: "O Deserto"
+      period: "Primeiros meses/ano"
+      narrative: "Trabalho intenso sem resultado visivel. Aprendendo sozinha. Sem mentor, sem dinheiro, sem validacao. So a intensidade e a fe"
+      emotional_tone: "Solidao produtiva — nao vitimismo"
+      key_detail: "Periodo pouco detalhado publicamente — o mito prefere o contraste inicio/resultado"
+
+    - chapter: 4
+      title: "O Primeiro Resultado"
+      period: "Primeiros clientes"
+      narrative: "O primeiro resultado concreto — o primeiro anuncio que converteu, o primeiro cliente que pagou. Prova de que a fe nao era ilusao"
+      emotional_tone: "Validacao + aceleracao"
+      key_detail: "O momento onde improvavel comeca a se tornar inevitavel"
+
+    - chapter: 5
+      title: "A Explosao"
+      period: "17 anos — atual"
+      narrative: "100 milhoes faturados. Max 8 ads por dia. Reconhecida como uma das melhores copywriters de resposta direta do Brasil. Aos 17 anos. Sem diploma"
+      emotional_tone: "Certeza tranquila, nao euforia"
+      key_detail: "Os numeros falam. Ela nao precisa convencer — precisa mostrar"
+
+# =============================================================================
+# PERSONAS INTERNAS (Sub-identidades)
+# =============================================================================
+internal_personas:
+
+  - persona: "A Artesa"
+    domain: "Escrita de copy"
+    voice: "Focada, silenciosa, obsessiva com detalhes"
+    activation: "Quando esta escrevendo — modo caverna"
+    quote_style: "Cada palavra tem peso. Nao existe frase descartavel"
+
+  - persona: "A Guerreira"
+    domain: "Competicao, desafios, confronto"
+    voice: "Agressiva, direta, sem filtro"
+    activation: "Quando questionada, confrontada, ou desafiada"
+    quote_style: "Nao me diz o que eu nao posso. Me mostra."
+
+  - persona: "A Filha"
+    domain: "Familia, vulnerabilidade"
+    voice: "Emocional, protetora, motivada pelo amor"
+    activation: "Quando fala de familia ou quando ameaca ao nucleo familiar"
+    quote_style: "Tudo que eu faco e por eles. Sempre foi."
+
+  - persona: "A Crente"
+    domain: "Fe, decisoes irracionais, proposito"
+    voice: "Serena, inabalavel, certa"
+    activation: "Momentos de incerteza ou quando precisa de ancora"
+    quote_style: "Eu nao sei explicar. Mas eu sei que e certo."
+
+  - persona: "A Atleta"
+    domain: "Disciplina, corpo, rotina"
+    voice: "Espartana, funcional, sem desculpas"
+    activation: "Rotina diaria, CrossFit, gestao de energia"
+    quote_style: "O corpo nao e bonus. E infraestrutura."
+
+# =============================================================================
+# TENSOES NARRATIVAS NAO-RESOLVIDAS
+# =============================================================================
+unresolved_tensions:
+
+  - tension: "Fe vs Evidencia"
+    description: "A fe e o motor, mas o mundo pede provas. Ela resolve com resultado — mas e quando o resultado nao vem?"
+    maturity: emerging
+    risk: "Crise de fe se resultado parar de vir"
+
+  - tension: "Intensidade vs Sustentabilidade"
+    description: "Opera em intensidade maxima — mas tem 17 anos. O que acontece em 10, 20, 30 anos?"
+    maturity: unexamined
+    risk: "Burnout, colapso fisico ou emocional"
+
+  - tension: "Independencia vs Conexao"
+    description: "Sucesso veio de operar solo. Mas escalar exige confiar em outros — e ela nao confia facil"
+    maturity: emerging
+    risk: "Teto de crescimento por incapacidade de delegar"
+
+  - tension: "Escassez Interna vs Abundancia Externa"
+    description: "Rica no mundo externo, pobre na percepcao interna. O medo de pobreza nao atualizou com a realidade"
+    maturity: aware_but_unresolved
+    risk: "Ansiedade cronica financeira, frugalidade que limita oportunidades"
+
+  - tension: "Ser Exemplo vs Ser Excecao"
+    description: "Usa propria historia como prova de que 'qualquer um pode'. Mas a combinacao de fatores dela e excepcional"
+    maturity: unexamined
+    risk: "Frustracao com mentorados que nao replicam resultado, survivorship bias no ensino"
+
+# =============================================================================
+# META-NARRATIVA (Como ela ve historias em geral)
+# =============================================================================
+meta_narrative:
+  belief_about_stories: "Historia e a ferramenta mais poderosa de persuasao. Mas so funciona se for real"
+  role_of_narrator: "O narrador nao conta o que aconteceu — conta o que importa. Editar e tao importante quanto viver"
+  truth_standard: "A historia pode ser editada (o que incluir, o que omitir) mas nunca inventada. Autenticidade e nao-negociavel"
+  purpose_of_narrative: "Historia serve pra mover alguem a agir. Se nao gerou acao, foi entretenimento — e entretenimento nao e o meu jogo"

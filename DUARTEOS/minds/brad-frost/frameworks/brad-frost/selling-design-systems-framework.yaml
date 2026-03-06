@@ -1,0 +1,50 @@
+# Selling Design Systems Framework — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Selling Design Systems Framework"
+  slug: "selling-design-systems-framework"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Framework estruturado para justificar investimento em design system para lideranca. Parte da dor organizacional (inconsistencia, retrabalho), quantifica o custo do caos com evidencia visual, mostra quick wins tangiveis e conecta a objetivos de negocio."
+
+steps:
+  - step: 1
+    acao: "Identificar dor organizacional (inconsistencia, retrabalho, velocidade)"
+    detalhe: "Mapear sintomas concretos: times duplicando trabalho, inconsistencias visuais entre produtos, velocidade de entrega caindo com escala, bugs de UI recorrentes."
+  - step: 2
+    acao: "Quantificar custo do caos (interface inventory como evidencia)"
+    detalhe: "Interface inventory como ferramenta retorica — 47 variacoes de button lado a lado e irrefutavel. Calcular horas gastas em retrabalho, custo de inconsistencia de marca."
+  - step: 3
+    acao: "Mostrar quick wins tangiveis"
+    detalhe: "Um quick win = valor demonstrado. Componentizar algo existente e mostrar antes/depois. Success = Success — nao teorize, demonstre."
+  - step: 4
+    acao: "Conectar a objetivos de negocio"
+    detalhe: "Linguagem de negocio: ROI, velocidade de entrega, consistencia de marca, reducao de retrabalho, time-to-market. Lideranca nao se importa com atoms e molecules — importa com dinheiro e velocidade."
+
+quando_usar: "Ao justificar investimento em design system para lideranca"
+
+exemplos_aplicacao:
+  - cenario: "CTO questiona por que dedicar 3 developers para DS em vez de features"
+    resultado: "Interface inventory mostra 47 buttons, calculo de horas em retrabalho, quick win de componentizacao mostrando 40% reducao em tempo de entrega de novas telas"
+    fonte: "DNA direto"
+  - cenario: "Lideranca viu DS como custo, nao investimento"
+    resultado: "Reframe: custo de NAO ter DS cresce exponencialmente com numero de produtos e times. Piles of money get lit on fire sem sistema."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-quotes-index.md"
+
+anti_patterns:
+  - "Argumentar com terminologia tecnica para lideranca — fale de ROI, nao de atoms"
+  - "Pedir investimento sem evidencia tangivel — mostre primeiro, peca depois"
+  - "Focar em ferramentas em vez de valor de negocio"
+
+frameworks_relacionados:
+  - name: "3-Step Sell"
+    relacao: "complementar"
+  - name: "Interface Inventory"
+    relacao: "prerequisito"
+  - name: "Design System Thinking"
+    relacao: "complementar"

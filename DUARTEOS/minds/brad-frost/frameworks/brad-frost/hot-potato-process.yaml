@@ -1,0 +1,50 @@
+# Hot Potato Process — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Hot Potato Process"
+  slug: "hot-potato-process"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Workflow colaborativo onde design e dev passam trabalho rapidamente entre si em ciclos curtos, como o jogo de batata quente. Elimina handoffs longos e waterfall. Developer descobre edge cases que designer nao previu; designer refina baseado em constraints reais do codigo. Ciclos rapidos ate convergencia."
+
+steps:
+  - step: 1
+    acao: "Designer cria concept inicial"
+    detalhe: "Designer produz versao inicial do componente ou feature — nao precisa ser perfeita, precisa ser suficiente para developer comecar. Concept, nao spec final."
+  - step: 2
+    acao: "Developer implementa e descobre edge cases"
+    detalhe: "Developer implementa concept e imediatamente encontra edge cases que design nao previu: estados de erro, responsive behavior, performance implications, acessibilidade tecnica."
+  - step: 3
+    acao: "Designer refina baseado em constraints reais"
+    detalhe: "Com feedback do developer sobre constraints reais, designer ajusta design. Decisoes informadas pela realidade do codigo, nao por hipoteticos no Figma."
+  - step: 4
+    acao: "Ciclos rapidos ate convergencia"
+    detalhe: "Repete o loop design→dev→design→dev em ciclos curtos (horas, nao semanas). Cada ciclo converge para solucao final. Development IS design — frontend e parte do processo de design."
+
+quando_usar: "Ao desenvolver componentes ou features onde colaboracao design-dev e essencial — elimina handoffs longos e waterfall"
+
+exemplos_aplicacao:
+  - cenario: "Designer entrega spec final de componente complexo, developer descobre 15 edge cases nao previstos"
+    resultado: "Com Hot Potato: designer entrega concept inicial, developer implementa e sinaliza 3 edge cases, designer ajusta, developer refina — 4 ciclos em 2 dias vs. 2 semanas de handoff tradicional"
+    fonte: "DNA direto"
+  - cenario: "Times usando Figma Dev Mode como substituto de colaboracao real"
+    resultado: "Hot Potato Process relembra: tools 'good enough' permitem disciplinas ficarem em bolhas. Foco no relacionamento humano, nao no toggle."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+
+anti_patterns:
+  - "Designer entrega spec 'final' sem interacao com developer — waterfall disfarçado"
+  - "Developer implementa sem consultar designer quando encontra edge cases"
+  - "Ciclos longos (semanas) entre passagens — perde a essencia do 'hot potato' (rapido)"
+
+frameworks_relacionados:
+  - name: "Design System Thinking"
+    relacao: "complementar"
+  - name: "Real-Time UI"
+    relacao: "complementar"
+  - name: "Pattern-Driven Development"
+    relacao: "complementar"

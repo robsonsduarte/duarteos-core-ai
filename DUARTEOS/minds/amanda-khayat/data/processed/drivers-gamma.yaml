@@ -1,0 +1,609 @@
+# Drivers Cognitivos — Amanda Khayat
+# Pipeline: MMOS Engine v3.0.0 — Fase Drivers (Agente GAMMA)
+# Gerado em: 2026-03-05
+# Total drivers: 16 (7 gold, 5 silver, 4 bronze)
+# Distribuicao: 10 impulsores, 6 medos
+# Fontes: DNA Legacy (amanda-khayat.yaml F=94%, 505 linhas),
+#          25 MIUs VTurb SE#123, VideoHighlight Summary,
+#          Catalogo de Fontes (9 primarias), Transcripts (VTurb shorts, Flowers EP01)
+# Metodo: Inferencia GAMMA — analise de TENSOES INTERNAS e PARADOXOS como sinalizadores
+#          de drivers profundos. Onde ha paradoxo, ha driver oculto. Abordagem bottom-up:
+#          partir dos comportamentos anomalos e inferir os drivers que os explicam.
+
+metadata:
+  mind_slug: "amanda-khayat"
+  total_drivers: 16
+  tiers:
+    gold: 7
+    silver: 5
+    bronze: 4
+  tipos:
+    impulsores: 10
+    medos: 6
+  agente: "GAMMA"
+  abordagem: >
+    Abordagem GAMMA: analise de paradoxos e tensoes internas como sinalizadores
+    de drivers. Onde Amanda se contradiz ou sustenta posicoes paradoxais, ha um
+    driver profundo operando. Foco em ANOMALIAS COMPORTAMENTAIS que nao se explicam
+    por drivers genericos. Filtro Kahneman: removidos "querer sucesso", "gostar de
+    dinheiro", "buscar reconhecimento" (base rate >80%). Priorizacao de drivers
+    que explicam a trajetoria anomala (R$120M aos 17 anos, sem escola, sem livro,
+    sem network inicial).
+
+# ============================================================
+# PRE-MORTEM CONSOLIDADO — GOLD TIER
+# ============================================================
+# 1. "Fe Operacional" vs "Autoconfianca": risco de confundir. Amanda distingue
+#    explicitamente — fe precede resultados (desde os 12 anos), autoconfianca
+#    e consequencia. Tratados como drivers separados.
+# 2. "Transmutacao da Dor": risco de romantizar trauma. A evidencia mostra
+#    que ela NAO romantiza — ela simplesmente se recusa a ser definida pela dor.
+#    Diferente de "resiliencia" generica.
+# 3. "Queima de Opcoes": risco de ser impulsividade adolescente. A deliberacao
+#    explicita ("foi uma decisao", "plano B vira desculpa") descarta impulsividade.
+# 4. "Compressao Temporal": risco de ser apenas juventude/energia. A evolucao
+#    para caverna+repertorio mostra reflexao estrategica, nao mera impulsividade.
+# 5. "Excelencia como Identidade": risco de ser padrao profissional comum.
+#    A intensidade (TODOS os anuncios vendem, 8/dia max, reprova sem Big Idea)
+#    excede padrao profissional normal.
+# 6. "Dualidade Familia": risco de ser driver generico. A especificidade
+#    (aposentar pais, frugalidade herdada da mae, tumor da irma) eleva acima
+#    da base rate.
+# 7. "Improvavel-Inevitavel": risco de narrativa de marketing. Aparece em
+#    contextos intimos (vlog, podcast longo), nao apenas comerciais.
+# ============================================================
+
+drivers:
+
+  # ============================================================
+  # GOLD TIER — 7 drivers nucleares
+  # Criterio GAMMA: explicam comportamentos ANOMALOS, aparecem em
+  # multiplas fontes, sustentam paradoxos produtivos
+  # ============================================================
+
+  - name: "Fe Operacional Irracional"
+    tier: "gold"
+    strength: 0.97
+    confidence: 0.95
+    tipo: "impulsor"
+    descricao: >
+      Nao e fe religiosa passiva — e fe como SISTEMA OPERACIONAL de decisoes.
+      Amanda usa a crenca em Deus como framework interpretativo que elimina
+      hesitacao: adversidades sao testes divinos, sucesso e inevitavel para
+      quem quer o suficiente, pessoas improvaveis sao escolhidas por Deus.
+      O paradoxo central: ela SABE que pode ser ilusao, mas usa a ilusao
+      conscientemente como combustivel. Isso cria um loop auto-reforçante —
+      certeza gera acao, acao gera resultado, resultado confirma certeza.
+      Diferenciador Kahneman: maioria das pessoas religiosas nao operacionaliza
+      fe como motor de decisao empresarial. Amanda sim.
+    evidencias:
+      - miu_id: "DNA-paradoxo-1"
+        resumo: "Certeza absoluta que pode ser ilusao — 'Era uma ilusao ou algo assim, mas me fez bem porque me ajudou a tomar decisoes sem medo'. Reconhece o paradoxo e abraca."
+        strength: 0.97
+      - miu_id: "DNA-filosofia-crenca-15"
+        resumo: "Adversidade como teste divino — 'As vezes eh so para ver se realmente eh para ser, se voce quer o suficiente para Deus te dar aquilo.' Fe como filtro interpretativo."
+        strength: 0.95
+      - miu_id: "DNA-paradoxo-8"
+        resumo: "Improvavel inevitavel — ninguem acreditava, mas ela sabia com certeza absoluta. A fe inabalavel transforma o improvavel em inevitavel."
+        strength: 0.96
+      - miu_id: "DNA-associacao-4"
+        resumo: "Ponte Biblia (pessoas improvaveis) <-> Empreendedorismo: Deus usa pessoas improvaveis para agir — narrativa biblica aplicada a carreira."
+        strength: 0.90
+      - miu_id: "DNA-hierarquia-valores-3"
+        resumo: "Fe/Espiritualidade em rank #3 na hierarquia de valores — acima de excelencia tecnica e frugalidade. Certeza espiritual desde os 12 anos."
+        strength: 0.88
+    pre_mortem: >
+      Se errado: fe e pos-hoc (construida DEPOIS do sucesso para justifica-lo).
+      Contra-argumento: ela afirma que a certeza existe "desde os 12 anos" e
+      precede qualquer resultado financeiro. Alem disso, o reconhecimento de que
+      pode ser "ilusao" indica honestidade intelectual sobre a propria crenca.
+      Probabilidade de erro: 5%.
+
+  - name: "Transmutacao da Escassez em Combustivel"
+    tier: "gold"
+    strength: 0.96
+    confidence: 0.95
+    tipo: "impulsor"
+    descricao: >
+      Nao e apenas "fuga da pobreza" (driver comum) — e TRANSMUTACAO ativa
+      da experiencia de escassez em energia de construcao. Amanda viveu a
+      transicao abundancia (Franca, Monaco, queijo brie, escolas excelentes)
+      para escassez extrema (Nordeste, pandemia, pai perdeu tudo). O
+      diferenciador: ela nao se vitimiza, nao conta das dificuldades, nao
+      pede ajuda. Transforma a memoria em gratidao e urgencia, nao em
+      amargura. O contraste dramatico (abundancia -> escassez -> riqueza)
+      cria um delta emocional que a maioria das pessoas nao tem — porque
+      a maioria nunca viveu a transicao nos DOIS sentidos.
+    evidencias:
+      - miu_id: "DNA-motivacao-impulsor-1"
+        resumo: "Escapar da pobreza e dar vida melhor a familia — motor primario explicito."
+        strength: 0.96
+      - miu_id: "VTurb-historia-120-134"
+        resumo: "Infancia rica na Franca ate os 8 anos → crise familiar (tumor da irma) → mudanca pro Brasil → pai perdeu tudo na pandemia → pobreza extrema no Nordeste. Transicao em AMBOS os sentidos."
+        strength: 0.97
+      - miu_id: "DNA-motivacao-impulsor-4"
+        resumo: "Nostalgia transformada em gratidao — lembrar de onde veio. Nao usa como vitimismo, usa como combustivel."
+        strength: 0.85
+      - miu_id: "DNA-principio-5"
+        resumo: "Nao se vitimizar — resolver com o que tem, sem pedir condicoes especiais. Anti-vitimismo radical."
+        strength: 0.93
+    pre_mortem: >
+      Se errado: a transmutacao e narrativa construida, nao processo real.
+      Contra-argumento: a radicalidade do anti-vitimismo (nunca contou das
+      dificuldades, nunca pediu ajuda) indica processo ativo, nao passivo.
+      Probabilidade de erro: 5%.
+
+  - name: "Queima Sistematica de Opcoes"
+    tier: "gold"
+    strength: 0.95
+    confidence: 0.93
+    tipo: "impulsor"
+    descricao: >
+      Eliminacao DELIBERADA e SISTEMATICA de alternativas como estrategia
+      de comprometimento total. Nao e impulsividade — e calculo frio.
+      Amanda largou escola, cortou amigos, abriu mao de vida social,
+      se isolou em Airbnb. O principio subjacente: plano B e desculpa
+      disfarçada. Se tem escola como opcao, vai usar como justificativa
+      para falta de tempo. A queima de opcoes cria pressao interna que
+      FORCA a acao. Diferenciador: a maioria das pessoas ACUMULA opcoes
+      como seguranca. Amanda as ELIMINA como estrategia.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-8"
+        resumo: "Queimar pontes acelera resultados — 'Se eu tiver a escola como plano B, vou confiar nela. Usarei como desculpa para falta de tempo.'"
+        strength: 0.95
+      - miu_id: "VTurb-short-1-lines-334-342"
+        resumo: "Largou escola com R$1.000 ganhos. Convenceu os pais: 'esse caminho aqui da escola nao vai me levar a lugar nenhum'. Se comprometeu a assumir responsabilidade."
+        strength: 0.94
+      - miu_id: "VTurb-historia-168"
+        resumo: "Queimou as pontas ao abandonar escola como plano B — percebeu que outras pessoas estavam tendo sucesso e decidiu arriscar."
+        strength: 0.93
+      - miu_id: "DNA-filosofia-crenca-9"
+        resumo: "Ambiente influencia mais que disciplina — aluga Airbnb, se tranca. Elimina distraçoes fisicamente, nao apenas mentalmente."
+        strength: 0.85
+    pre_mortem: >
+      Se errado: e impulsividade adolescente racionalizada pos-hoc.
+      Contra-argumento: a deliberacao explicita ("foi uma decisao"),
+      o reconhecimento de que nao recomenda para todos, e a sofisticacao
+      do argumento ("plano B vira desculpa") descartam impulsividade.
+      Probabilidade de erro: 7%.
+
+  - name: "Compressao Temporal como Tese sobre a Realidade"
+    tier: "gold"
+    strength: 0.94
+    confidence: 0.92
+    tipo: "impulsor"
+    descricao: >
+      Nao e "trabalhar duro" (base rate altissimo) — e uma TESE sobre a
+      natureza do tempo: intensidade DISTORCE o tempo. O que levaria decadas
+      pode ser comprimido em meses. Amanda nao acredita que trabalho duro leva
+      ao sucesso — acredita que INTENSIDADE COMPRIME A LINHA TEMPORAL.
+      Isso explica comportamentos especificos: CrossFit 5x/semana (body-as-platform),
+      acordar as 5h, limite de 8 ads/dia (intensidade POR UNIDADE, nao volume).
+      Paradoxo produtivo: sucesso rapido exige caminho arduo — velocidade nao
+      significa facilidade, significa compressao via foco total.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-2"
+        resumo: "Intensidade distorce o tempo — o que levaria decadas pode ser comprimido em meses com foco total. 100 milhoes aos 17."
+        strength: 0.94
+      - miu_id: "DNA-paradoxo-6"
+        resumo: "Sucesso rapido que exige caminho arduo — nao eh facil ficar rico, mas eh rapido com intensidade. Velocidade nao significa facilidade — compressao temporal via foco total."
+        strength: 0.93
+      - miu_id: "DNA-filosofia-crenca-3"
+        resumo: "Nao existe talento sem trabalho duro — disciplina de atleta aplicada ao copy. CrossFit 5x/semana, acorda as 5h."
+        strength: 0.90
+      - miu_id: "DNA-paradoxo-5"
+        resumo: "Caverna intensiva no inicio / vida aberta depois — o mesmo principio que a fez crescer limitaria ideias se mantido. Evolucao: intensidade para construir, repertorio para criar."
+        strength: 0.88
+    pre_mortem: >
+      Se errado: e energia juvenil, nao estrategia. Vai se dissipar com a idade.
+      Contra-argumento: a evolucao para caverna+repertorio mostra REFLEXAO
+      sobre o proprio modelo, nao mera impulsividade. A tese de compressao e
+      articulada com clareza, nao apenas vivida. Probabilidade de erro: 8%.
+
+  - name: "Excelencia como Identidade (nao como Padrao)"
+    tier: "gold"
+    strength: 0.92
+    confidence: 0.92
+    tipo: "impulsor"
+    descricao: >
+      Qualidade tecnica nao e meta profissional — e IDENTIDADE PESSOAL.
+      "Nao tem ED meu que nao vende" nao e estatistica — e declaracao
+      identitaria. Amanda se DEFINE pela qualidade dos seus anuncios.
+      Isso explica: limite de 8/dia (identidade nao permite bosta),
+      rejeicao de IA para escrita (identidade artesanal), frameworks
+      sistematicos (identidade metodica), e o preco de R$120K/anuncio
+      (identidade de elite). Diferenciador: maioria dos copywriters
+      trata qualidade como meta. Amanda trata como quem ela E.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-017"
+        resumo: "Nao tem ED meu que nao vende. Tem que nao escala, que nao da ROAS legal, mas que nao vende nao tem."
+        strength: 0.92
+      - miu_id: "MIU-AK-SE123-018"
+        resumo: "Maximo 8 ads/dia. Se escrever 16, crio 8 ruins E os 8 originais tambem ficam ruins. Limite de qualidade inegociavel."
+        strength: 0.90
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o PORQUE. Tem que se perguntar por que funciona, replicar a psicologia, nao a frase exata."
+        strength: 0.88
+      - miu_id: "DNA-hierarquia-valores-4"
+        resumo: "Excelencia tecnica como valor rank 4 — qualidade sobre quantidade, max 8 anuncios/dia, reprova sem Big Idea."
+        strength: 0.85
+    pre_mortem: >
+      Se errado: e padrao profissional alto, nao identidade. A distincao
+      e sutil. Contra-argumento: a formulacao "NAO TEM ED meu que nao vende"
+      (enfase no MEU) indica identidade, nao meta. Probabilidade de erro: 8%.
+
+  - name: "Dualidade Familia: Motor + Ancora"
+    tier: "gold"
+    strength: 0.92
+    confidence: 0.94
+    tipo: "impulsor"
+    descricao: >
+      Familia opera em DUAS direcoes simultaneas — como MOTOR (escapar
+      pobreza para dar vida melhor aos pais) e como ANCORA (frugalidade
+      herdada da mae, valores do pai). O primeiro salario foi para a
+      familia. Meta: aposentar os pais. Dinheiro vai para investimento
+      e familia, nao ostentacao. O diferenciador nao e "amar a familia"
+      (base rate >95%) — e a DUALIDADE funcional: familia como razao
+      de começar E como razao de nao se perder. A irma curada de tumor
+      cerebral por tratamento alternativo no Brasil e evento fundacional
+      que mudou a trajetoria de TODA a familia.
+    evidencias:
+      - miu_id: "DNA-hierarquia-valores-2"
+        resumo: "Familia em rank #2 — primeiro salario para sustentar familia. Meta: aposentar os pais."
+        strength: 0.94
+      - miu_id: "DNA-motivacao-impulsor-1"
+        resumo: "Escapar da pobreza e dar vida melhor a familia — motor declarado."
+        strength: 0.93
+      - miu_id: "DNA-paradoxo-7"
+        resumo: "Ficar rica sem ostentar — dinheiro vai para investimento e familia, nao ostentacao. Frugalidade na abundancia."
+        strength: 0.88
+      - miu_id: "VTurb-historia-124-126"
+        resumo: "Irma diagnosticada com tumor cerebral aos 10 anos. Cura inexplicavel no Brasil. Evento que mudou toda a trajetoria familiar."
+        strength: 0.90
+    pre_mortem: >
+      Se errado: familia como driver e universal (base rate muito alta).
+      Contra-argumento: a DUALIDADE (motor + ancora) e a especificidade
+      (aposentar pais, tumor da irma, frugalidade materna) elevam acima
+      da base rate. Probabilidade de erro: 6%.
+
+  - name: "Narrativa do Improvavel-Inevitavel"
+    tier: "gold"
+    strength: 0.90
+    confidence: 0.88
+    tipo: "impulsor"
+    descricao: >
+      Narrativa identitaria que resolve um paradoxo central: como alguem
+      que ERA improvavel (francesa no Nordeste, sem escola, 15 anos, sem
+      dinheiro) se torna INEVITAVEL (R$120M, maior copywriter da AL)?
+      A resolucao: fe + intensidade + ousadia transformam improvavel em
+      inevitavel. "O sucesso vem para as pessoas mais improvaveis" nao
+      e humildade — e manifesto. Amanda se ve como PROVA VIVA de que o
+      improvavel e possivel, e usa essa narrativa tanto para motivar-se
+      quanto para motivar outros. Conecta com a Biblia (Deus usa pessoas
+      improvaveis) e funciona como escudo contra sindrome do impostor.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-13"
+        resumo: "Quanto mais eu conheco pessoas bem-sucedidas, vejo que sao as pessoas mais improvaveis que conseguem ficar ricas."
+        strength: 0.90
+      - miu_id: "DNA-motivacao-impulsor-2"
+        resumo: "Provar que o improvavel e possivel — para si e para outros."
+        strength: 0.90
+      - miu_id: "DNA-paradoxo-8"
+        resumo: "Improvavel inevitavel — sucesso impossivel para todos, inevitavel para si. Ninguem acreditava, mas ela sabia com certeza absoluta."
+        strength: 0.88
+      - miu_id: "VTurb-short-1-line-349"
+        resumo: "A pessoa que quer largar a escola ja mostra que e diferenciada. Ja mostra que tem culhao, sangue no olho."
+        strength: 0.82
+    pre_mortem: >
+      Se errado: narrativa construida para marketing pessoal, nao crenca real.
+      Contra-argumento: aparece em contextos intimos (podcast longo, vlog pessoal),
+      nao apenas em conteudo comercial. A recorrencia em multiplas fontes
+      independentes indica crenca genuina. Probabilidade de erro: 12%.
+
+  # ============================================================
+  # SILVER TIER — 5 drivers de alta forca, evidencia moderada
+  # ============================================================
+
+  - name: "Ousadia Manufaturada"
+    tier: "silver"
+    strength: 0.88
+    confidence: 0.88
+    tipo: "impulsor"
+    descricao: >
+      Amanda trata ousadia como PRODUTO MANUFATURADO, nao traco inato.
+      "Foi uma decisao. A partir de hoje nao vou ter vergonha nenhuma.
+      Eu me forcei a criar uma casca grossa." O diferenciador: nao e
+      coragem natural — e engenharia deliberada de coragem. Inspirada
+      por observacao (namorado da irma que era cara de pau), decidiu
+      replicar o comportamento. Isso explica capacidade de cobrar
+      R$120K aos 17 anos, falar em podcasts sem hesitar, se proclamar
+      #1 da America Latina. E uma HABILIDADE aprendida, nao dom.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-6"
+        resumo: "Ousadia eh decisao deliberada, nao traco de personalidade. 'Foi uma decisao. Eu me forcei a criar casca grossa e vi quantas portas isso me abriu.'"
+        strength: 0.92
+      - miu_id: "VTurb-historia-152-156"
+        resumo: "Aprendeu a ser ousada observando namorado da irma. Decidiu ser mais ousada apos perceber oportunidades que surgiam quando pedia ajuda."
+        strength: 0.88
+      - miu_id: "VTurb-historia-162"
+        resumo: "Entrou em grupos de networking, se ofereceu quando surgiu oportunidade — ousadia aplicada sistematicamente como ferramenta."
+        strength: 0.85
+
+  - name: "Corpo como Plataforma de Hardware"
+    tier: "silver"
+    strength: 0.84
+    confidence: 0.82
+    tipo: "impulsor"
+    descricao: >
+      Integracao corpo-mente como principio de engenharia, nao vaidade.
+      "Corpo fraco nao sustenta mente forte — quer acertar multiplos
+      nove digitos, tem que ser forte no corpo tambem." CrossFit 5x/semana
+      mesmo sem vontade. Usa tecnicas de atleta (visualizacao) para copy.
+      Ponte conceitual: treino fisico e escrita de copy usam a mesma
+      disciplina e a mesma tecnica de visualizacao. O corpo e hardware
+      que roda o software cognitivo.
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-11"
+        resumo: "Corpo fraco nao sustenta mente forte — quer acertar multiplos nove digitos, tem que ser forte no corpo tambem."
+        strength: 0.86
+      - miu_id: "DNA-hierarquia-valores-6"
+        resumo: "Disciplina fisica como valor rank 6 — CrossFit 5x/semana, treina mesmo sem vontade."
+        strength: 0.82
+      - miu_id: "DNA-associacao-3"
+        resumo: "Ponte treino fisico (visualizacao de atletas) <-> escrita de copy (visualizar serie pronta). Mesma disciplina, mesma tecnica."
+        strength: 0.80
+
+  - name: "Liberdade como Precondição Existencial"
+    tier: "silver"
+    strength: 0.86
+    confidence: 0.90
+    tipo: "impulsor"
+    descricao: >
+      Liberdade nao e desejo — e PRECONDIÇÃO para existir. Rank #1 na
+      hierarquia de valores, acima de familia e fe. Abandono da escola,
+      recusa de emprego, viagens constantes, liberdade geografica total,
+      aposentadoria aos 25 como meta. "A vida eh so um jogo que voce
+      pode jogar da forma que voce bem entender." Diferenciador: nao
+      quer liberdade FINANCEIRA (meta comum) — quer liberdade TOTAL
+      (tempo, espaco, decisoes, regras do jogo).
+    evidencias:
+      - miu_id: "DNA-hierarquia-valores-1"
+        resumo: "Liberdade/Autonomia como valor rank #1 — abandonou escola, recusa depender de emprego, viaja constantemente."
+        strength: 0.90
+      - miu_id: "DNA-motivacao-recompensa"
+        resumo: "Aposentadoria aos 25 anos. Sensacao de 'eu venci na vida'. Liberdade geografica total."
+        strength: 0.86
+      - miu_id: "DNA-filosofia-crenca-14b"
+        resumo: "A vida eh so um jogo que voce pode jogar da forma que voce bem entender — sem regras impostas."
+        strength: 0.82
+
+  - name: "Mentalidade como Hierarquia sobre Tecnica"
+    tier: "silver"
+    strength: 0.82
+    confidence: 0.85
+    tipo: "impulsor"
+    descricao: >
+      Crenca de que MENTALIDADE explica mais resultados do que habilidade
+      tecnica. "Todo bloqueio e toda pessoa que nao tem resultado, ela
+      tem alguma coisa mental. Nao eh questao so de habilidade." Isso
+      explica por que Amanda investe tanto em disciplina, rotina, fe,
+      treino fisico — sao intervencoes MENTAIS, nao tecnicas. Tambem
+      explica por que ela valoriza mais "querer o suficiente" do que
+      "saber o suficiente".
+    evidencias:
+      - miu_id: "DNA-filosofia-crenca-16"
+        resumo: "Mentalidade blindada tem hierarquia sobre habilidade tecnica. Todo bloqueio tem alguma coisa mental."
+        strength: 0.85
+      - miu_id: "DNA-heuristica-sem-vontade"
+        resumo: "Fingir que esta animado quebra ciclo de inercia negativa. Nao estender ciclo de erros. Intervencao mental, nao tecnica."
+        strength: 0.80
+      - miu_id: "DNA-filosofia-crenca-14b"
+        resumo: "Tudo que existe foi concebido na mente de alguem — realidade como construcao mental."
+        strength: 0.78
+
+  - name: "Supremacia da Ideia sobre a Execucao"
+    tier: "silver"
+    strength: 0.85
+    confidence: 0.88
+    tipo: "impulsor"
+    descricao: >
+      O valor esta na IDEIA (Big Idea), nao na execucao tecnica. "A
+      escrita eh commodity, eh sempre a mesma estruturinha. O grande
+      diferencial eh voce conseguir colocar ideias." Paradoxo produtivo:
+      escrita e commodity MAS sem boa escrita a ideia nao chega. Isso
+      explica: investimento pesado em ideacao/briefing ANTES de escrever,
+      dia inteiro de pesquisa sem escrever, e a rejeicao de quem replica
+      frases em vez de entender psicologia.
+    evidencias:
+      - miu_id: "DNA-dilema-5"
+        resumo: "Escrita como commodity vs ideia como diferencial — 'A escrita eh commodity, o grande diferencial eh voce conseguir colocar ideias.'"
+        strength: 0.88
+      - miu_id: "DNA-paradoxo-4"
+        resumo: "Escrita eh commodity, mas eh o veiculo — investir em ideacao E em execucao."
+        strength: 0.85
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o PORQUE. Tem que se perguntar por que funciona e replicar a PSICOLOGIA, nao a frase exata."
+        strength: 0.88
+
+  # ============================================================
+  # BRONZE TIER — 4 drivers reais, menor diferenciacao
+  # ============================================================
+
+  - name: "Terror de Regressao Financeira"
+    tier: "bronze"
+    strength: 0.85
+    confidence: 0.88
+    tipo: "medo"
+    descricao: >
+      Medo visceral e ESPECIFICO de voltar a pobreza do Nordeste. Nao
+      e medo generico de "perder dinheiro" — e medo de uma REALIDADE
+      CONCRETA que ela viveu (sapato furado, garconete por R$30/dia,
+      interior sem oportunidade). Manifesta-se na frugalidade radical
+      (custo de vida muito abaixo do possivel apesar de ser milionaria)
+      e na mentalidade de escassez herdada da mae.
+    evidencias:
+      - miu_id: "DNA-motivacao-medo-1"
+        resumo: "Voltar para a realidade de escassez do interior do Nordeste."
+        strength: 0.88
+      - miu_id: "DNA-motivacao-medo-2"
+        resumo: "Gastar dinheiro excessivamente — mentalidade de escassez herdada da mae."
+        strength: 0.85
+      - miu_id: "DNA-paradoxo-7"
+        resumo: "Ficar rica sem ostentar — multimilionaria de 17 com custo de vida muito abaixo do que poderia. Dinheiro vai para investimento e familia."
+        strength: 0.82
+
+  - name: "Medo da Caverna Sem Saida"
+    tier: "bronze"
+    strength: 0.80
+    confidence: 0.82
+    tipo: "medo"
+    descricao: >
+      Medo de que a intensidade total (caverna) que a construiu possa
+      tambem a DESTRUIR criativamente. Evolucao recente e reveladora:
+      "Se voce ta o dia inteiro na caverna, so vendo anuncio, como que
+      vai ter ideias novas? Tem que ter repertorio." O medo nao e de
+      burnout generico — e de ESTAGNACAO CRIATIVA por falta de inputs
+      novos. A mesma estrategia que a fez ganhar R$100M pode ser a que
+      a impede de chegar a R$1B.
+    evidencias:
+      - miu_id: "DNA-dilema-3"
+        resumo: "Trabalho duro vs repertorio de vida — 'se voce ta o dia inteiro na caverna, como vai ter ideias novas? Tem que ter repertorio.' Medo de limitacao criativa."
+        strength: 0.82
+      - miu_id: "DNA-paradoxo-5"
+        resumo: "Caverna intensiva no inicio / vida aberta depois — o mesmo principio que a fez crescer limitaria suas ideias se mantido indefinidamente."
+        strength: 0.80
+      - miu_id: "DNA-motivacao-medo-3"
+        resumo: "Estender ciclos de erro e perder momentum."
+        strength: 0.78
+
+  - name: "Medo da Obsolescencia pela IA"
+    tier: "bronze"
+    strength: 0.78
+    confidence: 0.78
+    tipo: "medo"
+    descricao: >
+      Medo INFERIDO (nao declarado) da veemencia com que defende escrita
+      humana sobre IA. A posicao e demasiado enfatica para ser apenas
+      preferencia tecnica — ha componente identitario e DEFENSIVO. Se IA
+      escrever copy tao bem quanto humano, o diferencial de Amanda (artesanal,
+      intuitivo, 8/dia com qualidade) se dissolve. A evolucao de rejeicao
+      total (2024) para aceitacao parcial (2025, pesquisa) ja mostra erosao.
+      A linha vermelha da escrita pode ser a proxima a cair.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-019"
+        resumo: "Cada vez que usei a IA para escrever, perdi tempo. 2h tentando aperfeicoar algo que poderia ter escrito em 30min. Mais rouba produtividade do que ajuda."
+        strength: 0.80
+      - miu_id: "DNA-filosofia-crenca-4"
+        resumo: "Criatividade humana pura eh superior a IA. Posicao evoluiu em 2025: aceita para pesquisa/pensamento, NUNCA para escrita. Linha vermelha mantida."
+        strength: 0.78
+      - miu_id: "DNA-dilema-2"
+        resumo: "Toda IA que vi escrever anuncio escreveu pessimo. Evolucao de rejeicao total para uso como ferramenta de pensamento."
+        strength: 0.75
+
+  - name: "Medo do Teto de Escala"
+    tier: "bronze"
+    strength: 0.76
+    confidence: 0.78
+    tipo: "medo"
+    descricao: >
+      Medo de que metodos que funcionam em 7 digitos nao funcionem em
+      8+ digitos. Amanda distingue explicitamente: bater controle funciona
+      para 7 digitos, mas para 8 digitos so funciona estrutura invisivel
+      ou escrever do zero. Medo de chegar num teto e nao conseguir
+      ultrapassar. Esse medo impulsiona a busca constante por novos
+      frameworks, leitura de classicos (Halbert, Schwartz), e a evolucao
+      dos proprios metodos.
+    evidencias:
+      - miu_id: "DNA-dilema-6"
+        resumo: "Bater controle tem teto 7 digitos. Para 8+ digitos, so funciona Estrutura Invisivel ou escrever do zero."
+        strength: 0.80
+      - miu_id: "VTurb-short-4-line-393"
+        resumo: "Se tu quer fazer 7 digitos, beleza, bater controle funciona. Se tu quer fazer 8 digitos por ED, ai nao da certo. E eu gosto de fazer ED de 8 digitos."
+        strength: 0.78
+      - miu_id: "DNA-evolucao-4"
+        resumo: "Nunca leu classicos de copy → agora lendo ativamente Halbert para ir para outro nivel. Quer lancar tendencias, nao apenas seguir."
+        strength: 0.72
+
+# ============================================================
+# SUMARIO ANALITICO GAMMA
+# ============================================================
+
+sumario:
+  drivers_gold_count: 7
+  drivers_silver_count: 5
+  drivers_bronze_count: 4
+  impulsores_count: 10
+  medos_count: 6
+  ratio_impulsor_medo: "1.67:1"
+
+  perfil_motivacional_gamma: >
+    ANALISE GAMMA — Amanda Khayat e movida por um SISTEMA DE PARADOXOS
+    PRODUTIVOS que a maioria das pessoas nao consegue sustentar:
+    (1) Fe que reconhece como possivel ilusao MAS usa como combustivel.
+    (2) Pobreza vivida que NAO gera vitimismo MAS gera combustivel.
+    (3) Queima de opcoes que PARECE impulsividade MAS e calculo frio.
+    (4) Intensidade que PARECE hustle MAS e tese sobre compressao temporal.
+    (5) Excelencia que PARECE perfeccionismo MAS e identidade.
+    A capacidade de SUSTENTAR paradoxos sem resolve-los e o meta-driver
+    que diferencia Amanda de outros empreendedores jovens.
+
+  diferenciadores_kahneman: >
+    Drivers REMOVIDOS por base rate alto (>80% na populacao-alvo):
+    - "Querer ficar rica" — prevalencia universal em empreendedores
+    - "Gostar de reconhecimento" — prevalencia universal em criadores
+    - "Querer ajudar pessoas" — prevalencia universal em auto-relatos
+    - "Ter disciplina" — prevalencia alta em top performers
+    - "Ser resiliente" — prevalencia alta em empreendedores (todos dizem isso)
+    Drivers MANTIDOS por serem ANOMALOS na populacao:
+    - Fe operacional (nao passiva) como MOTOR de decisao empresarial
+    - Transmutacao (nao mera resiliencia) de escassez em combustivel
+    - Queima SISTEMATICA de opcoes (maioria ACUMULA opcoes)
+    - Compressao temporal como TESE (nao mero workaholic)
+    - Excelencia como IDENTIDADE (nao mera meta profissional)
+    - Ousadia como PRODUTO MANUFATURADO (nao traco inato)
+
+  cluster_analysis_gamma:
+    cluster_1_motor_espiritual_identitario:
+      nome: "Sistema de Certezas Irracionais"
+      drivers: ["Fe Operacional Irracional", "Narrativa Improvavel-Inevitavel", "Ousadia Manufaturada"]
+      interacao: >
+        Fe gera certeza → certeza elimina hesitacao → ousadia manufaturada executa →
+        resultado confirma narrativa improvavel-inevitavel → narrativa reforça fe.
+        Loop auto-reforçante que se acelera a cada ciclo.
+
+    cluster_2_maquina_de_intensidade:
+      nome: "Motor de Compressao"
+      drivers: ["Compressao Temporal", "Excelencia como Identidade", "Corpo como Plataforma", "Queima de Opcoes"]
+      interacao: >
+        Queima opcoes cria pressao → pressao exige intensidade → corpo sustenta →
+        intensidade comprime tempo → excelencia emerge como identidade.
+        Sem queima de opcoes, o motor nao liga. Sem corpo, o motor quebra.
+
+    cluster_3_ancora_afetiva:
+      nome: "Sistema de Ancoragem"
+      drivers: ["Dualidade Familia", "Transmutacao da Escassez", "Liberdade como Precondição"]
+      interacao: >
+        Familia como razao de comecar E de nao se perder. Escassez vivida como
+        combustivel (nao trauma). Liberdade como destino (aposentadoria aos 25).
+        Ancora que da direcao sem prender.
+
+    cluster_4_sistema_de_freios:
+      nome: "Guardrails de Seguranca"
+      drivers: ["Terror de Regressao", "Medo da Caverna Sem Saida", "Medo da Obsolescencia", "Medo do Teto de Escala"]
+      interacao: >
+        Medos funcionam como CONTRA-PESOS que impedem que a intensidade se
+        torne autodestruitiva. Regressao impede gastar. Caverna impede isolar
+        demais. Obsolescencia impede ignorar IA. Teto impede acomodar.
+        Sem esses freios, o motor de intensidade consumiria o proprio combustivel.
+
+  nota_gamma_vs_outros_agentes: >
+    Diferenças esperadas em relacao a ALPHA e BETA:
+    1. GAMMA prioriza PARADOXOS como sinalizadores — drivers como "Fe Operacional
+       Irracional" (que reconhece a ilusao) e "Transmutacao" (que distingue de
+       resiliencia) emergem da analise de tensoes internas.
+    2. GAMMA trata "Queima de Opcoes" como driver separado de "Compressao Temporal"
+       — sao mecanismos distintos (eliminar alternativas vs intensificar o foco).
+    3. GAMMA infere "Medo do Teto de Escala" (bronze) que pode nao aparecer em
+       outros agentes — evidencia sutil mas presente na distincao 7D vs 8D.
+    4. GAMMA usa formulacao "Ousadia Manufaturada" (enfase no processo de
+       manufatura) vs possivel "Ousadia Deliberada" (enfase na decisao pontual).

@@ -1,0 +1,215 @@
+# =============================================================================
+# AMANDA KHAYAT — Core Beliefs (MMOS v3 Fase 8)
+# Crencas nucleares, hierarquia de valores, modelo de mundo
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: core_beliefs
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# CRENCAS NUCLEARES (axiomas nao-negociaveis)
+# =============================================================================
+core_beliefs:
+
+  - id: BELIEF-001
+    belief: "Deus tem um plano e eu sou parte dele"
+    category: spiritual
+    strength: 0.98
+    falsifiable: false
+    function: "Fundacao existencial — remove ansiedade sobre 'por que eu existo' e 'o que devo fazer'"
+    behavioral_impact: "Permite acao sob incerteza radical. Justifica decisoes irracionais que geram resultados"
+    driver: "Fe Operacional Irracional (0.96)"
+
+  - id: BELIEF-002
+    belief: "Dificuldade e combustivel, nao desculpa"
+    category: identity
+    strength: 0.96
+    falsifiable: false
+    function: "Transforma qualquer adversidade em vantagem narrativa e motivacional"
+    behavioral_impact: "Nunca usa circunstancia como justificativa para parar. Espera o mesmo dos outros"
+    driver: "Transmutacao da Escassez em Combustivel (0.96)"
+
+  - id: BELIEF-003
+    belief: "Excelencia nao e negociavel — preferir nao fazer a fazer mal feito"
+    category: professional
+    strength: 0.93
+    falsifiable: partially
+    function: "Define limite inferior de qualidade — protege identidade profissional"
+    behavioral_impact: "Recusa trabalho, clientes e oportunidades que comprometam qualidade"
+    driver: "Excelencia Tecnica como Identidade (0.93)"
+
+  - id: BELIEF-004
+    belief: "Quem tem plano B nao acredita no plano A"
+    category: strategic
+    strength: 0.91
+    falsifiable: true
+    function: "Cria compromisso total — elimina dispersao de energia"
+    behavioral_impact: "Decisoes irreversiveis como padrao. Nao mantem opcoes em aberto"
+    driver: "Queima Sistematica de Opcoes (0.91)"
+
+  - id: BELIEF-005
+    belief: "Intensidade compensa tempo"
+    category: operational
+    strength: 0.92
+    falsifiable: true
+    function: "Justifica e habilita compressao temporal — fazer em semanas o que levaria meses"
+    behavioral_impact: "Opera em modo high-intensity como padrao. Impaciente com gradualismo"
+    driver: "Compressao Temporal via Intensidade (0.92)"
+
+  - id: BELIEF-006
+    belief: "Familia e a razao de tudo"
+    category: values
+    strength: 0.92
+    falsifiable: false
+    function: "Ancora motivacional suprema — quando tudo falha, familia e o motivo de continuar"
+    behavioral_impact: "Todas as grandes decisoes passam pelo filtro 'isso protege/eleva minha familia?'"
+    driver: "Protecao e Elevacao da Familia (0.92)"
+
+  - id: BELIEF-007
+    belief: "O improvavel que acontece e mais poderoso que o provavel que era esperado"
+    category: identity
+    strength: 0.91
+    falsifiable: false
+    function: "Transforma desvantagem em vantagem narrativa — o impossivel realizado inspira mais"
+    behavioral_impact: "Cultiva e narra a propria improbabilidade como capital social"
+    driver: "Identidade Improvavel-Inevitavel (0.91)"
+
+# =============================================================================
+# CRENCAS SECUNDARIAS
+# =============================================================================
+secondary_beliefs:
+
+  - id: BELIEF-008
+    belief: "IA nunca vai substituir um cerebro humano que entende de verdade"
+    category: professional
+    strength: 0.78
+    driver: "Anti-IA Diferenciacao"
+
+  - id: BELIEF-009
+    belief: "Saber PORQUE algo funciona e mais importante que saber O QUE funciona"
+    category: learning
+    strength: 0.80
+    driver: "Obsessao Entender PORQUE"
+
+  - id: BELIEF-010
+    belief: "Corpo fraco = mente fraca"
+    category: self_management
+    strength: 0.82
+    driver: "Corpo Infraestrutura Mental"
+
+  - id: BELIEF-011
+    belief: "Liberdade e o unico luxo que importa"
+    category: values
+    strength: 0.80
+    driver: "Liberdade Valor Supremo"
+
+  - id: BELIEF-012
+    belief: "Gastar e mais perigoso que nao ganhar"
+    category: financial
+    strength: 0.75
+    driver: "Frugalidade Estrategica"
+
+# =============================================================================
+# HIERARQUIA DE VALORES (Rankeada)
+# =============================================================================
+values_hierarchy:
+  - rank: 1
+    value: "Fe/Espiritualidade"
+    weight: 0.98
+    description: "Sistema operacional existencial — nao e um valor entre outros, e o solo"
+
+  - rank: 2
+    value: "Familia"
+    weight: 0.92
+    description: "Razao primaria de toda acao — proteger e elevar"
+
+  - rank: 3
+    value: "Excelencia"
+    weight: 0.93
+    description: "Padrao de qualidade como identidade — mediocre e inaceitavel"
+
+  - rank: 4
+    value: "Liberdade"
+    weight: 0.88
+    description: "Autonomia total sobre tempo, decisoes e vida — nao aceita subordinacao"
+
+  - rank: 5
+    value: "Intensidade"
+    weight: 0.85
+    description: "Viver e trabalhar em alta intensidade como modo padrao"
+
+  - rank: 6
+    value: "Autenticidade"
+    weight: 0.82
+    description: "Ser real, sem filtro, sem performance vazia"
+
+  - rank: 7
+    value: "Resultado"
+    weight: 0.80
+    description: "Resultado mensuravel como prova de competencia — 100M nao e vaidade, e evidencia"
+
+  - rank: 8
+    value: "Seguranca Financeira"
+    weight: 0.78
+    description: "Nunca mais ser pobre — nao e ambicao, e sobrevivencia"
+
+# =============================================================================
+# MODELO DE MUNDO
+# =============================================================================
+worldview:
+  ontology: "Teista operacional — Deus e real e age no mundo, nao e metafora"
+  epistemology: "Experiencialista pragmatica — verdade e o que funciona + o que Deus confirma"
+  agency: "Hiper-agenciamento — individuo e responsavel quase total pelo resultado"
+  fairness: "Meritocracia de intensidade — o mais intenso vence, nao o mais inteligente ou privilegiado"
+  time: "Compressivel — intensidade distorce cronologia. O impossivel e questao de velocidade, nao de possibilidade"
+  money: "Ferramenta de protecao, nao de prazer. Acumular > gastar. Resultado > ostentacao"
+  success: "Resultado mensuravel + alinhamento espiritual + familia protegida. Os tres juntos. Faltando um, nao e sucesso"
+  failure: "Nao existe como estado permanente — existe como combustivel temporario. So falha quem para"
+
+# =============================================================================
+# MODELO DE RECOMPENSA / MEDO
+# =============================================================================
+reward_model:
+  intrinsic_rewards:
+    - trigger: "Entregar peca de copy excepcional"
+      reward_type: identity_confirmation
+      intensity: very_high
+
+    - trigger: "Ver familia em situacao melhor"
+      reward_type: purpose_fulfillment
+      intensity: maximum
+
+    - trigger: "Provar que o improvavel aconteceu"
+      reward_type: narrative_power
+      intensity: high
+
+    - trigger: "Resultado financeiro acima do esperado"
+      reward_type: security_reinforcement
+      intensity: high
+
+  fear_model:
+    - trigger: "Sinal de regressao financeira"
+      fear_type: existential_threat
+      intensity: 0.95
+      response: "Hiper-ativacao, modo sobrevivencia"
+
+    - trigger: "Gastar 'demais' (subjetivo)"
+      fear_type: loss_anxiety
+      intensity: 0.80
+      response: "Culpa, restricao, revisao de gastos"
+
+    - trigger: "Repetir erro passado"
+      fear_type: cycle_dread
+      intensity: 0.78
+      response: "Vigilancia obsessiva, auto-monitoramento"
+
+    - trigger: "Ser superficial / sem substancia"
+      fear_type: identity_threat
+      intensity: 0.75
+      response: "Mergulho em estudo, aprofundamento"

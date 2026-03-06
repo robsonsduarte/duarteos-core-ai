@@ -1,0 +1,43 @@
+framework_identity:
+  name: "Estrutura Invisivel"
+  slug: "estrutura-invisivel"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Desconstruir anuncio vencedor para identificar a estrutura por baixo do conteudo de superficie, e reconstruir um anuncio completamente novo usando a mesma arquitetura estrutural. NAO eh copiar — eh entender a engenharia e criar algo original sobre ela. Para 8+ digitos por anuncio, so funciona Estrutura Invisivel ou escrever do zero."
+
+steps:
+  - step: 1
+    acao: "Encontrar o anuncio vencedor (o controle)"
+    detalhe: "Identificar o anuncio que esta escalando, o que tem melhor performance no nicho. Pode ser proprio ou do concorrente."
+  - step: 2
+    acao: "Tirar o conteudo de superficie"
+    detalhe: "Remover todas as palavras, numeros, nomes, detalhes especificos. Ficar so com o esqueleto."
+  - step: 3
+    acao: "Identificar a estrutura por baixo"
+    detalhe: "Mapear: qual tipo de gancho foi usado? Qual mecanismo psicologico? Qual sequencia de promessa/prova/curiosidade? Qual tipo de fechamento? POR QUE funciona?"
+  - step: 4
+    acao: "Reconstruir um anuncio novo usando a mesma estrutura com conteudo diferente"
+    detalhe: "Criar conteudo 100% original que segue a mesma arquitetura estrutural. Nao mudar uma palavra e chamar de estrutura invisivel — reconstruir de verdade."
+
+quando_usar: "Para criar anuncios a partir de controles validados sem copiar. Modelo preferido da Amanda — o que mais valida. Unico caminho (junto com escrever do zero) para anuncios de 8+ digitos."
+
+exemplos_aplicacao:
+  - cenario: "Concorrente tem anuncio que escala no nicho de emagrecimento"
+    resultado: "Desconstruir estrutura: gancho de prova social + frase de pouso com curiosidade + body com testemunho + fechamento push-pull. Reconstruir com Big Idea propria, avatar diferente, conteudo original."
+  - cenario: "Gancho vencedor precisa de variacoes"
+    resultado: "Extrair estrutura invisivel do gancho. Criar 5 novos ganchos com a mesma estrutura psicologica mas conteudo diferente."
+
+anti_patterns:
+  - "Copiar o anuncio trocando uma palavra — 'mudei de 10 kg pra 11 e falei que mudei a estrutura invisivel. Nao eh verdade.'"
+  - "Nao entender POR QUE a estrutura funciona — replicar cegamente"
+  - "Usar para bater controle acima de 7 digitos com mudancas superficiais — nao funciona"
+  - "Pular o passo de remover o conteudo de superficie — ir direto pra reconstrucao"
+
+frameworks_relacionados:
+  - name: "Entender POR QUE funciona"
+    relacao: "prerequisito — precisa entender o mecanismo antes de reconstruir"
+  - name: "Metodo 25"
+    relacao: "complementar — Estrutura Invisivel eh um dos 5 tipos de gancho"
+  - name: "Big Idea (Schwartz)"
+    relacao: "complementar — a reconstrucao precisa de Big Idea propria"

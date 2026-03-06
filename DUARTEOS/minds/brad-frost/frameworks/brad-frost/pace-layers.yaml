@@ -1,0 +1,50 @@
+# Pace Layers — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Pace Layers"
+  slug: "pace-layers"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+
+descricao: "Framework para resolver tensao entre DS team e product teams sobre velocidade de entrega. Inspirado em geologia — camadas movem em velocidades diferentes e ambas sao legitimas. DS layer prioriza qualidade, Product layer prioriza velocidade. Harmonia sem forcar mesma velocidade."
+
+steps:
+  - step: 1
+    acao: "Design System Layer — move devagar, foco em qualidade"
+    detalhe: "DS team opera em cadencia mais lenta. Componentes sao testados, documentados, versionados com rigor. Qualidade > velocidade. Breaking changes sao raras e comunicadas com antecedencia."
+  - step: 2
+    acao: "Product Layer — move rapido, orientado a deadlines"
+    detalhe: "Product teams operam em sprints rapidos. Features tem deadlines. Usam recipes e snowflakes quando DS nao tem componente pronto. Velocidade > perfeicao."
+  - step: 3
+    acao: "Cada layer opera em sua velocidade natural"
+    detalhe: "Aceitar que as velocidades sao diferentes e nao forcar sincronizacao. DS nao deve ser blocker de produto; produto nao deve pressionar DS a comprometer qualidade."
+  - step: 4
+    acao: "DS prioriza qualidade sobre velocidade; Product prioriza velocidade sobre perfeicao"
+    detalhe: "Pragmatismo: 80% reusable, 20% custom e a realidade. Ship com 80% de adocao. Recipes no produto podem ser promovidas a componentes do DS quando maduras."
+
+quando_usar: "Quando ha tensao entre DS team e product teams sobre velocidade de entrega"
+
+exemplos_aplicacao:
+  - cenario: "Product team reclama que DS demora demais para entregar componente novo"
+    resultado: "Pace Layers resolve: product team cria recipe local (rapido), DS team absorve como componente quando maduro (qualidade)"
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+  - cenario: "DS team se sente pressionado a llancar componentes antes de estarem prontos"
+    resultado: "Reframe: DS layer move devagar por design. Qualidade agora economiza retrabalho depois. Go slow to go fast."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+
+anti_patterns:
+  - "Forcar DS team a operar na velocidade de sprint de produto — compromete qualidade"
+  - "DS team bloquear produto por nao ter componente pronto — produto precisa de escape valve (recipes/snowflakes)"
+  - "Ignorar feedback de produto sobre necessidades reais — DS sem consumidores morre"
+
+frameworks_relacionados:
+  - name: "Layer-Cake Approach"
+    relacao: "complementar"
+  - name: "10-Step Governance Process"
+    relacao: "complementar"
+  - name: "Design System Thinking"
+    relacao: "complementar"

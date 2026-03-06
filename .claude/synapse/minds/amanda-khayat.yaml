@@ -1,8 +1,12 @@
 # DNA Mental: Amanda Khayat
-# Synapse Mind Clone — Memoria Incremental
+# Synapse Mind Clone — MMOS v3 Pipeline
 # Gerado em: 2026-03-01
-# Ultima atualizacao: 2026-03-03
-# Fontes processadas: 4
+# Ultima atualizacao: 2026-03-06
+# Pipeline: MMOS Engine v3.0.0 (Brownfield upgrade)
+# Fontes processadas: 9 (3 podcasts + 2 mentorias + 1 artigo + 3 legacy docs)
+# MIUs extraidas: 59
+# Drivers: 16 (7 gold, 5 silver, 4 bronze)
+# Concordancia 3-agentes: 0.89
 # Confianca: alta
 
 identity:
@@ -496,10 +500,39 @@ ingestion_log:
       - hierarquia_valores
       - motivacao_profunda
       - modelo_social
+  - date: "2026-03-06"
+    source_type: "mmos-v3-pipeline"
+    title: "MMOS v3 Brownfield — 3 transcripts completos (VTurb SE123, Pandacast 186, Flowers EP01)"
+    source_path: "DUARTEOS/minds/amanda-khayat/data/raw/podcasts/"
+    insights_extraidos: 59
+    mius_extraidas: 59
+    drivers_inferidos: 16
+    concordancia_3_agentes: 0.89
+    camadas_atualizadas:
+      - filosofia
+      - frameworks
+      - heuristicas
+      - metodologias
+      - dilemas
+      - paradoxos_produtivos
+      - associacoes_conceituais
+      - comunicacao_avancada
+      - hierarquia_valores
+      - motivacao_profunda
+      - modelo_social
 
 stats:
-  total_fontes: 4
-  ultima_atualizacao: "2026-03-03"
-  versao_dna: 2
+  total_fontes: 9
+  total_mius: 59
+  total_drivers: 16
+  driver_tiers:
+    gold: 7
+    silver: 5
+    bronze: 4
+  concordancia_3_agentes: 0.89
+  ultima_atualizacao: "2026-03-06"
+  versao_dna: 3
+  pipeline_version: "MMOS v3.0.0"
   confianca_geral: "alta"
-  fidelidade: 94.0
+  fidelidade_estimada: 83.8
+  fidelidade: 93.20

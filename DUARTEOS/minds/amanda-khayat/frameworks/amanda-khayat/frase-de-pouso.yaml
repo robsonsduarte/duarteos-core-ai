@@ -1,0 +1,42 @@
+framework_identity:
+  name: "Frase de Pouso (Landing Phrase)"
+  slug: "frase-de-pouso"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "A frase que vem imediatamente apos o hook. Deve ser tao forte quanto o proprio gancho. Funcao: abrir um ciclo de curiosidade ou controversia que ancora o espectador no anuncio. Ignorada por 99% dos copywriters — eh um diferencial competitivo massivo. Quanto mais a pessoa anda no anuncio, mais dificil sair (efeito de investimento). Mas no inicio, so viu o gancho — sair eh facil. A Frase de Pouso impede isso."
+
+steps:
+  - step: 1
+    acao: "Posicionar imediatamente apos o hook"
+    detalhe: "A Frase de Pouso eh a PRIMEIRA coisa depois do gancho. Nao pode ter nada entre o hook e a Frase de Pouso."
+  - step: 2
+    acao: "Criar frase tao forte quanto o gancho"
+    detalhe: "Se o gancho eh 10/10, a Frase de Pouso tem que ser 10/10 tambem. Se for 5/10, a pessoa sai."
+  - step: 3
+    acao: "Abrir um loop de curiosidade ou controversia"
+    detalhe: "A Frase de Pouso abre um ciclo que so fecha la na frente. O espectador fica porque quer a resolucao."
+  - step: 4
+    acao: "Ancorar o espectador no anuncio"
+    detalhe: "Depois do hook + Frase de Pouso, a pessoa ja investiu atencao suficiente pra continuar. O corpo do anuncio faz o resto."
+
+quando_usar: "Em todo anuncio em video — a ponte entre o hook e o corpo do anuncio. Critica nos primeiros 3-5 segundos."
+
+exemplos_aplicacao:
+  - cenario: "Anuncio de rejuvenescimento com hook forte"
+    resultado: "'Isso aqui fez eu rejuvenecer 10 anos. Eh mais forte que botox, cremes franceses e cirurgia juntos.' — ancora o espectador com promessa absurda que gera curiosidade."
+  - cenario: "Hook visual com pessoa mostrando antes/depois"
+    resultado: "Frase de Pouso verbal que amplia o que o visual mostrou e abre loop de 'como?'"
+
+anti_patterns:
+  - "Pular direto do hook pro corpo do anuncio sem Frase de Pouso"
+  - "Frase de Pouso fraca ou generica — 'vou te contar minha historia' nao ancora ninguem"
+  - "Frase de Pouso que fecha o loop em vez de abrir — nao pode resolver a curiosidade"
+
+frameworks_relacionados:
+  - name: "7 Alavancas para Bater Controle"
+    relacao: "componente — eh a alavanca 3"
+  - name: "Gatilho de Dopamina"
+    relacao: "complementar — Frase de Pouso no inicio, Gatilho de Dopamina no corpo"
+  - name: "Promessa/Prova/Curiosidade"
+    relacao: "complementar — Frase de Pouso geralmente eh promessa + curiosidade"

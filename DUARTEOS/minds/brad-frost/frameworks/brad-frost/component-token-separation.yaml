@@ -1,0 +1,47 @@
+# Component-Token Separation (Door Analogy) — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Component-Token Separation (Door Analogy)"
+  slug: "component-token-separation"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Principio de separacao entre componentes (estrutura/funcionalidade) e design tokens (estetica/customizacao). Analogia da porta: porta abre e fecha independente da cor que voce pinta ou da macaneta que escolhe. Essencial para escalar multi-brand/multi-product."
+
+steps:
+  - step: 1
+    acao: "Components = estrutura e funcionalidade (porta que abre e fecha)"
+    detalhe: "Componentes definem COMO algo funciona: comportamento, interacao, acessibilidade, API. Uma porta abre e fecha independente de ser vermelha ou azul. Componentes sao invariantes entre marcas."
+  - step: 2
+    acao: "Design tokens = estetica e customizacao (cor da pintura e macaneta)"
+    detalhe: "Tokens definem COMO algo parece: cores, tipografia, espacamento, sombras, border-radius. Sao os subatomic particles — menores que atoms. Variam entre marcas/temas."
+  - step: 3
+    acao: "Separar claramente para escalar multi-brand/multi-product"
+    detalhe: "Com separacao clara, mesmo componente Button funciona em marca A (azul, rounded) e marca B (vermelho, sharp) — so trocando tokens. Componentes reutilizaveis + tokens themaveis."
+
+quando_usar: "Ao decidir arquitetura de DS multi-marca — componentes reutilizaveis + tokens themaveis"
+
+exemplos_aplicacao:
+  - cenario: "Empresa com 3 marcas quer compartilhar componentes mas manter identidade visual distinta"
+    resultado: "Mesmos componentes (Button, Card, Modal), tokens diferentes por marca (cores, fontes, espacamento). 1 codebase de componentes, 3 theme files."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "Redesign de marca sem reescrever componentes"
+    resultado: "Atualiza apenas tokens (cores, tipografia). Componentes permanecem intactos. Redesign visual sem risco tecnico."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Hardcodar valores visuais dentro de componentes — impossibilita theming"
+  - "Misturar logica de estrutura com estetica no mesmo nivel de abstracao"
+  - "Criar componentes diferentes por marca quando apenas tokens deveriam variar"
+
+frameworks_relacionados:
+  - name: "Three-Tiered Token System"
+    relacao: "complementar"
+  - name: "Multi-All-The-Things Architecture"
+    relacao: "complementar"
+  - name: "Sibling vs Parent-Child Systems"
+    relacao: "complementar"

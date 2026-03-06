@@ -1,0 +1,50 @@
+# Pattern-Driven Development — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Pattern-Driven Development"
+  slug: "pattern-driven-development"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Metodologia de desenvolvimento orientada por padroes emergentes. Padroes nao sao impostos top-down — emergem do uso real e sao abstraidos em componentes reutilizaveis com guidelines claros de uso."
+
+steps:
+  - step: 1
+    acao: "Identificar padroes repetidos na interface"
+    detalhe: "Observar o produto real em busca de elementos que se repetem. Interface Inventory e a ferramenta ideal para esta etapa — colocar variacoes lado a lado expoe duplicatas."
+  - step: 2
+    acao: "Abstrair em componentes reutilizaveis"
+    detalhe: "Transformar padroes identificados em componentes formais do DS. Cada componente deve ter API clara, props bem definidas e Single Responsibility."
+  - step: 3
+    acao: "Documentar guidelines de uso"
+    detalhe: "Componentes sem documentacao sao inuteis. Documentar quando usar, quando NAO usar, variantes e exemplos de composicao."
+  - step: 4
+    acao: "Iterar baseado em uso real"
+    detalhe: "Feedback loop continuo — recipes frequentes podem ser promovidas a componentes. Padroes que nao se confirmam sao deprecados."
+
+quando_usar: "Ao desenvolver interfaces — padroes emergem do uso, nao sao impostos de cima"
+
+exemplos_aplicacao:
+  - cenario: "Time percebe que 3 produtos diferentes criaram cards com layouts similares mas implementacoes distintas"
+    resultado: "Padroes identificados, abstraidos em componente Card unificado com variantes, documentado e adotado por todos os times"
+    fonte: "DNA direto"
+  - cenario: "Novo componente sendo criado sem verificar se ja existe similar"
+    resultado: "Heuristica 'Can this be reused?' aplicada — componente existente encontrado e reutilizado em vez de duplicado"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Impor padroes top-down sem observar uso real — padroes devem emergir"
+  - "Criar componentes especulativos para cenarios hipoteticos que nunca se materializam"
+  - "Ignorar feedback dos times consumidores sobre adequacao dos padroes"
+
+frameworks_relacionados:
+  - name: "Interface Inventory"
+    relacao: "prerequisito"
+  - name: "Atomic Design Methodology"
+    relacao: "complementar"
+  - name: "Layer-Cake Approach"
+    relacao: "complementar"

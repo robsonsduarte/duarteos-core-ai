@@ -1,0 +1,50 @@
+# Design System Thinking — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Design System Thinking"
+  slug: "design-system-thinking"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Abordagem para tratar design systems como organismos vivos e single source of truth, nao como style guides estaticas. Envolve versionamento, documentacao como cidada de primeira classe e colaboracao cross-functional continua."
+
+steps:
+  - step: 1
+    acao: "Estabelecer o design system como single source of truth"
+    detalhe: "O DS deve ser a referencia unica e autoritativa para todos os componentes de UI. Elimina ambiguidade entre design files e codigo — codigo como fonte primaria quando possivel."
+  - step: 2
+    acao: "Versionar componentes com documentacao como cidada de primeira classe"
+    detalhe: "Componentes nao documentados sao inuteis. Pattern libraries como single source of truth com documentacao viva, nao PDF estatico. Versionamento semantico para breaking changes."
+  - step: 3
+    acao: "Promover colaboracao cross-functional entre design e dev"
+    detalhe: "Design systems sao sobre pessoas, nao sobre pixels. O relacionamento humano entre designers e developers e o trabalho real. Hot Potato Process para ciclos rapidos de feedback."
+  - step: 4
+    acao: "Tratar como organismo vivo, nao como style guide estatica"
+    detalhe: "Done is Never Done — DS e produto vivo que requer manutencao continua. Sem governance e iteracao, entropia vence. Ship com 80% de adocao, refatore depois."
+
+quando_usar: "Ao criar, escalar ou governar um design system em organizacoes"
+
+exemplos_aplicacao:
+  - cenario: "Organizacao trata DS como projeto com data de entrega fixa"
+    resultado: "Reframe para produto vivo — DS nunca esta 'pronto', precisa de time dedicado e governance continua"
+    fonte: "DNA direto"
+  - cenario: "Design files no Figma divergem do codigo implementado"
+    resultado: "Code-first approach elimina drift — documentacao gerada a partir do codigo como fonte primaria"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Tratar DS como projeto com deadline final — DS e produto continuo"
+  - "Separar completamente designers e developers no processo de construcao do DS"
+  - "Criar DS sem produto real para powerar — nunca comece noodling buttons no vacuo"
+
+frameworks_relacionados:
+  - name: "10-Step Governance Process"
+    relacao: "complementar"
+  - name: "Code-First Generation"
+    relacao: "complementar"
+  - name: "Workshop/Storefront Separation"
+    relacao: "complementar"

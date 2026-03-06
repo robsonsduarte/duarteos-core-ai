@@ -1,0 +1,75 @@
+# Arquitetar Design Tokens — Brad Frost
+# Framework: Three-Tiered Token System + Subatomic Design Tokens
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Three-Tiered Token System"
+    - "Component-Token Separation (Door Analogy)"
+    - "Subatomic Design Tokens Methodology"
+
+descricao: "Arquitetar sistema de design tokens em 3 tiers — as particulas subatomicas do design system. Tokens sao a fundacao invisivel que permite multi-brand, multi-product e theming sem explodir em 5000+ variantes."
+
+instrucoes:
+  - "Definir Global/Foundation tokens: cores, tipografia, spacing, border-radius, shadows, breakpoints"
+  - "Criar Component tokens com naming semantico: button-primary-bg (nao blue-500)"
+  - "Reservar Override tokens para casos muito especificos — raros, justificados"
+  - "Aplicar Door Analogy: componente e a porta (estrutura/funcionalidade), token e a cor/macaneta (estetica)"
+  - "Naming convention disciplinada — naming e o problema mais dificil. Investir 90+ minutos se necessario"
+  - "Evitar explosao de tokens component-specific (5000+ e red flag)"
+  - "Implementar em codigo E Figma simultaneamente — drift e inaceitavel"
+  - "Documentar hierarquia de fallback: component token → global token → valor hardcoded (never)"
+  - "Preparar para multi-brand: mesma estrutura de tokens, valores diferentes por marca"
+  - "Publicar e adotar com governance — token sem governance e variavel CSS com nome bonito"
+
+exemplo_input: "Design system para empresa com 3 marcas (consumer, enterprise, partner). Precisam compartilhar componentes mas com identidade visual distinta. Atualmente tokens inexistentes — cores hardcoded em CSS."
+
+exemplo_output: |
+  ## Token Architecture — [Empresa]
+
+  ### A Analogia da Porta
+  Componentes sao portas — abrem e fecham independente da cor.
+  Tokens sao a pintura e a macaneta — mudam a estetica sem mexer na estrutura.
+
+  ### Tier 1: Global/Foundation
+  ```
+  --color-blue-500: #2563EB
+  --color-neutral-900: #111827
+  --font-family-sans: 'Inter', system-ui
+  --spacing-4: 1rem
+  --radius-sm: 4px
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1)
+  ```
+
+  ### Tier 2: Component (Semantico)
+  ```
+  --button-primary-bg: var(--color-blue-500)
+  --button-primary-text: var(--color-white)
+  --input-border-default: var(--color-neutral-300)
+  --card-shadow: var(--shadow-md)
+  ```
+
+  ### Tier 3: Override (Raro)
+  ```
+  --brand-consumer-button-primary-bg: var(--color-blue-500)
+  --brand-enterprise-button-primary-bg: var(--color-indigo-600)
+  --brand-partner-button-primary-bg: var(--color-teal-500)
+  ```
+
+  ### Multi-Brand Resolution
+  Consumer:  --button-primary-bg → --brand-consumer-button-primary-bg → blue
+  Enterprise: --button-primary-bg → --brand-enterprise-button-primary-bg → indigo
+  Partner:   --button-primary-bg → --brand-partner-button-primary-bg → teal
+
+  Mesma porta, cores diferentes. Subatomic particles em acao.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — Door Analogy, subatomic particles, naming como desafio?"
+  - "Three-Tiered System correto (Global/Component/Override)?"
+  - "Naming semantico (button-primary-bg, nao blue-500)?"
+  - "Explosao de tokens evitada?"
+  - "Multi-brand preparado?"
+  - "Code e Figma simultaneos?"

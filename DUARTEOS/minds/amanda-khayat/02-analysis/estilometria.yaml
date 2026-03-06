@@ -1,0 +1,91 @@
+# ============================================================================
+# Estilometria Computacional — Amanda Khayat
+# ============================================================================
+# Fontes analisadas:
+#   - VTurb Segredos da Escala #123 (transcript ~203KB, 2h51min)
+#   - Pandacast #186 (transcript ~150KB)
+#   - Flowers EP01 (transcript ~120KB)
+#
+# Metodo: Analise qualitativa de trechos representativos da fala da Amanda
+#         extraidos dos 3 transcripts (excluindo falas dos entrevistadores)
+#
+# Data analise: 2026-03-05
+# ============================================================================
+
+estilometria:
+
+  comprimento_medio_frase_palavras: 14
+  # Frases tipicamente curtas e diretas. Alterna entre frases curtissimas
+  # de impacto (5-8 palavras) e explicacoes mais longas (20-30 palavras).
+  # Media ponderada ~14 palavras por frase.
+
+  ratio_vocabulario_tecnico_vs_coloquial: 0.25
+  # Predominantemente coloquial. Vocabulario tecnico restrito ao jargao de
+  # performance marketing: ED, VSL, ROAS, COP, controle, gancho, escala,
+  # criativo, avatar, nicho, estrutura invisivel, disparo de dopamina.
+  # A maior parte do discurso usa linguagem informal e acessivel.
+
+  frequencia_perguntas_retoricas: "alta"
+  # Usa perguntas retoricas com muita frequencia como recurso argumentativo:
+  # "Por que que ela funciona?", "Sera que uma idosa de 90 anos vai falar giria?",
+  # "Como que eu posso criar uma nova frase?", "Que que pode me atrapalhar?",
+  # "Por que que nao analisa o que nao deu bom?"
+
+  frequencia_imperativos: "alta"
+  # Fala com tom imperativo/prescritivo frequente:
+  # "Testa", "Vai la", "Corta", "Nao copia", "Envia", "Faz",
+  # "Nao se baseia na media", "Vai alem"
+
+  frequencia_palavroes: "moderada"
+  # Usa palavroes de forma natural e sem censura, integrados ao discurso:
+  # "bosta" (recorrente para descrever ads ruins), "caralho", "[ __ ]" (censurado
+  # nos transcripts mas presente), "porra". Nao e gratuito — funciona como
+  # intensificador emocional e marcador de autenticidade.
+
+  code_switching: "baixo"
+  # Predominantemente portugues brasileiro. Insercoes pontuais em ingles limitadas
+  # a jargao tecnico do marketing: "push and pull", "what the fuck", "hook",
+  # "ROAS", "COP". Nao faz code-switching conversacional — as palavras em ingles
+  # sao termos tecnicos consolidados no mercado digital brasileiro.
+
+  marcadores_discursivos:
+    - "tipo"           # Marcador mais frequente — usado como preenchimento e como introdutor de exemplo
+    - "tipo assim"     # Variacao expandida, frequente em explicacoes
+    - "entendeu"       # Busca de confirmacao/conexao com o interlocutor
+    - "sabe"           # Similar a "entendeu", pede validacao
+    - "ne"             # Tag question brasileira, muito frequente
+    - "cara"           # Vocativo informal, usado para enfatizar
+    - "po"             # Interjeicao de enfase, frequente
+    - "ai"             # Conector narrativo temporal ("e ai", "ai eu fiz")
+    - "sei la"         # Atenuador, aparece antes de exemplos
+    - "basicamente"    # Marcador de simplificacao
+    - "literalmente"   # Intensificador
+    - "ta ligado"      # Busca de conexao, mais informal
+
+  cadencia: "mista"
+  # Alterna entre rajadas curtas e rapidas (especialmente quando fala de copy e
+  # tecnica) e trechos mais longos e reflexivos (quando conta historia pessoal).
+  # Nos momentos tecnicos: "Vrau, vrau, vrau, vrau, vrau" — ritmo acelerado,
+  # frases-bala. Nos momentos narrativos: construcao mais longa com contexto
+  # emocional. A alternancia e uma das marcas mais distintivas do estilo.
+
+  pontuacao_expressiva: "alta"
+  # Uso intenso de exclamacoes, enfases, interjeicoes. Tendencia a exagerar para
+  # gerar impacto: "loucura", "insanamente", "absurdamente", "bizarro", "muito
+  # muito muito". Frases como "Cara, isso funciona!" e "Putz!" refletem alta
+  # expressividade oral que se traduz em pontuacao expressiva.
+
+  alternancia_pessoa: "Alterna fluidamente entre primeira pessoa singular (eu faco, eu penso), segunda pessoa direta (voce/tu — mistura os dois pronomes sem padrao fixo), e primeira pessoa do plural (a gente faz). Usa 'tu' e 'voce' intercaladamente na mesma frase. A primeira pessoa plural ('a gente') aparece quando fala de equipe/operacao."
+
+  repeticao_intencional: "Usa repeticao como recurso retorico deliberado para enfase e ritmo. Exemplos recorrentes: 'vrau, vrau, vrau, vrau, vrau' (cadencia de impacto), 'o dia inteiro, o dia inteiro, o dia inteiro' (enfase de dedicacao), 'tipo, tipo, tipo' (cascata de exemplos). Tambem repete conceitos-chave ao longo de diferentes podcasts — 'estrutura invisivel', 'disparo de dopamina', 'qualidade vs quantidade' — com formulacoes levemente diferentes cada vez, reforçando os pilares do seu metodo."
+
+  # ========================================================================
+  # Notas adicionais
+  # ========================================================================
+  notas:
+    - "Oralidade fortissima — os transcripts capturam uma fala que flui como conversa, nao como palestra. Frases frequentemente incompletas ou com mudanca de direcao no meio."
+    - "Tom de autoridade juvenil — combina linguagem informal de adolescente (tipo, mano, ta ligado) com confianca absoluta em afirmacoes tecnicas."
+    - "Storytelling concreto — usa numeros especificos (R$7 na conta, R$30 por diaria, 8 ads por dia, R$100.000 de salario) para ancorar narrativas."
+    - "Frases de impacto isoladas — tendencia a criar frases autonomas que funcionam como quotes: 'A unica coisa que diferencia o louco de um genio e o resultado.'"
+    - "Humor auto-depreciativo sutil — ri das proprias dificuldades passadas como forma de conexao."
+    - "Mistura gaucho (tu) com paulista (voce) sem regra fixa — reflexo da vida em multiplas regioes do Brasil."

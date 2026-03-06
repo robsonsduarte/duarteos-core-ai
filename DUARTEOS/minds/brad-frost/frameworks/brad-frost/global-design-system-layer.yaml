@@ -1,0 +1,50 @@
+# Global Design System Layer — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Global Design System Layer"
+  slug: "global-design-system-layer"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Visao de futuro para uma camada canonical entre HTML puro e design systems organizacionais. Componentes commodity (accordion, datepicker, tabs, modal) nao deveriam ser reimplementados por cada organizacao. Global DS seria theme-less — cada org traz sua propria linguagem visual. Como porta vanilla sem pintura."
+
+steps:
+  - step: 1
+    acao: "HTML (primitivas: button, input)"
+    detalhe: "Base absoluta — elementos nativos do browser. Limitados em funcionalidade e estilo. Tabela periodica de elementos HTML (Josh Duck) como fundacao."
+  - step: 2
+    acao: "Global Design System (componentes commodity: accordion, datepicker, tabs, modal)"
+    detalhe: "Camada de componentes que TODAS as organizacoes precisam e reimplementam individualmente. Seria theme-less (porta vanilla) — comportamento e acessibilidade canonicos, sem estilo visual."
+  - step: 3
+    acao: "Organization-specific DS (branded, customizado)"
+    detalhe: "DS da organizacao que tematiza componentes do Global DS com sua identidade visual via tokens. Foca no que e unico da marca, nao no commodity."
+  - step: 4
+    acao: "Product layer (recipes especificas de produto)"
+    detalhe: "Camada mais externa — combinacoes especificas de componentes para cada produto. Recipes e snowflakes vivem aqui."
+
+quando_usar: "Visao de futuro — camada canonical entre HTML e DS organizacionais para eliminar duplicacao global"
+
+exemplos_aplicacao:
+  - cenario: "1000 organizacoes implementam accordion component individualmente com comportamento e acessibilidade diferentes"
+    resultado: "Global DS fornece accordion canonical (acessivel, testado, theme-less). Cada org tematiza com seus tokens. Zero duplicacao de logica."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "Esforcos para reduzir duplicacao interna resultam em duplicacao ENTRE organizacoes"
+    resultado: "Global DS como camada que resolve paradoxo da duplicacao global — componentes commodity compartilhados, identidade visual mantida"
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Ignorar desafio de governance — quem decide o que entra no Global DS? W3C? WHATWG? Consorcio cross-org?"
+  - "Tentar incluir componentes nao-commodity no Global DS — apenas accordion, datepicker, tabs, modal e similares"
+  - "Forcar estilo visual no Global DS — deve ser theme-less por design"
+
+frameworks_relacionados:
+  - name: "Component-Token Separation (Door Analogy)"
+    relacao: "complementar"
+  - name: "Atomic Design Methodology"
+    relacao: "complementar"
+  - name: "Multi-All-The-Things Architecture"
+    relacao: "complementar"

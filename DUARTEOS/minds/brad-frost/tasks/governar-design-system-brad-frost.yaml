@@ -1,0 +1,80 @@
+# Governar Design System — Brad Frost
+# Framework: 10-Step Governance Process
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "10-Step Governance Process"
+    - "Layer-Cake Approach"
+    - "Pace Layers"
+
+descricao: "Implementar governance completa para um design system — prevenir entropia, definir processos de submissao, review, release e iteracao continua. Without governance, entropy wins. Every. Single. Time."
+
+instrucoes:
+  - "Estabelecer comite de governance com representantes cross-functional (design, dev, product, QA, content)"
+  - "Definir processo de submissao: como propor novo componente ou mudanca (template de proposta)"
+  - "Implementar review process: quem avalia, criterios de aprovacao, SLA de resposta"
+  - "Estruturar ciclo de prototipo e teste antes de incorporar ao DS"
+  - "Definir criterios de aprovacao claros — o que entra e o que nao entra no DS"
+  - "Documentar processo de implementacao no DS (code review, testes, acessibilidade)"
+  - "Criar template de documentacao obrigatoria para cada componente"
+  - "Planejar release e comunicacao — changelog, migration guides, breaking changes"
+  - "Definir metricas de adocao e monitoramento (coverage, usage, satisfaction)"
+  - "Estabelecer cadencia de iteracao continua — Done is Never Done"
+  - "Aplicar Layer-Cake: Components (DS team), Recipes (product teams), Snowflakes (produto)"
+  - "Respeitar Pace Layers: DS move devagar (qualidade), Product move rapido (deadlines)"
+
+exemplo_input: "Design system com 60 componentes, 3 product teams consumindo, sem processo formal de governance. Componentes duplicados, versoes desatualizadas, frustacao crescente."
+
+exemplo_output: |
+  ## Governance Framework — [Design System]
+
+  ### Principio Central
+  Without governance, entropy wins. Este framework previne entropia com processo claro.
+
+  ### 10 Steps Implementados
+
+  **1. Identificacao de Necessidade**
+  Qualquer membro de product team pode identificar gap ou melhoria.
+
+  **2. Submissao de Proposta**
+  Template padrao: problema, evidencia de uso (3+ ocorrencias), proposta de solucao, impacto estimado.
+
+  **3. Review por DS Team**
+  SLA: 5 dias uteis. Criterios: reusabilidade (2+ produtos), consistencia, acessibilidade.
+
+  **4. Prototipo e Teste**
+  Implementacao em Workshop (branch separada). Testes unitarios + visual regression.
+
+  **5-6. Aprovacao e Implementacao**
+  Aprovacao por 2/3 do comite. Code review obrigatorio.
+
+  **7. Documentacao**
+  Props, estados, guidelines de uso, do's and don'ts, exemplos. Sem doc = nao existe.
+
+  **8. Release e Comunicacao**
+  Changelog, migration guide se breaking change, anuncio em canal DS.
+
+  **9. Adocao e Monitoramento**
+  Metricas: coverage (% de produtos usando), adoption rate, satisfaction NPS.
+
+  **10. Iteracao Continua**
+  Review trimestral de todos os componentes. Feedback loop de product teams.
+
+  ### Layer-Cake
+  - **Components:** DS team mantem e governa (qualidade maxima)
+  - **Recipes:** Product teams combinam components (flexibilidade)
+  - **Snowflakes:** Vivem no produto, feedback loop para promover a component quando 3+ usos
+
+  O jardim precisa de manutencao constante — ou a entropia vence.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — analogia do jardim, tom pragmatico?"
+  - "10 Steps na ordem correta?"
+  - "Layer-Cake aplicado (Components/Recipes/Snowflakes)?"
+  - "Pace Layers respeitado (DS slow, Product fast)?"
+  - "Done is Never Done refletido na iteracao continua?"
+  - "Paradoxo da Governance tratado — rigidez + flexibilidade?"

@@ -1,0 +1,55 @@
+# Atomic Design Methodology — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Atomic Design Methodology"
+  slug: "atomic-design-methodology"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Metodologia de composicao hierarquica de interfaces inspirada na quimica molecular. Organiza UI em 5 niveis distintos — atoms, molecules, organisms, templates e pages — criando um modelo mental claro para construir sistemas de interface escalaveis e consistentes."
+
+steps:
+  - step: 1
+    acao: "Atoms — elementos basicos como buttons e inputs"
+    detalhe: "Elementos indivisiveis da interface (buttons, inputs, labels, icons). Correspondem aos elementos HTML basicos. Sao os blocos construtores fundamentais — como a tabela periodica de elementos HTML (Josh Duck)."
+  - step: 2
+    acao: "Molecules — grupos de atoms como um search form"
+    detalhe: "Grupos funcionais de atoms que formam unidades com proposito. Um search form (input + button + label) e uma molecule. Cada molecule deve seguir Single Responsibility Principle — fazer UMA coisa bem."
+  - step: 3
+    acao: "Organisms — grupos de molecules como um header completo"
+    detalhe: "Secoes completas de interface compostas por molecules e atoms. Um header com logo, navigation e search form e um organism. Representam secoes distintas e reconheciveis da UI."
+  - step: 4
+    acao: "Templates — layouts de pagina"
+    detalhe: "Layouts de pagina com placeholders para conteudo. Aqui a metafora quimica e abandonada intencionalmente — linguagem precisa ser acessivel para clientes e stakeholders nao-tecnicos."
+  - step: 5
+    acao: "Pages — templates com conteudo real"
+    detalhe: "Templates preenchidos com conteudo real para validacao. Pages revelam edge cases e problemas que templates com lorem ipsum escondem. E o nivel de teste final da hierarquia."
+
+quando_usar: "Toda decisao de design e desenvolvimento de interface — guia a hierarquia de composicao de componentes"
+
+exemplos_aplicacao:
+  - cenario: "Time construindo um e-commerce precisa organizar centenas de componentes de UI"
+    resultado: "Hierarquia clara de atoms (price tag, add-to-cart button), molecules (product card header), organisms (product grid), templates (PDP layout), pages (PDP com dados reais)"
+    fonte: "DNA direto"
+  - cenario: "Designer e developer discordam sobre granularidade de componentes"
+    resultado: "Atomic Design fornece vocabulario compartilhado — ambos concordam que search form e molecule, nao organism"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Tratar os 5 niveis como sequencia linear obrigatoria — sao coexistentes, nao sequenciais (dance of switching contexts)"
+  - "Forcar a metafora quimica em todas as conversas — terminologia e opcional, modelo mental e essencial"
+  - "Ignorar que design tokens (subatomic particles) sao parte da hierarquia — Atomic Design original nao incluiu tokens"
+
+frameworks_relacionados:
+  - name: "Single Responsibility Principle para Molecules"
+    relacao: "complementar"
+  - name: "Design System Thinking"
+    relacao: "complementar"
+  - name: "Three-Tiered Token System"
+    relacao: "complementar"
+  - name: "Interface Inventory"
+    relacao: "prerequisito"

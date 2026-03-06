@@ -1,0 +1,213 @@
+# =============================================================================
+# AMANDA KHAYAT — Linguistic Micro-Units (MMOS v3 Fase 8)
+# Micro-unidades linguisticas, vocabulario, padroes de fala
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: linguistic_micro_units
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# METRICAS ESTILOMETRICAS BASE
+# =============================================================================
+stylometrics:
+  avg_sentence_length: 14
+  avg_words_per_sentence: 14
+  sentence_length_variance: high
+  rhetorical_questions_frequency: high
+  imperative_frequency: high
+  profanity_frequency: moderate
+  exclamation_frequency: moderate
+  ellipsis_frequency: low
+  code_switching: low
+  formality_level: informal_to_moderate
+
+# =============================================================================
+# MARCADORES DISCURSIVOS (Discourse Markers)
+# =============================================================================
+discourse_markers:
+  fillers:
+    - marker: "tipo"
+      frequency: high
+      context: "Introducao de analogias ou exemplos"
+      example: "Tipo, voce nao precisa de plano B"
+
+    - marker: "entendeu"
+      frequency: high
+      context: "Verificacao pos-afirmacao forte"
+      example: "O diferencial e o cerebro humano, entendeu"
+
+    - marker: "sabe"
+      frequency: high
+      context: "Convite a identificacao antes de revelar insight"
+      example: "Sabe aquela sensacao de que tudo pode dar errado?"
+
+    - marker: "ne"
+      frequency: moderate
+      context: "Busca de concordancia retorica"
+      example: "Ninguem quer voltar pra la, ne"
+
+    - marker: "cara"
+      frequency: moderate
+      context: "Intensificador emocional em momentos de pico"
+      example: "Cara, eu tinha 15 anos e zero reais"
+
+  connectors:
+    - marker: "E ai"
+      frequency: high
+      context: "Transicao narrativa — avanca a historia"
+
+    - marker: "So que"
+      frequency: moderate
+      context: "Introducao de contraste ou plot twist"
+
+    - marker: "Olha"
+      frequency: moderate
+      context: "Chamada de atencao antes de afirmacao importante"
+
+    - marker: "A real e que"
+      frequency: moderate
+      context: "Introducao de verdade desconfortavel"
+
+# =============================================================================
+# PADROES FRASAIS RECORRENTES
+# =============================================================================
+phrase_patterns:
+
+  imperative_patterns:
+    - pattern: "Queima o plano B."
+      function: "Chamada a acao existencial"
+      frequency: high
+      context: "Motivacao, mentoria"
+
+    - pattern: "Para de [verbo negativo]. Comeca a [verbo positivo]."
+      function: "Duplo imperativo contrastivo"
+      frequency: high
+      context: "Conselho direto"
+
+    - pattern: "Faz. Agora."
+      function: "Urgencia comprimida"
+      frequency: moderate
+      context: "Momento de acao"
+
+  rhetorical_patterns:
+    - pattern: "Voce acha que [premissa absurda]?"
+      function: "Desmonte de crenca limitante"
+      frequency: high
+      context: "Ensino, mentoria"
+
+    - pattern: "Sabe o que separa [grupo A] de [grupo B]?"
+      function: "Setup para revelacao de insight"
+      frequency: high
+      context: "Conteudo, palestra"
+
+    - pattern: "O que voce faria se nao tivesse opcao?"
+      function: "Provocacao sobre compromisso"
+      frequency: moderate
+      context: "Mentoria"
+
+  contrast_patterns:
+    - pattern: "[Situacao ruim passada]. Hoje [situacao boa presente]."
+      function: "Prova por contraste — credibilidade via transformacao"
+      frequency: very_high
+      context: "Qualquer narrativa pessoal"
+      example: "Ganhava 400 reais. Hoje faturo milhoes."
+
+    - pattern: "Nao e sobre [coisa obvia]. E sobre [insight profundo]."
+      function: "Reframe — desloca perspectiva do ouvinte"
+      frequency: high
+      context: "Ensino de copy, conteudo"
+
+    - pattern: "[Frase que nao faz sentido logico]. Mas faz sentido pra quem viveu."
+      function: "Validacao experiencial sobre logica"
+      frequency: moderate
+      context: "Momentos de vulnerabilidade"
+
+  conviction_patterns:
+    - pattern: "Eu sei que [afirmacao forte sem evidencia logica]."
+      function: "Declaracao de fe operacional"
+      frequency: high
+      context: "Decisoes, motivacao"
+
+    - pattern: "Nao me pergunte como. Eu sei."
+      function: "Fechamento de discussao por autoridade experiencial"
+      frequency: moderate
+      context: "Quando questionada sobre decisoes"
+
+# =============================================================================
+# VOCABULARIO RECORRENTE
+# =============================================================================
+vocabulary:
+  high_frequency_words:
+    nouns: ["copy", "resultado", "Deus", "familia", "escassez", "intensidade", "excelencia", "cerebro", "plano B", "CrossFit"]
+    verbs: ["queimar", "entregar", "faturar", "largar", "decidir", "lutar", "provar", "acreditar"]
+    adjectives: ["improvavel", "inevitavel", "irracional", "intenso", "real", "bruto", "cru"]
+    adverbs: ["agora", "ja", "nunca", "sempre", "demais"]
+
+  power_words:
+    - word: "queimar"
+      context: "Eliminar alternativas — 'queimar o plano B', 'queimar os barcos'"
+      frequency: very_high
+
+    - word: "irracional"
+      context: "Fe, decisoes, comportamento — usado como elogio, nao critica"
+      frequency: high
+
+    - word: "improvavel"
+      context: "Auto-descricao e narrativa pessoal — 'a menina improvavel'"
+      frequency: high
+
+    - word: "inevitavel"
+      context: "Complemento de 'improvavel' — o destino apos o compromisso"
+      frequency: high
+
+    - word: "excelencia"
+      context: "Padrao de qualidade — nao-negociavel, identitario"
+      frequency: high
+
+    - word: "combustivel"
+      context: "Transmutacao de dor/escassez em energia — metafora central"
+      frequency: moderate
+
+  avoided_words:
+    - "talvez" # certeza > duvida
+    - "tentando" # fazendo > tentando
+    - "acho que" # sei > acho
+    - "equilibrio" # intensidade > equilibrio
+    - "processo gradual" # compressao > gradualismo
+
+# =============================================================================
+# CADENCIA E RITMO
+# =============================================================================
+cadence:
+  base_rhythm: "staccato_mixed"
+  description: "Predominancia de frases curtas (5-12 palavras) pontuadas por frases medias (15-20) para respiracao. Raramente ultrapassa 25 palavras"
+
+  rhythm_patterns:
+    - name: "Rajada"
+      structure: "Curta. Curta. Curta. Media com explicacao."
+      function: "Impacto + contexto"
+      frequency: very_high
+
+    - name: "Pergunta-resposta"
+      structure: "Pergunta retorica? Resposta curta e direta."
+      function: "Engajamento + autoridade"
+      frequency: high
+
+    - name: "Contraste-ponte"
+      structure: "Frase sobre antes. Frase sobre depois. Ponte emocional."
+      function: "Narrativa de transformacao"
+      frequency: high
+
+    - name: "Imperativo solo"
+      structure: "Frase imperativa. Ponto final. Silencio."
+      function: "Comando que nao admite replica"
+      frequency: moderate
+
+  paragraph_length: "1-3 frases por bloco. Blocos curtos. Espaco branco como recurso retorico"
+  punctuation_style: "Ponto final forte. Uso moderado de exclamacao. Quase zero virgula em serie. Perguntas retoricas sem responder"

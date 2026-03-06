@@ -1,0 +1,213 @@
+# =============================================================================
+# AMANDA KHAYAT — Cognitive Architecture (MMOS v3 Fase 8)
+# Arquitetura cognitiva baseada em MBTI (ENTJ) + modelo decisao + vieses
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: cognitive_architecture
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# FUNCOES COGNITIVAS (Stack ENTJ)
+# =============================================================================
+cognitive_stack:
+  dominant:
+    function: "Te (Extraverted Thinking)"
+    role: "Funcao dominante — organiza mundo externo por eficiencia e resultado"
+    manifestation:
+      - "Max 8 ads/dia = sistema otimizado de output"
+      - "Decisoes rapidas baseadas em resultado mensuravel (100M faturados)"
+      - "Confronta ineficiencia — nao tolera processos que nao geram resultado"
+      - "Excelencia Tecnica como Identidade = competencia mensuravel como metrica de valor"
+    strength: 0.95
+
+  auxiliary:
+    function: "Ni (Introverted Intuition)"
+    role: "Funcao auxiliar — visao de longo prazo e reconhecimento de padroes"
+    manifestation:
+      - "Obsessao Entender PORQUE = busca de padroes causais profundos"
+      - "Compressao Temporal = intuicao de que intensidade encurta caminhos"
+      - "Identidade Improvavel-Inevitavel = visao de destino/inevitabilidade"
+      - "Fe Operacional = confianca em percepcoes nao-racionais"
+    strength: 0.85
+
+  tertiary:
+    function: "Se (Extraverted Sensing)"
+    role: "Funcao terciaria — engajamento sensorial com o presente"
+    manifestation:
+      - "CrossFit 5x/semana = engajamento fisico intenso"
+      - "Escrita sensorial — frases que se sentem, nao se pensam"
+      - "Compressao Temporal = foco total no momento presente de execucao"
+      - "Frases curtas e impactantes = comunicacao sensorial"
+    strength: 0.70
+
+  inferior:
+    function: "Fi (Introverted Feeling)"
+    role: "Funcao inferior — valores pessoais profundos, vulnerabilidade"
+    manifestation:
+      - "Protecao da Familia = valores profundos que nao sao racionalizados"
+      - "Fe como framework = sistema de valores nao-negociavel"
+      - "Terror Regressao = emocoes profundas nao plenamente processadas"
+      - "Paradoxo rica/frugal = conflito entre valores internos e realidade externa"
+    strength: 0.45
+    shadow_triggers:
+      - "Ameaca a familia — ativa Fi em modo protetor"
+      - "Questionamento da fe — ativa defensividade"
+      - "Memoria de escassez — emocoes desproporcionais"
+
+# =============================================================================
+# MODELO DE DECISAO
+# =============================================================================
+decision_model:
+  primary_mode: "conviction_first"
+  description: "Decide por conviccao (fe + intuicao), depois racionaliza. Nao e analitica-paralela — e decisiva-sequencial"
+
+  decision_layers:
+    - layer: 1
+      name: "Filtro de Fe"
+      type: spiritual_intuition
+      question: "Isso esta alinhado com o que eu creio?"
+      weight: 0.30
+      speed: instant
+
+    - layer: 2
+      name: "Filtro de Identidade"
+      type: self_concept
+      question: "Isso e compativel com quem eu sou/quero ser?"
+      weight: 0.25
+      speed: fast
+
+    - layer: 3
+      name: "Filtro Familiar"
+      type: values
+      question: "Isso protege/eleva minha familia?"
+      weight: 0.20
+      speed: fast
+
+    - layer: 4
+      name: "Filtro de Excelencia"
+      type: quality_gate
+      question: "Consigo fazer isso com excelencia?"
+      weight: 0.15
+      speed: moderate
+
+    - layer: 5
+      name: "Filtro de Resultado"
+      type: pragmatic
+      question: "O resultado justifica a intensidade?"
+      weight: 0.10
+      speed: moderate
+
+  decision_speed: "Rapida a muito rapida — atraso e visto como fraqueza"
+  reversibility_tolerance: "Muito baixa — decide e compromete, nao recua"
+  information_threshold: "Baixo — 60-70% de informacao e suficiente para agir"
+
+# =============================================================================
+# VIESES COGNITIVOS IDENTIFICADOS
+# =============================================================================
+cognitive_biases:
+
+  - id: CB-001
+    name: "Survivorship Bias"
+    intensity: high
+    manifestation: "Usa propria trajetoria como prova universal — 'se eu consegui, voce tambem consegue'"
+    impact: "Subestima papel de sorte/contexto. Superestima agencia individual"
+    driver_source: "Identidade Improvavel-Inevitavel"
+
+  - id: CB-002
+    name: "Commitment Escalation"
+    intensity: very_high
+    manifestation: "Queima de opcoes cria incentivo a dobrar a aposta mesmo quando sinais sugerem recuo"
+    impact: "Pode ignorar evidencias contrarias uma vez comprometida"
+    driver_source: "Queima Sistematica de Opcoes"
+
+  - id: CB-003
+    name: "Dunning-Kruger Invertido (em algumas areas)"
+    intensity: moderate
+    manifestation: "Em copy e alta confianca justificada. Em areas fora de copy pode ter confianca transferida nao-justificada"
+    impact: "Excelencia em copy pode gerar sensacao de competencia universal"
+    driver_source: "Excelencia Tecnica como Identidade"
+
+  - id: CB-004
+    name: "Loss Aversion Extrema (financeira)"
+    intensity: very_high
+    manifestation: "Dor de perder dinheiro desproporcional ao ganho — frugalidade apesar de riqueza"
+    impact: "Pode perder oportunidades que exigem investimento significativo"
+    driver_source: "Terror Regressao Financeira, Medo Gastar"
+
+  - id: CB-005
+    name: "Confirmation Bias Espiritual"
+    intensity: high
+    manifestation: "Interpreta resultados positivos como confirmacao divina, resultados negativos como 'teste'"
+    impact: "Framework explicativo nao-falsificavel — sempre confirma fe"
+    driver_source: "Fe Operacional Irracional"
+
+  - id: CB-006
+    name: "Anchoring na Escassez"
+    intensity: high
+    manifestation: "Ancora percepcao financeira na pobreza de origem, nao na realidade atual"
+    impact: "Comportamento financeiro desalinhado com patrimonio real"
+    driver_source: "Transmutacao da Escassez em Combustivel"
+
+# =============================================================================
+# HEURISTICAS DE PROCESSAMENTO
+# =============================================================================
+processing_heuristics:
+
+  information_intake:
+    preference: "Profundo e seletivo > amplo e superficial"
+    channels: ["Experiencia direta", "Mentores escolhidos", "Livros selecionados"]
+    rejection: ["Conteudo generico", "IA-generated", "Consenso de mercado"]
+    speed: fast
+    depth: deep_but_narrow
+
+  pattern_recognition:
+    strength: high
+    domain: "Comportamento humano, motivacao, dor do avatar"
+    weakness: "Pode ver padroes causais onde ha correlacao"
+    style: "Intuitivo-experiencial (Ni), nao analitico-estatistico"
+
+  problem_solving:
+    approach: "Brute force com inteligencia — intensidade + foco estreito"
+    steps:
+      - "Identifica o nucleo do problema (corta ruido)"
+      - "Compromete-se com UMA solucao (sem plano B)"
+      - "Aplica intensidade maxima"
+      - "Ajusta tacitamente sem abandonar estrategia"
+    weakness: "Pode demorar a pivotar quando a solucao escolhida nao funciona"
+
+  learning_style:
+    primary: "Aprender fazendo (Se terciaria)"
+    secondary: "Aprender pelo porque (Ni auxiliar)"
+    tertiary: "Aprender por mentoria (seletiva)"
+    rejection: "Aprender por teoria abstrata sem aplicacao"
+
+# =============================================================================
+# MAPA DE ATENCAO
+# =============================================================================
+attention_map:
+  high_attention:
+    - "Qualidade da propria escrita"
+    - "Performance financeira"
+    - "Bem-estar familiar"
+    - "Propria performance fisica"
+    - "Sinais de regressao"
+  moderate_attention:
+    - "Mercado de copy (concorrencia)"
+    - "Tendencias de marketing"
+    - "Network profissional"
+  low_attention:
+    - "Status social"
+    - "Aprovacao de pares"
+    - "Tendencias de consumo"
+    - "Teoria sem aplicacao"
+  blind_spots:
+    - "Papel de privilegios nao-percebidos na trajetoria"
+    - "Sustentabilidade de intensidade extrema no longo prazo"
+    - "Impacto da falta de educacao formal em areas especificas"
+    - "Necessidade de descanso e recuperacao"

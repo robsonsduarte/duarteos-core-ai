@@ -1,0 +1,77 @@
+# Facilitar Workshop — Brad Frost
+# Framework: Cross-Disciplinary Workshop + Hot Potato Process
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "intermediaria"
+  frameworks_envolvidos:
+    - "Cross-Disciplinary Workshop"
+    - "Hot Potato Process"
+    - "Interface Inventory"
+
+descricao: "Facilitar workshop colaborativo com todas as disciplinas (design, dev, product, QA, content) para alinhar design system — nomenclatura, taxonomia, prioridades e roadmap compartilhado. Cross-disciplinary involvement e OBRIGATORIO."
+
+instrucoes:
+  - "Reunir TODAS as disciplinas na mesma sala: design, dev, product, QA e content — sem excecao"
+  - "Abrir com Interface Inventory coletivo — equipe vendo as inconsistencias juntos cria alinhamento"
+  - "Exercicio 1: Naming Convention — todo mundo nomeia os mesmos componentes, expor divergencias"
+  - "Exercicio 2: Taxonomia — agrupar componentes por funcao, nao por aparencia"
+  - "Exercicio 3: Priorizar — quais componentes geram mais impacto se padronizados?"
+  - "Usar Hot Potato para prototipar: designer cria concept → dev implementa → designer refina → ciclos rapidos"
+  - "Se reuniao entrar em hipoteticos: cortar imediatamente — 'let me spin up a quick prototype'"
+  - "Sair com roadmap compartilhado e ownership definido para cada item"
+  - "Documentar decisoes em ata acessivel a todos — transparencia total"
+  - "Agendar follow-up em 2 semanas — momentum morre sem cadencia"
+
+exemplo_input: "Empresa com 3 squads, cada um com nomenclatura diferente para componentes. Design chama de 'Card', dev chama de 'Tile', product chama de 'Item'. Sem workshop anterior."
+
+exemplo_output: |
+  ## Workshop Cross-Disciplinary — [Empresa]
+  **Duracao:** 3 horas | **Participantes:** 15 (5 design, 6 dev, 2 product, 1 QA, 1 content)
+
+  ### Abertura: Interface Inventory Coletivo (45 min)
+  Todos viram lado a lado: 23 variacoes de Card/Tile/Item.
+  Reacao coletiva: "Eu nao sabia que existiam tantas versoes."
+  Isso e o objetivo. Consciencia compartilhada muda tudo.
+
+  ### Exercicio 1: Naming (30 min)
+  | Squad A | Squad B | Squad C | Decisao |
+  |---------|---------|---------|---------|
+  | Card | Tile | Item | **Card** (mais intuitivo) |
+  | Popup | Dialog | Modal | **Modal** (padrao industria) |
+  | Alert | Toast | Notification | **Toast** (efemero) + **Alert** (persistente) |
+
+  ### Exercicio 2: Taxonomia (30 min)
+  Agrupamento por funcao:
+  - **Containers:** Card, Modal, Drawer, Accordion
+  - **Feedback:** Toast, Alert, Progress, Skeleton
+  - **Navigation:** Tabs, Breadcrumb, Sidebar, Menu
+  - **Inputs:** TextField, Select, Checkbox, Radio, DatePicker
+
+  ### Exercicio 3: Priorizacao (30 min)
+  Top 5 por impacto: Button, Card, Modal, Form Fields, Toast
+  Criterio: frequencia de uso x variacoes existentes x esforco de padronizacao
+
+  ### Hot Potato Sprint (45 min)
+  Designer cria concept do Button padrao → Dev implementa em 15 min →
+  Designer ajusta baseado em constraints reais → QA aponta edge cases →
+  Content sugere labels → 3 ciclos = Button padrao pronto.
+
+  ### Roadmap Compartilhado
+  Sprint 1: Button + Card (ownership: Maria design, Joao dev)
+  Sprint 2: Modal + Toast (ownership: Pedro design, Ana dev)
+  Sprint 3: Form Fields (ownership: workshop dedicado)
+  Follow-up: 18/marco, mesma sala, mesmas pessoas.
+
+  Design systems sao sobre pessoas, nao pixels. Este workshop provou isso.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — colaborativo, entusiasta, pragmatico?"
+  - "Todas disciplinas presentes (design, dev, product, QA, content)?"
+  - "Interface Inventory como exercicio de abertura?"
+  - "Naming Convention alinhada coletivamente?"
+  - "Hot Potato usado para prototipar?"
+  - "Roadmap com ownership e follow-up?"
+  - "Hipoteticos cortados em favor de prototipos?"

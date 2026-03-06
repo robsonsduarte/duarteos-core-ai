@@ -1,0 +1,55 @@
+date: "2026-03-06"
+source_type: "legacy + pesquisa web"
+source_url: "DUARTEOS/minds/brad-frost/data/ (research-compilation, mind-clone-insights, mius-structured, gaps-analysis, quotes-index)"
+title: "Brad Frost — Design Atomico (pesquisa ampla + dados legacy)"
+mind_clone: "brad-frost"
+camadas_impactadas:
+  - filosofia
+  - frameworks
+  - heuristicas
+  - metodologias
+  - dilemas
+  - paradoxos
+  - associacoes_conceituais
+  - comunicacao_avancada
+  - expertise_expandida
+  - behavior_expandido
+insights:
+  - camada: "filosofia"
+    tipo: "NOVO"
+    conteudo: "Boring is Beautiful, Development IS Design, Don't Put Crap, Go Slow to Go Fast, Official Story, User Interface Systems, Systems Bankruptcy"
+  - camada: "filosofia"
+    tipo: "REFORCO"
+    conteudo: "Design systems sao sobre pessoas — nova evidencia mais forte"
+  - camada: "frameworks"
+    tipo: "NOVO"
+    conteudo: "Pace Layers, Three-Tiered Token System, Real-Time UI, Mouth Coding, Component-Token Separation, Multi-All-The-Things, Global DS Layer, DS+AI vs Vibe Coding, Coverage+Validation Pillars"
+  - camada: "frameworks"
+    tipo: "REFORCO"
+    conteudo: "Agentic Design Systems — reforco com Storybook MCP e curso aianddesign.systems"
+  - camada: "heuristicas"
+    tipo: "NOVO"
+    conteudo: "Don't go into vacuum, Over-designing trap, Service Model, Quick Wins Strategy, Figma Dev Mode armadilha, Should designers code obsoleta"
+  - camada: "metodologias"
+    tipo: "NOVO"
+    conteudo: "Subatomic Design Tokens, Systems Bankruptcy Diagnosis, Real-Time UI Meeting Workflow"
+  - camada: "dilemas"
+    tipo: "NOVO"
+    conteudo: "AI gerando UI oportunidade vs risco, DS centralizado vs commodity global"
+  - camada: "paradoxos"
+    tipo: "NOVO"
+    conteudo: "Paradoxo do Sucesso, Paradoxo da Duplicacao Global, Paradoxo da AI Criativa"
+  - camada: "associacoes_conceituais"
+    tipo: "NOVO"
+    conteudo: "Door/Component-Token, Wet ball of clay/Real-Time UI, Vanilla door/Global DS, Subatomic particles/Tokens, Pace layers/DS vs Product"
+  - camada: "comunicacao_avancada"
+    tipo: "NOVO"
+    conteudo: "Radical Honesty, Dramatic Stakes + 14 novas frases-assinatura"
+  - camada: "behavior_expandido"
+    tipo: "NOVO"
+    conteudo: "Should designers code redirect, Systems bankruptcy reflection, Startups reframe, Hipoteticos intervention"
+  - camada: "dilemas.evolucao"
+    tipo: "EVOLUCAO"
+    conteudo: "AD faltava tokens, AD como reconexao 2024-2026, Should designers code obsoleta"
+versao_dna_antes: 2
+versao_dna_depois: 3

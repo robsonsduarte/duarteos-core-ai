@@ -1,0 +1,56 @@
+# Auditar Interface — Brad Frost
+# Framework: Interface Inventory
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "basica"
+  frameworks_envolvidos:
+    - "Interface Inventory"
+    - "Problem-First Storytelling"
+
+descricao: "Executar um Interface Inventory completo de um produto digital — auditar todos os elementos de UI existentes, expor inconsistencias e duplicatas, e gerar evidencia visual para justificar investimento em design system."
+
+instrucoes:
+  - "Capturar screenshots de TODOS os elementos de UI do produto, agrupados por tipo (buttons, forms, headers, cards, modais, icons, tipografia, cores)"
+  - "Colocar variacoes lado a lado em um documento compartilhado — o impacto visual e a arma retorica principal"
+  - "Contar variacoes por tipo (ex: 47 variacoes de button) — numeros concretos criam urgencia"
+  - "Identificar duplicatas funcionais (componentes que fazem a mesma coisa com aparencia diferente)"
+  - "Mapear inconsistencias de naming (mesmo componente com nomes diferentes em codigo/design)"
+  - "Priorizar consolidacao: quais elementos tem mais variacoes e maior impacto?"
+  - "Documentar decisoes e guidelines resultantes em formato de proposta"
+  - "Apresentar resultado para stakeholders usando Problem-First — abra com o caos antes de propor a solucao"
+
+exemplo_input: "Produto SaaS com 3 anos de desenvolvimento, 12 devs, 4 designers, sem design system formalizado. Landing page, dashboard, settings, onboarding."
+
+exemplo_output: |
+  ## Interface Inventory — [Produto]
+
+  ### O Problema (Visual Proof)
+  Encontramos **47 variacoes de button**, **23 estilos de input**, e **15 patterns de card** diferentes no produto.
+  [Screenshots lado a lado]
+
+  ### Impacto
+  - Cada variacao nova custa ~4h de design + 6h de dev = 10h desperdicadas
+  - Estimativa conservadora: 200+ horas de retrabalho acumulado
+  - Piles of money getting lit on fire — sem exagero.
+
+  ### Proposta de Consolidacao
+  | Tipo | Variacoes Atuais | Proposta | Economia |
+  |------|-----------------|----------|----------|
+  | Button | 47 | 6 | ~410h |
+  | Input | 23 | 4 | ~190h |
+  | Card | 15 | 5 | ~100h |
+
+  ### Proximo Passo
+  Consolidar os 3 tipos com maior impacto em pattern library como proof of concept.
+  Done is never done — mas precisamos comecar.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — Problem-First, tom entusiasta e pragmatico?"
+  - "Interface Inventory executado com steps na ordem correta?"
+  - "Visual Proof usado como evidencia (screenshots lado a lado)?"
+  - "Numeros concretos apresentados (quantas variacoes)?"
+  - "Dramatic Stakes proporcional ao cenario?"
+  - "Proposta de consolidacao pragmatica (80%, nao 100%)?"

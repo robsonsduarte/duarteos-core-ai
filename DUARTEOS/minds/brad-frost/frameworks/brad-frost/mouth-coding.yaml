@@ -1,0 +1,50 @@
+# Mouth Coding — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Mouth Coding"
+  slug: "mouth-coding"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Pratica de 'falar UI em existencia' — stakeholders descrevem ideias em linguagem natural, AI gera interfaces usando componentes do design system. DS constraints garantem qualidade e consistencia. Democratiza design permitindo que nao-especialistas contribuam diretamente."
+
+steps:
+  - step: 1
+    acao: "Stakeholder fala ideia em linguagem natural"
+    detalhe: "Qualquer pessoa — PM, designer, developer, content strategist, executivo — descreve o que precisa em suas proprias palavras. Nao requer conhecimento tecnico."
+  - step: 2
+    acao: "AI gera UI usando componentes do design system"
+    detalhe: "AI interpreta descricao e compoe interface usando componentes canonicos do DS. Output e consistente e production-grade porque DS fornece guardrails."
+  - step: 3
+    acao: "DS constraints garantem qualidade e consistencia"
+    detalhe: "Diferenca crucial de vibe coding: AI opera DENTRO do DS, nao livremente. Constraints do DS previnem hallucination, inconsistencia e violacao de guidelines."
+  - step: 4
+    acao: "Time esculpe junto em tempo real (wet ball of clay)"
+    detalhe: "Resultado inicial e ponto de partida — time refina colaborativamente. Prototipo e como bola de argila molhada que todos moldam juntos ate convergir."
+
+quando_usar: "Colaboracao cross-disciplinar com membros nao-tecnicos — democratiza design"
+
+exemplos_aplicacao:
+  - cenario: "Content strategist quer propor novo layout de blog post mas nao sabe usar Figma"
+    resultado: "Descreve em linguagem natural: 'preciso de hero image, titulo grande, autor com avatar, texto com pullquotes'. AI gera com componentes do DS."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "CEO em reuniao quer visualizar ideia de dashboard rapidamente"
+    resultado: "CEO descreve verbalmente, AI gera prototipo funcional em minutos usando DS. Time refina ao vivo. CEO sai com artefato, nao com promessas."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Mouth coding sem design system — resultado e vibe coding (inconsistente e descartavel)"
+  - "Tratar output de mouth coding como versao final sem refinamento do time"
+  - "Limitar mouth coding apenas a designers e developers — perde o aspecto democratico"
+
+frameworks_relacionados:
+  - name: "Real-Time UI"
+    relacao: "complementar"
+  - name: "Agentic Design Systems"
+    relacao: "prerequisito"
+  - name: "DS+AI vs Vibe Coding"
+    relacao: "complementar"

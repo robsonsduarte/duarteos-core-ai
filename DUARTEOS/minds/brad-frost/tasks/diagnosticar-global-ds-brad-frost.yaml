@@ -1,0 +1,75 @@
+# Diagnosticar Global DS — Brad Frost
+# Framework: Global Design System Layer + Pace Layers
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "intermediaria"
+  frameworks_envolvidos:
+    - "Global Design System Layer"
+    - "Component-Token Separation (Door Analogy)"
+    - "Pace Layers"
+
+descricao: "Avaliar quais componentes de um DS organizacional sao commodity (accordion, datepicker, tabs, modal) e poderiam vir de uma camada Global Design System — eliminando duplicacao entre organizacoes. Porta vanilla: componente sem tema, cada org pinta do seu jeito."
+
+instrucoes:
+  - "Inventariar todos os componentes do DS atual"
+  - "Classificar cada componente: commodity (funcionalidade padrao universal) vs differentiator (valor unico da org)"
+  - "Commodity: accordion, datepicker, tabs, modal, tooltip, breadcrumb, pagination — funcionalidade identica em toda a web"
+  - "Differentiator: composicoes especificas do produto, patterns de negocio, branded organisms"
+  - "Calcular: quanto tempo foi gasto construindo componentes commodity do zero?"
+  - "Mapear camadas: HTML primitives → GDS commodities → Org DS (branded) → Product recipes"
+  - "Avaliar: se componentes commodity fossem importados theme-less, quanto tempo economizaria?"
+  - "Identificar gaps: quais commodities o DS atual tem que HTML nao cobre?"
+  - "Documentar recomendacao: quais componentes poderiam ser substituidos por commodity"
+
+exemplo_input: "DS organizacional com 90 componentes. Equipe de 4 dedicados ao DS. Tempo medio de 40h por componente novo. Reclamacao recorrente: 'por que estamos construindo outro datepicker?'"
+
+exemplo_output: |
+  ## Diagnostico Global DS — [Organizacao]
+
+  ### Por que estamos construindo outro datepicker?
+  Boa pergunta. Toda organizacao no mundo esta construindo o mesmo datepicker.
+  Esforcos para reduzir duplicacao INTERNA resultam em duplicacao ENTRE organizacoes.
+
+  ### Classificacao dos 90 Componentes
+
+  **Commodity (52 — 58%)** — funcionalidade universal, zero diferenciacao
+  Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Card, Checkbox,
+  Datepicker, Dialog/Modal, Divider, Dropdown, Input, Menu, Pagination,
+  Progress, Radio, Select, Skeleton, Slider, Spinner, Switch, Tabs,
+  Textarea, Toast, Tooltip, etc.
+
+  **Differentiator (38 — 42%)** — valor unico da organizacao
+  ProductCard, PricingTable, OnboardingWizard, DashboardLayout,
+  AnalyticsChart, UserProfile, TransactionHistory, etc.
+
+  ### Modelo de Camadas
+  ```
+  HTML          → button, input, select (primitivas)
+  Global DS     → Accordion, Datepicker, Modal (commodity, theme-less)
+  Org DS        → Branded versions + Differentiators
+  Product Layer → Recipes especificas de produto
+  ```
+
+  ### Impacto
+  - 52 componentes commodity x 40h = **2.080h gastas** construindo o que toda empresa constroi
+  - Se importados theme-less: economia estimada de **1.500h** (restam 580h de theming/customizacao)
+  - Equipe de 4 liberada para focar nos 38 componentes que realmente diferenciam
+
+  ### Recomendacao
+  Portas vanilla — componentes commodity sem tema. Org aplica seus tokens.
+  GDS hoje nao existe formalmente, mas Open UI e iniciativas W3C caminham nessa direcao.
+  Enquanto isso: identificar libraries open-source que cubram commodities com qualidade.
+
+  O paradoxo: reduzimos duplicacao interna, mas a duplicacao ENTRE orgs permanece.
+  Resolver isso e o proximo grande desafio de design systems.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — porta vanilla, entusiasmo com visao de futuro?"
+  - "Global DS Layer com 4 camadas corretas (HTML, GDS, Org, Product)?"
+  - "Classificacao commodity vs differentiator feita?"
+  - "Impacto quantificado em horas?"
+  - "Paradoxo da Duplicacao Global reconhecido?"
+  - "Door Analogy aplicada (theme-less commodities)?"

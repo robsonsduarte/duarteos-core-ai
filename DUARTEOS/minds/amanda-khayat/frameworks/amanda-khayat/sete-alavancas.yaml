@@ -1,0 +1,53 @@
+framework_identity:
+  name: "7 Alavancas para Bater Controle"
+  slug: "sete-alavancas"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "7 elementos que podem ser ajustados para superar o melhor anuncio existente (o controle). Cada alavanca eh independente — mudar uma pode ser suficiente para bater o controle. Formato da mais trabalho mas tem mais chance de validar."
+
+steps:
+  - step: 1
+    acao: "Formato/Avatar"
+    detalhe: "Mudar quem fala ou o formato do anuncio. Formato da mais trabalho mas tem mais chance de validar. Congruencia entre avatar e conteudo eh critica."
+  - step: 2
+    acao: "Hook Visual + Escrito"
+    detalhe: "O que a pessoa VE antes de LER ou OUVIR. Pattern interrupt visual que prende atencao antes do texto. O gancho visual vem ANTES do gancho verbal."
+  - step: 3
+    acao: "Frase de Pouso"
+    detalhe: "A frase pos-gancho que deve ser tao forte quanto o gancho. Abrir loop de curiosidade ou controversia. Ignorada por 99% dos copywriters."
+  - step: 4
+    acao: "Congruencia"
+    detalhe: "Avatar, historia e produto precisam fazer sentido juntos. Velha de 90 anos nao fala giria de adolescente. Calvo nao vende produto anti-calvicie."
+  - step: 5
+    acao: "Contexto do Avatar"
+    detalhe: "Expandir a historia do avatar — mais especifica, mais real, mais parecida com a realidade de quem assiste. Trazer mais prova e mais dores que a pessoa tambem passa."
+  - step: 6
+    acao: "Gatilho de Dopamina"
+    detalhe: "Frases aparentemente aleatorias no meio do anuncio. SEM conectores. Geram surpresa/curiosidade. Cada frase 'acorda' a pessoa para continuar assistindo."
+  - step: 7
+    acao: "Fechamento do Anuncio"
+    detalhe: "Como conduzir do corpo pra acao. Push-Pull ou Autoridade Humanizada. O fechamento decide se a atencao vira conversao."
+
+quando_usar: "Para superar o melhor anuncio existente (o controle) mudando alavancas especificas. Anuncio nao ta convertendo ou precisa escalar. Para 8+ digitos."
+
+exemplos_aplicacao:
+  - cenario: "Anuncio atual faz 7 digitos mas nao escala para 8"
+    resultado: "Identificar quais alavancas estao fracas. Ajustar 2-3 alavancas. Novo anuncio supera o controle."
+  - cenario: "Anuncio com bom hook mas baixa retencao"
+    resultado: "Problema na Frase de Pouso (alavanca 3) ou Gatilho de Dopamina (alavanca 6). Ajustar essas duas."
+
+anti_patterns:
+  - "Mudar todas as 7 alavancas de uma vez — perde-se a capacidade de saber o que funcionou"
+  - "Ignorar a congruencia — pequenos detalhes incongruentes destroem credibilidade"
+  - "Usar Gatilho de Dopamina COM conectores — perde o efeito de ruptura"
+
+frameworks_relacionados:
+  - name: "Metodo 25"
+    relacao: "complementar — gera variacoes iniciais que as 7 Alavancas otimizam"
+  - name: "Frase de Pouso"
+    relacao: "componente — eh a alavanca 3"
+  - name: "Gatilho de Dopamina"
+    relacao: "componente — eh a alavanca 6"
+  - name: "Push-Pull"
+    relacao: "componente — alternativa de fechamento (alavanca 7)"

@@ -1,0 +1,76 @@
+# Preparar DS para AI — Brad Frost
+# Framework: Agentic Design Systems + Coverage+Validation + DS+AI vs Vibe Coding
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Agentic Design Systems"
+    - "Coverage + Validation Pillars"
+    - "DS+AI vs Vibe Coding"
+    - "Real-Time UI"
+
+descricao: "Preparar um design system existente para consumo por agentes de IA — dois pilares obrigatorios: Coverage (exemplos, estados, constraints) e Validation (testes, sign-off, feedback loop). DS+AI > Vibe Coding."
+
+instrucoes:
+  - "Auditar cobertura atual do DS: quantos componentes tem docs, exemplos, estados documentados, constraints explicitos?"
+  - "Pilar Coverage: garantir que cada componente tem exemplos claros de uso, todos os estados documentados, constraints explicitos (o que pode e nao pode), e composition patterns"
+  - "Pilar Validation: implementar testes automatizados, processo de sign-off humano, verificacao de constraints, e feedback loop"
+  - "Criar metadata semantica para cada componente — descricao, quando usar, quando NAO usar, relacoes com outros componentes"
+  - "Definir regras de composicao que AI agents podem seguir — quais combinacoes sao validas"
+  - "Estabelecer guardrails de governance para output de AI — o que AI pode e nao pode fazer"
+  - "Testar com AI gerando interfaces a partir do DS — validar que output e production-ready"
+  - "Comparar resultado DS+AI vs Vibe Coding — demonstrar diferenca de qualidade"
+  - "Explorar Real-Time UI: AI gera prototipos durante reunioes usando componentes do DS"
+
+exemplo_input: "Design system maduro com 80 componentes em Storybook, usado por 5 product teams. AI tools (Cursor, v0, Claude) sendo usadas por devs mas sem integracao com DS. Resultado: interfaces inconsistentes."
+
+exemplo_output: |
+  ## Agent-Ready Design System — [Produto]
+
+  ### Diagnostico
+  80 componentes, mas AI nao sabe que existem. Devs fazem vibe coding — bonito mas inconsistente.
+  AI without a design system is just generating beautiful chaos.
+
+  ### Pilar 1: Coverage (o que AI precisa saber)
+
+  **Por componente:**
+  - Descricao semantica (o que faz, nao como se parece)
+  - Quando usar e quando NAO usar
+  - Props com tipos, defaults e constraints
+  - Todos os estados (default, hover, active, disabled, error, loading, empty)
+  - Exemplos de composicao valida (Button dentro de Card, nao Button dentro de Button)
+  - Accessibility requirements (role, aria-labels)
+
+  **Coverage Score Atual:** 35% → Meta: 90%
+
+  ### Pilar 2: Validation (como garantir qualidade)
+
+  - Testes visuais automatizados (Chromatic/Percy)
+  - Lint rules que detectam uso de componentes fora do DS
+  - Sign-off humano para composicoes novas geradas por AI
+  - Feedback loop: quando AI erra, constraint e adicionado
+
+  ### DS+AI vs Vibe Coding
+  | Aspecto | Vibe Coding | DS+AI |
+  |---------|------------|-------|
+  | Consistencia | Nenhuma | Alta |
+  | Acessibilidade | Variavel | Built-in |
+  | Production-ready | Raramente | Quase sempre |
+  | Velocidade | Rapido | Rapido + correto |
+
+  ### Real-Time UI (Futuro)
+  Reuniao de product review → AI gera prototipo com componentes do DS em tempo real.
+  A reuniao vira o prototipo. Mouth coding: stakeholder fala, UI aparece.
+
+  The future is agentic, but the foundation is still human relationships.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — DS+AI vs Vibe Coding, entusiasmo pragmatico?"
+  - "Coverage e Validation como dois pilares distintos?"
+  - "Guardrails de governance para AI definidos?"
+  - "Real-Time UI e Mouth Coding mencionados como futuro?"
+  - "Comparativo tangivel DS+AI vs Vibe Coding?"
+  - "Paradoxo da AI Criativa tratado (constraints = qualidade)?"

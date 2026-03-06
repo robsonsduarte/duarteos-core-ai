@@ -1,0 +1,96 @@
+# Amanda Khayat — Pipeline Checklist MMOS v3
+# Gerado em: 2026-03-06
+# Modo: BROWNFIELD (DNA legacy F=94%)
+
+pipeline:
+  fase_0_intake:
+    status: "complete"
+    modo: "brownfield"
+    slug: "amanda-khayat"
+    categoria: "Copywriting"
+
+  fase_1_pesquisa:
+    status: "complete"
+    fontes_coletadas: 9
+    fontes_primarias: 9
+    gate_gawande: "PASSED"
+
+  fase_2_analise_rapida:
+    status: "complete"
+    mius_sample: 61
+    camadas_cobertas: "12/12"
+
+  fase_3_pcfe:
+    status: "complete"
+    FE: 83.8
+    classificacao: "BOM"
+
+  fase_4_gate_humano:
+    status: "complete"
+    decisao: "APROVAR"
+    iteracao: 1
+
+  fase_5_scaffold:
+    status: "complete"
+    dirs_criados: 21
+    config_yaml: true
+    dna_skeleton: true
+
+  fase_6_extracao:
+    status: "pending"
+    gates:
+      - check: "Coverage score >= 90%?"
+        critico: true
+        status: "pending"
+      - check: "ZERO fontes secundarias?"
+        critico: true
+        status: "PASSED"
+      - check: "Fragmentation quality >= 95%?"
+        critico: true
+        status: "pending"
+
+  fase_7_inferencia:
+    status: "pending"
+    gates:
+      - check: "Predictive accuracy >= 90%?"
+        critico: true
+        status: "pending"
+      - check: "Cada driver tem >= 2 evidencias?"
+        critico: true
+        status: "pending"
+      - check: "3 agentes independentes concordam >= 0.85?"
+        critico: true
+        status: "pending"
+
+  fase_8_mapeamento:
+    status: "pending"
+    gates:
+      - check: "Todos componentes tem score?"
+        critico: true
+        status: "pending"
+      - check: "Consistencia interna >= 95%?"
+        critico: true
+        status: "pending"
+
+  fase_9_perfil:
+    status: "pending"
+    gates:
+      - check: "Fidelity score >= 95%?"
+        critico: true
+        status: "pending"
+      - check: "Suite 20 testes cegos >= 94%?"
+        critico: true
+        status: "pending"
+
+  fase_10_recomendacao:
+    status: "pending"
+    gates:
+      - check: "Agent .md existe?"
+        critico: true
+        status: "pending"
+      - check: "Frameworks count == DNA.frameworks.primarios.length?"
+        critico: true
+        status: "pending"
+      - check: "Squad completeness >= 85%?"
+        critico: true
+        status: "pending"

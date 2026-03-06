@@ -1,0 +1,49 @@
+# Agentic Design Systems — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Agentic Design Systems"
+  slug: "agentic-design-systems"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Visao de futuro onde AI agents consomem e compoem componentes do design system autonomamente. DS como API que AI consome para gerar interfaces com qualidade production-grade. Requer fundacao solida de componentes, metadata semantica e guardrails de governance."
+
+steps:
+  - step: 1
+    acao: "Design system existente como fundacao de componentes"
+    detalhe: "AI sem sistema gera inconsistencia. DS bem documentado com APIs claras, estados definidos e composition patterns e prerequisito absoluto para agentic DS."
+  - step: 2
+    acao: "AI agents que consomem e compoe componentes autonomamente"
+    detalhe: "Agents consomem metadata semantica dos componentes, entendem constraints e geram interfaces respeitando o sistema. DS fornece guardrails contra hallucination e inconsistencia."
+  - step: 3
+    acao: "Governanca que define limites do que agents podem fazer"
+    detalhe: "Humanos still essential para julgamento. AI gera DENTRO do DS, nao fora. Regras claras sobre o que agents podem compor, modificar e criar. Sign-off humano em pontos criticos."
+
+quando_usar: "Futuro dos design systems — AI gerando interfaces a partir do sistema de componentes"
+
+exemplos_aplicacao:
+  - cenario: "AI gerando interfaces sem design system — resultados inconsistentes e nao-production-ready"
+    resultado: "Com Agentic DS, AI gera UI usando componentes canonicos do DS — output consistente, acessivel e production-ready"
+    fonte: "DNA direto"
+  - cenario: "Time quer usar AI para prototipar rapidamente em reunioes"
+    resultado: "AI consome DS e gera prototipos em tempo real (Real-Time UI + Mouth Coding) dentro dos guardrails do sistema"
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "AI gerando UI sem fundacao de design system — vibe coding sem constraints"
+  - "Confiar 100% no output de AI sem sign-off humano"
+  - "DS sem metadata semantica suficiente para AI consumir — agents precisam de exemplos claros e constraints explicitos"
+
+frameworks_relacionados:
+  - name: "DS+AI vs Vibe Coding"
+    relacao: "complementar"
+  - name: "Coverage + Validation Pillars (Agent-Friendly DS)"
+    relacao: "complementar"
+  - name: "Real-Time UI"
+    relacao: "complementar"
+  - name: "Mouth Coding"
+    relacao: "complementar"

@@ -1,0 +1,47 @@
+# Single Responsibility Principle para Molecules — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Single Responsibility Principle para Molecules"
+  slug: "single-responsibility-principle-para-molecules"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Aplicacao do SRP (Single Responsibility Principle) a molecules no Atomic Design. Cada molecule deve fazer UMA coisa bem. Se faz mais de uma, quebrar em molecules menores. Composicao de molecules simples e sempre preferivel a molecules complexas — evita god-objects de UI."
+
+steps:
+  - step: 1
+    acao: "Cada molecule deve fazer UMA coisa bem"
+    detalhe: "Uma molecule tem um proposito claro e unico. Search form busca. Media object exibe item com imagem. Login form autentica. Se precisar de frase composta para descrever ('faz X E Y'), provavelmente viola SRP."
+  - step: 2
+    acao: "Se faz mais de uma, quebrar em molecules menores"
+    detalhe: "Molecule complexa = sinal de que precisa ser decomposta. Cada sub-responsabilidade vira molecule independente. Simplicidade dos atoms permite complexidade do sistema."
+  - step: 3
+    acao: "Composicao de molecules simples > molecules complexas"
+    detalhe: "Organisms compoem molecules — complexidade emerge da composicao, nao da molecule individual. Uma molecule simples e reutilizavel em multiplos contextos; uma molecule complexa e rigida."
+
+quando_usar: "Ao decidir granularidade de componentes — evita molecules-god-objects"
+
+exemplos_aplicacao:
+  - cenario: "Molecule 'UserProfileCard' que exibe avatar, nome, bio, social links, recent activity e edit button"
+    resultado: "Decomposicao em molecules menores: AvatarName, UserBio, SocialLinks, RecentActivity. Organism UserProfileCard compoe todas."
+    fonte: "DNA direto"
+  - cenario: "Developer questiona se 'header com search, nav e logo' e molecule ou organism"
+    resultado: "E organism — contem 3 molecules (Logo, NavMenu, SearchForm), cada uma com responsabilidade unica"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Molecules god-objects que fazem tudo — violam SRP e nao sao reutilizaveis"
+  - "Granularidade excessiva — atom-level splitting que paralisa desenvolvimento"
+  - "Ignorar composicao e criar molecules monoliticas por conveniencia"
+
+frameworks_relacionados:
+  - name: "Atomic Design Methodology"
+    relacao: "complementar"
+  - name: "Pattern-Driven Development"
+    relacao: "complementar"
+  - name: "Layer-Cake Approach"
+    relacao: "complementar"

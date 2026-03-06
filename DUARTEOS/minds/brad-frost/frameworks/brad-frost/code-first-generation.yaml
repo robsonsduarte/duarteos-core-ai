@@ -1,0 +1,47 @@
+# Code-First Generation — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Code-First Generation"
+  slug: "code-first-generation"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Abordagem onde codigo e a fonte primaria e autoritativa do design system. Documentacao, design assets e especificacoes sao gerados automaticamente a partir do codigo — eliminando drift entre design e implementacao. Design files desatualizam inevitavelmente; codigo e a unica verdade executavel."
+
+steps:
+  - step: 1
+    acao: "Codigo como fonte primaria do design system"
+    detalhe: "Componentes implementados em codigo sao a single source of truth. Props, estados, variantes — tudo definido no codigo. Elimina ambiguidade sobre 'o que e o componente real'."
+  - step: 2
+    acao: "Documentacao gerada automaticamente a partir do codigo"
+    detalhe: "Auto-gerar documentacao de API, props, tipos, exemplos. Ferramentas como Storybook, Docgen, MDX. Documentacao sempre atualizada porque e derivada, nao mantida manualmente."
+  - step: 3
+    acao: "Design assets derivados do codigo, nao o contrario"
+    detalhe: "Figma e outros design tools recebem updates DO codigo, nao o contrario. Elimina drift permanente entre 'design no Figma' e 'componente real no codigo'."
+
+quando_usar: "Ao decidir source of truth — codigo gera tudo, elimina drift entre design e implementacao"
+
+exemplos_aplicacao:
+  - cenario: "Design no Figma diz que button tem 16px de padding, mas codigo tem 12px — qual e o certo?"
+    resultado: "Code-first resolve: codigo e a verdade. Figma e atualizado a partir do codigo, nao o contrario."
+    fonte: "DNA direto"
+  - cenario: "Documentacao do DS esta 3 meses desatualizada"
+    resultado: "Com code-first, documentacao e auto-gerada — nunca desatualiza porque deriva do codigo em build time"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Design-first com handoff manual para codigo — drift inevitavel"
+  - "Manter documentacao manualmente separada do codigo — desatualiza em semanas"
+  - "Tratar Figma como source of truth em vez de representacao visual derivada"
+
+frameworks_relacionados:
+  - name: "Design System Thinking"
+    relacao: "complementar"
+  - name: "Workshop/Storefront Separation"
+    relacao: "complementar"
+  - name: "Coverage + Validation Pillars (Agent-Friendly DS)"
+    relacao: "complementar"

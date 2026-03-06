@@ -1,0 +1,182 @@
+# =============================================================================
+# AMANDA KHAYAT — System Components (MMOS v3 Fase 8)
+# Mapeamento psicometrico: Big Five, MBTI, Eneagrama
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  phase_name: "MAPEAMENTO"
+  generated: "2026-03-05"
+
+# =============================================================================
+# BIG FIVE (OCEAN) — Scores 0-100
+# =============================================================================
+big_five:
+  openness:
+    score: 62
+    label: "moderada-alta"
+    facets:
+      imagination: 70
+      artistic_interests: 45
+      emotionality: 68
+      adventurousness: 78
+      intellect: 65
+      liberalism: 40
+    evidence:
+      - driver: "Fe Operacional Irracional"
+        detail: "Abertura a experiencias nao-racionais como motor de acao — fe como framework operacional, nao apenas crenca passiva"
+      - driver: "Caverna/repertorio paradoxo"
+        detail: "Isolamento deliberado para criar, mas repertorio limitado por escolha — abertura seletiva"
+      - driver: "Anti-IA Diferenciacao"
+        detail: "Resiste a adocao acritica de IA — abertura a novas ideias mas com filtro forte de identidade"
+      - driver: "Obsessao Entender PORQUE"
+        detail: "Curiosidade intelectual profunda mas focada em utilidade pratica"
+
+  conscientiousness:
+    score: 92
+    label: "muito alta"
+    facets:
+      self_efficacy: 95
+      orderliness: 75
+      dutifulness: 80
+      achievement_striving: 98
+      self_discipline: 95
+      cautiousness: 70
+    evidence:
+      - driver: "Excelencia Tecnica como Identidade"
+        detail: "Max 8 ads/dia — qualidade sobre volume, disciplina extrema de output"
+      - driver: "Compressao Temporal via Intensidade"
+        detail: "Intensidade focada distorce percepcao temporal — produtividade comprimida"
+      - driver: "Queima Sistematica de Opcoes"
+        detail: "Eliminar plano B deliberadamente exige conscienciosidade extrema — aposta tudo no plano A"
+      - driver: "Corpo Infraestrutura Mental"
+        detail: "CrossFit 5x/semana como disciplina nao-negociavel — corpo sustenta mente"
+
+  extraversion:
+    score: 58
+    label: "moderada"
+    facets:
+      friendliness: 55
+      gregariousness: 40
+      assertiveness: 82
+      activity_level: 88
+      excitement_seeking: 65
+      cheerfulness: 50
+    evidence:
+      - driver: "Identidade Improvavel-Inevitavel"
+        detail: "Narrativa publica forte de superacao, mas nao busca validacao social — assertividade sem gregariedade"
+      - driver: "Compressao Temporal via Intensidade"
+        detail: "Nivel de atividade altissimo — intensidade como modo padrao"
+      - paradox: "Caverna/repertorio"
+        detail: "Prefere isolamento produtivo a socializacao — introversao operacional com extroversao performatica"
+
+  agreeableness:
+    score: 35
+    label: "baixa"
+    facets:
+      trust: 30
+      morality: 65
+      altruism: 55
+      cooperation: 25
+      modesty: 20
+      sympathy: 50
+    evidence:
+      - driver: "Queima Sistematica de Opcoes"
+        detail: "Confrontacional com o proprio conforto e com consenso — nao busca aprovacao"
+      - driver: "Excelencia Tecnica como Identidade"
+        detail: "Anti-volume, anti-mediocridade — baixa cooperacao com padroes medianos do mercado"
+      - driver: "Transmutacao da Escassez em Combustivel"
+        detail: "Dureza forjada pela escassez — baixa modestia, alta convicao"
+      - estilometria: "imperativos altos"
+        detail: "Fala em comandos, nao em sugestoes — baixa agreeableness linguistica"
+
+  neuroticism:
+    score: 55
+    label: "moderada"
+    facets:
+      anxiety: 60
+      anger: 45
+      depression: 30
+      self_consciousness: 35
+      immoderation: 50
+      vulnerability: 65
+    evidence:
+      - driver: "Terror Regressao Financeira"
+        detail: "Medo visceral de voltar a pobreza — ansiedade especifica e funcional"
+      - driver: "Medo Gastar"
+        detail: "Rica mas frugal — ansiedade financeira persistente apesar do sucesso"
+      - driver: "Medo Ciclos Erro"
+        detail: "Medo de repetir padroes — vigilancia constante contra auto-sabotagem"
+      - paradox: "Rica/frugal"
+        detail: "Tensao emocional entre abundancia atual e trauma de escassez passada"
+      - driver: "Fe Operacional Irracional"
+        detail: "Fe funciona como regulador de neuroticismo — reduz depressao e auto-consciencia negativa"
+
+# =============================================================================
+# MBTI — Derivado dos Big Five + comportamento observado
+# =============================================================================
+mbti:
+  type: "ENTJ"
+  confidence: 0.82
+  derivation:
+    E_vs_I:
+      result: "E (marginal)"
+      score_differential: 8
+      reasoning: "Extroversao moderada (58) puxada por assertividade (82) e activity_level (88). Gregariedade baixa (40) mas presenca publica forte. E marginal — opera como introvertida no dia-a-dia mas performa como extrovertida"
+    N_vs_S:
+      result: "N (marginal)"
+      score_differential: 12
+      reasoning: "Openness 62 com imaginacao 70 e adventurousness 78 sugerem intuicao. Porem forte pragmatismo e foco em resultados tangiveis. N com tendencia S em execucao"
+    T_vs_F:
+      result: "T (forte)"
+      score_differential: 35
+      reasoning: "Agreeableness muito baixa (35), cooperacao 25, modesty 20. Decisoes por logica de resultado, nao por harmonia. Fe e framework operacional, nao sentimentalismo"
+    J_vs_P:
+      result: "J (muito forte)"
+      score_differential: 42
+      reasoning: "Conscientiousness 92 com achievement_striving 98. Queima sistematica de opcoes = closure extremo. Max 8 ads/dia = estrutura rigida de output"
+  shadow_type: "ISFP"
+  shadow_evidence: "Momentos de vulnerabilidade sobre familia, medos de regressao, e a tensao rica/frugal revelam Fi inferior — valores pessoais profundos sob a armadura Te"
+
+# =============================================================================
+# ENEAGRAMA
+# =============================================================================
+enneagram:
+  core_type: 3
+  wing: 8
+  tritype: "385"
+  instinctual_variant: "sp/so"
+  integration_direction: 6
+  disintegration_direction: 9
+  level_of_health: 3
+  label: "O Empreendedor Implacavel"
+
+  core_type_evidence:
+    - "Identidade Improvavel-Inevitavel — narrativa de self-made, sucesso como prova de valor"
+    - "Excelencia Tecnica como Identidade — identidade fusionada com competencia e resultado"
+    - "100M faturados como metrica de identidade, nao apenas financeira"
+    - "Medo Superficialidade (bronze) — medo tipo 3 classico de ser vazia por dentro"
+
+  wing_8_evidence:
+    - "Queima Sistematica de Opcoes — confrontacao deliberada, sem plano B"
+    - "Assertividade 82 — comando, nao sugestao"
+    - "Transmutacao da Escassez em Combustivel — dureza, resiliencia, recusa a ser vitima"
+    - "Agreeableness 35 — nao busca aprovacao, confronta quando necessario"
+
+  tritype_evidence:
+    type_3: "Core — identidade por resultado e excelencia"
+    type_8: "Gut — confrontacao, autonomia, queima de opcoes"
+    type_5: "Head — Obsessao Entender PORQUE, caverna/repertorio, anti-superficialidade"
+
+  instinctual_evidence:
+    sp: "Frugalidade Estrategica, Terror Regressao Financeira, Medo Gastar — auto-preservacao dominante"
+    so: "Protecao e Elevacao da Familia, narrativa publica de superacao — social secundario"
+    sx: "Menos evidenciado — intensidade existe mas direcionada a trabalho, nao a conexao 1:1"
+
+  growth_path:
+    healthy: "Integra para 6 — desenvolve lealdade, colaboracao, confianca no coletivo. Fe ja aponta nessa direcao"
+    unhealthy: "Desintegra para 9 — apatia, desconexao, perda de drive. Medo Ciclos Erro sugere consciencia desse risco"

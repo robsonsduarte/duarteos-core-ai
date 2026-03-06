@@ -1,0 +1,90 @@
+# Implementar Real-Time UI — Brad Frost
+# Framework: Real-Time UI + Mouth Coding + DS+AI
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Real-Time UI"
+    - "Mouth Coding"
+    - "DS+AI vs Vibe Coding"
+    - "Agentic Design Systems"
+
+descricao: "Implementar Real-Time UI — converter reunioes de design/product em sessoes de prototipacao ao vivo onde AI gera interfaces usando componentes do DS em tempo real. A reuniao se torna o prototipo. Mouth coding: stakeholder fala, UI aparece."
+
+instrucoes:
+  - "Prerequisito: DS preparado para AI (Coverage + Validation — ver task preparar-ds-para-ai)"
+  - "Configurar AI tool (Cursor, Claude, v0) com acesso ao component library do DS"
+  - "Definir regras: AI so usa componentes do DS, nao inventa novos (DS+AI, nao Vibe Coding)"
+  - "Sessao piloto: reuniao de product review com stakeholders reais"
+  - "Quando conversa entrar em hipoteticos: AI gera prototipo em tempo real usando componentes do DS"
+  - "Stakeholders falam ideias em linguagem natural (mouth coding) — AI traduz em UI"
+  - "Time esculpe junto o prototipo (wet ball of clay) — iteracoes ao vivo"
+  - "DS constraints garantem qualidade e consistencia automaticamente"
+  - "Resultado: artefato tangivel no final da reuniao, nao apenas notas"
+  - "Documentar learnings: o que funcionou, onde AI errou, quais constraints faltaram"
+  - "Iterar: adicionar constraints ao DS baseado em erros da AI"
+
+exemplo_input: "Product team quer redesenhar onboarding flow. Reuniao com PM, designer, 2 devs, head of product. DS com 60 componentes em Storybook. AI tool configurada com component library."
+
+exemplo_output: |
+  ## Real-Time UI Session — Onboarding Redesign
+
+  ### Setup
+  AI tool: Claude com acesso a 60 componentes do DS via Storybook metadata.
+  Regra: so componentes do DS. Zero vibe coding.
+  Participantes: PM, designer, 2 devs, head of product.
+
+  ### A Sessao (90 min)
+
+  **Minuto 10 — PM fala:**
+  "Quero um wizard step-by-step, com progresso visual, e cada step perguntando uma coisa."
+
+  **AI gera:** Stepper + Card + FormField (TextField) + Button (Primary + Secondary)
+  Prototipo aparece em tela em 30 segundos. Time olha e comeca a esculpir.
+
+  **Minuto 25 — Head of Product:**
+  "E se no step 2 a gente mostrasse um preview do que vai ficar?"
+
+  **AI adiciona:** Split layout — FormField na esquerda, Preview (Card + Avatar + Badge) na direita.
+  Wet ball of clay — todo mundo moldando junto.
+
+  **Minuto 45 — Designer:**
+  "Precisa de um empty state quando nao tem preview ainda."
+
+  **AI gera:** EmptyState (Illustration + Typography + Button ghost)
+  Componente ja existia no DS. Sem inventar nada.
+
+  **Minuto 70 — Dev:**
+  "E no mobile? Esse split layout nao funciona."
+
+  **AI ajusta:** Stack vertical no mobile — FormField em cima, Preview embaixo (Accordion collapsed).
+  Responsive sem esforco — DS constraints cuidam disso.
+
+  **Minuto 90 — Resultado:**
+  4 telas de onboarding, funcionais, usando 100% componentes do DS.
+  A reuniao foi o prototipo.
+
+  ### Learnings
+  - Mouth coding funcionou: PM e Head of Product participaram ativamente sem saber codigo
+  - AI errou 2 vezes: usou spacing inconsistente (adicionado como constraint no DS)
+  - Empty state nao tinha doc suficiente — AI hesitou (Coverage gap identificado)
+
+  ### DS Improvements (feedback loop)
+  1. Adicionar spacing constraints explicitos para composicoes complexas
+  2. Melhorar doc de EmptyState com mais exemplos de composicao
+  3. Criar composition pattern: "Wizard" como recipe documentada
+
+  You can create a functioning prototype in the time it would take to draw 4 rectangles in Figma.
+  The meeting IS the prototype.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — entusiasmo com AI, pragmatismo, wet ball of clay?"
+  - "Real-Time UI com componentes do DS (nao vibe coding)?"
+  - "Mouth coding demonstrado com stakeholders nao-tecnicos?"
+  - "DS constraints como guardrail contra inconsistencia?"
+  - "Feedback loop: erros da AI viram melhorias no DS?"
+  - "Resultado tangivel no final da reuniao?"
+  - "Coverage + Validation como prerequisito mencionado?"

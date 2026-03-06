@@ -1,0 +1,72 @@
+# Estruturar Multi-Brand — Brad Frost
+# Framework: Multi-All-The-Things Architecture + Sibling vs Parent-Child
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "avancada"
+  frameworks_envolvidos:
+    - "Multi-All-The-Things Architecture"
+    - "Sibling vs Parent-Child Systems"
+    - "Component-Token Separation (Door Analogy)"
+    - "Three-Tiered Token System"
+
+descricao: "Estruturar arquitetura de design system para organizacoes com multiplos produtos, marcas, plataformas, modes e/ou locales. Componentes lidam com estrutura (invariante), tokens lidam com estetica (variavel)."
+
+instrucoes:
+  - "Identificar todas as dimensoes de variacao: brands, products, platforms, modes (dark/light), locales"
+  - "Decidir arquitetura: Sibling (sistemas independentes com tokens compartilhados) vs Parent-Child (sistema base + variantes)"
+  - "Separar componentes (estrutura/funcionalidade — invariante) de tokens (estetica/customizacao — variavel)"
+  - "Aplicar Door Analogy: porta abre e fecha independente da cor da pintura ou da macaneta"
+  - "Definir naming convention que escala com TODAS as dimensoes — nao so brand"
+  - "Mapear quais componentes sao 100% compartilhados vs quais tem variantes por brand/product"
+  - "Implementar token hierarchy: global → brand → product → mode → component"
+  - "Testar com ao menos 2 brands/products reais — nao hipoteticos"
+  - "Documentar decision tree: quando criar componente novo vs usar token diferente"
+
+exemplo_input: "Grupo com 3 marcas (premium, popular, B2B), 2 plataformas (web, mobile), dark/light mode. Atualmente cada marca tem DS separado com 70% de duplicacao entre eles."
+
+exemplo_output: |
+  ## Multi-Brand Architecture — [Grupo]
+
+  ### Diagnostico
+  70% de duplicacao = 70% de desperdicio. Tres equipes resolvendo o mesmo problema.
+
+  ### Decisao Arquitetural: Parent-Child
+  Franquia, nao lojas independentes. Sistema base obrigatorio, cada marca traz identidade.
+
+  ### Separacao Componente vs Token
+  **Componentes (porta):** Button, Input, Modal, Card, Navigation — mesma estrutura em todas marcas
+  **Tokens (pintura):** cores, tipografia, spacing, shadows — variam por marca
+
+  ### Dimensoes de Variacao
+  ```
+  {brand}.{product}.{platform}.{mode}.{component}.{property}
+
+  premium.app.web.light.button.primary.bg → #1A1A2E
+  popular.app.web.light.button.primary.bg → #FF6B35
+  b2b.dashboard.web.dark.button.primary.bg → #2563EB
+  ```
+
+  ### Token Hierarchy
+  1. Global (spacing, radius, grid — invariantes)
+  2. Brand (cores primarias, tipografia, shadows)
+  3. Product (ajustes por produto dentro da marca)
+  4. Mode (dark/light overrides)
+  5. Component (semantico — button-bg, input-border)
+
+  ### Componentes Compartilhados (invariantes)
+  100% compartilhados: Button, Input, Select, Modal, Toast, Avatar
+  Parcialmente: Navigation (estrutura compartilhada, items variam), Dashboard (layout compartilhado)
+  Brand-specific: zero — se precisa de componente unico, e snowflake do produto
+
+  Multi-all-the-things: mesma porta, infinitas combinacoes de cor e macaneta.
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — Door Analogy, franquia vs lojas?"
+  - "Sibling vs Parent-Child decision justificada?"
+  - "Componente/Token separation clara?"
+  - "Naming convention que escala com todas dimensoes?"
+  - "Testado com dados reais, nao hipoteticos?"
+  - "Duplicacao quantificada?"

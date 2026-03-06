@@ -1,0 +1,43 @@
+framework_identity:
+  name: "Gatilho de Dopamina"
+  slug: "gatilho-dopamina"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Frases aparentemente aleatorias e desconectadas inseridas no meio do anuncio que geram surpresa, curiosidade ou satisfacao. Cada frase funciona como um 'mini-gancho' que impede o espectador de sair antes do CTA. O cerebro responde a interrupcao de padrao — a aleatoriedade prende atencao. NAO eh procedural (nao a cada X segundos) — eh por intuicao."
+
+steps:
+  - step: 1
+    acao: "Inserir frases aparentemente aleatorias no meio do anuncio"
+    detalhe: "Cada frase deve gerar surpresa, curiosidade ou satisfacao. Pode usar frases da Biblia dos Hooks como base."
+  - step: 2
+    acao: "Garantir que NAO tem conectores"
+    detalhe: "A frase nao pode ter conexao logica com o que vem antes ou depois. Sem 'e', 'entao', 'foi quando'. Se tem conector, NAO eh Gatilho de Dopamina."
+  - step: 3
+    acao: "Posicionar por intuicao, nao por formula"
+    detalhe: "Nao eh a cada X segundos ou a cada X paragrafos. Eh quando sente que o leitor/espectador pode estar perdendo interesse. Corta o paragrafo que pode ser chato com a frase."
+  - step: 4
+    acao: "Testar o efeito 'what the fuck'"
+    detalhe: "A frase deve gerar um efeito de 'que que isso?' na cabeca da pessoa. Se a frase faz sentido no contexto, nao eh Gatilho de Dopamina."
+
+quando_usar: "Ao longo do corpo do anuncio para manter atencao e impedir saida antes do CTA. Especialmente quando o corpo eh longo ou quando o assunto pode ficar tecnico demais."
+
+exemplos_aplicacao:
+  - cenario: "Anuncio de emagrecimento com corpo longo"
+    resultado: "'Perdi um quilo em um mes. Nunca vi nada tao forte. Mais forte que a caneta Montejaro.' — frase solta no meio que gera curiosidade e surpresa."
+  - cenario: "Anuncio de colageno ficando tecnico demais"
+    resultado: "'Joga seu colageno no lixo.' — interrupcao que acorda o leitor e gera reacao emocional."
+
+anti_patterns:
+  - "Usar conectores (e, entao, foi quando) — mata o efeito de ruptura"
+  - "Frases que fazem sentido logico com o paragrafo anterior — nao eh Gatilho de Dopamina"
+  - "Colocar a cada X segundos de forma mecanica — eh por intuicao"
+  - "Confundir com transicao suave — Gatilho de Dopamina eh RUPTURA, nao transicao"
+
+frameworks_relacionados:
+  - name: "7 Alavancas para Bater Controle"
+    relacao: "componente — eh a alavanca 6"
+  - name: "Frase de Pouso"
+    relacao: "complementar — Frase de Pouso eh pos-gancho, Gatilho de Dopamina eh no corpo"
+  - name: "Promessa/Prova/Curiosidade"
+    relacao: "complementar — o Gatilho de Dopamina geralmente combina promessa com curiosidade"

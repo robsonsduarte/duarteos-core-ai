@@ -1,0 +1,53 @@
+# Real-Time UI — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Real-Time UI"
+  slug: "real-time-ui"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Framework onde reunioes de design/product se tornam o prototipo. Ideias abstratas viram prototipos tangiveis em tempo real durante a conversa. AI gera UI usando componentes do DS enquanto time discute. Elimina handoffs, espera e perda de contexto. The meeting IS the prototype."
+
+steps:
+  - step: 1
+    acao: "Component visualization — componentes aparecem quando referenciados na conversa"
+    detalhe: "Ao mencionar 'precisamos de um modal de confirmacao', AI instancia o componente Modal do DS em tempo real. Conversa e prototipo se fundem."
+  - step: 2
+    acao: "Product design realization — ideias abstratas viram prototipos tangiveis"
+    detalhe: "Quando conversa entra em hipoteticos e what-ifs, AI gera prototipo funcional. Corta debates abstratos com artefato concreto — realidade libera, hipoteticos paralisam."
+  - step: 3
+    acao: "Infrastructure leverage — prototipos usam best practices da organizacao via DS"
+    detalhe: "Prototipos nao sao mockups descartaveis — usam componentes reais do DS. Resultado e mais proximo de production-ready. Best practices embutidas automaticamente."
+  - step: 4
+    acao: "Friction minimization — sem espera, sem handoffs, sem perda de contexto"
+    detalhe: "Elimina ciclo classico: reuniao → designer desenha → developer implementa → stakeholder revisa. Tudo acontece na mesma sessao."
+  - step: 5
+    acao: "Participatory design — nao-especialistas contribuem via mouth coding"
+    detalhe: "Qualquer pessoa na reuniao pode 'falar UI em existencia'. Democratiza design — PM, content strategist, stakeholder contribuem diretamente."
+
+quando_usar: "Em reunioes de design/product — a reuniao se torna o prototipo"
+
+exemplos_aplicacao:
+  - cenario: "Reuniao de product onde time debate layout de nova feature por 45 minutos sem convergir"
+    resultado: "AI gera prototipo em 2 minutos usando DS. Time esculpe junto (wet ball of clay). Decisao tomada com artefato tangivel."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "Stakeholder nao-tecnico tem ideia mas nao consegue articular visualmente"
+    resultado: "Mouth coding: stakeholder descreve em linguagem natural, AI gera UI com componentes do DS, time refina junto"
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Usar Real-Time UI sem design system — AI gera inconsistencias sem fundacao"
+  - "Tratar prototipos de reuniao como versao final — sao ponto de partida, nao entregavel"
+  - "Excluir stakeholders nao-tecnicos do processo — mouth coding e para todos"
+
+frameworks_relacionados:
+  - name: "Mouth Coding"
+    relacao: "complementar"
+  - name: "Agentic Design Systems"
+    relacao: "prerequisito"
+  - name: "DS+AI vs Vibe Coding"
+    relacao: "complementar"

@@ -1,0 +1,50 @@
+# Multi-All-The-Things Architecture — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Multi-All-The-Things Architecture"
+  slug: "multi-all-the-things-architecture"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+descricao: "Arquitetura para design systems que precisam suportar multiplas dimensoes de variacao simultaneamente: brands, products, platforms, modes, locales. Componentes lidam com o invariante (estrutura), tokens lidam com o variavel (estetica). Naming convention disciplinada e essencial para escalar."
+
+steps:
+  - step: 1
+    acao: "Identificar dimensoes de variacao (brands, products, platforms, modes, locales)"
+    detalhe: "Mapear todas as dimensoes que o DS precisa suportar: multi-brand (3 marcas), multi-product (5 produtos), multi-platform (web, iOS, Android), multi-mode (light/dark), multi-locale (pt, en, es)."
+  - step: 2
+    acao: "Componentes lidam com estrutura/funcionalidade (invariante)"
+    detalhe: "Componentes sao identicos entre todas as dimensoes. Button funciona igual em marca A web light pt e marca B iOS dark en. Estrutura e comportamento sao invariantes."
+  - step: 3
+    acao: "Design tokens lidam com estetica/customizacao (variavel)"
+    detalhe: "Tokens variam por dimensao: brand tokens (cores da marca), mode tokens (light/dark), platform tokens (spacing iOS vs web). Three-Tiered Token System organiza a hierarquia."
+  - step: 4
+    acao: "Naming convention que escala com todas dimensoes"
+    detalhe: "Naming e o problema mais dificil — 90+ minutos dedicados so a isso no curso Subatomic. Convention deve acomodar todas dimensoes sem ambiguidade: brand.component.property.state.mode."
+
+quando_usar: "Organizacoes com multiplos produtos, marcas, plataformas simultaneos"
+
+exemplos_aplicacao:
+  - cenario: "Holding com 3 marcas, 5 produtos, web e mobile, light e dark mode"
+    resultado: "Arquitetura multi-all: componentes compartilhados, tokens organizados por dimensao. 1 codebase, 30 combinacoes possives sem duplicacao."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+  - cenario: "Nova marca adquirida precisa ser integrada ao DS existente"
+    resultado: "Criar novo set de brand tokens. Componentes existentes automaticamente suportam nova marca. Integracao em dias, nao meses."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-mius-structured.md"
+
+anti_patterns:
+  - "Criar DS separado por marca/produto — duplicacao exponencial"
+  - "Naming convention inconsistente que nao escala com novas dimensoes"
+  - "Misturar variacao estetica dentro de componentes em vez de isolar em tokens"
+
+frameworks_relacionados:
+  - name: "Component-Token Separation (Door Analogy)"
+    relacao: "prerequisito"
+  - name: "Three-Tiered Token System"
+    relacao: "complementar"
+  - name: "Sibling vs Parent-Child Systems"
+    relacao: "complementar"

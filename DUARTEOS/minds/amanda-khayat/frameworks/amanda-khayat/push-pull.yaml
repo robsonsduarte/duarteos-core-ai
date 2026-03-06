@@ -1,0 +1,40 @@
+framework_identity:
+  name: "Push-Pull (Atracao-Repulsao)"
+  slug: "push-pull"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Passar o anuncio inteiro convencendo (pull — atracao) e no fechamento dar impressao de que nao tem interesse (push — repulsao). O consumidor sente que nao esta sendo vendido, o que reduz resistencia e aumenta conversao. Funciona porque o vendedor 'desinteressado' eh mais confiavel que o vendedor insistente."
+
+steps:
+  - step: 1
+    acao: "Passar o anuncio inteiro convencendo (pull)"
+    detalhe: "Todo o corpo do anuncio — provas, promessas, historia, Big Idea — eh construido para convencer. O consumidor esta sendo atraido."
+  - step: 2
+    acao: "No fechamento, dar impressao de desinteresse (push)"
+    detalhe: "Formato: 'Tanto faz. Nao ganho nada com isso, a escolha eh sua.' Ou: 'Tu liga se tu quiser. Eu nao vou insistir de novo.' Nao usar 'clique em saiba mais' — usar 'voce clica se voce quiser.'"
+  - step: 3
+    acao: "Gerar efeito de 'putz, a escolha eh minha'"
+    detalhe: "O consumidor sente que TEM o poder de decisao. Nao esta sendo pressionado. Reduz resistencia e aumenta conversao paradoxalmente."
+
+quando_usar: "No fechamento do anuncio. Especialmente eficaz com publicos que tem alta resistencia a venda ou que ja viram muitos anuncios. Tambem funciona em VSLs."
+
+exemplos_aplicacao:
+  - cenario: "Anuncio longo que convenceu bem mas CTA nao converte"
+    resultado: "Substituir 'clique agora' por 'ja te mostrei que funciona, agora a escolha eh sua.' Conversao sobe porque resistencia cai."
+  - cenario: "VSL com muito ceticismo no publico"
+    resultado: "Fechamento: 'Eu nao ganho nada com isso. Testa so uma vez. Se nao funcionar, voce nunca mais precisa ouvir falar.' O desinteresse aparente gera confianca."
+
+anti_patterns:
+  - "Fazer push no meio do anuncio — tem que ser NO FECHAMENTO"
+  - "Push que parece falso — se o consumidor percebe a tecnica, perde efeito"
+  - "Seguir o push com insistencia — 'a escolha eh sua... MAS nao perca essa chance' mata o efeito"
+  - "Anuncio que so faz push sem pull — nao convenceu, entao o desinteresse nao tem impacto"
+
+frameworks_relacionados:
+  - name: "Autoridade Humanizada"
+    relacao: "alternativo — ambos sao opcoes de fechamento. Podem ser combinados"
+  - name: "7 Alavancas para Bater Controle"
+    relacao: "componente — alternativa de fechamento (alavanca 7)"
+  - name: "Promessa/Prova/Curiosidade"
+    relacao: "complementar — o pull do corpo usa os tres elementos"

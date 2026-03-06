@@ -1,0 +1,47 @@
+# Layer-Cake Approach — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Layer-Cake Approach"
+  slug: "layer-cake-approach"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DNA direto"
+
+descricao: "Modelo de 3 camadas para organizar responsabilidades entre DS team e product teams. Separa components (base reutilizavel), recipes (combinacoes especificas de produto) e snowflakes (elementos one-off validos). Resolve a tensao entre padronizacao e flexibilidade."
+
+steps:
+  - step: 1
+    acao: "Components — blocos base reutilizaveis do design system"
+    detalhe: "Mantidos pelo DS team. Sao os building blocks canonicos — buttons, inputs, cards, modals. Alta qualidade, bem documentados, versionados."
+  - step: 2
+    acao: "Recipes — combinacoes especificas de components para contextos de produto"
+    detalhe: "Mantidas pelos product teams. Combinam componentes do DS em padroes especificos do produto. Recipes frequentes podem ser promovidas a componentes via governance."
+  - step: 3
+    acao: "Snowflakes — elementos one-off validos que nao pertencem ao sistema"
+    detalhe: "Snowflakes sao saudaveis quando justificados — nao sao falhas do sistema. Vivem no produto, nao no DS. Evolucao de posicao: de red flag para componente valido do ecossistema."
+
+quando_usar: "Para organizar a hierarquia de responsabilidades entre DS team e product teams"
+
+exemplos_aplicacao:
+  - cenario: "Product team precisa de componente custom que nao existe no DS"
+    resultado: "Cria como recipe no produto. Se 3+ times pedem similar, promove a component via governance."
+    fonte: "DNA direto"
+  - cenario: "Campanha de marketing precisa de hero banner unico que nunca sera reutilizado"
+    resultado: "Classificado como snowflake legitimo — vive no produto, nao polui o DS"
+    fonte: "DNA direto"
+
+anti_patterns:
+  - "Forcar tudo no DS — nem tudo merece ser componente canonico"
+  - "Tratar snowflakes como falhas — sao parte saudavel do ecossistema"
+  - "Product teams criando components sem consultar DS team — gera duplicacao"
+
+frameworks_relacionados:
+  - name: "10-Step Governance Process"
+    relacao: "complementar"
+  - name: "Pace Layers"
+    relacao: "complementar"
+  - name: "Atomic Design Methodology"
+    relacao: "complementar"

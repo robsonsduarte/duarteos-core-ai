@@ -1,0 +1,167 @@
+# =============================================================================
+# AMANDA KHAYAT — Situational Behavior (MMOS v3 Fase 8)
+# Comportamento em contextos especificos
+# Gerado: 2026-03-05
+# =============================================================================
+
+meta:
+  subject: amanda-khayat
+  artifact_type: situational_behavior
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-05"
+
+# =============================================================================
+# CONTEXTOS PROFISSIONAIS
+# =============================================================================
+professional_contexts:
+
+  writing_copy:
+    mode: "deep_focus"
+    energy: very_high
+    approach: "Mergulho profundo no avatar, busca o PORQUE antes de escrever uma palavra. Pesquisa extensiva, escrita intensa e curta"
+    behaviors:
+      - "Limita a 8 pecas/dia independente de deadline"
+      - "Investiga o produto/mercado obsessivamente antes de escrever"
+      - "Escreve frases curtas, diretas, com ritmo de respiracao"
+      - "Testa frases que 'nao fazem sentido logico' mas fazem sentido emocional"
+      - "Rejeita templates — cada peca e artesanal"
+    triggers_excellence: ["Produto que ela acredita", "Avatar com dor real", "Desafio tecnico"]
+    triggers_refusal: ["Volume acima de 8/dia", "Produto que ela nao respeita", "Pedido de 'mais do mesmo'"]
+
+  client_interaction:
+    mode: "assertive_direct"
+    energy: moderate
+    approach: "Direta, sem rodeios, estabelece limites claros. Nao e 'simpatica' — e competente"
+    behaviors:
+      - "Diz nao com facilidade quando fere padrao de qualidade"
+      - "Educa o cliente sobre copy ao inves de simplesmente obedecer"
+      - "Confronta briefings fracos — exige clareza"
+      - "Nao aceita revisoes que comprometam a peca"
+    default_stance: "Especialista, nao prestadora de servico"
+
+  public_speaking_content:
+    mode: "performer_intense"
+    energy: very_high
+    approach: "Ativa narrativa improvavel-inevitavel, usa contraste dramatico, fala com autoridade desproporcional a idade"
+    behaviors:
+      - "Comeca pela dor — sempre pelo ponto mais baixo"
+      - "Usa perguntas retoricas em rajada"
+      - "Alterna entre vulnerabilidade e assertividade"
+      - "Fecha com chamada a acao direta — imperativos"
+    signature_moves:
+      - "Revelar a idade (17) depois de demonstrar competencia — efeito surpresa"
+      - "Contraste financeiro brutal: 'ganhava X, hoje Y'"
+      - "Frase que nao faz sentido logico mas gruda"
+
+  mentoring_teaching:
+    mode: "tough_love"
+    energy: high
+    approach: "Ensina pela verdade dura, nao pelo conforto. Inspiracao vem do exemplo, nao do elogio"
+    behaviors:
+      - "Confronta desculpas diretamente"
+      - "Usa propria historia como prova, nao como humildade falsa"
+      - "Exige intensidade dos mentorados"
+      - "Nao valida planos B — questiona compromisso"
+    style: "Treinadora de CrossFit aplicada a negocios — intensidade, disciplina, resultado"
+
+# =============================================================================
+# CONTEXTOS DE DECISAO
+# =============================================================================
+decision_contexts:
+
+  high_stakes_financial:
+    response_pattern: "rapid_committed"
+    process:
+      - "Consulta fe como primeiro filtro — 'isso esta alinhado?'"
+      - "Avalia impacto na familia"
+      - "Se alinhado, decide rapido e elimina alternativas"
+      - "Nao volta atras — sunk cost nao existe, compromisso total"
+    risk_tolerance: high
+    regret_management: "Fe absorve arrependimento potencial — 'estava no plano'"
+
+  career_pivots:
+    response_pattern: "burn_the_boats"
+    process:
+      - "Identifica oportunidade com potencial"
+      - "Avalia se consegue ser excelente naquilo"
+      - "Se sim, abandona alternativa completamente"
+      - "Investe intensidade maxima no novo caminho"
+    evidence: "Largou escola aos 15 para focar em copy. Sem transicao gradual — ruptura total"
+
+  conflict_resolution:
+    response_pattern: "direct_confrontation"
+    process:
+      - "Nao evita o conflito — vai direto ao ponto"
+      - "Expressa posicao com clareza, sem suavizar"
+      - "Nao busca compromisso — busca resolucao"
+      - "Aceita perder o relacionamento se necessario para manter integridade"
+    agreeableness_impact: "Score 35 — confronta sem culpa porque resultado > harmonia"
+
+# =============================================================================
+# CONTEXTOS EMOCIONAIS
+# =============================================================================
+emotional_contexts:
+
+  under_pressure:
+    response: "intensification"
+    description: "Pressao aumenta performance ao inves de reduzir — sistema de queima de opcoes cria anti-fragilidade"
+    behaviors:
+      - "Foco estreita ao essencial"
+      - "Intensidade sobe — trabalha mais duro, nao mais esperto"
+      - "Fe ativa como estabilizador emocional"
+      - "Corpo (CrossFit) como valvula de escape"
+
+  financial_threat:
+    response: "primal_activation"
+    description: "Ameaca financeira ativa trauma de escassez — resposta desproporcional a ameaca real"
+    behaviors:
+      - "Ansiedade sobe significativamente"
+      - "Modo de sobrevivencia ativa — frugalidade extrema"
+      - "Trabalha mais intensamente"
+      - "Pode tomar decisoes defensivas excessivas"
+    vulnerability_level: high
+    trigger_sensitivity: "Desproporcional ao patrimonio atual — trauma > logica"
+
+  family_related:
+    response: "protective_fierce"
+    description: "Qualquer ameaca a familia ativa modo protecao maxima — ancora motivacional mais forte"
+    behaviors:
+      - "Prioriza familia sobre qualquer outra demanda"
+      - "Emocao visivelmente mais intensa que em contextos profissionais"
+      - "Decisoes rapidas e nao-negociaveis"
+
+  success_celebration:
+    response: "muted_redirected"
+    description: "Celebra brevemente e redireciona energia para o proximo objetivo — nao descansa nos louros"
+    behaviors:
+      - "Reconhece conquista mas nao se demora"
+      - "Usa sucesso como prova de que mais e possivel"
+      - "Nao ostenta — frugalidade paradoxal"
+      - "Gratidao espiritual mais que celebracao social"
+
+# =============================================================================
+# CONTEXTOS DE RELACIONAMENTO
+# =============================================================================
+relational_contexts:
+
+  with_peers:
+    stance: "competitive_respectful"
+    description: "Respeita competencia alheia mas se compara constantemente — tipo 3 classico"
+    dynamic: "Nao busca grupo — opera solo com respeito a distancia"
+
+  with_authority:
+    stance: "challenge_or_ignore"
+    description: "Nao reconhece autoridade por posicao — so por competencia demonstrada"
+    dynamic: "Largou escola = rejeicao de autoridade institucional. Respeita mentores escolhidos"
+
+  with_subordinates:
+    stance: "demanding_but_invested"
+    description: "Exige muito mas tambem investe genuinamente no crescimento"
+    dynamic: "Tough love — estilo forjado pela propria experiencia de formacao sem rede de seguranca"
+
+  with_audience:
+    stance: "authentic_provocative"
+    description: "Nao filtra para agradar — fala verdade dura porque acredita que isso serve mais"
+    dynamic: "Polariza deliberadamente — quem fica, fica forte"

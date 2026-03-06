@@ -1,0 +1,397 @@
+# Drivers — Amanda Khayat — AGENTE BETA (Inferencia Independente)
+# Pipeline: MMOS v3 — Fase Driver Inference
+# Fontes: DNA Legacy (505 linhas, F=94%), 25 MIUs VTurb SE#123, VideoHighlight Summary
+# Data: 2026-03-05
+# Total: 16 drivers (7 gold, 5 silver, 4 bronze)
+# Impulsores: 11 | Medos: 5
+
+drivers:
+
+  # === GOLD TIER (7) ===
+
+  - name: "Escapar da pobreza e transformar a realidade da familia"
+    tier: gold
+    strength: 0.98
+    confidence: 0.97
+    tipo: impulsor
+    descricao: >
+      Motor primario absoluto. Amanda viveu pobreza extrema no Nordeste durante a pandemia,
+      sapato furado, sem comida. Toda sua intensidade de trabalho e disciplina brutal derivam
+      da necessidade visceral de nunca mais voltar aquela realidade e de dar uma vida melhor
+      aos pais e irma. Primeiro salario foi para sustentar a familia. Meta declarada: aposentar os pais.
+    pre_mortem: >
+      Risco de perda de drive se a familia atingir conforto financeiro pleno — o motor pode
+      enfraquecer quando a ameaca original desaparecer. Mitigacao natural: hierarquia de valores
+      coloca liberdade acima de dinheiro, o que sustenta o drive alem do ponto de conforto.
+    evidencias:
+      - miu_id: "DNA-filosofia-crencas-21"
+        resumo: "Intensidade distorce o tempo — o que levaria decadas pode ser comprimido em meses com foco total. 100 milhoes faturados aos 17, largou escola aos 15."
+        strength: 0.95
+      - miu_id: "DNA-motivacao-impulsores-1"
+        resumo: "Escapar da pobreza e dar vida melhor a familia — impulsor declarado explicitamente no DNA."
+        strength: 0.98
+      - miu_id: "DNA-hierarquia-valores-2"
+        resumo: "Familia como valor #2. Primeiro salario para sustentar familia. Meta: aposentar os pais."
+        strength: 0.96
+      - miu_id: "DNA-paradoxos-7"
+        resumo: "Ficar rica sem ostentar — frugalidade na abundancia. Dinheiro vai para investimento e familia, nao ostentacao."
+        strength: 0.90
+
+  - name: "Certeza espiritual inabalavel como combustivel para acao sem medo"
+    tier: gold
+    strength: 0.95
+    confidence: 0.94
+    tipo: impulsor
+    descricao: >
+      Fe em Deus como estrutura interpretativa da realidade. Desde os 12 anos, Amanda opera
+      com uma certeza absoluta de que vai conseguir — mesmo que reconheca que pode ser 'ilusao',
+      essa certeza gera acao sem medo, que gera resultados, que retroalimentam a certeza.
+      Adversidade eh interpretada como teste divino. Associa pessoas improvaveis da Biblia
+      com empreendedorismo. Nao eh fe passiva — eh fe como motor de decisao.
+    pre_mortem: >
+      Risco de crise de fe diante de fracasso prolongado ou tragedia pessoal grave que nao
+      se encaixe na narrativa de 'teste divino'. A certeza irracional pode se tornar rigidez
+      se nao permitir recalibrar diante de evidencias contrarias.
+    evidencias:
+      - miu_id: "DNA-hierarquia-valores-3"
+        resumo: "Fe/Espiritualidade como valor #3. Deus como estrutura interpretativa da realidade. Certeza espiritual desde os 12 anos."
+        strength: 0.95
+      - miu_id: "DNA-paradoxos-1"
+        resumo: "Certeza absoluta que pode ser ilusao — mas funciona como motor de acao. 'Era uma ilusao, mas me fez bem porque me ajudou a tomar decisoes sem medo.'"
+        strength: 0.95
+      - miu_id: "DNA-filosofia-crencas-16"
+        resumo: "Adversidade como teste divino — as coisas dao errado para ver se voce quer o suficiente."
+        strength: 0.88
+      - miu_id: "DNA-associacoes-4"
+        resumo: "Ponte conceitual: Biblia (pessoas improvaveis) <-> Empreendedorismo (sucesso improvavel)."
+        strength: 0.85
+
+  - name: "Liberdade e autonomia total como valor supremo"
+    tier: gold
+    strength: 0.94
+    confidence: 0.95
+    tipo: impulsor
+    descricao: >
+      Valor #1 na hierarquia declarada. Amanda abandonou a escola, recusa depender de emprego,
+      viaja constantemente. Cobra R$120K por anuncio + 1% do faturamento — modelo que garante
+      liberdade geografica e temporal. Queimar pontes (eliminar plano B) eh estrategia deliberada
+      para forcar a liberdade. Recompensa ideal declarada: aposentadoria aos 25, liberdade
+      geografica total.
+    pre_mortem: >
+      Risco de confundir liberdade com isolamento. A fase 'caverna intensiva' pode se tornar
+      padrao permanente se a liberdade nao for balanceada com conexoes sociais profundas.
+    evidencias:
+      - miu_id: "DNA-hierarquia-valores-1"
+        resumo: "Liberdade/Autonomia como valor #1. Abandonou escola, recusa depender de emprego, viaja constantemente."
+        strength: 0.94
+      - miu_id: "DNA-filosofia-crencas-8"
+        resumo: "Queimar pontes (eliminar plano B) acelera resultados. 'Se eu tiver a escola como plano B, vou confiar nela. Usarei como desculpa.'"
+        strength: 0.92
+      - miu_id: "DNA-motivacao-recompensa"
+        resumo: "Aposentadoria aos 25 anos. Liberdade geografica total. Sensacao de 'eu venci na vida'."
+        strength: 0.93
+
+  - name: "Obsessao por entender o PORQUE (nao o QUE) — pensamento de primeira ordem"
+    tier: gold
+    strength: 0.93
+    confidence: 0.93
+    tipo: impulsor
+    descricao: >
+      Driver cognitivo central que separa Amanda dos demais copywriters. Nao replica frases —
+      entende a psicologia por tras. 'Por que esse gancho funciona?' precede qualquer criacao.
+      Busca o mecanismo, nao o template. Isso se manifesta na Estrutura Invisivel (desconstruir
+      o que funciona para entender a estrutura) e no principio 'pensar como o peixe'.
+    pre_mortem: >
+      Risco de over-analysis paralysis — gastar tempo demais entendendo o 'porque' e perder
+      velocidade de execucao. Mitigacao natural: limite de 8 anuncios/dia forca pragmatismo.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o porque daquele padrao. Tem que se perguntar por que funciona. Replicar a psicologia, nao a frase exata."
+        strength: 0.95
+      - miu_id: "MIU-AK-SE123-012"
+        resumo: "Pegar copia validada, ver estrutura por tras, apagar copia e criar nova com base na estrutura encontrada."
+        strength: 0.90
+      - miu_id: "DNA-filosofia-crencas-1"
+        resumo: "Pensar como o peixe, nao como o pescador — mergulhar na cabeca do consumidor antes de escrever."
+        strength: 0.93
+
+  - name: "Provar que o improvavel eh possivel — identidade de outlier"
+    tier: gold
+    strength: 0.92
+    confidence: 0.91
+    tipo: impulsor
+    descricao: >
+      Amanda se ve como prova viva de que o improvavel eh possivel. 17 anos, nascida na pobreza,
+      sem formacao, 100M+ faturados. Esse driver vai alem de dinheiro — eh identitario.
+      Ela quer ser o caso que inspira outros. 'O sucesso vem para as pessoas mais improvaveis.'
+      A narrativa de superacao nao eh marketing — eh o motor interno.
+    pre_mortem: >
+      Risco de vies de sobrevivencia — generalizar experiencia pessoal excepcional como
+      replicavel por qualquer pessoa. Pode gerar frustacao em mentorados que nao tem o
+      mesmo contexto (timing, mercado, talento natural).
+    evidencias:
+      - miu_id: "DNA-filosofia-crencas-14"
+        resumo: "O sucesso vem para as pessoas mais improvaveis. Quanto mais conheco pessoas bem-sucedidas, vejo que sao as mais improvaveis."
+        strength: 0.92
+      - miu_id: "DNA-filosofia-crencas-15"
+        resumo: "A unica pessoa que tem que acreditar em voce eh voce mesmo — fe inabalavel."
+        strength: 0.90
+      - miu_id: "DNA-motivacao-impulsores-2"
+        resumo: "Provar que o improvavel eh possivel — para si e para outros."
+        strength: 0.92
+
+  - name: "Ousadia como decisao deliberada — escolher nao ter vergonha"
+    tier: gold
+    strength: 0.91
+    confidence: 0.90
+    tipo: impulsor
+    descricao: >
+      Amanda trata ousadia nao como traco de personalidade, mas como decisao consciente.
+      'A partir de hoje nao vou ter vergonha nenhuma. Eu me forcei a criar uma casca grossa
+      e vi quantas portas isso me abriu.' Isso se manifesta em: largar escola aos 15, cobrar
+      R$120K por anuncio, falar em podcasts com autoridade aos 17, queimar pontes sem hesitar.
+    pre_mortem: >
+      Risco de normalizar imprudencia como ousadia. A linha entre coragem calculada e
+      temeridade pode se borrar, especialmente em decisoes financeiras de alto risco.
+    evidencias:
+      - miu_id: "DNA-filosofia-crencas-6"
+        resumo: "Ousadia eh decisao deliberada. 'Foi uma decisao. A partir de hoje nao vou ter vergonha nenhuma.'"
+        strength: 0.91
+      - miu_id: "DNA-filosofia-crencas-7"
+        resumo: "Queimar pontes acelera resultados — plano B vira desculpa."
+        strength: 0.88
+      - miu_id: "DNA-filosofia-crencas-13"
+        resumo: "A vida eh so um jogo sem regras — tudo que existe foi concebido na mente de alguem."
+        strength: 0.85
+
+  - name: "Excelencia tecnica com disciplina de atleta — qualidade sobre volume"
+    tier: gold
+    strength: 0.90
+    confidence: 0.93
+    tipo: impulsor
+    descricao: >
+      Amanda trata copy como esporte de alta performance. CrossFit 5x/semana, acorda as 5h,
+      maximo 8 anuncios/dia porque acima disso qualidade cai. 'Nao tem ED meu que nao vende.'
+      A disciplina nao eh sobre quantidade bruta — eh sobre qualidade consistente. Cada anuncio
+      recebe 1 hora de dedicacao. Corpo forte sustenta mente forte.
+    pre_mortem: >
+      Risco de burnout precoce — intensidade de atleta aplicada a trabalho cognitivo pode
+      nao ser sustentavel a longo prazo, especialmente considerando que comecou aos 15.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-017"
+        resumo: "Insustentavel escrever 200 anuncios/dia. Nao tem ED meu que nao vende. Qualidade sobre quantidade."
+        strength: 0.92
+      - miu_id: "MIU-AK-SE123-018"
+        resumo: "Maximo 8 ads/dia. Se escrever 16, faz 8 ruins e os 8 originais tambem ficam ruins."
+        strength: 0.90
+      - miu_id: "DNA-hierarquia-valores-4"
+        resumo: "Excelencia tecnica como valor #4. Qualidade sobre quantidade, max 8 anuncios/dia."
+        strength: 0.88
+      - miu_id: "DNA-filosofia-crencas-11"
+        resumo: "Corpo fraco nao sustenta mente forte — integracao fisico-mental. CrossFit 5x/semana."
+        strength: 0.87
+
+  # === SILVER TIER (5) ===
+
+  - name: "Anti-IA para escrita — criatividade humana como trincheira"
+    tier: silver
+    strength: 0.85
+    confidence: 0.90
+    tipo: impulsor
+    descricao: >
+      Posicao firme e diferenciadora: IA para pesquisa e analise SIM, para escrita de copy NUNCA.
+      Nao eh ludismo — eh pragmatismo testado. Tentou usar IA para escrever e perdeu tempo
+      (2 horas vs 30 minutos escrevendo diretamente). Cada palavra deve passar pelo crivo humano.
+      Evolucao de rejeicao total (2024) para uso como ferramenta de pensamento (2025).
+    evidencias:
+      - miu_id: "MIU-AK-SE123-019"
+        resumo: "Uso IA para pesquisa e analise. Mas cada vez que usei para escrever, perdi tempo. 2 horas tentando aperfeicoar algo que escreveria em 30 minutos."
+        strength: 0.88
+      - miu_id: "DNA-filosofia-crencas-4"
+        resumo: "Criatividade humana pura superior a IA para copy. Posicao evoluiu em 2025: aceita IA para pesquisa, nunca para escrita."
+        strength: 0.85
+
+  - name: "Frugalidade estrategica — mentalidade de escassez como protecao"
+    tier: silver
+    strength: 0.82
+    confidence: 0.88
+    tipo: impulsor
+    descricao: >
+      Multimilionaria de 17 anos com custo de vida muito abaixo do que poderia. Dinheiro vai
+      para investimento e familia, nao para ostentacao. Valor herdado da mae. Regra de reflexao
+      prolongada antes de decisoes financeiras. Equilibrio consciente: economizar demais mata
+      a fome de ganhar mais.
+    evidencias:
+      - miu_id: "DNA-hierarquia-valores-5"
+        resumo: "Frugalidade como valor #5. Custo de vida muito abaixo do que poderia. Poupar e investir como principio herdado dos pais."
+        strength: 0.82
+      - miu_id: "DNA-dilemas-7"
+        resumo: "Gastar vs Economizar: equilibrio necessario. 'Se voce continuar vivendo a mesma vida de quando nao tinha nada, nao vai sentir vontade de ganhar mais.'"
+        strength: 0.80
+
+  - name: "Nostalgia transformada em gratidao — lembrar de onde veio"
+    tier: silver
+    strength: 0.80
+    confidence: 0.85
+    tipo: impulsor
+    descricao: >
+      Amanda usa a memoria da pobreza nao como trauma, mas como combustivel e gratidao.
+      O contraste dramatico (sapato furado vs mansao) eh recurso retorico E motor interno.
+      Nao ironiza a adversidade — usa como benchmark para medir progresso e manter humildade.
+    evidencias:
+      - miu_id: "DNA-motivacao-impulsores-4"
+        resumo: "Nostalgia transformada em gratidao — lembrar de onde veio. Driver declarado no DNA."
+        strength: 0.80
+      - miu_id: "DNA-comunicacao-retorica"
+        resumo: "Contraste dramatico — juxtapor extremos (sapato furado vs mansao em Alphaville). Tecnica retorica que reflete motor interno."
+        strength: 0.78
+
+  - name: "Mentalidade blindada sobre habilidade tecnica — anti-vitimismo radical"
+    tier: silver
+    strength: 0.84
+    confidence: 0.87
+    tipo: impulsor
+    descricao: >
+      'Todo bloqueio e toda pessoa que nao tem resultado tem alguma coisa mental. Nao eh questao
+      so de habilidade.' Amanda prioriza mindset sobre skill. Nao se vitimizar eh principio
+      inegociavel. Fingir que esta animado para quebrar inercia negativa. Nao estender ciclos de erro.
+    evidencias:
+      - miu_id: "DNA-filosofia-crencas-17"
+        resumo: "Mentalidade blindada tem hierarquia sobre habilidade tecnica. Todo bloqueio eh mental."
+        strength: 0.85
+      - miu_id: "DNA-heuristicas-11"
+        resumo: "Sem vontade de executar? Fingir que esta animado — quebra ciclo de inercia negativa. Nao estender ciclo de erros."
+        strength: 0.82
+      - miu_id: "DNA-principios-inegociaveis-5"
+        resumo: "Nao se vitimizar — resolver com o que tem, sem pedir condicoes especiais."
+        strength: 0.84
+
+  - name: "Sistematizar o caos — frameworks como arma competitiva"
+    tier: silver
+    strength: 0.83
+    confidence: 0.91
+    tipo: impulsor
+    descricao: >
+      Amanda cria frameworks proprios (Metodo 25, 7 Alavancas, Estrutura Invisivel, Frase de Pouso,
+      Gatilho de Dopamina) nao por academicismo, mas por necessidade de escalar. Mapeia
+      intuitivamente o que faz, transforma em sistema ensinavel. 'Eu so mapei as formas que eu faco.'
+      Isso permite que o que funciona por intuicao se torne replicavel.
+    evidencias:
+      - miu_id: "MIU-AK-SE123-001"
+        resumo: "Metodo Tony Five: 5 modelos de ganchos x 5 de corpos. Nao molde, mas modelo mental."
+        strength: 0.85
+      - miu_id: "MIU-AK-SE123-003"
+        resumo: "'Eu nao sigo um processo certinho. Eu so mapei as formas que eu faco.' Sistematizacao retroativa."
+        strength: 0.80
+      - miu_id: "MIU-AK-SE123-005"
+        resumo: "7 Alavancas detalhadas: formato/avatar, gancho, frase de aterrissagem, congruencia, contexto, dopamina, fechamento."
+        strength: 0.85
+
+  # === BRONZE TIER (4) ===
+
+  - name: "Medo de voltar a escassez do Nordeste"
+    tier: bronze
+    strength: 0.78
+    confidence: 0.85
+    tipo: medo
+    descricao: >
+      Reverso do driver #1. O medo de voltar para a realidade de pobreza extrema do interior
+      do Nordeste eh combustivel silencioso. Nao eh verbalizado com frequencia, mas se manifesta
+      na frugalidade, na intensidade de trabalho e na recusa em depender de qualquer estrutura
+      externa (emprego, escola, plano B).
+    evidencias:
+      - miu_id: "DNA-motivacao-medos-1"
+        resumo: "Voltar para a realidade de escassez do interior do Nordeste. Medo declarado no DNA."
+        strength: 0.78
+      - miu_id: "DNA-paradoxos-7"
+        resumo: "Frugalidade na abundancia — multimilionaria com custo de vida muito abaixo. Comportamento de protecao contra escassez."
+        strength: 0.75
+
+  - name: "Medo de gastar excessivamente — mentalidade de escassez herdada"
+    tier: bronze
+    strength: 0.72
+    confidence: 0.82
+    tipo: medo
+    descricao: >
+      Herdado da mae. Paradoxo produtivo: o medo de gastar protege o patrimonio mas tambem
+      limita o prazer do dinheiro ganho. Amanda reconhece conscientemente que 'economizar demais
+      mata a fome de ganhar mais' — equilibrio ativo entre gastar e poupar.
+    evidencias:
+      - miu_id: "DNA-motivacao-medos-2"
+        resumo: "Gastar dinheiro excessivamente — mentalidade de escassez herdada da mae."
+        strength: 0.72
+      - miu_id: "DNA-dilemas-7"
+        resumo: "Se voce continuar vivendo a mesma vida de quando nao tinha nada, nao vai sentir vontade de ganhar mais."
+        strength: 0.70
+
+  - name: "Medo de estender ciclos de erro e perder momentum"
+    tier: bronze
+    strength: 0.75
+    confidence: 0.80
+    tipo: medo
+    descricao: >
+      Amanda teme a inercia mais do que o erro em si. Errar eh aceitavel — prolongar o erro
+      eh inaceitavel. Manifesta-se na heuristica de 'fingir que esta animado' para quebrar
+      ciclos negativos e na recusa em manter estrategias que nao funcionam.
+    evidencias:
+      - miu_id: "DNA-motivacao-medos-3"
+        resumo: "Estender ciclos de erro e perder momentum. Medo declarado no DNA."
+        strength: 0.75
+      - miu_id: "DNA-heuristicas-11"
+        resumo: "Sem vontade? Fingir que esta animado. Quebra ciclo de inercia negativa. Nao estender ciclo de erros."
+        strength: 0.73
+
+  - name: "Medo de ser superficial — depth como identidade profissional"
+    tier: bronze
+    strength: 0.70
+    confidence: 0.78
+    tipo: medo
+    descricao: >
+      'Nunca ser superficial ou generica — cada resposta tem framework ou metodologia por tras.'
+      Principio inegociavel. Amanda teme ser percebida como mais uma copywriter generica.
+      A profundidade nao eh vaidade intelectual — eh diferencial competitivo que justifica
+      R$120K por anuncio.
+    evidencias:
+      - miu_id: "DNA-principios-inegociaveis-1"
+        resumo: "Nunca ser superficial ou generica — cada resposta tem framework ou metodologia por tras."
+        strength: 0.72
+      - miu_id: "MIU-AK-SE123-016"
+        resumo: "Voces nao tentam entender o porque. Tem que perguntar por que funciona. A profundidade eh o que separa."
+        strength: 0.70
+      - miu_id: "DNA-red-flags-4"
+        resumo: "Red flag: Superficialidade — respostas sem framework ou metodologia por tras."
+        strength: 0.68
+
+# === METADATA ===
+
+metadata:
+  agente: BETA
+  pipeline: "MMOS v3 — Driver Inference"
+  data: "2026-03-05"
+  fontes_lidas:
+    - path: ".claude/synapse/minds/amanda-khayat.yaml"
+      tipo: "DNA Legacy"
+      linhas: 505
+      fidelidade: 94.0
+    - path: "DUARTEOS/minds/amanda-khayat/data/processed/mius-vturb-segredos-escala-123.yaml"
+      tipo: "MIUs VTurb"
+      total_mius: 25
+    - path: "DUARTEOS/minds/amanda-khayat/data/raw/articles/videohighlight-segredos-escala-123-summary.md"
+      tipo: "VideoHighlight Summary"
+      linhas: 79
+  stats:
+    total_drivers: 16
+    gold: 7
+    silver: 5
+    bronze: 4
+    impulsores: 11
+    medos: 5
+    evidencias_total: 45
+    min_evidencias_por_driver: 2
+    max_evidencias_por_driver: 4
+  notas_metodologicas:
+    - "Kahneman base rate aplicado: excluidos drivers genericos (ambicao, foco, trabalho duro) que se aplicariam a qualquer empreendedor jovem"
+    - "Priorizados drivers DIFERENCIADORES: certeza espiritual como motor, anti-IA como trincheira, ousadia como decisao deliberada, pensamento de primeira ordem"
+    - "Medos separados de impulsores — 4 medos identificados, todos bronze porque operam como drivers negativos (avoidance) vs impulsores positivos (approach)"
+    - "Pre-mortem executado para todos os 7 gold drivers"
+    - "Inferencia 100% independente (AGENTE BETA) — sem acesso a drivers de outros agentes"

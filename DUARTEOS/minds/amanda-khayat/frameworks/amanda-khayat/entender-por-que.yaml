@@ -1,0 +1,43 @@
+framework_identity:
+  name: "Entender POR QUE funciona"
+  slug: "entender-por-que"
+  mind: "amanda-khayat"
+  category: "Copywriting"
+
+descricao: "Pensamento de primeira ordem aplicado a copy. Em vez de replicar O QUE funciona (copiar frase, copiar estrutura), entender POR QUE funciona (mecanismo psicologico) e criar algo NOVO que gere o mesmo efeito. O hack nao eh copiar — eh entender. Todo copywriter que da certo pensa assim."
+
+steps:
+  - step: 1
+    acao: "Analisar anuncio que funciona"
+    detalhe: "Pegar o anuncio vencedor — proprio ou concorrente — e isolar os elementos que funcionam."
+  - step: 2
+    acao: "Perguntar: POR QUE este gancho/avatar/angulo funciona?"
+    detalhe: "Nao 'o que essa frase diz?' mas 'por que que ela funciona?' Qual mecanismo psicologico esta em jogo? Curiosidade? Medo? Prova social? Ruptura de padrao?"
+  - step: 3
+    acao: "Chegar na resposta do mecanismo psicologico"
+    detalhe: "Ex: 'Essa frase funciona porque gera curiosidade sobre um resultado improvavel.' Ou: 'Esse avatar funciona porque gera identificacao com o publico comprador.'"
+  - step: 4
+    acao: "Criar algo NOVO que gere o mesmo efeito"
+    detalhe: "Agora que sabe POR QUE funciona, criar uma frase/gancho/angulo completamente novo que ativa o mesmo mecanismo psicologico. O resultado eh original mas igualmente eficaz."
+
+quando_usar: "Sempre que analisar anuncios — proprios ou de concorrentes. Nao replicar cegamente. Base filosofica de toda a metodologia Amanda Khayat."
+
+exemplos_aplicacao:
+  - cenario: "Gancho vencedor: 'Mulher de 60 anos rejuveneceu 20 anos com truque simples'"
+    resultado: "POR QUE funciona: curiosidade (truque) + prova implecita (20 anos) + identificacao (mulher de 60). Novo gancho: 'Medico ficou chocado quando viu exame de mulher que usou receita da avo' — mesmos mecanismos, frase 100% original."
+  - cenario: "Corpo de anuncio com alta retencao"
+    resultado: "POR QUE funciona: alternancia entre promessa e prova a cada 2-3 frases + Gatilho de Dopamina no meio. Entender o ritmo e replicar o PADRAO, nao as FRASES."
+
+anti_patterns:
+  - "Copiar frase por frase trocando uma palavra — 'mudei de 10 kg pra 11 e falei que mudei a estrutura. Nao eh verdade.'"
+  - "Saber O QUE funciona sem saber POR QUE — gera copias frageis que nao escalam"
+  - "Pular o passo 3 (mecanismo psicologico) — sem entender o mecanismo, a criacao nova nao funciona"
+  - "Achar que entender POR QUE eh teoria — eh a habilidade mais pratica que existe em copy"
+
+frameworks_relacionados:
+  - name: "Estrutura Invisivel"
+    relacao: "complementar — Estrutura Invisivel desconstrui a forma, Entender POR QUE desconstrui o mecanismo"
+  - name: "Big Idea (Schwartz)"
+    relacao: "complementar — entender POR QUE uma Big Idea funciona para criar novas"
+  - name: "Briefing Pre-Escrita em 4 Componentes"
+    relacao: "complementar — a justificativa do briefing exige entender POR QUE"

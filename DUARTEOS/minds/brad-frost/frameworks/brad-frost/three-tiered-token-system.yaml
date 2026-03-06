@@ -1,0 +1,47 @@
+# Three-Tiered Token System — brad-frost
+# Derivado de: .claude/synapse/minds/brad-frost.yaml
+# Pipeline: MMOS Engine v3 — Fase 10
+# Gerado em: 2026-03-06
+
+framework_identity:
+  name: "Three-Tiered Token System"
+  slug: "three-tiered-token-system"
+  mind: "brad-frost"
+  category: "UX-Design"
+  source_path: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+
+descricao: "Arquitetura de 3 niveis para design tokens que evita explosao de tokens component-specific. Tokens sao os subatomic particles da UI — menores que atoms, foundation invisivel do sistema. Naming e o problema mais dificil (90+ minutos dedicados so a isso no curso Subatomic)."
+
+steps:
+  - step: 1
+    acao: "Global/Foundation tokens — colors, typography, spacing (reutilizavel broadly)"
+    detalhe: "Tokens de base reutilizaveis em todo o sistema. Definem a paleta completa: cores primitivas (blue-500), escalas tipograficas, spacing scale, breakpoints. Nomenclatura descritiva, nao semantica."
+  - step: 2
+    acao: "Component tokens — semantic naming (button-primary-bg vs blue-500)"
+    detalhe: "Tokens semanticos que referenciam tokens globais. button-primary-bg: $blue-500. Permite theming: mudar blue-500 por red-500 sem tocar em nenhum componente. Naming semantico e essencial."
+  - step: 3
+    acao: "Override tokens — raros, para casos muito especificos"
+    detalhe: "Tokens de excecao para casos onde global e component nao resolvem. Devem ser RAROS — abuso de overrides indica arquitetura de tokens mal planejada. Reservar para multi-brand heavy."
+
+quando_usar: "Ao arquitetar design tokens — evita explosao de 5000+ tokens component-specific"
+
+exemplos_aplicacao:
+  - cenario: "DS tem 5000+ tokens, maioria component-specific, impossivel de manter"
+    resultado: "Reestruturacao em 3 tiers: ~100 globals, ~300 component tokens referenciando globals, ~20 overrides. Manutencao reduzida drasticamente."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+  - cenario: "Novo tema dark mode precisa ser implementado"
+    resultado: "Com 3-tier: mudar apenas global tokens (tier 1). Component tokens (tier 2) herdam automaticamente. Zero mudanca em componentes."
+    fonte: "DUARTEOS/minds/brad-frost/data/brad-frost-research-compilation.md"
+
+anti_patterns:
+  - "Criar tokens component-specific para tudo — explode em milhares ingerenciaveis"
+  - "Nomear tokens com valores literais (blue-500-bg) em vez de semanticos (button-primary-bg)"
+  - "Abusar de override tokens em vez de corrigir arquitetura de globals e components"
+
+frameworks_relacionados:
+  - name: "Component-Token Separation (Door Analogy)"
+    relacao: "complementar"
+  - name: "Multi-All-The-Things Architecture"
+    relacao: "complementar"
+  - name: "Sibling vs Parent-Child Systems"
+    relacao: "complementar"

@@ -1,0 +1,66 @@
+# Vender Design System — Brad Frost
+# Framework: 3-Step Sell + Selling Design Systems Framework
+# Gerado em: 2026-03-06
+
+task_identity:
+  mind: "brad-frost"
+  domain: "Design Systems & Atomic Design"
+  dificuldade: "intermediaria"
+  frameworks_envolvidos:
+    - "3-Step Sell"
+    - "Selling Design Systems Framework"
+    - "Interface Inventory"
+
+descricao: "Vender a ideia de design system internamente para lideranca e stakeholders — nunca comece pedindo permissao. Make, Show, Officialize. Success = Success."
+
+instrucoes:
+  - "MAKE: Construa algo tangivel primeiro, sem pedir permissao — prototipo de 3-5 componentes reais"
+  - "Use Interface Inventory como evidencia do problema — numeros e screenshots lado a lado"
+  - "Quantifique custo do caos: horas de retrabalho, inconsistencias, bugs de UI"
+  - "SHOW: Demonstre quick wins com exemplos reais do produto — nao slides, codigo funcionando"
+  - "Conecte a objetivos de negocio que lideranca ja tem (velocidade, qualidade, consistencia de marca)"
+  - "Use linguagem de ROI para lideranca, nao jargao tecnico"
+  - "OFFICIALIZE: Formalize com buy-in — proposta de time, recursos, roadmap"
+  - "Identifique aliados internos em cada disciplina (design, dev, product)"
+  - "Prepare resposta para objecoes comuns: 'e cedo demais', 'nao temos budget', 'vai demorar'"
+
+exemplo_input: "Empresa media (200 funcionarios), 4 produtos digitais, 20 devs, 8 designers. VP de Produto quer 'mais velocidade'. CTO quer 'menos bugs'. CEO quer 'marca consistente'."
+
+exemplo_output: |
+  ## Plano de Venda — Design System
+
+  ### STEP 1: MAKE (Semana 1-2)
+  Sem pedir permissao, componentizar Button, Input, Card e Modal a partir do produto principal.
+  Resultado: 4 componentes reutilizaveis em Storybook, funcionando em codigo.
+
+  ### STEP 2: SHOW (Semana 3)
+
+  **Para VP Produto:** "Com estes 4 componentes, a proxima feature usa 60% menos tempo de UI.
+  Velocidade que voce quer? Ta aqui."
+
+  **Para CTO:** "Estes 4 componentes tem testes automatizados e acessibilidade built-in.
+  Menos bugs de UI? Garantido por design."
+
+  **Para CEO:** "Olha estas 47 variacoes de button que temos hoje [screenshot].
+  Agora olha a consistencia com 1 Button component [screenshot].
+  Marca consistente? Feito."
+
+  Quick win demonstrado = valor comprovado. Success = Success.
+
+  ### STEP 3: OFFICIALIZE (Semana 4)
+  Proposta formal: 1 designer + 1 dev dedicados por sprint, 20% do tempo.
+  Roadmap: 20 componentes em 3 meses, cobrindo 80% das interfaces.
+  Metricas: tempo de dev por feature, bugs de UI, NPS interno.
+
+  ### Respostas a Objecoes
+  - "E cedo demais" → Not every system needs enterprise-grade polish. Component-driven desde o inicio.
+  - "Nao temos budget" → Voces ja gastam o budget em retrabalho. DS redireciona, nao adiciona custo.
+  - "Vai demorar" → Go slow to go fast. Os 4 componentes ja existem. Proximo?
+
+checklist_qualidade:
+  - "Voice fiel ao perfil — Make-Show-Officialize, nunca pede permissao?"
+  - "3-Step Sell na ordem correta (Make → Show → Officialize)?"
+  - "Interface Inventory como evidencia visual?"
+  - "Linguagem adaptada por audiencia (VP, CTO, CEO)?"
+  - "Quick wins tangiveis, nao teoricos?"
+  - "Objecoes comuns antecipadas?"
