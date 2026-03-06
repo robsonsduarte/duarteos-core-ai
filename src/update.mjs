@@ -9,6 +9,19 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.24.0': {
+    title: '28 Process Cards Formais — Catalogo Completo de Processos Reutilizaveis',
+    highlights: [
+      'Novo: .claude/protocols/processes/ — 28 process cards em 6 categorias (YAML)',
+      'Categorias: development (9), validation (4), knowledge (6), operations (5), squad (3), meta (3)',
+      'Cada process card: steps, checkpoints (Gawande), bias_alerts (Kahneman), knowledge_map (Forte), OMEGA params',
+      'Mapeamento completo do DuarteOS: 47 tipos de demanda categorizados, 14 agentes, 40+ comandos',
+      'Process Chief usa catalogo: verifica processo existente antes de criar novo',
+      'Templates sincronizados: templates/protocols/processes/ com copia completa',
+      'init.mjs atualizado: cria dirs + copia recursiva de process cards no install',
+      'Processos seguem 5 lentes: Sistema (Deming), Fluxo (Allen), Info (Forte), Seguranca (Gawande), Cognicao (Kahneman)',
+    ],
+  },
   '5.23.0': {
     title: 'Process Chief (Deming) + Conselho de Process — Toda task passa pelo crivo do processo',
     highlights: [

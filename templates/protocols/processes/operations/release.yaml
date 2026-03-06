@@ -1,0 +1,98 @@
+# Process Card: Release do DuarteOS
+# Protocolo de Release — Sequencia Obrigatoria
+# "Constancy of purpose." — release e ritual, nao improvisacao.
+
+process_card:
+  name: "release"
+  version: "1.0.0"
+  aim: >
+    Executar release do DuarteOS com sequencia obrigatoria de 6 passos.
+    Nenhum passo pode ser pulado ou reordenado.
+  type: "operacao"
+  scale: "tarefa"
+  risk: "alto"
+  teoria: >
+    Release e o ponto de maior variacao potencial. Sequencia obrigatoria
+    elimina causa especial (esquecer de bumpar versao, esquecer changelog).
+    Checklist de Gawande: cada passo verificado antes de avancar.
+
+  triggers:
+    - "Nova versao pronta para release"
+    - "Apos milestone completo"
+
+  steps:
+    - step: 1
+      acao: "Bump versao em package.json (semver)"
+      responsavel: "processamento"
+      output: "package.json atualizado"
+      checkpoint: false
+
+    - step: 2
+      acao: "Novo changelog entry em src/update.mjs (titulo + highlights)"
+      responsavel: "processamento"
+      output: "Changelog atualizado"
+      checkpoint: false
+
+    - step: 3
+      acao: "Atualizar banner em src/init.mjs (se visual mudou)"
+      responsavel: "processamento"
+      output: "Banner atualizado (se aplicavel)"
+      checkpoint: false
+
+    - step: 4
+      acao: "Atualizar MEMORY.md (versao + sessao + decisoes)"
+      responsavel: "processamento"
+      output: "MEMORY.md atualizado"
+      checkpoint: true
+
+    - step: 5
+      acao: "Commit com conventional commits: feat: v{X.Y.Z} — {titulo}"
+      responsavel: "processamento"
+      output: "Commit criado"
+      checkpoint: true
+
+    - step: 6
+      acao: "Push para remote"
+      responsavel: "processamento"
+      output: "Push executado"
+      checkpoint: true
+
+  checkpoints:
+    - nome: "MEMORY Atualizado"
+      step: 4
+      checklist:
+        - "Versao atualizada?"
+        - "Sessao registrada?"
+        - "Novas decisoes documentadas?"
+      kill_item: true
+
+    - nome: "Commit Correto"
+      step: 5
+      checklist:
+        - "Formato: feat: v{X.Y.Z} — {titulo}?"
+        - "Conventional commits seguido?"
+        - "Todos os arquivos alterados incluidos?"
+      kill_item: true
+
+    - nome: "Push Seguro"
+      step: 6
+      checklist:
+        - "Branch correta?"
+        - "Nenhum --force?"
+        - "git 2.52.0 workaround aplicado (core.compression 0)?"
+      kill_item: true
+
+  bias_alerts:
+    - step: 1
+      vies: "Pressa para releasar sem bump correto"
+      mitigacao: "Sequencia e OBRIGATORIA — nao pular passos"
+
+  metricas:
+    variacao_aceitavel: "6 passos executados na ordem exata"
+    criterio_sucesso: "Push bem-sucedido sem rollback"
+    review_cycle: "A cada release"
+
+  omega:
+    task_type: "implementation"
+    threshold: 90
+    max_iterations: 3

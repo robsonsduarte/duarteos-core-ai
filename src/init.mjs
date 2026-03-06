@@ -139,6 +139,14 @@ export function init(projectName, options = {}) {
     '.claude/omega/checkpoints',
     // v5.9.0 — OMEGA Task Lifecycle Protocol
     '.planning/tasks',
+    // v5.24.0 — Process Cards (processos reutilizaveis)
+    '.claude/protocols/processes',
+    '.claude/protocols/processes/development',
+    '.claude/protocols/processes/validation',
+    '.claude/protocols/processes/knowledge',
+    '.claude/protocols/processes/operations',
+    '.claude/protocols/processes/squad',
+    '.claude/protocols/processes/meta',
   ]
 
   for (const dir of dirs) {
@@ -462,6 +470,30 @@ export function init(projectName, options = {}) {
     console.log(`  + synapse/ agent state files sincronizados (${stateFiles.length} agentes)`)
   }
 
+  // Process Cards — copy all process YAML files recursively
+  const processesSrc = resolve(TEMPLATES_DIR, 'protocols', 'processes')
+  const processesDest = resolve(cwd, '.claude', 'protocols', 'processes')
+  if (existsSync(processesSrc)) {
+    const walkProcesses = (src, dest) => {
+      if (!existsSync(dest)) mkdirSync(dest, { recursive: true })
+      const entries = readdirSync(src, { withFileTypes: true })
+      for (const entry of entries) {
+        const srcPath = resolve(src, entry.name)
+        const destPath = resolve(dest, entry.name)
+        if (entry.isDirectory()) {
+          walkProcesses(srcPath, destPath)
+        } else if (entry.name.endsWith('.yaml')) {
+          if (!existsSync(destPath)) {
+            cpSync(srcPath, destPath)
+            installed++
+          }
+        }
+      }
+    }
+    walkProcesses(processesSrc, processesDest)
+    console.log(`  + protocols/processes/ sincronizados (28 process cards)`)
+  }
+
   // OMEGA checklists — copy all checklist markdown files
   const omegaChecklistsSrc = resolve(TEMPLATES_DIR, 'omega', 'checklists')
   const omegaChecklistsDest = resolve(cwd, '.claude', 'omega', 'checklists')
@@ -553,6 +585,14 @@ export function init(projectName, options = {}) {
      Memory                — Grafo de conhecimento persistente
      Sequential Thinking   — Raciocinio estruturado
      E2B Sandbox           — Execucao segura de codigo
+
+  Process Cards (.claude/protocols/processes/) — 28 processos reutilizaveis:
+     development/    — 9 processos (new-project, build-system, plan/execute-phase, quick-task, bug-fix, debug, code-review, map-codebase)
+     validation/     — 4 processos (verify-work, validate-plan, audit-milestone, omega-quality-gate)
+     knowledge/      — 6 processos (mind-clone-mmos, mind-update, ingest, dossie, conselho, synapse-query)
+     operations/     — 5 processos (setup-mcps, sync-ide, session-pause-resume, progress-check, release)
+     squad/          — 3 processos (create-squad, run-squad, list-squads)
+     meta/           — 3 processos (process-creation, process-review-pdsa, process-mapping)
 
   Protocols (.claude/protocols/) — 11 documentos formais:
      CONSTITUTION.md         — Principios inviolaveis (seguranca, qualidade, etica, processo)
