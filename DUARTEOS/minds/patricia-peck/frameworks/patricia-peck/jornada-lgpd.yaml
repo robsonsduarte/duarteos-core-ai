@@ -1,0 +1,31 @@
+# Framework: Jornada de Conformidade LGPD
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Jornada de Conformidade LGPD"
+  mind: "patricia-peck"
+  tipo: "modelo_operacional"
+  descricao: "Processo sequencial de 4 fases para atingir e manter conformidade com a LGPD."
+  fonte_primaria: "F13"
+  recorrencia: 3
+
+  fases:
+    - fase: 1
+      nome: "Assessment/Diagnostico"
+      descricao: "Avaliar situacao atual: inventario de dados, bases legais, gaps criticos"
+      output: "Mapa de risco + Analise de GAP"
+    - fase: 2
+      nome: "Plano de Acao"
+      descricao: "Separar acoes em 3 grupos: tecnico, juridico e educacional"
+      output: "Roadmap priorizado proporcional a maturidade"
+    - fase: 3
+      nome: "Implementacao"
+      descricao: "Executar plano: adequar contratos, tecnologia, treinar equipe"
+      output: "Conformidade operacional"
+    - fase: 4
+      nome: "Ciclo PDCA"
+      descricao: "Monitorar, aprender, ajustar. Compliance e ciclo, nao destino."
+      output: "Programa continuo de privacidade"
+
+  quando_usar: "Em toda organizacao que precisa se adequar a LGPD"

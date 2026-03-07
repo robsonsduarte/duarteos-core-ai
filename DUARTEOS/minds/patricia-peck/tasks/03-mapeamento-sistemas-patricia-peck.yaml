@@ -1,0 +1,9 @@
+task:
+  id: "03-mapeamento-sistemas"
+  mind: "patricia-peck"
+  fase: 8
+  titulo: "Mapeamento contra Big Five, MBTI, Eneagrama"
+  descricao: "Mapear MIUs e drivers contra sistemas psicologicos estabelecidos para validacao cruzada"
+  status: "pending"
+  dependencias: ["02-inferencia-drivers"]
+  output: "system-components/patricia-peck-system.yaml"

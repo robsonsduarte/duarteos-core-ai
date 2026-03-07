@@ -1,0 +1,26 @@
+# Framework: Tres Pilares de Compliance
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Tres Pilares de Compliance de Privacidade"
+  mind: "patricia-peck"
+  tipo: "modelo_operacional"
+  descricao: "Compliance de privacidade exige investimento equilibrado em tres pilares: tecnologia, juridico e capacitacao. Nenhum sozinho basta."
+  fonte_primaria: "F13"
+  recorrencia: 5
+
+  pilares:
+    - pilar: "Tecnologia"
+      descricao: "Solucoes de ciberseguranca, criptografia, controle de acesso, anonimizacao, logs de consentimento"
+    - pilar: "Juridico"
+      descricao: "Revisao de contratos, politica de privacidade, RIPD, bases legais, adequacao de termos"
+    - pilar: "Capacitacao"
+      descricao: "Mudanca de cultura, treinamento recorrente, conscientizacao de todo o corpo profissional"
+
+  quando_usar: "Em qualquer projeto de adequacao LGPD ou programa de compliance de privacidade"
+  como_aplicar:
+    - "Diagnosticar qual pilar esta mais fraco na organizacao"
+    - "Investir proporcionalmente nos tres (nao so em tecnologia)"
+    - "Garantir que cada pilar tem responsavel designado"
+    - "Medir evolucao de cada pilar separadamente"

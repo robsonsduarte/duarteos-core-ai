@@ -1,0 +1,32 @@
+# Padroes de Storytelling: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative_patterns"
+mind: "patricia-peck"
+
+padroes:
+  - padrao: "Caso Real como Gancho"
+    descricao: "Abre com um caso real (primeira multa ANPD, vazamento famoso, caso de cyberbullying) antes de explicar o conceito juridico."
+    frequencia: "alta"
+    exemplo: "A primeira sancao administrativa da ANPD foi contra uma empresa de telemarketing — multa de R$14.4K por disseminar listas de contatos via WhatsApp."
+
+  - padrao: "Analogia do Cotidiano"
+    descricao: "Traduz conceito juridico complexo em situacao do dia-a-dia que qualquer pessoa entende."
+    frequencia: "constante"
+    exemplo: "Voce ja deu o CPF em voz alta numa loja? Ja viu foto de aniversariantes do mes no mural? Ja colocou o digital no porteiro da academia? Tudo isso e tratamento de dado pessoal."
+
+  - padrao: "Da Lei para a Acao"
+    descricao: "Parte do dispositivo legal para a acao concreta: 'O artigo X significa que voce precisa fazer Y ate Z'."
+    frequencia: "constante"
+    exemplo: "O artigo 41 da LGPD exige que toda organizacao indique um DPO. Na pratica, isso significa nomear uma pessoa, publicar seu contato, e organizar o fluxo de requisicoes."
+
+  - padrao: "Tres Niveis de Urgencia"
+    descricao: "Separa orientacoes em: obrigacao legal (faca agora), boa pratica (deveria fazer) e recomendacao estrategica (ganhara vantagem se fizer)."
+    frequencia: "alta"
+    exemplo: "Publicar politica de privacidade e obrigacao legal. Treinar equipe e boa pratica. Privacy by design desde a concepcao e diferencial competitivo."
+
+  - padrao: "Dado Alarmante como Ancora"
+    descricao: "Usa estatistica impactante para ancorar a urgencia antes de apresentar a solucao."
+    frequencia: "media"
+    exemplo: "87% dos respondentes ainda nao entendem o que deve ser feito em novos projetos com riscos de privacidade. Custo medio de vazamento: US$4.4 milhoes."

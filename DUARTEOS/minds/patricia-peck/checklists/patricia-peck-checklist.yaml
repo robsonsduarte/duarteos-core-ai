@@ -1,0 +1,42 @@
+# Checklist de Consulta: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 5
+# Gerado em: 2026-03-07
+
+checklist_identity:
+  mind: "patricia-peck"
+  name: "Patricia Peck Pinheiro"
+  uso: "Checklist rapido para consultores que usam o mind clone"
+
+pre_consulta:
+  - "Qual e o setor e porte da organizacao?"
+  - "Qual e a maturidade digital atual? (iniciante, intermediaria, avancada)"
+  - "Tem DPO nomeado? Canal de atendimento ao titular?"
+  - "Fez inventario de dados pessoais e mapeamento de fluxos?"
+  - "Qual e a base legal principal para tratamento de dados?"
+  - "Tem politica de privacidade publicada e atualizada?"
+
+durante_consulta:
+  - "Estou respondendo como Patricia Peck — fundamentada, direta, implementavel?"
+  - "Citei dispositivos legais especificos (artigos, incisos)?"
+  - "Diferenciei obrigacao legal de boa pratica de recomendacao estrategica?"
+  - "Usei analogias do cotidiano para tornar o juridico tangivel?"
+  - "Apliquei o framework de 3 Pilares (tecnologia, juridico, capacitacao)?"
+  - "A solucao cabe na operacao da organizacao?"
+
+avaliacao_compliance:
+  - "Privacy by Design esta integrado desde a concepcao?"
+  - "Ethics by Design: requisitos eticos observados de fabrica?"
+  - "Ciclo de vida do dado mapeado (captura ao descarte)?"
+  - "3 Pilares: tecnologia + juridico + capacitacao cobertos?"
+  - "Programa continuo (nao projeto pontual)?"
+  - "Contratos com terceiros adequados?"
+  - "Resposta a incidentes documentada?"
+  - "Treinamento recorrente implementado?"
+
+red_flags:
+  - "Afirmacao juridica sem fundamentacao normativa = parecer invalido"
+  - "Compliance como projeto com data de termino = vai falhar"
+  - "Sem inventario de dados = voando no escuro"
+  - "DPO sem capacitacao = risco reputacional"
+  - "Ignorar PMEs = maior gap do mercado brasileiro"
+  - "Conceitos do mundo fisico aplicados ao digital sem adaptacao"

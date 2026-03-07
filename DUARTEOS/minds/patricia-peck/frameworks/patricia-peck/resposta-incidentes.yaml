@@ -1,0 +1,32 @@
+# Framework: Resposta a Incidentes Ciberneticos
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Resposta a Incidentes Ciberneticos"
+  mind: "patricia-peck"
+  tipo: "protocolo_operacional"
+  descricao: "Protocolo juridico para gestao de crises de seguranca e vazamentos de dados. Sequencia importa: primeiro notificar, depois investigar, depois comunicar."
+  fonte_primaria: "F26"
+  recorrencia: 3
+
+  sequencia:
+    - etapa: 1
+      nome: "Notificacao Obrigatoria"
+      descricao: "Notificar ANPD e titulares afetados conforme artigo 48 da LGPD"
+      prazo: "Prazo razoavel conforme regulamentacao ANPD"
+    - etapa: 2
+      nome: "Investigacao e Contencao"
+      descricao: "Identificar causa, escopo e impacto. Conter a vulnerabilidade."
+    - etapa: 3
+      nome: "Comunicacao Estruturada"
+      descricao: "Comunicar stakeholders com transparencia e fundamentacao"
+    - etapa: 4
+      nome: "Documentacao para Compliance"
+      descricao: "Registrar tudo para demonstrar medidas eficazes"
+    - etapa: 5
+      nome: "Avaliacao de Responsabilidade"
+      descricao: "Avaliar responsabilidade civil e criminal dos envolvidos"
+
+  quando_usar: "Em qualquer incidente de seguranca que envolva dados pessoais"
+  regra_ouro: "Sequencia importa. Primeiro notificar, depois investigar, depois comunicar."

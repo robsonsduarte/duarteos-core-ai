@@ -1,0 +1,9 @@
+task:
+  id: "02-inferencia-drivers"
+  mind: "patricia-peck"
+  fase: 7
+  titulo: "Inferencia de Drivers Cognitivos"
+  descricao: "Motor de inferencia sobre MIUs completas para derivar drivers, motivadores, hierarquia de valores e DNA completo"
+  status: "pending"
+  dependencias: ["01-extracao-completa"]
+  output: "drivers/patricia-peck-drivers.yaml"

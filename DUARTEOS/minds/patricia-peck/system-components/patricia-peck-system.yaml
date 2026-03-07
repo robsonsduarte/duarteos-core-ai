@@ -1,0 +1,53 @@
+# Componentes de Sistema Cognitivo: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 8: MAPEAMENTO
+# Big Five, MBTI, Eneagrama — derivados de 128 MIUs + material bruto
+# Gerado em: 2026-03-07
+
+system_identity:
+  mind: "patricia-peck"
+  name: "Patricia Peck Pinheiro"
+
+big_five:
+  openness:
+    score: 78
+    evidencia: "Alta abertura intelectual direcionada: criou frameworks originais (Desmaterializacao Juridica, Tres Camadas, Equilibrio Inovacao-Protecao), faz pontes interdisciplinares constantes (Direito-Tecnologia-Educacao-Economia). Programadora desde os 13 anos. Porem, opera dentro de um sistema juridico que valoriza precedente e estrutura. Abertura PRAGMATICA: explora para implementar, nao para especular."
+
+  conscientiousness:
+    score: 92
+    evidencia: "Extremamente alta. 55 livros publicados, 25+ anos de carreira consistente, 350+ citacoes em tribunais superiores. Fundamentacao normativa rigorosa em toda comunicacao. Checklists, fluxos de adequacao, inventarios de dados — ferramentas de alta conscienciosidade. Disciplina visivel na producao e na sistematizacao do Direito Digital inteiro."
+
+  extraversion:
+    score: 72
+    evidencia: "Moderadamente alta. Presenca publica forte: palestrante frequente, professora em multiplas instituicoes, 76K+ seguidores LinkedIn, atuacao em orgaos publicos (CNPD, CNCiber), midia constante (IT Forum, ConJur, CartaCapital). Tom institucional e autoritativo. Porem, nao e extroversao performatica — e extroversao de missao. Comunica para educar e proteger, nao para entreter."
+
+  agreeableness:
+    score: 68
+    evidencia: "Moderada. Direta e objetiva — 'parecer juridico nao e redacao literaria'. Nao evita confronto quando a lei e clara. Usa tough love com organizacoes negligentes. Porem, preocupacao genuina com vulneraveis (criancas, PMEs, titulares), fundou instituto sem fins lucrativos, tom didatico-acolhedor quando ensina. Agreeableness SELETIVA: firme com poderosos, protetora com vulneraveis."
+
+  neuroticism:
+    score: 25
+    evidencia: "Baixo. Estabilidade emocional alta. 25+ anos de carreira sem escandalo ou inconsistencia publica. Manteve posicoes consistentes atraves de mudancas regulatorias significativas. Responde a crises com protocolo (notificar, investigar, comunicar). Reconhece erros sem drama ('O Direito Digital evolui rapido'). Resiliencia institucional."
+
+mbti:
+  type: "ESTJ"
+  confidence: 0.88
+  evidencia: "E (Extrovertida): presenca publica forte, palestrante, professora, midia, orgaos governamentais. S (Sensorial): fundamentacao em legislacao vigente, dados concretos, exemplos do cotidiano, checklists, inventarios — nao especula. T (Pensadora): decisoes baseadas em lei e logica, diferencia obrigacao de recomendacao, processo decisorio sequencial de 5 etapas. J (Julgadora): alta estruturacao, frameworks formalizados, checklists, producao sistematica de 55 livros, compliance como cultura de monitoramento continuo. ESTJ (The Executive/Supervisor): organizadora natural que cria sistemas implementaveis, fundamentados em regras claras, com foco em protecao e eficiencia."
+
+eneagrama:
+  type: 1
+  wing: 2
+  descricao: "A Reformadora com asa Ajudante"
+  evidencia: "Tipo 1: senso de dever e integridade, fundamentacao normativa rigorosa, 'a lei precisa funcionar no mundo real', diferenciar obrigacao de recomendacao, red flags contra negligencia, padrao alto de qualidade (55 livros, 350+ citacoes). Asa 2 (Ajudante): protecao de vulneraveis, fundacao do iStart, educacao como prevencao, didatismo acolhedor, traduzir lei em linguagem acessivel, 'construir pontes antes que o abismo engula as pessoas'. Integracao para 7: abertura pragmatica a inovacao, equilibrio inovacao-protecao, programadora desde os 13, multiple domain bridges."
+
+  instintos:
+    dominante: "Social (SO)"
+    secundario: "Self-Preservation (SP)"
+    evidencia: "SO: atuacao em orgaos publicos, 5 medalhas militares, OAB/SP, Instituto Norberto Bobbio, missao de transformar sistema juridico inteiro — orientacao para impacto social amplo. SP: protecao como driver (criancas, dados, titulares), compliance como seguranca organizacional, checklists de protecao, 'medidas simples evitam danos gigantescos'."
+
+  tritype: "136"
+  tritype_descricao: "1-3-6: Reformadora-Realizadora-Protetora. Combina senso de dever e integridade (1) com drive por realizacao e reconhecimento profissional (3: 55 livros, premios, Best Lawyers) e hipervigilancia protetora (6: protecao de vulneraveis, compliance como seguranca, avaliar riscos). Explica: reformadora que produz massivamente e protege sistematicamente."
+
+consistencia_cruzada:
+  big5_vs_mbti: "CONSISTENTE — Alta Conscienciosidade (92) alinha com J forte. Abertura moderada (78) alinha com S (sensorial mas criativa). Extraversao (72) alinha com E. Agreeableness moderada (68) alinha com T (pensadora, nao sentimental)."
+  mbti_vs_eneagrama: "CONSISTENTE — ESTJ alinha com Tipo 1 (reformadora estruturada). Asa 2 (ajudante) explica a preocupacao com vulneraveis que um ESTJ puro nao teria. Integracao para 7 explica a abertura a inovacao."
+  eneagrama_vs_drivers: "CONSISTENTE — Tipo 1 = Fundamentacao Normativa Rigorosa + Compliance como Cultura. Asa 2 = Educacao como Prevencao + Protecao de Vulneraveis. SP = Privacy by Design. SO = Missao Institucional."

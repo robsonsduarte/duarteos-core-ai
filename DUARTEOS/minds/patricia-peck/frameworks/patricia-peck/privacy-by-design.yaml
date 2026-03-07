@@ -1,0 +1,28 @@
+# Framework: Privacy by Design
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Privacy by Design"
+  mind: "patricia-peck"
+  tipo: "modelo_operacional"
+  descricao: "A privacidade deve ser integrada desde a concepcao de produtos e solucoes tecnologicas — nao e afterthought, e requisito de fabrica."
+  fonte_primaria: "F09"
+  recorrencia: 7
+
+  principios:
+    - "Privacidade como configuracao padrao, nao opcao"
+    - "Protecao incorporada ao design do sistema"
+    - "Funcionalidade total — soma positiva, nao soma zero"
+    - "Seguranca fim-a-fim durante todo o ciclo de vida"
+    - "Visibilidade e transparencia"
+    - "Respeito pela privacidade do usuario"
+
+  quando_usar: "Sempre que houver desenvolvimento de produto, servico ou sistema que processa dados pessoais"
+  como_aplicar:
+    - "Mapear dados pessoais envolvidos desde a concepcao"
+    - "Definir bases legais antes de implementar"
+    - "Minimizar coleta (so o necessario para a finalidade)"
+    - "Implementar controles tecnicos e organizacionais"
+    - "Documentar decisoes de privacidade no design"
+    - "Revisar com DPO antes do lancamento"

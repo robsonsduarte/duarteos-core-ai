@@ -1,0 +1,456 @@
+catalogo_fontes:
+  meta:
+    clone: "patricia-peck"
+    pipeline_version: "MMOS v3"
+    fase: 1
+    data_coleta: "2026-03-07"
+    total_fontes: 28
+    tier_breakdown:
+      tier1_exa: 22
+      tier2_webfetch: 6
+      tier3_fallback: 0
+    distribuicao_tipos:
+      artigo_opiniao: 8
+      entrevista: 7
+      palestra_aula: 3
+      podcast_video: 3
+      livro_obra: 4
+      perfil_bio: 2
+      post_linkedin: 1
+    cobertura_dna:
+      filosofia: 7
+      frameworks: 6
+      heuristicas: 5
+      metodologias: 4
+      dilemas: 5
+      paradoxos: 3
+      associacoes_conceituais: 4
+      comunicacao: 6
+
+  fontes:
+    # === ARTIGOS DE OPINIAO (8) ===
+    - id: "F01"
+      titulo: "LGPD: cinco anos em busca das garantias de direitos e proteção de dados"
+      tipo: "artigo_opiniao"
+      veiculo: "Consultor Jurídico (ConJur)"
+      url: "https://www.conjur.com.br/2023-ago-22/patricia-peck-lgpd-busca-garantias-direitos/"
+      data: "2023-08-22"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "heuristicas", "metodologias"]
+      resumo: "Balanço de 5 anos da LGPD: avanços regulatórios, primeira multa da ANPD, necessidade de ethics by design, impacto econômico e diplomático, urgência em regulamentar artigos pendentes."
+
+    - id: "F02"
+      titulo: "Fim do vale-tudo: A criminalização do cyberbullying é crucial para a criação de um ambiente digital saudável"
+      tipo: "artigo_opiniao"
+      veiculo: "CartaCapital"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      data: "2024-01-25"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "dilemas", "comunicacao"]
+      resumo: "Defesa da criminalização do bullying/cyberbullying (Lei 14.811/2024), responsabilidade nas redes, ethics by design para IA, proteção de crianças e adolescentes como prioridade."
+
+    - id: "F03"
+      titulo: "Propriedade e privacidade"
+      tipo: "artigo_opiniao"
+      veiculo: "Gazeta do Povo"
+      url: "https://www.gazetadopovo.com.br/opiniao/artigos/propriedade-e-privacidade-2kr37xdl54zoqe8li7eh41aha/"
+      data: "2012-05-22"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "dilemas", "paradoxos", "associacoes_conceituais"]
+      resumo: "Paradigma informação como moeda de pagamento, limites da privacidade, big data, autorregulamentação vs legislação rígida, transparência sustentável."
+
+    - id: "F04"
+      titulo: "Crime Digital exige combate ostensivo!"
+      tipo: "artigo_opiniao"
+      veiculo: "LinkedIn Pulse"
+      url: "https://pt.linkedin.com/pulse/crime-digital-exige-combate-ostensivo-patricia-peck"
+      data: "2018-03-07"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "heuristicas", "comunicacao"]
+      resumo: "Alerta sobre crimes cibernéticos no Brasil, CPI dos Crimes Cibernéticos, necessidade de combate ostensivo e proteção da sociedade civil."
+
+    - id: "F05"
+      titulo: "Controle Parental é essencial para proteção dos filhos na web"
+      tipo: "artigo_opiniao"
+      veiculo: "LinkedIn Pulse"
+      url: "https://pt.linkedin.com/pulse/controle-parental-é-essencial-para-proteção-dos-filhos-patricia-peck"
+      data: "2018-03-09"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "heuristicas", "comunicacao"]
+      resumo: "Dia Mundial da Internet Segura, controle parental, Instituto iStart, proteção de crianças no ambiente digital."
+
+    - id: "F06"
+      titulo: "Internet tóxica e perigosa: como tornar o ambiente digital mais seguro para crianças?"
+      tipo: "artigo_opiniao"
+      veiculo: "LinkedIn Pulse"
+      url: "https://pt.linkedin.com/pulse/internet-tóxica-e-perigosa-como-tornar-o-ambiente-peck-pinheiro-phd-k5urf"
+      data: "2024-03-06"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "frameworks", "dilemas"]
+      resumo: "Programa Papo de Futuro da Câmara dos Deputados, ambiente digital seguro para crianças, novas tendências e desafios na comunicação."
+
+    - id: "F07"
+      titulo: "Bullying bate record no Brasil: é preciso dar um basta"
+      tipo: "artigo_opiniao"
+      veiculo: "LinkedIn Pulse"
+      url: "https://pt.linkedin.com/pulse/bullying-bate-record-brasil-é-preciso-dar-um-basta-patricia-qywpf"
+      data: "2024-02-06"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "comunicacao"]
+      resumo: "Dados alarmantes sobre bullying no Brasil, urgência de medidas preventivas e punitivas."
+
+    - id: "F08"
+      titulo: "Educadores: atenção redobrada com os grupos de WhatsApp!"
+      tipo: "artigo_opiniao"
+      veiculo: "Revista Direcional Escolas"
+      url: "https://direcionalescolas.com.br/educadores-atencao-redobrada-com-os-grupos-de-whatsapp/"
+      data: "2016-12-01"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["heuristicas", "frameworks", "comunicacao", "metodologias"]
+      resumo: "14 regras práticas para uso seguro de WhatsApp em escolas, proteção de menores, ECA digital, 'internet é a rua da era digital', 'quem cala consente'."
+
+    # === ENTREVISTAS (7) ===
+    - id: "F09"
+      titulo: "Desenvolver tecnologia sem respeito à privacidade não deveria ser opção"
+      tipo: "entrevista"
+      veiculo: "IT Forum"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      data: "2025-02-07"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "dilemas", "paradoxos", "associacoes_conceituais"]
+      resumo: "Privacy by design, privacidade como diferencial competitivo, paralelo com indústria do tabaco, seguro cibernético, IA e privacidade como direito fundamental."
+
+    - id: "F10"
+      titulo: "Patricia Peck: A LGPD vai aumentar o grau de transparência e fomentar a livre economia digital"
+      tipo: "entrevista"
+      veiculo: "Instituto Caldeira"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      data: "2020-11-30"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "metodologias", "heuristicas", "associacoes_conceituais"]
+      resumo: "Desafios da LGPD, DPO, mudança de cultura, atuação multidisciplinar, PMEs, privacy by design como vantagem competitiva, LGPD como legislação de Direitos Humanos."
+
+    - id: "F11"
+      titulo: "Brasil vive transição para proteção efetiva de dados"
+      tipo: "entrevista"
+      veiculo: "IT Forum"
+      url: "https://itforum.com.br/noticias/brasil-protecao-dados-peck/"
+      data: "2026-01-28"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "heuristicas", "metodologias", "dilemas"]
+      resumo: "Proteção de dados como programa contínuo, IA vs cibersegurança como gargalo, fiscalização insuficiente, governança proativa vs reativa, segurança por design."
+
+    - id: "F12"
+      titulo: "Cultura de Privacidade não pode ser baseada em um projeto pontual"
+      tipo: "entrevista"
+      veiculo: "Security Leaders"
+      url: "https://securityleaders.com.br/cultura-de-privacidade-nao-pode-ser-baseada-em-um-projeto-pontual/"
+      data: "2022-11-07"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "metodologias"]
+      resumo: "Privacidade como programa contínuo, ANPD precisa de enforcement, judicialização precoce da LGPD, desconhecimento das PMEs."
+
+    - id: "F13"
+      titulo: "Entrevista com Patricia Peck: LGPD e evidências das mensagens eletrônicas"
+      tipo: "entrevista"
+      veiculo: "LegisCompliance / CryptoID"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      data: "2019-03-20"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["frameworks", "metodologias", "heuristicas", "comunicacao"]
+      resumo: "Compliance em 3 pilares (tecnologia, jurídico, capacitação), jornada LGPD, assessment como primeiro passo, inventário de dados, ciclo de vida do dado pessoal, dever de evidenciação."
+
+    - id: "F14"
+      titulo: "ITF Grandes Entrevistas: Patricia Peck, Peck Advogados (Parte 2)"
+      tipo: "entrevista"
+      veiculo: "IT Forum"
+      url: "https://itforum.com.br/video/itf-grandes-entrevistas-patricia-peck-peck-advogados-parte-2/"
+      data: "2022-07-21"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "frameworks", "dilemas"]
+      resumo: "Crise de segurança digital no Brasil, alerta para CIOs, planos de segurança modernos além de disaster recovery."
+
+    - id: "F15"
+      titulo: "Patrícia Peck traz reflexões sobre proteção de dados e desafios do mundo digital"
+      tipo: "entrevista"
+      veiculo: "Colégio Rio Branco Campinas"
+      url: "https://www.riobranco.org.br/noticias/patricia-peck-traz-reflexoes-sobre-protecao-de-dados-e-desafios-do-mundo-digital/"
+      data: "2025-06-27"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "comunicacao"]
+      resumo: "Palestra para pais e colaboradores sobre cuidados, desafios e responsabilidades no uso da tecnologia."
+
+    # === PALESTRAS / AULAS (3) ===
+    - id: "F16"
+      titulo: "Direito 4.0: Fundamentos e aplicações da proteção de dados - Superclass Pós PUCPR Digital"
+      tipo: "palestra_aula"
+      veiculo: "PUC PR Digital Trends"
+      url: "https://posdigital.pucpr.br/blog/objetivo-lgpd"
+      data: "2022-06-01"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "frameworks", "heuristicas", "associacoes_conceituais", "comunicacao"]
+      resumo: "LGPD como proteção de Direitos Humanos, Data Driven Society, Ética Digital como sistema de valores, privacy by design, violações mais comuns, LGPD não proíbe uso de dados."
+
+    - id: "F17"
+      titulo: "Gestão de incidentes e governança digital"
+      tipo: "palestra_aula"
+      veiculo: "FEBRABAN TECH"
+      url: "https://febrabantech.febraban.org.br/especialista/patricia-peck-pinheiro/gestao-de-incidentes-e-governanca-digital"
+      data: "2023-01-01"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks", "metodologias"]
+      resumo: "Gestão de incidentes e governança digital no setor financeiro."
+
+    - id: "F18"
+      titulo: "Professora visitante de Segurança Cibernética na Escola de Inteligência do Exército Brasileiro"
+      tipo: "palestra_aula"
+      veiculo: "Escola de Inteligência do Exército"
+      url: "https://peckadv.com.br/profissional/patricia-peck/"
+      data: "2025-01-01"
+      idioma: "pt-BR"
+      profundidade: "baixa"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks"]
+      resumo: "Docência em cibersegurança para inteligência militar."
+
+    # === PODCASTS / VIDEOS (3) ===
+    - id: "F19"
+      titulo: "Patricia Peck: 'Brasil vive uma crise de segurança digital'"
+      tipo: "podcast_video"
+      veiculo: "IT Forum (YouTube)"
+      url: "https://www.youtube.com/watch?v=DWkJbG8p-GI"
+      data: "2022-07-21"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "frameworks", "dilemas", "comunicacao"]
+      resumo: "32min. Crise de segurança digital, CNPD, alerta para CIOs, cenário moderno de ameaças."
+
+    - id: "F20"
+      titulo: "Cibersegurança, Ativismo Hacker, Doxing e Bug Bounty - Direito 4.0 Podcast #30"
+      tipo: "podcast_video"
+      veiculo: "Direito 4.0 Podcast (YouTube)"
+      url: "https://www.youtube.com/watch?v=R2nNb4Z0xmU"
+      data: "2020-07-17"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks", "heuristicas", "dilemas", "paradoxos"]
+      resumo: "39min. Cibersegurança, ativismo hacker, doxing, bug bounty, fragilidade do Brasil a ataques."
+
+    - id: "F21"
+      titulo: "Revolução IA Podcast #12 - Patrícia Peck, advogada especialista em direito digital"
+      tipo: "podcast_video"
+      veiculo: "Revolução IA (SoundCloud)"
+      url: "https://soundcloud.com/revolucao-ia/12-patricia-peck-advogada-especialista-em-direito-digital"
+      data: "2023-01-01"
+      idioma: "pt-BR"
+      profundidade: "alta"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "frameworks", "associacoes_conceituais"]
+      resumo: "Podcast sobre direito digital e IA com Patricia Peck."
+
+    # === LIVROS / OBRAS (4) ===
+    - id: "F22"
+      titulo: "Direito Digital - 8ª edição (2026)"
+      tipo: "livro_obra"
+      veiculo: "Saraiva Jur / Grupo GEN"
+      url: "https://www.livrariadedireito.com.br/direito-civil/direito-digital-patricia-peck-pinheiro"
+      data: "2026-01-01"
+      idioma: "pt-BR"
+      profundidade: "referencia"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "frameworks", "metodologias", "heuristicas"]
+      resumo: "Obra-referência em Direito Digital no Brasil, 8 edições, abrange evolução de 20+ anos do direito digital brasileiro."
+
+    - id: "F23"
+      titulo: "Proteção de Dados Pessoais: Comentários à Lei N. 13.709/2018 (LGPD) - 5ª edição (2026)"
+      tipo: "livro_obra"
+      veiculo: "Saraiva Jur / Grupo GEN"
+      url: "https://www.grupogen.com.br/e-book-protecao-de-dados-pessoais-comentarios-a-lei-n-13-709-2018-lgpd-5-edicao-2026-patricia-peck-pinheiro-saraiva-jur-9788553623617/"
+      data: "2025-10-01"
+      idioma: "pt-BR"
+      profundidade: "referencia"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks", "metodologias", "heuristicas"]
+      resumo: "Comentários artigo por artigo da LGPD, 5 edições, 240 páginas."
+
+    - id: "F24"
+      titulo: "Direito Digital Aplicado 4.0"
+      tipo: "livro_obra"
+      veiculo: "Revista dos Tribunais"
+      url: "https://lista.mercadolivre.com.br/direito-digital-patricia-peck"
+      data: "2020-01-01"
+      idioma: "pt-BR"
+      profundidade: "referencia"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks", "metodologias"]
+      resumo: "Aplicação prática do direito digital em cenários corporativos."
+
+    - id: "F25"
+      titulo: "Segurança Digital - Proteção de Dados nas Empresas"
+      tipo: "livro_obra"
+      veiculo: "Editora"
+      url: "https://lista.mercadolivre.com.br/direito-digital-patricia-peck"
+      data: "2020-01-01"
+      idioma: "pt-BR"
+      profundidade: "referencia"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["frameworks", "metodologias", "heuristicas"]
+      resumo: "Segurança digital aplicada ao contexto empresarial."
+
+    # === PERFIS / BIO (2) ===
+    - id: "F26"
+      titulo: "Patricia Peck - Perfil Peck Advogados"
+      tipo: "perfil_bio"
+      veiculo: "Peck Advogados"
+      url: "https://peckadv.com.br/profissional/patricia-peck/"
+      data: "2025-01-01"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 2
+      conteudo_extraido: true
+      camadas_dna: ["filosofia", "comunicacao"]
+      resumo: "Bio completa: 55 livros, PhD USP, membro CNCiber e CNPD/CNJ, programadora desde 13 anos, 5 medalhas militares, professora ESPM/PUC/Exército."
+
+    - id: "F27"
+      titulo: "Dra. Patricia Peck - Security Leaders"
+      tipo: "perfil_bio"
+      veiculo: "Security Leaders"
+      url: "https://securityleaders.com.br/member/dra-patricia-peck/"
+      data: "2025-09-08"
+      idioma: "pt-BR"
+      profundidade: "media"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["comunicacao"]
+      resumo: "Bio keynote: PhD, CEO Peck Advogados, 25+ anos, CNCiber, CNJ, Max Planck, Smart IP Latin America."
+
+    # === POSTS LINKEDIN (1) ===
+    - id: "F28"
+      titulo: "O futuro da IA no Brasil: debate paira entre o Planalto e o Plenário"
+      tipo: "post_linkedin"
+      veiculo: "LinkedIn"
+      url: "https://pt.linkedin.com/posts/patriciapeckpinheiro_marcolegalia-regulaçãodigital-ia-activity-7430193178973978624-6pIq"
+      data: "2025-02-01"
+      idioma: "pt-BR"
+      profundidade: "baixa"
+      primaria: true
+      autoria_confirmada: true
+      tier: 1
+      conteudo_extraido: false
+      camadas_dna: ["filosofia", "dilemas"]
+      resumo: "Momento decisivo para Marco Legal da IA no Brasil, debate entre Planalto e Plenário."

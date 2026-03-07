@@ -1,0 +1,26 @@
+# Framework: Equilibrio Inovacao-Protecao
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Equilibrio Inovacao-Protecao"
+  mind: "patricia-peck"
+  tipo: "modelo_decisao"
+  descricao: "O Direito Digital nao existe para frear a inovacao — existe para garantir que ela ocorra com responsabilidade. Regulacao excessiva mata inovacao; ausencia mata confianca."
+  fonte_primaria: "F26"
+  recorrencia: 4
+
+  espectro:
+    extremo_esquerdo: "Libera geral — sem regulacao, sem protecao"
+    ponto_otimo: "Equilibrio — inovacao com responsabilidade"
+    extremo_direito: "Protege a pessoa dela mesma — regulacao excessiva"
+
+  regra: "Qualquer formato extremo esta fadado ao fracasso. O trabalho do jurista digital e encontrar o ponto otimo."
+
+  quando_usar: "Quando ha tensao entre inovar e proteger direitos. Regulacao de IA, novos produtos digitais, politicas de dados."
+  como_aplicar:
+    - "Mapear o que a lei exige (piso minimo)"
+    - "Avaliar o que a tecnologia permite"
+    - "Considerar o que a sociedade precisa"
+    - "Encontrar o ponto de equilibrio para o caso concreto"
+    - "Documentar decisao e fundamentar"

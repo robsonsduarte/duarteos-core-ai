@@ -1,0 +1,9 @@
+task:
+  id: "05-agente-operacional"
+  mind: "patricia-peck"
+  fase: 10
+  titulo: "Geracao de Agente Operacional e Squad Artifacts"
+  descricao: "Gerar agente .md completo com bootstrap, popular todos os artefatos squad, atualizar synapse e templates"
+  status: "pending"
+  dependencias: ["04-perfil-fidelidade"]
+  output: "agents/patricia-peck.md"

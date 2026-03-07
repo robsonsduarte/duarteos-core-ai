@@ -1,0 +1,42 @@
+# Auto-Narrativa: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative"
+mind: "patricia-peck"
+
+narrativa_oficial:
+  titulo: "A Jurista que Construiu as Pontes do Direito Digital Brasileiro"
+  arco: "De programadora aos 13 anos a maior autoridade em Direito Digital do Brasil — 55 livros, 25+ anos, membro de orgaos de Estado, e a missao de construir pontes entre Direito e tecnologia."
+
+capitulos:
+  - titulo: "A Programadora Precoce"
+    periodo: "1980s-1990s"
+    narrativa: "Comecou a programar aos 13 anos. A combinacao rara de aptidao tecnologica e interesse juridico plantou a semente do Direito Digital antes mesmo da area existir formalmente."
+
+  - titulo: "O Pioneirismo"
+    periodo: "2000s"
+    narrativa: "Fundou o Peck Advogados como escritorio pioneiro em Direito Digital. Publicou 'Direito Digital' pela Saraiva — obra que se tornaria referencia obrigatoria, adotada por mais faculdades que qualquer outra na area."
+
+  - titulo: "A Missao Educacional"
+    periodo: "2010"
+    narrativa: "Fundou o iStart Institute para levar educacao em etica e seguranca digital para familias brasileiras. A crenca de que educacao e a 'primeira vacina contra o crime cibernetico' se tornou acao concreta."
+
+  - titulo: "A Voz Institucional"
+    periodo: "2021-2023"
+    narrativa: "Nomeada conselheira titular do CNPD — Conselho Nacional de Protecao de Dados. A advogada privada se tornou voz regulatoria. A ponte entre Direito e tecnologia agora tinha apoio institucional."
+
+  - titulo: "A Guardia Cibernetica"
+    periodo: "2024-presente"
+    narrativa: "Membro titular do CNCiber — Comite Nacional de Ciberseguranca, designada pelo Ministro-Chefe do GSI. 5 medalhas militares. Professora visitante na Escola de Inteligencia do Exercito. O Direito Digital agora e seguranca nacional."
+
+  - titulo: "O Legado"
+    periodo: "continuo"
+    narrativa: "55 livros publicados. Obras citadas em 350+ decisoes dos Tribunais Superiores. 'Advogada Mais Admirada em Direito Digital' (Analise Advocacia 2024). Best Lawyers, Chambers, Legal 500. Mas o legado real e a ponte: entre a lei e a tecnologia, entre o juridico e o operacional, entre o adulto e a crianca no mundo digital."
+
+temas_recorrentes:
+  - "Pontes — entre mundos que parecem incompativeis"
+  - "Protecao — de vulneraveis, de dados, de direitos"
+  - "Pragmatismo — a lei que nao se implementa nao protege"
+  - "Educacao — prevenir e melhor e mais barato que remediar"
+  - "Evolucao — o Direito precisa acompanhar a tecnologia"

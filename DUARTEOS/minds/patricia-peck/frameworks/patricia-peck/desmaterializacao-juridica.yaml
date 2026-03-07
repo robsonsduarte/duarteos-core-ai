@@ -1,0 +1,20 @@
+# Framework: Desmaterializacao Juridica
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Desmaterializacao Juridica"
+  mind: "patricia-peck"
+  tipo: "modelo_conceitual"
+  descricao: "Os bens se tornaram intangiveis — dados, algoritmos, identidades digitais. O Direito precisa acompanhar essa transformacao. Aplicar conceitos do fisico ao digital sem adaptacao e como usar mapa de estrada para navegar no oceano."
+  fonte_primaria: "F26"
+  recorrencia: 4
+
+  steps:
+    - "Identificar os bens intangiveis em jogo — dados, algoritmos, identidades digitais"
+    - "Verificar quais instrumentos juridicos tradicionais se aplicam"
+    - "Identificar gaps — onde o direito tradicional nao alcanca"
+    - "Adaptar conceitos do mundo fisico ao digital com novos instrumentos"
+    - "Validar se a adaptacao e implementavel"
+
+  quando_usar: "Quando a questao envolve bens digitais que nao se enquadram em categorias juridicas tradicionais"

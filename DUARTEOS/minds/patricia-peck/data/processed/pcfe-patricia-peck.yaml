@@ -1,0 +1,161 @@
+pcfe:
+  meta:
+    clone: "patricia-peck"
+    pipeline_version: "MMOS v3"
+    fase: 3
+    data_estimativa: "2026-03-07"
+    formula: "FE = (VS*0.20) + (DS*0.15) + (CS*0.30) + (PS*0.20) + (QS*0.15)"
+
+  scores:
+    VS:
+      valor: 82
+      peso: 0.20
+      contribuicao: 16.40
+      justificativa: >
+        Volume Sólido (28 fontes): 8 artigos de opinião com autoria confirmada,
+        7 entrevistas em profundidade, 3 podcasts/vídeos, 3 palestras/aulas,
+        4 livros como referência, 2 perfis bio, 1 post LinkedIn. Volume acima
+        do mínimo de 21, com boa variedade de tipos. Limitação: LinkedIn
+        bloqueado impediu acesso a ~15 posts/artigos Pulse adicionais. Conteúdo
+        textual extraído de 10 fontes com alta qualidade.
+
+    DS:
+      valor: 78
+      peso: 0.15
+      contribuicao: 11.70
+      justificativa: >
+        Diversidade Satisfatória: 7 tipos de fonte representados (artigo_opiniao,
+        entrevista, palestra, podcast, livro, perfil, post). Boa cobertura
+        temporal (2012-2026, 14 anos). Veículos variados: ConJur, CartaCapital,
+        IT Forum, Security Leaders, Gazeta do Povo, PUC PR, Direcional Escolas,
+        CryptoID, Instituto Caldeira, FEBRABAN. Gap: falta material de
+        audiências públicas/contribuições legislativas (sabidamente existentes
+        mas não extraíveis) e trechos de livros.
+
+    CS:
+      valor: 80
+      peso: 0.30
+      contribuicao: 24.00
+      justificativa: >
+        Cobertura DNA Boa: 8/8 camadas com pelo menos 2 MIUs cada.
+        Filosofia (9 MIUs) e Frameworks (8) são as mais ricas — refletem
+        a natureza doutrinária e sistematizadora de Patricia Peck.
+        Heurísticas (7) fortes com frases memoráveis ("internet é a rua
+        digital", "quem cala consente"). Metodologias (6) bem documentadas
+        (jornada LGPD, inventário, 3 pilares). Dilemas (5) capturam tensões
+        reais. Paradoxos (3) e Associações Conceituais (2) abaixo do ideal
+        — precisam de mais fontes reflexivas/filosóficas. Comunicação (2)
+        identificou padrões mas precisa de mais amostras de linguagem.
+
+    PS:
+      valor: 85
+      peso: 0.20
+      contribuicao: 17.00
+      justificativa: >
+        Profundidade Alta: fontes com conteúdo extraído são ricas e detalhadas.
+        Entrevistas longas com perguntas técnicas (CryptoID, Instituto Caldeira)
+        revelam frameworks e metodologias operacionais. Artigos de opinião
+        (ConJur, CartaCapital) mostram visão filosófica e posicionamento claro.
+        Material didático (PUC PR, Direcional Escolas) revela estilo comunicativo
+        e heurísticas práticas. 42 MIUs de alta confiança (avg 0.96).
+        O material disponível é denso e consistente.
+
+    QS:
+      valor: 76
+      peso: 0.15
+      contribuicao: 11.40
+      justificativa: >
+        Qualidade Boa mas com gaps: 10 fontes com conteúdo completo extraído
+        (alta qualidade textual). 18 fontes com metadados e snippets apenas.
+        LinkedIn bloqueado limitou acesso a artigos Pulse (onde Patricia é
+        muito ativa, 76K+ seguidores). Podcasts/vídeos não transcritos.
+        Livros não acessíveis para extração de trechos. Material de
+        audiências públicas no Senado referenciado mas PDF não extraído.
+
+  resultado:
+    FE: 80.50
+    classificacao: "BOM"
+    faixa: "70-84"
+    fidelidade_estimada_range: "80-87%"
+
+  gaps_por_camada:
+    filosofia:
+      status: "FORTE"
+      mius: 9
+      gap: "Nenhum gap significativo. Crenças centrais, visão de mundo e missão bem documentadas."
+
+    frameworks:
+      status: "FORTE"
+      mius: 8
+      gap: "Privacy by Design, Ethics by Design, 3 Pilares, Ciclo de Vida bem mapeados. Poderia ter mais frameworks proprietários (ex: metodologia específica de assessment Peck Advogados)."
+
+    heuristicas:
+      status: "BOA"
+      mius: 7
+      gap: "Boas frases memoráveis e regras práticas. Faltam heurísticas de tomada de decisão em crises e heurísticas de ensino/educação digital."
+
+    metodologias:
+      status: "BOA"
+      mius: 6
+      gap: "Processos operacionais bem documentados. Falta detalhamento de metodologia de resposta a incidentes e metodologia de treinamento corporativo."
+
+    dilemas:
+      status: "ADEQUADA"
+      mius: 5
+      gap: "Tensões reais capturadas (IA vs privacidade, fiscalização vs inovação). Faltam dilemas sobre jurisdição internacional e conflitos entre LGPD e outras leis."
+
+    paradoxos:
+      status: "FRACA"
+      mius: 3
+      gap: "Poucos paradoxos explícitos. Precisaria de mais material reflexivo. Sugestão: buscar palestras e keynotes onde ela explora contradições do sistema."
+
+    associacoes_conceituais:
+      status: "FRACA"
+      mius: 2
+      gap: "Pontes interdisciplinares limitadas. Patricia faz muitas conexões Direito-Tecnologia-Economia-Educação que não foram bem capturadas. Podcasts poderiam enriquecer."
+
+    comunicacao:
+      status: "FRACA"
+      mius: 2
+      gap: "Padrões identificados (didático, analogias cotidianas, listas práticas) mas amostra insuficiente para estilometria robusta. Precisaria de transcrições de palestras."
+
+  recomendacoes_enriquecimento:
+    - prioridade: "ALTA"
+      acao: "Transcrever podcasts YouTube (F19: 32min, F20: 39min) para capturar comunicação oral, paradoxos e associações conceituais"
+    - prioridade: "ALTA"
+      acao: "Buscar artigos adicionais no ConJur, Migalhas, JOTA onde Patricia publica colunas"
+    - prioridade: "MEDIA"
+      acao: "Extrair PDF da contribuição ao Senado sobre regulação de IA (legis.senado.leg.br)"
+    - prioridade: "MEDIA"
+      acao: "Buscar aulas/palestras gravadas em canais de eventos (Security Leaders TV, FEBRABAN TECH)"
+    - prioridade: "BAIXA"
+      acao: "Trechos de livros via Google Books ou resenhas detalhadas"
+
+  painel_gate_humano:
+    clone: "Patricia Peck Pinheiro"
+    slug: "patricia-peck"
+    categoria: "Juridico"
+    dominio: "LGPD, Privacidade, Ciberseguranca, Crimes Digitais, IA, Compliance Digital e Governanca de Dados"
+    fe_score: 80.50
+    classificacao: "BOM"
+    breakdown:
+      VS: "82 (Volume: 28 fontes, 10 com conteúdo completo)"
+      DS: "78 (Diversidade: 7 tipos, 14 anos, 10+ veículos)"
+      CS: "80 (Cobertura: 8/8 camadas, 42 MIUs, avg confiança 0.96)"
+      PS: "85 (Profundidade: entrevistas técnicas densas, artigos fundamentados)"
+      QS: "76 (Qualidade: LinkedIn bloqueado, podcasts não transcritos)"
+    pontos_fortes:
+      - "Filosofia e Frameworks extremamente bem documentados"
+      - "Entrevistas técnicas ricas com visão operacional clara"
+      - "Produção prolífica e consistente (55 livros, 25+ anos)"
+      - "Voz pública forte e reconhecível (cargos institucionais)"
+      - "Heurísticas memoráveis ('internet é a rua digital')"
+    gaps_criticos:
+      - "Paradoxos (3 MIUs) e Associações Conceituais (2 MIUs) abaixo do ideal"
+      - "Comunicação com amostra insuficiente para estilometria"
+      - "LinkedIn (principal canal dela) bloqueado para extração"
+      - "Podcasts não transcritos limitam captura de voz oral"
+    opcoes:
+      aprovar: "Prosseguir com FE=80.50 (BOM). Pipeline completo deve elevar para 82-87%."
+      enriquecer: "Transcrever 2 podcasts + buscar artigos ConJur/Migalhas. Estimativa pós-enriquecimento: FE=85-88%."
+      abortar: "Não recomendado. Material disponível é sólido e suficiente para clone funcional."

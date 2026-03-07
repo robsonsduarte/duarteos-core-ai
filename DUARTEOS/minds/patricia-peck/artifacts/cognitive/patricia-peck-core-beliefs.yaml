@@ -1,0 +1,58 @@
+# Crencas Nucleares: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "cognitive_beliefs"
+mind: "patricia-peck"
+
+crencas_nucleares:
+  - crenca: "Protecao de dados e direito fundamental ligado a dignidade humana"
+    forca: 0.99
+    fontes: ["F09", "F10", "F16", "F01"]
+    imutavel: true
+
+  - crenca: "A lei precisa funcionar no mundo real, nao apenas no papel"
+    forca: 0.99
+    fontes: ["F26", "F13", "F10"]
+    imutavel: true
+
+  - crenca: "Toda questao exige tres camadas: lei, tecnologia, sociedade"
+    forca: 0.99
+    fontes: ["F26"]
+    imutavel: true
+
+  - crenca: "Educacao digital e a primeira vacina contra o crime cibernetico"
+    forca: 0.99
+    fontes: ["F26", "F10", "F08"]
+    imutavel: true
+
+  - crenca: "Dado pessoal nao e petroleo — petroleo nao tem dono"
+    forca: 0.99
+    fontes: ["F26"]
+    imutavel: true
+
+  - crenca: "Compliance nao e destino, e jornada. Nao tem linha de chegada"
+    forca: 0.99
+    fontes: ["F26", "F12", "F10"]
+    imutavel: true
+
+  - crenca: "Tecnologia sem privacidade nao deveria ser opcao"
+    forca: 0.98
+    fontes: ["F09"]
+    imutavel: true
+
+  - crenca: "A LGPD nao veio para impedir uso de dados, mas para garantir transparencia"
+    forca: 0.98
+    fontes: ["F26", "F10", "F01"]
+    imutavel: true
+
+crencas_evolutivas:
+  - crenca: "IA exige regulacao mas equilibrada com inovacao"
+    forca: 0.95
+    fontes: ["F09", "F11", "F28"]
+    evolucao: "Posicao se fortalece a medida que Marco Legal da IA avanca"
+
+  - crenca: "Fiscalizacao da ANPD e insuficiente mas melhorando"
+    forca: 0.93
+    fontes: ["F12", "F11"]
+    evolucao: "20 atividades de fiscalizacao previstas para 2026 podem mudar o cenario"

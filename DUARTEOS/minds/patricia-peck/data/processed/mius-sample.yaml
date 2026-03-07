@@ -1,0 +1,446 @@
+mius_sample:
+  meta:
+    clone: "patricia-peck"
+    pipeline_version: "MMOS v3"
+    fase: 2
+    data_analise: "2026-03-07"
+    total_mius: 42
+    fontes_amostradas: 10
+    cobertura_dna:
+      filosofia: 9
+      frameworks: 8
+      heuristicas: 7
+      metodologias: 6
+      dilemas: 5
+      paradoxos: 3
+      associacoes_conceituais: 2
+      comunicacao: 2
+
+  mius:
+    # === FILOSOFIA (9) ===
+    - id: "MIU-001"
+      camada_dna: "filosofia"
+      subcamada: "crenca_central"
+      conteudo: "A proteção de dados pessoais é um direito fundamental, pois está ligada à identidade e à dignidade humana."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "axioma"
+      confianca: 0.98
+      recorrencia: 5
+
+    - id: "MIU-002"
+      camada_dna: "filosofia"
+      subcamada: "crenca_central"
+      conteudo: "A LGPD é uma legislação relacionada aos Direitos Humanos. É indispensável, atual e urgente. E veio para ficar."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "axioma"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-003"
+      camada_dna: "filosofia"
+      subcamada: "crenca_central"
+      conteudo: "Desenvolver tecnologia sem respeito à privacidade não deveria ser opção."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "axioma"
+      confianca: 0.99
+      recorrencia: 3
+
+    - id: "MIU-004"
+      camada_dna: "filosofia"
+      subcamada: "visao_mundo"
+      conteudo: "A informação virou não apenas a riqueza do século 21 como também a moeda de pagamento. Podemos comprar coisas, trocar, usar serviços gratuitos, tudo isso pagando com informação."
+      source_path: "F03"
+      url: "https://www.gazetadopovo.com.br/opiniao/artigos/propriedade-e-privacidade-2kr37xdl54zoqe8li7eh41aha/"
+      tipo_semantico: "modelo_mental"
+      confianca: 0.95
+      recorrencia: 3
+
+    - id: "MIU-005"
+      camada_dna: "filosofia"
+      subcamada: "visao_mundo"
+      conteudo: "A tecnologia, por si só, não é boa nem ruim, depende de como é utilizada."
+      source_path: "F02"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      tipo_semantico: "axioma"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-006"
+      camada_dna: "filosofia"
+      subcamada: "missao"
+      conteudo: "Privacidade e segurança da informação devem caminhar juntas, tornando-se diferenciais competitivos no mercado."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "principio"
+      confianca: 0.96
+      recorrencia: 3
+
+    - id: "MIU-007"
+      camada_dna: "filosofia"
+      subcamada: "crenca_central"
+      conteudo: "Não é que eu não possa usar o dado pessoal. Eu tenho que usar de forma transparente. Tenho que deixar as finalidades claras, específicas."
+      source_path: "F16"
+      url: "https://posdigital.pucpr.br/blog/objetivo-lgpd"
+      tipo_semantico: "principio"
+      confianca: 0.98
+      recorrencia: 5
+
+    - id: "MIU-008"
+      camada_dna: "filosofia"
+      subcamada: "visao_mundo"
+      conteudo: "Estamos caminhando para uma sociedade inteligente, com IA embarcada em todas as áreas, mas isso não significa que abrimos mão da privacidade."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "modelo_mental"
+      confianca: 0.96
+      recorrencia: 2
+
+    - id: "MIU-009"
+      camada_dna: "filosofia"
+      subcamada: "missao"
+      conteudo: "Ética e transparência são princípios indispensáveis para que seja possível construir um ambiente digital saudável e sustentável aos usuários."
+      source_path: "F02"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      tipo_semantico: "principio"
+      confianca: 0.97
+      recorrencia: 4
+
+    # === FRAMEWORKS (8) ===
+    - id: "MIU-010"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Privacy by Design: a privacidade deve ser integrada desde a concepção de produtos e soluções tecnológicas."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "framework"
+      confianca: 0.99
+      recorrencia: 7
+
+    - id: "MIU-011"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Ethics by Design: não poderia uma IA mentir ou descumprir uma lei, fingindo ser uma pessoa. Requisitos éticos devem ser observados de fábrica."
+      source_path: "F02"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      tipo_semantico: "framework"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-012"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Compliance de Privacidade em 3 pilares: soluções tecnológicas de cibersegurança, revisão de contratos/procedimentos jurídicos, e capacitação/mudança de cultura."
+      source_path: "F13"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      tipo_semantico: "framework"
+      confianca: 0.98
+      recorrencia: 5
+
+    - id: "MIU-013"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Ciclo de vida do dado pessoal: desde a captura até o descarte, incluindo inventário, mapeamento de fluxo e governança de logs."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "framework"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-014"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Atuação multidisciplinar e multidepartamental: jurídico, TI, RH, marketing, negócios, inovação, atendimento ao cliente — todos devem se unir na jornada LGPD."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "principio"
+      confianca: 0.96
+      recorrencia: 3
+
+    - id: "MIU-015"
+      camada_dna: "frameworks"
+      subcamada: "modelo_decisao"
+      conteudo: "Governança de dados proativa vs reativa: as empresas deverão migrar de uma postura reativa para uma governança onde a segurança por design e a transparência algorítmica serão os novos divisores de águas."
+      source_path: "F11"
+      url: "https://itforum.com.br/noticias/brasil-protecao-dados-peck/"
+      tipo_semantico: "framework"
+      confianca: 0.95
+      recorrencia: 2
+
+    - id: "MIU-016"
+      camada_dna: "frameworks"
+      subcamada: "modelo_operacional"
+      conteudo: "Jornada de conformidade LGPD: 1) Assessment/diagnóstico, 2) Análise de GAP e mapa de risco, 3) Plano de ação em 3 grupos (técnico, jurídico, educacional), 4) Ciclo PDCA de aprendizado."
+      source_path: "F13"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      tipo_semantico: "metodologia"
+      confianca: 0.97
+      recorrencia: 3
+
+    - id: "MIU-017"
+      camada_dna: "frameworks"
+      subcamada: "modelo_decisao"
+      conteudo: "A ética digital é o sistema de valores e princípios adotados por uma organização ao realizar interações digitais entre empresas, pessoas e coisas."
+      source_path: "F16"
+      url: "https://posdigital.pucpr.br/blog/objetivo-lgpd"
+      tipo_semantico: "definicao"
+      confianca: 0.98
+      recorrencia: 3
+
+    # === HEURISTICAS (7) ===
+    - id: "MIU-018"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Primeiro passo: fazer um assessment — diagnóstico para identificar como a empresa está e o que falta para ficar em conformidade."
+      source_path: "F13"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      tipo_semantico: "heuristica"
+      confianca: 0.97
+      recorrencia: 3
+
+    - id: "MIU-019"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Proteger a vitrine primeiro: publicar política de privacidade atualizada no portal/site, indicar canal do encarregado, organizar fluxo de requisições."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "heuristica"
+      confianca: 0.96
+      recorrencia: 2
+
+    - id: "MIU-020"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Internet é a rua da era digital — nela estamos expostos a diversas situações incertas e até perigosas."
+      source_path: "F08"
+      url: "https://direcionalescolas.com.br/educadores-atencao-redobrada-com-os-grupos-de-whatsapp/"
+      tipo_semantico: "metafora_operacional"
+      confianca: 0.98
+      recorrencia: 4
+
+    - id: "MIU-021"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Quem cala consente: em um grupo de WhatsApp, se alguém praticar um ilícito, todos os integrantes podem ser responsabilizados por cumplicidade, conluio, omissão ou negligência."
+      source_path: "F08"
+      url: "https://direcionalescolas.com.br/educadores-atencao-redobrada-com-os-grupos-de-whatsapp/"
+      tipo_semantico: "heuristica"
+      confianca: 0.96
+      recorrencia: 3
+
+    - id: "MIU-022"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Conteúdo online não tem devolução — deve-se ler sempre duas vezes antes de publicar."
+      source_path: "F08"
+      url: "https://direcionalescolas.com.br/educadores-atencao-redobrada-com-os-grupos-de-whatsapp/"
+      tipo_semantico: "heuristica"
+      confianca: 0.97
+      recorrencia: 3
+
+    - id: "MIU-023"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "O foco de atuação precisa ser mudança de cultura. Há necessidade de investir em tecnologias protetivas, mas o maior foco está na mudança de cultura."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "principio"
+      confianca: 0.98
+      recorrencia: 6
+
+    - id: "MIU-024"
+      camada_dna: "heuristicas"
+      subcamada: "regra_pratica"
+      conteudo: "Medidas simples podem evitar danos gigantescos à marca e reputação da instituição."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "heuristica"
+      confianca: 0.95
+      recorrencia: 2
+
+    # === METODOLOGIAS (6) ===
+    - id: "MIU-025"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Inventário de dados pessoais: mapear todo o fluxo do ciclo de vida do dado pessoal e o percurso que ele realiza desde a entrada até a saída."
+      source_path: "F13"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      tipo_semantico: "metodologia"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-026"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Gestão de risco de terceirizados: controlar a cadeia de fornecedores e garantir conformidade em toda a cadeia de suprimentos."
+      source_path: "F11"
+      url: "https://itforum.com.br/noticias/brasil-protecao-dados-peck/"
+      tipo_semantico: "metodologia"
+      confianca: 0.95
+      recorrencia: 3
+
+    - id: "MIU-027"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Resposta a incidentes: dever de reportar violações, política específica, registro de evidências, procedimento para apagamento e portabilidade."
+      source_path: "F13"
+      url: "https://www.legiscompliance.com.br/artigos-e-noticias/1173-entrevista-com-patricia-peck-lgpd-e-evidencias-das-mensagens-eletronicas"
+      tipo_semantico: "metodologia"
+      confianca: 0.96
+      recorrencia: 3
+
+    - id: "MIU-028"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Programa contínuo de privacidade: não um projeto pontual, mas capacitação e conscientização recorrente de todo o corpo profissional."
+      source_path: "F12"
+      url: "https://securityleaders.com.br/cultura-de-privacidade-nao-pode-ser-baseada-em-um-projeto-pontual/"
+      tipo_semantico: "principio_metodologico"
+      confianca: 0.98
+      recorrencia: 5
+
+    - id: "MIU-029"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Atualizar cláusulas de contratos para prever requisitos de proteção de dados: controlador, operador, compartilhamento com terceiros."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "metodologia"
+      confianca: 0.95
+      recorrencia: 3
+
+    - id: "MIU-030"
+      camada_dna: "metodologias"
+      subcamada: "processo"
+      conteudo: "Canal de atendimento de direitos dos titulares: nomeação do DPO, organização do fluxo de requisições, governança de logs de consentimento."
+      source_path: "F01"
+      url: "https://www.conjur.com.br/2023-ago-22/patricia-peck-lgpd-busca-garantias-direitos/"
+      tipo_semantico: "metodologia"
+      confianca: 0.96
+      recorrencia: 4
+
+    # === DILEMAS (5) ===
+    - id: "MIU-031"
+      camada_dna: "dilemas"
+      subcamada: "tensao"
+      conteudo: "A grande questão é: a privacidade está se tornando uma moeda tão cara que pode inviabilizar certas tecnologias?"
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "dilema"
+      confianca: 0.97
+      recorrencia: 2
+
+    - id: "MIU-032"
+      camada_dna: "dilemas"
+      subcamada: "tensao"
+      conteudo: "Se o resultado alcançado tiver um valor superior ao da punição aplicada, pode valer a pena infringir a lei. E esta lógica distorcida foi amplificada com as mídias sociais."
+      source_path: "F02"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      tipo_semantico: "dilema"
+      confianca: 0.96
+      recorrencia: 2
+
+    - id: "MIU-033"
+      camada_dna: "dilemas"
+      subcamada: "tensao"
+      conteudo: "Temos um grande gargalo: a IA ganhou protagonismo maior frente à cibersegurança. Precisamos dar um salto de maturidade na camada de proteção."
+      source_path: "F11"
+      url: "https://itforum.com.br/noticias/brasil-protecao-dados-peck/"
+      tipo_semantico: "dilema"
+      confianca: 0.95
+      recorrencia: 2
+
+    - id: "MIU-034"
+      camada_dna: "dilemas"
+      subcamada: "tensao"
+      conteudo: "A LGPD foi aprovada sem um esquema de implementação e divulgação que levasse as informações para médias e pequenas empresas ou para o usuário final."
+      source_path: "F12"
+      url: "https://securityleaders.com.br/cultura-de-privacidade-nao-pode-ser-baseada-em-um-projeto-pontual/"
+      tipo_semantico: "diagnostico"
+      confianca: 0.96
+      recorrencia: 3
+
+    - id: "MIU-035"
+      camada_dna: "dilemas"
+      subcamada: "tensao"
+      conteudo: "A fiscalização é insuficiente no momento da sanção. Já que há demora nos processos de punição, os responsáveis tendem a não dar a atenção devida."
+      source_path: "F12"
+      url: "https://securityleaders.com.br/cultura-de-privacidade-nao-pode-ser-baseada-em-um-projeto-pontual/"
+      tipo_semantico: "diagnostico"
+      confianca: 0.96
+      recorrencia: 3
+
+    # === PARADOXOS (3) ===
+    - id: "MIU-036"
+      camada_dna: "paradoxos"
+      subcamada: "contradicao_aparente"
+      conteudo: "Ganhará o mercado quem liderar a proteção da privacidade sustentável. Qualquer formato extremo — seja 'libera geral' ou 'protege a pessoa dela mesma' — está fadado ao fracasso."
+      source_path: "F03"
+      url: "https://www.gazetadopovo.com.br/opiniao/artigos/propriedade-e-privacidade-2kr37xdl54zoqe8li7eh41aha/"
+      tipo_semantico: "paradoxo"
+      confianca: 0.95
+      recorrencia: 2
+
+    - id: "MIU-037"
+      camada_dna: "paradoxos"
+      subcamada: "contradicao_aparente"
+      conteudo: "A internet valoriza quem causa polêmica e humilha, trazendo fama e dinheiro, em detrimento de quem respeita as leis. A audiência procura e é procurada pelo algoritmo."
+      source_path: "F02"
+      url: "https://www.cartacapital.com.br/artigo/fim-do-vale-tudo/"
+      tipo_semantico: "paradoxo"
+      confianca: 0.96
+      recorrencia: 2
+
+    - id: "MIU-038"
+      camada_dna: "paradoxos"
+      subcamada: "contradicao_aparente"
+      conteudo: "Assim como não podemos fabricar alimentos sem atender às normas de segurança, não deveríamos desenvolver tecnologia sem respeitar a privacidade. A indústria do tabaco pagou caro por ignorar a saúde — o mesmo pode acontecer com a tecnologia."
+      source_path: "F09"
+      url: "https://itforum.com.br/noticias/tecnologia-sem-privacidade-nao-opcao-peck/"
+      tipo_semantico: "analogia_paradoxal"
+      confianca: 0.97
+      recorrencia: 1
+
+    # === ASSOCIACOES CONCEITUAIS (2) ===
+    - id: "MIU-039"
+      camada_dna: "associacoes_conceituais"
+      subcamada: "ponte_interdisciplinar"
+      conteudo: "LGPD como legislação de Direitos Humanos com impacto econômico direto: barreiras comerciais, relações com OCDE e UE, vantagem competitiva reputacional."
+      source_path: "F01"
+      url: "https://www.conjur.com.br/2023-ago-22/patricia-peck-lgpd-busca-garantias-direitos/"
+      tipo_semantico: "ponte_conceitual"
+      confianca: 0.97
+      recorrencia: 4
+
+    - id: "MIU-040"
+      camada_dna: "associacoes_conceituais"
+      subcamada: "ponte_interdisciplinar"
+      conteudo: "Data Driven Society: proteção de dados entra no escopo dos Direitos Humanos, que abrange o Direito à Privacidade, que ganha novas perspectivas na Era Digital."
+      source_path: "F16"
+      url: "https://posdigital.pucpr.br/blog/objetivo-lgpd"
+      tipo_semantico: "modelo_mental"
+      confianca: 0.96
+      recorrencia: 3
+
+    # === COMUNICACAO (2) ===
+    - id: "MIU-041"
+      camada_dna: "comunicacao"
+      subcamada: "estilo_retorico"
+      conteudo: "Uso de analogias do cotidiano para explicar direito digital: 'fotos de aniversariantes do mês', 'falar CPF em voz alta na loja', 'digital no porteiro da academia' — exemplos concretos que tornam a LGPD tangível."
+      source_path: "F10"
+      url: "https://institutocaldeira.org.br/blog/patricia-peck-a-lgpd-vai-aumentar-grau-de-transparencia-e-fomentar-a-livre-economia-digital/"
+      tipo_semantico: "padrao_comunicativo"
+      confianca: 0.95
+      recorrencia: 5
+
+    - id: "MIU-042"
+      camada_dna: "comunicacao"
+      subcamada: "estilo_retorico"
+      conteudo: "Tom didático-preventivo com lista de regras práticas numeradas (ex: 14 cuidados nos grupos de WhatsApp), combinando ECA, exemplos reais e linguagem acessível."
+      source_path: "F08"
+      url: "https://direcionalescolas.com.br/educadores-atencao-redobrada-com-os-grupos-de-whatsapp/"
+      tipo_semantico: "padrao_comunicativo"
+      confianca: 0.94
+      recorrencia: 3

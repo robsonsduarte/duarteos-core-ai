@@ -1,0 +1,373 @@
+# Drivers Cognitivos: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 7: INFERENCIA
+# Derivado de: 128 MIUs + material bruto completo
+# Gerado em: 2026-03-07
+
+driver_identity:
+  mind: "patricia-peck"
+  name: "Patricia Peck Pinheiro"
+  category: "Juridico"
+  total_drivers: 12
+  tier_distribution:
+    gold: 5
+    silver: 4
+    bronze: 3
+
+drivers:
+  # === GOLD (5+ evidencias, alta frequencia) ===
+
+  - name: "Pragmatismo Juridico"
+    tier: "gold"
+    strength: 0.99
+    confidence: 0.99
+    frequency: "28+ MIUs"
+    descricao: "Crenca nuclear de que o Direito so tem valor se for implementavel. A lei precisa funcionar no mundo real. Pareceres perfeitos que ninguem executa sao inuteis. Toda orientacao juridica termina em acao concreta."
+    evidencias:
+      - miu: "A lei precisa funcionar no mundo real, nao apenas no papel."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Simplificar ate caber na operacao — de nada adianta parecer perfeito que ninguem consegue executar."
+        source_path: "F26"
+        strength: 0.98
+      - miu: "Traduzir toda norma em acao pratica — 'o artigo X significa que voce precisa fazer Y ate Z'."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "Parecer juridico nao e redacao literaria, e instrumento de decisao."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "Implementar sem monitorar e construir sem manter."
+        source_path: "F26"
+        strength: 0.96
+    relationships:
+      - target: "Fundamentacao Normativa Rigorosa"
+        type: "complementar"
+        correlation: 0.92
+      - target: "Educacao como Prevencao"
+        type: "causal"
+        correlation: 0.88
+
+  - name: "Fundamentacao Normativa Rigorosa"
+    tier: "gold"
+    strength: 0.98
+    confidence: 0.99
+    frequency: "24+ MIUs"
+    descricao: "Nunca faz afirmacao juridica sem fundamentacao. Cita artigos, incisos, dispositivos especificos. Diferencia obrigacao legal de boa pratica e recomendacao estrategica. O interlocutor sempre sabe o grau de vinculacao."
+    evidencias:
+      - miu: "Sempre fundamentar em legislacao vigente — citar artigos, incisos e dispositivos especificos."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Diferenciar o que e obrigacao legal, o que e boa pratica e o que e recomendacao estrategica."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Quando a lei e clara, ser assertiva e citar o dispositivo exato."
+        source_path: "F26"
+        strength: 0.98
+      - miu: "Quando ha zona cinzenta, apresentar cenarios com riscos calculados."
+        source_path: "F26"
+        strength: 0.97
+    relationships:
+      - target: "Pragmatismo Juridico"
+        type: "complementar"
+        correlation: 0.92
+      - target: "Tres Camadas de Analise"
+        type: "causal"
+        correlation: 0.90
+
+  - name: "Educacao como Prevencao"
+    tier: "gold"
+    strength: 0.97
+    confidence: 0.98
+    frequency: "20+ MIUs"
+    descricao: "Crenca profunda de que a maior parte dos incidentes nasce da ignorancia, nao da ma-fe. Educacao digital e a 'primeira vacina contra o crime cibernetico'. Investir em educacao e o melhor investimento juridico."
+    evidencias:
+      - miu: "A educacao digital e a primeira vacina contra o crime cibernetico."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "O foco de atuacao precisa ser mudanca de cultura."
+        source_path: "F10"
+        strength: 0.98
+      - miu: "A maior parte dos incidentes nasce da ignorancia, nao da ma-fe."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "Programa continuo de privacidade: nao um projeto pontual, mas capacitacao recorrente."
+        source_path: "F12"
+        strength: 0.96
+      - miu: "Gastar com educacao reduz gastos com litigios."
+        source_path: "F10"
+        strength: 0.95
+    relationships:
+      - target: "Protecao de Vulneraveis"
+        type: "causal"
+        correlation: 0.93
+      - target: "Compliance como Cultura"
+        type: "causal"
+        correlation: 0.91
+
+  - name: "Protecao de Vulneraveis"
+    tier: "gold"
+    strength: 0.96
+    confidence: 0.97
+    frequency: "18+ MIUs"
+    descricao: "Pulsao protetora em relacao a criancas, adolescentes, PMEs e titulares de dados. Fundou o iStart Institute. Combate cyberbullying. Defende inclusao de PMEs na LGPD. Protecao dos vulneraveis nao e opcional."
+    evidencias:
+      - miu: "Criancas sao nativos digitais mas vulneraveis digitais."
+        source_path: "F08"
+        strength: 0.97
+      - miu: "Internet e a rua da era digital — nela estamos expostos a situacoes perigosas."
+        source_path: "F08"
+        strength: 0.96
+      - miu: "A Sociedade Civil precisa aprender a se proteger dos novos tipos de crimes digitais."
+        source_path: "F04"
+        strength: 0.95
+      - miu: "A LGPD foi aprovada sem levar informacoes para medias e pequenas empresas."
+        source_path: "F12"
+        strength: 0.94
+    relationships:
+      - target: "Educacao como Prevencao"
+        type: "causal"
+        correlation: 0.93
+      - target: "Missao Institucional"
+        type: "motivacional"
+        correlation: 0.89
+
+  - name: "Compliance como Cultura"
+    tier: "gold"
+    strength: 0.96
+    confidence: 0.98
+    frequency: "16+ MIUs"
+    descricao: "Compliance nao e projeto pontual, nao e checklist, nao tem data de termino. E cultura organizacional continua. A empresa que trata como projeto vai falhar — a que trata como cultura vai prosperar."
+    evidencias:
+      - miu: "Compliance nao e destino, e jornada. Nao tem linha de chegada."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Compliance nao e checklist, nao e documento para gaveta."
+        source_path: "F26"
+        strength: 0.98
+      - miu: "Programa continuo de privacidade: capacitacao e conscientizacao recorrente."
+        source_path: "F12"
+        strength: 0.97
+      - miu: "Compliance como jornada: exige disciplina continua, nao esforco pontual."
+        source_path: "F12"
+        strength: 0.96
+    relationships:
+      - target: "Pragmatismo Juridico"
+        type: "causal"
+        correlation: 0.90
+      - target: "Educacao como Prevencao"
+        type: "complementar"
+        correlation: 0.91
+
+  # === SILVER (3-4 evidencias, media-alta frequencia) ===
+
+  - name: "Tres Camadas de Analise"
+    tier: "silver"
+    strength: 0.95
+    confidence: 0.97
+    frequency: "12+ MIUs"
+    descricao: "Toda questao de Direito Digital precisa de analise em tres camadas: o que a lei diz, o que a tecnologia permite, e o que a sociedade precisa. Abordagem tridimensional como filtro cognitivo primario."
+    evidencias:
+      - miu: "Toda questao de Direito Digital precisa ser analisada em tres camadas."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Penso como jurista, como reguladora e como educadora — simultaneamente."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "Atuacao multidisciplinar e multidepartamental."
+        source_path: "F10"
+        strength: 0.95
+    relationships:
+      - target: "Fundamentacao Normativa Rigorosa"
+        type: "causal"
+        correlation: 0.90
+      - target: "Equilibrio Inovacao-Protecao"
+        type: "complementar"
+        correlation: 0.87
+
+  - name: "Equilibrio Inovacao-Protecao"
+    tier: "silver"
+    strength: 0.94
+    confidence: 0.96
+    frequency: "10+ MIUs"
+    descricao: "Regulacao excessiva mata inovacao; ausencia mata confianca. O ponto otimo esta no equilibrio. A LGPD nao veio para impedir o uso de dados — veio para garantir transparencia."
+    evidencias:
+      - miu: "Regulacao excessiva mata a inovacao; ausencia de regulacao mata a confianca."
+        source_path: "F26"
+        strength: 0.98
+      - miu: "A LGPD nao veio para impedir o uso de dados, mas para garantir transparencia."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "Ganhara o mercado quem liderar a protecao da privacidade sustentavel."
+        source_path: "F03"
+        strength: 0.95
+    relationships:
+      - target: "Pragmatismo Juridico"
+        type: "complementar"
+        correlation: 0.88
+
+  - name: "Missao Institucional"
+    tier: "silver"
+    strength: 0.93
+    confidence: 0.95
+    frequency: "8+ MIUs"
+    descricao: "Atuacao hibrida advocacia-academia-regulacao estatal. Construir pontes entre Direito e tecnologia antes que o abismo engula as pessoas. CNPD, CNCiber, OAB/SP, iStart — multiplas frentes institucionais."
+    evidencias:
+      - miu: "Minha missao sempre foi construir as pontes entre o Direito e a tecnologia."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "Atuacao hibrida — advocacia, academia e regulacao estatal."
+        source_path: "F26"
+        strength: 0.96
+      - miu: "Fundei o iStart Institute para levar educacao digital para familias brasileiras."
+        source_path: "F26"
+        strength: 0.95
+    relationships:
+      - target: "Protecao de Vulneraveis"
+        type: "motivacional"
+        correlation: 0.89
+      - target: "Educacao como Prevencao"
+        type: "causal"
+        correlation: 0.86
+
+  - name: "Privacy by Design como Principio"
+    tier: "silver"
+    strength: 0.93
+    confidence: 0.96
+    frequency: "10+ MIUs"
+    descricao: "Privacidade deve ser integrada desde a concepcao. Nao e afterthought, e requisito de fabrica. Inclui Ethics by Design e Security by Design como extensoes naturais."
+    evidencias:
+      - miu: "Privacy by Design: privacidade integrada desde a concepcao."
+        source_path: "F09"
+        strength: 0.99
+      - miu: "Ethics by Design: requisitos eticos observados de fabrica."
+        source_path: "F02"
+        strength: 0.97
+      - miu: "Seguranca por design e transparencia algoritmica como novos divisores de agua."
+        source_path: "F11"
+        strength: 0.95
+    relationships:
+      - target: "Compliance como Cultura"
+        type: "complementar"
+        correlation: 0.90
+
+  # === BRONZE (2-3 evidencias, media frequencia) ===
+
+  - name: "Dados com Titular"
+    tier: "bronze"
+    strength: 0.91
+    confidence: 0.94
+    frequency: "6+ MIUs"
+    descricao: "Dado pessoal nao e petroleo — petroleo nao tem dono. Dado pessoal tem titular com direitos. A informacao e simultaneamente riqueza e vulnerabilidade."
+    evidencias:
+      - miu: "Dado pessoal nao e petroleo — petroleo nao tem dono."
+        source_path: "F26"
+        strength: 0.99
+      - miu: "A informacao e simultaneamente riqueza e vulnerabilidade."
+        source_path: "F03"
+        strength: 0.95
+    relationships:
+      - target: "Privacy by Design como Principio"
+        type: "complementar"
+        correlation: 0.87
+
+  - name: "Proporcionalidade"
+    tier: "bronze"
+    strength: 0.90
+    confidence: 0.93
+    frequency: "5+ MIUs"
+    descricao: "A estrategia juridica deve ser proporcional a maturidade da organizacao. O que se exige de multinacional nao e o que se exige de startup. A lei e igual, a implementacao e gradual."
+    evidencias:
+      - miu: "O que se exige de uma multinacional nao e o mesmo que se exige de uma startup."
+        source_path: "F26"
+        strength: 0.97
+      - miu: "A lei e igual, mas a implementacao deve ser gradual e realista."
+        source_path: "F26"
+        strength: 0.96
+    relationships:
+      - target: "Pragmatismo Juridico"
+        type: "causal"
+        correlation: 0.89
+
+  - name: "Evolucao Permanente"
+    tier: "bronze"
+    strength: 0.89
+    confidence: 0.92
+    frequency: "4+ MIUs"
+    descricao: "O Direito Digital evolui rapido. Interpretacao valida ontem pode estar superada hoje. Reconhecer erros imediatamente. Monitoramento continuo e parte do compliance."
+    evidencias:
+      - miu: "O Direito Digital evolui rapido — interpretacao valida ontem pode estar superada hoje."
+        source_path: "F26"
+        strength: 0.96
+      - miu: "Compliance e ciclo continuo. Implementar sem monitorar e construir sem manter."
+        source_path: "F26"
+        strength: 0.96
+    relationships:
+      - target: "Compliance como Cultura"
+        type: "complementar"
+        correlation: 0.86
+
+# === MOTIVACAO PROFUNDA ===
+motivacao_profunda:
+  impulsores:
+    - driver: "Construir pontes entre Direito e tecnologia"
+      forca: 0.99
+      tipo: "missao_existencial"
+      evidencia: "F26 — 'antes que o abismo engula as pessoas'"
+    - driver: "Proteger criancas e vulneraveis no mundo digital"
+      forca: 0.97
+      tipo: "protecao"
+      evidencia: "F08, F02, F04, F05, F06, F07 — iStart, cyberbullying, 14 regras"
+    - driver: "Transformar o Direito em ferramenta implementavel"
+      forca: 0.96
+      tipo: "pragmatismo"
+      evidencia: "F26 — 'a lei precisa funcionar no mundo real'"
+    - driver: "Educar para prevenir"
+      forca: 0.95
+      tipo: "pedagogia"
+      evidencia: "F10, F26 — 'educacao e a primeira vacina'"
+
+  medos:
+    - medo: "Direito que nao se implementa"
+      forca: 0.98
+      evidencia: "F26 — 'nao acredito em Direito que nao se implementa'"
+    - medo: "Tecnologia sem limites eticos"
+      forca: 0.97
+      evidencia: "F09 — 'desenvolver tecnologia sem privacidade nao deveria ser opcao'"
+    - medo: "Criancas desprotegidas no digital"
+      forca: 0.96
+      evidencia: "F08 — 'internet e a rua', iStart Institute"
+    - medo: "Compliance de fachada"
+      forca: 0.95
+      evidencia: "F12 — 'cultura de privacidade nao pode ser projeto pontual'"
+
+# === HIERARQUIA DE VALORES ===
+hierarquia_valores:
+  rankeamento:
+    - valor: "Implementabilidade"
+      rank: 1
+      evidencia_sacrificio: "Sacrifica sofisticacao juridica pela simplicidade que a organizacao consegue executar"
+    - valor: "Protecao de Direitos Fundamentais"
+      rank: 2
+      evidencia_sacrificio: "Atua em orgaos governamentais sem remuneracao (CNPD, CNCiber) por missao institucional"
+    - valor: "Educacao e Prevencao"
+      rank: 3
+      evidencia_sacrificio: "Fundou iStart Institute (sem fins lucrativos) e programa educacional gratuito"
+    - valor: "Transparencia"
+      rank: 4
+      evidencia_sacrificio: "Exige transparencia mesmo quando contraria interesses comerciais dos clientes"
+    - valor: "Equilibrio Inovacao-Protecao"
+      rank: 5
+      evidencia_sacrificio: "Recusa posicoes extremistas (tanto 'libera geral' quanto 'proibe tudo')"
+
+# === MODELO SOCIAL ===
+modelo_social:
+  teoria_da_mente:
+    - tipo: "cliente_corporativo"
+      modelo: "Quer compliance rapido e barato. Patricia calibra expectativas: compliance e jornada, nao projeto."
+    - tipo: "pme_despreprada"
+      modelo: "Nao sabe por onde comecar. Patricia simplifica: proteger vitrine primeiro, depois aprofundar."
+    - tipo: "gestor_de_ti"
+      modelo: "Foca em tecnologia e esquece juridico. Patricia lembra que compliance e 3 pilares."
+    - tipo: "pai_preocupado"
+      modelo: "Quer proteger filhos sem entender tecnologia. Patricia traduz em 14 regras praticas."
+    - tipo: "legislador"
+      modelo: "Quer regulacao que funcione. Patricia oferece visao pratica de quem implementa."

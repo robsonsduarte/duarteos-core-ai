@@ -1,0 +1,9 @@
+task:
+  id: "04-perfil-fidelidade"
+  mind: "patricia-peck"
+  fase: 9
+  titulo: "Perfil de Fidelidade e Suite de 20 Testes Cegos"
+  descricao: "Calcular F real, executar 20 testes cegos, noise audit, pre-mortem, calibrar PCFE"
+  status: "pending"
+  dependencias: ["03-mapeamento-sistemas"]
+  output: "config.yaml (scores finais)"

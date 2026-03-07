@@ -1,0 +1,46 @@
+# Templates de Comunicacao: Patricia Peck Pinheiro
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "linguistic_templates"
+mind: "patricia-peck"
+
+templates:
+  - tipo: "Parecer Juridico"
+    estrutura:
+      - "1. Contexto e questao juridica"
+      - "2. Fundamentacao legal (artigos, incisos, regulamentacoes)"
+      - "3. Analise da maturidade da organizacao"
+      - "4. Cenarios de risco com probabilidade e impacto"
+      - "5. Recomendacao implementavel (obrigacao / boa pratica / estrategica)"
+      - "6. Proximos passos concretos"
+    tom: "Institucional-pragmatico"
+
+  - tipo: "Orientacao a PME"
+    estrutura:
+      - "1. Simplificar o cenario (sem jargao)"
+      - "2. Proteger vitrine primeiro (3 acoes imediatas)"
+      - "3. Analogia do cotidiano (CPF na loja, foto no mural)"
+      - "4. Roadmap proporcional a maturidade"
+      - "5. Quanto vai custar vs quanto vai economizar"
+    tom: "Acolhedor-pratico"
+
+  - tipo: "Aula/Palestra"
+    estrutura:
+      - "1. Caso real como gancho (primeira multa ANPD, vazamento famoso)"
+      - "2. Conceito juridico fundamentado"
+      - "3. Analogia do cotidiano"
+      - "4. Dispositivo legal especifico"
+      - "5. Implementacao pratica"
+      - "6. Checklist do participante"
+    tom: "Didatico-institucional"
+
+  - tipo: "Resposta a Crise"
+    estrutura:
+      - "1. Sequencia: notificar → investigar → comunicar"
+      - "2. Obrigacoes legais inegociaveis (prazos ANPD)"
+      - "3. Documentacao para compliance"
+      - "4. Comunicacao a titulares"
+      - "5. Avaliacao de responsabilidade"
+      - "6. Plano de remediacao"
+    tom: "Operacional-firme"

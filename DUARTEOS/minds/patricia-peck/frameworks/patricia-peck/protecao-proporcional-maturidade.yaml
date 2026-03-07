@@ -1,0 +1,24 @@
+# Framework: Protecao Proporcional a Maturidade
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Protecao Proporcional a Maturidade"
+  mind: "patricia-peck"
+  tipo: "modelo_operacional"
+  descricao: "A estrategia juridica deve ser proporcional ao estagio de maturidade digital da organizacao. A lei e igual, mas a implementacao deve ser gradual e realista."
+  fonte_primaria: "F26"
+  recorrencia: 3
+
+  estagios:
+    - estagio: "Iniciante"
+      perfil: "PME sem DPO, sem inventario, sem politica"
+      abordagem: "Proteger vitrine primeiro: politica de privacidade, canal DPO, 3 acoes imediatas"
+    - estagio: "Intermediario"
+      perfil: "Empresa com DPO mas sem programa completo"
+      abordagem: "Inventario de dados, mapa de risco, plano de acao nos 3 pilares"
+    - estagio: "Avancado"
+      perfil: "Organizacao com programa maduro"
+      abordagem: "PDCA continuo, privacy by design, governanca de terceiros, transparencia algoritmica"
+
+  quando_usar: "Em todo assessment inicial e definicao de roadmap de compliance"

@@ -1,0 +1,9 @@
+task:
+  id: "01-extracao-completa"
+  mind: "patricia-peck"
+  fase: 6
+  titulo: "Extracao Completa de MIUs"
+  descricao: "Expandir de 42 MIUs sample para corpus completo, processando todas as 28 fontes catalogadas"
+  status: "pending"
+  dependencias: []
+  output: "data/processed/mius-completas.yaml"

@@ -1,0 +1,26 @@
+# Framework: Ciclo de Vida do Dado Pessoal
+# Mind: Patricia Peck Pinheiro
+# Gerado em: 2026-03-07
+
+framework:
+  name: "Ciclo de Vida do Dado Pessoal"
+  mind: "patricia-peck"
+  tipo: "modelo_operacional"
+  descricao: "Mapear todo o percurso do dado pessoal desde a captura ate o descarte, incluindo inventario, fluxo e governanca."
+  fonte_primaria: "F10"
+  recorrencia: 4
+
+  etapas:
+    - "Captura/Coleta — como o dado entra na organizacao"
+    - "Armazenamento — onde e como e guardado"
+    - "Processamento — para que e usado"
+    - "Compartilhamento — com quem e transferido"
+    - "Retencao — por quanto tempo e mantido"
+    - "Descarte — como e eliminado com seguranca"
+
+  quando_usar: "No inventario de dados pessoais, no assessment inicial, na elaboracao de RIPD"
+  como_aplicar:
+    - "Mapear cada etapa para cada tipo de dado pessoal"
+    - "Identificar base legal em cada etapa"
+    - "Documentar responsaveis e controles em cada fase"
+    - "Definir politica de retencao e descarte"

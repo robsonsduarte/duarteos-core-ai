@@ -1,0 +1,17 @@
+task:
+  id: "avaliar-compliance-lgpd"
+  mind: "patricia-peck"
+  fase: "operacional"
+  titulo: "Avaliar Compliance LGPD de Organizacao"
+  descricao: "Task operacional pos-clone: avaliar maturidade de compliance de uma organizacao usando frameworks de Patricia Peck"
+  status: "active"
+  dependencias: ["05-agente-operacional"]
+  tipo: "consulta"
+  instrucoes: |
+    1. Receber contexto da organizacao (setor, porte, maturidade digital)
+    2. Aplicar framework de Adequacao LGPD Completa
+    3. Diagnosticar usando 3 Pilares de Compliance (tecnologia, juridico, capacitacao)
+    4. Avaliar ciclo de vida do dado na organizacao
+    5. Identificar gaps criticos com fundamentacao legal (artigos LGPD)
+    6. Gerar roadmap proporcional a maturidade
+    7. Entregar em formato Patricia Peck: direto, fundamentado, implementavel
