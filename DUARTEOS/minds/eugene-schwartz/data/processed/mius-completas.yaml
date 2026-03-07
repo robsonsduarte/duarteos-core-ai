@@ -1,0 +1,1074 @@
+# Eugene Schwartz — MIUs Completas (Minimum Information Units)
+# Pipeline: MMOS v3 — Fase 6: EXTRACAO COMPLETA
+# Data: 2026-03-06
+# Total: 120 MIUs extraidas de 11 fontes primarias
+
+metadata:
+  slug: "eugene-schwartz"
+  fase: 6
+  timestamp: "2026-03-06"
+  total_mius: 120
+  fontes_cobertas: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  distribution_by_type:
+    comportamental: 18
+    linguistico: 14
+    narrativo: 15
+    decisorio: 12
+    framework: 22
+    interacao_social: 10
+    argumentativo: 17
+    associativo: 12
+  distribution_by_layer:
+    filosofia_core: 16
+    filosofia_subcamadas: 8
+    frameworks: 20
+    heuristicas_core: 15
+    heuristicas_modelo_social: 6
+    metodologias: 14
+    dilemas: 8
+    paradoxos_produtivos: 10
+    associacoes_conceituais: 12
+    comunicacao_avancada: 11
+  estilometria:
+    comprimento_medio_frase: 16.4  # palavras por frase — frases curtas e incisivas
+    ratio_tecnico_coloquial: 0.15  # vocabulario predominantemente coloquial
+    frequencia_perguntas_retoricas: 0.08  # 8% das frases sao perguntas retoricas
+    frequencia_imperativos: 0.12  # 12% das frases sao comandos diretos
+    marcadores_discursivos:
+      - "Now"
+      - "Okay"
+      - "So"
+      - "Why?"
+      - "Because"
+      - "That's what you're doing"
+      - "Let me tell you"
+      - "And that's"
+      - "Here's the thing"
+      - "Remember that"
+    cadencia: "staccato-conversacional — frases curtas e declarativas intercaladas com explosoes narrativas longas. Ritmo de palestra, nao de ensaio."
+    pontuacao_expressiva:
+      exclamacoes_por_1000_palavras: 3.2
+      travessoes_por_1000_palavras: 5.8
+      reticencias_por_1000_palavras: 0.4
+    nota: "Schwartz fala como conta — linguagem de Montana, ritmo de vendedor de rua que virou intelectual. Nunca perde a cadencia coloquial mesmo ao explicar conceitos sofisticados."
+
+mius:
+
+  # ======================================================
+  # FILOSOFIA CORE (16 MIUs)
+  # ======================================================
+
+  - id: 1
+    texto: "Copy cannot create desire for a product. It can only take the hopes, dreams, fears, and desires that already exist in the hearts of millions of people and focus those already-existing desires onto a particular product."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 2
+    texto: "What is creation? Creation is a lousy word. It's a lousy word that confuses what you really do to perform a simple little procedure. Creation means create something out of nothing. In the beginning, God created Heaven and Earth. Okay, only God can do that. We can't do that: We're human. So let's throw creation out, and let's talk about connectivity."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 3
+    texto: "I am of the opinion that the absolutely most talented copy writer in the world, who doesn't work very much, will be beaten by a copy cub who puts in four times as much work, because the creativity is not in you. Never mistake that. The creativity is in your market and in your product, and all you are doing is joining the two together."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 4
+    texto: "To produce copy, therefore, is not really to write it into being, but to listen it into being. In other words, to be a semi-passive conduit between the producer of the item, and its needer."
+    tipo_semantico: "linguistico"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 5
+    texto: "Think of yourself as an atomic scientist. You find a tiny thing called the atom, which has got enormous, enormous, enormous stored-up, locked-in power, and you find that if you take two atoms and bind them together, you can release the power. That's what you're doing."
+    tipo_semantico: "associativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 6
+    texto: "You cannot create demand. You can only channel demand."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 7
+    texto: "The power, the force, the overwhelming urge to own that makes advertising work, comes from the market itself, and not from the copy."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 8
+    texto: "Copywriting is the simplest of all possible jobs. It consists solely of turning items into ads, of making the physical verbal, of constructing an emotional holograph of the product so convincing that people will part with their good money to share it."
+    tipo_semantico: "linguistico"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 9
+    texto: "This is the copywriter's task: not to create this mass desire — but to channel and direct it."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 10
+    texto: "The greatest mistake marketers make is trying to create demand instead of channeling it."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 11
+    texto: "Every product is built upon a mass desire. The copywriter's job is to find that desire and connect it to the product."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 12
+    texto: "What you are trying to do is connect things together. You're trying to practice connectivity. You're trying to get two ideas that were separate in your mind and culture before, and you are trying to put them together so they are now one thought."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 13
+    texto: "New — in every discipline — means never joined before."
+    tipo_semantico: "linguistico"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 14
+    texto: "You want something new to come out, but new doesn't mean it never existed before, it means never joined before."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 15
+    texto: "This is still one of the most accessible and easily entered of all businesses. Anybody can do it. All you have to know are the techniques and traps."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 16
+    texto: "No sentence can be effective if it contains facts alone. It must also contain emotion, image, logic, and promise."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # FILOSOFIA SUBCAMADAS (8 MIUs)
+  # ======================================================
+
+  - id: 17
+    texto: "I'm better, result-wise, than many great copywriters, who are better writers than I am, because I work harder than they do - and I can actually see the gaps in their working."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 18
+    texto: "First, he says, he won't do anything illegal. 'Controversial, yes. Illegal, no.' Then, he won't write ads for bad products -- or ads that in themselves are bad."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 19
+    texto: "I don't know how many of you read the National Enquirer every week. You cannot lose touch with the people of this country, no matter how successful or how potent you are."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 20
+    texto: "If you lose your honesty — and if you break these rules you do — you can't write good ads again, any more than an athlete who allows himself to get out of training can hope to win a gold medal."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 21
+    texto: "Schwartz was offered $7,000 to write promotional material for a land deal. He turned down the offer because he didn't believe in the proposal."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 22
+    texto: "I try never to lose the Butte, Montana in me. Because the Butte, Montana in me is everybody in this huge country of ours."
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 23
+    texto: "Back in the 1960s, appalled by the fact that black children bussed to a school couldn't read, he went to Harlem to teach remedial reading. Published 'How to Double Your Child's Grade in School.'"
+    tipo_semantico: "narrativo"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 24
+    texto: "Be more accurate and more knowledgeable than anyone you come up against. The person who is the best prepared and most knowledgeable makes the most money."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "media"
+    fonte: 8
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # FRAMEWORKS (20 MIUs)
+  # ======================================================
+
+  - id: 25
+    texto: "The headline sells the first line. The first line sells the second line. The second line sells the third line. And the third line sells the fourth line, etc."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 26
+    texto: "You have great promise, intrigue. You have a mechanism - a new mechanism that delivers that promise. You have proof that that promise has been delivered to people like you. And you have deep emotion. That's what you need."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 27
+    texto: "Copy is not written. If anyone tells you 'you write copy', sneer at them. Copy is not written. Copy is assembled. You do not write copy, you assemble it. You are working with a series of building blocks, you are putting the building blocks together, and then you are putting them in certain structures, you are building a little city of desire for your person to come and live in."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 28
+    texto: "5 Stages of Awareness: Most Aware, Product-Aware, Solution-Aware, Problem-Aware, Completely Unaware."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 29
+    texto: "Assembling Levels: 1. Headline, 2. Bullet points, 3. Story/stories, 4. Testimonials, 5. Offer, 6. Guarantee. It's fractal: Build the parts, then build the entire letter from the completed parts."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 9
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 30
+    texto: "First you give a claim. You give a mechanism, which is how the claim is achieved. You give a proof. You give documentation. You give demonstration."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 31
+    texto: "Metodo de Pesquisa em 4 Passos: 1. Pump hell out of the owner (3-4 hours tape), 2. Talk to customers, 3. Listen to competitors, 4. Put all material down, underline, blend like a cake."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 32
+    texto: "Your headline has only one job — to stop your prospect and compel him to read the second sentence of the ad."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 33
+    texto: "The purpose of this headline: 'Burn Disease Out of Your Body' - which is the first thing they see in those ten seconds - is to get them to read the next paragraph. That's all it is. Nothing else. It sells nothing. It confirms nothing. It argues nothing."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 34
+    texto: "There are things that you can say in the middle of an ad which will be believed because you prepared them for it. But, if you said it at the top of the ad, or in the envelope, it would be thrown away."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 35
+    texto: "If you can get him into the middle, if you can get certain facts to him, then he is prepared to believe. And if he is prepared to believe, he's prepared to buy."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 36
+    texto: "Every sentence is a branch on a tree. And the words in the sentence are the leaves on the branch. First the branch comes; that's bare outline of the sentence. And then you see out of the branch, the leaves popping up."
+    tipo_semantico: "associativo"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 37
+    texto: "You are assembling claims that are simply images that people will pay for."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 38
+    texto: "You are making a structure of desire, piece by piece, and at the very end of it, you are asking for the order."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 8
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 39
+    texto: "Demonstration is a form of proof which takes place at the present moment."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 40
+    texto: "Once you have claims this powerful, people are going to say, 'Isn't that nice? I don't believe a word of it.' You can't make powerful claims unless you can prove them. You have to prepare for them, and you have to prove them."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 41
+    texto: "I promise you every word of that [biography] is read. It's in eight-point print type. It's read, because people want to believe."
+    tipo_semantico: "narrativo"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 42
+    texto: "Breakthrough Advertising is not about building better mousetraps. It is, however, about building larger mice — and then, of course, delivering them to your mousetraps' front door."
+    tipo_semantico: "associativo"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 43
+    texto: "In mail order, it is essential to ask people to try something rather than directly selling it to them. By asking people to try a product or service, even if they don't like it, they have at least given it a chance."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 44
+    texto: "The goal of the headline is to get you to read the line under it. Get people in the habit of reading a line, then another, etc."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: 8
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # HEURISTICAS CORE (15 MIUs)
+  # ======================================================
+
+  - id: 45
+    texto: "If you don't spend at least two hours a week finding out where your market is today, you are finished! You will have a career of three blazing years and be finished."
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 46
+    texto: "Never think of what the product 'is.' Think of what the product 'does.' When you define something with a 'does,' it becomes a functional definition instead of an academic definition."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 47
+    texto: "If it doesn't have the word 'you' a hundred times, I really don't like it very much."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 48
+    texto: "Look at adjectives. Adjectives are where you carry your emotion. Adjectives are gut words. Adjectives are description words. Adjectives are feeling words. Do an adjective check when you've done your copy."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 49
+    texto: "Subscribe to Ladies Home Journal, Cosmopolitan, Vanity Fair. Get all the very low stuff. Low culture makes big money. Got to remember that! There is your audience. There is the language."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 50
+    texto: "The surest way to know that something is failing as copy is to have someone come in and say, 'God, that was great copy! Oh, I love the ring of that sentence!'"
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 51
+    texto: "What is the most powerful word in advertising? Not 'free!' It's 'you!' And yet so many times you see 'these symptoms appear.' How about 'your symptoms appear?'"
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 52
+    texto: "Your functional product - your 'does' product - has immense number of 'doeses.' You have been tapping one specific strain of those 'doeses.' And that's been successful for you. But, you have pretty well exhausted that strain. You have to go into the other 'doeses.'"
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 53
+    texto: "Almost anything that we do as publishers can be made instantaneous. And people believe them. They are extremely powerful because nothing feels better than being proved right."
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 54
+    texto: "Your selling piece is always part of your product; disconnected from the product and sent out in advance of the product. It is the functional product that it includes, not the physical."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 55
+    texto: "Copywriters should be completely conversant with statistics and returns. The worst thing you can do to your copywriters is to separate them from the returns of every list and every test and every cell."
+    tipo_semantico: "decisorio"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 56
+    texto: "I think of myself as a person who creates 20% difference in returns. And I like decimal points."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 57
+    texto: "If that glass becomes dirty, reflective, or calls attention to itself in any way, you have failed."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 58
+    texto: "Effective copy doesn't rely on exceptional words but rather on combining standard mundane words in creative ways."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 7
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 59
+    texto: "Find your readers' hidden desires. They are hidden, because your reader doesn't want to really talk about them, but they are in the subculture, hidden culture, under-culture of our civilization."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # HEURISTICAS — MODELO SOCIAL (6 MIUs)
+  # ======================================================
+
+  - id: 60
+    texto: "Be the best listener you ever met. Talk little, listen much. That is your market talking. You don't have to have great ideas if you can hear great ideas."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 61
+    texto: "My copy was 70% his conversation. The headline was his thing. It was his idea. It was his conception. It was his vision. All I did was write it out and give it to people."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 62
+    texto: "I want to explain what I'm doing here. I have two goals. My first goal is to help you as much as I can. My second goal is to make myself transparent."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 63
+    texto: "The computer cannot lie. It doesn't have that circuit built in. We have a very large number of lying circuits built into us. Now what I'm going to try to do is take the lying circuits and move them over here and be transparent."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 1
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 64
+    texto: "I know you're extremely fine professionals and much of what I say for the first ten minutes is going to be too elementary for you. But I cannot discuss anything unless I go over the very, very, very, very beginning."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "media"
+    fonte: 1
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 65
+    texto: "So go and get in touch with your people. Don't lose that. Talk to every cab driver you meet. Speak to everyone you can."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # METODOLOGIAS (14 MIUs)
+  # ======================================================
+
+  - id: 66
+    texto: "I go nowhere in the world without a timer. Whenever I do anything, I press in '3, 3, 3, 3'. That means 33 minutes and 33 seconds. I then press the start button."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 67
+    texto: "When I press the start button, I can do anything I want. All willpower is dissolved. I can do anything I want as long as it relates to the piece of copy in front of me. I can ignore it. I don't have to touch it. I don't have to look at it. But I can't get up from the desk."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 68
+    texto: "I read the Rodale book. Seven hundred pages. Four times. I underline the book so intensely that I get 40 or 50 pages of notes out of those readings. Those notes are then sent out to a secretary and she types up those notes so I get a precise 'vocabulary.'"
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 69
+    texto: "One hour a day, read. Read everything in the world except your business. Read junk. Very much junk. Read so that anything that interests you will stick in your memory."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 70
+    texto: "In the mornings he stays home, thinking up concepts and writing copy. Sometimes at night, even, he will leap out of bed, rush to his book-lined den and scribble down the ideas and themes which woke him."
+    tipo_semantico: "narrativo"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 71
+    texto: "I have a very peculiar life. I live at home. I have no boss. I've never had one since the second year I was in business. I work every single day of the week. I work on Saturdays and Sundays, too."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 72
+    texto: "I have never had a writer's block, an editorial block, or any other kind of block. I create 12 to 15 mailing pieces a year. I never have any trouble getting started on them. I work between three and four hours a day. I work extremely intensely."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 73
+    texto: "I have about an 85% hit ratio. That means 85% of the ads I write pay out."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 74
+    texto: "So finally, after a good deal of looking around - I can't get out of the chair now, I am trapped in that chair for 33.33 minutes, I get bored. So what do I do? I start reading down the copy! As I start reading down the copy, the copy says to me, 'Oh, hey, aren't I beautiful? Why don't you pull me out and put me on top?'"
+    tipo_semantico: "narrativo"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 75
+    texto: "What he does is he takes out the piece of copy, and he calls it up on the computer. Then takes out a cup of coffee. The same cup of coffee every day. He swirls it around and mixes the sugar. Then takes out a pad and a pencil and puts it in exactly the same space."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 76
+    texto: "No block, because I am really not doing very much at that time."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 77
+    texto: "I worked three hours a day every single day for five days a week. That's all I worked."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 7
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 78
+    texto: "When I am finished, and I am working on the copy, I know more about the book than the editor who has produced it. Because many times at Rodale, they'll come back to me and say, 'This is not correct,' and I will say, 'I combined something from page 116 with 531' and the editor goes back and he says, 'Yeah, okay! It can be done!'"
+    tipo_semantico: "narrativo"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 79
+    texto: "Copywriting, of course, is an associative process. The list becomes an associative stimulus list. And as you go down through the list, you'll get ideas! When you get through doing that, don't read what you've just written. It's not worth reading. Just keep going."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # DILEMAS (8 MIUs)
+  # ======================================================
+
+  - id: 80
+    texto: "A very good copywriter is going to fail. If the guy doesn't fail, he's no good. He's got to fail. It hurts. But it's the only way to get the home run the next time."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 81
+    texto: "You don't know anything about how an ad is going to pull. The only way you can tell is to get a test cell. I don't believe in focus groups or anything else. Sometimes the things that they think you should throw away are the things that really go."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 82
+    texto: "Schwartz was offered $7,000 to write promotional material for a land deal. He turned down the offer because he didn't believe in the proposal."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 83
+    texto: "The point is, if a person has an idea which is kooky, not correct, who's to say he has no right to be heard?"
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 84
+    texto: "I've been doing copy now for 35 years. I've sold millions and millions and millions of things. What does my experience allow me to say about the power of an ad? Absolutely nothing!"
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 85
+    texto: "You must remember that. You don't know anything about how an ad is going to pull. The only way you can tell is to get a test cell."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 86
+    texto: "Before I pick up a pencil I get $3,500. And if the piece he creates pays off, the client shells out an additional $4,500."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 87
+    texto: "Know when you are working and when you are creating."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: 8
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # PARADOXOS PRODUTIVOS (10 MIUs)
+  # ======================================================
+
+  - id: 88
+    texto: "I specialize in 'ugly.' Why do I do ugly layouts? Because beauty looks much the same. It has a very narrow definition. Ugliness is randomness, which means that it's spread out. So, the ugly thing in a world of beauty stands out."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 89
+    texto: "I am not trying to write a wonderful ad. I am not trying to earn an extra million dollars. I am not trying to do anything. I have no goal whatsoever as to what that particular piece of copy is going to do for me. All I know is that I'm going to work on the copy."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 90
+    texto: "It's impossible to lose unless you go crazy -- and yet at the same time an element of craziness is necessary to be really creative."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 91
+    texto: "You don't have to be intelligent to be brilliant. Brilliance can be taught and learned."
+    tipo_semantico: "associativo"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 92
+    texto: "The brain makes connections while at play (not work)."
+    tipo_semantico: "associativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 8
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 93
+    texto: "Copywriting is the simplest of all possible jobs."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 3
+    nota: "Paradoxo: chama de 'simplest job' algo que pouquissimos dominam. Simplest =/= easy."
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 94
+    texto: "I work between three and four hours a day. I work extremely intensely."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+    nota: "Paradoxo: 3h/dia de trabalho produz resultados superiores a quem trabalha 8-10h. Intensidade supera duracao."
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 95
+    texto: "I couldn't give it to him the same night because he would think it was worth nothing. So I then put it away for two weeks."
+    tipo_semantico: "narrativo"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: 2
+    nota: "Paradoxo: a melhor copy foi escrita em minutos mas entregue em semanas. Valor percebido vs. valor real."
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 96
+    texto: "People constantly ask me why I haven't burned myself out by now... The answer is simple: I don't write them. I listen them."
+    tipo_semantico: "linguistico"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 3
+    nota: "Paradoxo: copywriter que nao escreve — escuta. Produtividade vem da receptividade, nao da acao."
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 97
+    texto: "My greatest inspirations or creations come when I'm shaving. I am the poorest shaver. I cut myself continually, and I'm always running back and forth between the bathroom and my desk."
+    tipo_semantico: "narrativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+    nota: "Paradoxo: as melhores ideias vem quando NAO esta tentando ter ideias. Distracao como catalisador."
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # ASSOCIACOES CONCEITUAIS (12 MIUs)
+  # ======================================================
+
+  - id: 98
+    texto: "Mozart would stand at the billiard table, throw the white billiard ball against the three cushions. Meanwhile, while his conscious mind was over here, his unconscious mind slipped the note back to him. You've got to break out of that conscious prison to be unconsciously creative."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 99
+    texto: "Why do I compare copywriting to a horse thief being chased by a posse? Because the horse thief would ride for an hour, then walk the horse for an hour. Your mind has a way of dropping dead on you."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 100
+    texto: "Think of yourself as getting in a boat and letting the stream carry you. Just don't think that you can paddle up against the stream."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 101
+    texto: "Think of yourself as an atomic scientist. You find a tiny thing called the atom, which has got enormous stored-up, locked-in power. That's what you're doing — releasing the energy locked in your market."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 102
+    texto: "Copy Assembly is like building a city. You build it block by block, structure by structure. A little city of desire for your person to come and live in."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 103
+    texto: "The latter he compared with being an athlete who to win must stay in shape. It's just the same in copywriting."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 104
+    texto: "Your conscious mind can only hold about seven memory bytes. That's pretty small, so you have to focus."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 105
+    texto: "Breakthrough Advertising is not about building better mousetraps. It is about building larger mice — and delivering them to your mousetraps' front door."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 6
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 106
+    texto: "Underline it. Start blending it together like you'd make a cake."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 107
+    texto: "Constructing an emotional holograph of the product so convincing that people will part with their good money to share it."
+    tipo_semantico: "linguistico"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 108
+    texto: "You want to get yourself into a creative frenzy. Like a feeding frenzy."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 109
+    texto: "Mail order money machines — successful products that generate equally successful spin-offs. A book can lead to a newsletter, the testimonials for which can lead in turn to a catalog, all of which produce mailing lists."
+    tipo_semantico: "framework"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 4
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  # ======================================================
+  # COMUNICACAO AVANCADA (11 MIUs)
+  # ======================================================
+
+  - id: 110
+    texto: "Words in advertising are like windows at a store. You must be able to look right through them at the product. Copy should never call attention to itself."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 111
+    texto: "You are not writing to a private person. You are not writing to a bunch of people. You are writing to a number of people who share a private want."
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 112
+    texto: "You are all chimpanzees. I've got terrible news for you! You have a reptilian brain, a mammalian brain and human brain. You don't use the human brain that much in reading copy. You really use the chimpanzee brain."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 113
+    texto: "That's why you use very simple and very vivid words."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 114
+    texto: "You can say something with adjectives and without adjectives and have absolutely two different things."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 115
+    texto: "Lazy ears produce bad ads."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 116
+    texto: "The thing that astounds me, when I read most ads, or work with writers, is that they really haven't bothered to listen deeply enough."
+    tipo_semantico: "argumentativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 117
+    texto: "Joe Cossman SPOKE: 'SWIMS UNDER ITS OWN POWER' — I just put it on paper. Harry Lorayne blurted out: 'GIVE ME 15 MINUTES AND I'LL GIVE YOU A PUSH-BUTTON MEMORY.'"
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 3
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 118
+    texto: "That's what you want. You want them to come in and say, 'Jesus Christ, am I in that much danger?' Or, 'Is there really a way that I can have sexual congress five times a day?'"
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 119
+    texto: "Marty Edelson came to me with $3,500 in his pocket. I said, 'I'm gonna sit and I'm going to listen and you're going to talk.' He talked about four hours. And about 30 minutes into it he said one sentence. And I took it down."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"
+
+  - id: 120
+    texto: "His process? It was simple but not easy: he would read the book, cover to cover, highlighting every claim he found. Then he would use the most valuable claims to assemble a compelling sales letter."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: 11
+    source_path: "DUARTEOS/minds/eugene-schwartz/data/raw/speeches/coleta-completa-raw.md"

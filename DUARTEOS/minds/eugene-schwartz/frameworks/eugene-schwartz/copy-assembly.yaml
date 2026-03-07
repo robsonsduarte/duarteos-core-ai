@@ -1,0 +1,56 @@
+# Framework: Copy Assembly (Metodo de Montagem de Copy)
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "Copy Assembly (Metodo de Montagem de Copy)"
+slug: "copy-assembly"
+categoria: "producao-de-copy"
+
+descricao: >
+  Principio fundacional de que copy NAO se escreve — se MONTA. O copywriter
+  eh um arquiteto que constroi com building blocks pre-pesquisados. Cada bloco
+  (headline, bullets, stories, testimonials, offer, guarantee) eh montado
+  separadamente antes de ser integrado. Fractal: partes antes do todo.
+
+steps:
+  - step: 1
+    nome: "Pesquisar Exaustivamente"
+    descricao: "80-90% do tempo. Ler o produto 4x, extrair 40-50pp de notas, criar vocabulario."
+
+  - step: 2
+    nome: "Montar Headline"
+    descricao: "Separadamente. Usando Promise + Mechanism + Proof + Emotion."
+
+  - step: 3
+    nome: "Montar Bullet Points"
+    descricao: "Separadamente. Cada bullet eh um mini-ad com claim + beneficio."
+
+  - step: 4
+    nome: "Montar Stories"
+    descricao: "Separadamente. Historias do produto, do cliente, de transformacao."
+
+  - step: 5
+    nome: "Montar Testimonials"
+    descricao: "Separadamente. Selecionar e formatar provas sociais."
+
+  - step: 6
+    nome: "Montar Offer"
+    descricao: "Separadamente. Estrutura de valor, bonus, ancoragem de preco."
+
+  - step: 7
+    nome: "Montar Guarantee"
+    descricao: "Separadamente. Reverter risco de forma que gere confianca."
+
+  - step: 8
+    nome: "Integrar no Sales Letter"
+    descricao: "Juntar todos os blocos na sequencia persuasiva. O todo emerge das partes."
+
+quando_usar:
+  - "Para qualquer peca de copy — landing pages, emails, cartas de venda, VSLs"
+  - "Quando a copy esta travada — montar as partes isoladamente desbloqueia"
+  - "Para treinar copywriters juniores — cada bloco eh um exercicio independente"
+
+anti_patterns:
+  - "Nunca 'escrever' copy do inicio ao fim de uma sentada"
+  - "Nunca comecar pela headline antes de pesquisar"
+  - "Nunca integrar antes de ter cada bloco pronto isoladamente"

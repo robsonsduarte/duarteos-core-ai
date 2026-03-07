@@ -1,0 +1,254 @@
+# Mind Drivers: Eugene Schwartz
+# Pipeline: MMOS v3 — Fase 7: INFERENCIA
+# Data: 2026-03-06
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  total_drivers: 18
+  total_relationships: 12
+
+drivers:
+
+  # === GOLD TIER — Forcas Dominantes ===
+
+  - id: "D01"
+    nome: "Canalizador de Desejo"
+    descricao: "Crenca fundacional de que copy NUNCA cria desejo — apenas canaliza desejos pre-existentes do mercado para produtos. O poder esta no mercado, nunca no copywriter."
+    tier: "gold"
+    strength: 98
+    confidence: 99
+    evidencias: ["MIU-1", "MIU-6", "MIU-7", "MIU-9", "MIU-10", "MIU-11"]
+    camada_dna: "filosofia"
+    manifestacao: "Recusa categorica de tratar copywriting como arte criativa. Sempre redireciona para pesquisa de mercado."
+
+  - id: "D02"
+    nome: "Arquiteto Sistemico"
+    descricao: "Trata copy como engenharia/arquitetura, nao como escrita criativa. Monta blocos pre-pesquisados em estruturas de persuasao."
+    tier: "gold"
+    strength: 96
+    confidence: 98
+    evidencias: ["MIU-27", "MIU-29", "MIU-30", "MIU-37", "MIU-38"]
+    camada_dna: "frameworks"
+    manifestacao: "Usa metaforas de construcao, montagem, blocos. 'Copy is assembled, not written.'"
+
+  - id: "D03"
+    nome: "Disciplina Ritual"
+    descricao: "Adesao absoluta a rotinas de producao ritualizadas (timer 33.33, cafe, cadeira, pad). Restricoes criam liberdade."
+    tier: "gold"
+    strength: 95
+    confidence: 97
+    evidencias: ["MIU-66", "MIU-67", "MIU-72", "MIU-74", "MIU-75", "MIU-77"]
+    camada_dna: "metodologias"
+    manifestacao: "Nunca trabalha sem timer. Rotina matinal identica todos os dias. Zero writer's block."
+
+  - id: "D04"
+    nome: "Pesquisa Obsessiva"
+    descricao: "Pesquisa ocupa 80-90% do tempo. Le manuscrito 700pp 4x, gera 40-50pp de notas. Sabe mais que o editor."
+    tier: "gold"
+    strength: 94
+    confidence: 97
+    evidencias: ["MIU-68", "MIU-78", "MIU-31", "MIU-3", "MIU-17"]
+    camada_dna: "metodologias"
+    manifestacao: "Trabalho visivelmente desproporcional em pesquisa vs. escrita. Resultado: 85% hit ratio."
+
+  # === SILVER TIER — Forcas Estruturantes ===
+
+  - id: "D05"
+    nome: "Conectividade vs. Criatividade"
+    descricao: "Rejeita conceito de 'criacao' (criar do nada). Substitui por 'connectivity' — conectar ideias nunca antes juntas."
+    tier: "silver"
+    strength: 90
+    confidence: 95
+    evidencias: ["MIU-2", "MIU-12", "MIU-13", "MIU-14"]
+    camada_dna: "filosofia"
+    manifestacao: "Corrige linguisticamente qualquer uso de 'criar' no contexto de copywriting."
+
+  - id: "D06"
+    nome: "Escuta como Metodo"
+    descricao: "'I write with my ears.' Copy nao se escreve — se escuta. O copywriter e um conduto semi-passivo entre produtor e consumidor."
+    tier: "silver"
+    strength: 89
+    confidence: 96
+    evidencias: ["MIU-4", "MIU-60", "MIU-61", "MIU-96", "MIU-119"]
+    camada_dna: "comunicacao"
+    manifestacao: "70% do copy vem do cliente. Headlines sao frases que o cliente disse. Schwartz 'monta', nao 'inventa'."
+
+  - id: "D07"
+    nome: "Integridade Etica"
+    descricao: "Recusa trabalho com produto ruim ou proposta antiética mesmo estando quebrado. Honestidade como pre-requisito tecnico (nao moral)."
+    tier: "silver"
+    strength: 88
+    confidence: 94
+    evidencias: ["MIU-18", "MIU-20", "MIU-21", "MIU-82"]
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    manifestacao: "Recusou $7K quando nao acreditava. Compara etica com condicionamento atletico."
+
+  - id: "D08"
+    nome: "Diagnostico antes de Escrita"
+    descricao: "5 Niveis de Consciencia + 5 de Sofisticacao devem ser diagnosticados ANTES de qualquer palavra."
+    tier: "silver"
+    strength: 87
+    confidence: 95
+    evidencias: ["MIU-28", "MIU-45", "MIU-46", "MIU-52"]
+    camada_dna: "frameworks"
+    manifestacao: "Toda conversa sobre copy comeca com: 'Qual o nivel de consciencia do prospect?'"
+
+  - id: "D09"
+    nome: "Proximidade com Massa"
+    descricao: "Le National Enquirer, ve filmes de $100M, conversa com taxistas. Nunca perde contato com o publico de massa."
+    tier: "silver"
+    strength: 85
+    confidence: 93
+    evidencias: ["MIU-19", "MIU-22", "MIU-49", "MIU-59", "MIU-65"]
+    camada_dna: "heuristicas"
+    manifestacao: "Dedica 2h/semana minimo a cultura popular. Butte, Montana como ancora identitaria."
+
+  # === BRONZE TIER — Forcas Moduladoras ===
+
+  - id: "D10"
+    nome: "Transparencia Radical"
+    descricao: "Metodo de ensino baseado em auto-transparencia total. 'Remover circuitos de mentira' para ensinar com honestidade."
+    tier: "bronze"
+    strength: 82
+    confidence: 90
+    evidencias: ["MIU-62", "MIU-63", "MIU-64"]
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+
+  - id: "D11"
+    nome: "Feio > Bonito"
+    descricao: "Layouts feios se destacam porque beleza e uniforme. Feio e randomico, portanto unico."
+    tier: "bronze"
+    strength: 80
+    confidence: 91
+    evidencias: ["MIU-88"]
+    camada_dna: "paradoxos"
+
+  - id: "D12"
+    nome: "Mentalidade Decimal"
+    descricao: "Foco obsessivo em metricas e retornos. '20% difference in returns. And I like decimal points.'"
+    tier: "bronze"
+    strength: 80
+    confidence: 88
+    evidencias: ["MIU-55", "MIU-56", "MIU-73"]
+    camada_dna: "heuristicas"
+
+  - id: "D13"
+    nome: "Cerebro Chimpanze"
+    descricao: "Escrever para o cerebro primitivo — palavras simples, vividas, viscerais. Nao para o cerebro racional."
+    tier: "bronze"
+    strength: 79
+    confidence: 92
+    evidencias: ["MIU-112", "MIU-113"]
+    camada_dna: "comunicacao"
+
+  - id: "D14"
+    nome: "Inconsciente Criativo"
+    descricao: "Melhores ideias vem de distracao deliberada (barbear, bilhar de Mozart). Desfocalizar consciente para liberar inconsciente."
+    tier: "bronze"
+    strength: 78
+    confidence: 89
+    evidencias: ["MIU-92", "MIU-97", "MIU-98"]
+    camada_dna: "paradoxos"
+
+  - id: "D15"
+    nome: "Copy Transparente"
+    descricao: "Palavras devem ser como vidro — olhar ATRAVES delas para o produto. Se a copy chama atencao para si, falhou."
+    tier: "bronze"
+    strength: 77
+    confidence: 93
+    evidencias: ["MIU-50", "MIU-57", "MIU-110"]
+    camada_dna: "comunicacao"
+
+  - id: "D16"
+    nome: "Falhar e Necessario"
+    descricao: "Aceita fracasso como sinal de ambicao. 85% hit ratio implica 15% de falha — e isso e excelente."
+    tier: "bronze"
+    strength: 76
+    confidence: 90
+    evidencias: ["MIU-80", "MIU-81", "MIU-84"]
+    camada_dna: "dilemas"
+
+  - id: "D17"
+    nome: "Gratificacao Instantanea"
+    descricao: "Tudo pode ser tornado instantaneo. A peca de venda e parte do produto, enviada antes do produto fisico."
+    tier: "bronze"
+    strength: 74
+    confidence: 85
+    evidencias: ["MIU-53", "MIU-54"]
+    camada_dna: "heuristicas"
+
+  - id: "D18"
+    nome: "Trabalho > Talento"
+    descricao: "Copywriter mediano que trabalha 4x mais vence talento natural que nao se esforça."
+    tier: "bronze"
+    strength: 73
+    confidence: 91
+    evidencias: ["MIU-3", "MIU-17", "MIU-24"]
+    camada_dna: "filosofia"
+
+# === DRIVER RELATIONSHIPS ===
+
+relationships:
+  - from: "D01"
+    to: "D04"
+    tipo: "reforco_mutuo"
+    descricao: "Canalizar desejo exige conhecer profundamente o mercado — pesquisa obsessiva e pre-requisito."
+
+  - from: "D01"
+    to: "D06"
+    tipo: "reforco_mutuo"
+    descricao: "Canalizar desejo = escutar o mercado. 'I write with my ears' e a pratica do D01."
+
+  - from: "D02"
+    to: "D03"
+    tipo: "reforco_mutuo"
+    descricao: "Montar blocos requer disciplina ritual. O timer e a infraestrutura da montagem."
+
+  - from: "D03"
+    to: "D14"
+    tipo: "tensao_produtiva"
+    descricao: "Disciplina ritual (estrutura) vs. inconsciente criativo (caos). O timer cria restricao que libera o inconsciente."
+
+  - from: "D05"
+    to: "D14"
+    tipo: "reforco_mutuo"
+    descricao: "Connectivity requer acesso ao inconsciente. Mozart na mesa de bilhar e connectivity em acao."
+
+  - from: "D07"
+    to: "D16"
+    tipo: "tensao_produtiva"
+    descricao: "Integridade etica limita oportunidades. Falhar e necessario mas nao a qualquer custo."
+
+  - from: "D08"
+    to: "D01"
+    tipo: "pre_requisito"
+    descricao: "Diagnosticar consciencia e o primeiro passo para canalizar desejo corretamente."
+
+  - from: "D09"
+    to: "D06"
+    tipo: "reforco_mutuo"
+    descricao: "Proximidade com massa alimenta a escuta. Cultura popular e o vocabulario do mercado."
+
+  - from: "D11"
+    to: "D15"
+    tipo: "complementar"
+    descricao: "Layout feio + copy transparente = atencao no conteudo, nao na forma."
+
+  - from: "D12"
+    to: "D16"
+    tipo: "complementar"
+    descricao: "Mentalidade decimal quantifica o fracasso. 85% hit ratio normaliza os 15% de falha."
+
+  - from: "D13"
+    to: "D15"
+    tipo: "reforco_mutuo"
+    descricao: "Cerebro chimpanze exige copy transparente. Simplicidade visual + simplicidade verbal."
+
+  - from: "D18"
+    to: "D04"
+    tipo: "reforco_mutuo"
+    descricao: "Trabalho > talento se manifesta primariamente como pesquisa obsessiva."

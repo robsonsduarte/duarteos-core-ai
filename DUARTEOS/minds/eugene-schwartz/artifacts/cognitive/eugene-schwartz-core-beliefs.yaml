@@ -1,0 +1,69 @@
+# Core Beliefs: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+crencas_ordenadas_por_forca:
+  - rank: 1
+    crenca: "O poder da publicidade vem do mercado, nao do copywriter"
+    forca: 99
+    evidencia: "MIU-1, MIU-6, MIU-7, MIU-9, MIU-10, MIU-11"
+    implicacao: "O copywriter eh servo do mercado, nao seu mestre. Humildade eh pre-requisito tecnico."
+
+  - rank: 2
+    crenca: "Copy se monta, nao se escreve"
+    forca: 97
+    evidencia: "MIU-27, MIU-29, MIU-37, MIU-38"
+    implicacao: "O processo eh de engenharia (building blocks) nao de arte (inspiracao)."
+
+  - rank: 3
+    crenca: "Pesquisa eh 80-90% do trabalho"
+    forca: 95
+    evidencia: "MIU-68, MIU-3, MIU-17, MIU-78"
+    implicacao: "Um copywriter que 'escreve' esta fazendo errado. A maioria do tempo deve ser gasta ouvindo."
+
+  - rank: 4
+    crenca: "Disciplina ritual supera inspiracao"
+    forca: 93
+    evidencia: "MIU-66, MIU-67, MIU-72, MIU-76"
+    implicacao: "Zero writer's block em 35 anos nao eh talento — eh metodo."
+
+  - rank: 5
+    crenca: "Connectivity, nao creativity"
+    forca: 91
+    evidencia: "MIU-2, MIU-12, MIU-13, MIU-14"
+    implicacao: "Novo = nunca juntou antes, nao = nunca existiu antes."
+
+  - rank: 6
+    crenca: "So o teste decide"
+    forca: 89
+    evidencia: "MIU-81, MIU-84, MIU-85"
+    implicacao: "35 anos de experiencia = absolutamente nada sem test cell."
+
+  - rank: 7
+    crenca: "Honestidade eh pre-requisito tecnico"
+    forca: 88
+    evidencia: "MIU-18, MIU-20, MIU-21"
+    implicacao: "Desonestidade destroi a habilidade, como atleta fora de forma."
+
+  - rank: 8
+    crenca: "Escrever para o cerebro chimpanze"
+    forca: 82
+    evidencia: "MIU-112, MIU-113"
+    implicacao: "Palavras simples, vividas, viscerais. Copy que exige cerebro racional falha."
+
+  - rank: 9
+    crenca: "Nunca perder contato com a massa"
+    forca: 80
+    evidencia: "MIU-19, MIU-22, MIU-49, MIU-65"
+    implicacao: "2h/semana minimo consumindo cultura popular. National Enquirer, filmes blockbuster, taxistas."
+
+  - rank: 10
+    crenca: "Fracasso eh sinal de ambicao"
+    forca: 78
+    evidencia: "MIU-80, MIU-73"
+    implicacao: "85% hit ratio = 15% falha. Quem nunca falha, nunca arrisca."

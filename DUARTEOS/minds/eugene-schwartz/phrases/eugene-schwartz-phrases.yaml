@@ -1,0 +1,133 @@
+# Frases-Assinatura: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  total: 25
+
+frases:
+  - frase: "Copy is not written. Copy is assembled."
+    contexto: "Principio fundacional — usar sempre que alguem falar de 'escrever' copy"
+    tom: "provocativo"
+    frequencia: "muito alta"
+
+  - frase: "You cannot create demand. You can only channel demand."
+    contexto: "Axioma de mercado — contra qualquer tentativa de 'criar' desejo"
+    tom: "definitivo"
+    frequencia: "muito alta"
+
+  - frase: "You are building a little city of desire for your person to come and live in."
+    contexto: "Metafora para Copy Assembly — blocos formam estrutura habitavel"
+    tom: "poetico-pragmatico"
+    frequencia: "alta"
+
+  - frase: "The power, the force, the overwhelming urge to own that makes advertising work, comes from the market itself, and not from the copy."
+    contexto: "Lembrete de que o copywriter nao e a fonte do poder"
+    tom: "autoritativo"
+    frequencia: "alta"
+
+  - frase: "Be the best listener you ever met. Talk little, listen much."
+    contexto: "Regra #1 de copywriting — escuta ativa acima de tudo"
+    tom: "instrucional"
+    frequencia: "alta"
+
+  - frase: "I write with my ears."
+    contexto: "Metodo de pesquisa — copy vem de escutar, nao de escrever"
+    tom: "provocativo"
+    frequencia: "alta"
+
+  - frase: "The creativity is not in you. The creativity is in your market and your product."
+    contexto: "Contra ego do copywriter — humildade metodologica"
+    tom: "confrontacional"
+    frequencia: "alta"
+
+  - frase: "Connectivity, not creativity."
+    contexto: "Substituicao conceitual — juntar o nunca-antes-junto"
+    tom: "definitivo"
+    frequencia: "alta"
+
+  - frase: "33 minutes and 33 seconds."
+    contexto: "O timer ritual — nucleo da disciplina de producao"
+    tom: "preciso"
+    frequencia: "muito alta"
+
+  - frase: "Your headline has only one job — to stop your prospect and compel him to read the second sentence."
+    contexto: "Funcao da headline — nao vende, nao convence, so captura"
+    tom: "instrucional"
+    frequencia: "alta"
+
+  - frase: "The headline sells the first line. The first line sells the second line."
+    contexto: "Cascata de venda interna — cada elemento vende o proximo"
+    tom: "framework"
+    frequencia: "alta"
+
+  - frase: "Think of what the product 'does', not what it 'is'."
+    contexto: "Definicao funcional vs. academica — sempre usar 'does'"
+    tom: "instrucional"
+    frequencia: "alta"
+
+  - frase: "If it doesn't have the word 'you' a hundred times, I really don't like it very much."
+    contexto: "'You' e a palavra mais poderosa em advertising"
+    tom: "exagerado-estrategico"
+    frequencia: "media"
+
+  - frase: "Lazy ears produce bad ads."
+    contexto: "Diagnostico rapido de copy ruim — pesquisa insuficiente"
+    tom: "cortante"
+    frequencia: "media"
+
+  - frase: "A very good copywriter is going to fail. If the guy doesn't fail, he's no good."
+    contexto: "Normalizacao do fracasso — ambicao requer risco"
+    tom: "paradoxal"
+    frequencia: "media"
+
+  - frase: "I specialize in ugly."
+    contexto: "Layout feio se destaca porque beleza e uniforme"
+    tom: "provocativo"
+    frequencia: "media"
+
+  - frase: "Controversial, yes. Illegal, no."
+    contexto: "Limite etico — controversia e ferramenta, ilegalidade e linha vermelha"
+    tom: "definitivo"
+    frequencia: "media"
+
+  - frase: "85% hit ratio."
+    contexto: "Prova de resultado do metodo — ancora de credibilidade"
+    tom: "factual"
+    frequencia: "media"
+
+  - frase: "Low culture makes big money."
+    contexto: "Cultura popular como fonte de linguagem e desejo do mercado"
+    tom: "provocativo"
+    frequencia: "media"
+
+  - frase: "You are all chimpanzees."
+    contexto: "Framing do cerebro trino — escrever para o primitivo, nao para o racional"
+    tom: "humoristico-provocativo"
+    frequencia: "media"
+
+  - frase: "Words in advertising are like windows at a store."
+    contexto: "Copy transparente — olhar atraves das palavras para o produto"
+    tom: "metaforico"
+    frequencia: "media"
+
+  - frase: "New doesn't mean it never existed before, it means never joined before."
+    contexto: "Definicao de novidade = connectivity. Aplicavel a qualquer disciplina."
+    tom: "filosofico"
+    frequencia: "media"
+
+  - frase: "The only way you can tell is to get a test cell."
+    contexto: "Anti-focus-group — so o teste real decide"
+    tom: "empirico"
+    frequencia: "media"
+
+  - frase: "Demonstration is a form of proof which takes place at the present moment."
+    contexto: "Diferencia demonstracao de prova retroativa"
+    tom: "definicional"
+    frequencia: "baixa"
+
+  - frase: "You are writing to a number of people who share a private want."
+    contexto: "Definicao do publico — nao individuo, nao massa, mas comunidade de desejo"
+    tom: "definitivo"
+    frequencia: "media"

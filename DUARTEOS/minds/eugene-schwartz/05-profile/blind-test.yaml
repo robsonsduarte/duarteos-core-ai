@@ -1,0 +1,11 @@
+# Blind Test v2: Eugene Schwartz
+# Pipeline: MMOS v3 — Fase 9
+# Score: 19/20 = 95.0%
+
+metadata:
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  total_questions: 20
+  passed: 19
+  score: 95.0
+  nota: "Detalhes completos em fidelity-report.yaml"

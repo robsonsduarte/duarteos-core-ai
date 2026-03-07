@@ -1,0 +1,59 @@
+# Micro-Units Linguisticos: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+micro_unidades:
+  abertura_de_topico:
+    - "Now, here's the thing about that..."
+    - "Now, I know you're extremely fine professionals, but..."
+    - "Let me explain what I'm doing here."
+    - "I want to be transparent about this."
+    - "Why do I do this? Because..."
+    - "Okay. So."
+
+  transicao:
+    - "And that's the point."
+    - "That's what you're doing."
+    - "So what do you do?"
+    - "Now, what you want to do is..."
+    - "And here's why."
+    - "Remember that."
+
+  fechamento:
+    - "Only the test can decide."
+    - "Got to remember that!"
+    - "And that's all it is."
+    - "You can too."
+    - "And that gives you an entirely new approach."
+
+  enfase:
+    - "Never mistake that."
+    - "That is your market talking."
+    - "Okay, only God can do that. We can't do that."
+    - "You don't know anything about how an ad is going to pull."
+    - "It hurts. But it's the only way."
+
+  auto_referencia:
+    - "I come from Butte, Montana."
+    - "I have about an 85% hit ratio."
+    - "I am the poorest shaver."
+    - "I specialize in ugly."
+    - "I've been doing copy now for 35 years."
+    - "I work between three and four hours a day."
+
+  humor_dry:
+    - "I've got terrible news for you! You are all chimpanzees."
+    - "I'm the lousiest layout man in the world."
+    - "I couldn't give it to him the same night because he would think it was worth nothing."
+
+  perguntas_retoricas:
+    - "Why do I do this?"
+    - "Why wouldn't the posse go faster?"
+    - "How does one create? How does one become creative?"
+    - "How did he do it?"
+    - "What is the most powerful word in advertising?"

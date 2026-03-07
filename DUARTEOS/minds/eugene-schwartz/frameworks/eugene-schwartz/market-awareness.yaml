@@ -1,0 +1,55 @@
+# Framework: 5 Niveis de Consciencia do Mercado (Market Awareness)
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "5 Niveis de Consciencia do Mercado (Market Awareness)"
+slug: "market-awareness"
+categoria: "diagnostico-de-mercado"
+
+descricao: >
+  Framework diagnostico que classifica o prospect em 5 niveis de consciencia
+  sobre seu problema e sobre o produto. O nivel determina TUDO: headline, lead,
+  angulo, tom, promessa. Escrever sem diagnosticar o nivel eh o erro #1 em
+  copywriting. Cada nivel exige uma estrategia completamente diferente.
+
+steps:
+  - step: 1
+    nome: "Most Aware"
+    descricao: "Prospect conhece o produto, ja confia, so precisa da oferta. Nomeie o produto, faca a oferta, feche."
+    criterio: "Prospect ja comprou antes ou acompanha de perto? Most Aware."
+    exemplos: ["Remarketing para compradores anteriores", "Newsletter para assinantes fieis"]
+
+  - step: 2
+    nome: "Product-Aware"
+    descricao: "Sabe o que voce vende, nao tem certeza se eh certo pra ele. Enfatize o mecanismo unico — o que diferencia SEU produto."
+    criterio: "Conhece o produto mas nao comprou? Product-Aware."
+    exemplos: ["Comparativo com concorrentes", "Demo focada em diferenciais"]
+
+  - step: 3
+    nome: "Solution-Aware"
+    descricao: "Sabe o resultado que quer, nao sabe que seu produto entrega. Lidere com beneficio principal."
+    criterio: "Busca solucao mas nao conhece voce? Solution-Aware."
+    exemplos: ["Blog post sobre o beneficio", "Ad focado no resultado"]
+
+  - step: 4
+    nome: "Problem-Aware"
+    descricao: "Sente que tem um problema, nao sabe que existe solucao. Cristalize o problema antes de oferecer solucao."
+    criterio: "Sabe que algo esta errado mas nao busca ativamente? Problem-Aware."
+    exemplos: ["Artigo sobre sintomas", "Quiz diagnostico"]
+
+  - step: 5
+    nome: "Completely Unaware"
+    descricao: "Nao sabe de nada — nem do problema, nem da solucao, nem do produto. Lidere com historia, curiosidade ou identificacao."
+    criterio: "Nao busca nada? Nao sabe que tem problema? Unaware."
+    exemplos: ["Story-driven content", "Headline de curiosidade pura"]
+
+quando_usar:
+  - "ANTES de escrever qualquer palavra de copy — diagnostico obrigatorio"
+  - "Ao avaliar copy existente que nao converte — provavelmente nivel errado"
+  - "Ao definir estrategia de funil — cada etapa mapeia para um nivel"
+
+exemplos_aplicacao:
+  - contexto: "SaaS de email marketing para iniciantes"
+    aplicacao: "Audiencia fria eh Problem-Aware (sabe que precisa comunicar mas nao busca ferramenta). Liderar com artigos sobre o problema, nao com features do produto."
+  - contexto: "Suplemento de saude para publico informado"
+    aplicacao: "Audiencia quente eh Product-Aware. Enfatizar mecanismo unico de absorcao vs. concorrentes."

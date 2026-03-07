@@ -1,0 +1,373 @@
+# Eugene Schwartz — MIU Sample (Minimum Information Units)
+# Pipeline: MMOS v3 — Fase 2: ANALISE RAPIDA
+# Data: 2026-03-06
+# Total: 45 MIUs extraidas de 11 fontes primarias
+
+metadata:
+  slug: "eugene-schwartz"
+  fase: 2
+  timestamp: "2026-03-06"
+  total_mius: 45
+  fontes_cobertas: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  distribution_by_layer:
+    filosofia_core: 8
+    filosofia_subcamadas: 3
+    frameworks: 8
+    heuristicas_core: 6
+    heuristicas_modelo_social: 2
+    metodologias: 5
+    dilemas: 3
+    paradoxos_produtivos: 4
+    associacoes_conceituais: 3
+    comunicacao_avancada: 3
+  distribution_by_type:
+    comportamental: 7
+    linguistico: 4
+    narrativo: 5
+    decisorio: 4
+    framework: 9
+    interacao_social: 3
+    argumentativo: 6
+    associativo: 7
+
+miu_sample:
+
+  # === FILOSOFIA CORE (8 MIUs) ===
+
+  - id: 1
+    texto: "Copy cannot create desire for a product. It can only take the hopes, dreams, fears, and desires that already exist in the hearts of millions of people and focus those already-existing desires onto a particular product."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+
+  - id: 2
+    texto: "What is creation? Creation is a lousy word. It's a lousy word that confuses what you really do to perform a simple little procedure. Creation means create something out of nothing. In the beginning, God created Heaven and Earth. Okay, only God can do that. We can't do that: We're human. So let's throw creation out, and let's talk about connectivity."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 3
+    texto: "I am of the opinion that the absolutely most talented copy writer in the world, who doesn't work very much, will be beaten by a copy cub who puts in four times as much work, because the creativity is not in you. Never mistake that. The creativity is in your market and in your product, and all you are doing is joining the two together."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 4
+    texto: "To produce copy, therefore, is not really to write it into being, but to listen it into being. In other words, to be a semi-passive conduit between the producer of the item, and its needer."
+    tipo_semantico: "linguistico"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 3
+
+  - id: 5
+    texto: "Think of yourself as an atomic scientist. You find a tiny thing called the atom, which has got enormous, enormous, enormous stored-up, locked-in power, and you find that if you take two atoms and bind them together, you can release the power. That's what you're doing."
+    tipo_semantico: "associativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 6
+    texto: "You cannot create demand. You can only channel demand."
+    tipo_semantico: "framework"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 7
+    texto: "The power, the force, the overwhelming urge to own that makes advertising work, comes from the market itself, and not from the copy."
+    tipo_semantico: "argumentativo"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 6
+
+  - id: 8
+    texto: "Copywriting is the simplest of all possible jobs. It consists solely of turning items into ads, of making the physical verbal, of constructing an emotional holograph of the product so convincing that people will part with their good money to share it."
+    tipo_semantico: "linguistico"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: 3
+
+  # === FILOSOFIA SUBCAMADAS — hierarquia_valores + motivacao_profunda (3 MIUs) ===
+
+  - id: 9
+    texto: "I'm better, result-wise, than many great copywriters, who are better writers than I am, because I work harder than they do - and I can actually see the gaps in their working."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 10
+    texto: "First, he says, he won't do anything illegal. 'Controversial, yes. Illegal, no.' Then, he won't write ads for bad products -- or ads that in themselves are bad. The latter he compared with being an athlete who to win must stay in shape."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: 4
+
+  - id: 11
+    texto: "I don't know how many of you read the National Enquirer every week. I don't know how many of you go to every film that makes over $100 million and see every one of them. You cannot lose touch with the people of this country, no matter how successful or how potent you are."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "media"
+    fonte: 2
+
+  # === FRAMEWORKS (8 MIUs) ===
+
+  - id: 12
+    texto: "The headline sells the first line. The first line sells the second line. The second line sells the third line. And the third line sells the fourth line, etc."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 13
+    texto: "You have great promise, intrigue. You have a mechanism - a new mechanism that delivers that promise. You have proof that that promise has been delivered to people like you. And you have deep emotion. That's what you need."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 14
+    texto: "Every sentence is a branch on a tree. And the words in the sentence are the leaves on the branch. First the branch comes; that's bare outline of the sentence. And then you see out of the branch, the leaves popping up."
+    tipo_semantico: "associativo"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 15
+    texto: "Copy is not written. Copy is assembled. You do not write copy, you assemble it. You are working with a series of building blocks, you are putting the building blocks together, and then you are putting them in certain structures, you are building a little city of desire for your person to come and live in."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 16
+    texto: "5 Stages of Awareness: Most Aware, Product-Aware, Solution-Aware, Problem-Aware, Completely Unaware."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 6
+
+  - id: 17
+    texto: "Assembling Levels: 1. Headline, 2. Bullet points, 3. Story/stories, 4. Testimonials, 5. Offer, 6. Guarantee. It's fractal: Build the parts, then build the entire letter from the completed parts."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 9
+
+  - id: 18
+    texto: "First you give a claim. You give a mechanism, which is how the claim is achieved. You give a proof. You give documentation. You give demonstration."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 19
+    texto: "Metodo de Pesquisa em 4 Passos: 1. Pump hell out of the owner (3-4 hours tape), 2. Talk to customers, 3. Listen to competitors, 4. Put all material down, underline, blend like a cake."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: 3
+
+  # === HEURISTICAS CORE (6 MIUs) ===
+
+  - id: 20
+    texto: "If you don't spend at least two hours a week finding out where your market is today, you are finished! You will have a career of three blazing years and be finished."
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 21
+    texto: "Never think of what the product 'is.' Think of what the product 'does.' When you define something with a 'does,' it becomes a functional definition instead of an academic definition."
+    tipo_semantico: "framework"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 22
+    texto: "If it doesn't have the word 'you' a hundred times, I really don't like it very much."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 23
+    texto: "Look at adjectives. Adjectives are where you carry your emotion. Adjectives are gut words. Adjectives are description words. Adjectives are feeling words. Do an adjective check when you've done your copy."
+    tipo_semantico: "linguistico"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 24
+    texto: "Subscribe to Ladies Home Journal, Cosmopolitan, Vanity Fair. Get all the very low stuff. Low culture makes big money. Got to remember that! There is your audience. There is the language."
+    tipo_semantico: "comportamental"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 25
+    texto: "The surest way to know that something is failing as copy is to have someone come in and say, 'God, that was great copy! Oh, I love the ring of that sentence!'"
+    tipo_semantico: "argumentativo"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: 2
+
+  # === HEURISTICAS — MODELO SOCIAL (2 MIUs) ===
+
+  - id: 26
+    texto: "Be the best listener you ever met. Talk little, listen much. That is your market talking. You don't have to have great ideas if you can hear great ideas."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 27
+    texto: "My copy was 70% his conversation. The headline was his thing. It was his idea. It was his conception. It was his vision. All I did was write it out and give it to people."
+    tipo_semantico: "interacao_social"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: 2
+
+  # === METODOLOGIAS (5 MIUs) ===
+
+  - id: 28
+    texto: "I go nowhere in the world without a timer. Whenever I do anything, I press in '3, 3, 3, 3'. That means 33 minutes and 33 seconds. I then press the start button."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 29
+    texto: "When I press the start button, I can do anything I want. All willpower is dissolved. I can do anything I want as long as it relates to the piece of copy in front of me. I can ignore it. I don't have to touch it. I don't have to look at it. But I can't get up from the desk."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 30
+    texto: "I read the Rodale book. Seven hundred pages. Four times. I underline the book so intensely that I get 40 or 50 pages of notes out of those readings. Those notes are then sent out to a secretary and she types up those notes so I get a precise 'vocabulary.'"
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 31
+    texto: "One hour a day, read. Read everything in the world except your business. Read junk. Very much junk. Read so that anything that interests you will stick in your memory."
+    tipo_semantico: "comportamental"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 32
+    texto: "In the mornings he stays home, thinking up concepts and writing copy. Sometimes at night, even, he will leap out of bed, rush to his book-lined den and scribble down the ideas and themes which woke him."
+    tipo_semantico: "narrativo"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: 4
+
+  # === DILEMAS (3 MIUs) ===
+
+  - id: 33
+    texto: "A very good copywriter is going to fail. If the guy doesn't fail, he's no good. He's got to fail. It hurts. But it's the only way to get the home run the next time."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 34
+    texto: "You don't know anything about how an ad is going to pull. The only way you can tell is to get a test cell. I don't believe in focus groups or anything else. Sometimes the things that they think you should throw away are the things that really go."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 35
+    texto: "Schwartz was offered $7,000 to write promotional material for a land deal. He turned down the offer because he didn't believe in the proposal."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: 4
+
+  # === PARADOXOS PRODUTIVOS (4 MIUs) ===
+
+  - id: 36
+    texto: "I specialize in 'ugly.' Why do I do ugly layouts? Because beauty looks much the same. It has a very narrow definition. Ugliness is randomness, which means that it's spread out. So, the ugly thing in a world of beauty stands out."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 37
+    texto: "I am not trying to write a wonderful ad. I am not trying to earn an extra million dollars. I am not trying to do anything. I have no goal whatsoever as to what that particular piece of copy is going to do for me. All I know is that I'm going to work on the copy."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 38
+    texto: "It's impossible to lose unless you go crazy -- and yet at the same time an element of craziness is necessary to be really creative."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: 4
+
+  - id: 39
+    texto: "You don't have to be intelligent to be brilliant. Brilliance can be taught and learned."
+    tipo_semantico: "associativo"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: 4
+
+  # === ASSOCIACOES CONCEITUAIS (3 MIUs) ===
+
+  - id: 40
+    texto: "Mozart would stand at the billiard table, throw the white billiard ball against the three cushions. Meanwhile, while his conscious mind was over here, his unconscious mind slipped the note back to him. You've got to break out of that conscious prison to be unconsciously creative."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 41
+    texto: "Why do I compare copywriting to a horse thief being chased by a posse? Because the horse thief would ride for an hour, then walk the horse for an hour. Your mind has a way of dropping dead on you."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+
+  - id: 42
+    texto: "Think of yourself as getting in a boat and letting the stream carry you. Just don't think that you can paddle up against the stream."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: 2
+
+  # === COMUNICACAO AVANCADA (3 MIUs) ===
+
+  - id: 43
+    texto: "Words in advertising are like windows at a store. You must be able to look right through them at the product. Copy should never call attention to itself."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 44
+    texto: "You are not writing to a private person. You are not writing to a bunch of people. You are writing to a number of people who share a private want."
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2
+
+  - id: 45
+    texto: "You are all chimpanzees. I've got terrible news for you! You have a reptilian brain, a mammalian brain and human brain. You don't use the human brain that much in reading copy. You really use the chimpanzee brain. That's why you use very simple and very vivid words."
+    tipo_semantico: "narrativo"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: 2

@@ -1,0 +1,33 @@
+# Task: Diagnostico de Mercado (Awareness + Sophistication)
+# Mind Clone: Eugene Schwartz
+
+nome: "Diagnostico de Mercado — Awareness + Sophistication"
+slug: "market-diagnostico"
+tipo: "diagnostico"
+dominio: "marketing-estrategico"
+
+descricao: >
+  Diagnosticar o nivel de consciencia E sofisticacao de um mercado especifico.
+  O diagnostico determina TUDO: headline, lead, angulo, tom, promessa.
+  Escrever sem diagnosticar eh o erro #1.
+
+trigger: "Usuario quer lancar produto, criar campanha, ou entender por que copy nao converte."
+
+processo:
+  - "Mapear o prospect-alvo: quem e, o que sabe, o que deseja"
+  - "Classificar Awareness Level (1-5): qual o nivel de consciencia?"
+  - "Classificar Sophistication Level (1-5): qual a saturacao de claims?"
+  - "Cruzar os dois diagnosticos para definir estrategia"
+  - "Recomendar tipo de headline, lead e angulo para cada combinacao"
+  - "Alertar sobre armadilhas comuns do nivel identificado"
+
+frameworks_aplicados:
+  - "5 Niveis de Consciencia do Mercado"
+  - "5 Niveis de Sofisticacao do Mercado"
+
+output_esperado: "Diagnostico com Awareness Level + Sophistication Level + estrategia recomendada"
+
+anti_patterns:
+  - "Nunca escrever copy antes de diagnosticar"
+  - "Nunca assumir que o nivel eh o mesmo de 6 meses atras"
+  - "Nunca usar o mesmo approach para niveis diferentes"

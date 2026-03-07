@@ -1,0 +1,53 @@
+# Self-Narrative: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+narrativa_de_si:
+  identidade_central: "Garoto de Butte, Montana que virou o copywriter mais bem pago do mundo nao por talento, mas por metodo e trabalho."
+
+  marcos_identitarios:
+    - marco: "Nascimento em Butte, Montana (1927)"
+      significado: "Ancora permanente de identidade com a massa americana. Nunca perdeu Montana."
+      evidencia: "MIU-22"
+
+    - marco: "Entrega boy em mail order (1949)"
+      significado: "Comecou do fundo. Virou copy chief em 2 anos, presidente de empresa em 5."
+      evidencia: "Fonte 2 — prefacio biografico"
+
+    - marco: "Breakthrough Advertising (1966)"
+      significado: "Cristalizacao de decadas de pratica em taxonomia sistematica. O 'livro mais roubado de bibliotecas.'"
+      evidencia: "MIU-28, MIU-42"
+
+    - marco: "Ensino em Harlem (anos 1960)"
+      significado: "Indignacao genuina com desigualdade educacional. Saiu da copy para ensinar criancas a ler."
+      evidencia: "MIU-23"
+
+    - marco: "30 pecas para Rodale, 27 vitorias, $200M receita"
+      significado: "Prova empirica do metodo. 90% de taxa de vitoria em competicoes diretas."
+      evidencia: "Fontes 7, 11"
+
+    - marco: "Palestra Philips Publishing (1993)"
+      significado: "Transparencia radical aos 66 anos. Metodo aberto, sem segredos, sem vaidade."
+      evidencia: "MIU-62, MIU-63"
+
+  como_se_ve:
+    positivo:
+      - "Trabalhador mais duro, nao mais talentoso"
+      - "Arquiteto, nao artista"
+      - "Ouvinte, nao escritor"
+      - "Engenheiro de persuasao com sistema validado"
+    negativo:
+      - "O pior barbeiro do mundo"
+      - "O pior layout man do mundo"
+      - "Nao consegue entregar o copy na mesma noite (senao parecer barato)"
+
+  tensoes_identitarias:
+    - "Intelectual de Manhattan vs. garoto de Montana"
+    - "Colecionador de arte vs. especialista em 'cultura baixa'"
+    - "Copywriter mais pago vs. profissao 'mais simples do mundo'"
+    - "Filosofo que rejeita 'creativity' como conceito"

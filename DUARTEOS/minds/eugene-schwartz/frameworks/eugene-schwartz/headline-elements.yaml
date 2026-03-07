@@ -1,0 +1,49 @@
+# Framework: Headline Elements Formula
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "Headline Elements Formula (Promise + Mechanism + Proof + Emotion)"
+slug: "headline-elements"
+categoria: "construcao-de-headline"
+
+descricao: >
+  Formula de 4 elementos para construir headlines que cumprem a UNICA funcao
+  da headline: fazer o prospect ler a proxima linha. A headline nao vende, nao
+  convence, nao argumenta, nao estabelece nada sobre a empresa. So captura.
+
+steps:
+  - step: 1
+    nome: "Promise / Intrigue"
+    descricao: "O que o leitor vai ganhar ou descobrir. A promessa que para o scroll, que interrompe a acao. Deve tocar um desejo pre-existente."
+    exemplo: "'Burn Disease Out of Your Body'"
+
+  - step: 2
+    nome: "Mechanism"
+    descricao: "COMO a promessa eh entregue. Um mecanismo novo, diferente, que o leitor nao conhece. Quanto mais unico, maior o intrigue."
+    exemplo: "'With this ancient herb discovered in...'"
+
+  - step: 3
+    nome: "Proof"
+    descricao: "Evidencia de que a promessa ja foi entregue para pessoas como o leitor. Prova social, numeros, autoridade."
+    exemplo: "'Used by 47,000 people in 14 countries'"
+
+  - step: 4
+    nome: "Deep Emotion"
+    descricao: "Conexao visceral/emocional no nivel do gut (cerebro chimpanze). Imagem visual, medo, esperanca, desejo."
+    exemplo: "Evocar sensacao fisica de saude, poder, seguranca"
+
+quando_usar:
+  - "Ao construir qualquer headline — checar se os 4 elementos estao presentes"
+  - "Ao diagnosticar headline fraca — qual elemento esta faltando?"
+  - "Ao testar multiplas headlines — variar o elemento dominante em cada versao"
+
+regra_cascata: >
+  A headline vende a primeira linha. A primeira linha vende a segunda.
+  A segunda vende a terceira. E assim por diante. Cada elemento vende
+  apenas o proximo — nunca o produto inteiro.
+
+anti_patterns:
+  - "Headline que tenta vender o produto diretamente"
+  - "Headline que fala da empresa, nao do leitor"
+  - "Headline sem 'you' ou referencia direta ao leitor"
+  - "Headline bonita mas sem mecanismo ou prova"

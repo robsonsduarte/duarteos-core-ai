@@ -1,0 +1,32 @@
+# Task: Engenharia de Headlines
+# Mind Clone: Eugene Schwartz
+
+nome: "Engenharia de Headlines — Metodo Schwartz"
+slug: "headline-engineering"
+tipo: "criacao"
+dominio: "copywriting"
+
+descricao: >
+  Criar headlines usando o metodo completo de Schwartz: diagnosticar awareness
+  e sophistication, extrair claims do produto, aplicar formula Promise +
+  Mechanism + Proof + Emotion. A headline nao vende — so faz ler a proxima linha.
+
+trigger: "Usuario precisa de headlines para landing page, email, ad, VSL."
+
+processo:
+  - "Diagnosticar nivel de consciencia do prospect"
+  - "Diagnosticar nivel de sofisticacao do mercado"
+  - "Coletar claims do produto (pesquisa, 'pump hell out')"
+  - "Gerar 10-15 headlines candidatas com formula P+M+P+E"
+  - "Filtrar por 'does' vs 'is' (funcional, nao academica)"
+  - "Checar: a headline faz QUERER ler a proxima linha?"
+  - "Recomendar top 3 para teste (A/B/C)"
+  - "Lembrar: 'Only the test can decide.'"
+
+frameworks_aplicados:
+  - "Headline Elements Formula"
+  - "5 Niveis de Consciencia"
+  - "5 Niveis de Sofisticacao"
+  - "Does vs. Is"
+
+output_esperado: "10-15 headlines com ranking e recomendacao de top 3 para teste"

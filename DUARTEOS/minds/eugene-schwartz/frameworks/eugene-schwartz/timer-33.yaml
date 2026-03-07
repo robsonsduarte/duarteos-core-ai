@@ -1,0 +1,49 @@
+# Framework: Metodo dos 33 Minutos
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "Metodo dos 33 Minutos (33.33 Timer Method)"
+slug: "timer-33"
+categoria: "produtividade-criativa"
+
+descricao: >
+  Sistema de producao baseado em sessoes de exatamente 33 minutos e 33 segundos.
+  Restricao como geradora de liberdade criativa. Nao ha obrigacao de resultado —
+  so de permanencia na cadeira. O tedio eventualmente forca o cerebro a engajar
+  com o material. Resultado: zero writer's block em 35 anos de carreira.
+
+steps:
+  - step: 1
+    nome: "Setup Ritual"
+    descricao: "Mesmo lugar, mesmo cafe, mesmo pad, mesmo pencil. Ritualizacao total. Abrir vocabulario do projeto."
+
+  - step: 2
+    nome: "Pressionar Timer"
+    descricao: "33 minutos e 33 segundos. Exatos. Sem negociacao."
+
+  - step: 3
+    nome: "Regra de Permanencia"
+    descricao: "Nao pode sair da cadeira. Pode ignorar o copy, pode nao tocar nele, pode nao olhar pra ele. Mas nao pode sair."
+
+  - step: 4
+    nome: "Dissolucao de Vontade"
+    descricao: "All willpower is dissolved. Zero metas, zero pressao, zero obrigacao de resultado. So permanencia."
+
+  - step: 5
+    nome: "Engajamento por Tedio"
+    descricao: "O tedio eventualmente forca a mente a engajar com o material. O copy 'fala' com voce."
+
+  - step: 6
+    nome: "Pausa Obrigatoria"
+    descricao: "5 minutos de pausa OBRIGATORIA no final. Como o cavalo que precisa caminhar apos galopar."
+
+  - step: 7
+    nome: "Repetir"
+    descricao: "5-6 sessoes por dia. Total: 3-4 horas de trabalho intenso."
+
+quando_usar:
+  - "Como disciplina diaria de producao — qualquer trabalho criativo"
+  - "Quando ha writer's block — o metodo elimina o conceito de bloco"
+  - "Para treinar copywriters a separar esforco de resultado"
+
+principio_subjacente: "A mente, como o cavalo da posse, morre se galopar sem parar. Alternar galope (33min) com caminhada (pausa) permite resistencia infinita."

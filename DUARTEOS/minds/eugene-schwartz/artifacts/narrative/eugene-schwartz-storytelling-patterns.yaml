@@ -1,0 +1,45 @@
+# Storytelling Patterns: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+padroes_narrativos:
+
+  - padrao: "Historia de Cliente como Prova de Metodo"
+    estrutura: "Cliente chega com problema/recurso limitado → Schwartz aplica metodo → Resultado espetacular → Principio extraido"
+    exemplo_chave: "Boardroom — Edelson com $3,500 no bolso, 4h de conversa, 1 frase vira headline, 60,000 assinaturas"
+    frequencia: "muito alta"
+    funcao: "Prova empirica de que o metodo funciona. Historias de resultado substituem argumentos teoricos."
+    evidencia: "MIU-61, MIU-119"
+
+  - padrao: "Analogia Cross-Domain como Ensino"
+    estrutura: "Conceito abstrato de copywriting → Analogia de dominio fisico/historico → 'That's what you're doing'"
+    exemplo_chave: "Cientista atomico liberando energia dos atomos = copywriter liberando desejo do mercado"
+    frequencia: "muito alta"
+    funcao: "Tornar conceitos invisiveis (desejo, persuasao) em visiveis (atomos, rios, cavalos, vitrines)."
+    evidencia: "MIU-5, MIU-99, MIU-100, MIU-110"
+
+  - padrao: "Auto-Revelacao como Autoridade"
+    estrutura: "Fato pessoal surpreendente → Conexao com principio → 'You can too'"
+    exemplo_chave: "'I am the poorest shaver. I cut myself continually.' → Melhores ideias vem do inconsciente → Distracao eh ferramenta"
+    frequencia: "alta"
+    funcao: "Auto-depreciacao cria identificacao + demonstra que o metodo transcende talento individual."
+    evidencia: "MIU-97, MIU-88"
+
+  - padrao: "Numero como Ancora Narrativa"
+    estrutura: "Numero especifico → Contexto → Implicacao"
+    exemplo_chave: "33.33, 85%, 700pp, 4x, 40-50pp de notas, $54,000 por 4 horas"
+    frequencia: "muito alta"
+    funcao: "Numeros precisos criam credibilidade instantanea e memorabilidade."
+    evidencia: "MIU-66, MIU-73, MIU-68"
+
+  - padrao: "Origens como Ancora Identitaria"
+    estrutura: "Referencia a Butte, Montana → Conexao com valores fundamentais → Aplicacao profissional"
+    exemplo_chave: "'I come from Butte, Montana. I try never to lose the Butte, Montana in me. Because Butte is everybody in this huge country.'"
+    frequencia: "media"
+    funcao: "Raizes humildes como fonte de conexao com massa. Anti-elitismo como ferramenta profissional."
+    evidencia: "MIU-22"

@@ -1,0 +1,44 @@
+# Framework: Claim-Mechanism-Proof Chain
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "Claim-Mechanism-Proof Chain"
+slug: "claim-mechanism-proof"
+categoria: "construcao-de-body-copy"
+
+descricao: >
+  Sequencia de 5 elementos para construir cada bloco de body copy. Cada
+  paragrafo ou secao segue esta cadeia: claim → mechanism → proof →
+  documentation → demonstration. Claims fortes sem prova sao descartados.
+  Prova sem claim eh desperdicada. A cadeia completa gera crenca.
+
+steps:
+  - step: 1
+    nome: "Claim"
+    descricao: "A afirmacao principal — o que o produto faz pelo leitor. Deve ser poderosa E verdadeira."
+
+  - step: 2
+    nome: "Mechanism"
+    descricao: "COMO o claim eh alcancado. O mecanismo de acao. Quanto mais especifico e unico, maior a crenca."
+
+  - step: 3
+    nome: "Proof"
+    descricao: "Evidencia de que o claim eh verdadeiro. Numeros, estudos, antes/depois, autoridades."
+
+  - step: 4
+    nome: "Documentation"
+    descricao: "Fontes, referencias, credenciais que sustentam o proof. Biografia do autor eh lida ate em 8pt type."
+
+  - step: 5
+    nome: "Demonstration"
+    descricao: "Prova no MOMENTO PRESENTE. Algo que o leitor pode testar agora, nesta pagina, neste instante."
+
+quando_usar:
+  - "Para construir cada secao de body copy — a cadeia eh o building block basico"
+  - "Quando claims fortes nao geram conversao — provavelmente falta proof ou demonstration"
+  - "Ao preparar terreno para claims poderosos — claims no meio sao aceitos se o leitor foi conduzido"
+
+regra_posicao: >
+  Claims que seriam rejeitados na headline sao aceitos no meio da peca
+  PORQUE o leitor foi preparado. 'If you said it at the top, it would be
+  thrown away. In the middle, he is prepared to believe.'

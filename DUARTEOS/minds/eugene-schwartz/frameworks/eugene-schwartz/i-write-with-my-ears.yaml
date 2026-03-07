@@ -1,0 +1,49 @@
+# Framework: I Write With My Ears (Metodo de Pesquisa em 4 Passos)
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "I Write With My Ears — Metodo de Pesquisa em 4 Passos"
+slug: "i-write-with-my-ears"
+categoria: "pesquisa-de-copy"
+
+descricao: >
+  Metodo de pesquisa que transforma o copywriter de 'escritor' em 'ouvinte'.
+  Copy nao se escreve — se escuta. O copywriter eh um conduto semi-passivo
+  entre produtor e consumidor. 70% do copy final vem das palavras do cliente.
+  'People constantly ask me why I haven't burned myself out. The answer is
+  simple: I don't write them. I listen them.'
+
+steps:
+  - step: 1
+    nome: "Pump Hell Out of the Owner"
+    descricao: "3-4 horas de gravacao. Pergunte TUDO: de onde veio o produto, o que faz, problemas, curas, concorrentes, prova de que funciona, usos estranhos, historias engracadas, como melhoraria com dinheiro infinito, o que causa reembolsos."
+
+  - step: 2
+    nome: "Talk to Customers"
+    descricao: "Em pessoa ou no papel. Confirme ou negue o que o dono disse. Descubra o que os clientes realmente pensam vs. o que o dono acha que pensam."
+
+  - step: 3
+    nome: "Listen to Competitors"
+    descricao: "Leia os ads dos concorrentes. Eles revelam mais sobre os GAPS que estao perdendo do que sobre as oportunidades que estao aproveitando. Deixe-os escrever headlines pra voce."
+
+  - step: 4
+    nome: "Blend Like a Cake"
+    descricao: "Empilhe TUDO. Sublinhe. Comece a misturar como quem faz um bolo. De prioridade (headline, sub-heads) e depois ordem (body claims). Adicione pouco de si — seja seletor e condensador."
+
+quando_usar:
+  - "Antes de qualquer projeto de copy — a fase de escuta"
+  - "Quando o copy esta sem forca — provavelmente nao escutou o suficiente"
+  - "Para treinar copywriters a priorizar pesquisa sobre escrita"
+
+exemplos_de_resultado:
+  - cliente: "Joe Cossman"
+    frase_ouvida: "SWIMS UNDER ITS OWN POWER"
+    resultado: "Headline direto da boca do cliente"
+
+  - cliente: "Martin Edelston (Boardroom)"
+    frase_ouvida: "READ 300 BUSINESS MAGAZINES IN 30 MINUTES"
+    resultado: "60,000 assinaturas a $36/ano — headline era 100% frase do cliente"
+
+  - cliente: "Harry Lorayne"
+    frase_ouvida: "GIVE ME 15 MINUTES AND I'LL GIVE YOU A PUSH-BUTTON MEMORY"
+    resultado: "Headline direto da conversa"

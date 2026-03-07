@@ -1,0 +1,31 @@
+# Task: Pesquisa de Produto (I Write With My Ears)
+# Mind Clone: Eugene Schwartz
+
+nome: "Pesquisa de Produto — I Write With My Ears Method"
+slug: "product-research"
+tipo: "pesquisa"
+dominio: "copywriting"
+
+descricao: >
+  Conduzir pesquisa exaustiva de produto usando o metodo 'I Write With My
+  Ears'. O copywriter nao escreve — escuta. 80-90% do tempo vai para
+  pesquisa. O resultado eh um 'vocabulario' de claims prontos para montagem.
+
+trigger: "Usuario tem um produto/servico e precisa de material para copy."
+
+processo:
+  - "PASSO 1: Pump hell out of the owner — perguntar TUDO (lista de 15+ perguntas)"
+  - "  De onde veio o produto? O que faz? Quais problemas? Como tentou cura-los?"
+  - "  Por que eh melhor que concorrentes? Quem gosta? Quem nao gosta? Que provas tem?"
+  - "  Usos estranhos? Historias engracadas? Como melhoraria com dinheiro infinito?"
+  - "  O que causa reembolsos? Quem ajuda a fazer? Como mantem qualidade?"
+  - "PASSO 2: Talk to customers — confirmar ou negar o que o dono disse"
+  - "PASSO 3: Listen to competitors — ler ads, encontrar gaps"
+  - "PASSO 4: Blend like a cake — empilhar, sublinhar, condensar em vocabulario"
+
+output_esperado: "Vocabulario de claims + headlines potenciais + mapa de desejos do mercado"
+
+anti_patterns:
+  - "Nunca pular a pesquisa — eh 80-90% do trabalho"
+  - "Nunca aceitar a primeira resposta do cliente — cavar mais fundo"
+  - "Nunca confiar na propria 'criatividade' — a resposta esta no mercado"

@@ -1,0 +1,30 @@
+# Task: Copy Assembly — Montagem Completa
+# Mind Clone: Eugene Schwartz
+
+nome: "Copy Assembly — Montagem Completa de Sales Copy"
+slug: "copy-assembly-task"
+tipo: "criacao"
+dominio: "copywriting"
+
+descricao: >
+  Montar uma peca completa de sales copy usando o metodo de Copy Assembly.
+  Cada bloco (headline, bullets, stories, testimonials, offer, guarantee)
+  eh montado separadamente antes de integrar. Fractal: partes antes do todo.
+
+trigger: "Usuario precisa de uma peca de copy completa (landing page, carta de venda, VSL script)."
+
+processo:
+  - "FASE 1 — PESQUISA: Coletar tudo sobre o produto (I Write With My Ears)"
+  - "FASE 2 — VOCABULARIO: Condensar pesquisa em vocabulario de claims"
+  - "FASE 3 — DIAGNOSTICO: Awareness Level + Sophistication Level"
+  - "FASE 4 — BUILDING BLOCKS: Montar cada bloco separadamente"
+  - "  4.1 Headline (Promise + Mechanism + Proof + Emotion)"
+  - "  4.2 Bullet Points (mini-ads independentes)"
+  - "  4.3 Stories (transformacao, problema, produto)"
+  - "  4.4 Testimonials (prova social selecionada)"
+  - "  4.5 Offer (estrutura de valor, bonus)"
+  - "  4.6 Guarantee (reversao de risco)"
+  - "FASE 5 — ASSEMBLY: Integrar blocos na sequencia persuasiva"
+  - "FASE 6 — CHECKS: Adjective check, You check, Transparency check"
+
+output_esperado: "Peca de copy completa, montada por blocos, com diagnostico de mercado"

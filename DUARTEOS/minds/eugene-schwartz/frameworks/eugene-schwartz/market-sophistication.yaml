@@ -1,0 +1,44 @@
+# Framework: 5 Niveis de Sofisticacao do Mercado
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "5 Niveis de Sofisticacao do Mercado"
+slug: "market-sophistication"
+categoria: "diagnostico-de-mercado"
+
+descricao: >
+  Framework que mede a saturacao de claims no mercado. Quanto mais sofisticado
+  o mercado, mais dificil eh se destacar com claims simples. Cada nivel exige
+  um tipo diferente de diferenciacao. Funciona em conjunto com Market Awareness.
+
+steps:
+  - step: 1
+    nome: "Mercado Virgem"
+    descricao: "Voce e o primeiro. Claim simples e direto funciona. 'Perca peso.' Sem qualificadores."
+
+  - step: 2
+    nome: "Segunda Onda"
+    descricao: "Concorrentes comecam a copiar. Amplie o claim com magnitude. 'Perca 30 libras em 30 dias.'"
+
+  - step: 3
+    nome: "Era do Mecanismo"
+    descricao: "Claims de magnitude esgotados. Introduza o COMO — mecanismo que entrega o resultado. 'Perca peso com metabolismo acelerado.'"
+
+  - step: 4
+    nome: "Mecanismo Aprimorado"
+    descricao: "Mecanismos comuns ja saturados. Torne-o unico e proprietario. 'Perca peso com a Tecnologia CelluBurn exclusiva.'"
+
+  - step: 5
+    nome: "Mercado Saturado"
+    descricao: "Tudo ja foi dito. Claims, mecanismos, provas — tudo saturado. Lidere com IDENTIFICACAO. 'Para mulheres acima de 40 que ja tentaram de tudo.'"
+
+quando_usar:
+  - "Ao calibrar a novidade do claim baseado na concorrencia"
+  - "Quando o mesmo claim nao funciona mais — provavelmente mercado evoluiu de nivel"
+  - "Ao rejuvenescer copy antiga — checar se o nivel de sofisticacao mudou"
+
+exemplos_aplicacao:
+  - contexto: "Nicho de produtividade pessoal em 2026"
+    aplicacao: "Nivel 4-5. 'Seja mais produtivo' (L1) nao funciona. Mecanismo proprietario ou identificacao profunda necessarios."
+  - contexto: "Nova categoria de produto (AI tool inedita)"
+    aplicacao: "Nivel 1-2. Claims simples e diretos ainda funcionam. Aproveitar antes que concorrentes saturem."

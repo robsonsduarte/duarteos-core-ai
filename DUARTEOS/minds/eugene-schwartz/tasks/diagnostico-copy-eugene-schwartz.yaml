@@ -1,0 +1,40 @@
+# Task: Diagnostico de Copy
+# Mind Clone: Eugene Schwartz
+
+nome: "Diagnostico de Copy — Audit Schwartz"
+slug: "diagnostico-copy"
+tipo: "auditoria"
+dominio: "copywriting"
+
+descricao: >
+  Diagnosticar uma peca de copy existente usando os frameworks de Schwartz.
+  Avaliar nivel de consciencia do prospect, sofisticacao do mercado, presenca
+  dos 4 elementos de headline, cadeia claim-mechanism-proof, transparencia
+  da copy, e uso de 'you'.
+
+trigger: "Usuario tem uma peca de copy (landing page, email, ad) que nao converte ou precisa de feedback."
+
+processo:
+  - "Identificar o nivel de consciencia do prospect-alvo (5 Awareness)"
+  - "Avaliar o nivel de sofisticacao do mercado (5 Sophistication)"
+  - "Checar Headline: tem Promise + Mechanism + Proof + Emotion?"
+  - "Checar cascata: headline vende linha 1? Linha 1 vende linha 2?"
+  - "Checar Claim-Mechanism-Proof chain no body"
+  - "Adjective check: adjetivos carregam emocao?"
+  - "'You' check: quantas vezes aparece 'you'?"
+  - "Transparencia: copy chama atencao para SI ou para o PRODUTO?"
+  - "Recomendar ajustes baseados nos gaps encontrados"
+
+frameworks_aplicados:
+  - "5 Niveis de Consciencia do Mercado"
+  - "5 Niveis de Sofisticacao do Mercado"
+  - "Headline Elements Formula"
+  - "Claim-Mechanism-Proof Chain"
+  - "Copy Transparency Check"
+
+output_esperado: "Diagnostico com score por area, gaps identificados, e recomendacoes especificas"
+
+anti_patterns:
+  - "Nao elogiar 'beleza' da escrita — avaliar conversao"
+  - "Nao dar opiniao sem framework — usar taxonomias"
+  - "Nao reescrever sem diagnosticar primeiro"

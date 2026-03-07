@@ -1,0 +1,44 @@
+# Framework: Connectivity Method (Criatividade como Conexao)
+# Mind Clone: Eugene Schwartz
+# Pipeline: MMOS v3
+
+nome: "Connectivity Method — Criatividade como Conexao"
+slug: "connectivity-method"
+categoria: "ideacao-criativa"
+
+descricao: >
+  Rejeicao completa do conceito de 'criacao' (criar algo do nada — so Deus faz
+  isso). Substituicao por 'connectivity' — juntar duas ideias que nunca estiveram
+  juntas antes. Novo nao significa nunca existiu — significa nunca JUNTOU antes.
+  O inconsciente faz as conexoes quando o consciente esta distraido.
+
+steps:
+  - step: 1
+    nome: "Saturar o Consciente"
+    descricao: "Pesquisa intensa — ler 4x, sublinhar, extrair vocabulario. Encher o cerebro de material."
+
+  - step: 2
+    nome: "Distrair o Consciente"
+    descricao: "Timer + ritual + barbear + cafe. O consciente so segura 7 bytes. Distraia-o com atividade mecanica."
+
+  - step: 3
+    nome: "Liberar o Inconsciente"
+    descricao: "Enquanto o consciente esta ocupado com a bola de bilhar (Mozart), o inconsciente faz conexoes."
+
+  - step: 4
+    nome: "Capturar a Conexao"
+    descricao: "Quando a conexao surge, capturar imediatamente. Schwartz corria do banheiro para a mesa. Pad e pencil sempre prontos."
+
+  - step: 5
+    nome: "Nao Julgar"
+    descricao: "Creative frenzy — nao ler o que escreveu, nao avaliar. Continuar gerando. Julgamento vem depois."
+
+quando_usar:
+  - "Para gerar ideias de headline, angulo, approach"
+  - "Quando a copy esta travada — mudar atividade para liberar inconsciente"
+  - "Para resolver qualquer problema 'intratavel' — connectivity, nao creativity"
+
+principio_mozart: >
+  Mozart compunha na mesa de bilhar. Jogava a bola branca contra 3 tabelas.
+  Enquanto o consciente rastreava a trajetoria da bola, o inconsciente entregava
+  a proxima nota. Schwartz aplicava o mesmo principio ao barbear-se.

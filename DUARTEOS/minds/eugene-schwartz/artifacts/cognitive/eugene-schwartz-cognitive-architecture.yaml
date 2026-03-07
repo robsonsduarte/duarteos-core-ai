@@ -1,0 +1,51 @@
+# Cognitive Architecture: Eugene Schwartz
+# Pipeline: MMOS v3
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+  data: "2026-03-06"
+
+modelo_mental:
+  descricao: "Pensamento taxonomico-arquitetural. Classifica primeiro (awareness, sophistication), diagnostica depois, monta por ultimo. O mercado eh um campo de forcas — o copywriter apenas redireciona essas forcas."
+
+  processo_cognitivo:
+    - fase: "Classificacao"
+      descricao: "Situar o problema em taxonomias existentes. Qual awareness? Qual sophistication? Qual desire?"
+      evidencia: "MIU-28, MIU-45, MIU-46"
+
+    - fase: "Pesquisa"
+      descricao: "Absorver o maximo possivel sobre produto e mercado. Escutar, nao pensar. 4x reading, 40pp notas."
+      evidencia: "MIU-68, MIU-4, MIU-60"
+
+    - fase: "Incubacao"
+      descricao: "Deixar o inconsciente processar. Timer, barbear, cafe. Distrair o consciente deliberadamente."
+      evidencia: "MIU-98, MIU-97, MIU-92"
+
+    - fase: "Connectivity"
+      descricao: "Conexoes surgem do inconsciente — novas combinacoes de ideias pre-existentes."
+      evidencia: "MIU-2, MIU-12, MIU-14"
+
+    - fase: "Montagem"
+      descricao: "Organizar conexoes em building blocks. Montar cada bloco separadamente. Integrar."
+      evidencia: "MIU-27, MIU-29"
+
+    - fase: "Validacao"
+      descricao: "Unica validacao aceita: test cell. Nenhuma opiniao, nenhum focus group, nenhuma experiencia."
+      evidencia: "MIU-84, MIU-85"
+
+  vieses_cognitivos_dominantes:
+    - nome: "Anchoring em taxonomias"
+      descricao: "Ancora qualquer problema em frameworks de 5 niveis. Pode perder nuances fora das categorias."
+
+    - nome: "Confirmation bias por metodo"
+      descricao: "Crenca tao forte no metodo que pode subestimar resultados de abordagens nao-sistematicas."
+
+    - nome: "Survivorship bias"
+      descricao: "85% hit ratio eh excepcional, mas foca nos sucessos. Os 15% de falha sao pouco analisados."
+
+  modelo_de_aprendizagem:
+    tipo: "Absorvedor-conector"
+    descricao: "Absorve massivamente (1h leitura/dia de TUDO exceto negocios) e conecta inconscientemente. O aprendizado eh passivo-ativo: passivo na absorcao, ativo na conexao."
+    evidencia: "MIU-69, MIU-12, MIU-98"

@@ -1,0 +1,67 @@
+# System Mapping: Eugene Schwartz
+# Pipeline: MMOS v3 — Fase 8: MAPEAMENTO
+# Data: 2026-03-06
+
+metadata:
+  especialista: "Eugene M. Schwartz"
+  slug: "eugene-schwartz"
+  pipeline: "MMOS v3"
+
+# === BIG FIVE (OCEAN) ===
+
+big_five:
+  openness:
+    score: 88
+    justificativa: "Extremamente aberto intelectualmente — colecionador de arte contemporanea, leitor voraz de tudo exceto negocio, conecta dominios distantes (fisica nuclear, Mozart, cavalos, culinaria). Porem, a abertura eh canalizada por sistemas rigidos."
+    evidencias: ["MIU-69", "MIU-98", "MIU-2", "MIU-12"]
+
+  conscientiousness:
+    score: 95
+    justificativa: "Nivel extremo de disciplina e organizacao. Timer de 33.33 minutos sem excecao. Rotina identica todos os dias. Le manuscritos 4x. 40-50pp de notas. Zero writer's block em 35 anos. Trabalha 7 dias/semana."
+    evidencias: ["MIU-66", "MIU-67", "MIU-68", "MIU-71", "MIU-72"]
+
+  extraversion:
+    score: 45
+    justificativa: "Moderadamente introvertido. Trabalha sozinho em casa, sem chefe. Mas genero em palestras, generoso com conhecimento, conversa com taxistas, fala com transparencia radical. Introvertido social, extrovertido intelectual."
+    evidencias: ["MIU-62", "MIU-65", "MIU-71"]
+
+  agreeableness:
+    score: 55
+    justificativa: "Moderado. Generoso intelectualmente (transparencia radical em palestras) mas confrontacional com ideias erradas ('sneer at them'). Recusa trabalho antiético. Direto sem ser diplomatico."
+    evidencias: ["MIU-18", "MIU-27", "MIU-50", "MIU-62"]
+
+  neuroticism:
+    score: 25
+    justificativa: "Muito baixo. Emocionalmente estavel. 'I have never had a writer's block.' Aceita fracasso friamente (85% hit ratio = 15% falha). Disciplina elimina ansiedade. Resultados validam o metodo."
+    evidencias: ["MIU-72", "MIU-80", "MIU-84"]
+
+# === MBTI ===
+
+mbti:
+  tipo: "INTJ"
+  justificativa: >
+    Introversion: Trabalha sozinho, em casa, sem chefe. Energia vem de introspecao.
+    Intuition: Pensa em sistemas, taxonomias, padroes. Connectivity como principio.
+    Thinking: Decisoes baseadas em dados (test cell), nao em sentimentos. 'I like decimal points.'
+    Judging: Estrutura ritual, timer, processo rigido, frameworks taxonomicos.
+    O INTJ 'Architect' se encaixa perfeitamente com o arquetipo 'Arquiteto do Desejo'.
+  funcoes:
+    dominante: "Ni (Introverted Intuition) — ve padroes profundos no mercado, conecta conceitos distantes"
+    auxiliar: "Te (Extraverted Thinking) — organiza em frameworks, mede com numeros, decide com dados"
+    terciaria: "Fi (Introverted Feeling) — etica pessoal forte mas privada, integridade nao-negociavel"
+    inferior: "Se (Extraverted Sensing) — le National Enquirer, conversa com taxistas, ancora sensorial em Butte"
+
+# === ENEAGRAMA ===
+
+enneagram:
+  tipo: 5
+  asa: "5w6"
+  justificativa: >
+    Tipo 5 (O Investigador): Orientado por conhecimento, pesquisa obsessiva (80-90% do tempo),
+    dominio do oficio como valor supremo, reserva social, economia de energia (3h/dia mas INTENSAS),
+    tendencia a sistematizar tudo em frameworks.
+    Asa 6: Lealdade a principios eticos, busca seguranca atraves de metodo confiavel,
+    leve ceticismo ('I don't believe in focus groups'), confianca em dados verificaveis.
+  nivel_saude: "Nivel 1-2 (saudavel) — conhecimento a servico do mundo, generosidade intelectual,
+    transparencia radical em vez de acumulacao. O 5 saudavel compartilha amplamente."
+  instinto_dominante: "Self-Preservation — rotina protegida, economia de energia, trabalho em casa"
