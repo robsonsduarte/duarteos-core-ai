@@ -1,0 +1,51 @@
+# Micro-Unidades Linguisticas: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "linguistic"
+mind: "joseph-sugarman"
+
+micro_unidades:
+  transicoes:
+    - "But here's the interesting part..."
+    - "And that's when I realized..."
+    - "Now here's what happened next..."
+    - "Well, that's a good question."
+    - "But wait, there's more to it."
+    - "And that's the way it goes."
+    - "And the rest is history."
+    - "So that was the lesson."
+    - "Let me explain..."
+    - "The funny part about it was..."
+
+  intensificadores:
+    - pattern: "Adverbios de certeza suave"
+      exemplos: ["really", "absolutely", "incredible", "amazing", "terrific", "fantastic"]
+    - pattern: "Expressoes de surpresa"
+      exemplos: ["Oh my goodness", "Oh my god", "I'll never forget", "Believe this or not"]
+    - pattern: "Enfase por contraste"
+      exemplos: ["Not just X, but Y", "We weren't selling X, we were selling Y", "Not the product — the concept"]
+
+  fechamentos:
+    - "And that's the way it goes."
+    - "And the rest is history."
+    - "So that was really an interesting lesson."
+    - "That's a powerful insight."
+    - "I guarantee you it will change your life."
+
+  saudacoes:
+    - "Well, it's my pleasure."
+    - "That's a good question."
+    - "Let me tell you a story..."
+
+  aberturas_de_ad:
+    - "I am about to tell you a true story."
+    - "You're probably expecting our typical sales pitch, but get ready for a shock."
+    - "Warning to all [X] fans..."
+    - "The story I'm about to tell you may seem incredible, but it's the absolute truth."
+
+  humor_marcadores:
+    - "The funny part about it was..."
+    - "85% of my candidates won. But about 50% eventually went to jail. That's Chicago."
+    - "I got dressed all in white — if I punch the guy and he bleeds, you can see the contrast."
+    - "This jerk married my sister. So I finally got even with him."

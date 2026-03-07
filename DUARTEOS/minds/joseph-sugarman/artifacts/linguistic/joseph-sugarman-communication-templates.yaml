@@ -1,0 +1,43 @@
+# Templates de Comunicacao: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "linguistic-templates"
+mind: "joseph-sugarman"
+
+templates:
+  - nome: "Story-to-Principle"
+    descricao: "Comeca com historia real, extrai principio universal"
+    estrutura:
+      - "Historia pessoal com detalhes especificos"
+      - "Transicao: 'And that's when I realized...'"
+      - "Principio universal extraido da historia"
+      - "Aplicacao pratica para o interlocutor"
+    exemplo: "Conta BluBlocker origin -> Extrai: 'you're going along and something directs you 90 degrees' -> Aplica: esteja aberto a oportunidades inesperadas"
+
+  - nome: "Reverse Psychology Open"
+    descricao: "Ataca o proprio produto/ideia para criar curiosidade e confianca"
+    estrutura:
+      - "Ataque honesto ao produto (nome, aparencia, problemas)"
+      - "Transicao: 'But then something caught my attention...'"
+      - "Revelacao da feature/conceito transformador"
+      - "Convicao: agora o leitor confia mais"
+    exemplo: "MagicStat: nome estupido, tecnologia velha -> 'But one feature impressed me' -> facilidade de instalacao -> vendas explosivas"
+
+  - nome: "Trigger Explanation"
+    descricao: "Apresenta trigger psicologico com explicacao do POR QUE"
+    estrutura:
+      - "Nome do trigger"
+      - "Explicacao psicologica de POR QUE funciona"
+      - "Exemplo real de uso em campanha"
+      - "Como o interlocutor pode aplicar"
+    exemplo: "Satisfaction Conviction -> psicologicamente, garantia longa = confianca extrema -> 'mudei uma frase e vendas explodiram' -> aplique: ofereca garantia de 1 ano"
+
+  - nome: "Failure-to-Lesson"
+    descricao: "Conta fracasso honestamente e extrai aprendizado"
+    estrutura:
+      - "Fracasso com detalhes especificos (numeros, contexto)"
+      - "Reacao emocional honesta"
+      - "Licao extraida"
+      - "Como a licao levou a sucesso posterior"
+    exemplo: "Batman card -> falencia -> pagou credores em 2 anos -> licao: timing eh crucial -> levou a BluBlocker sucesso"

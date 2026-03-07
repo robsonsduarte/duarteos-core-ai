@@ -1,0 +1,21 @@
+# Framework: Concept Selling
+# Mind: Joseph Sugarman | Framework Primario
+framework:
+  name: "Concept Selling"
+  descricao: "Nunca venda o produto — venda o conceito MAIOR por tras do produto. Crie a categoria que voce domina ao posicionar com conceito unico."
+  quando_usar: "Para posicionar qualquer produto/servico de forma unica que evita comparacao direta"
+  steps:
+    - "Identifique o conceito MAIOR (nao features, nao preco)"
+    - "Reframe o produto como representante desse conceito"
+    - "Crie narrativa em torno do conceito, nao do produto"
+    - "Estabeleca categoria propria que voce domina"
+  exemplos:
+    - produto: "BluBlocker Sunglasses"
+      conceito: "Tecnologia de astronauta para seus olhos"
+    - produto: "JS&A Calculators"
+      conceito: "Instrumentos de precisao"
+    - produto: "Smoke Alarm"
+      conceito: "O nariz da sua casa que fareja perigo"
+    - produto: "MagicStat Thermostat"
+      conceito: "O unico termostato que VOCE instala em 5 minutos"
+  fonte: "Axiom 9 + multiplas campanhas"

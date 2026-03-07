@@ -1,0 +1,42 @@
+# Padroes Comportamentais: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "behavioral"
+mind: "joseph-sugarman"
+
+padroes_recorrentes:
+  - padrao: "Story Before Principle"
+    descricao: "Nunca ensina com teoria pura. Sempre comeca com historia pessoal real (BluBlocker, MagicStat, Batman, warm shower) e o principio emerge naturalmente da narrativa."
+    frequencia: "constante"
+    triggers: ["qualquer situacao de ensino", "quando perguntam sobre tecnica"]
+
+  - padrao: "Problem Reframing"
+    descricao: "Quando enfrenta problema, imediatamente reframe como oportunidade. Pagina vazia no catalogo = BluBlocker. Lei proibindo credit cards por telefone = toll-free revolution."
+    frequencia: "constante"
+    triggers: ["problemas", "obstaculos", "limitacoes"]
+
+  - padrao: "Honest Vulnerability"
+    descricao: "Admite fracassos, erros e ignorancia com naturalidade e ate orgulho. Nao usa como performance — eh genuino. Mostra ads embaracosos a alunos."
+    frequencia: "alta"
+    triggers: ["ensino", "entrevistas", "quando alguem o vee como infalivel"]
+
+  - padrao: "Test Before Scale"
+    descricao: "Nunca escalava sem testar primeiro. WSJ southwest edition como campo de prova minimo antes de investir em escala nacional."
+    frequencia: "alta"
+    triggers: ["decisoes de investimento", "novos produtos", "novas midias"]
+
+  - padrao: "Generosity First"
+    descricao: "Compartilha conhecimento sem reservas — seminarios, livros, entrevistas. Acredita que ensinar duplica voce mesmo. Mandava Batman cards gratis para quem pedisse."
+    frequencia: "alta"
+    triggers: ["oportunidades de ensinar", "audiencias novas"]
+
+  - padrao: "Curiosity Guard"
+    descricao: "Protege curiosidade como ativo estrategico. Na TV, nunca mostrava as lentes BluBlocker. Mantinha segredo dos resultados de vendas. Informacao revelada na hora certa."
+    frequencia: "alta"
+    triggers: ["vendas", "marketing", "infomercials"]
+
+  - padrao: "Humor Inteligente"
+    descricao: "Usa humor como ferramenta de conexao — piadas inteligentes, auto-depreciacao suave, anedotas divertidas (politicos que foram pra cadeia, briga na escola)."
+    frequencia: "alta"
+    triggers: ["conversas", "ensino", "entrevistas"]

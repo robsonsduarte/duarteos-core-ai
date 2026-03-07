@@ -1,0 +1,160 @@
+# PCFE — Pre-Clone Fidelity Estimation
+# Mind Clone: Joseph Sugarman
+# Pipeline MMOS v3 — Fase 3
+# Gerado em: 2026-03-07
+
+pcfe:
+  clone: "joseph-sugarman"
+  data: "2026-03-07"
+  versao_pipeline: "MMOS v3.0.0"
+
+  # === SCORES POR COMPONENTE ===
+
+  scores:
+    VS:
+      valor: 82
+      peso: 0.20
+      contribuicao: 16.4
+      justificativa: >
+        Volume solido: 24 fontes coletadas, 53.4k palavras estimadas.
+        3 entrevistas completas transcritas com Sugarman em primeira pessoa (~30k palavras).
+        5 livros referenciados com conteudo parcial extraido.
+        Obituarios e biografias oficiais cobrem timeline completa.
+        Ponto fraco: nenhum texto integral de livro (apenas excerpts, axioms, TOC).
+        A amostra e rica mas a ausencia de livros completos limita profundidade maxima.
+
+    DS:
+      valor: 85
+      peso: 0.15
+      contribuicao: 12.75
+      justificativa: >
+        Boa diversidade: 10 tipos de fonte diferentes.
+        Entrevistas (4), biografias/obituarios (4), livros-ref (5),
+        artigos-analise (7), analises-tecnicas (2), tributos (1), resenhas (1).
+        Cobertura temporal: 2007 a 2024 (entrevistas em diferentes decadas).
+        Ponto fraco: todas em ingles (sem portugues), nenhuma fonte de seminario
+        gravado (audio/video transcrito) alem das entrevistas podcast.
+        Falta material original de anuncios (ads originais em alta resolucao).
+
+    CS:
+      valor: 88
+      peso: 0.30
+      contribuicao: 26.4
+      justificativa: >
+        Cobertura DNA excelente: 7/7 camadas cobertas (100%).
+        Filosofia: 14 fontes, 11 MIUs — rico em crencas, visao de mundo, principios.
+        Frameworks: 16 fontes, 14 MIUs — 17 axioms + 30 triggers + slippery slide + buying env.
+        Heuristicas: 10 fontes, 5 MIUs — regras de teste, anti-constraints, editing.
+        Metodologias: 9 fontes, 6 MIUs — processo completo de escrita + incubation.
+        Narrativa: 10 fontes, 7 MIUs — origin stories, failure stories, validation stories.
+        Comportamento: 3 fontes, 3 MIUs — como ensina, como lida com erros.
+        Dilemas: 3 fontes, 2 MIUs — toll-free law-breaking, etica de triggers.
+        Gaps menores: comunicacao_avancada (estilometria computacional) pouco coberta,
+        associacoes_conceituais nao mapeadas explicitamente,
+        hierarquia_valores nao rankeada formalmente,
+        teoria_da_mente nao simulada.
+
+    PS:
+      valor: 80
+      peso: 0.20
+      contribuicao: 16.0
+      justificativa: >
+        Material de boa profundidade mas com lacunas.
+        Forte: 3 entrevistas longas com detalhes biograficos ricos,
+        17 axioms completos, Success Forces completo, Triggers TOC completo.
+        Moderado: BluBlocker ad analysis com 11 taticas detalhadas.
+        Fraco: nenhum texto integral de livro disponivel (apenas excerpts),
+        nenhuma transcricao de seminario original,
+        faltam exemplos de ads completos alem do BluBlocker.
+        O material permite clone de alta fidelidade mas nao captura
+        todas as nuances estilisticas que so livros completos dariam.
+
+    QS:
+      valor: 78
+      peso: 0.15
+      contribuicao: 11.7
+      justificativa: >
+        Qualidade boa nas entrevistas (primeira pessoa, contexto rico).
+        Axioms sao citacoes verbatim do livro (qualidade maxima).
+        Success Forces citam extensamente o livro original.
+        Ponto fraco: artigos de analise sao interpretacoes de terceiros,
+        nao citacoes diretas. Triggers conhecidos apenas por TOC + excerpts,
+        nao pelo conteudo completo de cada capitulo.
+        Nenhuma fonte academica ou peer-reviewed.
+
+  # === CALCULO FINAL ===
+
+  formula: "FE = (VS*0.20) + (DS*0.15) + (CS*0.30) + (PS*0.20) + (QS*0.15)"
+  calculo: "FE = (82*0.20) + (85*0.15) + (88*0.30) + (80*0.20) + (78*0.15)"
+  FE: 83.25
+  FE_arredondado: 83
+
+  classificacao: "BOM"
+  # EXCELENTE (>=85), BOM (70-84), MODERADO (55-69), FRACO (40-54), INSUFICIENTE (<40)
+
+  # === GAPS IDENTIFICADOS ===
+
+  gaps:
+    criticos: []
+
+    importantes:
+      - gap: "Ausencia de textos integrais dos livros (Adweek Handbook, Triggers, Success Forces)"
+        impacto: "Limita extracao de triggers completos e nuances estilisticas"
+        mitigacao: "Os 17 axioms e Success Forces foram extraidos via fontes intermediarias fidedignas"
+        potencial_ganho_FE: "+3-5 pontos se obtido"
+
+      - gap: "Nenhuma transcricao de seminario original de copywriting"
+        impacto: "Seminarios eram metodo primario de ensino — conteudo didatico nao capturado"
+        mitigacao: "Entrevistas capturam muitos dos mesmos insights em formato conversacional"
+        potencial_ganho_FE: "+2-3 pontos se obtido"
+
+      - gap: "Poucos ads originais completos (apenas BluBlocker analisado em detalhe)"
+        impacto: "Falta material para estilometria computacional e retorica fina"
+        mitigacao: "Estrategias e principios bem documentados mesmo sem ads verbatim"
+        potencial_ganho_FE: "+2-3 pontos se obtido"
+
+    menores:
+      - gap: "Todas fontes em ingles — nenhuma em portugues"
+        impacto: "Minimo — Sugarman escreveu/falou exclusivamente em ingles"
+        mitigacao: "N/A — nao existem fontes primarias em portugues"
+
+      - gap: "Componentes MMOS v2.1 (estilometria, associacoes conceituais, teoria da mente) parcialmente cobertos"
+        impacto: "Fidelidade das novas camadas sera ~80% vs ~90% nas camadas classicas"
+        mitigacao: "Entrevistas fornecem material linguistico suficiente para patterns basicos"
+
+  # === PROJECAO ===
+
+  projecao:
+    fidelidade_estimada_min: 80
+    fidelidade_estimada_max: 88
+    fidelidade_provavel: 84
+    confianca_estimativa: "media-alta"
+    nota: >
+      Material de boa qualidade com 3 entrevistas longas em primeira pessoa.
+      Clone devera performar bem em filosofia, frameworks e narrativa.
+      Ponto de atencao: estilometria e nuances linguisticas dependem
+      de acesso a textos completos dos livros para atingir >90%.
+      Comparando com clones calibrados: o perfil de material e similar
+      ao de Amanda Khayat (F=93.20%) mas com menos fontes primarias autorais.
+
+  # === RECOMENDACAO ===
+
+  recomendacao: "APROVAR"
+  justificativa: >
+    FE=83 (BOM) com material rico e diversificado.
+    3 entrevistas transcritas em primeira pessoa fornecem base solida.
+    17 axioms + 30 triggers (TOC) + 6 Success Forces cobrem frameworks de forma abrangente.
+    Gaps identificados sao mitigaveis e nao bloqueantes.
+    Projecao de fidelidade provavel: 84% — acima do threshold minimo de 80%.
+    Recomendacao: prosseguir para Fases 4-10 do pipeline.
+
+  opcoes_gate:
+    - opcao: "APROVAR"
+      descricao: "Prosseguir com o material atual. FE=83 e suficiente para clone de boa qualidade."
+    - opcao: "ENRIQUECER"
+      descricao: >
+        Buscar textos integrais dos livros e/ou transcricoes de seminarios.
+        Potencial de elevar FE para 88-90+ (EXCELENTE).
+        Custo: +1 iteracao de pesquisa.
+    - opcao: "ABORTAR"
+      descricao: "Nao recomendado. Material existente e suficiente."

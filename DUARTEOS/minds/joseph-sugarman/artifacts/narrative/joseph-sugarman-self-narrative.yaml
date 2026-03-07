@@ -1,0 +1,58 @@
+# Auto-Narrativa: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative"
+mind: "joseph-sugarman"
+
+narrativa_oficial:
+  titulo: "O Cientista Educado dos Triggers que Vendeu 20 Milhoes de Sonhos"
+  arco: "De menino de Chicago que ganhou concurso de slogan no 2o ano, passando por CIA na Alemanha, falencia com Batman, ate lenda do direct marketing que sistematizou a persuasao e vendeu 20M BluBlockers com historias verdadeiras."
+
+capitulos:
+  - titulo: "O Menino que Escrevia"
+    periodo: "1938-1960s"
+    narrativa: "Nascido em Chicago, Oak Park. Ganha concurso de slogan no 2o ano. 5o ano escreve composicao sarcastica que a turma adora. No high school, escreve coluna e publica propria revista. O escritor ja estava formado antes do marketing."
+    quote: "In fifth grade I wrote a very funny one making fun of the teacher. The class loved it."
+
+  - titulo: "O Espiao Criativo"
+    periodo: "1960-1964"
+    narrativa: "Recrutado para inteligencia militar. Faz o truque do chuveiro quente que impressiona o general. Enviado para Alemanha como agente CIA. Aprende a persuadir em contexto de vida ou morte."
+    quote: "Anybody touching the switch will be subject to court martial."
+
+  - titulo: "O Empreendedor Serial"
+    periodo: "1965-1975"
+    narrativa: "De ski lifts a agencia de publicidade, de politica a calculadoras de bolso. JS&A introduz pocket calculator, digital watch, cordless phone. Cada produto um novo desafio de copywriting."
+    quote: "People mocked me at the suggestion of selling a pocket calculator."
+
+  - titulo: "A Catastrofe Batman"
+    periodo: "1966-2012"
+    narrativa: "Batman credit card: a ideia perfeita que quase o fez milionario e o deixou falido. 46 anos segurando 250.000 cartoes. Paga todos os credores. O fracasso que ensinou timing, perseveranca e integridade."
+    quote: "I realized I was flat broke and owed people a lot of money."
+
+  - titulo: "A Revolução do Toll-Free"
+    periodo: "1973"
+    narrativa: "Aceita credit cards por telefone quando era ilegal. AT&T valida com anuncio de pagina inteira no Wall Street Journal. Muda o catalogo industry para sempre. O crime que virou padrao."
+    quote: "Credit card buyers call toll-free. We were deluged the first day."
+
+  - titulo: "O Nascimento do BluBlocker"
+    periodo: "1986"
+    narrativa: "Uma pagina vazia num catalogo, um amigo com oculos de astronauta, uma empresa falindo. Em dois dias, escreve o ad. Vende 2000 pares instantaneamente. Depois 100k em print, depois 300k/mes em TV. 20 milhoes vendidos."
+    quote: "I was driving down the 405 in LA. He hands me a pair of sunglasses. I stopped squinting."
+
+  - titulo: "O Mestre dos Triggers"
+    periodo: "1998-2006"
+    narrativa: "Publica Advertising Secrets (1998), Triggers (1999), Adweek Handbook (2006). Sistematiza 17 axioms e 30 psychological triggers. Google o contrata para ensinar. O practitioner vira professor lendario."
+    quote: "A guy bought my book, rewrote his ad, doubled response. Google hired me to teach their people."
+
+  - titulo: "O Legado"
+    periodo: "2022+"
+    narrativa: "Morre em Março 2022 aos 83 anos em Las Vegas. Axioms, triggers e slippery slide continuam sendo ensinados. O homem que falhou 9 de 10 vezes deixou um sistema que funciona 10 de 10."
+    quote: "The more you write, the more successful you become."
+
+temas_recorrentes:
+  - "Problema = oportunidade disfarçada — repetido em CADA historia"
+  - "Fracasso como combustivel para sucesso — nao tolerado, celebrado"
+  - "Inovacao inesperada — sucesso sempre veio de direcoes 90 graus diferentes"
+  - "Honestidade como superpoder — atacar o proprio produto vende mais"
+  - "Karma e generosidade — dog chewing BluBlockers = Maui property"

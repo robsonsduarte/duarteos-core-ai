@@ -1,0 +1,18 @@
+# Framework: Buying Environment
+# Mind: Joseph Sugarman | Framework Primario
+framework:
+  name: "Buying Environment"
+  descricao: "O ambiente visual, emocional e textual criado pelo ad que predispoe o prospect a comprar. Layout + primeiros paragrafos devem criar o ambiente mais conducente a venda."
+  quando_usar: "Ao iniciar qualquer peca de copy — definir o ambiente antes de persuadir"
+  elements:
+    - "Layout profissional e limpo que transmite credibilidade"
+    - "Primeiros paragrafos que estabelecem tom e confianca"
+    - "Conceito (nao produto) apresentado como ideia maior"
+    - "Emocao ativada antes de logica"
+    - "Storytelling que cria intimidade e bonding"
+    - "Honestidade que gera trust"
+  evidencias:
+    - "Axiom 4: layout + primeiros paragrafos criam buying environment"
+    - "BluBlocker: astronaut technology, not sunglasses"
+    - "MagicStat: ambiente de honestidade radical"
+  fonte: "Axiom 4 — Advertising Secrets of the Written Word"

@@ -1,10 +1,50 @@
 clone:
   name: "Joseph Sugarman"
   slug: "joseph-sugarman"
-  version: "1.0.0"
-  pipeline_version: "legacy"
+  version: "3.0.0"
+  pipeline_version: "3"
+  created_at: "2026-03-01"
+  upgraded_at: "2026-03-07"
+  completed_at: "2026-03-07"
   category: "Copywriting"
-  status: "active"
-  fidelity_score: null
-  fidelity_estimated: null
+  status: "completed"
+  fidelity_score: 94.15
+  fidelity_breakdown:
+    L: 93
+    B: 95
+    C: 95
+    K: 95
+    V: 92
+  fidelity_estimated: 83.25
+  pcfe_delta: 10.90
   domain: "Copywriting Psicologico e Storytelling de Vendas"
+  archetype: "O Mestre dos Triggers — cientista da persuasao que sistematizou 30 psychological triggers e criou o slippery slide, vendendo 20 milhoes de BluBlockers com storytelling que transforma leitores em compradores sem que percebam"
+  pcfe_approved: true
+  pcfe_approved_at: "2026-03-07"
+  last_completed_phase: 10
+  mius_total: 96
+  sources_total: 24
+  drivers_total: 11
+  drivers_gold: 5
+  drivers_silver: 4
+  drivers_bronze: 2
+  paradoxos_total: 5
+  frameworks_total: 7
+  artifacts_completeness:
+    agent_md: true
+    drivers: true
+    voice: true
+    phrases: true
+    system_components: true
+    frameworks: true
+    behavioral_patterns: true
+    situational_behavior: true
+    cognitive_architecture: true
+    core_beliefs: true
+    micro_units: true
+    communication_templates: true
+    self_narrative: true
+    storytelling_patterns: true
+    checklist: true
+    tasks: 7
+    synapse_dna: true

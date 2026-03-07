@@ -1,0 +1,48 @@
+# Componentes de Sistema Cognitivo: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 8: MAPEAMENTO
+# Big Five, MBTI, Eneagrama — derivados de 96 MIUs + material bruto
+# Gerado em: 2026-03-07
+
+system_identity:
+  mind: "joseph-sugarman"
+  name: "Joseph Sugarman"
+
+big_five:
+  openness:
+    score: 82
+    evidencia: "Alta abertura a experiencias — explorava vida intensamente ('explore life in its fullest'), criou formatos ineditos (infomercials candid camera), cruzou fronteiras (CIA, ski lifts, eletronicos, oculos, jornal). Curiosidade intelectual profunda sobre psicologia humana. Porem, abertura DIRECIONADA — sempre conectada a aplicacao pratica de marketing."
+
+  conscientiousness:
+    score: 78
+    evidencia: "Altamente consciencioso em trabalho — sistematizou 30 triggers em taxonomia, criou 17 axioms formais, testava meticulosamente no WSJ. Clean desk como Success Force. Porem, vida pessoal mostrava risco alto (investimentos arriscados, Batman card, felon hair growth). Conscienciosidade SELETIVA: maxima no craft, moderada nos negocios."
+
+  extraversion:
+    score: 70
+    evidencia: "Moderadamente extrovertido — confortavel em seminarios, entrevistas, infomerciais. Storyteller nato que engajava audiencias. Porem, nao era showman agressivo — tom educado e polido, nao dominante. Preferia persuasao sutil a confronto direto. Extroversao ELEGANTE, nao ruidosa."
+
+  agreeableness:
+    score: 72
+    evidencia: "Agreeableness acima da media — educado, polido, generoso com conhecimento (seminarios, livros). Pagou credores apos falencia. Customer service excepcional (dog/BluBlocker story). Porem, nao era pushover — cortava relacoes com gente desonesta, defendia posicoes firmemente. Agreeableness GENUINA mas com limites claros."
+
+  neuroticism:
+    score: 35
+    evidencia: "Baixo neuroticismo — resiliencia notavel. Faliu com Batman, voltou. Perdeu milhoes com hair growth, seguiu em frente. 46 anos perseguindo um projeto sem frustração destrutiva. 'I just really believed I would be a success.' Otimismo fundamental inabalavel. Coping via humor e reframing (problemas = oportunidades)."
+
+mbti:
+  type: "ENFP"
+  confidence: 0.88
+  evidencia: "E (Extrovertido): energizado por audiencias, seminarios, entrevistas, storytelling. Compartilha conhecimento proativamente. N (Intuitivo): ve padroes onde outros veem caos (fads = oportunidades, problemas = oportunidades), conceitos sobre detalhes ('sell concept not product'), visao de longo prazo (46 anos Batman). F (Sentimental): decisoes guiadas por crencas (honestidade, karma, integridade) mais que logica pura. Emocao como motor primario. Conexao pessoal como ferramenta ('every communication should be personal'). P (Perceptivo): flexivel, oportunista (BluBlocker de ultima hora), explora vida completamente, multiplos projetos simultaneos. ENFP (The Campaigner/Champion): entusiasta, criativo, orientado a pessoas, ve potencial em tudo, conecta ideias diversas."
+
+eneagrama:
+  type: 3
+  wing: 7
+  descricao: "O Realizador com asa Entusiasta"
+  evidencia: "Tipo 3: orientado a resultados tangiveis (20M BluBlockers vendidos, numeros especificos), imagem de sucesso, adaptavel a diferentes midias (print, TV, infomercial, seminarios), competitivo mas educado, 'Direct Marketing Man of the Year'. Asa 7: curioso, explorador, otimista inabalavel, multiplos projetos, busca experiencias diversas (CIA, ski lifts, jornal, Maui). Integracao para 6 (Leal): honestidade como forca suprema, integridade com credores, lealdade a principios."
+
+  instintos:
+    dominante: "Social (SO)"
+    secundario: "Self-Preservation (SP)"
+    evidencia: "SO: foco em influencia e impacto social (seminarios, livros, ensino), construcao de reputacao ('Direct Marketing Man of the Year'), generosidade com conhecimento. SP: seguranca financeira como drive (criar marca propria apos MagicStat), diversificacao de negocios, pragmatismo nos testes."
+
+  tritype: "371"
+  tritype_descricao: "3-7-1: Realizador-Entusiasta-Perfeccionista. Combina drive por resultados tangiveis (3) com curiosidade exploradora e otimismo (7) e principios morais firmes como honestidade (1). Explica: empreendedor ético que persegue sucesso com entusiasmo enquanto mantém integridade inabalável."

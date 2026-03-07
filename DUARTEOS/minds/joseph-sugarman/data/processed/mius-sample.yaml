@@ -1,0 +1,478 @@
+# MIUs Sample — Joseph Sugarman
+# Pipeline MMOS v3 — Fase 2: Analise Rapida
+# Gerado em: 2026-03-07
+# Total MIUs: 48
+# Fontes amostradas: 8 de 24 (33%)
+
+mius:
+
+  # === FILOSOFIA / CRENCAS CORE ===
+
+  - id: "JS-MIU-001"
+    conteudo: "Copywriting is a mental process the successful execution of which reflects the sum total of all your experiences, your specific knowledge and your ability to mentally process that information and transfer it onto a sheet of paper for the purpose of selling a product or service."
+    tipo: "definicao"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-014"
+    relevancia: 98
+    contexto: "Axiom 1 do livro Advertising Secrets of the Written Word"
+
+  - id: "JS-MIU-002"
+    conteudo: "People buy on emotion, justify with logic."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-001"
+    relevancia: 99
+    contexto: "Frase assinatura repetida em multiplas entrevistas e livros"
+
+  - id: "JS-MIU-003"
+    conteudo: "The more honest you are in your business, the more successful you will be. Honesty is the strongest and most powerful success force."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-015"
+    relevancia: 95
+    contexto: "Success Force #1 do livro Success Forces"
+
+  - id: "JS-MIU-004"
+    conteudo: "For every problem, there lies an opportunity so great that it dwarfs the problem."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-003"
+    relevancia: 97
+    contexto: "Filosofia central repetida em todas as entrevistas — BluBlocker nasceu de um problema"
+
+  - id: "JS-MIU-005"
+    conteudo: "I am probably the biggest failure you'll ever interview. I used to fail nine out of ten times. But it was that one success that would just explode my sales."
+    tipo: "crenca"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-001"
+    relevancia: 96
+    contexto: "Entrevista Mixergy — sobre fracasso como forca de sucesso"
+
+  - id: "JS-MIU-006"
+    conteudo: "The key to success is to duplicate yourself. And you do that by simply writing copy that you can disseminate to millions of people."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "visao_de_mundo"
+    source_path: "JS-SRC-003"
+    relevancia: 94
+    contexto: "Entrevista InspiredInsider — sobre o poder do copywriting"
+
+  - id: "JS-MIU-007"
+    conteudo: "I just really believed I would be a success. It was this constant belief that got me through a lot of failures."
+    tipo: "crenca"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    source_path: "JS-SRC-003"
+    relevancia: 92
+    contexto: "Entrevista InspiredInsider — sobre mindset de sucesso"
+
+  - id: "JS-MIU-008"
+    conteudo: "You only deal with really good people. If you suspect somebody as being not right, don't deal with them."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "principios_inegociaveis"
+    source_path: "JS-SRC-001"
+    relevancia: 88
+    contexto: "Mixergy — licao do felon que o enganou no produto de hair growth"
+
+  - id: "JS-MIU-009"
+    conteudo: "Every time you copy, it's a failure force. Every time you innovate and do something different, you create a very powerful Success Force."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-015"
+    relevancia: 93
+    contexto: "Success Force #5 — Do It Differently"
+
+  # === FRAMEWORKS / AXIOMS ===
+
+  - id: "JS-MIU-010"
+    conteudo: "All the elements in an advertisement are primarily designed to do one thing and one thing only: get you to read the first sentence of the copy."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 99
+    contexto: "Axiom 2 — fundamento do Slippery Slide"
+
+  - id: "JS-MIU-011"
+    conteudo: "The sole purpose of the first sentence in an advertisement is to get you to read the second sentence."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 99
+    contexto: "Axiom 3 — nucleo do Slippery Slide concept"
+
+  - id: "JS-MIU-012"
+    conteudo: "Your ad layout and the first few paragraphs of your ad must create the buying environment most conducive to the sale of your product or service."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 95
+    contexto: "Axiom 4 — Buying Environment concept"
+
+  - id: "JS-MIU-013"
+    conteudo: "Get the reader to say yes and harmonize with your accurate and truthful statements while reading the copy."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 94
+    contexto: "Axiom 5 — Harmony / Yes momentum"
+
+  - id: "JS-MIU-014"
+    conteudo: "Your readers should be so compelled to read your copy that they cannot stop reading until they read all of it as if sliding down a slippery slope."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 99
+    contexto: "Axiom 6 — The Slippery Slide definicao formal"
+
+  - id: "JS-MIU-015"
+    conteudo: "Never sell a product or service, sell a concept."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 96
+    contexto: "Axiom 9 — Concept selling"
+
+  - id: "JS-MIU-016"
+    conteudo: "Selling a cure is a lot easier than selling a preventative, unless the preventative is perceived as a cure."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 95
+    contexto: "Axiom 16 — Sell the cure, not the prevention"
+
+  - id: "JS-MIU-017"
+    conteudo: "The incubation process is the power of your subconscious mind to use all your knowledge and experience to solve a specific problem."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 92
+    contexto: "Axiom 10 — Incubation process"
+
+  - id: "JS-MIU-018"
+    conteudo: "Copy should be long enough to cause the reader to take the action that you request."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 90
+    contexto: "Axiom 11 — Long copy vs short copy"
+
+  - id: "JS-MIU-019"
+    conteudo: "Telling a story can effectively sell your product, create the environment or get the reader well into your copy as you create an emotional bonding with your prospect."
+    tipo: "axiom"
+    camada_dna: "frameworks"
+    subcamada: "primarios"
+    source_path: "JS-SRC-014"
+    relevancia: 97
+    contexto: "Axiom 17 — Storytelling"
+
+  # === FRAMEWORKS / TRIGGERS PSICOLOGICOS ===
+
+  - id: "JS-MIU-020"
+    conteudo: "Satisfaction conviction: if you offer somebody a year-long trial instead of 30 days, sales explode. I've changed one sentence at the end of a 1000-word ad and sales just exploded."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-003"
+    relevancia: 96
+    contexto: "InspiredInsider — trigger favorito de Sugarman"
+
+  - id: "JS-MIU-021"
+    conteudo: "Curiosity: you want to build curiosity so when they start reading your ad, they don't stop until they finish and go to the end."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-001"
+    relevancia: 97
+    contexto: "Mixergy — explicando curiosity como trigger"
+
+  - id: "JS-MIU-022"
+    conteudo: "Storytelling: people love stories. Most of my ads that were fabulous successes started with stories."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-001"
+    relevancia: 97
+    contexto: "Mixergy — storytelling como trigger mais poderoso"
+
+  - id: "JS-MIU-023"
+    conteudo: "Honesty: the more honest you are, the more happy people will be to deal with you. Trust is another trigger."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-001"
+    relevancia: 93
+    contexto: "Mixergy — honesty e trust como triggers"
+
+  - id: "JS-MIU-024"
+    conteudo: "Feeling of involvement or ownership: make readers feel that they already own the product, letting them use their imagination."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-017"
+    relevancia: 90
+    contexto: "Trigger do Adweek Handbook citado por Benjamin Watkins"
+
+  # === HEURISTICAS ===
+
+  - id: "JS-MIU-025"
+    conteudo: "I knew people were intimidated by installation because I had run other products that required installation and they bombed."
+    tipo: "heuristica"
+    camada_dna: "heuristicas"
+    subcamada: "regras_rapidas"
+    source_path: "JS-SRC-001"
+    relevancia: 88
+    contexto: "Mixergy — como descobriu que instalacao era barreira para thermostat"
+
+  - id: "JS-MIU-026"
+    conteudo: "Direct marketing is very counterintuitive. You never really know what works and what doesn't until you test it."
+    tipo: "heuristica"
+    camada_dna: "heuristicas"
+    subcamada: "regras_rapidas"
+    source_path: "JS-SRC-001"
+    relevancia: 94
+    contexto: "Mixergy — sobre teste como unica verdade"
+
+  - id: "JS-MIU-027"
+    conteudo: "When trying to solve problems, don't assume constraints that aren't really there."
+    tipo: "axiom"
+    camada_dna: "heuristicas"
+    subcamada: "regras_rapidas"
+    source_path: "JS-SRC-014"
+    relevancia: 90
+    contexto: "Axiom 7 — nao assumir restricoes que nao existem"
+
+  - id: "JS-MIU-028"
+    conteudo: "In the editing process, you refine your copy to express what you want to express with the fewest words."
+    tipo: "axiom"
+    camada_dna: "heuristicas"
+    subcamada: "regras_rapidas"
+    source_path: "JS-SRC-014"
+    relevancia: 88
+    contexto: "Axiom 14 — editing como reducao"
+
+  - id: "JS-MIU-029"
+    conteudo: "The more the mind must work to reach the conclusion successfully, the more positive, enjoyable or stimulating the experience."
+    tipo: "axiom"
+    camada_dna: "heuristicas"
+    subcamada: "regras_rapidas"
+    source_path: "JS-SRC-014"
+    relevancia: 86
+    contexto: "Axiom 15 — engagement mental"
+
+  # === METODOLOGIAS / PROCESSO ===
+
+  - id: "JS-MIU-030"
+    conteudo: "First, become an expert on the product. The more detail you get, the more ideas will pop out."
+    tipo: "processo"
+    camada_dna: "metodologias"
+    subcamada: "processos"
+    source_path: "JS-SRC-003"
+    relevancia: 96
+    contexto: "InspiredInsider — processo de escrita, passo 1"
+
+  - id: "JS-MIU-031"
+    conteudo: "I just write. I don't care about grammar or punctuation. Then it's in the editing process where you go back and simplify things."
+    tipo: "processo"
+    camada_dna: "metodologias"
+    subcamada: "processos"
+    source_path: "JS-SRC-003"
+    relevancia: 94
+    contexto: "InspiredInsider — processo de first draft"
+
+  - id: "JS-MIU-032"
+    conteudo: "Put it aside if you're having a rough time. Your brain is working 24/7. You're taking a shower and all of a sudden boom, the idea pops up."
+    tipo: "processo"
+    camada_dna: "metodologias"
+    subcamada: "processos"
+    source_path: "JS-SRC-003"
+    relevancia: 92
+    contexto: "InspiredInsider — incubation process na pratica"
+
+  - id: "JS-MIU-033"
+    conteudo: "I would place a small ad in the southwest edition of the Wall Street Journal, which is the smallest edition. The results I got I used to decide to run the ad."
+    tipo: "processo"
+    camada_dna: "metodologias"
+    subcamada: "processos"
+    source_path: "JS-SRC-001"
+    relevancia: 90
+    contexto: "Mixergy — processo de teste A/B em print ads"
+
+  - id: "JS-MIU-034"
+    conteudo: "Television is an entertainment media. If you can entertain your customers, they'll keep watching."
+    tipo: "principio"
+    camada_dna: "metodologias"
+    subcamada: "ferramentas_preferidas"
+    source_path: "JS-SRC-001"
+    relevancia: 92
+    contexto: "Mixergy — filosofia dos infomercials BluBlocker"
+
+  # === NARRATIVA / STORIES ===
+
+  - id: "JS-MIU-035"
+    conteudo: "I was driving down the 405 in LA, a friend hands me sunglasses. I stopped squinting. I said 'This would make a great mail order item.' The company was going out of business. That became BluBlocker."
+    tipo: "origin-story"
+    camada_dna: "narrativa"
+    subcamada: "self_narrative"
+    source_path: "JS-SRC-001"
+    relevancia: 98
+    contexto: "Mixergy — BluBlocker origin story em primeira pessoa"
+
+  - id: "JS-MIU-036"
+    conteudo: "We never let anybody look through the lens on the TV show. You had to buy the pair in order to know. When QVC did that once, our sales were terrible."
+    tipo: "insight-estrategico"
+    camada_dna: "narrativa"
+    subcamada: "storytelling_patterns"
+    source_path: "JS-SRC-001"
+    relevancia: 95
+    contexto: "Mixergy — segredo do infomercial BluBlocker: manter curiosidade"
+
+  - id: "JS-MIU-037"
+    conteudo: "Then I get a call from the manufacturer: 'Honeywell has bought our company for millions. Thank you for all the help.' I said, 'Next time I'm going to create my own brand name.' That led to BluBlocker."
+    tipo: "origin-story"
+    camada_dna: "narrativa"
+    subcamada: "self_narrative"
+    source_path: "JS-SRC-001"
+    relevancia: 94
+    contexto: "Mixergy — MagicStat levou a licao de ter marca propria"
+
+  - id: "JS-MIU-038"
+    conteudo: "In 1966, Batman was a fad, credit cards were a fad. I said I'm going to sell a Batman credit card. I spent everything. The president said 'I made $60 million off Batman. I don't like your idea. Get out.' I was flat broke."
+    tipo: "failure-story"
+    camada_dna: "narrativa"
+    subcamada: "self_narrative"
+    source_path: "JS-SRC-003"
+    relevancia: 93
+    contexto: "InspiredInsider — Batman credit card story completa"
+
+  - id: "JS-MIU-039"
+    conteudo: "I made a military sounding sign: 'Anybody touching the switch will be subject to court martial.' For three weeks I took the longest showers. The general found out, laughed, and gave me a juicy assignment in Germany."
+    tipo: "origin-story"
+    camada_dna: "narrativa"
+    subcamada: "self_narrative"
+    source_path: "JS-SRC-003"
+    relevancia: 90
+    contexto: "InspiredInsider — warm shower story, copywriting na vida real"
+
+  # === COMPORTAMENTO ===
+
+  - id: "JS-MIU-040"
+    conteudo: "I look at the ads I wrote initially and it's embarrassing. I point these out to my seminar participants. The more you write, the more successful you become."
+    tipo: "comportamento"
+    camada_dna: "comportamento"
+    subcamada: "quando_ensina"
+    source_path: "JS-SRC-001"
+    relevancia: 88
+    contexto: "Mixergy — humildade ao ensinar, mostrando erros proprios"
+
+  - id: "JS-MIU-041"
+    conteudo: "I learned more from the seminars than the students did. I really learned a lot just by teaching what I knew."
+    tipo: "insight"
+    camada_dna: "comportamento"
+    subcamada: "quando_ensina"
+    source_path: "JS-SRC-001"
+    relevancia: 90
+    contexto: "Mixergy — ensinar como forma de aprender"
+
+  - id: "JS-MIU-042"
+    conteudo: "I had this one farmer who sold grapefruits. He came to my seminar, wrote his ad, ran it for 10 years, made millions. That's the way it goes."
+    tipo: "exemplo"
+    camada_dna: "comportamento"
+    subcamada: "quando_ensina"
+    source_path: "JS-SRC-001"
+    relevancia: 85
+    contexto: "Mixergy — exemplo de aluno que aplicou os principios"
+
+  # === DILEMAS ===
+
+  - id: "JS-MIU-043"
+    conteudo: "It was illegal to take a credit card order over the phone. I said, 'I'm going to put in my ads: Credit card buyers call toll-free.' We were deluged the first day."
+    tipo: "dilema-acao"
+    camada_dna: "dilemas"
+    subcamada: "zonas_cinza"
+    source_path: "JS-SRC-001"
+    relevancia: 96
+    contexto: "Mixergy — breaking the law para inovar (toll-free revolution)"
+
+  - id: "JS-MIU-044"
+    conteudo: "My competitors asked 'How are you doing it?' 'I bet you get ripped off a lot.' We weren't getting ripped off at all. Then AT&T ran a full-page ad in the Wall Street Journal endorsing what we did."
+    tipo: "validation-story"
+    camada_dna: "dilemas"
+    subcamada: "evolucao"
+    source_path: "JS-SRC-001"
+    relevancia: 94
+    contexto: "Mixergy — validacao da inovacao toll-free"
+
+  # === SUCCESS FORCES ===
+
+  - id: "JS-MIU-045"
+    conteudo: "By concentrating solidly in one area, you eventually learn from your mistakes, and as you learn, your productivity increases."
+    tipo: "principio"
+    camada_dna: "filosofia"
+    subcamada: "crencas_core"
+    source_path: "JS-SRC-015"
+    relevancia: 88
+    contexto: "Success Force #4 — Concentrate Your Powers"
+
+  - id: "JS-MIU-046"
+    conteudo: "Clean your desk at the end of every day. It forces you to organize your work, organize your workload, and put things into proper perspective."
+    tipo: "habito"
+    camada_dna: "metodologias"
+    subcamada: "ferramentas_preferidas"
+    source_path: "JS-SRC-015"
+    relevancia: 82
+    contexto: "Success Force #6 — Clear Your Desk"
+
+  - id: "JS-MIU-047"
+    conteudo: "Google hired me. A guy bought my book, rewrote his ad using my techniques, and it doubled response. They had me teach all their marketing people for three days."
+    tipo: "validation-story"
+    camada_dna: "narrativa"
+    subcamada: "self_narrative"
+    source_path: "JS-SRC-001"
+    relevancia: 92
+    contexto: "Mixergy — Google como validacao da metodologia"
+
+  - id: "JS-MIU-048"
+    conteudo: "Greed plays a big role. If somebody you dislike offers something that's too irresistible, it's hard to say no."
+    tipo: "trigger"
+    camada_dna: "frameworks"
+    subcamada: "triggers"
+    source_path: "JS-SRC-001"
+    relevancia: 85
+    contexto: "Mixergy — sobre greed como trigger complementar"
+
+# === METRICAS DE COBERTURA ===
+
+metricas:
+  total_mius: 48
+  fontes_amostradas: 8
+  percentual_amostra: 33
+  por_camada_dna:
+    filosofia: 11
+    frameworks: 14
+    heuristicas: 5
+    metodologias: 6
+    narrativa: 7
+    comportamento: 3
+    dilemas: 2
+  cobertura_camadas: 7
+  camadas_total: 7
+  cobertura_percentual: 100
+  qualidade_media: 92.4
+  mius_relevancia_90_plus: 36
+  mius_relevancia_80_89: 12

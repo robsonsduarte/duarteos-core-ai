@@ -1,0 +1,19 @@
+# Framework: Reverse Psychology Ad
+# Mind: Joseph Sugarman | Framework Avancado de Copy
+framework:
+  name: "Reverse Psychology Ad"
+  descricao: "Tecnica de abrir ad atacando o proprio produto — apontar defeitos, criticar nome, questionar qualidade — para criar curiosidade massiva e confianca profunda. O ataque VENDE mais que o elogio."
+  quando_usar: "Quando produto tem feature forte escondida atras de percepcao fraca, ou quando mercado esta saturado de ads exagerados"
+  steps:
+    - "ATAQUE: identifique o que eh genuinamente fraco no produto (nome, design, complexidade)"
+    - "CRITICA: exponha os defeitos honestamente no inicio do ad"
+    - "CURIOSIDADE: leitor pensa 'por que estao me dizendo isso? qual eh o catch?'"
+    - "REVELACAO: 'but there was ONE feature that caught my attention...'"
+    - "CONCEITO: a feature revelada eh tao forte que justifica tudo"
+    - "CONFIANCA: leitor confia 100% porque voce foi honesto sobre os defeitos"
+  case_estudo: "MagicStat Thermostat — atacou nome e design, revelou facilidade de instalacao, vendeu por 10 anos"
+  evidencias:
+    - "Mixergy: 'We're going to tear it apart unmercilessly'"
+    - "Mulher que leu ad inteiro sem interesse em termostato"
+    - "Honeywell comprou a empresa por milhoes"
+  fonte: "MagicStat campaign + Mixergy interview"

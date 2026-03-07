@@ -1,0 +1,506 @@
+# Catalogo de Fontes — Joseph Sugarman
+# Pipeline MMOS v3 — Fase 1: Pesquisa
+# Gerado em: 2026-03-07
+# Total de fontes: 24
+# Distribuicao: entrevistas(4), artigos-analise(8), obituarios-bio(4), livros-ref(5), analises-tecnicas(3)
+
+fontes:
+  # === TIER 1: ENTREVISTAS DIRETAS (PRIMARIAS) ===
+
+  - id: "JS-SRC-001"
+    titulo: "Mixergy Interview — How legendary copywriter Joe Sugarman gets his creativity"
+    url: "https://mixergy.com/interviews/blublocker-with-joe-sugarman/"
+    tipo: "entrevista-transcrita"
+    profundidade: "alta"
+    idioma: "en"
+    autor_entrevistador: "Andrew Warner"
+    data_publicacao: "~2015"
+    conteudo_extraido: true
+    palavras_estimadas: 8500
+    relevancia: 98
+    categorias_dna:
+      - filosofia
+      - frameworks
+      - heuristicas
+      - metodologias
+      - dilemas
+      - narrativa
+      - comportamento
+    notas: >
+      Entrevista COMPLETA transcrita. Sugarman fala em primeira pessoa sobre:
+      BluBlocker origin story, toll-free number innovation, MagicStat thermostat ad,
+      storytelling como trigger, curiosity, honesty, failure como success force,
+      Google o contratou para ensinar copywriting, Batman credit card story,
+      processo criativo, incubation, e filosofia de vida.
+
+  - id: "JS-SRC-002"
+    titulo: "MeetInnovators Interview — Joe Sugarman from BluBlocker (Full Transcript)"
+    url: "https://meetinnovators.com/2007/08/16/joe-sugarman-from-blublocker-docs/full-transcript.html"
+    tipo: "entrevista-transcrita"
+    profundidade: "alta"
+    idioma: "en"
+    autor_entrevistador: "Adrian Bye"
+    data_publicacao: "2007-08-16"
+    conteudo_extraido: true
+    palavras_estimadas: 12000
+    relevancia: 97
+    categorias_dna:
+      - filosofia
+      - frameworks
+      - heuristicas
+      - metodologias
+      - narrativa
+      - comportamento
+    notas: >
+      Entrevista longa e detalhada. Cobre: inicio na universidade (ad agency informal),
+      exercito/CIA na Alemanha, ski lift business, JS&A, pocket calculator,
+      digital watch, cordless phone, BluBlocker origin, infomercials, QVC (vendeu 20k pares
+      no primeiro slot), toll-free revolution, TV media buying vs internet media,
+      livros favoritos (Winning Through Intimidation, 4-Hour Workweek).
+
+  - id: "JS-SRC-003"
+    titulo: "InspiredInsider — Triggers, Toll-Free Triumphs, and Tales From a Marketing Legend"
+    url: "https://www.inspiredinsider.com/triggers-toll-free-triumphs-and-tales-from-a-marketing-legend-with-joe-sugarman/"
+    tipo: "entrevista-transcrita"
+    profundidade: "alta"
+    idioma: "en"
+    autor_entrevistador: "Jeremy Weisz"
+    data_publicacao: "2024-03-13"
+    conteudo_extraido: true
+    palavras_estimadas: 10000
+    relevancia: 96
+    categorias_dna:
+      - filosofia
+      - frameworks
+      - heuristicas
+      - metodologias
+      - dilemas
+      - narrativa
+      - comportamento
+    notas: >
+      Entrevista em 2 paginas. Cobre: CIA double agent story, warm shower copywriting sign,
+      grammar school slogan contest (2nd grade), 5th grade composition,
+      Batman credit card story completa (46 anos de perseveranca),
+      BluBlocker origin, toll-free revolution, triggers favoritos
+      (satisfaction conviction, curiosity, storytelling), slippery slide,
+      Consumers Hero headline "Hot", MagicStat "Baloney",
+      incubation process, writing process (just write, edit later),
+      biotech hair growth venture, book Success Forces / Seven Forces.
+
+  - id: "JS-SRC-004"
+    titulo: "Joseph Bushnell Interview — Joe Sugarman: 7 Figure Secrets of a Marketing Legend"
+    url: "https://josephbushnell.com/the-online-marketing-show/joe-sugarman/"
+    tipo: "entrevista-audio-descricao"
+    profundidade: "media"
+    idioma: "en"
+    autor_entrevistador: "Joseph Bushnell"
+    data_publicacao: "2021-10-18"
+    conteudo_extraido: true
+    palavras_estimadas: 800
+    relevancia: 75
+    categorias_dna:
+      - frameworks
+      - heuristicas
+    notas: >
+      Pagina de descricao do episodio. Menciona: psychological triggers,
+      3 powerful emotions, slippery slide formula, over-delivery strategy.
+
+  # === TIER 1: BIOGRAFIAS E OBITUARIOS (PRIMARIAS) ===
+
+  - id: "JS-SRC-005"
+    titulo: "Joseph Sugarman Obituary — Chicago Tribune / Legacy.com"
+    url: "https://www.legacy.com/us/obituaries/chicagotribune/name/joseph-sugarman-obituary?id=33817598"
+    tipo: "obituario"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "2022-03-25"
+    conteudo_extraido: true
+    palavras_estimadas: 500
+    relevancia: 90
+    categorias_dna:
+      - narrativa
+      - filosofia
+    notas: >
+      Obituario oficial. Nascimento: April 25, 1938, Oak Park, IL.
+      Falecimento: March 18, 2022, Las Vegas, NV. Idade: 83.
+      University of Miami (electrical engineering). Drafted 1962.
+      3+ anos na Alemanha, Army Intelligence + CIA.
+      JS&A em 1971 no basement em Northbrook, IL.
+      Primeiro toll-free 800 number para credit cards.
+
+  - id: "JS-SRC-006"
+    titulo: "PR Newswire — Successful Entrepreneur and Founder of BluBlocker Sunglasses Passes at 83"
+    url: "https://www.prnewswire.com/news-releases/successful-entrepreneur-and-founder-of-blublocker-sunglasses-joseph-sugarman-passes-at-83-301510478.html"
+    tipo: "press-release"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "2022-03-25"
+    conteudo_extraido: true
+    palavras_estimadas: 600
+    relevancia: 85
+    categorias_dna:
+      - narrativa
+    notas: "Press release oficial da BluBlocker Corporation."
+
+  - id: "JS-SRC-007"
+    titulo: "USA Dreams — Joseph Sugarman Biography"
+    url: "https://usdreams.com/joseph-sugarman/"
+    tipo: "biografia"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "2025"
+    conteudo_extraido: true
+    palavras_estimadas: 800
+    relevancia: 88
+    categorias_dna:
+      - narrativa
+      - filosofia
+      - metodologias
+    notas: >
+      Biografia completa. Direct Marketing Man of the Year 1979.
+      Maxwell Sackheim Award 1991. "Mail Order Maverick" - NYT.
+      5th grade essay, university fraternity transformation,
+      Ski Lift International (1965-1973), pocket calculator,
+      JS&A lawsuits (Atari, Data Cash Systems), BluBlocker origin,
+      Delstar Publishing, Stem120 anti-aging.
+
+  - id: "JS-SRC-008"
+    titulo: "Chicago Sun-Times — Joseph Sugarman used words to move BluBlocker sunglasses"
+    url: "https://chicago.suntimes.com/obituaries/2022/3/25/22996929/joseph-sugarman-obituary-mail-order-products-blublocker-sunglasses"
+    tipo: "obituario-jornalistico"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "2022-03-25"
+    conteudo_extraido: false
+    palavras_estimadas: 1200
+    relevancia: 85
+    categorias_dna:
+      - narrativa
+      - filosofia
+    notas: "Obituario jornalistico do Chicago Sun-Times."
+
+  # === TIER 1: LIVROS E CONTEUDO AUTORAL (REFERENCIAS PRIMARIAS) ===
+
+  - id: "JS-SRC-009"
+    titulo: "The Adweek Copywriting Handbook (Goodreads)"
+    url: "https://www.goodreads.com/book/show/9776346"
+    tipo: "livro-referencia"
+    profundidade: "alta"
+    idioma: "en"
+    data_publicacao: "2006"
+    conteudo_extraido: true
+    palavras_estimadas: 300
+    relevancia: 99
+    categorias_dna:
+      - frameworks
+      - metodologias
+      - heuristicas
+      - filosofia
+    notas: >
+      Livro principal. 1589 ratings, 4.14 avg. 368 pages.
+      Contem: 17 axioms, 30 psychological triggers, slippery slide,
+      buying environment, incubation process, copy elements.
+      Originalmente "Advertising Secrets of the Written Word" (1998).
+
+  - id: "JS-SRC-010"
+    titulo: "Triggers (Goodreads/Amazon)"
+    url: "https://www.amazon.com/Triggers-Prospect-Motivate-Influence-Persuade/dp/1891686038"
+    tipo: "livro-referencia"
+    profundidade: "alta"
+    idioma: "en"
+    data_publicacao: "1999"
+    conteudo_extraido: false
+    palavras_estimadas: 200
+    relevancia: 98
+    categorias_dna:
+      - frameworks
+      - heuristicas
+      - filosofia
+    notas: >
+      30 psychological triggers catalogados. Capitulos com titulos criativos:
+      Ice Cream Ordering Sequence, Love and the Campus Hooker,
+      Gorilla Survival Tactics, Brain Surgery for Dummies, etc.
+
+  - id: "JS-SRC-011"
+    titulo: "Success Forces / The Seven Forces of Success (Goodreads)"
+    url: "https://www.goodreads.com/book/show/24581103-the-seven-forces-of-success"
+    tipo: "livro-referencia"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "1980/2014"
+    conteudo_extraido: true
+    palavras_estimadas: 400
+    relevancia: 85
+    categorias_dna:
+      - filosofia
+      - narrativa
+      - heuristicas
+    notas: >
+      7 Forces: Focus on Helping Others, Clean Your Desk, Do It Differently,
+      Focus Your Energy, Turn Problems into Opportunities, Learn from Failures,
+      Always Be Honest. Autobiografico. Karma.
+
+  - id: "JS-SRC-012"
+    titulo: "Advertising Secrets of the Written Word (AbeBooks description)"
+    url: "https://www.abebooks.com/9781891686009/Advertising-Secrets-Written-Word-Ultimate-1891686003/plp"
+    tipo: "livro-referencia"
+    profundidade: "media"
+    idioma: "en"
+    data_publicacao: "1998"
+    conteudo_extraido: true
+    palavras_estimadas: 300
+    relevancia: 92
+    categorias_dna:
+      - frameworks
+      - metodologias
+    notas: >
+      Descricao editorial. Sections: principles of copywriting (graphic elements,
+      first sentence, buying environment), copy elements (typeface, paragraph headings,
+      anticipating buyer objections), psychological triggers.
+
+  - id: "JS-SRC-013"
+    titulo: "Scribd — Triggers TOC completo (30 capitulos)"
+    url: "https://www.scribd.com/doc/83808109/Joseph-Sugarman-Triggers-30-Sales-Tools"
+    tipo: "livro-referencia-toc"
+    profundidade: "media"
+    idioma: "en"
+    conteudo_extraido: true
+    palavras_estimadas: 200
+    relevancia: 88
+    categorias_dna:
+      - frameworks
+    notas: >
+      Table of contents completo dos 30 triggers. Revela titulos criativos
+      que demonstram estilo narrativo de Sugarman.
+
+  # === TIER 1: ARTIGOS ANALÍTICOS BASEADOS EM OBRA PRIMARIA ===
+
+  - id: "JS-SRC-014"
+    titulo: "Lars Lofgren — The 17 Copywriting Axioms of Joseph Sugarman"
+    url: "https://larslofgren.com/joseph-sugarman/"
+    tipo: "artigo-analise"
+    profundidade: "alta"
+    idioma: "en"
+    autor: "Lars Lofgren"
+    data_publicacao: "2013-04-21"
+    conteudo_extraido: true
+    palavras_estimadas: 2500
+    relevancia: 95
+    categorias_dna:
+      - frameworks
+      - metodologias
+      - filosofia
+    notas: >
+      Todos os 17 axioms transcritos e comentados do livro original.
+      Fonte primaria por reproduzir conteudo autoral de Sugarman verbatim.
+
+  - id: "JS-SRC-015"
+    titulo: "AWAI — The Six Success Forces that Helped Turn Joe Sugarman into a Marketing Legend"
+    url: "https://www.awai.com/2011/05/the-six-success-forces/"
+    tipo: "artigo-analise"
+    profundidade: "alta"
+    idioma: "en"
+    autor: "John Wood"
+    data_publicacao: "2011-05-01"
+    conteudo_extraido: true
+    palavras_estimadas: 3500
+    relevancia: 93
+    categorias_dna:
+      - filosofia
+      - heuristicas
+      - narrativa
+    notas: >
+      Analise detalhada das 6 Success Forces do livro de Sugarman:
+      1. Always Be Honest, 2. Cherish Your Failures, 3. Relish Your Problems,
+      4. Concentrate Your Powers, 5. Do It Differently, 6. Clear Your Desk.
+      Inclui exemplos e citacoes diretas do livro.
+
+  - id: "JS-SRC-016"
+    titulo: "Carmine Mastropierro — 7 Epic Joseph Sugarman Copywriting Strategies and Examples"
+    url: "https://carminemastropierro.com/joseph-sugarman/"
+    tipo: "artigo-analise"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Carmine Mastropierro"
+    data_publicacao: "2019-08-02"
+    conteudo_extraido: true
+    palavras_estimadas: 2000
+    relevancia: 82
+    categorias_dna:
+      - frameworks
+      - heuristicas
+    notas: >
+      7 estrategias: slippery slide, every word has emotion,
+      sell cure not prevention, get customer saying yes (harmony),
+      never sell product sell concept, logical flow, emotional outpouring.
+
+  - id: "JS-SRC-017"
+    titulo: "Benjamin Watkins — 25 Psychological Triggers That Get People to Buy"
+    url: "https://watkinstben.medium.com/25-psychological-triggers-that-get-people-to-buy-ae3d1bb426ac"
+    tipo: "artigo-analise"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Benjamin Watkins"
+    data_publicacao: "2023-02-07"
+    conteudo_extraido: true
+    palavras_estimadas: 1500
+    relevancia: 80
+    categorias_dna:
+      - frameworks
+    notas: >
+      Breakdown de 25 triggers do Adweek Handbook com citacoes diretas.
+      Feeling of involvement/ownership, honesty, e outros.
+
+  - id: "JS-SRC-018"
+    titulo: "Nick Waghorn — 7 Lessons From Joseph Sugarman to Make You a Better Copywriter"
+    url: "https://medium.com/better-marketing/7-lessons-from-joseph-sugarman-to-make-you-a-better-copywriter-ed6ab2cd6264"
+    tipo: "artigo-analise"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Nick Waghorn"
+    data_publicacao: "2020-05-12"
+    conteudo_extraido: true
+    palavras_estimadas: 1200
+    relevancia: 78
+    categorias_dna:
+      - frameworks
+      - filosofia
+    notas: >
+      Craziest achievements: airplane $240k, mansion $6M, 20M BluBlockers.
+      Sell on emotion justify with logic.
+
+  - id: "JS-SRC-019"
+    titulo: "Creative Copywriter — Joseph Sugarman's 7 Copywriting Lessons"
+    url: "https://www.creative-copywriter.net/content-marketing/learning-from-joseph-sugarman"
+    tipo: "artigo-analise"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Konrad Sanders"
+    data_publicacao: "2023-02-07"
+    conteudo_extraido: true
+    palavras_estimadas: 1800
+    relevancia: 78
+    categorias_dna:
+      - frameworks
+      - heuristicas
+    notas: "Get the reader to agree, harmony, slippery slide."
+
+  - id: "JS-SRC-020"
+    titulo: "Anspach Media — Joe Sugarman: A Visionary Marketer"
+    url: "https://anspachmedia.com/joe-sugarman-a-visionary-marketer/"
+    tipo: "artigo-analise"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Anspach Media"
+    data_publicacao: "2024-02-06"
+    conteudo_extraido: true
+    palavras_estimadas: 1000
+    relevancia: 75
+    categorias_dna:
+      - filosofia
+      - frameworks
+    notas: "Storytelling, emotional connection, direct response, 1-800 pioneer."
+
+  - id: "JS-SRC-021"
+    titulo: "Joe Polish (Facebook) — Tribute to Joseph Sugarman"
+    url: "https://www.facebook.com/JoePolishFanPage/posts/535998531264084/"
+    tipo: "tributo-colega"
+    profundidade: "baixa"
+    idioma: "en"
+    autor: "Joe Polish"
+    data_publicacao: "2022-03"
+    conteudo_extraido: true
+    palavras_estimadas: 200
+    relevancia: 70
+    categorias_dna:
+      - narrativa
+    notas: >
+      Tribute de Joe Polish. Menciona Brian Kurtz, Jay Abraham, John Carlton
+      compilando colecao de ads de Sugarman. "Curiosity approach to marketing."
+
+  # === TIER 1: ANALISES TECNICAS DE ADS ===
+
+  - id: "JS-SRC-022"
+    titulo: "Upgrow — Master Joe Sugarman's Slippery Slide for Landing Pages"
+    url: "https://www.upgrow.io/blog/joe-sugarman-slippery-slide-landing-page-style"
+    tipo: "analise-tecnica"
+    profundidade: "alta"
+    idioma: "en"
+    conteudo_extraido: true
+    palavras_estimadas: 4000
+    relevancia: 88
+    categorias_dna:
+      - frameworks
+      - metodologias
+    notas: >
+      Analise detalhada do BluBlocker ad com 11 taticas identificadas:
+      storytelling, credibility, curiosity, comparison, educational,
+      problem-solution, testimonial, value proposition, urgency, CTA.
+
+  - id: "JS-SRC-023"
+    titulo: "Ad Breakdowns — Write copy that people ACTUALLY want to read"
+    url: "https://adbreakdowns.com/p/write-copy-that-people-actually-want-to-read"
+    tipo: "analise-tecnica"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Ryan Ferguson"
+    data_publicacao: "2024-09-29"
+    conteudo_extraido: true
+    palavras_estimadas: 800
+    relevancia: 75
+    categorias_dna:
+      - frameworks
+    notas: "Analise de ad real de Sugarman. Slippery Slide + Seed of Curiosity."
+
+  - id: "JS-SRC-024"
+    titulo: "Profit Advisors — Seven Forces of Success Book Review"
+    url: "https://www.profitadvisors.com/sevenforces.shtml"
+    tipo: "resenha-livro"
+    profundidade: "media"
+    idioma: "en"
+    autor: "Michael C. Gray"
+    conteudo_extraido: true
+    palavras_estimadas: 600
+    relevancia: 78
+    categorias_dna:
+      - filosofia
+      - narrativa
+    notas: >
+      Review do Seven Forces. "JS&A was the model for The Sharper Image."
+      7 Forces listadas com contexto.
+
+# === METRICAS DE COBERTURA ===
+
+metricas:
+  total_fontes: 24
+  por_tipo:
+    entrevista_transcrita: 3
+    entrevista_descricao: 1
+    obituario: 2
+    biografia: 1
+    press_release: 1
+    livro_referencia: 5
+    artigo_analise: 7
+    analise_tecnica: 2
+    tributo: 1
+    resenha: 1
+  por_profundidade:
+    alta: 9
+    media: 14
+    baixa: 1
+  por_idioma:
+    en: 24
+  fontes_primarias: 24
+  fontes_secundarias: 0
+  conteudo_extraido: 22
+  total_palavras_estimadas: 53400
+  cobertura_dna:
+    filosofia: 14
+    frameworks: 16
+    heuristicas: 10
+    metodologias: 9
+    dilemas: 3
+    narrativa: 10
+    comportamento: 3
+  trigger_enriquecimento: false
+  nota: "24 fontes superam threshold de 21. Distribuicao boa por tipo e cobertura DNA."

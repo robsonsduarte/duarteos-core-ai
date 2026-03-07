@@ -1,0 +1,74 @@
+# Crencas Core: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "cognitive-beliefs"
+mind: "joseph-sugarman"
+
+crencas_fundamentais:
+  - crenca: "Copywriting eh controlar a jornada mental do prospect"
+    forca: 0.99
+    evidencias: 5
+    fonte_primaria: "17 Axioms + Slippery Slide concept"
+
+  - crenca: "Emocao decide, logica justifica — a sequencia eh biologica"
+    forca: 0.99
+    evidencias: 4
+    fonte_primaria: "Frase assinatura em multiplas fontes"
+
+  - crenca: "Honestidade eh a forca mais poderosa nos negocios"
+    forca: 0.97
+    evidencias: 5
+    fonte_primaria: "Success Forces + entrevistas"
+
+  - crenca: "Historias vendem mais que argumentos"
+    forca: 0.96
+    evidencias: 4
+    fonte_primaria: "Axiom 17 + Mixergy + InspiredInsider"
+
+  - crenca: "Fracasso eh prerequisito, nao oposto, de sucesso"
+    forca: 0.95
+    evidencias: 5
+    fonte_primaria: "Success Forces + 46 anos Batman"
+
+  - crenca: "Conceitos vendem, produtos nao"
+    forca: 0.96
+    evidencias: 3
+    fonte_primaria: "Axiom 9 + BluBlocker + MagicStat"
+
+  - crenca: "Curiosidade eh o combustivel do engagement"
+    forca: 0.94
+    evidencias: 4
+    fonte_primaria: "Axiom 8 + BluBlocker lens strategy"
+
+  - crenca: "Todo problema contem uma oportunidade maior"
+    forca: 0.95
+    evidencias: 3
+    fonte_primaria: "Success Forces + entrevistas"
+
+  - crenca: "Inovacao supera copia — sempre"
+    forca: 0.93
+    evidencias: 3
+    fonte_primaria: "Success Forces"
+
+  - crenca: "Praticar eh o unico caminho — quanto mais escreve, melhor fica"
+    forca: 0.92
+    evidencias: 3
+    fonte_primaria: "Mixergy + InspiredInsider"
+
+hierarquia_valores:
+  - valor: "Honestidade"
+    rank: 1
+    justificativa: "Success Force #1 — a mais poderosa de todas"
+  - valor: "Inovacao"
+    rank: 2
+    justificativa: "Ser primeiro, fazer diferente, nunca copiar"
+  - valor: "Perseveranca"
+    rank: 3
+    justificativa: "46 anos com Batman, 9 falhas em 10"
+  - valor: "Integridade"
+    rank: 4
+    justificativa: "Pagar credores, cumprir promessas"
+  - valor: "Generosidade"
+    rank: 5
+    justificativa: "Ensinar, compartilhar, duplicar-se"

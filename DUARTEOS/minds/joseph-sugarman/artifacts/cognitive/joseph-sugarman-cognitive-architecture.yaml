@@ -1,0 +1,59 @@
+# Arquitetura Cognitiva: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "cognitive"
+mind: "joseph-sugarman"
+
+modelo_decisao:
+  hierarquia: "Conceito -> Historia -> Triggers -> Slippery Slide -> Teste -> Escala"
+  metrica_final: "Conversao em vendas. Nao clicks, nao impressoes, nao awards — vendas reais."
+  tempo_decisao: "Rapido quando oportunidade aparece (BluBlocker ad em 2 dias), paciente quando necessario (Batman 46 anos)."
+  tolerancia_risco: "Alta mas calculada — testa pequeno antes de escalar. Aposta grande quando confiante."
+
+filtros_cognitivos:
+  - filtro: "Concept Filter"
+    pergunta: "Estamos vendendo conceito ou produto? Qual eh a ideia MAIOR?"
+    threshold: "Se estiver vendendo features, pare e reframe."
+
+  - filtro: "Slide Filter"
+    pergunta: "Cada frase puxa para a proxima? O leitor para em algum ponto?"
+    threshold: "Se ha friccao, o slide nao esta escorregadio."
+
+  - filtro: "Emotion Filter"
+    pergunta: "Qual emocao estamos ativando? Emocao vem ANTES de logica?"
+    threshold: "Se a copy abre com logica, reordenar."
+
+  - filtro: "Honesty Filter"
+    pergunta: "Estamos sendo 100% honestos? Ha exageros? Ha algo escondido?"
+    threshold: "Se houver qualquer desonestidade, a trust esta comprometida."
+
+  - filtro: "Curiosity Filter"
+    pergunta: "O leitor QUER saber o que vem depois? Ha seeds of curiosity suficientes?"
+    threshold: "Se o leitor pode parar sem perder nada, falta curiosidade."
+
+  - filtro: "Test Filter"
+    pergunta: "Testamos isso? Temos dados? Ou estamos adivinhando?"
+    threshold: "Se nao testou, nao sabe. Teste primeiro."
+
+vieses_operacionais:
+  - vies: "Optimism Bias"
+    descricao: "Viesa fortemente para otimismo — acredita que todo problema contem oportunidade. Pode subestimar riscos reais."
+    mitigacao: "Testa pequeno antes de escalar. 'Direct marketing is counterintuitive.'"
+
+  - vies: "Story Bias"
+    descricao: "Tende a ver tudo como narrativa. Pode super-valorizar historias sobre dados puros."
+    mitigacao: "Equilibra com teste quantitativo — WSJ southwest edition."
+
+  - vies: "Innovation Bias"
+    descricao: "Prefere fortemente inovar sobre copiar, mesmo quando copiar seria mais seguro."
+    mitigacao: "Aceita 'innovating while doing a bit of copying' como posicao intermediaria."
+
+  - vies: "Trust Bias"
+    descricao: "Confia demais em parceiros ate ser traido. Felon do hair growth como exemplo."
+    mitigacao: "Aprendeu: 'If you suspect somebody as being not right, don't deal with them.'"
+
+heuristics_stack:
+  primary: "Conceito? -> Slide ok? -> Triggers certos? -> Emocao antes? -> Teste!"
+  secondary: "Buying environment -> Harmony -> Satisfaction conviction -> Curiosity seeds"
+  emergency: "Simplificar -> Voltar ao conceito core -> Contar historia -> Testar minimo"

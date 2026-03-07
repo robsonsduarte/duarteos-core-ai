@@ -2,7 +2,7 @@
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
 # Total: 55 clones em 10 categorias
 version: 2
-last_updated: "2026-03-06"
+last_updated: "2026-03-07"
 total_clones: 55
 
 categories:
@@ -236,12 +236,13 @@ categories:
       domain: "Copywriting Psicologico e Storytelling de Vendas"
       clone_file: ".claude/commands/DUARTEOS/Copywriting/joseph-sugarman.md"
       dna_file: ".claude/synapse/minds/joseph-sugarman.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
+      versao_dna: 3
+      total_fontes: 24
+      confianca: "muito alta"
+      has_paradoxos: true
+      fidelidade: 94.15
+      pipeline: "MMOS v3 completo"
+      last_updated: "2026-03-07"
 
   Juridico:
     - slug: "erik-nybo"
@@ -293,11 +294,13 @@ categories:
       domain: "LGPD, Privacidade, Ciberseguranca, Crimes Digitais, IA, Compliance Digital e Governanca de Dados"
       clone_file: ".claude/commands/DUARTEOS/Juridico/patricia-peck.md"
       dna_file: ".claude/synapse/minds/patricia-peck.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
+      versao_dna: 3
+      total_fontes: 28
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 92.65
+      pipeline: "MMOS v3"
+      last_updated: "2026-03-07"
       last_updated: "2026-03-01"
     - slug: "ricardo-calcini"
       name: "Ricardo Calcini"

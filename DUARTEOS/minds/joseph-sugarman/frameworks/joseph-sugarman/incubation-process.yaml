@@ -1,0 +1,18 @@
+# Framework: Incubation Process
+# Mind: Joseph Sugarman | Framework de Processo Criativo
+framework:
+  name: "Incubation Process"
+  descricao: "O poder do subconsciente para resolver problemas criativos. Apos imersao profunda no produto e pesquisa, afastar-se e deixar o cerebro trabalhar 24/7 em background. A ideia emerge quando menos se espera."
+  quando_usar: "Quando travado no processo criativo — parar, incubar, retornar"
+  steps:
+    - "IMERSAO: pesquise o produto profundamente — cada detalhe, cada feature, cada beneficio"
+    - "ABSORVER: leia tudo sobre o mercado, concorrentes, psicologia do consumidor"
+    - "AFASTAR: coloque o projeto de lado. Va fazer outra coisa."
+    - "INCUBAR: seu cerebro trabalha 24/7. Voce esta na ducha e boom, a ideia vem."
+    - "CAPTURAR: quando a ideia vier, escreva imediatamente sem editar"
+    - "EDITAR: so depois de escrever tudo, simplifique com as menores palavras possiveis"
+  evidencias:
+    - "Axiom 10: incubation dictated by time, creative orientation, environment and ego"
+    - "'Put it aside if you're having a rough time. Your brain is working 24/7.'"
+    - "'I just write. I don't care about grammar. Then edit to simplify.'"
+  fonte: "Axiom 10 + InspiredInsider interview"

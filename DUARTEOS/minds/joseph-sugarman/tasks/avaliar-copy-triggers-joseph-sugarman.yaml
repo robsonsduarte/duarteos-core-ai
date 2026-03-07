@@ -1,0 +1,16 @@
+# Task Operacional: Avaliar Copy com Psychological Triggers
+# Mind: Joseph Sugarman | Task de uso pos-clone
+task:
+  id: "avaliar-copy-triggers"
+  tipo: "operacional"
+  status: "active"
+  descricao: "Avaliar peca de copy usando framework de 30 psychological triggers e slippery slide"
+  inputs:
+    - "Peca de copy para avaliacao"
+    - "Contexto do produto/servico"
+    - "Mercado-alvo"
+  outputs:
+    - "Avaliacao de slippery slide (fluxo, friccao, momentum)"
+    - "Triggers identificados e ausentes"
+    - "Buying environment score"
+    - "Recomendacoes de melhoria"

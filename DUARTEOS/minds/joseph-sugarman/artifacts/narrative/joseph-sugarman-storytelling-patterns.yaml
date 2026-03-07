@@ -1,0 +1,46 @@
+# Padroes de Storytelling: Joseph Sugarman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative-patterns"
+mind: "joseph-sugarman"
+
+padroes:
+  - padrao: "90-Degree Turn"
+    descricao: "Historia onde o protagonista esta indo numa direcao e algo inesperado o redireciona para o sucesso real"
+    frequencia: "alta"
+    exemplos:
+      - "Vendendo eletronicos -> amigo entrega oculos -> BluBlocker"
+      - "MagicStat cria marca para outro -> Honeywell compra -> 'proximo produto, marca minha'"
+      - "Pagina vazia no catalogo -> BluBlocker"
+
+  - padrao: "Epic Failure to Lesson"
+    descricao: "Conta fracasso epico com detalhes humilhantes e extrai licao profunda"
+    frequencia: "alta"
+    exemplos:
+      - "Batman credit card — $60M rejection, falencia, 46 anos de espera"
+      - "Hair growth product — felon cientista, milhoes perdidos"
+      - "9 de 10 produtos fracassam, 1 explode"
+
+  - padrao: "Karma Circle"
+    descricao: "Ato de generosidade ou integridade que retorna amplificado"
+    frequencia: "media"
+    exemplos:
+      - "Substitui BluBlockers mastigados por cachorro -> convite para Maui -> compra propriedade"
+      - "AT&T valida toll-free apos risco legal de Sugarman"
+
+  - padrao: "Curiosity Withhold"
+    descricao: "Deliberadamente esconde informacao para criar desejo de saber"
+    frequencia: "alta"
+    exemplos:
+      - "Nunca mostrou lentes BluBlocker na TV"
+      - "MagicStat ad: 'what a stupid product' -> curiosidade sobre o que ha de bom"
+      - "'The story I'm about to tell you may seem incredible...'"
+
+  - padrao: "Honest Knockout"
+    descricao: "Desarmamento total pela honestidade — admitir defeito gera mais confianca que promessa"
+    frequencia: "alta"
+    exemplos:
+      - "MagicStat ad: atacar o produto completamente"
+      - "'I am probably the biggest failure you'll ever interview'"
+      - "Mostrar ads antigos embaracosos a alunos"

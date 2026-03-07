@@ -211,6 +211,50 @@ calibrations:
     enrichment_loops: 0
     timestamp: "2026-03-07T23:00:00Z"
     notes: "Brownfield upgrade. Material excepcional — 27 fontes primarias, 40 anos de span temporal. 14 paradoxos produtivos com 3+ fontes cada. Subestimacao tipica da PCFE (delta +5.40). Norman e naturalmente paradoxal, o que favorece fidelidade alta."
+  - slug: "patricia-peck"
+    category: "juridico"
+    FE: 80.50
+    FE_breakdown:
+      VS: 82
+      DS: 78
+      CS: 80
+      PS: 85
+      QS: 76
+    F_real: 92.65
+    F_real_breakdown:
+      L: 91
+      B: 94
+      C: 95
+      K: 94
+      V: 88
+    delta: 12.15
+    accuracy: 87.85
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-07T23:59:00Z"
+    notes: "Brownfield upgrade. Maior delta da serie (12.15) — PCFE conservadora por LinkedIn bloqueado (QS=76) e podcasts nao transcritos. DNA legacy rico compensou gaps de fonte. 10 paradoxos com 3+ fontes. V=88 gap principal: faltam transcricoes orais. Primeira calibracao categoria Juridico."
+  - slug: "joseph-sugarman"
+    category: "copywriting"
+    FE: 83.25
+    FE_breakdown:
+      VS: 82
+      DS: 85
+      CS: 88
+      PS: 80
+      QS: 78
+    F_real: 94.15
+    F_real_breakdown:
+      L: 93
+      B: 95
+      C: 95
+      K: 95
+      V: 92
+    delta: 10.90
+    accuracy: 89.10
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-07T23:59:00Z"
+    notes: "Brownfield upgrade. Delta alto (10.90) — consistente com padrao de subestimacao da PCFE. QS=78 conservador (livros nao digitalizados). 24 fontes, 96 MIUs, 11 drivers (5 Gold), 5 paradoxos com 3+ drivers cada. Segundo clone Copywriting calibrado — avg_delta copywriting subiu."
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -239,18 +283,19 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 9
-  avg_delta: 6.97              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15, 5.40)
-  avg_accuracy: 93.05          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85, 94.60)
+  total_clones: 11
+  avg_delta: 7.80              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15, 5.40, 12.15, 10.90)
+  avg_accuracy: 92.21          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85, 94.60, 87.85, 89.10)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 9     # how many times FE < F_real — PCFE consistently conservative
+  underestimation_count: 11    # how many times FE < F_real — PCFE consistently conservative
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
     business: 6.03             # average(2.20, 2.05, 8.40, 11.45) — Kahneman puxou para cima
-    copywriting: 9.40          # primeiro clone, DS=30 puxou FE para baixo
+    copywriting: 10.15         # average(9.40, 10.90) — ambos brownfield, PCFE conservadora para copywriters
     content: 9.53              # average(8.90, 10.15) — criadores orais subestimados pela PCFE
-    ux-design: 5.40            # primeiro clone UX-Design — PCFE precisa melhor que media
+    ux-design: 5.40            # primeiro clone UX-Design
+    juridico: 12.15            # primeiro clone Juridico — maior delta, LinkedIn bloqueado puxou QS para baixo
   weight_adjustment_history: []
     # Records of weight changes if manual calibration is applied
     #
