@@ -9,6 +9,16 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.28.0': {
+    title: 'Cleanup — Remocao de 12 Mind Clones de Baixa Fidelidade + PM Pipeline Hardening',
+    highlights: [
+      'Removidos 12 mind clones legacy sem MMOS pipeline: Claude Hopkins, Dan Kennedy, Robert Collier, Demis Hassabis, Andrew Ng, Bill Gates, Dustin Moskovitz, Camila Porto, Daiane Cavalcante, Diogo Kobata, Guilherme Bifi, Marcello Safe',
+      'PM (ATLAS) hardening: Pipeline obrigatorio, Scoring Gate 100pts, Tool Blacklist, Process Chief condicional',
+      'PM: Modelo "Uma Mente com Todo o Contexto" — worker recebe contexto completo, PM nunca executa',
+      'PM: 7 exemplos ERRADO vs CERTO + 8 testes de identidade + restricao de acesso a arquivos',
+      'Synapse: 67 → 55 mind clones (Copywriting -2, Marketing -3, AI -2, Business -3, Tech -1, Content -1)',
+    ],
+  },
   '5.27.0': {
     title: '2 Mind Clones MMOS v3 — David Fincher (F=90.50%) + Casey Neistat (F=94.10%)',
     highlights: [
@@ -525,7 +535,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  14 Agentes  |  67 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  14 Agentes  |  55 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 

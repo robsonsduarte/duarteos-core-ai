@@ -1,34 +1,12 @@
 # Indice de Mind Clones — Synapse v3
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
-# Total: 64 clones em 10 categorias
+# Total: 55 clones em 10 categorias
 version: 2
 last_updated: "2026-03-06"
-total_clones: 67
+total_clones: 55
 
 categories:
   AI:
-    - slug: "andrew-ng"
-      name: "Andrew Ng"
-      domain: "Inteligencia Artificial Aplicada, Educacao em ML e Estrategia de IA Empresarial"
-      clone_file: ".claude/commands/DUARTEOS/AI/andrew-ng.md"
-      dna_file: ".claude/synapse/minds/andrew-ng.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "demis-hassabis"
-      name: "Demis Hassabis"
-      domain: "Inteligencia Artificial Geral, Neurociencia Computacional e Ciencia Fundamental"
-      clone_file: ".claude/commands/DUARTEOS/AI/demis-hassabis.md"
-      dna_file: ".claude/synapse/minds/demis-hassabis.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "geoffrey-hinton"
       name: "Geoffrey Hinton"
       domain: "Deep Learning, Redes Neurais e Seguranca Existencial de IA"
@@ -64,39 +42,6 @@ categories:
       last_updated: "2026-03-01"
 
   Business:
-    - slug: "bill-gates"
-      name: "Bill Gates"
-      domain: "Tecnologia, Filantropia, Inovacao e Energia Limpa"
-      clone_file: ".claude/commands/DUARTEOS/Business/bill-gates.md"
-      dna_file: ".claude/synapse/minds/bill-gates.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "daiane-cavalcante"
-      name: "Daiane Cavalcante"
-      domain: "PLR (Private Label Rights), Mercado Digital Internacional e Empreendedorismo de Impacto"
-      clone_file: ".claude/commands/DUARTEOS/Business/daiane-cavalcante.md"
-      dna_file: ".claude/synapse/minds/daiane-cavalcante.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "guilherme-bifi"
-      name: "Guilherme Bifi"
-      domain: "Resposta Direta, Afiliacao, Marketing Digital e Mentalidade Empreendedora"
-      clone_file: ".claude/commands/DUARTEOS/Business/guilherme-bifi.md"
-      dna_file: ".claude/synapse/minds/guilherme-bifi.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "pedro-valerio-lopez"
       name: "Pedro Valerio Lopez"
       domain: "Arquitetura de Processos, Pensamento Sistemico e Validacao de Workflows"
@@ -204,17 +149,6 @@ categories:
       fidelidade: 90.50
       last_updated: "2026-03-06"
       pipeline: "MMOS v3"
-    - slug: "camila-porto"
-      name: "Camila Porto"
-      domain: "Marketing em Redes Sociais e Facebook Marketing"
-      clone_file: ".claude/commands/DUARTEOS/Content/camila-porto.md"
-      dna_file: ".claude/synapse/minds/camila-porto.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "luciana-papini"
       name: "Luciana Papini"
       domain: "Automacao de Vendas e Gestao de Automacao"
@@ -262,28 +196,18 @@ categories:
       fidelidade: 93.20
       last_updated: "2026-03-06"
       pipeline: "MMOS v3"
-    - slug: "claude-hopkins"
-      name: "Claude Hopkins"
-      domain: "Scientific Advertising e Copywriting de Resposta Direta"
-      clone_file: ".claude/commands/DUARTEOS/Copywriting/claude-hopkins.md"
-      dna_file: ".claude/synapse/minds/claude-hopkins.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "eugene-schwartz"
       name: "Eugene M. Schwartz"
       domain: "Copywriting de Resposta Direta e Psicologia do Consumidor"
       clone_file: ".claude/commands/DUARTEOS/Copywriting/eugene-schwartz.md"
       dna_file: ".claude/synapse/minds/eugene-schwartz.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
+      versao_dna: 2
+      total_fontes: 11
+      confianca: "alta"
+      has_paradoxos: true
+      fidelidade: 95.40
+      last_updated: "2026-03-06"
+      pipeline: "MMOS v3"
     - slug: "gary-bencivenga"
       name: "Gary Bencivenga"
       domain: "Copywriting de Resposta Direta e Split-Run Testing"
@@ -311,17 +235,6 @@ categories:
       domain: "Copywriting Psicologico e Storytelling de Vendas"
       clone_file: ".claude/commands/DUARTEOS/Copywriting/joseph-sugarman.md"
       dna_file: ".claude/synapse/minds/joseph-sugarman.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "robert-collier"
-      name: "Robert Collier"
-      domain: "Direct Mail Copywriting e Filosofia de Persuasao"
-      clone_file: ".claude/commands/DUARTEOS/Copywriting/robert-collier.md"
-      dna_file: ".claude/synapse/minds/robert-collier.yaml"
       versao_dna: 1
       total_fontes: 1
       confianca: "media"
@@ -409,17 +322,6 @@ categories:
       last_updated: "2026-03-01"
 
   Marketing:
-    - slug: "dan-kennedy"
-      name: "Dan Kennedy"
-      domain: "Direct Response Marketing, Premium Positioning, Info-Marketing"
-      clone_file: ".claude/commands/DUARTEOS/Marketing/dan-kennedy.md"
-      dna_file: ".claude/synapse/minds/dan-kennedy.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "david-ogilvy"
       name: "David Ogilvy"
       domain: "Publicidade, Brand Building, Direct Response, Consumer Psychology"
@@ -436,28 +338,6 @@ categories:
       domain: "Automacao de Marketing, SaaS, Startups, Visao Empresarial"
       clone_file: ".claude/commands/DUARTEOS/Marketing/diego-carmona.md"
       dna_file: ".claude/synapse/minds/diego-carmona.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "diogo-kobata"
-      name: "Diogo Kobata"
-      domain: "Copywriting, Trafego Direto, TikTok Shop, Criativos de Alta Conversao"
-      clone_file: ".claude/commands/DUARTEOS/Marketing/diogo-kobata.md"
-      dna_file: ".claude/synapse/minds/diogo-kobata.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
-    - slug: "marcello-safe"
-      name: "Marcello Safe"
-      domain: "Marketing Digital para Advogados, Marketing Juridico Etico, Infoproducao Juridica"
-      clone_file: ".claude/commands/DUARTEOS/Marketing/marcello-safe.md"
-      dna_file: ".claude/synapse/minds/marcello-safe.yaml"
       versao_dna: 1
       total_fontes: 1
       confianca: "media"
@@ -635,17 +515,6 @@ categories:
       last_updated: "2026-03-01"
 
   Tech:
-    - slug: "dustin-moskovitz"
-      name: "Dustin Moskovitz"
-      domain: "Produtividade Organizacional, Work Management e Filantropia Eficaz"
-      clone_file: ".claude/commands/DUARTEOS/Tech/dustin-moskovitz.md"
-      dna_file: ".claude/synapse/minds/dustin-moskovitz.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
     - slug: "evan-spiegel"
       name: "Evan Spiegel"
       domain: "Product Design, Comunicacao Visual e Computacao Espacial (AR)"
