@@ -9,6 +9,16 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.29.0': {
+    title: '4 Mind Clones MMOS v3 — Gary Halbert (F=95.40%) + Don Norman (F=95.80%) + Patricia Peck (F=92.65%) + Joseph Sugarman (F=94.15%)',
+    highlights: [
+      'Upgrade: Gary Halbert (Copywriting) — F=95.40%, 7 frameworks (A-Pile, Coat of Arms, Grabbers, HBD, Market-First, Physical Specificity, Seven-Step), 11 drivers',
+      'Upgrade: Don Norman (UX-Design) — F=95.80%, 8 frameworks, paradoxos produtivos em human-centered design',
+      'Upgrade: Patricia Peck (Juridico) — F=92.65%, 8 frameworks em LGPD/Privacidade/Ciberseguranca, arquetipo jurista do Direito Digital brasileiro',
+      'Upgrade: Joseph Sugarman (Copywriting) — F=94.15%, 7 frameworks, 30 psychological triggers, slippery slide, 96 MIUs extraidas',
+      'PCFE calibracao: 11 clones, avg_accuracy ~93%, todos com squad artifacts completos (Fase 10)',
+    ],
+  },
   '5.28.0': {
     title: 'Cleanup — Remocao de 12 Mind Clones de Baixa Fidelidade + PM Pipeline Hardening',
     highlights: [
