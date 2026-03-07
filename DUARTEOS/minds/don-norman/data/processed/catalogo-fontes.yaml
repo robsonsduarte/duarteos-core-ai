@@ -1,0 +1,390 @@
+# Catalogo de Fontes — Don Norman
+# Pipeline: MMOS Engine v3 — Fase 1 (Pesquisa)
+# Gerado em: 2026-03-07
+# Tiers: EXA (Tier 1) + Fetch (Tier 2)
+
+total_fontes: 27
+fontes_primarias: 27
+fontes_secundarias_rejeitadas: 18
+tiers_usados: [EXA, Fetch]
+
+distribuicao:
+  livros: 5          # ~19% (alvo ~20%)
+  entrevistas: 8     # ~30% (alvo ~30%)
+  artigos: 7         # ~26% (alvo ~25%)
+  podcasts: 4        # ~15% (alvo ~15%)
+  palestras: 3       # ~11% (alvo ~10%)
+
+fontes:
+  # === LIVROS ===
+  - id: F01
+    tipo: livro
+    titulo: "The Design of Everyday Things (Revised & Expanded Edition)"
+    url: "https://jnd.org/books/the-design-of-everyday-things-revised-and-expanded-edition/"
+    editora: "Basic Books / MIT Press"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2013"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Prefacio completo extraido via jnd.org. 7 capitulos, 2 novos (Design Thinking + Design in Business). Conceitos-chave: affordances vs signifiers, 7 stages of action, gulf of execution/evaluation, error taxonomy (slips vs mistakes), HCD process."
+
+  - id: F02
+    tipo: livro
+    titulo: "Emotional Design: Why We Love (or Hate) Everyday Things"
+    url: "https://jnd.org/books/emotional-design-why-we-love-or-hate-everyday-things/"
+    editora: "Basic Books"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2004"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Referenciado extensamente em fontes extraidas. Framework dos 3 niveis de processamento emocional: visceral, behavioral, reflective. Teapot collection como exemplo iconitico."
+
+  - id: F03
+    tipo: livro
+    titulo: "Living with Complexity"
+    url: "https://jnd.org/living-with-complexity/"
+    editora: "MIT Press"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2010"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Referenciado em Looking Back, Looking Forward. Argumento central: simplicidade nao deve ser o objetivo — o mundo e complexo, ferramentas devem ser compreensiveis, nao simples. Introduz signifiers como conceito distinto de affordances."
+
+  - id: F04
+    tipo: livro
+    titulo: "Design for a Better World: Meaningful, Sustainable, Humanity Centered"
+    url: "https://jnd.org/books/"
+    editora: "MIT Press"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2023"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Conteudo extraido via entrevistas (Design Matters, Roland Berger). 3 partes: meaningfulness, sustainability, humanity-centered design. Evolucao de HCD para HCD+. Economia circular. Papanek como referencia."
+
+  - id: F05
+    tipo: livro
+    titulo: "User Centered System Design: New Perspectives on Human-Computer Interaction"
+    url: "https://jnd.org/books/"
+    editora: "Lawrence Erlbaum"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "1986"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Co-editado com Stephen Draper. Primeiro uso do termo 'user centered'. Citado na entrevista NAE como ponto de partida para carreira em design."
+
+  # === ENTREVISTAS ===
+  - id: F06
+    tipo: entrevista
+    titulo: "NAE Interview — Don Norman, Cognitive Engineer and Author"
+    url: "https://www.nae.edu/19579/19582/21020/239120/239141/An-Interview-with-Don-Norman-NAE-Cognitive-Engineer-and-Author"
+    entrevistador: "Ron Latanision & Cameron Fletcher"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2020-09"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "FONTE PRIMARIA EXCEPCIONAL. 30K+ chars. Cobre trajetoria completa: MIT > Penn > Harvard > UCSD > Apple. Signal detection theory, neural quantum, erros humanos, Three Mile Island, automacao, internet, Norman Doors."
+
+  - id: F07
+    tipo: entrevista
+    titulo: "Roland Berger — Don Norman on Humanity-Centered Design"
+    url: "https://www.rolandberger.com/en/Insights/Publications/Don-Norman-on-humanity-centered-design.html"
+    entrevistador: "Steffan Heuer"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-09"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "15K+ chars. Evolucao HCD->HCD+, designers como vitimas do sistema, economia circular, service design, designers na C-suite, DNDA award."
+
+  - id: F08
+    tipo: entrevista
+    titulo: "ADPList Fireside Chat — Evolution of Design, Cognitive Science"
+    url: "https://www.youtube.com/watch?v=FMbP4pRxT2k"
+    entrevistador: "Felix Lee"
+    duracao_estimada: longa
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-03"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "YouTube transcript extraido. 21st century design, evolution of design, AI, hard problems in design."
+
+  - id: F09
+    tipo: entrevista
+    titulo: "UX Evolutions & Insights — Interview with Don Norman"
+    url: "https://www.youtube.com/watch?v=3AkyO8KETZI"
+    entrevistador: "Desconhecido"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-01"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "YouTube transcript extraido. Reflexoes sobre evolucao do UX e insights recentes."
+
+  - id: F10
+    tipo: entrevista
+    titulo: "Don Norman: Human Centered Design for a Better World (Part 1)"
+    url: "https://www.youtube.com/watch?v=92apECwSbvo"
+    entrevistador: "Desconhecido"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "YouTube transcript extraido. Foco em HCD aplicado a problemas do mundo."
+
+  - id: F11
+    tipo: entrevista
+    titulo: "Design As Finale — Conversation with Don Norman"
+    url: "https://designobserver.com/finale-design-as-season-two-ft-don-norman/"
+    entrevistador: "Lee Moreau"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2025-02"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Podcast Design Observer. Passado, presente e futuro da design research."
+
+  - id: F12
+    tipo: entrevista
+    titulo: "Humanity at Scale — From Profit to Purpose with Don Norman"
+    url: "https://humanityatscalepodcast.com/e/qn0q0j38-from-profit-to-purpose-rethinking-design-s-role-in-society-with-don-norman"
+    entrevistador: "Bruce Temkin"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2025-02"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Shift HCD->HCD+, AI como ferramenta criativa, metricas alem do lucro."
+
+  - id: F13
+    tipo: entrevista
+    titulo: "From HCD to HCD+ — DNDA Summit 2025 Reflections"
+    url: "https://uxdesign.cc/from-hcd-to-hcd-what-i-learned-from-don-norman-24a3cdf79c4c"
+    entrevistador: "Darren Yeo (reportagem)"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2025-12"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Reflexoes sobre DNDA Summit. Visao de Norman sobre HCD+, community, artificialidade."
+
+  # === ARTIGOS JND.ORG (FONTES PRIMARIAS DIRETAS) ===
+  - id: F14
+    tipo: artigo
+    titulo: "The Four Fundamental Principles of Human-Centered Design"
+    url: "https://jnd.org/the-four-fundamental-principles-ofhuman-centered-design/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2019-07"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "15K+ chars extraidos. 4 principios HCD + complexidades de aplicacao (sistemas sociotecnicos, automacao opaca, sensibilidade cultural). DesignX. Bottom-up vs top-down."
+
+  - id: F15
+    tipo: artigo
+    titulo: "Human-Centered Design Considered Harmful"
+    url: "https://jnd.org/human-centered-design-considered-harmful/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2005 (ACM Interactions)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "15K+ chars extraidos. Activity-Centered Design vs HCD. Automoveis, relogios, instrumentos musicais como exemplos. Static screens vs dynamic sequences. Norman provocando sua propria comunidade."
+
+  - id: F16
+    tipo: artigo
+    titulo: "Rethinking Design Thinking"
+    url: "https://jnd.org/rethinking-design-thinking/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2013-03 (Core77)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "Texto completo. Norman retrata e depois afirma design thinking. Double-Diamond model. Power of stupid questions. Iteracao observation-ideation-prototype-test."
+
+  - id: F17
+    tipo: artigo
+    titulo: "Systems Thinking: A Product Is More Than the Product"
+    url: "https://jnd.org/systems-thinking-a-product-is-more-than-the-product/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2010-09 (ACM Interactions)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "Texto completo. Produto como servico. iPod como systems thinking. Kindle. Coerencia da experiencia. Semiotic engineering."
+
+  - id: F18
+    tipo: artigo
+    titulo: "People-Centered (Not Tech-Driven) Design"
+    url: "https://jnd.org/people-centered-not-tech-driven-design/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2018 (Encyclopaedia Britannica)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "Texto completo. Human error is design error. 90% dos acidentes atribuidos a erro humano = erro de design. Symbiotic relationship people+technology."
+
+  - id: F19
+    tipo: artigo
+    titulo: "Looking Back, Looking Forward"
+    url: "https://jnd.org/looking-back-looking-forward/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2010-11 (ACM Interactions)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "Texto completo. Reflexao sobre 5 anos de colunas. Affordances conceito mal compreendido -> signifiers. Simplicidade vs complexidade -> understandability. Invisible computer. Gestural interfaces."
+
+  - id: F20
+    tipo: artigo
+    titulo: "Design as Practiced"
+    url: "https://jnd.org/design-as-practiced/"
+    duracao_estimada: media
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "1996 (Bringing Design to Software)"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "Texto completo. Historia do power switch do Macintosh na Apple. Design em organizacao grande. Gap academia vs industria. Cultural issues. Experiencia como VP Apple."
+
+  # === PODCASTS (TRANSCRICOES) ===
+  - id: F21
+    tipo: podcast
+    titulo: "Design Matters with Debbie Millman — Don Norman"
+    url: "https://www.printmag.com/podcasts/2023/design-matters-don-norman/"
+    entrevistador: "Debbie Millman"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-03"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "FONTE PRIMARIA EXCEPCIONAL. 40K+ chars transcritos. Cobre vida pessoal, MIT, Harvard, B.F. Skinner, Apple, 3 niveis emocionais, DBW, clima, capitalismo, design education, IQ, Lord Kelvin."
+
+  - id: F22
+    tipo: podcast
+    titulo: "UX Podcast — Design Doing with Don Norman (Ep 125-126)"
+    url: "https://medium.com/@uxpodcast/design-doing-with-don-norman-6434b022831b"
+    entrevistador: "James Royal-Lawson & Per Axbom"
+    duracao_estimada: longa
+    profundidade: profunda
+    primaria: true
+    idioma: en
+    data_publicacao: "2016-04"
+    tier: Fetch
+    conteudo_extraido: true
+    notas: "FONTE PRIMARIA EXCEPCIONAL. 20K+ chars. VR, design thinking vs doing, Norman's Law, radical vs incremental innovation, Norman-Verganti paper, design education critique."
+
+  - id: F23
+    tipo: podcast
+    titulo: "Insights Unlocked — Embracing Humanity-Centered Design with Don Norman"
+    url: "https://www.usertesting.com/resources/podcast/what-is-humanity-centered-design"
+    entrevistador: "Jason Giles & Lija Hogan"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2024-05"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Curiosidade ao longo da vida, HCD->HCD+, AI no design."
+
+  - id: F24
+    tipo: podcast
+    titulo: "UX Podcast — Creating a Better Society with Don Norman (Ep 263)"
+    url: "https://uxpodcast.com/263-creating-better-society-don-norman/"
+    entrevistador: "James Royal-Lawson & Per Axbom"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2021-05"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Design education change, designers na intersecao de disciplinas."
+
+  # === PALESTRAS ===
+  - id: F25
+    tipo: palestra
+    titulo: "UX Magazine Podcast — Rethinking the Lifecycle of Design in the Face of AI"
+    url: "https://uxmag.com/podcast/don-norman"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-06"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "AI e ciclo de vida do design. Researcher, professor, author."
+
+  - id: F26
+    tipo: palestra
+    titulo: "Future Product Days 2026 — Speaker Profile"
+    url: "https://www.futureproductdays.com/speakers/don-norman"
+    duracao_estimada: curta
+    profundidade: superficial
+    primaria: true
+    idioma: en
+    data_publicacao: "2026-02"
+    tier: EXA
+    conteudo_extraido: true
+    notas: "Bio atualizada. 5th retirement. DNDA charity. HCD+ para early career."
+
+  - id: F27
+    tipo: palestra
+    titulo: "Jacobs Institute Berkeley — Design for a Better World Q&A"
+    url: "https://jacobsinstitute.berkeley.edu/news/design-for-a-better-world-a-conversation-with-don-norman"
+    duracao_estimada: media
+    profundidade: media
+    primaria: true
+    idioma: en
+    data_publicacao: "2023-04"
+    tier: EXA
+    conteudo_extraido: false
+    notas: "Q&A interativo com estudantes DES INV 25 (User Experience Design) na UC Berkeley."

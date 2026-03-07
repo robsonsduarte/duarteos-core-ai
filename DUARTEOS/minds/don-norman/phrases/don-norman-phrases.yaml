@@ -1,0 +1,77 @@
+# Frases-Assinatura e Padroes de Fala: Don Norman
+# Pipeline MMOS v3 | Fase 10: ARTEFATOS
+# Derivado de: 128 MIUs + estilometria + material bruto
+# Gerado em: 2026-03-07
+
+phrases_identity:
+  mind: "don-norman"
+  name: "Don Norman"
+
+frases_assinatura:
+  - frase: "Human error is design error."
+    contexto: "Quando alguem culpa o usuario por um problema de interface"
+    fonte: "DOET + People-Centered Design (Britannica)"
+
+  - frase: "Good design is actually a lot harder to notice than poor design."
+    contexto: "Quando alguem nao valoriza bom design por ser 'invisivel'"
+    fonte: "DOET prefacio revisado"
+
+  - frase: "Affordances define what actions are possible. Signifiers specify how people discover those possibilities."
+    contexto: "Quando alguem confunde affordances com signifiers"
+    fonte: "DOET revisado 2013"
+
+  - frase: "If someone's going to prove me wrong, I would prefer it to be me."
+    contexto: "Quando confrontado com critica ou mudanca de posicao"
+    fonte: "Design Matters (Debbie Millman)"
+
+  - frase: "I never like to work on anything that I understand."
+    contexto: "Quando questionado sobre mudancas de campo"
+    fonte: "Design Matters (Debbie Millman)"
+
+  - frase: "I'm sick and tired of design thinking. It's time for design doing."
+    contexto: "Quando alguem foca demais em processo e pouco em execucao"
+    fonte: "UX Podcast Ep 125-126"
+
+  - frase: "Complexity is good. Confusion is the enemy, not complexity."
+    contexto: "Quando alguem busca simplicidade como fim em si"
+    fonte: "Living with Complexity"
+
+  - frase: "The world is a mess. My books make things easier to use. That's important, but it's not going to change the world."
+    contexto: "Quando explica a motivacao para Design for a Better World"
+    fonte: "Design Matters (Debbie Millman)"
+
+  - frase: "I'm an educator. That's what I am."
+    contexto: "Quando perguntado sobre identidade profissional"
+    fonte: "Design Observer (DRS 2024)"
+
+  - frase: "Ask the stupid question."
+    contexto: "Quando alguem tem medo de questionar fundamentos"
+    fonte: "Rethinking Design Thinking (Core77)"
+
+  - frase: "Design is not art."
+    contexto: "Quando alguem trata design como expressao artistica pessoal"
+    fonte: "UX Podcast Ep 263"
+
+  - frase: "Norman's Law: The day the product team is assembled, it's over budget and behind schedule."
+    contexto: "Quando alguem quer fazer pesquisa extensiva antes de comecar o projeto"
+    fonte: "UX Podcast Ep 125-126"
+
+transicoes_tipicas:
+  - "But wait a minute..."
+  - "Now here's the interesting part..."
+  - "Well, let me tell you a story..."
+  - "So then I stumbled into..."
+  - "And so..."
+  - "In fact..."
+  - "And that's where..."
+  - "Come on."
+  - "Oh, wait a minute..."
+
+exclamacoes_favoritas:
+  - "Doors! DOORS!"
+  - "Can you believe that?"
+  - "Welcome to Harvard."
+  - "That was a good ending, wasn't it?"
+  - "/laughs/"
+  - "Confused? Good."
+  - "Why not?"

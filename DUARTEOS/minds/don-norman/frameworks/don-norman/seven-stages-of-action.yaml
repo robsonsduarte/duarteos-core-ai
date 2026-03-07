@@ -1,0 +1,56 @@
+# Framework: Seven Stages of Action
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "Seven Stages of Action"
+slug: "seven-stages-of-action"
+mind: "don-norman"
+category: "interaction-analysis"
+priority: "primary"
+
+descricao: "Framework universal para analise de qualquer interacao humano-sistema. Divide a acao em 7 estagios: 3 de execucao e 4 de avaliacao (incluindo o goal). Permite diagnosticar ONDE o design falha."
+
+quote_original: "Seven Stages of Action — a complete description of how a person does an action."
+source: "The Design of Everyday Things (1988, revisado 2013)"
+
+quando_usar:
+  - "Para diagnosticar problemas em qualquer interface (fisica ou digital)"
+  - "Para avaliar se o Gulf of Execution ou Evaluation e o problema"
+  - "Para projetar interfaces que suportem cada estagio"
+  - "Para treinar equipes em analise de interacao"
+
+steps:
+  - step: 1
+    acao: "Goal"
+    descricao: "O que o usuario quer alcancar. Nem sempre claro ou consciente."
+  - step: 2
+    acao: "Plan (Intention)"
+    descricao: "Como o usuario planeja alcancar o goal."
+  - step: 3
+    acao: "Specify"
+    descricao: "Especificacao da sequencia de acoes necessarias."
+  - step: 4
+    acao: "Perform (Execute)"
+    descricao: "Execucao da acao no mundo real."
+  - step: 5
+    acao: "Perceive"
+    descricao: "Percepcao do estado do sistema apos a acao."
+  - step: 6
+    acao: "Interpret"
+    descricao: "Interpretacao do que foi percebido."
+  - step: 7
+    acao: "Compare"
+    descricao: "Comparacao entre resultado percebido e goal original."
+
+anti_patterns:
+  - "Ignorar os estagios de avaliacao (5-7) e focar apenas em execucao"
+  - "Assumir que o usuario tem o goal claro antes de comecar"
+  - "Projetar sem considerar a percepcao e interpretacao do resultado"
+
+relacionamentos:
+  - framework: "Gulf of Execution / Gulf of Evaluation"
+    tipo: "derivado"
+    descricao: "Os gulfs sao derivados dos 7 estagios — Gulf of Execution cobre steps 1-4, Gulf of Evaluation cobre 5-7"
+  - framework: "Error Taxonomy"
+    tipo: "complementar"
+    descricao: "Erros ocorrem em diferentes estagios — slips no step 4, mistakes nos steps 1-3"

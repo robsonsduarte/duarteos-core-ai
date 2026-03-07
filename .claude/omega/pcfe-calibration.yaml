@@ -189,6 +189,28 @@ calibrations:
     enrichment_loops: 1
     timestamp: "2026-03-06T22:00:00Z"
     notes: "Greenfield. FE inicial 78.25, subiu para 83.95 apos enriquecimento (Tim Ferriss PDF + 5 podcasts adicionais). Delta alto (10.15) — consistente com padrao de subestimacao da PCFE. Material oral excepcionalmente rico (6 fontes primarias densas). 7 paradoxos com 3+ fontes. Paradoxos e comportamento obtiveram scores maximos (B=95, C=95)."
+  - slug: "don-norman"
+    category: "ux-design"
+    FE: 90.4
+    FE_breakdown:
+      VS: 90
+      DS: 90
+      CS: 91
+      PS: 92
+      QS: 88
+    F_real: 95.80
+    F_real_breakdown:
+      L: 95
+      B: 97
+      C: 97
+      K: 96
+      V: 94
+    delta: 5.40
+    accuracy: 94.60
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-07T23:00:00Z"
+    notes: "Brownfield upgrade. Material excepcional — 27 fontes primarias, 40 anos de span temporal. 14 paradoxos produtivos com 3+ fontes cada. Subestimacao tipica da PCFE (delta +5.40). Norman e naturalmente paradoxal, o que favorece fidelidade alta."
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -217,17 +239,18 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 8
-  avg_delta: 7.16              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15)
-  avg_accuracy: 92.84          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85)
+  total_clones: 9
+  avg_delta: 6.97              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15, 5.40)
+  avg_accuracy: 93.05          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85, 94.60)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 8     # how many times FE < F_real — PCFE consistently conservative
+  underestimation_count: 9     # how many times FE < F_real — PCFE consistently conservative
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
     business: 6.03             # average(2.20, 2.05, 8.40, 11.45) — Kahneman puxou para cima
     copywriting: 9.40          # primeiro clone, DS=30 puxou FE para baixo
     content: 9.53              # average(8.90, 10.15) — criadores orais subestimados pela PCFE
+    ux-design: 5.40            # primeiro clone UX-Design — PCFE precisa melhor que media
   weight_adjustment_history: []
     # Records of weight changes if manual calibration is applied
     #

@@ -1,0 +1,39 @@
+# Framework: Gulf of Execution / Gulf of Evaluation
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "Gulf of Execution / Gulf of Evaluation"
+slug: "gulf-analysis"
+mind: "don-norman"
+category: "diagnostic"
+priority: "primary"
+
+descricao: "Framework diagnostico que identifica ONDE o design falha. Gulf of Execution = distancia entre intencao e acao possivel. Gulf of Evaluation = distancia entre estado do sistema e compreensao do usuario. Bom design minimiza ambos."
+
+quote_original: "Gulf of Execution is the gap between what the user wants to do and what the system allows. Gulf of Evaluation is the gap between the system's state and the user's understanding."
+source: "The Design of Everyday Things"
+
+quando_usar:
+  - "Quando usuarios cometem erros em uma interface"
+  - "Quando usuarios expressam confusao ou frustacao"
+  - "Para priorizar melhorias de design"
+  - "Para diagnosticar se o problema e na entrada (execucao) ou na saida (feedback)"
+
+steps:
+  - step: 1
+    acao: "Identificar o objetivo do usuario"
+    descricao: "O que a pessoa quer fazer?"
+  - step: 2
+    acao: "Avaliar Gulf of Execution"
+    descricao: "O usuario consegue descobrir COMO fazer? As acoes possiveis sao visiveis? Os signifiers sao claros?"
+  - step: 3
+    acao: "Avaliar Gulf of Evaluation"
+    descricao: "O usuario consegue perceber O QUE ACONTECEU? O feedback e imediato, visivel, compreensivel?"
+  - step: 4
+    acao: "Prescrever"
+    descricao: "Reduzir o gulf maior: melhorar signifiers (Execution) ou melhorar feedback (Evaluation)"
+
+anti_patterns:
+  - "Assumir que ambos os gulfs sao iguais em importancia para cada caso"
+  - "Focar em estetica quando o gulf de execution esta grande"
+  - "Ignorar feedback quando o gulf de evaluation e o problema"

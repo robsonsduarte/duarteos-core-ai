@@ -1,0 +1,425 @@
+# MIUs Sample — Don Norman
+# Pipeline: MMOS Engine v3 — Fase 2 (Analise Rapida)
+# Gerado em: 2026-03-07
+# Amostra: 8 fontes analisadas (F01, F06, F07, F14, F15, F17, F21, F22)
+# Total MIUs: 48
+
+total_mius: 48
+fontes_amostradas: 8
+
+mius:
+  # === FILOSOFIA CORE (8 MIUs) ===
+  - id: MIU-01
+    camada: filosofia_core
+    tipo: comportamental
+    conteudo: "Human error is design error. Quando 90% dos acidentes sao atribuidos a erro humano, claramente algo esta errado com essa classificacao. Se a investigacao continuar, invariavelmente encontra-se multiplas causas subjacentes, quase sempre resultado de design pobre."
+    fonte: F18
+    source_path: "jnd.org/people-centered-not-tech-driven-design/"
+    evidencia: "Artigo para Encyclopaedia Britannica — posicao filosofica central"
+
+  - id: MIU-02
+    camada: filosofia_core
+    tipo: decisorio
+    conteudo: "Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible, serving us without drawing attention to itself. Bad design, on the other hand, screams out its inadequacies."
+    fonte: F01
+    source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+    evidencia: "Prefacio DOET revisado — crenca central sobre invisibilidade do bom design"
+
+  - id: MIU-03
+    camada: filosofia_core
+    tipo: comportamental
+    conteudo: "Affordances define what actions are possible. Signifiers specify how people discover those possibilities: signifiers are signs, perceptible signals of what can be done. Signifiers are of far more importance to designers than are affordances."
+    fonte: F01
+    source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+    evidencia: "Prefacio DOET — distincao critica affordances vs signifiers introduzida na revisao 2013"
+
+  - id: MIU-04
+    camada: filosofia_core
+    tipo: decisorio
+    conteudo: "The design industry's making things always original is what creates all the waste instead of making something incrementally better every year. Design is about finding the right solutions to the underlying issues."
+    fonte: F07
+    source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+    evidencia: "Entrevista Roland Berger — critica a obsessao por originalidade"
+
+  - id: MIU-05
+    camada: filosofia_core
+    tipo: comportamental
+    conteudo: "I started thinking back over my career and what contribution I could make because the world is a mess. My books to this point have all been about how to make things easier to understand, easier to use. That's important, but it's not going to change the world."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — motivacao para escrever Design for a Better World"
+
+  - id: MIU-06
+    camada: filosofia_core
+    tipo: argumentativo
+    conteudo: "In my book The Design of Everyday Things, I talked about four principles of human-centered design. Today, I am saying those principles are wrong. They still may be the best way when we're making something for millions of people, but what's left out is the problem of sustainability."
+    fonte: F07
+    source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+    evidencia: "Roland Berger — auto-contradicao deliberada, evolucao HCD->HCD+"
+
+  - id: MIU-07
+    camada: filosofia_core
+    tipo: narrativo
+    conteudo: "When I was at Harvard, the Center for Cognitive Studies, George Miller and Jerry Bruner, two of the founding fathers of modern psychology. I didn't even know what the word cognitive meant. When I was admitted, I was just doing my thing."
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "Entrevista NAE — narrativa autobiografica sobre formacao intelectual"
+
+  - id: MIU-08
+    camada: filosofia_core
+    tipo: argumentativo
+    conteudo: "As an engineer and as a scientist, you don't really have to memorize very much. There are fundamental principles. If you learn the principles, you can always derive everything else. In psychology, you had to memorize all this stuff and there was no cohesion to it. I wanted cohesion."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — mentalidade de engenheiro aplicada a psicologia"
+
+  # === FILOSOFIA SUBCAMADAS (hierarquia valores + motivacao profunda) (5 MIUs) ===
+  - id: MIU-09
+    camada: filosofia_subcamadas
+    tipo: decisorio
+    conteudo: "When I was accepting graduate students, if I had applicants with straight As I didn't want them. I wanted somebody who had done more experimentation and taken a few courses they had done badly in."
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "NAE — valor hierarquico: curiosidade e risco > conformidade academica"
+
+  - id: MIU-10
+    camada: filosofia_subcamadas
+    tipo: narrativo
+    conteudo: "I never like to work on anything that I understand. Therefore, most of the time I have no idea what I'm doing or why or where it's going. It's only over time that I'm able to step back, put it into a coherent story, make sense of it, and fully understand it."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — motivacao profunda: atracao pelo desconhecido"
+
+  - id: MIU-11
+    camada: filosofia_subcamadas
+    tipo: comportamental
+    conteudo: "If someone's going to prove me wrong, I would prefer it to be me. I change my mind all the time. In fact, my standard statement is exactly that."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — valor hierarquico: auto-correcao > consistencia"
+
+  - id: MIU-12
+    camada: filosofia_subcamadas
+    tipo: decisorio
+    conteudo: "I think that the mind is really a neural network. I read a tremendous amount, talk to many different people. It all piles up inside my head, a jumble. My subconscious puts things together until it finds what feels like a low-energy solution."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — modelo mental proprio sobre como pensa"
+
+  - id: MIU-13
+    camada: filosofia_subcamadas
+    tipo: argumentativo
+    conteudo: "Designers are at the heart of many problems we face, but I don't blame designers. Designers are victims as well, because the whole field exists as a middle level of the infrastructure to do what they're asked to do."
+    fonte: F07
+    source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+    evidencia: "Roland Berger — compaixao por designers como classe profissional"
+
+  # === FRAMEWORKS (7 MIUs) ===
+  - id: MIU-14
+    camada: frameworks
+    tipo: framework
+    conteudo: "Seven Stages of Action — Execution: Goal, Intention, Action Specification, Execution. Evaluation: Perception, Interpretation, Comparison with Goal. Framework universal para analise de qualquer interacao."
+    fonte: F01
+    source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+    evidencia: "DOET cap 2 — framework estrutural central"
+
+  - id: MIU-15
+    camada: frameworks
+    tipo: framework
+    conteudo: "Gulf of Execution: distancia entre intencao do usuario e acao possivel. Gulf of Evaluation: distancia entre estado do sistema e interpretacao do usuario. Bom design minimiza ambos."
+    fonte: F01
+    source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+    evidencia: "DOET — framework diagnostico para avaliar interfaces"
+
+  - id: MIU-16
+    camada: frameworks
+    tipo: framework
+    conteudo: "Three levels of emotional processing: Visceral (resposta imediata, aparencia, toque), Behavioral (usabilidade, performance, prazer de uso), Reflective (significado, self-image, memoria, satisfacao intelectual)."
+    fonte: F02
+    source_path: "Emotional Design livro + multiplas referencias"
+    evidencia: "Emotional Design — framework dos 3 niveis, referenciado em DOET revisado"
+
+  - id: MIU-17
+    camada: frameworks
+    tipo: framework
+    conteudo: "Double-Diamond model: primeiro diamante = divergencia e convergencia para determinar o PROBLEMA certo. Segundo diamante = divergencia e convergencia para a SOLUCAO. British Design Council."
+    fonte: F16
+    source_path: "jnd.org/rethinking-design-thinking/"
+    evidencia: "Rethinking Design Thinking — framework adotado para design thinking"
+
+  - id: MIU-18
+    camada: frameworks
+    tipo: framework
+    conteudo: "Activity-Centered Design vs Human-Centered Design. ACD: foco na atividade, nao no usuario isolado. Atividades sao compostas de tasks, tasks de actions, actions de operations. Hierarquia da Activity Theory."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Considered Harmful — framework alternativo/complementar ao HCD"
+
+  - id: MIU-19
+    camada: frameworks
+    tipo: framework
+    conteudo: "Error Taxonomy: Slips (action-based errors e memory lapses) vs Mistakes (rule-based, knowledge-based, memory lapses). Slips = execucao errada de intencao correta. Mistakes = intencao errada desde o inicio."
+    fonte: F01
+    source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+    evidencia: "DOET cap 5 — taxonomia expandida na revisao 2013"
+
+  - id: MIU-20
+    camada: frameworks
+    tipo: framework
+    conteudo: "DesignX: Design de sistemas sociotecnicos complexos (saude, transporte, governo). Incrementalismo. Satisficing > optimizing. Modular. Tolerancia para constraints existentes. Muddling through (Lindblom)."
+    fonte: F14
+    source_path: "jnd.org/the-four-fundamental-principles-ofhuman-centered-design/"
+    evidencia: "4 Principios HCD — secao sobre DesignX e complexidade"
+
+  # === HEURISTICAS CORE (5 MIUs) ===
+  - id: MIU-21
+    camada: heuristicas_core
+    tipo: decisorio
+    conteudo: "Norman's Law: The day the product team is assembled, it's over budget and behind schedule. Consequencia: voce nunca tera tempo para fazer observacao de campo ANTES do projeto comecar."
+    fonte: F22
+    source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+    evidencia: "UX Podcast — heuristica operacional sobre restricoes do mundo real"
+
+  - id: MIU-22
+    camada: heuristicas_core
+    tipo: decisorio
+    conteudo: "Quando alguem te mostra problemas, voce nao quer ouvir problemas. Quer ouvir solucoes. Se designers querem influencia, precisam falar a linguagem do business: spreadsheets, margins, ROI."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — heuristica sobre como designers ganham poder"
+
+  - id: MIU-23
+    camada: heuristicas_core
+    tipo: comportamental
+    conteudo: "Ask the stupid question. People who know a lot about a field seldom think to question the fundamentals. People from outside the discipline do question it. Every so often, the question sparks a basic and important reconsideration."
+    fonte: F16
+    source_path: "jnd.org/rethinking-design-thinking/"
+    evidencia: "Rethinking Design Thinking — heuristica sobre inovacao"
+
+  - id: MIU-24
+    camada: heuristicas_core
+    tipo: decisorio
+    conteudo: "The most dangerous part of automation is when it's ALMOST automated. Manual = high attention. Full auto = no attention needed. Almost auto = people can't stay alert for hours, lose situational awareness."
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "NAE — heuristica sobre automacao parcial, aplicavel a veiculos autonomos"
+
+  - id: MIU-25
+    camada: heuristicas_core
+    tipo: argumentativo
+    conteudo: "Too much listening to users can lead to overly complex designs. When a user suggestion fails to fit the design model, it should be discarded. What is needed is a strong, authoritative designer."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Harmful — heuristica anti-feature-creep"
+
+  # === HEURISTICAS MODELO SOCIAL (3 MIUs) ===
+  - id: MIU-26
+    camada: heuristicas_modelo_social
+    tipo: interacao_social
+    conteudo: "When someone is in one field and they apply their everyday knowledge to a new field, to the new field it seems brilliant. I've capitalized on that through my life, because I keep changing fields."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — teoria de como produz impacto intelectual"
+
+  - id: MIU-27
+    camada: heuristicas_modelo_social
+    tipo: interacao_social
+    conteudo: "On the East Coast arguments are considered the way you work: When we argue we're developing ideas. When I got to California and continued in that fashion, people took me aside and told me to stop."
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "NAE — modelo social: debate como ferramenta de pensamento"
+
+  - id: MIU-28
+    camada: heuristicas_modelo_social
+    tipo: interacao_social
+    conteudo: "When BF Skinner stood up and denounced me and my field on my first day at Harvard, I didn't take it personally because obviously he didn't know me. I thought it was very amusing."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — resiliencia social, senso de humor diante de adversidade"
+
+  # === METODOLOGIAS (4 MIUs) ===
+  - id: MIU-29
+    camada: metodologias
+    tipo: framework
+    conteudo: "HCD iterativo: Observation, Ideation, Prototyping, Testing. Comecar com field studies e observacao do contexto real. Perguntar 'por que?' em cada issue. Quando a resposta e 'erro humano', continuar: POR QUE o erro ocorreu?"
+    fonte: F14
+    source_path: "jnd.org/the-four-fundamental-principles-ofhuman-centered-design/"
+    evidencia: "4 Principios HCD — metodologia formal completa"
+
+  - id: MIU-30
+    camada: metodologias
+    tipo: decisorio
+    conteudo: "Radical innovation vs incremental innovation. HCD e otimo para incremental. Para radical, research through design: stop thinking, just go do something. You will be surprised how much you learn."
+    fonte: F22
+    source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+    evidencia: "UX Podcast — metodologia para inovacao radical vs incremental"
+
+  - id: MIU-31
+    camada: metodologias
+    tipo: framework
+    conteudo: "Systems thinking: um produto nao e uma ilha. E um conjunto coeso e integrado de experiencias. Desde intencao inicial ate reflexao final, do primeiro uso ate help, service, maintenance. iPod como exemplo de systems thinking."
+    fonte: F17
+    source_path: "jnd.org/systems-thinking-a-product-is-more-than-the-product/"
+    evidencia: "Systems Thinking — metodologia de visao sistemica"
+
+  - id: MIU-32
+    camada: metodologias
+    tipo: decisorio
+    conteudo: "Design thinking: an essential tool, not a myth. Designers resist the temptation to jump to a solution. They first determine the real problem using Five Whys. They consider a wide range of solutions before converging."
+    fonte: F16
+    source_path: "jnd.org/rethinking-design-thinking/"
+    evidencia: "Rethinking Design Thinking — posicao final sobre design thinking"
+
+  # === DILEMAS (5 MIUs) ===
+  - id: MIU-33
+    camada: dilemas
+    tipo: decisorio
+    conteudo: "HCD garante resultados 'bons' consistentes, mas e sofisticado design por comite. E se o objetivo nao e o 'bom' mas o 'grande e maravilhoso'? HCD atrapalha. Grandes designers NAO usam HCD. E tem grandes sucessos E grandes fracassos."
+    fonte: F19
+    source_path: "jnd.org/looking-back-looking-forward/"
+    evidencia: "Looking Back — tensao entre HCD e genialidade individual"
+
+  - id: MIU-34
+    camada: dilemas
+    tipo: argumentativo
+    conteudo: "Simplicity should never be the goal. The world is complex and so must our tools be. Complexity is good. The quest for simplicity is misguided. What people need is understandable products. Confusion is the enemy, not complexity."
+    fonte: F19
+    source_path: "jnd.org/looking-back-looking-forward/"
+    evidencia: "Looking Back — posicao contra-intuitiva sobre complexidade"
+
+  - id: MIU-35
+    camada: dilemas
+    tipo: decisorio
+    conteudo: "HCD Considered Harmful: the focus upon individual people might improve things for them at the cost of making it worse for others. The more tailored, the less appropriate for others. Activity-Centered Design is superior."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Harmful — Norman criticando seu proprio framework"
+
+  - id: MIU-36
+    camada: dilemas
+    tipo: argumentativo
+    conteudo: "Designers are responsible for the mess we're in, but at the same time it's not their fault. It's how they were brought up and trained. They don't have the power to make a change. Not yet."
+    fonte: F07
+    source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+    evidencia: "Roland Berger — paradoxo da responsabilidade sem poder"
+
+  - id: MIU-37
+    camada: dilemas
+    tipo: decisorio
+    conteudo: "People are really good at responding to crises and disasters. They're not good at preventing them in the first place. Climate change being bad is both the bad news AND the good news — because now people finally take it seriously."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — dilema cognitivo sobre acao preventiva vs reativa"
+
+  # === PARADOXOS PRODUTIVOS (5 MIUs) ===
+  - id: MIU-38
+    camada: paradoxos_produtivos
+    tipo: argumentativo
+    conteudo: "Publiquei dois ensaios sobre Design Thinking no Core77. No primeiro, digo que e uma pessima ideia. No segundo, me arrependo — e uma ideia maravilhosa. Confused? Read both essays."
+    fonte: F16
+    source_path: "jnd.org/rethinking-design-thinking/"
+    evidencia: "Rethinking DT — paradoxo deliberado como ferramenta retorica"
+
+  - id: MIU-39
+    camada: paradoxos_produtivos
+    tipo: argumentativo
+    conteudo: "I was trying to be fair to everybody else's theories and the journal rejected the paper. So I rewrote it saying everybody's theory is completely wrong except mine. And they said 'Good. Thank you.'"
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "NAE — paradoxo da humildade intelectual vs necessidade de assertividade"
+
+  - id: MIU-40
+    camada: paradoxos_produtivos
+    tipo: argumentativo
+    conteudo: "HCD asserts technology should adapt to people. In Activity-Centered Design, we admit that much of human behavior IS adaptation to technology. People DO adapt to technology. It changes social and family structure. Learn the tools, and the activity is understood."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Harmful — inversao do mantra central de sua propria escola"
+
+  - id: MIU-41
+    camada: paradoxos_produtivos
+    tipo: decisorio
+    conteudo: "I'm sick and tired of design thinking. It's time we started doing design doing. The thinking part is fun — voyeurism, rapid prototyping, prizes. Nothing ever happens because the hard part is producing real products."
+    fonte: F22
+    source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+    evidencia: "UX Podcast — paradoxo thinking vs doing na propria comunidade que criou"
+
+  - id: MIU-42
+    camada: paradoxos_produtivos
+    tipo: argumentativo
+    conteudo: "When I see a sign that says 'push,' the first thing I do is pull it to see what happens. And guess what? It works just fine. So these are really nice doors. I kind of like them. But then — why do they need signs?"
+    fonte: F22
+    source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+    evidencia: "UX Podcast — paradoxo sensorial sobre Norman Doors"
+
+  # === ASSOCIACOES CONCEITUAIS (3 MIUs) ===
+  - id: MIU-43
+    camada: associacoes_conceituais
+    tipo: associativo
+    conteudo: "Psicologia cognitiva -> signal detection theory -> erro humano -> Three Mile Island -> design de cockpits -> affordances -> HCD -> HCD+ -> economia circular. A trajetoria e de incrementos lentos, nao saltos radicais."
+    fonte: F06
+    source_path: "nae.edu/An-Interview-with-Don-Norman"
+    evidencia: "NAE — mapa conceitual da trajetoria intelectual completa"
+
+  - id: MIU-44
+    camada: associacoes_conceituais
+    tipo: associativo
+    conteudo: "When you want to do oil painting, you need to understand oil, and brushes, and painting surfaces. The truly excellent artists have a deep understanding of their tools and technologies. To the HCD community, the tool should be invisible. With ACD, the tool IS the way."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Harmful — analogia arte-design para justificar ACD"
+
+  - id: MIU-45
+    camada: associacoes_conceituais
+    tipo: associativo
+    conteudo: "Victor Papanek 1971: 'There is no field more dangerous than design.' Lord Kelvin: 'In the physical sciences, if you can't measure it, you don't understand it.' IQ tests as metaphor for GDP. All connections to my core argument."
+    fonte: F21
+    source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+    evidencia: "Design Matters — rede associativa entre citacoes de campos distintos"
+
+  # === COMUNICACAO AVANCADA (3 MIUs) ===
+  - id: MIU-46
+    camada: comunicacao_avancada
+    tipo: linguistico
+    conteudo: "I always start with a frustrating everyday story — a door, a hotel shower, a stove. Then I dissect cognitively what went wrong. Then generalize to a universal principle. Then show how to fix it. Always with photos and diagrams."
+    fonte: F01
+    source_path: "DOET + don-norman.md legacy clone"
+    evidencia: "Padrao retorico consistente em todas as fontes: hook cotidiano -> analise -> principio -> solucao"
+
+  - id: MIU-47
+    camada: comunicacao_avancada
+    tipo: linguistico
+    conteudo: "I'm not patient. I'm sick and tired of crappy designs of our light switches and stove controls and doors. Doors! DOORS! I mean I've been trying to understand the United Airlines lounge in San Francisco..."
+    fonte: F22
+    source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+    evidencia: "UX Podcast — tom professoral-irritado, repeticao enfatica, exemplos concretos obsessivos"
+
+  - id: MIU-48
+    camada: comunicacao_avancada
+    tipo: linguistico
+    conteudo: "Norman's provocative style: I am always intentionally provocative. I wrote HCD Considered Harmful knowing it would provoke. I wrote Design Thinking is a myth knowing I'd retract. The provocation IS the pedagogy."
+    fonte: F15
+    source_path: "jnd.org/human-centered-design-considered-harmful/"
+    evidencia: "HCD Harmful + Rethinking DT — meta-comunicacao sobre seu proprio estilo retorico"
+
+distribution_by_layer:
+  filosofia_core: 8
+  filosofia_subcamadas: 5
+  frameworks: 7
+  heuristicas_core: 5
+  heuristicas_modelo_social: 3
+  metodologias: 4
+  dilemas: 5
+  paradoxos_produtivos: 5
+  associacoes_conceituais: 3
+  comunicacao_avancada: 3
+
+distribution_by_type:
+  comportamental: 5
+  linguistico: 3
+  narrativo: 2
+  decisorio: 14
+  framework: 8
+  interacao_social: 3
+  argumentativo: 10
+  associativo: 3

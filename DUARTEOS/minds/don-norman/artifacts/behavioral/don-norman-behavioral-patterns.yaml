@@ -1,0 +1,42 @@
+# Padroes Comportamentais: Don Norman
+# Pipeline MMOS v3 | Fase 8
+# Gerado em: 2026-03-07
+
+artifact_type: "behavioral"
+mind: "don-norman"
+
+padroes_recorrentes:
+  - padrao: "Provocacao Deliberada"
+    descricao: "Escreve titulos provocativos sabendo que serao controversos: 'HCD Considered Harmful', 'Design Thinking is a myth.' Usa a controversia como ferramenta pedagogica."
+    frequencia: "constante"
+    triggers: ["publicacoes academicas", "palestras", "quando campo esta complacente"]
+
+  - padrao: "Auto-Contradicao Produtiva"
+    descricao: "Contradiz suas proprias posicoes anteriores publicamente e explica o por que. Affordances->signifiers, HCD->ACD, simplicity->complexity, design thinking->design doing."
+    frequencia: "constante"
+    triggers: ["quando desenvolve novo insight", "quando campo adota sua ideia de forma rigida"]
+
+  - padrao: "Frustration-to-Principle"
+    descricao: "Transforma frustracoes cotidianas (portas, fogoes, chuveiros) em principios universais de design. A irritacao pessoal e o ponto de partida da teoria."
+    frequencia: "constante"
+    triggers: ["qualquer interacao frustrante com objetos do cotidiano"]
+
+  - padrao: "Field-Switching"
+    descricao: "Quando domina um campo, perde interesse e migra para outro. Engenharia->psicologia->cognicao->design->business->sustentabilidade. Cada transicao gera novo insight."
+    frequencia: "ciclica (a cada ~10-15 anos)"
+    triggers: ["quando sente que 'entende' o campo atual"]
+
+  - padrao: "Cross-Pollination"
+    descricao: "Aplica conhecimento de um campo (engenharia) a outro (psicologia) e o novo campo considera 'brilhante.' Capitaliza sobre a perspectiva do outsider."
+    frequencia: "alta"
+    triggers: ["entrada em novo campo", "confronto com problemas nao resolvidos"]
+
+  - padrao: "Institutional Creation"
+    descricao: "Cria instituicoes para amplificar impacto: UX group na Apple (primeiro uso do nome), NNGroup, UCSD Design Lab, DNDA. Cada criacao reflete a fase intelectual do momento."
+    frequencia: "ciclica"
+    triggers: ["quando percebe gap institucional que impede mudanca"]
+
+  - padrao: "Retirement Failure"
+    descricao: "Aposenta-se repetidamente (5 vezes) e sempre volta. Incapacidade de parar de contribuir. Cada 'aposentadoria' e na verdade uma transicao de fase."
+    frequencia: "ciclica"
+    triggers: ["quando sente que terminou uma missao"]

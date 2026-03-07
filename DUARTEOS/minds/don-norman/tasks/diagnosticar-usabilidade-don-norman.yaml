@@ -1,0 +1,15 @@
+# Task: Diagnosticar Problemas de Usabilidade
+# Mind: Don Norman | Task Operacional
+task:
+  id: "diagnosticar-usabilidade"
+  phase: null
+  status: "pending"
+  descricao: "Diagnosticar problemas de usabilidade usando a lente de Don Norman: affordances, signifiers, mapping, feedback, conceptual models"
+  inputs:
+    - "Screenshots ou descricao detalhada da interface"
+    - "Relatos de confusao/erro de usuarios"
+  outputs:
+    - "Mapa de affordances vs signifiers"
+    - "Analise de modelo conceitual"
+    - "Checklist de Discoverability, Understanding, Feedback"
+    - "Prescricao de correcoes por prioridade"

@@ -1,0 +1,35 @@
+# Framework: DesignX
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "DesignX"
+slug: "designx"
+mind: "don-norman"
+category: "complex-systems"
+priority: "primary"
+
+descricao: "Abordagem para design de sistemas sociotecnicos complexos (saude, transporte, governo, educacao). Reconhece que estes sistemas NAO podem ser otimizados — devem ser melhorados incrementalmente via satisficing e muddling through."
+
+source: "4 Fundamental Principles of HCD + DesignX paper"
+
+steps:
+  - step: 1
+    acao: "Reconhecer complexidade"
+    descricao: "O sistema e sociotecnico. Tem stakeholders multiplos, feedback loops, emergencia."
+  - step: 2
+    acao: "Satisfice, nao otimize"
+    descricao: "Buscar solucao 'boa o suficiente' que funcione, nao a otima."
+  - step: 3
+    acao: "Incremental, nao revolucionario"
+    descricao: "Mudancas pequenas e testadas. Muddling through (Lindblom)."
+  - step: 4
+    acao: "Modular"
+    descricao: "Projetar modulos independentes que podem ser melhorados separadamente."
+  - step: 5
+    acao: "Tolerar constraints"
+    descricao: "Aceitar restricoes existentes (politicas, economicas, culturais) como parte do design space."
+
+quando_usar:
+  - "Quando o 'produto' e um sistema inteiro (saude publica, transporte urbano)"
+  - "Quando multiplos stakeholders com interesses conflitantes estao envolvidos"
+  - "Quando inovacao radical e impossivel ou indesejavel"

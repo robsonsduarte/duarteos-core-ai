@@ -1,0 +1,31 @@
+# Framework: HCD+ (Humanity-Centered Design)
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "HCD+ (Humanity-Centered Design)"
+slug: "hcd-plus"
+mind: "don-norman"
+category: "design-philosophy"
+priority: "primary"
+
+descricao: "Extensao do Human-Centered Design que adiciona sustentabilidade, well-being comunitario e impacto ambiental. Nao substitui HCD — complementa com consciencia planetaria. Evolucao do pensamento de Norman pos-2020."
+
+quote_original: "In my book I talked about four principles of HCD. Today, I am saying those principles are wrong. What's left out is sustainability."
+source: "Roland Berger Interview (2024) + Design for a Better World (2023)"
+
+steps:
+  - step: 1
+    acao: "Aplicar HCD tradicional"
+    descricao: "Solve the right problem, focus on people, systems perspective, iterate."
+  - step: 2
+    acao: "Adicionar lente de sustentabilidade"
+    descricao: "Esta solucao cria desperdicio? E circular? Qual o impacto ambiental?"
+  - step: 3
+    acao: "Avaliar impacto comunitario"
+    descricao: "Melhorar para um individuo piora para outros? Inclusao? Acessibilidade?"
+  - step: 4
+    acao: "Considerar economia circular"
+    descricao: "Melhorar incrementalmente ao inves de criar novo? Reparabilidade? Durabilidade?"
+  - step: 5
+    acao: "Empoderar comunidades locais"
+    descricao: "Quem esta no comando? A comunidade ou os designers? Evitar colonizacao."

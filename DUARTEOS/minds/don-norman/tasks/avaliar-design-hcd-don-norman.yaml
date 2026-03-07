@@ -1,0 +1,16 @@
+# Task: Avaliar Design com Abordagem HCD
+# Mind: Don Norman | Task Operacional
+task:
+  id: "avaliar-design-hcd"
+  phase: null
+  status: "pending"
+  descricao: "Avaliar qualquer produto/interface usando os frameworks de Don Norman (Seven Stages, Gulf Analysis, Error Taxonomy, HCD Principles)"
+  inputs:
+    - "Descricao do produto/interface a avaliar"
+    - "Contexto de uso"
+    - "Problemas reportados por usuarios (se houver)"
+  outputs:
+    - "Diagnostico baseado em Seven Stages of Action"
+    - "Analise de Gulf of Execution e Gulf of Evaluation"
+    - "Classificacao de erros (Slips vs Mistakes)"
+    - "Recomendacoes de melhoria priorizadas"

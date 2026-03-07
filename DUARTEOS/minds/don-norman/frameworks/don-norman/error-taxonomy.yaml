@@ -1,0 +1,27 @@
+# Framework: Error Taxonomy (Slips vs Mistakes)
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "Error Taxonomy"
+slug: "error-taxonomy"
+mind: "don-norman"
+category: "error-analysis"
+priority: "primary"
+
+descricao: "Taxonomia de erros humanos que distingue fundamentalmente entre Slips (execucao errada de intencao correta) e Mistakes (intencao errada desde o inicio). Cada tipo requer estrategia de prevencao diferente."
+
+source: "The Design of Everyday Things, Cap 5 (revisado 2013)"
+
+steps:
+  - step: 1
+    acao: "Observar o erro"
+    descricao: "Coletar dados sobre erros reais de usuarios"
+  - step: 2
+    acao: "Classificar: Slip ou Mistake?"
+    descricao: "Slip = intencao correta, acao errada (distracao, memoria). Mistake = intencao errada (modelo mental incorreto, regra errada, conhecimento insuficiente)."
+  - step: 3
+    acao: "Para Slips: adicionar constraints e confirmacoes"
+    descricao: "Undo, confirmacao antes de acoes destrutivas, distancia entre botoes criticos"
+  - step: 4
+    acao: "Para Mistakes: melhorar modelo conceitual e signifiers"
+    descricao: "O usuario nao entende como o sistema funciona — melhorar representacao, feedback, documentacao"

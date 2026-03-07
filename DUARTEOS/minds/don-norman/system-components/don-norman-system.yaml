@@ -1,0 +1,59 @@
+# Componentes de Sistema Cognitivo: Don Norman
+# Pipeline MMOS v3 | Fase 8: MAPEAMENTO
+# Big Five, MBTI, Eneagrama — derivados de 128 MIUs + material bruto
+# Gerado em: 2026-03-07
+
+system_identity:
+  mind: "don-norman"
+  name: "Don Norman"
+
+big_five:
+  openness:
+    score: 95
+    confidence: 0.97
+    evidence_count: 30
+    evidencia: "Openness extraordinariamente alta. Mudou de campo 6+ vezes (engenharia->psicologia->cognicao->design->business->sustentabilidade). 'I never like to work on anything I understand.' Aceita contradicoes, muda de opiniao publicamente. Curiosidade intelectual e o driver primario de toda a carreira. Busca ativa por novidade conceitual, nao por status."
+
+  conscientiousness:
+    score: 78
+    confidence: 0.90
+    evidence_count: 15
+    evidencia: "Alta conscienciosidade intelectual — frameworks rigorosos (Seven Stages, Error Taxonomy), carreira academica produtiva (20+ livros). Mas combinada com estilo exploratorio que resiste a planos rigidos ('nothing seems to happen for weeks, then the magic happens'). Organizado em pensamento, flexivel em processo."
+
+  extraversion:
+    score: 72
+    confidence: 0.88
+    evidence_count: 12
+    evidencia: "Moderadamente extrovertido — palestrante energetico que gosta de interagir com plateias, contar historias, provocar. Mas nao e o tipo social gregario. Energia vem de ideias e debates, nao de social networking. 'On the East Coast arguments are considered the way you work.' Extroversao performativa-intelectual."
+
+  agreeableness:
+    score: 55
+    confidence: 0.88
+    evidence_count: 14
+    evidencia: "Moderada — provocador deliberado que escreve 'HCD Considered Harmful' sobre seu proprio campo. Confronta ideias, nao pessoas. Mas genuinamente emptico com usuarios e com designers ('designers are victims too'). Compaixao real sob provocacao intelectual. Nao busca consenso — busca verdade."
+
+  neuroticism:
+    score: 30
+    confidence: 0.85
+    evidence_count: 10
+    evidencia: "Baixo neurotismo. Resiliente sob pressao: Skinner o denunciou no primeiro dia de Harvard — achou amusing. Lida com mudancas de campo sem angustia. Frustracoes com design ruim sao produtivas, nao paralisantes. Emocoes estao sob controle intelectual. Humor auto-depreciativo como indicador de seguranca emocional."
+
+mbti:
+  type: "ENTP"
+  confidence: 0.93
+  evidencia: "E (Extrovertido): energia em palestras, debates, colaboracao, mas seletivo. N (Intuitivo): pensa em principios abstratos, nao detalhes — 'learn principles, derive everything else'. Busca padroes, nao fatos isolados. T (Pensador): decisoes baseadas em logica e evidencia, nao sentimento. Confronta ideias sem rancor pessoal. P (Perceptivo): resiste a fechamento prematuro, explora antes de concluir, 'I don't know what I'm doing until I'm finished.' ENTP (The Visionary/Debater): adora debate intelectual, cross-pollination de campos, provocacao como metodo, resistencia ao status quo."
+
+eneagrama:
+  type: 5
+  wing: 7
+  descricao: "O Investigador com asa Entusiasta"
+  confidence: 0.90
+  evidencia: "Tipo 5: busca compulsiva por compreensao profunda, acumula conhecimento, muda de campo quando domina o atual, observa antes de agir, frameworks como forma de mapear a realidade. Asa 7: energia positiva, humor, curiosidade expansiva (nao retrativa), abertura a novas experiencias, recusa de se limitar a um campo. Integracao para 8 (Desafiador): quando seguro, confronta ideias abertamente, provoca, escreve 'Considered Harmful', toma posicoes fortes."
+
+  instintos:
+    dominante: "Social (SO)"
+    secundario: "Self-Preservation (SP)"
+    evidencia: "SO: preocupacao com impacto social do design, educacao como legado, 700 voluntarios para reformar design education, DNDA como charity, HCD+. SP: seguranca intelectual (sempre ter framework), carreira planejada com transicoes conscientes."
+
+  tritype: "573"
+  tritype_descricao: "5-7-3: Investigador-Entusiasta-Realizador. Combina profundidade intelectual obsessiva (5) com otimismo expansivo e curiosidade ampla (7) e drive por impacto e reconhecimento de realizacoes (3). Explica: pesquisador profundo que explora campos diversos e busca impacto real no mundo."

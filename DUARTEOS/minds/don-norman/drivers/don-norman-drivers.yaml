@@ -1,0 +1,284 @@
+# Drivers Cognitivos: Don Norman
+# Pipeline MMOS v3 | Fase 7: INFERENCIA
+# Derivado de: 128 MIUs + material bruto completo
+# Gerado em: 2026-03-07
+
+driver_identity:
+  mind: "don-norman"
+  name: "Don Norman"
+  category: "UX-Design"
+  total_drivers: 14
+  tier_distribution:
+    gold: 6
+    silver: 5
+    bronze: 3
+
+impulsores:
+  - name: "Curiosidade Transgressora de Fronteiras"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.98
+    confidence: 0.99
+    frequency: "25+ MIUs"
+    descricao: "Compulsao intrinseca de cruzar fronteiras disciplinares, nunca permanecer em um campo que ja entende. Engenharia -> psicologia -> design -> business -> educacao -> sustentabilidade."
+    evidencias:
+      - miu: "I never like to work on anything that I understand"
+        source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+        strength: 0.99
+      - miu: "I keep changing fields — when you apply everyday knowledge to a new field, it seems brilliant"
+        source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+        strength: 0.97
+      - miu: "MIT -> Penn -> Harvard -> UCSD -> Apple -> NNGroup -> Design Lab -> DNDA"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.96
+      - miu: "I don't know what I'm doing until I'm finished"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.95
+    relationships:
+      - target: "Auto-Correcao como Identidade"
+        type: "causal"
+        correlation: 0.93
+      - target: "Provocacao Pedagogica"
+        type: "correlacional"
+        correlation: 0.87
+
+  - name: "Defesa Incondicional do Usuario"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.97
+    confidence: 0.99
+    frequency: "30+ MIUs"
+    descricao: "Crenca nuclear de que erros humanos sao sempre erros de design. O usuario nunca e culpado. Design existe para servir pessoas."
+    evidencias:
+      - miu: "Human error is design error"
+        source_path: "jnd.org/people-centered-not-tech-driven-design/"
+        strength: 0.99
+      - miu: "If you wanted to design a plant to cause error, you couldn't have done a better job"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.97
+      - miu: "Blame the design, never the user"
+        source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+        strength: 0.96
+      - miu: "We said the operators at Three Mile Island were really good. But the system was designed to produce errors."
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.95
+    relationships:
+      - target: "Busca por Principios Universais"
+        type: "causal"
+        correlation: 0.91
+      - target: "Provocacao Pedagogica"
+        type: "correlacional"
+        correlation: 0.82
+
+  - name: "Auto-Correcao como Identidade"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.96
+    confidence: 0.98
+    frequency: "20+ MIUs"
+    descricao: "Disposicao rara de contradizer publicamente as proprias ideias anteriores. Affordances->signifiers, HCD->ACD->HCD+, simplicity->complexity, design thinking->design doing."
+    evidencias:
+      - miu: "If someone's going to prove me wrong, I would prefer it to be me"
+        source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+        strength: 0.99
+      - miu: "Today I am saying those principles are wrong"
+        source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+        strength: 0.97
+      - miu: "I published two essays — first saying design thinking is a terrible idea, then retracting"
+        source_path: "jnd.org/rethinking-design-thinking/"
+        strength: 0.96
+    relationships:
+      - target: "Provocacao Pedagogica"
+        type: "causal"
+        correlation: 0.95
+      - target: "Curiosidade Transgressora"
+        type: "causal"
+        correlation: 0.93
+
+  - name: "Busca por Principios Universais"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.95
+    confidence: 0.97
+    frequency: "18+ MIUs"
+    descricao: "Mentalidade de engenheiro que busca leis fundamentais em qualquer campo. Quer coesao, frameworks unificadores, principios dos quais tudo mais pode ser derivado."
+    evidencias:
+      - miu: "In engineering you learn principles and derive everything else. I wanted cohesion in psychology."
+        source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+        strength: 0.98
+      - miu: "Seven Stages of Action — framework universal"
+        source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+        strength: 0.96
+      - miu: "Affordances, signifiers, mapping, feedback — fundamental design principles"
+        source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+        strength: 0.95
+    relationships:
+      - target: "Curiosidade Transgressora"
+        type: "correlacional"
+        correlation: 0.88
+
+  - name: "Provocacao Pedagogica"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.94
+    confidence: 0.97
+    frequency: "15+ MIUs"
+    descricao: "Uso deliberado de provocacao, contradicao e titulos escandalosos como metodo de ensino. A provocacao E a pedagogia."
+    evidencias:
+      - miu: "I am always intentionally provocative. The provocation IS the pedagogy."
+        source_path: "jnd.org/human-centered-design-considered-harmful/"
+        strength: 0.99
+      - miu: "I'm against STEM — not because science isn't important..."
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.95
+      - miu: "I'm sick and tired of design thinking"
+        source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+        strength: 0.93
+    relationships:
+      - target: "Auto-Correcao como Identidade"
+        type: "causal"
+        correlation: 0.95
+
+  - name: "Responsabilidade Planetaria"
+    tier: "gold"
+    tipo: "impulsor"
+    strength: 0.92
+    confidence: 0.95
+    frequency: "12+ MIUs"
+    descricao: "Evolucao tardia (pos-2020) para foco em sustentabilidade, economia circular, impacto ambiental. HCD+ como manifestacao."
+    evidencias:
+      - miu: "I started thinking about what contribution I could make because the world is a mess"
+        source_path: "printmag.com/podcasts/2023/design-matters-don-norman/"
+        strength: 0.97
+      - miu: "What's left out is the problem of sustainability"
+        source_path: "rolandberger.com/Don-Norman-on-humanity-centered-design"
+        strength: 0.95
+      - miu: "Design for a Better World"
+        source_path: "jnd.org/books/"
+        strength: 0.93
+
+  - name: "Pragmatismo sobre Teoria"
+    tier: "silver"
+    tipo: "impulsor"
+    strength: 0.90
+    confidence: 0.93
+    frequency: "10+ MIUs"
+    descricao: "Preferencia pela aplicacao pratica sobre abstraccao. Aprendeu na Apple que teoria academica era 'kind of useless' para fazer produtos reais."
+    evidencias:
+      - miu: "I discovered that all this wonderful stuff I knew was kind of useless in making a product"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.97
+      - miu: "I'm sick and tired of design thinking — it's time for design doing"
+        source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+        strength: 0.95
+
+  - name: "Frustracao como Motor Criativo"
+    tier: "silver"
+    tipo: "impulsor"
+    strength: 0.88
+    confidence: 0.92
+    frequency: "10+ MIUs"
+    descricao: "Frustracoes cotidianas com portas, fogoes, chuveiros sao fonte inesgotavel de insight e ensino. A irritacao e produtiva."
+    evidencias:
+      - miu: "I'm sick and tired of crappy designs of our light switches and stove controls and doors. Doors! DOORS!"
+        source_path: "medium.com/@uxpodcast/design-doing-with-don-norman"
+        strength: 0.97
+      - miu: "Bad design screams out its inadequacies"
+        source_path: "jnd.org/preface-design-of-everyday-things-revised-edition/"
+        strength: 0.93
+
+  - name: "Educacao como Legado"
+    tier: "silver"
+    tipo: "impulsor"
+    strength: 0.87
+    confidence: 0.93
+    frequency: "10+ MIUs"
+    descricao: "Identidade central como educador. Livros, NNGroup, Design Lab, DNDA — todas manifestacoes do impulso educacional."
+    evidencias:
+      - miu: "I'm an educator. The most important thing I do."
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.98
+      - miu: "I dedicated my last book to my students past, present and future"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.95
+
+  - name: "Pensamento Sistemico"
+    tier: "silver"
+    tipo: "impulsor"
+    strength: 0.86
+    confidence: 0.91
+    frequency: "8+ MIUs"
+    descricao: "Insistencia em ver sistemas inteiros, nao componentes isolados. Produto nao e ilha. Problema de design e problema de sistema."
+    evidencias:
+      - miu: "A product is more than the product — it's the entire system of experiences"
+        source_path: "jnd.org/systems-thinking-a-product-is-more-than-the-product/"
+        strength: 0.96
+
+  - name: "Humildade Intelectual Ativa"
+    tier: "silver"
+    tipo: "impulsor"
+    strength: 0.85
+    confidence: 0.90
+    frequency: "8+ MIUs"
+    descricao: "Admitir ignorancia como forca, nao fraqueza. 'I didn't even know what cognitive meant.' 'I have no idea what I'm doing.'"
+    evidencias:
+      - miu: "I don't know what I'm doing until I'm finished"
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+        strength: 0.96
+
+medos:
+  - name: "Medo da Irrelevancia"
+    tier: "bronze"
+    tipo: "medo"
+    strength: 0.78
+    confidence: 0.82
+    descricao: "Aposentou-se 5 vezes e voltou cada vez. Nao consegue parar de contribuir. Medo latente de nao deixar legado suficiente."
+    evidencias:
+      - miu: "I retired five times. Clearly I'm not very good at it."
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+
+  - name: "Medo da Superficialidade Disciplinar"
+    tier: "bronze"
+    tipo: "medo"
+    strength: 0.75
+    confidence: 0.80
+    descricao: "Medo de que design permaneca superficial, confinado a art schools, sem fundamento cientifico ou impacto real."
+    evidencias:
+      - miu: "Design is not art. Design education comes from art schools. That's not appropriate."
+        source_path: "uxpodcast.com/263-creating-better-society-don-norman/"
+
+  - name: "Medo do Isolamento Profissional"
+    tier: "bronze"
+    tipo: "medo"
+    strength: 0.72
+    confidence: 0.78
+    descricao: "Medo de que designers permanecam no 'middle level' sem voz na C-suite, sem poder de decisao real."
+    evidencias:
+      - miu: "Designers are in the middle levels. They almost never have a say in what the product will be."
+        source_path: "designobserver.com/finale-design-as-season-two-ft-don-norman/"
+
+hierarquia_valores:
+  ranking:
+    - valor: "Compreensao (Understanding)"
+      posicao: 1
+      evidencia_sacrificio: "Trocou engenharia por psicologia (campo que odiava) para entender como pessoas pensam. Trocou academia por Apple para entender como produtos sao feitos."
+    - valor: "Curiosidade (Exploration)"
+      posicao: 2
+      evidencia_sacrificio: "Troca de campo toda vez que entende o atual, sacrificando expertise acumulada por novidade."
+    - valor: "Impacto Educacional"
+      posicao: 3
+      evidencia_sacrificio: "Dedicou ultimo livro a estudantes, criou DNDA como charity, voltou de 5 aposentadorias."
+    - valor: "Verdade (Honesty)"
+      posicao: 4
+      evidencia_sacrificio: "Contradiz publicamente suas proprias teorias, preferindo estar certo a parecer consistente."
+    - valor: "Utilidade Pratica"
+      posicao: 5
+      evidencia_sacrificio: "Deixou carreira academica pura por Apple quando percebeu que teoria era 'kind of useless.'"
+
+modelo_social:
+  confianca_default: "alta — assume competencia ate prova em contrario"
+  como_interpreta_critica: "Intelectual, nao pessoal. Debate e ferramenta de trabalho. BF Skinner o denunciou no primeiro dia de Harvard — achou amusing."
+  estilo_lideranca: "Mentor provocativo — desafia para ensinar, nunca para dominar"
+  como_constroi_relacoes: "Atraves de ideias compartilhadas, nao de social networking. Conexoes intelectuais sao as que duram."
+  vulnerabilidade_social: "Alta — admite ignorancia, erros, mudancas de opiniao com naturalidade"
+  nivel_competitividade: "Baixo para status pessoal, alto para ideias. Compete no campo das ideias, nao de posicao."

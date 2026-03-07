@@ -1,0 +1,49 @@
+# Padroes de Storytelling: Don Norman
+# Pipeline MMOS v3 | Fase 8
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative"
+subtype: "storytelling-patterns"
+mind: "don-norman"
+
+padroes:
+  - padrao: "Frustration Narrative"
+    descricao: "Conta sobre frustacao pessoal com objeto cotidiano, disseca o problema, extrai principio."
+    frequencia: "dominante — padrao mais usado"
+    estrutura: "Frustacao pessoal -> Analise cognitiva -> Principio universal -> Prescricao"
+    exemplos:
+      - "Norman Doors — portas com design que contradiz a acao necessaria"
+      - "Fogoes com mapping errado entre controles e queimadores"
+      - "Chuveiros de hotel impossiveis de operar"
+
+  - padrao: "Career Odyssey"
+    descricao: "Narrativa da trajetoria pessoal como serie de transicoes imprevistas, cada uma gerando novo insight."
+    frequencia: "alta — especialmente em entrevistas longas"
+    estrutura: "Campo anterior -> Momento de transicao -> O que nao sabia -> Insight -> Campo novo"
+    exemplos:
+      - "MIT (engenharia) -> Penn (computadores) -> Harvard (psicologia) -> descoberta da cognition"
+      - "UCSD (academia) -> Apple (industria) -> 'all I knew was kind of useless'"
+
+  - padrao: "Famous Person Encounter"
+    descricao: "Encontro com figura famosa que ilustra ponto sobre o campo."
+    frequencia: "media"
+    estrutura: "Contexto -> Encontro -> Reacao -> Leitura"
+    exemplos:
+      - "BF Skinner denunciando-o no primeiro dia de Harvard — resilencia"
+      - "George Miller e Jerry Bruner — mentores que moldaram sua trajetoria"
+
+  - padrao: "Paradox Resolution"
+    descricao: "Apresenta paradoxo aparente, explora ambos os lados, resolve com nuance."
+    frequencia: "media-alta"
+    estrutura: "Posicao A -> Posicao B (contraditoria) -> 'Both are right, in different contexts' -> Sintese"
+    exemplos:
+      - "HCD e bom / HCD e harmful -> depende se inovacao incremental ou radical"
+      - "Simplicidade e boa / Complexidade e boa -> compreensibilidade e o verdadeiro criterio"
+
+  - padrao: "Industry Wake-Up"
+    descricao: "Historia de momento na industria que revelou gap entre teoria e pratica."
+    frequencia: "media"
+    estrutura: "Chegada a empresa -> Pergunta que nao sabia responder -> Insight sobre gap -> Mudanca de abordagem"
+    exemplos:
+      - "Apple: 'they had fundamental questions and I said — we never thought of studying that'"
+      - "Mayo Clinic: 'we thought every desk should have a computer — but they needed forklifts for paper'"

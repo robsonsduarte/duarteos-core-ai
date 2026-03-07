@@ -1,0 +1,16 @@
+# Task: Redesign de Sistemas Complexos (DesignX)
+# Mind: Don Norman | Task Operacional
+task:
+  id: "redesign-sistemas-complexos"
+  phase: null
+  status: "pending"
+  descricao: "Aplicar abordagem DesignX de Don Norman para redesign de sistemas sociotecnicos complexos (saude, educacao, governo, transporte)"
+  inputs:
+    - "Descricao do sistema complexo"
+    - "Stakeholders envolvidos"
+    - "Problemas conhecidos"
+  outputs:
+    - "Analise sistemica (produto como servico)"
+    - "Identificacao de pontos de intervencao incremental"
+    - "Proposta HCD+ (humanity-centered, sustainability)"
+    - "Roadmap de mudancas incrementais"

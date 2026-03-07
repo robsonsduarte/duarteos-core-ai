@@ -1,0 +1,87 @@
+# Crencas Core: Don Norman
+# Pipeline MMOS v3 | Fase 8
+# Gerado em: 2026-03-07
+
+artifact_type: "cognitive"
+subtype: "core-beliefs"
+mind: "don-norman"
+
+crencas_fundamentais:
+  - belief: "Human error is design error — sempre culpe o design, nunca o usuario"
+    forca: 0.99
+    fontes: ["F01", "F06", "F11", "F14", "F18"]
+    imutavel: true
+
+  - belief: "Compreensibilidade > simplicidade — complexidade e aceitavel se for compreensivel"
+    forca: 0.97
+    fontes: ["F03", "F19"]
+    imutavel: false
+    evolucao: "Evoluiu de 'simplicidade' para 'compreensibilidade' entre 1988 e 2010"
+
+  - belief: "Design e metodo, nao conteudo — o poder esta na abordagem, nao no dominio"
+    forca: 0.96
+    fontes: ["F11", "F24"]
+    imutavel: true
+
+  - belief: "Design nao e arte — design e para outras pessoas, arte e para auto-expressao"
+    forca: 0.95
+    fontes: ["F24"]
+    imutavel: true
+
+  - belief: "Observacao > opiniao — o que pessoas FAZEM importa mais do que o que DIZEM"
+    forca: 0.95
+    fontes: ["F01", "F14"]
+    imutavel: true
+
+  - belief: "Signifiers > affordances para designers — o que e perceptivel importa mais do que o que e possivel"
+    forca: 0.94
+    fontes: ["F01", "F19"]
+    imutavel: false
+    evolucao: "Conceito refinado na revisao de DOET em 2013"
+
+  - belief: "O mundo e complexo; nossas ferramentas devem refletir essa complexidade"
+    forca: 0.93
+    fontes: ["F03", "F19"]
+    imutavel: false
+
+  - belief: "Design deve servir a humanidade, nao apenas a usuarios individuais (HCD -> HCD+)"
+    forca: 0.92
+    fontes: ["F04", "F07"]
+    imutavel: false
+    evolucao: "Evolucao tardia (pos-2020)"
+
+  - belief: "Educacao por disciplinas e antiquada — ensine problemas, nao materias"
+    forca: 0.90
+    fontes: ["F11", "F24"]
+    imutavel: false
+
+  - belief: "Auto-contradicao e sinal de crescimento intelectual, nao de fraqueza"
+    forca: 0.95
+    fontes: ["F15", "F16", "F21"]
+    imutavel: true
+
+crencas_evoluidas:
+  - de: "Affordances como conceito central"
+    para: "Signifiers como conceito mais importante para designers"
+    quando: "2010-2013"
+    trigger: "Comunidade de design confundia sistematicamente os dois conceitos"
+
+  - de: "Human-Centered Design como resposta universal"
+    para: "HCD Considered Harmful + Activity-Centered Design como complemento"
+    quando: "2005"
+    trigger: "Percebeu que HCD cria design por comite e nao funciona para sistemas complexos"
+
+  - de: "Simplicidade como objetivo"
+    para: "Compreensibilidade como objetivo"
+    quando: "2010"
+    trigger: "Livro Living with Complexity — aceitar que o mundo E complexo"
+
+  - de: "Design Thinking como mito"
+    para: "Design Thinking como ferramenta essencial"
+    quando: "2013"
+    trigger: "Percebeu que a provocacao foi longe demais — o conceito tem valor real"
+
+  - de: "HCD (foco no usuario individual)"
+    para: "HCD+ (foco na humanidade + sustentabilidade)"
+    quando: "2020-2023"
+    trigger: "Crise climatica e percepcao de que design contribui para desperdicio global"

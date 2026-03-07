@@ -586,15 +586,16 @@ categories:
       last_updated: "2026-03-06"
     - slug: "don-norman"
       name: "Don Norman"
-      domain: "Human-Centered Design & Psicologia Cognitiva"
+      domain: "Human-Centered Design, Psicologia Cognitiva e Design para um Mundo Melhor"
       clone_file: ".claude/commands/DUARTEOS/UX-Design/don-norman.md"
       dna_file: ".claude/synapse/minds/don-norman.yaml"
-      versao_dna: 1
-      total_fontes: 1
-      confianca: "media"
-      has_paradoxos: false
-      fidelidade: null
-      last_updated: "2026-03-01"
+      versao_dna: 3
+      total_fontes: 27
+      confianca: "muito alta"
+      has_paradoxos: true
+      fidelidade: 95.80
+      last_updated: "2026-03-07"
+      pipeline: "MMOS v3 completo"
     - slug: "jakob-nielsen"
       name: "Jakob Nielsen"
       domain: "Usabilidade Web & Heuristicas de Interface"

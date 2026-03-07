@@ -1,0 +1,30 @@
+# Framework: Activity-Centered Design (ACD)
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "Activity-Centered Design"
+slug: "activity-centered-design"
+mind: "don-norman"
+category: "design-philosophy"
+priority: "secondary"
+
+descricao: "Alternativa/complemento ao HCD proposta por Norman em 'HCD Considered Harmful.' Foca na atividade (nao no usuario individual), reconhece que pessoas SE ADAPTAM a tecnologia, e que a hierarquia Activity > Task > Action > Operation e mais produtiva que o foco no individuo."
+
+quote_original: "In Activity-Centered Design, we admit that much of human behavior IS adaptation to technology. People DO adapt to technology."
+source: "Human-Centered Design Considered Harmful (ACM Interactions, 2005)"
+
+steps:
+  - step: 1
+    acao: "Identificar a atividade"
+    descricao: "Qual atividade as pessoas realizam? (nao quem sao)"
+  - step: 2
+    acao: "Decompor em hierarquia"
+    descricao: "Activity -> Tasks -> Actions -> Operations (Activity Theory)"
+  - step: 3
+    acao: "Projetar para a atividade"
+    descricao: "A ferramenta deve se alinhar com a atividade. Quem domina a ferramenta, domina a atividade."
+  - step: 4
+    acao: "Aceitar adaptacao"
+    descricao: "Pessoas se adaptam a tecnologia. Isso e natural, nao um bug."
+
+paradoxo: "Norman propoe ACD como CRITICA ao seu proprio HCD. Depois nuanca: ACD para sistemas complexos e atividades estabelecidas (avioes, instrumentos musicais); HCD para novos produtos que ainda nao tem atividade estabelecida."

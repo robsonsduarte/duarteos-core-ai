@@ -1,0 +1,27 @@
+# Framework: Double Diamond
+# Mind: Don Norman (adotado do British Design Council)
+# Gerado em: 2026-03-07
+
+name: "Double Diamond"
+slug: "double-diamond"
+mind: "don-norman"
+category: "design-process"
+priority: "secondary"
+
+descricao: "Modelo de processo de design com dois diamantes: o primeiro para encontrar o PROBLEMA certo (divergir e convergir na definicao), o segundo para a SOLUCAO (divergir e convergir na implementacao). Norman adotou e popularizou este modelo do British Design Council."
+
+source: "Rethinking Design Thinking (Core77, 2013)"
+
+steps:
+  - step: 1
+    acao: "Divergir (Problema)"
+    descricao: "Explorar amplamente o espaco do problema. Observacao. Field research. Ask stupid questions."
+  - step: 2
+    acao: "Convergir (Problema)"
+    descricao: "Definir o problema real. Five Whys. Resistir a saltar para solucoes."
+  - step: 3
+    acao: "Divergir (Solucao)"
+    descricao: "Brainstorm. Ideacao. Considerar muitas alternativas antes de escolher."
+  - step: 4
+    acao: "Convergir (Solucao)"
+    descricao: "Prototipar. Testar. Iterar. Convergir para a melhor solucao viavel."

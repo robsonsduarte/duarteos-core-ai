@@ -1,0 +1,30 @@
+# Framework: Three Levels of Emotional Design
+# Mind: Don Norman
+# Gerado em: 2026-03-07
+
+name: "Three Levels of Emotional Design"
+slug: "emotional-design"
+mind: "don-norman"
+category: "design-evaluation"
+priority: "primary"
+
+descricao: "Framework dos 3 niveis de processamento emocional que influenciam como pessoas percebem e interagem com design. Visceral (aparencia imediata), Behavioral (usabilidade e prazer de uso), Reflective (significado e identidade)."
+
+quote_original: "Visceral, Behavioral, Reflective — three very different dimensions of design."
+source: "Emotional Design: Why We Love (or Hate) Everyday Things (2004)"
+
+steps:
+  - step: 1
+    acao: "Visceral"
+    descricao: "Resposta imediata, pre-consciente. Aparencia, textura, som, cheiro. O teapot que voce quer comprar no primeiro olhar."
+  - step: 2
+    acao: "Behavioral"
+    descricao: "Experiencia de uso. Performance, usabilidade, prazer de uso. Funciona bem? E agradavel de usar?"
+  - step: 3
+    acao: "Reflective"
+    descricao: "Significado, self-image, memoria, status, satisfacao intelectual. O que esse produto diz sobre mim?"
+
+quando_usar:
+  - "Para avaliar design alem de usabilidade pura"
+  - "Para justificar investimento em estetica (nivel visceral) quando funcionalidade ja e boa"
+  - "Para entender por que usuarios amam ou odeiam produtos funcionalmente identicos"

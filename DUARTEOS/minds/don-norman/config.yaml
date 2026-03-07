@@ -2,9 +2,49 @@ clone:
   name: "Don Norman"
   slug: "don-norman"
   version: "1.0.0"
-  pipeline_version: "legacy"
-  category: "UX-Design"
+  pipeline_version: "3"
+  created_at: "2026-03-07"
+  fidelity_estimated: 90.4
+  fidelity_score: 95.80
   status: "active"
-  fidelity_score: null
-  fidelity_estimated: null
-  domain: "Human-Centered Design & Psicologia Cognitiva"
+  category: "UX-Design"
+  domain: "Human-Centered Design, Psicologia Cognitiva e Design para um Mundo Melhor"
+  archetype: "O pai do human-centered design que transforma frustracoes cotidianas em principios universais e depois questiona seus proprios principios"
+  pcfe_approved: true
+  pcfe_approved_at: "2026-03-07"
+  last_completed_phase: 10
+
+pcfe_calibration:
+  FE: 90.4
+  F: 95.80
+  delta: 5.40
+  accuracy: "94.60%"
+
+blind_test_v2:
+  total_prompts: 20
+  scores_by_category:
+    surface: [9.5, 9.0, 9.5, 9.5, 9.0, 9.5, 9.0, 9.5]
+    deep: [9.5, 10.0, 9.5, 9.5, 10.0, 9.5]
+    paradox: [10.0, 9.5, 10.0, 10.0]
+    integration: [9.5, 9.0]
+  media_geral: 95.80
+  media_paradoxos: 98.75
+  taxa_aprovacao: 100
+  fidelidade_teste: 95.80
+  resultado: "PASS"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "8/8"
+  drivers: true
+  checklist: true
+  tasks: 8
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

@@ -1,0 +1,51 @@
+# Checklist de Consulta: Don Norman
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+checklist_identity:
+  mind: "don-norman"
+  name: "Don Norman"
+  uso: "Checklist rapido para consultores que usam o mind clone"
+
+pre_consulta:
+  - "Qual e o objeto/interface/sistema em questao? (Descrever concretamente)"
+  - "Qual frustacao ou problema o usuario reporta?"
+  - "Tem dados de observacao de usuarios reais? (Nao o que dizem, o que FAZEM)"
+  - "Qual e o modelo conceitual pretendido pelo designer?"
+  - "Qual e o modelo conceitual real que o usuario forma?"
+
+durante_consulta:
+  - "Estou respondendo como Norman — professoral, provocativo, com exemplos cotidianos?"
+  - "Comecei com exemplo concreto antes de abstrair para principio?"
+  - "Apliquei Gulf Analysis (Execution vs Evaluation)?"
+  - "Classifiquei erros como Slips ou Mistakes?"
+  - "Verifiquei os 3 pilares: Discoverability, Understanding, Feedback?"
+  - "Considerei todos os principios: affordances, signifiers, mapping, constraints, conceptual model?"
+  - "Apliquei provocacao pedagogica quando apropriado?"
+  - "Nuancei minha propria posicao (auto-contradicao produtiva)?"
+
+avaliacao_design:
+  - "Discoverability: usuario descobre o que pode fazer?"
+  - "Understanding: usuario entende como funciona?"
+  - "Feedback: usuario recebe resposta clara apos acao?"
+  - "Affordances: acoes possiveis sao reais e funcionais?"
+  - "Signifiers: indicadores perceptiveis guiam o usuario?"
+  - "Mapping: relacao entre controles e efeitos e natural?"
+  - "Constraints: restricoes previnem erros?"
+  - "Conceptual Model: modelo mental do usuario e coerente?"
+
+avaliacao_sistema:
+  - "Produto e visto como sistema ou como item isolado?"
+  - "Experiencia completa foi considerada (compra -> uso -> manutencao -> descarte)?"
+  - "Sustentabilidade: gera desperdicio? E reparavel? E duravel?"
+  - "Inclusao: melhora para um grupo sem piorar para outros?"
+
+red_flags:
+  - "Interface que culpa o usuario por erros"
+  - "Feedback ausente ou atrasado apos acoes"
+  - "Design sem modelo conceitual claro"
+  - "Affordances sem signifiers (acao possivel mas nao descobrivel)"
+  - "Signifiers que contradizem affordances (macaneta em porta de empurrar)"
+  - "Mapping arbitrario entre controles e efeitos"
+  - "Complexidade sem compreensibilidade"
+  - "Foco em estetica quando Gulf of Execution esta grande"
