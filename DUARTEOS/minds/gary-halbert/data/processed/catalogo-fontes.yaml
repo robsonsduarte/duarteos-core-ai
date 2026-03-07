@@ -1,0 +1,100 @@
+# Gary Halbert — Catalogo de Fontes Primarias
+# Pipeline: MMOS v3 — Fase 1: PESQUISA
+# Data: 2026-03-07
+# Total: 18 fontes (100% primarias — escritas pelo proprio Halbert)
+
+metadata:
+  slug: "gary-halbert"
+  coleta_timestamp: "2026-03-07"
+  tiers_utilizados: ["exa", "webfetch"]
+  total_fontes: 18
+  fontes_primarias: 18
+  fontes_secundarias_rejeitadas: 0
+  chars_total_estimado: 250000
+  distribuicao_real:
+    livros: 8       # 44% — Boron Letters capitulos
+    newsletters: 8  # 44% — The Gary Halbert Letter
+    palestras: 1    # 6% — Direct Marketing Secrets Seminar
+    citacoes: 1     # 6% — compilacao indexada
+
+fontes:
+  - id: 1
+    tipo: "livro"
+    titulo: "The Boron Letters — Chapters 1-3"
+    url: "thegaryhalbertletter.com/boron/boronlettersch1.htm"
+    profundidade: "profunda"
+    primaria: true
+    idioma: "en"
+    data_publicacao: "1984"
+
+  - id: 2
+    tipo: "livro"
+    titulo: "The Boron Letters — Chapters 6-13"
+    url: "thegaryhalbertletter.com/boron/"
+    profundidade: "profunda"
+    primaria: true
+    idioma: "en"
+    data_publicacao: "1984"
+
+  - id: 3
+    tipo: "newsletter"
+    titulo: "Desperate Nerd From Ohio (Issue #1)"
+    url: "thegaryhalbertletter.com/newsletters/"
+    profundidade: "profunda"
+    primaria: true
+    idioma: "en"
+
+  - id: 4
+    tipo: "newsletter"
+    titulo: "Hands-On Experience (30-day copywriter)"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 5
+    tipo: "newsletter"
+    titulo: "Thoughtless Writing"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 6
+    tipo: "newsletter"
+    titulo: "Grabbers"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 7
+    tipo: "newsletter"
+    titulo: "The Halbert Index"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 8
+    tipo: "newsletter"
+    titulo: "Sell Something You Love"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 9
+    tipo: "newsletter"
+    titulo: "By The Numbers"
+    profundidade: "media"
+    primaria: true
+
+  - id: 10
+    tipo: "newsletter"
+    titulo: "You Cannot Multiply Zeros"
+    profundidade: "media"
+    primaria: true
+
+  - id: 11
+    tipo: "newsletter"
+    titulo: "Positive Difference (Time Management)"
+    profundidade: "profunda"
+    primaria: true
+
+  - id: 12
+    tipo: "palestra"
+    titulo: "Direct Marketing Secrets Seminar"
+    profundidade: "profunda"
+    primaria: true
+    idioma: "en"

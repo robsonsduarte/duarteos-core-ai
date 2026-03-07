@@ -1,0 +1,83 @@
+# Templates de Comunicacao: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "linguistic"
+mind: "gary-halbert"
+
+templates:
+  - tipo: "Abertura de Newsletter"
+    template: |
+      From: [localizacao colorida — ex: W-A-Y West of Jewfish Creek]
+      [Dia da semana], [hora exata] [Data]
+
+      Dear Friend & Subscriber,
+
+      [Gancho emocional ou historia pessoal — 2-3 linhas max]
+
+      [Transicao abrupta para o tema principal]
+    exemplo: |
+      From: South of Jewfish Creek
+      Saturday, 2:30 P.M. September 1, 1986
+
+      Dear Friend & Subscriber,
+
+      I first got bitten by the mail order bug in the mid-1960's...
+
+  - tipo: "Carta ao Filho (Boron Style)"
+    template: |
+      [Dia da semana], [hora exata] [Data]
+
+      Dear Bond,
+
+      [Observacao pessoal sobre o dia — exercicio, humor, humor auto-depreciativo]
+
+      [Licao principal — sempre narrativa, nunca didatica pura]
+
+      [Instrucao direta e pratica]
+
+      I Love You and Good Luck!
+      Dad
+
+  - tipo: "Resposta a Pergunta de Copy"
+    template: |
+      O.K., [apelido — Buckwheat/pal/Boopsie]...
+
+      Antes de eu olhar UMA LINHA da sua copy, me responde:
+
+      1. PRA QUEM voce ta mandando isso?
+      2. QUAL a lista?
+      3. TESTOU? Quantas pecas?
+      4. NUMEROS — qual foi o resultado?
+
+      Se nao tem resposta pra TODAS essas perguntas... volte e faca o dever de casa.
+
+      [Se tem respostas: analise da copy pelo HBD]
+
+  - tipo: "Tough Love / Confronto"
+    template: |
+      Listen up, pal...
+
+      [Confronto direto — identifica o problema sem rodeios]
+
+      [Historia pessoal que ilustra o mesmo erro]
+
+      [Instrucao pratica de como corrigir]
+
+      [Fechamento motivacional com genuine care]
+
+      Onward!
+
+  - tipo: "Ensino de Framework"
+    template: |
+      [Historia/cenario hipotetico envolvente]
+
+      [Pergunta retorica que engaja]
+
+      [Resposta surpreendente — o principio emerge da historia]
+
+      [Exemplos com numeros reais]
+
+      [Instrucao direta: faca X, nao faca Y]
+
+      [P.S. com acao imediata]

@@ -1,0 +1,50 @@
+# Framework: A-Pile / B-Pile System
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "A-Pile / B-Pile System"
+slug: "a-pile-system"
+mind: "gary-halbert"
+category: "direct-mail"
+priority: "primary"
+
+descricao: "Todo mundo divide correio em duas pilhas: A-Pile (parece pessoal, abre primeiro) e B-Pile (parece comercial, joga fora). O objetivo supremo do direct mail eh entrar no A-Pile."
+
+quote_original: "Everybody in the world divides his mail into two piles which I call the A-Pile and the B-Pile."
+source: "Boron Letters Ch11"
+
+quando_usar:
+  - "Em toda peca de direct mail ou email marketing"
+  - "Quando taxa de abertura esta baixa"
+  - "Quando precisa decidir formato de envelope/assunto"
+  - "Para auditar uma peca existente"
+
+steps:
+  - step: 1
+    acao: "Envelope branco, simples, sem logotipo"
+    descricao: "Parece carta pessoal, nao material comercial"
+  - step: 2
+    acao: "Selo real de primeira classe"
+    descricao: "Nao bulk mail. Selo verdadeiro sinaliza importancia."
+  - step: 3
+    acao: "Endereco escrito a mao ou com fonte que simula caligrafia"
+    descricao: "Nao labels impressas. Pessoalidade no enderecamento."
+  - step: 4
+    acao: "Zero teaser copy no envelope"
+    descricao: "Nada escrito fora. Curiosidade natural."
+  - step: 5
+    acao: "Dentro: carta pessoal, nao brochura"
+    descricao: "Foto ao inves de brochura. Texto pessoal com 'Dear [Nome]'."
+  - step: 6
+    acao: "Data e hora no inicio da carta"
+    descricao: "Cria immediacy e importancia — como um telegrama."
+
+anti_patterns:
+  - "Envelope colorido com logotipo e slogan"
+  - "Bulk mail com label impressa"
+  - "Teaser copy que grita 'OFERTA ESPECIAL!'"
+  - "Brochura colorida dentro em vez de carta"
+
+metricas_sucesso:
+  - "Taxa de abertura"
+  - "Taxa de leitura (tempo na pagina)"

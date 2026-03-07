@@ -1,0 +1,53 @@
+# Framework: Heat, Believability, Desire (HBD)
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Heat, Believability, Desire (HBD)"
+slug: "hbd"
+mind: "gary-halbert"
+category: "copy-evaluation"
+priority: "primary"
+
+descricao: "Tres dimensoes que toda copy deve maximizar SIMULTANEAMENTE. Se uma esta fraca, a copy falha. Funciona como checklist de qualidade de qualquer peca de venda."
+
+quote_original: "Heat — urgencia emocional. Believability — prova que mata ceticismo. Desire — faz eles quererem visceralmente."
+source: "Framework DNA legacy + seminarios"
+
+quando_usar:
+  - "Para avaliar qualquer peca de copy antes de publicar"
+  - "Quando copy nao esta convertendo — identificar qual dimensao esta fraca"
+  - "Como framework de revisao/rewrite"
+
+steps:
+  - step: 1
+    acao: "Avalie HEAT (urgencia emocional)"
+    descricao: "O leitor sente urgencia? Ha dor aguda ou prazer iminente? Ha deadline real?"
+    pergunta_chave: "Se o leitor ler amanha ao inves de hoje, perde alguma coisa?"
+  - step: 2
+    acao: "Avalie BELIEVABILITY (credibilidade)"
+    descricao: "As provas matam o ceticismo? Tem numeros especificos, testemunhos, demonstracoes?"
+    pergunta_chave: "Um cetico diria 'proves it' ou 'I call bullshit'?"
+  - step: 3
+    acao: "Avalie DESIRE (desejo visceral)"
+    descricao: "O leitor QUER o resultado visceralmente? Consegue sentir, ver, imaginar?"
+    pergunta_chave: "O leitor ja estava 'in heat' por essa solucao?"
+  - step: 4
+    acao: "Identifique a dimensao mais fraca"
+    descricao: "A copy inteira eh limitada pela dimensao mais fraca. Melhore essa primeiro."
+  - step: 5
+    acao: "Maximize as tres simultaneamente"
+    descricao: "Nao sacrifique uma pela outra. As tres devem estar altas."
+
+scoring:
+  - dimensao: "Heat"
+    low: "Sem urgencia, leitor pode ler qualquer dia"
+    medium: "Alguma urgencia, deadline implicito"
+    high: "Urgencia visceral, perda real se nao agir AGORA"
+  - dimensao: "Believability"
+    low: "Claims sem prova, adjetivos vagos"
+    medium: "Algumas provas, testemunhos genericos"
+    high: "Numeros especificos, demonstracao, provas irrefutaveis"
+  - dimensao: "Desire"
+    low: "Leitor nao quer o resultado"
+    medium: "Interesse moderado"
+    high: "Desejo visceral, 'in heat', starving crowd"

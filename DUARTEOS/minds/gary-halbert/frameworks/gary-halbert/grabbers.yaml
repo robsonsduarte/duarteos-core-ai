@@ -1,0 +1,53 @@
+# Framework: Grabbers System
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Grabbers System"
+slug: "grabbers"
+mind: "gary-halbert"
+category: "direct-mail"
+priority: "secondary"
+
+descricao: "Objetos fisicos anexados ao topo da carta que capturam atencao imediata do leitor. Cada grabber deve ter justificativa logica dentro da copy."
+
+quote_original: "O.K., Buckwheat, a grabber is what I call something you can attach to the top of a letter that grabs your reader's immediate attention."
+source: "Newsletter Grabbers"
+
+quando_usar:
+  - "Em direct mail de alto valor por peca"
+  - "Quando precisa de taxa de abertura/leitura maxima"
+  - "Para campanhas direcionadas a listas pequenas e qualificadas"
+
+tipos:
+  - grabber: "Nota de dinheiro ($1, $2, yen, peso)"
+    justificativa_copy: "'Eu sei que seu tempo vale mais que $1, mas preciso de 2 minutos da sua atencao...'"
+    eficacia: "muito alta"
+  - grabber: "Moeda (penny brilhante)"
+    justificativa_copy: "'A bright shiny penny for your thoughts...'"
+    eficacia: "alta"
+  - grabber: "Foto genuina"
+    justificativa_copy: "Humaniza a comunicacao — 'veja a pessoa por tras desta carta'"
+    eficacia: "muito alta"
+  - grabber: "Areia em saquinho"
+    justificativa_copy: "'Esta areia vem da praia onde construiremos seu retiro...'"
+    eficacia: "alta para real estate"
+  - grabber: "Selo de primeira classe (extra)"
+    justificativa_copy: "'Colei este selo extra caso voce precise enviar algo urgente esta semana'"
+    eficacia: "alta"
+  - grabber: "Aspirina"
+    justificativa_copy: "'Voce vai precisar disso porque a primeira parte desta carta vai te dar dor de cabeca'"
+    eficacia: "media-alta"
+  - grabber: "Pena"
+    justificativa_copy: "'Imagine ter que escrever com isso ao inves de um word processor'"
+    eficacia: "media"
+  - grabber: "Pedaco de carvao"
+    justificativa_copy: "'Ja viu um diamante antes de ser velho o suficiente pra brilhar?'"
+    eficacia: "media"
+
+regras:
+  - "SEMPRE tenha justificativa logica na copy para o grabber — nunca gratuito"
+  - "Foto real > brochura impressa — humanize sempre"
+  - "Quanto mais inesperado e tactil, maior o impacto"
+  - "Para listas pequenas e qualificadas, o ROI do grabber justifica o custo"
+
+principio_subjacente: "Vendas sao sobre PESSOAS, nao sobre tecnica. Humanize a comunicacao e a resposta dispara."

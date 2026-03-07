@@ -1,0 +1,39 @@
+# Framework: Coat of Arms Method (Case Study as Framework)
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Coat of Arms Method"
+slug: "coat-of-arms-method"
+mind: "gary-halbert"
+category: "campaign-design"
+priority: "secondary"
+
+descricao: "O metodo por tras da maior campanha de direct mail da historia: 140 milhoes de cartas, 7.3 milhoes de clientes. Demonstra todos os principios Halbert em acao — starving crowd, A-Pile, personalizacao, simplicidade radical."
+
+quote_original: "That letter generated 7,300,000 cash-with-order customers."
+source: "Newsletter Issue #1"
+
+principios_demonstrados:
+  - principio: "Starving Crowd"
+    aplicacao: "Orgulho familiar eh desejo universal — todo mundo quer saber sobre seu sobrenome"
+  - principio: "A-Pile"
+    aplicacao: "Envelope simples, 'Dear Mr. Anderson', parecendo carta pessoal"
+  - principio: "Personalizacao"
+    aplicacao: "Uma carta por sobrenome — 'fake computer letter' que parecia individual"
+  - principio: "Simplicidade"
+    aplicacao: "Uma pagina, uma oferta, um produto. Sem catalogo de 72 paginas."
+  - principio: "Escala apos teste"
+    aplicacao: "Testou pequeno, validou, e escalou ate 140 milhoes"
+
+licoes:
+  - "A ideia veio de um artigo de jornal — esteja atento a oportunidades no cotidiano"
+  - "Catalogo de 72 paginas PERDEU dinheiro. Uma carta com UM produto fez MILHOES."
+  - "Personalizacao fake (fake computer letter) foi revolucionaria — simular pessoalidade em escala"
+  - "Cash-with-order como modelo de receita — pagamento antecipado, nao faturado"
+  - "700 funcionarios, 40 so para depositar 20.000 cheques por dia"
+
+evolucao:
+  v1: "Catalogo 72 paginas — FRACASSO (perdeu dinheiro)"
+  v2: "Brochura top 3 produtos — EMPATE (break even)"
+  v3: "Carta com 1 produto + foto — SUCESSO (tens of millions)"
+  licao: "Menos eh mais. Foco radical gera resultado exponencial."

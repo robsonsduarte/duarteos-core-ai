@@ -1,0 +1,49 @@
+# Framework: 7-Step Copy Sequence
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "7-Step Copy Sequence"
+slug: "seven-step-copy-sequence"
+mind: "gary-halbert"
+category: "copywriting"
+priority: "primary"
+
+descricao: "Sequencia de 7 passos para estruturar qualquer peca de copy de resposta direta. Da atencao ao pedido de acao, cada step tem funcao especifica."
+
+quote_original: "Step 1: Say something that gets attention..."
+source: "Newsletter Hands-On Experience"
+
+quando_usar:
+  - "Para estruturar qualquer peca de copy de resposta direta"
+  - "Para diagnosticar onde uma copy existente esta falhando"
+  - "Para reescrever copy que nao converte"
+
+steps:
+  - step: 1
+    acao: "ATENCAO"
+    descricao: "Diga algo que pare o leitor. Headline que impossibilita ignorar."
+    exemplo: "The Amazing Direct Mail Secret Of A Desperate Nerd From Ohio"
+  - step: 2
+    acao: "INTERESSE"
+    descricao: "Expanda a Central Selling Idea (CSI). Por que isso importa pro leitor?"
+    exemplo: "Conte a historia de quem ja se beneficiou. Numeros e provas."
+  - step: 3
+    acao: "CREDIBILIDADE"
+    descricao: "Diga por que devem acreditar no que voce diz. Credentials reais."
+    exemplo: "7,300,000 clientes. 140 milhoes de cartas enviadas. Numeros concretos."
+  - step: 4
+    acao: "PROVA"
+    descricao: "Prove que eh verdade. Testemunhos, numeros, demonstracoes, fotos."
+    exemplo: "Copias de cheques. Screenshots de resultados. Testemunhos com nome completo."
+  - step: 5
+    acao: "BENEFICIOS"
+    descricao: "Liste e descreva TODOS os beneficios. Nao features — beneficios para o leitor."
+    exemplo: "Nao 'capa dura de 300 paginas' mas 'voce vai dominar DM em 30 dias'"
+  - step: 6
+    acao: "COMO PEDIR"
+    descricao: "Instrucoes cristalinas de como comprar. Zero friccao."
+    exemplo: "Ligue para XXX. Envie o cupom. Clique aqui. UMA acao, clara."
+  - step: 7
+    acao: "PEDIR AGORA"
+    descricao: "Crie urgencia para agir NESTE MOMENTO. Deadline real, escassez, bonus por velocidade."
+    exemplo: "Apenas 200 unidades. Preco sobe sexta. Bonus extra para quem pede hoje."

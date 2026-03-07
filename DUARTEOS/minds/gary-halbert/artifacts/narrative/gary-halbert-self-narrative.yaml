@@ -1,0 +1,53 @@
+# Auto-Narrativa: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative"
+mind: "gary-halbert"
+
+narrativa_oficial:
+  titulo: "O Nerd Desesperado de Ohio que Virou o Principe do Print"
+  arco: "De garoto do interior de Ohio obsessado por mail order, passando por prisao federal, ate lenda imortal do direct mail com 140 milhoes de cartas enviadas."
+
+capitulos:
+  - titulo: "O Frenesi de Leitura"
+    periodo: "1960s"
+    narrativa: "Jovem de Ohio descobre mail order e le TUDO com frenesi de tubarao. Dirige centenas de milhas para conseguir livros. Thomas Hall's Direct Mail Guides como a fagulha."
+    quote: "I went on a reading frenzy with the same passion a Great White goes on a feeding frenzy."
+
+  - titulo: "O Artigo que Mudou Tudo"
+    periodo: "Early 1970s"
+    narrativa: "Le artigo de jornal sobre senhora que faz brasoes familiares. Genio sintetiza: combinar orgulho familiar com direct mail personalizado. Nasce o Coat of Arms Letter."
+    quote: "I found myself reading a newspaper story that changed my entire life."
+
+  - titulo: "O Imperio dos Brasoes"
+    periodo: "1970s-1980s"
+    narrativa: "140 milhoes de cartas enviadas. 7.3 milhoes de clientes. 700 funcionarios. 40 pessoas so pra depositar 20.000 cheques por dia. Uma carta simples com UM produto."
+    quote: "We took in MILLIONS And MILLIONS And MILLIONS of Dollars!"
+
+  - titulo: "A Queda e a Prisao"
+    periodo: "1984"
+    narrativa: "Preso por fraude. Enviado para prisao federal de Boron, California. Ao inves de se destruir, decide escrever tudo que sabe para o filho Bond."
+    quote: "Today I crossed some sort of invisible mental line. Instead of being depressed I just got tougher."
+
+  - titulo: "As Cartas de Boron"
+    periodo: "1984"
+    narrativa: "Da cela de prisao, escreve cartas diarias ao filho. Começa com saude e fitness, avanca para marketing e vida. As cartas se tornam um dos maiores cursos de copy ja escritos."
+    quote: "This letter is going to be the first in a long series in which I will attempt to communicate the important things I have learned."
+
+  - titulo: "O Renascimento — The Gary Halbert Letter"
+    periodo: "1986-2007"
+    narrativa: "Sai da prisao e lanca newsletter semanal gratuita que se torna cult. Ensina tudo que sabe de graca. Constroi reputacao imortal. Seminarios caros. Consultoria premium."
+    quote: "The Amazing Direct Mail Secret Of A Desperate Nerd From Ohio"
+
+  - titulo: "O Legado"
+    periodo: "2007+"
+    narrativa: "Morre em 2007. Bond Halbert republica Boron Letters. O material de Halbert se torna referencia obrigatoria para toda uma geracao de copywriters. O Principe do Print vive para sempre."
+    quote: "I Love You and Good Luck! Dad"
+
+temas_recorrentes:
+  - "Queda e renascimento — cada fracasso gera aprendizado e forca"
+  - "Pai ausente que compensa com sabedoria escrita"
+  - "Street smart vs academia — a vida real como universidade"
+  - "Generosidade radical como estrategia de legado"
+  - "O corpo como fundacao para a mente"

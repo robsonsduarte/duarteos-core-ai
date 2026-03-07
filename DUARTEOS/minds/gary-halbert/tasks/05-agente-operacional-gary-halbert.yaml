@@ -1,0 +1,18 @@
+# Task: Agente Operacional + Artefatos
+# Mind: Gary Halbert | Fase 10 MMOS v3
+task:
+  id: "05-agente-operacional"
+  phase: 10
+  status: "completed"
+  completed_at: "2026-03-07"
+  outputs:
+    agent_md: ".claude/commands/DUARTEOS/Copywriting/gary-halbert.md"
+    agent_copy: "agents/gary-halbert.md"
+    frameworks: 8
+    voice: "voice/gary-halbert-voice.yaml"
+    phrases: "phrases/gary-halbert-phrases.yaml"
+    checklist: "checklists/gary-halbert-checklist.yaml"
+    behavioral: 2
+    cognitive: 2
+    linguistic: 2
+    narrative: 2

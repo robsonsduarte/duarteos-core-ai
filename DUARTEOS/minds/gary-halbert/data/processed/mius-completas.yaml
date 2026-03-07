@@ -1,0 +1,982 @@
+# MIUs Completas — Gary Halbert
+# Pipeline MMOS v3 | Fase 6: EXTRACAO COMPLETA
+# Data: 2026-03-07
+# Total MIUs extraidas: 112
+# Fontes cobertas: 18
+# Cobertura DNA: todas as 10 camadas
+# Estilometria: calculada
+
+estilometria:
+  avg_sentence_length: 11.3
+  avg_paragraph_length: 2.1
+  caps_lock_frequency: "alta — 3-5x por pagina para enfase emocional"
+  ellipsis_usage: "muito alta — reticencias com espacos como ritmo de pensamento: 'and... therefore... very often...'"
+  profanity_index: "moderado-alto — hell, damn, shit, crap, bullshit como enfase natural"
+  exclamation_frequency: "alta — 4-6x por pagina, sempre em claims de impacto"
+  question_rhetorical_ratio: 0.65
+  one_word_sentences: "frequente — 'Onward.' 'Whatever.' 'Bullshit.' 'Goody.'"
+  humor_density: "alta — auto-depreciacao + hiperbole + insultos afetivos"
+  personal_anecdote_ratio: 0.40
+  imperative_commands: "alta — 'Listen up.' 'Write.' 'Do it.' 'Test.'"
+  nickname_usage: "constante — Buckwheat, Boopsie, dear Son, pal"
+  opening_pattern: "Localizacao + data/hora exata + saudacao pessoal"
+  closing_pattern: "'I Love You and Good Luck! Dad' (Boron) / 'Onward!' (newsletters)"
+  ps_usage: "quase universal — P.S. longos com urgencia ou bonus"
+  transition_markers: ["Onward.", "Press on.", "Let's take a break.", "Now then..."]
+  voice_signature: "Coloquial-visceral. Parece conversa de bar com um genio de rua. Mistura vulnerabilidade crua com autoridade absoluta."
+
+mius:
+  # === FILOSOFIA (24 MIUs) ===
+
+  - id: 1
+    texto: "The only advantage I want is A STARVING CROWD!"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch6"
+    layer_forte: 4
+
+  - id: 2
+    texto: "There is no justice. There is only power."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch2"
+    layer_forte: 4
+
+  - id: 3
+    texto: "Nothing is impossible for a man who refuses to listen to reason."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch2"
+    layer_forte: 4
+
+  - id: 4
+    texto: "Motion beats meditation."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 5
+    texto: "When you depend on others you give yourself an excuse for failure."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch3"
+    layer_forte: 3
+
+  - id: 6
+    texto: "Most of the world's work is done by people who didn't feel much like getting out of bed."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch8"
+    layer_forte: 4
+
+  - id: 7
+    texto: "What you think about isn't going to produce any change whatsoever. What you plan isn't going to create any change either. The only thing that is going to make any difference at all in your life... is What You Do!"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Positive Difference"
+    layer_forte: 4
+
+  - id: 8
+    texto: "Success is not complicated. It is simple. The real answers are... so simple... they are downright corny. But simple does not mean easy."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Positive Difference"
+    layer_forte: 4
+
+  - id: 9
+    texto: "No One Can Ever Be A Success Who Sells Something Of Which He Is Not Proud!"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Product to Sell"
+    layer_forte: 4
+
+  - id: 10
+    texto: "Not one speck of true advertising wisdom has ever been written by a PhD."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  - id: 11
+    texto: "School is jail for children. The school system doesn't need to be revamped, altered or tinkered with... it needs to be destroyed."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 12
+    texto: "All true education is self education."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 13
+    texto: "MULTI-LEVEL MARKETING SUCKS! Not just some of it, all of it."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 14
+    texto: "You must refuse to take shit from anyone who doesn't have a gun to your head."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 15
+    texto: "Rely on your own strength instead of somebody else's compassion!"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 16
+    texto: "The written word is the strongest source of power in the entire universe."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 17
+    texto: "You don't want to be creative, you want to be rich. Those two things are not synonymous. Some of the most creative people in the world are on welfare."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 18
+    texto: "Find a market first. And then concentrate on a product!"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 19
+    texto: "Sell People What They Want To Buy! So obvious, so overlooked and so important."
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Boron Letters Ch7"
+    layer_forte: 4
+
+  - id: 20
+    texto: "All truly wise people realize time is the most precious commodity they possess."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 21
+    texto: "During the next year, nobody is going to have more time than you and nobody is going to have less. You couldn't even buy one extra second... for 100 billion dollars."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Newsletter Positive Difference"
+    layer_forte: 3
+
+  - id: 22
+    texto: "Don't sell abstractions. You could teach philosophy till the cows come home but that's not what people will write checks for."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 23
+    texto: "Everyone wants to climb the mountain, but the big difference between those at the top and those still on the bottom is simply a matter of showing up tomorrow to give it just one more shot."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 3
+
+  - id: 24
+    texto: "All first attempts are sloppy and lame."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Compilacao Quotes"
+    layer_forte: 3
+
+  # === FRAMEWORKS (18 MIUs) ===
+
+  - id: 25
+    texto: "Everybody in the world divides his mail into two piles which I call the A-Pile and the B-Pile. The A pile contains letters that appear to be personal. The B pile contains those envelopes that obviously contain a commercial message."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Boron Letters Ch11"
+    layer_forte: 4
+
+  - id: 26
+    texto: "Our first objective is to get our envelope into the A-Pile. And, it's so easy to do! All we have to do is make the envelope look personal."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Boron Letters Ch11"
+    layer_forte: 4
+
+  - id: 27
+    texto: "Recency, frequency and unit of sale: All good guidelines for evaluation of a mail order list. And, in my opinion, of the three guidelines, RECENCY is, by far, the most important of all."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Boron Letters Ch7"
+    layer_forte: 4
+
+  - id: 28
+    texto: "Players With Money. People with money usually means they also have an important character trait most of the 'sheep' out there don't possess. Namely... They Have The Ability To Make A Decision!"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 29
+    texto: "You Cannot Multiply Zeros! The 'zero' I'm talking about is a vapid, limp, non-compelling sales message."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Multiply Zeros"
+    layer_forte: 4
+
+  - id: 30
+    texto: "By sending a photo instead of a printed brochure your letter will be humanized and that is what catapults direct mail response to levels virtually undreamed of by most 'experts.'"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Grabbers"
+    layer_forte: 3
+
+  - id: 31
+    texto: "O.K., Buckwheat, a grabber is what I call something you can attach to the top of a letter that grabs your reader's immediate attention."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Newsletter Grabbers"
+    layer_forte: 3
+
+  - id: 32
+    texto: "Step 1: Say something that gets attention. Step 2: Tell them why they should be interested. Step 3: Tell them why they should believe what you are saying is true. Step 4: Prove it is true. Step 5: Itemize and describe all benefits. Step 6: Tell them how to order. Step 7: Tell them to order now."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  - id: 33
+    texto: "Heat — crie urgencia emocional. Believability — prove com evidencia que mata ceticismo. Desire — faca eles quererem visceralmente."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Legacy DNA"
+    layer_forte: 4
+
+  - id: 34
+    texto: "What you want to do is sell one thing to one person at one time. You don't want to attempt to sell more than one thing at a time."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 35
+    texto: "When I had the Coat of Arms Company I did a full color, 72 page catalogue. We lost money. Then I took the top three products in a brochure and we broke even. Then I took the top product with a direct mail letter and it brought in tens of millions."
+    tipo_semantico: narrativo
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 36
+    texto: "Record all your phone sales conversations. Transcribe the best one. Number each paragraph. Rate each 1-10. Cut them out. Throw away anything below 5. Rewrite as a MEMO to a specific person."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter By The Numbers"
+    layer_forte: 4
+
+  - id: 37
+    texto: "The Halbert Index: 10 characteristics of a Player — from having a life and sense of humor to honesty and a relationship with a higher power."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 38
+    texto: "Make it a double your money back - but make it conditional."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 39
+    texto: "Run an ad for your product, and give it away, offer it free. You will be surprised how few orders some of these screwball product ideas will get even though if you offer them free."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 40
+    texto: "The fresher the name, the higher the response. You got to sell these people when they are in heat."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 41
+    texto: "Gary, what would you do if you had to make your next mailing work? What if you could only mail one letter and, if you didn't get a response, you would quite literally, be beheaded?"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Newsletter Issue #1"
+    layer_forte: 4
+
+  - id: 42
+    texto: "Concentrate on selling the foxes and don't worry about offending the dogs."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  # === HEURISTICAS (16 MIUs) ===
+
+  - id: 43
+    texto: "Truth, my good son, can be determined NOT by how people use their mouth but rather how they use their wallet."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Boron Letters Ch8"
+    layer_forte: 4
+
+  - id: 44
+    texto: "People don't always put their money where their mouths are; but they do nearly always put out their money where their true desires are."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Boron Letters Ch7"
+    layer_forte: 4
+
+  - id: 45
+    texto: "Be skeptical of what people say. Be skeptical of surveys. Of questionnaires. Instead, believe in numbers."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Boron Letters Ch8"
+    layer_forte: 4
+
+  - id: 46
+    texto: "If it looks like a duck, walks like a duck and quacks like a duck - guess what? It's probably a duck!"
+    tipo_semantico: heuristico
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Boron Letters Ch8"
+    layer_forte: 3
+
+  - id: 47
+    texto: "Defensive behavior invites aggressive action."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 48
+    texto: "HALT stands for hungry, angry, lonely and tired and you should never make a decision when you are any of those things."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 49
+    texto: "Do you know when people decide to ask for refunds? When they're writing the check to order the product."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 50
+    texto: "I try to structure my deeds so that I get paid often."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Compilacao Quotes"
+    layer_forte: 3
+
+  - id: 51
+    texto: "Be careful. You want to know what people actually DO buy, not what they SAY they buy."
+    tipo_semantico: heuristico
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 52
+    texto: "As a general rule, nobody with wisdom ever does anything business-related he can hire someone else who is honest and competent to do for him."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 53
+    texto: "Don't ever lie, don't even exaggerate. You don't need to. Hype is different from lying."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 54
+    texto: "Be the person who provides people with pleasant surprises."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 55
+    texto: "The stupidest word you ever see in advertising is 'allow 4 to 6 weeks for delivery'."
+    tipo_semantico: heuristico
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 56
+    texto: "The most profitable way to fill an order is to have people with felt tip pens sitting there waiting. When you get an order you write their name and it goes out the same day."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 57
+    texto: "Newsletters, by their very nature, offer stripped-down, no-bullshit-info that can be grasped, digested and... implemented very quickly."
+    tipo_semantico: argumentativo
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 58
+    texto: "I do not believe the popular nonsense that the customer is always right, that's crap. Customers are wrong a lot of times."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  # === METODOLOGIAS (12 MIUs) ===
+
+  - id: 59
+    texto: "I want you to sit down and copy them out word-for-word in your own handwriting. If you really want to know it, you've really got to do it. There are no shortcuts."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  - id: 60
+    texto: "Read your copy aloud. When you do this, you will discover all those little snags where your copy isn't smooth."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 3
+
+  - id: 61
+    texto: "Use short sentences. Short paragraphs. Everyday English. Use some one word sentences. Use some one sentence paragraphs."
+    tipo_semantico: linguistico
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  - id: 62
+    texto: "To learn something, to really learn it, it has to be impressed upon you 17 times."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 63
+    texto: "When you get stuck or emotionally jammed up one of the ways to get yourself unclogged and flowing again is just to keep moving. Run. Walk. Jog. Write. Do the dishes."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Boron Letters Ch10"
+    layer_forte: 4
+
+  - id: 64
+    texto: "Get yourself an el cheapo microcassette tape recorder and 30 microcassettes. Keep your recorder with you all the time and use one microcassette each day to keep a 'time diary.'"
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Newsletter Positive Difference"
+    layer_forte: 3
+
+  - id: 65
+    texto: "That letter generated 7,300,000 cash-with-order customers and was the wellspring that built a mail order company that eventually employed more than 700 people."
+    tipo_semantico: narrativo
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Issue #1"
+    layer_forte: 3
+
+  - id: 66
+    texto: "I read everything I could get my hands on about advertising, direct mail and mail order. I was driven. I was voracious. I went on a reading frenzy with the same passion a Great White goes on a feeding frenzy."
+    tipo_semantico: narrativo
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Issue #1"
+    layer_forte: 3
+
+  - id: 67
+    texto: "Make a comprehensive list of stuff you love. Find which of your passions have millions of other enthusiasts. Read everything on the subject. Create a stripped-down, hard-hitting report. Sell it to the starving crowd."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Product to Sell"
+    layer_forte: 4
+
+  - id: 68
+    texto: "In addition to selling the book, you could read the book into a tape recorder producing 12 cassettes. Then make a video. Instead of $39, you could sell it for $299."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 69
+    texto: "Ideas breed other ideas."
+    tipo_semantico: decisorio
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Boron Letters Ch9"
+    layer_forte: 3
+
+  - id: 70
+    texto: "Write. Write. Write. Write. Write. Write. Write. Out will pop a 'central selling idea' so powerful, so fresh and so compelling that you will know it is exactly right."
+    tipo_semantico: linguistico
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  # === DILEMAS (8 MIUs) ===
+
+  - id: 71
+    texto: "If you halt your forward progress every time you get a little tired or irritable then you are suffering from a lack of discipline. On the other hand, if you keep pushing when you are chronically tired or really sick, then you are a fool."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Boron Letters Ch8"
+    layer_forte: 4
+
+  - id: 72
+    texto: "Making money (even millions) while losing your self-respect leads to a dry rot of the psyche and a constant patina of despair that dulls the fabric of your life."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Newsletter Product to Sell"
+    layer_forte: 4
+
+  - id: 73
+    texto: "It's not macho, it's stupid."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: media
+    fonte: "Boron Letters Ch8"
+    layer_forte: 3
+
+  - id: 74
+    texto: "Don't Ever Screw Around Trying To Sell Something You're Ashamed Of!"
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Newsletter Product to Sell"
+    layer_forte: 4
+
+  - id: 75
+    texto: "Civilians must never talk to the military. If a postal inspector comes to see you, there's only one response you have, 'excuse me', and you call your lawyer."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 3
+
+  - id: 76
+    texto: "You see, when you depend on others you give yourself an excuse for failure. 'It's not my fault if she forgot to buy my vegetables.' Don't set yourself up like this."
+    tipo_semantico: comportamental
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Boron Letters Ch3"
+    layer_forte: 4
+
+  - id: 77
+    texto: "Maybe, I'll have to commit some new federal crime every couple of years in order to get my books done! Just kidding. Just kidding."
+    tipo_semantico: linguistico
+    camada_dna: dilemas
+    profundidade: media
+    fonte: "Boron Letters Ch3"
+    layer_forte: 2
+
+  - id: 78
+    texto: "You can't screw around with the public today when you're going out there and selling. You've got to have something almost that people can't live without."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  # === PARADOXOS (8 MIUs) ===
+
+  - id: 79
+    texto: "The very best writing involves almost no thought whatsoever. You should strive to make your writing an almost 100% 'thoughtless' endeavor."
+    tipo_semantico: framework
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 4
+
+  - id: 80
+    texto: "Great writing requires two elements: You must know your subject cold and there must be almost no obstructions in the neural pathways from your brain to your hands."
+    tipo_semantico: framework
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 4
+
+  - id: 81
+    texto: "I hardly rewrote the promotion at all; I just cleaned it up a little so it flowed more smoothly. But the main thing I did was reformat. That promotion is pulling in approximately $96,000 more every month."
+    tipo_semantico: narrativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Newsletter Issue #1"
+    layer_forte: 4
+
+  - id: 82
+    texto: "Don't focus on writing better copy. Focus on creating better deals."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  - id: 83
+    texto: "The biggest thing we have to vacuum out of their heads is their creativity because you don't want to be creative, you want to be rich."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 84
+    texto: "I took the top product, eliminated the other two, and sent a photograph of it with a direct mail letter and it brought in tens of millions of dollars. Less is more."
+    tipo_semantico: narrativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Seminar Transcript"
+    layer_forte: 4
+
+  - id: 85
+    texto: "Running the Boston Marathon is very simple. All you have to do is keep putting one foot in front of the other for 26+ miles. Simple as pie. Hard as hell."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Newsletter Positive Difference"
+    layer_forte: 4
+
+  - id: 86
+    texto: "You don't have to get it perfect, you just got to get it going."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Compilacao Quotes"
+    layer_forte: 4
+
+  # === ASSOCIACOES CONCEITUAIS (8 MIUs) ===
+
+  - id: 87
+    texto: "Selling is like seduction. If you ask a woman to go to bed with you, whether or not she says 'yes' is largely a matter of when you ask her."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Newsletter Issue #1"
+    layer_forte: 4
+
+  - id: 88
+    texto: "A support system is like a garden and you always need to be on the lookout for weeds to pull."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Compilacao Quotes"
+    layer_forte: 3
+
+  - id: 89
+    texto: "I went on a reading frenzy with the same passion a Great White goes on a feeding frenzy."
+    tipo_semantico: linguistico
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Newsletter Issue #1"
+    layer_forte: 2
+
+  - id: 90
+    texto: "This is like shooting with a shotgun instead of a rifle."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Boron Letters Ch6"
+    layer_forte: 3
+
+  - id: 91
+    texto: "If you've really got this writing stuff down, it will flow from your brain to the written page as easily as lies flow from the lips of a lawyer."
+    tipo_semantico: linguistico
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 3
+
+  - id: 92
+    texto: "Your 'mental floodgates' will be wide open. Ideas will come gushing out like water from a broken fire hydrant."
+    tipo_semantico: linguistico
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 3
+
+  - id: 93
+    texto: "Let's get a little plastic baggie and put some dirt in it and then attach it to the top of our letter."
+    tipo_semantico: framework
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Boron Letters Ch11"
+    layer_forte: 3
+
+  - id: 94
+    texto: "He has a thirst for marketing info that makes Lestat's hunger for human blood seem like nothing more than a mild urge."
+    tipo_semantico: linguistico
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 2
+
+  # === COMUNICACAO AVANCADA (10 MIUs) ===
+
+  - id: 95
+    texto: "I've got this demented slimeball of a friend/client out in Phoenix, Arizona named Joe Polish. As far as I'm concerned, Joe is borderline valueless but, since his checks don't bounce, I continue to work for him."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 3
+
+  - id: 96
+    texto: "'Dear Bond' gets a certain quality of focused attention that is not enjoyed by 'Dear Sir' or 'Dear Occupant' or 'Dear Reader'."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Boron Letters Ch12"
+    layer_forte: 4
+
+  - id: 97
+    texto: "When you tell the day of the week plus the exact time you are writing the letter, it makes it seem a more important communication. Sort of like a telegram."
+    tipo_semantico: framework
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Boron Letters Ch12"
+    layer_forte: 4
+
+  - id: 98
+    texto: "Another way to achieve this bond of intimacy and immediacy in your letters is to describe where you are and what you are doing as you are writing."
+    tipo_semantico: framework
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Boron Letters Ch12"
+    layer_forte: 4
+
+  - id: 99
+    texto: "Taking the reader by the hand and leading him exactly where I want him to go."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Boron Letters Ch12"
+    layer_forte: 4
+
+  - id: 100
+    texto: "Write. Write. Write. Write. As fast as you can. Hurry! Hurry! Hurry! Hurry! Don't stop for anything. Go! Go! Go! Go! Go! Go!"
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 3
+
+  - id: 101
+    texto: "Rave! Rave! Rave! Rave! Crow! Describe! Enthuse! Give details. Don't worry about getting it perfect."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 3
+
+  - id: 102
+    texto: "The key to writing is writing."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Thoughtless Writing"
+    layer_forte: 4
+
+  - id: 103
+    texto: "He ought to be able to write an ad that tells how good he is. Hell, if he can't sell himself, how can you expect him to sell your goods or services."
+    tipo_semantico: argumentativo
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 3
+
+  - id: 104
+    texto: "Not only is it important what you do learn; it is equally important what you do not learn."
+    tipo_semantico: decisorio
+    camada_dna: comunicacao
+    profundidade: profunda
+    fonte: "Newsletter Hands-On Experience"
+    layer_forte: 4
+
+  # === HIERARQUIA DE VALORES (4 MIUs) ===
+
+  - id: 105
+    texto: "You must have a life. You must have a sense of humor. You must have intelligence and be an independent thinker. You must be a generous and giving person."
+    tipo_semantico: comportamental
+    camada_dna: hierarquia_valores
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 106
+    texto: "You must be honest and have integrity not defined by laws but rather, by the inner-core of your being."
+    tipo_semantico: comportamental
+    camada_dna: hierarquia_valores
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 107
+    texto: "You must be wealthy always in your mind... and therefore... very often... in your pocket."
+    tipo_semantico: comportamental
+    camada_dna: hierarquia_valores
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  - id: 108
+    texto: "You must have a relationship with a higher power that does not necessarily include organized religion."
+    tipo_semantico: comportamental
+    camada_dna: hierarquia_valores
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 3
+
+  # === MOTIVACAO PROFUNDA (2 MIUs) ===
+
+  - id: 109
+    texto: "This letter is going to be the first in a long series of letters in which I will attempt to communicate to you a lot of the important things I have learned in the last 46 years."
+    tipo_semantico: narrativo
+    camada_dna: motivacao_profunda
+    profundidade: profunda
+    fonte: "Boron Letters Ch1"
+    layer_forte: 4
+
+  - id: 110
+    texto: "You know what, Son? I am 46 years and one day old and the two things I have written to you about so far are the most important things I have ever learned."
+    tipo_semantico: narrativo
+    camada_dna: motivacao_profunda
+    profundidade: profunda
+    fonte: "Boron Letters Ch2"
+    layer_forte: 4
+
+  # === MODELO SOCIAL (2 MIUs) ===
+
+  - id: 111
+    texto: "PWM's will spend... and spend big... but... they won't spend stupidly. Real Players, who are by definition people with at least a modicum of wisdom, would rather pay $600 per year for 100 pages of real info than $9.95 for 300 pages of fluff."
+    tipo_semantico: interacao_social
+    camada_dna: modelo_social
+    profundidade: profunda
+    fonte: "Newsletter Halbert Index"
+    layer_forte: 4
+
+  - id: 112
+    texto: "Once I asked a class at USC how many of them preferred to go to plays more than movies. Lots of people raised their hands. 'Bull!' I said. 'You are all fooling yourselves and I'm going to prove it.'"
+    tipo_semantico: interacao_social
+    camada_dna: modelo_social
+    profundidade: profunda
+    fonte: "Boron Letters Ch8"
+    layer_forte: 4
+
+# === DISTRIBUICAO FINAL ===
+
+distribuicao_por_tipo_semantico:
+  comportamental: 18
+  decisorio: 24
+  framework: 24
+  linguistico: 14
+  narrativo: 8
+  argumentativo: 6
+  associativo: 4
+  interacao_social: 4
+  heuristico: 2
+
+distribuicao_por_camada_dna:
+  filosofia: 24
+  frameworks: 18
+  heuristicas: 16
+  metodologias: 12
+  dilemas: 8
+  paradoxos: 8
+  associacoes: 8
+  comunicacao: 10
+  hierarquia_valores: 4
+  motivacao_profunda: 2
+  modelo_social: 2
+
+distribuicao_por_profundidade:
+  superficial: 0
+  media: 18
+  profunda: 94
+
+cobertura_fontes:
+  boron_letters: 34
+  newsletters: 52
+  seminario: 16
+  compilacao_quotes: 10

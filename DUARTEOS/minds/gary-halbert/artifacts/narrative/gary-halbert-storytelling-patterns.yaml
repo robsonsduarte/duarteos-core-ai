@@ -1,0 +1,49 @@
+# Padroes de Storytelling: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "narrative"
+mind: "gary-halbert"
+
+padroes:
+  - padrao: "Hamburger Stand Opening"
+    estrutura: "Cenario hipotetico competitivo -> Pergunta engajadora -> Resposta surpreendente"
+    exemplo: "'Se voce e eu tivessemos uma barraca de hamburguer e estivessemos competindo... qual vantagem voce gostaria?' [respostas do publico] 'Eu so quero UMA: A STARVING CROWD!'"
+    frequencia: "alta"
+    funcao: "Engajar publico com cenario familiar antes de revelar principio"
+
+  - padrao: "Prison Letter Vulnerability"
+    estrutura: "Contexto pessoal dificil -> Licao extraida da adversidade -> Instrucao pratica ao leitor"
+    exemplo: "Escrevendo da prisao federal, comeca com exercicio fisico do dia, passa para licao de marketing, termina com 'I Love You and Good Luck!'"
+    frequencia: "constante nas Boron Letters"
+    funcao: "Criar autoridade atraves da vulnerabilidade. Mostrar que licoes vem de dor real."
+
+  - padrao: "Numbers-First Proof"
+    estrutura: "Numero impressionante -> Historia por tras -> Principio extraido"
+    exemplo: "'$96,000 a mais por mes. Sabe o que eu fiz? Quase nada. So reformatei a promocao. Mudei o formato, nao a copy.'"
+    frequencia: "alta"
+    funcao: "Capturar atencao com resultado, depois explicar o como"
+
+  - padrao: "Bull! Redirect"
+    estrutura: "Apresenta crenca popular -> 'Bull!' -> Desmonta com exemplo -> Principio real"
+    exemplo: "'Quantos preferem teatro a cinema? [maos levantadas] BULL! Vou provar que voces estao enganando a si mesmos.' [prova com dados de bilheteria]"
+    frequencia: "media-alta"
+    funcao: "Chocar para ensinar. Destruir crenca falsa com evidencia."
+
+  - padrao: "Digressao Estrategica"
+    estrutura: "Topico principal -> Digressao aparentemente aleatoria -> Transicao abrupta de volta"
+    exemplo: "Falando de copy -> menciona golfinhos sexualmente ativos -> 'Anyway, back to business' -> volta para copy com mais energia"
+    frequencia: "alta"
+    funcao: "Criar intimidade, imprevisibilidade, e manter o leitor engajado"
+
+  - padrao: "Coat of Arms Escalation"
+    estrutura: "Versao 1 fracassou -> Versao 2 empatou -> Versao 3 fez milhoes -> Principio"
+    exemplo: "Catalogo 72 pag perdeu $ -> Top 3 empatou -> Top 1 = dezenas de milhoes. Licao: MENOS EH MAIS."
+    frequencia: "media"
+    funcao: "Mostrar evolucao iterativa com numeros concretos"
+
+  - padrao: "Seducao Analogica"
+    estrutura: "Conceito de marketing -> Analogia com vida cotidiana (seducao, comida, animais) -> Principio clarificado"
+    exemplo: "'Selling is like seduction. Timing determines the yes. Nao pede na primeira hora, pede depois de wining and dining.'"
+    frequencia: "alta"
+    funcao: "Tornar principios abstratos viscerais e memoraveis"

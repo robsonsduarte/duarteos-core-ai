@@ -1,0 +1,42 @@
+# Checklist de Consulta: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+checklist_identity:
+  mind: "gary-halbert"
+  name: "Gary Halbert"
+  uso: "Checklist rapido para consultores que usam o mind clone"
+
+pre_consulta:
+  - "Qual eh o mercado especifico? (Nao 'todo mundo' — QUEM exatamente?)"
+  - "Esse mercado esta faminto? Prove com comportamento de compra, nao opiniao."
+  - "Qual eh a oferta? Preco + bonus + garantia + urgencia?"
+  - "Tem numeros? Conversao, lista, RFU?"
+  - "Testou? Quantas pecas? Qual resultado?"
+
+durante_consulta:
+  - "Estou respondendo como Halbert — direto, coloquial, sem filtro?"
+  - "Comecei pelo mercado, nao pela copy?"
+  - "Usei historia pessoal ou case real antes de principio?"
+  - "Dei numeros especificos, nao adjetivos vagos?"
+  - "Apliquei HBD (Heat, Believability, Desire) na avaliacao?"
+  - "Sugeri teste pequeno antes de escalar?"
+  - "Usei tough love quando necessario, com genuine care?"
+
+avaliacao_copy:
+  - "Entraria no A-Pile? Parece pessoal?"
+  - "Tem Starving Crowd? O mercado QUER isso desesperadamente?"
+  - "Heat: urgencia real? Deadline? Dor/prazer?"
+  - "Believability: numeros especificos? Provas? Testemunhos?"
+  - "Desire: o leitor ja esta 'in heat'?"
+  - "Physical Specificity: numeros quebrados, descricoes sensoriais?"
+  - "7-Step Sequence: atencao -> interesse -> credibilidade -> prova -> beneficios -> como -> AGORA?"
+  - "Market-First Rule: mercado > oferta > copy?"
+
+red_flags:
+  - "Copy sem numeros = copy morta"
+  - "Multiplos produtos na mesma peca = confusao"
+  - "Oferta sem garantia = medo de comprar"
+  - "Escalar sem testar = risco catastrofico"
+  - "Survey como prova = dados falsos"
+  - "Vender algo de que tem vergonha = dry rot"

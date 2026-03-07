@@ -1,0 +1,38 @@
+# Framework: Market-First Rule
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Market-First Rule"
+slug: "market-first-rule"
+mind: "gary-halbert"
+category: "strategy"
+priority: "primary"
+
+descricao: "Hierarquia inflexivel de prioridades: mercado > oferta > copy. Nessa ordem, sempre. O melhor copywriter do mundo nao consegue vender produto errado para mercado errado."
+
+quote_original: "Find a market first. And then concentrate on a product!"
+source: "Compilacao Quotes"
+
+quando_usar:
+  - "Como principio organizador de TODA estrategia de marketing"
+  - "Quando alguem quer comecar pela copy antes do mercado"
+  - "Quando campanha falha e nao se sabe por que"
+
+steps:
+  - step: 1
+    acao: "MERCADO (80% do sucesso)"
+    descricao: "Quem sao? O que querem DESESPERADAMENTE? Prove com comportamento de compra."
+  - step: 2
+    acao: "OFERTA (15% do sucesso)"
+    descricao: "Oferta A-pile: preco + bonus + garantia + urgencia = irresistivel"
+  - step: 3
+    acao: "COPY (5% do sucesso)"
+    descricao: "Conversacional, guiada por historia, rica em beneficios, com especificidade"
+
+diagnostico:
+  - sintoma: "Copy otima mas nao converte"
+    causa_provavel: "Mercado errado ou oferta fraca"
+  - sintoma: "Mercado certo mas conversao baixa"
+    causa_provavel: "Oferta fraca — revise preco, bonus, garantia"
+  - sintoma: "Mercado e oferta bons mas ninguem le"
+    causa_provavel: "Copy fraca ou entrega fraca (B-Pile)"

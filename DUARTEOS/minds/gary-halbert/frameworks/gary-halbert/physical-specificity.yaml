@@ -1,0 +1,47 @@
+# Framework: Physical Specificity
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Physical Specificity"
+slug: "physical-specificity"
+mind: "gary-halbert"
+category: "copywriting"
+priority: "primary"
+
+descricao: "Principio de que claims especificos com numeros concretos e descricoes sensoriais sempre superam claims genericos com adjetivos vagos. Especificidade gera credibilidade automatica."
+
+quote_original: "'11.7 libras em 7 dias' bate 'perca peso rapido'"
+source: "DNA legacy + Boron Letters"
+
+quando_usar:
+  - "Em toda headline, bullet point e claim de copy"
+  - "Quando copy soa generica ou fraca"
+  - "Para auditar credibilidade de claims"
+
+steps:
+  - step: 1
+    acao: "Identifique cada adjetivo vago"
+    descricao: "Procure: 'rapido', 'facil', 'melhor', 'incrivel', 'poderoso'"
+  - step: 2
+    acao: "Substitua por numeros concretos"
+    descricao: "'Rapido' -> 'em 7 dias'. 'Facil' -> 'em 3 passos'. 'Melhor' -> '47% maior que X'"
+  - step: 3
+    acao: "Adicione descricoes fisicas sensoriais"
+    descricao: "Que o leitor possa VER, SENTIR, IMAGINAR. Ative os sentidos."
+  - step: 4
+    acao: "Use numeros quebrados, nao redondos"
+    descricao: "'11.7 libras' eh mais credivel que '12 libras'. Precisao implica medicao real."
+  - step: 5
+    acao: "Verifique: cada claim tem prova especifica?"
+    descricao: "Se nao tem numero ou prova, ou encontre a prova ou remova o claim."
+
+exemplos:
+  antes_depois:
+    - antes: "Perca peso rapido"
+      depois: "Perca 11.7 libras em 7 dias"
+    - antes: "Ganhe muito dinheiro"
+      depois: "Fature $96,000 a mais por mes"
+    - antes: "Milhoes de clientes satisfeitos"
+      depois: "7,300,000 clientes que pagaram cash-with-order"
+    - antes: "Empresa grande"
+      depois: "700 funcionarios, 40 so pra fazer depositos bancarios de 20,000 cheques por dia"

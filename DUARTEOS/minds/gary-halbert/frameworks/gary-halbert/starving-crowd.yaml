@@ -1,0 +1,61 @@
+# Framework: Starving Crowd Concept
+# Mind: Gary Halbert
+# Gerado em: 2026-03-07
+
+name: "Starving Crowd Concept"
+slug: "starving-crowd"
+mind: "gary-halbert"
+category: "market-selection"
+priority: "primary"
+
+descricao: "O principio nuclear de Halbert: encontre um mercado desesperado por solucao ANTES de pensar em produto, oferta ou copy. Se o mercado esta faminto, ate um produto mediocre vende. Se nao esta, nem o melhor copywriter do mundo salva."
+
+quote_original: "The only advantage I want is A STARVING CROWD!"
+source: "Boron Letters Ch6"
+
+quando_usar:
+  - "No inicio absoluto de qualquer projeto de marketing"
+  - "Quando precisa decidir QUAL mercado atacar"
+  - "Quando campanha nao esta convertendo — volte ao mercado"
+  - "Quando alguem quer comecar pelo produto ao inves do mercado"
+
+steps:
+  - step: 1
+    acao: "Identifique mercados famintos"
+    descricao: "Procure grupos de pessoas que estao desesperados por solucao — dor aguda, desejo urgente"
+    exemplo: "Pessoas que acabaram de receber diagnostico medico, noivos, novos pais"
+  - step: 2
+    acao: "Valide a fome pelo comportamento de compra"
+    descricao: "Nao pergunte — observe o que compram. Carteiras revelam verdade, bocas mentem."
+    exemplo: "Verifique listas de compradores recentes, nao pesquisas de opiniao"
+  - step: 3
+    acao: "Hierarquize pela qualidade da lista"
+    descricao: "Use a hierarquia de 10 niveis: de telephone book (pior) ate customer list (melhor)"
+    exemplo: "Compradores recentes de produto similar > profissionais de alta renda > nomes aleatorios"
+  - step: 4
+    acao: "Aplique RFU: Recency > Frequency > Unit of Sale"
+    descricao: "Priorize RECENCY acima de tudo — o quao recentemente compraram algo similar"
+    exemplo: "Lista de compradores dos ultimos 30 dias > compradores do ano passado"
+  - step: 5
+    acao: "So entao crie a oferta"
+    descricao: "Agora que sabe QUEM compra, crie o QUE vender. Nunca antes."
+    exemplo: "Mercado validado -> oferta A-pile -> copy -> teste -> escala"
+
+anti_patterns:
+  - "Comecar pelo produto e depois procurar quem compra"
+  - "Confiar em surveys ao inves de comportamento de compra real"
+  - "Atacar mercados grandes mas nao famintos (ex: 'todo mundo')"
+  - "Ignorar RFU ao avaliar qualidade de prospects"
+
+metricas_sucesso:
+  - "Taxa de conversao da lista testada (5.000 pecas)"
+  - "Cash with order rate"
+  - "Repeat purchase rate"
+
+relacionamentos:
+  - framework: "A-Pile / B-Pile System"
+    tipo: "sequencial"
+    descricao: "Depois de achar o mercado faminto, a proxima barreira eh garantir que abram a carta (A-Pile)"
+  - framework: "Market-First Rule"
+    tipo: "hierarquico"
+    descricao: "Starving Crowd eh a implementacao pratica do Market-First"

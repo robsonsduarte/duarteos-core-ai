@@ -1,0 +1,12 @@
+# Task Operacional: Criar Oferta A-Pile
+# Mind: Gary Halbert
+task:
+  id: "criar-oferta-apile"
+  tipo: "operacional"
+  descricao: "Consulte Gary Halbert para estruturar uma oferta irresistivel (A-Pile) para um produto ou servico."
+  instrucoes:
+    - "Identifique o mercado faminto (Starving Crowd)"
+    - "Defina o produto principal — UM produto, nao multiplos"
+    - "Estruture: preco + bonus + garantia + urgencia"
+    - "Aplique a regra: oferta tao boa que se sentiram estupidos dizendo nao"
+    - "Verifique: testaria com 5.000 pecas primeiro?"

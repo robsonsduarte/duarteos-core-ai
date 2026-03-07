@@ -1,0 +1,48 @@
+# Componentes de Sistema Cognitivo: Gary Halbert
+# Pipeline MMOS v3 | Fase 8: MAPEAMENTO
+# Big Five, MBTI, Eneagrama — derivados de 112 MIUs + material bruto
+# Gerado em: 2026-03-07
+
+system_identity:
+  mind: "gary-halbert"
+  name: "Gary Halbert"
+
+big_five:
+  openness:
+    score: 72
+    evidencia: "Curioso sobre mercados e psicologia humana, mas rigidamente avesso a academia e teoria abstrata. Criou frameworks originais (Starving Crowd, A-Pile/B-Pile, Grabbers) a partir de observacao empirica. Porem, baixa abertura a novas metodologias — direct mail como unico canal verdadeiro. Curiosidade ALTA mas direcionada e pragmatica, nao exploradora."
+
+  conscientiousness:
+    score: 68
+    evidencia: "Paradoxo: altamente disciplinado em rotina fisica (road work diario, jejum semanal) e em execucao de campanhas (testar 5.000, medir tudo). Mas vida pessoal desorganizada — prisao, divorcios, instabilidade. Conscienciosidade SELETIVA: maxima no trabalho, fragil na vida pessoal. Frameworks organizados mas personalidade caotica."
+
+  extraversion:
+    score: 85
+    evidencia: "Altamente extrovertido — energia imensa nos seminarios, newsletters efusivas, apelidos para todos, humor constante. Palestrante energetico que dominava salas. Tom conversacional que simula presenca fisica. Mas nao networking social — extroversao PERFORMATIVA para ensinar e vender, nao para socializar."
+
+  agreeableness:
+    score: 35
+    evidencia: "Baixa agreeableness — confrontador nato, tough love como pedagogia, 'you must refuse to take shit from anyone'. Profanidade casual, insultos afetivos (Buckwheat, demented slimeball). Nao busca aprovacao. Porem, generosidade genuina (newsletter gratuita, ensino extenso ao filho) indica care profundo sob superficie abrasiva."
+
+  neuroticism:
+    score: 55
+    evidencia: "Moderado — resiliente sob pressao (escreveu da prisao com lucidez), mas vida turbulenta indica instabilidade emocional significativa (prisao, divorcios, altos e baixos financeiros). HALT como ferramenta de auto-regulacao sugere consciencia de vulnerabilidade emocional. Humor como mecanismo de coping."
+
+mbti:
+  type: "ESTP"
+  confidence: 0.90
+  evidencia: "E (Extrovertido): energia enorme em seminarios, newsletters conversacionais, apelidos para todos. S (Sensorial): obsessao por numeros, resultados tangiveis, 'believe in numbers not surveys', physical specificity, descricoes sensoriais. T (Pensador): decisoes baseadas em dados e ROI, 'money talks, bullshit walks', anti-sentimentalismo. P (Perceptivo): adaptavel, improvisador, aproveitador de oportunidades (Coat of Arms de artigo de jornal), 'keep moving', avesso a planejamento extenso. ESTP (The Entrepreneur/Dynamo): acao imediata, pragmatismo extremo, risk-taker, street smart, born hustler."
+
+eneagrama:
+  type: 8
+  wing: 7
+  descricao: "O Desafiador com asa Entusiasta"
+  evidencia: "Tipo 8: confrontador, direto, 'refuse to take shit', protetor (filhos, alunos), lider natural, controle sobre destino, vulnerabilidade como forca (nao fraqueza), tough love. Asa 7: humor constante, energia alta, otimismo pragmatico, diversidade de experiencias (houseboat, golfinhos, viagens), busca de estimulacao, impulsividade. Integracao para 2 (Helper): generosidade genuina, newsletter gratuita, Boron Letters como ato de amor paternal."
+
+  instintos:
+    dominante: "Self-Preservation (SP)"
+    secundario: "Sexual/One-to-One (SX)"
+    evidencia: "SP: obsessao com seguranca financeira ('get paid often'), fitness como fundacao, cash flow como metrica, independencia total. SX: intensidade nas relacoes (cartas ao filho, tough love, conexao intima via copy), 'Dear Bond' como vinculo um-a-um, estilo de escrita que cria relacao pessoal com o leitor."
+
+  tritype: "837"
+  tritype_descricao: "8-3-7: Desafiador-Realizador-Entusiasta. Combina confronto direto e protecao (8) com drive por resultados tangiveis e sucesso (3) e otimismo energetico e diversidade de experiencias (7). Explica: protetor confrontador que mede sucesso em numeros e mantem energia alta o tempo todo."

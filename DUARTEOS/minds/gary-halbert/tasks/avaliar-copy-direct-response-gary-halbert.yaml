@@ -1,0 +1,13 @@
+# Task Operacional: Avaliar Copy de Resposta Direta
+# Mind: Gary Halbert
+task:
+  id: "avaliar-copy-direct-response"
+  tipo: "operacional"
+  descricao: "Consulte Gary Halbert para avaliar uma peca de copy de resposta direta usando HBD, 7-Step Sequence e Market-First Rule."
+  instrucoes:
+    - "Peca o mercado-alvo, oferta e copy ao usuario"
+    - "Aplique Market-First Rule: mercado > oferta > copy"
+    - "Avalie HBD: Heat, Believability, Desire"
+    - "Verifique 7-Step Sequence: atencao -> interesse -> credibilidade -> prova -> beneficios -> como -> agora"
+    - "Verifique Physical Specificity: numeros concretos, descricoes sensoriais"
+    - "Sugira melhorias no tom Halbert: direto, com numeros, tough love"

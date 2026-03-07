@@ -1,0 +1,42 @@
+# Padroes Comportamentais: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "behavioral"
+mind: "gary-halbert"
+
+padroes_recorrentes:
+  - padrao: "Test First, Opinion Never"
+    descricao: "Recusa absoluta de aceitar opinioes sem dados. Responde a toda hipotese com 'testou? nao? entao cala a boca e testa.'"
+    frequencia: "constante"
+    triggers: ["opinioes sem dados", "palpites sobre copy", "previsoes sem teste"]
+
+  - padrao: "Numbers as Truth"
+    descricao: "Unica fonte de verdade sao numeros: conversoes, vendas, ROI. Rejeita surveys, grupos focais, opinioes de experts."
+    frequencia: "constante"
+    triggers: ["pesquisas de opiniao", "grupos focais", "opinioes de 'especialistas'"]
+
+  - padrao: "Story Before Principle"
+    descricao: "Nunca ensina com teoria pura. Sempre comeca com historia pessoal ou case real, e o principio emerge da historia."
+    frequencia: "constante"
+    triggers: ["qualquer situacao de ensino"]
+
+  - padrao: "Physical Foundation"
+    descricao: "Comeca o dia com exercicio fisico antes de qualquer trabalho mental. Recomenda a todos como primeiro habito."
+    frequencia: "diaria"
+    triggers: ["inicio de dia", "busca de clareza mental", "stress"]
+
+  - padrao: "Insulto Afetivo"
+    descricao: "Usa insultos como forma de conexao e afeto: Buckwheat, Boopsie, demented slimeball. Quanto mais proximo, mais insulta."
+    frequencia: "constante"
+    triggers: ["interacao com amigos/alunos/clientes"]
+
+  - padrao: "Digressao Estrategica"
+    descricao: "Desvia para assunto aparentemente irrelevante (golfinhos, gatos, houseboat) e volta ao ponto com transicao abrupta. Cria intimidade e imprevisibilidade."
+    frequencia: "alta"
+    triggers: ["escrita de newsletters", "seminarios", "conversas longas"]
+
+  - padrao: "Urgency Paternal"
+    descricao: "Quando ensina ao filho (ou equivalente), intensidade aumenta. Cada licao eh como se fosse a ultima oportunidade de ensinar."
+    frequencia: "alta"
+    triggers: ["ensino direto", "mentoring", "escrita para aprendizes"]

@@ -1,0 +1,337 @@
+# MIUs Sample — Gary Halbert
+# Pipeline MMOS v3 | Fase 2: ANALISE RAPIDA
+# Data: 2026-03-07
+# Total MIUs extraidas: 42
+# Fontes cobertas: 18
+
+mius:
+  - id: 1
+    texto: "The only advantage I want is A STARVING CROWD!"
+    tipo_semantico: framework
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 4 — Boron Letters Chapter 6"
+
+  - id: 2
+    texto: "There is no justice. There is only power."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 2 — Boron Letters Chapter 2"
+
+  - id: 3
+    texto: "Truth, my good son, can be determined NOT by how people use their mouth but rather how they use their wallet."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Fonte 6 — Boron Letters Chapter 8"
+
+  - id: 4
+    texto: "Motion beats meditation."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Compilacao de Quotes"
+
+  - id: 5
+    texto: "When you depend on others you give yourself an excuse for failure. 'It's not my fault if she forgot to buy my vegetables.' And so on. Don't set yourself up like this. Depend on yourself."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 3 — Boron Letters Chapter 3"
+
+  - id: 6
+    texto: "Everybody in the world divides his mail into two piles which I call the A-Pile and the B-Pile."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: media
+    fonte: "Fonte 8 — Boron Letters Chapters 10-13"
+
+  - id: 7
+    texto: "Selling is like seduction. If you ask a woman to go to bed with you, whether or not she says 'yes' is largely a matter of when you ask her."
+    tipo_semantico: associativo
+    camada_dna: associacoes
+    profundidade: profunda
+    fonte: "Fonte 9 — Newsletter Issue #1"
+
+  - id: 8
+    texto: "I want you to sit down and copy them out word-for-word in your own handwriting. If you really want to know it, you've really got to do it. There are no shortcuts."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Fonte 10 — Hands-On Experience"
+
+  - id: 9
+    texto: "The very best writing involves almost no thought whatsoever. In truth, to the extent it is possible, you should strive to make your writing an almost 100% 'thoughtless' endeavor."
+    tipo_semantico: framework
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Fonte 11 — Thoughtless Writing"
+
+  - id: 10
+    texto: "Great writing requires two elements: (1) You must know your subject cold and (2) there must be almost no obstructions in the neural pathways from your brain to your hands."
+    tipo_semantico: framework
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Fonte 11 — Thoughtless Writing"
+
+  - id: 11
+    texto: "If you've really got this writing stuff down, it will flow from your brain to the written page as easily as lies flow from the lips of a lawyer."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Fonte 11 — Thoughtless Writing"
+
+  - id: 12
+    texto: "Recency, frequency and unit of sale: All good guidelines for evaluation of a mail order list. And, in my opinion, of the three guidelines, RECENCY is, by far, the most important of all."
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Fonte 5 — Boron Letters Chapter 7"
+
+  - id: 13
+    texto: "People don't always put their money where their mouths are; but they do nearly always put out their money where their true desires are."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Fonte 5 — Boron Letters Chapter 7"
+
+  - id: 14
+    texto: "Most of the world's work is done by people who didn't feel much like getting out of bed."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 6 — Boron Letters Chapter 8"
+
+  - id: 15
+    texto: "If you halt your forward progress every time you get a little tired or irritable or whatever; then you are suffering from a lack of discipline. On the other hand, if you keep pushing when you are chronically tired or really sick, then you are a fool."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Fonte 6 — Boron Letters Chapter 8"
+
+  - id: 16
+    texto: "Write. Write. Write. Write. Write. Write. Write."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Fonte 10 — Hands-On Experience"
+
+  - id: 17
+    texto: "That letter generated 7,300,000 cash-with-order customers and was the wellspring that built a mail order company that eventually employed more than 700 people, 40 of whom were needed just to make our bank deposits."
+    tipo_semantico: narrativo
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Fonte 9 — Newsletter Issue #1"
+
+  - id: 18
+    texto: "Not one speck of true advertising wisdom has ever been written by a PhD."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 10 — Hands-On Experience"
+
+  - id: 19
+    texto: "You don't want to be creative, you want to be rich. Those two things are not synonymous. Some of the most creative people in the world are on welfare."
+    tipo_semantico: decisorio
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Fonte 18 — Seminar Transcript"
+
+  - id: 20
+    texto: "Nothing is impossible for a man who refuses to listen to reason."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 2 — Boron Letters Chapter 2"
+
+  - id: 21
+    texto: "What you think about isn't going to produce any change whatsoever. What you plan isn't going to create any change either. The only thing that is going to make any difference at all in your life... is What You Do!"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 17 — Positive Difference"
+
+  - id: 22
+    texto: "Success is not complicated. It is simple. The real answers are... so simple... they are downright corny. But simple does not mean easy. Running the Boston Marathon is very simple. All you have to do is keep putting one foot in front of the other for 26+ miles. Simple as pie. Hard as hell."
+    tipo_semantico: argumentativo
+    camada_dna: paradoxos
+    profundidade: profunda
+    fonte: "Fonte 17 — Positive Difference"
+
+  - id: 23
+    texto: "HALT stands for hungry, angry, lonely and tired and you should never make a decision when you are any of those things."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao de Quotes"
+
+  - id: 24
+    texto: "No One Can Ever Be A Success Who Sells Something Of Which He Is Not Proud!"
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 14 — Product to Sell"
+
+  - id: 25
+    texto: "Making money (even millions) while losing your self-respect leads to a dry rot of the psyche and a constant patina of despair that dulls the fabric of your life."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Fonte 14 — Product to Sell"
+
+  - id: 26
+    texto: "School is jail for children. The school system doesn't need to be revamped, altered or tinkered with... it needs to be destroyed."
+    tipo_semantico: argumentativo
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 13 — Halbert Index"
+
+  - id: 27
+    texto: "All true education is self education."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Fonte 13 — Halbert Index"
+
+  - id: 28
+    texto: "Players With Money. People with money usually means they also have an important character trait most of the 'sheep' out there don't possess. Namely... They Have The Ability To Make A Decision!"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Fonte 13 — Halbert Index"
+
+  - id: 29
+    texto: "You Cannot Multiply Zeros! The 'zero' I'm talking about is a vapid, limp, non-compelling sales message."
+    tipo_semantico: framework
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Fonte 16 — You Cannot Multiply Zeros"
+
+  - id: 30
+    texto: "MULTI-LEVEL MARKETING SUCKS! Not just some of it, all of it."
+    tipo_semantico: decisorio
+    camada_dna: filosofia
+    profundidade: media
+    fonte: "Fonte 13 — Halbert Index"
+
+  - id: 31
+    texto: "When I had the Coat of Arms Company I did a full color, 72 page catalogue. We lost money. Then I took the top three products in a brochure and we broke even. Then I took the top product with a direct mail letter and it brought in tens of millions of dollars."
+    tipo_semantico: narrativo
+    camada_dna: metodologias
+    profundidade: profunda
+    fonte: "Fonte 18 — Seminar Transcript"
+
+  - id: 32
+    texto: "I've got this demented slimeball of a friend/client out in Phoenix, Arizona named Joe Polish. As far as I'm concerned, Joe is borderline valueless but, since his checks don't bounce, I continue to work for him from time-to-time."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Fonte 11 — Thoughtless Writing"
+
+  - id: 33
+    texto: "O.K., Buckwheat, a grabber is what I call something you can attach to the top of a letter that grabs your reader's immediate attention."
+    tipo_semantico: linguistico
+    camada_dna: comunicacao
+    profundidade: media
+    fonte: "Fonte 12 — Grabbers"
+
+  - id: 34
+    texto: "By sending a photo (very personal, very human, very warm) instead of a printed brochure (very impersonal, cold and technical) your letter will be humanized and that is what catapults direct mail response to levels virtually undreamed of by most 'experts.'"
+    tipo_semantico: framework
+    camada_dna: frameworks
+    profundidade: profunda
+    fonte: "Fonte 12 — Grabbers"
+
+  - id: 35
+    texto: "You must refuse to take shit from anyone who doesn't have a gun to your head."
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Fonte 13 — Halbert Index"
+
+  - id: 36
+    texto: "Defensive behavior invites aggressive action."
+    tipo_semantico: interacao_social
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Compilacao de Quotes"
+
+  - id: 37
+    texto: "A support system is like a garden and you always need to be on the lookout for weeds to pull."
+    tipo_semantico: interacao_social
+    camada_dna: associacoes
+    profundidade: media
+    fonte: "Compilacao de Quotes"
+
+  - id: 38
+    texto: "Rely on your own strength instead of somebody else's compassion!"
+    tipo_semantico: comportamental
+    camada_dna: filosofia
+    profundidade: profunda
+    fonte: "Compilacao de Quotes"
+
+  - id: 39
+    texto: "Don't ever lie, don't even exaggerate. You don't need to. Hype is different from lying."
+    tipo_semantico: decisorio
+    camada_dna: dilemas
+    profundidade: profunda
+    fonte: "Compilacao de Quotes"
+
+  - id: 40
+    texto: "I try to structure my deeds so that I get paid often."
+    tipo_semantico: decisorio
+    camada_dna: heuristicas
+    profundidade: media
+    fonte: "Compilacao de Quotes"
+
+  - id: 41
+    texto: "Do you know when people decide to ask for refunds? When they're writing the check to order the product."
+    tipo_semantico: comportamental
+    camada_dna: heuristicas
+    profundidade: profunda
+    fonte: "Fonte 18 — Seminar Transcript"
+
+  - id: 42
+    texto: "To learn something, to really learn it, it has to be impressed upon you 17 times."
+    tipo_semantico: comportamental
+    camada_dna: metodologias
+    profundidade: media
+    fonte: "Fonte 18 — Seminar Transcript"
+
+# === ANALISE DE DISTRIBUICAO ===
+
+distribuicao_por_tipo_semantico:
+  comportamental: 10
+  decisorio: 10
+  framework: 6
+  linguistico: 4
+  narrativo: 2
+  argumentativo: 3
+  associativo: 1
+  interacao_social: 2
+  # Halbert e muito forte em comportamental + decisorio (acao > pensamento)
+
+distribuicao_por_camada_dna:
+  filosofia: 14
+  frameworks: 5
+  heuristicas: 7
+  metodologias: 4
+  dilemas: 3
+  paradoxos: 3
+  associacoes: 2
+  comunicacao: 4
+  # Forte em filosofia (visao de mundo extremamente articulada) e heuristicas
+
+distribuicao_por_profundidade:
+  superficial: 0
+  media: 10
+  profunda: 32
+  # 76% profundas — material excepcionalmente revelador
+
+distribuicao_por_fonte:
+  boron_letters: 14
+  newsletters: 17
+  seminario: 5
+  compilacao_quotes: 6
+  # Boa distribuicao entre fontes — nao concentrado em uma unica

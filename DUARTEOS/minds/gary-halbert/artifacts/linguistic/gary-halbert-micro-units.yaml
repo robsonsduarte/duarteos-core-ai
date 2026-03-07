@@ -1,0 +1,75 @@
+# Micro-Unidades Linguisticas: Gary Halbert
+# Pipeline MMOS v3 | Fase 10
+# Gerado em: 2026-03-07
+
+artifact_type: "linguistic"
+mind: "gary-halbert"
+
+micro_unidades:
+  transicoes:
+    - "Onward."
+    - "Press on."
+    - "Let's take a break."
+    - "Now then..."
+    - "Anyway, back to business..."
+    - "Hot damn!"
+    - "O.K., here's the deal..."
+    - "Pay attention now..."
+    - "Listen up..."
+
+  intensificadores:
+    - pattern: "CAPS LOCK para enfase"
+      exemplos: ["A STARVING CROWD!", "RECENCY", "ZERO", "NEVER"]
+    - pattern: "Reticencias com espacos"
+      exemplos: ["and... therefore... very often...", "but... they won't spend stupidly"]
+    - pattern: "Repeticao de palavras"
+      exemplos: ["Write. Write. Write. Write.", "Go! Go! Go! Go! Go!", "Rave! Rave! Rave! Rave!"]
+    - pattern: "Exclamacao multipla"
+      exemplos: ["Hot damn!", "Goody!", "Bingo!"]
+
+  fechamentos:
+    - "I Love You and Good Luck! Dad"
+    - "Onward!"
+    - "Press on!"
+
+  saudacoes:
+    - "Dear Bond,"
+    - "Dear Friend & Subscriber,"
+    - "O.K., Buckwheat..."
+
+  insultos_afetivos:
+    - "Buckwheat"
+    - "Boopsie"
+    - "pal"
+    - "dear Son"
+    - "Buttercup"
+    - "demented slimeball"
+    - "borderline valueless"
+
+  auto_titulos:
+    - "The Prince of Print"
+    - "Ace of Space"
+    - "The Ravin' Maven of Marketing"
+
+  profanidade_contextual:
+    - context: "Enfase em claim"
+      exemplos: ["hell yes", "damn right", "bullshit"]
+    - context: "Confronto pedagogico"
+      exemplos: ["You Don't Know Shit!", "crap"]
+    - context: "Humor"
+      exemplos: ["hot damn", "what the hell"]
+
+  frases_uma_palavra:
+    - "Onward."
+    - "Whatever."
+    - "Bullshit."
+    - "Goody."
+    - "Bingo."
+    - "Period."
+
+  marcadores_tempo_espaco:
+    - "Tuesday, 5:41 p.m. June 12, 1984"
+    - "Saturday, 2:30 P.M. September 1, 1986"
+    - "From: W-A-Y West of Jewfish Creek"
+    - "From: North of Jewfish Creek"
+    - "From: South of Jewfish Creek"

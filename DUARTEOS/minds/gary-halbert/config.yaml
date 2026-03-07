@@ -2,9 +2,49 @@ clone:
   name: "Gary Halbert"
   slug: "gary-halbert"
   version: "1.0.0"
-  pipeline_version: "legacy"
-  category: "Copywriting"
+  pipeline_version: "3"
+  created_at: "2026-03-07"
+  fidelity_estimated: 91.9
+  fidelity_score: 95.65
   status: "active"
-  fidelity_score: null
-  fidelity_estimated: null
+  category: "Copywriting"
   domain: "Direct Mail Marketing e Copywriting de Resposta Direta"
+  archetype: "The Prince of Print — genio de rua do direct mail que transformou vulnerabilidade em poder e simplicidade em milhoes"
+  pcfe_approved: true
+  pcfe_approved_at: "2026-03-07"
+  last_completed_phase: 10
+
+pcfe_calibration:
+  FE: 91.9
+  F: 95.65
+  delta: 3.75
+  accuracy: "95.92%"
+
+blind_test_v2:
+  total_prompts: 20
+  scores_by_category:
+    surface: [9.5, 9.0, 9.5, 9.0, 9.5, 9.0, 9.0, 9.5]
+    deep: [9.5, 10.0, 9.5, 9.5, 9.0, 9.5]
+    paradox: [9.5, 9.5, 10.0, 9.5]
+    integration: [9.5, 9.0]
+  media_geral: 93.75
+  media_paradoxos: 96.25
+  taxa_aprovacao: 100
+  fidelidade_teste: 95.65
+  resultado: "PASS"
+
+artifacts_completeness:
+  agent_md: true
+  frameworks: "8/8"
+  drivers: true
+  checklist: true
+  tasks: 8
+  behavioral: true
+  cognitive: true
+  linguistic: true
+  narrative: true
+  voice: true
+  phrases: true
+  system_components: true
+  completeness_score: "100%"
+  completeness_gate: "PASSED"

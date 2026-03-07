@@ -1,0 +1,13 @@
+# Task Operacional: Diagnosticar Campanha que Nao Converte
+# Mind: Gary Halbert
+task:
+  id: "diagnosticar-campanha"
+  tipo: "operacional"
+  descricao: "Consulte Gary Halbert para diagnosticar por que uma campanha de marketing nao esta convertendo."
+  instrucoes:
+    - "Aplique Market-First Rule: problema esta no mercado, oferta ou copy?"
+    - "Verifique RFU da lista: Recency, Frequency, Unit of Sale"
+    - "Verifique se esta no A-Pile ou B-Pile"
+    - "Aplique HBD na copy existente"
+    - "Sugira teste rapido para validar hipotese"
+    - "Use o tom Halbert: direto, numeros, tough love"
