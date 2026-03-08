@@ -9,6 +9,18 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.30.0': {
+    title: 'Agent Brains — Cerebro Operacional por Agente com Constantes de Infraestrutura',
+    highlights: [
+      'Novo: .claude/agents/brains/ — cerebro operacional individual para cada agente',
+      'Novo: _CONSTANTS.md — referencia master com ~189 constantes em 23 categorias',
+      'Novo: 12 brains individuais (forge, prism, nexus, sentinel, compass, shadow, titan, spark, lens, vault, specter, bridge)',
+      'Novo: .env.agents.example — template com todas as variaveis (valores vazios, gitignored)',
+      'Seguranca: principio do menor privilegio — cada agente so ve constantes relevantes ao seu papel',
+      'Categorias: IAs Generativas, Tokens, DBs, Cloud, MCPs, Storage, Auth, Email, Payment, Monitoring, CI/CD, DNS, Infra, Feature Flags, Analytics, Search, Queue, Realtime, Scraping, Maps, CRM, Chat, DuarteOS',
+      'Convencao: API_[SERVICO]_KEY, TOKEN_[SERVICO]_VALUE, DB_[NOME]_*, MCP_[NOME]_*, CLOUD_[PROVIDER]_*',
+    ],
+  },
   '5.29.0': {
     title: '4 Mind Clones MMOS v3 — Gary Halbert (F=95.40%) + Don Norman (F=95.80%) + Patricia Peck (F=92.65%) + Joseph Sugarman (F=94.15%)',
     highlights: [
@@ -514,6 +526,7 @@ function ensureGitignoreEntries(cwd) {
     '.claude/settings.local.json',
     '.env.local',
     '.mcp.json',
+    '.env.agents',
   ]
 
   let content = ''
@@ -905,6 +918,8 @@ export function update(options = {}) {
     ['.envrc', '.envrc'],
     // v5.13.0 — PCFE calibration (only created if missing — accumulates data over time)
     ['omega/pcfe-calibration.yaml', '.claude/omega/pcfe-calibration.yaml'],
+    // v5.30.0 — Agent Brains (.env.agents.example — template de constantes)
+    ['env.agents.example', '.env.agents.example'],
   ]
 
   for (const [src, dest] of newOnlyFiles) {
@@ -1080,6 +1095,10 @@ export function update(options = {}) {
 
   // v5.10.0 — Inject env vars from .env.local into .mcp.json (MCP servers need explicit env)
   injectMcpEnvVars(cwd)
+
+  // v5.30.0 — Agent Brains: ensure brains directory exists
+  const brainsDest = resolve(cwd, '.claude', 'agents', 'brains')
+  if (!existsSync(brainsDest)) mkdirSync(brainsDest, { recursive: true })
 
   // Ensure .gitignore has DuarteOS entries (.mcp.json now git-ignored since it contains keys)
   ensureGitignoreEntries(cwd)

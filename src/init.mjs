@@ -32,6 +32,7 @@ function ensureGitignoreEntries(cwd) {
     '.claude/settings.local.json',
     '.env.local',
     '.mcp.json',
+    '.env.agents',
   ]
 
   let content = ''
@@ -139,6 +140,8 @@ export function init(projectName, options = {}) {
     '.claude/omega/checkpoints',
     // v5.9.0 — OMEGA Task Lifecycle Protocol
     '.planning/tasks',
+    // v5.30.0 — Agent Brains (cerebro operacional por agente)
+    '.claude/agents/brains',
     // v5.24.0 — Process Cards (processos reutilizaveis)
     '.claude/protocols/processes',
     '.claude/protocols/processes/development',
@@ -327,6 +330,9 @@ export function init(projectName, options = {}) {
     ['commands/DUARTEOS/squad/task.md', '.claude/commands/DUARTEOS/squad/task.md'],
     ['commands/DUARTEOS/squad/synapse.md', '.claude/commands/DUARTEOS/squad/synapse.md'],
     ['commands/DUARTEOS/squad/sync-ide.md', '.claude/commands/DUARTEOS/squad/sync-ide.md'],
+
+    // v5.30.0 — Agent Brains (.env.agents.example — template de constantes)
+    ['env.agents.example', '.env.agents.example'],
 
     // v5.0.0 — Quality Gates (new hooks)
     ['hooks/architecture-review.sh', '.claude/hooks/architecture-review.sh'],
