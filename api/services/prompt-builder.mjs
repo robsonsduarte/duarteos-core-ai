@@ -26,9 +26,14 @@ export function buildSystemPrompt(slug, mindLoader) {
 
   const artifacts = mindLoader.loadArtifacts(slug)
   const synapseDnaRaw = mindLoader.loadSynapseDna(slug)
+  const estilometria = mindLoader.loadEstilometria(slug)
+  const mius = mindLoader.loadMius(slug)
+  const fidelityProfile = mindLoader.loadFidelityProfile(slug)
+  const tasks = mindLoader.loadTasks(slug)
 
   const parts = [agentMdCleaned.trim()]
 
+  // --- Squad Artifacts (drivers, voice, phrases, frameworks, behavioral, cognitive, linguistic, narrative) ---
   const hasArtifacts = Object.keys(artifacts).length > 0
   if (hasArtifacts) {
     parts.push('\n\n---\n\n## Squad Artifacts (Pre-Loaded)\n')
@@ -40,12 +45,41 @@ export function buildSystemPrompt(slug, mindLoader) {
     }
   }
 
+  // --- Estilometria Computacional (calibracao precisa de linguagem) ---
+  if (estilometria) {
+    parts.push(`### Estilometria Computacional\n\`\`\`yaml\n${yaml.dump(estilometria, { lineWidth: 120 }).trim()}\n\`\`\`\n`)
+  }
+
+  // --- MIUs — Banco de Citacoes Reais ---
+  if (mius) {
+    parts.push(`### MIUs (Minimum Inference Units — Citacoes Reais)\n\`\`\`yaml\n${yaml.dump(mius, { lineWidth: 120 }).trim()}\n\`\`\`\n`)
+  }
+
+  // --- Perfil de Fidelidade ---
+  if (fidelityProfile) {
+    parts.push(`### Perfil de Fidelidade\n\`\`\`yaml\n${yaml.dump(fidelityProfile, { lineWidth: 120 }).trim()}\n\`\`\`\n`)
+  }
+
+  // --- Synapse DNA ---
   if (synapseDnaRaw) {
     parts.push(`\n### Synapse DNA\n\`\`\`yaml\n${synapseDnaRaw.trim()}\n\`\`\`\n`)
   }
 
+  // --- Tasks (como o clone executa tarefas especificas do dominio) ---
+  if (tasks.length > 0) {
+    parts.push('\n---\n\n## Tasks Especializadas\n')
+    for (const task of tasks) {
+      if (task._format === 'markdown') {
+        parts.push(`### ${task._file.replace(/\.md$/, '')}\n${task.content.trim()}\n`)
+      } else {
+        const { _file, _format, ...taskData } = task
+        parts.push(`### ${_file.replace(/\.yaml$/, '')}\n\`\`\`yaml\n${yaml.dump(taskData, { lineWidth: 120 }).trim()}\n\`\`\`\n`)
+      }
+    }
+  }
+
   parts.push(
-    `\n---\n\n**Instrucao de Operacao:** Responda SEMPRE como ${config.name}. Use seus frameworks, voz, paradoxos e exemplos especificos. Responda em portugues mantendo termos tecnicos em ingles quando apropriado. Nao quebre o personagem.`
+    `\n---\n\n**Instrucao de Operacao:** Responda SEMPRE como ${config.name}. Use seus frameworks, voz, paradoxos e exemplos especificos. Calibre sua linguagem pela estilometria e use as MIUs como banco de citacoes reais. Responda em portugues mantendo termos tecnicos em ingles quando apropriado. Nao quebre o personagem.`
   )
 
   return parts.join('\n')
@@ -75,6 +109,10 @@ function formatArtifactLabel(key) {
     cognitive: 'Cognitive Architecture',
     linguistic: 'Linguistic Profile',
     narrative: 'Narrative & Storytelling',
+    estilometria: 'Estilometria Computacional',
+    mius: 'MIUs (Citacoes Reais)',
+    fidelity_profile: 'Perfil de Fidelidade',
+    tasks: 'Tasks Especializadas',
   }
   return labels[key] || key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 }

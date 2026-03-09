@@ -120,6 +120,69 @@ export class MindLoader {
   }
 
   /**
+   * Carrega estilometria computacional (02-analysis/estilometria.yaml).
+   * Calibracao precisa de linguagem: comprimento de frase, ratio perguntas, marcadores%.
+   */
+  loadEstilometria(slug) {
+    const mindDir = join(this.#mindsPath, slug)
+    return this.#loadYamlSingle(mindDir, '02-analysis/estilometria.yaml')
+  }
+
+  /**
+   * Carrega MIUs completas (02-analysis/mius-completas.yaml).
+   * Banco de citacoes reais extraidas das fontes primarias.
+   */
+  loadMius(slug) {
+    const mindDir = join(this.#mindsPath, slug)
+    return this.#loadYamlSingle(mindDir, '02-analysis/mius-completas.yaml')
+  }
+
+  /**
+   * Carrega perfil de fidelidade (05-profile/perfil-fidelidade.yaml ou fidelity-report.yaml).
+   * Auto-consciencia do clone sobre suas forcas e fraquezas.
+   */
+  loadFidelityProfile(slug) {
+    const mindDir = join(this.#mindsPath, slug)
+    return (
+      this.#loadYamlSingle(mindDir, '05-profile/perfil-fidelidade.yaml') ||
+      this.#loadYamlSingle(mindDir, '05-profile/fidelity-report.yaml')
+    )
+  }
+
+  /**
+   * Carrega todas as tasks do clone (tasks/*.yaml + tasks/*.md).
+   * Define como o clone executa tarefas especificas do seu dominio.
+   */
+  loadTasks(slug) {
+    const mindDir = join(this.#mindsPath, slug)
+    const tasksDir = join(mindDir, 'tasks')
+    if (!existsSync(tasksDir)) return []
+
+    try {
+      const files = readdirSync(tasksDir).filter(
+        (f) => f.endsWith('.yaml') || f.endsWith('.yml') || f.endsWith('.md')
+      )
+      return files
+        .map((f) => {
+          try {
+            const fullPath = join(tasksDir, f)
+            const content = readFileSync(fullPath, 'utf-8')
+            if (f.endsWith('.md')) {
+              return { _file: f, _format: 'markdown', content }
+            }
+            const parsed = yaml.load(content)
+            return { _file: f, _format: 'yaml', ...parsed }
+          } catch {
+            return null
+          }
+        })
+        .filter(Boolean)
+    } catch {
+      return []
+    }
+  }
+
+  /**
    * Carrega o Synapse DNA do clone se existir.
    */
   loadSynapseDna(slug) {
