@@ -1,0 +1,46 @@
+# Joanna Wiebe — Rule of One (List, Offer, Copy)
+# Framework fundacional de foco e priorizacao
+
+meta:
+  mind: joana-wiebe
+  framework: "Rule of One (List, Offer, Copy)"
+  category: strategy
+  use_case: "Ordem de operacoes para qualquer projeto de conversion copy"
+
+description: |
+  O principio fundacional de que cada projeto precisa de UM leitor, UMA oferta,
+  UMA big idea, e UMA promessa. E a hierarquia List > Offer > Copy que determina
+  a ordem de importancia: a lista (audiencia) vem primeiro, a oferta segundo,
+  o copy por ultimo.
+
+steps:
+  - step: 1
+    name: "One Reader"
+    action: "Saiba exatamente com quem esta falando — alguem entusiasmado com seu produto"
+    detail: "NAO um perfil demografico. Uma pessoa real com um problema real."
+
+  - step: 2
+    name: "One Offer"
+    action: "Clarifique TUDO na sua oferta — nao apenas o value prop"
+    detail: "O que estao comprando, como funciona, quanto custa, o que inclui, garantia."
+
+  - step: 3
+    name: "One Big Idea"
+    action: "O conceito singular e compelling que organiza toda a messaging"
+    detail: "Se voce precisa de mais de uma frase para explicar, nao e uma big idea."
+
+  - step: 4
+    name: "One Promise"
+    action: "O outcome singular — o resultado que o prospecto mais deseja"
+    detail: "Especifico o suficiente para visualizar. 'Save time and money' NAO e uma promessa."
+
+hierarchy: |
+  List > Offer > Copy — essa e a ordem de operacoes.
+  A melhor copy do mundo nao salva uma lista ruim ou oferta fraca.
+  'Copy' e a terceira nota em List, Offer, Copy. Essa e a ordem por uma boa razao.
+
+evidence:
+  quote: "The rule of One: one reader, one offer, one big idea, and one promise. 'Copy' is the third note in List, Offer, Copy. That's the order of operations for a good reason."
+  source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+key_insight: "A maioria dos copywriters comeca pelo copy. O profissional comeca pela lista e pela oferta."

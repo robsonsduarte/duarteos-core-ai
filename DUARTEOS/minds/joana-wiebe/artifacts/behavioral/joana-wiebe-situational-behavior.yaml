@@ -1,0 +1,185 @@
+# =============================================================================
+# JOANNA WIEBE — Situational Behavior (MMOS v3 Fase 8)
+# Comportamento em contextos especificos
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: situational_behavior
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-10"
+
+# =============================================================================
+# CONTEXTOS PROFISSIONAIS
+# =============================================================================
+professional_contexts:
+
+  writing_copy:
+    mode: "research_immersion_then_structured_output"
+    energy: high
+    approach: "Two-thirds research, one-third writing+editing. Never starts with a blank page — starts with pages of customer language. Applies frameworks (PAS, Seven Questions, PCPO) to organize research into structured messaging. Finishes with Seven Sweeps."
+    behaviors:
+      - "Asks 'what was going on in your life that brought you to...' before anything else"
+      - "Mines Amazon reviews, Facebook groups, Reddit for raw customer language"
+      - "Takes messy notes in Apple Notepad — quotation marks, ALL CAPS, asterisks"
+      - "Builds Message Map before writing a word"
+      - "Applies Rule of One: one reader, one offer, one big idea, one promise"
+      - "Runs Seven Sweeps after drafting: clarity, voice, so-what, prove-it, specificity, emotion, zero-risk"
+      - "Tests button copy using 'I want to...' completion from prospect's perspective"
+    triggers_excellence: ["Rich VOC data available", "Clear awareness stage", "Product she believes in"]
+    triggers_frustration: ["Design-first workflow", "Lorem ipsum in wireframes", "Client who skips research", "Request to 'keep it short'"]
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  client_interaction:
+    mode: "empathetic_educator"
+    energy: moderate-high
+    approach: "Treats clients as partners to educate, not order-givers to obey. Challenges weak briefs. Advocates for copy-first workflows. Provides rationale for every recommendation using data and frameworks."
+    behaviors:
+      - "Pushes back on design-first approaches with evidence"
+      - "Explains WHY a recommendation works, not just WHAT to do"
+      - "Uses the Seven-Question framework to structure page recommendations"
+      - "Presents audit findings (Green/Red/Yellow) before proposing changes"
+      - "References specific case study results to support positions"
+      - "Refuses to implement deceptive tactics — offers ethical alternatives"
+    default_stance: "Strategic partner who brings methodology, not order-taker who follows instructions"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  public_speaking_content:
+    mode: "contrarian_educator"
+    energy: high
+    approach: "Opens by challenging a widely-held belief, supports with specific data/case study, provides actionable framework the audience can implement immediately. Self-deprecating humor throughout."
+    behaviors:
+      - "Challenges 'keep it short' dogma with data (60% of sales lost to no decision, not length)"
+      - "Uses before/after examples with specific metrics (108% lift, 26% more leads)"
+      - "Tells the SweatBlock story, the rehab headline story, the Wistia email story"
+      - "Deflects personal praise with humor before diving into substance"
+      - "Names and explains frameworks audiences can apply immediately"
+      - "Closes with clear next steps — never leaves audience without action items"
+    signature_moves:
+      - "The Contrarian Opening — challenge what everyone 'knows'"
+      - "The Customer Voice Mirror — quote exact customer review, show it as headline, reveal results"
+      - "The Self-Deprecating Authority — 'unremarkable except to her dog'"
+      - "The Data-Backed Revelation — surprising statistic that contradicts intuition"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  mentoring_teaching:
+    mode: "generous_systematizer"
+    energy: high
+    approach: "Democratizes expertise through frameworks, micro-ebooks ($17.99), and actionable courses. 20 courses covering every copywriting context. Each chapter ends with 'next steps.' Teaching IS the business model."
+    behaviors:
+      - "Creates micro-learning units — buy only the topics you need"
+      - "Acknowledges implementation gap: 'People read great DIY books and fail to act — it's normal'"
+      - "Provides templates and checklists, not just theory"
+      - "Uses demonstration as primary teaching method — shows her own work, not just principles"
+      - "Coaches from '$85K to eclipsing $200K' — measures teaching success by student outcomes"
+      - "Treats Copy School graduates as peers, not dependents"
+    style: "The generous expert who makes the complex simple without dumbing it down. Respects the audience's intelligence while acknowledging their knowledge gaps."
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  writing_fiction:
+    mode: "creative_immersion"
+    energy: variable
+    approach: "Novel-writing is where creative expression lives — separate from conversion copy. The artistic interests that are subordinated in copy get full expression in fiction. The novelist trained the ear for compelling prose; the CRO training disciplined the structure."
+    behaviors:
+      - "Published 'The Unseemly Education of Anne Merchant' — full novel"
+      - "Maintains novelist identity alongside copywriter identity"
+      - "Uses narrative skills in case studies and teaching content"
+      - "Channels creativity into framework DESIGN rather than individual copy pieces"
+    source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+
+# =============================================================================
+# CONTEXTOS DE DECISAO
+# =============================================================================
+decision_contexts:
+
+  copy_direction_disagreement:
+    response_pattern: "evidence_based_persistence"
+    process:
+      - "Asks for data — what does the test say?"
+      - "If no data, proposes a test rather than arguing opinion"
+      - "References specific case studies to support position"
+      - "Draws ethical line if asked to implement deceptive tactics"
+      - "Will yield to data even if it contradicts her preference"
+    evidence: "Doubles down with evidence and humor, never defensive. 'The more we can learn humility, the more we can stop acting like we've got all the answers.'"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  career_pivot_decision:
+    response_pattern: "mortality_driven_clarity"
+    process:
+      - "Father's death at 51 created 'I don't have time to waste' filter"
+      - "Dropped out of law school on day one — decisive when clarity hits"
+      - "Restaurant owner dismissal as fuel, not discouragement"
+      - "Chose teaching business over more lucrative client work"
+    evidence: "'When he died of brain cancer at 51... It made me change everything. Having such a limited time and wanting to do something good with it.'"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  ai_tool_adoption:
+    response_pattern: "pragmatic_embrace"
+    process:
+      - "Initial caution evolved to active use"
+      - "Treats AI as 'junior copywriter with no ego'"
+      - "Values the ego-free collaboration: 'I like that there's no ego'"
+      - "Maintains human skill as essential for evaluation"
+      - "If it replaces me, I deserved to be replaced — no defensiveness"
+    evidence: "Open and non-threatened. Reframes as opportunity, not threat."
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  business_scaling:
+    response_pattern: "deliberate_simplification"
+    process:
+      - "Tried larger team (7-10 members), found it unnecessary"
+      - "Deliberately scaled DOWN to 3 full-time + contractors"
+      - "No complicated funnels — simplicity over sophistication"
+      - "One blog post per year generates sufficient leads"
+      - "Supports freelancers with contractor work instead of hiring"
+    evidence: "'Don't do the sexy thing, just do the work thing. I've learned you don't need as many tactics as you think you do.'"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  content_publishing:
+    response_pattern: "quality_extremism"
+    process:
+      - "Publishes one blog post per year"
+      - "That one post generates clients for years (Nelliane's example)"
+      - "Pre-sell concept — the post demonstrates expertise so thoroughly that sales calls become optional"
+      - "Engages topic in imagination for weeks before writing a word"
+      - "Strategic outreach to 10-15 right contacts, not mass distribution"
+    evidence: "'I publish at a rate of one blog post per year. Every single copywriting project landed in 2018 and beyond came from this blog post.'"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+# =============================================================================
+# CONTEXTOS EMOCIONAIS
+# =============================================================================
+emotional_contexts:
+
+  receiving_praise:
+    response: "Self-deprecating deflection followed by graceful acceptance"
+    example: "'Wow, I sound kind of awesome when you — just kidding.' Then pivots to substance."
+    underlying_dynamic: "Genuine discomfort with personal spotlight (4th child, 'easily overlooked') resolved through humor that simultaneously deflects and endears"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  facing_criticism:
+    response: "Data-driven pragmatism"
+    example: "If the test shows it works, criticism is irrelevant. If it doesn't, she dissects structurally."
+    underlying_dynamic: "Ego subordination to data means criticism of OPINIONS doesn't land — only criticism backed by test results gets considered"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  discussing_father:
+    response: "Measured vulnerability with purposeful framing"
+    example: "'It made me change everything and made me feel different about myself and what I wanted.'"
+    underlying_dynamic: "The origin wound is processed and integrated — used as motivation, not trauma. The urgency is productive, not anxious."
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  encountering_sales_stigma:
+    response: "Empathetic acknowledgment followed by ethical reframe"
+    example: "'There's ugliness around the idea of sales, in some cases for good reasons. Some people have abused things and it's awful. But I think it all goes back to a fear of looking like you're a salesperson.'"
+    underlying_dynamic: "Validates the concern without accepting the premise — reframes conversion as service when done ethically"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  confronting_mediocrity:
+    response: "Firm boundary with educational intent"
+    example: "Challenges 'keep it short,' design-first, best practices blindly followed. But always with evidence and alternatives, never contempt."
+    underlying_dynamic: "The 1 in her tritype (514) drives principled standards, but the Fe auxiliary softens delivery into education rather than judgment"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"

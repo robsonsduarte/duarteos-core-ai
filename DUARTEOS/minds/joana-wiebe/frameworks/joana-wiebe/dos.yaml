@@ -1,0 +1,41 @@
+# Joanna Wiebe — DOS / Three Sales Argument Questions
+# Tres perguntas para construir arquitetura de mensagem persuasiva
+
+meta:
+  mind: joana-wiebe
+  framework: "Three Sales Argument Questions (DOS)"
+  category: messaging_strategy
+  use_case: "Construir a arquitetura de mensagem para qualquer peca de vendas"
+
+description: |
+  Tres perguntas que revelam o melhor argumento de vendas para qualquer situacao.
+  Define o que o prospecto ja sabe/sente/acredita, o que precisa acreditar para
+  dizer sim, e quais crencas existentes precisam ser reframadas ou desmontadas.
+
+questions:
+  - question: 1
+    text: "What is the current stage of awareness? What do they know, feel and already believe?"
+    action: "Mapeie o estado mental atual do prospecto"
+    detail: |
+      Use stages of awareness (Schwartz): unaware, problem-aware, solution-aware,
+      product-aware, most-aware. Cada stage requer messaging diferente.
+
+  - question: 2
+    text: "What do they need to believe in order to say yes?"
+    action: "Identifique as crencas necessarias para conversao"
+    detail: |
+      Liste cada crenca que o prospecto precisa ter para dizer sim.
+      Cada crenca se torna um bloco de messaging na pagina.
+
+  - question: 3
+    text: "Are there any beliefs that need to be reframed or dismantled?"
+    action: "Identifique crencas existentes que IMPEDEM a conversao"
+    detail: |
+      Objecoes, suposicoes erradas, experiencias passadas ruins.
+      Cada crenca limitante precisa ser endereçada explicitamente.
+
+evidence:
+  quote: "Your best sales argument, it lies in these three questions."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "As tres perguntas revelam o GAP entre onde o prospecto esta e onde precisa estar para converter. O copy preenche esse gap."

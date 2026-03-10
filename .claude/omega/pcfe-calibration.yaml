@@ -255,6 +255,28 @@ calibrations:
     enrichment_loops: 0
     timestamp: "2026-03-07T23:59:00Z"
     notes: "Brownfield upgrade. Delta alto (10.90) — consistente com padrao de subestimacao da PCFE. QS=78 conservador (livros nao digitalizados). 24 fontes, 96 MIUs, 11 drivers (5 Gold), 5 paradoxos com 3+ drivers cada. Segundo clone Copywriting calibrado — avg_delta copywriting subiu."
+  - slug: "joana-wiebe"
+    category: "copywriting"
+    FE: 92.65
+    FE_breakdown:
+      VS: 100
+      DS: 90
+      CS: 80.5
+      PS: 100
+      QS: 100
+    F_real: 94.50
+    F_real_breakdown:
+      L: 93
+      B: 96
+      C: 95
+      K: 96
+      V: 91
+    delta: 1.85
+    accuracy: 98.15
+    anomaly: false
+    enrichment_loops: 0
+    timestamp: "2026-03-10T23:59:00Z"
+    notes: "Greenfield. Menor delta da serie (1.85) — PCFE excepcionalmente precisa. FE=92.65 (EXCELENTE) muito proximo de F=94.50. Material abundante (35 fontes, 142 MIUs, 15 drivers, 6 paradoxos). F abaixo de threshold 95% — gap principal em Voice (V=91) por ausencia de transcricoes em video e limitacao text-only. Terceiro clone Copywriting — delta medio da categoria caiu significativamente (de 10.15 para 7.38)."
   # Expected schema for each entry:
   #
   # - slug: "{clone-slug}"
@@ -283,16 +305,16 @@ calibrations:
 # Recalculated after each new calibration entry
 
 stats:
-  total_clones: 11
-  avg_delta: 7.80              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15, 5.40, 12.15, 10.90)
-  avg_accuracy: 92.21          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85, 94.60, 87.85, 89.10)
+  total_clones: 12
+  avg_delta: 7.30              # average(4.75, 2.20, 2.05, 8.40, 9.40, 11.45, 8.90, 10.15, 5.40, 12.15, 10.90, 1.85)
+  avg_accuracy: 92.70          # average(95.25, 97.80, 97.95, 91.60, 90.60, 88.55, 91.10, 89.85, 94.60, 87.85, 89.10, 98.15)
   overestimation_count: 0      # how many times FE > F_real
-  underestimation_count: 11    # how many times FE < F_real — PCFE consistently conservative
+  underestimation_count: 12    # how many times FE < F_real — PCFE consistently conservative
   anomaly_count: 0             # how many clones had accuracy < 70%
   avg_delta_by_category:       # {categoria: avg_delta} — reveals category-specific bias
     saude: 4.75
     business: 6.03             # average(2.20, 2.05, 8.40, 11.45) — Kahneman puxou para cima
-    copywriting: 10.15         # average(9.40, 10.90) — ambos brownfield, PCFE conservadora para copywriters
+    copywriting: 7.38          # average(9.40, 10.90, 1.85) — Joanna Wiebe puxou media para baixo (PCFE muito precisa)
     content: 9.53              # average(8.90, 10.15) — criadores orais subestimados pela PCFE
     ux-design: 5.40            # primeiro clone UX-Design
     juridico: 12.15            # primeiro clone Juridico — maior delta, LinkedIn bloqueado puxou QS para baixo

@@ -1,0 +1,58 @@
+# Joanna Wiebe — Seven Sweeps (Copy Editing Framework)
+# Sete passes de edicao sequenciais para qualquer piece de copy
+
+meta:
+  mind: joana-wiebe
+  framework: "Seven Sweeps"
+  category: editing
+  use_case: "Pos-draft, antes de submissao — qualidade de copy"
+
+description: |
+  Sete passes analiticos sequenciais que toda piece de copy deve receber antes
+  de ser considerada pronta. Cada sweep foca em uma dimensao especifica.
+  "Clarity sweep first — everything goes back to clarity, always and forever."
+
+sweeps:
+  - sweep: 1
+    name: "Clarity Sweep"
+    question: "Esta claro? O prospecto entende sem esforco?"
+    action: "Elimine ambiguidade, jargao desnecessario, frases confusas"
+    priority: "SEMPRE primeiro — tudo volta para clareza, sempre e para sempre"
+
+  - sweep: 2
+    name: "Voice and Tone Sweep"
+    question: "A voz esta consistente? O tom esta adequado ao contexto?"
+    action: "Alinhe com brand voice. Verifique se nao mudou de tom no meio."
+
+  - sweep: 3
+    name: "So-What Sweep"
+    question: "Cada linha responde 'e dai?' — por que o prospecto deveria se importar?"
+    action: "Delete ou reescreva qualquer linha que nao passa no teste 'so what?'"
+
+  - sweep: 4
+    name: "Prove-It Sweep"
+    question: "Cada claim tem evidencia? Social proof, demos, screenshots?"
+    action: "Adicione prova para cada afirmacao. Se nao pode provar, nao afirme."
+
+  - sweep: 5
+    name: "Specificity Sweep"
+    question: "Estou sendo especifico ou vago? O prospecto consegue visualizar?"
+    action: "Substitua cada abstracao por detalhe concreto. 'Save time' → '2 hours back every Tuesday.'"
+
+  - sweep: 6
+    name: "Heightened Emotion Sweep"
+    question: "O prospecto esta sentindo o suficiente? A agitacao esta funcionando?"
+    action: "Amplifique emocao onde necessario. Nao invente — use linguagem real do cliente."
+
+  - sweep: 7
+    name: "Zero-Risk Sweep"
+    question: "Onde o prospecto sente risco? Como podemos reduzir?"
+    action: "Identifique cada ponto de resistencia. Adicione garantias, provas, reversals."
+
+quando_usar: "Depois de draftar copy, antes de submissao. Rode todos os sete sweeps sequencialmente em cada piece de copy."
+
+evidence:
+  quote: "The Seven Sweeps: clarity, voice, so-what, prove-it, specificity, emotion, zero-risk."
+  source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+key_insight: "Voce nao pode fazer todos os sweeps ao mesmo tempo. Faca um por vez. Clarity SEMPRE primeiro."

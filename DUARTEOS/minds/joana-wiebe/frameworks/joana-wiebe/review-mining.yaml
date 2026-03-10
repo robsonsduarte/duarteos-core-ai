@@ -1,0 +1,55 @@
+# Joanna Wiebe — Review Mining (VOC Extraction)
+# Tecnica de extracao de linguagem do prospecto via reviews
+
+meta:
+  mind: joana-wiebe
+  framework: "Review Mining (VOC Extraction)"
+  category: research
+  use_case: "Coletar linguagem do prospecto para usar como copy"
+
+description: |
+  Extracao sistematica de linguagem do prospecto a partir de reviews da Amazon,
+  Google, app stores, Reddit, Facebook groups. A tecnica que a Joanna popularizou.
+  O principio fundamental: as melhores headlines vem VERBATIM de reviews de clientes.
+
+steps:
+  - step: 1
+    name: "Identify Sources"
+    action: "Va a Amazon, Google, app stores — busque livros/produtos relacionados ao problema que voce resolve"
+    detail: "NAO busque reviews do seu proprio produto. Busque reviews de produtos no MESMO espaco de problema."
+
+  - step: 2
+    name: "Read and Harvest"
+    action: "Leia reviews — procure linhas que grudam, linguagem emocional, descricoes especificas de dor"
+    detail: "Preste atencao em reviews de 3-4 estrelas — la esta a verdade mais nuancada."
+
+  - step: 3
+    name: "Preserve Raw VOC"
+    action: "Tome voice of customer data EXATAMENTE como escrito — NAO resuma ou reescreva"
+    detail: "Use aspas. Preserve a linguagem crua. A autenticidade E a forca."
+
+  - step: 4
+    name: "Edit in the Awesome"
+    action: "Faca nao ficar desajeitado, mas mantenha o mais cru possivel"
+    detail: "Editar para clareza, nao para 'soar mais profissional'. O prospecto reconhece SUAS proprias palavras."
+
+  - step: 5
+    name: "Deploy as Copy"
+    action: "Use as linhas mais fortes como headlines, subheads, e body copy"
+    detail: "Teste verbatim contra variantes editadas. Frequentemente o verbatim ganha."
+
+evidence:
+  quote: "I went to Amazon... one line that a gentleman wrote was 'if you think you need rehab, you do' — we put it as a homepage headline. 26% more leads."
+  source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+sources_to_mine:
+  - "Amazon reviews (livros e produtos no mesmo espaco de problema)"
+  - "Google reviews"
+  - "App store reviews"
+  - "Facebook groups (sem portoes, sem muros)"
+  - "Reddit threads"
+  - "Instagram comments"
+  - "Customer survey responses"
+  - "Sales demo recordings"
+
+key_insight: "NAO resuma. NAO reescreva. Tome exatamente como o cliente escreveu. Isso e raw voice of customer data."

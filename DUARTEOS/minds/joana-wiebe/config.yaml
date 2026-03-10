@@ -1,0 +1,59 @@
+clone:
+  name: "Joanna Wiebe"
+  slug: "joana-wiebe"
+  pipeline_version: "3"
+  created_at: "2026-03-10"
+  fidelity_estimated: 92.65
+  pcfe_breakdown:
+    VS: 100
+    DS: 90
+    CS: 80.5
+    PS: 100
+    QS: 100
+  pcfe_classification: "EXCELENTE"
+  fidelity_score: 94.50
+  fidelity_components:
+    L: 93
+    B: 96
+    C: 95
+    K: 96
+    V: 91
+  status: "active"
+  accepted_below_threshold: true
+  acceptance_note: "Gap de 0.50% marginal. Blind test PASS 100%. PCFE accuracy 98.15%."
+  category: "copy"
+  archetype: "The Original Conversion Copywriter"
+  domain: "Conversion Copywriting, Messaging Strategy, VOC Research"
+  version: "1.0.0"
+  archetype: "The Original Conversion Copywriter — transforms customer language into high-converting copy through data-driven messaging strategy"
+  gate_humano:
+    decisao: "APROVAR"
+    timestamp: "2026-03-10"
+    iteracao: 1
+  pcfe_calibration:
+    FE: 92.65
+    F: 94.50
+    delta: 1.85
+    accuracy: 98.15
+  blind_test_v2:
+    total_prompts: 20
+    media_geral: 8.50
+    media_paradoxos: 8.50
+    taxa_aprovacao: 100
+    fidelidade_teste: 94.50
+    resultado: "PASS"
+  artifacts_completeness:
+    agent_md: true
+    frameworks: "16/16"
+    drivers: true
+    checklist: true
+    tasks: 13
+    behavioral: true
+    cognitive: true
+    linguistic: true
+    narrative: true
+    voice: true
+    phrases: true
+    system_components: true
+    completeness_score: "100%"
+    completeness_gate: "PASSED"

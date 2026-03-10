@@ -1,0 +1,42 @@
+# Joanna Wiebe — Even/If Rule
+# Framework para pre-handle objecoes inline
+
+meta:
+  mind: joana-wiebe
+  framework: "Even/If Rule"
+  category: objection_handling
+  use_case: "Fortalecer headlines, bullet lists e paragrafos"
+
+description: |
+  Tecnica simples mas poderosa: tome qualquer claim ou beneficio e adicione
+  "even if [objecao]" para pre-handle a objecao mais comum inline.
+  Elimina a necessidade de secoes separadas de objection-handling.
+
+steps:
+  - step: 1
+    action: "Tome qualquer claim ou beneficio"
+    example: "Write landing pages that convert at 2x your current rate"
+
+  - step: 2
+    action: "Identifique a objecao mais provavel"
+    example: "'But I'm not a good writer'"
+
+  - step: 3
+    action: "Adicione 'even if [objecao]' ao final"
+    example: "Write landing pages that convert at 2x your current rate — even if you've never written a word of copy"
+
+examples:
+  - before: "Double your email open rates"
+    after: "Double your email open rates — even if your list hasn't grown in months"
+
+  - before: "Build a profitable SaaS business"
+    after: "Build a profitable SaaS business — even if you're a non-technical founder"
+
+  - before: "Create headlines that stop the scroll"
+    after: "Create headlines that stop the scroll — even if you hate writing"
+
+evidence:
+  quote: "The 'Even, If Rule' strengthens headlines, bullet lists, and paragraphs for better prospect connection."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "A objecao que voce nao endereça e a objecao que mata a venda. Even/If endereça sem interromper o fluxo."

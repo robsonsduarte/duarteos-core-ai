@@ -1,0 +1,37 @@
+pcfe:
+  slug: "joana-wiebe"
+  timestamp: "2026-03-10 14:30"
+  version: "3.0"
+  iteration: 1
+  scores:
+    VS: 100
+    DS: 90
+    CS: 80.5
+    PS: 100
+    QS: 100
+  FE: 92.65
+  classificacao: "EXCELENTE"
+  F_estimado_min: 78.75
+  F_estimado_max: 100
+  F_provavel: 88.02
+  fontes_total: 35
+  fontes_por_tipo:
+    artigos: 8
+    entrevistas: 9
+    tutoriais: 5
+    palestras: 4
+    livros: 4
+    tweets: 1
+    sales_pages: 3
+    catalogo: 1
+  camadas_cobertas: 8
+  gaps:
+    - camada: "modelo_social"
+      cobertura: "40%"
+      impacto: "MODERADO"
+      recomendacao: "Extrair de transcripts de podcasts ja coletados"
+    - camada: "hierarquia_valores"
+      cobertura: "70%"
+      impacto: "BAIXO"
+      recomendacao: "Material ja disponivel nos transcripts longos"
+  recomendacao: "GO"

@@ -1,0 +1,39 @@
+# Joanna Wiebe — Already/Still Formula
+# Framework para headlines que posicionam o prospecto como parcialmente qualificado
+
+meta:
+  mind: joana-wiebe
+  framework: "Already/Still Formula"
+  category: headline
+  use_case: "Headlines, subheads, email subject lines"
+
+description: |
+  Formula em duas partes: enderece o que prospectos JA fizeram para se qualificar,
+  depois enderece o que eles AINDA nao realizaram. A ponte mostra como voce
+  os ajudara a chegar ao objetivo a partir de onde eles ja estao.
+
+structure:
+  part_1:
+    name: "Already"
+    action: "Enderece o que prospectos ja fizeram — qualifique-os"
+    function: "Faz o prospecto sentir-se visto e validado — 'ela entende onde estou'"
+
+  part_2:
+    name: "Still"
+    action: "Enderece o que ainda nao realizaram — identifique o gap"
+    function: "Cria tensao construtiva — 'sim, e ISSO que me falta'"
+
+  bridge:
+    action: "Mostre como voce os ajudara a chegar ao objetivo a partir de onde ja estao"
+    function: "Posiciona seu produto como a ponte entre o ALREADY e o destino"
+
+examples:
+  - "You've already built a great product. But you're still struggling to explain why people should buy it."
+  - "You already know your customers love you. You still can't figure out why new ones aren't converting."
+  - "You've already invested in design. Still can't get the messaging right."
+
+evidence:
+  quote: "Use this framework to show prospects how they're uniquely positioned to work with you."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "Already valida. Still cria tensao. A combinacao e poderosa porque nao e insulto — e reconhecimento de progresso + identificacao de gap."

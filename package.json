@@ -1,7 +1,7 @@
 {
   "name": "duarteos-core-ai",
-  "version": "5.30.0",
-  "description": "AIOS multi-agente para Claude Code. 14 agentes com personas + 55 mind clones + 11 conselhos + 26 squad commands + 24 MCPs + OMEGA (quality enforcement loop + circuit breaker) + Process Chief (toda task passa pelo Deming) + 28 Process Cards (processos formais reutilizaveis em 6 categorias) + MMOS v3 Pipeline (11 Fases + PCFE Pre-Clone Fidelity Estimation + Gate Humano + Scaffold Automatico) + Synapse v2 (memoria incremental) + Inbox/Caixa + Dossies Tematicos + YOLO Mode + Constitution + 4-Layer Config + Task Templates + Quality Gates + IDE Sync + Incremental Dev Rule + PM Pure Orchestrator + Agent Brains (cerebro operacional por agente com constantes de infraestrutura).",
+  "version": "5.31.0",
+  "description": "AIOS multi-agente para Claude Code. 14 agentes com personas + 56 mind clones + 11 conselhos + 26 squad commands + 24 MCPs + OMEGA (quality enforcement loop + circuit breaker) + Process Chief (toda task passa pelo Deming) + 28 Process Cards (processos formais reutilizaveis em 6 categorias) + MMOS v3 Pipeline (11 Fases + PCFE Pre-Clone Fidelity Estimation + Gate Humano + Scaffold Automatico) + Synapse v2 (memoria incremental) + Inbox/Caixa + Dossies Tematicos + YOLO Mode + Constitution + 4-Layer Config + Task Templates + Quality Gates + IDE Sync + Incremental Dev Rule + PM Pure Orchestrator + Agent Brains (cerebro operacional por agente com constantes de infraestrutura).",
   "type": "module",
   "bin": {
     "duarteos": "./bin/duarteos.mjs"

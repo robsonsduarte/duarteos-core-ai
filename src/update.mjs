@@ -9,6 +9,19 @@ const TEMPLATES_DIR = resolve(__dirname, '..', 'templates')
 
 // Changelog por versao — exibido no update
 const CHANGELOG = {
+  '5.31.0': {
+    title: 'Mind Clone Joanna Wiebe (Copyhackers) — MMOS v3 Pipeline Completo (F=94.50%)',
+    highlights: [
+      'Novo: Joanna Wiebe (Copywriting) — F=94.50%, 16 frameworks, 15 drivers, 6 paradoxos, 142 MIUs',
+      'Clone #14 via MMOS v3 full pipeline — "The Original Conversion Copywriter"',
+      'Frameworks: PAS, Seven-Question Messaging, Rule of One, Review Mining, PCPO, Message Map, 10/90 Rule, CTV/CTA, Seven Sweeps, Blog Post Formula, Already/Still, Even/If, Specificity, Pre-Sell, Framing Effect, DOS',
+      'Perfil: INFJ + 5w4 (sp/so), Big Five O82/C88/E62/A68/N42',
+      'PCFE calibracao: accuracy 98.15% (melhor de 12 clones), delta +1.85',
+      'Blind test: PASS 20/20, media 8.50/10, 100% aprovacao',
+      '51 arquivos no squad: agent, 16 frameworks, drivers, voice, phrases, checklist, 7 tasks operacionais, 8 artifacts',
+      'Synapse: 55 → 56 mind clones (Copywriting: +1)',
+    ],
+  },
   '5.30.0': {
     title: 'Agent Brains — Cerebro Operacional por Agente com Constantes de Infraestrutura',
     highlights: [
@@ -558,7 +571,7 @@ export function update(options = {}) {
   console.log(``)
   console.log(`  ┏${border}┓`)
   console.log(`  ┃  DuarteOS Core AI v${version} — Update${' '.repeat(Math.max(0, bannerWidth - 31 - version.length))}┃`)
-  console.log(`  ┃  21 MCPs  |  14 Agentes  |  55 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
+  console.log(`  ┃  21 MCPs  |  14 Agentes  |  56 Mind Clones${' '.repeat(Math.max(0, bannerWidth - 46))}┃`)
   console.log(`  ┗${border}┛`)
   console.log(`  Diretorio: ${cwd}\n`)
 

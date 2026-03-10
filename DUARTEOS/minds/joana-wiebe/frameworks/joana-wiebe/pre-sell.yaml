@@ -1,0 +1,45 @@
+# Joanna Wiebe — Pre-Sell Framework
+# Conteudo que prima para compra antes do pedido
+
+meta:
+  mind: joana-wiebe
+  framework: "Pre-Sell Framework"
+  category: content_strategy
+  use_case: "Primeiro piece de qualquer funil — blog post, case study, tutorial"
+
+description: |
+  Crie uma peca de demonstracao que prova expertise e prima prospectos para
+  compra ANTES de pedir a venda. Comprima o ciclo de vendas atraves de
+  pre-comprometimento logico e emocional. Vacine contra objecoes no topo do funil.
+
+steps:
+  - step: 1
+    name: "Create Demonstration Piece"
+    action: "Crie um blog post, case study, ou tutorial que PROVA expertise"
+    detail: "Nao diga que voce e bom. MOSTRE. SweatBlock case study demonstra o metodo inteiro."
+
+  - step: 2
+    name: "Prime for Purchase"
+    action: "Posicione o conteudo de forma que o leitor naturalmente pense 'eu preciso disso'"
+    detail: "O conteudo resolve PARTE do problema, criando consciencia de que o todo requer ajuda profissional."
+
+  - step: 3
+    name: "Compress Sales Cycle"
+    action: "Comprima o ciclo de vendas atraves de pre-comprometimento logico e emocional"
+    detail: "Quando o prospecto chega na pagina de vendas, ja esta 80% convencido."
+
+  - step: 4
+    name: "Vaccinate Against Objections"
+    action: "Enderece objecoes no topo do funil, nao no fundo"
+    detail: "O conteudo pre-sell e o lugar para Even/If e proof — antes que o prospecto tenha tempo de resistir."
+
+principles:
+  - "Demonstration through Proof — o conteudo MOSTRA sua expertise em acao"
+  - "Framing for Profit — posicione como servico, nao como self-promotion"
+  - "Persuasive Message Hierarchy — organize como pagina de conversao"
+
+evidence:
+  quote: "The pre selling we're talking about here is about priming your targeting your clients for purchase long before you ask for the sale."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "Um blog post de pre-sell gera mais clientes que 52 posts mediocres. Joanna publica um por ano e gera todos os clientes de copywriting desde 2018."

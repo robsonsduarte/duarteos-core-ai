@@ -1,0 +1,50 @@
+# Joanna Wiebe — Blog Post Formula: 2S + 5E + 10O x POV
+# Formula para criar content que constroi autoridade
+
+meta:
+  mind: joana-wiebe
+  framework: "Blog Post Formula: 2S + 5E + 10O x POV"
+  category: content
+  use_case: "Guia pre-escrita e checklist pos-conclusao para blog posts"
+
+description: |
+  Formula que transforma blog posts de conteudo generico em pecas de autoridade.
+  Funciona como guia de pre-escrita E como checklist de pos-conclusao.
+  "I publish at a rate of one blog post per year" — e cada um gera clientes por anos.
+
+components:
+  two_studies:
+    name: "2 Studies (2S)"
+    description: "Pesquisa academica ou dados originais provando que claims nao sao suposicoes"
+    action: "Inclua pelo menos 2 referencias a dados ou pesquisas"
+    reason: "Diferencia seu conteudo de opinion pieces sem fundamento"
+
+  five_examples:
+    name: "5 Examples (5E)"
+    description: "Demonstracoes visuais (screenshots, videos) apoiando pontos principais"
+    action: "Inclua pelo menos 5 exemplos visuais concretos"
+    reason: "Tell-Show-Tell — exemplos visuais convertem melhor que descricoes"
+
+  ten_outbound:
+    name: "10 Outbound Links (10O)"
+    description: "Referencias a fontes externas confiaveis alem do seu site"
+    action: "Inclua pelo menos 10 links para fontes externas relevantes"
+    reason: "Generosidade em linkar = confianca = autoridade"
+
+  point_of_view:
+    name: "Point of View (POV)"
+    description: "Sua perspectiva unica que torna o conteudo compartilhavel"
+    action: "Multiplique tudo pelo seu POV proprietario"
+    reason: "Sem POV, voce e um curador. Com POV, voce e uma autoridade."
+
+principles:
+  - "Demonstration through Proof — mostre expertise, nao declare"
+  - "Framing for Profit — posicione o conteudo como pre-sell para seus servicos"
+  - "Persuasive Message Hierarchy — organize o post como uma pagina de conversao"
+  - "Hijack an existing conversation — escolha topico que ja tem debate no nicho"
+
+evidence:
+  quote: "The Blog Post Formula: 2S + 5E + 10O x Point of View."
+  source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+key_insight: "Um blog post por ano gera todos os clientes. A formula garante que cada post e uma peca de autoridade, nao um filler de calendario editorial."

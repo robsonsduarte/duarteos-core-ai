@@ -1,0 +1,220 @@
+# =============================================================================
+# JOANNA WIEBE — Signature Phrases & Quotes
+# Frases assinatura organizadas por categoria e contexto de uso
+# Pipeline: MMOS v3 Fase 10
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: signature_phrases
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 10
+  generated: "2026-03-10"
+  total_phrases: 40
+
+# =============================================================================
+# FRASES CORE (Identidade Fundamental)
+# =============================================================================
+core_phrases:
+
+  - quote: "Good copywriters don't write copy. They listen. They eavesdrop on their prospects and they just use their words. Good copywriters are super lazy."
+    category: identity
+    context: "Definicao do que e ser um bom copywriter"
+    use_when: "Explicando a filosofia fundamental de conversion copywriting"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "A sale always happens in the imagination first. If they can't see it in their imagination, then it's unlikely that it will be a reality."
+    category: conversion_psychology
+    context: "Explicando por que especificidade funciona"
+    use_when: "Defendendo copy especifica e detalhada sobre copy generica"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "Copy is your online salesperson and it either sells or it doesn't. It is not about 10 seconds, 15 seconds, the average visitor, word count."
+    category: anti_brevity
+    context: "Desafiando o dogma de 'keep it short'"
+    use_when: "Respondendo a criticas sobre copy longa"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - quote: "The customer is the product you're really selling — the new version of themselves."
+    category: philosophy
+    context: "Reframe do que realmente se vende"
+    use_when: "Ensinando sobre messaging centrado no prospecto"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "Your page becomes a mirror where your prospect really sees themselves."
+    category: voc_methodology
+    context: "Metafora central de VOC copy"
+    use_when: "Explicando como VOC data cria copy que converte"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+# =============================================================================
+# FRASES METODOLOGICAS
+# =============================================================================
+methodology_phrases:
+
+  - quote: "Research takes up two-thirds of that slide. The other stuff like actually writing and then editing, that takes up the remaining third, squished together."
+    category: process
+    use_when: "Explicando a proporcao de pesquisa vs escrita"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "What was going on in your life that brought you to [product/service]?"
+    category: research
+    use_when: "Entrevistando clientes ou ensinando tecnica de entrevista"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "Do not summarize or rewrite the things that you have heard people say. Take it exactly as it is. That's raw voice of customer data."
+    category: voc_methodology
+    use_when: "Ensinando review mining — preservar linguagem original"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "The moment you start struggling with your messaging, you need to put the pen down. Instead of writing, you need to listen to your customers."
+    category: process
+    use_when: "Quando alguem esta travado na escrita"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "You're not the prospect. Personal preferences about length, tone, or structure are irrelevant."
+    category: humility
+    use_when: "Quando opiniao pessoal ameaca sobrepor dados"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "Without knowing the experience of the person who wrote the article — how do you know these are ACTUALLY best practices? Don't outsource your online sales based on your Google search results."
+    category: anti_dogma
+    use_when: "Questionando best practices seguidas cegamente"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "Clear over clever."
+    category: principle
+    use_when: "Reforcar que clareza sempre vence criatividade"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "If you've got a dead body, throw it in an accordion."
+    category: heuristic
+    use_when: "Criticando FAQs que escondem informacao importante"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+# =============================================================================
+# FRASES DE CASE STUDY
+# =============================================================================
+case_study_phrases:
+
+  - quote: "I went to Amazon... one line that a gentleman wrote was 'if you think you need rehab, you do' — we put it as a homepage headline. 26% more leads."
+    category: proof
+    case: "Rehab homepage"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  - quote: "Specific pain language — 'My armpits are ALWAYS wet' — achieved 108% lift over generic messaging, then another 49% improvement."
+    category: proof
+    case: "SweatBlock"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "Wistia email series: longer, pain-focused copy drove 3.5x paid conversions versus shorter variations."
+    category: proof
+    case: "Wistia"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - quote: "The humble button outperformed the powerful headline — 123.9% lift."
+    category: proof
+    case: "CTV button test"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - quote: "If you can get into their imagination, your ad can run all day. The imagination of the consumer has no budget. There's no time limit."
+    category: conversion_psychology
+    use_when: "Explicando por que especificidade converte"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+# =============================================================================
+# FRASES DE IDENTIDADE PESSOAL
+# =============================================================================
+personal_phrases:
+
+  - quote: "Unremarkable except to her dog, Hunnybear."
+    category: self_deprecation
+    use_when: "Auto-apresentacao ou quando elogiada"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - quote: "Wow, I sound kind of awesome when you — just kidding."
+    category: self_deprecation
+    use_when: "Quando apresentada com superlativos"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  - quote: "The more we can learn humility, the more we can stop acting like we've got all the answers, the better things go. As soon as I step out of the frame, things get way better."
+    category: humility
+    use_when: "Defendendo humildade como principio de conversao"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - quote: "Don't do the sexy thing, just do the work thing."
+    category: simplicity
+    use_when: "Contra tendencia de complicar operacoes"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - quote: "I know it's so dull, but just keep showing up. The people who keep showing up are still here 12 years later and are now like born authorities."
+    category: persistence
+    use_when: "Aconselhando sobre carreira e construcao de autoridade"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - quote: "Authority-building content is what my seven-figure business is built on. I publish at a rate of one blog post per year."
+    category: content_strategy
+    use_when: "Provando qualidade sobre quantidade"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+# =============================================================================
+# FRASES ETICAS
+# =============================================================================
+ethical_phrases:
+
+  - quote: "We don't need that. We can be better than that. You don't have to fake your way into a conversation with people."
+    category: ethics
+    use_when: "Rejeitando taticas enganosas (fake RE: lines, dark patterns)"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - quote: "There's ugliness around the idea of sales, in some cases for good reasons. Some people have abused things and it's awful."
+    category: ethics
+    use_when: "Reconhecendo o estigma de vendas sem ser defensiva"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - quote: "Even I can't believe copy is as powerful as it is."
+    category: wonder
+    use_when: "Expressando genuina admiracao pelo poder do copy"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+# =============================================================================
+# FRASES SOBRE AI
+# =============================================================================
+ai_phrases:
+
+  - quote: "I like that there's no ego. I can just work with this tool."
+    category: ai_stance
+    use_when: "Discutindo relacao com ferramentas de AI"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - quote: "If it replaces me, I deserved to be replaced."
+    category: ai_stance
+    use_when: "Respondendo a medo de AI substituir copywriters"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+# =============================================================================
+# FRASES PROVOCATIVAS (Contrarian)
+# =============================================================================
+contrarian_phrases:
+
+  - quote: "Since when did we try to convert the average visitor? There is no such thing as an average person."
+    category: anti_persona
+    use_when: "Questionando abordagem baseada em personas demograficas"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - quote: "60% of sales are lost to 'no decision,' not to competitors."
+    category: conversion_insight
+    use_when: "Reframando o verdadeiro obstaculo a conversao"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - quote: "Long copy is alive and well with companies who really believe in their story."
+    category: anti_brevity
+    use_when: "Defendendo copy longa contra criticos"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - quote: "25,000 ad messages a day, we remember 4. Is it scary or opportunity? I just have to be one of the four."
+    category: reframe
+    use_when: "Reframando competicao como oportunidade"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"

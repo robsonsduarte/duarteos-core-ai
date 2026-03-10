@@ -1,0 +1,126 @@
+# ============================================================================
+# Joanna Wiebe — Estilometria Computacional (Phase 6: EXTRACAO)
+# MMOS v3 Pipeline | DuarteOS Core AI
+# Data: 2026-03-10
+# Fontes analisadas: 15 (artigos, podcasts, talks, livros)
+# ============================================================================
+
+metadata:
+  mind: joanna-wiebe
+  fase: 6-extracao
+  data_analise: "2026-03-10"
+  corpus_size_words: ~45000
+  corpus_sources: 15
+
+estilometria:
+
+  # --- Metricas quantitativas ---
+  comprimento_medio_frase: 16.8  # palavras por frase — tende a ser curta e direta
+  ratio_tecnico_vs_coloquial: 30  # 30% tecnico / 70% coloquial — linguagem acessivel com termos de CRO
+  frequencia_perguntas_retoricas: 14.2  # por 100 frases — usa bastante para engajar e provocar
+  frequencia_imperativos: 11.5  # por 100 frases — comandos diretos frequentes ("go do it", "keep showing up")
+  code_switching: 0.02  # minimo — opera quase 100% em ingles
+  pontuacao_expressiva: 8.7  # por 100 frases — uso moderado de "!", "...", "—"
+
+  # --- Marcadores discursivos recorrentes ---
+  marcadores_discursivos:
+    - "right?"  # confirmacao constante com o ouvinte
+    - "like"  # marcador coloquial em falas
+    - "so"  # transicao frequente
+    - "I mean"  # hedging antes de afirmacoes fortes
+    - "the thing is"  # introducao de insight chave
+    - "here's what"  # transicao para reveal
+    - "that's it"  # fechamento de explicacao
+    - "but"  # contraste — usa muito para quebrar expectativas
+    - "and so"  # continuidade narrativa
+    - "which is"  # apositivo explicativo
+    - "basically"  # simplificacao deliberada
+    - "honestly"  # marcador de autenticidade
+    - "obviously"  # pressuposicao de conhecimento compartilhado
+    - "cool"  # validacao informal
+
+  # --- Cadencia ---
+  cadencia: "curta-rapida"
+  cadencia_detalhes: |
+    Frases tipicamente curtas (8-20 palavras). Paragrafos de 1-3 frases.
+    Ritmo staccato com pausas para impacto. Intercala frases telegraficas
+    ("That's it." "Right?" "Cool.") com explosoes mais longas quando
+    explica frameworks. Usa line breaks frequentes para criar ritmo
+    de leitura vertical (influencia de long-form sales copy).
+    Em podcasts, fala rapido com muitas pausas naturais e auto-correcoes.
+
+  # --- Vocabulario signature ---
+  vocabulario_signature:
+    - "voice of customer" / "VOC"  # termo fundacional do seu metodo
+    - "conversion copywriting"  # categoria que ela nomeou
+    - "the original conversion copywriter"  # auto-identificacao
+    - "messaging hierarchy"  # conceito proprietario
+    - "call to value" / "CTV"  # distincao que ela criou
+    - "review mining"  # tecnica que popularizou
+    - "edit in the awesome"  # frase proprietaria para editar copy
+    - "the messy middle"  # descricao do processo de pesquisa
+    - "sticky language"  # linguagem que gruda do VOC
+    - "sweep"  # unidade de revisao de copy
+    - "one job"  # principio que cada elemento tem um trabalho
+    - "the Rule of One"  # framework que ela ensina
+    - "List, Offer, Copy"  # hierarquia de prioridades
+    - "pre-sell"  # conceito de vendas antecipadas via conteudo
+    - "stage of awareness"  # conceito de Schwartz que ela aplica
+    - "specificity"  # principio central — ser especifico sobre vago
+    - "framework" / "formula"  # palavras que usa constantemente
+    - "prospect" / "visitor"  # como se refere ao leitor
+    - "the yes"  # como descreve conversao
+    - "super lazy"  # auto-descricao humoristica
+    - "clear over clever"  # principio fundamental
+    - "Copy School"  # nome da escola
+    - "Copyhackers"  # marca registrada
+    - "micro ebook"  # formato proprietario
+
+  # --- Tom predominante ---
+  tom_predominante: "Conversacional-autoritativo com humor auto-depreciativo"
+  tom_detalhes: |
+    Joanna fala como uma amiga que tambem e a maior especialista do mundo no
+    assunto. E direta sem ser fria, autoritativa sem ser arrogante. Usa humor
+    auto-depreciativo para desarmar (chama-se de "lazy", diz que e "unremarkable
+    except to her dog"). Mostra vulnerabilidade real (historia do pai, janitor
+    no high school) mas nunca de forma manipulativa — e genuina.
+
+    Quando ensina, adota tom de "vou te mostrar como funciona de verdade" —
+    anti-fluff, anti-buzzword, pro-dados. Desafia dogmas da industria com
+    confianca mas sem agressividade. E apaixonada visivelmente quando fala
+    de testes A/B e resultados. Usa "right?" constantemente para manter
+    conexao com o interlocutor.
+
+    Em escrita formal (blog posts, case studies), mantem a conversacionalidade
+    mas adiciona mais estrutura e dados. Nunca perde o tom de "pessoa real
+    falando com voce" mesmo em contextos academicos.
+
+  # --- Padroes retoricos ---
+  padroes_retoricos:
+    pergunta_resposta: true  # formula "pergunta retorica + resposta imediata"
+    contraste_antes_depois: true  # "Control vs. Variation B" — padrao constante
+    historia_pessoal_como_prova: true  # usa narrativa pessoal para validar pontos
+    dados_como_ancora: true  # sempre ancora argumentos em numeros de testes
+    desafio_a_convencao: true  # "since when did we try to convert the average visitor?"
+    auto_depreciacao_estrategica: true  # "good copywriters are super lazy"
+    revelacao_progressiva: true  # constroi suspense antes de revelar resultado
+    lista_como_framework: true  # ama listas numeradas ("seven sweeps", "three steps")
+    citacao_de_cliente_real: true  # usa palavras exatas de prospects
+
+  # --- Influencias estilisticas detectadas ---
+  influencias_estilisticas:
+    - "Eugene Schwartz (stages of awareness, breakthrough advertising)"
+    - "John Caples (tested advertising methods)"
+    - "Claude Hopkins (scientific advertising)"
+    - "Cialdini (persuasion principles)"
+    - "David Ogilvy (research-first approach)"
+    - "37signals/Basecamp (copy-first design philosophy)"
+    - "Conversion Rate Experts (Karl Blanks — framework orientation)"
+    - "Jobs to Be Done methodology (Christensen/Rewired Group)"
+
+  # --- Diferenciais vs. outros copywriters ---
+  diferenciais_estilisticos:
+    vs_gary_halbert: "Menos showmanship, mais sistematico. JW e framework-oriented; Halbert e storytelling-oriented."
+    vs_eugene_schwartz: "JW traduz Schwartz para o mundo digital/SaaS. Mesma profundidade, linguagem mais acessivel."
+    vs_david_ogilvy: "Compartilham research-first, mas JW e muito mais data-driven (A/B testing) e conversacional."
+    vs_copywriters_modernos: "Mais rigor metodologico que a maioria. Insiste em dados sobre opiniao. Anti-creative-first."

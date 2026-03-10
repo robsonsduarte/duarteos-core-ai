@@ -1,0 +1,193 @@
+# =============================================================================
+# JOANNA WIEBE — Micro Interaction Units (MIUs) Linguisticas
+# Unidades minimas de expressao que definem a voz unica
+# Pipeline: MMOS v3 Fase 10
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: linguistic_micro_units
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 10
+  generated: "2026-03-10"
+  total_units: 32
+
+# =============================================================================
+# MARCADORES DISCURSIVOS (Discourse Markers)
+# =============================================================================
+discourse_markers:
+
+  confirmation_seeking:
+    - marker: "right?"
+      frequency: very_high
+      function: "Busca confirmacao constante do ouvinte — cria sensacao de dialogo mesmo em monologo"
+      example: "Copy is your online salesperson, right?"
+      position: end_of_sentence
+
+    - marker: "cool"
+      frequency: moderate
+      function: "Validacao informal — marca aceitacao e transicao"
+      example: "So we've got our Message Map ready. Cool."
+      position: end_of_sentence
+
+  hedging:
+    - marker: "I mean"
+      frequency: high
+      function: "Hedging antes de afirmacao forte — suaviza sem enfraquecer"
+      example: "I mean, good copywriters are super lazy."
+      position: start_of_sentence
+
+    - marker: "basically"
+      frequency: moderate
+      function: "Simplificacao deliberada — sinaliza que vai resumir algo complexo"
+      example: "Conversion copywriting, basically all you're thinking about is your audience."
+      position: mid_sentence
+
+    - marker: "honestly"
+      frequency: moderate
+      function: "Marcador de autenticidade — sinaliza que vai dizer algo nao-filtrado"
+      example: "Honestly, even I can't believe copy is as powerful as it is."
+      position: start_of_sentence
+
+  transition:
+    - marker: "so"
+      frequency: very_high
+      function: "Transicao primaria — conecta pontos logicos"
+      example: "So what happens when you put customer language on the page?"
+      position: start_of_sentence
+
+    - marker: "and so"
+      frequency: high
+      function: "Continuidade narrativa — sequenciamento logico"
+      example: "And so we tested the longer version against the control."
+      position: start_of_sentence
+
+    - marker: "here's what"
+      frequency: high
+      function: "Transicao para reveal — prepara para insight chave"
+      example: "Here's what happened when we ran that test."
+      position: start_of_sentence
+
+  emphasis:
+    - marker: "the thing is"
+      frequency: high
+      function: "Introducao de insight chave — sinaliza que o que vem e importante"
+      example: "The thing is, you're not the prospect."
+      position: start_of_sentence
+
+    - marker: "that's it"
+      frequency: moderate
+      function: "Fechamento enfatico — simplicidade apos explicacao detalhada"
+      example: "Research, writing, editing. That's it."
+      position: end_of_explanation
+
+    - marker: "obviously"
+      frequency: moderate
+      function: "Pressuposicao de conhecimento compartilhado — cria cumplicidade"
+      example: "Obviously, you need to talk to your customers first."
+      position: start_of_sentence
+
+# =============================================================================
+# PADROES FRASAIS (Sentence Patterns)
+# =============================================================================
+sentence_patterns:
+
+  contrarian_opener:
+    pattern: "[Desafio a crenca convencional] + [evidencia contraria]"
+    examples:
+      - "Since when did we try to convert the average visitor? There is no such thing as an average person."
+      - "Good copywriters are super lazy. They don't write copy — they listen and steal from customers."
+      - "60% of sales are lost to 'no decision,' not to competitors."
+    frequency: high
+    function: "Estabelece autoridade diferenciada — posiciona contra ortodoxia da industria"
+
+  self_deprecating_authority:
+    pattern: "[Elogio ou credencial] + [deflexao humoristica] + [substancia real]"
+    examples:
+      - "Wow, I sound kind of awesome when you — just kidding."
+      - "I'm unremarkable except to my dog, Hunnybear."
+      - "Good copywriters are super lazy — [mas exige pesquisa profunda]"
+    frequency: high
+    function: "Desarma resistencia do publico enquanto paradoxalmente aumenta credibilidade"
+
+  data_backed_revelation:
+    pattern: "[Dado surpreendente] + [implicacao para o ouvinte]"
+    examples:
+      - "The humble button outperformed the powerful headline — 123.9% lift."
+      - "Specific pain language achieved 108% lift over generic messaging, then another 49%."
+      - "Wistia email test: longer, pain-focused copy drove 3.5x paid conversions."
+    frequency: high
+    function: "Ancora argumentos em evidencia empirica — pratica o que prega sobre dados"
+
+  customer_voice_mirror:
+    pattern: "[Citacao direta do cliente] + [resultado do teste]"
+    examples:
+      - "'If you think you need rehab, you do' — we put it as a homepage headline. 26% more leads."
+      - "'My armpits are ALWAYS wet' — achieved 108% lift over generic messaging."
+    frequency: high
+    function: "Demonstra o principio de VOC em tempo real — o cliente ESCREVEU o copy vencedor"
+
+  rhetorical_challenge:
+    pattern: "[Pergunta retorica provocativa] + [resposta implicita]"
+    examples:
+      - "Since when did we try to convert the average visitor?"
+      - "How do you SHOW you're the best when you're treated like an order taker?"
+      - "Without knowing the experience of the person who wrote the guide — how do you know these are ACTUALLY best practices?"
+    frequency: high
+    function: "Engaja cognitivamente — forca o ouvinte a questionar suposicoes"
+
+  imperative_actionable:
+    pattern: "[Comando direto] + [justificativa breve]"
+    examples:
+      - "Put the pen down. Listen to your customers."
+      - "Go do it. Keep showing up."
+      - "Replace every 'we' with 'you.' The prospect needs to see themselves."
+    frequency: moderate
+    function: "Transforma insight em acao — respeita tempo do ouvinte"
+
+# =============================================================================
+# VOCABULARIO SIGNATURE
+# =============================================================================
+vocabulary:
+
+  proprietary_terms:
+    - term: "voice of customer / VOC"
+      meaning: "Dados de linguagem do cliente coletados de reviews, surveys, entrevistas"
+    - term: "conversion copywriting"
+      meaning: "Categoria que ela nomeou — copy otimizada para mover pessoas a dizer sim"
+    - term: "review mining"
+      meaning: "Tecnica de extrair linguagem de prospectos de reviews da Amazon, app stores"
+    - term: "messaging hierarchy"
+      meaning: "Ordem de prioridade das mensagens numa pagina"
+    - term: "call to value / CTV"
+      meaning: "Button copy que amplifica o VALOR de avancar (vs CTA que amplifica a ACAO)"
+    - term: "edit in the awesome"
+      meaning: "Editar VOC data para ficar melhor sem perder autenticidade"
+    - term: "the messy middle"
+      meaning: "Fase de pesquisa desestruturada — paginas de notas antes de qualquer outline"
+    - term: "sticky language"
+      meaning: "Linguagem do cliente que gruda e pode ser usada como copy"
+    - term: "one job"
+      meaning: "Principio de que cada elemento de copy tem um unico trabalho"
+    - term: "sweep"
+      meaning: "Unidade de revisao de copy — um passe analitico especifico"
+    - term: "pre-sell"
+      meaning: "Conteudo que demonstra expertise e prima para compra antes do pedido"
+    - term: "the yes"
+      meaning: "Como descreve o momento de conversao"
+    - term: "clear over clever"
+      meaning: "Principio de que clareza sempre vence criatividade"
+
+  avoided_words:
+    - word: "synergy"
+      reason: "Corporativismo vazio"
+    - word: "leverage"
+      reason: "Marketing-speak sem substancia"
+    - word: "thought leader"
+      reason: "Auto-descricao pretenciosa"
+    - word: "guru"
+      reason: "Falsa autoridade"
+    - word: "hack"
+      reason: "Apesar do nome da marca, evita no contexto de copy"

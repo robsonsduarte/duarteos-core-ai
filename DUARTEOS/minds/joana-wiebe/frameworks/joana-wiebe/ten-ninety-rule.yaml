@@ -1,0 +1,48 @@
+# Joanna Wiebe — 10/90 Messaging Layout Rule
+# Estrutura de layout para qualquer pagina de conversao
+
+meta:
+  mind: joana-wiebe
+  framework: "10/90 Messaging Layout Rule"
+  category: layout
+  use_case: "Estruturar qualquer landing page, homepage ou sales page"
+
+description: |
+  Regra simples para estrutura de pagina: os primeiros 10% matcham o stage
+  of awareness do visitante e a mensagem de entrada. Os outros 90% convencem
+  atraves de messaging estruturado seguindo o Seven-Question framework.
+
+sections:
+  top_10_percent:
+    name: "Match Zone"
+    action: "Match o stage of awareness do visitante e a mensagem de entrada"
+    detail: |
+      O visitante precisa ver em menos de meio segundo que esta no lugar certo.
+      Se veio de um ad sobre X, o top da pagina fala sobre X.
+      Se e most-aware, va direto para oferta. Se e problem-aware, comece pela dor.
+
+  remaining_90_percent:
+    name: "Convince Zone"
+    action: "Convenca atraves de messaging estruturado"
+    detail: |
+      Siga a hierarquia do Seven-Question framework:
+      1. O que voce faz
+      2. Por que eu deveria me importar
+      3. Outros como eu se importam?
+      4. Como voce faz o que diz?
+      5. Como minha vida melhora?
+      6. Por que e seguro acreditar em voce?
+      7. Proximo passo
+
+stages_of_awareness:
+  - "Unaware — nao sabe que tem um problema"
+  - "Problem-Aware — sabe do problema, nao sabe da solucao"
+  - "Solution-Aware — sabe que existem solucoes, nao conhece a sua"
+  - "Product-Aware — conhece seu produto, nao esta convencido"
+  - "Most-Aware — esta convencido, so precisa da oferta"
+
+evidence:
+  quote: "Top 10% of page: Matching the visitor's awareness stage. Remaining 90%: Convincing through structured messaging."
+  source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+key_insight: "A maioria dos sites erra os primeiros 10% — nao matcham o stage of awareness. O visitante sai antes de ver os 90% de convencimento."

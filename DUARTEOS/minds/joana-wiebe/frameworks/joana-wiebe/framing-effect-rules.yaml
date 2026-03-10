@@ -1,0 +1,42 @@
+# Joanna Wiebe — Framing Effect Rules
+# Regras de framing baseadas em psicologia comportamental
+
+meta:
+  mind: joana-wiebe
+  framework: "Framing Effect Rules"
+  category: psychology
+  use_case: "Decidir como apresentar opcoes, pricing ou value props a um publico especifico"
+
+description: |
+  Tres regras para aplicar o framing effect — o vies cognitivo onde pessoas
+  escolhem acoes dependendo de como as opcoes sao apresentadas.
+  O frame muda a decisao mesmo quando os fatos sao identicos.
+
+rules:
+  - rule: 1
+    name: "Psyche First"
+    statement: "A psique do seu target audience e a consideracao mais critica"
+    action: "Entenda profundamente o estado mental, medos, desejos e awareness stage do seu publico ANTES de escolher o frame"
+    detail: "O mesmo frame funciona diferente para audiencias diferentes. Research first."
+
+  - rule: 2
+    name: "Loss > Gain"
+    statement: "Uma perda e mais persuasiva que o ganho equivalente"
+    action: "Frame como o que perdem se nao agirem, nao como o que ganham se agirem"
+    detail: "Loss aversion e biologica. '60% of sales lost to no decision' — o medo de perder e mais forte que o desejo de ganhar."
+    example:
+      gain_frame: "Get 20% more conversions"
+      loss_frame: "Stop losing 20% of your potential customers"
+
+  - rule: 3
+    name: "Challenge Status Quo"
+    statement: "Posicione contra a forma atual de pensar"
+    action: "Mostre por que o que fazem hoje e insuficiente ou arriscado"
+    detail: "Status quo bias e poderoso — precisa de frame forte para quebrá-lo."
+    example: "Your current page isn't just underperforming — it's actively losing you customers every day."
+
+evidence:
+  quote: "The framing effect is a cognitive bias where people choose their actions depending on how the options are presented."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "Voce nao esta mudando os fatos. Esta mudando como os fatos sao percebidos. O frame E a mensagem."

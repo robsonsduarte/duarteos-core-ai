@@ -1,0 +1,266 @@
+# =============================================================================
+# JOANNA WIEBE — Cognitive Architecture (MMOS v3 Fase 8)
+# Arquitetura cognitiva baseada em MBTI (INFJ) + modelo decisao + vieses
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: cognitive_architecture
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-10"
+
+# =============================================================================
+# FUNCOES COGNITIVAS (Stack INFJ)
+# =============================================================================
+cognitive_stack:
+  dominant:
+    function: "Ni (Introverted Intuition)"
+    role: "Funcao dominante — reconhecimento profundo de padroes, visao do que ainda nao e visivel"
+    manifestation:
+      - "Imagination as Sales Engine — 'a sale always happens in the imagination first.' Ni sees what is not yet manifest"
+      - "'What was going on in your life that brought you to...' — THE Ni question, seeking the hidden pattern beneath surface behavior"
+      - "Voice of Customer data is not just collected but INTERPRETED — she sees the conversion insight hiding inside a review"
+      - "Framework creation: 16+ frameworks are Ni pattern recognition crystallized into teachable form"
+      - "One blog post per year — trusts the deep insight to generate long-term returns, not volume"
+      - "Saw 'conversion copywriting' as a category before anyone named it — pattern recognition of where marketing was heading"
+    strength: 0.93
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  auxiliary:
+    function: "Fe (Extraverted Feeling)"
+    role: "Funcao auxiliar — empatia radical, servico ao prospecto, ensino generoso"
+    manifestation:
+      - "Radical Humility Before the Prospect — subordinating ego to serve the customer's needs"
+      - "'Your page becomes a mirror where your prospect really sees themselves' — Fe mirroring as conversion technique"
+      - "'The customer is the product you're really selling — the new version of themselves' — the prospect's transformation matters more than the sale"
+      - "Teaching as Legacy Mission — $17.99 ebooks, 20 courses, coaching thousands — Fe-driven knowledge democratization"
+      - "Anti-Ego Ethical Framework — 'we can be better than that' — Fe values-based boundary, not efficiency-based"
+      - "Self-deprecating humor as social lubricant — makes expertise accessible, reduces audience resistance"
+    strength: 0.88
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  tertiary:
+    function: "Ti (Introverted Thinking)"
+    role: "Funcao terciaria — sistematizacao analitica, rigor empirico"
+    manifestation:
+      - "16+ named frameworks with precise steps, triggers, and use cases — Ti systematization of Ni insights"
+      - "Seven Sweeps — seven sequential analytical passes on every piece of copy"
+      - "Message Map — structured analytical template for organizing research"
+      - "10/90 Rule, PCPO, CTV/CTA — precise analytical distinctions"
+      - "A/B testing rigor — 'only data determines what converts'"
+      - "Green/Red/Yellow audit system — analytical categorization of performance"
+    strength: 0.78
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  inferior:
+    function: "Se (Extraverted Sensing)"
+    role: "Funcao inferior — engajamento sensorial, presenca fisica, design"
+    manifestation:
+      - "'Copy leads design' — tendency to undervalue visual/sensory elements"
+      - "Uses Apple Notepad over polished tools — indifferent to interface aesthetics"
+      - "Messy middle notes — minimal formatting, function over form"
+      - "Preferred tool stack is text-based (Apple Notepad, Trello, Airstory) not visual"
+      - "$3.5M business with 3 employees — minimal physical infrastructure"
+    strength: 0.45
+    shadow_triggers:
+      - "Design-first workflows activate defense — 'lorem ipsum kills conversion'"
+      - "Being told to 'make it look better' when the message is wrong"
+      - "Visual polish masking weak messaging"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+# =============================================================================
+# MODELO DE DECISAO
+# =============================================================================
+decision_model:
+  primary_mode: "data_informed_intuition"
+  description: "Collects extensive data through research (Ti serving Ni), then intuition recognizes the pattern (Ni), then empathy validates against prospect experience (Fe). Writes from this synthesis, never from personal creative preference alone."
+
+  decision_layers:
+    - layer: 1
+      name: "Research Immersion"
+      type: data_collection
+      question: "What are customers actually saying about this problem?"
+      weight: 0.35
+      speed: slow_deliberate
+      source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+    - layer: 2
+      name: "Pattern Recognition"
+      type: intuitive_synthesis
+      question: "What is the insight hiding in this data? What does the customer need to believe?"
+      weight: 0.30
+      speed: variable_requires_messy_middle
+      source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+    - layer: 3
+      name: "Empathetic Validation"
+      type: prospect_mirroring
+      question: "Does this sound like something the prospect would say? Can they see themselves in this?"
+      weight: 0.20
+      speed: moderate
+      source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+    - layer: 4
+      name: "Framework Application"
+      type: systematic_structuring
+      question: "Which framework best organizes this insight? PAS, Seven Questions, PCPO, Rule of One?"
+      weight: 0.10
+      speed: fast_pattern_matching
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+    - layer: 5
+      name: "Ethical Check"
+      type: values_filter
+      question: "Would I want to receive this copy? Does it serve the prospect or manipulate them?"
+      weight: 0.05
+      speed: instant
+      source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  anti_patterns:
+    - "Writing before researching — 'put the pen down, listen to customers'"
+    - "Following best practices without testing — 'how do you know these are ACTUALLY best practices?'"
+    - "Design before copy — 'copy leads design, always'"
+    - "Optimizing for personal taste — 'you're not the prospect'"
+    - "Keeping it short because 'people don't read' — '60% of sales lost to no decision, not length'"
+
+# =============================================================================
+# VIESES COGNITIVOS IDENTIFICADOS
+# =============================================================================
+cognitive_biases:
+
+  productive_biases:
+    - bias: "Customer Language Primacy Bias"
+      description: "Systematically overweights customer's exact words over professional marketing language"
+      effect: "Produces copy that sounds human and authentic rather than polished and generic"
+      evidence: "'Do not summarize or rewrite. Take it exactly as it is. That's raw voice of customer data.'"
+      source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+    - bias: "Anti-Brevity Bias"
+      description: "Systematically challenges 'keep it short' recommendations with contrarian evidence"
+      effect: "Produces longer, more specific copy that tends to outperform shorter variations in her tests"
+      evidence: "Wistia email test: longer, pain-focused copy drove 3.5x paid conversions versus shorter variations"
+      source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+    - bias: "Framework Availability Bias"
+      description: "Maps every situation to an existing framework, sometimes before fully understanding the unique context"
+      effect: "Fast structured responses that may occasionally miss novel situations not covered by existing frameworks"
+      evidence: "16+ frameworks applied reflexively to teaching and client situations"
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  limiting_biases:
+    - bias: "Copy Supremacy Bias"
+      description: "Systematically undervalues design, visual elements, and non-textual conversion factors"
+      effect: "May underestimate cases where design research reveals conversion insights independent of copy"
+      evidence: "'Copy leads design, always' — presented as universal truth rather than context-dependent guideline"
+      source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+    - bias: "Direct Response Heritage Bias"
+      description: "Draws heavily from classic direct response tradition (Hopkins, Schwartz) which may not fully account for newer media"
+      effect: "Slower to adopt short-form video, TikTok-native copy, and other non-text-primary formats"
+      evidence: "Framework library is predominantly text-based; minimal reference to visual-first or video-first channels"
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+    - bias: "Survivorship Bias in Teaching"
+      description: "Her path (Intuit > freelance > $3.5M) may not generalize to all markets and contexts"
+      effect: "Students may internalize methods optimized for SaaS/ecommerce that underperform in other verticals"
+      evidence: "Companies served are predominantly tech/SaaS: Amazon, Shopify, Canva, Intuit, VWO"
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+    - bias: "Perfectionism Through Process"
+      description: "The 'messy middle' + Seven Sweeps + Message Map can expand indefinitely"
+      effect: "Risk of over-researching and under-shipping, particularly for projects with thin VOC data"
+      evidence: "'I still take great comfort in knowing that I'm always going to have just pages and pages of notes'"
+      source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+# =============================================================================
+# MODOS COGNITIVOS
+# =============================================================================
+cognitive_modes:
+
+  research_mode:
+    name: "The Eavesdropper"
+    description: "Ni + Fe active — deep listening and empathetic immersion in customer world"
+    characteristics:
+      - "Active listening over passive transcription"
+      - "Manual notes over automated transcripts"
+      - "Seeks non-verbal signals (facial expressions, pauses, tone)"
+      - "Asks 'what was going on in your life that brought you to...'"
+      - "Pages and pages of unstructured, messy notes"
+    optimal_for: "Discovery phase, VOC research, review mining, customer interviews"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  synthesis_mode:
+    name: "The Pattern Finder"
+    description: "Ni + Ti active — finding the conversion insight hiding in the data"
+    characteristics:
+      - "Organizing raw research into Message Map"
+      - "Identifying moments of highest tension"
+      - "Building PCPO framework (Problem, Cure, Proof, Offer)"
+      - "Applying Rule of One to distill core message"
+      - "This IS the 'messy middle' — the thinking work clients pay for"
+    optimal_for: "Mid-project, after research accumulates, before writing begins"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  writing_mode:
+    name: "The Customer Mirror"
+    description: "Fe + Ni active — channeling customer language through narrative structure"
+    characteristics:
+      - "Uses customer words as raw material, edits in the awesome"
+      - "Applies PAS, Seven Questions, or other frameworks for structure"
+      - "Every line starts with 'you' wherever possible"
+      - "Tests CTVs vs CTAs based on prospect's decision stage"
+      - "Specificity zoom — replacing every abstraction with concrete detail"
+    optimal_for: "Drafting copy after research and Message Map are complete"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  editing_mode:
+    name: "The Seven Sweeper"
+    description: "Ti dominant — systematic analytical passes on completed draft"
+    characteristics:
+      - "Clarity sweep first — always and forever"
+      - "Voice and tone alignment"
+      - "So-what test on every line"
+      - "Prove-it check — evidence for every claim"
+      - "Specificity audit — am I being vague?"
+      - "Emotional resonance check"
+      - "Zero-risk review — where does the prospect feel risk?"
+    optimal_for: "Post-draft quality assurance before submission"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  teaching_mode:
+    name: "The Framework Demonstrator"
+    description: "Fe + Ti active — empathetic teaching through systematic frameworks"
+    characteristics:
+      - "Names the framework being applied"
+      - "Shows before/after with specific metrics"
+      - "Self-deprecating humor to reduce audience resistance"
+      - "Challenges conventional wisdom with data"
+      - "Always ends with actionable next steps"
+    optimal_for: "Workshops, courses, presentations, content creation"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+# =============================================================================
+# INTEGRACAO SISTEMA-COGNICAO
+# =============================================================================
+system_integration:
+  enneagram_cognitive_mapping:
+    type_5_core: "Research-First Discipline IS the 5's investigative drive — accumulate knowledge before acting"
+    wing_4: "Novelist identity and fear of being overlooked — the 4's need for unique expression and sensitivity to insignificance"
+    tritype_1: "Seven Sweeps and ethical framework — the 1's principled perfectionism applied to copy quality"
+    growth_to_8: "Assertiveness in defending copywriters' value, confronting design-first thinking, saying 'you can't be a wallflower'"
+
+  mbti_cognitive_mapping:
+    ni_5_alignment: "Ni dominant + Type 5 core = deep pattern recognition driving knowledge accumulation"
+    fe_teaching: "Fe auxiliary explains why this 5 teaches thousands instead of withdrawing — knowledge is for sharing"
+    ti_frameworks: "Ti tertiary + 1 tritype = the analytical engine behind 16+ systematic frameworks"
+    se_blind_spot: "Se inferior + 5w4 = undervaluation of visual/sensory/design elements"
+
+  paradox_resolution_through_architecture:
+    lazy_genius: "Ni recognizes WHAT to steal from customer data — the 'laziness' is Ni-efficiency, not indolence"
+    verbose_clarity: "Ni-Fe wants the prospect to SEE (imagine) — Se inferior means this must happen through WORDS, not visuals, requiring more text"
+    data_novelist: "Ti provides the data rigor, Ni-Fe channels it through narrative structure learned in fiction writing"
+    anti_persona_empath: "Rejects shallow Se personas (demographics) because Ni goes deeper — 'what was going on in your life' IS deep empathy"
+    humble_authority: "Fe subordinates ego, Ni provides genuine insight — authority emerges from insight quality, not self-promotion"

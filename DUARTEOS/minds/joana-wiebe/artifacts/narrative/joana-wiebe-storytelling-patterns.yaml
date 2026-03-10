@@ -1,0 +1,164 @@
+# =============================================================================
+# JOANNA WIEBE — Storytelling Patterns
+# Padroes narrativos recorrentes extraidos de 35+ fontes primarias
+# Pipeline: MMOS v3 Fase 10
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: storytelling_patterns
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 10
+  generated: "2026-03-10"
+
+# =============================================================================
+# PADROES NARRATIVOS PRIMARIOS
+# =============================================================================
+primary_patterns:
+
+  - id: SP-001
+    name: "The Data Reveal"
+    description: "Constroi suspense com contexto, revela dado surpreendente, extrai principio"
+    structure:
+      - "Setup: estabelece o cenario e a suposicao comum"
+      - "Tension: cria expectativa ('mas olha o que aconteceu...')"
+      - "Reveal: dado ou resultado que contradiz a suposicao"
+      - "Principle: extrai a licao universal"
+    example: |
+      SweatBlock was using generic messaging — 6-word headlines about
+      'stopping sweat.' We went to the reviews and found customers
+      saying 'My armpits are ALWAYS wet.' We put that specific language
+      on the page. 108% lift. Then we tested again. Another 49%.
+      Specificity enters the imagination, and the imagination has no budget.
+    frequency: very_high
+    function: "Ancora autoridade em evidencia empirica enquanto ensina um principio"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: SP-002
+    name: "The Origin Wound"
+    description: "Historia pessoal de rejeicao/perda que fundamenta a missao"
+    structure:
+      - "Vulnerability: expoe o momento de dor ou rejeicao"
+      - "Impact: mostra como mudou sua trajetoria"
+      - "Transformation: conecta a ferida ao proposito atual"
+    example: |
+      I was a restaurant server. The owner looked at my English degree
+      and said 'Not the most lucrative choice.' Within five years I was
+      earning $80K. Today I run a $3.5M/year business with 3 employees.
+      That man was wrong — writing IS the most lucrative choice.
+    frequency: moderate
+    function: "Cria conexao emocional genuina e modela resiliencia"
+    variants:
+      - "Father's death at 51 — triggered departure from law school"
+      - "4th of 5 children, 'easily overlooked' — drives need for proof through work"
+      - "Restaurant owner dismissal — origin of 'proving writers' value'"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: SP-003
+    name: "The Before/After Case Study"
+    description: "Contraste direto entre estado anterior e resultado pos-intervencao"
+    structure:
+      - "Before: estado atual com metricas ou descricao especifica"
+      - "Intervention: o que foi feito (framework nomeado)"
+      - "After: resultado com dados especificos"
+      - "Why: explicacao do mecanismo"
+    example: |
+      Wistia was sending short, feature-focused emails to trial users.
+      We rewrote the sequence using longer, pain-focused copy.
+      The result? 3.5x paid conversions versus the shorter variations.
+      Why? Because when you acknowledge the pain they're actually feeling,
+      they know you understand them. And that's when the sale happens.
+    frequency: very_high
+    function: "Demonstra o principio in vivo — Tell-Show-Tell em acao"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: SP-004
+    name: "The Contrarian Challenge"
+    description: "Desafia ortodoxia da industria com evidencia e framework alternativo"
+    structure:
+      - "Orthodox belief: apresenta a crenca convencional"
+      - "Challenge: questiona com pergunta retorica"
+      - "Counter-evidence: dado ou caso que refuta"
+      - "Alternative framework: apresenta sua abordagem"
+    example: |
+      Everybody says 'keep it short' because 'people don't read.'
+      Since when did we try to convert the average visitor? There is
+      no such thing as an average person. Copy is your online salesperson.
+      You would never tell your salesperson to hurry up. The question
+      isn't length — it's relevance.
+    frequency: high
+    function: "Estabelece posicao diferenciada e forca pensamento critico"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - id: SP-005
+    name: "The Self-Deprecating Pivot"
+    description: "Começa com auto-depreciacao, pivota para substancia real"
+    structure:
+      - "Deflection: humor auto-depreciativo sobre si mesma"
+      - "Pivot: transicao para conteudo real"
+      - "Substance: expertise genuina em acao"
+    example: |
+      I'm unremarkable except to my dog, Hunnybear. But here's what
+      IS remarkable: when you take a line from an Amazon review — verbatim —
+      and put it as your homepage headline, and you get 26% more leads.
+      That's not me being remarkable. That's the customer being remarkable.
+    frequency: high
+    function: "Desarma resistencia a autoridade, modela humildade como estrategia"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+# =============================================================================
+# PADROES NARRATIVOS SECUNDARIOS
+# =============================================================================
+secondary_patterns:
+
+  - id: SP-006
+    name: "The Framework Introduction"
+    description: "Apresenta framework proprietario com nome, contexto e demonstracao"
+    structure:
+      - "Name it: diz o nome do framework explicitamente"
+      - "Context: quando usar"
+      - "Demonstrate: caso real ou walkthrough"
+      - "Exercise: 'try this right now'"
+    frequency: high
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: SP-007
+    name: "The Customer Voice Verbatim"
+    description: "Cita linguagem exata do cliente e mostra como se torna copy"
+    structure:
+      - "Source: de onde veio (Amazon, survey, interview)"
+      - "Quote: citacao exata"
+      - "Application: como foi usada"
+      - "Result: dados de performance"
+    frequency: very_high
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - id: SP-008
+    name: "The Persistence Manifesto"
+    description: "Argumento pela consistencia de longo prazo sobre taticas de curto prazo"
+    structure:
+      - "Observation: mostra quem desistiu vs quem persistiu"
+      - "Principle: keep showing up"
+      - "Personal proof: 12+ anos na Copyhackers"
+      - "Invitation: 'just keep showing up'"
+    frequency: moderate
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+# =============================================================================
+# ARCOS NARRATIVOS FAVORITOS
+# =============================================================================
+narrative_arcs:
+
+  underdog_to_authority:
+    description: "De garconete ignorada a the original conversion copywriter"
+    beats: ["dismissal", "persistence", "competence", "data-backed authority", "humility maintained"]
+
+  customer_as_hero:
+    description: "O cliente e o protagonista, o copywriter e o facilitador invisivel"
+    beats: ["customer pain", "customer language", "copy reflects customer", "customer converts", "copywriter disappears"]
+
+  data_over_dogma:
+    description: "Desafiando convencoes com evidencia empirica"
+    beats: ["industry orthodoxy", "contrarian question", "test result", "new principle", "actionable framework"]

@@ -1,0 +1,52 @@
+# Joanna Wiebe — Seven-Question Messaging Framework
+# Hierarquia de messaging da perspectiva do prospecto
+
+meta:
+  mind: joana-wiebe
+  framework: "Seven-Question Messaging Framework"
+  category: messaging_strategy
+  use_case: "Organizar a hierarquia de messaging de qualquer pagina"
+
+description: |
+  Sete perguntas escritas da perspectiva do prospecto que determinam a sequencia
+  de persuasao. Usada no caso SweatBlock que dobrou a receita de ecommerce (108% lift).
+  Cada pergunta representa um estagio de convencimento que o prospecto precisa atravessar.
+
+steps:
+  - step: 1
+    question: "What do you do?"
+    action: "Declare claramente o que voce faz — sem jargao, sem abstracoes"
+
+  - step: 2
+    question: "Okay. Why should I care?"
+    action: "Conecte o que voce faz ao problema real do prospecto"
+
+  - step: 3
+    question: "Am I alone in caring — or do others like me care?"
+    action: "Social proof — mostre que outros como ele ja se beneficiaram"
+
+  - step: 4
+    question: "You're starting to win me over. But I'm skeptical. So show me: how do you do what you say you do?"
+    action: "Processo, mecanismo, demonstracao — COMO funciona concretamente"
+
+  - step: 5
+    question: "And if I believe you and your process/solution, how will my life improve?"
+    action: "Outcome painting — mostre a vida DEPOIS usando especificidade"
+
+  - step: 6
+    question: "I'd like to believe you, but first tell me: why is it safe for me to believe you?"
+    action: "Reduza risco — garantias, provas, credenciais, reversal"
+
+  - step: 7
+    question: "Okay, let's say I believe you. Now what?"
+    action: "CTA claro — proximo passo inequivoco"
+
+quando_usar: "Para organizar a hierarquia de messaging de qualquer pagina — landing page, homepage, sales page."
+quando_nao_usar: "Para micro-copy ou CTAs isolados — use CTV/CTA framework."
+
+evidence:
+  quote: "Seven-Question Messaging Framework written from the prospect's perspective"
+  case_study: "SweatBlock — doubled ecommerce revenue (108% lift)"
+  source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+key_insight: "As perguntas sao do PROSPECTO, nao do copywriter. Voce esta respondendo o que ele perguntaria silenciosamente."

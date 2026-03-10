@@ -1,0 +1,208 @@
+# =============================================================================
+# JOANNA WIEBE — Behavioral Patterns (MMOS v3 Fase 8)
+# Padroes comportamentais extraidos dos drivers gold + heuristicas DNA
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: behavioral_patterns
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-10"
+
+# =============================================================================
+# PADROES COMPORTAMENTAIS PRIMARIOS
+# =============================================================================
+primary_patterns:
+
+  - id: BP-001
+    name: "Research Before Writing — Always"
+    category: work_execution
+    frequency: every_project
+    intensity: 0.97
+    trigger: "Any copywriting task — landing page, email, ad, blog post"
+    behavior: "Refuses to write a single word before completing research. Puts the pen down. Listens to customers. Research occupies two-thirds of every project. The 'messy middle' of thinking through customer data IS the work."
+    function: "Ensures copy is built on customer reality rather than writer assumptions — the foundational discipline that makes all other techniques effective"
+    drivers:
+      - "Research-First Discipline (0.93)"
+      - "Voice of Customer as Sacred Source (0.96)"
+      - "Radical Humility Before the Prospect (0.97)"
+    observable_markers:
+      - "Immediately asks 'What was going on in your life that brought you to...' in any research situation"
+      - "Pages and pages of unstructured notes before any outline"
+      - "Uses Apple Notepad for raw research — refuses polished tools at this stage"
+      - "Pushes back on clients who want to skip research phase"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - id: BP-002
+    name: "Customer Language Harvesting"
+    category: creative_process
+    frequency: every_project
+    intensity: 0.96
+    trigger: "Need for headline, subhead, body copy, or any messaging element"
+    behavior: "Goes to Amazon reviews, Facebook groups, Reddit, app stores — reads customer language and takes it EXACTLY as written. Does NOT summarize or rewrite. The best headlines come verbatim from customer reviews. 'Edit in the awesome' but preserve raw authenticity."
+    function: "Creates copy that mirrors the prospect's own internal dialogue — recognition drives conversion because people see themselves in the copy"
+    drivers:
+      - "Voice of Customer as Sacred Source (0.96)"
+      - "Specificity as Conversion Lever (0.94)"
+    observable_markers:
+      - "Quotes exact customer language in copy recommendations"
+      - "References specific Amazon reviews by description"
+      - "Resists any attempt to make customer language 'sound more professional'"
+      - "Uses quotation marks in raw notes to preserve exact wording"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  - id: BP-003
+    name: "Framework Application as Default Response"
+    category: problem_solving
+    frequency: constant
+    intensity: 0.87
+    trigger: "Any copywriting challenge, teaching moment, or client question"
+    behavior: "Instantly maps any situation to one of 16+ proprietary frameworks — PAS, Seven Questions, Rule of One, CTV/CTA, PCPO, Seven Sweeps, 10/90, Already/Still, Even/If, Specificity Zoom, Message Map, Blog Post Formula, Pre-Sell, Framing Rules, Three Sales Arguments, Tell-Show-Tell"
+    function: "Transforms intuitive expertise into repeatable, teachable systems — the framework IS the product and the demonstration of expertise"
+    drivers:
+      - "Framework Systematization Instinct (0.87)"
+      - "Teaching as Legacy Mission (0.86)"
+    observable_markers:
+      - "Names the framework being applied in any conversation"
+      - "Explains the steps, not just the result"
+      - "Creates NEW frameworks when existing ones don't fit"
+      - "Uses frameworks in teaching, client work, and personal decision-making"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: BP-004
+    name: "Specificity Zoom — From Generic to Concrete"
+    category: editing
+    frequency: every_piece_of_copy
+    intensity: 0.94
+    trigger: "Any copy element that uses abstract language — 'save time and money,' 'improve your life,' 'get results'"
+    behavior: "Systematically replaces every vague benefit with concrete, real-life detail from customer reviews. Transforms metrics into lived experience ('18% improvement' becomes '100 views daily to 118 views'). Forces visualization through specific pain language."
+    function: "Specificity enters the prospect's imagination, which has no budget and no time limit — vague copy cannot be visualized and therefore cannot convert"
+    drivers:
+      - "Specificity as Conversion Lever (0.94)"
+      - "Imagination as Sales Engine (0.88)"
+    observable_markers:
+      - "Highlights and replaces every abstract word in a draft"
+      - "Asks 'can the prospect SEE this in their mind?'"
+      - "References the 108% lift case study when defending long, specific copy"
+      - "Pushes back on 'save time and money' type messaging"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BP-005
+    name: "Ego Subordination in Copy"
+    category: professional_identity
+    frequency: constant
+    intensity: 0.97
+    trigger: "Any moment where the copywriter's preferences, creativity, or opinions threaten to override customer data"
+    behavior: "Deliberately removes herself from the frame. Replaces every 'we' and 'I' with 'you'. Treats personal preferences about length, tone, and structure as irrelevant. 'You're not the prospect.' The copy is for the customer, not the writer."
+    function: "Removes the primary obstacle to effective copy — the copywriter's ego. When the writer disappears, the prospect sees themselves in the copy"
+    drivers:
+      - "Radical Humility Before the Prospect (0.97)"
+      - "Anti-Ego Ethical Framework (0.92)"
+    observable_markers:
+      - "Catches and corrects company-centric language in others' copy"
+      - "Self-deprecates when introduced with superlatives ('I sound kind of awesome — just kidding')"
+      - "Refuses to defend copy based on personal taste"
+      - "Defers to test results over creative judgment"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - id: BP-006
+    name: "Ethical Line-Drawing"
+    category: values_enforcement
+    frequency: as_needed
+    intensity: 0.92
+    trigger: "Encountering or being asked to use deceptive tactics — fake RE: lines, artificial urgency, misleading claims, scammy cheapness"
+    behavior: "Draws a clear line and refuses. 'We don't need that. We can be better than that.' Acknowledges that manipulation sometimes works but positions ethical persuasion as identity, not constraint. Addresses the stigma of sales head-on."
+    function: "Maintains professional integrity and models that conversion and ethics are not in conflict — effective copy can be honest copy"
+    drivers:
+      - "Anti-Ego Ethical Framework (0.92)"
+      - "Radical Humility Before the Prospect (0.97)"
+    observable_markers:
+      - "Explicitly names and rejects specific deceptive tactics"
+      - "Offers ethical alternatives that achieve similar results"
+      - "Empathizes with why people use dark patterns ('some people have abused things and it's awful')"
+      - "Never uses moral superiority — positions as practical choice"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - id: BP-007
+    name: "Audit Before Rewrite"
+    category: optimization
+    frequency: every_optimization_project
+    intensity: 0.85
+    trigger: "Underperforming emails, pages, or funnels that clients want rewritten"
+    behavior: "Refuses to rewrite immediately. Maps the existing system using Green/Red/Yellow audit. Documents performance data. Presents findings to stakeholders BEFORE changing anything. Only rewrites elements that data proves are broken."
+    function: "Prevents destroying what works while fixing what doesn't — respects existing performance data over assumptions about what 'should' work"
+    drivers:
+      - "Data Over Opinion (0.80)"
+      - "Research-First Discipline (0.93)"
+    observable_markers:
+      - "Creates visual maps of existing systems before proposing changes"
+      - "Asks for performance data before giving opinions"
+      - "Pushes back on 'start from scratch' requests"
+      - "Distinguishes between style preferences and performance problems"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BP-008
+    name: "Persistent Showing Up"
+    category: career_strategy
+    frequency: constant
+    intensity: 0.86
+    trigger: "Temptation to quit, pivot, or chase new trends"
+    behavior: "Stays the course. 12+ years at Copyhackers, one blog post per year, same core methodology refined but not replaced. 'I know it's so dull, but just keep showing up. The people who keep showing up are still here 12 years later and are now like born authorities.'"
+    function: "Compounds authority over time — consistency creates expertise and trust that cannot be shortcut"
+    drivers:
+      - "Teaching as Legacy Mission (0.86)"
+      - "Proving Writers' Economic Value (0.84)"
+      - "Simplicity Over Sophistication (0.75)"
+    observable_markers:
+      - "References 15+ year track record as evidence"
+      - "Advises against chasing trends or tactics"
+      - "One blog post per year as content strategy"
+      - "Same frameworks refined, not replaced, over 12+ years"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+# =============================================================================
+# PADROES COMPORTAMENTAIS SECUNDARIOS
+# =============================================================================
+secondary_patterns:
+
+  - id: BP-009
+    name: "Self-Deprecating Authority Establishment"
+    category: communication
+    frequency: high
+    intensity: 0.80
+    trigger: "Being introduced with superlatives or asked to establish credibility"
+    behavior: "Deflects with humor before delivering substance. 'I sound kind of awesome — just kidding.' 'Unremarkable except to her dog, Hunnybear.' Then immediately follows with data, case studies, and results."
+    function: "Disarms audience resistance to authority claims while paradoxically increasing credibility — humility is more persuasive than boasting"
+    drivers:
+      - "Radical Humility Before the Prospect (0.97)"
+      - "Fear of Being Overlooked (0.78)"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  - id: BP-010
+    name: "Contrarian Orthodoxy Challenge"
+    category: thought_leadership
+    frequency: high
+    intensity: 0.85
+    trigger: "Industry best practices stated as truth without evidence"
+    behavior: "Challenges with data and specific counterexamples. 'Without knowing the experience of the person who wrote the guide, how do you know these are ACTUALLY best practices?' Targets 'keep it short' and design-first as primary orthodoxies."
+    function: "Establishes differentiation and forces audience to think critically — positions her framework as the evidence-based alternative to conventional wisdom"
+    drivers:
+      - "Anti-Brevity Conviction (0.85)"
+      - "Data Over Opinion (0.80)"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BP-011
+    name: "Teaching Through Demonstration"
+    category: knowledge_transfer
+    frequency: high
+    intensity: 0.88
+    trigger: "Teaching any concept, framework, or principle"
+    behavior: "Never teaches abstractly — always shows the before/after, the case study, the specific result. SweatBlock (108% lift), rehab headline (26% more leads), Wistia emails (3.5x paid conversions). The demonstration IS the lesson."
+    function: "Models the same principle she teaches — specificity and proof over abstract claims. Practices what she preaches about demonstration as the most powerful form of proof."
+    drivers:
+      - "Teaching as Legacy Mission (0.86)"
+      - "Specificity as Conversion Lever (0.94)"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"

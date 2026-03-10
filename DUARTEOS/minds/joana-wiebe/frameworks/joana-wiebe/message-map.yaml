@@ -1,0 +1,52 @@
+# Joanna Wiebe — Message Map
+# Ponte entre pesquisa bruta e outline organizado
+
+meta:
+  mind: joana-wiebe
+  framework: "Message Map"
+  category: organization
+  use_case: "Organizar findings de pesquisa antes de escrever"
+
+description: |
+  A ponte entre pesquisa crua e o outline de copy. Quando a pesquisa acumula,
+  organize os findings em um Message Map contendo secoes de Produto e Persona.
+  Funciona como o template estruturado onde VOC data ganha forma.
+
+sections:
+  product:
+    - "Quem fez, como, quando, onde"
+    - "Features e especificacoes"
+    - "Custo e value proposition"
+    - "Minimum viable commitments"
+
+  persona_per_audience:
+    - "Problemas principais"
+    - "Motivadores de acao"
+    - "Momentos de maior tensao"
+    - "Solucoes ja tentadas (e que falharam)"
+    - "Resultados desejados"
+
+  jobs_to_be_done:
+    - "Habitos que precisam mudar (switching)"
+    - "Preocupacoes (worries)"
+    - "Forcas que empurram para fora (pushes)"
+    - "Forcas que puxam para dentro (pulls)"
+
+  conversion_elements:
+    - "Crencas necessarias (o que precisam acreditar para dizer sim)"
+    - "Precursores de conversao"
+    - "Criterios de compra"
+    - "Concorrencia percebida"
+    - "Restricoes de decisao"
+    - "Click triggers"
+
+evidence:
+  quote: "Once research accumulates, Wiebe organizes findings into a Message Map containing Product and Persona sections."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+tools_suggested:
+  - "Trello — para criar o Message Map visualmente"
+  - "Airstory — para organizar research cards"
+  - "Apple Notepad — para notas raw do messy middle"
+
+key_insight: "O Message Map nao e um documento bonito. E um deposito organizado de tudo que voce ouviu dos clientes. A organizacao revela padroes que notas cruas escondem."

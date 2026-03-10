@@ -1,0 +1,44 @@
+# Joanna Wiebe — CTV vs CTA (Call to Value vs Call to Action)
+# Framework para button copy baseado em stage de decisao
+
+meta:
+  mind: joana-wiebe
+  framework: "CTV vs CTA (Call to Value vs Call to Action)"
+  category: micro_copy
+  use_case: "Escrever button copy em qualquer pagina ou email"
+
+description: |
+  Distincao proprietaria entre dois tipos de button copy. CTV (Call to Value)
+  amplifica o VALOR de avancar — usado quando prospectos ainda nao decidiram.
+  CTA (Call to Action) amplifica a ACAO em si — usado quando ja decidiram.
+  O humble button superou o powerful headline em 123.9%.
+
+types:
+  ctv:
+    name: "Call to Value"
+    description: "Button copy que amplifica o VALOR de dar o proximo passo"
+    when: "Prospecto ainda nao decidiu — precisa ver valor antes de agir"
+    position: "Mais abaixo na pagina, apos convencimento"
+    formula: "Complete 'I want to...' da perspectiva do prospecto"
+    examples:
+      - "Show me my heat map"
+      - "Start my free trial"
+      - "See how it works"
+      - "Get my copy reviewed"
+
+  cta:
+    name: "Call to Action"
+    description: "Button copy que amplifica a ACAO em si"
+    when: "Prospecto ja decidiu — so precisa do empurrao final"
+    position: "No topo para visitantes ja convencidos"
+    examples:
+      - "Sign up now"
+      - "Buy now"
+      - "Start today"
+      - "Get started"
+
+evidence:
+  quote: "Button copy performs the heavy lifting of transporting the visitor through the funnel. Humble button outperformed powerful headline — 123.9% lift."
+  source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+key_insight: "Button copy nao e micro-copy. E conversion-critical. A maioria dos sites trata buttons como afterthought. Eles fazem o heavy lifting."

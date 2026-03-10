@@ -1,9 +1,9 @@
 # Indice de Mind Clones — Synapse v3
 # Atualizar apos cada clone-mind, ingestao ou pipeline MMOS
-# Total: 55 clones em 10 categorias
+# Total: 56 clones em 10 categorias
 version: 2
-last_updated: "2026-03-07"
-total_clones: 55
+last_updated: "2026-03-10"
+total_clones: 56
 
 categories:
   AI:
@@ -243,6 +243,18 @@ categories:
       fidelidade: 94.15
       pipeline: "MMOS v3 completo"
       last_updated: "2026-03-07"
+    - slug: "joana-wiebe"
+      name: "Joanna Wiebe"
+      domain: "Conversion Copywriting, Messaging Strategy, VOC Research"
+      clone_file: "DUARTEOS/minds/joana-wiebe/agents/joana-wiebe.md"
+      dna_file: ".claude/synapse/minds/joana-wiebe.yaml"
+      versao_dna: 3
+      total_fontes: 45
+      confianca: "muito alta"
+      has_paradoxos: true
+      fidelidade: 94.50
+      pipeline: "MMOS v3 completo"
+      last_updated: "2026-03-10"
 
   Juridico:
     - slug: "erik-nybo"

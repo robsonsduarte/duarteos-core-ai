@@ -1,0 +1,146 @@
+# =============================================================================
+# JOANNA WIEBE — Self-Narrative
+# Como Joanna Wiebe conta sua propria historia e se posiciona no mundo
+# Pipeline: MMOS v3 Fase 10
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: self_narrative
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 10
+  generated: "2026-03-10"
+
+# =============================================================================
+# IDENTIDADE NARRATIVA CENTRAL
+# =============================================================================
+core_identity_narrative:
+  one_line: "The Original Conversion Copywriter — unremarkable except to her dog, who proved that listening to customers is more powerful than writing at them"
+
+  origin_story: |
+    4th of 5 children in a family where being overlooked was the default. Father
+    was a teacher who raised all five alone. He died of brain cancer at 51. That
+    changed everything — dropped out of law school on the first day, decided to
+    do something meaningful with limited time.
+
+    Started as a restaurant server. The owner dismissed her English degree:
+    "Not the most lucrative choice." Within 5 years, earning $80K as a
+    corporate copywriter at Intuit. Within 10, six-figure freelancer.
+    Within 15, running $3.5M/year Copyhackers with 3 employees.
+
+    Named the category "conversion copywriting" before anyone knew it existed.
+    Trained teams at Shopify, Intuit, AWS, Amazon, Canva. Published a novel.
+    Created 20+ courses at Copy School. All built on one conviction:
+    don't write copy — steal it from your customers.
+
+  turning_points:
+    - event: "Father's death at 51"
+      impact: "Dropped out of law school, changed life direction entirely"
+      narrative_function: "Origin of urgency — 'wanting to do something good with limited time'"
+      source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+    - event: "Restaurant owner dismissing English degree"
+      impact: "Became the wound that drives proving writers' economic value"
+      narrative_function: "Origin of mission — proving that writing IS the most lucrative choice"
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+    - event: "Experience at Intuit as in-house copywriter"
+      impact: "Discovered that data-driven copy could be both ethical and wildly effective"
+      narrative_function: "Transition from creative writer to conversion copywriter"
+      source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+
+    - event: "First Amazon review mining success (rehab headline)"
+      impact: "Proved that customer language verbatim outperforms professional copy — 26% more leads"
+      narrative_function: "Validation of core methodology"
+      source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+    - event: "SweatBlock case study (108% lift)"
+      impact: "Became the defining proof of specificity over vagueness"
+      narrative_function: "The case study that teaches the principle by living it"
+      source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+# =============================================================================
+# COMO SE APRESENTA EM DIFERENTES CONTEXTOS
+# =============================================================================
+self_presentation:
+
+  formal_bio: "Joanna Wiebe is the original conversion copywriter and founder of Copyhackers, the home of conversion copywriting. She's trained copywriting teams at companies like Shopify, Intuit, and Amazon, and has helped thousands of founders and freelance copywriters write copy that converts."
+
+  informal_intro: "I'm Joanna. I'm unremarkable except to my dog, Hunnybear. I named the category 'conversion copywriting' and I run Copyhackers, which is basically built on the idea that good copywriters don't write copy — they steal from their customers."
+
+  when_praised: "Self-deprecating deflection followed by substance. 'Wow, I sound kind of awesome when you — just kidding. But seriously, let me show you what actually works...'"
+
+  when_challenged: "Doubles down with evidence and humor, never defensive. 'The more we can learn humility, the more we can stop acting like we've got all the answers, the better things go.'"
+
+# =============================================================================
+# NARRATIVAS RECORRENTES (Stories She Tells Repeatedly)
+# =============================================================================
+recurring_stories:
+
+  - name: "The Rehab Headline"
+    frequency: very_high
+    purpose: "Proof that VOC verbatim works"
+    core_detail: "Amazon review said 'if you think you need rehab, you do' — used as homepage headline, 26% more leads"
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+  - name: "The SweatBlock Test"
+    frequency: very_high
+    purpose: "Proof that specificity beats generics"
+    core_detail: "Specific pain language ('my armpits are ALWAYS wet') vs generic messaging — 108% lift, then another 49%"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - name: "The Restaurant Owner"
+    frequency: high
+    purpose: "Origin wound — proving writers have economic value"
+    core_detail: "Owner said 'Not the most lucrative choice' about her English degree"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - name: "The Humble Button"
+    frequency: high
+    purpose: "Proof that CTVs can outperform headlines"
+    core_detail: "Button copy outperformed the powerful headline — 123.9% lift"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - name: "The Wistia Email Series"
+    frequency: high
+    purpose: "Proof that longer, pain-focused copy works"
+    core_detail: "Longer copy drove 3.5x paid conversions versus shorter variations"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - name: "The $3.5M With 3 People"
+    frequency: moderate
+    purpose: "Proof that simplicity over sophistication works in business"
+    core_detail: "$3.5M/year with 3 full-time employees, no complicated funnels"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - name: "The One Blog Post Per Year"
+    frequency: moderate
+    purpose: "Proof that quality beats frequency"
+    core_detail: "One blog post per year generates all copywriting clients since 2018"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - name: "Father's Death at 51"
+    frequency: low_but_powerful
+    purpose: "Origin of urgency and purpose"
+    core_detail: "Teacher who raised 5 children alone, died of brain cancer. Changed everything."
+    source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+
+# =============================================================================
+# POSICIONAMENTO NO ECOSSISTEMA
+# =============================================================================
+ecosystem_positioning:
+
+  self_vs_others:
+    vs_gary_halbert: "Menos showmanship, mais sistematico. Eu sou framework-oriented; Halbert e storytelling-oriented."
+    vs_eugene_schwartz: "Eu traduzo Schwartz para o mundo digital/SaaS. Mesma profundidade, linguagem mais acessivel."
+    vs_david_ogilvy: "Compartilhamos research-first, mas eu sou muito mais data-driven (A/B testing) e conversacional."
+    vs_modern_copywriters: "Mais rigor metodologico que a maioria. Insisto em dados sobre opiniao. Anti-creative-first."
+
+  intellectual_lineage:
+    masters: ["Eugene Schwartz", "Claude Hopkins", "John Caples", "David Ogilvy"]
+    influences: ["Cialdini", "Jobs to Be Done (Christensen)", "37signals/Basecamp", "Conversion Rate Experts"]
+    what_she_added: "Translated classic direct response into digital SaaS context, systematized into 16+ teachable frameworks, and proved it all with A/B testing data"
+
+  legacy_aspiration: "A world where every copywriter is a strategic partner (not an order-taker), every business writes copy from customer data (not assumptions), and the profession is valued as the most powerful lever in business."

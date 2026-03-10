@@ -1,0 +1,113 @@
+# Pipeline Checklist — Joanna Wiebe
+# MMOS Engine v3 — Fases 6-10
+# Gerado em: 2026-03-10
+
+pipeline:
+  slug: "joana-wiebe"
+  name: "Joanna Wiebe"
+  category: "copy"
+
+gates:
+  fase_6_extracao:
+    status: "pending"
+    checks:
+      - id: "coverage_90"
+        critical: true
+        check: "Coverage score >= 90%?"
+        status: "pending"
+      - id: "4_source_types"
+        critical: false
+        check: "Minimo 4 tipos diferentes de fonte?"
+        status: "pending"
+      - id: "zero_secondary"
+        critical: true
+        check: "ZERO fontes secundarias/interpretativas?"
+        status: "pending"
+      - id: "frag_quality"
+        critical: true
+        check: "Fragmentation quality >= 95%?"
+        status: "pending"
+      - id: "prog_summarization"
+        critical: true
+        check: "Progressive Summarization completa (layers 1-3)?"
+        status: "pending"
+
+  fase_7_inferencia:
+    status: "pending"
+    checks:
+      - id: "pred_accuracy"
+        critical: true
+        check: "Predictive accuracy >= 90%?"
+        status: "pending"
+      - id: "min_2_evidencias"
+        critical: true
+        check: "Cada mind_driver tem >= 2 evidencias?"
+        status: "pending"
+      - id: "3_agentes"
+        critical: true
+        check: "3 agentes independentes concordam >= 0.85?"
+        status: "pending"
+      - id: "driver_relationships"
+        critical: false
+        check: "driver_relationships calculados?"
+        status: "pending"
+
+  fase_8_mapeamento:
+    status: "pending"
+    checks:
+      - id: "all_components"
+        critical: true
+        check: "Todos componentes relevantes tem score?"
+        status: "pending"
+      - id: "consistency"
+        critical: true
+        check: "Consistencia interna >= 95%?"
+        status: "pending"
+
+  fase_9_perfil:
+    status: "pending"
+    checks:
+      - id: "fidelity_95"
+        critical: true
+        check: "Fidelity score composto >= 95%?"
+        status: "pending"
+      - id: "blind_test"
+        critical: true
+        check: "Suite 20 testes cegos com Fidelidade_teste >= 94%?"
+        status: "pending"
+      - id: "pre_mortem"
+        critical: true
+        check: "Pre-mortem executado e documentado?"
+        status: "pending"
+
+  fase_10_recomendacao:
+    status: "pending"
+    checks:
+      - id: "agent_md"
+        critical: true
+        check: "Agent .md existe em agents/?"
+        status: "pending"
+      - id: "frameworks_count"
+        critical: true
+        check: "Frameworks count == DNA.frameworks.primarios.length?"
+        status: "pending"
+      - id: "drivers_yaml"
+        critical: true
+        check: "Drivers YAML com todos tiers?"
+        status: "pending"
+      - id: "checklist_yaml"
+        critical: true
+        check: "Checklist com gates voice + paradox?"
+        status: "pending"
+      - id: "behavioral"
+        critical: true
+        check: "Behavioral artifacts (2 arquivos)?"
+        status: "pending"
+      - id: "cognitive"
+        critical: true
+        check: "Cognitive artifacts (2 arquivos)?"
+        status: "pending"
+      - id: "completeness"
+        critical: true
+        check: "config.yaml tem artifacts_completeness?"
+        status: "pending"

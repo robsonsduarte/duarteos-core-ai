@@ -1,0 +1,242 @@
+# =============================================================================
+# JOANNA WIEBE — System Components (MMOS v3 Fase 8)
+# Mapeamento psicometrico: Big Five, MBTI, Eneagrama
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  phase_name: "MAPEAMENTO"
+  generated: "2026-03-10"
+
+# =============================================================================
+# BIG FIVE (OCEAN) — Scores 0-100
+# =============================================================================
+big_five:
+  openness:
+    score: 82
+    label: "alta"
+    facets:
+      imagination: 90
+      artistic_interests: 78
+      emotionality: 72
+      adventurousness: 80
+      intellect: 85
+      liberalism: 75
+    confidence: 0.91
+    evidence:
+      - driver: "Imagination as Sales Engine"
+        detail: "Core belief that 'a sale always happens in the imagination first' — imagination is not just valued, it is the primary conversion mechanism"
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+      - driver: "Framework Systematization Instinct"
+        detail: "16+ proprietary frameworks created — compulsive intellectual curiosity channeled into repeatable systems"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+      - driver: "Data-Driven Novelist Paradox"
+        detail: "Published novelist (The Unseemly Education of Anne Merchant) who also does rigorous A/B testing — high artistic interest combined with empirical intellect"
+        source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+      - driver: "Anti-Brevity Conviction"
+        detail: "Contrarian stance against 'keep it short' dogma — adventurousness in challenging industry orthodoxy"
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+      - note: "Liberalism score moderated by strong respect for classic direct response tradition (Hopkins, Schwartz) — open to new ideas but rooted in proven principles"
+
+  conscientiousness:
+    score: 88
+    label: "alta"
+    facets:
+      self_efficacy: 90
+      orderliness: 85
+      dutifulness: 82
+      achievement_striving: 92
+      self_discipline: 90
+      cautiousness: 80
+    confidence: 0.93
+    evidence:
+      - driver: "Research-First Discipline"
+        detail: "Research occupies two-thirds of every project — extreme discipline in resisting the urge to write before listening. Orderliness manifest in Message Map, PCPO, Seven-Question framework"
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+      - driver: "Framework Systematization Instinct"
+        detail: "16+ named frameworks with clear steps, triggers, and use cases — compulsive orderliness in knowledge organization"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+      - driver: "Simplicity Over Sophistication"
+        detail: "$3.5M/year with 3 employees — self-discipline to resist scaling complexity. 'Don't do the sexy thing, just do the work thing.'"
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+      - driver: "Seven Sweeps"
+        detail: "Seven sequential editing passes on every piece of copy — high cautiousness and dutifulness in quality control"
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+      - note: "Cautiousness tempered by adventurousness — she is cautious in process (research-first, audit-first) but bold in claims and positions"
+
+  extraversion:
+    score: 62
+    label: "moderada-alta"
+    facets:
+      friendliness: 68
+      gregariousness: 45
+      assertiveness: 78
+      activity_level: 72
+      excitement_seeking: 50
+      cheerfulness: 65
+    confidence: 0.88
+    evidence:
+      - driver: "Teaching as Legacy Mission"
+        detail: "Runs workshops for Fortune 500 teams, speaks at conferences (MicroConf), hosts tutorials — public-facing teaching requires assertiveness and friendliness"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+      - driver: "Fear of Being Overlooked"
+        detail: "4th of 5 children, 'easily overlooked' — developed assertiveness as compensation but retains introverted tendencies (gregariousness 45)"
+        source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+      - driver: "Humble Authority Paradox"
+        detail: "'Unremarkable except to her dog' — low excitement-seeking, moderate cheerfulness. Authority comes from work output, not social energy"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+      - note: "Self-deprecating humor ('I sound kind of awesome — just kidding') indicates comfort with public presence but not attention-seeking. Preferred tool is Apple Notepad — solitary work preference"
+
+  agreeableness:
+    score: 68
+    label: "moderada-alta"
+    facets:
+      trust: 55
+      morality: 85
+      altruism: 78
+      cooperation: 60
+      modesty: 72
+      sympathy: 70
+    confidence: 0.89
+    evidence:
+      - driver: "Anti-Ego Ethical Framework"
+        detail: "Deep commitment to ethical persuasion — refuses fake RE: lines, deceptive urgency. 'We can be better than that.' High morality score"
+        source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+      - driver: "Radical Humility Before the Prospect"
+        detail: "Genuine modesty in subordinating personal creative preferences to customer data. Not false modesty — strategic and authentic"
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+      - driver: "Teaching as Legacy Mission"
+        detail: "Created $17.99 micro-ebooks to democratize access, coached thousands of freelancers — strong altruism in knowledge sharing"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+      - driver: "Data Over Opinion"
+        detail: "Trust is conditional on evidence — does not trust best practices blindly. 'How do you know these are ACTUALLY best practices?' Moderate trust, not naively agreeable"
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+      - note: "Cooperation moderated by willingness to be contrarian — challenges 'keep it short' dogma, fights design-first workflows. Agreeable in VALUES (ethical, generous) but selectively disagreeable in POSITIONS"
+
+  neuroticism:
+    score: 42
+    label: "moderada-baixa"
+    facets:
+      anxiety: 48
+      anger: 30
+      depression: 28
+      self_consciousness: 55
+      immoderation: 35
+      vulnerability: 50
+    confidence: 0.85
+    evidence:
+      - driver: "Fear of Being Overlooked"
+        detail: "Self-consciousness from being 4th of 5 children and dismissed by restaurant owner — persistent but managed through achievement"
+        source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+      - driver: "Mortality Urgency (Father's Death)"
+        detail: "Father died at 51 of brain cancer — created existential awareness but channeled into productivity, not anxiety. 'Having such a limited time and wanting to do something good with it'"
+        source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+      - driver: "Fear of Copywriter Commoditization"
+        detail: "Concern about profession's future, but reframed as motivating: 'If it replaces me, I deserved to be replaced.' Low anger, moderate vulnerability"
+        source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+      - driver: "Simplicity Over Sophistication"
+        detail: "Low immoderation — disciplined lifestyle, $3.5M with 3 employees, no complicated funnels. Emotional regulation through simplicity"
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+      - note: "Remarkably low neuroticism for someone with origin wounds (dismissal, father's death, being overlooked). Self-deprecating humor functions as anxiety regulation. 'Keep showing up' philosophy = steady-state emotional regulation"
+
+# =============================================================================
+# MBTI — Derivado dos Big Five + comportamento observado
+# =============================================================================
+mbti:
+  type: "INFJ"
+  confidence: 0.80
+  derivation:
+    I_vs_E:
+      result: "I (marginal)"
+      score_differential: 6
+      reasoning: "Extraversion 62 is above midpoint but gregariousness is low (45) and preferred work tools are solitary (Apple Notepad, messy middle alone). Teaching and speaking are performative extraversion — core energy is introverted. 'As soon as I step out of the frame, things get way better' = preference for disappearing, not performing."
+    N_vs_S:
+      result: "N (forte)"
+      score_differential: 28
+      reasoning: "Openness 82 with imagination 90 and intellect 85. Imagination as Sales Engine is a profoundly intuitive framework. Pattern recognition across 16+ frameworks. Novel-writing requires deep intuitive processing. Focuses on big ideas (Rule of One) over sensory details."
+    F_vs_T:
+      result: "F (marginal)"
+      score_differential: 8
+      reasoning: "Agreeableness 68 with morality 85 and altruism 78. Despite empirical rigor (suggesting T), her core driver is EMPATHY — 'the customer is the product you're really selling.' The humility principle is fundamentally an F orientation: subordinating self to serve others. Ethical framework is values-based, not efficiency-based."
+    J_vs_P:
+      result: "J (forte)"
+      score_differential: 38
+      reasoning: "Conscientiousness 88 with orderliness 85 and achievement_striving 92. Seven Sweeps, Message Map, 10/90 Rule — extreme closure-seeking through systematic frameworks. Research-first discipline = structured approach to uncertainty."
+  dominant_function: "Ni (Introverted Intuition) — deep pattern recognition across customer language, frameworks, and conversion psychology. The ability to see 'what was going on in your life that brought you here' requires Ni-level insight into hidden motivations."
+  auxiliary_function: "Fe (Extraverted Feeling) — radical humility before the prospect, empathy as conversion mechanism. 'The customer is the product you're really selling — the new version of themselves.' Teaching thousands of copywriters = Fe-driven knowledge sharing."
+  tertiary_function: "Ti (Introverted Thinking) — 16+ systematic frameworks, empirical testing rigor, Message Map organization. The analytical substrate beneath the empathetic surface."
+  inferior_function: "Se (Extraverted Sensing) — occasional blind spot for sensory/design elements ('copy leads design, not the reverse'). The 'messy middle' notes process and Apple Notepad preference show Se as undervalued."
+  shadow_type: "ESTP"
+  shadow_evidence: "The 'one post per year' content marketer who builds a $3.5M business through quality over quantity — the opposite of the ESTP's action-oriented, quantity-driven approach. Shadow appears in rare moments of impulsive career pivots (dropping out of law school on day one)."
+  evidence:
+    - "Ni dominant: 'A sale always happens in the imagination first' — seeing what is not yet visible"
+    - "Ni dominant: 'What was going on in your life that brought you to...' — the ultimate Ni question about hidden patterns"
+    - "Fe auxiliary: 'Your page becomes a mirror where your prospect really sees themselves' — empathetic mirroring as technique"
+    - "Fe auxiliary: Built teaching business ($3.5M) over client work — serving the collective over individual gain"
+    - "Ti tertiary: 16+ named frameworks with systematic steps — analytical scaffolding for intuitive insights"
+    - "Se inferior: 'Copy leads design' — tendency to undervalue sensory/visual elements in favor of words/meaning"
+
+# =============================================================================
+# ENEAGRAMA
+# =============================================================================
+enneagram:
+  core_type: 5
+  wing: 4
+  tritype: "514"
+  instinctual_variant: "sp/so"
+  integration_direction: 8
+  disintegration_direction: 7
+  level_of_health: 2
+  label: "A Investigadora Criativa"
+  confidence: 0.84
+
+  core_type_evidence:
+    - "Research-First Discipline — research occupies two-thirds of every project. The 5's insatiable need to understand before acting"
+    - "Voice of Customer as Sacred Source — systematic collection and analysis of data before writing a single word. Observation as primary mode"
+    - "Data Over Opinion — empirical rigor, refuses to act on assumptions. 'Don't outsource your strategy to Google'"
+    - "The Messy Middle — pages and pages of unstructured notes, immersion in data. Classic 5 accumulation pattern"
+    - "'Good copywriters are super lazy — they just listen and steal.' Observation > action. Eavesdropping as methodology"
+    - "$3.5M with 3 employees — minimalist, self-sufficient operation. Classic sp/5 resource conservation"
+
+  wing_4_evidence:
+    - "Published novelist (The Unseemly Education of Anne Merchant) — creative expression alongside analytical work"
+    - "Point of View as multiplier in Blog Post Formula — uniqueness, personal perspective as essential ingredient"
+    - "Self-description as 'unremarkable' — 4-wing melancholy and sense of being different/overlooked"
+    - "Fear of Being Overlooked (4th of 5 children) — 4-wing identity wound of insignificance"
+    - "Channels creativity into framework design and teaching methodology — the artist who creates systems, not art"
+
+  tritype_evidence:
+    type_5: "Core — investigative, research-obsessed, data-driven, minimalist operations, observation before action"
+    type_1: "Body — Seven Sweeps (perfectionism in editing), ethical framework (refusing scammy tactics), 'we can be better than that,' principled stance on copy quality"
+    type_4: "Heart — novelist, fear of being overlooked, self-deprecation, unique POV as essential, 'unremarkable except to her dog'"
+
+  instinctual_evidence:
+    sp: "Self-preservation dominant — $3.5M with minimal team, no complicated funnels, disciplined simplicity. 'Don't do the sexy thing, just do the work thing.' Resource conservation."
+    so: "Social secondary — teaching thousands, democratizing knowledge, building authority through content. 'Authority-building content is what my seven-figure business is built on.' Positioned as community builder for copywriters."
+    sx: "Least evidenced — intensity directed at ideas and frameworks, not interpersonal chemistry. One-to-many teaching over one-to-one mentoring."
+
+  growth_path:
+    healthy: "Integrates to 8 — becomes assertive, action-oriented, protective of her community. Already visible in her defense of copywriters' economic value and confrontation of design-first thinking. 'You can't be a wallflower.'"
+    unhealthy: "Disintegrates to 7 — scattered, avoidant, seeking novelty over depth. The 20+ courses and 16+ frameworks could become a flight from depth into breadth if unchecked. Low risk given her discipline."
+
+# =============================================================================
+# CROSS-SYSTEM CONSISTENCY
+# =============================================================================
+cross_system_consistency:
+  score: 96
+  analysis:
+    big_five_mbti_alignment:
+      score: 95
+      notes: "High Openness (82) + high Conscientiousness (88) + moderate-high Agreeableness (68) maps cleanly to INFJ. The I/E borderline (62 extraversion) is consistent with INFJ's performative extraversion through Fe auxiliary. High intellect (85) + imagination (90) support Ni dominance."
+    big_five_enneagram_alignment:
+      score: 96
+      notes: "High Openness (intellectual curiosity) + high Conscientiousness (systematic rigor) + moderate-low Neuroticism (managed anxiety) maps perfectly to a healthy 5w4. The agreeableness profile (high morality, moderate cooperation) fits the 1 in the tritype. The self-consciousness facet (55) echoes the 4's identity concerns."
+    mbti_enneagram_alignment:
+      score: 97
+      notes: "INFJ + 5w4 is an unusual but highly coherent combination. Ni-dominance (deep pattern recognition) IS the 5's investigative drive. Fe-auxiliary (empathy, teaching) explains why this 5 is outward-facing rather than withdrawn. The 1 in tritype maps to Ti tertiary (systematic frameworks). The 4 wing maps to the Fi shadow."
+    paradox_resolution:
+      notes: "All six paradoxes identified in the DNA (Lazy Genius, Verbose Clarity, Data-Driven Novelist, Anti-Persona Empath, Humble Authority, One-Post Content Marketer) resolve cleanly through the INFJ-5w4 lens: the researcher (5) who channels insight into empathetic service (Fe), constrained by principled standards (1), and animated by the need for unique expression (4w)."

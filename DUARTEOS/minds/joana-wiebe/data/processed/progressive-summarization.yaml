@@ -1,0 +1,386 @@
+# ============================================================================
+# Joanna Wiebe — Progressive Summarization (Phase 6: EXTRACAO)
+# MMOS v3 Pipeline | DuarteOS Core AI
+# Data: 2026-03-10
+# Layers: L2 (key MIUs) + L3 (essence distilled)
+# ============================================================================
+
+metadata:
+  mind: joanna-wiebe
+  fase: 6-extracao
+  data_analise: "2026-03-10"
+  total_sources: 15
+
+sources:
+
+  # ===========================================================================
+  # SOURCE 1: Personal Narrative & Origin Story (copyhackers.com/i-am-a-writer/)
+  # ===========================================================================
+  - source_id: "S01"
+    url: "https://copyhackers.com/i-am-a-writer/"
+    type: "Narrative / Origin Story"
+    layer_2_key_mius:
+      - "JW-131"  # restaurant server → $80K → six figures → $3.5M
+    layer_3_essence: |
+      Joanna's origin story serves as living proof of her core philosophy: writers
+      are not destined to be starving artists. Her trajectory from dismissed English
+      major to $3.5M/year business owner is the foundational narrative that powers
+      all of Copyhackers' positioning. The restaurant owner who said "not the most
+      lucrative choice" is the antagonist in her hero's journey.
+
+  # ===========================================================================
+  # SOURCE 2: SweatBlock Case Study (copyhackers.com/2016/06/copywriting-principles-sweatblock/)
+  # ===========================================================================
+  - source_id: "S02"
+    url: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    type: "Case Study"
+    layer_2_key_mius:
+      - "JW-021"  # Seven-Question Messaging Framework
+      - "JW-025"  # CTV vs CTA distinction
+      - "JW-026"  # 10/90 Messaging Layout Rule
+      - "JW-003"  # "Even I can't believe copy is as powerful as it is"
+      - "JW-108"  # Specificity — real problems not abstract terminology
+      - "JW-121"  # Before/after headline transformations
+    layer_3_essence: |
+      Three principles that doubled ecommerce revenue (108% lift): Messaging
+      Hierarchy determines what goes where on the page. Specificity beats
+      vagueness — prospects experience concrete problems, not marketing abstractions.
+      Calls to Value outperform Calls to Action earlier in the funnel. This case
+      study is Joanna's most referenced proof that copy is "as powerful as it is."
+
+  # ===========================================================================
+  # SOURCE 3: Blog Post Formula (copyhackers.com/blog-post-formula/)
+  # ===========================================================================
+  - source_id: "S03"
+    url: "https://copyhackers.com/blog-post-formula/"
+    type: "Tutorial / Framework"
+    layer_2_key_mius:
+      - "JW-023"  # 2S + 5E + 10O x POV
+    layer_3_essence: |
+      Content quality formula: 2 Studies + 5 Examples + 10 Outbound Links,
+      multiplied by Point of View. The multiplier (POV) is what makes content
+      shareable — without a unique perspective, research alone is commodity content.
+      Use as both pre-writing guide and post-completion checklist.
+
+  # ===========================================================================
+  # SOURCE 4: Copywriting for Startups (copyhackers.com/copywriting-for-startups/)
+  # ===========================================================================
+  - source_id: "S04"
+    url: "https://copyhackers.com/copywriting-for-startups/"
+    type: "Sales Page / Philosophy"
+    layer_2_key_mius:
+      - "JW-010"  # "you need more than fluffy blog posts"
+      - "JW-011"  # founders should write their own copy
+      - "JW-018"  # "without scammy cheapness"
+      - "JW-100"  # action-oriented teaching (next steps)
+      - "JW-130"  # micro-ebook philosophy
+    layer_3_essence: |
+      Joanna's positioning for startups: founders can and should write their own
+      copy, but need methodology, not tips. Micro-learning format (55-page max
+      ebooks) over comprehensive tomes. Action-oriented teaching where every
+      chapter ends with implementation steps. Ethical persuasion — "without scammy
+      cheapness" — is both brand promise and personal conviction.
+
+  # ===========================================================================
+  # SOURCE 5: Workshop Sales Page (copyhackers.com/copyhackers-copywriting-workshop-reg/)
+  # ===========================================================================
+  - source_id: "S05"
+    url: "https://copyhackers.com/copyhackers-copywriting-workshop-reg/"
+    type: "Sales Page / Registration"
+    layer_2_key_mius:
+      - "JW-083"  # "treated like an order taker"
+    layer_3_essence: |
+      The central tension for professional copywriters: being treated as order
+      takers vs. being recognized as strategic partners. Joanna's "Gold Star
+      Copywriter Training" addresses the identity transformation from executor
+      to strategist. Social proof from real copywriters ($85k to $200k) validates
+      the transformation promise.
+
+  # ===========================================================================
+  # SOURCE 6: All Books Page (copyhackers.com/books/)
+  # ===========================================================================
+  - source_id: "S06"
+    url: "https://copyhackers.com/books/"
+    type: "Product Catalog"
+    layer_2_key_mius:
+      - "JW-015"  # words audience uses, not your words
+    layer_3_essence: |
+      "Where Stellar Messages Come From" is described as "the gold standard of
+      conversion copywriting books" — every copywriter who teaches VOC learned it
+      from this book. Button copy is NOT micro-copy but conversion-critical.
+      Rich Writer Series proves multiple pathways to $100K+ annually for
+      freelance copywriters.
+
+  # ===========================================================================
+  # SOURCE 7: Courses Page (copyhackers.com/copywriting-courses-by-joanna-wiebe)
+  # ===========================================================================
+  - source_id: "S07"
+    url: "https://copyhackers.com/copywriting-courses-by-joanna-wiebe"
+    type: "Course Catalog / Expertise Map"
+    layer_2_key_mius:
+      - "JW-016"  # "the most profitable person in the room"
+    layer_3_essence: |
+      20 courses across 4 domains mapping Joanna's complete expertise: Foundational
+      (including AI copy), Web Copywriting (5 page types), Email (3 specializations),
+      and Funnels/Campaigns (6 campaign types). The breadth reveals her operating
+      principle: conversion copywriting applies to every touchpoint, not just
+      landing pages.
+
+  # ===========================================================================
+  # SOURCE 8: MicroConf 2017 Talk — "How to Be Specific"
+  # ===========================================================================
+  - source_id: "S08"
+    url: "https://shai.io/joanna-wiebe-how-to-be-specific-from-the-trenches-lessons-in-high-converting-copy-microconf-2017/"
+    type: "Talk (conference)"
+    layer_2_key_mius:
+      - "JW-036"  # Specificity Framework
+      - "JW-079"  # "no such thing as an average visitor"
+      - "JW-091"  # copy as online salesperson
+      - "JW-095"  # longer pain-focused copy = 3.5x conversions
+      - "JW-102"  # "if you can get into their imagination"
+    layer_3_essence: |
+      Joanna's most provocative talk challenges two sacred cows: 1) "Keep it short"
+      is wrong — specificity requires more words, and that's good. 2) Stop trying
+      to convert the "average visitor" — focus on one real person with targeted
+      detail. 60% of sales lost to "no decision," not competitors. The killer
+      insight: "If you can get into their imagination, your ad can run all day."
+
+  # ===========================================================================
+  # SOURCE 9: Conversion Blogging Tutorial
+  # ===========================================================================
+  - source_id: "S09"
+    url: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    type: "Tutorial (full transcript)"
+    layer_2_key_mius:
+      - "JW-033"  # Conversion Blogging Formula (3 principles)
+      - "JW-034"  # Pre-Sell Concept
+      - "JW-031"  # Three Sales Argument Questions
+      - "JW-038"  # Framing Effect Rules
+      - "JW-041"  # Topic types that work/don't work
+      - "JW-103"  # "a sale happens in the imagination first"
+      - "JW-111"  # "all about the angle"
+      - "JW-093"  # one blog post per year
+    layer_3_essence: |
+      The most comprehensive framework for content-as-sales: Demonstration is the
+      most powerful form of proof ("seeing is believing"). Frame for your specific
+      audience's psychology (loss > gain, but context matters). Message hierarchy
+      determines sales power. Pre-selling through content compresses the sales
+      cycle and can eliminate sales calls entirely. One strategic blog post per year
+      beats weekly commodity content.
+
+  # ===========================================================================
+  # SOURCE 10: How to Organize Copywriting Research
+  # ===========================================================================
+  - source_id: "S10"
+    url: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    type: "Tutorial (framework)"
+    layer_2_key_mius:
+      - "JW-065"  # the "messy middle" — 90% of the work
+      - "JW-032"  # Message Map (Product + Persona sections)
+      - "JW-027"  # PCPO framework
+      - "JW-073"  # note-taking process
+    layer_3_essence: |
+      Copywriting's dirty secret: the real work is thinking, not writing. The
+      "messy middle" between analyzing data and finishing your outline is the 90%
+      of work clients actually pay for. Organization through the Message Map
+      (Product + Persona sections) and Solution Design (PCPO: Problem, Cure, Proof,
+      Offer) converts raw research into actionable messaging. Embrace imperfection
+      in notes — the system exists to make the second half cleaner, not to
+      eliminate messiness.
+
+  # ===========================================================================
+  # SOURCE 11: How to Optimize an Email (2025)
+  # ===========================================================================
+  - source_id: "S11"
+    url: "https://copyhackers.com/2025/03/how-to-optimize-an-email/"
+    type: "Article / Tutorial"
+    layer_2_key_mius:
+      - "JW-047"  # don't throw out emails and start from scratch
+      - "JW-030"  # Green/Red/Yellow audit system
+      - "JW-035"  # Two-Part Email Audit Framework
+    layer_3_essence: |
+      Email optimization starts with audit, not rewriting. The Two-Part Framework
+      (Cadence/Flow Audit + Performance Mapping) prevents premature optimization.
+      Green/Red/Yellow circles create stakeholder alignment before any copy changes.
+      Core principle: "You're not the prospect" — personal style preferences are
+      irrelevant.
+
+  # ===========================================================================
+  # SOURCE 12: 10 Copywriting Tips (Digital Marketer)
+  # ===========================================================================
+  - source_id: "S12"
+    url: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    type: "Article (interview/tips)"
+    layer_2_key_mius:
+      - "JW-028"  # "Already, Still" Formula
+      - "JW-029"  # "Even, If" Rule
+      - "JW-046"  # stop writing, start listening
+      - "JW-050"  # don't follow best practices blindly
+      - "JW-051"  # most powerful headline words from customers
+    layer_3_essence: |
+      Tactical distillation of Joanna's philosophy in 10 tips. Two proprietary
+      formulas ("Already, Still" and "Even, If") that strengthen any copy. The
+      unifying thread: when stuck, stop writing and listen to customers. Don't
+      blindly follow "best practices" from unknown sources. Start every line
+      of copy with "YOU."
+
+  # ===========================================================================
+  # SOURCE 13: Everyone Hates Marketers Podcast (full transcript)
+  # ===========================================================================
+  - source_id: "S13"
+    url: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    type: "Podcast (full transcript)"
+    layer_2_key_mius:
+      - "JW-001"  # copywriters don't write, they listen
+      - "JW-002"  # customer as the product you're selling
+      - "JW-004"  # humility and stepping out of the frame
+      - "JW-024"  # Seven Sweeps
+      - "JW-042"  # Three-Step Process
+      - "JW-053"  # write for everybody = write for nobody
+      - "JW-062"  # research takes 2/3 of the work
+      - "JW-063"  # "what was going on in your life" question
+      - "JW-066"  # don't make VOC sound like a marketer
+      - "JW-067"  # "edit in the awesome"
+      - "JW-104"  # page as mirror
+      - "JW-115"  # "sweat soaker undershirt"
+    layer_3_essence: |
+      The definitive exposition of Joanna's three-step methodology: 1) Research
+      takes 2/3 of the work (interviews, surveys, review mining). 2) Organize
+      VOC data into frameworks (PAS, AIDA) — you're not writing, you're placing.
+      3) Edit with Seven Sweeps (clarity first, always). The killer insight is
+      that your page should be a "mirror" where prospects see themselves. "Good
+      copywriters are super lazy" — they listen and organize, not invent.
+      Humility is the meta-skill.
+
+  # ===========================================================================
+  # SOURCE 14: Inspired Insider Interview (full transcript)
+  # ===========================================================================
+  - source_id: "S14"
+    url: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    type: "Podcast (full transcript)"
+    layer_2_key_mius:
+      - "JW-045"  # everything has one job
+      - "JW-064"  # "if you think you need rehab, you do" — 26% more leads
+      - "JW-071"  # "Can I ask you something?" — 45% more opens
+      - "JW-081"  # copy should lead design
+      - "JW-094"  # humble button vs powerful headline
+      - "JW-096"  # MetaGeek — buttons lost to text links
+      - "JW-097"  # 2000% lift by hiding enterprise price
+      - "JW-133"  # dad's death as turning point
+      - "JW-134"  # dad going back to school
+      - "JW-135"  # dropping out of law school
+      - "JW-136"  # being the quiet fourth child
+      - "JW-137"  # creative writer vs copywriter — 3 year setback
+    layer_3_essence: |
+      The most personal and revealing interview. Joanna's origin story in full:
+      being the quiet fourth child, her father's transformation from truck driver
+      to teacher, his death on her first day of law school, three years lost as
+      "creative writer" before embracing copywriting at Intuit. Professionally:
+      the "one job" principle (subject line, headline, button each have one job),
+      review mining (Beachway rehab headline = 26% more leads), and the paradox
+      of buttons beating headlines. SaaS businesses are really "email businesses
+      that let people convert on the web."
+
+  # ===========================================================================
+  # SOURCE 15: The Copywriter Club Podcast #14 (full transcript)
+  # ===========================================================================
+  - source_id: "S15"
+    url: "https://thecopywriterclub.com/joanna-wiebe/"
+    type: "Podcast (full transcript)"
+    layer_2_key_mius:
+      - "JW-012"  # own your skills
+      - "JW-014"  # voice should come last
+      - "JW-054"  # controlling the copy review process
+      - "JW-057"  # clear over clever
+      - "JW-084"  # don't let clients drive your copy
+      - "JW-085"  # confidence holds copywriters back
+      - "JW-086"  # creative copy loses in tests
+      - "JW-088"  # "I like this" is useless feedback
+      - "JW-123"  # $250/hour requires controlling the process
+      - "JW-139"  # janitor at own high school
+      - "JW-142"  # time management post — vulnerability as content
+    layer_3_essence: |
+      The professional identity manifesto. Key tensions: creative writing vs.
+      conversion copywriting ("clear over clever"), copywriter as order-taker vs.
+      strategic partner, $27K/year agency writer vs. $60K minimum project. The
+      path to premium rates: control the review process, present copy live with
+      context, don't let clients give undirected feedback. Build authority through
+      content, say yes to every opportunity early on. Personal vulnerability
+      (janitor story, time management confession) makes content more powerful,
+      not weaker.
+
+  # ===========================================================================
+  # SOURCE 16: Leadpages Podcast (full transcript)
+  # ===========================================================================
+  - source_id: "S16"
+    url: "https://www.leadpages.com/blog/joanna-wiebe-podcast-conversion-copywriting"
+    type: "Podcast (full transcript)"
+    layer_2_key_mius:
+      - "JW-043"  # "I want to..." button copy formula
+      - "JW-048"  # copy leads design
+      - "JW-049"  # dead body in accordion / FAQ as headline
+      - "JW-082"  # AI as junior copywriter with no ego
+      - "JW-119"  # fake RE: in emails — "we don't need to do that"
+    layer_3_essence: |
+      Practical conversion tactics with ethical boundaries. Homepage and landing
+      page best practices: hero section must match visitor awareness, FAQs should
+      answer real questions (not hide in accordions), button copy completes "I want
+      to..." AI is a useful sidekick without ego but not a replacement. The ethical
+      line: never use deceptive tactics (fake RE: subject lines) when you can use
+      genuine connection.
+
+  # ===========================================================================
+  # SOURCE 17: Churnkey Interview
+  # ===========================================================================
+  - source_id: "S17"
+    url: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    type: "Interview (Q&A)"
+    layer_2_key_mius:
+      - "JW-008"  # "don't do the sexy thing, do the work thing"
+      - "JW-022"  # Rule of One / List, Offer, Copy
+      - "JW-055"  # photo of woman outperforms man
+      - "JW-056"  # first person + quotation marks in headlines
+      - "JW-080"  # fear of looking like a salesperson
+      - "JW-089"  # $3M with 3 full-time people
+      - "JW-116"  # long copy alive with believers
+      - "JW-132"  # "just keep showing up"
+    layer_3_essence: |
+      The seasoned operator's perspective. 12+ years of lessons distilled:
+      don't chase sexy tactics, do the boring work that compounds. Rule of One
+      (reader, offer, idea, promise) is the foundation of all conversion. Long
+      copy works when the company truly believes its story. $3M business with
+      3 people proves the lean model. The most powerful advice is the most boring:
+      "Just keep showing up."
+
+  # ===========================================================================
+  # CROSS-SOURCE L3: ESSENCE OF JOANNA WIEBE
+  # ===========================================================================
+  cross_source_essence: |
+    Joanna Wiebe is the self-titled "Original Conversion Copywriter" who
+    transformed copywriting from a creative discipline into a research-and-
+    testing discipline for the digital age. Her core methodology is deceptively
+    simple: listen to customers (2/3 of the work), organize their words into
+    proven frameworks (PAS, AIDA, Seven Questions), then lightly edit with
+    Seven Sweeps (clarity always first).
+
+    Her philosophy rests on five pillars:
+    1. CUSTOMER WORDS > COPYWRITER WORDS — "Good copywriters don't write,
+       they listen." VOC data is the raw material; the copywriter is a curator.
+    2. SPECIFICITY > VAGUENESS — Generic copy fails. Specific, lived-experience
+       language ("sweat soaker undershirt") converts.
+    3. MESSAGING HIERARCHY > GOOD WRITING — What goes where matters more than
+       how well it's written. Clear over clever, always.
+    4. TESTING > OPINION — Data decides. Every claim backed by A/B test results.
+       The "creative" approach loses to the systematic approach in nearly every test.
+    5. ETHICAL PERSUASION — "Without scammy cheapness." No fake RE: lines,
+       no manipulation. Genuine connection through genuine understanding.
+
+    Her personal story is inseparable from her teaching: being the overlooked
+    fourth child who became an authority, the daughter of a truck driver who
+    became a teacher, the law school dropout who became one of the world's
+    most-cited copywriters. The through-line is persistence: "Just keep showing up."
+
+    Business model proof: $3.5M/year with 3 full-time people, $60K minimum
+    project fee, trained teams at Amazon/Shopify/Intuit/AWS. Authority built
+    through content, not credentials — "authority-building content is what my
+    seven-figure business is built on."

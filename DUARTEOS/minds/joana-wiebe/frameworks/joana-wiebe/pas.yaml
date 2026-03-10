@@ -1,0 +1,42 @@
+# Joanna Wiebe — PAS (Problem-Agitation-Solution)
+# Framework universal para qualquer tipo de copy
+
+meta:
+  mind: joana-wiebe
+  framework: "PAS (Problem-Agitation-Solution)"
+  category: writing
+  use_case: "Landing pages, emails, ads, blog posts — basicamente tudo"
+
+description: |
+  O framework mais universal de copywriting. Comece com o problema que o prospecto
+  esta vivendo. Agite — cave fundo e ajude-os a se sentirem vistos, faca-os sentir
+  a dor visceralmente. Apresente a solucao SOMENTE depois que a agitacao fez seu trabalho.
+  "Agitation is my favorite part" — Joanna Wiebe.
+
+steps:
+  - step: 1
+    name: "Problem"
+    action: "Identifique e declare o problema que o prospecto esta experienciando"
+    detail: "Use linguagem do proprio prospecto (VOC data). Nao abstraia — seja especifico."
+    example: "Your armpits are always wet. You've tried every deodorant on the shelf."
+
+  - step: 2
+    name: "Agitation"
+    action: "Cave fundo na dor — faca o prospecto se sentir visto e sentir a dor visceralmente"
+    detail: "Agitacao nao e inventar medo. E fazer o prospecto reconhecer a magnitude do problema que ele ja tem. Use detalhes especificos de reviews."
+    example: "You're sweating through expensive clothes. You can't raise your hand in meetings. You've stopped wearing grey."
+
+  - step: 3
+    name: "Solution"
+    action: "Apresente a solucao somente DEPOIS que a agitacao fez seu trabalho"
+    detail: "A solucao parece magica quando a dor esta viva na imaginacao. Sem agitacao suficiente, a solucao parece generica."
+    example: "SweatBlock stops excessive sweating for up to 7 days with a single application."
+
+quando_usar: "Sempre que estiver escrevendo basicamente qualquer coisa."
+quando_nao_usar: "Quando o prospecto ja esta no stage 'most aware' — ele ja sabe do problema, pule para a oferta."
+
+evidence:
+  quote: "Problem, agitation, solution is a framework to use whenever you are writing basically anything. Agitation I always say is my favorite part."
+  source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+key_insight: "Agitacao nao e manipulacao — e empatia. Voce esta mostrando que entende exatamente o que eles vivem."

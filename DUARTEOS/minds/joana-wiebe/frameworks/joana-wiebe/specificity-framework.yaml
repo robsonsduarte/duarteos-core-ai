@@ -1,0 +1,46 @@
+# Joanna Wiebe — Specificity Framework (Zoom In)
+# De generico a concreto usando linguagem real do cliente
+
+meta:
+  mind: joana-wiebe
+  framework: "Specificity Framework (Zoom In)"
+  category: editing
+  use_case: "Quando copy sente-se generica ou abstrata"
+
+description: |
+  Processo sistematico de substituir cada abstracao por detalhe concreto e real
+  extraido de reviews de clientes. Transforma metricas em experiencia vivida.
+  Forca visualizacao atraves de linguagem de dor especifica.
+  Case study: 108% lift quando substituiu messaging generico por pain language especifica.
+
+steps:
+  - step: 1
+    name: "Identify Generic"
+    action: "Comece com o claim generico ('save time and money', 'improve your life')"
+    red_flags: ["save time and money", "improve results", "grow your business", "streamline operations"]
+
+  - step: 2
+    name: "Find the VOC"
+    action: "Va a reviews de clientes e encontre como ELES descrevem o beneficio"
+    detail: "Nao invente. Encontre. A especificidade vem do cliente, nao do copywriter."
+
+  - step: 3
+    name: "Transform Metrics to Experience"
+    action: "Transforme metricas em experiencia vivida"
+    examples:
+      - before: "18% improvement in productivity"
+        after: "100 views daily to 118 — that's 18 more potential customers seeing your page every single day"
+      - before: "Save 5 hours per week"
+        after: "Tuesday afternoons back — no more manual data entry"
+
+  - step: 4
+    name: "Visualize Test"
+    action: "Pergunte: 'O prospecto consegue VER isso na mente?'"
+    detail: "Se nao pode ser visualizado, nao pode ser imaginado. Se nao pode ser imaginado, nao converte."
+
+evidence:
+  quote: "Zoom in from generic claims to concrete, real-life details. Specific pain language achieved 108% lift over generic messaging."
+  case_study: "SweatBlock — 'My armpits are ALWAYS wet' vs generic headline — 108% lift, then another 49%"
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "Especificidade entra na imaginacao. A imaginacao nao tem budget e nao tem time limit. Se a copy entra na imaginacao, o ad roda o dia todo de graca."

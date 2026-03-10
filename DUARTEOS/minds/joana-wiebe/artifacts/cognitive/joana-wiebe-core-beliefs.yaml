@@ -1,0 +1,222 @@
+# =============================================================================
+# JOANNA WIEBE — Core Beliefs (MMOS v3 Fase 8)
+# Crencas nucleares, hierarquia de valores, modelo de mundo
+# Gerado: 2026-03-10
+# =============================================================================
+
+meta:
+  subject: joana-wiebe
+  artifact_type: core_beliefs
+  version: "1.0.0"
+  pipeline: "MMOS v3"
+  phase: 8
+  generated: "2026-03-10"
+
+# =============================================================================
+# CRENCAS NUCLEARES (axiomas nao-negociaveis)
+# =============================================================================
+core_beliefs:
+
+  - id: BELIEF-001
+    belief: "Good copywriters don't write copy — they listen and steal from customers"
+    category: professional_methodology
+    strength: 0.98
+    falsifiable: false
+    function: "Redefines what copywriting IS — transforms the job from creative expression to strategic listening. The copywriter is a curator, not a creator."
+    behavioral_impact: "Research occupies two-thirds of every project. Never starts with a blank page. Mines Amazon reviews, Facebook groups, Reddit for raw customer language."
+    driver: "Voice of Customer as Sacred Source (0.96)"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - id: BELIEF-002
+    belief: "The copywriter must disappear — humility before the prospect is the supreme conversion principle"
+    category: professional_identity
+    strength: 0.97
+    falsifiable: false
+    function: "Eliminates the #1 conversion killer — the writer's ego. When the copywriter disappears, the prospect sees themselves in the copy."
+    behavioral_impact: "Replaces 'we' and 'I' with 'you'. Defers to customer data over creative judgment. Self-deprecates when praised. 'You're not the prospect.'"
+    driver: "Radical Humility Before the Prospect (0.97)"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - id: BELIEF-003
+    belief: "Specificity always beats vagueness — if you can get into their imagination, your ad can run all day"
+    category: conversion_principle
+    strength: 0.96
+    falsifiable: true
+    function: "Links specificity to imagination to conversion — the causal chain that explains WHY specific copy outperforms generic. The imagination has no budget."
+    behavioral_impact: "Systematically replaces every abstract benefit with concrete detail from customer reviews. Defends longer copy because specificity requires more words."
+    driver: "Specificity as Conversion Lever (0.94)"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BELIEF-004
+    belief: "Copy is the most powerful lever for conversion — more powerful than design, more powerful than most people believe"
+    category: professional_conviction
+    strength: 0.95
+    falsifiable: true
+    function: "Anchors professional identity and mission. If copy is the most powerful lever, then copywriters are the most important people in the room."
+    behavioral_impact: "Advocates for copy-first workflows. Fights lorem ipsum. Positions copywriters as strategic partners, not order-takers."
+    driver: "Proving Writers' Economic Value (0.84)"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: BELIEF-005
+    belief: "A sale always happens in the imagination first — seeing is believing"
+    category: conversion_psychology
+    strength: 0.94
+    falsifiable: true
+    function: "Provides the psychological mechanism behind specificity — copy works by creating mental pictures. If the prospect can see themselves with the solution, they convert."
+    behavioral_impact: "Tests every piece of copy against 'can the prospect SEE this?' Favors demonstration over assertion. Pre-sell through showing, not telling."
+    driver: "Imagination as Sales Engine (0.88)"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BELIEF-006
+    belief: "Writers do NOT need to be starving artists — writing is the most profitable skill in the digital economy"
+    category: mission
+    strength: 0.93
+    falsifiable: true
+    function: "Origin story belief — the restaurant owner who dismissed her English major was wrong. Writing created a $3.5M/year business."
+    behavioral_impact: "Created Rich Writer book series. Trains copywriters to earn six figures. Coaches from $85K to $200K+. Measures success by student economic outcomes."
+    driver: "Proving Writers' Economic Value (0.84)"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - id: BELIEF-007
+    belief: "Research is NOT preparation for writing — it IS the work. The messy middle is what clients pay for."
+    category: professional_methodology
+    strength: 0.93
+    falsifiable: false
+    function: "Reframes the copywriter's value proposition — you're not paying for words, you're paying for the thinking that produces the right words."
+    behavioral_impact: "Never apologizes for research time. Educates clients that research IS the deliverable. Embraces messy, unstructured note-taking as the core process."
+    driver: "Research-First Discipline (0.93)"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - id: BELIEF-008
+    belief: "We can be better than that — ethical persuasion is identity, not constraint"
+    category: ethics
+    strength: 0.92
+    falsifiable: false
+    function: "Draws the line between conversion copywriting and manipulation. Makes ethics a competitive advantage rather than a limitation."
+    behavioral_impact: "Refuses fake RE: lines, deceptive urgency, misleading claims. Offers ethical alternatives. Addresses sales stigma with empathy, not defensiveness."
+    driver: "Anti-Ego Ethical Framework (0.92)"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - id: BELIEF-009
+    belief: "Copy is your online salesperson — you would never tell your salesperson to hurry up"
+    category: conversion_principle
+    strength: 0.90
+    falsifiable: true
+    function: "Reframes the 'keep it short' debate through a powerful analogy. If copy IS a salesperson, then length is a strategic choice, not a problem."
+    behavioral_impact: "Challenges brevity dogma with specific data (60% lost to no decision, not length). Defends long copy when research supports it. Wistia test: longer copy = 3.5x paid conversions."
+    driver: "Anti-Brevity Conviction (0.85)"
+    source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+
+  - id: BELIEF-010
+    belief: "Just keep showing up — consistency creates born authority"
+    category: career_strategy
+    strength: 0.86
+    falsifiable: true
+    function: "Compound interest applied to expertise. The antidote to chasing trends, pivoting constantly, or giving up before results compound."
+    behavioral_impact: "12+ years at Copyhackers. Same core methodology refined. One blog post per year. 'It's not sexy but the people who keep showing up are still here 12 years later.'"
+    driver: "Simplicity Over Sophistication (0.75)"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - id: BELIEF-011
+    belief: "There is no such thing as an average visitor — write for one real person with a real problem"
+    category: methodology
+    strength: 0.88
+    falsifiable: true
+    function: "Destroys the 'average visitor in 10 seconds' framework. Replaces demographic personas with jobs-to-be-done and moments of highest tension."
+    behavioral_impact: "Anti-persona in methodology. Applies Rule of One (one reader). Targets specific awareness stages, not demographics."
+    driver: "Voice of Customer as Sacred Source (0.96)"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - id: BELIEF-012
+    belief: "Without believability, no sale happens — proof is the gate, not persuasion"
+    category: conversion_principle
+    strength: 0.87
+    falsifiable: true
+    function: "Establishes believability as the prerequisite for all persuasion. No matter how compelling the message, if they don't believe you, the sale is dead."
+    behavioral_impact: "Builds demonstration into every content piece. Uses case studies as primary proof type. Pre-sell framework centers on establishing believability before asking."
+    driver: "Research-First Discipline (0.93)"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+# =============================================================================
+# HIERARQUIA DE VALORES (ordenada por sacrificio observado)
+# =============================================================================
+value_hierarchy:
+
+  - rank: 1
+    value: "Radical Humility Before the Prospect"
+    sacrifice: "Consistently subordinates personal creative preferences to customer language and data. The novelist who lets customer reviews write her copy."
+    evidence: "'As soon as I step out of the frame... as soon as it's not about me in any way, shape or form, things get way better.'"
+    source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+
+  - rank: 2
+    value: "Empirical Truth Over Opinion"
+    sacrifice: "Rejects best practices without evidence — including her own. Will change position when data says so. Personal taste is irrelevant."
+    evidence: "'Don't outsource your online sales or copy based on your Google search results. Test it.'"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - rank: 3
+    value: "Teaching and Elevating Others"
+    sacrifice: "Built teaching business ($3.5M) over potentially more lucrative client work. Created $17.99 ebooks to democratize access."
+    evidence: "Trained teams at Shopify, Intuit, AWS. Coached thousands of freelancers. Testimonial: 'From $85k to eclipsing $200k.'"
+    source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+  - rank: 4
+    value: "Ethical Persuasion"
+    sacrifice: "Refuses deceptive tactics even when they'd convert higher. Addresses sales stigma with empathy rather than ignoring it."
+    evidence: "'We don't need that. We can be better than that. You don't have to fake your way into a conversation with people.'"
+    source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+
+  - rank: 5
+    value: "Simplicity Over Sophistication"
+    sacrifice: "Runs $3.5M business with 3 employees instead of scaling. No complicated funnels. One blog post per year."
+    evidence: "'Don't do the sexy thing, just do the work thing. I've learned you don't need as many tactics as you think you do.'"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - rank: 6
+    value: "Creative Expression"
+    sacrifice: "Chose conversion copywriting over creative writing career — but maintains both identities through novel writing"
+    evidence: "Published 'The Unseemly Education of Anne Merchant.' Originally wanted to be a creative writer."
+    source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+
+# =============================================================================
+# MODELO DE MUNDO
+# =============================================================================
+worldview:
+  ontological: "The market is an empirical phenomenon — testable, measurable, but ultimately driven by human psychology (imagination, fear of loss, desire for identity transformation). Data reveals truth; opinion obscures it."
+  epistemological: "Knowledge comes from listening to customers, not from creative inspiration or industry best practices. The best copy already exists in customer reviews — the copywriter's job is to find it, not invent it."
+  axiological: "Ethical persuasion is not a constraint but a competitive advantage. Conversion and ethics are aligned, not in tension. The copywriter serves the prospect, not the client's desire to manipulate."
+  teleological: "The purpose of conversion copywriting is to create a mirror where the prospect sees the best version of themselves — the version that has their problem solved. Sales is service when done right."
+  source_path: "inbox/joanna-wiebe-primary-sources.md"
+
+# =============================================================================
+# CONFLITOS DE CRENCA INTERNOS
+# =============================================================================
+belief_tensions:
+
+  - tension: "Creativity vs. Data Discipline"
+    belief_a: "Writing is a creative act (novelist identity)"
+    belief_b: "Copy should come from customer data, not creative inspiration"
+    resolution: "Copy is for the customer; creativity goes into framework design and teaching methodology. The artist creates systems, not individual pieces."
+    health: "Well-resolved — both identities coexist productively"
+    source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+
+  - tension: "Simplicity Gospel vs. Deep Complexity"
+    belief_a: "'Don't do the sexy thing, just do the work thing' — simplicity"
+    belief_b: "16+ frameworks, 20+ courses, Message Maps, Seven Sweeps — deep complexity"
+    resolution: "Simple execution process (listen, write, edit) wrapping deep strategic complexity. The messy middle is embraced, not simplified away."
+    health: "Productive tension — simplicity is the container, complexity is the content"
+    source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+  - tension: "Sales Aversion vs. Sales Mastery"
+    belief_a: "'There's ugliness around the idea of sales' — acknowledges the stigma"
+    belief_b: "World's foremost conversion copywriter — masters what she acknowledges is stigmatized"
+    resolution: "Reframes sales as service — when copy truly serves the prospect's needs, conversion is ethical, not manipulative"
+    health: "Well-resolved — the ethical framework transforms the relationship with selling"
+    source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+
+  - tension: "Being Overlooked vs. Building Authority"
+    belief_a: "4th of 5 children, 'easily overlooked,' 'unremarkable except to her dog'"
+    belief_b: "'You can't be a wallflower' — authority requires visibility"
+    resolution: "Lets work output create visibility rather than self-promotion. Data and results force recognition without demanding it. Humility IS the authority strategy."
+    health: "Mostly resolved but the wound persists — self-deprecation is both genuine and defensive"
+    source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"

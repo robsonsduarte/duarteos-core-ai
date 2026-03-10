@@ -1,0 +1,443 @@
+# Joanna Wiebe — Mind Drivers
+# Derivado de: .claude/synapse/minds/joana-wiebe.yaml + 48 MIUs + 15 fontes primarias
+# Pipeline: MMOS Engine v3 — Fase 7 (Inferencia)
+# Gerado em: 2026-03-10
+# Total drivers: 15 (5 gold, 5 silver, 5 bronze)
+# Confianca: alta
+
+driver_identity:
+  mind: "joana-wiebe"
+  name: "Joanna Wiebe"
+  category: "copy"
+  total_drivers: 15
+  tier_distribution:
+    gold: 5
+    silver: 5
+    bronze: 5
+
+drivers:
+
+  # === GOLD — Alta forca + Alta confianca + Alta frequencia ===
+
+  - name: "Radical Humility Before the Prospect"
+    tier: "gold"
+    strength: 0.97
+    confidence: 0.96
+    frequency: "17"
+    descricao: "The cornerstone of Wiebe's entire philosophy. The copywriter must disappear — ego, creative preferences, personal opinions all subordinated to customer data. This is not false modesty but a strategic principle: the less of 'you' in the copy, the more the prospect converts. Paradoxically, this humility IS her authority."
+    evidencias:
+      - miu: "The more we can learn humility, the more we can stop acting like we've got all the answers, the better things go. As soon as I step out of the frame, things get way better."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.98
+      - miu: "You're not the prospect. Personal preferences about length, tone, or structure are irrelevant."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.95
+      - miu: "Conversion copywriting, you are trying to move somebody to say yes. Basically all you're thinking about is your audience. The customer is the product you're really selling."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.96
+      - miu: "Describes herself as 'unremarkable except to her dog' while running $3.5M/year business."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.93
+    relationships:
+      - target: "Voice of Customer as Sacred Source"
+        type: "causal"
+        correlation: 0.95
+      - target: "Anti-Ego Ethical Framework"
+        type: "causal"
+        correlation: 0.88
+      - target: "Data Over Opinion"
+        type: "correlacional"
+        correlation: 0.85
+
+  - name: "Voice of Customer as Sacred Source"
+    tier: "gold"
+    strength: 0.96
+    confidence: 0.97
+    frequency: "15"
+    descricao: "The belief that customer language IS the copy, not raw material for the copywriter to 'improve.' Review mining, surveys, interviews, and eavesdropping on prospect conversations are the primary creative acts. The best headlines come verbatim from customer reviews. This driver makes Wiebe fundamentally different from creative-first copywriters."
+    evidencias:
+      - miu: "Good copywriters don't write copy; they listen, they eavesdrop on their prospects and they just use their words. Good copywriters are super lazy."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.98
+      - miu: "I went to Amazon... one line that a gentleman wrote was 'if you think you need rehab, you do' — we put it as a homepage headline. 26% more leads."
+        source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+        strength: 0.97
+      - miu: "Your page becomes a mirror where your prospect really sees themselves. Based on stealing their messages using voice of customer data."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.96
+      - miu: "Do not summarize or rewrite the things that you have heard people say. Take it exactly as it is. That's raw voice of customer data."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.95
+    relationships:
+      - target: "Radical Humility Before the Prospect"
+        type: "causal"
+        correlation: 0.95
+      - target: "Specificity as Conversion Lever"
+        type: "causal"
+        correlation: 0.87
+      - target: "Research-First Discipline"
+        type: "correlacional"
+        correlation: 0.92
+
+  - name: "Specificity as Conversion Lever"
+    tier: "gold"
+    strength: 0.94
+    confidence: 0.95
+    frequency: "12"
+    descricao: "The conviction that vagueness is the enemy of conversion. Generic benefits ('save time and money') fail because they cannot be visualized. Specific pain language from customer reviews ('my armpits are ALWAYS wet') creates mental pictures that drive action. Specificity requires more words, which contradicts the 'keep it short' dogma."
+    evidencias:
+      - miu: "In my experience, being vague just doesn't work as well as being specific. Most online copy is entirely vague. It's summarized. It's abstracted."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.96
+      - miu: "If you can get into their imagination, your ad can run all day. The imagination of the consumer has no budget."
+        source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+        strength: 0.95
+      - miu: "Specific pain language ('My armpits are ALWAYS wet') achieved 108% lift over generic messaging, then another 49% improvement."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.94
+    relationships:
+      - target: "Voice of Customer as Sacred Source"
+        type: "causal"
+        correlation: 0.87
+      - target: "Imagination as Sales Engine"
+        type: "correlacional"
+        correlation: 0.90
+      - target: "Anti-Brevity Conviction"
+        type: "causal"
+        correlation: 0.82
+
+  - name: "Research-First Discipline"
+    tier: "gold"
+    strength: 0.93
+    confidence: 0.94
+    frequency: "14"
+    descricao: "The unshakable conviction that research is NOT preparation for writing — it IS the work. Two-thirds of every project is research. The 'messy middle' of thinking through customer data is what clients actually pay for. Writing is the easy part that follows naturally when research is done right."
+    evidencias:
+      - miu: "Research takes up two-thirds of that slide. The other stuff like actually writing and then editing, that takes up the remaining third, squished together."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.96
+      - miu: "Copywriting work is fundamentally about 'the thinking part' rather than writing. The 'messy middle' — the 90% of work between analyzing data and finishing your outline."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.94
+      - miu: "My number one question: 'what was going on in your life that brought you to...' The best copy wins come from answers to that question."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.93
+      - miu: "The moment you start struggling with your messaging, you need to put the pen down. Instead of writing, you need to listen to your customers."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.91
+    relationships:
+      - target: "Voice of Customer as Sacred Source"
+        type: "correlacional"
+        correlation: 0.92
+      - target: "Radical Humility Before the Prospect"
+        type: "correlacional"
+        correlation: 0.85
+      - target: "Framework Systematization Instinct"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Anti-Ego Ethical Framework"
+    tier: "gold"
+    strength: 0.92
+    confidence: 0.93
+    frequency: "10"
+    descricao: "Deep-seated commitment to ethical persuasion as identity, not constraint. Refuses fake RE: lines, deceptive urgency, and scammy tactics — not because they don't work, but because 'we can be better than that.' Addresses the stigma of sales head-on, acknowledges abuse exists, but reframes conversion as service."
+    evidencias:
+      - miu: "We don't need that. We can be better than that. You don't have to fake your way into a conversation with people. The fake RE: in email marketing — we don't need to do that."
+        source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+        strength: 0.95
+      - miu: "There's ugliness around the idea of sales, in some cases for good reasons. Some people have abused things and it's awful. But I think it all goes back to a fear of looking like you're a salesperson."
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+        strength: 0.93
+      - miu: "Without scammy cheapness — takes non-writers from slogging painfully to confidently organizing messages."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.90
+    relationships:
+      - target: "Radical Humility Before the Prospect"
+        type: "causal"
+        correlation: 0.88
+      - target: "Teaching as Legacy Mission"
+        type: "correlacional"
+        correlation: 0.80
+      - target: "Fear of Copywriter Commoditization"
+        type: "antagonico"
+        correlation: -0.72
+
+  # === SILVER — Media forca + Media-Alta confianca ===
+
+  - name: "Imagination as Sales Engine"
+    tier: "silver"
+    strength: 0.88
+    confidence: 0.90
+    frequency: "8"
+    descricao: "The unique cognitive bridge between specificity and conversion: specific copy works because it enters the prospect's imagination, which has no budget and no time limit. A sale always happens in the imagination first. This is WHY specificity converts — it creates mental pictures that do the selling."
+    evidencias:
+      - miu: "If you can get into their imagination, your ad can run all day. The imagination of the consumer has no budget. There's no time limit."
+        source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+        strength: 0.95
+      - miu: "A sale always happens in the imagination first. If they can't see it in their imagination, then it's unlikely that it will be a reality."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.94
+      - miu: "Seeing is believing. If your prospects can see your process, your solution in action, then they can see themselves having attained their desired result."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.88
+    relationships:
+      - target: "Specificity as Conversion Lever"
+        type: "correlacional"
+        correlation: 0.90
+      - target: "Voice of Customer as Sacred Source"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Framework Systematization Instinct"
+    tier: "silver"
+    strength: 0.87
+    confidence: 0.89
+    frequency: "16"
+    descricao: "Compulsive need to transform intuitive knowledge into named, repeatable frameworks. 15+ proprietary frameworks (PAS, Seven Questions, Rule of One, Seven Sweeps, PCPO, CTV/CTA, 10/90, Blog Post Formula, etc.) — each with clear steps, triggers, and use cases. The framework IS the product."
+    evidencias:
+      - miu: "Copywriting formulas take the message you have and make it so much stronger."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.88
+      - miu: "15+ frameworks identified across sources, each named, with clear steps and triggers"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.90
+      - miu: "20 courses at Copy School, each built around specific frameworks for specific contexts"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.85
+    relationships:
+      - target: "Teaching as Legacy Mission"
+        type: "causal"
+        correlation: 0.85
+      - target: "Research-First Discipline"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Teaching as Legacy Mission"
+    tier: "silver"
+    strength: 0.86
+    confidence: 0.88
+    frequency: "11"
+    descricao: "Deep drive to democratize conversion knowledge — from $17.99 micro-ebooks to Copy School to workshops for Fortune 500 teams. Chose building a teaching business ($3.5M) over potentially more lucrative client work. 'Authority-building content is what my seven-figure business is built on.'"
+    evidencias:
+      - miu: "Authority-building content is what my seven-figure business is built on."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.90
+      - miu: "Created micro-ebooks at $17.99 each, max 55 pages — buy only the topics you need. Action-oriented teaching with 'next steps' sections."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.87
+      - miu: "Trained teams at Shopify, Intuit, AWS, Thinkific. Coached thousands of freelance copywriters."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.85
+    relationships:
+      - target: "Framework Systematization Instinct"
+        type: "causal"
+        correlation: 0.85
+      - target: "Proving Writers' Economic Value"
+        type: "correlacional"
+        correlation: 0.82
+
+  - name: "Anti-Brevity Conviction"
+    tier: "silver"
+    strength: 0.85
+    confidence: 0.87
+    frequency: "7"
+    descricao: "Contrarian conviction that the 'keep it short' dogma kills conversion. Copy is your online salesperson — you'd never tell a salesperson to hurry up. 60% of sales lost to 'no decision' not competitors. Wistia email test: longer, pain-focused copy drove 3.5x paid conversions versus shorter."
+    evidencias:
+      - miu: "Copy is your online salesperson and it either sells or it doesn't. It is not about 10 seconds, 15 seconds, the average visitor, word count."
+        source_path: "inbox/joanna-wiebe-mius-sample.yaml"
+        strength: 0.94
+      - miu: "Wistia email series: longer, pain-focused copy drove 3.5x paid conversions versus shorter variations."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.90
+      - miu: "Long copy is alive and well with companies who really believe in their story."
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+        strength: 0.85
+    relationships:
+      - target: "Specificity as Conversion Lever"
+        type: "causal"
+        correlation: 0.82
+      - target: "Data Over Opinion"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Proving Writers' Economic Value"
+    tier: "silver"
+    strength: 0.84
+    confidence: 0.86
+    frequency: "9"
+    descricao: "Origin-story-driven mission to prove that writing IS economically powerful. The restaurant owner who dismissed her English major was wrong. Restaurant server to $80K to six-figures to $3.5M. 'You can't be a wallflower.' Elevating copywriters from order-takers to strategic partners."
+    evidencias:
+      - miu: "Restaurant owner said 'Not the most lucrative choice.' Within five years she earned $80K. Today $3.5M/year."
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.93
+      - miu: "If you're going to make money out in the world, you have to show that copywriters are valuable."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.90
+      - miu: "How can you SHOW you're the best when you're treated like an order taker?"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.85
+    relationships:
+      - target: "Teaching as Legacy Mission"
+        type: "correlacional"
+        correlation: 0.82
+      - target: "Fear of Being Overlooked"
+        type: "causal"
+        correlation: 0.80
+
+  # === BRONZE — Menor forca ou confianca, mas presentes ===
+
+  - name: "Data Over Opinion"
+    tier: "bronze"
+    strength: 0.80
+    confidence: 0.83
+    frequency: "6"
+    descricao: "Empirical rigor applied to all copy decisions. Test everything. Don't follow best practices blindly. Without knowing the experience of the person who wrote the guide, how do you know these are ACTUALLY best practices? Only test results determine what converts."
+    evidencias:
+      - miu: "Without knowing the experience of the person who wrote the article — how do you know these are ACTUALLY best practices? Don't outsource your online sales based on your Google search results."
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.88
+      - miu: "Skip style commentary. Personal preferences about length, tone, or structure are irrelevant — 'You're not the prospect.'"
+        source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+        strength: 0.85
+    relationships:
+      - target: "Research-First Discipline"
+        type: "correlacional"
+        correlation: 0.85
+      - target: "Radical Humility Before the Prospect"
+        type: "correlacional"
+        correlation: 0.78
+
+  - name: "Fear of Being Overlooked"
+    tier: "bronze"
+    strength: 0.78
+    confidence: 0.80
+    frequency: "5"
+    descricao: "Shadow driver rooted in being the 4th of 5 children, 'easily overlooked.' The restaurant owner's dismissal. Self-description as 'unremarkable.' Drives the need to produce undeniable evidence (data, results, case studies) that FORCES visibility without demanding it."
+    evidencias:
+      - miu: "4th of 5 children, 'easily overlooked' — drove need to prove value through work output"
+        source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+        strength: 0.82
+      - miu: "Describes herself as 'unremarkable except to her dog, Hunnybear.'"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.80
+      - miu: "'Not the most lucrative choice' — restaurant owner dismissal as origin wound"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.78
+    relationships:
+      - target: "Proving Writers' Economic Value"
+        type: "causal"
+        correlation: 0.80
+      - target: "Radical Humility Before the Prospect"
+        type: "correlacional"
+        correlation: 0.65
+
+  - name: "Fear of Copywriter Commoditization"
+    tier: "bronze"
+    strength: 0.77
+    confidence: 0.79
+    frequency: "5"
+    descricao: "Concern that copywriters are increasingly treated as order-takers rather than strategic partners. AI accelerates this risk. Drives her to teach strategic thinking over tactical execution, and to build frameworks that elevate the profession."
+    evidencias:
+      - miu: "The income you want is reserved for the best copywriters. How can you SHOW you're the best when you're treated like an order taker?"
+        source_path: "inbox/joanna-wiebe-primary-sources.md"
+        strength: 0.85
+      - miu: "If it replaces me, I deserved to be replaced — reframes AI threat as motivational rather than existential."
+        source_path: "inbox/joanna-wiebe/interviews/leadpages-podcast-transcript.txt"
+        strength: 0.78
+    relationships:
+      - target: "Anti-Ego Ethical Framework"
+        type: "antagonico"
+        correlation: -0.72
+      - target: "Framework Systematization Instinct"
+        type: "correlacional"
+        correlation: 0.70
+
+  - name: "Mortality Urgency (Father's Death)"
+    tier: "bronze"
+    strength: 0.76
+    confidence: 0.78
+    frequency: "3"
+    descricao: "Father died of brain cancer at 51 after raising 5 children alone and teaching for 8 years. This was a 'major shift point' — dropped out of law school, changed everything, felt different about limited time and wanting to do something good with it. Underlies the urgency to build meaningful work."
+    evidencias:
+      - miu: "When he died of brain cancer at 51... It made me change everything and made me feel different about myself and what I wanted. Having such a limited time and wanting to do something good with it."
+        source_path: "inbox/joanna-wiebe/interviews/inspired-insider-interview-transcript.txt"
+        strength: 0.90
+      - miu: "Dropped out of law school on the first day — career pivot triggered by father's death"
+        source_path: "inbox/joanna-wiebe/interviews/copywriter-club-podcast-14-transcript.txt"
+        strength: 0.78
+    relationships:
+      - target: "Proving Writers' Economic Value"
+        type: "correlacional"
+        correlation: 0.72
+      - target: "Teaching as Legacy Mission"
+        type: "correlacional"
+        correlation: 0.68
+
+  - name: "Simplicity Over Sophistication"
+    tier: "bronze"
+    strength: 0.75
+    confidence: 0.80
+    frequency: "4"
+    descricao: "Operational philosophy: don't do the sexy thing, do the work thing. $3.5M/year with 3 employees. No complicated funnels. Support freelancers with contractor work. You don't need as many tactics as you think. The deceptively simple 3-step process (listen, write, edit) wrapping deep strategic complexity."
+    evidencias:
+      - miu: "Don't do the sexy thing, just do the work thing. I've learned you don't need as many tactics as you think you do."
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+        strength: 0.85
+      - miu: "This is a $3 million a year business. I'm down to three full-time team members outside of myself."
+        source_path: "inbox/joanna-wiebe/interviews/churnkey-interview-ai-copywriting.txt"
+        strength: 0.80
+      - miu: "It's a really basic three-step thing. Research, writing, editing. Research takes two-thirds."
+        source_path: "inbox/joanna-wiebe/interviews/everyone-hates-marketers-transcript.txt"
+        strength: 0.78
+    relationships:
+      - target: "Research-First Discipline"
+        type: "correlacional"
+        correlation: 0.75
+      - target: "Anti-Brevity Conviction"
+        type: "antagonico"
+        correlation: -0.40
+
+# === CORRELATION MATRIX (top 10 strongest relationships) ===
+
+correlation_matrix:
+  - pair: ["Radical Humility Before the Prospect", "Voice of Customer as Sacred Source"]
+    correlation: 0.95
+    type: "causal"
+    note: "Humility creates the space for customer data to lead; VOC data validates the humility approach"
+  - pair: ["Voice of Customer as Sacred Source", "Research-First Discipline"]
+    correlation: 0.92
+    type: "correlacional"
+    note: "Research is the mechanism through which VOC data is collected"
+  - pair: ["Specificity as Conversion Lever", "Imagination as Sales Engine"]
+    correlation: 0.90
+    type: "correlacional"
+    note: "Specificity works BECAUSE it enters the imagination — the causal mechanism"
+  - pair: ["Anti-Ego Ethical Framework", "Radical Humility Before the Prospect"]
+    correlation: 0.88
+    type: "causal"
+    note: "Ethics flow from humility — if you're not centered on yourself, manipulation becomes unnecessary"
+  - pair: ["Voice of Customer as Sacred Source", "Specificity as Conversion Lever"]
+    correlation: 0.87
+    type: "causal"
+    note: "Customer language IS specific language — VOC data is the source of specificity"
+  - pair: ["Framework Systematization Instinct", "Teaching as Legacy Mission"]
+    correlation: 0.85
+    type: "causal"
+    note: "Frameworks exist to be taught — they are the packaging of knowledge for transfer"
+  - pair: ["Research-First Discipline", "Radical Humility Before the Prospect"]
+    correlation: 0.85
+    type: "correlacional"
+    note: "Research discipline is humility in practice — admitting you don't have the answers"
+  - pair: ["Teaching as Legacy Mission", "Proving Writers' Economic Value"]
+    correlation: 0.82
+    type: "correlacional"
+    note: "Teaching is how she proves writers are valuable — demonstrating the ROI of copy skills"
+  - pair: ["Anti-Brevity Conviction", "Specificity as Conversion Lever"]
+    correlation: 0.82
+    type: "causal"
+    note: "Specificity requires more words — anti-brevity is the logical consequence of the specificity principle"
+  - pair: ["Fear of Being Overlooked", "Proving Writers' Economic Value"]
+    correlation: 0.80
+    type: "causal"
+    note: "The overlooked middle child who was told writing doesn't pay — proving value is the antidote to invisibility"

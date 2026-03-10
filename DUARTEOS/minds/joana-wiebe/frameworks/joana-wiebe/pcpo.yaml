@@ -1,0 +1,43 @@
+# Joanna Wiebe — PCPO (Problem-Cure-Proof-Offer)
+# Solution Design framework — camada estrategica entre pesquisa e escrita
+
+meta:
+  mind: joana-wiebe
+  framework: "PCPO (Problem-Cure-Proof-Offer)"
+  category: strategy
+  use_case: "Solution Design antes de engajar frameworks de escrita"
+
+description: |
+  A camada estrategica que fica ENTRE pesquisa e escrita. Somente apos definir
+  o PCPO o copywriter deve engajar frameworks de escrita como PAS ou AIDA.
+  O PCPO e a fundacao; PAS/AIDA sao a construcao.
+
+steps:
+  - step: 1
+    name: "Problem"
+    action: "Defina o problema claramente usando linguagem do cliente"
+    detail: "Especifico, nao generico. 'My armpits are ALWAYS wet' nao 'excessive sweating'."
+
+  - step: 2
+    name: "Cure"
+    action: "Apresente sua solucao como a cura para o problema definido"
+    detail: "Cure implica resolucao completa. Nao 'ajuda com' — CURA."
+
+  - step: 3
+    name: "Proof"
+    action: "Forneça evidencia de que a cura funciona"
+    detail: "Dados, testimonials, case studies, demos, screenshots. Tell-Show-Tell."
+
+  - step: 4
+    name: "Offer"
+    action: "Diga o que eles recebem e como obter"
+    detail: "Clareza total: o que inclui, quanto custa, garantia, proximos passos."
+
+quando_usar: "ANTES de engajar qualquer framework de escrita (PAS, AIDA, etc). O PCPO e a fundacao estrategica."
+quando_nao_usar: "Nunca pule — mesmo para copy curta, o PCPO deve existir na mente do copywriter."
+
+evidence:
+  quote: "PCPO framework for Solution Design: Problem, Cure, Proof, Offer. Only after this foundation does the copywriter engage actual writing frameworks."
+  source_path: "inbox/joanna-wiebe-primary-sources-batch2.md"
+
+key_insight: "O PCPO e o que falta quando copy 'soa bem' mas nao converte. Frameworks de escrita sem fundacao estrategica produzem copy bonita e ineficaz."

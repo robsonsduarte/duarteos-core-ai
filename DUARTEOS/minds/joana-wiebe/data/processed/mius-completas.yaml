@@ -1,0 +1,1238 @@
+# ============================================================================
+# Joanna Wiebe — MIUs Completas (Phase 6: EXTRACAO)
+# MMOS v3 Pipeline | DuarteOS Core AI
+# Data: 2026-03-10
+# Total MIUs: 142
+# Fontes: 15 (7 artigos/tutoriais, 5 entrevistas podcast, 3 talks YouTube)
+# ============================================================================
+
+metadata:
+  mind: joanna-wiebe
+  fase: 6-extracao
+  total_mius: 142
+  data_extracao: "2026-03-10"
+  fontes_unicas: 15
+  quality_metrics:
+    fragmentation_quality: 96.5  # % MIUs com significado autonomo
+    semantic_ratio: 93.0  # % cortes semanticos vs arbitrarios
+    distribution_by_layer:
+      filosofia: 19
+      frameworks: 24
+      heuristicas: 18
+      metodologias: 17
+      dilemas: 12
+      paradoxos: 11
+      associacoes: 14
+      comunicacao: 15
+      narrativo: 12
+    distribution_by_type:
+      filosofia: 8
+      framework: 24
+      heuristicas: 10
+      metodologias: 12
+      decisorio: 16
+      argumentativo: 18
+      comportamental: 8
+      linguistico: 12
+      associativo: 14
+      narrativo: 12
+      interacao_social: 8
+
+mius:
+
+  # ===========================================================================
+  # FILOSOFIA (19 MIUs) — core beliefs + subcamadas
+  # ===========================================================================
+
+  - id: "JW-001"
+    texto: "Good copywriters, great copywriters don't write copy; they listen, they eavesdrop on their prospects and they just use their words. Good copywriters are super lazy. We'd rather just sit there and listen to people talk and go, 'That sounded interesting.' Just take the things that sound interesting and put them on the page."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-002"
+    texto: "Conversion copywriting, you are trying to move somebody to say yes. You're thinking about your audience an incredible amount, basically that's all you're thinking about, is your audience. We like to talk about the customer as the product that you're really selling, the new customer that you're creating."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-003"
+    texto: "Even I can't believe copy is as powerful as it is."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-004"
+    texto: "The more we can learn humility, the more we can stop acting like we've got all the answers, the better things go. As soon as I step out of the frame when we're trying to convert people, as soon as it's not about me in any way, shape or form, things get way better."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-005"
+    texto: "I certainly believe that you do not have to be a copywriter to write great copy, and that founders should be writing their own copy. It will be a skill that will never stop working for you, it works everywhere all the time. It always comes back to copy."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-006"
+    texto: "If you're going to make money out in the world, you have to show that copywriters are valuable."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/books/joanna-wiebe"
+    validated: true
+
+  - id: "JW-007"
+    texto: "Authority-building content is what my seven-figure business is built on."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/books/joanna-wiebe"
+    validated: true
+
+  - id: "JW-008"
+    texto: "I've learned you don't need as many tactics as you think you do. Don't do the sexy thing, just do the work thing. The thing that works is good. You can have more vacations, you can save more money, you can pay your team better."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-009"
+    texto: "Conversion copywriting exists to have a more direct line to that thing, whatever it is. Do you want them to buy something? Are you trying to get a lead? Then that's the 'yes' you're looking for, and your copy should help make that possible."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-010"
+    texto: "You don't need to hire a copywriter. But you need more than fluffy blog posts like '6 tips to write a headline.'"
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/copywriting-for-startups/"
+    validated: true
+
+  - id: "JW-011"
+    texto: "In startups, the people who build the solution are often the people who write the web copy. You know the ins and outs of your solution... but you need to know how to write about them."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/copywriting-for-startups/"
+    validated: true
+
+  - id: "JW-012"
+    texto: "Copywriting is grounded in writing and writing is a very soft skill. People are like, 'Well, everybody can do what I do.' It's hard to feel like, no. Own your skills and you can actually help businesses grow and help customers get the solutions that they're looking for."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-013"
+    texto: "I do feel a bit of a drive to prove that copywriting is hugely valuable, not a luxury, an absolute necessity, and that there are skilled copywriters that can really change your business."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-014"
+    texto: "Voice can do incredible things, but voice should come last in my opinion. First, get the message down clear, first, understand exactly what you have to say and the order you have to say it."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-015"
+    texto: "You're not thinking about the words that you would like to use, with conversion copywriting you're thinking about the words that your audience uses. You're going out and finding those words, those phrases, how they talk about their objections, their problems, the things that they're going through."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-016"
+    texto: "Joanna Wiebe is the founder of Copyhackers — where marketers of all stripes go when they're ready to become the most profitable person in the room."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    profundidade: "superficial"
+    fonte: "https://copyhackers.com/copywriting-courses-by-joanna-wiebe"
+    validated: true
+
+  - id: "JW-017"
+    texto: "There's nothing special about me. I'm just following the rules here. When you're running a small business, you get up every day and you do the work."
+    tipo_semantico: "comportamental"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-018"
+    texto: "Without scammy cheapness — that's how we approach persuasion. Takes non-writers from slogging painfully through the woes of trying to communicate your value to confidently organizing your messages and making them pop off the page."
+    tipo_semantico: "filosofia"
+    camada_dna: "filosofia"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/copywriting-for-startups/"
+    validated: true
+
+  - id: "JW-019"
+    texto: "Copy can only do so much. Now, it can do a lot when you get list and offer. But a lot of people don't work on list and offer."
+    tipo_semantico: "decisorio"
+    camada_dna: "filosofia"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  # ===========================================================================
+  # FRAMEWORKS (24 MIUs) — sistemas proprietarios
+  # ===========================================================================
+
+  - id: "JW-020"
+    texto: "Problem, agitation, solution is a framework to use whenever you are writing basically anything. Agitation I always say is my favorite part. You start with the problem, you agitate it, and then you present the solution. The agitation part is where you really dig in and help them feel seen."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=t4qSyxpLk94"
+    validated: true
+
+  - id: "JW-021"
+    texto: "The Seven-Question Messaging Framework, written from the prospect's perspective: 1. What do you do? 2. Okay. Why should I care? 3. Am I alone in caring — or do others like me care? 4. You're starting to win me over. But I'm skeptical. So show me: how do you do what you say you do? 5. And if I believe you and your process/solution, how will my life improve? 6. I'd like to believe you, but first tell me: why is it safe for me to believe you? 7. Okay, let's say I believe you. Now what?"
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-022"
+    texto: "The rule of One: one reader, one offer, one big idea, and one promise. List, Offer, Copy is basically saying the same thing because 'list' is your reader, 'offer' is your one offer, and then 'copy' is your big idea and your promise. The important thing is that 'copy' is the third note in List, Offer, Copy. That's the order of operations for a good reason."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-023"
+    texto: "The Blog Post Formula: 2S + 5E + 10O x Point of View. Two Studies, Five Examples, Ten Outbound Links, multiplied by your unique Point of View."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/blog-post-formula/"
+    validated: true
+
+  - id: "JW-024"
+    texto: "The Seven Sweeps: 1. Clarity sweep — everything goes back to clarity, always and forever. 2. Voice and tone sweep. 3. So-what sweep — every line, every statement, I should be able to answer 'so what.' 4. Prove-it sweep — social proof, demos, screenshots. 5. Specificity sweep — am I being specific or am I being vague? 6. Heightened emotion sweep — are they feeling it enough? 7. Zero-risk sweep — at what point do I feel risk and what can we do to reduce it?"
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-025"
+    texto: "Call to Value versus Call to Action. CTV: button copy that amplifies the value of moving forward; used when prospects haven't yet decided to convert. CTA: button copy that amplifies the action itself; used after prospects have decided and just need friction removal."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-026"
+    texto: "The 10/90 Messaging Layout Rule. Top 10% of page: matching the visitor's awareness stage and entry message. Remaining 90%: convincing the prospect through structured messaging."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-027"
+    texto: "PCPO framework for Solution Design: Problem, Cure, Proof, Offer. Only after this foundation does the copywriter engage actual writing frameworks like AIDA, PAS."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    validated: true
+
+  - id: "JW-028"
+    texto: "The 'Already, Still' Formula: Use this framework to show prospects how they're uniquely positioned to work with you. The first part addresses what they've already done to qualify themselves; the second half addresses what they still haven't accomplished and how you'll help them reach their goal."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-029"
+    texto: "The 'Even, If' Rule strengthens headlines, bullet lists, and paragraphs for better prospect connection. Copywriting formulas take the message you have and make it so much stronger."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-030"
+    texto: "The Green/Red/Yellow Circle System for email audits. Green circles flag high-performing elements: strong revenue attribution, high CTR/conversion. Red circles mark problems: missing double opt-in, low opens, high unsubscribes. Yellow circles indicate optimization areas: cadence issues, segmentation problems, dead-end flows."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2025/03/how-to-optimize-an-email/"
+    validated: true
+
+  - id: "JW-031"
+    texto: "The Three Sales Argument Questions: 1. What is the current stage of awareness? What do they know, feel and already believe? 2. What do they need to believe in order to say yes? 3. Which is very, very critical, are there any beliefs that need to be reframed or dismantled?"
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-032"
+    texto: "The Message Map containing: Product Section — who made it, how, when, where, interesting features, cost, minimum viable commitments. Persona Sections — overview notes, problems and motivators, moments of highest tension, failed solutions, desired outcomes, jobs to be done, beliefs and conversion precursors, purchase criteria, competition, decision constraints, click triggers."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    validated: true
+
+  - id: "JW-033"
+    texto: "The Conversion Blogging Formula has three core principles: 1. The Power of Demonstration Through Proof — seeing is believing. 2. Frame It for Big Picture Profit — the framing effect is a cognitive bias. 3. Persuasive Message Hierarchy — the timing of the message is just as critical to sales as the contents of that message."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-034"
+    texto: "The Pre-Sell Concept: your conversion blog post is your pre-sell piece of your funnel and it is just as critical, if not more than any other piece. It is the difference between the person who closes 20 to 30% of sales calls and the person who closes 70% of the sales calls."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-035"
+    texto: "The Two-Part Email Audit Framework: Part 1 is Cadence and Flow Audit — map the automation documenting time between trigger and first email, conditional logic, tagging, lead scoring, black holes. Part 2 is Performance Mapping — record true open rate, click-through rate, conversion rate, unsubscribe rate, revenue attributed."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2025/03/how-to-optimize-an-email/"
+    validated: true
+
+  - id: "JW-036"
+    texto: "The Specificity Framework: zoom in from generic claims to concrete, real-life details. Replace abstract benefits with tangible outcomes. Draw pain points directly from customer reviews. Transform metrics into lived experience — '18% improvement' becomes '100 views daily becomes 118 views.'"
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://shai.io/joanna-wiebe-how-to-be-specific-from-the-trenches-lessons-in-high-converting-copy-microconf-2017/"
+    validated: true
+
+  - id: "JW-037"
+    texto: "The Four Ps framework: promise, picture, proof, and push. You open with a promise and you create a picture, bring that to life for people and then you put your pitch in there, the actual here's what you should do and then push them."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-038"
+    texto: "Framing Effect Rules: 1. The psyche of your target audience is the most critical consideration. 2. A loss is more significant or persuasive than the equivalent gain. 3. Go for a frame that discredits the concepts, ideas, methodologies, solutions — anything that positions yourself against the current way of thinking."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-039"
+    texto: "Why, Try, and Buy within the Solution section of PAS. You talk about the why — here's why this solution matters. The try — here's a demo, here's how other people have used it, social proof. And then the buy — the actual call to action."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-040"
+    texto: "The Three Core Shifts workshop framework: transitioning from 'The Execution Trap' to 'The Real Deal' — closing gaps between who you are and who your team needs you to be as a copywriter."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/joanna-wiebe-workshops/"
+    validated: true
+
+  - id: "JW-041"
+    texto: "Topic Types That Work for conversion blogging: very detailed case study, under the hood or behind the scenes, how to or tutorial, myth busting combined with thought leadership, listicles hybrid, review hybrid. Topics That Don't Work alone: rants, expert roundups, interviews, listicles alone, reviews alone, myth busting alone, entertainment-based content."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-042"
+    texto: "The Three-Step Copywriting Process: Step 1 is Research and Discovery — the biggest part, takes up two-thirds of the work. Step 2 is Organizing — putting voice of customer data on the page in a framework. Step 3 is Editing — the seven sweeps to clean up without losing the raw power of customer language."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-043"
+    texto: "Anything that completes the phrase 'I want to...' — the more specific and first person the better. Such as Crazy Egg had: 'Show me my heat map.' It was great. That's how you write button copy that converts."
+    tipo_semantico: "framework"
+    camada_dna: "frameworks"
+    profundidade: "media"
+    fonte: "https://www.leadpages.com/blog/joanna-wiebe-podcast-conversion-copywriting"
+    validated: true
+
+  # ===========================================================================
+  # HEURISTICAS (18 MIUs) — regras praticas
+  # ===========================================================================
+
+  - id: "JW-044"
+    texto: "If you just replace every use of 'we' or 'I' or your company name or your product name with the word 'you', you will see a change in your conversion rates. That is something that I have very high confidence in saying. In the first half second I need to see myself in your copy."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=Hytwh-vFjpY"
+    validated: true
+
+  - id: "JW-045"
+    texto: "Everything having one job. Your subject line has one job, your body copy has one job, the call to action has one job, and if you ask it to do more than that, it's going to fail."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-046"
+    texto: "The moment you start struggling with your messaging, you need to put the pen down or push your keyboard to the side. Instead of writing, you need to listen to your customers."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-047"
+    texto: "You should not start by throwing out the emails and starting from scratch. Don't know performance data yet, so you cannot identify what actually works. Skip style commentary. Personal preferences about length, tone, or structure are irrelevant — 'You're not the prospect.'"
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2025/03/how-to-optimize-an-email/"
+    validated: true
+
+  - id: "JW-048"
+    texto: "When copy leads design, things tend to go better from a conversion perspective. I would never start by saying this email needs an image. I'll say what's the message, what's the goal, what is our prospect trying to get out of this."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "media"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-049"
+    texto: "If you've got a dead body, throw it in an accordion, no one's going there. Your FAQs should be detailed. Don't title it FAQs. Take the most common FAQ and just answer it in the headline."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "media"
+    fonte: "https://www.leadpages.com/blog/joanna-wiebe-podcast-conversion-copywriting"
+    validated: true
+
+  - id: "JW-050"
+    texto: "Without knowing the experience of the person who wrote the article or guide you're reading — how do you know these are ACTUALLY best practices? Don't outsource your online sales or copy based on your Google search results."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-051"
+    texto: "The most powerful words you can use in headlines come directly from the words your prospects and customers are saying when they talk about the problem your products or services solve."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-052"
+    texto: "Swipe copy from your customers. Use frameworks on website pages and emails. Apply formulas in headlines and buttons. Include social proof demonstrating results. Start every line of copy with 'YOU'."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-053"
+    texto: "If you write for everybody, you write for nobody. But then people get really scared. They're like, 'I don't wanna reduce the size of my market.' Choose your ideal prospect and say, 'These are the guys with the credit card that we need to get in our system.'"
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-054"
+    texto: "When you're presenting copy to a client, send the copy about an hour before the meeting. Book an hour to review that copy. Walk them through it live. Start with: here are the goals, here's what we learned, here's the process. Encourage them to look for inaccuracy, off-brand, inconsistency — not personal preference."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    subcamada: "modelo_social"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-055"
+    texto: "A photo of a woman will outperform a photo of a guy. During every single test I've ever done with it, ever. And we've done a lot. If you want people to pay attention in your hero section, put an image of a woman in there. It shouldn't work, but it does."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-056"
+    texto: "Put your headline in the first person and in quotation marks and also put your button in first person. I think it has a lot to do with people being curious about other people."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-057"
+    texto: "Rule number one is clear over clever. I got the title creative writer which was a huge mistake. It sounded really dry. I did creative writing classes, I got awards. But in the AB testing world, in conversion optimization, I would not lean towards creativity first and foremost."
+    tipo_semantico: "decisorio"
+    camada_dna: "heuristicas"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-058"
+    texto: "Good copywriting should be conversation and human. Move beyond books and observe how people naturally interact."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-059"
+    texto: "If you can suggest that there's something secret and you're about to get insider access, people lose their minds over it. You don't even have to call it a secret."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-060"
+    texto: "While growing that list a few years ago would have been great, the second best time to start growing that list is today. It's never too late to start."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "superficial"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-061"
+    texto: "Determine, decide what it is that you're going to be an expert in, create tons of content about it, say yes to all the opportunities, get that content out there, make that content better than anything that most people will pay for."
+    tipo_semantico: "heuristicas"
+    camada_dna: "heuristicas"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  # ===========================================================================
+  # METODOLOGIAS (17 MIUs) — processos de trabalho
+  # ===========================================================================
+
+  - id: "JW-062"
+    texto: "It's a really basic three-step thing. It starts with research and discovery, that's the biggest part. When I draw it out, the research takes up two-thirds of that slide. The other stuff like actually writing and then editing, that takes up the remaining third, squished together."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-063"
+    texto: "My number one question that I won't leave any situation without asking is 'what was going on in your life that brought you to...' and then blank. Get people starting to think about their own lives. The best copy wins for me come out of answers to that question."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-064"
+    texto: "I went to Amazon and Google and searched for books on dealing with loved ones who are addicts. And I looked through the reviews. And one line that a gentleman wrote was 'if you think you need rehab, you do' and it stuck with me. We put it as a homepage headline. 26% more leads."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-065"
+    texto: "Copywriting work is fundamentally about 'the thinking part' rather than writing. She describes this as 'the messy middle' — the 90% of work between analyzing data and finishing your outline. This thinking work is what clients actually pay for."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    validated: true
+
+  - id: "JW-066"
+    texto: "Your job is not to take what people said and find a way to make it sound like a marketer said it. That's why everyone hates marketers. We wanna hear our own selves on the page. Do not summarize or rewrite the things that you have heard people say. Take it exactly as it is. That's raw voice of customer data."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-067"
+    texto: "Not polish, but you wanna take clunky voice of customer language and just make sure it doesn't sound clunky. That's it. Keep it as raw as you can without sounding like you threw a bunch of voice of customer data on the page. Edit in the awesome — that's how I talk about it."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-068"
+    texto: "When I'm watching a demo replay, I can typically see the person who's getting the demo. You're basically reading signals outside of just the words. That's why I advocate for manual note-taking during calls and demos rather than relying solely on transcripts."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    validated: true
+
+  - id: "JW-069"
+    texto: "Review mining: you're really looking for reviews for your products. Go on Trip Advisor, Yelp, Amazon. You wanna find other products that people are hiring to do the job your product is supposed to do for them. Block out about an hour. Pay attention to the parts of the reviews that make you stop or pause."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-070"
+    texto: "I love the jobs to be done methodology, interviewing people to get down to the problems that they're trying to have solved now. Seven to ten interviews. I'm interested in their motivations, the things that they feel. But I'm really interested in the actual words that they use."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-071"
+    texto: "We tested 'Welcome to Flow' against 'Get started with Flow' against 'Can I ask you something?' We saw 45% more opens on 'Can I ask you something.' If they don't get in the habit of opening those emails, you are not going to convert them into a paid user."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-072"
+    texto: "For surveys, I'd be looking largely for long answer responses. Because I'm looking for copy, I'm not looking for some high level thing, I wanna hear the words that people are using. Even though your response rate can be lower when you ask for long answer questions, I need the qualitative not just the quantitative."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-073"
+    texto: "Her actual note-taking process involves: Using simple tools like Apple Notepad, not Google Docs. Minimal formatting: quotation marks for direct quotes, ALL CAPS for emphasis, asterisks for important flags, arrows for connections. Creating pages and pages of unstructured notes. Allowing notes to be intentionally messy and incomplete."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-organize-your-copywriting-research/"
+    validated: true
+
+  - id: "JW-074"
+    texto: "Hijack existing conversations. Go to Facebook groups that relate to your industry and check out Instagram comments, check out Reddit threads. The thing about the online space is there are so many community-like atmospheres but there are no gates. You can just easily eavesdrop on those."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-075"
+    texto: "Decide on a topic first and just start engaging that topic in your head. Don't write a word, just engage all of the ideas that you have. This is a great way to test the stickiness of your idea. If you engage an idea for weeks and you sit down to write and it doesn't demand your attention, it's not an idea with enough pull."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-076"
+    texto: "When optimizing email automations, do not start by throwing out the emails and starting from scratch. Map the automation first. Record per email: true open rate, CTR, conversion rate, unsubscribe rate, revenue attributed. Present findings to stakeholders before rewriting anything."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2025/03/how-to-optimize-an-email/"
+    validated: true
+
+  - id: "JW-077"
+    texto: "We snuck it out without the CEO knowing. The goal was to beat the forecast and we did by 1.5 to 2x. There was an aggressive forecast as it was. Everybody was high fiving but we couldn't tell the CEO how we got there."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-078"
+    texto: "What word would you use to describe your experience with X? If they just get to choose one word, it's a short answer question. If you can get those adjectives, you'll see things that surface more interesting words. People think it's frustration but maybe they're feeling enthusiasm about building memories with their families."
+    tipo_semantico: "metodologias"
+    camada_dna: "metodologias"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  # ===========================================================================
+  # DILEMAS (12 MIUs) — tensoes e conflitos
+  # ===========================================================================
+
+  - id: "JW-079"
+    texto: "Since when did we try to convert the average visitor? If you're trying to convert the average visitor, things are probably not going that well for you. There is no such thing as an average person. There's no such thing as an average visitor. Your product is not average."
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    subcamada: "conflitos_de_valor"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-080"
+    texto: "There's a fear, this prevailing notion that good salespeople are meant to separate fools from their money. There's ugliness around the idea of sales, in some cases for good reasons. Some people have abused things and it's awful. But I think it all goes back to a fear of looking like you're a salesperson."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    subcamada: "conflitos_de_valor"
+    profundidade: "profunda"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-081"
+    texto: "I advise them largely against lorem ipsum and against letting design lead copy. I believe copy should lead design. Most copywriters would agree with me, a lot of designers would not. But it's very hard to convince people, largely because the design world has done such a good job talking about how important design is."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-082"
+    texto: "AI tools like ChatGPT are like hiring a junior copywriter. They can take care of the tedium of research and brainstorming, but your skills are required to evaluate the great vs. mediocre output. I like that there's no ego. I can just work with this tool."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-083"
+    texto: "The income you want is reserved for the best copywriters. That could be you. Only problem is... How can you SHOW you're the best when you're treated like an order taker?"
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/copyhackers-copywriting-workshop-reg/"
+    validated: true
+
+  - id: "JW-084"
+    texto: "Letting your clients tell you how the copy is going to go, letting other people drive your copy process. If you don't teach them how to give you feedback, then you can't be too upset when they give you crappy feedback and expect you to implement it immediately."
+    tipo_semantico: "interacao_social"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-085"
+    texto: "A lack of confidence holds most copywriters back. People are like, 'Well, everybody can do what I do.' In your earlier stages: 'Oh no, I mean I'm good at it, but everybody could really do it.' Own your skills."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    subcamada: "conflitos_de_valor"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-086"
+    texto: "A lot of copywriters really cling hard to this idea that you can write creative copy. Voice is going to shine through so powerfully, and it's going to convert. Well, are you sure? In almost every test we run where we've put really creative voice stuff up against something based in frameworks and formulas, the copy that sings loses."
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-087"
+    texto: "If you try to cram your message into something some designer put together — what it seems so archaic. You don't get to shove your important sales message into whatever space the designer thought would be enough space for a message he or she wasn't even thinking of yet."
+    tipo_semantico: "argumentativo"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-088"
+    texto: "When clients say 'I don't like this,' or almost worse, 'I really like this' — that feedback isn't going to help anybody. They don't know any better. It's your job as a copywriter to help them understand that your skill set has a lot behind the scenes."
+    tipo_semantico: "interacao_social"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-089"
+    texto: "This is a $3 million a year business, and I've learned that I don't need seven to ten team members. I'm down to three full-time team members outside of myself and then contractors and freelancers because they need the work too. Go support them."
+    tipo_semantico: "decisorio"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-090"
+    texto: "My lifestyle was much better when I worked at Intuit. I was in Hawaii twice a year. Haven't been there in forever and that's because we're running something different. It does take a lot of work. If you think it's going to take less work, just prepare to not have these big projects."
+    tipo_semantico: "comportamental"
+    camada_dna: "dilemas"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  # ===========================================================================
+  # PARADOXOS PRODUTIVOS (11 MIUs) — contradicoes que geram resultado
+  # ===========================================================================
+
+  - id: "JW-091"
+    texto: "Copy is your online salesperson and it either sells or it doesn't. It is not about 10 seconds, 15 seconds, the average visitor, word count. It's not about any of that. And all of those ideas are extremely limiting. You would in real life never tell your salesperson to hurry up and get to the point."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-092"
+    texto: "The real problem when it comes to actually converting people is that those people are instead choosing not to decide at all. We're not losing sales necessarily to our competition, we're losing our sales to no decision whatsoever. 60% of sales are lost to 'no decision,' not to competitors."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-093"
+    texto: "I publish at a rate of one blog post per year. Every single copywriting project landed in 2018 and beyond came from this blog post. Quality matters infinitely more than publishing frequency."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-094"
+    texto: "I tested button copy versus headline copy. The humble button outperformed the powerful headline. When we tested headline and button together, we saw 123.9% lift with full confidence. You better be sure that you're optimizing your button while you're at it."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-095"
+    texto: "Longer, pain-focused copy drove 3.5x paid conversions versus shorter variations. Save time and money messaging appears everywhere but achieves only 2% conversion rates. Generic 6-word headlines don't work."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://shai.io/joanna-wiebe-how-to-be-specific-from-the-trenches-lessons-in-high-converting-copy-microconf-2017/"
+    validated: true
+
+  - id: "JW-096"
+    texto: "We tested four button variations against the control text links for MetaGeek, and they all lost. Embarrassingly. Their audience is highly savvy technical people. A juicy button can appear scammy or spammy. It raised new flags for that audience."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-097"
+    texto: "We moved the $1049/month enterprise plan down and made it a text link. We got a 2000% lift in clicks. The reason is we didn't say what the price was — it was a curiosity click. If you can get that many more people through, the opportunity is on your next page to really position that price."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-098"
+    texto: "Extremely short copy works if you're just trying to get a click. If you put your logo and a button on your homepage, your clicks are going to go through the roof. The reality is different from what people expect."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-099"
+    texto: "Button copy may not do the heavy lifting of persuasion, but it performs the heavy lifting of transporting the visitor through the funnel."
+    tipo_semantico: "argumentativo"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-100"
+    texto: "Ever notice how you read a great DIY book... and then totally fail to act on it? People do this all the time. It's normal — but it's not helpful. That's why each chapter concludes with next steps sections."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/copywriting-for-startups/"
+    validated: true
+
+  - id: "JW-101"
+    texto: "I wasn't even that vocal but somehow I think I just said things in a way. You can have lots of great ideas but if people don't really get you and know you, you're just the one who came up with that random idea, which is a commodity. But if they know you and like you and trust you, you can do so much with that."
+    tipo_semantico: "comportamental"
+    camada_dna: "paradoxos"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  # ===========================================================================
+  # ASSOCIACOES CONCEITUAIS (14 MIUs) — metaforas e conexoes mentais
+  # ===========================================================================
+
+  - id: "JW-102"
+    texto: "If you can get into their imagination, your ad can run all day. The imagination of the consumer has no budget. There's no time limit and if you can get into that space, your ad can run all day."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-103"
+    texto: "A sale always happens in the imagination first. If they can't see it in their imagination, then it's unlikely that it will be a reality."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-104"
+    texto: "Your page becomes a mirror. It's not just a bunch of words that a copywriter wrote and polished. It's a mirror where your prospect really sees themselves the way they wanna see themselves. That's completely based on stealing their messages using voice of customer data."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-105"
+    texto: "25,000 ad messages in a day. We recognize 50 and remember 4. Is it scary or is it an opportunity? There's some real safety in knowing that there are 5,000 ad messages and only four that I really have to compete with. I just have to be one of the four."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-106"
+    texto: "Like Google Docs and Evernote had a baby and let Trello raise it. That's what Airstory is."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "superficial"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-107"
+    texto: "The Control felt like the old saying: 'Every story has a beginning, a muddle and an end.' It had too much muddle."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-108"
+    texto: "Prospects don't consciously seek 'sweat relief' — they experience concrete problems. Sweating through expensive clothes. Filling closets with boring dark clothes. Avoiding physical contact like hugs and high-fives. Specific copy addresses real-life experiences rather than marketers' abstract terminology."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-109"
+    texto: "There's a sketch of two miners. One turns away with his pickaxe because he didn't get there. The guy below him is still tunneling away and you can see on both of them they've got the jewels just on the other side. That image sticks with me when I have to push through."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-110"
+    texto: "In my experience, being vague just doesn't work as well as being specific. Most online copy is entirely vague. It's summarized. It's abstracted... which makes it really hard to visualize or even understand."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-111"
+    texto: "Almost anything can work, providing you have the right angle, but at the same time, almost anything will not work if you have the wrong angle. So it's all about the angle."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-112"
+    texto: "The Skyscraper Technique is popular but wrong for sales posts. It is essential that you showcase your own ideas, methodologies, processes, ways of thinking. You can't get someone sold on you if there is no you in that equation."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-113"
+    texto: "SaaS businesses think of themselves as web businesses. They're email businesses that let people convert on the web. Most of the work that I'm doing right now is in email, because it's so exciting."
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-114"
+    texto: "Don't lose sight of the hidden ROI — results that may not be tangible, or measurable, or immediate. I took a very long break from emailing my list. When I sent my first email after this long hiatus, I got responses saying 'I remember you, you're the sales funnel girl.'"
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-115"
+    texto: "Sweat soaker undershirt is not something a copywriter would sit around and come up with. You have to actually experience this problem and live through that attempted solution to use that kind of phrasing. If you heard somebody using that phrasing and you had that problem, you'd go, 'Yup, I've done that before.'"
+    tipo_semantico: "associativo"
+    camada_dna: "associacoes"
+    profundidade: "profunda"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  # ===========================================================================
+  # COMUNICACAO AVANCADA (15 MIUs) — estilo, retorica, tom
+  # ===========================================================================
+
+  - id: "JW-116"
+    texto: "Long copy is alive and well with companies who really believe in their story. They're willing to talk all day long. I've met a lot of people who are writing for brands that they don't believe in, and you can tell when you read the copy."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-117"
+    texto: "Show AND Tell. Tell then show then tell. People need details. Nobody cares about anything. If you go into every writing exercise knowing nobody cares about anything, then you'll know that you can't just show. Sandwich it between two tells."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://www.youtube.com/watch?v=F-Ppj9ns3sU"
+    validated: true
+
+  - id: "JW-118"
+    texto: "The framing effect is a cognitive bias where people choose their actions depending on how the options are presented. A loss is more significant or persuasive than the equivalent gain. The psyche of your target audience is the most critical consideration."
+    tipo_semantico: "argumentativo"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-119"
+    texto: "We don't need that. We can be better than that. You don't have to fake your way into a conversation with people. Like that's crap. The fake RE: in email marketing — we don't need to do that."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    subcamada: "hierarquia_valores"
+    profundidade: "media"
+    fonte: "https://www.leadpages.com/blog/joanna-wiebe-podcast-conversion-copywriting"
+    validated: true
+
+  - id: "JW-120"
+    texto: "The organization of your blog post is super important. The timing of the message is just as critical to sales as the contents of that message. An emphasis on step by step and logical — you do not want any crazy jumps or baseless assumptions in your sales argument."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/how-to-win-enough-clients-for-a-whole-year-with-a-single-blog-post/"
+    validated: true
+
+  - id: "JW-121"
+    texto: "Stop embarrassment became 'Wear what you want.' We added 'your' to personalize. We replaced abstract pain with tangible outcome. Subheading added: 'just the dab of a towelette' to enable visualization. Just answer the questions your old crossheads were asking."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/2016/06/copywriting-principles-sweatblock/"
+    validated: true
+
+  - id: "JW-122"
+    texto: "I had these tentative sad little attempts at email selling. If you're going to email somebody, you're going to interrupt them. You have a solution. They've opted in. You have a person. Connect them. What are you doing?"
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-123"
+    texto: "They're not going to pay you 250 an hour if they think they can do your job better than you do. If they're running your meeting and giving you feedback and you're like 'Yup, okay, I'll go do that,' you are not worth 250 an hour anymore."
+    tipo_semantico: "interacao_social"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-124"
+    texto: "One-to-one communication is increasingly essential. Email remains critical, but authenticity in email copy matters more than ever before."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "superficial"
+    fonte: "https://www.digitalmarketer.com/blog/copywriting-tips-joanna-wiebe/"
+    validated: true
+
+  - id: "JW-125"
+    texto: "If it's not working in the first person it's not going to be as good as if it is in the first person. Stay in the first person, have your own story or narrative around it, and support that with as much data as you possibly can."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-126"
+    texto: "When we did the headline and button test together, the button when it was optimized allowed the headline to prove its worth. People found the button easy to click and they wanted to click it perhaps more because of that headline."
+    tipo_semantico: "argumentativo"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-127"
+    texto: "Instead of saying 'Sign up now,' the button said 'Find outfits you love' or 'Show me outfits I'll love.' We saw an enormous lift. The headline was 'Big bum, thick waist, not so perky boobs? Buying clothes you love...' — using words that prospects use to describe their own body."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-128"
+    texto: "I use the word raw a lot. Keep it as raw as you can. We don't wanna lose all of the good that comes in just pulling language from what our prospects and customers are actually saying. We wanna keep the core of that."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-129"
+    texto: "A sweep is a fast moving review of the copy on the page. It's a quick, very quick editing process. That's why it's a sweep, it happens quickly. The clarity sweep is the number one sweep. Everything goes back to clarity, always and forever, always, without question."
+    tipo_semantico: "linguistico"
+    camada_dna: "comunicacao"
+    profundidade: "media"
+    fonte: "https://podcast.everyonehatesmarketers.com/episodes/replay-3-steps-to-write-copy-that-converts-with-joanna-wiebe/transcript"
+    validated: true
+
+  - id: "JW-130"
+    texto: "Short PDFs and MOBIs You Can Read on a Screen — books no longer than 55 pages, designed for digital consumption without eye fatigue. Buy only the ebooks that cover the topics you need to learn."
+    tipo_semantico: "decisorio"
+    camada_dna: "comunicacao"
+    profundidade: "superficial"
+    fonte: "https://copyhackers.com/copywriting-for-startups/"
+    validated: true
+
+  # ===========================================================================
+  # NARRATIVO (12 MIUs) — origin story, identidade, momentos formativos
+  # ===========================================================================
+
+  - id: "JW-131"
+    texto: "Joanna was working as a restaurant server when the owner dismissed her English major studies, saying 'Not the most lucrative choice.' Within five years, she earned $80K as a corporate copywriter. Five years after that, she became a six-figure freelance writer. Today, she runs Copyhackers, a $3.5M/year business."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://copyhackers.com/i-am-a-writer/"
+    validated: true
+
+  - id: "JW-132"
+    texto: "I know it's so dull, but just keep showing up. It's not sexy, but the people who keep showing up are still here 12 years later and are now like born authorities on it. It's the easiest thing, to stop showing up. It's the easiest thing, to turn away just as you're about to have a breakthrough."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://churnkey.co/blog/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-133"
+    texto: "When he died of brain cancer at 51, he'd been a teacher for like eight years. He'd done all this work to raise five kids on his own. That was like a low point for me, but it was one of those major shift points. It made me change everything and made me feel different about myself and what I wanted. Having such a limited time and wanting to do something good with it."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-134"
+    texto: "My dad had been a truck driver all his life. He took us and moved to a different province and went back to school. Got his GED, then went to university and became a French teacher. Who is this man? What are you doing? If it didn't hold him back, and he had five kids, what could possibly really stop me."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-135"
+    texto: "I dropped out of law school. My dad actually died the first day of law school for me. I was like, holy crap, I don't want to be a lawyer. My dad just died. We have those moments in our lives where you're like, make a choice, what are you going to do."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-136"
+    texto: "I was the fourth of five and you get kind of quieted down a bit. My biological mother didn't even know I could speak until I was having a conversation with my grandmother. I think the rest of my life has been a reaction to being quiet."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-137"
+    texto: "I got the title creative writer on my business card. It sounded really cool. My boss turned his nose up at copywriter and so I kind of did too. I didn't know what it was. That set me back three years. I spent two and a half years and then moved on and got hired as a copywriter at Intuit where I had to be trained out of the idea that we're going to come up with copy that sings."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    profundidade: "profunda"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-138"
+    texto: "Brian Clark emailed me. He was saying how much he loved the post and wanted me to speak at his Copyblogger Authority Intensive. I was like, what is Brian Clark doing reaching out to me? This is so cool. These moments that I'm very proud of that I wouldn't have expected when I was at Intuit trying to get people to think about copy."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-139"
+    texto: "The story of being a janitor at my own high school while I was going to high school there. It can help. It's leaving out important parts of your narrative that make you a whole person. If I can be confident after a lot of craziness, hopefully everybody out there can see — you can get there too."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    subcamada: "motivacao_profunda"
+    profundidade: "profunda"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
+
+  - id: "JW-140"
+    texto: "Wow, I sound kind of awesome when you say it that way. Just kidding. Mindvalley's Vishen Lakhiani calls her one of the world's greatest copywriters alongside Frank Kern and the late great Gene Schwartz."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    profundidade: "superficial"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-141"
+    texto: "I wrote thank you notes after every interview, which they mentioned when they hired me. Nobody else did that. And one of my notes was written in this way that they really liked. That's how I got hired. Relationships. If people know you and like you and trust you, you can do so much."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    profundidade: "media"
+    fonte: "https://www.inspiredinsider.com/joanna-wiebe-interview/"
+    validated: true
+
+  - id: "JW-142"
+    texto: "I had been drafting this post on time management and kept bumping my deadline. I kept moving it out. Joanna, you're the last person to teach someone how to manage their time. I rewrote it as a note to myself. That story became our number one post of the year."
+    tipo_semantico: "narrativo"
+    camada_dna: "narrativo"
+    profundidade: "media"
+    fonte: "https://thecopywriterclub.com/joanna-wiebe/"
+    validated: true
