@@ -1,0 +1,238 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Detect what changed so downstream jobs can skip unnecessary work
+  # ---------------------------------------------------------------------------
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
+      templates: ${{ steps.filter.outputs.templates }}
+      docs: ${{ steps.filter.outputs.docs }}
+      config: ${{ steps.filter.outputs.config }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            code:
+              - 'src/**'
+              - 'bin/**'
+            templates:
+              - 'templates/**'
+            docs:
+              - 'docs/**'
+              - '*.md'
+            config:
+              - '.github/**'
+              - 'package.json'
+
+  # ---------------------------------------------------------------------------
+  # Lint & syntax check (no eslint config yet, so use node --check)
+  # ---------------------------------------------------------------------------
+  lint:
+    runs-on: ubuntu-latest
+    needs: changes
+    if: needs.changes.outputs.code == 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax check all .mjs files
+        run: |
+          echo "Checking JavaScript syntax..."
+          errors=0
+          while IFS= read -r file; do
+            if ! node --check "$file" 2>&1; then
+              errors=$((errors + 1))
+            fi
+          done < <(find src/ -name '*.mjs' -o -name '*.js' 2>/dev/null)
+          if [ "$errors" -gt 0 ]; then
+            echo "::error::$errors file(s) failed syntax check"
+            exit 1
+          fi
+          echo "All files passed syntax check."
+
+  # ---------------------------------------------------------------------------
+  # CLI smoke tests across Node 18, 20, 22
+  # ---------------------------------------------------------------------------
+  cli-test:
+    runs-on: ubuntu-latest
+    needs: changes
+    if: needs.changes.outputs.code == 'true'
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Show Node.js version
+        run: node --version
+
+      - name: CLI --help exits 0
+        run: node src/cli.mjs --help
+
+      - name: CLI --version exits 0
+        run: node src/cli.mjs --version
+
+      - name: Unknown command exits non-zero
+        run: |
+          if node src/cli.mjs --this-flag-does-not-exist 2>/dev/null; then
+            echo "::error::Expected non-zero exit for unknown command"
+            exit 1
+          fi
+          echo "Correctly returned non-zero exit code."
+
+  # ---------------------------------------------------------------------------
+  # Template integrity — verify structure and validate JSON
+  # ---------------------------------------------------------------------------
+  template-check:
+    runs-on: ubuntu-latest
+    needs: changes
+    if: needs.changes.outputs.templates == 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required template directories exist
+        run: |
+          errors=0
+          for dir in templates/*/; do
+            echo "Found: $dir"
+          done
+          if [ ! -d "templates/" ]; then
+            echo "::error::templates/ directory is missing"
+            exit 1
+          fi
+          count=$(find templates/ -mindepth 1 -maxdepth 1 -type d | wc -l)
+          if [ "$count" -eq 0 ]; then
+            echo "::error::No template directories found under templates/"
+            exit 1
+          fi
+          echo "Found $count template directory(ies)."
+
+      - name: Verify key template files exist
+        run: |
+          errors=0
+          while IFS= read -r dir; do
+            name=$(basename "$dir")
+            # Each template should have at least one file
+            file_count=$(find "$dir" -type f | wc -l)
+            if [ "$file_count" -eq 0 ]; then
+              echo "::error::Template '$name' has no files"
+              errors=$((errors + 1))
+            else
+              echo "Template '$name': $file_count file(s)"
+            fi
+          done < <(find templates/ -mindepth 1 -maxdepth 1 -type d)
+          if [ "$errors" -gt 0 ]; then
+            exit 1
+          fi
+
+      - name: Validate JSON files in templates/
+        run: |
+          errors=0
+          while IFS= read -r file; do
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "::error::Invalid JSON: $file"
+              errors=$((errors + 1))
+            else
+              echo "Valid: $file"
+            fi
+          done < <(find templates/ -name '*.json' -type f)
+          if [ "$errors" -gt 0 ]; then
+            echo "::error::$errors JSON file(s) are invalid"
+            exit 1
+          fi
+          echo "All JSON files are valid."
+
+  # ---------------------------------------------------------------------------
+  # MCP server syntax check (Python)
+  # ---------------------------------------------------------------------------
+  mcp-check:
+    runs-on: ubuntu-latest
+    needs: changes
+    if: needs.changes.outputs.code == 'true' || needs.changes.outputs.templates == 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax check Python files in MCP server templates
+        run: |
+          found=0
+          errors=0
+          while IFS= read -r file; do
+            found=$((found + 1))
+            if ! python -m py_compile "$file" 2>&1; then
+              errors=$((errors + 1))
+            else
+              echo "OK: $file"
+            fi
+          done < <(find templates/mcp-servers/ -name '*.py' -type f 2>/dev/null)
+          if [ "$found" -eq 0 ]; then
+            echo "No Python files found in templates/mcp-servers/ — skipping."
+            exit 0
+          fi
+          if [ "$errors" -gt 0 ]; then
+            echo "::error::$errors Python file(s) failed syntax check"
+            exit 1
+          fi
+          echo "All $found Python file(s) passed syntax check."
+
+  # ---------------------------------------------------------------------------
+  # Security scan — catch accidentally committed secrets
+  # ---------------------------------------------------------------------------
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for committed .env files
+        run: |
+          env_files=$(find . -name '.env' -o -name '.env.*' | grep -v node_modules | grep -v '.env.example' || true)
+          if [ -n "$env_files" ]; then
+            echo "::error::Found committed .env file(s):"
+            echo "$env_files"
+            exit 1
+          fi
+          echo "No .env files found in repository."
+
+      - name: Scan for common secret patterns
+        run: |
+          patterns=(
+            'AKIA[0-9A-Z]{16}'                    # AWS Access Key
+            'sk-[a-zA-Z0-9]{20,}'                 # OpenAI / Stripe secret key
+            'ghp_[a-zA-Z0-9]{36}'                 # GitHub personal access token
+            'gho_[a-zA-Z0-9]{36}'                 # GitHub OAuth token
+            'xoxb-[0-9]+-[0-9]+-[a-zA-Z0-9]+'    # Slack bot token
+            '-----BEGIN (RSA |EC )?PRIVATE KEY-----'  # Private keys
+          )
+          errors=0
+          for pattern in "${patterns[@]}"; do
+            matches=$(grep -rEn "$pattern" --include='*.js' --include='*.mjs' --include='*.py' --include='*.json' --include='*.yml' --include='*.yaml' --include='*.toml' --include='*.cfg' . 2>/dev/null | grep -v '.github/workflows/ci.yml' || true)
+            if [ -n "$matches" ]; then
+              echo "::error::Potential secret found matching pattern: $pattern"
+              echo "$matches"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ "$errors" -gt 0 ]; then
+            echo "::error::Found $errors potential secret pattern(s) in source files"
+            exit 1
+          fi
+          echo "No secrets detected."

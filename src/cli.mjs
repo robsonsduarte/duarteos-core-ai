@@ -1,5 +1,7 @@
 import { init } from './init.mjs'
 import { update } from './update.mjs'
+import { doctor } from './doctor.mjs'
+import { validate } from './validate.mjs'
 import { showHelp, showVersion } from './utils.mjs'
 
 export function run(args) {
@@ -27,6 +29,16 @@ export function run(args) {
     const flags = args.filter(a => a.startsWith('--'))
     const force = flags.includes('--force') || flags.includes('-f')
     update({ force })
+    return
+  }
+
+  if (command === 'doctor') {
+    doctor(process.cwd())
+    return
+  }
+
+  if (command === 'validate') {
+    validate(process.cwd())
     return
   }
 

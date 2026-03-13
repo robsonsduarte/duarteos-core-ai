@@ -1,0 +1,46 @@
+# =============================================================================
+# DuarteOS - LiteLLM Proxy para Roteamento de LLMs
+# =============================================================================
+# Redireciona chamadas de modelos caros para alternativas mais baratas,
+# mantendo a mesma interface de API. Inspirado no aiox-core.
+#
+# Uso:
+#   cp .env.example .env
+#   # Preencha as chaves no .env
+#   docker compose up -d
+# =============================================================================
+
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:v1.55.10-stable
+    container_name: duarteos-litellm-proxy
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    command:
+      - "--config"
+      - "/app/config.yaml"
+      - "--port"
+      - "4000"
+    env_file:
+      - .env
+    environment:
+      # Chaves de API dos provedores (definidas no .env)
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - llm-routing
+
+networks:
+  llm-routing:
+    driver: bridge
+    name: duarteos-llm-routing

@@ -1,0 +1,98 @@
+# =============================================================================
+# DuarteOS - Configuração do LiteLLM Proxy
+# =============================================================================
+# Estratégia de roteamento:
+#   - claude-3-5-sonnet → DeepSeek (economia de custo)
+#   - claude-3-5-haiku  → DeepSeek (economia de custo)
+#   - claude-opus-4     → Anthropic direto (tarefas críticas)
+#   - OpenRouter como fallback geral
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Configurações gerais
+# -----------------------------------------------------------------------------
+general_settings:
+  completion_model: deepseek/deepseek-chat
+  master_key: null  # Defina se quiser proteger o proxy com autenticação
+
+litellm_settings:
+  # Tentativas e timeouts
+  num_retries: 2
+  retry_after: 5          # segundos entre tentativas
+  request_timeout: 300    # timeout máximo por requisição (segundos)
+
+  # Fallbacks: se o modelo primário falhar, tenta o próximo
+  default_fallbacks:
+    - openrouter-sonnet
+    - openrouter-haiku
+
+  # Ativa logs detalhados (desative em produção)
+  set_verbose: false
+
+# -----------------------------------------------------------------------------
+# Aliases de modelos (nomes curtos → nomes completos)
+# Permite usar nomes simples nas chamadas de API
+# -----------------------------------------------------------------------------
+model_alias_map:
+  sonnet: claude-3-5-sonnet
+  haiku: claude-3-5-haiku
+  opus: claude-opus-4
+
+# -----------------------------------------------------------------------------
+# Definição dos modelos e roteamento
+# -----------------------------------------------------------------------------
+model_list:
+
+  # -------------------------------------------------------------------------
+  # Claude 3.5 Sonnet → Roteado para DeepSeek (economia)
+  # -------------------------------------------------------------------------
+  - model_name: claude-3-5-sonnet
+    litellm_params:
+      model: deepseek/deepseek-chat
+      api_key: os.environ/DEEPSEEK_API_KEY
+    model_info:
+      description: "Sonnet roteado para DeepSeek - economia de custo"
+
+  # -------------------------------------------------------------------------
+  # Claude 3.5 Haiku → Roteado para DeepSeek (economia)
+  # -------------------------------------------------------------------------
+  - model_name: claude-3-5-haiku
+    litellm_params:
+      model: deepseek/deepseek-chat
+      api_key: os.environ/DEEPSEEK_API_KEY
+    model_info:
+      description: "Haiku roteado para DeepSeek - economia de custo"
+
+  # -------------------------------------------------------------------------
+  # Claude Opus → Direto na Anthropic (tarefas críticas, sem substituição)
+  # -------------------------------------------------------------------------
+  - model_name: claude-opus-4
+    litellm_params:
+      model: anthropic/claude-opus-4-20250514
+      api_key: os.environ/ANTHROPIC_API_KEY
+    model_info:
+      description: "Opus direto na Anthropic - tarefas críticas"
+
+  # -------------------------------------------------------------------------
+  # Fallbacks via OpenRouter (caso DeepSeek ou Anthropic fiquem fora)
+  # -------------------------------------------------------------------------
+  - model_name: openrouter-sonnet
+    litellm_params:
+      model: openrouter/anthropic/claude-3.5-sonnet
+      api_key: os.environ/OPENROUTER_API_KEY
+    model_info:
+      description: "Fallback Sonnet via OpenRouter"
+
+  - model_name: openrouter-haiku
+    litellm_params:
+      model: openrouter/anthropic/claude-3.5-haiku
+      api_key: os.environ/OPENROUTER_API_KEY
+    model_info:
+      description: "Fallback Haiku via OpenRouter"
+
+  - model_name: openrouter-opus
+    litellm_params:
+      model: openrouter/anthropic/claude-opus-4-20250514
+      api_key: os.environ/OPENROUTER_API_KEY
+    model_info:
+      description: "Fallback Opus via OpenRouter"

@@ -14,7 +14,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node src/cli.mjs --help"
+    "test": "node src/cli.mjs --help",
+    "doctor": "node src/cli.mjs doctor",
+    "validate": "node src/cli.mjs validate",
+    "lint": "node --check src/*.mjs bin/*.mjs"
   },
   "keywords": [
     "claude-code",

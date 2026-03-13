@@ -103,6 +103,8 @@ export function showHelp() {
   Comandos:
     init [nome] [--yes]    Instala DuarteOS no projeto atual
     update [--force]       Atualiza arquivos do sistema (preserva seus dados)
+    doctor                 Diagnostica o ambiente de desenvolvimento
+    validate               Verifica integridade da instalacao DuarteOS
 
   O que instala:
     .claude/
