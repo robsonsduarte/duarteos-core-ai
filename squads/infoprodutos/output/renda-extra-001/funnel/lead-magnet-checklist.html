@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist: 5 Metodos de Renda Extra Que Funcionam Pelo Celular (Testados em 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: A4;
+  margin: 20mm 20mm 25mm 25mm;
+}
+
+html { font-size: 11pt; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2D3748;
+  line-height: 1.7;
+  background: #FFFFFF;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === PRINT === */
+@media print {
+  body { max-width: none; padding: 0; }
+  .page-break { page-break-before: always; break-before: page; }
+  .no-break { page-break-inside: avoid; break-inside: avoid; }
+  .cover-page { page-break-after: always; break-after: page; }
+  .method-card, .cta-section, .ebook-box, .bonus-list {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  p { orphans: 3; widows: 3; }
+  a { color: #2D3748; text-decoration: none; }
+  .cover-page, .method-card, .cta-section, .ebook-box, thead th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media screen {
+  body { padding: 20px; max-width: 800px; }
+  .page-break { border-top: 2px dashed #E2E8F0; margin: 3em 0; padding-top: 3em; }
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1A365D; font-weight: 700; line-height: 1.3; }
+p { margin-bottom: 0.8em; text-align: left; }
+strong { color: #1A365D; font-weight: 600; }
+
+/* === COVER PAGE === */
+.cover-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(160deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 4em 3em;
+  margin: -20px -20px 0 -20px;
+}
+
+@media print { .cover-page { margin: 0; } }
+
+.cover-badge {
+  display: inline-block;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  padding: 0.4em 1.5em;
+  border-radius: 50px;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cover-icon {
+  font-size: 60pt;
+  margin-bottom: 0.3em;
+  opacity: 0.9;
+}
+
+.cover-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32pt;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.4em;
+  color: #FFFFFF;
+  max-width: 550px;
+}
+
+.cover-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 2.5em;
+  opacity: 0.88;
+  max-width: 480px;
+}
+
+.cover-features {
+  display: flex;
+  gap: 2em;
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  font-weight: 500;
+  opacity: 0.85;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cover-features span {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.cover-features .icon { font-size: 16pt; }
+
+.cover-source {
+  margin-top: 3em;
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  opacity: 0.6;
+}
+
+/* === INTRO SECTION === */
+.intro-section {
+  padding: 2.5em 0 1em 0;
+}
+
+.intro-section h2 {
+  font-size: 18pt;
+  color: #1B7A4A;
+  margin-bottom: 0.6em;
+}
+
+.intro-section p {
+  font-size: 11pt;
+  line-height: 1.8;
+  color: #2D3748;
+}
+
+.intro-highlight {
+  background: #FFF8E7;
+  border-left: 4px solid #E8930C;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 10.5pt;
+  color: #2D3748;
+}
+
+.intro-highlight strong {
+  color: #E8930C;
+}
+
+/* === METHOD CARDS === */
+.methods-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  color: #1A365D;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.methods-subheader {
+  font-family: 'Inter', sans-serif;
+  font-size: 10.5pt;
+  color: #718096;
+  text-align: center;
+  margin-bottom: 1.8em;
+}
+
+.method-card {
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 1.2em 1.4em;
+  margin-bottom: 1em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+}
+
+.method-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #1B7A4A;
+  border-radius: 12px 0 0 12px;
+}
+
+.method-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #1B7A4A;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13pt;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+
+.method-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+.method-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #1A365D;
+}
+
+.method-desc {
+  font-size: 10.5pt;
+  color: #718096;
+  margin-bottom: 0.6em;
+  margin-left: 38px;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  margin-left: 38px;
+}
+
+.method-stat {
+  background: #F7FAFC;
+  border-radius: 8px;
+  padding: 0.5em 0.7em;
+  text-align: center;
+}
+
+.method-stat-label {
+  font-size: 8pt;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.15em;
+}
+
+.method-stat-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #1A365D;
+}
+
+.method-stat-value.money { color: #1B7A4A; }
+.method-stat-value.easy { color: #38A169; }
+.method-stat-value.medium { color: #E8930C; }
+
+.method-checks {
+  display: flex;
+  gap: 1.2em;
+  margin-top: 0.6em;
+  margin-left: 38px;
+  font-size: 9.5pt;
+}
+
+.method-check {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: #38A169;
+  font-weight: 500;
+}
+
+.method-check .check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #E8F5EE;
+  border-radius: 50%;
+  font-size: 11pt;
+  flex-shrink: 0;
+}
+
+/* === CTA PAGE === */
+.cta-section {
+  padding: 2em 0 1em 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cta-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22pt;
+  color: #1A365D;
+  text-align: center;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.cta-text {
+  font-size: 11pt;
+  text-align: center;
+  color: #2D3748;
+  max-width: 520px;
+  margin: 0 auto 1.5em auto;
+  line-height: 1.7;
+}
+
+.ebook-box {
+  background: linear-gradient(135deg, #E8F5EE 0%, #F7FAFC 100%);
+  border: 2px solid #1B7A4A;
+  border-radius: 16px;
+  padding: 1.8em 2em;
+  margin: 0 auto 1.5em auto;
+  max-width: 520px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.ebook-box-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+  color: #1B7A4A;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.ebook-box-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  color: #718096;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.bonus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2em 0;
+}
+
+.bonus-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  padding: 0.4em 0;
+  font-size: 10.5pt;
+  color: #2D3748;
+  line-height: 1.5;
+}
+
+.bonus-list li .bonus-icon {
+  color: #1B7A4A;
+  font-size: 14pt;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.price-box {
+  text-align: center;
+  margin: 1.2em 0;
+}
+
+.price-old {
+  font-family: 'Inter', sans-serif;
+  font-size: 14pt;
+  color: #718096;
+  text-decoration: line-through;
+}
+
+.price-new {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32pt;
+  font-weight: 800;
+  color: #1B7A4A;
+  display: block;
+  line-height: 1.1;
+}
+
+.price-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  color: #E8930C;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cta-button {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.9em 1.5em;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 15px rgba(232, 147, 12, 0.35);
+}
+
+.cta-subtext {
+  text-align: center;
+  font-size: 9pt;
+  color: #718096;
+  margin-top: 0.8em;
+}
+
+.guarantee-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1.2em;
+  font-size: 9.5pt;
+  color: #38A169;
+  font-weight: 500;
+}
+
+.guarantee-badge .shield { font-size: 16pt; }
+
+/* === FOOTER === */
+.checklist-footer {
+  text-align: center;
+  padding: 1.5em 0 1em 0;
+  font-size: 8.5pt;
+  color: #A0AEC0;
+  border-top: 1px solid #E2E8F0;
+  margin-top: 1.5em;
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGINA 1: CAPA ==================== -->
+<div class="cover-page">
+  <div class="cover-badge">Gratuito - Material Exclusivo</div>
+  <div class="cover-icon">&#9745;</div>
+  <h1 class="cover-title">Checklist: 5 Metodos de Renda Extra Que Funcionam Pelo Celular</h1>
+  <p class="cover-subtitle">Metodos reais, testados por pessoas reais, que funcionam com 1 hora por dia e zero investimento.</p>
+  <div class="cover-features">
+    <span><span class="icon">&#128241;</span> 100% pelo celular</span>
+    <span><span class="icon">&#9201;</span> 1 hora por dia</span>
+    <span><span class="icon">&#128176;</span> Zero investimento</span>
+  </div>
+  <div class="cover-source">Testados em 2026 &mdash; Renda Extra Honesta</div>
+</div>
+
+<!-- ==================== INTRO ==================== -->
+<div class="intro-section">
+  <h2>Antes de comecar...</h2>
+  <p>Se voce esta cansada de promessas de R$ 10 mil por mes na internet, este checklist e para voce. Aqui estao <strong>5 metodos que funcionam DE VERDADE</strong> para quem trabalha CLT, tem pouco tempo e nao quer (e nem pode) investir dinheiro para comecar.</p>
+  <p>Todos os metodos listados aqui foram filtrados com tres criterios simples: funcionam pelo celular, exigem no maximo 1 hora por dia e nao precisam de nenhum real de investimento inicial. Nada de promessas vazias &mdash; so o que e real e comprovado.</p>
+
+  <div class="intro-highlight">
+    <strong>Importante:</strong> Este checklist mostra O QUE funciona e quanto voce pode ganhar. O passo a passo completo de cada metodo &mdash; com tutorial detalhado, ferramentas e plano de acao &mdash; esta no ebook <strong>Renda Extra Honesta</strong>.
+  </div>
+</div>
+
+<!-- ==================== PAGINA 2: OS 5 METODOS ==================== -->
+<div class="page-break"></div>
+
+<h2 class="methods-header">Os 5 Metodos</h2>
+<p class="methods-subheader">Cada metodo foi testado e validado por pessoas com perfil CLT em 2026</p>
+
+<!-- Metodo 1 -->
+<div class="method-card">
+  <div class="method-title-row">
+    <span class="method-number">1</span>
+    <span class="method-name">Micro-Tarefas Digitais</span>
+  </div>
+  <p class="method-desc">Faca pequenas tarefas pelo celular (avaliar anuncios, categorizar produtos, responder pesquisas) e receba via Pix.</p>
+  <div class="method-grid">
+    <div class="method-stat">
+      <span class="method-stat-label">Ganho mensal</span>
+      <span class="method-stat-value money">R$ 150-400</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Dificuldade</span>
+      <span class="method-stat-value easy">Facil</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Tempo/dia</span>
+      <span class="method-stat-value">30-60 min</span>
+    </div>
+  </div>
+  <div class="method-checks">
+    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  </div>
+</div>
+
+<!-- Metodo 2 -->
+<div class="method-card">
+  <div class="method-title-row">
+    <span class="method-number">2</span>
+    <span class="method-name">Criacao de Conteudo com IA</span>
+  </div>
+  <p class="method-desc">Use ferramentas de IA gratuitas para criar posts, legendas e artes para pequenos negocios da sua cidade.</p>
+  <div class="method-grid">
+    <div class="method-stat">
+      <span class="method-stat-label">Ganho mensal</span>
+      <span class="method-stat-value money">R$ 300-800</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Dificuldade</span>
+      <span class="method-stat-value medium">Medio</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Tempo/dia</span>
+      <span class="method-stat-value">45-60 min</span>
+    </div>
+  </div>
+  <div class="method-checks">
+    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  </div>
+</div>
+
+<!-- Metodo 3 -->
+<div class="method-card">
+  <div class="method-title-row">
+    <span class="method-number">3</span>
+    <span class="method-name">Assistente Virtual</span>
+  </div>
+  <p class="method-desc">Organize agenda, WhatsApp e redes sociais de pequenas empresas e profissionais autonomos &mdash; tudo pelo celular.</p>
+  <div class="method-grid">
+    <div class="method-stat">
+      <span class="method-stat-label">Ganho mensal</span>
+      <span class="method-stat-value money">R$ 350-700</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Dificuldade</span>
+      <span class="method-stat-value medium">Medio</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Tempo/dia</span>
+      <span class="method-stat-value">45-60 min</span>
+    </div>
+  </div>
+  <div class="method-checks">
+    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  </div>
+</div>
+
+<!-- Metodo 4 -->
+<div class="method-card">
+  <div class="method-title-row">
+    <span class="method-number">4</span>
+    <span class="method-name">Vendas por Indicacao (Afiliados)</span>
+  </div>
+  <p class="method-desc">Indique produtos digitais que voce confia pelo WhatsApp e redes sociais e ganhe comissao a cada venda.</p>
+  <div class="method-grid">
+    <div class="method-stat">
+      <span class="method-stat-label">Ganho mensal</span>
+      <span class="method-stat-value money">R$ 200-600</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Dificuldade</span>
+      <span class="method-stat-value easy">Facil</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Tempo/dia</span>
+      <span class="method-stat-value">30-60 min</span>
+    </div>
+  </div>
+  <div class="method-checks">
+    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  </div>
+</div>
+
+<!-- Metodo 5 -->
+<div class="method-card">
+  <div class="method-title-row">
+    <span class="method-number">5</span>
+    <span class="method-name">Freelancer de Servicos Digitais</span>
+  </div>
+  <p class="method-desc">Ofereca habilidades que voce ja tem &mdash; digitacao, pesquisa, atendimento, organizacao &mdash; como servicos avulsos online.</p>
+  <div class="method-grid">
+    <div class="method-stat">
+      <span class="method-stat-label">Ganho mensal</span>
+      <span class="method-stat-value money">R$ 250-500</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Dificuldade</span>
+      <span class="method-stat-value easy">Facil</span>
+    </div>
+    <div class="method-stat">
+      <span class="method-stat-label">Tempo/dia</span>
+      <span class="method-stat-value">30-60 min</span>
+    </div>
+  </div>
+  <div class="method-checks">
+    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
+    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  </div>
+</div>
+
+<!-- ==================== PAGINA 3: CTA ==================== -->
+<div class="page-break"></div>
+
+<div class="cta-section">
+  <h2 class="cta-header">Quer o Passo a Passo<br>Completo de Cada Metodo?</h2>
+  <p class="cta-text">Este checklist mostra <strong>O QUE</strong> funciona. O ebook <strong>Renda Extra Honesta</strong> mostra <strong>COMO</strong> fazer &mdash; com tutorial detalhado, cases reais e um plano de 7 dias para seu primeiro resultado.</p>
+
+  <div class="ebook-box">
+    <div class="ebook-box-title">Renda Extra Honesta</div>
+    <div class="ebook-box-subtitle">O Metodo de 1 Hora Por Dia Para Quem Trabalha CLT</div>
+
+    <ul class="bonus-list">
+      <li><span class="bonus-icon">&#9745;</span> <span><strong>10 capitulos praticos</strong> com tutorial passo a passo de cada metodo</span></li>
+      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Detector de Golpes Online</strong> &mdash; nunca mais caia em armadilhas (R$ 47)</span></li>
+      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Diagnostico de Perfil</strong> &mdash; descubra qual metodo e ideal para voce (R$ 67)</span></li>
+      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Plano de Acao 7 Dias</strong> &mdash; seu primeiro resultado em uma semana (R$ 37)</span></li>
+      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Planilha de Controle Financeiro</strong> &mdash; acompanhe seus ganhos pelo celular (R$ 43)</span></li>
+      <li><span class="bonus-icon">&#128274;</span> <span><strong>Garantia incondicional de 15 dias</strong> &mdash; seu dinheiro de volta, sem perguntas</span></li>
+    </ul>
+
+    <div class="price-box">
+      <span class="price-label">Oferta de Lancamento</span>
+      <span class="price-old">R$ 67</span>
+      <span class="price-new">R$ 37</span>
+    </div>
+
+    <a href="#" class="cta-button">QUERO O METODO COMPLETO POR R$ 37</a>
+    <p class="cta-subtext">Pagamento seguro via Pix, cartao ou boleto &bull; Acesso imediato</p>
+
+    <div class="guarantee-badge">
+      <span class="shield">&#128737;</span>
+      Garantia de 15 dias &mdash; Risco zero para voce
+    </div>
+  </div>
+</div>
+
+<div class="checklist-footer">
+  &copy; 2026 Renda Extra Honesta &mdash; Todos os direitos reservados.<br>
+  Este material e gratuito e exclusivo para assinantes.
+</div>
+
+</body>
+</html>
