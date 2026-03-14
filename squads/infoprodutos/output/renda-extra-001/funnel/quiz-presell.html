@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descubra Qual Método de Renda Extra Combina Com Você</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--primary:#1B7A4A;
+--primary-light:#E8F5EE;
+--primary-dark:#145A37;
+--secondary:#1A365D;
+--bg:#FFFFFF;
+--text:#2D3748;
+--text-muted:#718096;
+--heading:#1A365D;
+--accent:#E8930C;
+--border:#E2E8F0;
+--highlight:#FFF8E7;
+--success:#38A169;
+--error:#E53E3E;
+}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{
+font-family:'Inter',system-ui,sans-serif;
+color:var(--text);
+background:#F7FAFC;
+line-height:1.6;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:16px;
+}
+.quiz-container{
+width:100%;
+max-width:560px;
+min-height:480px;
+background:var(--bg);
+border-radius:16px;
+box-shadow:0 4px 24px rgba(0,0,0,.08);
+overflow:hidden;
+position:relative;
+}
+
+/* === PROGRESS BAR === */
+.progress-bar{
+height:6px;
+background:var(--border);
+position:relative;
+}
+.progress-fill{
+height:100%;
+background:linear-gradient(90deg,var(--primary),var(--success));
+transition:width .5s ease;
+border-radius:0 3px 3px 0;
+width:0;
+}
+
+/* === SCREENS === */
+.screen{
+display:none;
+padding:32px 28px;
+animation:fadeIn .4s ease;
+}
+.screen.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* === START SCREEN === */
+.start-icon{
+width:72px;
+height:72px;
+background:var(--primary-light);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px;
+}
+.start-icon svg{width:36px;height:36px;color:var(--primary)}
+h1{
+font-family:'Poppins',sans-serif;
+font-weight:700;
+font-size:1.5rem;
+color:var(--heading);
+text-align:center;
+line-height:1.3;
+margin-bottom:12px;
+}
+.subtitle{
+text-align:center;
+color:var(--text-muted);
+font-size:.95rem;
+margin-bottom:8px;
+line-height:1.5;
+}
+.time-badge{
+display:inline-flex;
+align-items:center;
+gap:6px;
+background:var(--highlight);
+color:var(--accent);
+font-size:.85rem;
+font-weight:600;
+padding:6px 14px;
+border-radius:20px;
+margin:12px auto 28px;
+}
+.time-badge svg{width:16px;height:16px}
+.center-flex{display:flex;justify-content:center}
+
+/* === QUESTION SCREEN === */
+.question-counter{
+font-size:.8rem;
+font-weight:600;
+color:var(--text-muted);
+text-transform:uppercase;
+letter-spacing:.5px;
+margin-bottom:8px;
+}
+.question-text{
+font-family:'Poppins',sans-serif;
+font-weight:600;
+font-size:1.2rem;
+color:var(--heading);
+line-height:1.4;
+margin-bottom:24px;
+}
+.options{display:flex;flex-direction:column;gap:10px}
+.option{
+display:flex;
+align-items:center;
+gap:12px;
+padding:14px 16px;
+border:2px solid var(--border);
+border-radius:12px;
+cursor:pointer;
+transition:all .2s ease;
+background:var(--bg);
+font-size:.95rem;
+color:var(--text);
+line-height:1.4;
+}
+.option:hover{border-color:var(--primary);background:var(--primary-light)}
+.option:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.option.selected{
+border-color:var(--primary);
+background:var(--primary-light);
+font-weight:500;
+}
+.option-letter{
+flex-shrink:0;
+width:32px;
+height:32px;
+border-radius:50%;
+background:var(--border);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+font-size:.8rem;
+color:var(--text-muted);
+transition:all .2s ease;
+}
+.option.selected .option-letter{
+background:var(--primary);
+color:#fff;
+}
+
+/* === LOADING SCREEN === */
+.loading-screen{text-align:center;padding:60px 28px}
+.loading-spinner{
+width:56px;
+height:56px;
+border:4px solid var(--border);
+border-top-color:var(--primary);
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:0 auto 24px;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{
+font-family:'Poppins',sans-serif;
+font-weight:600;
+font-size:1.1rem;
+color:var(--heading);
+margin-bottom:8px;
+}
+.loading-sub{color:var(--text-muted);font-size:.9rem}
+.loading-steps{
+margin-top:24px;
+text-align:left;
+max-width:280px;
+margin-left:auto;
+margin-right:auto;
+}
+.loading-step{
+display:flex;
+align-items:center;
+gap:10px;
+padding:6px 0;
+font-size:.88rem;
+color:var(--text-muted);
+opacity:0;
+transition:opacity .4s ease;
+}
+.loading-step.visible{opacity:1}
+.loading-step.done{color:var(--success)}
+.step-icon{width:18px;height:18px;flex-shrink:0}
+
+/* === RESULT SCREEN === */
+.result-header{
+text-align:center;
+padding:28px 28px 0;
+}
+.result-badge{
+display:inline-block;
+background:var(--primary-light);
+color:var(--primary);
+font-weight:700;
+font-size:.75rem;
+text-transform:uppercase;
+letter-spacing:1px;
+padding:6px 16px;
+border-radius:20px;
+margin-bottom:16px;
+}
+.result-title{
+font-family:'Poppins',sans-serif;
+font-weight:700;
+font-size:1.4rem;
+color:var(--heading);
+margin-bottom:4px;
+}
+.result-content{padding:0 28px 28px}
+
+.profile-card{
+background:var(--primary-light);
+border:2px solid var(--primary);
+border-radius:12px;
+padding:20px;
+margin:20px 0;
+}
+.profile-name{
+font-family:'Poppins',sans-serif;
+font-weight:700;
+font-size:1.1rem;
+color:var(--primary-dark);
+margin-bottom:4px;
+}
+.profile-desc{
+font-size:.9rem;
+color:var(--text);
+line-height:1.5;
+}
+.method-tag{
+display:inline-flex;
+align-items:center;
+gap:6px;
+background:var(--secondary);
+color:#fff;
+font-weight:600;
+font-size:.85rem;
+padding:6px 14px;
+border-radius:8px;
+margin-top:10px;
+}
+
+.analysis-card{
+background:#F7FAFC;
+border-left:4px solid var(--primary);
+border-radius:0 12px 12px 0;
+padding:16px 20px;
+margin:16px 0;
+}
+.analysis-card p{
+font-size:.9rem;
+line-height:1.6;
+color:var(--text);
+margin-bottom:8px;
+}
+.analysis-card p:last-child{margin-bottom:0}
+
+.offer-section{
+margin-top:24px;
+padding-top:24px;
+border-top:2px solid var(--border);
+}
+.offer-title{
+font-family:'Poppins',sans-serif;
+font-weight:700;
+font-size:1.1rem;
+color:var(--heading);
+margin-bottom:12px;
+}
+.offer-text{
+font-size:.9rem;
+line-height:1.6;
+color:var(--text);
+margin-bottom:16px;
+}
+.offer-includes{
+list-style:none;
+margin-bottom:20px;
+}
+.offer-includes li{
+display:flex;
+align-items:flex-start;
+gap:8px;
+padding:6px 0;
+font-size:.9rem;
+line-height:1.4;
+}
+.check-icon{
+flex-shrink:0;
+width:20px;
+height:20px;
+color:var(--success);
+margin-top:1px;
+}
+.price-box{
+background:var(--highlight);
+border:2px solid var(--accent);
+border-radius:12px;
+padding:20px;
+text-align:center;
+margin:20px 0;
+}
+.price-from{
+font-size:.85rem;
+color:var(--text-muted);
+text-decoration:line-through;
+margin-bottom:2px;
+}
+.price-to{
+font-family:'Poppins',sans-serif;
+font-weight:800;
+font-size:2rem;
+color:var(--primary-dark);
+}
+.price-to small{font-size:1rem;font-weight:600}
+.guarantee-line{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:6px;
+font-size:.82rem;
+color:var(--success);
+font-weight:600;
+margin-top:8px;
+}
+.guarantee-line svg{width:16px;height:16px}
+
+/* === BUTTONS === */
+.btn{
+display:block;
+width:100%;
+padding:16px 24px;
+border:none;
+border-radius:12px;
+font-family:'Poppins',sans-serif;
+font-weight:700;
+font-size:1rem;
+cursor:pointer;
+transition:all .2s ease;
+text-align:center;
+text-decoration:none;
+}
+.btn:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.btn-primary{
+background:var(--primary);
+color:#fff;
+box-shadow:0 4px 12px rgba(27,122,74,.3);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:0 6px 16px rgba(27,122,74,.35)}
+.btn-accent{
+background:var(--accent);
+color:#fff;
+box-shadow:0 4px 12px rgba(232,147,12,.3);
+}
+.btn-accent:hover{background:#d07f0a;transform:translateY(-1px);box-shadow:0 6px 16px rgba(232,147,12,.35)}
+
+.btn-sub{
+margin-top:12px;
+text-align:center;
+}
+.btn-sub a{
+color:var(--text-muted);
+font-size:.82rem;
+text-decoration:underline;
+cursor:pointer;
+}
+.btn-sub a:hover{color:var(--text)}
+.btn-sub a:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+
+.guarantee-footer{
+text-align:center;
+margin-top:8px;
+font-size:.8rem;
+color:var(--success);
+font-weight:500;
+}
+
+/* === RESPONSIVE === */
+@media(max-width:480px){
+body{padding:8px}
+.quiz-container{border-radius:12px;min-height:auto}
+.screen{padding:24px 20px}
+h1{font-size:1.3rem}
+.question-text{font-size:1.05rem}
+.option{padding:12px 14px;font-size:.9rem}
+.result-header{padding:20px 20px 0}
+.result-content{padding:0 20px 20px}
+.price-to{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+
+<div class="quiz-container" role="main">
+  <!-- Progress Bar -->
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- ==================== TELA INICIAL ==================== -->
+  <div class="screen active" id="screenStart" data-screen="start">
+    <div class="start-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+    </div>
+    <h1>Descubra Qual Metodo de Renda Extra Combina Com Voce</h1>
+    <p class="subtitle">Responda 5 perguntas rapidas e descubra o caminho mais curto para sua primeira renda extra — personalizado para sua rotina.</p>
+    <div class="center-flex">
+      <span class="time-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Leva menos de 2 minutos
+      </span>
+    </div>
+    <button class="btn btn-primary" onclick="startQuiz()" data-action="start-quiz">COMECAR</button>
+  </div>
+
+  <!-- ==================== PERGUNTA 1 ==================== -->
+  <div class="screen" id="screenQ1" data-screen="question-1">
+    <p class="question-counter">Pergunta 1 de 5</p>
+    <p class="question-text">Quanto do seu salario sobra no fim do mes?</p>
+    <div class="options" role="radiogroup" aria-label="Opcoes da pergunta 1">
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="1" data-answer="A" data-label="nao-sobra" onclick="selectOption(this)">
+        <span class="option-letter">A</span>
+        <span>Nao sobra nada, as vezes falta</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="1" data-answer="B" data-label="sobra-pouco" onclick="selectOption(this)">
+        <span class="option-letter">B</span>
+        <span>Sobra muito pouco (R$ 50-200)</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="1" data-answer="C" data-label="quer-seguranca" onclick="selectOption(this)">
+        <span class="option-letter">C</span>
+        <span>Sobra um pouco, mas quero mais seguranca</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="1" data-answer="D" data-label="quer-investir" onclick="selectOption(this)">
+        <span class="option-letter">D</span>
+        <span>Sobra razoavel, mas quero investir em algo</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== PERGUNTA 2 ==================== -->
+  <div class="screen" id="screenQ2" data-screen="question-2">
+    <p class="question-counter">Pergunta 2 de 5</p>
+    <p class="question-text">Quanto tempo livre voce tem por dia para uma atividade extra?</p>
+    <div class="options" role="radiogroup" aria-label="Opcoes da pergunta 2">
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="2" data-answer="A" data-label="menos-30min" onclick="selectOption(this)">
+        <span class="option-letter">A</span>
+        <span>Menos de 30 minutos</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="2" data-answer="B" data-label="1-hora" onclick="selectOption(this)">
+        <span class="option-letter">B</span>
+        <span>Cerca de 1 hora</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="2" data-answer="C" data-label="1-2-horas" onclick="selectOption(this)">
+        <span class="option-letter">C</span>
+        <span>1 a 2 horas</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="2" data-answer="D" data-label="mais-2-horas" onclick="selectOption(this)">
+        <span class="option-letter">D</span>
+        <span>Mais de 2 horas</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== PERGUNTA 3 ==================== -->
+  <div class="screen" id="screenQ3" data-screen="question-3">
+    <p class="question-counter">Pergunta 3 de 5</p>
+    <p class="question-text">Voce ja tentou ganhar dinheiro extra pela internet?</p>
+    <div class="options" role="radiogroup" aria-label="Opcoes da pergunta 3">
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="3" data-answer="A" data-label="nunca-tentei" onclick="selectOption(this)">
+        <span class="option-letter">A</span>
+        <span>Nunca tentei</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="3" data-answer="B" data-label="tentei-nao-deu" onclick="selectOption(this)">
+        <span class="option-letter">B</span>
+        <span>Tentei mas nao deu certo</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="3" data-answer="C" data-label="ganhei-pouco" onclick="selectOption(this)">
+        <span class="option-letter">C</span>
+        <span>Ja ganhei um pouco mas nao foi consistente</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="3" data-answer="D" data-label="ja-tenho-renda" onclick="selectOption(this)">
+        <span class="option-letter">D</span>
+        <span>Sim, ja tenho alguma renda extra</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== PERGUNTA 4 ==================== -->
+  <div class="screen" id="screenQ4" data-screen="question-4">
+    <p class="question-counter">Pergunta 4 de 5</p>
+    <p class="question-text">O que voce tem disponivel para comecar?</p>
+    <div class="options" role="radiogroup" aria-label="Opcoes da pergunta 4">
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="4" data-answer="A" data-label="so-celular" onclick="selectOption(this)">
+        <span class="option-letter">A</span>
+        <span>So meu celular</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="4" data-answer="B" data-label="celular-computador" onclick="selectOption(this)">
+        <span class="option-letter">B</span>
+        <span>Celular e um computador</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="4" data-answer="C" data-label="celular-dinheiro" onclick="selectOption(this)">
+        <span class="option-letter">C</span>
+        <span>Celular e um pouco de dinheiro para investir</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="4" data-answer="D" data-label="tudo" onclick="selectOption(this)">
+        <span class="option-letter">D</span>
+        <span>Celular, computador e dinheiro para investir</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== PERGUNTA 5 ==================== -->
+  <div class="screen" id="screenQ5" data-screen="question-5">
+    <p class="question-counter">Pergunta 5 de 5</p>
+    <p class="question-text">No seu dia a dia, voce se considera mais...</p>
+    <div class="options" role="radiogroup" aria-label="Opcoes da pergunta 5">
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="5" data-answer="A" data-label="comunicativa" onclick="selectOption(this)">
+        <span class="option-letter">A</span>
+        <span>Comunicativa — gosta de conversar e se expressar</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="5" data-answer="B" data-label="organizada" onclick="selectOption(this)">
+        <span class="option-letter">B</span>
+        <span>Organizada — gosta de processos e planilhas</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="5" data-answer="C" data-label="criativa" onclick="selectOption(this)">
+        <span class="option-letter">C</span>
+        <span>Criativa — gosta de inventar e criar coisas</span>
+      </button>
+      <button class="option" role="radio" aria-checked="false" tabindex="0" data-question="5" data-answer="D" data-label="pratica" onclick="selectOption(this)">
+        <span class="option-letter">D</span>
+        <span>Pratica — gosta de fazer acontecer rapido</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== TELA DE LOADING ==================== -->
+  <div class="screen loading-screen" id="screenLoading" data-screen="loading">
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <p class="loading-text">Analisando suas respostas...</p>
+    <p class="loading-sub">Estamos montando seu perfil personalizado</p>
+    <div class="loading-steps">
+      <div class="loading-step" id="loadStep1">
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Analisando perfil financeiro...</span>
+      </div>
+      <div class="loading-step" id="loadStep2">
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        <span>Identificando seu perfil...</span>
+      </div>
+      <div class="loading-step" id="loadStep3">
+        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Selecionando metodo ideal...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TELA DE RESULTADO ==================== -->
+  <div class="screen" id="screenResult" data-screen="result">
+    <div class="result-header">
+      <span class="result-badge">Resultado pronto</span>
+      <h2 class="result-title">Seu Perfil de Renda Extra</h2>
+    </div>
+    <div class="result-content">
+
+      <!-- Bloco 1: Perfil -->
+      <div class="profile-card">
+        <p class="profile-name" id="profileName"></p>
+        <p class="profile-desc" id="profileDesc"></p>
+        <span class="method-tag" id="methodTag"></span>
+      </div>
+
+      <!-- Bloco 2: Analise personalizada -->
+      <div class="analysis-card" id="analysisCard"></div>
+
+      <!-- Bloco 3: Oferta -->
+      <div class="offer-section">
+        <p class="offer-title">O que fazer agora</p>
+        <p class="offer-text" id="offerText"></p>
+
+        <ul class="offer-includes">
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>4 metodos completos com passo a passo detalhado</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Plano de Acao de 7 Dias para o primeiro resultado</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Detector de Golpes Online (para nao cair em ciladas)</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Diagnostico de Perfil + Planilha de Controle Financeiro</span>
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>R$ 194 em bonus inclusos gratuitamente</span>
+          </li>
+        </ul>
+
+        <div class="price-box">
+          <p class="price-from">De R$ 67,00</p>
+          <p class="price-to"><small>por apenas</small> R$ 37</p>
+          <div class="guarantee-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Garantia incondicional de 15 dias</span>
+          </div>
+        </div>
+
+        <a href="#checkout-kiwify" class="btn btn-accent" id="ctaButton" data-action="cta-checkout" target="_blank" rel="noopener">
+          QUERO O METODO COMPLETO POR R$ 37
+        </a>
+        <p class="guarantee-footer">Se em 7 dias voce nao vir um caminho real para sua primeira renda extra, devolvemos cada centavo.</p>
+
+        <div class="btn-sub">
+          <a href="#landing-page-lead-magnet" data-action="cta-free-alternative">Prefiro comecar gratis</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  var answers = {};
+  var currentScreen = 'start';
+
+  var profiles = {
+    A: {
+      name: 'Perfil Comunicadora',
+      desc: 'Voce tem facilidade para se expressar e se conectar com pessoas. Esse e um dos talentos mais valiosos no mundo digital — e pode se transformar em renda extra com as ferramentas certas.',
+      method: 'Criacao de Conteudo com IA',
+      methodNum: '#2'
+    },
+    B: {
+      name: 'Perfil Organizadora',
+      desc: 'Voce tem um talento natural para organizar processos e manter tudo em ordem. Essa habilidade e extremamente valorizada por profissionais e pequenos negocios que precisam de apoio remoto.',
+      method: 'Assistente Virtual',
+      methodNum: '#3'
+    },
+    C: {
+      name: 'Perfil Criativa',
+      desc: 'Voce gosta de criar, inventar e pensar fora da caixa. No mundo digital, criatividade combinada com ferramentas de IA pode gerar conteudo de valor — e renda — de forma surpreendentemente rapida.',
+      method: 'Criacao de Conteudo com IA',
+      methodNum: '#2'
+    },
+    D: {
+      name: 'Perfil Executora',
+      desc: 'Voce e do tipo que prefere acao a planejamento. Gosta de ver resultado rapido. O metodo ideal para voce e direto, pratico e pode gerar seus primeiros ganhos ja nos primeiros dias.',
+      method: 'Micro-Tarefas',
+      methodNum: '#1'
+    }
+  };
+
+  function showScreen(id) {
+    var screens = document.querySelectorAll('.screen');
+    for (var i = 0; i < screens.length; i++) {
+      screens[i].classList.remove('active');
+    }
+    document.getElementById(id).classList.add('active');
+    currentScreen = id;
+    document.querySelector('.quiz-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function updateProgress(percent) {
+    var fill = document.getElementById('progressFill');
+    var bar = fill.parentElement;
+    fill.style.width = percent + '%';
+    bar.setAttribute('aria-valuenow', percent);
+  }
+
+  window.startQuiz = function() {
+    showScreen('screenQ1');
+    updateProgress(10);
+  };
+
+  window.selectOption = function(el) {
+    var question = el.getAttribute('data-question');
+    var answer = el.getAttribute('data-answer');
+    answers[question] = answer;
+
+    // Visual feedback
+    var siblings = el.parentElement.querySelectorAll('.option');
+    for (var i = 0; i < siblings.length; i++) {
+      siblings[i].classList.remove('selected');
+      siblings[i].setAttribute('aria-checked', 'false');
+    }
+    el.classList.add('selected');
+    el.setAttribute('aria-checked', 'true');
+
+    // Advance after brief delay
+    var q = parseInt(question, 10);
+    setTimeout(function() {
+      if (q < 5) {
+        showScreen('screenQ' + (q + 1));
+        updateProgress(q * 20);
+      } else {
+        showLoading();
+      }
+    }, 350);
+  };
+
+  function showLoading() {
+    showScreen('screenLoading');
+    updateProgress(90);
+
+    setTimeout(function() { document.getElementById('loadStep1').classList.add('visible'); }, 400);
+    setTimeout(function() {
+      document.getElementById('loadStep1').classList.add('done');
+      document.getElementById('loadStep2').classList.add('visible');
+    }, 1200);
+    setTimeout(function() {
+      document.getElementById('loadStep2').classList.add('done');
+      document.getElementById('loadStep3').classList.add('visible');
+    }, 2000);
+    setTimeout(function() {
+      document.getElementById('loadStep3').classList.add('done');
+    }, 2600);
+    setTimeout(function() {
+      buildResult();
+      showScreen('screenResult');
+      updateProgress(100);
+    }, 3000);
+  }
+
+  function buildResult() {
+    var p5 = answers['5'] || 'D';
+    var profile = profiles[p5];
+
+    document.getElementById('profileName').textContent = profile.name;
+    document.getElementById('profileDesc').textContent = profile.desc;
+    document.getElementById('methodTag').textContent = 'Metodo ideal: ' + profile.method + ' (Metodo ' + profile.methodNum + ')';
+
+    // Build analysis text
+    var analysis = [];
+
+    // P1: financial situation
+    var p1 = answers['1'] || 'A';
+    if (p1 === 'A') {
+      analysis.push('Quando o salario nao cobre nem o basico, cada real importa. A boa noticia e que o metodo ideal para seu perfil nao exige nenhum investimento inicial — voce comeca com o que ja tem.');
+    } else if (p1 === 'B') {
+      analysis.push('Sobrar pouco e mais comum do que parece. Com o metodo certo, esses R$ 50-200 que sobram podem se multiplicar — sem precisar arriscar o que voce ja tem.');
+    } else if (p1 === 'C') {
+      analysis.push('Querer mais seguranca financeira e um sinal de maturidade. O metodo ideal para voce pode criar uma segunda fonte de renda que funciona como rede de protecao.');
+    } else {
+      analysis.push('Voce ja tem uma base financeira. Agora o proximo passo e colocar seu tempo livre para gerar renda adicional de forma inteligente.');
+    }
+
+    // P4: resources
+    var p4 = answers['4'] || 'A';
+    if (p4 === 'A' || p4 === 'B') {
+      analysis.push('Boa noticia: o metodo ideal para voce funciona 100% pelo celular e com zero investimento. Voce nao precisa de nada alem do que ja tem no bolso.');
+    }
+
+    // P2: time
+    var p2 = answers['2'] || 'B';
+    if (p2 === 'A') {
+      analysis.push('Mesmo com menos de 30 minutos por dia, e possivel dar os primeiros passos. O Metodo REH foi pensado para ser flexivel e se adaptar ate as rotinas mais apertadas.');
+    } else if (p2 === 'B') {
+      analysis.push('1 hora por dia e exatamente o que voce precisa. O Metodo REH foi desenhado para funcionar com 1 hora — nem mais, nem menos.');
+    } else {
+      analysis.push('Com ' + (p2 === 'C' ? '1 a 2 horas' : 'mais de 2 horas') + ' livres por dia, voce tem tempo de sobra para aplicar o metodo e ver resultados mais rapido que a media.');
+    }
+
+    // P3: experience
+    var p3 = answers['3'] || 'A';
+    if (p3 === 'B') {
+      analysis.push('Voce nao e a unica. A maioria das pessoas que tenta renda extra online desiste — nao porque sao incapazes, mas porque escolheram o metodo errado para seu perfil. Agora voce sabe qual e o certo.');
+    } else if (p3 === 'A') {
+      analysis.push('Nunca ter tentado pode ser uma vantagem: voce nao tem vicios nem frustracao acumulada. Vai comecar do jeito certo, com o metodo certo para seu perfil.');
+    } else if (p3 === 'C') {
+      analysis.push('Ja ter ganhado alguma coisa prova que voce tem capacidade. O que faltou foi um metodo estruturado e consistente — e exatamente isso que o quiz identificou para voce.');
+    }
+
+    var cardEl = document.getElementById('analysisCard');
+    cardEl.innerHTML = '';
+    for (var i = 0; i < analysis.length; i++) {
+      var p = document.createElement('p');
+      p.textContent = analysis[i];
+      cardEl.appendChild(p);
+    }
+
+    // Offer text personalized
+    var profileSummary = '';
+    if (p1 === 'A' || p1 === 'B') {
+      profileSummary = 'que precisa de renda extra sem investir nada';
+    } else {
+      profileSummary = 'que quer uma segunda fonte de renda segura';
+    }
+    if (p4 === 'A') {
+      profileSummary += ', tem so o celular';
+    }
+    if (p2 === 'A' || p2 === 'B') {
+      profileSummary += ' e tem pouco tempo livre';
+    }
+
+    var offerText = 'Existe um guia completo que ensina o passo a passo do seu metodo ideal — e dos outros 3 metodos tambem. ';
+    offerText += 'O Renda Extra Honesta foi criado para pessoas exatamente como voce: alguem ' + profileSummary + '.';
+
+    document.getElementById('offerText').textContent = offerText;
+  }
+
+})();
+</script>
+</body>
+</html>

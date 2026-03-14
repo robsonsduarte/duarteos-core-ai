@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checklist: 5 Metodos de Renda Extra Que Funcionam Pelo Celular (Testados em 2026)</title>
+<title>Seu Primeiro Dinheiro Online: Como Ganhar R$ 5 a R$ 10 Hoje Usando Apenas Seu Celular</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -14,6 +14,8 @@
 @page {
   size: A4;
   margin: 20mm 20mm 25mm 25mm;
+  @top-center { content: "Renda Extra Honesta"; font-family: 'Poppins', sans-serif; font-size: 9pt; color: #718096; }
+  @bottom-center { content: counter(page); font-family: 'Inter', sans-serif; font-size: 9pt; color: #718096; }
 }
 
 html { font-size: 11pt; }
@@ -34,7 +36,7 @@ body {
   .page-break { page-break-before: always; break-before: page; }
   .no-break { page-break-inside: avoid; break-inside: avoid; }
   .cover-page { page-break-after: always; break-after: page; }
-  .method-card, .cta-section, .ebook-box, .bonus-list {
+  .step-block, .tip-box, .compare-table, .cta-section, .ebook-box, blockquote {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -44,10 +46,11 @@ body {
   }
   p { orphans: 3; widows: 3; }
   a { color: #2D3748; text-decoration: none; }
-  .cover-page, .method-card, .cta-section, .ebook-box, thead th {
+  .cover-page, .step-block, .tip-box, .cta-section, .ebook-box, thead th {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+  table { table-layout: fixed; width: 100%; }
 }
 
 @media screen {
@@ -56,7 +59,11 @@ body {
 }
 
 /* === TYPOGRAPHY === */
-h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1A365D; font-weight: 700; line-height: 1.3; }
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1A365D; font-weight: 700; line-height: 1.3; margin-top: 1.5em; margin-bottom: 0.6em; break-after: avoid; page-break-after: avoid; }
+h1 { font-size: 28pt; border-bottom: 3px solid #1B7A4A; padding-bottom: 0.3em; margin-top: 0; }
+h2 { font-size: 20pt; color: #1B7A4A; }
+h3 { font-size: 15pt; color: #1A365D; }
+h4 { font-size: 12pt; color: #2D3748; font-weight: 600; }
 p { margin-bottom: 0.8em; text-align: left; }
 strong { color: #1A365D; font-weight: 600; }
 
@@ -98,12 +105,12 @@ strong { color: #1A365D; font-weight: 600; }
 
 .cover-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 32pt;
+  font-size: 30pt;
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 0.4em;
   color: #FFFFFF;
-  max-width: 550px;
+  max-width: 560px;
 }
 
 .cover-subtitle {
@@ -111,9 +118,21 @@ strong { color: #1A365D; font-weight: 600; }
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   opacity: 0.88;
   max-width: 480px;
+}
+
+.cover-promise {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 12px;
+  padding: 1.2em 2em;
+  max-width: 500px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  margin-bottom: 2em;
 }
 
 .cover-features {
@@ -136,13 +155,13 @@ strong { color: #1A365D; font-weight: 600; }
 .cover-features .icon { font-size: 16pt; }
 
 .cover-source {
-  margin-top: 3em;
+  margin-top: 2.5em;
   font-family: 'Inter', sans-serif;
   font-size: 9pt;
   opacity: 0.6;
 }
 
-/* === INTRO SECTION === */
+/* === SECTION INTRO === */
 .intro-section {
   padding: 2.5em 0 1em 0;
 }
@@ -151,58 +170,23 @@ strong { color: #1A365D; font-weight: 600; }
   font-size: 18pt;
   color: #1B7A4A;
   margin-bottom: 0.6em;
+  margin-top: 0;
 }
 
-.intro-section p {
-  font-size: 11pt;
-  line-height: 1.8;
-  color: #2D3748;
-}
-
-.intro-highlight {
-  background: #FFF8E7;
-  border-left: 4px solid #E8930C;
-  padding: 1em 1.2em;
-  margin: 1.2em 0;
-  border-radius: 0 8px 8px 0;
-  font-size: 10.5pt;
-  color: #2D3748;
-}
-
-.intro-highlight strong {
-  color: #E8930C;
-}
-
-/* === METHOD CARDS === */
-.methods-header {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20pt;
-  color: #1A365D;
-  margin-bottom: 0.3em;
-  text-align: center;
-}
-
-.methods-subheader {
-  font-family: 'Inter', sans-serif;
-  font-size: 10.5pt;
-  color: #718096;
-  text-align: center;
-  margin-bottom: 1.8em;
-}
-
-.method-card {
-  background: #FFFFFF;
+/* === STEP BLOCKS === */
+.step-block {
+  background: #F7FAFC;
   border: 2px solid #E2E8F0;
   border-radius: 12px;
-  padding: 1.2em 1.4em;
-  margin-bottom: 1em;
+  padding: 1.3em 1.5em;
+  margin-bottom: 1.2em;
   break-inside: avoid;
   page-break-inside: avoid;
   position: relative;
   overflow: hidden;
 }
 
-.method-card::before {
+.step-block::before {
   content: '';
   position: absolute;
   top: 0;
@@ -213,108 +197,183 @@ strong { color: #1A365D; font-weight: 600; }
   border-radius: 12px 0 0 12px;
 }
 
-.method-number {
+.step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6em;
+}
+
+.step-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   background: #1B7A4A;
   color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
-  font-size: 13pt;
+  font-size: 14pt;
   font-weight: 700;
   border-radius: 50%;
-  margin-right: 0.5em;
+  margin-right: 0.6em;
   flex-shrink: 0;
 }
 
-.method-title-row {
-  display: flex;
-  align-items: center;
+.step-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13pt;
+  font-weight: 700;
+  color: #1A365D;
+}
+
+.step-time {
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 9pt;
+  color: #718096;
+  background: #E8F5EE;
+  padding: 0.2em 0.8em;
+  border-radius: 50px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.step-body {
+  margin-left: 42px;
+  font-size: 10.5pt;
+  line-height: 1.7;
+}
+
+.step-body ol {
+  padding-left: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.step-body ol li {
+  margin-bottom: 0.5em;
+}
+
+.step-body p {
+  font-size: 10.5pt;
+}
+
+/* === TIP BOX === */
+.tip-box {
+  background: #FFF8E7;
+  border: 2px solid #E8930C;
+  border-radius: 8px;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.tip-box .tip-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #B7791F;
+  font-size: 11pt;
   margin-bottom: 0.3em;
 }
 
-.method-name {
-  font-family: 'Poppins', sans-serif;
-  font-size: 14pt;
-  font-weight: 700;
-  color: #1A365D;
-}
-
-.method-desc {
+.tip-box p {
   font-size: 10.5pt;
-  color: #718096;
-  margin-bottom: 0.6em;
-  margin-left: 38px;
+  margin-bottom: 0.3em;
 }
 
-.method-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5em;
-  margin-left: 38px;
+.tip-box ul {
+  padding-left: 1.2em;
+  margin-bottom: 0.5em;
 }
 
-.method-stat {
-  background: #F7FAFC;
+.tip-box li {
+  font-size: 10.5pt;
+  margin-bottom: 0.3em;
+}
+
+/* === INFO BOX === */
+.info-box {
+  background: #EBF4FF;
+  border: 2px solid #3182CE;
   border-radius: 8px;
-  padding: 0.5em 0.7em;
-  text-align: center;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
-.method-stat-label {
-  font-size: 8pt;
-  color: #718096;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.15em;
-}
-
-.method-stat-value {
+.info-box .info-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 11pt;
   font-weight: 700;
-  color: #1A365D;
-}
-
-.method-stat-value.money { color: #1B7A4A; }
-.method-stat-value.easy { color: #38A169; }
-.method-stat-value.medium { color: #E8930C; }
-
-.method-checks {
-  display: flex;
-  gap: 1.2em;
-  margin-top: 0.6em;
-  margin-left: 38px;
-  font-size: 9.5pt;
-}
-
-.method-check {
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
-  color: #38A169;
-  font-weight: 500;
-}
-
-.method-check .check-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  background: #E8F5EE;
-  border-radius: 50%;
+  color: #2B6CB0;
   font-size: 11pt;
-  flex-shrink: 0;
+  margin-bottom: 0.3em;
 }
 
-/* === CTA PAGE === */
+.info-box p {
+  font-size: 10.5pt;
+  margin-bottom: 0.3em;
+}
+
+/* === BLOCKQUOTES === */
+blockquote {
+  border-left: 4px solid #1B7A4A;
+  background: #E8F5EE;
+  padding: 1em 1.5em;
+  margin: 1.2em 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #2D3748;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+blockquote p { margin-bottom: 0.3em; text-align: left; }
+
+/* === TABLES === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 10pt;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  table-layout: fixed;
+}
+
+thead th {
+  background: #1A365D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.8em 1em;
+  text-align: left;
+  font-size: 10pt;
+}
+
+tbody td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+tbody tr:nth-child(even) { background: #F7FAFC; }
+
+/* === LISTS === */
+ul, ol { padding-left: 1.5em; margin-bottom: 1em; }
+li { margin-bottom: 0.4em; }
+ul li::marker { color: #1B7A4A; }
+
+/* === HR === */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #E2E8F0, #1B7A4A, #E2E8F0, transparent);
+  margin: 2em 0;
+}
+
+/* === CTA SECTION === */
 .cta-section {
-  padding: 2em 0 1em 0;
+  padding: 1.5em 0 1em 0;
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -343,7 +402,7 @@ strong { color: #1A365D; font-weight: 600; }
   border-radius: 16px;
   padding: 1.8em 2em;
   margin: 0 auto 1.5em auto;
-  max-width: 520px;
+  max-width: 540px;
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -357,40 +416,48 @@ strong { color: #1A365D; font-weight: 600; }
   margin-bottom: 0.8em;
 }
 
-.ebook-box-subtitle {
-  font-family: 'Inter', sans-serif;
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0 1.2em 0;
   font-size: 10pt;
-  color: #718096;
-  text-align: center;
-  margin-bottom: 1em;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
-.bonus-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.2em 0;
+.compare-table thead th {
+  background: #1A365D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  font-size: 9.5pt;
 }
 
-.bonus-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6em;
-  padding: 0.4em 0;
-  font-size: 10.5pt;
-  color: #2D3748;
-  line-height: 1.5;
+.compare-table thead th:first-child {
+  border-radius: 8px 0 0 0;
 }
 
-.bonus-list li .bonus-icon {
-  color: #1B7A4A;
-  font-size: 14pt;
-  flex-shrink: 0;
-  line-height: 1.2;
+.compare-table thead th:last-child {
+  border-radius: 0 8px 0 0;
+  background: #1B7A4A;
 }
+
+.compare-table tbody td {
+  padding: 0.55em 0.8em;
+  border-bottom: 1px solid #E2E8F0;
+  vertical-align: top;
+  font-size: 10pt;
+}
+
+.compare-table tbody tr:nth-child(even) { background: #F7FAFC; }
+
+.compare-table .lock { color: #E8930C; font-weight: 600; }
 
 .price-box {
   text-align: center;
-  margin: 1.2em 0;
+  margin: 1em 0;
 }
 
 .price-old {
@@ -450,7 +517,7 @@ strong { color: #1A365D; font-weight: 600; }
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  margin-top: 1.2em;
+  margin-top: 1em;
   font-size: 9.5pt;
   color: #38A169;
   font-weight: 500;
@@ -459,7 +526,7 @@ strong { color: #1A365D; font-weight: 600; }
 .guarantee-badge .shield { font-size: 16pt; }
 
 /* === FOOTER === */
-.checklist-footer {
+.lead-footer {
   text-align: center;
   padding: 1.5em 0 1em 0;
   font-size: 8.5pt;
@@ -467,200 +534,284 @@ strong { color: #1A365D; font-weight: 600; }
   border-top: 1px solid #E2E8F0;
   margin-top: 1.5em;
 }
+
+.lead-footer strong {
+  color: #718096;
+  font-weight: 600;
+}
 </style>
 </head>
 <body>
 
 <!-- ==================== PAGINA 1: CAPA ==================== -->
 <div class="cover-page">
-  <div class="cover-badge">Gratuito - Material Exclusivo</div>
-  <div class="cover-icon">&#9745;</div>
-  <h1 class="cover-title">Checklist: 5 Metodos de Renda Extra Que Funcionam Pelo Celular</h1>
-  <p class="cover-subtitle">Metodos reais, testados por pessoas reais, que funcionam com 1 hora por dia e zero investimento.</p>
+  <div class="cover-badge">Guia Gratuito - Material Exclusivo</div>
+  <div class="cover-icon">&#128178;</div>
+  <h1 class="cover-title">Seu Primeiro Dinheiro Online</h1>
+  <p class="cover-subtitle">Como ganhar R$ 5 a R$ 10 hoje usando apenas seu celular. Passo a passo real, testado, sem investir nenhum centavo.</p>
+
+  <div class="cover-promise">
+    Siga este passo a passo e nos proximos <strong>30 a 60 minutos</strong> voce vai ver dinheiro real entrando na sua conta.
+  </div>
+
   <div class="cover-features">
     <span><span class="icon">&#128241;</span> 100% pelo celular</span>
-    <span><span class="icon">&#9201;</span> 1 hora por dia</span>
     <span><span class="icon">&#128176;</span> Zero investimento</span>
+    <span><span class="icon">&#9201;</span> Resultado hoje</span>
   </div>
-  <div class="cover-source">Testados em 2026 &mdash; Renda Extra Honesta</div>
+
+  <div class="cover-source">Renda Extra Honesta &mdash; renda extra real para gente real</div>
 </div>
 
-<!-- ==================== INTRO ==================== -->
+<!-- ==================== PAGINA 2: O QUE SAO MICRO-TAREFAS ==================== -->
 <div class="intro-section">
-  <h2>Antes de comecar...</h2>
-  <p>Se voce esta cansada de promessas de R$ 10 mil por mes na internet, este checklist e para voce. Aqui estao <strong>5 metodos que funcionam DE VERDADE</strong> para quem trabalha CLT, tem pouco tempo e nao quer (e nem pode) investir dinheiro para comecar.</p>
-  <p>Todos os metodos listados aqui foram filtrados com tres criterios simples: funcionam pelo celular, exigem no maximo 1 hora por dia e nao precisam de nenhum real de investimento inicial. Nada de promessas vazias &mdash; so o que e real e comprovado.</p>
+  <h2>O Que Sao Micro-Tarefas (e Por Que Pagam Voce)</h2>
 
-  <div class="intro-highlight">
-    <strong>Importante:</strong> Este checklist mostra O QUE funciona e quanto voce pode ganhar. O passo a passo completo de cada metodo &mdash; com tutorial detalhado, ferramentas e plano de acao &mdash; esta no ebook <strong>Renda Extra Honesta</strong>.
-  </div>
+  <p>Micro-tarefas sao trabalhos pequenos que empresas precisam que <strong>pessoas reais</strong> facam pelo celular. Coisas que computadores ainda nao conseguem fazer sozinhos: classificar se uma foto mostra um gato ou um cachorro, verificar se um resultado do Google faz sentido, responder pesquisas sobre produtos, testar se um aplicativo funciona direito.</p>
+
+  <p>Empresas como Google, Amazon e centenas de startups precisam de milhares de pessoas para fazer essas tarefas todos os dias. Nao faz sentido contratar funcionarios fixos para isso. Entao elas pagam voce para fazer um pouquinho cada vez &mdash; no seu tempo, do seu celular, de qualquer lugar.</p>
+
+  <p><strong>Quanto da para ganhar?</strong> Com o site que vou te ensinar agora, voce consegue fazer entre <strong>R$ 50 e R$ 150 por mes</strong> dedicando 1 hora por dia. Parece pouco? Sao R$ 600 a R$ 1.800 por ano &mdash; dinheiro que hoje voce esta deixando na mesa enquanto rola o Instagram no onibus.</p>
+
+  <p>E esse e apenas 1 dos 5 sites do metodo completo. Com os outros 4 (que estao no ebook), o potencial sobe para R$ 200 a R$ 400 por mes. Mas vamos por partes. Primeiro, vamos colocar dinheiro real na sua conta hoje.</p>
+
+  <blockquote>
+    <p><strong>Por que esse mercado so cresce?</strong> Quanto mais inteligencia artificial existe no mundo, mais micro-tarefas existem. A IA precisa de gente real para "ensinar" os algoritmos. Voce nao esta competindo com a tecnologia &mdash; voce esta ajudando ela a funcionar. E sendo paga por isso.</p>
+  </blockquote>
 </div>
 
-<!-- ==================== PAGINA 2: OS 5 METODOS ==================== -->
+<!-- ==================== PAGINAS 3-4: PASSO A PASSO COMPLETO ==================== -->
 <div class="page-break"></div>
 
-<h2 class="methods-header">Os 5 Metodos</h2>
-<p class="methods-subheader">Cada metodo foi testado e validado por pessoas com perfil CLT em 2026</p>
+<h2 style="margin-top: 0;">Passo a Passo: Do Zero ao Primeiro Pagamento</h2>
+<p>Vamos usar a <strong>Clickworker</strong> &mdash; a melhor plataforma de micro-tarefas disponivel no Brasil hoje. Funciona 100% pelo celular, e gratuita, paga em dolar (que voce converte para reais via PayPal e transfere por Pix) e tem tarefas disponiveis para brasileiros a qualquer hora.</p>
 
-<!-- Metodo 1 -->
-<div class="method-card">
-  <div class="method-title-row">
-    <span class="method-number">1</span>
-    <span class="method-name">Micro-Tarefas Digitais</span>
+<!-- PASSO 1 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">1</span>
+    <span class="step-title">O Que e a Clickworker</span>
+    <span class="step-time">1 min de leitura</span>
   </div>
-  <p class="method-desc">Faca pequenas tarefas pelo celular (avaliar anuncios, categorizar produtos, responder pesquisas) e receba via Pix.</p>
-  <div class="method-grid">
-    <div class="method-stat">
-      <span class="method-stat-label">Ganho mensal</span>
-      <span class="method-stat-value money">R$ 150-400</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Dificuldade</span>
-      <span class="method-stat-value easy">Facil</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Tempo/dia</span>
-      <span class="method-stat-value">30-60 min</span>
-    </div>
-  </div>
-  <div class="method-checks">
-    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  <div class="step-body">
+    <p>A Clickworker e uma empresa alema fundada em 2005 que conecta pessoas comuns a empresas que precisam de micro-tarefas feitas por humanos. Ela tem mais de 6 milhoes de colaboradores no mundo inteiro e trabalha com clientes como Microsoft, Honda e PayPal. Voce se cadastra de graca, escolhe tarefas disponiveis, completa elas pelo celular e recebe em dolar na sua conta PayPal. Simples assim.</p>
+    <p>O grande diferencial dela e o acesso ao projeto <strong>UHRS</strong> (Universal Human Relevance System), uma plataforma de tarefas da Microsoft que paga valores acima da media. Assim que voce for aprovada, as tarefas do UHRS aparecem automaticamente na sua conta Clickworker.</p>
   </div>
 </div>
 
-<!-- Metodo 2 -->
-<div class="method-card">
-  <div class="method-title-row">
-    <span class="method-number">2</span>
-    <span class="method-name">Criacao de Conteudo com IA</span>
+<!-- PASSO 2 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">2</span>
+    <span class="step-title">Como Acessar e Criar Sua Conta</span>
+    <span class="step-time">5 minutos</span>
   </div>
-  <p class="method-desc">Use ferramentas de IA gratuitas para criar posts, legendas e artes para pequenos negocios da sua cidade.</p>
-  <div class="method-grid">
-    <div class="method-stat">
-      <span class="method-stat-label">Ganho mensal</span>
-      <span class="method-stat-value money">R$ 300-800</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Dificuldade</span>
-      <span class="method-stat-value medium">Medio</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Tempo/dia</span>
-      <span class="method-stat-value">45-60 min</span>
-    </div>
-  </div>
-  <div class="method-checks">
-    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
-  </div>
-</div>
-
-<!-- Metodo 3 -->
-<div class="method-card">
-  <div class="method-title-row">
-    <span class="method-number">3</span>
-    <span class="method-name">Assistente Virtual</span>
-  </div>
-  <p class="method-desc">Organize agenda, WhatsApp e redes sociais de pequenas empresas e profissionais autonomos &mdash; tudo pelo celular.</p>
-  <div class="method-grid">
-    <div class="method-stat">
-      <span class="method-stat-label">Ganho mensal</span>
-      <span class="method-stat-value money">R$ 350-700</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Dificuldade</span>
-      <span class="method-stat-value medium">Medio</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Tempo/dia</span>
-      <span class="method-stat-value">45-60 min</span>
-    </div>
-  </div>
-  <div class="method-checks">
-    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
+  <div class="step-body">
+    <ol>
+      <li>Abra o navegador do seu celular (Chrome, Safari &mdash; qualquer um).</li>
+      <li>Digite na barra de endereco: <strong>www.clickworker.com</strong> e aperte Enter.</li>
+      <li>O site vai abrir em ingles. Nao se preocupe &mdash; vou traduzir tudo para voce.</li>
+      <li>No canto superior direito, toque em <strong>"Sign Up"</strong> (que significa "Cadastrar-se").</li>
+      <li>Escolha <strong>"Clickworker"</strong> (nao "Customer" &mdash; Customer e para empresas).</li>
+      <li>Preencha o formulario:
+        <ul>
+          <li><strong>First Name:</strong> seu primeiro nome</li>
+          <li><strong>Last Name:</strong> seu sobrenome</li>
+          <li><strong>Email:</strong> seu email principal (o que voce olha todo dia)</li>
+          <li><strong>Password:</strong> crie uma senha forte (misture letras e numeros)</li>
+          <li><strong>Country:</strong> selecione <strong>Brazil</strong></li>
+        </ul>
+      </li>
+      <li>Marque a caixa aceitando os termos de uso.</li>
+      <li>Toque em <strong>"Create Account"</strong> (Criar Conta).</li>
+      <li>Abra seu email. Voce recebeu uma mensagem da Clickworker. Toque no <strong>link de confirmacao</strong> dentro do email.</li>
+      <li>Pronto &mdash; sua conta esta criada.</li>
+    </ol>
   </div>
 </div>
 
-<!-- Metodo 4 -->
-<div class="method-card">
-  <div class="method-title-row">
-    <span class="method-number">4</span>
-    <span class="method-name">Vendas por Indicacao (Afiliados)</span>
+<!-- PASSO 3 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">3</span>
+    <span class="step-title">Complete Seu Perfil (Isso Libera Mais Tarefas)</span>
+    <span class="step-time">10 minutos</span>
   </div>
-  <p class="method-desc">Indique produtos digitais que voce confia pelo WhatsApp e redes sociais e ganhe comissao a cada venda.</p>
-  <div class="method-grid">
-    <div class="method-stat">
-      <span class="method-stat-label">Ganho mensal</span>
-      <span class="method-stat-value money">R$ 200-600</span>
+  <div class="step-body">
+    <p>Depois de confirmar o email, faca login em <strong>workplace.clickworker.com</strong>. Voce vai ver seu painel. Agora, o mais importante: <strong>preencher seu perfil completo</strong>. Quanto mais completo, mais tarefas voce recebe.</p>
+    <ol>
+      <li>No menu, toque em <strong>"My Profile"</strong> (Meu Perfil).</li>
+      <li>Preencha todos os campos:
+        <ul>
+          <li><strong>Date of Birth:</strong> sua data de nascimento</li>
+          <li><strong>Gender:</strong> seu genero</li>
+          <li><strong>Address:</strong> seu endereco completo (rua, numero, cidade, estado, CEP)</li>
+          <li><strong>Phone:</strong> seu telefone com DDD</li>
+          <li><strong>Language Skills:</strong> adicione <strong>Portuguese &mdash; Native</strong>. Se souber ingles basico, adicione tambem <strong>English &mdash; Basic</strong> (isso libera MUITO mais tarefas)</li>
+          <li><strong>Education:</strong> seu nivel de escolaridade</li>
+        </ul>
+      </li>
+      <li>Toque em <strong>"Save"</strong> (Salvar).</li>
+    </ol>
+
+    <div class="tip-box">
+      <div class="tip-title">Dica importante</div>
+      <p>Nao minta no perfil. A Clickworker cruza dados e pode bloquear contas com informacoes falsas. Use seus dados reais &mdash; eles sao protegidos pela lei europeia de privacidade (GDPR).</p>
     </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Dificuldade</span>
-      <span class="method-stat-value easy">Facil</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Tempo/dia</span>
-      <span class="method-stat-value">30-60 min</span>
-    </div>
-  </div>
-  <div class="method-checks">
-    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
   </div>
 </div>
 
-<!-- Metodo 5 -->
-<div class="method-card">
-  <div class="method-title-row">
-    <span class="method-number">5</span>
-    <span class="method-name">Freelancer de Servicos Digitais</span>
+<div class="page-break"></div>
+
+<!-- PASSO 4 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">4</span>
+    <span class="step-title">Faca as Avaliacoes Iniciais (Isso Libera Tarefas Pagas)</span>
+    <span class="step-time">15-20 minutos</span>
   </div>
-  <p class="method-desc">Ofereca habilidades que voce ja tem &mdash; digitacao, pesquisa, atendimento, organizacao &mdash; como servicos avulsos online.</p>
-  <div class="method-grid">
-    <div class="method-stat">
-      <span class="method-stat-label">Ganho mensal</span>
-      <span class="method-stat-value money">R$ 250-500</span>
+  <div class="step-body">
+    <p>No seu painel, voce vai ver uma secao chamada <strong>"Assessments"</strong> (Avaliacoes). Essas sao pequenas provas que a Clickworker usa para saber quais tarefas sao ideais para voce.</p>
+    <ol>
+      <li>Toque em <strong>"Assessments"</strong> no menu.</li>
+      <li>Voce vera avaliacoes disponiveis. As mais comuns sao:
+        <ul>
+          <li><strong>UHRS Assessment:</strong> uma prova basica para acessar as tarefas da Microsoft. E a mais importante &mdash; faca ela primeiro.</li>
+          <li><strong>SEO Assessment:</strong> sobre otimizacao de busca (se aparecer).</li>
+          <li><strong>Writing Assessment:</strong> prova de escrita (se aparecer).</li>
+        </ul>
+      </li>
+      <li>Toque na avaliacao que quer fazer e leia as instrucoes <strong>com muita atencao</strong>.</li>
+      <li>Complete a avaliacao sem pressa. Voce nao ganha pontos por velocidade &mdash; ganha por acertar.</li>
+      <li>Ao terminar, o resultado aparece em ate 24 horas (mas geralmente sai em minutos).</li>
+    </ol>
+
+    <div class="info-box">
+      <div class="info-title">Sobre o UHRS</div>
+      <p>O UHRS e onde esta o dinheiro de verdade. E um sistema da Microsoft onde voce faz tarefas como avaliar resultados de busca do Bing, classificar imagens e verificar traducoes. Paga entre US$ 0,01 e US$ 0,15 por tarefa &mdash; parece pouco, mas voce faz centenas por hora. Uma sessao de 30 minutos pode render US$ 2 a US$ 5 (R$ 10 a R$ 25).</p>
     </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Dificuldade</span>
-      <span class="method-stat-value easy">Facil</span>
-    </div>
-    <div class="method-stat">
-      <span class="method-stat-label">Tempo/dia</span>
-      <span class="method-stat-value">30-60 min</span>
-    </div>
-  </div>
-  <div class="method-checks">
-    <span class="method-check"><span class="check-icon">&#10003;</span> Funciona pelo celular</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Investimento: R$ 0</span>
-    <span class="method-check"><span class="check-icon">&#10003;</span> Sem internet rapida</span>
   </div>
 </div>
 
-<!-- ==================== PAGINA 3: CTA ==================== -->
+<!-- PASSO 5 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">5</span>
+    <span class="step-title">Encontre e Complete Sua Primeira Tarefa Paga</span>
+    <span class="step-time">10-15 minutos</span>
+  </div>
+  <div class="step-body">
+    <p>Depois de aprovada nas avaliacoes, as tarefas pagas aparecem no seu painel. Veja como encontra-las:</p>
+    <ol>
+      <li>No menu, toque em <strong>"Jobs"</strong> (Trabalhos). Se voce passou no UHRS, tambem vai aparecer a opcao <strong>"UHRS"</strong> no menu.</li>
+      <li>Voce vera uma lista de tarefas disponiveis. Cada uma mostra:
+        <ul>
+          <li>O nome da tarefa</li>
+          <li>Quanto paga (em dolares)</li>
+          <li>Quantas tarefas estao disponiveis</li>
+        </ul>
+      </li>
+      <li>Para comecar, escolha tarefas com <strong>muitas unidades disponiveis</strong> &mdash; sao as mais faceis e rapidas.</li>
+      <li>Toque na tarefa, leia as instrucoes e comece.</li>
+    </ol>
+
+    <p><strong>Exemplo pratico de uma tarefa tipica:</strong></p>
+    <p>Aparece na sua tela uma imagem de um produto (um tenis, por exemplo) e a pergunta: <em>"Este produto esta na categoria correta: Calcados Esportivos?"</em>. Voce olha a imagem, ve que sim, e um tenis esportivo, e toca em <strong>"Yes"</strong>. Pronto. Voce ganhou US$ 0,02. Levou 5 segundos. Faca 100 dessas em 15 minutos e voce ganhou US$ 2,00 (cerca de R$ 10).</p>
+  </div>
+</div>
+
+<!-- PASSO 6 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">6</span>
+    <span class="step-title">Configure Seu Pagamento e Receba Seu Dinheiro</span>
+    <span class="step-time">5 minutos</span>
+  </div>
+  <div class="step-body">
+    <ol>
+      <li>No menu, toque em <strong>"Payment"</strong> (Pagamento).</li>
+      <li>Selecione <strong>PayPal</strong> como metodo de pagamento (e o mais rapido e pratico).</li>
+      <li>Digite o email da sua conta PayPal. Se voce nao tem PayPal, crie uma conta gratuita em <strong>paypal.com.br</strong> (leva 5 minutos e nao custa nada).</li>
+      <li>Toque em <strong>"Save"</strong>.</li>
+      <li>A Clickworker paga <strong>toda semana</strong>, sempre que seu saldo acumulado atingir <strong>US$ 5,00</strong> (cerca de R$ 25).</li>
+      <li>O dinheiro cai no PayPal e de la voce transfere para sua conta bancaria por Pix &mdash; o valor aparece na sua conta em minutos.</li>
+    </ol>
+
+    <div class="tip-box">
+      <div class="tip-title">Quanto tempo ate o primeiro pagamento?</div>
+      <p>Se voce fizer o cadastro agora e dedicar 30-60 minutos hoje, voce pode acumular entre US$ 1 e US$ 3 (R$ 5 a R$ 15). O primeiro pagamento sai quando voce atingir US$ 5 acumulados &mdash; o que normalmente leva 2 a 3 dias fazendo 1 hora por dia.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PASSO 7 -->
+<div class="step-block">
+  <div class="step-header">
+    <span class="step-number">7</span>
+    <span class="step-title">4 Dicas Para Ganhar Mais Rapido</span>
+    <span class="step-time">Aplique sempre</span>
+  </div>
+  <div class="step-body">
+    <ol>
+      <li><strong>Foque nas tarefas do UHRS.</strong> Elas pagam mais e tem volume ilimitado. Uma vez aprovada, voce pode ficar horas fazendo tarefas sem parar.</li>
+      <li><strong>Faca tarefas de manha cedo ou a noite.</strong> Esses sao os horarios com mais tarefas novas disponiveis. No meio da tarde, muitas ja foram pegas por outros usuarios.</li>
+      <li><strong>Mantenha sua precisao acima de 80%.</strong> A Clickworker monitora sua qualidade. Se voce erra muito, perde acesso as melhores tarefas. Na duvida, pule a tarefa &mdash; melhor pular do que errar.</li>
+      <li><strong>Adicione ingles basico no perfil.</strong> Mesmo que voce so entenda o basico, isso libera o dobro de tarefas. A maioria das tarefas sao visuais (classificar imagens, clicar em opcoes) e nao exigem fluencia.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ==================== PAGINA 5: CTA ==================== -->
 <div class="page-break"></div>
 
 <div class="cta-section">
-  <h2 class="cta-header">Quer o Passo a Passo<br>Completo de Cada Metodo?</h2>
-  <p class="cta-text">Este checklist mostra <strong>O QUE</strong> funciona. O ebook <strong>Renda Extra Honesta</strong> mostra <strong>COMO</strong> fazer &mdash; com tutorial detalhado, cases reais e um plano de 7 dias para seu primeiro resultado.</p>
+  <h2 class="cta-header">Voce Aprendeu 1 Site.<br>Imagina Com 5 Sites + 3 Metodos.</h2>
+
+  <p class="cta-text">Voce acabou de aprender <strong>1 dos 5 sites</strong> de micro-tarefas do metodo completo. So com a Clickworker, da para fazer R$ 50 a R$ 150 por mes em 1 hora por dia. Mas micro-tarefas e apenas <strong>1 dos 4 metodos</strong> do Renda Extra Honesta.</p>
 
   <div class="ebook-box">
-    <div class="ebook-box-title">Renda Extra Honesta</div>
-    <div class="ebook-box-subtitle">O Metodo de 1 Hora Por Dia Para Quem Trabalha CLT</div>
+    <div class="ebook-box-title">O Que Voce Desbloqueia no Ebook</div>
 
-    <ul class="bonus-list">
-      <li><span class="bonus-icon">&#9745;</span> <span><strong>10 capitulos praticos</strong> com tutorial passo a passo de cada metodo</span></li>
-      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Detector de Golpes Online</strong> &mdash; nunca mais caia em armadilhas (R$ 47)</span></li>
-      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Diagnostico de Perfil</strong> &mdash; descubra qual metodo e ideal para voce (R$ 67)</span></li>
-      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Plano de Acao 7 Dias</strong> &mdash; seu primeiro resultado em uma semana (R$ 37)</span></li>
-      <li><span class="bonus-icon">&#9745;</span> <span><strong>Bonus: Planilha de Controle Financeiro</strong> &mdash; acompanhe seus ganhos pelo celular (R$ 43)</span></li>
-      <li><span class="bonus-icon">&#128274;</span> <span><strong>Garantia incondicional de 15 dias</strong> &mdash; seu dinheiro de volta, sem perguntas</span></li>
-    </ul>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th style="width: 45%;">O que voce ja tem</th>
+          <th style="width: 55%;">O que o ebook desbloqueia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 site de micro-tarefas</td>
+          <td class="lock">+ 4 sites que pagam mais</td>
+        </tr>
+        <tr>
+          <td>1 metodo</td>
+          <td class="lock">+ 3 metodos (IA, AV, Afiliados)</td>
+        </tr>
+        <tr>
+          <td>R$ 50-150/mes</td>
+          <td class="lock">Ate R$ 800/mes</td>
+        </tr>
+        <tr>
+          <td>&mdash;</td>
+          <td class="lock">Plano de 7 dias cronometrado</td>
+        </tr>
+        <tr>
+          <td>&mdash;</td>
+          <td class="lock">Diagnostico de perfil</td>
+        </tr>
+        <tr>
+          <td>&mdash;</td>
+          <td class="lock">Detector de golpes online</td>
+        </tr>
+        <tr>
+          <td>&mdash;</td>
+          <td class="lock">Planilha financeira</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="text-align: center; font-size: 10.5pt; color: #2D3748; margin-bottom: 0.8em;">O ebook custa <strong>R$ 37</strong>. Com o que voce acabou de aprender, da para pagar ele em <strong>2 a 3 dias</strong> de micro-tarefas.</p>
 
     <div class="price-box">
       <span class="price-label">Oferta de Lancamento</span>
@@ -668,19 +819,20 @@ strong { color: #1A365D; font-weight: 600; }
       <span class="price-new">R$ 37</span>
     </div>
 
-    <a href="#" class="cta-button">QUERO O METODO COMPLETO POR R$ 37</a>
+    <a href="#" class="cta-button">QUERO OS 4 METODOS COMPLETOS POR R$ 37</a>
     <p class="cta-subtext">Pagamento seguro via Pix, cartao ou boleto &bull; Acesso imediato</p>
 
     <div class="guarantee-badge">
       <span class="shield">&#128737;</span>
-      Garantia de 15 dias &mdash; Risco zero para voce
+      Garantia incondicional de 15 dias &mdash; seu dinheiro de volta, sem perguntas
     </div>
   </div>
 </div>
 
-<div class="checklist-footer">
-  &copy; 2026 Renda Extra Honesta &mdash; Todos os direitos reservados.<br>
-  Este material e gratuito e exclusivo para assinantes.
+<!-- ==================== PAGINA 6: CONTRA-CAPA ==================== -->
+<div class="lead-footer">
+  <strong>Renda Extra Honesta</strong> &mdash; renda extra real para gente real<br>
+  &copy; 2026 &mdash; Todos os direitos reservados. Este material e gratuito e exclusivo para assinantes.
 </div>
 
 </body>
