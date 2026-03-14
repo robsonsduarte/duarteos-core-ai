@@ -1,6 +1,6 @@
 name: "infoprodutos"
 version: "1.0.0"
-description: "Squad Infoprodutos — pipeline completo de criacao de ebooks digitais para venda na Kiwify. 7 agentes, 6 fases, API-ready."
+description: "Squad Infoprodutos — pipeline completo de criacao de infoprodutos digitais para venda na Kiwify. 7 agentes, 8 fases (ebook + lead magnet + quiz pre-sell), API-ready."
 
 agents:
   - name: "pipeline-orchestrator"
@@ -108,6 +108,26 @@ tasks:
       task_type: "implementation"
       minimum: 90
 
+  - name: "phase-7-lead-magnet"
+    file: "tasks/phase-7-lead-magnet.md"
+    agent: "content-writer"
+    secondary_agent: "designer"
+    priority: "P1"
+    depends_on: ["phase-5-production"]
+    omega_threshold:
+      task_type: "implementation"
+      minimum: 90
+
+  - name: "phase-8-quiz-presell"
+    file: "tasks/phase-8-quiz-presell.md"
+    agent: "designer"
+    secondary_agent: "strategist"
+    priority: "P1"
+    depends_on: ["phase-3-strategy", "phase-4-architecture"]
+    omega_threshold:
+      task_type: "implementation"
+      minimum: 90
+
 inherit: ["process-chief"]
 
 templates:
@@ -116,6 +136,8 @@ templates:
   - "templates/commercial-strategy.md"
   - "templates/ebook-outline.md"
   - "templates/chapter-template.md"
+  - "templates/lead-magnet-spec.md"
+  - "templates/quiz-presell-spec.md"
 
 api:
   base_path: "/infoprodutos"
@@ -241,6 +263,38 @@ api:
       cover:
         path: "/design/cover"
         method: "POST"
+
+    lead_magnet:
+      generate:
+        path: "/lead-magnet/generate"
+        method: "POST"
+        description: "Gerar lead magnet pratico para o nicho"
+        input_schema:
+          type: "object"
+          properties:
+            outline: { type: "object", description: "Output da fase 4 (outline)" }
+            strategy: { type: "object", description: "Output da fase 3 (strategy)" }
+            chapters: { type: "array", description: "Output da fase 5 (capitulos)" }
+          required: ["outline", "strategy", "chapters"]
+      status:
+        path: "/lead-magnet/status"
+        method: "GET"
+
+    quiz:
+      generate:
+        path: "/quiz/generate"
+        method: "POST"
+        description: "Gerar quiz de pre-sell para o nicho"
+        input_schema:
+          type: "object"
+          properties:
+            avatar: { type: "object", description: "Output da fase 2 (avatar)" }
+            strategy: { type: "object", description: "Output da fase 3 (strategy)" }
+            outline: { type: "object", description: "Output da fase 4 (outline)" }
+          required: ["avatar", "strategy", "outline"]
+      status:
+        path: "/quiz/status"
+        method: "GET"
 
   webhooks:
     events: ["on_pipeline_start", "on_phase_start", "on_phase_complete", "on_phase_error", "on_pipeline_complete", "on_pipeline_error"]

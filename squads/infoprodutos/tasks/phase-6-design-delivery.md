@@ -121,6 +121,7 @@ Consumido por: **Pipeline final** (FORGE para consolidacao)
 
 ## Checklist de Validacao
 
+### Ebook
 - [ ] Design system definido: cores, tipografia, spacing, layout
 - [ ] Paleta de cores coerente com posicionamento e nicho
 - [ ] Tipografia legivel (base >= 10pt, line-height >= 1.5)
@@ -132,6 +133,15 @@ Consumido por: **Pipeline final** (FORGE para consolidacao)
 - [ ] Estilos para blockquotes, callouts, tabelas e listas definidos
 - [ ] HTML formatado gerado OU PDF compilado via Typst
 - [ ] Artefatos salvos: design-system.json + cover-spec.json + template + output
+
+### Landing Page e Funil
+- [ ] Landing page congruente com lead magnet pratico (nao checklist)
+- [ ] Sales page com copy persuasiva e CTA claro
+- [ ] Upsell page criada
+- [ ] Downsell page criada
+- [ ] Thank you page com instrucoes de acesso
+- [ ] Email sequence de 5 emails (nurture) criada
+- [ ] Todas as paginas responsivas e com design system consistente
 
 ## API Contract
 
@@ -176,11 +186,35 @@ webhooks: ["on_start", "on_complete", "on_error"]
 
 ## Entregaveis
 
+### Ebook
 - `design-system.json` — design system completo (API-ready)
 - `cover-spec.json` — especificacao de capa (API-ready)
 - `ebook-template.typ` ou `ebook-template.html` + `ebook-styles.css` — template
 - `ebook-final.html` — HTML formatado
 - `ebook-final.pdf` — PDF final (se Typst disponivel)
+
+### Landing Page (Lead Magnet)
+- `landing-page.html` — landing page congruente com lead magnet pratico
+- Landing page vende o lead magnet (guia pratico com resultado real), NAO uma checklist generica
+- Copy alinhada com a promessa do lead magnet (resultado concreto em X minutos)
+
+### Sales Page
+- `sales-page.html` — pagina de vendas do ebook principal
+- Copy persuasiva com headline, sub-headline, bullets, depoimentos, CTA
+- Congruente com posicionamento e big idea da fase 3
+
+### Paginas de Funil
+- `upsell-page.html` — pagina de upsell pos-checkout
+- `downsell-page.html` — pagina de downsell (alternativa ao upsell)
+- `thank-you-page.html` — pagina de agradecimento com instrucoes de acesso
+
+### Email Sequence
+- `email-sequence.json` — sequencia de 5 emails de nurture (API-ready)
+  - Email 1: Boas-vindas + entrega do lead magnet
+  - Email 2: Historia/caso de uso + dica pratica
+  - Email 3: Objecao principal eliminada + prova social
+  - Email 4: Conteudo de valor + soft CTA
+  - Email 5: Oferta direta + urgencia real (vagas, preco)
 
 Diretorio: `squads/infoprodutos/output/{pipeline_id}/phase-6-design/`
 

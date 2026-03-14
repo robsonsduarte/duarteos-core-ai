@@ -149,6 +149,36 @@ interface WebhookPayload {
 | EXA_API_KEY | Chave de API Exa.ai | Para pesquisa |
 | APIFY_TOKEN | Token Apify | Para scraping |
 
+## Entregaveis Padrao do Pipeline
+
+Alem do ebook principal (PDF), o pipeline produz como padrao:
+
+| Entregavel | Fase | Descricao |
+|-----------|------|-----------|
+| Ebook (PDF) | Phase 5-6 | Produto principal, 40+ paginas |
+| Lead Magnet Pratico | Phase 7 | Guia com 1 metodo/plataforma que entrega resultado real ao lead (ex: ganhar R$ 5-10) |
+| Quiz de Pre-sell | Phase 8 | 5 perguntas white hat que aquecem e direcionam para checkout com resultado personalizado |
+| Landing Page | Phase 6 | Pagina congruente com lead magnet pratico |
+| Sales Page | Phase 6 | Pagina de vendas do ebook |
+| Email Sequence | Phase 6 | 5 emails de nurture (boas-vindas → oferta) |
+| Upsell/Downsell | Phase 6 | Paginas pos-checkout |
+
+### 2 Caminhos de Funil
+
+```
+Caminho 1 (Nurture):  Lead Magnet → Email Sequence → Sales Page → Checkout
+Caminho 2 (Direto):   Quiz Pre-sell → Resultado Personalizado → Checkout
+                       └→ "Prefiro comecar gratis" → Landing Page Lead Magnet
+```
+
+### Quiz Interativo
+
+O quiz de pre-sell e um componente HTML/CSS/JS standalone que:
+- Apresenta 5 perguntas light (100% white hat)
+- Calcula perfil do lead com base nas respostas
+- Gera resultado personalizado com metodo ideal
+- Direciona para checkout ou para lead magnet gratuito
+
 ## Dependencias de Sistema
 
 ```bash
