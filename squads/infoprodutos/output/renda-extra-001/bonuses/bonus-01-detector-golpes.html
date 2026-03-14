@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detector de Golpes Online — Bonus Renda Extra Honesta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: A4;
+  margin: 20mm 20mm 25mm 25mm;
+  @top-center { content: "Detector de Golpes Online"; font-family: 'Poppins', sans-serif; font-size: 9pt; color: #718096; }
+  @bottom-center { content: counter(page); font-family: 'Inter', sans-serif; font-size: 9pt; color: #718096; }
+}
+
+html { font-size: 11pt; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2D3748;
+  line-height: 1.7;
+  background: #FFFFFF;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === PRINT STYLES === */
+@media print {
+  body { max-width: none; padding: 0; }
+  .page-break { page-break-before: always; break-before: page; }
+  .no-break { page-break-inside: avoid; break-inside: avoid; }
+  .cover-page { page-break-after: always; break-after: page; }
+  .box-red-flag, .box-case, .box-highlight, .box-summary,
+  .checklist-page, table, blockquote, .chapter-header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  p { orphans: 3; widows: 3; }
+  a { color: #2D3748; text-decoration: none; }
+  tbody tr:hover { background: transparent; }
+  .cover-page, .chapter-header, thead th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  table { table-layout: fixed; width: 100%; }
+  img { max-width: 100%; height: auto; }
+}
+
+@media screen {
+  body { padding: 20px; max-width: 800px; }
+  .page-break { border-top: 2px dashed #E2E8F0; margin: 3em 0; padding-top: 3em; }
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1A365D; font-weight: 700; margin-top: 1.8em; margin-bottom: 0.6em; line-height: 1.3; break-after: avoid; page-break-after: avoid; }
+h1 { font-size: 28pt; border-bottom: 3px solid #1B7A4A; padding-bottom: 0.3em; margin-top: 0; }
+h2 { font-size: 20pt; color: #1B7A4A; }
+h3 { font-size: 15pt; color: #1A365D; }
+h4 { font-size: 12pt; color: #2D3748; font-weight: 600; }
+
+p { margin-bottom: 0.8em; text-align: justify; hyphens: auto; orphans: 3; widows: 3; }
+strong { color: #1A365D; font-weight: 600; }
+em { font-style: italic; }
+a { color: #1B7A4A; text-decoration: none; font-weight: 500; }
+
+/* === COVER PAGE === */
+.cover-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(160deg, #1A365D 0%, #E53E3E 100%);
+  color: #FFFFFF;
+  padding: 4em 3em;
+  border-radius: 0;
+  margin: -20px -20px 0 -20px;
+}
+
+@media print { .cover-page { margin: 0; border-radius: 0; } }
+
+.cover-badge {
+  display: inline-block;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cover-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38pt;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+  color: #FFFFFF;
+  border: none;
+  padding: 0;
+}
+
+.cover-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2.5em;
+  opacity: 0.9;
+}
+
+.cover-tagline {
+  background: rgba(255,255,255,0.15);
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  max-width: 520px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.cover-shield {
+  font-size: 72pt;
+  margin-bottom: 0.3em;
+}
+
+/* === CHAPTER HEADER === */
+.chapter-header {
+  background: linear-gradient(135deg, #1A365D 0%, #E53E3E 100%);
+  color: #FFFFFF;
+  padding: 2em 2em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  margin-top: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.chapter-header h1 {
+  color: #FFFFFF;
+  border: none;
+  font-size: 22pt;
+  margin: 0;
+  padding: 0;
+}
+
+.chapter-header .chapter-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  margin-bottom: 0.3em;
+}
+
+/* === RED FLAG BOX === */
+.box-red-flag {
+  background: #FFF5F5;
+  border: 2px solid #E53E3E;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.box-red-flag .box-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #C53030;
+  font-size: 14pt;
+  margin-bottom: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.box-red-flag .scam-phrase {
+  background: #FED7D7;
+  border-left: 4px solid #E53E3E;
+  padding: 0.8em 1.2em;
+  margin: 1em 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-weight: 500;
+  color: #742A2A;
+}
+
+.box-red-flag .verify-steps {
+  background: #E8F5EE;
+  border: 1px solid #1B7A4A;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+  margin-top: 1em;
+}
+
+.box-red-flag .verify-steps strong {
+  color: #1B7A4A;
+}
+
+/* === SPECIAL BOXES === */
+.box-case {
+  background: #E8F5EE;
+  border: 2px solid #1B7A4A;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.box-case .box-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #145A37;
+  font-size: 13pt;
+  margin-bottom: 0.8em;
+}
+
+.box-highlight {
+  background: #FFF8E7;
+  border: 2px solid #E8930C;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.box-highlight .box-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #B7791F;
+  font-size: 13pt;
+  margin-bottom: 0.8em;
+}
+
+.box-summary {
+  background: #F7FAFC;
+  border: 2px solid #1A365D;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.box-summary .box-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1A365D;
+  font-size: 13pt;
+  margin-bottom: 0.8em;
+}
+
+/* === TABLES === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 10pt;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  table-layout: fixed;
+}
+
+thead th {
+  background: #1A365D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.8em 0.8em;
+  text-align: left;
+  font-size: 10pt;
+}
+
+tbody td {
+  padding: 0.7em 0.8em;
+  border-bottom: 1px solid #E2E8F0;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) { background: #F7FAFC; }
+
+/* === LISTS === */
+ul, ol { padding-left: 1.5em; margin-bottom: 1em; }
+li { margin-bottom: 0.4em; }
+ul li::marker { color: #1B7A4A; }
+
+/* === CHECKLIST === */
+.checklist-page {
+  background: #F7FAFC;
+  border: 2px solid #1A365D;
+  border-radius: 12px;
+  padding: 2em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #CBD5E0;
+}
+
+.checklist-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.check-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #1B7A4A;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 9pt;
+  color: transparent;
+}
+
+.checklist-item .check-text {
+  flex: 1;
+}
+
+.checklist-item .check-text strong {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+/* === RESOURCE LIST === */
+.resource-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+}
+
+.resource-card h4 {
+  color: #1B7A4A;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.resource-card .url {
+  font-family: 'Inter', sans-serif;
+  font-size: 10pt;
+  color: #718096;
+  word-break: break-all;
+}
+
+/* === TEMPLATE BOX === */
+.template-box {
+  background: #FFFFFF;
+  border: 2px solid #1A365D;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.template-box .template-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1A365D;
+  font-size: 13pt;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.template-box .field {
+  margin-bottom: 0.8em;
+}
+
+.template-box .field-label {
+  font-weight: 600;
+  color: #1A365D;
+  font-size: 10pt;
+  margin-bottom: 0.2em;
+}
+
+.template-box .field-line {
+  border-bottom: 2px dotted #CBD5E0;
+  min-height: 1.5em;
+  margin-top: 0.2em;
+}
+
+.template-box .field-text {
+  background: #F7FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  padding: 0.8em;
+  min-height: 3em;
+  font-size: 10pt;
+  color: #718096;
+  font-style: italic;
+}
+
+/* === HORIZONTAL RULES === */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #E2E8F0, #E53E3E, #E2E8F0, transparent);
+  margin: 2em 0;
+}
+
+/* === BACK COVER === */
+.back-cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(160deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 4em 3em;
+  margin: 0 -20px -20px -20px;
+}
+
+@media print { .back-cover { margin: 0; } }
+
+.back-cover h2 {
+  color: #FFFFFF;
+  font-size: 22pt;
+  margin-bottom: 0.5em;
+}
+
+.back-cover p {
+  color: rgba(255,255,255,0.85);
+  font-size: 12pt;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* === UTILITIES === */
+.text-center { text-align: center; }
+.text-muted { color: #718096; }
+.text-small { font-size: 9pt; }
+.text-red { color: #E53E3E; }
+.mt-0 { margin-top: 0; }
+.mb-2 { margin-bottom: 1em; }
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- CAPA -->
+<!-- ============================================ -->
+<div class="cover-page">
+  <div class="cover-badge">Bonus Exclusivo</div>
+  <div class="cover-shield">&#128737;</div>
+  <h1 class="cover-title">Detector de<br>Golpes Online</h1>
+  <p class="cover-subtitle">7 Sinais Vermelhos Para Nunca Mais<br>Cair Em Falsas Oportunidades</p>
+  <div class="cover-tagline">Material complementar do ebook Renda Extra Honesta. Guia pratico para proteger seu dinheiro e seu tempo.</div>
+</div>
+
+<!-- ============================================ -->
+<!-- INTRODUCAO -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<h1>Por Que Este Guia Existe</h1>
+
+<p>Antes de ganhar dinheiro, voce precisa aprender a <strong>nao perder dinheiro</strong>.</p>
+
+<p>Parece obvio, mas nao e. Segundo o Banco Central do Brasil, mais de 1,7 milhao de brasileiros foram vitimas de golpes financeiros online em 2024. E o nicho de "renda extra" e um dos terrenos mais ferteis para golpistas, justamente porque atrai pessoas em situacao de vulnerabilidade financeira.</p>
+
+<p>Voce ja sabe disso na pele. Talvez ja tenha visto uma "oportunidade imperdivel" que parecia boa demais para ser verdade. Talvez ate tenha perdido dinheiro com uma. Nao e vergonha nenhuma -- golpistas sao profissionais. Eles estudam psicologia, usam gatilhos mentais e criam paginas de venda perfeitas.</p>
+
+<p>Este guia vai te dar as ferramentas para <strong>nunca mais cair nessas armadilhas</strong>. Sao 7 sinais vermelhos que, quando voce aprende a identificar, funcionam como um radar permanente. E mais: no final, voce encontra uma checklist imprimivel, uma tabela com golpes reais desmascarados e ate um modelo pronto para denunciar.</p>
+
+<p>Guarde este material. Releia antes de entrar em qualquer "oportunidade". Compartilhe com amigas e familiares. Porque a melhor forma de combater golpes e <strong>informacao</strong>.</p>
+
+<p>Vamos la.</p>
+
+<!-- ============================================ -->
+<!-- 7 SINAIS VERMELHOS -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="chapter-header">
+  <div class="chapter-number">Parte 1</div>
+  <h1>Os 7 Sinais Vermelhos</h1>
+</div>
+
+<p>Todo golpe de renda extra segue um roteiro. Nao importa se e piramide financeira, marketing multinivel predatorio, esquema Ponzi ou simples fraude: os sinais se repetem. Aprenda esses 7 e voce tera um escudo contra 95% dos golpes do mercado.</p>
+
+<!-- SINAL 1 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #1 — Promessa de Ganho Garantido</div>
+
+  <p><strong>O que e:</strong> Qualquer oportunidade que promete um valor fixo ou minimo garantido de ganho sem considerar seu esforco, habilidade ou variacao de mercado. Frases como "ganhe R$ 5.000 garantidos" ou "renda fixa de R$ 300 por dia" sao bandeiras vermelhas absolutas.</p>
+
+  <p><strong>Por que e golpe:</strong> Nenhuma atividade economica legitima pode garantir ganhos fixos. Ate investimentos regulados pelo Banco Central tem rendimentos variaveis. Quando alguem garante um valor, ou esta mentindo sobre o modelo de negocio ou esta usando dinheiro de novos entrantes para pagar os antigos -- o classico esquema Ponzi.</p>
+
+  <div class="scam-phrase">"Ganhe R$ 200 por dia garantidos, mesmo sem experiencia. Basta seguir nosso metodo comprovado."</div>
+
+  <p><strong>Exemplo real:</strong> Em 2023, a empresa "Digital Profit" prometia ganhos de R$ 150/dia para quem "assistisse videos e completasse tarefas simples". Os primeiros participantes recebiam pagamentos pontuais (com dinheiro dos novos entrantes). Depois de captar milhares de inscritos que pagaram R$ 197 de "taxa de ativacao", a plataforma sumiu do ar. Estimativa de prejuizo: R$ 4,7 milhoes.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Pergunte: "Qual o ganho MINIMO e MAXIMO possivel?" Se so falarem do maximo, desconfie.</li>
+      <li>Procure depoimentos de pessoas que NAO ganharam o prometido. Se nao existirem, e porque foram apagados.</li>
+      <li>Compare com a realidade: se a proposta paga mais por hora que um medico ou advogado, e golpe.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SINAL 2 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #2 — Exigencia de Pagamento Antecipado</div>
+
+  <p><strong>O que e:</strong> Para comecar a "ganhar dinheiro", voce precisa pagar antes: taxa de cadastro, kit inicial, licenca, ativacao de conta, material obrigatorio. Nomes bonitos para a mesma coisa: tirar dinheiro do seu bolso antes de voce ganhar um centavo.</p>
+
+  <p><strong>Por que e golpe:</strong> Trabalhos legitimos nao cobram para voce trabalhar. Empresas serias investem em voce (treinamento, ferramentas) e ganham dinheiro COM voce, nao DE voce. Se o modelo de negocio depende de voce pagar para entrar, o verdadeiro produto sendo vendido e... voce.</p>
+
+  <div class="scam-phrase">"Invista apenas R$ 297 no kit inicial e comece a faturar amanha mesmo. O retorno vem em 15 dias."</div>
+
+  <p><strong>Exemplo real:</strong> Redes de marketing multinivel predatorio frequentemente exigem compra de "kits" entre R$ 200 e R$ 2.000. Uma rede de cosmeticos que operou no Brasil entre 2021-2024 exigia kit de R$ 890. Pesquisa interna (vazada) mostrou que 94% dos participantes nunca recuperaram o investimento do kit. Os 6% que lucraram estavam nos primeiros niveis da piramide.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Pergunte: "Posso comecar SEM pagar nada?" Se a resposta for nao, avalie com muito cuidado.</li>
+      <li>Pesquise no Reclame Aqui se ha reclamacoes sobre "dificuldade de reembolso" ou "investimento sem retorno".</li>
+      <li>Regra de ouro: se para ganhar dinheiro voce precisa gastar dinheiro que nao tem, NAO faca.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SINAL 3 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #3 — Urgencia Artificial e Escassez Falsa</div>
+
+  <p><strong>O que e:</strong> Cronometros regressivos, "ultimas 3 vagas", "preco sobe a meia-noite", "oportunidade unica que nunca mais vai se repetir". Quando a pressao para decidir rapido e maior do que a informacao sobre o que voce esta comprando, ha algo errado.</p>
+
+  <p><strong>Por que e golpe:</strong> Golpistas sabem que decisoes impulsivas favorecem eles. Quanto menos tempo voce tem para pesquisar, conversar com alguem de confianca e pensar com calma, maior a chance de voce cair. Oportunidades reais nao desaparecem em 24 horas.</p>
+
+  <div class="scam-phrase">"ATENCAO: restam apenas 7 vagas. Esse valor promocional expira em 23 minutos e 47 segundos."</div>
+
+  <p><strong>Exemplo real:</strong> Um "treinamento de renda extra" usava um cronometro regressivo na pagina de vendas que, ao zerar, simplesmente reiniciava. A "ultima chance" se repetia infinitamente. Quando participantes questionaram, foram bloqueados do grupo. O treinamento consistia em videos genericos sobre "mindset empreendedor" sem nenhuma estrategia pratica.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Abra a pagina de vendas em uma janela anonima amanha. Se o cronometro reiniciou, e falso.</li>
+      <li>Aplique a regra das 48 horas: nunca compre algo no mesmo dia. Se for real, ainda estara disponivel depois de amanha.</li>
+      <li>Procure o preco em sites de cache (Google Cache, Wayback Machine). Se o "desconto" existe ha meses, nao e desconto.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SINAL 4 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #4 — Recrutamento Como Fonte Principal de Renda</div>
+
+  <p><strong>O que e:</strong> O dinheiro nao vem de vender um produto ou prestar um servico, mas de recrutar novas pessoas para o esquema. Voce ganha "bonus" por cada pessoa que indicar, e essas pessoas tambem precisam recrutar outras, e assim por diante.</p>
+
+  <p><strong>Por que e golpe:</strong> Isso e, por definicao, uma piramide financeira -- crime previsto no Art. 2o da Lei 1.521/51 e punivel com 6 meses a 2 anos de prisao. Piramides sempre colapsam porque dependem de crescimento infinito de participantes, e a populacao e finita. Quem entra por ultimo sempre perde.</p>
+
+  <div class="scam-phrase">"Indique 3 amigos e ganhe R$ 100 por cada. Quando seus amigos indicarem mais 3, voce ganha mais R$ 50 por indicacao deles."</div>
+
+  <p><strong>Exemplo real:</strong> A Telexfree operou no Brasil entre 2012 e 2013 prometendo ganhos por "divulgar anuncios VOIP". Na realidade, 97% da receita vinha de novos aderentes pagando para entrar. Quando colapsou, deixou mais de 1 milhao de vitimas com prejuizo estimado em R$ 1 bilhao. Os fundadores foram presos.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Pergunte: "Se eu NAO recrutar ninguem, ainda posso ganhar dinheiro?" Se a resposta for "sim, mas..." e golpe.</li>
+      <li>Analise de onde vem o dinheiro: se nao ha um cliente EXTERNO pagando por um produto, o dinheiro so pode vir de novos participantes.</li>
+      <li>Consulte o site da CVM (Comissao de Valores Mobiliarios) para verificar se a empresa tem autorizacao para captar investimentos.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SINAL 5 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #5 — Falta de Transparencia Sobre a Empresa</div>
+
+  <p><strong>O que e:</strong> Voce nao encontra CNPJ, endereco fisico, nomes de socios ou historico da empresa. O site tem dominio recente, sem politica de privacidade, sem termos de uso. A comunicacao e toda por WhatsApp ou Telegram, nunca por canais oficiais.</p>
+
+  <p><strong>Por que e golpe:</strong> Empresas legitimas existem no mundo real. Tem registro, endereco, responsaveis com nome e CPF. Quando alguem esconde essas informacoes, e porque nao quer ser encontrado quando o esquema desmoronar.</p>
+
+  <div class="scam-phrase">"Nao se preocupe com burocracia. Nossa empresa e internacional. O escritorio fica em Dubai/Malta/Panama."</div>
+
+  <p><strong>Exemplo real:</strong> Uma plataforma de "investimento em criptomoedas" prometia 3% ao dia de rendimento. O site nao tinha CNPJ, o "CEO" usava foto de banco de imagens (verificavel por busca reversa no Google), e o endereco da "sede" em Londres era de um coworking que alugava enderecos virtuais por 10 libras/mes. A plataforma sumiu apos 4 meses com R$ 12 milhoes de investidores brasileiros.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Pesquise o CNPJ no site da Receita Federal (solucoes.receita.fazenda.gov.br). Verifique se esta ativo e ha quanto tempo existe.</li>
+      <li>Busque o nome dos socios no Google. Pessoas reais tem historico: LinkedIn, outras empresas, noticias.</li>
+      <li>Verifique a data de criacao do dominio em who.is. Se o site tem menos de 6 meses, cautela maxima.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SINAL 6 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #6 — Depoimentos Falsos ou Nao Verificaveis</div>
+
+  <p><strong>O que e:</strong> A pagina de vendas mostra dezenas de prints de WhatsApp com "resultados incriveis", fotos de extratos bancarios e videos de pessoas agradecendo. Mas voce nao consegue verificar se essas pessoas existem, e os depoimentos parecem todos seguir o mesmo roteiro.</p>
+
+  <p><strong>Por que e golpe:</strong> Depoimentos falsos sao baratos de produzir. Existem sites como Fiverr onde voce paga R$ 25 por um video-depoimento feito por um ator. Prints de WhatsApp sao triviais de falsificar. E extratos bancarios editados no Photoshop levam 5 minutos. A prova social e a arma mais poderosa do golpista.</p>
+
+  <div class="scam-phrase">"Olha o que a Maria de Sorocaba conseguiu em apenas 7 dias: R$ 4.200 com nosso metodo! (print de WhatsApp sem sobrenome nem foto identificavel)"</div>
+
+  <p><strong>Exemplo real:</strong> Um curso de "dropshipping" usava 15 video-depoimentos na pagina de vendas. Uma investigacao de um canal no YouTube identificou que 12 dos 15 depoentes eram atores do Fiverr e Workana. Os 3 restantes eram socios do proprio curso usando nomes falsos.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Faca busca reversa da foto (Google Imagens ou TinEye). Se a mesma foto aparece em outros contextos, e falsa.</li>
+      <li>Procure o nome completo da pessoa + cidade no Instagram ou Facebook. Pessoas reais tem perfis reais.</li>
+      <li>Desconfie de prints sem sobrenome, sem foto identificavel, ou com resultados exageradamente altos em pouco tempo.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SINAL 7 -->
+<div class="box-red-flag">
+  <div class="box-title">Sinal Vermelho #7 — Modelo de Negocio Incompreensivel</div>
+
+  <p><strong>O que e:</strong> Voce nao consegue explicar em uma frase simples como o dinheiro e gerado. "Arbitragem de criptoativos com alavancagem em mercados secundarios", "marketing de rede com cashback reverso em multilevel", "monetizacao de atencao em plataformas descentralizadas". Quando ninguem consegue explicar de onde vem o dinheiro, e porque o dinheiro vem de voce.</p>
+
+  <p><strong>Por que e golpe:</strong> Negocios legitimos sao simples de explicar: "Eu vendo um produto, o cliente paga, eu fico com a margem." Quando o modelo e enrolado, e de proposito. A complexidade existe para que voce nao faca a pergunta obvia: "Mas quem paga por isso?"</p>
+
+  <div class="scam-phrase">"Nosso algoritmo proprietario de inteligencia artificial opera no mercado Forex 24/7, gerando rendimentos consistentes atraves de arbitragem triangular entre exchanges descentralizadas."</div>
+
+  <p><strong>Exemplo real:</strong> Uma "fintech" prometia rendimentos de 2% ao mes usando "trading automatizado com IA". Pedia depositos minimos de R$ 500. Quando investidores pediam para ver o historico de operacoes, recebiam planilhas genericas sem detalhe. A empresa nao tinha autorizacao da CVM nem do Banco Central para operar. Fechou apos 8 meses com R$ 23 milhoes de investidores.</p>
+
+  <div class="verify-steps">
+    <strong>Como verificar:</strong>
+    <ol>
+      <li>Faca o "teste da avo": tente explicar o modelo de negocio para uma pessoa sem conhecimento tecnico. Se nao conseguir, e sinal vermelho.</li>
+      <li>Identifique o CLIENTE: quem paga pelo produto/servico? Se a resposta for "os proprios participantes", e piramide.</li>
+      <li>Pesquise o setor no site do Banco Central (bcb.gov.br) e da CVM (cvm.gov.br) para verificar se a atividade e regulamentada e se a empresa tem autorizacao.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- 10 GOLPES REAIS DESMASCARADOS -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="chapter-header">
+  <div class="chapter-number">Parte 2</div>
+  <h1>10 Golpes Reais Desmascarados</h1>
+</div>
+
+<p>A tabela abaixo reune 10 tipos de golpes que circulam no mercado de renda extra no Brasil. Os nomes das empresas foram generalizados, mas os modelos sao reais e ativos.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:18%;">Golpe</th>
+      <th style="width:27%;">Como Funciona</th>
+      <th style="width:27%;">Como Identificar</th>
+      <th style="width:28%;">Onde Denunciar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tarefa Paga Falsa</strong></td>
+      <td>Plataforma pede para voce "curtir posts" ou "assistir videos" por dinheiro. Paga centavos no inicio, depois exige "deposito para liberar saque".</td>
+      <td>Pede deposito para sacar. Pagamentos iniciais sao isca. App nao esta na Play Store/App Store oficial.</td>
+      <td>Procon do seu estado + Delegacia de Crimes Ciberneticos</td>
+    </tr>
+    <tr>
+      <td><strong>Piramide de Pix</strong></td>
+      <td>Voce envia Pix de R$ 100 e "recruta" 3 pessoas que enviam R$ 100 cada. Voce recebe R$ 300. Quem nao recruta, perde tudo.</td>
+      <td>Ganho depende 100% de recrutamento. Nao ha produto. Promessa de retorno rapido e facil.</td>
+      <td>Banco Central (bcb.gov.br/acessoinformacao/faleconosco) + Policia Civil</td>
+    </tr>
+    <tr>
+      <td><strong>Falso Dropshipping</strong></td>
+      <td>Curso caro (R$ 997-2.997) que ensina a vender online "sem estoque". Na pratica, exige investimento em anuncios (R$ 1.500+/mes) e margem real e de 2-5%.</td>
+      <td>Custo real muito acima do vendido. Depoimentos sem comprovacao. Resultados exagerados nos criativos.</td>
+      <td>Procon + Reclame Aqui (documentar tudo)</td>
+    </tr>
+    <tr>
+      <td><strong>Robos de Trading</strong></td>
+      <td>"Robo de investimento" que promete rendimentos diarios de 1-3%. Pede deposito minimo de R$ 300-1.000. Paga nos primeiros meses com dinheiro de novos entrantes.</td>
+      <td>Rendimento impossivel (acima de 1% ao mes ja e muito). Sem autorizacao CVM. Sede "no exterior" sem endereco verificavel.</td>
+      <td>CVM (cvm.gov.br) + Banco Central + Policia Federal</td>
+    </tr>
+    <tr>
+      <td><strong>Marketing Multinivel Predatorio</strong></td>
+      <td>Vender produtos superfaturados (cosmeticos, suplementos) e ganhar "bonus" por recrutar vendedores. 94% nunca recuperam o investimento do kit.</td>
+      <td>Enfase em recrutamento. Kit caro obrigatorio. Produtos sem preco competitivo no mercado aberto.</td>
+      <td>Procon + Ministerio Publico + ABEVD (para verificar se e associada)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:18%;">Golpe</th>
+      <th style="width:27%;">Como Funciona</th>
+      <th style="width:27%;">Como Identificar</th>
+      <th style="width:28%;">Onde Denunciar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Falso Emprego Home Office</strong></td>
+      <td>Vaga de "digitador online" ou "avaliador de apps" com salario fixo de R$ 3.000-5.000. Pede pagamento de R$ 97-197 para "material de treinamento" ou "taxa de cadastro".</td>
+      <td>Emprego real nunca cobra taxa. Vaga sem nome de empresa. Descricao vaga sem responsabilidades claras.</td>
+      <td>Ministerio do Trabalho (mte.gov.br) + Procon + Policia Civil</td>
+    </tr>
+    <tr>
+      <td><strong>Sorteio Falso no Instagram</strong></td>
+      <td>Perfil falso (ou hackeado) posta que voce "ganhou" um premio. Para "receber", precisa pagar frete (R$ 49-99) ou enviar dados bancarios.</td>
+      <td>Voce nunca se inscreveu. Pede pagamento para receber premio. Perfil com poucos posts ou criado recentemente.</td>
+      <td>SaferNet (safernet.org.br) + Delegacia de Crimes Ciberneticos</td>
+    </tr>
+    <tr>
+      <td><strong>Curso de Afiliados Fraudulento</strong></td>
+      <td>Curso de R$ 497-997 que promete "faturar R$ 10k/mes como afiliado digital". Conteudo generico, sem suporte real. Unica estrategia ensinada: vender o proprio curso para outros.</td>
+      <td>Enfase excessiva em resultados financeiros. Conteudo sem especificidade. Promessa vs. realidade dos alunos.</td>
+      <td>Procon + Reclame Aqui + Plataforma onde o curso e vendido (Hotmart, Kiwify)</td>
+    </tr>
+    <tr>
+      <td><strong>App de Mineracao no Celular</strong></td>
+      <td>Aplicativo que promete "minerar criptomoedas" pelo celular e pagar em reais. Na pratica, nao minera nada -- so mostra anuncios e coleta dados pessoais.</td>
+      <td>Celular nao tem poder de processamento para mineracao real. App pede permissoes excessivas. Saques nunca sao processados.</td>
+      <td>Procon + Google Play/App Store (denunciar app) + ANPD (para uso indevido de dados)</td>
+    </tr>
+    <tr>
+      <td><strong>Falso Cashback</strong></td>
+      <td>Plataforma promete cashback de 30-50% em compras online. Pede deposito minimo para "ativar conta". Cashback nunca e creditado ou tem regras imposssiveis de cumprir.</td>
+      <td>Cashback acima de 10% ja e suspeito. Exige deposito para comecar. Termos de saque com regras abusivas.</td>
+      <td>Procon + Reclame Aqui + Banco Central (se envolver transacoes financeiras)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================ -->
+<!-- CHECKLIST IMPRIMIVEL -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="chapter-header">
+  <div class="chapter-number">Parte 3</div>
+  <h1>Checklist: Os 7 Filtros Anti-Golpe</h1>
+</div>
+
+<p>Antes de entrar em <strong>qualquer oportunidade de renda extra</strong>, passe por estes 7 filtros. Imprima esta pagina e cole na sua mesa ou na geladeira. Se a oportunidade nao passar em pelo menos 6 dos 7 filtros, <strong>nao entre</strong>.</p>
+
+<div class="checklist-page">
+  <h3 style="text-align:center; color:#1A365D; margin-top:0; margin-bottom:1.2em;">Checklist Anti-Golpe</h3>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 1: Promessa realista?</strong>
+      Os ganhos prometidos sao compativeis com a realidade? (R$ 300-800/mes para iniciante e realista. R$ 5.000-10.000/mes sem experiencia nao e.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 2: Zero investimento para comecar?</strong>
+      Voce consegue comecar sem pagar absolutamente nada? (Taxa de cadastro, kit, material, ativacao -- tudo isso e sinal vermelho.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 3: Sem pressao de tempo?</strong>
+      Voce tem pelo menos 48 horas para decidir sem perder a oportunidade? (Se a oferta "expira hoje", suspeite.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 4: Ganho independente de recrutamento?</strong>
+      Voce consegue ganhar dinheiro SEM precisar indicar outras pessoas? (Se o ganho depende de recrutamento, e piramide.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 5: Empresa transparente?</strong>
+      Voce encontra CNPJ ativo, endereco real, nomes dos socios e historico da empresa? (Se nao encontra, nao confie.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 6: Depoimentos verificaveis?</strong>
+      Voce consegue encontrar as pessoas dos depoimentos em redes sociais? (Se nao encontra perfis reais, os depoimentos sao falsos.)
+    </div>
+  </div>
+
+  <div class="checklist-item">
+    <span class="check-box"></span>
+    <div class="check-text">
+      <strong>Filtro 7: Modelo de negocio compreensivel?</strong>
+      Voce consegue explicar em uma frase como o dinheiro e gerado? (Se nao consegue, nao entre.)
+    </div>
+  </div>
+
+  <div style="background:#E8F5EE; border-radius:8px; padding:1em; margin-top:1.5em; text-align:center;">
+    <strong style="color:#1B7A4A; font-size:12pt;">Resultado: _____ / 7 filtros aprovados</strong><br>
+    <span class="text-muted" style="font-size:10pt;">6-7 aprovados = pode avaliar com mais calma | 4-5 = cautela maxima | 0-3 = nao entre</span>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SITES DE VERIFICACAO -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="chapter-header">
+  <div class="chapter-number">Parte 4</div>
+  <h1>Sites Para Verificar Reputacao</h1>
+</div>
+
+<p>Antes de confiar em qualquer empresa ou oportunidade, consulte estas fontes. Todas sao gratuitas e acessiveis pelo celular.</p>
+
+<div class="resource-card">
+  <h4>Reclame Aqui</h4>
+  <p>Maior plataforma de reclamacoes do Brasil. Pesquise o nome da empresa e veja nota, quantidade de reclamacoes, tempo de resposta e se resolvem problemas.</p>
+  <p class="url">reclameaqui.com.br</p>
+  <p class="text-small text-muted">Dica: empresas com nota abaixo de 6.0 ou "Nao Recomendada" merecem cautela extra.</p>
+</div>
+
+<div class="resource-card">
+  <h4>Receita Federal — Consulta CNPJ</h4>
+  <p>Verifique se a empresa tem CNPJ ativo, data de abertura, endereco e atividade economica. Empresas com CNPJ aberto ha menos de 6 meses e atividade generica ("outras atividades de servicos") sao suspeitas.</p>
+  <p class="url">solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp</p>
+</div>
+
+<div class="resource-card">
+  <h4>Banco Central — Instituicoes Autorizadas</h4>
+  <p>Se a empresa opera com investimentos, emprestimos ou transacoes financeiras, PRECISA estar registrada no Banco Central. Se nao estiver, esta operando ilegalmente.</p>
+  <p class="url">bcb.gov.br/estabilidadefinanceira/encontreinstituicao</p>
+</div>
+
+<div class="resource-card">
+  <h4>CVM — Comissao de Valores Mobiliarios</h4>
+  <p>Para verificar se uma empresa tem autorizacao para captar investimentos ou operar no mercado de capitais. Consulte tambem a lista de "alertas ao mercado" com empresas ja denunciadas.</p>
+  <p class="url">cvm.gov.br/menu/regulados/consultareg.html</p>
+</div>
+
+<div class="resource-card">
+  <h4>Procon do Seu Estado</h4>
+  <p>Cada estado tem seu Procon. Use para consultar empresas com reclamacoes registradas e para formalizar denuncias de praticas abusivas.</p>
+  <p class="url">Pesquise "Procon + [seu estado]" no Google</p>
+</div>
+
+<div class="resource-card">
+  <h4>Who.is — Verificacao de Dominio</h4>
+  <p>Descubra quando o site da empresa foi criado. Dominios com menos de 6 meses e dados de registro ocultos sao sinal de alerta.</p>
+  <p class="url">who.is</p>
+</div>
+
+<div class="resource-card">
+  <h4>Google Imagens — Busca Reversa</h4>
+  <p>Para verificar se fotos de "depoimentos" ou do "CEO" sao de bancos de imagens ou de outras pessoas. Acesse images.google.com e clique no icone de camera para enviar a foto.</p>
+  <p class="url">images.google.com</p>
+</div>
+
+<!-- ============================================ -->
+<!-- TEMPLATE DE DENUNCIA -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="chapter-header">
+  <div class="chapter-number">Parte 5</div>
+  <h1>Como Denunciar um Golpe Online</h1>
+</div>
+
+<p>Se voce ou alguem que conhece foi vitima de um golpe, <strong>denuncie</strong>. Nao por vinganca, mas para proteger as proximas vitimas. Abaixo esta o passo a passo e um modelo pronto para copiar e adaptar.</p>
+
+<h3>Onde denunciar (em ordem de prioridade)</h3>
+
+<ol>
+  <li><strong>Delegacia de Policia Civil (presencial ou online)</strong> — Muitos estados aceitam Boletim de Ocorrencia online para crimes ciberneticos. Pesquise "BO online + [seu estado]".</li>
+  <li><strong>Procon do seu estado</strong> — Para reclamacoes formais sobre praticas comerciais abusivas e pedidos de reembolso.</li>
+  <li><strong>Banco Central</strong> — Se o golpe envolveu transacoes Pix, operacoes financeiras ou promessa de investimento. Use o canal "Fale Conosco" no site do BCB.</li>
+  <li><strong>Plataforma de pagamento</strong> — Se voce pagou via cartao, conteste a cobranca junto ao banco emissor. Se foi via plataforma (Kiwify, Hotmart, Monetizze), solicite reembolso direto.</li>
+  <li><strong>SaferNet Brasil</strong> — Para denuncias de crimes ciberneticos: safernet.org.br/site/denunciar</li>
+</ol>
+
+<h3>Modelo de Denuncia</h3>
+
+<p>Copie o modelo abaixo e preencha com seus dados. Use para enviar ao Procon, Policia Civil ou qualquer orgao competente.</p>
+
+<div class="template-box">
+  <div class="template-title">Modelo de Denuncia — Golpe Online</div>
+
+  <div class="field">
+    <div class="field-label">PARA:</div>
+    <div class="field-line"></div>
+    <p class="text-small text-muted" style="margin-top:0.3em;">(Procon, Delegacia de Crimes Ciberneticos, Banco Central, etc.)</p>
+  </div>
+
+  <div class="field">
+    <div class="field-label">DADOS DO DENUNCIANTE:</div>
+    <p class="text-small">Nome completo:</p><div class="field-line"></div>
+    <p class="text-small">CPF:</p><div class="field-line"></div>
+    <p class="text-small">Telefone:</p><div class="field-line"></div>
+    <p class="text-small">E-mail:</p><div class="field-line"></div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">DADOS DA EMPRESA/PESSOA DENUNCIADA:</div>
+    <p class="text-small">Nome/Razao social:</p><div class="field-line"></div>
+    <p class="text-small">CNPJ (se encontrou):</p><div class="field-line"></div>
+    <p class="text-small">Site/Rede social:</p><div class="field-line"></div>
+    <p class="text-small">Nome do responsavel (se identificado):</p><div class="field-line"></div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">RELATO DOS FATOS:</div>
+    <div class="field-text">
+      Descreva com detalhes: (1) Como voce conheceu a oportunidade. (2) O que foi prometido. (3) Quanto voce pagou e como (Pix, cartao, boleto). (4) O que aconteceu depois (nao recebeu o prometido, nao consegue contato, etc.). (5) Datas de tudo.
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">PROVAS ANEXADAS:</div>
+    <div class="field-text">
+      Liste: prints de conversas, comprovantes de pagamento, prints do site/rede social, e-mails recebidos, etc. (Tire prints de TUDO antes que apaguem.)
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">VALOR DO PREJUIZO:</div>
+    <p class="text-small">R$</p><div class="field-line"></div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">O QUE SOLICITO:</div>
+    <div class="field-text">
+      Solicito: (1) Investigacao da empresa/pessoa denunciada. (2) Restituicao integral do valor pago. (3) Que medidas sejam tomadas para evitar novas vitimas.
+    </div>
+  </div>
+
+  <div style="margin-top:1.5em; padding-top:1em; border-top:1px solid #E2E8F0;">
+    <p class="text-small">Local e data: ________________________________________________</p>
+    <p class="text-small" style="margin-top:1.5em;">Assinatura: ________________________________________________</p>
+  </div>
+</div>
+
+<div class="box-highlight" style="margin-top:2em;">
+  <div class="box-title">Dica importante</div>
+  <p>Antes de denunciar, <strong>reuna todas as provas</strong>. Tire prints de tudo: pagina de vendas, conversas no WhatsApp, e-mails, comprovantes de pagamento, perfis de redes sociais. Golpistas apagam rastros rapidamente. Quanto mais provas voce tiver, mais forte sera sua denuncia e maior a chance de recuperar seu dinheiro.</p>
+</div>
+
+<!-- ============================================ -->
+<!-- CONTRA-CAPA -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="back-cover">
+  <div style="font-size:48pt; margin-bottom:0.5em;">&#128737;</div>
+  <h2>Proteja Seu Dinheiro.<br>Proteja Seu Tempo.</h2>
+  <p>Este guia faz parte do ebook <strong>Renda Extra Honesta</strong>. Use os 7 filtros antes de qualquer decisao. Na duvida, nao entre.</p>
+  <p style="margin-top:2em; font-size:10pt; opacity:0.7;">Material exclusivo para compradores do ebook Renda Extra Honesta.<br>Proibida a reproducao ou distribuicao sem autorizacao.</p>
+</div>
+
+</body>
+</html>

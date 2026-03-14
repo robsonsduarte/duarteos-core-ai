@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Acao 7 Dias — Seu Primeiro Resultado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page {
+  size: A4;
+  margin: 20mm 20mm 25mm 25mm;
+  @top-center { content: "Plano de Acao 7 Dias"; font-family: 'Poppins', sans-serif; font-size: 9pt; color: #718096; }
+  @bottom-center { content: counter(page); font-family: 'Inter', sans-serif; font-size: 9pt; color: #718096; }
+}
+
+html { font-size: 11pt; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2D3748;
+  line-height: 1.7;
+  background: #FFFFFF;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === PRINT STYLES === */
+@media print {
+  body { max-width: none; padding: 0; }
+  .page-break { page-break-before: always; break-before: page; }
+  .no-break { page-break-inside: avoid; break-inside: avoid; }
+  .cover-page { page-break-after: always; break-after: page; }
+  .day-page, .box-highlight, .box-summary, .balance-table,
+  table, blockquote, .chapter-header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  p { orphans: 3; widows: 3; }
+  a { color: #2D3748; text-decoration: none; }
+  .cover-page, .chapter-header, thead th, .day-header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  table { table-layout: fixed; width: 100%; }
+}
+
+@media screen {
+  body { padding: 20px; max-width: 800px; }
+  .page-break { border-top: 2px dashed #E2E8F0; margin: 3em 0; padding-top: 3em; }
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; color: #1A365D; font-weight: 700; margin-top: 1.8em; margin-bottom: 0.6em; line-height: 1.3; break-after: avoid; page-break-after: avoid; }
+h1 { font-size: 28pt; border-bottom: 3px solid #1B7A4A; padding-bottom: 0.3em; margin-top: 0; }
+h2 { font-size: 20pt; color: #1B7A4A; }
+h3 { font-size: 15pt; color: #1A365D; }
+h4 { font-size: 12pt; color: #2D3748; font-weight: 600; }
+
+p { margin-bottom: 0.8em; text-align: justify; hyphens: auto; orphans: 3; widows: 3; }
+strong { color: #1A365D; font-weight: 600; }
+
+/* === COVER PAGE === */
+.cover-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(160deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 4em 3em;
+  margin: -20px -20px 0 -20px;
+}
+
+@media print { .cover-page { margin: 0; } }
+
+.cover-badge {
+  display: inline-block;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cover-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38pt;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.3em;
+  color: #FFFFFF;
+  border: none;
+  padding: 0;
+}
+
+.cover-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2.5em;
+  opacity: 0.9;
+}
+
+.cover-tagline {
+  background: rgba(255,255,255,0.15);
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  max-width: 520px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.cover-icon { font-size: 72pt; margin-bottom: 0.3em; }
+
+/* === DAY PAGE === */
+.day-page {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.day-header {
+  background: linear-gradient(135deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 1.5em 2em;
+  border-radius: 12px;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  break-inside: avoid;
+}
+
+.day-header .day-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+}
+
+.day-header h2 {
+  color: #FFFFFF;
+  font-size: 18pt;
+  margin: 0.2em 0 0 0;
+}
+
+.day-objective {
+  background: #FFF8E7;
+  border: 2px solid #E8930C;
+  border-radius: 8px;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1.5em;
+  break-inside: avoid;
+}
+
+.day-objective strong {
+  color: #B7791F;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === METHOD SECTION === */
+.method-section {
+  margin-bottom: 1.5em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.method-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  color: #1B7A4A;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #E8F5EE;
+  margin-bottom: 0.8em;
+}
+
+/* === CHECKLIST ITEMS === */
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7em;
+  margin-bottom: 0.7em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px dotted #E2E8F0;
+}
+
+.check-item:last-child { border-bottom: none; }
+
+.check-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1B7A4A;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.check-content { flex: 1; }
+
+.check-content strong { display: block; font-size: 10.5pt; margin-bottom: 0.1em; }
+
+.check-meta {
+  display: flex;
+  gap: 1em;
+  margin-top: 0.2em;
+}
+
+.check-time {
+  font-size: 9pt;
+  color: #718096;
+  background: #F7FAFC;
+  padding: 0.1em 0.5em;
+  border-radius: 4px;
+}
+
+.check-tip {
+  font-size: 9pt;
+  color: #1B7A4A;
+  font-style: italic;
+}
+
+/* === NOTES AREA === */
+.notes-area {
+  background: #F7FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 1em;
+  margin-top: 1.5em;
+  min-height: 80px;
+  break-inside: avoid;
+}
+
+.notes-area .notes-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  color: #718096;
+  margin-bottom: 0.5em;
+}
+
+.notes-lines {
+  border-bottom: 1px dotted #CBD5E0;
+  min-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+/* === DAY META === */
+.day-meta {
+  background: #E8F5EE;
+  border: 2px solid #1B7A4A;
+  border-radius: 8px;
+  padding: 1em;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  break-inside: avoid;
+}
+
+.day-meta .meta-item {
+  text-align: center;
+}
+
+.day-meta .meta-label {
+  font-size: 9pt;
+  color: #718096;
+  display: block;
+}
+
+.day-meta .meta-value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #145A37;
+  font-size: 11pt;
+}
+
+/* === BALANCE TABLE === */
+.balance-table {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 10pt;
+  table-layout: fixed;
+}
+
+thead th {
+  background: #1A365D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.8em 0.6em;
+  text-align: left;
+  font-size: 10pt;
+}
+
+tbody td {
+  padding: 0.8em 0.6em;
+  border-bottom: 1px solid #E2E8F0;
+  min-height: 2em;
+}
+
+tbody tr:nth-child(even) { background: #F7FAFC; }
+
+.fill-field {
+  border-bottom: 2px dotted #CBD5E0;
+  min-height: 1.5em;
+  display: block;
+}
+
+/* === BOXES === */
+.box-highlight {
+  background: #FFF8E7;
+  border: 2px solid #E8930C;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.box-highlight .box-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #B7791F;
+  font-size: 13pt;
+  margin-bottom: 0.8em;
+}
+
+/* === LISTS === */
+ul, ol { padding-left: 1.5em; margin-bottom: 1em; }
+li { margin-bottom: 0.4em; }
+ul li::marker { color: #1B7A4A; }
+
+/* === HR === */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #E2E8F0, #1B7A4A, #E2E8F0, transparent);
+  margin: 2em 0;
+}
+
+/* === BACK COVER === */
+.back-cover {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(160deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 4em 3em;
+  margin: 0 -20px -20px -20px;
+}
+
+@media print { .back-cover { margin: 0; } }
+
+.back-cover h2 { color: #FFFFFF; font-size: 22pt; margin-bottom: 0.5em; }
+.back-cover p { color: rgba(255,255,255,0.85); font-size: 12pt; max-width: 450px; text-align: center; }
+
+/* === UTILITIES === */
+.text-center { text-align: center; }
+.text-muted { color: #718096; }
+.text-small { font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- CAPA -->
+<!-- ============================================ -->
+<div class="cover-page">
+  <div class="cover-badge">Bonus Exclusivo</div>
+  <div class="cover-icon">&#9989;</div>
+  <h1 class="cover-title">Plano de Acao<br>7 Dias</h1>
+  <p class="cover-subtitle">Seu Primeiro Resultado Real<br>Comecando do Zero</p>
+  <div class="cover-tagline">Checklist diario com acoes especificas para cada metodo REH. Imprima, cole na geladeira e risque cada item completado.</div>
+</div>
+
+<!-- ============================================ -->
+<!-- INSTRUCOES -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<h1>Como Usar Este Plano</h1>
+
+<p>Este plano foi feito para voce que acabou de ler o ebook Renda Extra Honesta e quer <strong>comecar agora</strong>. Nao na proxima segunda. Nao mes que vem. Agora.</p>
+
+<p>Sao 7 dias com acoes especificas, divididas por metodo. Voce nao precisa fazer todas — <strong>escolha o metodo que mais combina com voce</strong> (use o Bonus 2, Diagnostico de Perfil, se ainda nao sabe) e siga apenas a coluna do seu metodo.</p>
+
+<h3>Regras do Plano</h3>
+
+<ul>
+  <li><strong>1 hora por dia</strong> — nao mais que isso. Consistencia vence intensidade.</li>
+  <li><strong>Marque os itens completados</strong> — o ato de riscar uma caixa ativa a sensacao de progresso no cerebro.</li>
+  <li><strong>Sem pular dias</strong> — cada dia constroi sobre o anterior. Se perdeu um dia, faca as tarefas acumuladas no seguinte.</li>
+  <li><strong>Anote tudo</strong> — use o espaco de anotacoes. O que voce registra, voce melhora.</li>
+  <li><strong>Celebre o progresso</strong> — R$ 5 ja e resultado. R$ 20 ja e prova de que funciona.</li>
+</ul>
+
+<div class="box-highlight">
+  <div class="box-title">Escolha seu metodo antes de comecar</div>
+  <p>Este plano cobre os 4 metodos do ebook. Voce so precisa seguir <strong>um</strong>. Escolha o que mais combina com voce:</p>
+  <ul>
+    <li><strong>Micro-tarefas</strong> (Cap. 4) — resultado mais rapido, ideal para quem quer ver dinheiro na conta ja</li>
+    <li><strong>Conteudo com IA</strong> (Cap. 5) — ideal para quem gosta de criar e tem paciencia para construir</li>
+    <li><strong>Assistente Virtual</strong> (Cap. 6) — para quem e organizada e gosta de ajudar pessoas</li>
+    <li><strong>Afiliados</strong> (Cap. 7) — para quem sabe se comunicar e tem redes sociais ativas</li>
+  </ul>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 1 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 1</div>
+    <h2>Decisao e Preparacao</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Escolher seu metodo, criar as contas necessarias e deixar tudo pronto para comecar amanha.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta na Toloka (toloka.ai)</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Use e-mail que voce acessa pelo celular</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta no Clickworker (clickworker.com)</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Preencha o perfil completo para receber mais tarefas</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Completar o treinamento inicial de pelo menos 1 plataforma</strong>
+        <div class="check-meta">
+          <span class="check-time">30 min</span>
+          <span class="check-tip">Leia as instrucoes com calma. Acertar o treinamento abre portas para tarefas melhores</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta no Canva (canva.com) — versao gratuita</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Baixe o app no celular tambem</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta no ChatGPT (chat.openai.com) — versao gratuita</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Funciona no navegador do celular</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Escolher 1 tema/nicho que voce domina (receitas, maternidade, organizacao, beleza, etc.)</strong>
+        <div class="check-meta">
+          <span class="check-time">15 min</span>
+          <span class="check-tip">Pense: sobre o que seus amigos pedem sua opiniao?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar perfil no Workana (workana.com) com descricao profissional</strong>
+        <div class="check-meta">
+          <span class="check-time">20 min</span>
+          <span class="check-tip">Destaque organizacao, pontualidade e comunicacao</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar perfil no 99Freelas (99freelas.com.br)</strong>
+        <div class="check-meta">
+          <span class="check-time">15 min</span>
+          <span class="check-tip">Use a mesma descricao do Workana, adaptada</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Listar 5 servicos que voce pode oferecer (organizacao de e-mail, agenda, redes sociais, etc.)</strong>
+        <div class="check-meta">
+          <span class="check-time">15 min</span>
+          <span class="check-tip">Pense nas tarefas que voce ja faz no trabalho CLT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta na Hotmart (hotmart.com) como afiliado(a)</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Preencha todos os dados para aprovacao rapida</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar conta na Kiwify (kiwify.com.br) como afiliado(a)</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Ter 2 plataformas aumenta suas opcoes de produto</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Escolher 3 produtos que voce usaria e recomendaria (pesquise nas categorias de saude, educacao ou financas)</strong>
+        <div class="check-meta">
+          <span class="check-time">30 min</span>
+          <span class="check-tip">Escolha produtos com nota alta, boa pagina de vendas e comissao acima de 30%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~50 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Contas criadas</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 1</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 2 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 2</div>
+    <h2>Primeira Acao Real</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Realizar sua primeira tarefa paga, publicar seu primeiro conteudo, enviar sua primeira proposta ou compartilhar seu primeiro link de afiliado.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Completar 10 tarefas na Toloka ou Clickworker</strong>
+        <div class="check-meta">
+          <span class="check-time">40 min</span>
+          <span class="check-tip">Escolha tarefas de classificacao de imagens — sao as mais rapidas</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Anotar quanto ganhou com essas 10 tarefas: R$ _______</strong>
+        <div class="check-meta">
+          <span class="check-time">5 min</span>
+          <span class="check-tip">Mesmo que seja R$ 2. E real e e seu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Pedir ao ChatGPT 5 ideias de post para o tema que voce escolheu</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Prompt: "Me de 5 ideias de posts curtos sobre [tema] para Instagram"</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Criar 1 post visual no Canva com a melhor ideia</strong>
+        <div class="check-meta">
+          <span class="check-time">20 min</span>
+          <span class="check-tip">Use um template pronto. Troque texto e cores. Nao precisa ser perfeito</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Publicar o post no Instagram ou TikTok</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Seu primeiro post nunca sera o melhor. E por isso que ele precisa sair logo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Enviar 5 propostas para projetos no Workana ou 99Freelas</strong>
+        <div class="check-meta">
+          <span class="check-time">40 min</span>
+          <span class="check-tip">Personalize cada proposta. Mencione algo especifico do projeto do cliente</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Postar no Instagram/WhatsApp que voce oferece servicos de assistente virtual</strong>
+        <div class="check-meta">
+          <span class="check-time">15 min</span>
+          <span class="check-tip">Texto simples: "Voce precisa de ajuda para organizar e-mails, agenda ou redes sociais? Posso te ajudar!"</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Gerar seu link de afiliado para os 3 produtos escolhidos</strong>
+        <div class="check-meta">
+          <span class="check-time">10 min</span>
+          <span class="check-tip">Salve os links no bloco de notas do celular para acesso rapido</span>
+        </div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="check-box"></span>
+      <div class="check-content">
+        <strong>Compartilhar 1 recomendacao genuina no WhatsApp (Status ou para amiga proxima)</strong>
+        <div class="check-meta">
+          <span class="check-time">15 min</span>
+          <span class="check-tip">Conte SUA experiencia com o tema. Nao force venda. Seja autentica</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~45 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">1a acao feita</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 2</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 3 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 3</div>
+    <h2>Ganhar Ritmo</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Repetir as acoes do Dia 2 com mais velocidade. Comecar a identificar o que funciona melhor para voce.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Completar 15-20 tarefas (meta: ser mais rapida que ontem)</strong><div class="check-meta"><span class="check-time">45 min</span><span class="check-tip">Foque nas tarefas que pagam melhor por minuto</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Calcular seu valor por hora ate agora: R$ _______ /hora</strong><div class="check-meta"><span class="check-time">5 min</span><span class="check-tip">Total ganho / horas investidas. Anote para comparar depois</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar e publicar 2 posts/conteudos hoje (o dobro de ontem)</strong><div class="check-meta"><span class="check-time">35 min</span><span class="check-tip">Reutilize templates. Mude texto e imagem, mantenha o estilo</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Analisar qual post do Dia 2 teve mais engajamento e por que</strong><div class="check-meta"><span class="check-time">10 min</span><span class="check-tip">Curtidas, comentarios, salvamentos. Qual conteudo tocou mais?</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Enviar mais 5 propostas (10 acumuladas)</strong><div class="check-meta"><span class="check-time">35 min</span><span class="check-tip">Ajuste suas propostas com base no que funcionou ontem</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Responder qualquer mensagem/retorno recebido ate agora</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Responda em menos de 2 horas. Rapidez impressiona</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar 1 conteudo (Story, post ou video curto) sobre o tema do produto que voce promove</strong><div class="check-meta"><span class="check-time">25 min</span><span class="check-tip">Nao venda diretamente. Gere valor: ensine algo, conte uma historia</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Compartilhar o link de afiliado para mais 3-5 pessoas de forma personalizada</strong><div class="check-meta"><span class="check-time">20 min</span><span class="check-tip">Mande audio no WhatsApp. Audio converte mais que texto</span></div></div></div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~50 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Dobrar volume</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 3</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 4 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 4</div>
+    <h2>Otimizar e Aprender</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Analisar o que funcionou nos ultimos 3 dias e focar nas acoes com melhor retorno.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Identificar os 3 tipos de tarefa que pagam melhor por minuto</strong><div class="check-meta"><span class="check-time">10 min</span><span class="check-tip">Classifique: rapida+paga bem, rapida+paga mal, demorada+paga bem</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Completar 20 tarefas focando nos tipos mais rentaveis</strong><div class="check-meta"><span class="check-time">40 min</span><span class="check-tip">Ignore tarefas que pagam menos de R$ 0,10 por minuto</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar e publicar 2 conteudos baseados no que mais engajou ate agora</strong><div class="check-meta"><span class="check-time">30 min</span><span class="check-tip">Repita formatos que funcionaram. Mude o tema, mantenha a estrutura</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Pesquisar 1 forma de monetizar seu conteudo (afiliados, Kwai, TikTok Creator Fund)</strong><div class="check-meta"><span class="check-time">20 min</span><span class="check-tip">Conteudo sem monetizacao e hobby. Conecte com fonte de renda</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Revisar e melhorar seu perfil nas plataformas com base nas propostas que receberam resposta</strong><div class="check-meta"><span class="check-time">20 min</span><span class="check-tip">Destaque os servicos mais procurados que voce viu</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Enviar 5 novas propostas + fazer follow-up em propostas anteriores sem resposta</strong><div class="check-meta"><span class="check-time">30 min</span><span class="check-tip">Follow-up educado: "Oi, vi que o projeto ainda esta aberto. Posso ajudar?"</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Analisar cliques nos seus links de afiliado (painel da plataforma)</strong><div class="check-meta"><span class="check-time">10 min</span><span class="check-tip">Cliques sem venda = problema na pagina do produto. Troque de produto se necessario</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar 2 conteudos de valor sobre o tema do produto (sem vender diretamente)</strong><div class="check-meta"><span class="check-time">30 min</span><span class="check-tip">Padroni: 3 posts de valor para cada 1 post de venda</span></div></div></div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~50 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Otimizar processo</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 4</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 5 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 5</div>
+    <h2>Intensificar</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Aumentar o volume das acoes que estao funcionando. Buscar seu primeiro resultado financeiro real (se ainda nao aconteceu).
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Completar 25+ tarefas focando nos tipos mais rentaveis</strong><div class="check-meta"><span class="check-time">45 min</span><span class="check-tip">Voce ja esta mais rapida. Use essa velocidade a seu favor</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Cadastrar-se em 1 plataforma nova (Appen, Spare5, OneForma)</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Mais plataformas = mais opcoes de tarefa</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar e publicar 3 conteudos (recorde pessoal)</strong><div class="check-meta"><span class="check-time">40 min</span><span class="check-tip">Crie em lote: abra o Canva, faca os 3 de uma vez, agende publicacao</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Interagir com 10 perfis do seu nicho (comentarios genuinos, nao spam)</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Interacao atrai seguidores reais. Seja util nos comentarios</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Se ja tem cliente: entregar a primeira tarefa com qualidade impecavel</strong><div class="check-meta"><span class="check-time">50 min</span><span class="check-tip">Primeiro cliente satisfeito = avaliacoes positivas = mais clientes</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Se nao tem cliente ainda: publicar oferta de "teste gratuito" de 1 hora para 1 cliente</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Oferecer 1 hora gratis para mostrar valor. Se gostar, cobra a partir da segunda</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Enviar mensagem personalizada para 10 pessoas sobre o produto (WhatsApp)</strong><div class="check-meta"><span class="check-time">30 min</span><span class="check-tip">Nao copie e cole. Personalize com o nome e a situacao da pessoa</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Publicar 1 conteudo com CTA claro (Story com link ou post com "link na bio")</strong><div class="check-meta"><span class="check-time">20 min</span><span class="check-tip">Hoje voce pode pedir a venda. Voce ja gerou valor nos dias anteriores</span></div></div></div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~55 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Primeiro R$</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 5</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 6 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 6</div>
+    <h2>Consolidar</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Criar uma rotina sustentavel. Definir quais acoes voce vai repetir todos os dias daqui pra frente.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Micro-tarefas</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Fazer sua sessao diaria de tarefas (ja deve estar natural)</strong><div class="check-meta"><span class="check-time">45 min</span><span class="check-tip">Defina um horario fixo. Habito = consistencia = resultado</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Verificar saldo acumulado e definir meta para o mes: R$ _______</strong><div class="check-meta"><span class="check-time">10 min</span><span class="check-tip">Multiplique seu ganho diario x 22 dias uteis para meta mensal realista</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Conteudo com IA</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar lote de 5 conteudos para a proxima semana (producao em lote)</strong><div class="check-meta"><span class="check-time">45 min</span><span class="check-tip">Producao em lote e 3x mais eficiente que fazer um por um</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Definir calendario de publicacao: qual dia e hora voce vai postar</strong><div class="check-meta"><span class="check-time">10 min</span><span class="check-tip">Consistencia > perfeicao. Poste no mesmo horario todo dia</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Assistente Virtual</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Definir seus servicos fixos, precos e horario disponivel</strong><div class="check-meta"><span class="check-time">20 min</span><span class="check-tip">Ex: "Organizacao de e-mail e agenda — R$ 30/hora — disponivel das 20h as 22h"</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Criar um texto padrao (template) para enviar a novos clientes</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Inclua: quem voce e, o que faz, horarios, preco e como comecar</span></div></div></div>
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Afiliados</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Analisar resultado: quantos cliques, quantas vendas (se houver)</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Se 0 vendas com 50+ cliques: mude o produto. Se 0 cliques: mude a abordagem</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Definir sua estrategia semanal de conteudo + divulgacao</strong><div class="check-meta"><span class="check-time">15 min</span><span class="check-tip">Regra: 4 posts de valor + 1 post de venda por semana</span></div></div></div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~55 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Criar rotina</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 6</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- DIA 7 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="day-page">
+  <div class="day-header">
+    <div class="day-number">Dia 7</div>
+    <h2>Medir e Celebrar</h2>
+  </div>
+
+  <div class="day-objective">
+    <strong>Objetivo do dia:</strong> Fechar a semana com balanco completo. Celebrar o progresso. Planejar a Semana 2.
+  </div>
+
+  <div class="method-section">
+    <div class="method-title">Todos os Metodos</div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Somar todas as horas investidas nos 7 dias: _______ horas</strong><div class="check-meta"><span class="check-time">5 min</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Somar todo dinheiro ganho (ou em processo de recebimento): R$ _______</strong><div class="check-meta"><span class="check-time">5 min</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Calcular seu valor por hora: R$ _______ /hora</strong><div class="check-meta"><span class="check-time">2 min</span><span class="check-tip">Total ganho / total horas. Esse numero vai subir com a pratica</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Definir meta para Semana 2 (em reais): R$ _______</strong><div class="check-meta"><span class="check-time">5 min</span><span class="check-tip">Meta realista = resultado da semana 1 x 1.5 (crescimento de 50%)</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Preencher o Balanco da Semana (proxima pagina)</strong><div class="check-meta"><span class="check-time">15 min</span></div></div></div>
+    <div class="check-item"><span class="check-box"></span><div class="check-content"><strong>Celebrar seu progresso (mesmo que pequeno) — voce COMECOU</strong><div class="check-meta"><span class="check-time">O tempo que precisar</span><span class="check-tip">97% desistem. Voce completou 7 dias. Isso ja te coloca nos 3%</span></div></div></div>
+  </div>
+
+  <div class="day-meta">
+    <div class="meta-item"><span class="meta-label">Tempo total</span><span class="meta-value">~30 min</span></div>
+    <div class="meta-item"><span class="meta-label">Meta</span><span class="meta-value">Balanco completo</span></div>
+    <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">______</span></div>
+  </div>
+
+  <div class="notes-area">
+    <div class="notes-label">Anotacoes do Dia 7</div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+    <div class="notes-lines"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- BALANCO DA SEMANA -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="balance-table">
+  <h1 style="text-align:center; border:none;">Balanco da Semana</h1>
+  <p style="text-align:center;" class="text-muted">Preencha esta tabela no Dia 7. Ela e sua prova de que funciona.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:12%;">Dia</th>
+        <th style="width:18%;">Horas</th>
+        <th style="width:18%;">R$ Ganho</th>
+        <th style="width:22%;">Metodo</th>
+        <th style="width:30%;">Principal Aprendizado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Dia 1</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 2</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 3</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 4</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 5</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 6</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr><td>Dia 7</td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td><td><span class="fill-field"></span></td></tr>
+      <tr style="background:#E8F5EE !important; font-weight:700;">
+        <td><strong>TOTAL</strong></td>
+        <td><span class="fill-field"></span></td>
+        <td><span class="fill-field"></span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:2em;">
+    <h3>Reflexao da Semana</h3>
+
+    <p><strong>Valor por hora real:</strong></p>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:1em;"></div>
+
+    <p><strong>O que funcionou melhor:</strong></p>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:0.5em;"></div>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:1em;"></div>
+
+    <p><strong>O que vou mudar na Semana 2:</strong></p>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:0.5em;"></div>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:1em;"></div>
+
+    <p><strong>Meta para Semana 2:</strong></p>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:0.5em;"></div>
+
+    <p><strong>Meta financeira para o mes:</strong></p>
+    <div style="border-bottom: 2px dotted #CBD5E0; min-height:1.5em; margin-bottom:0.5em;"></div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- CONTRA-CAPA -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+
+<div class="back-cover">
+  <div style="font-size:48pt; margin-bottom:0.5em;">&#9989;</div>
+  <h2>7 Dias Completados.<br>Voce Ja Esta Nos 3%.</h2>
+  <p>A maioria desiste antes do Dia 3. Voce chegou ate aqui. Agora e so manter o ritmo. Use o Bonus 4 (Planilha Financeira) para acompanhar sua evolucao nas proximas semanas.</p>
+  <p style="margin-top:2em; font-size:10pt; opacity:0.7;">Material exclusivo para compradores do ebook Renda Extra Honesta.<br>Proibida a reproducao ou distribuicao sem autorizacao.</p>
+</div>
+
+</body>
+</html>

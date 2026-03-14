@@ -1,0 +1,467 @@
+{
+  "title": "Renda Extra Honesta",
+  "subtitle": "O Método de 1 Hora Por Dia Para Quem Trabalha CLT",
+  "premise": "Você não precisa de sorte, capital ou tempo livre para gerar renda extra — precisa de um método honesto, testado por gente como você, que funciona com 1 hora por dia usando apenas o celular que já está no seu bolso.",
+  "target_avatar": "Carla, 28-42 anos, CLT (auxiliar admin, vendedora, professora), renda R$ 1.800-3.500/mês, sem tempo, sem capital, cética por já ter sido enganada, busca R$ 500-1.500 extras com método prático que funcione pelo celular.",
+  "total_chapters": 10,
+  "estimated_pages": 52,
+  "estimated_word_count": 21000,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Por Que 97% Desistem de Ganhar Renda Extra (E Os 3% Que Conseguem Fazem Isso)",
+      "focus": "Conectar com a dor da Carla, desqualificar as falsas promessas do mercado e apresentar a premissa do Método REH como caminho honesto e viável.",
+      "sections": [
+        {
+          "title": "A Mentira de R$ 10 Mil Por Mês",
+          "description": "Abrir com contraste brutal: o que vendem vs. o que funciona. Nomear as promessas absurdas que a Carla já viu. Posicionar o ebook como o anti-guru.",
+          "type": "content"
+        },
+        {
+          "title": "O Dia Que Eu Também Caí Numa Promessa Vazia",
+          "description": "Micro-história de alguém real (perfil CLT) que perdeu dinheiro com curso falso. Gerar identificação imediata.",
+          "type": "case_study"
+        },
+        {
+          "title": "O Que Funciona de Verdade: A Regra 1-1-0",
+          "description": "Apresentar o framework central: 1 hora por dia, 1 celular, 0 reais de investimento. Definir expectativas reais: R$ 300-800/mês nos primeiros 30 dias.",
+          "type": "framework"
+        },
+        {
+          "title": "O Que Você Vai Encontrar Neste Livro (E O Que NÃO Vai)",
+          "description": "Mapa do ebook. Promessa específica por capítulo. Contrato de honestidade com o leitor.",
+          "type": "content"
+        },
+        {
+          "title": "Autoavaliação: Onde Você Está Agora?",
+          "description": "Exercício rápido para o leitor anotar renda atual, horas livres, tentativas anteriores e meta de renda extra. Serve como baseline para medir progresso.",
+          "type": "exercise"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Renda extra de verdade não vem de promessas milagrosas — vem de método simples, expectativas honestas e 1 hora consistente por dia.",
+      "exercise": {
+        "type": "reflection",
+        "description": "Preencha o 'Diagnóstico Inicial': anote sua renda atual, quantas horas livres tem por dia, quanto quer ganhar de extra e quantas vezes já tentou algo online. Guarde esse papel — você vai comparar no final do livro."
+      },
+      "bridge_to_next": "Agora que você sabe o que NÃO funciona, precisa descobrir algo crucial antes de escolher qualquer método: qual tipo de renda extra combina com VOCÊ. Porque o método certo para sua vizinha pode ser o errado para você."
+    },
+    {
+      "number": 2,
+      "title": "O Diagnóstico de 5 Minutos: Qual Método de Renda Extra Combina Com Você",
+      "focus": "Gap #5 — Diagnóstico de perfil personalizado. Ajudar a Carla a identificar suas habilidades naturais e escolher o método certo ANTES de agir (evitando frustração).",
+      "sections": [
+        {
+          "title": "Por Que Escolher Errado Custa Caro (Mesmo Sendo de Graça)",
+          "description": "O custo real do método errado: tempo perdido, motivação esgotada, autoestima abalada. Dados sobre taxa de desistência por incompatibilidade de perfil.",
+          "type": "content"
+        },
+        {
+          "title": "Os 4 Perfis de Renda Extra",
+          "description": "Framework: Comunicadora (fala/escreve bem), Organizadora (processos/planilhas), Criativa (visual/design), Executora (faz acontecer, tarefas). Cada perfil com exemplos do dia a dia CLT.",
+          "type": "framework"
+        },
+        {
+          "title": "Teste Rápido: Descubra Seu Perfil Dominante",
+          "description": "10 perguntas simples de múltipla escolha. Resultado aponta 1-2 perfis dominantes. Liga diretamente aos métodos dos capítulos 4-7.",
+          "type": "exercise"
+        },
+        {
+          "title": "A Jéssica Era Organizadora Mas Tentou Ser Comunicadora",
+          "description": "Case real de alguém que escolheu o método errado, falhou, e depois acertou ao descobrir seu perfil. Moral: não existe método ruim, existe método errado para você.",
+          "type": "case_study"
+        },
+        {
+          "title": "Seu Mapa Personalizado: Quais Capítulos Priorizar",
+          "description": "Tabela direta: Perfil X → Leia capítulo Y primeiro. Permite leitura não-linear para quem quer ir direto ao ponto.",
+          "type": "content"
+        }
+      ],
+      "estimated_pages": 5,
+      "estimated_words": 2000,
+      "key_takeaway": "O segredo não é encontrar O melhor método — é encontrar o melhor método PARA VOCÊ. O diagnóstico de perfil evita semanas de frustração.",
+      "exercise": {
+        "type": "worksheet",
+        "description": "Complete o Teste de Perfil de 10 perguntas. Anote seus 2 perfis dominantes e marque no livro quais capítulos de método (4-7) são prioritários para você."
+      },
+      "bridge_to_next": "Você já sabe seu perfil. Mas antes de mergulhar nos métodos, existe uma habilidade de sobrevivência que pode salvar seu dinheiro e sua paz: saber identificar golpes. Porque 1 em cada 3 'oportunidades' online é fraude."
+    },
+    {
+      "number": 3,
+      "title": "Blindagem Anti-Golpe: 7 Sinais de Que Vão Roubar Seu Dinheiro (E Seu Tempo)",
+      "focus": "Gap #7 — Educação anti-golpe. Proteger a Carla ANTES de ela investir tempo/dinheiro em algo falso. Construir confiança no ebook ao mostrar que o autor se preocupa com ela.",
+      "sections": [
+        {
+          "title": "O Mapa dos Golpes Mais Comuns em 2025-2026",
+          "description": "Lista dos 5 golpes mais frequentes: pirâmide disfarçada, curso que vende curso, robô de investimento, dropshipping falso, renda passiva sem fazer nada. Exemplos reais.",
+          "type": "content"
+        },
+        {
+          "title": "Os 7 Sinais Vermelhos — O Checklist Que Salva Seu Dinheiro",
+          "description": "Framework: 7 red flags concretas e verificáveis. 1) Promessa de ganho garantido 2) Pressão de urgência artificial 3) Pedir investimento inicial 4) Depoimentos sem sobrenome 5) Sem CNPJ/contato real 6) Renda passiva total 7) Recrutamento como modelo de negócio.",
+          "type": "framework"
+        },
+        {
+          "title": "Caso Real: A Armadilha do 'Trabalhe Com Seu Celular'",
+          "description": "História detalhada de um golpe real no Instagram que usava exatamente a mesma linguagem de oportunidade legítima. O que diferencia o real do falso.",
+          "type": "case_study"
+        },
+        {
+          "title": "Como Pesquisar Antes de Entrar: O Protocolo de 3 Passos",
+          "description": "Passo a passo: 1) Buscar nome + 'reclamação' no Google 2) Verificar Reclame Aqui 3) Checar CNPJ no site da Receita. Tudo pelo celular em 5 minutos.",
+          "type": "content"
+        },
+        {
+          "title": "Exercício: Analise Uma Oferta Real",
+          "description": "Pegar um exemplo de anúncio de renda extra (screenshot descrito) e aplicar o checklist dos 7 sinais. Treinar o olhar crítico.",
+          "type": "exercise"
+        }
+      ],
+      "estimated_pages": 5,
+      "estimated_words": 2000,
+      "key_takeaway": "Antes de ganhar dinheiro, aprenda a não perder. Os 7 sinais vermelhos são sua primeira linha de defesa contra golpistas.",
+      "exercise": {
+        "type": "action",
+        "description": "Abra seu Instagram ou WhatsApp agora. Encontre 1 anúncio de 'renda extra' e aplique o Checklist dos 7 Sinais Vermelhos. Anote quantos sinais encontrou. Se encontrar 2 ou mais: fuja."
+      },
+      "bridge_to_next": "Agora você tem a blindagem. Sabe o que é golpe e o que é real. Hora de entrar nos métodos que FUNCIONAM. O primeiro é o mais rápido para gerar resultado — e você provavelmente já tem a habilidade sem saber."
+    },
+    {
+      "number": 4,
+      "title": "Método REH #1 — Freelancer de Micro-Tarefas: Seu Primeiro R$ 50 Em 48 Horas",
+      "focus": "Gap #1 (método para CLT 1h/dia), Gap #2 (100% celular), Gap #3 (zero investimento), Gap #6 (resultado em 7 dias). Método mais acessível e rápido para primeiro resultado.",
+      "sections": [
+        {
+          "title": "O Que São Micro-Tarefas e Por Que Pagam",
+          "description": "Explicar o mercado de micro-tarefas: transcrição, moderação de conteúdo, classificação de dados, testes de app. Por que empresas pagam por isso e por que não vai acabar.",
+          "type": "content"
+        },
+        {
+          "title": "As 5 Plataformas Que Pagam de Verdade (Testadas)",
+          "description": "Lista curada de plataformas reais, com: nome, como cadastrar, tipo de tarefa, valor médio por hora, prazo de pagamento. Tudo acessível pelo celular. Sem links de afiliado.",
+          "type": "framework"
+        },
+        {
+          "title": "Passo a Passo: Do Cadastro ao Primeiro Pagamento",
+          "description": "Tutorial detalhado de como se cadastrar, completar o perfil, pegar a primeira tarefa e receber. Com screenshots descritos e dicas para aprovação rápida.",
+          "type": "content"
+        },
+        {
+          "title": "A Fernanda Fez R$ 387 no Primeiro Mês (Trabalhando no Ônibus)",
+          "description": "Case de uma auxiliar administrativa que começou fazendo micro-tarefas no trajeto casa-trabalho. Cronograma real, ganhos reais, dificuldades reais.",
+          "type": "case_study"
+        },
+        {
+          "title": "Sua Primeira Tarefa: Faça Agora",
+          "description": "Exercício de ação imediata: cadastrar-se em 1 plataforma e completar 1 tarefa agora. Tempo estimado: 15 minutos.",
+          "type": "exercise"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Micro-tarefas são a porta de entrada mais rápida: zero investimento, 100% celular, e você pode ver seu primeiro dinheiro em 48 horas.",
+      "exercise": {
+        "type": "action",
+        "description": "Escolha 1 plataforma da lista, faça o cadastro completo agora (10 min) e complete pelo menos 1 tarefa paga (5 min). Anote quanto ganhou e quanto tempo levou. Esse é seu marco zero."
+      },
+      "bridge_to_next": "Micro-tarefas são ótimas para começar, mas têm um teto. Se você tem perfil Comunicadora ou gosta de escrever/falar, o próximo método pode render 3x mais — e a IA vai fazer metade do trabalho por você."
+    },
+    {
+      "number": 5,
+      "title": "Método REH #2 — Criação de Conteúdo Com IA: Transforme 1 Hora Em Renda Recorrente",
+      "focus": "Gap #1 e #2. Método de média complexidade usando IA como acelerador. Ideal para perfil Comunicadora/Criativa. Foco em conteúdo monetizável.",
+      "sections": [
+        {
+          "title": "A Revolução Que Ninguém Te Contou: IA Como Sua Assistente Gratuita",
+          "description": "Desmistificar a IA para quem não é tech. Mostrar que ChatGPT e similares são ferramentas gratuitas que qualquer pessoa com celular pode usar. Sem jargão.",
+          "type": "content"
+        },
+        {
+          "title": "Os 4 Formatos Que Pagam Sem Você Aparecer",
+          "description": "Framework: 1) Legendas/posts para pequenos negócios 2) Resumos e resenhas para blogs 3) Roteiros para reels/TikTok 4) Textos para e-commerce. Cada um com faixa de preço e demanda.",
+          "type": "framework"
+        },
+        {
+          "title": "O Fluxo de 1 Hora: Da Ideia ao Conteúdo Pronto",
+          "description": "Passo a passo cronometrado: 10 min pesquisa → 15 min prompt na IA → 15 min edição → 10 min entrega → 10 min prospecção. Tudo pelo celular.",
+          "type": "content"
+        },
+        {
+          "title": "Onde Encontrar Clientes Sem Gastar 1 Real",
+          "description": "Estratégias de prospecção gratuita: grupos de Facebook, comentários em posts de negócios locais, WhatsApp de bairro, OLX Serviços. Scripts prontos para copiar e colar.",
+          "type": "content"
+        },
+        {
+          "title": "A Patrícia Cobra R$ 30 Por Post e Faz 3 Por Dia",
+          "description": "Case de uma vendedora que começou criando posts para a loja onde trabalhava, pegou mais 2 clientes e agora faz R$ 800/mês extra com IA.",
+          "type": "case_study"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Com IA gratuita no celular, você pode criar conteúdo profissional em 1 hora e cobrar de R$ 25-50 por peça — sem precisar ser expert em nada.",
+      "exercise": {
+        "type": "action",
+        "description": "Abra o ChatGPT (gratuito) no celular. Use o prompt exato fornecido no capítulo para criar 1 post de Instagram para um negócio local fictício. Cronometre: se fez em menos de 20 minutos, esse método é para você."
+      },
+      "bridge_to_next": "Criar conteúdo é poderoso, mas exige criatividade. Se você é mais do tipo Organizadora — gosta de planilha, processo, ordem — o próximo método vai parecer que foi feito sob medida para você."
+    },
+    {
+      "number": 6,
+      "title": "Método REH #3 — Assistente Virtual Pelo Celular: A Profissão Invisível Que Paga Bem",
+      "focus": "Gap #1 e #2. Método para perfil Organizadora/Executora. Serviços de organização digital que empresas pequenas precisam desesperadamente.",
+      "sections": [
+        {
+          "title": "O Que Faz Uma Assistente Virtual (E Por Que Estão Desesperados Por Uma)",
+          "description": "Definir AV de forma prática: agendamento, organização de e-mail, atendimento WhatsApp, postagem em redes, controle de planilha. Demanda real do mercado de pequenas empresas.",
+          "type": "content"
+        },
+        {
+          "title": "As 6 Tarefas Que Você Pode Fazer Pelo Celular Agora",
+          "description": "Framework: 1) Responder mensagens 2) Agendar posts 3) Organizar planilhas no Google Sheets 4) Fazer follow-up com clientes 5) Pesquisar fornecedores 6) Criar listas e checklists. Cada uma com tempo estimado e valor.",
+          "type": "framework"
+        },
+        {
+          "title": "Kit de Ferramentas Gratuitas (Tudo No Celular)",
+          "description": "Lista de apps gratuitos: Google Calendar, Google Sheets, Canva, WhatsApp Business, Trello. Como configurar cada um em 5 minutos.",
+          "type": "content"
+        },
+        {
+          "title": "Como Conseguir Seu Primeiro Cliente Em 7 Dias",
+          "description": "Estratégia prática: listar 20 negócios locais, mandar mensagem personalizada (script fornecido), oferecer 1 semana grátis, converter em cliente fixo. Taxa de conversão realista.",
+          "type": "content"
+        },
+        {
+          "title": "A Mariana Largou as Horas Extras Por R$ 650/Mês Como AV",
+          "description": "Case de uma professora que atendia 3 clientes pequenos nas horas livres e trocou horas extras mal pagas por trabalho remoto pelo celular.",
+          "type": "case_study"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Assistente virtual é a renda extra mais estável — clientes pagam mensalidade fixa e o trabalho é organizar o que você já sabe fazer no dia a dia.",
+      "exercise": {
+        "type": "action",
+        "description": "Liste 10 negócios pequenos do seu bairro ou cidade (padaria, salão, loja de roupa). Escreva uma mensagem usando o script do capítulo. Envie para pelo menos 3 deles hoje. Seu objetivo: 1 resposta positiva em 7 dias."
+      },
+      "bridge_to_next": "Micro-tarefas, conteúdo com IA, assistente virtual — três caminhos sólidos. Mas e se você pudesse vender algo sem ter produto, sem estoque e sem investir? O quarto método é o mais escalável de todos."
+    },
+    {
+      "number": 7,
+      "title": "Método REH #4 — Vendas Por Indicação Digital: Ganhe Comissão Sem Ter Produto",
+      "focus": "Gap #1, #2 e #3. Método para perfil Comunicadora/Executora. Marketing de afiliados simplificado e honesto, sem hype.",
+      "sections": [
+        {
+          "title": "Afiliado NÃO É Pirâmide (Entenda a Diferença de Uma Vez)",
+          "description": "Desmistificar com clareza absoluta: o que é marketing de afiliados, como funciona legalmente, diferença para pirâmide financeira. Transparência total.",
+          "type": "content"
+        },
+        {
+          "title": "O Modelo Simples: Indicou → Vendeu → Ganhou",
+          "description": "Framework do processo: 1) Escolher produto 2) Pegar link 3) Compartilhar com público certo 4) Receber comissão. Sem funil complexo, sem tráfego pago.",
+          "type": "framework"
+        },
+        {
+          "title": "3 Plataformas de Afiliados Para Começar Hoje",
+          "description": "Hotmart, Monetizze, Amazon Associados. Como criar conta, escolher produtos com boa comissão, e o que evitar. Critérios para produtos confiáveis.",
+          "type": "content"
+        },
+        {
+          "title": "A Estratégia WhatsApp: Venda Sem Parecer Vendedora",
+          "description": "Como usar WhatsApp e grupos para recomendar produtos de forma natural. Técnica de conteúdo-valor-indicação. Sem spam, sem ser chata.",
+          "type": "content"
+        },
+        {
+          "title": "O Ricardo Ganha R$ 400/Mês Indicando 1 Único Produto",
+          "description": "Case de um técnico de informática CLT que indica 1 curso de Excel nos grupos de WhatsApp e ganha comissão recorrente. Simples, escalável, honesto.",
+          "type": "case_study"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Venda por indicação é renda extra que escala: você não troca hora por dinheiro — um link compartilhado pode gerar comissões por semanas.",
+      "exercise": {
+        "type": "action",
+        "description": "Crie uma conta gratuita em 1 plataforma de afiliados. Escolha 1 produto digital com comissão acima de R$ 20 usando os critérios do capítulo. Gere seu link de afiliado. Você está a 1 compartilhamento do seu primeiro resultado."
+      },
+      "bridge_to_next": "Você agora tem 4 métodos testados nas mãos. Mas conhecer não é o mesmo que fazer. O próximo capítulo é onde tudo vira ação: seu plano de 7 dias para o primeiro resultado real."
+    },
+    {
+      "number": 8,
+      "title": "O Plano de 7 Dias: Seu Primeiro Resultado Real (Passo a Passo Cronometrado)",
+      "focus": "Gap #6 — Primeiro resultado em 7 dias. Transformar conhecimento em ação com um plano diário de 1 hora, cronometrado, sem margem para procrastinação.",
+      "sections": [
+        {
+          "title": "As Regras do Plano (Leia Antes de Começar)",
+          "description": "3 regras inegociáveis: 1) Escolha apenas 1 método 2) Dedique exatamente 1h/dia 3) Não pule nenhum dia. Compromisso formal consigo mesma.",
+          "type": "content"
+        },
+        {
+          "title": "Dia 1-2: Fundação (Setup + Primeiro Cadastro)",
+          "description": "Cronograma minuto a minuto: criar contas, configurar ferramentas, completar perfil. Checklist para validar que tudo está pronto.",
+          "type": "content"
+        },
+        {
+          "title": "Dia 3-4: Primeiras Ações (Tarefa ou Prospecção)",
+          "description": "Executar as primeiras ações concretas: completar tarefas, enviar mensagens, criar primeiro conteúdo. Meta mínima diária por método.",
+          "type": "content"
+        },
+        {
+          "title": "Dia 5-6: Ajuste e Aceleração",
+          "description": "Avaliar o que funcionou nos dias 3-4, ajustar abordagem, dobrar o que deu certo. Técnica de iteração rápida.",
+          "type": "content"
+        },
+        {
+          "title": "Dia 7: Balanço e Primeiro Marco",
+          "description": "Contabilizar resultados da semana. Mesmo que o resultado seja R$ 5 — celebrar. Comparar com o diagnóstico inicial do Cap 1. Definir meta para semana 2.",
+          "type": "exercise"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "7 dias, 1 hora por dia, 1 método — é tudo que você precisa para provar para si mesma que renda extra funciona para VOCÊ.",
+      "exercise": {
+        "type": "checklist",
+        "description": "Use o Checklist de 7 Dias (fornecido no bônus). Marque cada tarefa diária como concluída. No dia 7, preencha o Balanço de Resultados: horas investidas, dinheiro ganho, aprendizados, próximo passo."
+      },
+      "bridge_to_next": "Você completou sua primeira semana. Teve resultado — mesmo que pequeno. Agora a pergunta é: como transformar R$ 50-100 em R$ 300, R$ 500, R$ 800? O próximo capítulo mostra como escalar sem trabalhar mais horas."
+    },
+    {
+      "number": 9,
+      "title": "De R$ 300 Para R$ 800: Como Escalar Sem Trabalhar Mais Horas",
+      "focus": "Gap #4 — Posicionamento honesto de ganhos escaláveis. Mostrar o caminho de crescimento realista sem inflar expectativas. Transição de iniciante para consistente.",
+      "sections": [
+        {
+          "title": "A Diferença Entre Trabalhar MAIS e Trabalhar MELHOR",
+          "description": "Conceito de alavancagem em linguagem simples: otimizar processos, combinar métodos, aumentar valor por hora. Sem trabalhar 2h/dia.",
+          "type": "content"
+        },
+        {
+          "title": "O Framework de Escalada em 3 Fases",
+          "description": "Fase 1: Validação (semana 1-2, R$ 50-200) → Fase 2: Consistência (semana 3-4, R$ 200-400) → Fase 3: Otimização (mês 2-3, R$ 400-800). Métricas e marcos por fase.",
+          "type": "framework"
+        },
+        {
+          "title": "Combinando 2 Métodos: O Efeito Multiplicador",
+          "description": "Como usar micro-tarefas + afiliados, ou AV + conteúdo com IA. Exemplos de combinações que se potencializam. Regra: nunca mais que 2 ao mesmo tempo.",
+          "type": "content"
+        },
+        {
+          "title": "A Armadilha do 'Preciso De Mais Métodos'",
+          "description": "Warning sobre shiny object syndrome. A maior ameaça ao crescimento é trocar de método toda semana. Dados sobre por que consistência vence novidade.",
+          "type": "content"
+        },
+        {
+          "title": "Tabela Realista: Quanto Esperar Por Mês e Método",
+          "description": "Tabela com valores mínimo, médio e máximo por método, com premissa de 1h/dia. Dados baseados em pesquisa real, não projeções otimistas.",
+          "type": "framework"
+        }
+      ],
+      "estimated_pages": 5,
+      "estimated_words": 2000,
+      "key_takeaway": "Escalar não é trabalhar mais horas — é otimizar sua hora, aumentar seu valor e combinar métodos estrategicamente.",
+      "exercise": {
+        "type": "worksheet",
+        "description": "Crie seu Plano de Escalada pessoal: anote seu método principal, seu método secundário (opcional), meta para 30 dias, meta para 90 dias e 1 ação específica que vai otimizar na semana que vem."
+      },
+      "bridge_to_next": "Você tem o método, o plano de 7 dias e a estratégia de escalada. Só falta uma coisa: o empurrão final para agir AGORA — e saber que você tem apoio nessa jornada."
+    },
+    {
+      "number": 10,
+      "title": "Seu Novo Normal: O Que Muda Quando R$ 500 Extras Chegam Todo Mês",
+      "focus": "Fechamento emocional e prático. Consolidar aprendizados, reforçar a transformação, apresentar bônus e criar senso de continuidade.",
+      "sections": [
+        {
+          "title": "A Carla 30 Dias Depois (Carta Do Futuro)",
+          "description": "Narrativa projetiva: como é a vida da Carla com R$ 500 extras. O alívio de pagar as contas, o orgulho de conseguir sozinha, a liberdade de escolher. Emocional e concreto.",
+          "type": "content"
+        },
+        {
+          "title": "Recapitulação: Os 7 Princípios do Método REH",
+          "description": "Resumo de tudo em 7 princípios memoráveis: 1) Honestidade 2) 1 hora basta 3) Celular é suficiente 4) Zero investimento 5) Perfil certo 6) Ação em 7 dias 7) Escalada gradual.",
+          "type": "framework"
+        },
+        {
+          "title": "Seus Bônus: As Ferramentas Para Manter o Ritmo",
+          "description": "Apresentação detalhada dos 4 bônus: Detector de Golpes, Diagnóstico de Perfil, Plano 7 Dias, Planilha Financeira. Como usar cada um para maximizar resultados.",
+          "type": "content"
+        },
+        {
+          "title": "As 3 Maiores Desculpas (E Por Que Nenhuma Cola Mais)",
+          "description": "Antecipar e desmontar objeções finais: 'não tenho tempo', 'não sou boa com tecnologia', 'será que funciona pra mim'. Prova via cases do livro.",
+          "type": "content"
+        },
+        {
+          "title": "Seu Compromisso Final",
+          "description": "Exercício de comprometimento: assinar um 'contrato consigo mesma' com data de início, método escolhido e meta. Fechar o loop do diagnóstico do Cap 1.",
+          "type": "exercise"
+        }
+      ],
+      "estimated_pages": 6,
+      "estimated_words": 2400,
+      "key_takeaway": "Renda extra não é sobre dinheiro — é sobre ter o poder de escolher. E esse poder começa com 1 hora hoje.",
+      "exercise": {
+        "type": "action",
+        "description": "Preencha o Compromisso Final: data de início (hoje!), método escolhido, meta de 30 dias, 1 pessoa para quem vai contar (accountability). Volte ao diagnóstico do Cap 1 e compare: você já mudou."
+      },
+      "bridge_to_next": null
+    }
+  ],
+  "narrative_arc": {
+    "opening": "Conexão pela dor compartilhada: o salário não cobre, as promessas são mentira, mas existe um caminho honesto que funciona para gente normal com 1h/dia. Contrato de honestidade com o leitor.",
+    "rising_action": "Construção progressiva de confiança e competência: primeiro proteger (anti-golpe), depois diagnosticar (perfil), depois equipar (4 métodos práticos). Cada capítulo entrega valor imediato e prova que funciona via cases reais.",
+    "climax": "O Plano de 7 Dias (Cap 8) — momento onde conhecimento vira ação concreta e o leitor tem seu primeiro resultado real. Ponto de virada: 'eu consegui, isso funciona para MIM'.",
+    "resolution": "Escalada realista e visão de futuro (Cap 9-10). O leitor sai com método, plano, ferramentas e a certeza de que R$ 500 extras/mês é questão de decisão, não de sorte."
+  },
+  "implementation_plan": {
+    "writing_order": [1, 8, 4, 5, 6, 7, 3, 2, 9, 10],
+    "priority_chapters": [1, 4, 8, 5],
+    "estimated_time_per_chapter": "2-3 horas por capítulo (incluindo pesquisa de cases e dados)",
+    "style_guidelines": "Tom conversacional e direto, como uma amiga experiente falando com a Carla. 2ª pessoa (você) sempre. Frases curtas (máx 25 palavras). Parágrafos curtos (máx 4 linhas). Subtítulos a cada 300-400 palavras. Listas e bullet points para informações sequenciais. Negrito para conceitos-chave e números importantes. Caixas de destaque para dicas e warnings. Cada capítulo segue: Hook (2 parágrafos) → Conteúdo principal → Exercício prático → Resumo em 3 bullets → Bridge para próximo capítulo. Números sempre concretos (R$ 387, não 'quase R$ 400'). Evitar jargões — se usar termo técnico, explicar imediatamente. Zero emojis no corpo do texto. Usar analogias do cotidiano da Carla (ônibus, WhatsApp, intervalo do almoço).",
+    "reference_materials": [
+      "Cap 1: Dados sobre taxa de desistência em renda extra online, pesquisa sobre promessas falsas no mercado digital",
+      "Cap 2: Frameworks de perfil profissional adaptados para renda extra",
+      "Cap 3: Relatórios de golpes online 2024-2026, dados do Procon e Reclame Aqui",
+      "Cap 4: Plataformas de micro-tarefas atualizadas, valores reais de pagamento",
+      "Cap 5: Ferramentas de IA gratuitas disponíveis no celular, preços de mercado para conteúdo",
+      "Cap 6: Mercado de assistente virtual no Brasil, ferramentas gratuitas",
+      "Cap 7: Plataformas de afiliados brasileiras, comissões médias por categoria",
+      "Cap 8: Cronogramas de implementação testados",
+      "Cap 9: Dados de crescimento de renda extra por método ao longo de 90 dias",
+      "Cap 10: Pesquisa sobre impacto de renda extra na qualidade de vida"
+    ]
+  },
+  "bonus_content_suggestions": [
+    {
+      "name": "Detector de Golpes Online",
+      "format": "PDF 15 páginas",
+      "description": "Checklist expandido dos 7 sinais vermelhos + 20 exemplos reais de golpes desmascarados + template para denúncia. Complementa o framework do capítulo com casos adicionais e atualização semestral.",
+      "complements_chapter": 3
+    },
+    {
+      "name": "Diagnóstico de Perfil de Renda Extra",
+      "format": "Formulário interativo (Google Forms ou Typeform)",
+      "description": "Versão expandida do teste de perfil do Cap 2 com 20 perguntas, resultado automático com recomendação de método personalizada e plano de estudo sugerido.",
+      "complements_chapter": 2
+    },
+    {
+      "name": "Plano de Ação 7 Dias",
+      "format": "Checklist imprimível (PDF 5 páginas)",
+      "description": "Versão detalhada do plano do Cap 8 com checklist dia a dia para cada um dos 4 métodos, espaço para anotações e tracker de resultados.",
+      "complements_chapter": 8
+    },
+    {
+      "name": "Planilha de Controle Financeiro da Renda Extra",
+      "format": "Google Sheets",
+      "description": "Planilha pronta para registrar ganhos por método, horas investidas, valor por hora real, projeção de crescimento e meta mensal. Complementa o Cap 9 com dados para escalada.",
+      "complements_chapter": 9
+    }
+  ],
+  "mind_clone_insights": {
+    "joseph_sugarman": "Cada capítulo termina com um bridge irresistível — a técnica de slippery slide aplicada ao ebook. O leitor nunca pode parar 'num ponto confortável'. Cap 1 termina com curiosidade sobre o diagnóstico, Cap 3 termina com urgência de agir, Cap 7 termina com a promessa do plano concreto. Os títulos usam números específicos e promessas verificáveis (R$ 50 em 48h, 7 sinais, 5 minutos) para criar curiosidade factual que obriga a leitura. O hook de cada capítulo tem no máximo 2 parágrafos — se não prender em 10 segundos, perdeu a Carla.",
+    "luciana_papini": "A estrutura respeita a curva de aprendizagem da Carla: primeiro proteger (Cap 3), depois diagnosticar (Cap 2), depois ensinar (Cap 4-7), depois aplicar (Cap 8), depois escalar (Cap 9). Cada capítulo tem exercício prático que gera resultado imediato — não existe capítulo 'só teórico'. O teste de perfil do Cap 2 funciona como âncora de personalização: a partir dele, a Carla sente que o livro foi escrito para ELA especificamente. A progressão de complexidade é gradual: micro-tarefas (simples) → conteúdo com IA (médio) → AV (médio) → afiliados (médio-avançado).",
+    "gary_bencivenga": "Todos os títulos de capítulo fazem uma promessa específica e verificável — nenhum é genérico. 'Por Que 97% Desistem' cria curiosidade + urgência. '7 Sinais de Que Vão Roubar Seu Dinheiro' ativa medo + proteção. 'Seu Primeiro R$ 50 Em 48 Horas' é promessa concreta e crível (não R$ 1.000, não R$ 10.000 — R$ 50, que a Carla acredita). O posicionamento anti-guru permeia todo o livro: cada vez que um método é apresentado, os ganhos são MENORES que o esperado — e isso gera mais confiança do que inflar números. A prova está nos cases: pessoas com nome, profissão e números reais."
+  },
+  "outline_path": "squads/infoprodutos/output/renda-extra-001/phase-4-architecture/ebook-outline.json"
+}

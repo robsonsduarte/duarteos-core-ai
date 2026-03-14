@@ -1,0 +1,187 @@
+# Squad Infoprodutos — Synapse v3
+# Pipeline completo de criacao de ebooks digitais para venda na Kiwify
+
+squad_id: infoprodutos
+name: "Squad Infoprodutos"
+version: "1.0.0"
+category: "business"
+objective: "Pipeline completo de criacao de infoprodutos digitais (ebooks) — da descoberta de nicho ao PDF final pronto para venda na Kiwify."
+created: "2026-03-13"
+status: active
+api_ready: true
+
+# Membros do squad
+members:
+  - agent_id: "pipeline-orchestrator"
+    codename: "FORGE"
+    role: "Orquestra o pipeline de 6 fases, coordena agentes e garante qualidade OMEGA"
+    model: "opus"
+    joined: "2026-03-13"
+
+  - agent_id: "niche-scout"
+    codename: "RADAR"
+    role: "Pesquisa oportunidades de nichos, calcula scores, recomenda melhor opcao"
+    model: "haiku/sonnet"
+    joined: "2026-03-13"
+
+  - agent_id: "market-analyst"
+    codename: "PRISM"
+    role: "Analisa mercado, constroi avatar, mapeia concorrencia, identifica gaps"
+    model: "haiku/sonnet"
+    joined: "2026-03-13"
+
+  - agent_id: "strategist"
+    codename: "COMPASS"
+    role: "Define estrategia comercial — ticket, posicionamento, funil, bonus, garantia"
+    model: "opus"
+    joined: "2026-03-13"
+
+  - agent_id: "content-architect"
+    codename: "BLUEPRINT"
+    role: "Projeta estrutura do ebook — capitulos, secoes, arco narrativo, outline"
+    model: "opus"
+    joined: "2026-03-13"
+
+  - agent_id: "content-writer"
+    codename: "SCRIBE"
+    role: "Escreve capitulos com copy persuasiva, exemplos praticos, estrutura HCER"
+    model: "opus"
+    joined: "2026-03-13"
+
+  - agent_id: "designer"
+    codename: "CANVAS"
+    role: "Cria design system, especifica capa, formata layout, produz PDF"
+    model: "opus"
+    joined: "2026-03-13"
+
+# Fases do pipeline
+phases:
+  - id: "phase-1-discovery"
+    name: "Discovery"
+    agent: "niche-scout"
+    codename: "RADAR"
+    omega_threshold: 80
+    omega_type: "research"
+    status: pending
+
+  - id: "phase-2-research"
+    name: "Research"
+    agent: "market-analyst"
+    codename: "PRISM"
+    depends_on: "phase-1-discovery"
+    omega_threshold: 80
+    omega_type: "research"
+    status: pending
+
+  - id: "phase-3-strategy"
+    name: "Strategy"
+    agent: "strategist"
+    codename: "COMPASS"
+    depends_on: "phase-2-research"
+    omega_threshold: 85
+    omega_type: "planning"
+    status: pending
+
+  - id: "phase-4-architecture"
+    name: "Architecture"
+    agent: "content-architect"
+    codename: "BLUEPRINT"
+    depends_on: "phase-3-strategy"
+    omega_threshold: 85
+    omega_type: "planning"
+    status: pending
+
+  - id: "phase-5-production"
+    name: "Production"
+    agent: "content-writer"
+    codename: "SCRIBE"
+    depends_on: "phase-4-architecture"
+    omega_threshold: 90
+    omega_type: "implementation"
+    status: pending
+
+  - id: "phase-6-design-delivery"
+    name: "Design & Delivery"
+    agent: "designer"
+    codename: "CANVAS"
+    depends_on: "phase-5-production"
+    omega_threshold: 90
+    omega_type: "implementation"
+    status: pending
+
+# Tasks do squad
+tasks:
+  - id: "phase-1-discovery"
+    description: "Descoberta e validacao de nichos para infoproduto"
+    assignee: "niche-scout"
+    status: pending
+    started: null
+    completed: null
+
+  - id: "phase-2-research"
+    description: "Pesquisa profunda de mercado — avatar, concorrencia, benchmarks"
+    assignee: "market-analyst"
+    status: pending
+    started: null
+    completed: null
+
+  - id: "phase-3-strategy"
+    description: "Definicao de estrategia comercial — ticket, posicionamento, funil"
+    assignee: "strategist"
+    status: pending
+    started: null
+    completed: null
+
+  - id: "phase-4-architecture"
+    description: "Arquitetura de conteudo — outline, capitulos, arco narrativo"
+    assignee: "content-architect"
+    status: pending
+    started: null
+    completed: null
+
+  - id: "phase-5-production"
+    description: "Producao de conteudo — escrita de todos os capitulos"
+    assignee: "content-writer"
+    status: pending
+    started: null
+    completed: null
+
+  - id: "phase-6-design-delivery"
+    description: "Design e entrega — design system, capa, formatacao, PDF"
+    assignee: "designer"
+    status: pending
+    started: null
+    completed: null
+
+# Artefatos compartilhados
+shared_artifacts:
+  - path: "squads/infoprodutos/squad.yaml"
+    type: config
+    owner: "pipeline-orchestrator"
+    created: "2026-03-13"
+
+  - path: "squads/infoprodutos/config/coding-standards.md"
+    type: document
+    owner: "pipeline-orchestrator"
+    created: "2026-03-13"
+
+  - path: "squads/infoprodutos/config/tech-stack.md"
+    type: document
+    owner: "pipeline-orchestrator"
+    created: "2026-03-13"
+
+# Log de comunicacao
+communication_log:
+  - from: "system-builder"
+    to: "broadcast"
+    summary: "Squad Infoprodutos criado com 7 agentes, 6 fases, API-ready"
+    at: "2026-03-13T00:00:00Z"
+
+# Metricas
+metrics:
+  tasks_total: 6
+  tasks_completed: 0
+  tasks_blocked: 0
+  avg_omega_score: null
+  started: "2026-03-13"
+  last_activity: "2026-03-13T00:00:00Z"

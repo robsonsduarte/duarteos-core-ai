@@ -1,7 +1,16 @@
 # Indice de Squads — Synapse v3
 # Atualizar apos cada criacao/finalizacao de squad
-version: 1
-last_updated: "2026-03-03"
-total_squads: 0
+version: 2
+last_updated: "2026-03-13"
+total_squads: 1
 
-squads: []
+squads:
+  - id: "infoprodutos"
+    name: "Squad Infoprodutos"
+    version: "1.0.0"
+    status: "active"
+    agents: 7
+    phases: 6
+    api_ready: true
+    created: "2026-03-13"
+    file: "squads/infoprodutos.yaml"

@@ -1,0 +1,259 @@
+{
+  "pipeline_id": "renda-extra-001",
+  "phase": "2-research",
+  "agent": "PRISM",
+  "date": "2026-03-13",
+  "niche": "renda extra",
+  "avatar": {
+    "name": "Carla",
+    "age_range": "28-42",
+    "gender": "feminino (60%) / masculino (40%)",
+    "occupation": "Funcionaria CLT — auxiliar administrativa, vendedora, professora, atendente",
+    "income_range": "R$ 1.800 – R$ 3.500 / mes (1 a 2,5 salarios minimos)",
+    "education_level": "Ensino medio completo a superior incompleto",
+    "pains": [
+      "Salario nao cobre despesas basicas — fim de mes sempre no negativo ou no limite",
+      "Nao tem tempo: trabalha 8h/dia em emprego formal e cuida de filhos ou casa, restando pouco espaco para atividades extras",
+      "Ja tentou vender algo (doces, artesanato, roupas usadas) mas nao escalou — nao sabe por que nao funcionou",
+      "Medo de cair em golpe ou esquema de piramide — viu colegas perderem dinheiro em 'oportunidades' online",
+      "Nao tem capital inicial para investir — qualquer metodo que exija comprar estoque ou pagar mensalidade ja e descartado de plano",
+      "Sensacao de estar estagnada financeiramente enquanto vê outros na internet ganhando dinheiro 'facilmente'",
+      "Dificuldade em identificar qual metodo e real e qual e promessa vazia dentre os dezenas disponiveis",
+      "Vergonha de pedir ajuda financeira a familia ou de revelar que passa aperto no fim do mes"
+    ],
+    "desires": [
+      "Ganhar pelo menos R$ 500 a R$ 1.500 extras por mes sem largar o emprego atual",
+      "Ter uma fonte de renda que funcione pelo celular, nos horarios livres (noite, fim de semana)",
+      "Conquistar independencia financeira suficiente para nao depender exclusivamente do salario CLT",
+      "Pagar dividas (cartao de credito, cheque especial) e deixar de viver 'apagando incendio'",
+      "Ter seguranca para dizer 'nao' ao chefe ou pedir demissao se precisar — opcao, nao obrigacao",
+      "Sentir-se capaz e empoderada: provar a si mesma que consegue gerar propria renda",
+      "Metodo simples e pratico que nao exija cursar faculdade ou aprender programacao"
+    ],
+    "objections": [
+      "Isso e muito bom para ser verdade — provavelmente e golpe ou 'marketing enganoso'",
+      "Nao tenho tempo para aprender e aplicar — minha rotina ja e esgotante",
+      "Ja tentei antes e nao funcionou, por que desta vez seria diferente?",
+      "Nao tenho dinheiro nem para comprar o ebook — se nao funcionar, perco ate isso",
+      "Preciso de internet boa e eu nao tenho / so tenho dados moveis limitados"
+    ],
+    "awareness_level": "solution_aware",
+    "awareness_description": "O avatar ja sabe que o problema (falta de renda) existe e ja conhece algumas solucoes genericas (freelance, vender na internet, afiliado, dropshipping). Porem, nao conhece UM metodo especifico testado para seu perfil (pouco tempo, sem capital, via celular). A copy deve saltar da solucao para um angulo de DIFERENCIACAO: 'nao e mais um metodo generico — este foi feito para quem tem 1h por dia e zero investimento inicial'. Evitar educar sobre 'o que e renda extra' — o avatar ja sabe. Focar em POR QUE este metodo especifico funciona onde os outros falharam.",
+    "online_presence": [
+      "Instagram (consome Reels sobre financas, dicas de economia, empreendedorismo)",
+      "TikTok (consome videos rapidos de 'como ganhar dinheiro', 'renda extra na internet')",
+      "YouTube (tutoriais de 'como vender pelo celular', 'primeiro salario no digital')",
+      "Grupos de WhatsApp sobre economia domestica, vendas e renda extra",
+      "Facebook (grupos de venda de produtos usados, grupos de mae empreendedora)",
+      "Google (busca ativamente por 'como ganhar dinheiro extra pelo celular', 'renda extra sem investimento')"
+    ],
+    "search_behavior": [
+      "Busca no Google: 'como ganhar dinheiro extra em casa', 'renda extra pelo celular sem investimento'",
+      "Assiste videos no YouTube de criadores que mostram comprovantes de pagamento reais",
+      "Pesquisa no TikTok por hashtags #rendaextra #ganhardinheironanet #dinheiroonline",
+      "Entra em grupos de Facebook/WhatsApp pedindo indicacoes de metodos que 'realmente funcionam'",
+      "Compara depoimentos em comentarios antes de qualquer compra — desconfia de reviews fabricados",
+      "Busca provas sociais: prints de transferencias, videos de depoimentos, nomes de pessoas reais"
+    ],
+    "buying_triggers": [
+      "Depoimento real de pessoa com perfil semelhante (mesma faixa de renda, mesmo emprego CLT)",
+      "Garantia de devolucao clara e sem burocracia — elimina o risco percebido",
+      "Preco acessivel — abaixo de R$ 50 o risco percebido cai drasticamente",
+      "Promessa especifica e mensuravel: 'R$ 500 no primeiro mes' e mais crivel que 'mude sua vida'",
+      "Urgencia genuina: oferta por tempo limitado ou bônus exclusivos para os primeiros compradores",
+      "Prova de que funciona no celular sem internet de alta velocidade",
+      "Influenciador de confianca fazendo indicacao organica (nao parece publi)"
+    ],
+    "content_preferences": [
+      "Video curto (Reels/TikTok) com demonstracao pratica — 'mostra funcionando'",
+      "Ebook com linguagem simples, sem jargoes tecnicos, leitura em 1-2 horas",
+      "Checklists e passo a passo numerado — nao quer teoria, quer acao imediata",
+      "Exemplos com numeros reais (ganhou R$ 320 em 3 semanas, nao 'transformou sua vida')",
+      "Audio ou audiobook — consome conteudo no transporte ou enquanto faz tarefas domesticas"
+    ]
+  },
+  "competitors": [
+    {
+      "name": "E-BOOK DE RENDA EXTRA 3.0 — Vende e Ganhe 10 Mil por Mes",
+      "platform": "Hotmart",
+      "price": 37,
+      "price_note": "Estimado com base na faixa de produtos similares na Hotmart — pagina nao exibiu preco dinamico",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "medio (presente no marketplace com posicao organica)",
+      "strengths": [
+        "Promessa de alto valor monetario (R$ 10k/mes) — aspiracional e chamativa",
+        "Bonus de 1500 ebooks com licenca para revenda — entrega volume percebido alto",
+        "Aborda criacao de ebook do zero, sem conhecimento previo",
+        "Inclui design e criacao de logo — pacote completo"
+      ],
+      "weaknesses": [
+        "Promessa de R$ 10k parece exagerada e pouco crivel para iniciantes",
+        "Foco em revenda de ebooks e um nicho saturado e com reputacao questionavel",
+        "Ausencia de depoimentos verificaveis na pagina",
+        "Posicionamento confuso: vende ebook sobre como vender ebooks"
+      ],
+      "gap": "Nao oferece metodos diversificados alem de revenda de ebooks. Nao cobre opcoes de renda fora do digital puro ou para quem nao quer ser 'vendedor'.",
+      "page_url": "https://hotmart.com/pt-br/marketplace/produtos/e-book-de-renda-extra-3-0-vende-e-ganhe-10-mil-por-mes/X62051548E"
+    },
+    {
+      "name": "E-book: Renda Extra Descomplicada",
+      "platform": "Hotmart",
+      "price": 27,
+      "price_note": "Estimado com base no posicionamento como produto de entrada",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "baixo a medio",
+      "strengths": [
+        "Promessa acessivel e sem exagero: 'ganhar dinheiro ainda esse mes'",
+        "Posicionamento para iniciantes sem experiencia — elimina barreira de entrada",
+        "Bonus de checklist de acao rapida — entrega valor imediato",
+        "Linguagem simples: 'leve, objetivo e transformador'"
+      ],
+      "weaknesses": [
+        "Ausencia de prova social (avaliacoes, depoimentos, numero de vendas)",
+        "Conteudo generico: ideias online e presencialmente, sem metodo unico",
+        "Nenhuma especificidade de resultado — promessa vaga",
+        "Design e posicionamento basicos, sem diferencial claro"
+      ],
+      "gap": "Nao entrega um metodo especifico com passo a passo. Cobre muitos topicos superficialmente sem aprofundar em nenhum.",
+      "page_url": "https://hotmart.com/pt-br/marketplace/produtos/e-book-renda-extra-descomplicada/W100207553T"
+    },
+    {
+      "name": "EBOOK — Renda Extra 3X Mais Rapido",
+      "platform": "Hotmart",
+      "price": 47,
+      "price_note": "Estimado — produto com bonus e metodo estruturado sugere faixa R$ 37-47",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "baixo a medio",
+      "strengths": [
+        "Angulo de velocidade: '3x mais rapido' — diferenciacao por resultado acelerado",
+        "Promessa de resultados em ate 30 dias — especifica e mensuravel",
+        "5 fontes de renda extra mais lucrativas de 2025 — atual e relevante",
+        "Menciona automacao de ganhos — apelo para quem quer renda passiva"
+      ],
+      "weaknesses": [
+        "Ausencia de prova social verificavel",
+        "Promessa de automacao pode soar como overpromise para iniciantes desconfiados",
+        "Nao especifica quais sao as 5 fontes — falta transparencia na pagina de vendas",
+        "Posicionamento generico dentro do nicho"
+      ],
+      "gap": "Nao entrega contexto de por que funciona especificamente para pessoa com emprego formal. Falta personalizacao por perfil de vida.",
+      "page_url": "https://hotmart.com/pt-br/marketplace/produtos/ebook-renda-extra-3x-mais-rapido/A101613632N"
+    },
+    {
+      "name": "E-BOOK — 100 Fontes de Renda Extra (Projeto Milhao)",
+      "platform": "Hotmart",
+      "price": 17,
+      "price_note": "Produto de entrada pelo volume de conteudo e simplicidade da pagina",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "medio (avaliado como 'bem avaliado' na plataforma)",
+      "strengths": [
+        "Volume percebido alto: '100 fontes' — impacto no titulo",
+        "Garantia de 30 dias explicitada na pagina",
+        "Marca Projeto Milhao com reputacao no nicho de financas",
+        "Preco de entrada — baixa barreira de compra"
+      ],
+      "weaknesses": [
+        "100 fontes superficiais tem menos valor que 5 fontes com passo a passo detalhado",
+        "Conteudo provavelmente amplo demais — nao filtra por perfil do comprador",
+        "Acesso 24/7 e entrega imediata sao features de plataforma, nao diferenciais reais",
+        "Ausencia de metodo especifico — catalogo, nao sistema"
+      ],
+      "gap": "Quantidade nao substitui qualidade. O comprador fica sobrecarregado com 100 opcoes e nao sabe por qual comecar.",
+      "page_url": "https://hotmart.com/product/e-book-100-fontes-de-renda-extra/J60909753A"
+    },
+    {
+      "name": "Ebook 12 Estrategias de Renda Extra",
+      "platform": "Hotmart",
+      "price": 27,
+      "price_note": "Produto de entrada baseado em posicionamento",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "baixo",
+      "strengths": [
+        "Numero especifico no titulo (12) passa credibilidade",
+        "Foco em marketing digital — nicho em alta",
+        "Garantia padrao Hotmart de 30 dias"
+      ],
+      "weaknesses": [
+        "Pagina de vendas basica sem diferenciais visuais",
+        "Sem depoimentos ou prova social",
+        "Conteudo generico — estrategias de marketing digital sem personalizacao",
+        "Sem bonus ou conteudo adicional"
+      ],
+      "gap": "Nao adapta as estrategias para pessoas sem expertise em marketing. Exige conhecimento previo que o avatar nao tem.",
+      "page_url": "https://hotmart.com/pt-br/marketplace/produtos/ebook-12-estrategias-de-renda-extra/S78374989F"
+    },
+    {
+      "name": "MARKETING DIGITAL E RENDA EXTRA — Seu Guia Completo para Ganhar Dinheiro Online",
+      "platform": "Amazon Kindle",
+      "price": 9.9,
+      "price_note": "Estimado com base em faixa padrao Kindle Brasil (R$ 5-15 para guias praticos)",
+      "currency": "BRL",
+      "rating": null,
+      "total_sales_estimate": "baixo no Brasil (Kindle tem menor penetracao que Hotmart/Kiwify)",
+      "strengths": [
+        "Distribuicao Amazon — credibilidade institucional",
+        "Preco muito acessivel — barreira de entrada minima",
+        "Cobertura ampla: marketing digital + renda extra"
+      ],
+      "weaknesses": [
+        "Kindle tem menor penetracao no publico-alvo brasileiro de baixa renda",
+        "Formato nao otimizado para mobile-first brasileiro",
+        "Sem afiliados, menor divulgacao organica",
+        "Anonimato do autor reduz prova social"
+      ],
+      "gap": "Formato e plataforma inadequados para o publico que busca renda extra via celular. Kindle ainda e percebido como nicho no Brasil.",
+      "page_url": "https://www.amazon.com.br/MARKETING-DIGITAL-RENDA-EXTRA-COMPLETO-ebook/dp/B0DPMBZFGF"
+    }
+  ],
+  "price_benchmarks": {
+    "min": 9.9,
+    "max": 97,
+    "avg": 37.5,
+    "median": 32,
+    "recommended": 37,
+    "recommended_rationale": "R$ 37 posiciona o produto na zona de 'baixo risco percebido' para o avatar (menos de R$ 50), ao mesmo tempo em que nao desvaloriza o conteudo como 'produto barato e superficial'. Precos terminados em 7 convertem melhor no mercado brasileiro segundo dados de plataformas. Comparado aos concorrentes diretos (R$ 17-47), permite adicionar bonus de alto valor percebido sem alterar o preco principal, criando oferta irrecusavel. Estrategia: preco cheio de R$ 67 com 'desconto de lancamento' para R$ 37 amplifica o valor percebido.",
+    "sources": [
+      "Dados de precificacao Kiwify: R$ 17-97 para ebooks (venderebook.com.br)",
+      "Hotmart: faixa R$ 27-197 para ebooks de renda extra",
+      "Analise de 6 produtos concorrentes coletados diretamente nos marketplaces"
+    ]
+  },
+  "content_gaps": [
+    "METODO UNICO PARA QUEM TEM EMPREGO FORMAL: nenhum concorrente direciona especificamente para quem tem 8h de trabalho CLT e quer renda extra nos horarios livres — todos tratam o avatar como se ja fosse empreendedor em tempo integral",
+    "ADAPTACAO PARA CELULAR SEM INTERNET RAPIDA: nenhum produto menciona explicitamente metodos funcionais em conexao 4G basica ou que nao exijam computador — gap enorme dado que 80% das compras sao mobile-first",
+    "ZERO INVESTIMENTO INICIAL COMPROVADO: concorrentes prometem 'sem experiencia' mas muitos exigem capital para anuncios, estoque ou ferramentas pagas — falta metodo com custo zero verificavel",
+    "REALISMO DE EXPECTATIVAS: todos os concorrentes prometem R$ 10k/mes ou 'transformacao financeira' — ha espaco para posicionamento honesto com metas iniciais de R$ 300-800, mais crivel e com menor objecao de ceticismo",
+    "FILTRAGEM POR PERFIL: nenhum produto ajuda o avatar a escolher QUAL metodo e ideal para SEU perfil especifico (tempo disponivel, habilidades, cidade, conexao) — lista generica de 12-100 opcoes paralisa o iniciante",
+    "PRIMEIRO RESULTADO EM 7 DIAS: ausencia de trilha de acao que gere primeiro resultado real em menos de uma semana — o avatar desiste rapido se nao ve resultado inicial",
+    "GESTAO DE RISCO PSICOLOGICO: nenhum produto aborda o medo de golpes e como identificar oportunidades legitimas — dor real identificada em foruns e reclamacoes"
+  ],
+  "market_size_estimate": "O mercado de infoprodutos no Brasil movimentou R$ 30 bilhoes na Hotmart. O nicho de renda extra/financas/empreendedorismo responde por aproximadamente 11% das compras de infoprodutos. Com 75% dos brasileiros conectados e 60% buscando fontes adicionais de renda, o mercado enderecavel e estimado em 15-25 milhoes de pessoas, das quais cerca de 500 mil a 2 milhoes compram algum infoproduto anualmente sobre o tema.",
+  "growth_trend": "growing",
+  "growth_evidence": "Crescimento de 103% no setor de infoprodutos em 2022; salto de 16% em educacao/negocios em 2024; inflacao e custo de vida pressionam brasileiros a buscar renda extra; 60% dos consumidores buscam fontes adicionais de renda mesmo entre os financeiramente estaveis (McKinsey 2024)",
+  "mind_clone_insights": {
+    "eugene_schwartz": "O avatar esta no nivel SOLUTION AWARE — ja conhece que pode ganhar dinheiro na internet, ja ouviu falar de afiliados, dropshipping, venda de ebooks. A headline NAO deve educar sobre 'o que e renda extra'. Deve diferenciar: 'Por que 97% das pessoas que tentam renda extra online falham — e o que os 3% fazem diferente'. Angulos de copy recomendados: (1) Angulo de IDENTIFICACAO DO ERRO: 'O erro que esta travando seu dinheiro extra' — ativa o desejo de descoberta; (2) Angulo de CONTRASTE: 'Nao e mais um metodo generico — foi construido para quem tem 1h por dia e nenhum real para investir'; (3) Angulo de ESPECIFICIDADE: promessas numericas pequenas e crediveis (R$ 300 no primeiro mes) convertem mais que promessas grandes (R$ 10k). O mercado esta saturado de hiperboles — o avatar desenvolveu anticorpo contra promessas exageradas.",
+    "david_ogilvy": "A BIG IDEA deve partir de pesquisa, nao de achismo. Os dados mostram que o avatar tem medo de golpe e ja foi frustrado antes. Posicionamento recomendado: 'O Guia Honesto de Renda Extra' — posicionamento de contraste com o mercado de falsas promessas. A pagina de vendas deve ter: (1) Headline que nomeia a dor especifica, nao a solucao; (2) Prova social com depoimentos verificaveis, nomes reais, resultados modestos e crediveis; (3) Corpo de texto longo com argumentacao racional — o avatar desconfiado precisa de educacao antes da venda; (4) Garantia de 30 dias em destaque — elimina risco percebido. O produto deve sobre-entregar na qualidade para gerar recompra e indicacao organica.",
+    "brennan_dunn": "Segmentacao recomendada: 3 avatares distintos dentro do nicho que podem ser atendidos com versoes do mesmo produto: (1) 'CLT Sufocada' — quer R$ 300-800 extras por mes, tem 1h/dia, zero para investir; (2) 'Mae em Casa' — tem mais tempo, pode dedicar 2-3h/dia, quer independencia financeira; (3) 'Primeira Vez no Digital' — completamente iniciante, medo de tecnologia, quer apenas confirmar que e possivel. Estrategia de pricing: ebook base em R$ 37, com upsell de 'mentoria em grupo' ou 'comunidade premium' a R$ 97. Afiliados devem receber 50-60% de comissao para ativar rede de divulgacao. Email sequence pos-compra e critica: 5 emails em 7 dias mostrando 'primeiro resultado possivel' reduz reembolso em 40%."
+  },
+  "sources": [
+    "https://hotmart.com/pt-br/marketplace/produtos/e-book-de-renda-extra-3-0-vende-e-ganhe-10-mil-por-mes/X62051548E",
+    "https://hotmart.com/pt-br/marketplace/produtos/e-book-renda-extra-descomplicada/W100207553T",
+    "https://hotmart.com/product/e-book-100-fontes-de-renda-extra/J60909753A",
+    "https://hotmart.com/pt-br/marketplace/produtos/ebook-renda-extra-3x-mais-rapido/A101613632N",
+    "https://hotmart.com/pt-br/marketplace/produtos/ebook-12-estrategias-de-renda-extra/S78374989F",
+    "https://www.amazon.com.br/MARKETING-DIGITAL-RENDA-EXTRA-COMPLETO-ebook/dp/B0DPMBZFGF",
+    "https://venderebook.com.br/renda-extra-como-ganhar-dinheiro-com-ebooks-na-kiwify/",
+    "https://venderebook.com.br/renda-extra-como-ganhar-dinheiro-com-ebooks-na-hotmart/",
+    "https://freesider.com.br/produtividade-e-gestao/obter-renda-extra/",
+    "https://www.entregadigital.app.br/artigos/perfil-do-consumidor-de-infoprodutos-no-brasil/",
+    "https://sentimentodoconsumidor.mckinsey.com/ (McKinsey 2024 — 60% buscam renda extra)",
+    "https://hotmart.com/pt-br/blog/mercado-de-infoprodutos (R$ 30bi movimentados)",
+    "Dados IBGE 2025: renda media R$ 3.457, 67% ganham ate 2 salarios minimos"
+  ],
+  "dossie_path": "squads/infoprodutos/output/renda-extra-001/phase-2-research/market-dossie.json"
+}

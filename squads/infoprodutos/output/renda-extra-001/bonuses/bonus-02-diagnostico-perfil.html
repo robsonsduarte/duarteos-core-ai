@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnostico de Perfil — Qual Metodo e Ideal Para Voce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2D3748;
+  line-height: 1.7;
+  background: #F7FAFC;
+  min-height: 100vh;
+}
+
+/* === HEADER === */
+.app-header {
+  background: linear-gradient(135deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.app-header .badge {
+  display: inline-block;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35em 1.2em;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.app-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+}
+
+.app-header p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* === PROGRESS BAR === */
+.progress-wrapper {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #E2E8F0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1B7A4A, #38A169);
+  border-radius: 5px;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* === QUESTION CARD === */
+.question-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+.question-card.active { display: block; }
+
+.question-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1B7A4A;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.question-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1A365D;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+/* === OPTIONS === */
+.options { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #E2E8F0;
+  border-radius: 10px;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #2D3748;
+  line-height: 1.4;
+}
+
+.option-btn:hover {
+  border-color: #1B7A4A;
+  background: #E8F5EE;
+}
+
+.option-btn.selected {
+  border-color: #1B7A4A;
+  background: #E8F5EE;
+  font-weight: 500;
+}
+
+.option-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #E2E8F0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #718096;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.option-btn.selected .option-letter {
+  background: #1B7A4A;
+  color: #FFFFFF;
+}
+
+.option-btn:hover .option-letter {
+  background: #1B7A4A;
+  color: #FFFFFF;
+}
+
+/* === NAVIGATION === */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary {
+  background: #E2E8F0;
+  color: #718096;
+}
+
+.btn-secondary:hover { background: #CBD5E0; }
+
+.btn-primary {
+  background: #1B7A4A;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover { background: #145A37; }
+
+.btn-primary:disabled {
+  background: #A0AEC0;
+  cursor: not-allowed;
+}
+
+.btn-accent {
+  background: #E8930C;
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  padding: 1rem 2.5rem;
+}
+
+.btn-accent:hover { background: #C77B0A; }
+
+/* === INTRO SCREEN === */
+.intro-screen {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.intro-screen h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1A365D;
+  margin-bottom: 1rem;
+}
+
+.intro-screen p {
+  color: #718096;
+  margin-bottom: 0.8rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.intro-feature {
+  background: #F7FAFC;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.intro-feature strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #1A365D;
+  margin-bottom: 0.2rem;
+}
+
+.intro-feature span {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+/* === RESULT SCREEN === */
+.result-screen {
+  display: none;
+}
+
+.result-screen.active { display: block; }
+
+.result-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.result-header {
+  background: linear-gradient(135deg, #1A365D 0%, #1B7A4A 100%);
+  color: #FFFFFF;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.result-header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.result-header .profile-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #E8930C;
+  margin: 0.5rem 0;
+}
+
+.result-header p {
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+
+.result-body {
+  padding: 1.5rem;
+}
+
+.result-section {
+  margin-bottom: 1.8rem;
+}
+
+.result-section:last-child { margin-bottom: 0; }
+
+.result-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1A365D;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.result-section p {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.profile-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profile-bar .label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #718096;
+  width: 110px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.profile-bar .bar {
+  flex: 1;
+  height: 24px;
+  background: #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.profile-bar .fill {
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: width 0.6s ease;
+}
+
+.fill-comunicadora { background: linear-gradient(90deg, #E8930C, #F6AD55); }
+.fill-organizadora { background: linear-gradient(90deg, #1A365D, #4A5568); }
+.fill-criativa { background: linear-gradient(90deg, #805AD5, #B794F4); }
+.fill-executora { background: linear-gradient(90deg, #1B7A4A, #38A169); }
+
+.method-card {
+  background: #E8F5EE;
+  border: 2px solid #1B7A4A;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.method-card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #145A37;
+  margin-bottom: 0.3rem;
+}
+
+.method-card p {
+  font-size: 0.85rem;
+  color: #2D3748;
+  margin-bottom: 0;
+}
+
+.method-card .chapter-ref {
+  display: inline-block;
+  background: #1B7A4A;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2em 0.8em;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+}
+
+.action-plan {
+  background: #FFF8E7;
+  border: 2px solid #E8930C;
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.action-plan h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #B7791F;
+  margin-bottom: 0.8rem;
+}
+
+.action-step {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  align-items: flex-start;
+}
+
+.action-step:last-child { margin-bottom: 0; }
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #E8930C;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.action-step p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* === FOOTER === */
+.app-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .app-header h1 { font-size: 1.4rem; }
+  .intro-features { grid-template-columns: 1fr; }
+  .container { padding: 1rem; }
+  .question-text { font-size: 1rem; }
+  .profile-bar .label { width: 85px; font-size: 0.7rem; }
+  .result-header .profile-name { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="badge">Bonus Exclusivo</div>
+  <h1>Diagnostico de Perfil</h1>
+  <p>Descubra qual metodo de renda extra combina com voce. 10 perguntas, 2 minutos.</p>
+</header>
+
+<div class="container">
+  <!-- INTRO -->
+  <div id="intro" class="intro-screen">
+    <h2>Qual Metodo REH e Ideal Para Voce?</h2>
+    <p>Cada pessoa tem um jeito natural de trabalhar. Este diagnostico identifica seu perfil dominante e recomenda o metodo de renda extra mais alinhado com suas habilidades.</p>
+
+    <div class="intro-features">
+      <div class="intro-feature">
+        <strong>Comunicadora</strong>
+        <span>Conecta, convence, dialoga</span>
+      </div>
+      <div class="intro-feature">
+        <strong>Organizadora</strong>
+        <span>Planeja, estrutura, controla</span>
+      </div>
+      <div class="intro-feature">
+        <strong>Criativa</strong>
+        <span>Inventa, visualiza, inova</span>
+      </div>
+      <div class="intro-feature">
+        <strong>Executora</strong>
+        <span>Resolve, entrega, age rapido</span>
+      </div>
+    </div>
+
+    <p style="font-size:0.85rem;">Responda com honestidade. Nao existe perfil melhor ou pior — todos geram renda extra. O segredo e comecar pelo que combina com voce.</p>
+
+    <button class="btn btn-accent" onclick="startQuiz()" style="margin-top:1rem;">Comecar Diagnostico</button>
+  </div>
+
+  <!-- PROGRESS -->
+  <div id="progress-area" class="progress-wrapper" style="display:none;">
+    <div class="progress-label">
+      <span id="progress-text">Pergunta 1 de 10</span>
+      <span id="progress-pct">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- QUESTIONS -->
+  <div id="questions-area">
+    <!-- Question 1 -->
+    <div class="question-card" data-question="1">
+      <div class="question-number">Pergunta 1 de 10</div>
+      <div class="question-text">No trabalho, voce se destaca mais por...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Se comunicar bem com colegas e clientes</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Manter tudo organizado e dentro do prazo</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Ter ideias diferentes e encontrar solucoes criativas</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Executar tarefas com rapidez e eficiencia</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card" data-question="2">
+      <div class="question-number">Pergunta 2 de 10</div>
+      <div class="question-text">Nas horas livres, voce prefere...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Conversar com amigos, ler noticias ou ouvir podcasts</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Organizar a casa, planejar a semana ou fazer listas</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Criar algo: cozinhar, decorar, tirar fotos, desenhar</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Resolver pendencias: pagar contas, consertar algo, limpar</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card" data-question="3">
+      <div class="question-number">Pergunta 3 de 10</div>
+      <div class="question-text">Seus amigos pedem sua ajuda quando...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Precisam convencer alguem ou resolver um mal-entendido</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Precisam organizar uma viagem, festa ou mudanca</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Precisam de uma ideia criativa para um presente ou evento</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Precisam que algo seja feito rapido e bem feito</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card" data-question="4">
+      <div class="question-number">Pergunta 4 de 10</div>
+      <div class="question-text">No celular, os apps que voce mais usa sao...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>WhatsApp, Instagram e redes sociais em geral</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Agenda, Google Planilhas, apps de controle financeiro</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Canva, Pinterest, TikTok ou apps de fotos e edicao</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Apps de banco, delivery, mapas e produtividade</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-card" data-question="5">
+      <div class="question-number">Pergunta 5 de 10</div>
+      <div class="question-text">Se pudesse escolher uma tarefa extra no trabalho, seria...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Atender clientes e resolver suas duvidas</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Organizar processos e criar procedimentos</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Criar apresentacoes, posts ou materiais visuais</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Resolver problemas urgentes que ninguem quer pegar</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-card" data-question="6">
+      <div class="question-number">Pergunta 6 de 10</div>
+      <div class="question-text">O que mais te frustra num curso online e que ele seja...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Monotono — sem interacao, so leitura ou video parado</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Desorganizado — conteudo jogado, sem sequencia logica</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Sem criatividade — visual feio, exemplos genericos</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Teorico demais — muita explicacao, pouca acao pratica</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-card" data-question="7">
+      <div class="question-number">Pergunta 7 de 10</div>
+      <div class="question-text">Voce aprende melhor...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Ouvindo explicacoes e discutindo com outras pessoas</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Seguindo um passo a passo bem estruturado</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Vendo exemplos visuais, infograficos e demonstracoes</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Fazendo na pratica — testando, errando e ajustando</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-card" data-question="8">
+      <div class="question-number">Pergunta 8 de 10</div>
+      <div class="question-text">Se tivesse que vender algo amanha, voce...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Convenceria pelo papo — ligaria, mandaria audio, conversaria</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Montaria uma planilha com precos, margem e lista de clientes</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Faria um post bonito no Instagram ou um video chamativo</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Sairia oferecendo para todo mundo — acao imediata</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-card" data-question="9">
+      <div class="question-number">Pergunta 9 de 10</div>
+      <div class="question-text">O que mais te motiva e...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Reconhecimento, conexao com pessoas e ser ouvida</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Controle, previsibilidade e saber que esta tudo certo</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Liberdade criativa e poder fazer as coisas do seu jeito</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Resultado concreto — ver o numero subindo, a tarefa feita</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-card" data-question="10">
+      <div class="question-number">Pergunta 10 de 10</div>
+      <div class="question-text">Em um grupo de trabalho, voce naturalmente...</div>
+      <div class="options">
+        <button class="option-btn" data-profile="A" onclick="selectOption(this)">
+          <span class="option-letter">A</span>
+          <span>Lidera a conversa e alinha todo mundo</span>
+        </button>
+        <button class="option-btn" data-profile="B" onclick="selectOption(this)">
+          <span class="option-letter">B</span>
+          <span>Anota tudo, faz a ata e distribui as tarefas</span>
+        </button>
+        <button class="option-btn" data-profile="C" onclick="selectOption(this)">
+          <span class="option-letter">C</span>
+          <span>Sugere ideias diferentes e pensa fora da caixa</span>
+        </button>
+        <button class="option-btn" data-profile="D" onclick="selectOption(this)">
+          <span class="option-letter">D</span>
+          <span>Executa as tarefas enquanto os outros ainda estao discutindo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV BUTTONS -->
+  <div id="nav-area" class="nav-buttons" style="display:none;">
+    <button class="btn btn-secondary" id="btn-prev" onclick="prevQuestion()">Anterior</button>
+    <button class="btn btn-primary" id="btn-next" onclick="nextQuestion()" disabled>Proxima</button>
+  </div>
+
+  <!-- RESULT -->
+  <div id="result" class="result-screen">
+    <div class="result-card">
+      <div class="result-header">
+        <h2>Seu Resultado</h2>
+        <div id="result-profile" class="profile-name"></div>
+        <p id="result-secondary"></p>
+      </div>
+      <div class="result-body">
+        <div class="result-section">
+          <h3>Distribuicao do Seu Perfil</h3>
+          <div class="profile-bar-container">
+            <div class="profile-bar">
+              <span class="label">Comunicadora</span>
+              <div class="bar"><div id="bar-A" class="fill fill-comunicadora" style="width:0%"></div></div>
+            </div>
+            <div class="profile-bar">
+              <span class="label">Organizadora</span>
+              <div class="bar"><div id="bar-B" class="fill fill-organizadora" style="width:0%"></div></div>
+            </div>
+            <div class="profile-bar">
+              <span class="label">Criativa</span>
+              <div class="bar"><div id="bar-C" class="fill fill-criativa" style="width:0%"></div></div>
+            </div>
+            <div class="profile-bar">
+              <span class="label">Executora</span>
+              <div class="bar"><div id="bar-D" class="fill fill-executora" style="width:0%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-section">
+          <h3>Sobre Seu Perfil</h3>
+          <p id="result-description"></p>
+        </div>
+
+        <div class="result-section">
+          <h3>Metodo REH Ideal Para Voce</h3>
+          <div id="result-methods"></div>
+        </div>
+
+        <div class="result-section">
+          <h3>Seu Plano de Acao</h3>
+          <div id="result-action" class="action-plan"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:1rem;">
+      <button class="btn btn-secondary" onclick="resetQuiz()">Refazer Diagnostico</button>
+    </div>
+  </div>
+</div>
+
+<footer class="app-footer">
+  Material exclusivo do ebook Renda Extra Honesta.<br>
+  Proibida a reproducao ou distribuicao sem autorizacao.
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  var currentQuestion = 0;
+  var answers = {};
+  var totalQuestions = 10;
+
+  var profiles = {
+    A: {
+      name: 'Comunicadora',
+      description: 'Voce tem um dom natural para se conectar com pessoas. Sabe ouvir, sabe falar e tem facilidade para construir confianca. Esse perfil e valioso porque a maioria dos metodos de renda extra depende de algum tipo de comunicacao — e voce ja tem essa habilidade de forma natural. Voce se da bem em atividades que envolvem atendimento, negociacao, vendas consultivas e criacao de relacionamentos.',
+      methods: [
+        {
+          title: 'Metodo REH #4 — Vendas por Indicacao Digital (Afiliados)',
+          desc: 'Sua habilidade de se comunicar e convencer faz de voce uma afiliada natural. Voce sabe recomendar produtos de forma autentica e gerar confianca.',
+          chapter: 'Capitulo 7 do ebook'
+        },
+        {
+          title: 'Metodo REH #3 — Assistente Virtual',
+          desc: 'Atender clientes, responder mensagens e gerenciar agendas usa diretamente sua capacidade de comunicacao e empatia.',
+          chapter: 'Capitulo 6 do ebook'
+        }
+      ],
+      actions: [
+        'Leia os Capitulos 7 e 6 do ebook com prioridade.',
+        'Escolha 3 produtos que voce ja usa e recomendaria para amigas.',
+        'Crie sua conta em uma plataforma de afiliados (Hotmart, Kiwify ou Monetizze).',
+        'Comece compartilhando recomendacoes genuinas pelo WhatsApp — sem forcao, com historia pessoal.',
+        'Meta da primeira semana: fazer 1 venda ou atender 1 cliente como assistente virtual.'
+      ]
+    },
+    B: {
+      name: 'Organizadora',
+      description: 'Voce e a pessoa que mantem tudo funcionando. Tem facilidade com processos, cronogramas, listas e controle. Enquanto outros se perdem no caos, voce encontra ordem. Esse perfil e extremamente valorizado no mercado de servicos online porque empresas e empreendedores precisam desesperadamente de alguem que organize a bagunca deles. Voce transforma caos em sistema — e pessoas pagam bem por isso.',
+      methods: [
+        {
+          title: 'Metodo REH #3 — Assistente Virtual',
+          desc: 'Organizar agendas, e-mails, planilhas e processos de clientes e a sua praia. Voce vai se sentir em casa fazendo o que ja faz naturalmente.',
+          chapter: 'Capitulo 6 do ebook'
+        },
+        {
+          title: 'Metodo REH #1 — Freelancer de Micro-Tarefas',
+          desc: 'Tarefas como digitacao, preenchimento de planilhas e pesquisas online combinam com sua precisao e organizacao.',
+          chapter: 'Capitulo 4 do ebook'
+        }
+      ],
+      actions: [
+        'Leia os Capitulos 6 e 4 do ebook com prioridade.',
+        'Liste 5 tarefas que voce ja faz bem: organizar agenda, responder e-mails, controlar planilhas, etc.',
+        'Crie um perfil profissional em plataformas de freelance (Workana, 99Freelas).',
+        'Ofereca um servico de "organizacao de e-mail" ou "assistente de agenda" a preco acessivel para os primeiros clientes.',
+        'Meta da primeira semana: conseguir 1 cliente ou completar 5 micro-tarefas pagas.'
+      ]
+    },
+    C: {
+      name: 'Criativa',
+      description: 'Voce ve o mundo de um jeito diferente. Tem sensibilidade visual, gosta de criar coisas bonitas e originais, e se inspira com facilidade. Esse perfil e ouro no mercado digital atual porque vivemos na era do conteudo visual — e a demanda por imagens, videos, posts e textos criativos so cresce. Voce nao precisa ser designer profissional: precisa ter bom gosto e vontade de experimentar.',
+      methods: [
+        {
+          title: 'Metodo REH #2 — Criacao de Conteudo com IA',
+          desc: 'Sua criatividade combinada com ferramentas de IA e uma combinacao poderosa. Voce cria conteudo bonito e original usando Canva, ChatGPT e CapCut.',
+          chapter: 'Capitulo 5 do ebook'
+        },
+        {
+          title: 'Metodo REH #4 — Vendas por Indicacao Digital',
+          desc: 'Voce pode criar conteudo visual atrativo para divulgar produtos como afiliada — posts, Reels, Stories que convertem.',
+          chapter: 'Capitulo 7 do ebook'
+        }
+      ],
+      actions: [
+        'Leia os Capitulos 5 e 7 do ebook com prioridade.',
+        'Baixe o Canva (versao gratuita) e explore 10 templates de posts para redes sociais.',
+        'Escolha 1 tema que voce domina (receitas, organizacao, moda, maternidade, etc.).',
+        'Crie 3 posts visuais usando Canva + textos gerados com ChatGPT. Publique na sua rede.',
+        'Meta da primeira semana: publicar 5 conteudos e observar qual engaja mais.'
+      ]
+    },
+    D: {
+      name: 'Executora',
+      description: 'Voce e movida por resultado. Enquanto outros planejam, voce ja esta fazendo. Tem velocidade de execucao, praticidade e zero medo de comecar. Esse perfil e perfeito para metodos que recompensam volume e consistencia — quanto mais voce faz, mais voce ganha. Voce nao precisa do plano perfeito: precisa de um plano bom o suficiente para comecar hoje.',
+      methods: [
+        {
+          title: 'Metodo REH #1 — Freelancer de Micro-Tarefas',
+          desc: 'Tarefas rapidas, pagamento imediato, sem enrolacao. Perfeito para quem quer ver resultado na conta bancaria ja na primeira semana.',
+          chapter: 'Capitulo 4 do ebook'
+        },
+        {
+          title: 'Metodo REH #3 — Assistente Virtual',
+          desc: 'Resolver problemas de clientes com velocidade e eficiencia — sua energia de execucao e exatamente o que empreendedores precisam.',
+          chapter: 'Capitulo 6 do ebook'
+        }
+      ],
+      actions: [
+        'Leia os Capitulos 4 e 6 do ebook com prioridade.',
+        'Cadastre-se HOJE em 3 plataformas de micro-tarefas (veja lista no Capitulo 4).',
+        'Complete suas primeiras 5 tarefas pagas ainda esta semana.',
+        'Anote quanto tempo gastou e quanto ganhou — calcule seu valor por hora real.',
+        'Meta da primeira semana: ganhar seus primeiros R$ 30-50 com micro-tarefas.'
+      ]
+    }
+  };
+
+  function getEl(id) { return document.getElementById(id); }
+  function getCards() { return document.querySelectorAll('.question-card'); }
+
+  window.startQuiz = function() {
+    getEl('intro').style.display = 'none';
+    getEl('progress-area').style.display = 'block';
+    getEl('nav-area').style.display = 'flex';
+    currentQuestion = 0;
+    answers = {};
+    showQuestion(0);
+  };
+
+  window.resetQuiz = function() {
+    getEl('result').classList.remove('active');
+    getEl('intro').style.display = 'block';
+    getEl('progress-area').style.display = 'none';
+    getEl('nav-area').style.display = 'none';
+    currentQuestion = 0;
+    answers = {};
+    var cards = getCards();
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('active');
+      var btns = cards[i].querySelectorAll('.option-btn');
+      for (var j = 0; j < btns.length; j++) {
+        btns[j].classList.remove('selected');
+      }
+    }
+  };
+
+  function showQuestion(idx) {
+    var cards = getCards();
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('active');
+    }
+    cards[idx].classList.add('active');
+    updateProgress();
+    updateNav();
+  }
+
+  function updateProgress() {
+    var pct = Math.round((currentQuestion / totalQuestions) * 100);
+    getEl('progress-fill').style.width = pct + '%';
+    getEl('progress-text').textContent = 'Pergunta ' + (currentQuestion + 1) + ' de ' + totalQuestions;
+    getEl('progress-pct').textContent = pct + '%';
+  }
+
+  function updateNav() {
+    getEl('btn-prev').style.visibility = currentQuestion === 0 ? 'hidden' : 'visible';
+    var isLast = currentQuestion === totalQuestions - 1;
+    var nextBtn = getEl('btn-next');
+    nextBtn.textContent = isLast ? 'Ver Resultado' : 'Proxima';
+    nextBtn.disabled = !answers[currentQuestion + 1];
+  }
+
+  window.selectOption = function(btn) {
+    var card = btn.closest('.question-card');
+    var qNum = parseInt(card.getAttribute('data-question'));
+    var btns = card.querySelectorAll('.option-btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.remove('selected');
+    }
+    btn.classList.add('selected');
+    answers[qNum] = btn.getAttribute('data-profile');
+    updateNav();
+  };
+
+  window.nextQuestion = function() {
+    if (currentQuestion < totalQuestions - 1) {
+      currentQuestion++;
+      showQuestion(currentQuestion);
+    } else {
+      showResult();
+    }
+  };
+
+  window.prevQuestion = function() {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      showQuestion(currentQuestion);
+    }
+  };
+
+  function showResult() {
+    getEl('progress-area').style.display = 'none';
+    getEl('nav-area').style.display = 'none';
+    var cards = getCards();
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.remove('active');
+    }
+
+    var counts = { A: 0, B: 0, C: 0, D: 0 };
+    for (var key in answers) {
+      if (answers.hasOwnProperty(key)) {
+        counts[answers[key]]++;
+      }
+    }
+
+    var sorted = Object.keys(counts).sort(function(a, b) { return counts[b] - counts[a]; });
+    var dominant = sorted[0];
+    var secondary = sorted[1];
+    var profileData = profiles[dominant];
+    var secondaryData = profiles[secondary];
+
+    getEl('result-profile').textContent = profileData.name;
+    getEl('result-secondary').textContent = 'Perfil secundario: ' + secondaryData.name;
+    getEl('result-description').textContent = profileData.description;
+
+    var total = totalQuestions;
+    setTimeout(function() {
+      getEl('bar-A').style.width = (counts.A / total * 100) + '%';
+      getEl('bar-A').textContent = counts.A > 0 ? (counts.A * 10) + '%' : '';
+      getEl('bar-B').style.width = (counts.B / total * 100) + '%';
+      getEl('bar-B').textContent = counts.B > 0 ? (counts.B * 10) + '%' : '';
+      getEl('bar-C').style.width = (counts.C / total * 100) + '%';
+      getEl('bar-C').textContent = counts.C > 0 ? (counts.C * 10) + '%' : '';
+      getEl('bar-D').style.width = (counts.D / total * 100) + '%';
+      getEl('bar-D').textContent = counts.D > 0 ? (counts.D * 10) + '%' : '';
+    }, 200);
+
+    var methodsHtml = '';
+    for (var m = 0; m < profileData.methods.length; m++) {
+      var method = profileData.methods[m];
+      methodsHtml += '<div class="method-card">';
+      methodsHtml += '<h4>' + method.title + '</h4>';
+      methodsHtml += '<p>' + method.desc + '</p>';
+      methodsHtml += '<span class="chapter-ref">' + method.chapter + '</span>';
+      methodsHtml += '</div>';
+    }
+    getEl('result-methods').innerHTML = methodsHtml;
+
+    var actionHtml = '<h4>Seus Proximos 5 Passos</h4>';
+    for (var a = 0; a < profileData.actions.length; a++) {
+      actionHtml += '<div class="action-step">';
+      actionHtml += '<span class="step-number">' + (a + 1) + '</span>';
+      actionHtml += '<p>' + profileData.actions[a] + '</p>';
+      actionHtml += '</div>';
+    }
+    getEl('result-action').innerHTML = actionHtml;
+
+    getEl('result').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+})();
+</script>
+</body>
+</html>

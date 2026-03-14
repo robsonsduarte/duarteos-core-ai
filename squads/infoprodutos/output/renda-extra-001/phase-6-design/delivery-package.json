@@ -1,0 +1,27 @@
+{
+  "pipeline_id": "renda-extra-001",
+  "product_name": "Renda Extra Honesta: O Metodo de 1 Hora Por Dia Para Quem Trabalha CLT",
+  "status": "complete",
+  "date": "2026-03-13",
+  "files": {
+    "manuscript": "squads/infoprodutos/output/renda-extra-001/phase-5-production/full-manuscript.md",
+    "html": "squads/infoprodutos/output/renda-extra-001/phase-6-design/ebook-styled.html",
+    "design_system": "squads/infoprodutos/output/renda-extra-001/phase-6-design/design-system.json",
+    "cover_spec": "squads/infoprodutos/output/renda-extra-001/phase-6-design/cover-spec.md"
+  },
+  "metrics": {
+    "total_chapters": 10,
+    "total_words": 23133,
+    "total_pages_estimated": 93
+  },
+  "kiwify_ready": true,
+  "next_steps": [
+    "Gerar PDF a partir do HTML (abrir no navegador e imprimir como PDF)",
+    "Gerar imagem de capa usando os prompts do cover-spec.md (Midjourney/DALL-E)",
+    "Montar capa final no Canva com titulo e tipografia",
+    "Subir ebook PDF na Kiwify",
+    "Configurar checkout com order bump e upsell conforme commercial-strategy.json",
+    "Criar pagina de vendas com copy baseada no posicionamento",
+    "Produzir os 4 bonus (PDFs e Google Sheets)"
+  ]
+}

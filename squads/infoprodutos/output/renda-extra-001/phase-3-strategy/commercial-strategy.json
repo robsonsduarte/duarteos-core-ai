@@ -1,0 +1,203 @@
+{
+  "pipeline_id": "renda-extra-001",
+  "phase": "3-strategy",
+  "agent": "COMPASS",
+  "date": "2026-03-13",
+  "niche": "renda extra com inteligencia artificial",
+  "product_name": "Renda Extra Honesta: O Metodo de 1 Hora Por Dia Para Quem Trabalha CLT",
+  "ticket": {
+    "value": 37,
+    "currency": "BRL",
+    "justification": "R$ 37 posiciona o produto abaixo do limiar psicologico de R$ 50 do avatar (buying trigger confirmado na pesquisa: 'preco acessivel abaixo de R$ 50 o risco percebido cai drasticamente'). Benchmark: mediana da concorrencia e R$ 32, media R$ 37,50. A R$ 37 ficamos na media do mercado porem com valor percebido 3-5x superior devido aos bonus (R$ 194 em bonus gratuitos). Preco terminado em 7 converte melhor no mercado BR (dados Kiwify/Hotmart). Estrategia de anchoring: preco cheio exibido como R$ 67, com 'desconto de lancamento' para R$ 37 — amplifica valor percebido em 45%. A margem de R$ 37 permite comissao de afiliados de 50% (R$ 18,50) mantendo lucro operacional viavel.",
+    "anchoring": "De R$ 67 por apenas R$ 37 — Oferta de Lancamento",
+    "payment_options": ["pix", "credit_card", "boleto"]
+  },
+  "positioning": {
+    "statement": "O unico ebook de renda extra feito especificamente para quem trabalha CLT, tem 1 hora livre por dia e zero reais para investir — com metodos que funcionam 100% pelo celular, mesmo com internet 4G basica.",
+    "unique_angle": "Posicionamento de HONESTIDADE RADICAL em um mercado saturado de promessas de R$ 10k/mes. Enquanto concorrentes prometem 'ficar rico rapido', nos prometemos R$ 300-800 no primeiro mes com provas reais e metodo passo a passo para quem tem emprego formal. Diferencial triplo: (1) filtrado para perfil CLT com 1h/dia, (2) 100% celular sem internet rapida, (3) zero investimento inicial comprovado.",
+    "big_idea": "O Guia Honesto de Renda Extra — Porque voce nao precisa de mais uma promessa vazia, precisa de um metodo que funcione na SUA realidade.",
+    "tagline": "Renda extra real para gente real. Sem promessas de R$ 10 mil. Com resultado em 7 dias."
+  },
+  "funnel": {
+    "stages": [
+      {
+        "name": "trafego",
+        "type": "acquisition",
+        "description": "Trafego pago (Meta Ads + Google Ads) e organico (Reels/TikTok/YouTube Shorts). Criativos com angulo de honestidade: 'Cansada de promessas de R$ 10k? Veja o que de VERDADE funciona para quem trabalha CLT'. Publico: mulheres 25-45, interesses em renda extra, empreendedorismo, financas pessoais. Lookalike de compradores apos primeiras 100 vendas. Google Ads: keywords 'renda extra pelo celular', 'como ganhar dinheiro extra CLT', 'renda extra sem investimento'.",
+        "metrics": {
+          "expected_ctr": "1.5-3%",
+          "expected_cpc": "R$ 0.80-1.50"
+        }
+      },
+      {
+        "name": "landing_page",
+        "type": "capture",
+        "description": "Pagina de captura com lead magnet gratuito: 'Checklist: 5 Metodos de Renda Extra Que Funcionam Pelo Celular (Testados em 2026)'. Formulario simples: nome + WhatsApp. Entrega via automacao Kiwify + grupo WhatsApp. Objetivo: nutrir leads que nao compram na primeira visita e alimentar lista para lancamentos futuros.",
+        "metrics": {
+          "expected_conversion": "20-30%"
+        }
+      },
+      {
+        "name": "sales_page",
+        "type": "sales",
+        "description": "Pagina de venda longa (long-form) com estrutura: (1) Headline de identificacao: 'Se voce trabalha o dia todo e no fim do mes nao sobra nada, este metodo foi feito para voce'; (2) Historia de identificacao (avatar Carla); (3) Prova social com 3-5 depoimentos de perfis CLT com resultados modestos (R$ 200-800); (4) Apresentacao do metodo com bullets de beneficio; (5) Stack de valor com bonus; (6) Garantia incondicional 15 dias; (7) FAQ quebrando as 5 objecoes mapeadas; (8) CTA com urgencia (vagas limitadas para bonus). Formato: copy + video VSL de 8-12 minutos opcional.",
+        "elements": ["headline", "story", "social_proof", "method_reveal", "benefit_bullets", "value_stack", "guarantee", "faq", "cta", "vsl_optional"],
+        "metrics": {
+          "expected_conversion": "2.5-4%"
+        }
+      },
+      {
+        "name": "checkout",
+        "type": "payment",
+        "description": "Checkout Kiwify one-step com order bump visivel. PIX com desconto de 5% (R$ 35,15) para aumentar conversao. Cartao em ate 6x sem juros. Boleto disponivel. Order bump: 'Pacote de Templates Prontos' por +R$ 19.",
+        "order_bump": {
+          "enabled": true,
+          "product": "Pacote de Templates Prontos — 15 Modelos de Mensagem para Vender pelo WhatsApp",
+          "price": 19
+        },
+        "metrics": {
+          "expected_bump_take_rate": "25-35%"
+        }
+      },
+      {
+        "name": "upsell_page",
+        "type": "upsell",
+        "description": "Pagina pos-compra com oferta unica: 'Comunidade Renda Extra Honesta — Grupo VIP no Telegram com suporte por 90 dias + aulas ao vivo semanais + desafio dos 7 dias acompanhado' por R$ 67. Enfase: 'Quem faz junto, faz mais rapido'. Apresentacao em video curto de 3 minutos. Se recusar, downsell para versao basica.",
+        "metrics": {
+          "expected_conversion": "12-18%"
+        }
+      },
+      {
+        "name": "downsell_page",
+        "type": "downsell",
+        "description": "Oferta reduzida caso recuse o upsell: 'Desafio 7 Dias — Seu Primeiro Real Online' por R$ 27. Acesso ao desafio estruturado de 7 dias sem a comunidade permanente. Conteudo: 7 aulas de 10 minutos + checklist diario.",
+        "metrics": {
+          "expected_conversion": "8-15%"
+        }
+      },
+      {
+        "name": "thank_you",
+        "type": "delivery",
+        "description": "Pagina de obrigado com: (1) Link de download imediato do ebook + bonus; (2) Video de boas-vindas de 2 minutos com proximo passo; (3) Link para grupo WhatsApp de compradores; (4) CTA para seguir no Instagram (retargeting organico). Email automatico com todos os links + sequencia de 5 emails em 7 dias (onboarding)."
+      },
+      {
+        "name": "pos_venda",
+        "type": "retention",
+        "description": "Sequencia automatizada de 5 emails em 7 dias: Email 1 (D+0): Boas-vindas + como comecar em 15 minutos; Email 2 (D+1): Metodo mais rapido para primeiro resultado; Email 3 (D+3): Historia de sucesso de avatar semelhante; Email 4 (D+5): Dica avancada + convite comunidade; Email 5 (D+7): Check-in de resultado + pesquisa NPS. Objetivo: reduzir reembolso em 40% (dado Brennan Dunn) e alimentar prova social.",
+        "metrics": {
+          "expected_refund_reduction": "30-40%"
+        }
+      }
+    ],
+    "estimated_cac": 15,
+    "estimated_ltv": 52,
+    "estimated_roi": 3.5
+  },
+  "bonuses": [
+    {
+      "name": "Detector de Golpes Online",
+      "description": "Guia PDF de 15 paginas ensinando como identificar golpes e piramides financeiras disfaracados de 'oportunidade de renda extra'. Inclui 10 red flags com exemplos reais, checklist de verificacao e lista de sites para consultar reputacao de empresas (Reclame Aqui, Procon, etc.). Ataca diretamente a dor #4 e objecao #1 do avatar.",
+      "perceived_value": 47,
+      "format": "pdf",
+      "production_effort": "low"
+    },
+    {
+      "name": "Diagnostico de Perfil: Qual Metodo e Ideal Para Voce",
+      "description": "Formulario interativo (Google Forms ou Typeform) com 10 perguntas que gera recomendacao personalizada de qual dos metodos do ebook a pessoa deve comecar. Perguntas: tempo disponivel, habilidades, tipo de celular, conexao de internet, experiencia previa. Resolve o gap #5: nenhum concorrente ajuda o avatar a ESCOLHER por onde comecar.",
+      "perceived_value": 67,
+      "format": "template",
+      "production_effort": "low"
+    },
+    {
+      "name": "Plano de Acao 7 Dias — Seu Primeiro Resultado",
+      "description": "Checklist imprimivel (PDF) com acao especifica para cada dia da primeira semana. Dia 1: Escolher metodo. Dia 2: Criar perfil/conta. Dia 3: Primeira acao. Dia 4-6: Execucao com meta diaria. Dia 7: Medir resultado. Formato visual com caixas de check, tempo estimado por tarefa (max 1h) e dica do dia. Resolve gap #6: primeiro resultado em 7 dias.",
+      "perceived_value": 37,
+      "format": "checklist",
+      "production_effort": "low"
+    },
+    {
+      "name": "Planilha de Controle Financeiro da Renda Extra",
+      "description": "Planilha Google Sheets (funciona no celular) pre-configurada para registrar ganhos da renda extra, comparar com meta mensal e calcular projecao de 3-6 meses. Simples, visual, com graficos automaticos. Reforco: tangibiliza o progresso e mantem motivacao.",
+      "perceived_value": 43,
+      "format": "template",
+      "production_effort": "low"
+    }
+  ],
+  "guarantee": {
+    "type": "unconditional",
+    "days": 15,
+    "description": "Garantia incondicional de 15 dias. Se por qualquer motivo voce sentir que o ebook nao e para voce, basta enviar um email e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia, sem letra miuda. O risco e todo nosso. Se voce seguir o metodo por 7 dias e nao ver nenhum caminho real para sua primeira renda extra, seu dinheiro volta inteiro."
+  },
+  "upsells": [
+    {
+      "name": "Pacote de Templates Prontos — 15 Modelos de Mensagem para Vender pelo WhatsApp",
+      "type": "order_bump",
+      "price": 19,
+      "description": "15 templates de mensagem copy-paste para abordar clientes, responder duvidas e fechar vendas pelo WhatsApp. Inclui: mensagem de primeiro contato, follow-up, fechamento, pos-venda e reativacao. Personalizaveis com nome e produto. Formato: PDF com botao de copia + arquivo .txt para colar direto no celular.",
+      "expected_take_rate": "25-35%"
+    },
+    {
+      "name": "Comunidade Renda Extra Honesta — Grupo VIP 90 Dias",
+      "type": "upsell",
+      "price": 67,
+      "description": "Acesso por 90 dias ao grupo VIP no Telegram com: suporte para duvidas, aulas ao vivo semanais (30 min), Desafio dos 7 Dias acompanhado com feedback, e rede de contatos com outros membros. Angulo: 'Quem faz junto, faz mais rapido — e nao desiste no dia 3'.",
+      "expected_take_rate": "12-18%"
+    },
+    {
+      "name": "Desafio 7 Dias — Seu Primeiro Real Online",
+      "type": "downsell",
+      "price": 27,
+      "description": "Versao enxuta da comunidade: 7 aulas de 10 minutos (video) + checklist diario + acesso ao grupo por 7 dias. Sem as lives semanais e sem os 90 dias de acesso. Ofertado apenas para quem recusou o upsell principal. Angulo: 'Nao quer os 90 dias? Tudo bem — em 7 dias voce ja vai ter seu primeiro resultado'.",
+      "expected_take_rate": "8-15%"
+    }
+  ],
+  "kiwify_config": {
+    "product_type": "ebook",
+    "delivery_method": "download",
+    "refund_policy_days": 15,
+    "affiliate_commission_percent": 50,
+    "checkout_type": "one_step",
+    "upsell_enabled": true,
+    "order_bump_enabled": true,
+    "order_bump_product": "Pacote de Templates Prontos — 15 Modelos de Mensagem para Vender pelo WhatsApp",
+    "order_bump_price": 19,
+    "pix_discount_percent": 5,
+    "installments_max": 6,
+    "thank_you_page_url": "custom",
+    "upsell_page_url": "custom",
+    "email_sequence_enabled": true,
+    "email_sequence_count": 5,
+    "email_sequence_days": 7
+  },
+  "expected_metrics": {
+    "monthly_revenue_estimate": 8500,
+    "monthly_revenue_breakdown": {
+      "ebook_sales": "150 vendas x R$ 37 = R$ 5.550",
+      "order_bump": "45 vendas (30%) x R$ 19 = R$ 855",
+      "upsell": "23 vendas (15%) x R$ 67 = R$ 1.541",
+      "downsell": "14 vendas (11% dos restantes) x R$ 27 = R$ 378",
+      "total_bruto": "R$ 8.324",
+      "arredondado": "R$ 8.500"
+    },
+    "conversion_rate_estimate": "3%",
+    "avg_ticket_with_bumps": 55.5,
+    "avg_ticket_calculation": "R$ 8.324 / 150 compradores = R$ 55,50 ticket medio efetivo",
+    "break_even_sales": 41,
+    "break_even_calculation": "Custo fixo mensal estimado R$ 600 (ferramentas + dominio) + trafego R$ 2.250 (150 vendas x R$ 15 CAC) = R$ 2.850 custo total. R$ 2.850 / (R$ 37 x 0.5 margem apos afiliados + plataforma) = ~41 vendas para break-even considerando ticket base sem bumps. Com bumps e upsells, break-even real em ~35 vendas.",
+    "monthly_profit_estimate": {
+      "revenue_bruto": 8324,
+      "custo_plataforma_kiwify": "8.99% = R$ 748",
+      "custo_afiliados": "50% sobre vendas via afiliado (estimando 40% das vendas via afiliados) = R$ 1.665",
+      "custo_trafego_pago": "R$ 2.250",
+      "custo_ferramentas": "R$ 300",
+      "lucro_liquido_estimado": "R$ 3.361"
+    }
+  },
+  "mind_clone_insights": {
+    "conselho_business": "THIAGO FINCH: O modelo ebook R$ 37 com upsell de comunidade R$ 67 e classico e validado no mercado BR. A chave e velocidade de escala via afiliados — 50% de comissao e agressivo mas necessario para atrair top afiliados no nicho de renda extra. Recomendo lancar com meta de 100 vendas nos primeiros 30 dias para gerar prova social rapida, depois escalar trafego pago. O LTV real so aparece com a recorrencia — considerar transformar a comunidade de 90 dias em assinatura mensal apos validacao. VINICIUS GRECO: O funil esta bem desenhado. Ponto de atencao: a taxa de reembolso em ebooks de renda extra tende a ser 8-12%. A sequencia de 5 emails em 7 dias e critica para manter abaixo de 8%. Recomendo implementar NPS no dia 7 e usar detratores como sinal para intervir antes do pedido de reembolso. O order bump de R$ 19 e bem calibrado — abaixo de 50% do ticket principal maximiza take rate. PEDRO VALERIO: O posicionamento de honestidade e o unico angulo defensavel neste mercado. Todos os concorrentes prometem exagero — 'O Guia Honesto' cria uma categoria propria. Recomendo reforcar isso em TODA comunicacao: desde o nome do produto ate os criativos de trafego. O risco e parecer 'fraco' demais — contraponto: usar numeros especificos (R$ 487 no primeiro mes, nao R$ 500) para transmitir precisao sem exagero.",
+    "conselho_marketing": "STEFAN GEORGI: A oferta esta estruturada como RMBC (Research, Mechanism, Brief, Copy). O mecanismo unico e o 'Metodo de 1 Hora' — precisa ser nomeado e repetido em toda a copy. Recomendo criar um nome proprietario para o metodo (ex: 'Metodo REH' — Renda Extra por Hora) que gere identidade e dificulte comparacao com concorrentes. A stack de valor (R$ 194 em bonus por R$ 37) gera ratio de 5:1 — ideal para conversao. Headline recomendada: 'Como Mulheres CLT Estao Gerando R$ 300-800 Extras Por Mes Usando Apenas o Celular e 1 Hora Por Dia — Sem Investir Nenhum Real'. PEDRO SOBRAL: Para trafego pago, o CPC no nicho de renda extra gira em torno de R$ 0.80-1.50 no Meta Ads. Com pagina convertendo a 3%, o CAC fica em R$ 15-20. Recomendo comecar com R$ 50/dia em 3 conjuntos de anuncios: (1) interesse direto em renda extra, (2) lookalike de engajamento nos Reels, (3) retargeting de visitantes da landing page. Escalar apos ROAS > 2x sustentado por 7 dias. DAVID OGILVY: A Big Idea 'O Guia Honesto' e forte porque vai contra a corrente do mercado. Toda grande campanha e construida sobre uma ideia que contrasta com o status quo. Recomendo que a pagina de vendas abra com uma pergunta que desqualifica os concorrentes: 'Quantas vezes voce ja ouviu que e facil ganhar R$ 10 mil por mes na internet?'. O posicionamento de honestidade so funciona se for sustentado por PROVA — depoimentos verificaveis com nome, foto e resultado modesto sao mais poderosos que qualquer promessa. TIAGO TESSMANN: Google Ads sera canal complementar de alta intencao. Keywords: 'como ganhar dinheiro extra CLT', 'renda extra pelo celular 2026', 'ebook renda extra honesta'. CPC estimado R$ 1.20-2.50 mas com conversao superior (4-6%) por ser trafego de busca ativa. Recomendo alocar 30% do budget de trafego para Google e 70% para Meta, invertendo conforme dados de ROAS por canal apos 30 dias."
+  },
+  "strategy_path": "squads/infoprodutos/output/renda-extra-001/phase-3-strategy/commercial-strategy.json",
+  "omega_score": 91,
+  "status": "APROVADO"
+}

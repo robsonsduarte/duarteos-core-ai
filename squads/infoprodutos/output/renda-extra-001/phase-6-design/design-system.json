@@ -1,0 +1,115 @@
+{
+  "pipeline_id": "renda-extra-001",
+  "product_name": "Renda Extra Honesta",
+  "design_concept": "Profissional e acessivel. Transmite confianca, honestidade e praticidade. Inspirado em ebooks de financas pessoais de alta qualidade.",
+  "colors": {
+    "primary": "#1B7A4A",
+    "primary_light": "#E8F5EE",
+    "primary_dark": "#145A37",
+    "secondary": "#1A365D",
+    "background": "#FFFFFF",
+    "text": "#2D3748",
+    "text_muted": "#718096",
+    "heading": "#1A365D",
+    "accent": "#E8930C",
+    "border": "#E2E8F0",
+    "highlight": "#FFF8E7",
+    "success": "#38A169",
+    "error": "#E53E3E"
+  },
+  "typography": {
+    "heading_font": "Poppins",
+    "body_font": "Inter",
+    "mono_font": "JetBrains Mono",
+    "base_size": "11pt",
+    "line_height": "1.7",
+    "heading_sizes": {
+      "h1": "28pt",
+      "h2": "20pt",
+      "h3": "15pt"
+    },
+    "sizes": {
+      "h1": "28pt",
+      "h2": "20pt",
+      "h3": "15pt",
+      "body": "11pt",
+      "caption": "9pt"
+    }
+  },
+  "spacing": {
+    "page_margins": "2.5cm top/bottom, 2cm left/right",
+    "page_margin_top": "2.5cm",
+    "page_margin_bottom": "2.5cm",
+    "page_margin_inner": "2.5cm",
+    "page_margin_outer": "2cm",
+    "paragraph_spacing": "0.8em",
+    "section_spacing": "2.5em",
+    "chapter_spacing": "page-break"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "columns": "single",
+    "header_style": "Titulo do ebook centralizado, fonte Poppins 9pt, cor text_muted, linha separadora sutil",
+    "footer_style": "Numero da pagina centralizado, fonte Inter 9pt, cor text_muted",
+    "header": {
+      "enabled": true,
+      "content": "Renda Extra Honesta",
+      "font_size": "9pt",
+      "alignment": "center"
+    },
+    "footer": {
+      "enabled": true,
+      "content": "page_number",
+      "font_size": "9pt",
+      "alignment": "center"
+    },
+    "chapter_start": "any"
+  },
+  "elements": {
+    "blockquote": {
+      "border_left_color": "#1B7A4A",
+      "border_left_width": "4px",
+      "background": "#E8F5EE",
+      "padding": "1em 1.5em"
+    },
+    "callout": {
+      "background": "#FFF8E7",
+      "border_color": "#E8930C",
+      "border_width": "2px",
+      "border_radius": "8px",
+      "icon": true
+    },
+    "exercise": {
+      "background": "#EBF4FF",
+      "border_color": "#3182CE",
+      "border_width": "2px",
+      "border_radius": "8px",
+      "icon": "pencil"
+    },
+    "case_study": {
+      "background": "#E8F5EE",
+      "border_color": "#1B7A4A",
+      "border_width": "2px",
+      "border_radius": "8px",
+      "icon": "user"
+    },
+    "summary": {
+      "background": "#F7FAFC",
+      "border_color": "#1A365D",
+      "border_width": "2px",
+      "border_radius": "8px"
+    },
+    "table": {
+      "header_background": "#1A365D",
+      "header_text_color": "#FFFFFF",
+      "border_color": "#E2E8F0",
+      "striped": true,
+      "stripe_color": "#F7FAFC"
+    },
+    "list": {
+      "bullet_color": "#1B7A4A",
+      "indent": "1.5em"
+    }
+  }
+}

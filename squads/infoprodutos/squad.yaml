@@ -1,0 +1,273 @@
+name: "infoprodutos"
+version: "1.0.0"
+description: "Squad Infoprodutos — pipeline completo de criacao de ebooks digitais para venda na Kiwify. 7 agentes, 6 fases, API-ready."
+
+agents:
+  - name: "pipeline-orchestrator"
+    codename: "FORGE"
+    file: "agents/pipeline-orchestrator.md"
+    role: "orchestrator"
+    model: "opus"
+
+  - name: "niche-scout"
+    codename: "RADAR"
+    file: "agents/niche-scout.md"
+    role: "researcher"
+    model: "haiku"
+    model_analysis: "sonnet"
+
+  - name: "market-analyst"
+    codename: "PRISM"
+    file: "agents/market-analyst.md"
+    role: "researcher"
+    model: "haiku"
+    model_analysis: "sonnet"
+
+  - name: "strategist"
+    codename: "COMPASS"
+    file: "agents/strategist.md"
+    role: "planner"
+    model: "opus"
+
+  - name: "content-architect"
+    codename: "BLUEPRINT"
+    file: "agents/content-architect.md"
+    role: "planner"
+    model: "opus"
+
+  - name: "content-writer"
+    codename: "SCRIBE"
+    file: "agents/content-writer.md"
+    role: "executor"
+    model: "opus"
+
+  - name: "designer"
+    codename: "CANVAS"
+    file: "agents/designer.md"
+    role: "executor"
+    model: "opus"
+
+config:
+  mode: "yolo"
+  parallel: false
+  auto_commit: true
+  pipeline_sequential: true
+  output_dir: "squads/infoprodutos/output"
+
+tasks:
+  - name: "phase-1-discovery"
+    file: "tasks/phase-1-discovery.md"
+    agent: "niche-scout"
+    priority: "P1"
+    omega_threshold:
+      task_type: "research"
+      minimum: 80
+
+  - name: "phase-2-research"
+    file: "tasks/phase-2-research.md"
+    agent: "market-analyst"
+    priority: "P1"
+    depends_on: ["phase-1-discovery"]
+    omega_threshold:
+      task_type: "research"
+      minimum: 80
+
+  - name: "phase-3-strategy"
+    file: "tasks/phase-3-strategy.md"
+    agent: "strategist"
+    priority: "P1"
+    depends_on: ["phase-2-research"]
+    omega_threshold:
+      task_type: "planning"
+      minimum: 85
+
+  - name: "phase-4-architecture"
+    file: "tasks/phase-4-architecture.md"
+    agent: "content-architect"
+    priority: "P1"
+    depends_on: ["phase-3-strategy"]
+    omega_threshold:
+      task_type: "planning"
+      minimum: 85
+
+  - name: "phase-5-production"
+    file: "tasks/phase-5-production.md"
+    agent: "content-writer"
+    priority: "P1"
+    depends_on: ["phase-4-architecture"]
+    omega_threshold:
+      task_type: "implementation"
+      minimum: 90
+
+  - name: "phase-6-design-delivery"
+    file: "tasks/phase-6-design-delivery.md"
+    agent: "designer"
+    priority: "P1"
+    depends_on: ["phase-5-production"]
+    omega_threshold:
+      task_type: "implementation"
+      minimum: 90
+
+inherit: ["process-chief"]
+
+templates:
+  - "templates/niche-scorecard.md"
+  - "templates/avatar-profile.md"
+  - "templates/commercial-strategy.md"
+  - "templates/ebook-outline.md"
+  - "templates/chapter-template.md"
+
+api:
+  base_path: "/infoprodutos"
+  endpoints:
+    pipeline:
+      start:
+        path: "/pipeline/start"
+        method: "POST"
+        description: "Inicia o pipeline completo de criacao de infoproduto"
+        input_schema:
+          type: "object"
+          properties:
+            criteria:
+              type: "string"
+              description: "Criterios iniciais de nicho/tema"
+            market_segment:
+              type: "string"
+              description: "Segmento de mercado alvo"
+            target_pages:
+              type: "number"
+              default: 40
+              description: "Numero estimado de paginas do ebook"
+            min_demand_score:
+              type: "number"
+              default: 7
+              description: "Score minimo de demanda para validar nicho"
+          required: ["criteria"]
+        output_schema:
+          type: "object"
+          properties:
+            pipeline_id:
+              type: "string"
+            status:
+              type: "string"
+              enum: ["started", "in_progress", "completed", "failed"]
+            phases:
+              type: "array"
+              items:
+                type: "object"
+                properties:
+                  phase: { type: "number" }
+                  name: { type: "string" }
+                  status: { type: "string" }
+                  agent: { type: "string" }
+
+      status:
+        path: "/pipeline/status"
+        method: "GET"
+        description: "Retorna status atual do pipeline"
+        output_schema:
+          type: "object"
+          properties:
+            pipeline_id: { type: "string" }
+            current_phase: { type: "number" }
+            status: { type: "string" }
+            phases:
+              type: "array"
+              items:
+                type: "object"
+                properties:
+                  phase: { type: "number" }
+                  name: { type: "string" }
+                  status: { type: "string" }
+                  omega_score: { type: "number" }
+                  started_at: { type: "string" }
+                  completed_at: { type: "string" }
+
+      phase_status:
+        path: "/pipeline/{phase}/status"
+        method: "GET"
+        description: "Retorna status detalhado de uma fase especifica"
+
+    discovery:
+      scan:
+        path: "/discovery/scan"
+        method: "POST"
+      scorecard:
+        path: "/discovery/scorecard"
+        method: "GET"
+
+    research:
+      analyze:
+        path: "/research/analyze"
+        method: "POST"
+      dossie:
+        path: "/research/dossie"
+        method: "GET"
+
+    strategy:
+      define:
+        path: "/strategy/define"
+        method: "POST"
+      report:
+        path: "/strategy/report"
+        method: "GET"
+
+    architecture:
+      plan:
+        path: "/architecture/plan"
+        method: "POST"
+      outline:
+        path: "/architecture/outline"
+        method: "GET"
+
+    production:
+      write_chapter:
+        path: "/production/write-chapter"
+        method: "POST"
+      write_all:
+        path: "/production/write-all"
+        method: "POST"
+      status:
+        path: "/production/status"
+        method: "GET"
+
+    design:
+      specs:
+        path: "/design/specs"
+        method: "POST"
+      generate_pdf:
+        path: "/design/generate-pdf"
+        method: "POST"
+      cover:
+        path: "/design/cover"
+        method: "POST"
+
+  webhooks:
+    events: ["on_pipeline_start", "on_phase_start", "on_phase_complete", "on_phase_error", "on_pipeline_complete", "on_pipeline_error"]
+    payload_schema:
+      type: "object"
+      properties:
+        event: { type: "string" }
+        pipeline_id: { type: "string" }
+        phase: { type: "number" }
+        phase_name: { type: "string" }
+        status: { type: "string" }
+        omega_score: { type: "number" }
+        timestamp: { type: "string", format: "date-time" }
+        data: { type: "object" }
+
+  status_format:
+    type: "object"
+    properties:
+      phase: { type: "number" }
+      name: { type: "string" }
+      agent: { type: "string" }
+      codename: { type: "string" }
+      status:
+        type: "string"
+        enum: ["pending", "in_progress", "completed", "failed", "skipped"]
+      omega_score: { type: "number" }
+      started_at: { type: "string", format: "date-time" }
+      completed_at: { type: "string", format: "date-time" }
+      output_path: { type: "string" }
+      error: { type: "string" }
